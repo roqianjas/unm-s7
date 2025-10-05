@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATRIAMART - Integrated Management System (SIMS)</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-section h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .logo-section p {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+            margin-top: 80px;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: white;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+            position: fixed;
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        .sidebar-menu li {
+            margin: 0.2rem 0;
+        }
+
+        .sidebar-menu a {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: #666;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-menu a:hover, .sidebar-menu a.active {
+            background: #e3f2fd;
+            color: #1976d2;
+            border-left-color: #1976d2;
+        }
+
+        .sidebar-menu i {
+            margin-right: 1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            flex: 1;
+            margin-left: 280px;
+            padding: 2rem;
+            max-width: calc(100vw - 280px);
+        }
+
+        .module-section {
+            display: none;
+        }
+
+        .module-section.active {
+            display: block;
+        }
+
+        .page-header {
+            margin-bottom: 2rem;
+        }
+
+        .page-header h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .metric-card.success {
+            border-left-color: #27ae60;
+        }
+
+        .metric-card.warning {
+            border-left-color: #f39c12;
+        }
+
+        .metric-card.danger {
+            border-left-color: #e74c3c;
+        }
+
+        .metric-card .metric-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .metric-card.success .metric-icon { color: #27ae60; }
+        .metric-card.warning .metric-icon { color: #f39c12; }
+        .metric-card.danger .metric-icon { color: #e74c3c; }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-trend {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .trend-up {
+            color: #27ae60;
+        }
+
+        .trend-down {
+            color: #e74c3c;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .chart-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .data-table {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .table-header {
+            background: #f8f9fa;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .table-header h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+
+        .table-content {
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem 2rem;
+            text-align: left;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .status-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-active {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-completed {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .action-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .action-card:hover {
+            transform: translateY(-2px);
+            border-color: #3498db;
+        }
+
+        .action-icon {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #28a745;
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            .main-container {
+                flex-direction: column;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-header h3 {
+            color: #2c3e50;
+        }
+
+        .close-btn {
+            float: right;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .close-btn:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <h1><i class="fas fa-cube"></i> SATRIAMART SIMS</h1>
+                <p>Integrated Management System - Prototype v1.0</p>
+            </div>
+            <div class="user-section">
+                <span><i class="fas fa-user-circle"></i> Admin User</span>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#" class="menu-item active" data-section="dashboard">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a></li>
+                <li><a href="#" class="menu-item" data-section="crm">
+                    <i class="fas fa-users"></i> Customer Management
+                </a></li>
+                <li><a href="#" class="menu-item" data-section="inventory">
+                    <i class="fas fa-boxes"></i> Inventory Management
+                </a></li>
+                <li><a href="#" class="menu-item" data-section="production">
+                    <i class="fas fa-industry"></i> Production Planning
+                </a></li>
+                <li><a href="#" class="menu-item" data-section="analytics">
+                    <i class="fas fa-chart-bar"></i> Analytics & Reports
+                </a></li>
+                <li><a href="#" class="menu-item" data-section="settings">
+                    <i class="fas fa-cog"></i> System Settings
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <!-- Dashboard Section -->
+            <div id="dashboard" class="module-section active">
+                <div class="page-header">
+                    <h2>Executive Dashboard</h2>
+                    <p>Real-time overview of SATRIAMART operations</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card success">
+                        <div class="metric-icon"><i class="fas fa-users"></i></div>
+                        <div class="metric-value">147</div>
+                        <div class="metric-label">Active Customers</div>
+                        <div class="metric-trend trend-up">
+                            <i class="fas fa-arrow-up"></i> +12% this month
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="metric-value">23</div>
+                        <div class="metric-label">Pending Orders</div>
+                        <div class="metric-trend trend-up">
+                            <i class="fas fa-arrow-up"></i> +5 from yesterday
+                        </div>
+                    </div>
+
+                    <div class="metric-card warning">
+                        <div class="metric-icon"><i class="fas fa-boxes"></i></div>
+                        <div class="metric-value">8</div>
+                        <div class="metric-label">Low Stock Items</div>
+                        <div class="metric-trend trend-down">
+                            <i class="fas fa-exclamation-triangle"></i> Requires attention
+                        </div>
+                    </div>
+
+                    <div class="metric-card success">
+                        <div class="metric-icon"><i class="fas fa-money-bill"></i></div>
+                        <div class="metric-value">Rp 45.2M</div>
+                        <div class="metric-label">Monthly Revenue</div>
+                        <div class="metric-trend trend-up">
+                            <i class="fas fa-arrow-up"></i> +18% vs last month
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Sales Performance (Last 6 Months)</h3>
+                        <canvas id="salesChart" width="400" height="200"></canvas>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3 class="chart-title">Production Status</h3>
+                        <canvas id="productionChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3>Recent Orders</h3>
+                    </div>
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ORD-2025-001</td>
+                                    <td>PT. Maju Sejahtera</td>
+                                    <td>Signage Akrilik</td>
+                                    <td>Rp 2,500,000</td>
+                                    <td><span class="status-badge status-pending">In Production</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">View</button>
+                                            <button class="btn btn-secondary">Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ORD-2025-002</td>
+                                    <td>Budi Santoso</td>
+                                    <td>Nomor Rumah</td>
+                                    <td>Rp 150,000</td>
+                                    <td><span class="status-badge status-completed">Completed</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">View</button>
+                                            <button class="btn btn-success">Invoice</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ORD-2025-003</td>
+                                    <td>CV. Kreatif Design</td>
+                                    <td>Papan Nama Custom</td>
+                                    <td>Rp 850,000</td>
+                                    <td><span class="status-badge status-active">Planning</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">View</button>
+                                            <button class="btn btn-secondary">Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRM Section -->
+            <div id="crm" class="module-section">
+                <div class="page-header">
+                    <h2>Customer Relationship Management</h2>
+                    <p>Manage customer information, communications, and opportunities</p>
+                </div>
+
+                <div class="quick-actions">
+                    <div class="action-card" onclick="openModal('customerModal')">
+                        <div class="action-icon"><i class="fas fa-user-plus"></i></div>
+                        <h4>Add New Customer</h4>
+                        <p>Register new customer</p>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Log Communication</h4>
+                        <p>Record customer interaction</p>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>View Opportunities</h4>
+                        <p>Manage sales pipeline</p>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3>Customer Directory</h3>
+                    </div>
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer Code</th>
+                                    <th>Company/Name</th>
+                                    <th>Contact Person</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CUST-001</td>
+                                    <td>PT. Maju Sejahtera</td>
+                                    <td>Ahmad Rizki</td>
+                                    <td>ahmad@majusejahtera.com</td>
+                                    <td>+62-21-555-0123</td>
+                                    <td>B2B</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">View</button>
+                                            <button class="btn btn-secondary">Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CUST-002</td>
+                                    <td>Budi Santoso</td>
+                                    <td>Budi Santoso</td>
+                                    <td>budi.santoso@email.com</td>
+                                    <td>+62-813-555-0456</td>
+                                    <td>B2C</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">View</button>
+                                            <button class="btn btn-secondary">Edit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inventory Section -->
+            <div id="inventory" class="module-section">
+                <div class="page-header">
+                    <h2>Inventory Management</h2>
+                    <p>Track stock levels, manage suppliers, and control costs</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="metric-value">156</div>
+                        <div class="metric-label">Total SKUs</div>
+                    </div>
+                    <div class="metric-card warning">
+                        <div class="metric-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="metric-value">8</div>
+                        <div class="metric-label">Below Reorder Point</div>
+                    </div>
+                    <div class="metric-card success">
+                        <div class="metric-icon"><i class="fas fa-truck"></i></div>
+                        <div class="metric-value">12</div>
+                        <div class="metric-label">Pending Deliveries</div>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3>Inventory Overview</h3>
+                    </div>
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product Code</th>
+                                    <th>Product Name</th>
+                                    <th>Current Stock</th>
+                                    <th>Reorder Point</th>
+                                    <th>Unit Cost</th>
+                                    <th>Total Value</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>MAT-001</td>
+                                    <td>Akrilik Sheet 3mm</td>
+                                    <td>85 sheets</td>
+                                    <td>50 sheets</td>
+                                    <td>Rp 75,000</td>
+                                    <td>Rp 6,375,000</td>
+                                    <td><span class="status-badge status-active">Good</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">View</button>
+                                            <button class="btn btn-secondary">Adjust</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MAT-002</td>
+                                    <td>Akrilik Sheet 5mm</td>
+                                    <td>12 sheets</td>
+                                    <td>25 sheets</td>
+                                    <td>Rp 120,000</td>
+                                    <td>Rp 1,440,000</td>
+                                    <td><span class="status-badge status-pending">Low Stock</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">Reorder</button>
+                                            <button class="btn btn-secondary">Adjust</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Production Section -->
+            <div id="production" class="module-section">
+                <div class="page-header">
+                    <h2>Production Planning</h2>
+                    <p>Schedule work orders, allocate resources, and track progress</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="metric-value">18</div>
+                        <div class="metric-label">Active Work Orders</div>
+                    </div>
+                    <div class="metric-card success">
+                        <div class="metric-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="metric-value">85%</div>
+                        <div class="metric-label">On-Time Delivery</div>
+                    </div>
+                    <div class="metric-card warning">
+                        <div class="metric-icon"><i class="fas fa-clock"></i></div>
+                        <div class="metric-value">3</div>
+                        <div class="metric-label">Behind Schedule</div>
+                    </div>
+                </div>
+
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3>Work Orders</h3>
+                    </div>
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>WO Number</th>
+                                    <th>Product</th>
+                                    <th>Customer</th>
+                                    <th>Quantity</th>
+                                    <th>Progress</th>
+                                    <th>Due Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WO-2025-001</td>
+                                    <td>Signage Akrilik</td>
+                                    <td>PT. Maju Sejahtera</td>
+                                    <td>5 pcs</td>
+                                    <td>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 60%;"></div>
+                                        </div>
+                                        60%
+                                    </td>
+                                    <td>2025-10-15</td>
+                                    <td><span class="status-badge status-pending">In Progress</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-primary">Update</button>
+                                            <button class="btn btn-secondary">Details</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>WO-2025-002</td>
+                                    <td>Nomor Rumah</td>
+                                    <td>Budi Santoso</td>
+                                    <td>1 pcs</td>
+                                    <td>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 100%;"></div>
+                                        </div>
+                                        100%
+                                    </td>
+                                    <td>2025-10-08</td>
+                                    <td><span class="status-badge status-completed">Completed</span></td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-success">Ship</button>
+                                            <button class="btn btn-secondary">Details</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Section -->
+            <div id="analytics" class="module-section">
+                <div class="page-header">
+                    <h2>Analytics & Reports</h2>
+                    <p>Business intelligence and performance analysis</p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Revenue Trend (Last 12 Months)</h3>
+                        <canvas id="revenueChart" width="400" height="200"></canvas>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3 class="chart-title">Customer Segmentation</h3>
+                        <canvas id="customerChart" width="300" height="300"></canvas>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Product Performance</h3>
+                        <canvas id="productChart" width="400" height="200"></canvas>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3 class="chart-title">Key Performance Indicators</h3>
+                        <div style="padding: 1rem 0;">
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Customer Satisfaction:</strong> 92%
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 92%; background: #28a745;"></div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Production Efficiency:</strong> 78%
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 78%; background: #ffc107;"></div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <strong>Inventory Turnover:</strong> 85%
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%; background: #17a2b8;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Section -->
+            <div id="settings" class="module-section">
+                <div class="page-header">
+                    <h2>System Settings</h2>
+                    <p>Configure system parameters and user preferences</p>
+                </div>
+
+                <div class="quick-actions">
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-users-cog"></i></div>
+                        <h4>User Management</h4>
+                        <p>Manage user accounts and permissions</p>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-database"></i></div>
+                        <h4>Data Backup</h4>
+                        <p>Backup and restore system data</p>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-bell"></i></div>
+                        <h4>Notifications</h4>
+                        <p>Configure system notifications</p>
+                    </div>
+                    <div class="action-card">
+                        <div class="action-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Security</h4>
+                        <p>Security settings and audit logs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Modal -->
+    <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-btn" onclick="closeModal('customerModal')">&times;</span>
+                <h3>Add New Customer</h3>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="customerType">Customer Type</label>
+                    <select id="customerType" class="form-control">
+                        <option value="B2C">B2C - Individual</option>
+                        <option value="B2B">B2B - Corporate</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" class="form-control" placeholder="Enter company name (for B2B)">
+                </div>
+                <div class="form-group">
+                    <label for="contactPerson">Contact Person</label>
+                    <input type="text" id="contactPerson" class="form-control" placeholder="Enter contact person name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" class="form-control" rows="3" placeholder="Enter address"></textarea>
+                </div>
+                <div style="text-align: right; margin-top: 1.5rem;">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('customerModal')">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Customer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Navigation functionality
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all menu items and sections
+                document.querySelectorAll('.menu-item').forEach(mi => mi.classList.remove('active'));
+                document.querySelectorAll('.module-section').forEach(section => section.classList.remove('active'));
+                
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Show corresponding section
+                const sectionId = this.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+
+        // Modal functionality
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('show');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('show');
+        }
+
+        // Close modal when clicking outside
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('show');
+                }
+            });
+        });
+
+        // Charts initialization
+        function initializeCharts() {
+            // Sales Chart
+            const salesCtx = document.getElementById('salesChart');
+            if (salesCtx) {
+                new Chart(salesCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['May', 'June', 'July', 'August', 'September', 'October'],
+                        datasets: [{
+                            label: 'Sales (Million Rp)',
+                            data: [28.5, 32.1, 29.8, 35.2, 38.7, 45.2],
+                            borderColor: '#3498db',
+                            backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Production Chart
+            const productionCtx = document.getElementById('productionChart');
+            if (productionCtx) {
+                new Chart(productionCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Completed', 'In Progress', 'Pending', 'On Hold'],
+                        datasets: [{
+                            data: [65, 25, 8, 2],
+                            backgroundColor: ['#27ae60', '#3498db', '#f39c12', '#e74c3c']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Revenue Chart
+            const revenueCtx = document.getElementById('revenueChart');
+            if (revenueCtx) {
+                new Chart(revenueCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        datasets: [{
+                            label: 'Revenue (Million Rp)',
+                            data: [25.2, 28.5, 32.1, 29.8, 35.2, 38.7, 42.1, 39.5, 41.8, 45.2, 0, 0],
+                            backgroundColor: '#3498db'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Customer Chart
+            const customerCtx = document.getElementById('customerChart');
+            if (customerCtx) {
+                new Chart(customerCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['B2C Individual', 'B2B Small', 'B2B Corporate'],
+                        datasets: [{
+                            data: [70, 20, 10],
+                            backgroundColor: ['#3498db', '#27ae60', '#f39c12']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Product Chart
+            const productCtx = document.getElementById('productChart');
+            if (productCtx) {
+                new Chart(productCtx, {
+                    type: 'horizontalBar',
+                    data: {
+                        labels: ['Nomor Rumah', 'Signage Akrilik', 'Papan Nama', 'Custom Accessories'],
+                        datasets: [{
+                            label: 'Sales Volume',
+                            data: [40, 30, 20, 10],
+                            backgroundColor: ['#3498db', '#27ae60', '#f39c12', '#e74c3c']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // Initialize charts when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharts();
+        });
+
+        // Sample form submission
+        document.querySelector('#customerModal form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Customer would be added to the system (demo functionality)');
+            closeModal('customerModal');
+        });
+
+        // Sample data refresh
+        setInterval(function() {
+            // Simulate real-time updates
+            const metrics = document.querySelectorAll('.metric-value');
+            // Add subtle animation to show data is "live"
+        }, 30000);
+    </script>
+</body>
+</html>
