@@ -73,27 +73,28 @@ Proyek pengembangan sistem informasi terintegrasi untuk SATRIAMART (perusahaan d
 ### 🛠️ Technology Stack
 
 #### Frontend
-- **Framework:** React.js dengan TypeScript
-- **UI Library:** Material-UI untuk consistent design
-- **State Management:** Redux untuk centralized state
-- **Build Tool:** Create React App dengan Webpack
+- **Framework:** Laravel Blade Templates untuk server-side rendering
+- **CSS Framework:** TailwindCSS untuk utility-first styling
+- **JavaScript:** Vanilla JavaScript (ES6+) untuk client-side interactivity
+- **Build Tool:** Laravel Mix (Webpack) untuk asset compilation
 
 #### Backend
-- **Runtime:** Node.js dengan Express.js framework
-- **API Design:** RESTful APIs dengan OpenAPI documentation
-- **Authentication:** JWT tokens dengan refresh mechanism
-- **Database ORM:** Sequelize untuk PostgreSQL
+- **Framework:** Laravel (PHP) untuk full-stack web development
+- **Language:** PHP 8.0+ dengan modern syntax dan features
+- **API Design:** RESTful APIs dengan Laravel API Resources
+- **Authentication:** Laravel Sanctum untuk secure token-based auth
+- **Database ORM:** Eloquent ORM untuk MySQL database interactions
 
 #### Database
-- **Primary:** PostgreSQL untuk transactional data
+- **Primary:** MySQL untuk transactional data dan business operations
 - **Caching:** Redis untuk session dan query caching
-- **Analytics:** Data warehouse untuk business intelligence
+- **Analytics:** Data warehouse untuk comprehensive business intelligence
 
 #### Infrastructure
-- **Containerization:** Docker untuk consistent environments
-- **Cloud Platform:** AWS/GCP untuk scalability
-- **CI/CD:** Automated testing dan deployment pipelines
-- **Monitoring:** Application monitoring dengan logs
+- **Containerization:** Docker untuk consistent development environments
+- **Cloud Platform:** AWS/GCP untuk production scalability
+- **CI/CD:** Automated testing dan deployment dengan Laravel workflows
+- **Monitoring:** Laravel Telescope untuk application insights dan debugging
 
 ### 🎯 Project Success Metrics
 

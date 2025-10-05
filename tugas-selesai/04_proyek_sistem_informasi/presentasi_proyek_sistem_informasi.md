@@ -117,9 +117,9 @@
 ```
 
 #### ⚡ **TECHNOLOGY STACK**
-- **Frontend:** React.js + Material-UI (Modern, Responsive)
-- **Backend:** Node.js + Express.js (Scalable, Fast)
-- **Database:** PostgreSQL (Reliable, Performance)
+- **Frontend:** Laravel Blade + TailwindCSS (Modern, Responsive)
+- **Backend:** Laravel (PHP) (Robust, Scalable)
+- **Database:** MySQL (Reliable, Performance)
 - **Infrastructure:** Cloud-based (AWS/GCP)
 
 ---

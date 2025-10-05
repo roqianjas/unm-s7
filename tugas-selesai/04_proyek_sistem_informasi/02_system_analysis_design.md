@@ -202,7 +202,7 @@ SATRIAMART Integrated Management System (SIMS) adalah solusi sistem informasi te
 #### 5.4 Compatibility Requirements
 - **Browser Support:** Chrome, Firefox, Safari, Edge (latest versions)
 - **Operating System:** Platform independent (web-based)
-- **Database:** MySQL/PostgreSQL compatibility
+- **Database:** MySQL compatibility
 - **Integration:** REST API untuk third-party integrations
 
 ### 6. USE CASE SCENARIOS
@@ -280,8 +280,8 @@ SATRIAMART Integrated Management System (SIMS) adalah solusi sistem informasi te
 ├─────────────────────────────────────────────────────────────────┤
 │  Customer DB  │ Inventory DB  │ Production DB  │ Analytics DB    │
 │               │               │                │                 │
-│ MySQL/        │ MySQL/        │ MySQL/         │ MySQL/ +        │
-│ PostgreSQL    │ PostgreSQL    │ PostgreSQL     │ Data Warehouse  │
+│ MySQL         │ MySQL         │ MySQL          │ MySQL +         │
+│               │               │                │ Data Warehouse  │
 └─────────────────────────────────────────────────────────────────┘
                                 │
 ┌─────────────────────────────────────────────────────────────────┐
@@ -294,19 +294,19 @@ SATRIAMART Integrated Management System (SIMS) adalah solusi sistem informasi te
 #### 1.2 Technology Stack
 
 **Frontend:**
-- **Framework:** React.js dengan TypeScript
-- **UI Library:** Material-UI atau Ant Design
-- **State Management:** Redux atau Context API
-- **Build Tool:** Webpack dengan Create React App
+- **Framework:** TailwindCSS untuk responsive design
+- **JavaScript:** Vanilla JavaScript (ES6+)
+- **UI Components:** Custom components dengan TailwindCSS
+- **Build Tool:** Laravel Mix (Webpack)
 
 **Backend:**
-- **Framework:** Node.js dengan Express.js
-- **Language:** JavaScript/TypeScript
-- **API Style:** RESTful APIs dengan OpenAPI documentation
-- **Authentication:** JWT tokens dengan refresh mechanism
+- **Framework:** Laravel (PHP)
+- **Language:** PHP 8.0+
+- **API Style:** RESTful APIs dengan Laravel API Resources
+- **Authentication:** Laravel Sanctum untuk API tokens
 
 **Database:**
-- **Primary Database:** PostgreSQL untuk transactional data
+- **Primary Database:** MySQL untuk transactional data
 - **Cache:** Redis untuk session management dan caching
 - **Analytics:** Separate data warehouse untuk reporting
 
@@ -314,7 +314,7 @@ SATRIAMART Integrated Management System (SIMS) adalah solusi sistem informasi te
 - **Cloud Provider:** AWS atau Google Cloud Platform
 - **Containerization:** Docker untuk development dan deployment
 - **CI/CD:** GitHub Actions atau GitLab CI
-- **Monitoring:** Application monitoring dengan logs dan metrics
+- **Monitoring:** Laravel Telescope untuk debugging dan monitoring
 
 ### 2. DATABASE DESIGN
 

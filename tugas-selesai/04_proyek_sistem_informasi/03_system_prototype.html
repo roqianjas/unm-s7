@@ -5,729 +5,608 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SATRIAMART SIMS - Integrated Management System</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#667eea',
+                        secondary: '#764ba2'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .nav-bar {
-            background: white;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-item {
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .nav-item:hover, .nav-item.active {
-            background-color: #667eea;
-            color: white;
-        }
-
-        .main-content {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
         .metric-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease-in-out;
         }
-
         .metric-card:hover {
             transform: translateY(-5px);
         }
-
-        .metric-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .metric-value {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .metric-label {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        .metric-trend {
-            color: #28a745;
-            font-size: 0.8rem;
-            margin-top: 0.5rem;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .chart-container, .alerts-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .chart-container h3, .alerts-container h3 {
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
         .chart-placeholder {
-            height: 300px;
             background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
-                        linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
-                        linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
                         linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
             background-size: 20px 20px;
             background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-            border: 2px dashed #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            border-radius: 5px;
-        }
-
-        .alert-item {
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-left: 4px solid #dc3545;
-            background-color: #f8f9fa;
-            border-radius: 0 5px 5px 0;
-        }
-
-        .alert-item.warning {
-            border-left-color: #ffc107;
-        }
-
-        .alert-item.info {
-            border-left-color: #17a2b8;
-        }
-
-        .data-table {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-top: 2rem;
-        }
-
-        .table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-
-        .table th, .table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #dee2e6;
-        }
-
-        .table th {
-            background-color: #f8f9fa;
-            font-weight: 600;
-        }
-
-        .table tbody tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        .btn {
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        .btn-primary {
-            background-color: #667eea;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-color: #5a6fd8;
-        }
-
-        .btn-success {
-            background-color: #28a745;
-            color: white;
-        }
-
-        .btn-warning {
-            background-color: #ffc107;
-            color: #212529;
-        }
-
-        .status-badge {
-            padding: 0.25rem 0.5rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .status-active {
-            background-color: #d4edda;
-            color: #155724;
-        }
-
-        .status-pending {
-            background-color: #fff3cd;
-            color: #856404;
-        }
-
-        .status-completed {
-            background-color: #d1ecf1;
-            color: #0c5460;
-        }
-
-        .page-header {
-            display: flex;
-            justify-content: between;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-
-        .page-title {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #333;
-        }
-
-        @media (max-width: 768px) {
-            .dashboard-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-menu {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-
-        .module-section {
-            display: none;
-        }
-
-        .module-section.active {
-            display: block;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-100">
     <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">
-                <i class="fas fa-cube"></i> SATRIAMART SIMS
+    <header class="bg-gradient-to-r from-primary to-secondary text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-cube text-xl"></i>
+                <span class="text-xl font-bold">SATRIAMART SIMS</span>
             </div>
-            <div class="user-info">
-                <i class="fas fa-bell"></i>
-                <i class="fas fa-user-circle"></i>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-bell cursor-pointer hover:text-gray-200"></i>
+                <i class="fas fa-user-circle text-xl"></i>
                 <span>Admin User</span>
             </div>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav class="nav-bar">
-        <div class="nav-content">
-            <ul class="nav-menu">
-                <li class="nav-item active" onclick="showModule('dashboard')">
-                    <i class="fas fa-tachometer-alt"></i> Dashboard
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-3">
+            <ul class="flex flex-wrap space-x-4 md:space-x-8">
+                <li class="nav-item bg-primary text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-primary/90 transition-colors" onclick="showModule('dashboard')">
+                    <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
                 </li>
-                <li class="nav-item" onclick="showModule('crm')">
-                    <i class="fas fa-users"></i> Customer Management
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('crm')">
+                    <i class="fas fa-users mr-2"></i>Customer
                 </li>
-                <li class="nav-item" onclick="showModule('inventory')">
-                    <i class="fas fa-boxes"></i> Inventory
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('inventory')">
+                    <i class="fas fa-boxes mr-2"></i>Inventory
                 </li>
-                <li class="nav-item" onclick="showModule('production')">
-                    <i class="fas fa-industry"></i> Production
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('production')">
+                    <i class="fas fa-industry mr-2"></i>Production
                 </li>
-                <li class="nav-item" onclick="showModule('analytics')">
-                    <i class="fas fa-chart-bar"></i> Analytics
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('analytics')">
+                    <i class="fas fa-chart-bar mr-2"></i>Analytics
                 </li>
-                <li class="nav-item" onclick="showModule('admin')">
-                    <i class="fas fa-cog"></i> Admin
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('admin')">
+                    <i class="fas fa-cog mr-2"></i>Admin
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="max-w-7xl mx-auto px-6 py-8">
         <!-- Dashboard Module -->
-        <div id="dashboard" class="module-section active">
-            <div class="page-header">
-                <h1 class="page-title">Executive Dashboard</h1>
+        <div id="dashboard" class="module-section">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Dashboard Overview</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>Quick Action
+                </button>
             </div>
 
             <!-- Metrics Cards -->
-            <div class="dashboard-grid">
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #28a745;">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="metric-value">IDR 125M</div>
-                    <div class="metric-label">Total Sales (YTD)</div>
-                    <div class="metric-trend">
-                        <i class="fas fa-arrow-up"></i> +12% vs last month
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="metric-card bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-users text-4xl text-blue-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">248</div>
+                    <div class="text-gray-600 text-sm">Total Customers</div>
+                    <div class="text-green-500 text-sm mt-2">
+                        <i class="fas fa-arrow-up"></i> +12% from last month
                     </div>
                 </div>
 
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #17a2b8;">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="metric-value">47</div>
-                    <div class="metric-label">Active Orders</div>
-                    <div class="metric-trend">
-                        <i class="fas fa-arrow-up"></i> +5 today
+                <div class="metric-card bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-shopping-cart text-4xl text-green-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">156</div>
+                    <div class="text-gray-600 text-sm">Active Orders</div>
+                    <div class="text-green-500 text-sm mt-2">
+                        <i class="fas fa-arrow-up"></i> +8% from last week
                     </div>
                 </div>
 
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #ffc107;">
-                        <i class="fas fa-warehouse"></i>
-                    </div>
-                    <div class="metric-value">3</div>
-                    <div class="metric-label">Low Stock Items</div>
-                    <div class="metric-trend" style="color: #dc3545;">
-                        <i class="fas fa-exclamation-triangle"></i> Requires attention
+                <div class="metric-card bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-boxes text-4xl text-yellow-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">89%</div>
+                    <div class="text-gray-600 text-sm">Stock Level</div>
+                    <div class="text-yellow-500 text-sm mt-2">
+                        <i class="fas fa-exclamation-triangle"></i> 5 items low stock
                     </div>
                 </div>
 
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #667eea;">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <div class="metric-value">92%</div>
-                    <div class="metric-label">Production Efficiency</div>
-                    <div class="metric-trend">
-                        <i class="fas fa-check"></i> On track
+                <div class="metric-card bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-chart-line text-4xl text-purple-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">Rp 2.4M</div>
+                    <div class="text-gray-600 text-sm">Monthly Revenue</div>
+                    <div class="text-green-500 text-sm mt-2">
+                        <i class="fas fa-arrow-up"></i> +15% from last month
                     </div>
                 </div>
             </div>
 
             <!-- Content Grid -->
-            <div class="content-grid">
-                <div class="chart-container">
-                    <h3>Sales Performance Trend</h3>
-                    <div class="chart-placeholder">
-                        <div>
-                            <i class="fas fa-chart-area" style="font-size: 4rem; color: #ccc;"></i>
-                            <p>Sales trend chart would be displayed here<br>
-                            (Integration with Chart.js or similar library)</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Sales Chart -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Sales Trend</h3>
+                    <div class="chart-placeholder h-80 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500">
+                        <div class="text-center">
+                            <i class="fas fa-chart-area text-4xl mb-2"></i>
+                            <p>Sales trend chart akan ditampilkan di sini</p>
+                            <p class="text-sm">(Laravel Chart.js Integration)</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="alerts-container">
-                    <h3>Alerts & Notifications</h3>
-                    <div class="alert-item warning">
-                        <strong>Low Stock Alert</strong><br>
-                        Acrylic Sheet 5mm clear - Only 15 units remaining
-                    </div>
-                    <div class="alert-item info">
-                        <strong>New Customer</strong><br>
-                        PT Dekorasi Indah registered today
-                    </div>
-                    <div class="alert-item">
-                        <strong>Overdue Order</strong><br>
-                        Order #2024-015 is 2 days overdue
+                <!-- Alerts -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">System Alerts</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-red-500 bg-red-50 p-4 rounded-r-lg">
+                            <p class="font-medium text-red-800">Stock Alert</p>
+                            <p class="text-red-600 text-sm">Akrilik Clear 3mm tersisa 5 unit</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-yellow-500 bg-yellow-50 p-4 rounded-r-lg">
+                            <p class="font-medium text-yellow-800">Order Delay</p>
+                            <p class="text-yellow-600 text-sm">Order #ORD-2024-156 terlambat 2 hari</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-500 bg-blue-50 p-4 rounded-r-lg">
+                            <p class="font-medium text-blue-800">New Order</p>
+                            <p class="text-blue-600 text-sm">3 order baru dari PT. Sentosa</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Recent Orders Table -->
-            <div class="data-table">
-                <h3>Recent Orders</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Order ID</th>
-                            <th>Customer</th>
-                            <th>Product</th>
-                            <th>Amount</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#2024-001</td>
-                            <td>PT ABC Corp</td>
-                            <td>Acrylic Display Stand</td>
-                            <td>IDR 2,500,000</td>
-                            <td><span class="status-badge status-active">In Production</span></td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <td>#2024-002</td>
-                            <td>CV XYZ Design</td>
-                            <td>Custom Signage</td>
-                            <td>IDR 1,800,000</td>
-                            <td><span class="status-badge status-pending">Pending</span></td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <td>#2024-003</td>
-                            <td>John Doe</td>
-                            <td>Acrylic Photo Frame</td>
-                            <td>IDR 150,000</td>
-                            <td><span class="status-badge status-completed">Completed</span></td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="bg-white p-6 rounded-xl shadow-lg mt-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Recent Orders</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Order ID</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Product</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm text-gray-900">#ORD-2024-156</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">PT. Sentosa Indah</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Display Stand Akrilik</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Active</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Rp 2,500,000</td>
+                                <td class="px-6 py-4">
+                                    <button class="bg-primary text-white px-3 py-1 rounded text-xs hover:bg-primary/90">View</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm text-gray-900">#ORD-2024-155</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">CV. Maju Jaya</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Papan Nama Akrilik</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Pending</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Rp 850,000</td>
+                                <td class="px-6 py-4">
+                                    <button class="bg-primary text-white px-3 py-1 rounded text-xs hover:bg-primary/90">View</button>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm text-gray-900">#ORD-2024-154</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Toko Berkah</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Rak Display Mini</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Completed</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Rp 450,000</td>
+                                <td class="px-6 py-4">
+                                    <button class="bg-primary text-white px-3 py-1 rounded text-xs hover:bg-primary/90">View</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <!-- CRM Module -->
-        <div id="crm" class="module-section">
-            <div class="page-header">
-                <h1 class="page-title">Customer Relationship Management</h1>
-                <button class="btn btn-primary">
-                    <i class="fas fa-plus"></i> Add New Customer
+        <div id="crm" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Customer Management</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>Add Customer
                 </button>
             </div>
 
-            <div class="data-table">
-                <div style="margin-bottom: 1rem;">
-                    <input type="text" placeholder="Search customers..." style="padding: 0.5rem; margin-right: 1rem; border: 1px solid #ddd; border-radius: 5px;">
-                    <select style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
-                        <option>All Types</option>
-                        <option>Individual</option>
-                        <option>Corporate</option>
-                    </select>
+            <!-- Customer Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-users text-3xl text-blue-500 mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">248</div>
+                            <div class="text-gray-600 text-sm">Total Customers</div>
+                        </div>
+                    </div>
                 </div>
-                
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Customer Name</th>
-                            <th>Type</th>
-                            <th>Email</th>
-                            <th>Last Order</th>
-                            <th>Total Value</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>PT ABC Corporation</td>
-                            <td>Corporate</td>
-                            <td>contact@abc.com</td>
-                            <td>2024-01-15</td>
-                            <td>IDR 25,000,000</td>
-                            <td><span class="status-badge status-active">Active</span></td>
-                            <td><button class="btn btn-primary">View Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>Individual</td>
-                            <td>john@email.com</td>
-                            <td>2024-01-10</td>
-                            <td>IDR 2,500,000</td>
-                            <td><span class="status-badge status-active">Active</span></td>
-                            <td><button class="btn btn-primary">View Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>CV XYZ Design</td>
-                            <td>Corporate</td>
-                            <td>info@xyz.co.id</td>
-                            <td>2024-01-08</td>
-                            <td>IDR 15,000,000</td>
-                            <td><span class="status-badge status-active">Active</span></td>
-                            <td><button class="btn btn-primary">View Details</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-user-plus text-3xl text-green-500 mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">23</div>
+                            <div class="text-gray-600 text-sm">New This Month</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-star text-3xl text-yellow-500 mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">89%</div>
+                            <div class="text-gray-600 text-sm">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Search and Filter -->
+            <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-1">
+                        <input type="text" placeholder="Search customers..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                        <option>All Categories</option>
+                        <option>Corporate</option>
+                        <option>Individual</option>
+                        <option>VIP</option>
+                    </select>
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90">
+                        <i class="fas fa-search mr-2"></i>Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Customer List -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Total Orders</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Order</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-3">
+                                            PT
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">PT. Sentosa Indah</div>
+                                            <div class="text-sm text-gray-500">sentosa@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Corporate</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">15</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-15</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Active</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <!-- Inventory Module -->
-        <div id="inventory" class="module-section">
-            <div class="page-header">
-                <h1 class="page-title">Inventory Management</h1>
-                <button class="btn btn-primary">
-                    <i class="fas fa-plus"></i> Add Product
+        <div id="inventory" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Inventory Management</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>Add Product
                 </button>
             </div>
 
-            <div class="dashboard-grid">
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #28a745;">
-                        <i class="fas fa-box"></i>
-                    </div>
-                    <div class="metric-value">1,247</div>
-                    <div class="metric-label">Total Products</div>
+            <!-- Inventory Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-boxes text-4xl text-blue-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">1,247</div>
+                    <div class="text-gray-600 text-sm">Total Products</div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #dc3545;">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <div class="metric-value">3</div>
-                    <div class="metric-label">Low Stock Items</div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-exclamation-triangle text-4xl text-yellow-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">5</div>
+                    <div class="text-gray-600 text-sm">Low Stock Alert</div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #ffc107;">
-                        <i class="fas fa-sync"></i>
-                    </div>
-                    <div class="metric-value">12</div>
-                    <div class="metric-label">Pending Orders</div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-chart-pie text-4xl text-green-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">89%</div>
+                    <div class="text-gray-600 text-sm">Stock Level</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-truck text-4xl text-purple-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">3</div>
+                    <div class="text-gray-600 text-sm">Pending Orders</div>
                 </div>
             </div>
 
-            <div class="data-table">
-                <h3>Product Inventory</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Product Code</th>
-                            <th>Product Name</th>
-                            <th>Category</th>
-                            <th>Stock Level</th>
-                            <th>Reorder Point</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ACR-001</td>
-                            <td>Acrylic Sheet 5mm Clear</td>
-                            <td>Raw Material</td>
-                            <td style="color: #dc3545; font-weight: bold;">15</td>
-                            <td>50</td>
-                            <td><span class="status-badge" style="background-color: #f8d7da; color: #721c24;">Low Stock</span></td>
-                            <td><button class="btn btn-warning">Reorder</button></td>
-                        </tr>
-                        <tr>
-                            <td>ACR-002</td>
-                            <td>Acrylic Sheet 3mm Clear</td>
-                            <td>Raw Material</td>
-                            <td>125</td>
-                            <td>30</td>
-                            <td><span class="status-badge status-active">Good</span></td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <td>DSP-001</td>
-                            <td>Display Stand Medium</td>
-                            <td>Finished Goods</td>
-                            <td>8</td>
-                            <td>10</td>
-                            <td><span class="status-badge" style="background-color: #fff3cd; color: #856404;">Medium</span></td>
-                            <td><button class="btn btn-primary">View</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Stock Alerts -->
+            <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Stock Alerts</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-circle text-red-500 mr-3"></i>
+                            <div>
+                                <div class="font-medium text-red-800">Akrilik Clear 3mm</div>
+                                <div class="text-red-600 text-sm">Stock: 5 units (Min: 10)</div>
+                            </div>
+                        </div>
+                        <button class="bg-red-500 text-white px-4 py-2 rounded text-sm hover:bg-red-600">
+                            Reorder Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product List -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Product Inventory</h3>
+                        <div class="flex gap-4 mt-4 md:mt-0">
+                            <input type="text" placeholder="Search products..." class="px-4 py-2 border border-gray-300 rounded-lg">
+                            <select class="px-4 py-2 border border-gray-300 rounded-lg">
+                                <option>All Categories</option>
+                                <option>Raw Materials</option>
+                                <option>Finished Goods</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Product</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Category</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stock</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Unit Price</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-gray-200 rounded mr-3 flex items-center justify-center">
+                                            <i class="fas fa-cube text-gray-500"></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Akrilik Clear 3mm</div>
+                                            <div class="text-sm text-gray-500">120 x 80 cm</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Raw Material</td>
+                                <td class="px-6 py-4">
+                                    <span class="text-sm font-medium text-red-600">5 sheets</span>
+                                    <div class="text-xs text-red-500">Low Stock</div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Rp 85,000</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Critical</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <!-- Production Module -->
-        <div id="production" class="module-section">
-            <div class="page-header">
-                <h1 class="page-title">Production Planning</h1>
-                <button class="btn btn-primary">
-                    <i class="fas fa-plus"></i> Create Work Order
+        <div id="production" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Production Management</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>New Work Order
                 </button>
             </div>
 
-            <div class="dashboard-grid">
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #17a2b8;">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="metric-value">23</div>
-                    <div class="metric-label">Active Work Orders</div>
+            <!-- Production Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-clipboard-list text-4xl text-blue-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">23</div>
+                    <div class="text-gray-600 text-sm">Active Work Orders</div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #28a745;">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <div class="metric-value">92%</div>
-                    <div class="metric-label">On-Time Delivery</div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-clock text-4xl text-yellow-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">156</div>
+                    <div class="text-gray-600 text-sm">Hours Scheduled</div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #667eea;">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="metric-value">4.2</div>
-                    <div class="metric-label">Avg. Lead Time (days)</div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">85%</div>
+                    <div class="text-gray-600 text-sm">Efficiency Rate</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-tools text-4xl text-purple-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">5</div>
+                    <div class="text-gray-600 text-sm">Available Machines</div>
                 </div>
             </div>
 
-            <div class="data-table">
-                <h3>Work Orders</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>WO Number</th>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Progress</th>
-                            <th>Due Date</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>WO-2024-001</td>
-                            <td>Acrylic Display Stand</td>
-                            <td>50 units</td>
-                            <td>75%</td>
-                            <td>2024-01-20</td>
-                            <td><span class="status-badge status-active">In Progress</span></td>
-                            <td><button class="btn btn-primary">Update</button></td>
-                        </tr>
-                        <tr>
-                            <td>WO-2024-002</td>
-                            <td>Custom Signage</td>
-                            <td>1 unit</td>
-                            <td>25%</td>
-                            <td>2024-01-25</td>
-                            <td><span class="status-badge status-pending">Planned</span></td>
-                            <td><button class="btn btn-primary">Start</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Work Orders -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800">Active Work Orders</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Work Order</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Product</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Priority</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Progress</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Due Date</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">#WO-2024-001</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Display Stand Custom</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">PT. Sentosa Indah</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">High</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full w-3/4"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">75%</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-25</td>
+                                <td class="px-6 py-4 text-sm">
+                                    <button class="text-blue-600 hover:text-blue-800 mr-2">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="text-green-600 hover:text-green-800">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <!-- Analytics Module -->
-        <div id="analytics" class="module-section">
-            <div class="page-header">
-                <h1 class="page-title">Business Analytics</h1>
-                <button class="btn btn-primary">
-                    <i class="fas fa-download"></i> Export Report
+        <div id="analytics" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Analytics & Reports</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-download mr-2"></i>Export Report
                 </button>
             </div>
 
-            <div class="dashboard-grid">
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #28a745;">
-                        <i class="fas fa-dollar-sign"></i>
+            <!-- Analytics Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">Rp 24.5M</div>
+                            <div class="text-gray-600 text-sm">Monthly Revenue</div>
+                        </div>
+                        <i class="fas fa-chart-line text-3xl text-green-500"></i>
                     </div>
-                    <div class="metric-value">IDR 125M</div>
-                    <div class="metric-label">Revenue (YTD)</div>
+                    <div class="mt-4 text-green-500 text-sm">
+                        <i class="fas fa-arrow-up"></i> +15% vs last month
+                    </div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #17a2b8;">
-                        <i class="fas fa-percentage"></i>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">156</div>
+                            <div class="text-gray-600 text-sm">Orders Completed</div>
+                        </div>
+                        <i class="fas fa-check-circle text-3xl text-blue-500"></i>
                     </div>
-                    <div class="metric-value">23%</div>
-                    <div class="metric-label">Profit Margin</div>
+                    <div class="mt-4 text-green-500 text-sm">
+                        <i class="fas fa-arrow-up"></i> +8% vs last month
+                    </div>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-icon" style="color: #ffc107;">
-                        <i class="fas fa-users"></i>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">92%</div>
+                            <div class="text-gray-600 text-sm">Customer Satisfaction</div>
+                        </div>
+                        <i class="fas fa-star text-3xl text-yellow-500"></i>
                     </div>
-                    <div class="metric-value">156</div>
-                    <div class="metric-label">Total Customers</div>
+                    <div class="mt-4 text-green-500 text-sm">
+                        <i class="fas fa-arrow-up"></i> +3% vs last month
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">2.3 days</div>
+                            <div class="text-gray-600 text-sm">Avg. Delivery Time</div>
+                        </div>
+                        <i class="fas fa-truck text-3xl text-purple-500"></i>
+                    </div>
+                    <div class="mt-4 text-red-500 text-sm">
+                        <i class="fas fa-arrow-down"></i> -0.5 days improved
+                    </div>
                 </div>
             </div>
 
-            <div class="content-grid">
-                <div class="chart-container">
-                    <h3>Monthly Sales Trend</h3>
-                    <div class="chart-placeholder">
-                        <div>
-                            <i class="fas fa-chart-line" style="font-size: 4rem; color: #ccc;"></i>
-                            <p>Monthly sales trend chart<br>showing growth patterns</p>
+            <!-- Charts -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Revenue Trend</h3>
+                    <div class="chart-placeholder h-64 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500">
+                        <div class="text-center">
+                            <i class="fas fa-chart-area text-4xl mb-2"></i>
+                            <p>Revenue chart (Chart.js)</p>
                         </div>
                     </div>
                 </div>
-                <div class="chart-container">
-                    <h3>Product Categories</h3>
-                    <div class="chart-placeholder">
-                        <div>
-                            <i class="fas fa-chart-pie" style="font-size: 4rem; color: #ccc;"></i>
-                            <p>Product sales distribution<br>by category</p>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Product Categories</h3>
+                    <div class="chart-placeholder h-64 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-gray-500">
+                        <div class="text-center">
+                            <i class="fas fa-chart-pie text-4xl mb-2"></i>
+                            <p>Category distribution (Chart.js)</p>
                         </div>
                     </div>
                 </div>
@@ -735,82 +614,181 @@
         </div>
 
         <!-- Admin Module -->
-        <div id="admin" class="module-section">
-            <div class="page-header">
-                <h1 class="page-title">System Administration</h1>
+        <div id="admin" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">System Administration</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>Add User
+                </button>
             </div>
 
-            <div class="dashboard-grid">
-                <div class="metric-card" onclick="alert('User Management feature')">
-                    <div class="metric-icon" style="color: #667eea;">
-                        <i class="fas fa-users-cog"></i>
+            <!-- Admin Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-users text-3xl text-blue-500 mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">12</div>
+                            <div class="text-gray-600 text-sm">Active Users</div>
+                        </div>
                     </div>
-                    <div class="metric-value">12</div>
-                    <div class="metric-label">System Users</div>
                 </div>
-                <div class="metric-card" onclick="alert('Role Management feature')">
-                    <div class="metric-icon" style="color: #28a745;">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-3xl text-green-500 mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">99.9%</div>
+                            <div class="text-gray-600 text-sm">System Uptime</div>
+                        </div>
                     </div>
-                    <div class="metric-value">5</div>
-                    <div class="metric-label">User Roles</div>
                 </div>
-                <div class="metric-card" onclick="alert('System Settings feature')">
-                    <div class="metric-icon" style="color: #ffc107;">
-                        <i class="fas fa-cogs"></i>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center">
+                        <i class="fas fa-database text-3xl text-purple-500 mr-4"></i>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-800">2.4 GB</div>
+                            <div class="text-gray-600 text-sm">Database Size</div>
+                        </div>
                     </div>
-                    <div class="metric-value">Settings</div>
-                    <div class="metric-label">System Configuration</div>
                 </div>
-                <div class="metric-card" onclick="alert('Audit Logs feature')">
-                    <div class="metric-icon" style="color: #17a2b8;">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                    <div class="metric-value">Logs</div>
-                    <div class="metric-label">Audit Trail</div>
+            </div>
+
+            <!-- User Management -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800">User Management</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">User</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Role</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Login</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-3">
+                                            AD
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Admin User</div>
+                                            <div class="text-sm text-gray-500">admin@satriamart.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Administrator</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2 hours ago</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Active</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm">
+                                    <button class="text-blue-600 hover:text-blue-800 mr-2">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="text-red-600 hover:text-red-800">
+                                        <i class="fas fa-ban"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </main>
 
     <script>
+        // Vanilla JavaScript for module switching
         function showModule(moduleId) {
             // Hide all modules
             const modules = document.querySelectorAll('.module-section');
-            modules.forEach(module => module.classList.remove('active'));
-            
-            // Show selected module
-            document.getElementById(moduleId).classList.add('active');
-            
-            // Update navigation
+            modules.forEach(module => {
+                module.classList.add('hidden');
+            });
+
+            // Remove active class from all nav items
             const navItems = document.querySelectorAll('.nav-item');
-            navItems.forEach(item => item.classList.remove('active'));
-            event.target.closest('.nav-item').classList.add('active');
+            navItems.forEach(item => {
+                item.classList.remove('bg-primary', 'text-white');
+                item.classList.add('hover:bg-primary', 'hover:text-white');
+            });
+
+            // Show selected module
+            const targetModule = document.getElementById(moduleId);
+            if (targetModule) {
+                targetModule.classList.remove('hidden');
+            }
+
+            // Add active class to clicked nav item
+            const clickedNav = event.target.closest('.nav-item');
+            if (clickedNav) {
+                clickedNav.classList.add('bg-primary', 'text-white');
+                clickedNav.classList.remove('hover:bg-primary', 'hover:text-white');
+            }
         }
 
         // Simulate real-time updates
         function updateMetrics() {
-            // This would typically fetch data from the backend
-            console.log('Updating metrics...');
+            // This would be connected to Laravel backend via AJAX
+            console.log('Updating metrics from Laravel API...');
+            
+            // Example: Update customer count
+            // fetch('/api/dashboard/metrics')
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         document.querySelector('#customer-count').textContent = data.customers;
+            //     });
         }
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
+            console.log('SATRIAMART SIMS (Laravel + TailwindCSS) initialized');
+            
             // Set up periodic updates
             setInterval(updateMetrics, 30000); // Update every 30 seconds
             
-            // Initialize tooltips and other UI enhancements
-            console.log('SATRIAMART SIMS initialized');
-        });
-
-        // Add some interactivity
-        document.querySelectorAll('.metric-card').forEach(card => {
-            card.addEventListener('click', function() {
-                if (!this.onclick) {
-                    console.log('Metric card clicked:', this.querySelector('.metric-label').textContent);
-                }
+            // Add click handlers for interactive elements
+            document.querySelectorAll('.metric-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    console.log('Metric card clicked:', this);
+                    // Navigate to detailed view
+                });
             });
         });
+
+        // Example of Laravel integration functions
+        async function fetchCustomers() {
+            try {
+                const response = await fetch('/api/customers');
+                const customers = await response.json();
+                return customers;
+            } catch (error) {
+                console.error('Error fetching customers:', error);
+            }
+        }
+
+        async function createOrder(orderData) {
+            try {
+                const response = await fetch('/api/orders', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    },
+                    body: JSON.stringify(orderData)
+                });
+                const result = await response.json();
+                return result;
+            } catch (error) {
+                console.error('Error creating order:', error);
+            }
+        }
     </script>
 </body>
 </html>

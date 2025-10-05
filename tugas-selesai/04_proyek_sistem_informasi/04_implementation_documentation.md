@@ -13,155 +13,124 @@
 ### 1.1 Development Environment Setup
 
 #### Prerequisites
-- **Node.js:** Version 18.x atau lebih baru
-- **Database:** PostgreSQL 14.x atau MySQL 8.x
-- **Package Manager:** npm atau yarn
+- **PHP:** Version 8.0 atau lebih baru
+- **Database:** MySQL 8.0 atau lebih baru
+- **Package Manager:** Composer
 - **Code Editor:** VS Code dengan ekstensi yang disarankan
 - **Version Control:** Git
 
 #### Environment Configuration
 
-**Backend Setup (Node.js + Express)**
+**Backend Setup (Laravel)**
 ```bash
-# 1. Initialize project
-mkdir satriamart-sims-backend
-cd satriamart-sims-backend
-npm init -y
+# 1. Create Laravel project
+composer create-project laravel/laravel satriamart-sims
+cd satriamart-sims
 
-# 2. Install dependencies
-npm install express cors helmet morgan compression dotenv
-npm install jsonwebtoken bcryptjs validator express-rate-limit
-npm install pg sequelize sequelize-cli  # untuk PostgreSQL
-npm install mysql2 sequelize sequelize-cli  # untuk MySQL
+# 2. Install additional packages
+composer require laravel/sanctum
+composer require spatie/laravel-permission
+composer require barryvdh/laravel-cors
+composer require laravel/telescope
 
 # 3. Install development dependencies
-npm install -D nodemon jest supertest eslint prettier
+composer require --dev laravel/sail
+composer require --dev phpunit/phpunit
 ```
 
-**Frontend Setup (React.js)**
+**Frontend Setup (TailwindCSS)**
 ```bash
-# 1. Create React application
-npx create-react-app satriamart-sims-frontend --template typescript
-cd satriamart-sims-frontend
+# 1. Install TailwindCSS via NPM
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 
-# 2. Install additional dependencies
-npm install @mui/material @emotion/react @emotion/styled
-npm install @mui/icons-material @mui/x-data-grid
-npm install axios react-router-dom @reduxjs/toolkit react-redux
-npm install recharts date-fns
+# 2. Install additional frontend dependencies
+npm install alpinejs
+npm install chart.js
 
-# 3. Install development dependencies
-npm install -D @types/node @types/react @types/react-dom
+# 3. Configure TailwindCSS in tailwind.config.js
+# Add paths to all template files
 ```
 
 **Database Setup**
 ```sql
--- PostgreSQL Database Creation
+-- MySQL Database Creation
 CREATE DATABASE satriamart_sims;
-CREATE USER sims_user WITH PASSWORD 'secure_password';
-GRANT ALL PRIVILEGES ON DATABASE satriamart_sims TO sims_user;
-
--- Basic database configuration
-\c satriamart_sims;
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE USER 'sims_user'@'localhost' IDENTIFIED BY 'secure_password';
+GRANT ALL PRIVILEGES ON satriamart_sims.* TO 'sims_user'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
 ### 1.2 Project Structure
 
 #### Backend Structure
 ```
-satriamart-sims-backend/
-├── src/
-│   ├── config/
-│   │   ├── database.js
-│   │   ├── jwt.js
-│   │   └── app.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── customerController.js
-│   │   ├── orderController.js
-│   │   ├── inventoryController.js
-│   │   └── productionController.js
-│   ├── middleware/
-│   │   ├── auth.js
-│   │   ├── validation.js
-│   │   └── errorHandler.js
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Customer.js
-│   │   ├── Order.js
-│   │   ├── Product.js
-│   │   └── WorkOrder.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── customers.js
-│   │   ├── orders.js
-│   │   ├── inventory.js
-│   │   └── production.js
-│   ├── services/
-│   │   ├── emailService.js
-│   │   ├── analyticsService.js
-│   │   └── reportService.js
-│   └── utils/
-│       ├── logger.js
-│       ├── validators.js
-│       └── helpers.js
-├── tests/
-├── migrations/
-├── seeders/
-├── package.json
-└── README.md
+satriamart-sims/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── AuthController.php
+│   │   │   ├── CustomerController.php
+│   │   │   ├── OrderController.php
+│   │   │   ├── InventoryController.php
+│   │   │   └── ProductionController.php
+│   │   ├── Middleware/
+│   │   │   ├── ApiAuth.php
+│   │   │   └── CorsMiddleware.php
+│   │   └── Requests/
+│   │       ├── CustomerRequest.php
+│   │       └── OrderRequest.php
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Customer.php
+│   │   ├── Order.php
+│   │   ├── Product.php
+│   │   └── WorkOrder.php
+│   └── Services/
+│       ├── CustomerService.php
+│       ├── OrderService.php
+│       └── InventoryService.php
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+│   └── factories/
+├── resources/
+│   ├── views/
+│   ├── js/
+│   └── css/
+├── routes/
+│   ├── web.php
+│   ├── api.php
+│   └── channels.php
+└── tests/
+    ├── Feature/
+    └── Unit/
 ```
 
-#### Frontend Structure
+#### Frontend Structure (dalam resources/)
 ```
-satriamart-sims-frontend/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── common/
-│   │   │   ├── Header.tsx
-│   │   │   ├── Navigation.tsx
-│   │   │   ├── Dashboard.tsx
-│   │   │   └── LoadingSpinner.tsx
-│   │   ├── customers/
-│   │   │   ├── CustomerList.tsx
-│   │   │   ├── CustomerForm.tsx
-│   │   │   └── CustomerDetails.tsx
-│   │   ├── inventory/
-│   │   │   ├── ProductList.tsx
-│   │   │   ├── StockLevels.tsx
-│   │   │   └── ReorderAlerts.tsx
-│   │   └── production/
-│   │       ├── WorkOrderList.tsx
-│   │       ├── ProductionSchedule.tsx
-│   │       └── ResourceAllocation.tsx
-│   ├── pages/
-│   │   ├── Dashboard.tsx
-│   │   ├── Customers.tsx
-│   │   ├── Inventory.tsx
-│   │   ├── Production.tsx
-│   │   └── Analytics.tsx
-│   ├── services/
-│   │   ├── api.ts
-│   │   ├── customerService.ts
-│   │   ├── inventoryService.ts
-│   │   └── productionService.ts
-│   ├── store/
-│   │   ├── index.ts
-│   │   ├── authSlice.ts
-│   │   ├── customerSlice.ts
-│   │   └── inventorySlice.ts
-│   ├── types/
-│   │   ├── auth.ts
-│   │   ├── customer.ts
-│   │   └── inventory.ts
-│   └── utils/
-│       ├── constants.ts
-│       ├── formatters.ts
-│       └── validators.ts
-├── package.json
-└── README.md
+resources/
+├── views/
+│   ├── layouts/
+│   │   └── app.blade.php
+│   ├── dashboard/
+│   │   └── index.blade.php
+│   ├── customers/
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   └── show.blade.php
+│   ├── inventory/
+│   │   ├── index.blade.php
+│   │   └── products.blade.php
+│   └── production/
+│       └── workorders.blade.php
+├── js/
+│   ├── app.js
+│   ├── dashboard.js
+│   ├── customers.js
+│   └── inventory.js
+└── css/
+    └── app.css (TailwindCSS)
 ```
 
 ### 1.3 Core Implementation
@@ -170,55 +139,96 @@ satriamart-sims-frontend/
 
 **Customer Model**
 ```javascript
-// models/Customer.js
-const { DataTypes } = require('sequelize');
-const { sequelize } = require('../config/database');
+#### Database Models (Eloquent)
 
-const Customer = sequelize.define('Customer', {
-  customer_id: {
-    type: DataTypes.UUID,
-    defaultValue: DataTypes.UUIDV4,
-    primaryKey: true
-  },
-  customer_type: {
-    type: DataTypes.ENUM('individual', 'corporate'),
-    allowNull: false
-  },
-  company_name: {
-    type: DataTypes.STRING(255),
-    allowNull: true
-  },
-  contact_person: {
-    type: DataTypes.STRING(255),
-    allowNull: false
-  },
-  email: {
-    type: DataTypes.STRING(255),
-    allowNull: false,
-    unique: true,
-    validate: {
-      isEmail: true
+**Customer Model**
+```php
+// app/Models/Customer.php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Customer extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+        'address',
+        'customer_type',
+        'company_name',
+        'contact_person',
+        'notes'
+    ];
+
+    protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+    ];
+
+    // Relationships
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
     }
-  },
-  phone: {
-    type: DataTypes.STRING(50),
-    allowNull: false
-  },
-  address: {
-    type: DataTypes.TEXT,
-    allowNull: true
-  },
-  status: {
-    type: DataTypes.ENUM('active', 'inactive', 'suspended'),
-    defaultValue: 'active'
-  }
-}, {
-  tableName: 'customers',
-  timestamps: true,
-  underscored: true
-});
 
-module.exports = Customer;
+    public function communications()
+    {
+        return $this->hasMany(Communication::class);
+    }
+}
+```
+
+**Product Model**
+```php
+// app/Models/Product.php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Product extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'sku',
+        'category',
+        'description',
+        'unit_price',
+        'cost_price',
+        'stock_quantity',
+        'reorder_point',
+        'unit_of_measure'
+    ];
+
+    protected $casts = [
+        'unit_price' => 'decimal:2',
+        'cost_price' => 'decimal:2',
+        'stock_quantity' => 'integer',
+        'reorder_point' => 'integer',
+    ];
+
+    // Relationships
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItem::class);
+    }
+
+    public function stockMovements()
+    {
+        return $this->hasMany(StockMovement::class);
+    }
+}
+```
 ```
 
 **Product Model**
@@ -278,6 +288,80 @@ module.exports = Product;
 #### API Controllers
 
 **Customer Controller**
+```php
+// app/Http/Controllers/CustomerController.php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Customer;
+use App\Http\Requests\CustomerRequest;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+
+class CustomerController extends Controller
+{
+    public function index(Request $request): JsonResponse
+    {
+        $query = Customer::query();
+
+        // Search functionality
+        if ($request->has('search')) {
+            $search = $request->get('search');
+            $query->where(function($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('email', 'like', "%{$search}%")
+                  ->orWhere('company_name', 'like', "%{$search}%");
+            });
+        }
+
+        // Filter by type
+        if ($request->has('type')) {
+            $query->where('customer_type', $request->get('type'));
+        }
+
+        $customers = $query->with('orders')
+                          ->paginate($request->get('per_page', 15));
+
+        return response()->json($customers);
+    }
+
+    public function store(CustomerRequest $request): JsonResponse
+    {
+        $customer = Customer::create($request->validated());
+
+        return response()->json([
+            'message' => 'Customer created successfully',
+            'data' => $customer
+        ], 201);
+    }
+
+    public function show(Customer $customer): JsonResponse
+    {
+        $customer->load(['orders.orderItems.product', 'communications']);
+        
+        return response()->json($customer);
+    }
+
+    public function update(CustomerRequest $request, Customer $customer): JsonResponse
+    {
+        $customer->update($request->validated());
+
+        return response()->json([
+            'message' => 'Customer updated successfully',
+            'data' => $customer
+        ]);
+    }
+
+    public function destroy(Customer $customer): JsonResponse
+    {
+        $customer->delete();
+
+        return response()->json([
+            'message' => 'Customer deleted successfully'
+        ]);
+    }
+}
 ```javascript
 // controllers/customerController.js
 const Customer = require('../models/Customer');
@@ -394,12 +478,148 @@ class CustomerController {
 module.exports = new CustomerController();
 ```
 
-#### Frontend Components
+#### Frontend Components (Blade Templates)
 
 **Customer List Component**
-```typescript
-// components/customers/CustomerList.tsx
-import React, { useState, useEffect } from 'react';
+```blade
+<!-- resources/views/customers/index.blade.php -->
+@extends('layouts.app')
+
+@section('title', 'Customer Management')
+
+@section('content')
+<div class="max-w-7xl mx-auto px-6 py-8">
+    <!-- Page Header -->
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">Customer Management</h1>
+        <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors" 
+                onclick="openCustomerModal()">
+            <i class="fas fa-plus mr-2"></i>Add Customer
+        </button>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+        <form method="GET" action="{{ route('customers.index') }}" class="flex flex-col md:flex-row gap-4">
+            <div class="flex-1">
+                <input type="text" 
+                       name="search" 
+                       value="{{ request('search') }}"
+                       placeholder="Search customers..."
+                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+            </div>
+            <select name="type" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                <option value="">All Types</option>
+                <option value="individual" {{ request('type') == 'individual' ? 'selected' : '' }}>Individual</option>
+                <option value="corporate" {{ request('type') == 'corporate' ? 'selected' : '' }}>Corporate</option>
+            </select>
+            <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90">
+                <i class="fas fa-search mr-2"></i>Search
+            </button>
+        </form>
+    </div>
+
+    <!-- Customer List -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Total Orders</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Order</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    @forelse($customers as $customer)
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-3">
+                                    {{ strtoupper(substr($customer->name, 0, 2)) }}
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-gray-900">{{ $customer->name }}</div>
+                                    <div class="text-sm text-gray-500">{{ $customer->email }}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ ucfirst($customer->customer_type) }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $customer->orders_count ?? 0 }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {{ $customer->last_order_date ? $customer->last_order_date->format('Y-m-d') : 'No orders' }}
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Active</span>
+                        </td>
+                        <td class="px-6 py-4 text-sm">
+                            <div class="flex space-x-2">
+                                <a href="{{ route('customers.show', $customer) }}" 
+                                   class="text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="{{ route('customers.edit', $customer) }}" 
+                                   class="text-green-600 hover:text-green-800">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button onclick="deleteCustomer({{ $customer->id }})" 
+                                        class="text-red-600 hover:text-red-800">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    @empty
+                    <tr>
+                        <td colspan="6" class="px-6 py-4 text-center text-gray-500">
+                            No customers found
+                        </td>
+                    </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="px-6 py-4 bg-gray-50">
+            {{ $customers->links() }}
+        </div>
+    </div>
+</div>
+
+<script>
+// Vanilla JavaScript for customer management
+function openCustomerModal() {
+    // Implementation for opening modal
+}
+
+async function deleteCustomer(customerId) {
+    if (confirm('Are you sure you want to delete this customer?')) {
+        try {
+            const response = await fetch(`/api/customers/${customerId}`, {
+                method: 'DELETE',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                    'Accept': 'application/json',
+                }
+            });
+            
+            if (response.ok) {
+                location.reload();
+            } else {
+                alert('Error deleting customer');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error deleting customer');
+        }
+    }
+}
+</script>
+@endsection
 import {
   Paper,
   Table,
@@ -581,17 +801,48 @@ export default CustomerList;
 
 ### 1.4 Testing Implementation
 
-#### Unit Tests
-```javascript
-// tests/controllers/customerController.test.js
-const request = require('supertest');
-const app = require('../src/app');
-const Customer = require('../src/models/Customer');
+#### Unit Tests (PHPUnit)
+```php
+// tests/Unit/CustomerTest.php
+<?php
 
-describe('Customer Controller', () => {
-  beforeEach(async () => {
-    await Customer.destroy({ where: {} });
-  });
+namespace Tests\Unit;
+
+use App\Models\Customer;
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class CustomerTest extends TestCase
+{
+    use RefreshDatabase;
+
+    public function test_customer_can_be_created()
+    {
+        $customerData = [
+            'name' => 'John Doe',
+            'email' => 'john@example.com',
+            'phone' => '123456789',
+            'customer_type' => 'individual',
+            'address' => '123 Main St'
+        ];
+
+        $customer = Customer::create($customerData);
+
+        $this->assertInstanceOf(Customer::class, $customer);
+        $this->assertEquals('John Doe', $customer->name);
+        $this->assertEquals('individual', $customer->customer_type);
+    }
+
+    public function test_customer_has_orders_relationship()
+    {
+        $customer = Customer::factory()->create();
+        
+        $this->assertInstanceOf(
+            \Illuminate\Database\Eloquent\Collection::class,
+            $customer->orders
+        );
+    }
+}
 
   describe('GET /api/customers', () => {
     it('should return list of customers', async () => {

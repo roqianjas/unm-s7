@@ -181,10 +181,10 @@ SATRIAMART sebagai perusahaan dekorasi & aksesoris akrilik menghadapi tantangan 
 #### Technical Resources
 - Development Environment: Local + Cloud (AWS/GCP)
 - Development Tools: VS Code, Git, Docker
-- Database: MySQL/PostgreSQL
-- Frontend Framework: React.js/Vue.js
-- Backend Framework: Node.js/Laravel
-- Testing Tools: Jest, Selenium
+- Database: MySQL
+- Frontend Framework: TailwindCSS + Vanilla JavaScript
+- Backend Framework: Laravel (PHP)
+- Testing Tools: PHPUnit, Laravel Dusk
 - Project Management: Jira/Trello
 
 ### 4. RISK REGISTER & MITIGATION PLAN

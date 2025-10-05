@@ -410,20 +410,20 @@ SATRIAMART SIMS project successfully completed dengan semua major deliverables a
 ### 5.2 Technical Lessons
 
 #### Technology Choices
-1. **Node.js + React.js Stack**
-   - **Positive:** Rapid development, good ecosystem
+1. **Laravel + TailwindCSS Stack**
+   - **Positive:** Full-stack framework dengan rapid development
    - **Challenge:** Learning curve untuk team members
-   - **Recommendation:** Good choice untuk future projects
+   - **Recommendation:** Excellent choice untuk business applications
 
-2. **PostgreSQL Database**
-   - **Positive:** Robust, excellent performance
-   - **Challenge:** Initial setup complexity
-   - **Recommendation:** Ideal untuk data-intensive applications
+2. **MySQL Database**
+   - **Positive:** Reliable, well-documented, good performance
+   - **Challenge:** Migration dari existing systems
+   - **Recommendation:** Ideal untuk most business applications
 
-3. **Material-UI Framework**
-   - **Positive:** Consistent design, good components
-   - **Challenge:** Customization limitations
-   - **Recommendation:** Suitable untuk business applications
+3. **TailwindCSS Framework**
+   - **Positive:** Utility-first, highly customizable, responsive
+   - **Challenge:** Initial learning curve
+   - **Recommendation:** Perfect untuk modern web interfaces
 
 #### Development Practices
 1. **Git Workflow**

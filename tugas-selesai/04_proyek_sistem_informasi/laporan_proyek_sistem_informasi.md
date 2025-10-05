@@ -1,7 +1,11 @@
 # LAPORAN PROYEK SISTEM INFORMASI
 ## SATRIAMART Integrated Management System (SIMS)
 
-**Universitas Nusa Mandiri**  
+**Un**Backend:**
+- **Framework:** Laravel (PHP) untuk robust web application development
+- **Language:** PHP 8.0+ dengan modern features
+- **API Design:** RESTful APIs dengan Laravel API Resources
+- **Authentication:** Laravel Sanctum untuk secure API authenticationsitas Nusa Mandiri**  
 **Fakultas Teknologi Informasi**  
 **Program Studi Sistem Informasi**  
 **Mata Kuliah: Proyek Sistem Informasi II**
@@ -82,9 +86,10 @@ SATRIAMART sebagai perusahaan manufacturing dekorasi & aksesoris akrilik menghad
 **Selected Technology Stack:**
 
 **Frontend:**
-- **Framework:** React.js dengan TypeScript untuk type safety
-- **UI Library:** Material-UI untuk consistent design system
-- **State Management:** Redux untuk centralized state management
+- **Framework:** TailwindCSS untuk responsive design dan styling
+- **JavaScript:** Vanilla JavaScript (ES6+) untuk interactivity
+- **UI Components:** Custom components dengan TailwindCSS utility classes
+- **Build Tool:** Laravel Mix untuk asset compilation
 
 **Backend:**
 - **Runtime:** Node.js dengan Express.js framework
@@ -92,14 +97,15 @@ SATRIAMART sebagai perusahaan manufacturing dekorasi & aksesoris akrilik menghad
 - **Authentication:** JWT tokens dengan refresh mechanism
 
 **Database:**
-- **Primary DB:** PostgreSQL untuk transactional data
-- **Caching:** Redis untuk session management dan query caching
-- **Analytics:** Data warehouse untuk business intelligence
+- **Primary Database:** MySQL untuk transactional data dan business logic
+- **Cache:** Redis untuk session management dan query caching
+- **Analytics:** Separate data warehouse untuk comprehensive reporting
 
 **Infrastructure:**
-- **Deployment:** Docker containers untuk consistent environments
-- **Cloud:** AWS/GCP untuk scalability dan reliability
-- **CI/CD:** Automated testing dan deployment pipelines
+- **Cloud Provider:** AWS atau Google Cloud Platform untuk scalability
+- **Containerization:** Docker untuk consistent development dan deployment
+- **CI/CD:** GitHub Actions atau GitLab CI untuk automated workflows
+- **Monitoring:** Laravel Telescope untuk application debugging dan monitoring
 
 ---
 
