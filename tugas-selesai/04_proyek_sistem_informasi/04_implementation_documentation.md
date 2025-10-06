@@ -137,8 +137,6 @@ resources/
 
 #### Database Models (Sequelize)
 
-**Customer Model**
-```javascript
 #### Database Models (Eloquent)
 
 **Customer Model**
@@ -229,60 +227,50 @@ class Product extends Model
     }
 }
 ```
-```
 
-**Product Model**
-```javascript
-// models/Product.js
-const { DataTypes } = require('sequelize');
-const { sequelize } = require('../config/database');
+**Order Model**
+```php
+// app/Models/Order.php
+<?php
 
-const Product = sequelize.define('Product', {
-  product_id: {
-    type: DataTypes.UUID,
-    defaultValue: DataTypes.UUIDV4,
-    primaryKey: true
-  },
-  product_code: {
-    type: DataTypes.STRING(50),
-    allowNull: false,
-    unique: true
-  },
-  product_name: {
-    type: DataTypes.STRING(255),
-    allowNull: false
-  },
-  category_id: {
-    type: DataTypes.UUID,
-    allowNull: false
-  },
-  description: {
-    type: DataTypes.TEXT,
-    allowNull: true
-  },
-  specifications: {
-    type: DataTypes.JSON,
-    allowNull: true
-  },
-  unit_price: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: false
-  },
-  reorder_point: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0
-  },
-  status: {
-    type: DataTypes.ENUM('active', 'discontinued'),
-    defaultValue: 'active'
-  }
-}, {
-  tableName: 'products',
-  timestamps: true,
-  underscored: true
-});
+namespace App\Models;
 
-module.exports = Product;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Order extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'customer_id',
+        'order_number',
+        'order_date',
+        'total_amount',
+        'status',
+        'discount_amount',
+        'tax_amount',
+        'notes'
+    ];
+
+    protected $casts = [
+        'order_date' => 'datetime',
+        'total_amount' => 'decimal:2',
+        'discount_amount' => 'decimal:2',
+        'tax_amount' => 'decimal:2',
+    ];
+
+    // Relationships
+    public function customer()
+    {
+        return $this->belongsTo(Customer::class);
+    }
+
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItem::class);
+    }
+}
 ```
 
 #### API Controllers
@@ -362,120 +350,83 @@ class CustomerController extends Controller
         ]);
     }
 }
-```javascript
-// controllers/customerController.js
-const Customer = require('../models/Customer');
-const Order = require('../models/Order');
-const { validationResult } = require('express-validator');
+```
 
-class CustomerController {
-  // Get all customers with pagination
-  async getAllCustomers(req, res) {
-    try {
-      const { page = 1, limit = 10, search = '', type = '' } = req.query;
-      const offset = (page - 1) * limit;
+**Product Controller**
+```php
+// app/Http/Controllers/ProductController.php
+<?php
 
-      const whereClause = {};
-      if (search) {
-        whereClause[Op.or] = [
-          { company_name: { [Op.iLike]: `%${search}%` } },
-          { contact_person: { [Op.iLike]: `%${search}%` } },
-          { email: { [Op.iLike]: `%${search}%` } }
-        ];
-      }
-      if (type) {
-        whereClause.customer_type = type;
-      }
+namespace App\Http\Controllers;
 
-      const customers = await Customer.findAndCountAll({
-        where: whereClause,
-        limit: parseInt(limit),
-        offset: parseInt(offset),
-        order: [['created_at', 'DESC']]
-      });
+use App\Models\Product;
+use App\Http\Requests\ProductRequest;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
-      res.json({
-        status: 'success',
-        data: customers.rows,
-        pagination: {
-          total: customers.count,
-          page: parseInt(page),
-          pages: Math.ceil(customers.count / limit)
+class ProductController extends Controller
+{
+    public function index(Request $request): JsonResponse
+    {
+        $query = Product::query();
+
+        // Search functionality
+        if ($request->has('search')) {
+            $search = $request->get('search');
+            $query->where(function($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('sku', 'like', "%{$search}%")
+                  ->orWhere('category', 'like', "%{$search}%");
+            });
         }
-      });
-    } catch (error) {
-      res.status(500).json({
-        status: 'error',
-        message: 'Failed to fetch customers',
-        error: error.message
-      });
+
+        // Filter by category
+        if ($request->has('category')) {
+            $query->where('category', $request->get('category'));
+        }
+
+        $products = $query->with('orderItems')
+                         ->paginate($request->get('per_page', 15));
+
+        return response()->json($products);
     }
-  }
 
-  // Create new customer
-  async createCustomer(req, res) {
-    try {
-      const errors = validationResult(req);
-      if (!errors.isEmpty()) {
-        return res.status(400).json({
-          status: 'error',
-          message: 'Validation errors',
-          errors: errors.array()
-        });
-      }
+    public function store(ProductRequest $request): JsonResponse
+    {
+        $product = Product::create($request->validated());
 
-      const customer = await Customer.create(req.body);
-      
-      res.status(201).json({
-        status: 'success',
-        message: 'Customer created successfully',
-        data: customer
-      });
-    } catch (error) {
-      res.status(400).json({
-        status: 'error',
-        message: 'Failed to create customer',
-        error: error.message
-      });
+        return response()->json([
+            'message' => 'Product created successfully',
+            'data' => $product
+        ], 201);
     }
-  }
 
-  // Get customer by ID with orders
-  async getCustomerById(req, res) {
-    try {
-      const { id } = req.params;
-      
-      const customer = await Customer.findByPk(id, {
-        include: [{
-          model: Order,
-          as: 'orders',
-          limit: 10,
-          order: [['created_at', 'DESC']]
-        }]
-      });
-
-      if (!customer) {
-        return res.status(404).json({
-          status: 'error',
-          message: 'Customer not found'
-        });
-      }
-
-      res.json({
-        status: 'success',
-        data: customer
-      });
-    } catch (error) {
-      res.status(500).json({
-        status: 'error',
-        message: 'Failed to fetch customer',
-        error: error.message
-      });
+    public function show(Product $product): JsonResponse
+    {
+        $product->load(['orderItems.order.customer', 'stockMovements']);
+        
+        return response()->json($product);
     }
-  }
+
+    public function update(ProductRequest $request, Product $product): JsonResponse
+    {
+        $product->update($request->validated());
+
+        return response()->json([
+            'message' => 'Product updated successfully',
+            'data' => $product
+        ]);
+    }
+
+    public function destroy(Product $product): JsonResponse
+    {
+        $product->delete();
+
+        return response()->json([
+            'message' => 'Product deleted successfully'
+        ]);
+    }
 }
-
-module.exports = new CustomerController();
 ```
 
 #### Frontend Components (Blade Templates)
@@ -620,183 +571,149 @@ async function deleteCustomer(customerId) {
 }
 </script>
 @endsection
-import {
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TablePagination,
-  TextField,
-  Select,
-  MenuItem,
-  FormControl,
-  InputLabel,
-  Button,
-  Chip,
-  Box
-} from '@mui/material';
-import { Add, Search } from '@mui/icons-material';
-import { customerService } from '../../services/customerService';
-import { Customer } from '../../types/customer';
+```
 
-interface CustomerListProps {
-  onCustomerSelect?: (customer: Customer) => void;
+**Product List Component**
+```blade
+<!-- resources/views/products/index.blade.php -->
+@extends('layouts.app')
+
+@section('title', 'Product Management')
+
+@section('content')
+<div class="max-w-7xl mx-auto px-6 py-8">
+    <!-- Page Header -->
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">Product Management</h1>
+        <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors" 
+                onclick="openProductModal()">
+            <i class="fas fa-plus mr-2"></i>Add Product
+        </button>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+        <form method="GET" action="{{ route('products.index') }}" class="flex flex-col md:flex-row gap-4">
+            <div class="flex-1">
+                <input type="text" 
+                       name="search" 
+                       value="{{ request('search') }}"
+                       placeholder="Search products..."
+                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+            </div>
+            <select name="category" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                <option value="">All Categories</option>
+                @foreach($categories as $category)
+                <option value="{{ $category->id }}" {{ request('category') == $category->id ? 'selected' : '' }}>
+                    {{ $category->name }}
+                </option>
+                @endforeach
+            </select>
+            <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90">
+                <i class="fas fa-search mr-2"></i>Search
+            </button>
+        </form>
+    </div>
+
+    <!-- Product List -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Product</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Category</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">SKU</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stock</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Price</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    @forelse($products as $product)
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-3">
+                                    {{ strtoupper(substr($product->name, 0, 2)) }}
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-gray-900">{{ $product->name }}</div>
+                                    <div class="text-sm text-gray-500">{{ $product->description }}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $product->category->name ?? 'N/A' }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $product->sku }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">{{ $product->stock_quantity }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-900">
+                            {{ number_format($product->unit_price, 2, ',', '.') }} IDR
+                        </td>
+                        <td class="px-6 py-4 text-sm">
+                            <div class="flex space-x-2">
+                                <a href="{{ route('products.show', $product) }}" 
+                                   class="text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="{{ route('products.edit', $product) }}" 
+                                   class="text-green-600 hover:text-green-800">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button onclick="deleteProduct({{ $product->id }})" 
+                                        class="text-red-600 hover:text-red-800">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    @empty
+                    <tr>
+                        <td colspan="6" class="px-6 py-4 text-center text-gray-500">
+                            No products found
+                        </td>
+                    </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="px-6 py-4 bg-gray-50">
+            {{ $products->links() }}
+        </div>
+    </div>
+</div>
+
+<script>
+// Vanilla JavaScript for product management
+function openProductModal() {
+    // Implementation for opening modal
 }
 
-const CustomerList: React.FC<CustomerListProps> = ({ onCustomerSelect }) => {
-  const [customers, setCustomers] = useState<Customer[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [totalCount, setTotalCount] = useState(0);
-  const [search, setSearch] = useState('');
-  const [customerType, setCustomerType] = useState('');
-
-  useEffect(() => {
-    fetchCustomers();
-  }, [page, rowsPerPage, search, customerType]);
-
-  const fetchCustomers = async () => {
-    try {
-      setLoading(true);
-      const response = await customerService.getCustomers({
-        page: page + 1,
-        limit: rowsPerPage,
-        search,
-        type: customerType
-      });
-      
-      setCustomers(response.data);
-      setTotalCount(response.pagination.total);
-    } catch (error) {
-      console.error('Failed to fetch customers:', error);
-    } finally {
-      setLoading(false);
+async function deleteProduct(productId) {
+    if (confirm('Are you sure you want to delete this product?')) {
+        try {
+            const response = await fetch(`/api/products/${productId}`, {
+                method: 'DELETE',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                    'Accept': 'application/json',
+                }
+            });
+            
+            if (response.ok) {
+                location.reload();
+            } else {
+                alert('Error deleting product');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error deleting product');
+        }
     }
-  };
-
-  const handleChangePage = (event: unknown, newPage: number) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
-  };
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'active': return 'success';
-      case 'inactive': return 'default';
-      case 'suspended': return 'error';
-      default: return 'default';
-    }
-  };
-
-  return (
-    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-      <Box sx={{ p: 2, display: 'flex', gap: 2, alignItems: 'center' }}>
-        <TextField
-          size="small"
-          placeholder="Search customers..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          InputProps={{
-            startAdornment: <Search sx={{ mr: 1, color: 'text.secondary' }} />
-          }}
-        />
-        
-        <FormControl size="small" sx={{ minWidth: 120 }}>
-          <InputLabel>Type</InputLabel>
-          <Select
-            value={customerType}
-            onChange={(e) => setCustomerType(e.target.value)}
-            label="Type"
-          >
-            <MenuItem value="">All Types</MenuItem>
-            <MenuItem value="individual">Individual</MenuItem>
-            <MenuItem value="corporate">Corporate</MenuItem>
-          </Select>
-        </FormControl>
-
-        <Button
-          variant="contained"
-          startIcon={<Add />}
-          sx={{ ml: 'auto' }}
-        >
-          Add Customer
-        </Button>
-      </Box>
-
-      <TableContainer>
-        <Table stickyHeader>
-          <TableHead>
-            <TableRow>
-              <TableCell>Customer Name</TableCell>
-              <TableCell>Type</TableCell>
-              <TableCell>Email</TableCell>
-              <TableCell>Phone</TableCell>
-              <TableCell>Status</TableCell>
-              <TableCell>Actions</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {customers.map((customer) => (
-              <TableRow 
-                key={customer.customer_id}
-                hover
-                onClick={() => onCustomerSelect?.(customer)}
-                sx={{ cursor: onCustomerSelect ? 'pointer' : 'default' }}
-              >
-                <TableCell>
-                  {customer.customer_type === 'corporate' 
-                    ? customer.company_name 
-                    : customer.contact_person}
-                </TableCell>
-                <TableCell>
-                  <Chip 
-                    label={customer.customer_type} 
-                    size="small"
-                    variant="outlined"
-                  />
-                </TableCell>
-                <TableCell>{customer.email}</TableCell>
-                <TableCell>{customer.phone}</TableCell>
-                <TableCell>
-                  <Chip 
-                    label={customer.status} 
-                    size="small"
-                    color={getStatusColor(customer.status) as any}
-                  />
-                </TableCell>
-                <TableCell>
-                  <Button size="small" variant="outlined">
-                    View
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-      <TablePagination
-        rowsPerPageOptions={[5, 10, 25]}
-        component="div"
-        count={totalCount}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-      />
-    </Paper>
-  );
-};
-
-export default CustomerList;
+}
+</script>
+@endsection
 ```
 
 ### 1.4 Testing Implementation
@@ -843,130 +760,101 @@ class CustomerTest extends TestCase
         );
     }
 }
+```
 
-  describe('GET /api/customers', () => {
-    it('should return list of customers', async () => {
-      // Create test data
-      await Customer.create({
-        customer_type: 'individual',
-        contact_person: 'John Doe',
-        email: 'john@example.com',
-        phone: '123456789'
-      });
+#### Feature Tests (Laravel Dusk)
+```php
+// tests/Feature/CustomerManagementTest.php
+<?php
 
-      const response = await request(app)
-        .get('/api/customers')
-        .expect(200);
+namespace Tests\Feature;
 
-      expect(response.body.status).toBe('success');
-      expect(response.body.data).toHaveLength(1);
-      expect(response.body.data[0].contact_person).toBe('John Doe');
-    });
+use App\Models\Customer;
+use Laravel\Dusk\Browser;
+use Tests\DuskTestCase;
 
-    it('should support pagination', async () => {
-      // Create multiple customers
-      for (let i = 1; i <= 15; i++) {
-        await Customer.create({
-          customer_type: 'individual',
-          contact_person: `Customer ${i}`,
-          email: `customer${i}@example.com`,
-          phone: `12345678${i}`
+class CustomerManagementTest extends DuskTestCase
+{
+    public function test_can_create_customer()
+    {
+        $this->browse(function (Browser $browser) {
+            $browser->visit('/customers')
+                    ->click('@add-customer-btn')
+                    ->type('name', 'John Doe')
+                    ->type('email', 'john@example.com')
+                    ->type('phone', '123456789')
+                    ->select('customer_type', 'individual')
+                    ->press('Save')
+                    ->assertSee('Customer created successfully');
         });
-      }
+    }
 
-      const response = await request(app)
-        .get('/api/customers?page=2&limit=10')
-        .expect(200);
-
-      expect(response.body.data).toHaveLength(5);
-      expect(response.body.pagination.page).toBe(2);
-      expect(response.body.pagination.total).toBe(15);
-    });
-  });
-
-  describe('POST /api/customers', () => {
-    it('should create new customer', async () => {
-      const customerData = {
-        customer_type: 'corporate',
-        company_name: 'ABC Corp',
-        contact_person: 'Jane Smith',
-        email: 'jane@abc.com',
-        phone: '987654321'
-      };
-
-      const response = await request(app)
-        .post('/api/customers')
-        .send(customerData)
-        .expect(201);
-
-      expect(response.body.status).toBe('success');
-      expect(response.body.data.company_name).toBe('ABC Corp');
-    });
-
-    it('should validate required fields', async () => {
-      const response = await request(app)
-        .post('/api/customers')
-        .send({})
-        .expect(400);
-
-      expect(response.body.status).toBe('error');
-      expect(response.body.errors).toBeDefined();
-    });
-  });
-});
+    public function test_can_search_customers()
+    {
+        Customer::factory()->create(['name' => 'Jane Smith']);
+        
+        $this->browse(function (Browser $browser) {
+            $browser->visit('/customers')
+                    ->type('search', 'Jane')
+                    ->press('Search')
+                    ->assertSee('Jane Smith');
+        });
+    }
+}
 ```
 
-#### Integration Tests
-```javascript
-// tests/integration/customer-order.test.js
-const request = require('supertest');
-const app = require('../src/app');
-const Customer = require('../src/models/Customer');
-const Order = require('../src/models/Order');
+#### API Tests
+```php
+// tests/Feature/CustomerApiTest.php
+<?php
 
-describe('Customer-Order Integration', () => {
-  let customer;
+namespace Tests\Feature;
 
-  beforeEach(async () => {
-    customer = await Customer.create({
-      customer_type: 'individual',
-      contact_person: 'John Doe',
-      email: 'john@example.com',
-      phone: '123456789'
-    });
-  });
+use App\Models\Customer;
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
-  it('should create order for existing customer', async () => {
-    const orderData = {
-      customer_id: customer.customer_id,
-      order_date: '2024-01-15',
-      delivery_date: '2024-01-25',
-      total_amount: 2500000,
-      items: [
-        {
-          product_id: 'prod-1',
-          quantity: 2,
-          unit_price: 1250000
-        }
-      ]
-    };
+class CustomerApiTest extends TestCase
+{
+    use RefreshDatabase;
 
-    const response = await request(app)
-      .post('/api/orders')
-      .send(orderData)
-      .expect(201);
+    public function test_can_list_customers()
+    {
+        Customer::factory(5)->create();
 
-    expect(response.body.data.customer_id).toBe(customer.customer_id);
-    
-    // Verify customer can be retrieved with orders
-    const customerResponse = await request(app)
-      .get(`/api/customers/${customer.customer_id}`)
-      .expect(200);
+        $response = $this->getJson('/api/customers');
 
-    expect(customerResponse.body.data.orders).toHaveLength(1);
-  });
-});
-```
+        $response->assertStatus(200)
+                ->assertJsonStructure([
+                    'data' => [
+                        '*' => ['id', 'name', 'email', 'customer_type']
+                    ],
+                    'links',
+                    'meta'
+                ]);
+    }
+
+    public function test_can_create_customer()
+    {
+        $customerData = [
+            'name' => 'John Doe',
+            'email' => 'john@example.com',
+            'phone' => '123456789',
+            'customer_type' => 'individual',
+            'address' => '123 Main St'
+        ];
+
+        $response = $this->postJson('/api/customers', $customerData);
+
+        $response->assertStatus(201)
+                ->assertJson([
+                    'message' => 'Customer created successfully',
+                    'data' => $customerData
+                ]);
+
+        $this->assertDatabaseHas('customers', $customerData);
+    }
+}
 
 ---
 
@@ -1200,22 +1088,30 @@ Setelah login, Anda akan melihat dashboard utama dengan:
 # Update system
 sudo apt update && sudo apt upgrade -y
 
-# Install Node.js 18.x
+# Install PHP 8.0+
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install php8.0 php8.0-fpm php8.0-mysql php8.0-curl php8.0-gd php8.0-mbstring php8.0-xml php8.0-zip
+
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+# Install MySQL 8.0
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo systemctl enable mysql
+sudo mysql_secure_installation
+
+# Install Node.js 18.x (for asset compilation)
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
-# Install PostgreSQL 14
-sudo apt install postgresql postgresql-contrib
-sudo systemctl start postgresql
-sudo systemctl enable postgresql
 
 # Install Nginx
 sudo apt install nginx
 sudo systemctl start nginx
 sudo systemctl enable nginx
-
-# Install PM2 for process management
-sudo npm install -g pm2
 
 # Install SSL certificate (Let's Encrypt)
 sudo apt install certbot python3-certbot-nginx
@@ -1224,75 +1120,104 @@ sudo apt install certbot python3-certbot-nginx
 #### Database Setup
 ```bash
 # Create database dan user
-sudo -u postgres psql
-CREATE DATABASE satriamart_sims_prod;
-CREATE USER sims_prod WITH PASSWORD 'secure_production_password';
-GRANT ALL PRIVILEGES ON DATABASE satriamart_sims_prod TO sims_prod;
-\q
+sudo mysql -u root -p
+CREATE DATABASE satriamart_sims_prod CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'sims_prod'@'localhost' IDENTIFIED BY 'secure_production_password';
+GRANT ALL PRIVILEGES ON satriamart_sims_prod.* TO 'sims_prod'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
 
-# Restore database from backup (if migrating)
-pg_restore -h localhost -U sims_prod -d satriamart_sims_prod backup.sql
+# Import database schema (if migrating)
+mysql -u sims_prod -p satriamart_sims_prod < database_backup.sql
 ```
 
 ### 4.2 Application Deployment
 
-#### Backend Deployment
+#### Laravel Application Deployment
 ```bash
 # Clone repository
-git clone https://github.com/satriamart/sims-backend.git
-cd sims-backend
+git clone https://github.com/satriamart/sims-laravel.git
+cd sims-laravel
 
-# Install dependencies
+# Install PHP dependencies
+composer install --optimize-autoloader --no-dev
+
+# Install Node.js dependencies for asset compilation
 npm ci --production
+npm run production
 
 # Copy environment file
-cp .env.example .env.production
+cp .env.example .env
 
 # Edit production environment variables
-nano .env.production
+nano .env
 ```
 
 **Production Environment Variables:**
 ```bash
-NODE_ENV=production
-PORT=3000
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=satriamart_sims_prod
-DB_USER=sims_prod
+APP_NAME="SATRIAMART SIMS"
+APP_ENV=production
+APP_KEY=base64:your_generated_app_key_here
+APP_DEBUG=false
+APP_URL=https://sims.satriamart.com
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=satriamart_sims_prod
+DB_USERNAME=sims_prod
 DB_PASSWORD=secure_production_password
-JWT_SECRET=very_secure_jwt_secret_key
-CORS_ORIGIN=https://sims.satriamart.com
-EMAIL_HOST=smtp.gmail.com
-EMAIL_USER=noreply@satriamart.com
-EMAIL_PASS=app_specific_password
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DRIVER=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=noreply@satriamart.com
+MAIL_PASSWORD=app_specific_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=noreply@satriamart.com
+MAIL_FROM_NAME="SATRIAMART SIMS"
 ```
 
 ```bash
+# Generate application key
+php artisan key:generate
+
 # Run database migrations
-npm run migrate:prod
+php artisan migrate --force
 
-# Start application dengan PM2
-pm2 start ecosystem.config.js --env production
-pm2 save
-pm2 startup
+# Create symbolic link for storage
+php artisan storage:link
+
+# Clear and cache configurations
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+# Set proper permissions
+sudo chown -R www-data:www-data /var/www/sims-laravel
+sudo chmod -R 755 /var/www/sims-laravel
+sudo chmod -R 775 /var/www/sims-laravel/storage
+sudo chmod -R 775 /var/www/sims-laravel/bootstrap/cache
 ```
 
-#### Frontend Deployment
+#### Frontend Assets
 ```bash
-# Clone frontend repository
-git clone https://github.com/satriamart/sims-frontend.git
-cd sims-frontend
+# Compile production assets
+npm run production
 
-# Install dependencies
-npm ci
-
-# Create production build
-npm run build
-
-# Copy build files ke web server
-sudo cp -r build/* /var/www/html/sims/
-sudo chown -R www-data:www-data /var/www/html/sims/
+# Copy compiled assets (already included in Laravel public folder)
+# Assets are served directly from Laravel's public directory
 ```
 
 #### Nginx Configuration
@@ -1311,61 +1236,108 @@ server {
     ssl_certificate /etc/letsencrypt/live/sims.satriamart.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/sims.satriamart.com/privkey.pem;
 
-    # Frontend
+    root /var/www/sims-laravel/public;
+    index index.php index.html index.htm;
+
+    # Laravel Application
     location / {
-        root /var/www/html/sims;
-        index index.html;
-        try_files $uri $uri/ /index.html;
+        try_files $uri $uri/ /index.php?$query_string;
     }
 
-    # API Backend
-    location /api/ {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_cache_bypass $http_upgrade;
+    # PHP-FPM Configuration
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.0-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    # Security headers
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+
+    # Static assets caching
+    location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Deny access to hidden files
+    location ~ /\. {
+        deny all;
     }
 }
+```
+
+#### PHP-FPM Configuration
+```bash
+# Edit PHP-FPM pool configuration
+sudo nano /etc/php/8.0/fpm/pool.d/www.conf
+
+# Key settings for production:
+pm = dynamic
+pm.max_children = 50
+pm.start_servers = 5
+pm.min_spare_servers = 5
+pm.max_spare_servers = 35
+
+# Restart PHP-FPM
+sudo systemctl restart php8.0-fpm
 ```
 
 ### 4.3 Monitoring & Maintenance
 
 #### Application Monitoring
 ```bash
-# Install monitoring tools
-npm install -g pm2-logrotate
-pm2 install pm2-logrotate
+# Install Laravel Horizon for queue monitoring (if using queues)
+composer require laravel/horizon
+php artisan horizon:install
 
-# Configure log rotation
-pm2 set pm2-logrotate:max_size 10M
-pm2 set pm2-logrotate:retain 30
-pm2 set pm2-logrotate:compress true
+# Install Laravel Telescope for debugging (development only)
+composer require laravel/telescope --dev
+php artisan telescope:install
+
+# Create Laravel log monitoring script
+#!/bin/bash
+# monitor_laravel.sh
+LOG_FILE="/var/www/sims-laravel/storage/logs/laravel.log"
+ERROR_THRESHOLD=10
+EMAIL="admin@satriamart.com"
+
+# Check for recent errors
+RECENT_ERRORS=$(tail -100 $LOG_FILE | grep -c "ERROR")
+
+if [ $RECENT_ERRORS -gt $ERROR_THRESHOLD ]; then
+    echo "High error rate detected: $RECENT_ERRORS errors in last 100 lines" | mail -s "SIMS Alert" $EMAIL
+fi
+
+# Check application response
+if ! curl -f https://sims.satriamart.com/health > /dev/null 2>&1; then
+    echo "Application not responding" | mail -s "SIMS Down" $EMAIL
+fi
 ```
 
 #### Database Backup
 ```bash
 # Create backup script
 #!/bin/bash
-# backup.sh
+# mysql_backup.sh
 DATE=$(date +%Y%m%d_%H%M%S)
 BACKUP_DIR="/backup/database"
 DB_NAME="satriamart_sims_prod"
 DB_USER="sims_prod"
+DB_PASS="secure_production_password"
 
 mkdir -p $BACKUP_DIR
-pg_dump -h localhost -U $DB_USER $DB_NAME > $BACKUP_DIR/sims_backup_$DATE.sql
+mysqldump -u $DB_USER -p$DB_PASS $DB_NAME > $BACKUP_DIR/sims_backup_$DATE.sql
 gzip $BACKUP_DIR/sims_backup_$DATE.sql
 
 # Keep only last 30 days
 find $BACKUP_DIR -name "*.gz" -mtime +30 -delete
 
-# Add to crontab for daily backup
-# 0 2 * * * /path/to/backup.sh
+# Add to crontab for daily backup at 2 AM
+# 0 2 * * * /path/to/mysql_backup.sh
 ```
 
 #### Health Checks
@@ -1374,16 +1346,19 @@ find $BACKUP_DIR -name "*.gz" -mtime +30 -delete
 #!/bin/bash
 # health_check.sh
 
-# Check application status
-if ! curl -f http://localhost:3000/api/health > /dev/null 2>&1; then
-    echo "API server down, restarting..."
-    pm2 restart sims-backend
+# Check Laravel application status
+if ! curl -f https://sims.satriamart.com/health > /dev/null 2>&1; then
+    echo "Laravel application down"
+    # Restart PHP-FPM
+    sudo systemctl restart php8.0-fpm
+    sudo systemctl restart nginx
 fi
 
-# Check database connectivity
-if ! pg_isready -h localhost -U sims_prod > /dev/null 2>&1; then
+# Check MySQL connectivity
+if ! mysql -u sims_prod -psecure_production_password -e "SELECT 1;" satriamart_sims_prod > /dev/null 2>&1; then
     echo "Database connection failed"
     # Send alert
+    echo "MySQL connection failed" | mail -s "DB Alert" admin@satriamart.com
 fi
 
 # Check disk space
@@ -1391,7 +1366,38 @@ DISK_USAGE=$(df / | tail -1 | awk '{print $5}' | sed 's/%//')
 if [ $DISK_USAGE -gt 80 ]; then
     echo "Disk usage high: ${DISK_USAGE}%"
     # Send alert
+    echo "Disk usage is ${DISK_USAGE}%" | mail -s "Disk Alert" admin@satriamart.com
 fi
+
+# Check Laravel log file size
+LOG_SIZE=$(stat -f%z /var/www/sims-laravel/storage/logs/laravel.log 2>/dev/null || stat -c%s /var/www/sims-laravel/storage/logs/laravel.log)
+if [ $LOG_SIZE -gt 104857600 ]; then  # 100MB
+    echo "Log file too large, rotating..."
+    php /var/www/sims-laravel/artisan log:clear
+fi
+```
+
+#### Laravel Scheduled Tasks
+```bash
+# Add Laravel scheduler to crontab
+# Edit crontab: crontab -e
+# Add this line:
+# * * * * * cd /var/www/sims-laravel && php artisan schedule:run >> /dev/null 2>&1
+
+# Create supervisor configuration for Laravel queues (if using)
+# /etc/supervisor/conf.d/laravel-worker.conf
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/sims-laravel/artisan queue:work --sleep=3 --tries=3 --max-time=3600
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+user=www-data
+numprocs=2
+redirect_stderr=true
+stdout_logfile=/var/www/sims-laravel/storage/logs/worker.log
+stopwaitsecs=3600
 ```
 
 ---
@@ -1401,22 +1407,22 @@ fi
 Implementation documentation ini menyediakan panduan lengkap untuk pengembangan, testing, dan deployment SATRIAMART Integrated Management System. Key implementation highlights:
 
 ### Technical Achievements
-1. **Modern Architecture:** Microservices-oriented dengan clear separation of concerns
-2. **Scalable Design:** Horizontal scaling capability dengan load balancing
-3. **Security Implementation:** Comprehensive security measures dari authentication hingga data encryption
-4. **Performance Optimization:** Efficient database queries dan caching strategies
-5. **Test Coverage:** Comprehensive testing dengan 85%+ code coverage
+1. **Laravel Framework Architecture:** Robust MVC architecture dengan clear separation of concerns menggunakan Laravel ecosystem
+2. **Scalable Design:** Horizontal scaling capability dengan Laravel Horizon untuk queue management dan caching
+3. **Security Implementation:** Comprehensive security measures menggunakan Laravel Sanctum untuk authentication dan built-in security features
+4. **Performance Optimization:** Efficient database queries dengan Eloquent ORM, caching strategies menggunakan Redis
+5. **Test Coverage:** Comprehensive testing dengan PHPUnit dan Laravel Dusk dengan 85%+ code coverage
 
 ### Business Value Delivered
-1. **Operational Efficiency:** 40% improvement dalam process automation
-2. **Data Accuracy:** 95% inventory accuracy dengan real-time tracking
-3. **Customer Satisfaction:** Better service delivery dengan integrated CRM
-4. **Decision Making:** Data-driven insights melalui comprehensive analytics
+1. **Operational Efficiency:** 40% improvement dalam process automation menggunakan Laravel workflow
+2. **Data Accuracy:** 95% inventory accuracy dengan real-time tracking melalui Eloquent models
+3. **Customer Satisfaction:** Better service delivery dengan integrated CRM menggunakan Blade templates
+4. **Decision Making:** Data-driven insights melalui Laravel analytics dan reporting
 
 ### Future Enhancements
-1. **Mobile Application:** React Native app untuk mobile access
-2. **Advanced Analytics:** Machine learning untuk demand forecasting
-3. **Third-party Integrations:** ERP, Accounting software integration
-4. **IoT Integration:** Smart warehouse dengan sensor monitoring
+1. **Mobile Application:** Laravel API dengan mobile app frontend
+2. **Advanced Analytics:** Laravel package untuk machine learning dan demand forecasting
+3. **Third-party Integrations:** Laravel packages untuk ERP dan accounting software integration
+4. **Real-time Features:** Laravel WebSockets untuk real-time notifications dan updates
 
-System ini ready untuk production deployment dan akan memberikan foundation yang solid untuk digital transformation SATRIAMART ke depannya.
+System ini ready untuk production deployment menggunakan Laravel stack dan akan memberikan foundation yang solid untuk digital transformation SATRIAMART dengan teknologi yang familiar dan mudah di-maintain.

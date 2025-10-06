@@ -59,6 +59,9 @@
                 <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('crm')">
                     <i class="fas fa-users mr-2"></i>Customer
                 </li>
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('orders')">
+                    <i class="fas fa-shopping-cart mr-2"></i>Orders
+                </li>
                 <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('inventory')">
                     <i class="fas fa-boxes mr-2"></i>Inventory
                 </li>
@@ -67,6 +70,9 @@
                 </li>
                 <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('analytics')">
                     <i class="fas fa-chart-bar mr-2"></i>Analytics
+                </li>
+                <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('reports')">
+                    <i class="fas fa-file-alt mr-2"></i>Reports
                 </li>
                 <li class="nav-item px-4 py-2 rounded-lg cursor-pointer hover:bg-primary hover:text-white transition-colors" onclick="showModule('admin')">
                     <i class="fas fa-cog mr-2"></i>Admin
@@ -326,6 +332,359 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Management Module -->
+        <div id="orders" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Order Management</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>Create Order
+                </button>
+            </div>
+
+            <!-- Order Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-shopping-cart text-4xl text-blue-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">156</div>
+                    <div class="text-gray-600 text-sm">Total Orders</div>
+                    <div class="text-green-500 text-sm mt-2">
+                        <i class="fas fa-arrow-up"></i> +12 this week
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-clock text-4xl text-yellow-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">23</div>
+                    <div class="text-gray-600 text-sm">Pending Orders</div>
+                    <div class="text-yellow-500 text-sm mt-2">
+                        <i class="fas fa-exclamation-triangle"></i> Need attention
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">89</div>
+                    <div class="text-gray-600 text-sm">Completed Orders</div>
+                    <div class="text-green-500 text-sm mt-2">
+                        <i class="fas fa-arrow-up"></i> 95% on time
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <i class="fas fa-dollar-sign text-4xl text-purple-500 mb-4"></i>
+                    <div class="text-3xl font-bold text-gray-800 mb-2">Rp 2.4M</div>
+                    <div class="text-gray-600 text-sm">Total Value</div>
+                    <div class="text-green-500 text-sm mt-2">
+                        <i class="fas fa-arrow-up"></i> +18% this month
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Filters -->
+            <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex-1">
+                        <input type="text" placeholder="Search orders by ID, customer, or product..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                        <option>All Status</option>
+                        <option>Draft</option>
+                        <option>Confirmed</option>
+                        <option>In Production</option>
+                        <option>Ready for Delivery</option>
+                        <option>Delivered</option>
+                        <option>Cancelled</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                        <option>All Customers</option>
+                        <option>PT. Sentosa Indah</option>
+                        <option>CV. Maju Jaya</option>
+                        <option>Toko Berkah</option>
+                    </select>
+                    <input type="date" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90">
+                        <i class="fas fa-search mr-2"></i>Filter
+                    </button>
+                </div>
+            </div>
+
+            <!-- Order List -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Order List</h3>
+                        <div class="flex gap-2">
+                            <button class="bg-green-500 text-white px-4 py-2 rounded text-sm hover:bg-green-600">
+                                <i class="fas fa-download mr-1"></i>Export
+                            </button>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded text-sm hover:bg-blue-600">
+                                <i class="fas fa-print mr-1"></i>Print
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Order ID</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Products</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Order Date</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Due Date</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Total</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="text-sm font-medium text-gray-900">#ORD-2024-156</div>
+                                    <div class="text-sm text-gray-500">High Priority</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-3 text-xs">
+                                            PT
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">PT. Sentosa Indah</div>
+                                            <div class="text-sm text-gray-500">Corporate</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-900">Display Stand Akrilik (3)</div>
+                                    <div class="text-sm text-gray-500">Custom Size 150x80cm</div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-10</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-25</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">In Production</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Rp 2,500,000</td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800" title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800" title="Edit Order">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="text-purple-600 hover:text-purple-800" title="Update Status">
+                                            <i class="fas fa-sync"></i>
+                                        </button>
+                                        <button class="text-gray-600 hover:text-gray-800" title="Print Order">
+                                            <i class="fas fa-print"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="text-sm font-medium text-gray-900">#ORD-2024-155</div>
+                                    <div class="text-sm text-gray-500">Medium Priority</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center mr-3 text-xs">
+                                            CV
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">CV. Maju Jaya</div>
+                                            <div class="text-sm text-gray-500">Corporate</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-900">Papan Nama Akrilik (5)</div>
+                                    <div class="text-sm text-gray-500">Standard Size 60x40cm</div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-12</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-30</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Pending Approval</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Rp 850,000</td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800" title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800" title="Approve Order">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800" title="Reject Order">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <button class="text-gray-600 hover:text-gray-800" title="Print Order">
+                                            <i class="fas fa-print"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="text-sm font-medium text-gray-900">#ORD-2024-154</div>
+                                    <div class="text-sm text-gray-500">Low Priority</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center mr-3 text-xs">
+                                            TB
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Toko Berkah</div>
+                                            <div class="text-sm text-gray-500">Individual</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-900">Rak Display Mini (2)</div>
+                                    <div class="text-sm text-gray-500">Custom Design</div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-08</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-20</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Delivered</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Rp 450,000</td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800" title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-purple-600 hover:text-purple-800" title="Reorder">
+                                            <i class="fas fa-redo"></i>
+                                        </button>
+                                        <button class="text-gray-600 hover:text-gray-800" title="Invoice">
+                                            <i class="fas fa-file-invoice"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div class="text-sm font-medium text-gray-900">#ORD-2024-153</div>
+                                    <div class="text-sm text-gray-500">High Priority</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-3 text-xs">
+                                            UD
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">UD. Sukses Mandiri</div>
+                                            <div class="text-sm text-gray-500">Corporate</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-900">Box Akrilik Display (10)</div>
+                                    <div class="text-sm text-gray-500">Multiple Sizes</div>
+                                </td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-15</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-02-01</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">Ready for Delivery</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Rp 1,750,000</td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800" title="View Details">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800" title="Schedule Delivery">
+                                            <i class="fas fa-truck"></i>
+                                        </button>
+                                        <button class="text-purple-600 hover:text-purple-800" title="Mark as Delivered">
+                                            <i class="fas fa-check-circle"></i>
+                                        </button>
+                                        <button class="text-gray-600 hover:text-gray-800" title="Print Order">
+                                            <i class="fas fa-print"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="px-6 py-4 bg-gray-50 border-t border-gray-200">
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-gray-700">
+                            Showing <span class="font-medium">1</span> to <span class="font-medium">5</span> of <span class="font-medium">156</span> orders
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-1 text-sm bg-white border border-gray-300 rounded hover:bg-gray-50">Previous</button>
+                            <button class="px-3 py-1 text-sm bg-primary text-white rounded">1</button>
+                            <button class="px-3 py-1 text-sm bg-white border border-gray-300 rounded hover:bg-gray-50">2</button>
+                            <button class="px-3 py-1 text-sm bg-white border border-gray-300 rounded hover:bg-gray-50">3</button>
+                            <button class="px-3 py-1 text-sm bg-white border border-gray-300 rounded hover:bg-gray-50">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Quick Order Status Update</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                            <div>
+                                <div class="font-medium text-yellow-800">#ORD-2024-155</div>
+                                <div class="text-yellow-600 text-sm">CV. Maju Jaya - Papan Nama Akrilik</div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">
+                                    Approve
+                                </button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600">
+                                    Reject
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-orange-50 border border-orange-200 rounded-lg">
+                            <div>
+                                <div class="font-medium text-orange-800">#ORD-2024-153</div>
+                                <div class="text-orange-600 text-sm">UD. Sukses Mandiri - Box Akrilik Display</div>
+                            </div>
+                            <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">
+                                Schedule Delivery
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Order Summary</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Total Orders Today:</span>
+                            <span class="font-semibold text-gray-800">8 orders</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Revenue Today:</span>
+                            <span class="font-semibold text-green-600">Rp 3,250,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Pending Approvals:</span>
+                            <span class="font-semibold text-yellow-600">3 orders</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Overdue Orders:</span>
+                            <span class="font-semibold text-red-600">1 order</span>
+                        </div>
+                        <hr class="my-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">This Month Total:</span>
+                            <span class="font-bold text-primary">Rp 24,500,000</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -613,6 +972,210 @@
             </div>
         </div>
 
+        <!-- Reports Module -->
+        <div id="reports" class="module-section hidden">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800">Reports & Documents</h1>
+                <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-plus mr-2"></i>Generate Report
+                </button>
+            </div>
+
+            <!-- Report Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:shadow-xl transition-shadow">
+                    <i class="fas fa-chart-line text-4xl text-blue-500 mb-4"></i>
+                    <div class="text-xl font-bold text-gray-800 mb-2">Sales Reports</div>
+                    <div class="text-gray-600 text-sm">Revenue, orders, customer analysis</div>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">
+                        Generate
+                    </button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:shadow-xl transition-shadow">
+                    <i class="fas fa-boxes text-4xl text-green-500 mb-4"></i>
+                    <div class="text-xl font-bold text-gray-800 mb-2">Inventory Reports</div>
+                    <div class="text-gray-600 text-sm">Stock levels, movements, alerts</div>
+                    <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full">
+                        Generate
+                    </button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:shadow-xl transition-shadow">
+                    <i class="fas fa-industry text-4xl text-purple-500 mb-4"></i>
+                    <div class="text-xl font-bold text-gray-800 mb-2">Production Reports</div>
+                    <div class="text-gray-600 text-sm">Work orders, efficiency, capacity</div>
+                    <button class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 w-full">
+                        Generate
+                    </button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center cursor-pointer hover:shadow-xl transition-shadow">
+                    <i class="fas fa-users text-4xl text-yellow-500 mb-4"></i>
+                    <div class="text-xl font-bold text-gray-800 mb-2">Customer Reports</div>
+                    <div class="text-gray-600 text-sm">CRM analytics, satisfaction</div>
+                    <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 w-full">
+                        Generate
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Reports -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Quick Reports</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-day text-blue-500 mr-3"></i>
+                                <span class="text-gray-700">Daily Sales Summary</span>
+                            </div>
+                            <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600">
+                                <i class="fas fa-download mr-1"></i>PDF
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-week text-green-500 mr-3"></i>
+                                <span class="text-gray-700">Weekly Inventory Report</span>
+                            </div>
+                            <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">
+                                <i class="fas fa-file-excel mr-1"></i>Excel
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-purple-500 mr-3"></i>
+                                <span class="text-gray-700">Monthly Production Report</span>
+                            </div>
+                            <button class="bg-purple-500 text-white px-3 py-1 rounded text-sm hover:bg-purple-600">
+                                <i class="fas fa-download mr-1"></i>PDF
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-500 mr-3"></i>
+                                <span class="text-gray-700">Customer Satisfaction Report</span>
+                            </div>
+                            <button class="bg-yellow-500 text-white px-3 py-1 rounded text-sm hover:bg-yellow-600">
+                                <i class="fas fa-file-excel mr-1"></i>Excel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Custom Report Builder</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Report Type</label>
+                            <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                                <option>Sales Analysis</option>
+                                <option>Inventory Summary</option>
+                                <option>Production Efficiency</option>
+                                <option>Customer Analysis</option>
+                                <option>Financial Summary</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Date From</label>
+                                <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Date To</label>
+                                <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Format</label>
+                            <div class="flex space-x-4">
+                                <label class="flex items-center">
+                                    <input type="radio" name="format" value="pdf" class="mr-2">
+                                    <span class="text-sm">PDF</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="format" value="excel" class="mr-2">
+                                    <span class="text-sm">Excel</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="format" value="csv" class="mr-2">
+                                    <span class="text-sm">CSV</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg hover:bg-primary/90">
+                            <i class="fas fa-cog mr-2"></i>Generate Custom Report
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Recent Reports -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800">Recent Reports</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Report Name</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Generated By</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date Created</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Sales Report January 2024</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Monthly Sales</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Admin User</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-15 14:30</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800" title="Download">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button class="text-green-600 hover:text-green-800" title="View">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="text-purple-600 hover:text-purple-800" title="Share">
+                                            <i class="fas fa-share"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 text-sm font-medium text-gray-900">Inventory Status Report</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Weekly Inventory</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">Manager User</td>
+                                <td class="px-6 py-4 text-sm text-gray-900">2024-01-14 09:15</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Processing</span>
+                                </td>
+                                <td class="px-6 py-4 text-sm">
+                                    <div class="flex space-x-2">
+                                        <button class="text-gray-400" title="Download" disabled>
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button class="text-blue-600 hover:text-blue-800" title="View Progress">
+                                            <i class="fas fa-clock"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800" title="Cancel">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!-- Admin Module -->
         <div id="admin" class="module-section hidden">
             <div class="flex justify-between items-center mb-8">
@@ -622,82 +1185,395 @@
                 </button>
             </div>
 
-            <!-- Admin Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center">
-                        <i class="fas fa-users text-3xl text-blue-500 mr-4"></i>
-                        <div>
-                            <div class="text-2xl font-bold text-gray-800">12</div>
-                            <div class="text-gray-600 text-sm">Active Users</div>
-                        </div>
-                    </div>
+            <!-- Admin Tabs -->
+            <div class="bg-white rounded-xl shadow-lg mb-8">
+                <div class="flex border-b border-gray-200">
+                    <button class="admin-tab active px-6 py-3 text-sm font-medium border-b-2 border-primary text-primary" onclick="showAdminTab('users')">
+                        <i class="fas fa-users mr-2"></i>User Management
+                    </button>
+                    <button class="admin-tab px-6 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" onclick="showAdminTab('settings')">
+                        <i class="fas fa-cog mr-2"></i>System Settings
+                    </button>
+                    <button class="admin-tab px-6 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" onclick="showAdminTab('security')">
+                        <i class="fas fa-shield-alt mr-2"></i>Security
+                    </button>
+                    <button class="admin-tab px-6 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" onclick="showAdminTab('backup')">
+                        <i class="fas fa-database mr-2"></i>Backup & Restore
+                    </button>
+                    <button class="admin-tab px-6 py-3 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" onclick="showAdminTab('logs')">
+                        <i class="fas fa-file-alt mr-2"></i>System Logs
+                    </button>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center">
-                        <i class="fas fa-shield-alt text-3xl text-green-500 mr-4"></i>
-                        <div>
-                            <div class="text-2xl font-bold text-gray-800">99.9%</div>
-                            <div class="text-gray-600 text-sm">System Uptime</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="flex items-center">
-                        <i class="fas fa-database text-3xl text-purple-500 mr-4"></i>
-                        <div>
-                            <div class="text-2xl font-bold text-gray-800">2.4 GB</div>
-                            <div class="text-gray-600 text-sm">Database Size</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- User Management -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div class="p-6 border-b border-gray-200">
-                    <h3 class="text-xl font-semibold text-gray-800">User Management</h3>
+                <!-- User Management Tab -->
+                <div id="admin-users" class="admin-tab-content p-6">
+                    <!-- Admin Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-3xl mr-4"></i>
+                                <div>
+                                    <div class="text-2xl font-bold">12</div>
+                                    <div class="text-blue-100 text-sm">Total Users</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-check text-3xl mr-4"></i>
+                                <div>
+                                    <div class="text-2xl font-bold">8</div>
+                                    <div class="text-green-100 text-sm">Active Users</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-clock text-3xl mr-4"></i>
+                                <div>
+                                    <div class="text-2xl font-bold">3</div>
+                                    <div class="text-yellow-100 text-sm">Online Now</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-user-shield text-3xl mr-4"></i>
+                                <div>
+                                    <div class="text-2xl font-bold">2</div>
+                                    <div class="text-purple-100 text-sm">Administrators</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User List -->
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-800">User Management</h3>
+                            <div class="flex gap-2">
+                                <button class="bg-green-500 text-white px-4 py-2 rounded text-sm hover:bg-green-600">
+                                    <i class="fas fa-user-plus mr-1"></i>Add User
+                                </button>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded text-sm hover:bg-blue-600">
+                                    <i class="fas fa-download mr-1"></i>Export
+                                </button>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">User</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Role</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Login</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-3">
+                                                    AD
+                                                </div>
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">Admin User</div>
+                                                    <div class="text-sm text-gray-500">admin@satriamart.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Administrator</span>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm text-gray-900">2 hours ago</td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">
+                                                <i class="fas fa-circle text-green-500 mr-1" style="font-size: 6px;"></i>Online
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm">
+                                            <div class="flex space-x-2">
+                                                <button class="text-blue-600 hover:text-blue-800" title="Edit User">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="text-yellow-600 hover:text-yellow-800" title="Reset Password">
+                                                    <i class="fas fa-key"></i>
+                                                </button>
+                                                <button class="text-red-600 hover:text-red-800" title="Disable User">
+                                                    <i class="fas fa-ban"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div class="flex items-center">
+                                                <div class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center mr-3">
+                                                    MG
+                                                </div>
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">Manager User</div>
+                                                    <div class="text-sm text-gray-500">manager@satriamart.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Manager</span>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm text-gray-900">1 day ago</td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">
+                                                <i class="fas fa-circle text-gray-500 mr-1" style="font-size: 6px;"></i>Offline
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm">
+                                            <div class="flex space-x-2">
+                                                <button class="text-blue-600 hover:text-blue-800" title="Edit User">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="text-yellow-600 hover:text-yellow-800" title="Reset Password">
+                                                    <i class="fas fa-key"></i>
+                                                </button>
+                                                <button class="text-red-600 hover:text-red-800" title="Disable User">
+                                                    <i class="fas fa-ban"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="overflow-x-auto">
-                    <table class="w-full">
-                        <thead class="bg-gray-50">
-                            <tr>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">User</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Role</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Login</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                            <tr class="hover:bg-gray-50">
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center">
-                                        <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mr-3">
-                                            AD
+
+                <!-- System Settings Tab -->
+                <div id="admin-settings" class="admin-tab-content p-6 hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">General Settings</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                                        <input type="text" value="SATRIAMART" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">System Currency</label>
+                                        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                            <option>IDR - Indonesian Rupiah</option>
+                                            <option>USD - US Dollar</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Time Zone</label>
+                                        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                            <option>Asia/Jakarta (WIB)</option>
+                                            <option>Asia/Makassar (WITA)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">Email Settings</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">SMTP Host</label>
+                                        <input type="text" value="smtp.gmail.com" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">SMTP Port</label>
+                                            <input type="number" value="587" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                         <div>
-                                            <div class="text-sm font-medium text-gray-900">Admin User</div>
-                                            <div class="text-sm text-gray-500">admin@satriamart.com</div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">Encryption</label>
+                                            <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                                <option>TLS</option>
+                                                <option>SSL</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </td>
-                                <td class="px-6 py-4 text-sm text-gray-900">Administrator</td>
-                                <td class="px-6 py-4 text-sm text-gray-900">2 hours ago</td>
-                                <td class="px-6 py-4">
-                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Active</span>
-                                </td>
-                                <td class="px-6 py-4 text-sm">
-                                    <button class="text-blue-600 hover:text-blue-800 mr-2">
-                                        <i class="fas fa-edit"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">System Preferences</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm font-medium text-gray-700">Enable Notifications</span>
+                                        <label class="relative inline-flex items-center cursor-pointer">
+                                            <input type="checkbox" value="" class="sr-only peer" checked>
+                                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm font-medium text-gray-700">Auto Backup</span>
+                                        <label class="relative inline-flex items-center cursor-pointer">
+                                            <input type="checkbox" value="" class="sr-only peer" checked>
+                                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm font-medium text-gray-700">Maintenance Mode</span>
+                                        <label class="relative inline-flex items-center cursor-pointer">
+                                            <input type="checkbox" value="" class="sr-only peer">
+                                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg p-6">
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">Performance Settings</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Cache Duration (minutes)</label>
+                                        <input type="number" value="60" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Session Timeout (minutes)</label>
+                                        <input type="number" value="120" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                                    </div>
+                                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
+                                        <i class="fas fa-broom mr-2"></i>Clear Cache
                                     </button>
-                                    <button class="text-red-600 hover:text-red-800">
-                                        <i class="fas fa-ban"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex justify-end space-x-4">
+                        <button class="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600">
+                            Reset to Default
+                        </button>
+                        <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90">
+                            Save Settings
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Security Tab -->
+                <div id="admin-security" class="admin-tab-content p-6 hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Security Status</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-shield-check text-green-500 mr-3"></i>
+                                        <span class="text-green-800">SSL Certificate Valid</span>
+                                    </div>
+                                    <i class="fas fa-check text-green-500"></i>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-lock text-green-500 mr-3"></i>
+                                        <span class="text-green-800">Database Encrypted</span>
+                                    </div>
+                                    <i class="fas fa-check text-green-500"></i>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-exclamation-triangle text-yellow-500 mr-3"></i>
+                                        <span class="text-yellow-800">Password Policy: Medium</span>
+                                    </div>
+                                    <button class="text-yellow-600 hover:text-yellow-800">
+                                        <i class="fas fa-cog"></i>
                                     </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Recent Security Events</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                                    <i class="fas fa-sign-in-alt text-blue-500 mr-3"></i>
+                                    <div class="flex-1">
+                                        <div class="text-sm font-medium text-blue-800">Admin Login</div>
+                                        <div class="text-xs text-blue-600">IP: 192.168.1.100 - 2 hours ago</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 bg-red-50 border border-red-200 rounded-lg">
+                                    <i class="fas fa-exclamation-circle text-red-500 mr-3"></i>
+                                    <div class="flex-1">
+                                        <div class="text-sm font-medium text-red-800">Failed Login Attempt</div>
+                                        <div class="text-xs text-red-600">IP: 203.45.67.89 - 6 hours ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backup Tab -->
+                <div id="admin-backup" class="admin-tab-content p-6 hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Database Backup</h4>
+                            <div class="space-y-4">
+                                <div class="text-sm text-gray-600">
+                                    Last backup: <span class="font-medium">2024-01-15 02:00 AM</span>
+                                </div>
+                                <div class="text-sm text-gray-600">
+                                    Backup size: <span class="font-medium">245 MB</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <button class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90">
+                                        <i class="fas fa-download mr-2"></i>Create Backup Now
+                                    </button>
+                                    <button class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600">
+                                        <i class="fas fa-upload mr-2"></i>Restore from Backup
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Backup History</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <div>
+                                        <div class="text-sm font-medium">backup_2024_01_15.sql</div>
+                                        <div class="text-xs text-gray-500">245 MB - 2024-01-15 02:00</div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                        <button class="text-red-600 hover:text-red-800">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logs Tab -->
+                <div id="admin-logs" class="admin-tab-content p-6 hidden">
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <div class="p-4 border-b border-gray-200">
+                            <h4 class="text-lg font-semibold text-gray-800">System Logs</h4>
+                        </div>
+                        <div class="p-4">
+                            <div class="bg-black text-green-400 p-4 rounded-lg font-mono text-sm h-96 overflow-y-auto">
+                                <div>[2024-01-15 14:30:15] INFO: User admin@satriamart.com logged in</div>
+                                <div>[2024-01-15 14:28:42] INFO: Order #ORD-2024-156 status updated to 'In Production'</div>
+                                <div>[2024-01-15 14:25:33] WARNING: Low stock alert for product Akrilik Clear 3mm</div>
+                                <div>[2024-01-15 14:20:15] INFO: Customer PT. Sentosa Indah updated</div>
+                                <div>[2024-01-15 14:15:42] ERROR: Failed login attempt from IP 203.45.67.89</div>
+                                <div>[2024-01-15 14:10:33] INFO: Backup completed successfully (245 MB)</div>
+                                <div>[2024-01-15 14:05:15] INFO: System started</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -746,6 +1622,35 @@
             //     });
         }
 
+        // Admin tab switching
+        function showAdminTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.admin-tab-content');
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.admin-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active', 'border-primary', 'text-primary');
+                tab.classList.add('border-transparent', 'text-gray-500');
+            });
+
+            // Show selected tab content
+            const targetContent = document.getElementById(`admin-${tabId}`);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+            }
+
+            // Add active class to clicked tab
+            const clickedTab = event.target.closest('.admin-tab');
+            if (clickedTab) {
+                clickedTab.classList.add('active', 'border-primary', 'text-primary');
+                clickedTab.classList.remove('border-transparent', 'text-gray-500');
+            }
+        }
+
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             console.log('SATRIAMART SIMS (Laravel + TailwindCSS) initialized');
@@ -773,6 +1678,59 @@
             }
         }
 
+        async function fetchOrders(filters = {}) {
+            try {
+                const params = new URLSearchParams(filters);
+                const response = await fetch(`/api/orders?${params}`);
+                const orders = await response.json();
+                return orders;
+            } catch (error) {
+                console.error('Error fetching orders:', error);
+            }
+        }
+
+        async function updateOrderStatus(orderId, status) {
+            try {
+                const response = await fetch(`/api/orders/${orderId}/status`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    },
+                    body: JSON.stringify({ status: status })
+                });
+                const result = await response.json();
+                return result;
+            } catch (error) {
+                console.error('Error updating order status:', error);
+            }
+        }
+
+        async function generateReport(reportType, filters = {}) {
+            try {
+                const response = await fetch('/api/reports/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    },
+                    body: JSON.stringify({ 
+                        type: reportType,
+                        filters: filters 
+                    })
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Download the generated report
+                    window.open(result.download_url, '_blank');
+                }
+                return result;
+            } catch (error) {
+                console.error('Error generating report:', error);
+            }
+        }
+
         async function createOrder(orderData) {
             try {
                 const response = await fetch('/api/orders', {
@@ -788,6 +1746,100 @@
             } catch (error) {
                 console.error('Error creating order:', error);
             }
+        }
+
+        async function fetchInventory(filters = {}) {
+            try {
+                const params = new URLSearchParams(filters);
+                const response = await fetch(`/api/inventory?${params}`);
+                const inventory = await response.json();
+                return inventory;
+            } catch (error) {
+                console.error('Error fetching inventory:', error);
+            }
+        }
+
+        async function updateProductStock(productId, quantity, type = 'adjustment') {
+            try {
+                const response = await fetch(`/api/products/${productId}/stock`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    },
+                    body: JSON.stringify({ 
+                        quantity: quantity,
+                        type: type 
+                    })
+                });
+                const result = await response.json();
+                return result;
+            } catch (error) {
+                console.error('Error updating stock:', error);
+            }
+        }
+
+        async function fetchSystemSettings() {
+            try {
+                const response = await fetch('/api/admin/settings');
+                const settings = await response.json();
+                return settings;
+            } catch (error) {
+                console.error('Error fetching settings:', error);
+            }
+        }
+
+        async function updateSystemSettings(settings) {
+            try {
+                const response = await fetch('/api/admin/settings', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    },
+                    body: JSON.stringify(settings)
+                });
+                const result = await response.json();
+                return result;
+            } catch (error) {
+                console.error('Error updating settings:', error);
+            }
+        }
+
+        // Enhanced event handlers for new modules
+        function handleOrderAction(action, orderId) {
+            switch(action) {
+                case 'approve':
+                    updateOrderStatus(orderId, 'confirmed').then(() => {
+                        location.reload(); // Refresh to show updated status
+                    });
+                    break;
+                case 'reject':
+                    updateOrderStatus(orderId, 'cancelled').then(() => {
+                        location.reload();
+                    });
+                    break;
+                case 'deliver':
+                    updateOrderStatus(orderId, 'delivered').then(() => {
+                        location.reload();
+                    });
+                    break;
+            }
+        }
+
+        function handleReportGeneration(reportType) {
+            const filters = {
+                date_from: '2024-01-01',
+                date_to: '2024-01-31'
+            };
+            
+            generateReport(reportType, filters).then(result => {
+                if (result.success) {
+                    alert('Report generated successfully!');
+                } else {
+                    alert('Error generating report: ' + result.message);
+                }
+            });
         }
     </script>
 </body>
