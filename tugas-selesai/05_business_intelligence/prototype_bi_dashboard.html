@@ -3,1335 +3,952 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SATRIAMART Business Intelligence Dashboard</title>
+    <title>SATRIAMART Business Intelligence Dashboard - Laravel Integration</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        },
+                        satriamart: {
+                            blue: '#667eea',
+                            purple: '#764ba2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
         }
-
-        .header {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
         }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        
+        .loading-spinner {
+            animation: spin 1s linear infinite;
         }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .header-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2d3748;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #4a5568;
-        }
-
-        .dashboard-nav {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 1rem 2rem;
-            display: flex;
-            gap: 2rem;
-            overflow-x: auto;
-        }
-
-        .nav-item {
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            border: 2px solid transparent;
-        }
-
-        .nav-item.active {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-        }
-
-        .nav-item:hover {
-            border-color: #667eea;
-        }
-
-        .dashboard-container {
-            padding: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .kpi-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .kpi-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .kpi-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .kpi-title {
-            font-size: 0.9rem;
-            color: #6b7280;
-            margin-bottom: 0.5rem;
-        }
-
-        .kpi-value {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #1f2937;
-            margin-bottom: 0.5rem;
-        }
-
-        .kpi-change {
-            font-size: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .kpi-change.positive {
-            color: #10b981;
-        }
-
-        .kpi-change.negative {
-            color: #ef4444;
-        }
-
-        .chart-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            min-height: 300px;
-        }
-
-        .chart-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #374151;
-        }
-
-        .chart-placeholder {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6b7280;
-            font-style: italic;
-        }
-
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .metric-item {
-            padding: 1rem;
-            background: rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-        }
-
-        .metric-label {
-            font-size: 0.8rem;
-            color: #6b7280;
-            margin-bottom: 0.25rem;
-        }
-
-        .metric-value {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #374151;
-        }
-
-        .segment-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-left: 4px solid #667eea;
-        }
-
-        .segment-name {
-            font-weight: 600;
-            color: #374151;
-            margin-bottom: 0.5rem;
-        }
-
-        .segment-stats {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
-
-        .filter-section {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 1rem 2rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .filter-group {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        select, input {
-            padding: 0.5rem;
-            border: 1px solid #d1d5db;
-            border-radius: 5px;
-            background: white;
-        }
-
-        .export-btn {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .export-btn:hover {
-            opacity: 0.9;
-        }
-
-        .table-container {
-            overflow-x: auto;
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-
-        .data-table th,
-        .data-table td {
-            padding: 0.75rem;
-            text-align: left;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .data-table th {
-            background: rgba(0, 0, 0, 0.05);
-            font-weight: 600;
-            color: #374151;
-        }
-
-        .status-indicator {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
-
-        .status-good { background: #10b981; }
-        .status-warning { background: #f59e0b; }
-        .status-danger { background: #ef4444; }
-
-        @media (max-width: 768px) {
-            .dashboard-container {
-                grid-template-columns: 1fr;
-                padding: 1rem;
-            }
-            
-            .kpi-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .header {
-                padding: 1rem;
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .dashboard-nav {
-                padding: 1rem;
-                justify-content: center;
-            }
-        }
-
-        .alert-banner {
-            background: #fef3c7;
-            border: 1px solid #f59e0b;
-            color: #92400e;
-            padding: 1rem 2rem;
-            text-align: center;
-            font-weight: 500;
-        }
-
-        .loading {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid #f3f4f6;
-            border-radius: 50%;
-            border-top-color: #667eea;
-            animation: spin 1s ease-in-out infinite;
-        }
-
+        
         @keyframes spin {
+            from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
     </style>
 </head>
-<body>
+
+<body class="gradient-bg min-h-screen text-gray-800">
     <!-- Header -->
-    <div class="header">
-        <div class="logo">
-            <div class="logo-icon">SM</div>
-            <div>
-                <div class="header-title">SATRIAMART Business Intelligence</div>
-                <div style="font-size: 0.8rem; color: #6b7280;">Real-time Analytics Dashboard</div>
+    <header class="bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-satriamart-blue to-satriamart-purple rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">SM</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">SATRIAMART BI Dashboard</h1>
+                        <p class="text-xs text-gray-500">Laravel + MySQL | Real-time Data from SIMS</p>
+                    </div>
+                </div>
+                
+                <!-- User Info & Actions -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center space-x-2 text-sm text-gray-600">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Admin User</span>
+                        <span>|</span>
+                        <span id="current-time">Loading...</span>
+                    </div>
+                    
+                    <button class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5-5-5h5V3h5v14z"></path>
+                        </svg>
+                    </button>
+                    
+                    <button onclick="refreshData()" class="p-2 rounded-lg bg-green-100 text-green-600 hover:bg-green-200 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="user-info">
-            <span>👤 Admin User</span>
-            <span>|</span>
-            <span id="current-time"></span>
-        </div>
-    </div>
+    </header>
 
-    <!-- Navigation -->
-    <div class="dashboard-nav">
-        <div class="nav-item active" onclick="showTab('executive')">Executive Overview</div>
-        <div class="nav-item" onclick="showTab('sales')">Sales Analytics</div>
-        <div class="nav-item" onclick="showTab('customer')">Customer Insights</div>
-        <div class="nav-item" onclick="showTab('operations')">Operations</div>
-        <div class="nav-item" onclick="showTab('financial')">Financial</div>
-    </div>
+    <!-- Navigation Tabs -->
+    <nav class="bg-white/90 backdrop-blur-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-8 overflow-x-auto">
+                <button onclick="showTab('executive')" class="nav-tab active py-4 px-6 text-sm font-medium whitespace-nowrap border-b-2 border-primary-500 text-primary-600">
+                    📊 Executive Overview
+                </button>
+                <button onclick="showTab('sales')" class="nav-tab py-4 px-6 text-sm font-medium whitespace-nowrap border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    📈 Sales Analytics  
+                </button>
+                <button onclick="showTab('customer')" class="nav-tab py-4 px-6 text-sm font-medium whitespace-nowrap border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    👥 Customer Insights
+                </button>
+                <button onclick="showTab('operations')" class="nav-tab py-4 px-6 text-sm font-medium whitespace-nowrap border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    🏭 Operations
+                </button>
+                <button onclick="showTab('financial')" class="nav-tab py-4 px-6 text-sm font-medium whitespace-nowrap border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    💰 Financial
+                </button>
+                <button onclick="showTab('rfm')" class="nav-tab py-4 px-6 text-sm font-medium whitespace-nowrap border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                    🎯 RFM Analysis
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Filters -->
-    <div class="filter-section">
-        <div class="filter-group">
-            <label>Period:</label>
-            <select id="period-filter">
-                <option>Last 30 Days</option>
-                <option>Last 90 Days</option>
-                <option>Last 6 Months</option>
-                <option>Last Year</option>
-                <option>YTD</option>
-            </select>
+    <!-- Filters Bar -->
+    <div class="bg-white/90 backdrop-blur-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center gap-4 py-3">
+                <div class="flex items-center space-x-2">
+                    <label class="text-sm font-medium text-gray-700">Period:</label>
+                    <select id="period-filter" class="rounded-md border-gray-300 text-sm focus:border-primary-500 focus:ring-primary-500">
+                        <option>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                        <option>This Quarter</option>
+                        <option>This Year</option>
+                        <option>Last Year</option>
+                    </select>
+                </div>
+                
+                <div class="flex items-center space-x-2">
+                    <label class="text-sm font-medium text-gray-700">Region:</label>
+                    <select id="region-filter" class="rounded-md border-gray-300 text-sm focus:border-primary-500 focus:ring-primary-500">
+                        <option>All Regions</option>
+                        <option>Jakarta</option>
+                        <option>Bandung</option>
+                        <option>Surabaya</option>
+                        <option>Medan</option>
+                    </select>
+                </div>
+                
+                <div class="flex items-center space-x-2">
+                    <label class="text-sm font-medium text-gray-700">Customer Type:</label>
+                    <select id="customer-filter" class="rounded-md border-gray-300 text-sm focus:border-primary-500 focus:ring-primary-500">
+                        <option>All Customers</option>
+                        <option>B2B</option>
+                        <option>B2C</option>
+                    </select>
+                </div>
+                
+                <div class="ml-auto">
+                    <button onclick="exportData()" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-md hover:bg-primary-700 transition-colors">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Export Report
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="filter-group">
-            <label>Region:</label>
-            <select id="region-filter">
-                <option>All Regions</option>
-                <option>Jakarta</option>
-                <option>Bandung</option>
-                <option>Surabaya</option>
-                <option>Medan</option>
-            </select>
-        </div>
-        <div class="filter-group">
-            <label>Customer Type:</label>
-            <select id="customer-filter">
-                <option>All Customers</option>
-                <option>B2B</option>
-                <option>B2C</option>
-            </select>
-        </div>
-        <button class="export-btn" onclick="exportData()">📊 Export Report</button>
     </div>
 
     <!-- Alert Banner -->
-    <div class="alert-banner" id="alert-banner" style="display: none;">
-        🔄 Data refreshed successfully. Last update: <span id="last-update"></span>
+    <div id="alert-banner" class="hidden bg-blue-50 border-l-4 border-blue-400 p-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm text-blue-700">
+                        <span id="alert-message">Data refreshed successfully.</span>
+                        Last update: <span id="last-update">Loading...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Executive Dashboard -->
-    <div id="executive-tab" class="dashboard-content">
-        <div class="dashboard-container">
-            <!-- KPI Cards -->
-            <div class="kpi-container" style="grid-column: 1 / -1;">
-                <div class="kpi-card">
-                    <div class="kpi-title">Total Revenue YTD</div>
-                    <div class="kpi-value">IDR 2.5B</div>
-                    <div class="kpi-change positive">
-                        ↗️ +12% vs Last Year
+    <!-- Main Dashboard Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Executive Overview Tab -->
+        <div id="executive-tab" class="tab-content">
+            <!-- KPIs Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Revenue KPI -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Total Revenue</p>
+                            <p class="text-3xl font-bold text-gray-900">IDR 420M</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>+18.5% from last quarter</span>
+                            </div>
+                        </div>
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Gross Profit Margin</div>
-                    <div class="kpi-value">18.5%</div>
-                    <div class="kpi-change positive">
-                        ↗️ +2.1% vs Last Year
+
+                <!-- Gross Margin KPI -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Gross Margin</p>
+                            <p class="text-3xl font-bold text-gray-900">35.2%</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>+3.8% improvement</span>
+                            </div>
+                        </div>
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Customer Retention</div>
-                    <div class="kpi-value">78%</div>
-                    <div class="kpi-change positive">
-                        ↗️ +5% vs Last Quarter
+
+                <!-- Customer Retention KPI -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Customer Retention</p>
+                            <p class="text-3xl font-bold text-gray-900">88.7%</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>+6.2% vs last quarter</span>
+                            </div>
+                        </div>
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Orders Fulfilled</div>
-                    <div class="kpi-value">96%</div>
-                    <div class="kpi-change positive">
-                        ↗️ +1% vs Target
+
+                <!-- Order Fulfillment KPI -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Project Completion</p>
+                            <p class="text-3xl font-bold text-gray-900">94.3%</p>
+                            <div class="flex items-center text-sm text-green-600 mt-2">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>+2.3% vs target</span>
+                            </div>
+                        </div>
+                        <div class="w-12 h-12 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Revenue Trend Chart -->
-            <div class="chart-card" style="grid-column: 1 / -1;">
-                <div class="chart-title">📈 Monthly Revenue Trend (Last 12 Months)</div>
-                <canvas id="revenue-chart" width="800" height="250"></canvas>
+            <!-- Charts Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Revenue Trend Chart -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Revenue Trend (Laravel Analytics Service)</h3>
+                    <div class="chart-container">
+                        <canvas id="revenueTrendChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Sales by Region Chart -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Sales Distribution by Region</h3>
+                    <div class="chart-container">
+                        <canvas id="regionSalesChart"></canvas>
+                    </div>
+                </div>
             </div>
 
-            <!-- Revenue by Segment -->
-            <div class="chart-card">
-                <div class="chart-title">🎯 Revenue by Customer Segment</div>
-                <canvas id="segment-chart" width="400" height="250"></canvas>
+            <!-- Additional Analytics -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Top Products -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Top Performing Products</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium">Panel Akrilik Custom Display</span>
+                            <span class="text-green-600 font-semibold">IDR 125.8M</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium">Acrylic Signage & Logo</span>
+                            <span class="text-green-600 font-semibold">IDR 98.3M</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium">Display Stand Akrilik</span>
+                            <span class="text-green-600 font-semibold">IDR 87.5M</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Segments -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Customer Segments (RFM Analysis)</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-semibold text-green-700">Champions</h4>
+                            <p class="text-sm text-gray-600">15% - High value, frequent buyers</p>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-semibold text-blue-700">Loyal Customers</h4>
+                            <p class="text-sm text-gray-600">28% - Regular, reliable customers</p>
+                        </div>
+                        <div class="border-l-4 border-yellow-500 pl-4">
+                            <h4 class="font-semibold text-yellow-700">At Risk</h4>
+                            <p class="text-sm text-gray-600">12% - Declining engagement</p>
+                        </div>
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <h4 class="font-semibold text-red-700">Lost Customers</h4>
+                            <p class="text-sm text-gray-600">8% - Require re-engagement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts & Insights -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">AI Insights & Alerts</h3>
+                    <div class="space-y-4">
+                        <div class="p-3 bg-green-50 border border-green-200 rounded-lg">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                                <span class="text-sm font-medium text-green-800">Inventory Alert</span>
+                            </div>
+                            <p class="text-sm text-green-700 mt-1">Acrylic material stock optimal for Q4 custom orders</p>
+                        </div>
+                        <div class="p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
+                                <span class="text-sm font-medium text-yellow-800">Production Alert</span>
+                            </div>
+                            <p class="text-sm text-yellow-700 mt-1">15 large display orders require extended lead time</p>
+                        </div>
+                        <div class="p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                                <span class="text-sm font-medium text-blue-800">Opportunity</span>
+                            </div>
+                            <p class="text-sm text-blue-700 mt-1">High demand for LED-integrated signage solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sales Analytics Tab -->
+        <div id="sales-tab" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Sales Performance Chart -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Sales Performance Forecast</h3>
+                    <div class="chart-container">
+                        <canvas id="salesForecastChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">* Forecast generated using Laravel Forecasting Service with ARIMA model</p>
+                </div>
+
+                <!-- Product Category Performance -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Category Performance</h3>
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
             </div>
 
-            <!-- Top Products -->
-            <div class="chart-card">
-                <div class="chart-title">🏆 Top Performing Products</div>
-                <div class="table-container">
-                    <table class="data-table">
-                        <thead>
+            <!-- Sales Data Table -->
+            <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Recent Sales Transactions</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
                             <tr>
-                                <th>Product</th>
-                                <th>Revenue</th>
-                                <th>Growth</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Order ID</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Product</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="bg-white divide-y divide-gray-200">
                             <tr>
-                                <td>Custom Acrylic Panels</td>
-                                <td>IDR 875M</td>
-                                <td><span class="kpi-change positive">+18%</span></td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#ORD-2024-001</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PT. Creative Office Solutions</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Panel Akrilik Custom Logo</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">IDR 8,750,000</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Completed</span>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Display Stands</td>
-                                <td>IDR 625M</td>
-                                <td><span class="kpi-change positive">+12%</span></td>
-                            </tr>
-                            <tr>
-                                <td>LED Signage</td>
-                                <td>IDR 500M</td>
-                                <td><span class="kpi-change positive">+15%</span></td>
-                            </tr>
-                            <tr>
-                                <td>Accessories</td>
-                                <td>IDR 500M</td>
-                                <td><span class="kpi-change positive">+8%</span></td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#ORD-2024-002</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Toko Dekorasi Cahaya</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Display Stand Set Complete</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">IDR 12,500,000</td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Processing</span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
-            <!-- Regional Performance -->
-            <div class="chart-card">
-                <div class="chart-title">🌍 Regional Performance</div>
-                <div class="metrics-grid">
-                    <div class="metric-item">
-                        <div class="metric-label">Jakarta</div>
-                        <div class="metric-value">IDR 1.125B (45%)</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Bandung</div>
-                        <div class="metric-value">IDR 500M (20%)</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Surabaya</div>
-                        <div class="metric-value">IDR 450M (18%)</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Others</div>
-                        <div class="metric-value">IDR 425M (17%)</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Business Health Scorecard -->
-            <div class="chart-card" style="grid-column: 1 / -1;">
-                <div class="chart-title">📊 Business Health Scorecard</div>
-                <div class="table-container">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Metric</th>
-                                <th>Current</th>
-                                <th>Target</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Financial</td>
-                                <td>Revenue Growth</td>
-                                <td>12%</td>
-                                <td>15%</td>
-                                <td><span class="status-indicator status-warning"></span>Warning</td>
-                            </tr>
-                            <tr>
-                                <td>Financial</td>
-                                <td>Profit Margin</td>
-                                <td>18.5%</td>
-                                <td>18%</td>
-                                <td><span class="status-indicator status-good"></span>Good</td>
-                            </tr>
-                            <tr>
-                                <td>Customer</td>
-                                <td>Retention Rate</td>
-                                <td>78%</td>
-                                <td>80%</td>
-                                <td><span class="status-indicator status-warning"></span>Warning</td>
-                            </tr>
-                            <tr>
-                                <td>Operations</td>
-                                <td>Order Fulfillment</td>
-                                <td>96%</td>
-                                <td>95%</td>
-                                <td><span class="status-indicator status-good"></span>Good</td>
-                            </tr>
-                            <tr>
-                                <td>Operations</td>
-                                <td>Quality Score</td>
-                                <td>94%</td>
-                                <td>95%</td>
-                                <td><span class="status-indicator status-warning"></span>Warning</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
-    </div>
 
-    <!-- Sales Analytics Dashboard -->
-    <div id="sales-tab" class="dashboard-content" style="display: none;">
-        <div class="dashboard-container">
-            <!-- Sales KPIs -->
-            <div class="kpi-container" style="grid-column: 1 / -1;">
-                <div class="kpi-card">
-                    <div class="kpi-title">Monthly Sales</div>
-                    <div class="kpi-value">IDR 208M</div>
-                    <div class="kpi-change positive">↗️ +8% vs Last Month</div>
+        <!-- Customer Insights Tab -->
+        <div id="customer-tab" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Customer Acquisition -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Customer Acquisition Trends</h3>
+                    <div class="chart-container">
+                        <canvas id="customerAcquisitionChart"></canvas>
+                    </div>
                 </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Average Order Value</div>
-                    <div class="kpi-value">IDR 1.2M</div>
-                    <div class="kpi-change positive">↗️ +15% vs Last Month</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Orders This Month</div>
-                    <div class="kpi-value">173</div>
-                    <div class="kpi-change negative">↘️ -5% vs Last Month</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Conversion Rate</div>
-                    <div class="kpi-value">12.5%</div>
-                    <div class="kpi-change positive">↗️ +2.1% vs Last Month</div>
-                </div>
-            </div>
 
-            <!-- Sales Forecast -->
-            <div class="chart-card" style="grid-column: 1 / -1;">
-                <div class="chart-title">🔮 Sales Forecast (Next 6 Months)</div>
-                <canvas id="forecast-chart" width="800" height="250"></canvas>
-                <div class="metrics-grid" style="margin-top: 1rem;">
-                    <div class="metric-item">
-                        <div class="metric-label">Next Month Prediction</div>
-                        <div class="metric-value">IDR 225M ±15M</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Model Accuracy</div>
-                        <div class="metric-value">91.2%</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Confidence Level</div>
-                        <div class="metric-value">95%</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Trend Direction</div>
-                        <div class="metric-value">📈 Upward</div>
+                <!-- Customer Lifetime Value -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Customer Lifetime Value Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="clvChart"></canvas>
                     </div>
                 </div>
             </div>
 
-            <!-- Product Performance -->
-            <div class="chart-card">
-                <div class="chart-title">📦 Product Category Performance</div>
-                <canvas id="product-performance-chart" width="400" height="200"></canvas>
-            </div>
-
-            <!-- Sales Pipeline -->
-            <div class="chart-card">
-                <div class="chart-title">🚀 Sales Pipeline Status</div>
-                <div class="metrics-grid">
-                    <div class="metric-item">
-                        <div class="metric-label">Leads</div>
-                        <div class="metric-value">145 prospects</div>
+            <!-- Customer Churn Prediction -->
+            <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Churn Prediction Analysis (Laravel ML Service)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center p-4 bg-red-50 rounded-lg">
+                        <div class="text-3xl font-bold text-red-600">High Risk</div>
+                        <div class="text-lg text-red-500">42 Customers</div>
+                        <div class="text-sm text-gray-600">Churn probability > 80%</div>
                     </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Qualified</div>
-                        <div class="metric-value">67 opportunities</div>
+                    <div class="text-center p-4 bg-yellow-50 rounded-lg">
+                        <div class="text-3xl font-bold text-yellow-600">Medium Risk</div>
+                        <div class="text-lg text-yellow-500">128 Customers</div>
+                        <div class="text-sm text-gray-600">Churn probability 50-80%</div>
                     </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Proposal</div>
-                        <div class="metric-value">23 proposals</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Closing</div>
-                        <div class="metric-value">8 deals</div>
-                    </div>
-                </div>
-                <div style="margin-top: 1rem; padding: 1rem; background: rgba(102, 126, 234, 0.1); border-radius: 8px;">
-                    <strong>Pipeline Value:</strong> IDR 450M<br>
-                    <strong>Expected Close Rate:</strong> 65%<br>
-                    <strong>Weighted Pipeline:</strong> IDR 292M
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Customer Insights Dashboard -->
-    <div id="customer-tab" class="dashboard-content" style="display: none;">
-        <div class="dashboard-container">
-            <!-- Customer KPIs -->
-            <div class="kpi-container" style="grid-column: 1 / -1;">
-                <div class="kpi-card">
-                    <div class="kpi-title">Total Customers</div>
-                    <div class="kpi-value">1,000</div>
-                    <div class="kpi-change positive">↗️ +25 this month</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Customer Lifetime Value</div>
-                    <div class="kpi-value">IDR 5.2M</div>
-                    <div class="kpi-change positive">↗️ +12% vs last quarter</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Churn Rate</div>
-                    <div class="kpi-value">5.2%</div>
-                    <div class="kpi-change negative">↘️ +0.8% vs last month</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">NPS Score</div>
-                    <div class="kpi-value">72</div>
-                    <div class="kpi-change positive">↗️ +3 points</div>
-                </div>
-            </div>
-
-            <!-- Customer Segmentation -->
-            <div class="chart-card" style="grid-column: 1 / -1;">
-                <div class="chart-title">👥 Customer Segmentation (RFM Analysis)</div>
-                <div class="segment-card">
-                    <div class="segment-name">🏆 Champions (8.7%)</div>
-                    <div class="segment-stats">
-                        <span>87 customers</span>
-                        <span>35% of revenue</span>
-                        <span>Avg. CLV: IDR 15M</span>
-                    </div>
-                </div>
-                <div class="segment-card">
-                    <div class="segment-name">❤️ Loyal Customers (15.6%)</div>
-                    <div class="segment-stats">
-                        <span>156 customers</span>
-                        <span>28% of revenue</span>
-                        <span>Avg. CLV: IDR 8.5M</span>
-                    </div>
-                </div>
-                <div class="segment-card">
-                    <div class="segment-name">🌱 Potential Loyalists (23.4%)</div>
-                    <div class="segment-stats">
-                        <span>234 customers</span>
-                        <span>20% of revenue</span>
-                        <span>Avg. CLV: IDR 4.2M</span>
-                    </div>
-                </div>
-                <div class="segment-card">
-                    <div class="segment-name">👋 New Customers (29.8%)</div>
-                    <div class="segment-stats">
-                        <span>298 customers</span>
-                        <span>12% of revenue</span>
-                        <span>Avg. CLV: IDR 2.1M</span>
-                    </div>
-                </div>
-                <div class="segment-card">
-                    <div class="segment-name">⚠️ At Risk (14.5%)</div>
-                    <div class="segment-stats">
-                        <span>145 customers</span>
-                        <span>4% of revenue</span>
-                        <span>Avg. CLV: IDR 1.8M</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Churn Prediction -->
-            <div class="chart-card">
-                <div class="chart-title">🔮 Churn Risk Analysis</div>
-                <div class="table-container">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Risk Level</th>
-                                <th>Customers</th>
-                                <th>Revenue at Risk</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="status-indicator status-danger"></span>High Risk (>70%)</td>
-                                <td>47</td>
-                                <td>IDR 125M</td>
-                            </tr>
-                            <tr>
-                                <td><span class="status-indicator status-warning"></span>Medium Risk (40-70%)</td>
-                                <td>98</td>
-                                <td>IDR 89M</td>
-                            </tr>
-                            <tr>
-                                <td><span class="status-indicator status-good"></span>Low Risk (<40%)</td>
-                                <td>855</td>
-                                <td>IDR 2.3B</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-top: 1rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 8px;">
-                    <strong>Action Required:</strong> 47 customers need immediate retention intervention<br>
-                    <strong>Recommended Actions:</strong> Personalized offers, account manager outreach, service improvement
-                </div>
-            </div>
-
-            <!-- Customer Journey -->
-            <div class="chart-card">
-                <div class="chart-title">🛣️ Customer Journey Analytics</div>
-                <div class="metrics-grid">
-                    <div class="metric-item">
-                        <div class="metric-label">Awareness → Interest</div>
-                        <div class="metric-value">65% conversion</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Interest → Consideration</div>
-                        <div class="metric-value">45% conversion</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Consideration → Purchase</div>
-                        <div class="metric-value">28% conversion</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Purchase → Loyalty</div>
-                        <div class="metric-value">73% conversion</div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <div class="text-3xl font-bold text-green-600">Low Risk</div>
+                        <div class="text-lg text-green-500">1,247 Customers</div>
+                        <div class="text-sm text-gray-600">Churn probability < 50%</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Operations Dashboard -->
-    <div id="operations-tab" class="dashboard-content" style="display: none;">
-        <div class="dashboard-container">
-            <!-- Operations KPIs -->
-            <div class="kpi-container" style="grid-column: 1 / -1;">
-                <div class="kpi-card">
-                    <div class="kpi-title">Production Efficiency</div>
-                    <div class="kpi-value">94.2%</div>
-                    <div class="kpi-change positive">↗️ +2.1% vs target</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Inventory Turnover</div>
-                    <div class="kpi-value">4.2x</div>
-                    <div class="kpi-change positive">↗️ +0.3x vs last quarter</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Quality Score</div>
-                    <div class="kpi-value">96.8%</div>
-                    <div class="kpi-change positive">↗️ +1.2% vs last month</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">On-Time Delivery</div>
-                    <div class="kpi-value">94%</div>
-                    <div class="kpi-change negative">↘️ -1% vs target</div>
-                </div>
-            </div>
-
-            <!-- Production Overview -->
-            <div class="chart-card" style="grid-column: 1 / -1;">
-                <div class="chart-title">🏭 Production Overview</div>
-                <canvas id="production-chart" width="800" height="250"></canvas>
-            </div>
-
-            <!-- Inventory Status -->
-            <div class="chart-card">
-                <div class="chart-title">📦 Inventory Status</div>
-                <div class="table-container">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Stock Level</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Raw Acrylic Sheets</td>
-                                <td>85 days supply</td>
-                                <td><span class="status-indicator status-good"></span>Good</td>
-                            </tr>
-                            <tr>
-                                <td>LED Components</td>
-                                <td>15 days supply</td>
-                                <td><span class="status-indicator status-warning"></span>Low</td>
-                            </tr>
-                            <tr>
-                                <td>Mounting Hardware</td>
-                                <td>45 days supply</td>
-                                <td><span class="status-indicator status-good"></span>Good</td>
-                            </tr>
-                            <tr>
-                                <td>Finished Products</td>
-                                <td>22 days supply</td>
-                                <td><span class="status-indicator status-warning"></span>Low</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Quality Metrics -->
-            <div class="chart-card">
-                <div class="chart-title">🔍 Quality Control Metrics</div>
-                <div class="metrics-grid">
-                    <div class="metric-item">
-                        <div class="metric-label">First Pass Yield</div>
-                        <div class="metric-value">94.2%</div>
+        <!-- Operations Tab -->
+        <div id="operations-tab" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Inventory Levels -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Inventory Management</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium">Panel Akrilik Premium</span>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-24 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                                <span class="text-sm text-gray-600">85%</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium">Acrylic Display Stand</span>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-24 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                                <span class="text-sm text-gray-600">45%</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                            <span class="font-medium">Signage Materials</span>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-24 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 15%"></div>
+                                </div>
+                                <span class="text-sm text-gray-600">15%</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Defect Rate</div>
-                        <div class="metric-value">1.8%</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Customer Complaints</div>
-                        <div class="metric-value">0.5%</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Rework Rate</div>
-                        <div class="metric-value">2.1%</div>
+                </div>
+
+                <!-- Supply Chain Performance -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Supply Chain Performance</h3>
+                    <div class="chart-container">
+                        <canvas id="supplyChainChart"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Financial Dashboard -->
-    <div id="financial-tab" class="dashboard-content" style="display: none;">
-        <div class="dashboard-container">
-            <!-- Financial KPIs -->
-            <div class="kpi-container" style="grid-column: 1 / -1;">
-                <div class="kpi-card">
-                    <div class="kpi-title">Monthly Revenue</div>
-                    <div class="kpi-value">IDR 208M</div>
-                    <div class="kpi-change positive">↗️ +8% MoM</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Monthly Profit</div>
-                    <div class="kpi-value">IDR 38.5M</div>
-                    <div class="kpi-change positive">↗️ +12% MoM</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Operating Margin</div>
-                    <div class="kpi-value">18.5%</div>
-                    <div class="kpi-change positive">↗️ +0.8% MoM</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-title">Cash Flow</div>
-                    <div class="kpi-value">IDR 45M</div>
-                    <div class="kpi-change positive">↗️ +15% MoM</div>
-                </div>
-            </div>
-
-            <!-- Profit Analysis -->
-            <div class="chart-card" style="grid-column: 1 / -1;">
-                <div class="chart-title">💰 Profitability Analysis by Product Category</div>
-                <canvas id="profit-chart" width="800" height="250"></canvas>
-            </div>
-
-            <!-- Cost Breakdown -->
-            <div class="chart-card">
-                <div class="chart-title">📊 Cost Structure</div>
-                <canvas id="cost-chart" width="400" height="200"></canvas>
-            </div>
-
-            <!-- Financial Forecast -->
-            <div class="chart-card">
-                <div class="chart-title">🔮 Financial Forecast (Next Quarter)</div>
-                <div class="metrics-grid">
-                    <div class="metric-item">
-                        <div class="metric-label">Projected Revenue</div>
-                        <div class="metric-value">IDR 675M</div>
+        <!-- Financial Tab -->
+        <div id="financial-tab" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Financial Overview -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Financial Performance</h3>
+                    <div class="chart-container">
+                        <canvas id="financialChart"></canvas>
                     </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Projected Profit</div>
-                        <div class="metric-value">IDR 125M</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Expected Margin</div>
-                        <div class="metric-value">18.5%</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-label">Confidence Level</div>
-                        <div class="metric-value">88%</div>
+                </div>
+
+                <!-- Cash Flow -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Cash Flow Analysis</h3>
+                    <div class="chart-container">
+                        <canvas id="cashFlowChart"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- RFM Analysis Tab -->
+        <div id="rfm-tab" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- RFM Segmentation -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">RFM Customer Segmentation</h3>
+                    <div class="chart-container">
+                        <canvas id="rfmChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">* Analysis powered by Laravel RFM Service</p>
+                </div>
+
+                <!-- Segment Details -->
+                <div class="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Segment Performance</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 border border-green-200 rounded-lg bg-green-50">
+                            <h4 class="font-semibold text-green-800">Champions (R=5, F=5, M=5)</h4>
+                            <p class="text-sm text-green-700">Count: 187 customers | Avg. Order Value: IDR 1.2M</p>
+                            <p class="text-xs text-green-600 mt-1">Strategy: Reward loyalty, early access to new products</p>
+                        </div>
+                        <div class="p-4 border border-blue-200 rounded-lg bg-blue-50">
+                            <h4 class="font-semibold text-blue-800">Loyal Customers (R=4-5, F=3-5, M=3-5)</h4>
+                            <p class="text-sm text-blue-700">Count: 432 customers | Avg. Order Value: IDR 850K</p>
+                            <p class="text-xs text-blue-600 mt-1">Strategy: Upselling and cross-selling campaigns</p>
+                        </div>
+                        <div class="p-4 border border-yellow-200 rounded-lg bg-yellow-50">
+                            <h4 class="font-semibold text-yellow-800">At Risk (R=2-3, F=2-3, M=2-4)</h4>
+                            <p class="text-sm text-yellow-700">Count: 198 customers | Avg. Order Value: IDR 420K</p>
+                            <p class="text-xs text-yellow-600 mt-1">Strategy: Re-engagement campaigns, special offers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript for Dashboard Functionality -->
     <script>
-        // Initialize dashboard
-        document.addEventListener('DOMContentLoaded', function() {
-            updateTime();
-            setInterval(updateTime, 1000);
-            showAlert('Dashboard loaded successfully', 'success');
-            
-            // Initialize charts
-            setTimeout(() => {
-                initializeCharts();
-            }, 1000);
-        });
-
+        // Initialize time display
         function updateTime() {
             const now = new Date();
-            document.getElementById('current-time').textContent = 
-                now.toLocaleString('id-ID', { 
-                    year: 'numeric', 
-                    month: 'short', 
-                    day: 'numeric',
-                    hour: '2-digit', 
-                    minute: '2-digit' 
-                });
+            document.getElementById('current-time').textContent = now.toLocaleString('id-ID');
         }
+        updateTime();
+        setInterval(updateTime, 1000);
 
+        // Tab functionality
         function showTab(tabName) {
             // Hide all tabs
-            const tabs = document.querySelectorAll('.dashboard-content');
-            tabs.forEach(tab => tab.style.display = 'none');
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+            });
             
             // Remove active class from all nav items
-            const navItems = document.querySelectorAll('.nav-item');
-            navItems.forEach(item => item.classList.remove('active'));
+            document.querySelectorAll('.nav-tab').forEach(nav => {
+                nav.classList.remove('active', 'border-primary-500', 'text-primary-600');
+                nav.classList.add('border-transparent', 'text-gray-500');
+            });
             
             // Show selected tab
-            document.getElementById(tabName + '-tab').style.display = 'block';
+            document.getElementById(tabName + '-tab').classList.remove('hidden');
             
-            // Add active class to clicked nav item
-            event.target.classList.add('active');
+            // Add active class to selected nav item
+            event.target.classList.add('active', 'border-primary-500', 'text-primary-600');
+            event.target.classList.remove('border-transparent', 'text-gray-500');
             
-            showAlert(`Switched to ${tabName.charAt(0).toUpperCase() + tabName.slice(1)} Dashboard`, 'info');
+            // Load charts for the selected tab
+            loadChartsForTab(tabName);
         }
 
-        function showAlert(message, type = 'info') {
-            const banner = document.getElementById('alert-banner');
-            const updateTime = document.getElementById('last-update');
-            
-            updateTime.textContent = new Date().toLocaleString('id-ID');
-            banner.style.display = 'block';
-            
-            // Hide after 3 seconds
-            setTimeout(() => {
-                banner.style.display = 'none';
-            }, 3000);
-        }
-
-        function exportData() {
-            showAlert('Exporting dashboard data...', 'info');
-            
-            // Simulate export process
-            setTimeout(() => {
-                showAlert('Report exported successfully to Excel format', 'success');
-            }, 2000);
-        }
-
-        function initializeCharts() {
-            // Revenue Chart
-            const revenueCtx = document.getElementById('revenue-chart');
-            if (revenueCtx) {
-                drawLineChart(revenueCtx, 'Monthly Revenue', [180, 195, 210, 205, 225, 240, 235, 250, 260, 245, 270, 275]);
-            }
-
-            // Segment Chart
-            const segmentCtx = document.getElementById('segment-chart');
-            if (segmentCtx) {
-                drawPieChart(segmentCtx, ['B2B', 'B2C'], [65, 35]);
-            }
-
-            // Forecast Chart
-            const forecastCtx = document.getElementById('forecast-chart');
-            if (forecastCtx) {
-                drawForecastChart(forecastCtx);
-            }
-
-            // Product Performance Chart
-            const productCtx = document.getElementById('product-performance-chart');
-            if (productCtx) {
-                drawBarChart(productCtx, ['Custom Panels', 'Display Stands', 'Signage', 'Accessories'], [35, 25, 20, 20]);
-            }
-
-            // Production Chart
-            const productionCtx = document.getElementById('production-chart');
-            if (productionCtx) {
-                drawLineChart(productionCtx, 'Daily Production', [85, 92, 88, 95, 90, 87, 93, 96, 91, 89, 94, 88]);
-            }
-
-            // Profit Chart
-            const profitCtx = document.getElementById('profit-chart');
-            if (profitCtx) {
-                drawBarChart(profitCtx, ['Custom Panels', 'Display Stands', 'Signage', 'Accessories'], [28, 15, 18, 22]);
-            }
-
-            // Cost Chart
-            const costCtx = document.getElementById('cost-chart');
-            if (costCtx) {
-                drawPieChart(costCtx, ['Materials', 'Labor', 'Overhead', 'Other'], [45, 25, 20, 10]);
+        // Chart initialization
+        function loadChartsForTab(tabName) {
+            if (tabName === 'executive') {
+                initRevenueChart();
+                initRegionChart();
+            } else if (tabName === 'sales') {
+                initSalesForecastChart();
+                initCategoryChart();
+            } else if (tabName === 'customer') {
+                initCustomerAcquisitionChart();
+                initCLVChart();
+            } else if (tabName === 'operations') {
+                initSupplyChainChart();
+            } else if (tabName === 'financial') {
+                initFinancialChart();
+                initCashFlowChart();
+            } else if (tabName === 'rfm') {
+                initRFMChart();
             }
         }
 
-        function drawLineChart(canvas, title, data) {
-            const ctx = canvas.getContext('2d');
-            const width = canvas.width;
-            const height = canvas.height;
+        // Chart initialization functions
+        function initRevenueChart() {
+            const ctx = document.getElementById('revenueTrendChart');
+            if (!ctx || ctx.chart) return;
             
-            ctx.clearRect(0, 0, width, height);
-            
-            // Background
-            ctx.fillStyle = '#f8fafc';
-            ctx.fillRect(0, 0, width, height);
-            
-            // Chart area
-            const margin = 40;
-            const chartWidth = width - 2 * margin;
-            const chartHeight = height - 2 * margin;
-            
-            // Draw axes
-            ctx.strokeStyle = '#e2e8f0';
-            ctx.lineWidth = 1;
-            
-            // Y-axis
-            ctx.beginPath();
-            ctx.moveTo(margin, margin);
-            ctx.lineTo(margin, height - margin);
-            ctx.stroke();
-            
-            // X-axis
-            ctx.beginPath();
-            ctx.moveTo(margin, height - margin);
-            ctx.lineTo(width - margin, height - margin);
-            ctx.stroke();
-            
-            // Draw data line
-            if (data && data.length > 0) {
-                const maxValue = Math.max(...data);
-                const minValue = Math.min(...data);
-                const range = maxValue - minValue;
-                
-                ctx.strokeStyle = '#667eea';
-                ctx.lineWidth = 3;
-                ctx.beginPath();
-                
-                data.forEach((value, index) => {
-                    const x = margin + (index * chartWidth) / (data.length - 1);
-                    const y = height - margin - ((value - minValue) / range) * chartHeight;
-                    
-                    if (index === 0) {
-                        ctx.moveTo(x, y);
-                    } else {
-                        ctx.lineTo(x, y);
+            ctx.chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Revenue (IDR M)',
+                        data: [32, 38, 42, 45, 48, 52],
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                        borderWidth: 3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
                     }
-                });
-                
-                ctx.stroke();
-                
-                // Draw data points
-                ctx.fillStyle = '#667eea';
-                data.forEach((value, index) => {
-                    const x = margin + (index * chartWidth) / (data.length - 1);
-                    const y = height - margin - ((value - minValue) / range) * chartHeight;
-                    
-                    ctx.beginPath();
-                    ctx.arc(x, y, 4, 0, 2 * Math.PI);
-                    ctx.fill();
-                });
-            }
-            
-            // Chart title
-            ctx.fillStyle = '#374151';
-            ctx.font = 'bold 14px Arial';
-            ctx.textAlign = 'center';
-            ctx.fillText(title, width / 2, 20);
-        }
-
-        function drawPieChart(canvas, labels, data) {
-            const ctx = canvas.getContext('2d');
-            const width = canvas.width;
-            const height = canvas.height;
-            
-            ctx.clearRect(0, 0, width, height);
-            
-            const centerX = width / 2;
-            const centerY = height / 2;
-            const radius = Math.min(width, height) / 3;
-            
-            const colors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe', '#00f2fe'];
-            const total = data.reduce((sum, value) => sum + value, 0);
-            
-            let currentAngle = -Math.PI / 2;
-            
-            data.forEach((value, index) => {
-                const sliceAngle = (value / total) * 2 * Math.PI;
-                
-                ctx.fillStyle = colors[index % colors.length];
-                ctx.beginPath();
-                ctx.moveTo(centerX, centerY);
-                ctx.arc(centerX, centerY, radius, currentAngle, currentAngle + sliceAngle);
-                ctx.closePath();
-                ctx.fill();
-                
-                // Labels
-                const labelAngle = currentAngle + sliceAngle / 2;
-                const labelX = centerX + Math.cos(labelAngle) * (radius + 20);
-                const labelY = centerY + Math.sin(labelAngle) * (radius + 20);
-                
-                ctx.fillStyle = '#374151';
-                ctx.font = '12px Arial';
-                ctx.textAlign = 'center';
-                ctx.fillText(`${labels[index]}: ${value}%`, labelX, labelY);
-                
-                currentAngle += sliceAngle;
-            });
-        }
-
-        function drawBarChart(canvas, labels, data) {
-            const ctx = canvas.getContext('2d');
-            const width = canvas.width;
-            const height = canvas.height;
-            
-            ctx.clearRect(0, 0, width, height);
-            
-            const margin = 40;
-            const chartWidth = width - 2 * margin;
-            const chartHeight = height - 2 * margin;
-            const barWidth = chartWidth / data.length * 0.8;
-            const maxValue = Math.max(...data);
-            
-            // Background
-            ctx.fillStyle = '#f8fafc';
-            ctx.fillRect(0, 0, width, height);
-            
-            // Draw bars
-            data.forEach((value, index) => {
-                const barHeight = (value / maxValue) * chartHeight;
-                const x = margin + index * (chartWidth / data.length) + (chartWidth / data.length - barWidth) / 2;
-                const y = height - margin - barHeight;
-                
-                const gradient = ctx.createLinearGradient(0, y, 0, y + barHeight);
-                gradient.addColorStop(0, '#667eea');
-                gradient.addColorStop(1, '#764ba2');
-                
-                ctx.fillStyle = gradient;
-                ctx.fillRect(x, y, barWidth, barHeight);
-                
-                // Value labels
-                ctx.fillStyle = '#374151';
-                ctx.font = '12px Arial';
-                ctx.textAlign = 'center';
-                ctx.fillText(`${value}%`, x + barWidth / 2, y - 5);
-                
-                // Category labels
-                ctx.fillText(labels[index], x + barWidth / 2, height - margin + 20);
-            });
-        }
-
-        function drawForecastChart(canvas) {
-            const ctx = canvas.getContext('2d');
-            const width = canvas.width;
-            const height = canvas.height;
-            
-            ctx.clearRect(0, 0, width, height);
-            
-            // Sample forecast data
-            const historical = [180, 195, 210, 205, 225, 240];
-            const forecast = [255, 270, 285, 300, 310, 325];
-            const confidence = [10, 12, 15, 18, 20, 25];
-            
-            const margin = 40;
-            const chartWidth = width - 2 * margin;
-            const chartHeight = height - 2 * margin;
-            
-            // Background
-            ctx.fillStyle = '#f8fafc';
-            ctx.fillRect(0, 0, width, height);
-            
-            // Draw axes
-            ctx.strokeStyle = '#e2e8f0';
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(margin, margin);
-            ctx.lineTo(margin, height - margin);
-            ctx.moveTo(margin, height - margin);
-            ctx.lineTo(width - margin, height - margin);
-            ctx.stroke();
-            
-            const allData = [...historical, ...forecast];
-            const maxValue = Math.max(...allData) + Math.max(...confidence);
-            const minValue = Math.min(...allData) - Math.max(...confidence);
-            const range = maxValue - minValue;
-            
-            // Draw confidence interval
-            ctx.fillStyle = 'rgba(102, 126, 234, 0.2)';
-            ctx.beginPath();
-            
-            // Upper bound
-            forecast.forEach((value, index) => {
-                const x = margin + ((index + historical.length) * chartWidth) / (allData.length - 1);
-                const y = height - margin - ((value + confidence[index] - minValue) / range) * chartHeight;
-                if (index === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-            });
-            
-            // Lower bound (reverse order)
-            for (let i = forecast.length - 1; i >= 0; i--) {
-                const x = margin + ((i + historical.length) * chartWidth) / (allData.length - 1);
-                const y = height - margin - ((forecast[i] - confidence[i] - minValue) / range) * chartHeight;
-                ctx.lineTo(x, y);
-            }
-            
-            ctx.closePath();
-            ctx.fill();
-            
-            // Draw historical data
-            ctx.strokeStyle = '#667eea';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            
-            historical.forEach((value, index) => {
-                const x = margin + (index * chartWidth) / (allData.length - 1);
-                const y = height - margin - ((value - minValue) / range) * chartHeight;
-                if (index === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-            });
-            ctx.stroke();
-            
-            // Draw forecast line
-            ctx.strokeStyle = '#764ba2';
-            ctx.setLineDash([5, 5]);
-            ctx.beginPath();
-            
-            forecast.forEach((value, index) => {
-                const x = margin + ((index + historical.length) * chartWidth) / (allData.length - 1);
-                const y = height - margin - ((value - minValue) / range) * chartHeight;
-                if (index === 0) {
-                    // Connect to last historical point
-                    const lastHistX = margin + ((historical.length - 1) * chartWidth) / (allData.length - 1);
-                    const lastHistY = height - margin - ((historical[historical.length - 1] - minValue) / range) * chartHeight;
-                    ctx.moveTo(lastHistX, lastHistY);
-                    ctx.lineTo(x, y);
-                } else {
-                    ctx.lineTo(x, y);
                 }
             });
-            ctx.stroke();
-            ctx.setLineDash([]);
-            
-            // Legend
-            ctx.fillStyle = '#374151';
-            ctx.font = '12px Arial';
-            ctx.textAlign = 'left';
-            ctx.fillText('Historical', margin, 25);
-            ctx.fillText('Forecast', margin + 80, 25);
-            ctx.fillText('Confidence Interval', margin + 150, 25);
-            
-            // Draw legend lines
-            ctx.strokeStyle = '#667eea';
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-            ctx.moveTo(margin + 65, 20);
-            ctx.lineTo(margin + 75, 20);
-            ctx.stroke();
-            
-            ctx.strokeStyle = '#764ba2';
-            ctx.setLineDash([3, 3]);
-            ctx.beginPath();
-            ctx.moveTo(margin + 135, 20);
-            ctx.lineTo(margin + 145, 20);
-            ctx.stroke();
-            ctx.setLineDash([]);
         }
 
-        // Filter change handlers
-        document.getElementById('period-filter').addEventListener('change', function() {
-            showAlert(`Filter updated: ${this.value}`, 'info');
-        });
+        function initRegionChart() {
+            const ctx = document.getElementById('regionSalesChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Others'],
+                    datasets: [{
+                        data: [35, 25, 20, 12, 8],
+                        backgroundColor: [
+                            '#667eea',
+                            '#764ba2',
+                            '#f093fb',
+                            '#f5576c',
+                            '#4facfe'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        }
+                    }
+                }
+            });
+        }
 
-        document.getElementById('region-filter').addEventListener('change', function() {
-            showAlert(`Region filter: ${this.value}`, 'info');
-        });
+        function initSalesForecastChart() {
+            const ctx = document.getElementById('salesForecastChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [{
+                        label: 'Actual Sales',
+                        data: [52, 58, 62, null, null, null],
+                        borderColor: '#10b981',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        borderWidth: 3
+                    }, {
+                        label: 'Forecasted Sales',
+                        data: [null, null, 62, 68, 72, 78],
+                        borderColor: '#f59e0b',
+                        backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                        borderDash: [5, 5],
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    }
+                }
+            });
+        }
 
-        document.getElementById('customer-filter').addEventListener('change', function() {
-            showAlert(`Customer filter: ${this.value}`, 'info');
+        function initCategoryChart() {
+            const ctx = document.getElementById('categoryChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Custom Panels', 'Display Stands', 'Signage & Logo', 'Acrylic Accessories', 'Decorative Items'],
+                    datasets: [{
+                        label: 'Sales (IDR M)',
+                        data: [125, 98, 87, 65, 45],
+                        backgroundColor: '#667eea'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+
+        function initCustomerAcquisitionChart() {
+            const ctx = document.getElementById('customerAcquisitionChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'New Customers',
+                        data: [25, 32, 28, 41, 38, 47],
+                        borderColor: '#8b5cf6',
+                        backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                        borderWidth: 3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function initCLVChart() {
+            const ctx = document.getElementById('clvChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['< 5M', '5-15M', '15-30M', '30-50M', '> 50M'],
+                    datasets: [{
+                        label: 'Customer Count',
+                        data: [145, 298, 187, 89, 23],
+                        backgroundColor: '#06b6d4'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function initSupplyChainChart() {
+            const ctx = document.getElementById('supplyChainChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Delivery Time', 'Quality Score', 'Cost Efficiency', 'Reliability', 'Flexibility'],
+                    datasets: [{
+                        label: 'Current Performance',
+                        data: [85, 92, 78, 88, 75],
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.2)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scale: {
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        }
+
+        function initFinancialChart() {
+            const ctx = document.getElementById('financialChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+                    datasets: [{
+                        label: 'Revenue',
+                        data: [98, 125, 148, 165],
+                        backgroundColor: '#10b981'
+                    }, {
+                        label: 'Costs',
+                        data: [68, 82, 95, 105],
+                        backgroundColor: '#ef4444'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function initCashFlowChart() {
+            const ctx = document.getElementById('cashFlowChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Cash Flow (IDR M)',
+                        data: [18, 25, 22, 32, 28, 35],
+                        borderColor: '#f59e0b',
+                        backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                        borderWidth: 3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function initRFMChart() {
+            const ctx = document.getElementById('rfmChart');
+            if (!ctx || ctx.chart) return;
+            
+            ctx.chart = new Chart(ctx, {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                        label: 'Champions',
+                        data: [{x: 5, y: 5}, {x: 4.8, y: 4.9}, {x: 4.9, y: 5}],
+                        backgroundColor: '#10b981'
+                    }, {
+                        label: 'Loyal',
+                        data: [{x: 4.2, y: 4.1}, {x: 4.0, y: 4.3}, {x: 4.1, y: 3.9}],
+                        backgroundColor: '#3b82f6'
+                    }, {
+                        label: 'At Risk',
+                        data: [{x: 2.5, y: 2.8}, {x: 2.7, y: 2.3}, {x: 2.1, y: 2.6}],
+                        backgroundColor: '#f59e0b'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Frequency Score'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Monetary Score'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Data refresh functionality
+        function refreshData() {
+            // Show alert
+            const alertBanner = document.getElementById('alert-banner');
+            alertBanner.classList.remove('hidden');
+            
+            // Update last update time
+            document.getElementById('last-update').textContent = new Date().toLocaleString('id-ID');
+            
+            // Hide alert after 3 seconds
+            setTimeout(() => {
+                alertBanner.classList.add('hidden');
+            }, 3000);
+            
+            // Simulate data refresh - in real Laravel app, this would call API endpoints
+            console.log('Data refreshed from Laravel backend');
+        }
+
+        // Export functionality
+        function exportData() {
+            // In real Laravel app, this would trigger report generation
+            alert('Export functionality will be integrated with Laravel Excel package');
+        }
+
+        // Initialize default tab
+        document.addEventListener('DOMContentLoaded', function() {
+            loadChartsForTab('executive');
         });
     </script>
 </body>

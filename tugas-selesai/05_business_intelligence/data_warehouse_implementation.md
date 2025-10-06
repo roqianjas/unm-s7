@@ -44,10 +44,11 @@ Data Warehouse implementation untuk SATRIAMART Business Intelligence project tel
 
 ### Technical Specifications
 
-- **Platform:** PostgreSQL 13.x dengan optimized configuration
+- **Platform:** MySQL 8.0 dengan Laravel-based ETL pipeline
 - **Storage:** 500GB SSD dengan automated backup procedures
-- **Performance:** < 2 hours daily ETL execution time
+- **Performance:** < 2 hours daily ETL execution time menggunakan Laravel Queue system
 - **Scalability:** Architecture dapat support 10x current data volume
+- **Integration:** Direct connection ke SATRIAMART SIMS operational database
 
 ---
 
@@ -59,43 +60,46 @@ Data Warehouse implementation untuk SATRIAMART Business Intelligence project tel
 ┌─────────────────────────────────────────────────────────────┐
 │                     ANALYTICS LAYER                         │
 ├─────────────────────────────────────────────────────────────┤
-│    OLAP Cubes    │   Aggregated Views   │   Data Marts     │
+│   Laravel Views   │  Chart.js Dashboards  │   API Reports  │
 ├─────────────────────────────────────────────────────────────┤
 │                   PRESENTATION LAYER                        │
 ├─────────────────────────────────────────────────────────────┤
 │             Enterprise Data Warehouse                       │
-│                  (Star Schema)                              │
+│              (Laravel Dimensional Models)                   │
 ├─────────────────────────────────────────────────────────────┤
 │                    STAGING LAYER                            │
 ├─────────────────────────────────────────────────────────────┤
-│      Data Validation    │    Data Cleansing                │
+│    Laravel ETL Commands   │   Data Validation Models       │
 ├─────────────────────────────────────────────────────────────┤
 │                  INTEGRATION LAYER                          │
 ├─────────────────────────────────────────────────────────────┤
-│              ETL/ELT Processes                              │
+│            Laravel Queue + Commands                         │
 ├─────────────────────────────────────────────────────────────┤
 │                    SOURCE LAYER                             │
 ├─────────────────────────────────────────────────────────────┤
+│           SATRIAMART SIMS (Laravel Operational DB)          │
 │  Sales System │ Production │ Inventory │ Financial │ CRM   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ### Database Configuration
 
-**PostgreSQL Optimization Settings:**
+**MySQL 8.0 Optimization Settings for BI:**
 
 ```sql
 -- Memory Configuration
-shared_buffers = '4GB'
-effective_cache_size = '12GB'
-work_mem = '256MB'
-maintenance_work_mem = '1GB'
+innodb_buffer_pool_size = 4G
+innodb_log_buffer_size = 256M
+key_buffer_size = 1G
+tmp_table_size = 512M
+max_heap_table_size = 512M
 
 -- Query Optimization
-random_page_cost = 1.1
-effective_io_concurrency = 200
-max_worker_processes = 8
-max_parallel_workers_per_gather = 4
+join_buffer_size = 16M
+sort_buffer_size = 8M
+read_buffer_size = 2M
+innodb_io_capacity = 2000
+innodb_flush_method = O_DIRECT
 
 -- Logging & Monitoring
 log_statement = 'all'

@@ -109,10 +109,10 @@ Comprehensive **Business Intelligence Platform** dengan:
 ```
 
 **Technology Stack:**
-- **Data Warehouse:** PostgreSQL dengan Star Schema
-- **ETL:** Python + Pandas + SQLAlchemy
-- **Analytics:** Tableau + Python ML Libraries
-- **Deployment:** Linux Server Environment
+- **Data Warehouse:** MySQL 8.0 dengan Laravel dimensional modeling
+- **ETL:** Laravel Commands + Eloquent ORM + Queue System
+- **Analytics:** Chart.js + Blade Templates + PHP ML Libraries
+- **Deployment:** Laravel aplikasi dengan MySQL database
 
 ---
 

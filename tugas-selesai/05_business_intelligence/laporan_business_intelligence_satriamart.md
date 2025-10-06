@@ -184,24 +184,24 @@ SATRIAMART currently operates dengan fragmented data systems:
 #### 2.2.2 Technology Stack Selection
 
 **Data Warehouse Platform:**
-- **Choice**: PostgreSQL dengan dimensional modeling
-- **Rationale**: Open source, scalable, excellent SQL support
-- **Alternatives Considered**: SQL Server, MySQL, Oracle
+- **Choice**: MySQL 8.0 dengan dimensional modeling (Laravel-based)
+- **Rationale**: Integration dengan existing SIMS, Laravel ecosystem compatibility
+- **Alternatives Considered**: PostgreSQL, SQL Server, Oracle
 
 **ETL Platform:**
-- **Choice**: Python dengan Pandas dan SQLAlchemy
-- **Rationale**: Flexibility, extensive libraries, maintainable
-- **Alternatives Considered**: Pentaho, Talend, SSIS
+- **Choice**: Laravel Commands dengan Eloquent ORM dan Queue system
+- **Rationale**: Consistency dengan existing tech stack, maintainable PHP codebase
+- **Alternatives Considered**: Python/Pandas, Pentaho, Talend
 
 **Analytics Platform:**
-- **Choice**: Tableau Public untuk visualization
-- **Rationale**: Powerful visualization, user-friendly interface
-- **Alternatives Considered**: Power BI, Apache Superset
+- **Choice**: Chart.js + Blade templates untuk visualization
+- **Rationale**: Laravel integration, responsive design, real-time capabilities
+- **Alternatives Considered**: Tableau, Power BI, Apache Superset
 
 **Advanced Analytics:**
-- **Choice**: Python dengan scikit-learn, pandas
-- **Rationale**: Comprehensive ML libraries, integration capability
-- **Alternatives Considered**: R, SAS, Azure ML
+- **Choice**: PHP ML libraries + Laravel Collections untuk data processing
+- **Rationale**: Laravel ecosystem integration, consistent development environment
+- **Alternatives Considered**: Python/scikit-learn, R, SAS
 
 #### 2.2.3 Integration Strategy
 
@@ -519,29 +519,54 @@ CREATE INDEX idx_fact_sales_order ON fact_sales(order_number);
 
 **Data Generation Strategy:**
 
-```python
-# Python script untuk generate realistic sample data
-import pandas as pd
-import numpy as np
-from datetime import datetime, timedelta
-import random
+```php
+<?php
+// Laravel Command untuk generate realistic sample data
+namespace App\Console\Commands;
 
-# Customer Data Generation
-def generate_customer_data():
-    customers = []
-    for i in range(1, 1001):
-        customer = {
-            'customer_id': f'CUST{i:04d}',
-            'customer_name': generate_customer_name(),
-            'customer_type': 'B2C' if i <= 700 else 'B2B',
-            'industry_sector': generate_industry() if i > 700 else 'Individual',
-            'region': random.choice(['Jakarta', 'Bandung', 'Surabaya', 'Medan']),
-            'registration_date': generate_random_date(),
-            'customer_status': 'Active'
+use Illuminate\Console\Command;
+use App\Models\Customer;
+use App\Models\Product;
+use App\Models\Order;
+use Carbon\Carbon;
+
+class GenerateBusinessIntelligenceData extends Command
+{
+    protected $signature = 'bi:generate-sample-data';
+    protected $description = 'Generate sample data for BI analysis';
+
+    public function handle()
+    {
+        $this->info('Generating sample data for Business Intelligence...');
+        
+        // Generate customers, products, dan orders
+        $this->generateCustomers();
+        $this->generateProducts();
+        $this->generateOrders();
+        
+        $this->info('Sample data generation completed!');
+    }
+
+    private function generateCustomers()
+    {
+        // Laravel implementation untuk generate 1000 customer records
+        $customerTypes = ['B2C', 'B2B'];
+        $regions = ['Jakarta', 'Bandung', 'Surabaya', 'Medan'];
+        $industries = ['Manufacturing', 'Retail', 'Hospitality', 'Education', 'Healthcare'];
+        
+        for ($i = 1; $i <= 1000; $i++) {
+            Customer::create([
+                'customer_id' => 'CUST' . str_pad($i, 4, '0', STR_PAD_LEFT),
+                'customer_name' => $this->generateCustomerName(),
+                'customer_type' => $i <= 700 ? 'B2C' : 'B2B',
+                'industry_sector' => $i > 700 ? $industries[array_rand($industries)] : 'Individual',
+                'region' => $regions[array_rand($regions)],
+                'registration_date' => $this->generateRandomDate(),
+                'customer_status' => 'Active'
+            ]);
         }
-        customers.append(customer)
-    return pd.DataFrame(customers)
-```
+    }
+}
 
 #### 3.3.2 OLAP Cubes Development
 
@@ -831,78 +856,92 @@ def generate_customer_data():
 1. **Time Series Forecasting:**
    - ARIMA model untuk revenue forecasting
    - Seasonal decomposition untuk trend analysis
-   - Prophet model untuk handling seasonality dan holidays
+   - Time series analysis untuk handling seasonality dan holidays
 
 2. **Machine Learning Models:**
-   - Random Forest untuk product demand prediction
-   - Linear Regression untuk price optimization
-   - Neural Networks untuk complex pattern recognition
+   - Laravel Collections untuk advanced data processing
+   - PHP ML libraries untuk demand prediction
+   - Statistical analysis menggunakan MathPHP library
 
 **Sales Forecasting Implementation:**
 
-```python
-# Sales Forecasting Model Implementation
-import pandas as pd
-import numpy as np
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-from prophet import Prophet
+```php
+<?php
+// Laravel Sales Forecasting Service
+namespace App\Services\BI;
 
-class SalesForecastingModel:
-    def __init__(self):
-        self.rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
-        self.prophet_model = Prophet()
+use App\Models\BI\FactSales;
+use App\Models\BI\DimDate;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
+
+class SalesForecastingService
+{
+    public function generateSalesForecast($productKey, $forecastPeriods = 30)
+    {
+        // Get historical sales data
+        $historicalData = $this->getHistoricalSalesData($productKey);
         
-    def prepare_features(self, data):
-        """Prepare features for forecasting model"""
-        features = data.copy()
+        // Apply time series analysis
+        $forecast = $this->applyTimeSeriesAnalysis($historicalData, $forecastPeriods);
         
-        # Time-based features
-        features['month'] = features['date'].dt.month
-        features['quarter'] = features['date'].dt.quarter
-        features['day_of_week'] = features['date'].dt.dayofweek
-        features['is_weekend'] = features['day_of_week'].isin([5, 6]).astype(int)
+        // Apply seasonal adjustments
+        $seasonalForecast = $this->applySeasonalAdjustments($forecast);
         
-        # Lag features
-        features['sales_lag_7'] = features['sales'].shift(7)
-        features['sales_lag_30'] = features['sales'].shift(30)
-        features['sales_rolling_7'] = features['sales'].rolling(7).mean()
-        
-        # Product features
-        features['product_category_encoded'] = pd.Categorical(features['product_category']).codes
-        features['customer_segment_encoded'] = pd.Categorical(features['customer_segment']).codes
-        
-        return features
+        return $seasonalForecast;
+    }
     
-    def train_model(self, training_data):
-        """Train the forecasting model"""
-        # Prepare features
-        features = self.prepare_features(training_data)
-        
-        # Select feature columns
-        feature_cols = ['month', 'quarter', 'day_of_week', 'is_weekend', 
-                       'sales_lag_7', 'sales_lag_30', 'sales_rolling_7',
-                       'product_category_encoded', 'customer_segment_encoded']
-        
-        X = features[feature_cols].dropna()
-        y = features['sales'].iloc[len(features) - len(X):]
-        
-        # Train Random Forest model
-        self.rf_model.fit(X, y)
-        
-        # Train Prophet model
-        prophet_data = training_data[['date', 'sales']].rename(columns={'date': 'ds', 'sales': 'y'})
-        self.prophet_model.fit(prophet_data)
-        
-        return self
+    private function getHistoricalSalesData($productKey)
+    {
+        return FactSales::join('dim_dates', 'fact_sales.date_key', '=', 'dim_dates.date_key')
+                        ->where('product_key', $productKey)
+                        ->where('dim_dates.full_date', '>=', Carbon::now()->subMonths(24))
+                        ->select(
+                            'dim_dates.full_date as date',
+                            DB::raw('SUM(quantity_sold) as quantity'),
+                            DB::raw('SUM(net_amount) as revenue')
+                        )
+                        ->groupBy('dim_dates.full_date')
+                        ->orderBy('dim_dates.full_date')
+                        ->get();
+    }
     
-    def forecast(self, forecast_periods=30):
-        """Generate sales forecast"""
-        # Prophet forecast
-        future = self.prophet_model.make_future_dataframe(periods=forecast_periods)
-        prophet_forecast = self.prophet_model.predict(future)
+    private function applyTimeSeriesAnalysis($data, $periods)
+    {
+        // Simple moving average with trend analysis
+        $forecast = collect();
+        $movingAverage = $data->takeLast(7)->avg('quantity');
+        $trend = $this->calculateTrend($data);
         
-        return prophet_forecast
+        for ($i = 1; $i <= $periods; $i++) {
+            $forecastValue = $movingAverage + ($trend * $i);
+            $forecast->push([
+                'period' => $i,
+                'forecast_quantity' => max(0, round($forecastValue)),
+                'confidence_interval' => $this->calculateConfidenceInterval($forecastValue)
+            ]);
+        }
+        
+        return $forecast;
+    }
+    
+    private function calculateTrend($data)
+    {
+        $recent = $data->takeLast(30)->avg('quantity');
+        $previous = $data->slice(-60, 30)->avg('quantity');
+        
+        return ($recent - $previous) / 30; // Daily trend
+    }
+    
+    private function calculateConfidenceInterval($value)
+    {
+        $standardError = $value * 0.15; // 15% standard error assumption
+        return [
+            'lower' => max(0, round($value - (1.96 * $standardError))),
+            'upper' => round($value + (1.96 * $standardError))
+        ];
+    }
+}
 ```
 
 **Forecasting Results:**
@@ -916,65 +955,88 @@ class SalesForecastingModel:
 
 #### 5.1.2 Customer Churn Prediction
 
-**Churn Prediction Model:**
+**Laravel Churn Prediction Service:**
 
-```python
-# Customer Churn Prediction Model
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, roc_auc_score
+```php
+<?php
+// Customer Churn Prediction Service
+namespace App\Services\BI;
 
-class CustomerChurnModel:
-    def __init__(self):
-        self.model = GradientBoostingClassifier(random_state=42)
+use App\Models\BI\DimCustomer;
+use App\Models\BI\FactSales;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
+
+class CustomerChurnPredictionService
+{
+    public function calculateChurnRisk()
+    {
+        $customers = $this->getCustomerMetrics();
         
-    def engineer_features(self, customer_data):
-        """Engineer features for churn prediction"""
-        features = customer_data.copy()
-        
-        # Recency features
-        features['days_since_last_order'] = (pd.Timestamp.now() - features['last_order_date']).dt.days
-        features['avg_days_between_orders'] = features['total_orders'] / features['customer_tenure_days']
-        
-        # Frequency features
-        features['orders_per_month'] = features['total_orders'] / (features['customer_tenure_days'] / 30)
-        features['order_frequency_trend'] = features['recent_orders'] / features['early_orders']
-        
-        # Monetary features
-        features['avg_order_value'] = features['total_spent'] / features['total_orders']
-        features['spending_trend'] = features['recent_spending'] / features['early_spending']
-        
-        # Engagement features
-        features['support_contact_rate'] = features['support_contacts'] / features['total_orders']
-        features['complaint_rate'] = features['complaints'] / features['total_orders']
-        
-        return features
+        return $customers->map(function ($customer) {
+            $churnScore = $this->calculateChurnScore($customer);
+            $customer->churn_risk = $this->categorizeRisk($churnScore);
+            $customer->churn_probability = $churnScore;
+            return $customer;
+        });
+    }
     
-    def train_model(self, training_data):
-        """Train churn prediction model"""
-        features = self.engineer_features(training_data)
+    private function getCustomerMetrics()
+    {
+        return DimCustomer::select([
+                'dim_customers.*',
+                DB::raw('MAX(dim_dates.full_date) as last_order_date'),
+                DB::raw('COUNT(DISTINCT fact_sales.order_number) as total_orders'),
+                DB::raw('SUM(fact_sales.net_amount) as total_spent'),
+                DB::raw('AVG(fact_sales.net_amount) as avg_order_value'),
+                DB::raw('DATEDIFF(CURDATE(), MAX(dim_dates.full_date)) as days_since_last_order')
+            ])
+            ->leftJoin('fact_sales', 'dim_customers.customer_key', '=', 'fact_sales.customer_key')
+            ->leftJoin('dim_dates', 'fact_sales.date_key', '=', 'dim_dates.date_key')
+            ->groupBy('dim_customers.customer_key')
+            ->get();
+    }
+    
+    private function calculateChurnScore($customer)
+    {
+        $score = 0;
         
-        feature_cols = ['days_since_last_order', 'avg_days_between_orders', 
-                       'orders_per_month', 'order_frequency_trend',
-                       'avg_order_value', 'spending_trend',
-                       'support_contact_rate', 'complaint_rate']
+        // Recency Score (0-40 points)
+        if ($customer->days_since_last_order > 180) $score += 40;
+        elseif ($customer->days_since_last_order > 90) $score += 30;
+        elseif ($customer->days_since_last_order > 60) $score += 20;
+        elseif ($customer->days_since_last_order > 30) $score += 10;
         
-        X = features[feature_cols]
-        y = features['churned']
+        // Frequency Score (0-30 points)
+        if ($customer->total_orders == 0) $score += 30;
+        elseif ($customer->total_orders == 1) $score += 25;
+        elseif ($customer->total_orders <= 3) $score += 15;
+        elseif ($customer->total_orders <= 5) $score += 10;
         
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        // Monetary Score (0-30 points)
+        if ($customer->total_spent == 0) $score += 30;
+        elseif ($customer->total_spent < 500000) $score += 20;
+        elseif ($customer->total_spent < 1000000) $score += 15;
+        elseif ($customer->total_spent < 2000000) $score += 10;
         
-        self.model.fit(X_train, y_train)
-        
-        # Model evaluation
-        y_pred = self.model.predict(X_test)
-        y_pred_proba = self.model.predict_proba(X_test)[:, 1]
-        
-        print("Churn Prediction Model Performance:")
-        print(classification_report(y_test, y_pred))
-        print(f"ROC AUC Score: {roc_auc_score(y_test, y_pred_proba):.3f}")
-        
-        return self
+        return min(100, $score); // Cap at 100%
+    }
+    
+    private function categorizeRisk($score)
+    {
+        if ($score >= 70) return 'High Risk';
+        if ($score >= 50) return 'Medium Risk';
+        if ($score >= 30) return 'Low Risk';
+        return 'Healthy';
+    }
+    
+    public function getHighRiskCustomers()
+    {
+        return $this->calculateChurnRisk()
+                   ->where('churn_probability', '>=', 70)
+                   ->sortByDesc('churn_probability');
+    }
+}
 ```
 
 **Churn Prediction Results:**
@@ -1007,67 +1069,148 @@ class CustomerChurnModel:
 
 #### 5.2.1 Customer Segmentation Analysis
 
-**RFM Segmentation Implementation:**
+**Laravel RFM Segmentation Implementation:**
 
-```python
-# RFM Analysis Implementation
-import pandas as pd
-import numpy as np
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
+```php
+<?php
+// RFM Analysis Service
+namespace App\Services\BI;
 
-class RFMAnalysis:
-    def __init__(self):
-        self.rfm_segments = None
+use App\Models\BI\DimCustomer;
+use App\Models\BI\FactSales;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
+
+class RFMAnalysisService
+{
+    public function performRFMAnalysis()
+    {
+        $customers = $this->calculateRFMScores();
         
-    def calculate_rfm_scores(self, transaction_data):
-        """Calculate RFM scores for customers"""
-        
-        # Calculate Recency, Frequency, Monetary
-        current_date = transaction_data['order_date'].max()
-        
-        rfm = transaction_data.groupby('customer_id').agg({
-            'order_date': lambda x: (current_date - x.max()).days,  # Recency
-            'order_id': 'count',  # Frequency
-            'total_amount': 'sum'  # Monetary
-        }).reset_index()
-        
-        rfm.columns = ['customer_id', 'recency', 'frequency', 'monetary']
-        
-        # Create RFM scores (1-5 scale)
-        rfm['r_score'] = pd.qcut(rfm['recency'].rank(method='first'), 5, labels=[5,4,3,2,1])
-        rfm['f_score'] = pd.qcut(rfm['frequency'].rank(method='first'), 5, labels=[1,2,3,4,5])
-        rfm['m_score'] = pd.qcut(rfm['monetary'].rank(method='first'), 5, labels=[1,2,3,4,5])
-        
-        # Combine RFM scores
-        rfm['rfm_score'] = rfm['r_score'].astype(str) + rfm['f_score'].astype(str) + rfm['m_score'].astype(str)
-        
-        return rfm
+        return $customers->map(function ($customer) {
+            $customer->segment = $this->assignSegment($customer);
+            return $customer;
+        });
+    }
     
-    def segment_customers(self, rfm_data):
-        """Segment customers based on RFM scores"""
+    private function calculateRFMScores()
+    {
+        $currentDate = Carbon::now();
         
-        def rfm_segment(row):
-            if row['rfm_score'] in ['555', '554', '544', '545', '454', '455', '445']:
-                return 'Champions'
-            elif row['rfm_score'] in ['543', '444', '435', '355', '354', '345', '344', '335']:
-                return 'Loyal Customers'
-            elif row['rfm_score'] in ['512', '511', '422', '421', '412', '411', '311']:
-                return 'Potential Loyalists'
-            elif row['rfm_score'] in ['533', '532', '531', '523', '522', '521', '515', '514', '513', '425', '424', '413', '414', '415', '315', '314', '313']:
-                return 'New Customers'
-            elif row['rfm_score'] in ['155', '154', '144', '214', '215', '115', '114']:
-                return 'Cannot Lose Them'
-            elif row['rfm_score'] in ['155', '254', '245']:
-                return 'At Risk'
-            elif row['rfm_score'] in ['121', '131', '141', '151']:
-                return 'Lost'
-            else:
-                return 'Others'
+        $customers = DimCustomer::select([
+                'dim_customers.customer_key',
+                'dim_customers.customer_name',
+                'dim_customers.customer_type',
+                DB::raw('DATEDIFF(?, MAX(dim_dates.full_date)) as recency'),
+                DB::raw('COUNT(DISTINCT fact_sales.order_number) as frequency'),
+                DB::raw('SUM(fact_sales.net_amount) as monetary')
+            ])
+            ->leftJoin('fact_sales', 'dim_customers.customer_key', '=', 'fact_sales.customer_key')
+            ->leftJoin('dim_dates', 'fact_sales.date_key', '=', 'dim_dates.date_key')
+            ->groupBy('dim_customers.customer_key', 'dim_customers.customer_name', 'dim_customers.customer_type')
+            ->setBindings([$currentDate->toDateString()])
+            ->get();
         
-        rfm_data['segment'] = rfm_data.apply(rfm_segment, axis=1)
+        // Calculate quintiles for scoring
+        $recencyQuintiles = $this->calculateQuintiles($customers->pluck('recency'), true); // Lower is better
+        $frequencyQuintiles = $this->calculateQuintiles($customers->pluck('frequency'), false); // Higher is better
+        $monetaryQuintiles = $this->calculateQuintiles($customers->pluck('monetary'), false); // Higher is better
         
-        return rfm_data
+        return $customers->map(function ($customer) use ($recencyQuintiles, $frequencyQuintiles, $monetaryQuintiles) {
+            $customer->r_score = $this->getScore($customer->recency, $recencyQuintiles, true);
+            $customer->f_score = $this->getScore($customer->frequency, $frequencyQuintiles, false);
+            $customer->m_score = $this->getScore($customer->monetary, $monetaryQuintiles, false);
+            $customer->rfm_score = $customer->r_score . $customer->f_score . $customer->m_score;
+            
+            return $customer;
+        });
+    }
+    
+    private function calculateQuintiles($values, $reverseOrder = false)
+    {
+        $sorted = $values->filter()->sort();
+        if ($reverseOrder) $sorted = $sorted->reverse();
+        
+        $count = $sorted->count();
+        
+        return [
+            'q1' => $sorted->slice(0, $count * 0.2)->last(),
+            'q2' => $sorted->slice(0, $count * 0.4)->last(),
+            'q3' => $sorted->slice(0, $count * 0.6)->last(),
+            'q4' => $sorted->slice(0, $count * 0.8)->last(),
+        ];
+    }
+    
+    private function getScore($value, $quintiles, $reverseOrder = false)
+    {
+        if ($reverseOrder) {
+            if ($value <= $quintiles['q1']) return 5;
+            if ($value <= $quintiles['q2']) return 4;
+            if ($value <= $quintiles['q3']) return 3;
+            if ($value <= $quintiles['q4']) return 2;
+            return 1;
+        } else {
+            if ($value >= $quintiles['q4']) return 5;
+            if ($value >= $quintiles['q3']) return 4;
+            if ($value >= $quintiles['q2']) return 3;
+            if ($value >= $quintiles['q1']) return 2;
+            return 1;
+        }
+    }
+    
+    private function assignSegment($customer)
+    {
+        $score = $customer->rfm_score;
+        
+        // Champions
+        if (in_array($score, ['555', '554', '544', '545', '454', '455', '445'])) {
+            return 'Champions';
+        }
+        
+        // Loyal Customers
+        if (in_array($score, ['543', '444', '435', '355', '354', '345', '344', '335'])) {
+            return 'Loyal Customers';
+        }
+        
+        // Potential Loyalists
+        if (in_array($score, ['512', '511', '422', '421', '412', '411', '311'])) {
+            return 'Potential Loyalists';
+        }
+        
+        // New Customers
+        if (in_array($score, ['533', '532', '531', '523', '522', '521', '515', '514', '513'])) {
+            return 'New Customers';
+        }
+        
+        // At Risk
+        if (in_array($score, ['155', '254', '245', '244', '253', '252', '243'])) {
+            return 'At Risk';
+        }
+        
+        // Cannot Lose Them
+        if (in_array($score, ['155', '154', '144', '214', '215', '115', '114'])) {
+            return 'Cannot Lose Them';
+        }
+        
+        return 'Others';
+    }
+    
+    public function getSegmentSummary()
+    {
+        $segmentedCustomers = $this->performRFMAnalysis();
+        
+        return $segmentedCustomers->groupBy('segment')->map(function ($customers, $segment) {
+            return [
+                'segment' => $segment,
+                'count' => $customers->count(),
+                'percentage' => round(($customers->count() / 1000) * 100, 1),
+                'total_revenue' => $customers->sum('monetary'),
+                'avg_frequency' => round($customers->avg('frequency'), 1),
+                'avg_monetary' => round($customers->avg('monetary'), 0)
+            ];
+        })->values();
+    }
+}
 ```
 
 **Customer Segmentation Results:**
@@ -1084,42 +1227,153 @@ class RFMAnalysis:
 
 #### 5.2.2 Market Basket Analysis
 
-**Association Rules Mining:**
+**Laravel Association Rules Mining:**
 
-```python
-# Market Basket Analysis
-from mlxtend.frequent_patterns import apriori, association_rules
-import pandas as pd
+```php
+<?php
+// Market Basket Analysis Service
+namespace App\Services\BI;
 
-class MarketBasketAnalysis:
-    def __init__(self):
-        self.frequent_itemsets = None
-        self.rules = None
+use App\Models\BI\FactSales;
+use App\Models\BI\DimProduct;
+use Illuminate\Support\Facades\DB;
+
+class MarketBasketAnalysisService
+{
+    public function findAssociationRules($minSupport = 0.01, $minConfidence = 0.5)
+    {
+        $transactions = $this->getTransactionData();
+        $frequentItemsets = $this->findFrequentItemsets($transactions, $minSupport);
+        $rules = $this->generateAssociationRules($frequentItemsets, $minConfidence);
         
-    def prepare_basket_data(self, transaction_data):
-        """Prepare transaction data for basket analysis"""
-        
-        # Create basket format
-        basket = transaction_data.groupby(['order_id', 'product_name'])['quantity'].sum().unstack().fillna(0)
-        
-        # Convert to binary format (bought/not bought)
-        basket_binary = basket.applymap(lambda x: 1 if x > 0 else 0)
-        
-        return basket_binary
+        return $rules->sortByDesc('lift');
+    }
     
-    def find_association_rules(self, basket_data, min_support=0.01, min_threshold=0.5):
-        """Find association rules in transaction data"""
+    private function getTransactionData()
+    {
+        return FactSales::select([
+                'fact_sales.order_number',
+                'dim_products.product_name',
+                'fact_sales.quantity_sold'
+            ])
+            ->join('dim_products', 'fact_sales.product_key', '=', 'dim_products.product_key')
+            ->where('fact_sales.quantity_sold', '>', 0)
+            ->get()
+            ->groupBy('order_number');
+    }
+    
+    private function findFrequentItemsets($transactions, $minSupport)
+    {
+        $totalTransactions = $transactions->count();
+        $minSupportCount = $totalTransactions * $minSupport;
         
-        # Find frequent itemsets
-        self.frequent_itemsets = apriori(basket_data, min_support=min_support, use_colnames=True)
+        // Count item frequencies
+        $itemCounts = collect();
+        $transactions->each(function ($transaction) use ($itemCounts) {
+            $transaction->each(function ($item) use ($itemCounts) {
+                $product = $item->product_name;
+                $itemCounts[$product] = ($itemCounts[$product] ?? 0) + 1;
+            });
+        });
         
-        # Generate association rules
-        self.rules = association_rules(self.frequent_itemsets, metric="lift", min_threshold=min_threshold)
+        // Filter frequent items
+        $frequentItems = $itemCounts->filter(function ($count) use ($minSupportCount) {
+            return $count >= $minSupportCount;
+        });
         
-        # Sort by lift and confidence
-        self.rules = self.rules.sort_values(['lift', 'confidence'], ascending=False)
+        // Find frequent pairs
+        $frequentPairs = collect();
+        $transactions->each(function ($transaction) use ($frequentPairs, $frequentItems) {
+            $products = $transaction->pluck('product_name')->filter(function ($product) use ($frequentItems) {
+                return isset($frequentItems[$product]);
+            })->values();
+            
+            // Generate all pairs
+            for ($i = 0; $i < $products->count(); $i++) {
+                for ($j = $i + 1; $j < $products->count(); $j++) {
+                    $pair = [$products[$i], $products[$j]];
+                    sort($pair);
+                    $pairKey = implode(' + ', $pair);
+                    $frequentPairs[$pairKey] = ($frequentPairs[$pairKey] ?? 0) + 1;
+                }
+            }
+        });
         
-        return self.rules
+        return $frequentPairs->filter(function ($count) use ($minSupportCount) {
+            return $count >= $minSupportCount;
+        });
+    }
+    
+    private function generateAssociationRules($frequentPairs, $minConfidence)
+    {
+        $rules = collect();
+        $totalTransactions = $this->getTransactionData()->count();
+        
+        $frequentPairs->each(function ($pairCount, $pairKey) use ($rules, $totalTransactions, $minConfidence) {
+            $items = explode(' + ', $pairKey);
+            
+            // Calculate support for individual items
+            $item1Support = $this->getItemSupport($items[0]);
+            $item2Support = $this->getItemSupport($items[1]);
+            
+            $pairSupport = $pairCount / $totalTransactions;
+            
+            // Rule: Item1 → Item2
+            $confidence1 = $pairSupport / ($item1Support / $totalTransactions);
+            if ($confidence1 >= $minConfidence) {
+                $lift1 = $confidence1 / ($item2Support / $totalTransactions);
+                $rules->push([
+                    'antecedent' => $items[0],
+                    'consequent' => $items[1],
+                    'support' => round($pairSupport, 3),
+                    'confidence' => round($confidence1, 3),
+                    'lift' => round($lift1, 2),
+                    'rule' => $items[0] . ' → ' . $items[1]
+                ]);
+            }
+            
+            // Rule: Item2 → Item1
+            $confidence2 = $pairSupport / ($item2Support / $totalTransactions);
+            if ($confidence2 >= $minConfidence) {
+                $lift2 = $confidence2 / ($item1Support / $totalTransactions);
+                $rules->push([
+                    'antecedent' => $items[1],
+                    'consequent' => $items[0],
+                    'support' => round($pairSupport, 3),
+                    'confidence' => round($confidence2, 3),
+                    'lift' => round($lift2, 2),
+                    'rule' => $items[1] . ' → ' . $items[0]
+                ]);
+            }
+        });
+        
+        return $rules;
+    }
+    
+    private function getItemSupport($product)
+    {
+        return FactSales::join('dim_products', 'fact_sales.product_key', '=', 'dim_products.product_key')
+                       ->where('dim_products.product_name', $product)
+                       ->distinct('fact_sales.order_number')
+                       ->count();
+    }
+    
+    public function getTopAssociationRules($limit = 10)
+    {
+        return $this->findAssociationRules()
+                   ->sortByDesc('lift')
+                   ->take($limit);
+    }
+    
+    public function getProductRecommendations($productName)
+    {
+        $rules = $this->findAssociationRules();
+        
+        return $rules->where('antecedent', $productName)
+                    ->sortByDesc('confidence')
+                    ->take(5);
+    }
+}
 ```
 
 **Key Association Rules Found:**
@@ -1271,19 +1525,19 @@ class MarketBasketAnalysis:
 **Infrastructure Setup:**
 
 1. **Data Warehouse Environment:**
-   - PostgreSQL 13.x cluster setup
+   - MySQL 8.0 cluster setup dengan Laravel integration
    - Dedicated server dengan 16GB RAM, 500GB SSD
    - Automated backup dan recovery procedures
    - Performance monitoring dan tuning
 
 2. **ETL Implementation:**
-   - Python-based ETL scripts menggunakan pandas dan SQLAlchemy
-   - Scheduled execution using Apache Airflow
+   - Laravel-based ETL Commands menggunakan Eloquent ORM dan Queue system
+   - Scheduled execution using Laravel Task Scheduler
    - Error handling dan notification system
    - Data quality monitoring dashboard
 
 3. **Analytics Platform:**
-   - Tableau Server deployment
+   - Chart.js dashboard deployment dengan Blade templates
    - User authentication dan role-based access
    - Dashboard publishing dan sharing
    - Mobile responsive design

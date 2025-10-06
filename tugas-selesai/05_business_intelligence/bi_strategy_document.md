@@ -193,23 +193,23 @@ SATRIAMART sebagai perusahaan dekorasi dan aksesoris akrilik menghadapi tantanga
 
 **Evaluation Framework:**
 
-| Criteria | Weight | PostgreSQL | SQL Server | Oracle |
-|----------|---------|------------|------------|---------|
-| **Cost Effectiveness** | 25% | 9 | 6 | 4 |
-| **Scalability** | 20% | 8 | 9 | 9 |
-| **Ease of Use** | 15% | 7 | 8 | 7 |
-| **Integration** | 15% | 8 | 9 | 8 |
-| **Support & Community** | 10% | 8 | 7 | 8 |
-| **Performance** | 10% | 8 | 9 | 9 |
-| **Security** | 5% | 8 | 9 | 9 |
-| **Total Score** | 100% | **8.0** | 7.6 | 7.4 |
+| Criteria | Weight | Laravel+MySQL | Python+PostgreSQL | Tableau+SQL Server |
+|----------|---------|---------------|-------------------|-------------------|
+| **Integration with SIMS** | 30% | 10 | 5 | 6 |
+| **Development Consistency** | 25% | 10 | 4 | 5 |
+| **Cost Effectiveness** | 20% | 9 | 7 | 4 |
+| **Scalability** | 10% | 8 | 9 | 9 |
+| **Ease of Maintenance** | 10% | 9 | 6 | 7 |
+| **Team Expertise** | 5% | 10 | 4 | 6 |
+| **Total Score** | 100% | **9.4** | 6.2 | 5.8 |
 
 **Selected Technology Stack:**
 
-1. **Data Warehouse:** PostgreSQL dengan dimensional modeling
-2. **ETL Platform:** Python (Pandas, SQLAlchemy) + Apache Airflow
-3. **Analytics Platform:** Tableau + Python ML libraries
-4. **Deployment:** Docker containers pada Linux servers
+1. **Data Warehouse:** MySQL dengan dimensional modeling (konsisten dengan SIMS)
+2. **ETL Platform:** Laravel Commands + Eloquent ORM untuk data processing
+3. **Analytics Platform:** Laravel Dashboard + Chart.js untuk visualization
+4. **Advanced Analytics:** PHP ML libraries + Laravel API untuk predictive analytics
+5. **Deployment:** Laravel framework pada SIMS infrastructure yang sudah ada
 
 ### Data Modeling Strategy
 
@@ -240,14 +240,19 @@ SATRIAMART sebagai perusahaan dekorasi dan aksesoris akrilik menghadapi tantanga
 
 #### Data Integration Strategy
 
-**ETL Design Patterns:**
+**Laravel-based ETL Design Patterns:**
 
-1. **Incremental Loading:**
-   - Delta detection untuk changed records
-   - Timestamp-based incremental updates
-   - Change data capture untuk real-time updates
+1. **Laravel Command Scheduling:**
+   - Artisan commands untuk daily ETL jobs
+   - Laravel Task Scheduling untuk automated execution
+   - Eloquent ORM untuk seamless database operations
 
-2. **Error Handling:**
+2. **Real-time Integration:**
+   - Laravel Events untuk immediate data sync
+   - Laravel Queues untuk background processing
+   - Database Observers untuk automatic data capture
+
+3. **Error Handling:**
    - Comprehensive error logging
    - Data validation checkpoints
    - Automated retry mechanisms

@@ -56,8 +56,8 @@ Working prototype dashboard dengan features:
 **File:** `data_warehouse_implementation.md`
 
 Complete technical documentation meliputi:
-- Dimensional model design (star schema)
-- ETL implementation dengan Python
+- Dimensional model design (Laravel-based star schema)
+- ETL implementation dengan Laravel Commands dan Queue system
 - Data quality management framework
 - Performance optimization strategies
 - Testing dan validation procedures
@@ -116,11 +116,11 @@ Professional presentation slides covering:
 
 ### Technology Stack
 
-- **Data Warehouse:** PostgreSQL dengan dimensional modeling
-- **ETL Platform:** Python (Pandas, SQLAlchemy) + Apache Airflow  
-- **Analytics Platform:** Tableau + Python ML libraries
-- **Frontend:** HTML5, CSS3, JavaScript dengan responsive design
-- **Deployment:** Docker containers pada Linux servers
+- **Data Warehouse:** MySQL 8.0 dengan dimensional modeling (Laravel-based)
+- **ETL Platform:** Laravel Commands + Eloquent ORM + Queue System  
+- **Analytics Platform:** Chart.js + Blade Templates + PHP ML libraries
+- **Frontend:** Laravel Blade templates dengan TailwindCSS dan Chart.js
+- **Deployment:** Laravel aplikasi dengan MySQL database
 
 ---
 
