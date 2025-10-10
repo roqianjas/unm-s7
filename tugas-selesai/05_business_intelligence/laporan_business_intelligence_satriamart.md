@@ -1,5 +1,5 @@
-# LAPORAN BUSINESS INTELLIGENCE IMPLEMENTATION
-## SATRIAMART - DEKORASI & AKSESORIS AKRILIK
+# LAPORAN TUGAS AKHIR
+## PERANCANGAN DAN IMPLEMENTASI SISTEM BUSINESS INTELLIGENCE UNTUK ANALISIS PERFORMA BISNIS SATRIAMART
 
 **Universitas Nusa Mandiri**  
 **Fakultas Teknologi Informasi**  
@@ -32,15 +32,15 @@
 
 ### 1.1 Latar Belakang
 
-SATRIAMART adalah perusahaan yang bergerak di bidang dekorasi dan aksesoris akrilik dengan fokus pada produk inovatif untuk kebutuhan hunian, bisnis, dan perkantoran. Dengan pertumbuhan bisnis yang signifikan dan kompleksitas operasional yang semakin meningkat, SATRIAMART memerlukan sistem Business Intelligence (BI) yang dapat mendukung decision making berbasis data.
+SATRIAMART adalah perusahaan yang bergerak di bidang dekorasi dan aksesoris akrilik dengan fokus pada produk inovatif untuk kebutuhan hunian, bisnis, dan perkantoran. Dengan pertumbuhan bisnis yang signifikan dan kompleksitas operasional yang semakin meningkat, SATRIAMART memerlukan sistem Business Intelligence (BI) yang dapat mendukung decision making berbasis data untuk analisis performa bisnis yang komprehensif.
 
-Di era digital transformation, kemampuan untuk menganalisis data bisnis secara real-time menjadi competitive advantage yang krusial. SATRIAMART dengan model bisnis B2B dan B2C menghasilkan volume data yang besar dari berbagai sumber: sales transactions, customer interactions, production data, inventory management, dan financial records.
+Di era digital transformation, kemampuan untuk menganalisis performa bisnis secara real-time menjadi competitive advantage yang krusial. SATRIAMART dengan model bisnis B2B dan B2C menghasilkan volume data yang besar dari berbagai sumber: sales transactions, customer interactions, production data, inventory management, dan financial records yang memerlukan analisis mendalam untuk optimasi performa bisnis.
 
 Implementasi Business Intelligence yang komprehensif akan memungkinkan SATRIAMART untuk:
-- Mengoptimalkan performance across all business units
-- Mengidentifikasi trends dan patterns dalam customer behavior
-- Meningkatkan efficiency dalam operations dan supply chain
-- Membuat strategic decisions berbasis data analytics
+- Menganalisis performa bisnis across all business units secara real-time
+- Mengidentifikasi trends dan patterns dalam customer behavior untuk meningkatkan performa
+- Meningkatkan efficiency dalam operations dan supply chain melalui analisis performa
+- Membuat strategic decisions berbasis analisis performa bisnis yang akurat
 
 ### 1.2 Rumusan Masalah
 
@@ -55,14 +55,14 @@ Berdasarkan assessment terhadap current state SATRIAMART, terdapat beberapa chal
 ### 1.3 Tujuan Penelitian
 
 **Tujuan Umum:**
-Merancang dan mengimplementasikan comprehensive Business Intelligence solution untuk SATRIAMART yang dapat mendukung data-driven decision making dan strategic business growth.
+Merancang dan mengimplementasikan comprehensive Business Intelligence solution untuk SATRIAMART yang dapat mendukung data-driven decision making dan analisis performa bisnis untuk strategic business growth.
 
 **Tujuan Khusus:**
-1. Mengembangkan enterprise data warehouse dengan dimensional modeling approach
+1. Mengembangkan enterprise data warehouse dengan dimensional modeling approach untuk analisis performa bisnis
 2. Mengimplementasikan ETL processes untuk data integration dari multiple sources
-3. Membangun interactive dashboards untuk different business stakeholders
-4. Mengembangkan advanced analytics capabilities including predictive modeling
-5. Menyediakan actionable business insights dan strategic recommendations
+3. Membangun interactive dashboards untuk analisis performa bisnis different business stakeholders
+4. Mengembangkan advanced analytics capabilities including predictive modeling untuk performa bisnis
+5. Menyediakan actionable business insights dan strategic recommendations untuk improvement performa bisnis
 
 ### 1.4 Manfaat Penelitian
 
