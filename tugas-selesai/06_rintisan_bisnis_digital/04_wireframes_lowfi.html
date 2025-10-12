@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUR-HEART - Low-Fidelity Wireframes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#2E86AB',
+                        'cur-secondary': '#A23B72',
+                        'cur-accent': '#F18F01',
+                        'cur-warm': '#C73E1D',
+                        'cur-gray': {
+                            50: '#F8F9FA',
+                            100: '#E9ECEF',
+                            500: '#6C757D',
+                            900: '#212529'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cur-gray-50 text-cur-gray-900">
+    <div class="max-w-7xl mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-12 text-cur-primary">CUR-HEART - Low-Fidelity Wireframes</h1>
+        
+        <!-- HOMEPAGE WIREFRAMES -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+            
+            <!-- Homepage Desktop Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-cur-primary text-white p-4 text-center font-semibold">
+                    Homepage Desktop
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Navigation -->
+                    <div class="bg-cur-gray-900 text-white h-12 rounded flex items-center justify-between px-4">
+                        <span class="text-sm">LOGO</span>
+                        <span class="text-sm">NAVIGATION</span>
+                    </div>
+                    
+                    <!-- Hero Section -->
+                    <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white h-40 rounded flex flex-col items-center justify-center">
+                        <div class="text-center">
+                            <h2 class="text-lg font-bold mb-2">Hero Title</h2>
+                            <p class="text-sm mb-4">Subtitle & Description</p>
+                            <div class="bg-cur-accent px-4 py-2 rounded text-sm font-medium">CTA Button</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Grid -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500 text-center">
+                            <div class="text-xs text-cur-gray-500">Service Card 1</div>
+                        </div>
+                        <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500 text-center">
+                            <div class="text-xs text-cur-gray-500">Service Card 2</div>
+                        </div>
+                        <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500 text-center">
+                            <div class="text-xs text-cur-gray-500">Service Card 3</div>
+                        </div>
+                        <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500 text-center">
+                            <div class="text-xs text-cur-gray-500">Service Card 4</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonials -->
+                    <div class="bg-cur-gray-100 p-4 rounded border border-dashed border-cur-gray-500">
+                        <div class="text-xs text-cur-gray-500 text-center">Testimonials Section</div>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="bg-cur-gray-900 text-white h-16 rounded flex items-center justify-center">
+                        <span class="text-xs">Footer</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Page Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-cur-secondary text-white p-4 text-center font-semibold">
+                    Services Page
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Navigation -->
+                    <div class="bg-cur-gray-900 text-white h-12 rounded flex items-center justify-between px-4">
+                        <span class="text-sm">LOGO</span>
+                        <span class="text-sm">NAVIGATION</span>
+                    </div>
+                    
+                    <!-- Page Header -->
+                    <div class="bg-cur-gray-100 p-4 rounded border border-dashed border-cur-gray-500">
+                        <div class="text-sm text-cur-gray-500 text-center">Page Title & Breadcrumb</div>
+                    </div>
+                    
+                    <!-- Service Categories -->
+                    <div class="flex space-x-2">
+                        <div class="bg-cur-primary text-white px-3 py-1 rounded text-xs">All</div>
+                        <div class="bg-cur-gray-100 px-3 py-1 rounded text-xs">Anxiety</div>
+                        <div class="bg-cur-gray-100 px-3 py-1 rounded text-xs">Stress</div>
+                        <div class="bg-cur-gray-100 px-3 py-1 rounded text-xs">Trauma</div>
+                    </div>
+                    
+                    <!-- Service Cards -->
+                    <div class="space-y-3">
+                        <div class="bg-white border border-cur-gray-100 p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="text-sm font-medium text-cur-primary">Service Name</div>
+                                    <div class="text-xs text-cur-gray-500 mt-1">Description</div>
+                                </div>
+                                <div class="text-sm font-bold text-cur-accent">Price</div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="bg-cur-primary text-white px-3 py-1 rounded text-xs inline-block">Book Now</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white border border-cur-gray-100 p-4 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="text-sm font-medium text-cur-primary">Service Name</div>
+                                    <div class="text-xs text-cur-gray-500 mt-1">Description</div>
+                                </div>
+                                <div class="text-sm font-bold text-cur-accent">Price</div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="bg-cur-primary text-white px-3 py-1 rounded text-xs inline-block">Book Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete 4-Step Booking Flow Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-cur-accent text-white p-4 text-center font-semibold">
+                    Complete Booking Flow (4 Steps)
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Progress Steps -->
+                    <div class="flex justify-between items-center">
+                        <div class="w-8 h-8 bg-cur-primary text-white rounded-full flex items-center justify-center text-xs">1</div>
+                        <div class="flex-1 h-1 bg-cur-primary mx-2"></div>
+                        <div class="w-8 h-8 bg-cur-gray-100 text-cur-gray-500 rounded-full flex items-center justify-center text-xs">2</div>
+                        <div class="flex-1 h-1 bg-cur-gray-100 mx-2"></div>
+                        <div class="w-8 h-8 bg-cur-gray-100 text-cur-gray-500 rounded-full flex items-center justify-center text-xs">3</div>
+                        <div class="flex-1 h-1 bg-cur-gray-100 mx-2"></div>
+                        <div class="w-8 h-8 bg-cur-gray-100 text-cur-gray-500 rounded-full flex items-center justify-center text-xs">4</div>
+                    </div>
+                    
+                    <!-- Step Labels -->
+                    <div class="flex justify-between text-xs text-cur-gray-500">
+                        <span>Service</span>
+                        <span>Therapist</span>
+                        <span>Schedule</span>
+                        <span>Payment</span>
+                    </div>
+                    
+                    <!-- Step 1: Service Selection -->
+                    <div class="bg-cur-primary bg-opacity-10 p-3 rounded border-l-4 border-cur-primary">
+                        <div class="text-xs font-medium text-cur-primary mb-2">Step 1: Service Selection</div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="bg-white border border-cur-primary p-2 rounded">
+                                <div class="text-xs font-medium text-cur-primary">Anxiety Relief</div>
+                                <div class="text-xs text-cur-gray-500">Rp 450,000</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs text-cur-gray-500">Stress Management</div>
+                                <div class="text-xs text-cur-gray-500">Rp 400,000</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs text-cur-gray-500">Confidence Building</div>
+                                <div class="text-xs text-cur-gray-500">Rp 350,000</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs text-cur-gray-500">Sleep & Relaxation</div>
+                                <div class="text-xs text-cur-gray-500">Rp 420,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Therapist Selection -->
+                    <div class="bg-cur-gray-50 p-3 rounded">
+                        <div class="text-xs font-medium text-cur-gray-500 mb-2">Step 2: AI Therapist Matching</div>
+                        <div class="bg-cur-secondary bg-opacity-10 p-2 rounded mb-2">
+                            <div class="text-xs text-cur-secondary">AI Recommendation: Dr. Sarah (94% match)</div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs">Dr. Sarah Wijaya - Anxiety Specialist</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs">Dr. John Santoso - Stress & Trauma</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Schedule & Calendar -->
+                    <div class="bg-cur-gray-50 p-3 rounded">
+                        <div class="text-xs font-medium text-cur-gray-500 mb-2">Step 3: Interactive Calendar</div>
+                        <div class="grid grid-cols-7 gap-1 mb-2">
+                            <div class="text-xs text-cur-gray-500 text-center">S</div>
+                            <div class="text-xs text-cur-gray-500 text-center">M</div>
+                            <div class="text-xs text-cur-gray-500 text-center">T</div>
+                            <div class="text-xs text-cur-gray-500 text-center">W</div>
+                            <div class="text-xs text-cur-gray-500 text-center">T</div>
+                            <div class="text-xs text-cur-gray-500 text-center">F</div>
+                            <div class="text-xs text-cur-gray-500 text-center">S</div>
+                            <!-- Calendar days -->
+                            <div class="w-6 h-6 bg-cur-gray-100 rounded text-xs flex items-center justify-center">10</div>
+                            <div class="w-6 h-6 bg-cur-gray-100 rounded text-xs flex items-center justify-center">11</div>
+                            <div class="w-6 h-6 bg-cur-gray-100 rounded text-xs flex items-center justify-center">12</div>
+                            <div class="w-6 h-6 bg-cur-accent text-white rounded text-xs flex items-center justify-center">13</div>
+                            <div class="w-6 h-6 bg-cur-gray-100 rounded text-xs flex items-center justify-center">14</div>
+                            <div class="w-6 h-6 bg-cur-gray-100 rounded text-xs flex items-center justify-center">15</div>
+                            <div class="w-6 h-6 bg-cur-gray-100 rounded text-xs flex items-center justify-center">16</div>
+                        </div>
+                        <div class="flex space-x-1">
+                            <div class="bg-cur-accent text-white px-2 py-1 rounded text-xs">2:00 PM</div>
+                            <div class="bg-cur-gray-100 px-2 py-1 rounded text-xs">3:30 PM</div>
+                            <div class="bg-cur-gray-100 px-2 py-1 rounded text-xs">5:00 PM</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Payment & Summary -->
+                    <div class="bg-cur-gray-50 p-3 rounded">
+                        <div class="text-xs font-medium text-cur-gray-500 mb-2">Step 4: Payment & Confirmation</div>
+                        <div class="bg-white border border-cur-gray-100 p-2 rounded mb-2">
+                            <div class="text-xs font-medium">Booking Summary</div>
+                            <div class="text-xs text-cur-gray-500">Service: Anxiety Relief Therapy</div>
+                            <div class="text-xs text-cur-gray-500">Therapist: Dr. Sarah Wijaya</div>
+                            <div class="text-xs text-cur-gray-500">Date: Oct 13, 2:00 PM</div>
+                            <div class="text-xs font-medium text-cur-primary">Total: Rp 516,150</div>
+                        </div>
+                        <div class="flex space-x-1">
+                            <div class="bg-cur-gray-100 px-2 py-1 rounded text-xs">Credit Card</div>
+                            <div class="bg-cur-gray-100 px-2 py-1 rounded text-xs">Bank Transfer</div>
+                            <div class="bg-cur-gray-100 px-2 py-1 rounded text-xs">E-Wallet</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <div class="bg-cur-gray-100 px-4 py-2 rounded text-xs">Back</div>
+                        <div class="bg-cur-warm text-white px-4 py-2 rounded text-xs">Complete Booking</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Dashboard Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-cur-warm text-white p-4 text-center font-semibold">
+                    Client Dashboard
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Dashboard Layout -->
+                    <div class="flex space-x-3">
+                        <!-- Sidebar -->
+                        <div class="w-16 bg-cur-gray-100 p-2 rounded border-l-4 border-cur-primary">
+                            <div class="space-y-2">
+                                <div class="w-full h-6 bg-cur-primary rounded text-xs flex items-center justify-center">
+                                    <span class="text-white text-xs">🏠</span>
+                                </div>
+                                <div class="w-full h-6 bg-cur-gray-200 rounded text-xs flex items-center justify-center">
+                                    <span class="text-cur-gray-500 text-xs">📅</span>
+                                </div>
+                                <div class="w-full h-6 bg-cur-gray-200 rounded text-xs flex items-center justify-center">
+                                    <span class="text-cur-gray-500 text-xs">📊</span>
+                                </div>
+                                <div class="w-full h-6 bg-cur-gray-200 rounded text-xs flex items-center justify-center">
+                                    <span class="text-cur-gray-500 text-xs">⚙️</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Main Content -->
+                        <div class="flex-1 space-y-3">
+                            <!-- Stats Cards -->
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-white border border-cur-gray-100 p-3 rounded shadow-sm">
+                                    <div class="text-xs text-cur-gray-500">Total Sessions</div>
+                                    <div class="text-lg font-bold text-cur-primary">12</div>
+                                </div>
+                                <div class="bg-white border border-cur-gray-100 p-3 rounded shadow-sm">
+                                    <div class="text-xs text-cur-gray-500">Progress</div>
+                                    <div class="text-lg font-bold text-cur-accent">85%</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Upcoming Sessions -->
+                            <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500">
+                                <div class="text-xs text-cur-gray-500">Upcoming Sessions</div>
+                                <div class="mt-2 space-y-1">
+                                    <div class="bg-white p-2 rounded text-xs">Today 2:00 PM - Anxiety Therapy</div>
+                                    <div class="bg-white p-2 rounded text-xs">Tomorrow 10:00 AM - Follow-up</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Progress Chart -->
+                            <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500">
+                                <div class="text-xs text-cur-gray-500">Progress Chart</div>
+                                <div class="mt-2 bg-cur-gray-200 h-12 rounded flex items-end space-x-1 p-1">
+                                    <div class="bg-cur-primary w-3 h-6 rounded-sm"></div>
+                                    <div class="bg-cur-primary w-3 h-8 rounded-sm"></div>
+                                    <div class="bg-cur-primary w-3 h-10 rounded-sm"></div>
+                                    <div class="bg-cur-accent w-3 h-4 rounded-sm"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile App Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden max-w-xs mx-auto">
+                <div class="bg-cur-secondary text-white p-4 text-center font-semibold">
+                    Mobile App
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Mobile Header -->
+                    <div class="bg-cur-primary text-white h-12 rounded flex items-center justify-between px-4">
+                        <span class="text-sm">☰</span>
+                        <span class="text-sm font-medium">CUR-HEART</span>
+                        <span class="text-sm">👤</span>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="bg-cur-accent text-white p-3 rounded text-center">
+                            <div class="text-lg mb-1">📅</div>
+                            <div class="text-xs font-medium">Book Session</div>
+                        </div>
+                        <div class="bg-cur-secondary text-white p-3 rounded text-center">
+                            <div class="text-lg mb-1">📊</div>
+                            <div class="text-xs font-medium">Track Progress</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Sessions -->
+                    <div class="space-y-2">
+                        <div class="text-sm font-medium text-cur-primary">Recent Sessions</div>
+                        <div class="bg-cur-gray-100 p-3 rounded">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="text-xs font-medium">Anxiety Therapy</div>
+                                    <div class="text-xs text-cur-gray-500">Dr. Sarah</div>
+                                </div>
+                                <div class="text-xs text-cur-gray-500">Today 2PM</div>
+                            </div>
+                        </div>
+                        <div class="bg-cur-gray-100 p-3 rounded">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="text-xs font-medium">Stress Relief</div>
+                                    <div class="text-xs text-cur-gray-500">Dr. John</div>
+                                </div>
+                                <div class="text-xs text-cur-gray-500">Tomorrow 10AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Navigation -->
+                    <div class="bg-cur-gray-100 h-12 rounded flex items-center justify-around">
+                        <div class="text-cur-primary text-xs">🏠</div>
+                        <div class="text-cur-gray-500 text-xs">📅</div>
+                        <div class="text-cur-gray-500 text-xs">📊</div>
+                        <div class="text-cur-gray-500 text-xs">⚙️</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Therapist Dashboard Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-4 text-center font-semibold">
+                    Therapist Dashboard
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Today's Schedule -->
+                    <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500">
+                        <div class="text-xs text-cur-gray-500 text-center">Today's Schedule</div>
+                        <div class="mt-2 space-y-1">
+                            <div class="bg-white p-2 rounded text-xs flex justify-between">
+                                <span>9:00 AM - Sarah K.</span>
+                                <span class="text-cur-accent">Anxiety</span>
+                            </div>
+                            <div class="bg-white p-2 rounded text-xs flex justify-between">
+                                <span>11:00 AM - John D.</span>
+                                <span class="text-cur-secondary">Stress</span>
+                            </div>
+                            <div class="bg-white p-2 rounded text-xs flex justify-between">
+                                <span>2:00 PM - Maria L.</span>
+                                <span class="text-cur-warm">Trauma</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Client Management -->
+                    <div class="space-y-2">
+                        <div class="text-sm font-medium text-cur-primary">Active Clients</div>
+                        <div class="space-y-2">
+                            <div class="bg-white border border-cur-gray-100 p-3 rounded shadow-sm">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <div class="text-xs font-medium">Sarah K.</div>
+                                        <div class="text-xs text-cur-gray-500">Anxiety Treatment</div>
+                                    </div>
+                                    <div class="bg-cur-accent text-white px-2 py-1 rounded text-xs">Session 3/6</div>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-3 rounded shadow-sm">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <div class="text-xs font-medium">John D.</div>
+                                        <div class="text-xs text-cur-gray-500">Stress Management</div>
+                                    </div>
+                                    <div class="bg-cur-secondary text-white px-2 py-1 rounded text-xs">Session 1/4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="bg-cur-primary text-white p-2 rounded text-center text-xs">Add Notes</div>
+                        <div class="bg-cur-secondary text-white p-2 rounded text-center text-xs">View Calendar</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Page Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-cur-accent to-cur-warm text-white p-4 text-center font-semibold">
+                    About Page
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Navigation -->
+                    <div class="bg-cur-gray-900 text-white h-12 rounded flex items-center justify-between px-4">
+                        <span class="text-sm">LOGO</span>
+                        <span class="text-sm">NAVIGATION</span>
+                    </div>
+                    
+                    <!-- Hero Section -->
+                    <div class="bg-cur-gray-100 p-4 rounded border border-dashed border-cur-gray-500">
+                        <div class="text-sm text-cur-gray-500 text-center">Company Story & Mission</div>
+                    </div>
+                    
+                    <!-- Team Section -->
+                    <div class="space-y-3">
+                        <div class="text-sm font-medium text-cur-primary">Our Team</div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="bg-white border border-cur-gray-100 p-3 rounded shadow-sm">
+                                <div class="w-8 h-8 bg-cur-gray-300 rounded-full mx-auto mb-2"></div>
+                                <div class="text-xs font-medium text-center">Dr. Sarah</div>
+                                <div class="text-xs text-cur-gray-500 text-center">Lead Therapist</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-3 rounded shadow-sm">
+                                <div class="w-8 h-8 bg-cur-gray-300 rounded-full mx-auto mb-2"></div>
+                                <div class="text-xs font-medium text-center">Dr. John</div>
+                                <div class="text-xs text-cur-gray-500 text-center">Senior Therapist</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certifications -->
+                    <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500">
+                        <div class="text-xs text-cur-gray-500 text-center">Certifications & Awards</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Page Wireframe -->
+            <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-cur-secondary to-cur-warm text-white p-4 text-center font-semibold">
+                    Contact Page
+                </div>
+                <div class="p-6 space-y-4">
+                    <!-- Navigation -->
+                    <div class="bg-cur-gray-900 text-white h-12 rounded flex items-center justify-between px-4">
+                        <span class="text-sm">LOGO</span>
+                        <span class="text-sm">NAVIGATION</span>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="space-y-3">
+                        <div class="text-sm font-medium text-cur-primary">Get In Touch</div>
+                        <div class="space-y-2">
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs text-cur-gray-500">Name</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-2 rounded">
+                                <div class="text-xs text-cur-gray-500">Email</div>
+                            </div>
+                            <div class="bg-white border border-cur-gray-100 p-4 rounded">
+                                <div class="text-xs text-cur-gray-500">Message</div>
+                            </div>
+                        </div>
+                        <div class="bg-cur-primary text-white px-4 py-2 rounded text-xs text-center">Send Message</div>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500">
+                        <div class="text-xs text-cur-gray-500 text-center">Contact Information</div>
+                        <div class="mt-2 space-y-1 text-xs text-cur-gray-600">
+                            <div>📧 contact@cur-heart.id</div>
+                            <div>📞 +62 21 1234 5678</div>
+                            <div>📍 Jakarta, Indonesia</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map -->
+                    <div class="bg-cur-gray-100 p-3 rounded border border-dashed border-cur-gray-500 h-20">
+                        <div class="text-xs text-cur-gray-500 text-center">Map Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Summary -->
+        <div class="bg-white border-2 border-cur-gray-100 rounded-lg shadow-lg p-6 mt-8">
+            <h3 class="text-xl font-semibold text-cur-primary mb-4">Wireframe Navigation Flow</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-primary">
+                    <h4 class="font-medium text-cur-primary mb-2">User Flow</h4>
+                    <ul class="text-sm text-cur-gray-500 space-y-1">
+                        <li>• Landing Page</li>
+                        <li>• Service Selection</li>
+                        <li>• Booking Process</li>
+                        <li>• Payment</li>
+                        <li>• Dashboard</li>
+                    </ul>
+                </div>
+                <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-secondary">
+                    <h4 class="font-medium text-cur-secondary mb-2">Key Features</h4>
+                    <ul class="text-sm text-cur-gray-500 space-y-1">
+                        <li>• Responsive Design</li>
+                        <li>• Progressive Web App</li>
+                        <li>• Real-time Booking</li>
+                        <li>• Progress Tracking</li>
+                        <li>• Secure Payments</li>
+                    </ul>
+                </div>
+                <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-accent">
+                    <h4 class="font-medium text-cur-accent mb-2">Accessibility</h4>
+                    <ul class="text-sm text-cur-gray-500 space-y-1">
+                        <li>• WCAG 2.1 AA</li>
+                        <li>• Screen Reader Support</li>
+                        <li>• Keyboard Navigation</li>
+                        <li>• High Contrast Mode</li>
+                        <li>• Multiple Languages</li>
+                    </ul>
+                </div>
+                <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-warm">
+                    <h4 class="font-medium text-cur-warm mb-2">Technical Stack</h4>
+                    <ul class="text-sm text-cur-gray-500 space-y-1">
+                        <li>• React.js Frontend</li>
+                        <li>• Node.js Backend</li>
+                        <li>• PostgreSQL Database</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• AWS Hosting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Features Section -->
+        <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">CUR-HEART Advanced Platform Features</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-cur-primary text-white p-4 rounded-lg">
+                    <i class="fas fa-brain text-2xl mb-2"></i>
+                    <h5 class="font-semibold mb-1">AI Therapist Matching</h5>
+                    <p class="text-xs opacity-90">Machine learning algorithm matches clients with optimal therapists based on 47 compatibility factors</p>
+                </div>
+                <div class="bg-cur-secondary text-white p-4 rounded-lg">
+                    <i class="fas fa-chart-line text-2xl mb-2"></i>
+                    <h5 class="font-semibold mb-1">Progress Analytics</h5>
+                    <p class="text-xs opacity-90">Real-time tracking of therapy outcomes with predictive modeling for treatment success</p>
+                </div>
+                <div class="bg-cur-accent text-white p-4 rounded-lg">
+                    <i class="fas fa-shield-alt text-2xl mb-2"></i>
+                    <h5 class="font-semibold mb-1">HIPAA Compliance</h5>
+                    <p class="text-xs opacity-90">Enterprise-grade security with end-to-end encryption for patient data protection</p>
+                </div>
+                <div class="bg-cur-warm text-white p-4 rounded-lg">
+                    <i class="fas fa-video text-2xl mb-2"></i>
+                    <h5 class="font-semibold mb-1">HD Video Sessions</h5>
+                    <p class="text-xs opacity-90">4K video quality with noise cancellation for optimal therapy experience</p>
+                </div>
+                <div class="bg-cur-gray-700 text-white p-4 rounded-lg">
+                    <i class="fas fa-mobile-alt text-2xl mb-2"></i>
+                    <h5 class="font-semibold mb-1">Native Mobile Apps</h5>
+                    <p class="text-xs opacity-90">iOS and Android apps with offline capabilities and push notifications</p>
+                </div>
+                <div class="bg-cur-primary text-white p-4 rounded-lg">
+                    <i class="fas fa-calendar-check text-2xl mb-2"></i>
+                    <h5 class="font-semibold mb-1">Smart Scheduling</h5>
+                    <p class="text-xs opacity-90">AI-powered scheduling optimization reducing no-shows by 67%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="bg-cur-gray-50 p-6 rounded-xl border border-cur-gray-200 mt-6">
+            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Enterprise Technology Stack</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="bg-blue-100 p-3 rounded-lg mb-2">
+                        <i class="fab fa-react text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-medium text-cur-gray-800">React.js Frontend</div>
+                    <div class="text-xs text-cur-gray-500">Modern, responsive UI</div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 p-3 rounded-lg mb-2">
+                        <i class="fab fa-node-js text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-medium text-cur-gray-800">Node.js Backend</div>
+                    <div class="text-xs text-cur-gray-500">Scalable server architecture</div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 p-3 rounded-lg mb-2">
+                        <i class="fas fa-database text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-medium text-cur-gray-800">PostgreSQL DB</div>
+                    <div class="text-xs text-cur-gray-500">Enterprise database</div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 p-3 rounded-lg mb-2">
+                        <i class="fab fa-aws text-orange-600 text-2xl"></i>
+                    </div>
+                    <div class="text-sm font-medium text-cur-gray-800">AWS Cloud</div>
+                    <div class="text-xs text-cur-gray-500">99.9% uptime SLA</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Investor Value Proposition -->
+        <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-6 rounded-xl mt-6">
+            <h4 class="text-xl font-bold mb-4">Investor Value Proposition</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <h5 class="font-semibold mb-2">Massive Market Opportunity</h5>
+                    <div class="text-2xl font-bold mb-1">$2.4B</div>
+                    <div class="text-sm opacity-90">Total addressable market in Indonesia mental health sector</div>
+                </div>
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <h5 class="font-semibold mb-2">Proven Business Model</h5>
+                    <div class="text-2xl font-bold mb-1">72%</div>
+                    <div class="text-sm opacity-90">Gross margins with scalable technology platform</div>
+                </div>
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <h5 class="font-semibold mb-2">Exceptional Returns</h5>
+                    <div class="text-2xl font-bold mb-1">42.5%</div>
+                    <div class="text-sm opacity-90">Projected IRR over 5-year investment horizon</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

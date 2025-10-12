@@ -1,0 +1,2495 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUR-HEART - High-Fidelity Mockups & Design System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#2E86AB',
+                        'cur-secondary': '#A23B72',
+                        'cur-accent': '#F18F01',
+                        'cur-warm': '#C73E1D',
+                        'cur-gray': {
+                            50: '#F8F9FA',
+                            100: '#E9ECEF',
+                            200: '#DEE2E6',
+                            300: '#CED4DA',
+                            400: '#ADB5BD',
+                            500: '#6C757D',
+                            600: '#495057',
+                            700: '#343A40',
+                            800: '#212529',
+                            900: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cur-gray-50 font-inter">
+    <div class="container mx-auto px-4 py-8 max-w-7xl">
+        
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-lg p-8 mb-8 text-center">
+            <h1 class="text-4xl font-bold font-poppins mb-2">CUR-HEART Design System</h1>
+            <p class="text-cur-gray-100 text-lg">High-Fidelity Mockups & Component Library</p>
+        </div>
+
+        <!-- Design System - Colors -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Color Palette</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Primary Colors -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-cur-gray-200">
+                    <div class="bg-cur-primary h-24"></div>
+                    <div class="p-3">
+                        <div class="font-medium text-sm">Primary Blue</div>
+                        <div class="text-xs text-cur-gray-500">#2E86AB</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-cur-gray-200">
+                    <div class="bg-cur-secondary h-24"></div>
+                    <div class="p-3">
+                        <div class="font-medium text-sm">Secondary Purple</div>
+                        <div class="text-xs text-cur-gray-500">#A23B72</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-cur-gray-200">
+                    <div class="bg-cur-accent h-24"></div>
+                    <div class="p-3">
+                        <div class="font-medium text-sm">Accent Orange</div>
+                        <div class="text-xs text-cur-gray-500">#F18F01</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-cur-gray-200">
+                    <div class="bg-cur-warm h-24"></div>
+                    <div class="p-3">
+                        <div class="font-medium text-sm">Warm Red</div>
+                        <div class="text-xs text-cur-gray-500">#C73E1D</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Typography</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 border border-cur-gray-200">
+                <div class="space-y-4">
+                    <div>
+                        <h1 class="text-4xl font-bold font-poppins text-cur-primary">Poppins Bold - Headings</h1>
+                        <p class="text-sm text-cur-gray-500">Font: Poppins 700, Size: 36px, Color: #2E86AB</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold font-poppins text-cur-gray-800">Poppins Semibold - Subheadings</h2>
+                        <p class="text-sm text-cur-gray-500">Font: Poppins 600, Size: 24px, Color: #212529</p>
+                    </div>
+                    <div>
+                        <p class="text-base font-inter text-cur-gray-700">Inter Regular - Body text for optimal readability and user experience</p>
+                        <p class="text-sm text-cur-gray-500">Font: Inter 400, Size: 16px, Color: #343A40</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-inter text-cur-gray-500">Inter Regular - Caption and meta information</p>
+                        <p class="text-xs text-cur-gray-500">Font: Inter 400, Size: 14px, Color: #6C757D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Homepage Mockup -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Homepage High-Fidelity Mockup</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="hidden md:flex space-x-8">
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Home</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Services</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">About</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Contact</a>
+                        </div>
+                        <button class="bg-cur-primary text-white px-6 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                            Book Session
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Hero Section -->
+                <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white py-16 px-6">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h1 class="text-5xl font-bold font-poppins mb-4">Transform Your Mind, Transform Your Life</h1>
+                        <p class="text-xl text-cur-gray-100 mb-8 max-w-2xl mx-auto">Professional hypnotherapy services to help you overcome anxiety, stress, and achieve mental wellness</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button class="bg-cur-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-cur-warm transition-colors">
+                                Start Your Journey
+                            </button>
+                            <button class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-cur-primary transition-colors">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="py-16 px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-3xl font-bold font-poppins text-center text-cur-gray-800 mb-12">Our Services</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            
+                            <!-- Service Card 1 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center mb-4">
+                                    <i class="fas fa-brain text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold font-poppins text-cur-gray-800 mb-2">Anxiety Relief</h3>
+                                <p class="text-cur-gray-600 mb-4">Overcome anxiety and panic disorders with proven hypnotherapy techniques</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-cur-accent">Rp 450K</span>
+                                    <button class="bg-cur-primary text-white px-4 py-2 rounded text-sm hover:bg-cur-secondary transition-colors">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Service Card 2 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cur-secondary to-cur-accent rounded-lg flex items-center justify-center mb-4">
+                                    <i class="fas fa-heart text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold font-poppins text-cur-gray-800 mb-2">Stress Management</h3>
+                                <p class="text-cur-gray-600 mb-4">Learn effective techniques to manage and reduce daily stress</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-cur-accent">Rp 400K</span>
+                                    <button class="bg-cur-primary text-white px-4 py-2 rounded text-sm hover:bg-cur-secondary transition-colors">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Service Card 3 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cur-accent to-cur-warm rounded-lg flex items-center justify-center mb-4">
+                                    <i class="fas fa-star text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold font-poppins text-cur-gray-800 mb-2">Confidence Building</h3>
+                                <p class="text-cur-gray-600 mb-4">Build self-confidence and unlock your full potential</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-cur-accent">Rp 400K</span>
+                                    <button class="bg-cur-primary text-white px-4 py-2 rounded text-sm hover:bg-cur-secondary transition-colors">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="bg-cur-gray-50 py-16 px-6">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="text-3xl font-bold font-poppins text-cur-gray-800 mb-12">What Our Clients Say</h2>
+                        <div class="bg-white rounded-lg p-8 shadow-lg border border-cur-gray-200">
+                            <div class="flex items-center justify-center mb-4">
+                                <div class="flex text-cur-accent">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg text-cur-gray-700 mb-4 italic">"CUR-HEART helped me overcome my anxiety completely. The therapists are professional and caring."</p>
+                            <div class="text-cur-gray-600">
+                                <div class="font-semibold">Sarah K.</div>
+                                <div class="text-sm">Marketing Executive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Page Mockup -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Services Page High-Fidelity Mockup</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="hidden md:flex space-x-8">
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Home</a>
+                            <a href="#" class="text-cur-primary font-medium">Services</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">About</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Contact</a>
+                        </div>
+                        <button class="bg-cur-primary text-white px-6 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                            Book Session
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Page Header -->
+                <div class="bg-cur-gray-50 py-12 px-6 border-b border-cur-gray-200">
+                    <div class="max-w-6xl mx-auto">
+                        <nav class="text-sm text-cur-gray-500 mb-4">
+                            <a href="#" class="hover:text-cur-primary">Home</a> / <span class="text-cur-gray-700">Services</span>
+                        </nav>
+                        <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-4">Our Therapy Services</h1>
+                        <p class="text-lg text-cur-gray-600 max-w-2xl">Choose from our range of professional hypnotherapy services designed to help you achieve mental wellness and personal growth.</p>
+                    </div>
+                </div>
+
+                <!-- Service Categories -->
+                <div class="py-8 px-6 border-b border-cur-gray-200">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="flex flex-wrap gap-4">
+                            <button class="bg-cur-primary text-white px-6 py-2 rounded-full font-medium">All Services</button>
+                            <button class="bg-cur-gray-100 text-cur-gray-700 px-6 py-2 rounded-full font-medium hover:bg-cur-primary hover:text-white transition-colors">Anxiety</button>
+                            <button class="bg-cur-gray-100 text-cur-gray-700 px-6 py-2 rounded-full font-medium hover:bg-cur-primary hover:text-white transition-colors">Stress</button>
+                            <button class="bg-cur-gray-100 text-cur-gray-700 px-6 py-2 rounded-full font-medium hover:bg-cur-primary hover:text-white transition-colors">Trauma</button>
+                            <button class="bg-cur-gray-100 text-cur-gray-700 px-6 py-2 rounded-full font-medium hover:bg-cur-primary hover:text-white transition-colors">Confidence</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="py-16 px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            
+                            <!-- Service Card 1 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow">
+                                <div class="flex items-start justify-between mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-brain text-white text-2xl"></i>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-3xl font-bold text-cur-accent">Rp 450K</div>
+                                        <div class="text-sm text-cur-gray-500">per session</div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold font-poppins text-cur-gray-800 mb-3">Anxiety Relief Therapy</h3>
+                                <p class="text-cur-gray-600 mb-6">Overcome anxiety and panic disorders with proven hypnotherapy techniques. Our certified therapists use evidence-based methods to help you regain control.</p>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-primary mr-2"></i>
+                                        90-minute sessions
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-primary mr-2"></i>
+                                        4-6 session program
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-primary mr-2"></i>
+                                        87% success rate
+                                    </div>
+                                </div>
+                                <button class="w-full bg-cur-primary text-white py-3 rounded-lg font-semibold hover:bg-cur-secondary transition-colors">
+                                    Book This Service
+                                </button>
+                            </div>
+
+                            <!-- Service Card 2 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow">
+                                <div class="flex items-start justify-between mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-cur-secondary to-cur-accent rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-heart text-white text-2xl"></i>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-3xl font-bold text-cur-accent">Rp 400K</div>
+                                        <div class="text-sm text-cur-gray-500">per session</div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold font-poppins text-cur-gray-800 mb-3">Stress Management</h3>
+                                <p class="text-cur-gray-600 mb-6">Learn effective techniques to manage and reduce daily stress. Perfect for busy professionals and students dealing with overwhelming pressure.</p>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-secondary mr-2"></i>
+                                        75-minute sessions
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-secondary mr-2"></i>
+                                        3-5 session program
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-secondary mr-2"></i>
+                                        92% improvement rate
+                                    </div>
+                                </div>
+                                <button class="w-full bg-cur-secondary text-white py-3 rounded-lg font-semibold hover:bg-cur-primary transition-colors">
+                                    Book This Service
+                                </button>
+                            </div>
+
+                            <!-- Service Card 3 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow">
+                                <div class="flex items-start justify-between mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-cur-accent to-cur-warm rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-star text-white text-2xl"></i>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-3xl font-bold text-cur-accent">Rp 400K</div>
+                                        <div class="text-sm text-cur-gray-500">per session</div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold font-poppins text-cur-gray-800 mb-3">Confidence Building</h3>
+                                <p class="text-cur-gray-600 mb-6">Build self-confidence and unlock your full potential. Ideal for public speaking anxiety, social confidence, and personal empowerment.</p>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-accent mr-2"></i>
+                                        75-minute sessions
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-accent mr-2"></i>
+                                        3-5 session program
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-accent mr-2"></i>
+                                        89% confidence improvement
+                                    </div>
+                                </div>
+                                <button class="w-full bg-cur-accent text-white py-3 rounded-lg font-semibold hover:bg-cur-warm transition-colors">
+                                    Book This Service
+                                </button>
+                            </div>
+
+                            <!-- Service Card 4 -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow">
+                                <div class="flex items-start justify-between mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-cur-warm to-cur-primary rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-moon text-white text-2xl"></i>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-3xl font-bold text-cur-accent">Rp 350K</div>
+                                        <div class="text-sm text-cur-gray-500">per session</div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold font-poppins text-cur-gray-800 mb-3">Sleep & Relaxation</h3>
+                                <p class="text-cur-gray-600 mb-6">Improve sleep quality and overcome insomnia with specialized relaxation techniques and sleep hypnotherapy protocols.</p>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-warm mr-2"></i>
+                                        60-minute sessions
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-warm mr-2"></i>
+                                        2-4 session program
+                                    </div>
+                                    <div class="flex items-center text-sm text-cur-gray-600">
+                                        <i class="fas fa-check text-cur-warm mr-2"></i>
+                                        94% sleep quality improvement
+                                    </div>
+                                </div>
+                                <button class="w-full bg-cur-warm text-white py-3 rounded-lg font-semibold hover:bg-cur-secondary transition-colors">
+                                    Book This Service
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complete Booking Flow Mockup (All 4 Steps) -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Complete Booking Flow (4 Steps)</h2>
+            
+            <!-- Step 1: Service Selection -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200 mb-8">
+                <div class="bg-cur-primary text-white p-4">
+                    <h3 class="text-lg font-bold">Step 1: Service Selection</h3>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="text-cur-gray-600">Book Your Session - Step 1 of 4</div>
+                    </div>
+                </nav>
+
+                <!-- Progress Steps -->
+                <div class="bg-cur-gray-50 py-8 px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-primary text-white rounded-full flex items-center justify-center font-semibold">1</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-primary">Service</div>
+                                    <div class="text-xs text-cur-gray-500">Choose therapy type</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-gray-200 mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-gray-200 text-cur-gray-500 rounded-full flex items-center justify-center font-semibold">2</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-gray-500">Therapist</div>
+                                    <div class="text-xs text-cur-gray-500">Select your therapist</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-gray-200 mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-gray-200 text-cur-gray-500 rounded-full flex items-center justify-center font-semibold">3</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-gray-500">Schedule</div>
+                                    <div class="text-xs text-cur-gray-500">Pick date & time</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-gray-200 mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-gray-200 text-cur-gray-500 rounded-full flex items-center justify-center font-semibold">4</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-gray-500">Payment</div>
+                                    <div class="text-xs text-cur-gray-500">Complete booking</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Selection Content -->
+                <div class="py-12 px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-3xl font-bold font-poppins text-cur-gray-800 mb-8 text-center">Choose Your Therapy Service</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            
+                            <div class="border-2 border-cur-primary bg-cur-primary bg-opacity-5 rounded-xl p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-brain text-cur-primary text-2xl mr-3"></i>
+                                    <h3 class="text-xl font-bold text-cur-primary">Anxiety Relief Therapy</h3>
+                                </div>
+                                <p class="text-cur-gray-600 mb-4">Overcome anxiety and panic disorders with proven techniques</p>
+                                <div class="text-sm text-cur-gray-600">
+                                    <div class="flex justify-between mb-2">
+                                        <span>Duration:</span>
+                                        <span class="font-medium">90 minutes</span>
+                                    </div>
+                                    <div class="flex justify-between mb-2">
+                                        <span>Sessions:</span>
+                                        <span class="font-medium">4-6 recommended</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Price:</span>
+                                        <span class="font-bold text-cur-primary text-lg">Rp 450,000</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-2 border-cur-gray-200 rounded-xl p-6 cursor-pointer hover:shadow-lg hover:border-cur-secondary transition-all">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-heart text-cur-secondary text-2xl mr-3"></i>
+                                    <h3 class="text-xl font-bold text-cur-gray-800">Stress Management</h3>
+                                </div>
+                                <p class="text-cur-gray-600 mb-4">Learn effective techniques to manage daily stress</p>
+                                <div class="text-sm text-cur-gray-600">
+                                    <div class="flex justify-between mb-2">
+                                        <span>Duration:</span>
+                                        <span class="font-medium">75 minutes</span>
+                                    </div>
+                                    <div class="flex justify-between mb-2">
+                                        <span>Sessions:</span>
+                                        <span class="font-medium">3-5 recommended</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Price:</span>
+                                        <span class="font-bold text-cur-secondary text-lg">Rp 400,000</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-2 border-cur-gray-200 rounded-xl p-6 cursor-pointer hover:shadow-lg hover:border-cur-accent transition-all">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-lightbulb text-cur-accent text-2xl mr-3"></i>
+                                    <h3 class="text-xl font-bold text-cur-gray-800">Confidence Building</h3>
+                                </div>
+                                <p class="text-cur-gray-600 mb-4">Build self-confidence and unlock your potential</p>
+                                <div class="text-sm text-cur-gray-600">
+                                    <div class="flex justify-between mb-2">
+                                        <span>Duration:</span>
+                                        <span class="font-medium">60 minutes</span>
+                                    </div>
+                                    <div class="flex justify-between mb-2">
+                                        <span>Sessions:</span>
+                                        <span class="font-medium">6-8 recommended</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Price:</span>
+                                        <span class="font-bold text-cur-accent text-lg">Rp 350,000</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-2 border-cur-gray-200 rounded-xl p-6 cursor-pointer hover:shadow-lg hover:border-cur-warm transition-all">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-moon text-cur-warm text-2xl mr-3"></i>
+                                    <h3 class="text-xl font-bold text-cur-gray-800">Sleep & Relaxation</h3>
+                                </div>
+                                <p class="text-cur-gray-600 mb-4">Improve sleep quality and overcome insomnia</p>
+                                <div class="text-sm text-cur-gray-600">
+                                    <div class="flex justify-between mb-2">
+                                        <span>Duration:</span>
+                                        <span class="font-medium">75 minutes</span>
+                                    </div>
+                                    <div class="flex justify-between mb-2">
+                                        <span>Sessions:</span>
+                                        <span class="font-medium">4-6 recommended</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Price:</span>
+                                        <span class="font-bold text-cur-warm text-lg">Rp 420,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button class="bg-cur-gray-200 text-cur-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-cur-gray-300 transition-colors" disabled>
+                                Back
+                            </button>
+                            <button class="bg-cur-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cur-secondary transition-colors">
+                                Continue to Therapist Selection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Therapist Selection -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200 mb-8">
+                <div class="bg-cur-secondary text-white p-4">
+                    <h3 class="text-lg font-bold">Step 2: Therapist Selection</h3>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="text-cur-gray-600">Book Your Session - Step 2 of 4</div>
+                    </div>
+                </nav>
+
+                <!-- Progress Steps -->
+                <div class="bg-cur-gray-50 py-8 px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-primary text-white rounded-full flex items-center justify-center font-semibold">✓</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-primary">Service</div>
+                                    <div class="text-xs text-cur-gray-500">Anxiety Relief Therapy</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-primary mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-secondary text-white rounded-full flex items-center justify-center font-semibold">2</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-secondary">Therapist</div>
+                                    <div class="text-xs text-cur-gray-500">Select your therapist</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-gray-200 mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-gray-200 text-cur-gray-500 rounded-full flex items-center justify-center font-semibold">3</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-gray-500">Schedule</div>
+                                    <div class="text-xs text-cur-gray-500">Pick date & time</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-gray-200 mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-gray-200 text-cur-gray-500 rounded-full flex items-center justify-center font-semibold">4</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-gray-500">Payment</div>
+                                    <div class="text-xs text-cur-gray-500">Complete booking</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist Selection Content -->
+                <div class="py-12 px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-3xl font-bold font-poppins text-cur-gray-800 mb-8 text-center">Choose Your Therapist</h2>
+                        
+                        <!-- AI Recommendation -->
+                        <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-6 rounded-xl mb-8">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-robot text-2xl mr-3"></i>
+                                <h3 class="text-lg font-bold">AI Recommendation</h3>
+                            </div>
+                            <p class="mb-3">Based on your service selection and profile, we recommend Dr. Sarah Wijaya for optimal treatment outcomes.</p>
+                            <div class="text-sm opacity-90">Match Score: 94% | Specialization: Anxiety Disorders | Success Rate: 92%</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            
+                            <!-- Recommended Therapist -->
+                            <div class="border-2 border-cur-primary bg-cur-primary bg-opacity-5 rounded-xl p-6 cursor-pointer hover:shadow-lg transition-shadow">
+                                <div class="flex items-start space-x-4 mb-4">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white text-xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-bold text-cur-primary mb-1">Dr. Sarah Wijaya</h3>
+                                        <p class="text-cur-gray-600 text-sm mb-2">Lead Hypnotherapist | 15+ years experience</p>
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="bg-cur-primary text-white text-xs px-2 py-1 rounded">Recommended</span>
+                                            <div class="flex text-cur-accent">
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                            </div>
+                                            <span class="text-xs text-cur-gray-500">(127 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm text-cur-gray-600 mb-4">
+                                    <div class="flex justify-between">
+                                        <span>Specialization:</span>
+                                        <span class="font-medium">Anxiety & Panic Disorders</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Success Rate:</span>
+                                        <span class="font-medium text-cur-primary">92%</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Languages:</span>
+                                        <span class="font-medium">Indonesian, English</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Next Available:</span>
+                                        <span class="font-medium text-cur-accent">Tomorrow 2:00 PM</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-cur-gray-600 mb-3">"Specializes in anxiety treatment with cognitive-behavioral hypnotherapy. Certified in EMDR and mindfulness techniques."</p>
+                            </div>
+
+                            <!-- Alternative Therapist -->
+                            <div class="border-2 border-cur-gray-200 rounded-xl p-6 cursor-pointer hover:shadow-lg hover:border-cur-secondary transition-all">
+                                <div class="flex items-start space-x-4 mb-4">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-cur-secondary to-cur-accent rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white text-xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-bold text-cur-gray-800 mb-1">Dr. John Santoso</h3>
+                                        <p class="text-cur-gray-600 text-sm mb-2">Senior Therapist | 12+ years experience</p>
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="bg-cur-secondary text-white text-xs px-2 py-1 rounded">Available</span>
+                                            <div class="flex text-cur-accent">
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star text-xs"></i>
+                                                <i class="fas fa-star-half-alt text-xs"></i>
+                                            </div>
+                                            <span class="text-xs text-cur-gray-500">(89 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm text-cur-gray-600 mb-4">
+                                    <div class="flex justify-between">
+                                        <span>Specialization:</span>
+                                        <span class="font-medium">Stress & Trauma</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Success Rate:</span>
+                                        <span class="font-medium text-cur-secondary">89%</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Languages:</span>
+                                        <span class="font-medium">Indonesian</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Next Available:</span>
+                                        <span class="font-medium text-cur-accent">Today 4:00 PM</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-cur-gray-600 mb-3">"Experienced in trauma-informed therapy with specialization in stress management and workplace anxiety."</p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button class="bg-cur-gray-200 text-cur-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-cur-gray-300 transition-colors">
+                                Back to Services
+                            </button>
+                            <button class="bg-cur-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cur-primary transition-colors">
+                                Continue to Schedule
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Schedule Selection -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200 mb-8">
+                <div class="bg-cur-accent text-white p-4">
+                    <h3 class="text-lg font-bold">Step 3: Schedule Selection</h3>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="text-cur-gray-600">Book Your Session - Step 3 of 4</div>
+                    </div>
+                </nav>
+
+                <!-- Progress Steps -->
+                <div class="bg-cur-gray-50 py-8 px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-primary text-white rounded-full flex items-center justify-center font-semibold">✓</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-primary">Service</div>
+                                    <div class="text-xs text-cur-gray-500">Anxiety Relief Therapy</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-primary mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-secondary text-white rounded-full flex items-center justify-center font-semibold">✓</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-secondary">Therapist</div>
+                                    <div class="text-xs text-cur-gray-500">Dr. Sarah Wijaya</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-secondary mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-accent text-white rounded-full flex items-center justify-center font-semibold">3</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-accent">Schedule</div>
+                                    <div class="text-xs text-cur-gray-500">Pick date & time</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-gray-200 mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-gray-200 text-cur-gray-500 rounded-full flex items-center justify-center font-semibold">4</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-gray-500">Payment</div>
+                                    <div class="text-xs text-cur-gray-500">Complete booking</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule Selection Content -->
+                <div class="py-12 px-6">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-3xl font-bold font-poppins text-cur-gray-800 mb-8 text-center">Choose Date & Time</h2>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Calendar -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Select Date</h3>
+                                <div class="bg-cur-gray-50 p-4 rounded-lg">
+                                    <!-- Calendar Header -->
+                                    <div class="flex justify-between items-center mb-4">
+                                        <button class="text-cur-gray-500 hover:text-cur-primary">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                        <h4 class="text-lg font-semibold text-cur-gray-800">October 2024</h4>
+                                        <button class="text-cur-gray-500 hover:text-cur-primary">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Calendar Grid -->
+                                    <div class="grid grid-cols-7 gap-2 text-center text-sm">
+                                        <div class="text-cur-gray-500 font-medium py-2">Su</div>
+                                        <div class="text-cur-gray-500 font-medium py-2">Mo</div>
+                                        <div class="text-cur-gray-500 font-medium py-2">Tu</div>
+                                        <div class="text-cur-gray-500 font-medium py-2">We</div>
+                                        <div class="text-cur-gray-500 font-medium py-2">Th</div>
+                                        <div class="text-cur-gray-500 font-medium py-2">Fr</div>
+                                        <div class="text-cur-gray-500 font-medium py-2">Sa</div>
+                                        
+                                        <!-- Calendar Days -->
+                                        <div class="py-2 text-cur-gray-300">29</div>
+                                        <div class="py-2 text-cur-gray-300">30</div>
+                                        <div class="py-2 text-cur-gray-300">1</div>
+                                        <div class="py-2 text-cur-gray-300">2</div>
+                                        <div class="py-2 text-cur-gray-300">3</div>
+                                        <div class="py-2 text-cur-gray-300">4</div>
+                                        <div class="py-2 text-cur-gray-300">5</div>
+                                        
+                                        <div class="py-2 text-cur-gray-400">6</div>
+                                        <div class="py-2 text-cur-gray-400">7</div>
+                                        <div class="py-2 text-cur-gray-400">8</div>
+                                        <div class="py-2 text-cur-gray-400">9</div>
+                                        <div class="py-2 text-cur-gray-400">10</div>
+                                        <div class="py-2 text-cur-gray-400">11</div>
+                                        <div class="py-2 bg-cur-gray-200 rounded">12</div>
+                                        
+                                        <div class="py-2 bg-cur-accent text-white rounded cursor-pointer">13</div>
+                                        <div class="py-2 hover:bg-cur-gray-100 rounded cursor-pointer">14</div>
+                                        <div class="py-2 hover:bg-cur-gray-100 rounded cursor-pointer">15</div>
+                                        <div class="py-2 hover:bg-cur-gray-100 rounded cursor-pointer">16</div>
+                                        <div class="py-2 hover:bg-cur-gray-100 rounded cursor-pointer">17</div>
+                                        <div class="py-2 hover:bg-cur-gray-100 rounded cursor-pointer">18</div>
+                                        <div class="py-2 text-cur-gray-300">19</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-sm text-cur-gray-600">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex items-center">
+                                            <div class="w-3 h-3 bg-cur-accent rounded mr-2"></div>
+                                            <span>Selected</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="w-3 h-3 bg-cur-gray-300 rounded mr-2"></div>
+                                            <span>Unavailable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Time Slots -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Available Times (Oct 13)</h3>
+                                <div class="space-y-3">
+                                    <div class="text-sm font-medium text-cur-gray-700 mb-2">Morning</div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button class="p-3 border border-cur-gray-200 rounded-lg text-sm hover:border-cur-accent hover:bg-cur-accent hover:text-white transition-colors">
+                                            9:00 AM
+                                        </button>
+                                        <button class="p-3 border border-cur-gray-200 rounded-lg text-sm hover:border-cur-accent hover:bg-cur-accent hover:text-white transition-colors">
+                                            10:30 AM
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="text-sm font-medium text-cur-gray-700 mb-2 mt-4">Afternoon</div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button class="p-3 border-2 border-cur-accent bg-cur-accent text-white rounded-lg text-sm">
+                                            2:00 PM
+                                        </button>
+                                        <button class="p-3 border border-cur-gray-200 rounded-lg text-sm hover:border-cur-accent hover:bg-cur-accent hover:text-white transition-colors">
+                                            3:30 PM
+                                        </button>
+                                        <button class="p-3 border border-cur-gray-200 rounded-lg text-sm hover:border-cur-accent hover:bg-cur-accent hover:text-white transition-colors">
+                                            5:00 PM
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="text-sm font-medium text-cur-gray-700 mb-2 mt-4">Evening</div>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button class="p-3 border border-cur-gray-200 rounded-lg text-sm hover:border-cur-accent hover:bg-cur-accent hover:text-white transition-colors">
+                                            7:00 PM
+                                        </button>
+                                        <button class="p-3 bg-cur-gray-100 text-cur-gray-400 rounded-lg text-sm cursor-not-allowed">
+                                            8:30 PM
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Session Type -->
+                                <div class="mt-6 pt-6 border-t border-cur-gray-200">
+                                    <h4 class="text-sm font-medium text-cur-gray-700 mb-3">Session Type</h4>
+                                    <div class="space-y-2">
+                                        <label class="flex items-center">
+                                            <input type="radio" name="session_type" class="text-cur-accent focus:ring-cur-accent" checked>
+                                            <span class="ml-2 text-sm">Online Video Session</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="radio" name="session_type" class="text-cur-accent focus:ring-cur-accent">
+                                            <span class="ml-2 text-sm">In-Person Session</span>
+                                            <span class="ml-2 text-xs text-cur-gray-500">(+Rp 50,000)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between mt-8">
+                            <button class="bg-cur-gray-200 text-cur-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-cur-gray-300 transition-colors">
+                                Back to Therapist
+                            </button>
+                            <button class="bg-cur-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-cur-warm transition-colors">
+                                Continue to Payment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Payment & Confirmation -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200 mb-8">
+                <div class="bg-cur-warm text-white p-4">
+                    <h3 class="text-lg font-bold">Step 4: Payment & Confirmation</h3>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="text-cur-gray-600">Book Your Session - Step 4 of 4</div>
+                    </div>
+                </nav>
+
+                <!-- Progress Steps -->
+                <div class="bg-cur-gray-50 py-8 px-6">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-primary text-white rounded-full flex items-center justify-center font-semibold">✓</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-primary">Service</div>
+                                    <div class="text-xs text-cur-gray-500">Anxiety Relief Therapy</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-primary mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-secondary text-white rounded-full flex items-center justify-center font-semibold">✓</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-secondary">Therapist</div>
+                                    <div class="text-xs text-cur-gray-500">Dr. Sarah Wijaya</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-secondary mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-accent text-white rounded-full flex items-center justify-center font-semibold">✓</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-accent">Schedule</div>
+                                    <div class="text-xs text-cur-gray-500">Oct 13, 2:00 PM</div>
+                                </div>
+                            </div>
+                            <div class="flex-1 h-1 bg-cur-accent mx-4"></div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-cur-warm text-white rounded-full flex items-center justify-center font-semibold">4</div>
+                                <div class="ml-3">
+                                    <div class="text-sm font-medium text-cur-warm">Payment</div>
+                                    <div class="text-xs text-cur-gray-500">Complete booking</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Content -->
+                <div class="py-12 px-6">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-3xl font-bold font-poppins text-cur-gray-800 mb-8 text-center">Complete Your Booking</h2>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Booking Summary -->
+                            <div class="bg-cur-gray-50 border border-cur-gray-200 rounded-xl p-6">
+                                <h3 class="text-xl font-semibold text-cur-gray-800 mb-6">Booking Summary</h3>
+                                
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Service:</span>
+                                        <span class="font-medium">Anxiety Relief Therapy</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Therapist:</span>
+                                        <span class="font-medium">Dr. Sarah Wijaya</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Date & Time:</span>
+                                        <span class="font-medium">Oct 13, 2024 at 2:00 PM</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Duration:</span>
+                                        <span class="font-medium">90 minutes</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Session Type:</span>
+                                        <span class="font-medium">Online Video Session</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-cur-gray-300 pt-4 space-y-2">
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Session Fee:</span>
+                                        <span>Rp 450,000</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Platform Fee:</span>
+                                        <span>Rp 15,000</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-cur-gray-600">Tax (11%):</span>
+                                        <span>Rp 51,150</span>
+                                    </div>
+                                    <div class="flex justify-between text-lg font-bold text-cur-primary border-t border-cur-gray-300 pt-2">
+                                        <span>Total:</span>
+                                        <span>Rp 516,150</span>
+                                    </div>
+                                </div>
+
+                                <!-- Promo Code -->
+                                <div class="mt-6">
+                                    <label class="block text-sm font-medium text-cur-gray-700 mb-2">Promo Code</label>
+                                    <div class="flex">
+                                        <input type="text" class="flex-1 border border-cur-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="Enter code">
+                                        <button class="bg-cur-primary text-white px-4 py-2 rounded-r-lg hover:bg-cur-secondary transition-colors">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payment Form -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+                                <h3 class="text-xl font-semibold text-cur-gray-800 mb-6">Payment Information</h3>
+                                
+                                <!-- Payment Methods -->
+                                <div class="mb-6">
+                                    <h4 class="text-sm font-medium text-cur-gray-700 mb-3">Payment Method</h4>
+                                    <div class="space-y-3">
+                                        <label class="flex items-center p-3 border border-cur-gray-200 rounded-lg cursor-pointer hover:border-cur-primary">
+                                            <input type="radio" name="payment_method" class="text-cur-primary focus:ring-cur-primary" checked>
+                                            <div class="ml-3 flex items-center">
+                                                <i class="fas fa-credit-card text-cur-primary mr-2"></i>
+                                                <span class="font-medium">Credit/Debit Card</span>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center p-3 border border-cur-gray-200 rounded-lg cursor-pointer hover:border-cur-primary">
+                                            <input type="radio" name="payment_method" class="text-cur-primary focus:ring-cur-primary">
+                                            <div class="ml-3 flex items-center">
+                                                <i class="fas fa-university text-cur-secondary mr-2"></i>
+                                                <span class="font-medium">Bank Transfer</span>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center p-3 border border-cur-gray-200 rounded-lg cursor-pointer hover:border-cur-primary">
+                                            <input type="radio" name="payment_method" class="text-cur-primary focus:ring-cur-primary">
+                                            <div class="ml-3 flex items-center">
+                                                <i class="fas fa-mobile-alt text-cur-accent mr-2"></i>
+                                                <span class="font-medium">Digital Wallet (GoPay, OVO, DANA)</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Card Details -->
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-cur-gray-700 mb-2">Card Number</label>
+                                        <input type="text" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="1234 5678 9012 3456">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium text-cur-gray-700 mb-2">Expiry Date</label>
+                                            <input type="text" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="MM/YY">
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-cur-gray-700 mb-2">CVV</label>
+                                            <input type="text" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="123">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-cur-gray-700 mb-2">Cardholder Name</label>
+                                        <input type="text" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="John Doe">
+                                    </div>
+                                </div>
+
+                                <!-- Terms & Conditions -->
+                                <div class="mt-6">
+                                    <label class="flex items-start">
+                                        <input type="checkbox" class="mt-1 text-cur-primary focus:ring-cur-primary">
+                                        <span class="ml-2 text-sm text-cur-gray-600">
+                                            I agree to the <a href="#" class="text-cur-primary hover:underline">Terms & Conditions</a> and <a href="#" class="text-cur-primary hover:underline">Privacy Policy</a>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between mt-8">
+                            <button class="bg-cur-gray-200 text-cur-gray-700 px-8 py-3 rounded-lg font-semibold hover:bg-cur-gray-300 transition-colors">
+                                Back to Schedule
+                            </button>
+                            <button class="bg-cur-warm text-white px-8 py-3 rounded-lg font-semibold hover:bg-cur-primary transition-colors">
+                                Complete Booking - Rp 516,150
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Complete Client Dashboard Mockup with All Menus -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Complete Client Dashboard Mockup</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <div class="flex">
+                    <!-- Sidebar -->
+                    <div class="w-64 bg-cur-gray-900 text-white h-screen">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-8">
+                                <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                                <span class="text-lg font-bold font-poppins">CUR-HEART</span>
+                            </div>
+                            
+                            <!-- User Profile Section -->
+                            <div class="mb-8 p-4 bg-cur-gray-800 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-cur-primary rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-medium">John Doe</div>
+                                        <div class="text-xs text-cur-gray-400">Client Member</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <nav class="space-y-2">
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg bg-cur-primary text-white">
+                                    <i class="fas fa-home"></i>
+                                    <span>Dashboard</span>
+                                    <span class="ml-auto bg-cur-white text-cur-primary text-xs px-2 py-1 rounded-full">3</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-calendar-plus"></i>
+                                    <span>Book Session</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>Appointments</span>
+                                    <span class="ml-auto bg-cur-accent text-white text-xs px-2 py-1 rounded-full">2</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Progress Track</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-file-medical"></i>
+                                    <span>Medical Records</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Messages</span>
+                                    <span class="ml-auto bg-cur-warm text-white text-xs px-2 py-1 rounded-full">1</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Billing & Payments</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Notifications</span>
+                                    <span class="ml-auto bg-cur-secondary text-white text-xs px-2 py-1 rounded-full">5</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span>Profile Settings</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>Help & Support</span>
+                                </a>
+                                
+                                <div class="border-t border-cur-gray-700 my-4"></div>
+                                
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-warm hover:text-white">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="flex-1 bg-cur-gray-50">
+                        <!-- Header -->
+                        <header class="bg-white border-b border-cur-gray-200 px-8 py-6">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h1 class="text-2xl font-bold font-poppins text-cur-gray-800">Welcome back, John!</h1>
+                                    <p class="text-cur-gray-600">Here's your therapy progress overview</p>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <button class="bg-cur-primary text-white px-6 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                                        <i class="fas fa-plus mr-2"></i>Book New Session
+                                    </button>
+                                    <div class="relative">
+                                        <button class="text-cur-gray-600 hover:text-cur-primary">
+                                            <i class="fas fa-bell text-xl"></i>
+                                            <span class="absolute -top-1 -right-1 bg-cur-warm text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">5</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- Dashboard Content -->
+                        <main class="p-8">
+                            <!-- Quick Stats -->
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-primary bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-calendar-check text-cur-primary text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">12</div>
+                                            <div class="text-sm text-cur-gray-600">Total Sessions</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-secondary bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-clock text-cur-secondary text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">2</div>
+                                            <div class="text-sm text-cur-gray-600">Upcoming</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-accent bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-chart-line text-cur-accent text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">78%</div>
+                                            <div class="text-sm text-cur-gray-600">Progress</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-warm bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-star text-cur-warm text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">4.8</div>
+                                            <div class="text-sm text-cur-gray-600">Avg Rating</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Activity & Upcoming Sessions -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                                <!-- Upcoming Sessions -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Upcoming Sessions</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center p-4 bg-cur-primary bg-opacity-5 rounded-lg border border-cur-primary">
+                                            <div class="w-12 h-12 bg-cur-primary text-white rounded-lg flex items-center justify-center">
+                                                <i class="fas fa-video"></i>
+                                            </div>
+                                            <div class="ml-4 flex-1">
+                                                <div class="font-medium text-cur-gray-800">Anxiety Relief Session</div>
+                                                <div class="text-sm text-cur-gray-600">with Dr. Sarah Wijaya</div>
+                                                <div class="text-sm text-cur-primary font-medium">Today, 2:00 PM</div>
+                                            </div>
+                                            <button class="bg-cur-primary text-white px-4 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                                                Join
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="flex items-center p-4 bg-cur-gray-50 rounded-lg">
+                                            <div class="w-12 h-12 bg-cur-secondary text-white rounded-lg flex items-center justify-center">
+                                                <i class="fas fa-calendar"></i>
+                                            </div>
+                                            <div class="ml-4 flex-1">
+                                                <div class="font-medium text-cur-gray-800">Follow-up Session</div>
+                                                <div class="text-sm text-cur-gray-600">with Dr. Sarah Wijaya</div>
+                                                <div class="text-sm text-cur-secondary font-medium">Tomorrow, 10:00 AM</div>
+                                            </div>
+                                            <button class="bg-cur-gray-200 text-cur-gray-700 px-4 py-2 rounded-lg hover:bg-cur-gray-300 transition-colors">
+                                                Reschedule
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Progress Chart -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Progress Tracking</h3>
+                                    <div class="space-y-4">
+                                        <div>
+                                            <div class="flex justify-between text-sm mb-2">
+                                                <span class="text-cur-gray-600">Anxiety Level</span>
+                                                <span class="font-medium text-cur-primary">22% Reduced</span>
+                                            </div>
+                                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                                <div class="bg-cur-primary h-2 rounded-full" style="width: 78%"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="flex justify-between text-sm mb-2">
+                                                <span class="text-cur-gray-600">Sleep Quality</span>
+                                                <span class="font-medium text-cur-secondary">45% Improved</span>
+                                            </div>
+                                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                                <div class="bg-cur-secondary h-2 rounded-full" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="flex justify-between text-sm mb-2">
+                                                <span class="text-cur-gray-600">Confidence Level</span>
+                                                <span class="font-medium text-cur-accent">68% Increased</span>
+                                            </div>
+                                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                                <div class="bg-cur-accent h-2 rounded-full" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mt-6 p-4 bg-cur-accent bg-opacity-5 rounded-lg">
+                                            <div class="flex items-center">
+                                                <i class="fas fa-trophy text-cur-accent text-xl mr-3"></i>
+                                                <div>
+                                                    <div class="font-medium text-cur-gray-800">Great Progress!</div>
+                                                    <div class="text-sm text-cur-gray-600">You've achieved 78% of your therapy goals</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Messages & Quick Actions -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                <!-- Recent Messages -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Recent Messages</h3>
+                                    <div class="space-y-3">
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-primary bg-opacity-5 rounded-lg">
+                                            <div class="w-8 h-8 bg-cur-primary text-white rounded-full flex items-center justify-center text-sm">
+                                                SW
+                                            </div>
+                                            <div class="flex-1">
+                                                <div class="text-sm font-medium text-cur-gray-800">Dr. Sarah Wijaya</div>
+                                                <div class="text-sm text-cur-gray-600">Great progress in today's session! Keep practicing the breathing exercises.</div>
+                                                <div class="text-xs text-cur-gray-500 mt-1">2 hours ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-gray-50 rounded-lg">
+                                            <div class="w-8 h-8 bg-cur-secondary text-white rounded-full flex items-center justify-center text-sm">
+                                                <i class="fas fa-robot text-xs"></i>
+                                            </div>
+                                            <div class="flex-1">
+                                                <div class="text-sm font-medium text-cur-gray-800">CUR-HEART Assistant</div>
+                                                <div class="text-sm text-cur-gray-600">Reminder: Your next session is tomorrow at 10:00 AM</div>
+                                                <div class="text-xs text-cur-gray-500 mt-1">1 day ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="w-full mt-4 bg-cur-primary text-white py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                                        View All Messages
+                                    </button>
+                                </div>
+
+                                <!-- Quick Actions -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Quick Actions</h3>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <button class="p-4 bg-cur-primary bg-opacity-5 rounded-lg hover:bg-cur-primary hover:text-white transition-colors group">
+                                            <i class="fas fa-calendar-plus text-cur-primary group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Book Session</div>
+                                        </button>
+                                        
+                                        <button class="p-4 bg-cur-secondary bg-opacity-5 rounded-lg hover:bg-cur-secondary hover:text-white transition-colors group">
+                                            <i class="fas fa-comments text-cur-secondary group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Send Message</div>
+                                        </button>
+                                        
+                                        <button class="p-4 bg-cur-accent bg-opacity-5 rounded-lg hover:bg-cur-accent hover:text-white transition-colors group">
+                                            <i class="fas fa-file-download text-cur-accent group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Download Report</div>
+                                        </button>
+                                        
+                                        <button class="p-4 bg-cur-warm bg-opacity-5 rounded-lg hover:bg-cur-warm hover:text-white transition-colors group">
+                                            <i class="fas fa-headphones text-cur-warm group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Support</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complete Therapist Dashboard Mockup with All Menus -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Complete Therapist Dashboard Mockup</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <div class="flex">
+                    <!-- Therapist Sidebar -->
+                    <div class="w-64 bg-cur-secondary text-white h-screen">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-3 mb-8">
+                                <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-accent rounded-full"></div>
+                                <span class="text-lg font-bold font-poppins">CUR-HEART</span>
+                            </div>
+                            
+                            <!-- Therapist Profile Section -->
+                            <div class="mb-8 p-4 bg-cur-gray-800 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-cur-accent rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-medium">Dr. Sarah Wijaya</div>
+                                        <div class="text-xs text-cur-gray-400">Lead Therapist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <nav class="space-y-2">
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg bg-cur-accent text-white">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>My Schedule</span>
+                                    <span class="ml-auto bg-cur-primary text-white text-xs px-2 py-1 rounded-full">8</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-users"></i>
+                                    <span>My Clients</span>
+                                    <span class="ml-auto bg-cur-warm text-white text-xs px-2 py-1 rounded-full">24</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-video"></i>
+                                    <span>Session Room</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>Session Notes</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Client Progress</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-file-medical-alt"></i>
+                                    <span>Treatment Plans</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Messages</span>
+                                    <span class="ml-auto bg-cur-primary text-white text-xs px-2 py-1 rounded-full">3</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Availability</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>Earnings</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-star"></i>
+                                    <span>Reviews & Ratings</span>
+                                </a>
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-gray-800">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Settings</span>
+                                </a>
+                                
+                                <div class="border-t border-cur-gray-700 my-4"></div>
+                                
+                                <a href="#" class="flex items-center space-x-3 p-3 rounded-lg text-cur-gray-300 hover:bg-cur-warm hover:text-white">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Therapist Main Content -->
+                    <div class="flex-1 bg-cur-gray-50">
+                        <!-- Header -->
+                        <header class="bg-white border-b border-cur-gray-200 px-8 py-6">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h1 class="text-2xl font-bold font-poppins text-cur-gray-800">Good morning, Dr. Sarah!</h1>
+                                    <p class="text-cur-gray-600">You have 5 sessions scheduled for today</p>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <button class="bg-cur-accent text-white px-6 py-2 rounded-lg hover:bg-cur-warm transition-colors">
+                                        <i class="fas fa-video mr-2"></i>Start Session
+                                    </button>
+                                    <div class="relative">
+                                        <button class="text-cur-gray-600 hover:text-cur-accent">
+                                            <i class="fas fa-bell text-xl"></i>
+                                            <span class="absolute -top-1 -right-1 bg-cur-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">3</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- Therapist Dashboard Content -->
+                        <main class="p-8">
+                            <!-- Quick Stats for Therapist -->
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-accent bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-users text-cur-accent text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">24</div>
+                                            <div class="text-sm text-cur-gray-600">Active Clients</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-primary bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-calendar-check text-cur-primary text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">5</div>
+                                            <div class="text-sm text-cur-gray-600">Today's Sessions</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-secondary bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-star text-cur-secondary text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">4.9</div>
+                                            <div class="text-sm text-cur-gray-600">Rating</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white p-6 rounded-xl shadow-sm border border-cur-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-12 h-12 bg-cur-warm bg-opacity-10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-clock text-cur-warm text-xl"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-2xl font-bold text-cur-gray-800">6.5h</div>
+                                            <div class="text-sm text-cur-gray-600">Today's Hours</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Today's Schedule & Recent Activity -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                                <!-- Today's Schedule -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Today's Schedule</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center p-4 bg-cur-primary bg-opacity-5 rounded-lg border border-cur-primary">
+                                            <div class="w-12 h-12 bg-cur-primary text-white rounded-lg flex items-center justify-center">
+                                                <i class="fas fa-video"></i>
+                                            </div>
+                                            <div class="ml-4 flex-1">
+                                                <div class="font-medium text-cur-gray-800">John Doe - Anxiety Session</div>
+                                                <div class="text-sm text-cur-gray-600">Session #3 of 6</div>
+                                                <div class="text-sm text-cur-primary font-medium">9:00 AM - 10:30 AM</div>
+                                            </div>
+                                            <button class="bg-cur-primary text-white px-4 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                                                Start
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="flex items-center p-4 bg-cur-gray-50 rounded-lg">
+                                            <div class="w-12 h-12 bg-cur-secondary text-white rounded-lg flex items-center justify-center">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="ml-4 flex-1">
+                                                <div class="font-medium text-cur-gray-800">Jane Smith - Follow-up</div>
+                                                <div class="text-sm text-cur-gray-600">Progress evaluation</div>
+                                                <div class="text-sm text-cur-secondary font-medium">2:00 PM - 3:00 PM</div>
+                                            </div>
+                                            <button class="bg-cur-gray-200 text-cur-gray-700 px-4 py-2 rounded-lg hover:bg-cur-gray-300 transition-colors">
+                                                Prepare
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button class="text-cur-primary hover:underline text-sm">View Full Schedule</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Client Progress Overview -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Client Progress Highlights</h3>
+                                    <div class="space-y-4">
+                                        <div class="p-4 bg-cur-accent bg-opacity-5 rounded-lg">
+                                            <div class="flex items-center mb-2">
+                                                <div class="w-8 h-8 bg-cur-accent text-white rounded-full flex items-center justify-center text-sm">
+                                                    JD
+                                                </div>
+                                                <div class="ml-3">
+                                                    <div class="font-medium text-cur-gray-800">John Doe</div>
+                                                    <div class="text-sm text-cur-gray-600">Anxiety reduction: 40%</div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                                <div class="bg-cur-accent h-2 rounded-full" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="p-4 bg-cur-secondary bg-opacity-5 rounded-lg">
+                                            <div class="flex items-center mb-2">
+                                                <div class="w-8 h-8 bg-cur-secondary text-white rounded-full flex items-center justify-center text-sm">
+                                                    JS
+                                                </div>
+                                                <div class="ml-3">
+                                                    <div class="font-medium text-cur-gray-800">Jane Smith</div>
+                                                    <div class="text-sm text-cur-gray-600">Sleep quality improved: 60%</div>
+                                                </div>
+                                            </div>
+                                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                                <div class="bg-cur-secondary h-2 rounded-full" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center pt-4">
+                                            <button class="bg-cur-accent text-white px-6 py-2 rounded-lg hover:bg-cur-warm transition-colors">
+                                                View All Progress Reports
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Actions & Recent Messages -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                <!-- Quick Actions for Therapist -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Quick Actions</h3>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <button class="p-4 bg-cur-primary bg-opacity-5 rounded-lg hover:bg-cur-primary hover:text-white transition-colors group">
+                                            <i class="fas fa-plus text-cur-primary group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Add Session Notes</div>
+                                        </button>
+                                        
+                                        <button class="p-4 bg-cur-secondary bg-opacity-5 rounded-lg hover:bg-cur-secondary hover:text-white transition-colors group">
+                                            <i class="fas fa-calendar-plus text-cur-secondary group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Set Availability</div>
+                                        </button>
+                                        
+                                        <button class="p-4 bg-cur-accent bg-opacity-5 rounded-lg hover:bg-cur-accent hover:text-white transition-colors group">
+                                            <i class="fas fa-file-medical text-cur-accent group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Treatment Plan</div>
+                                        </button>
+                                        
+                                        <button class="p-4 bg-cur-warm bg-opacity-5 rounded-lg hover:bg-cur-warm hover:text-white transition-colors group">
+                                            <i class="fas fa-chart-bar text-cur-warm group-hover:text-white text-2xl mb-2"></i>
+                                            <div class="text-sm font-medium">Generate Report</div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Recent Messages from Clients -->
+                                <div class="bg-white rounded-xl shadow-sm border border-cur-gray-200 p-6">
+                                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Recent Client Messages</h3>
+                                    <div class="space-y-3">
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-primary bg-opacity-5 rounded-lg">
+                                            <div class="w-8 h-8 bg-cur-primary text-white rounded-full flex items-center justify-center text-sm">
+                                                JD
+                                            </div>
+                                            <div class="flex-1">
+                                                <div class="text-sm font-medium text-cur-gray-800">John Doe</div>
+                                                <div class="text-sm text-cur-gray-600">I've been practicing the breathing exercises daily. Feeling much better!</div>
+                                                <div class="text-xs text-cur-gray-500 mt-1">1 hour ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-gray-50 rounded-lg">
+                                            <div class="w-8 h-8 bg-cur-secondary text-white rounded-full flex items-center justify-center text-sm">
+                                                JS
+                                            </div>
+                                            <div class="flex-1">
+                                                <div class="text-sm font-medium text-cur-gray-800">Jane Smith</div>
+                                                <div class="text-sm text-cur-gray-600">Can we reschedule tomorrow's session to 3 PM?</div>
+                                                <div class="text-xs text-cur-gray-500 mt-1">3 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="w-full mt-4 bg-cur-accent text-white py-2 rounded-lg hover:bg-cur-warm transition-colors">
+                                        View All Messages
+                                    </button>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Component Library -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Component Library</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Buttons -->
+                <div class="bg-white border border-cur-gray-200 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold font-poppins text-cur-gray-800 mb-4">Buttons</h3>
+                    <div class="space-y-4">
+                        <button class="bg-cur-primary text-white px-6 py-3 rounded-lg hover:bg-cur-secondary transition-colors w-full">
+                            Primary Button
+                        </button>
+                        <button class="bg-cur-accent text-white px-6 py-3 rounded-lg hover:bg-cur-warm transition-colors w-full">
+                            Secondary Button
+                        </button>
+                        <button class="border border-cur-primary text-cur-primary px-6 py-3 rounded-lg hover:bg-cur-primary hover:text-white transition-colors w-full">
+                            Outline Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Form Elements -->
+                <div class="bg-white border border-cur-gray-200 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold font-poppins text-cur-gray-800 mb-4">Form Elements</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-cur-gray-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full border border-cur-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-cur-primary" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-cur-gray-700 mb-2">Service Type</label>
+                            <select class="w-full border border-cur-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-cur-primary">
+                                <option>Select a service</option>
+                                <option>Anxiety Relief</option>
+                                <option>Stress Management</option>
+                                <option>Confidence Building</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Metrics & ROI Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Business Performance Metrics Dashboard</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <!-- Dashboard Header -->
+                <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-6">
+                    <h3 class="text-xl font-bold font-poppins mb-2">CUR-HEART Business Intelligence Dashboard</h3>
+                    <p class="text-cur-gray-100">Real-time business metrics and performance indicators</p>
+                </div>
+
+                <!-- Key Performance Indicators -->
+                <div class="p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-6 rounded-xl">
+                            <div class="flex items-center justify-between mb-2">
+                                <i class="fas fa-chart-line text-2xl"></i>
+                                <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">+25%</span>
+                            </div>
+                            <div class="text-3xl font-bold mb-1">Rp 2.8M</div>
+                            <div class="text-cur-gray-100 text-sm">Monthly Revenue</div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-cur-accent to-cur-warm text-white p-6 rounded-xl">
+                            <div class="flex items-center justify-between mb-2">
+                                <i class="fas fa-users text-2xl"></i>
+                                <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">+18%</span>
+                            </div>
+                            <div class="text-3xl font-bold mb-1">450</div>
+                            <div class="text-cur-gray-100 text-sm">Active Clients</div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-cur-secondary to-cur-primary text-white p-6 rounded-xl">
+                            <div class="flex items-center justify-between mb-2">
+                                <i class="fas fa-star text-2xl"></i>
+                                <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">+5%</span>
+                            </div>
+                            <div class="text-3xl font-bold mb-1">4.9</div>
+                            <div class="text-cur-gray-100 text-sm">Client Satisfaction</div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-cur-warm to-cur-accent text-white p-6 rounded-xl">
+                            <div class="flex items-center justify-between mb-2">
+                                <i class="fas fa-calendar-check text-2xl"></i>
+                                <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">+32%</span>
+                            </div>
+                            <div class="text-3xl font-bold mb-1">89%</div>
+                            <div class="text-cur-gray-100 text-sm">Session Completion</div>
+                        </div>
+                    </div>
+
+                    <!-- Revenue Growth Chart -->
+                    <div class="bg-cur-gray-50 p-6 rounded-xl mb-8">
+                        <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Revenue Growth Projection (12 Months)</h4>
+                        <div class="h-64 bg-white rounded-lg border border-cur-gray-200 flex items-end justify-around p-4">
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-primary h-16 w-8 rounded-t"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Jan</span>
+                                <span class="text-xs font-semibold">1.2M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-primary h-20 w-8 rounded-t"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Feb</span>
+                                <span class="text-xs font-semibold">1.5M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-primary h-24 w-8 rounded-t"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Mar</span>
+                                <span class="text-xs font-semibold">1.8M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-secondary h-28 w-8 rounded-t"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Apr</span>
+                                <span class="text-xs font-semibold">2.1M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-secondary h-32 w-8 rounded-t"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">May</span>
+                                <span class="text-xs font-semibold">2.4M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-accent h-36 w-8 rounded-t"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Jun</span>
+                                <span class="text-xs font-semibold">2.8M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-accent h-40 w-8 rounded-t opacity-50"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Jul</span>
+                                <span class="text-xs font-semibold">3.2M</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="bg-cur-warm h-44 w-8 rounded-t opacity-50"></div>
+                                <span class="text-xs text-cur-gray-500 mt-2">Aug</span>
+                                <span class="text-xs font-semibold">3.6M</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Market Analysis -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+                            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Market Opportunity</h4>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Total Addressable Market (TAM)</span>
+                                    <span class="font-bold text-cur-primary">$2.4B</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Serviceable Addressable Market (SAM)</span>
+                                    <span class="font-bold text-cur-secondary">$340M</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Serviceable Obtainable Market (SOM)</span>
+                                    <span class="font-bold text-cur-accent">$85M</span>
+                                </div>
+                                <div class="bg-cur-gray-50 p-4 rounded-lg mt-4">
+                                    <div class="text-sm text-cur-gray-600">Market Growth Rate</div>
+                                    <div class="text-2xl font-bold text-cur-primary">23.5% CAGR</div>
+                                    <div class="text-xs text-cur-gray-500">2024-2029 Projection</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+                            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Financial Projections</h4>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 1 Revenue</span>
+                                    <span class="font-bold text-cur-primary">Rp 12.5M</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 2 Revenue</span>
+                                    <span class="font-bold text-cur-secondary">Rp 28.3M</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 3 Revenue</span>
+                                    <span class="font-bold text-cur-accent">Rp 65.8M</span>
+                                </div>
+                                <div class="bg-cur-gray-50 p-4 rounded-lg mt-4">
+                                    <div class="text-sm text-cur-gray-600">Break-even Timeline</div>
+                                    <div class="text-2xl font-bold text-cur-primary">18 Months</div>
+                                    <div class="text-xs text-cur-gray-500">Conservative estimate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competitive Analysis Dashboard -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Competitive Analysis Dashboard</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <div class="bg-gradient-to-r from-cur-secondary to-cur-accent text-white p-6">
+                    <h3 class="text-xl font-bold font-poppins mb-2">Market Position & Competitive Advantage</h3>
+                    <p class="text-cur-gray-100">Comprehensive analysis of competitive landscape</p>
+                </div>
+
+                <div class="p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <!-- Competitor Comparison -->
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-cur-gray-200">
+                                        <th class="text-left py-3 px-2 font-semibold text-cur-gray-800">Feature</th>
+                                        <th class="text-center py-3 px-2 font-semibold text-cur-primary">CUR-HEART</th>
+                                        <th class="text-center py-3 px-2 font-semibold text-cur-gray-600">Competitor A</th>
+                                        <th class="text-center py-3 px-2 font-semibold text-cur-gray-600">Competitor B</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-cur-gray-100">
+                                        <td class="py-3 px-2">Online Platform</td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-primary"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-gray-400"></i></td>
+                                    </tr>
+                                    <tr class="border-b border-cur-gray-100">
+                                        <td class="py-3 px-2">24/7 Support</td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-primary"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                    </tr>
+                                    <tr class="border-b border-cur-gray-100">
+                                        <td class="py-3 px-2">AI-Powered Matching</td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-primary"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                    </tr>
+                                    <tr class="border-b border-cur-gray-100">
+                                        <td class="py-3 px-2">Progress Tracking</td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-primary"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-gray-400"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-2">Mobile App</td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-primary"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-times text-cur-gray-400"></i></td>
+                                        <td class="text-center py-3 px-2"><i class="fas fa-check text-cur-gray-400"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Market Share -->
+                        <div class="bg-cur-gray-50 p-6 rounded-xl">
+                            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Projected Market Share (Year 3)</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between items-center mb-1">
+                                        <span class="text-cur-primary font-semibold">CUR-HEART</span>
+                                        <span class="text-cur-primary font-bold">35%</span>
+                                    </div>
+                                    <div class="w-full bg-cur-gray-200 rounded-full h-3">
+                                        <div class="bg-cur-primary h-3 rounded-full" style="width: 35%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between items-center mb-1">
+                                        <span class="text-cur-gray-600">Competitor A</span>
+                                        <span class="text-cur-gray-600">28%</span>
+                                    </div>
+                                    <div class="w-full bg-cur-gray-200 rounded-full h-3">
+                                        <div class="bg-cur-gray-400 h-3 rounded-full" style="width: 28%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between items-center mb-1">
+                                        <span class="text-cur-gray-600">Competitor B</span>
+                                        <span class="text-cur-gray-600">22%</span>
+                                    </div>
+                                    <div class="w-full bg-cur-gray-200 rounded-full h-3">
+                                        <div class="bg-cur-gray-400 h-3 rounded-full" style="width: 22%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between items-center mb-1">
+                                        <span class="text-cur-gray-600">Others</span>
+                                        <span class="text-cur-gray-600">15%</span>
+                                    </div>
+                                    <div class="w-full bg-cur-gray-200 rounded-full h-3">
+                                        <div class="bg-cur-gray-400 h-3 rounded-full" style="width: 15%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Investment Opportunity Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Investment Opportunity Dashboard</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <div class="bg-gradient-to-r from-cur-warm to-cur-accent text-white p-6">
+                    <h3 class="text-xl font-bold font-poppins mb-2">Funding Requirements & ROI Projections</h3>
+                    <p class="text-cur-gray-100">Detailed investment proposal with clear returns</p>
+                </div>
+
+                <div class="p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                        <!-- Funding Breakdown -->
+                        <div class="bg-cur-gray-50 p-6 rounded-xl">
+                            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Funding Breakdown</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Technology Development</span>
+                                    <span class="font-bold text-cur-primary">40%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Marketing & Customer Acquisition</span>
+                                    <span class="font-bold text-cur-secondary">30%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Operations & Staff</span>
+                                    <span class="font-bold text-cur-accent">20%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Working Capital</span>
+                                    <span class="font-bold text-cur-warm">10%</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-cur-gray-200">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold text-cur-gray-800">Total Required</span>
+                                    <span class="text-xl font-bold text-cur-primary">Rp 5.2B</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROI Timeline -->
+                        <div class="bg-cur-gray-50 p-6 rounded-xl">
+                            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">ROI Timeline</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 1 ROI</span>
+                                    <span class="font-bold text-cur-primary">-15%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 2 ROI</span>
+                                    <span class="font-bold text-cur-secondary">45%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 3 ROI</span>
+                                    <span class="font-bold text-cur-accent">125%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Year 5 ROI</span>
+                                    <span class="font-bold text-cur-warm">380%</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-cur-gray-200">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold text-cur-gray-800">IRR</span>
+                                    <span class="text-xl font-bold text-cur-primary">42.5%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exit Strategy -->
+                        <div class="bg-cur-gray-50 p-6 rounded-xl">
+                            <h4 class="text-lg font-semibold text-cur-gray-800 mb-4">Exit Strategy</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">IPO Timeline</span>
+                                    <span class="font-bold text-cur-primary">Year 5-7</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Strategic Acquisition</span>
+                                    <span class="font-bold text-cur-secondary">Year 3-5</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-cur-gray-600">Secondary Sale</span>
+                                    <span class="font-bold text-cur-accent">Year 4-6</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-cur-gray-200">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold text-cur-gray-800">Target Valuation</span>
+                                    <span class="text-xl font-bold text-cur-primary">$50M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Investment Tiers -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="border-2 border-cur-primary rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                            <div class="bg-cur-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-seedling text-xl"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-cur-primary mb-2">Seed Investment</h4>
+                            <div class="text-3xl font-bold text-cur-gray-800 mb-2">Rp 1.5B</div>
+                            <div class="text-cur-gray-600 text-sm mb-4">20% Equity</div>
+                            <ul class="text-sm text-cur-gray-600 space-y-1 text-left">
+                                <li>• Product development</li>
+                                <li>• Core team hiring</li>
+                                <li>• Market validation</li>
+                                <li>• Regulatory compliance</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-2 border-cur-secondary rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                            <div class="bg-cur-secondary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-rocket text-xl"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-cur-secondary mb-2">Series A</h4>
+                            <div class="text-3xl font-bold text-cur-gray-800 mb-2">Rp 3.7B</div>
+                            <div class="text-cur-gray-600 text-sm mb-4">15% Equity</div>
+                            <ul class="text-sm text-cur-gray-600 space-y-1 text-left">
+                                <li>• Market expansion</li>
+                                <li>• Technology scaling</li>
+                                <li>• Customer acquisition</li>
+                                <li>• Strategic partnerships</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-2 border-cur-accent rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                            <div class="bg-cur-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-trophy text-xl"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-cur-accent mb-2">Growth Capital</h4>
+                            <div class="text-3xl font-bold text-cur-gray-800 mb-2">Rp 8.5B</div>
+                            <div class="text-cur-gray-600 text-sm mb-4">10% Equity</div>
+                            <ul class="text-sm text-cur-gray-600 space-y-1 text-left">
+                                <li>• International expansion</li>
+                                <li>• M&A opportunities</li>
+                                <li>• Advanced AI features</li>
+                                <li>• IPO preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page High-Fidelity Mockup -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">About Page High-Fidelity Mockup</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                            <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="hidden md:flex space-x-8">
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Home</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Services</a>
+                            <a href="#" class="text-cur-primary font-medium">About</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Contact</a>
+                        </div>
+                        <button class="bg-cur-primary text-white px-6 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                            Book Session
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Hero Section -->
+                <div class="bg-gradient-to-r from-cur-accent to-cur-warm text-white py-16 px-6">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h1 class="text-4xl font-bold font-poppins mb-4">About CUR-HEART</h1>
+                        <p class="text-xl text-white text-opacity-90 max-w-2xl mx-auto">Transforming lives through professional hypnotherapy and evidence-based mental health care</p>
+                    </div>
+                </div>
+
+                <!-- Mission & Vision Section -->
+                <div class="py-16 px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                            <div class="bg-cur-gray-50 p-8 rounded-xl border border-cur-gray-200">
+                                <h3 class="text-2xl font-bold font-poppins text-cur-primary mb-4">Our Mission</h3>
+                                <p class="text-cur-gray-700 leading-relaxed">
+                                    To democratize access to professional mental health care through innovative hypnotherapy services, making quality mental wellness support available to everyone in Indonesia.
+                                </p>
+                            </div>
+                            <div class="bg-cur-gray-50 p-8 rounded-xl border border-cur-gray-200">
+                                <h3 class="text-2xl font-bold font-poppins text-cur-secondary mb-4">Our Vision</h3>
+                                <p class="text-cur-gray-700 leading-relaxed">
+                                    To become Indonesia's leading mental health center, transforming lives through evidence-based hypnotherapy and creating a society where mental wellness is prioritized and accessible.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Team Section -->
+                        <div class="mb-12">
+                            <h3 class="text-3xl font-bold font-poppins text-center text-cur-gray-800 mb-8">Our Expert Team</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <!-- Team Member 1 -->
+                                <div class="bg-white border border-cur-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                                    <div class="w-24 h-24 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white text-2xl"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-cur-gray-800 mb-2">Dr. Sarah Wijaya</h4>
+                                    <p class="text-cur-primary font-medium mb-2">Lead Hypnotherapist</p>
+                                    <p class="text-sm text-cur-gray-600 mb-4">15+ years experience in clinical hypnotherapy and anxiety disorders</p>
+                                    <div class="flex justify-center space-x-2">
+                                        <span class="bg-cur-primary text-white text-xs px-2 py-1 rounded">Certified CBT</span>
+                                        <span class="bg-cur-secondary text-white text-xs px-2 py-1 rounded">PhD Psychology</span>
+                                    </div>
+                                </div>
+
+                                <!-- Team Member 2 -->
+                                <div class="bg-white border border-cur-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                                    <div class="w-24 h-24 bg-gradient-to-r from-cur-secondary to-cur-accent rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white text-2xl"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-cur-gray-800 mb-2">Dr. John Santoso</h4>
+                                    <p class="text-cur-secondary font-medium mb-2">Senior Therapist</p>
+                                    <p class="text-sm text-cur-gray-600 mb-4">12+ years in stress management and trauma recovery therapy</p>
+                                    <div class="flex justify-center space-x-2">
+                                        <span class="bg-cur-secondary text-white text-xs px-2 py-1 rounded">EMDR Certified</span>
+                                        <span class="bg-cur-accent text-white text-xs px-2 py-1 rounded">Trauma Specialist</span>
+                                    </div>
+                                </div>
+
+                                <!-- Team Member 3 -->
+                                <div class="bg-white border border-cur-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                                    <div class="w-24 h-24 bg-gradient-to-r from-cur-accent to-cur-warm rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <i class="fas fa-user-md text-white text-2xl"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-cur-gray-800 mb-2">Dr. Maria Lestari</h4>
+                                    <p class="text-cur-accent font-medium mb-2">Corporate Wellness Specialist</p>
+                                    <p class="text-sm text-cur-gray-600 mb-4">10+ years in corporate mental health and executive coaching</p>
+                                    <div class="flex justify-center space-x-2">
+                                        <span class="bg-cur-accent text-white text-xs px-2 py-1 rounded">ICF Certified</span>
+                                        <span class="bg-cur-warm text-white text-xs px-2 py-1 rounded">Executive Coach</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications & Awards -->
+                        <div class="bg-white border border-cur-gray-200 rounded-xl p-8">
+                            <h3 class="text-2xl font-bold font-poppins text-center text-cur-gray-800 mb-8">Certifications & Recognition</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-cur-primary rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <i class="fas fa-certificate text-white text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-cur-gray-800 text-sm">ISO 27001 Certified</h4>
+                                    <p class="text-xs text-cur-gray-600">Data Security</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-cur-secondary rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <i class="fas fa-award text-white text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-cur-gray-800 text-sm">Healthcare Innovation Award</h4>
+                                    <p class="text-xs text-cur-gray-600">2024</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-cur-accent rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <i class="fas fa-shield-alt text-white text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-cur-gray-800 text-sm">HIPAA Compliant</h4>
+                                    <p class="text-xs text-cur-gray-600">Privacy Protection</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-cur-warm rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <i class="fas fa-star text-white text-xl"></i>
+                                    </div>
+                                    <h4 class="font-semibold text-cur-gray-800 text-sm">5-Star Rating</h4>
+                                    <p class="text-xs text-cur-gray-600">Patient Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page High-Fidelity Mockup -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-cur-gray-800 mb-6 font-poppins">Contact Page High-Fidelity Mockup</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-cur-gray-200">
+                <!-- Navigation Bar -->
+                <nav class="bg-white border-b border-cur-gray-200 px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-full"></div>
+                                                       <span class="text-xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                        </div>
+                        <div class="hidden md:flex space-x-8">
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Home</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">Services</a>
+                            <a href="#" class="text-cur-gray-700 hover:text-cur-primary transition-colors">About</a>
+                            <a href="#" class="text-cur-primary font-medium">Contact</a>
+                        </div>
+                        <button class="bg-cur-primary text-white px-6 py-2 rounded-lg hover:bg-cur-secondary transition-colors">
+                            Book Session
+                        </button>
+                    </div>
+                </nav>
+
+                <!-- Hero Section -->
+                <div class="bg-gradient-to-r from-cur-secondary to-cur-warm text-white py-16 px-6">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h1 class="text-4xl font-bold font-poppins mb-4">Get In Touch</h1>
+                        <p class="text-xl text-white text-opacity-90 max-w-2xl mx-auto">Ready to start your mental wellness journey? Contact us today for a free consultation</p>
+                    </div>
+                </div>
+
+                <!-- Contact Content -->
+                <div class="py-16 px-6">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <!-- Contact Form -->
+                            <div class="bg-white border border-cur-gray-200 rounded-xl p-8">
+                                <h3 class="text-2xl font-bold font-poppins text-cur-primary mb-6">Send Us a Message</h3>
+                                <form class="space-y-6">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium text-cur-gray-700 mb-2">First Name</label>
+                                            <input type="text" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="John">
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-cur-gray-700 mb-2">Last Name</label>
+                                            <input type="text" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="Doe">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-cur-gray-700 mb-2">Email Address</label>
+                                        <input type="email" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="john.doe@email.com">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-cur-gray-700 mb-2">Phone Number</label>
+                                        <input type="tel" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="+62 812 3456 7890">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-cur-gray-700 mb-2">Service Interest</label>
+                                        <select class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                            <option>Select a service</option>
+                                            <option>Anxiety Relief Therapy</option>
+                                            <option>Stress Management</option>
+                                            <option>Trauma Healing</option>
+                                            <option>Confidence Building</option>
+                                            <option>Corporate Wellness</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-cur-gray-700 mb-2">Message</label>
+                                        <textarea rows="4" class="w-full border border-cur-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="Tell us about what you're looking for..."></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-cur-primary text-white py-3 rounded-lg font-semibold hover:bg-cur-secondary transition-colors">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- Contact Information -->
+                            <div class="space-y-8">
+                                <!-- Contact Details -->
+                                <div class="bg-cur-gray-50 border border-cur-gray-200 rounded-xl p-8">
+                                    <h3 class="text-2xl font-bold font-poppins text-cur-gray-800 mb-6">Contact Information</h3>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-cur-primary rounded-full flex items-center justify-center">
+                                                <i class="fas fa-phone text-white"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-cur-gray-800">Phone</h4>
+                                                <p class="text-cur-gray-600">+62 21 1234 5678</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-cur-secondary rounded-full flex items-center justify-center">
+                                                <i class="fas fa-envelope text-white"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-cur-gray-800">Email</h4>
+                                                <p class="text-cur-gray-600">contact@cur-heart.id</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-cur-accent rounded-full flex items-center justify-center">
+                                                <i class="fas fa-map-marker-alt text-white"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-cur-gray-800">Address</h4>
+                                                <p class="text-cur-gray-600">Jl. Sudirman No. 123<br>Jakarta Pusat 10220</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-cur-warm rounded-full flex items-center justify-center">
+                                                <i class="fas fa-clock text-white"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="font-semibold text-cur-gray-800">Office Hours</h4>
+                                                <p class="text-cur-gray-600">Mon-Fri: 8:00 AM - 8:00 PM<br>Sat-Sun: 9:00 AM - 5:00 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Emergency Contact -->
+                                <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                                    <h3 class="text-lg font-bold text-red-800 mb-3">Emergency Support</h3>
+                                    <p class="text-red-700 text-sm mb-3">If you're experiencing a mental health crisis, please contact:</p>
+                                    <div class="space-y-2">
+                                        <p class="text-red-800 font-semibold">24/7 Crisis Hotline: 119</p>
+                                        <p class="text-red-800 font-semibold">Emergency WhatsApp: +62 812 9999 0000</p>
+                                    </div>
+                                </div>
+
+                                <!-- Map -->
+                                <div class="bg-cur-gray-100 border border-cur-gray-200 rounded-xl h-48 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-map text-cur-gray-400 text-3xl mb-2"></i>
+                                        <p class="text-cur-gray-600">Interactive Map Location</p>
+                                        <p class="text-cur-gray-500 text-sm">Google Maps Integration</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

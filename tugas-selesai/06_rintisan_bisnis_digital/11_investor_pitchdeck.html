@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUR-HEART - Investor Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#2E86AB',
+                        'cur-secondary': '#A23B72',
+                        'cur-accent': '#F18F01',
+                        'cur-warm': '#C73E1D',
+                        'cur-gray': {
+                            50: '#F8F9FA',
+                            100: '#E9ECEF',
+                            200: '#DEE2E6',
+                            300: '#CED4DA',
+                            400: '#ADB5BD',
+                            500: '#6C757D',
+                            600: '#495057',
+                            700: '#343A40',
+                            800: '#212529',
+                            900: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .slide {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.5s ease-in-out;
+            visibility: hidden;
+        }
+        
+        .slide.active {
+            opacity: 1;
+            transform: translateX(0);
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="bg-cur-gray-900 font-inter overflow-hidden">
+    <div class="presentation relative w-full h-screen">
+        
+        <!-- Slide 1: Title Slide -->
+        <div class="slide absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cur-primary via-cur-secondary to-cur-accent">
+            <div class="text-center text-white">
+                <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-8">
+                    <i class="fas fa-brain text-4xl"></i>
+                </div>
+                <h1 class="text-6xl font-bold font-poppins mb-4">CUR-HEART</h1>
+                <p class="text-2xl font-medium mb-2">Hypnotherapy & Mind Wellness Center</p>
+                <p class="text-xl text-cur-gray-100 mb-8">Transforming Mental Health in Indonesia</p>
+                <div class="text-lg">
+                    <p>Investor Pitch Deck 2024</p>
+                    <p class="text-cur-gray-200 mt-2">Seeking Rp 15 Billion Series A Funding</p>
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-white text-sm opacity-70">
+                Slide 1 of 20
+            </div>
+        </div>
+
+        <!-- Slide 2: Executive Summary -->
+        <div class="slide absolute inset-0 bg-white p-16">
+            <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-8">Executive Summary</h1>
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-4">The Opportunity</h2>
+                    <div class="space-y-4">
+                        <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-primary">
+                            <div class="text-3xl font-bold text-cur-primary mb-1">54 Million</div>
+                            <div class="text-cur-gray-600">Indonesians need mental health support</div>
+                        </div>
+                        <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-secondary">
+                            <div class="text-3xl font-bold text-cur-secondary mb-1">75%</div>
+                            <div class="text-cur-gray-600">Don't have access to professional care</div>
+                        </div>
+                        <div class="bg-cur-gray-50 p-4 rounded-lg border-l-4 border-cur-accent">
+                            <div class="text-3xl font-bold text-cur-accent mb-1">Rp 40T</div>
+                            <div class="text-cur-gray-600">Annual productivity loss from mental health issues</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-4">Our Solution</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cur-primary text-xl"></i>
+                            <span class="text-cur-gray-700">Evidence-based hypnotherapy services</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cur-primary text-xl"></i>
+                            <span class="text-cur-gray-700">50% more affordable than traditional therapy</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cur-primary text-xl"></i>
+                            <span class="text-cur-gray-700">87-94% success rate across treatments</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-cur-primary text-xl"></i>
+                            <span class="text-cur-gray-700">Hybrid online/offline service delivery</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Investment Highlights</h3>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <div class="font-bold text-lg">Rp 8.8B</div>
+                                <div>Year 3 Revenue</div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-lg">250% ROI</div>
+                                <div>3-Year Return</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-cur-gray-500 text-sm">
+                Slide 2 of 20
+            </div>
+        </div>
+
+        <!-- Slide 3: Problem Statement -->
+        <div class="slide absolute inset-0 bg-gradient-to-br from-red-50 to-red-100 p-16">
+            <h1 class="text-4xl font-bold font-poppins text-red-800 mb-8">The Mental Health Crisis in Indonesia</h1>
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold text-red-700 mb-6">By The Numbers</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <div class="text-4xl font-bold text-red-600 mb-2">20%</div>
+                            <div class="text-lg text-cur-gray-700">of Indonesia's population suffers from mental health disorders</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <div class="text-4xl font-bold text-red-600 mb-2">1:30,000</div>
+                            <div class="text-lg text-cur-gray-700">Psychologist to population ratio (WHO standard: 1:10,000)</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <div class="text-4xl font-bold text-red-600 mb-2">68%</div>
+                            <div class="text-lg text-cur-gray-700">Avoid seeking help due to stigma</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-red-700 mb-6">Root Causes</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow border-l-4 border-orange-400">
+                            <h3 class="font-semibold text-orange-700 mb-2">Limited Access</h3>
+                            <p class="text-cur-gray-600">Most mental health services concentrated in major cities, leaving rural areas underserved</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border-l-4 border-orange-400">
+                            <h3 class="font-semibold text-orange-700 mb-2">High Costs</h3>
+                            <p class="text-cur-gray-600">Traditional therapy costs Rp 500K-1.5M per session, unaffordable for middle class</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border-l-4 border-orange-400">
+                            <h3 class="font-semibold text-orange-700 mb-2">Social Stigma</h3>
+                            <p class="text-cur-gray-600">Cultural barriers and misconceptions prevent people from seeking help</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border-l-4 border-orange-400">
+                            <h3 class="font-semibold text-orange-700 mb-2">Low Awareness</h3>
+                            <p class="text-cur-gray-600">Lack of education about mental health and available treatment options</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-red-600 text-sm">
+                Slide 3 of 20
+            </div>
+        </div>
+
+        <!-- Slide 4: Solution -->
+        <div class="slide absolute inset-0 bg-gradient-to-br from-cur-primary to-cur-secondary p-16 text-white">
+            <h1 class="text-4xl font-bold font-poppins mb-8">Our Solution: CUR-HEART Platform</h1>
+            <div class="grid grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur">
+                    <div class="w-16 h-16 bg-cur-accent rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Evidence-Based Hypnotherapy</h3>
+                    <p class="text-cur-gray-100">Scientifically proven methods combining neuropsychology with clinical hypnosis</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur">
+                    <div class="w-16 h-16 bg-cur-warm rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-globe text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hybrid Service Model</h3>
+                    <p class="text-cur-gray-100">Seamless integration of in-person and online sessions with mobile app support</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur">
+                    <div class="w-16 h-16 bg-cur-accent rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Holistic Approach</h3>
+                    <p class="text-cur-gray-100">Mind-body-spirit integration with personalized treatment plans</p>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h2 class="text-2xl font-semibold mb-6">Core Services</h2>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur">
+                        <h4 class="font-semibold mb-2">🧘 Anxiety & Stress Relief</h4>
+                        <p class="text-sm text-cur-gray-100">Proven techniques for managing anxiety, panic disorders, and chronic stress</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur">
+                        <h4 class="font-semibold mb-2">🩹 Trauma Healing</h4>
+                        <p class="text-sm text-cur-gray-100">EMDR and regression therapy for PTSD and emotional trauma recovery</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur">
+                        <h4 class="font-semibold mb-2">💪 Confidence Building</h4>
+                        <p class="text-sm text-cur-gray-100">Self-esteem enhancement and personal empowerment programs</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur">
+                        <h4 class="font-semibold mb-2">🏢 Corporate Wellness</h4>
+                        <p class="text-sm text-cur-gray-100">Employee mental health programs and executive coaching services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-white text-sm">
+                Slide 4 of 20
+            </div>
+        </div>
+
+        <!-- Slide 5: Market Opportunity -->
+        <div class="slide absolute inset-0 bg-white p-16">
+            <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-8">Market Opportunity</h1>
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-6">Total Addressable Market</h2>
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-6 rounded-lg">
+                            <div class="text-3xl font-bold mb-2">Rp 156 Trillion</div>
+                            <div class="text-lg">Indonesia Mental Health Market</div>
+                            <div class="text-sm text-cur-gray-200">Growing 15% annually</div>
+                        </div>
+                        <div class="bg-gradient-to-r from-cur-accent to-cur-warm text-white p-6 rounded-lg">
+                            <div class="text-3xl font-bold mb-2">Rp 42 Trillion</div>
+                            <div class="text-lg">Private Mental Health Services</div>
+                            <div class="text-sm text-cur-gray-200">Serviceable Addressable Market</div>
+                        </div>
+                        <div class="bg-gradient-to-r from-cur-secondary to-cur-primary text-white p-6 rounded-lg">
+                            <div class="text-3xl font-bold mb-2">Rp 8.4 Trillion</div>
+                            <div class="text-lg">Hypnotherapy & Alternative Therapy</div>
+                            <div class="text-sm text-cur-gray-200">Serviceable Obtainable Market</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-6">Market Trends</h2>
+                    <div class="space-y-4">
+                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                            <h3 class="font-semibold text-green-700 mb-2">📈 Post-Pandemic Mental Health Awareness</h3>
+                            <p class="text-cur-gray-600">300% increase in mental health searches post-COVID</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                            <h3 class="font-semibold text-blue-700 mb-2">💼 Corporate Wellness Investment</h3>
+                            <p class="text-cur-gray-600">Companies allocating 20% more budget for employee wellness</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                            <h3 class="font-semibold text-purple-700 mb-2">🔬 Alternative Therapy Acceptance</h3>
+                            <p class="text-cur-gray-600">65% of Indonesians open to hypnotherapy as treatment option</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                            <h3 class="font-semibold text-orange-700 mb-2">📱 Digital Health Adoption</h3>
+                            <p class="text-cur-gray-600">78% prefer hybrid online-offline healthcare services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-cur-gray-500 text-sm">
+                Slide 5 of 20
+            </div>
+        </div>
+
+        <!-- Slide 6: Financial Projections -->
+        <div class="slide absolute inset-0 bg-cur-gray-50 p-16">
+            <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-8">Financial Projections</h1>
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-6">3-Year Revenue Forecast</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-cur-gray-200">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-cur-gray-300">
+                                    <th class="text-left py-3 text-cur-gray-700">Year</th>
+                                    <th class="text-right py-3 text-cur-gray-700">Revenue</th>
+                                    <th class="text-right py-3 text-cur-gray-700">EBITDA</th>
+                                    <th class="text-right py-3 text-cur-gray-700">Margin</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-cur-gray-200">
+                                    <td class="py-3 font-medium">Year 1</td>
+                                    <td class="text-right py-3 text-cur-primary font-bold">Rp 2.4B</td>
+                                    <td class="text-right py-3 text-red-600">-Rp 800M</td>
+                                    <td class="text-right py-3">-33%</td>
+                                </tr>
+                                <tr class="border-b border-cur-gray-200">
+                                    <td class="py-3 font-medium">Year 2</td>
+                                    <td class="text-right py-3 text-cur-primary font-bold">Rp 5.2B</td>
+                                    <td class="text-right py-3 text-green-600">Rp 720M</td>
+                                    <td class="text-right py-3">14%</td>
+                                </tr>
+                                <tr class="border-b border-cur-gray-200">
+                                    <td class="py-3 font-medium">Year 3</td>
+                                    <td class="text-right py-3 text-cur-primary font-bold">Rp 8.8B</td>
+                                    <td class="text-right py-3 text-green-600">Rp 2.8B</td>
+                                    <td class="text-right py-3">32%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-6 bg-gradient-to-r from-cur-primary to-cur-secondary text-white p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Key Metrics</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-2xl font-bold">Month 8</div>
+                                <div class="text-sm">Break-even Point</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold">35%</div>
+                                <div class="text-sm">ROI (18 months)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-6">Revenue Breakdown</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow border border-cur-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium">Individual Sessions (70%)</span>
+                                <span class="text-cur-primary font-bold">Rp 6.16B</span>
+                            </div>
+                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                <div class="bg-cur-primary h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border border-cur-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium">Corporate Programs (20%)</span>
+                                <span class="text-cur-secondary font-bold">Rp 1.76B</span>
+                            </div>
+                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                <div class="bg-cur-secondary h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border border-cur-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium">Training & Certification (6%)</span>
+                                <span class="text-cur-accent font-bold">Rp 528M</span>
+                            </div>
+                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                <div class="bg-cur-accent h-2 rounded-full" style="width: 6%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow border border-cur-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium">Digital Products (4%)</span>
+                                <span class="text-cur-warm font-bold">Rp 352M</span>
+                            </div>
+                            <div class="w-full bg-cur-gray-200 rounded-full h-2">
+                                <div class="bg-cur-warm h-2 rounded-full" style="width: 4%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-cur-gray-100 p-4 rounded-lg">
+                        <h3 class="font-semibold text-cur-gray-800 mb-2">Growth Drivers</h3>
+                        <ul class="text-sm text-cur-gray-600 space-y-1">
+                            <li>• Expansion to 3 major cities</li>
+                            <li>• 50 certified therapists by Year 3</li>
+                            <li>• Corporate partnerships with 100+ companies</li>
+                            <li>• Mobile app with 100K+ users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-cur-gray-500 text-sm">
+                Slide 6 of 20
+            </div>
+        </div>
+
+        <!-- Slide 7: Detailed Financial Projections -->
+        <div class="slide absolute inset-0 bg-white p-16">
+            <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-8">5-Year Financial Model & Projections</h1>
+            
+            <!-- Revenue Breakdown by Year -->
+            <div class="grid grid-cols-3 gap-8 mb-8">
+                <div class="bg-gradient-to-br from-cur-primary to-cur-secondary text-white p-6 rounded-xl">
+                    <h3 class="text-lg font-bold mb-4">Year 1-2: Foundation</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span>Individual Sessions (70%)</span>
+                            <span>Rp 8.75M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Corporate Contracts (25%)</span>
+                            <span>Rp 3.12M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Digital Products (5%)</span>
+                            <span>Rp 0.63M</span>
+                        </div>
+                        <div class="border-t border-white border-opacity-20 pt-2 mt-4">
+                            <div class="flex justify-between font-bold">
+                                <span>Total Year 1</span>
+                                <span>Rp 12.5M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-cur-accent to-cur-warm text-white p-6 rounded-xl">
+                    <h3 class="text-lg font-bold mb-4">Year 3-4: Scaling</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span>Individual Sessions (60%)</span>
+                            <span>Rp 39.5M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Corporate Contracts (35%)</span>
+                            <span>Rp 23.0M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Digital Products (5%)</span>
+                            <span>Rp 3.3M</span>
+                        </div>
+                        <div class="border-t border-white border-opacity-20 pt-2 mt-4">
+                            <div class="flex justify-between font-bold">
+                                <span>Total Year 3</span>
+                                <span>Rp 65.8M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-cur-secondary to-cur-primary text-white p-6 rounded-xl">
+                    <h3 class="text-lg font-bold mb-4">Year 5: Market Leader</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span>Individual Sessions (50%)</span>
+                            <span>Rp 72.5M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Corporate Contracts (40%)</span>
+                            <span>Rp 58.0M</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Digital Products (10%)</span>
+                            <span>Rp 14.5M</span>
+                        </div>
+                        <div class="border-t border-white border-opacity-20 pt-2 mt-4">
+                            <div class="flex justify-between font-bold">
+                                <span>Total Year 5</span>
+                                <span>Rp 145M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Cost Structure -->
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-cur-gray-50 p-6 rounded-xl border border-cur-gray-200">
+                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Operating Cost Breakdown (Year 3)</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-cur-gray-600">Therapist Compensation</span>
+                            <div class="text-right">
+                                <div class="font-bold text-cur-gray-800">Rp 32.9M</div>
+                                <div class="text-xs text-cur-gray-500">50% of revenue</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cur-gray-600">Technology & Platform</span>
+                            <div class="text-right">
+                                <div class="font-bold text-cur-gray-800">Rp 9.9M</div>
+                                <div class="text-xs text-cur-gray-500">15% of revenue</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cur-gray-600">Marketing & Sales</span>
+                            <div class="text-right">
+                                <div class="font-bold text-cur-gray-800">Rp 9.9M</div>
+                                <div class="text-xs text-cur-gray-500">15% of revenue</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cur-gray-600">Operations & Admin</span>
+                            <div class="text-right">
+                                <div class="font-bold text-cur-gray-800">Rp 6.6M</div>
+                                <div class="text-xs text-cur-gray-500">10% of revenue</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-cur-gray-600">R&D & Innovation</span>
+                            <div class="text-right">
+                                <div class="font-bold text-cur-gray-800">Rp 3.3M</div>
+                                <div class="text-xs text-cur-gray-500">5% of revenue</div>
+                            </div>
+                        </div>
+                        <div class="border-t border-cur-gray-300 pt-3 mt-4">
+                            <div class="flex justify-between items-center font-semibold">
+                                <span class="text-cur-gray-800">Total Operating Costs</span>
+                                <div class="text-right">
+                                    <div class="text-cur-gray-800">Rp 62.6M</div>
+                                    <div class="text-xs text-cur-gray-500">95% of revenue</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center font-bold text-cur-primary mt-2">
+                                <span>EBITDA</span>
+                                <div class="text-right">
+                                    <div>Rp 3.2M</div>
+                                    <div class="text-xs">5% margin</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-cur-gray-50 p-6 rounded-xl border border-cur-gray-200">
+                    <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Investment Utilization Plan</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-primary mb-2">Technology Development (40%)</h4>
+                            <div class="text-sm text-cur-gray-600 space-y-1">
+                                <div>• AI-powered therapist matching system</div>
+                                <div>• Mobile app development (iOS & Android)</div>
+                                <div>• Telehealth platform enhancement</div>
+                                <div>• Data analytics & BI platform</div>
+                                <div>• Cybersecurity & compliance</div>
+                            </div>
+                            <div class="text-lg font-bold text-cur-primary mt-2">Rp 6.0B</div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-secondary mb-2">Market Expansion (30%)</h4>
+                            <div class="text-sm text-cur-gray-600 space-y-1">
+                                <div>• National marketing campaigns</div>
+                                <div>• Corporate partnership development</div>
+                                <div>• Sales team expansion</div>
+                                <div>• Brand building & PR</div>
+                            </div>
+                            <div class="text-lg font-bold text-cur-secondary mt-2">Rp 4.5B</div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-accent mb-2">Operations & Team (20%)</h4>
+                            <div class="text-sm text-cur-gray-600 space-y-1">
+                                <div>• Therapist recruitment & training</div>
+                                <div>• Operations team scaling</div>
+                                <div>• Office expansion</div>
+                                <div>• Quality assurance systems</div>
+                            </div>
+                            <div class="text-lg font-bold text-cur-accent mt-2">Rp 3.0B</div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-warm mb-2">Working Capital (10%)</h4>
+                            <div class="text-sm text-cur-gray-600 space-y-1">
+                                <div>• Cash flow management</div>
+                                <div>• Emergency reserves</div>
+                                <div>• Inventory & supplies</div>
+                            </div>
+                            <div class="text-lg font-bold text-cur-warm mt-2">Rp 1.5B</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 right-8 text-cur-gray-500 text-sm">
+                Slide 7 of 20
+            </div>
+        </div>
+
+        <!-- Slide 8: Market Opportunity Deep Dive -->
+        <div class="slide absolute inset-0 bg-white p-16">
+            <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-8">Market Opportunity & Size Analysis</h1>
+            
+            <div class="grid grid-cols-2 gap-8 mb-8">
+                <!-- TAM, SAM, SOM Analysis -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-secondary text-white p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-6">Market Size Breakdown</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Total Addressable Market (TAM)</h4>
+                            <div class="text-3xl font-bold mb-1">$2.4 Billion</div>
+                            <div class="text-sm opacity-90">Indonesia mental health market by 2027</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Serviceable Addressable Market (SAM)</h4>
+                            <div class="text-3xl font-bold mb-1">$340 Million</div>
+                            <div class="text-sm opacity-90">Digital-enabled therapy & corporate wellness</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Serviceable Obtainable Market (SOM)</h4>
+                            <div class="text-3xl font-bold mb-1">$85 Million</div>
+                            <div class="text-sm opacity-90">CUR-HEART's realistic 5-year capture</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Growth Drivers -->
+                <div class="bg-cur-gray-50 p-6 rounded-xl border border-cur-gray-200">
+                    <h3 class="text-xl font-semibold text-cur-gray-800 mb-6">Growth Drivers & Trends</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-primary mb-2">Post-COVID Mental Health Crisis</h4>
+                            <div class="text-2xl font-bold text-cur-gray-800 mb-1">+245%</div>
+                            <div class="text-sm text-cur-gray-600">Increase in anxiety & depression cases since 2020</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-secondary mb-2">Corporate Wellness Investment</h4>
+                            <div class="text-2xl font-bold text-cur-gray-800 mb-1">+180%</div>
+                            <div class="text-sm text-cur-gray-600">Growth in corporate mental health budgets</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-accent mb-2">Digital Health Adoption</h4>
+                            <div class="text-2xl font-bold text-cur-gray-800 mb-1">67%</div>
+                            <div class="text-sm text-cur-gray-600">of Indonesians now prefer digital healthcare</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-cur-gray-200">
+                            <h4 class="font-medium text-cur-warm mb-2">Government Support</h4>
+                            <div class="text-2xl font-bold text-cur-gray-800 mb-1">Rp 2.5T</div>
+                            <div class="text-sm text-cur-gray-600">National mental health budget allocation 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Landscape -->
+            <div class="bg-white border border-cur-gray-200 rounded-xl p-6">
+                <h3 class="text-xl font-semibold text-cur-gray-800 mb-6">Competitive Positioning Matrix</h3>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="bg-cur-primary text-white p-4 rounded-lg text-center">
+                        <h4 class="font-bold mb-2">CUR-HEART</h4>
+                        <div class="space-y-1 text-sm">
+                            <div>Market Share: 8.5%</div>
+                            <div>Technology Score: 9.2/10</div>
+                            <div>Customer Satisfaction: 4.9/5</div>
+                            <div>Growth Rate: +67%/year</div>
+                        </div>
+                    </div>
+                    <div class="bg-cur-gray-100 text-cur-gray-700 p-4 rounded-lg text-center border border-cur-gray-200">
+                        <h4 class="font-bold mb-2">Competitor A</h4>
+                        <div class="space-y-1 text-sm">
+                            <div>Market Share: 12.3%</div>
+                            <div>Technology Score: 6.8/10</div>
+                            <div>Customer Satisfaction: 4.1/5</div>
+                            <div>Growth Rate: +23%/year</div>
+                        </div>
+                    </div>
+                    <div class="bg-cur-gray-100 text-cur-gray-700 p-4 rounded-lg text-center border border-cur-gray-200">
+                        <h4 class="font-bold mb-2">Competitor B</h4>
+                        <div class="space-y-1 text-sm">
+                            <div>Market Share: 15.7%</div>
+                            <div>Technology Score: 7.2/10</div>
+                            <div>Customer Satisfaction: 4.3/5</div>
+                            <div>Growth Rate: +18%/year</div>
+                        </div>
+                    </div>
+                    <div class="bg-cur-gray-100 text-cur-gray-700 p-4 rounded-lg text-center border border-cur-gray-200">
+                        <h4 class="font-bold mb-2">Traditional Clinics</h4>
+                        <div class="space-y-1 text-sm">
+                            <div>Market Share: 63.5%</div>
+                            <div>Technology Score: 3.1/10</div>
+                            <div>Customer Satisfaction: 3.8/5</div>
+                            <div>Growth Rate: -5%/year</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 right-8 text-cur-gray-500 text-sm">
+                Slide 8 of 20
+            </div>
+        </div>
+
+        <!-- Slide 9: Risk Analysis & Mitigation -->
+        <div class="slide absolute inset-0 bg-white p-16">
+            <h1 class="text-4xl font-bold font-poppins text-cur-gray-800 mb-8">Risk Analysis & Mitigation Strategy</h1>
+            
+            <div class="grid grid-cols-2 gap-8">
+                <!-- High Priority Risks -->
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-semibold text-cur-warm mb-4">High Priority Risks</h2>
+                    
+                    <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-4 h-4 bg-red-500 rounded-full mr-3"></div>
+                            <h3 class="text-lg font-semibold text-red-800">Regulatory Changes</h3>
+                        </div>
+                        <p class="text-red-700 text-sm mb-3">Government regulations on digital health platforms could impact operations</p>
+                        <div class="bg-white p-3 rounded-lg border border-red-200">
+                            <h4 class="font-medium text-red-800 mb-1">Mitigation Strategy:</h4>
+                            <ul class="text-sm text-red-700 space-y-1">
+                                <li>• Maintain close relationships with regulatory bodies</li>
+                                <li>• Exceed current compliance requirements</li>
+                                <li>• Legal advisory board with healthcare law experts</li>
+                                <li>• Flexible platform architecture for rapid adaptation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-orange-50 border border-orange-200 rounded-xl p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-4 h-4 bg-orange-500 rounded-full mr-3"></div>
+                            <h3 class="text-lg font-semibold text-orange-800">Therapist Shortage</h3>
+                        </div>
+                        <p class="text-orange-700 text-sm mb-3">Limited pool of qualified hypnotherapists in Indonesia</p>
+                        <div class="bg-white p-3 rounded-lg border border-orange-200">
+                            <h4 class="font-medium text-orange-800 mb-1">Mitigation Strategy:</h4>
+                            <ul class="text-sm text-orange-700 space-y-1">
+                                <li>• Establish CUR-HEART Certification Academy</li>
+                                <li>• Partner with international training institutes</li>
+                                <li>• Develop comprehensive training curriculum</li>
+                                <li>• Competitive compensation & career development</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
+                            <h3 class="text-lg font-semibold text-yellow-800">Market Education</h3>
+                        </div>
+                        <p class="text-yellow-700 text-sm mb-3">Low awareness of hypnotherapy benefits among target market</p>
+                        <div class="bg-white p-3 rounded-lg border border-yellow-200">
+                            <h4 class="font-medium text-yellow-800 mb-1">Mitigation Strategy:</h4>
+                            <ul class="text-sm text-yellow-700 space-y-1">
+                                <li>• Comprehensive educational content marketing</li>
+                                <li>• Partnership with medical professionals</li>
+                                <li>• Free introductory sessions & workshops</li>
+                                <li>• Evidence-based outcome publications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium & Low Priority Risks -->
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-semibold text-cur-primary mb-4">Medium & Low Priority Risks</h2>
+                    
+                    <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
+                            <h3 class="text-lg font-semibold text-blue-800">Technology Disruption</h3>
+                        </div>
+                        <p class="text-blue-700 text-sm mb-3">AI or VR technology could revolutionize therapy delivery</p>
+                        <div class="bg-white p-3 rounded-lg border border-blue-200">
+                            <h4 class="font-medium text-blue-800 mb-1">Mitigation Strategy:</h4>
+                            <ul class="text-sm text-blue-700 space-y-1">
+                                <li>• Continuous R&D investment (5% of revenue)</li>
+                                <li>• Technology partnership strategy</li>
+                                <li>• Early adoption of emerging technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                            <h3 class="text-lg font-semibold text-green-800">Economic Downturn</h3>
+                        </div>
+                        <p class="text-green-700 text-sm mb-3">Recession could reduce demand for wellness services</p>
+                        <div class="bg-white p-3 rounded-lg border border-green-200">
+                            <h4 class="font-medium text-green-800 mb-1">Mitigation Strategy:</h4>
+                            <ul class="text-sm text-green-700 space-y-1">
+                                <li>• Diverse pricing tiers & payment plans</li>
+                                <li>• Focus on corporate contracts (recession-resilient)</li>
+                                <li>• Cost-efficient delivery model</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 border border-purple-200 rounded-xl p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-4 h-4 bg-purple-500 rounded-full mr-3"></div>
+                            <h3 class="text-lg font-semibold text-purple-800">Data Security Breach</h3>
+                        </div>
+                        <p class="text-purple-700 text-sm mb-3">Sensitive patient data requires highest security standards</p>
+                        <div class="bg-white p-3 rounded-lg border border-purple-200">
+                            <h4 class="font-medium text-purple-800 mb-1">Mitigation Strategy:</h4>
+                            <ul class="text-sm text-purple-700 space-y-1">
+                                <li>• Enterprise-grade encryption & security</li>
+                                <li>• Regular security audits & penetration testing</li>
+                                <li>• Comprehensive cyber insurance coverage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Risk Assessment Matrix -->
+                    <div class="bg-cur-gray-50 border border-cur-gray-200 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-cur-gray-800 mb-4">Risk Impact vs Probability Matrix</h3>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-green-100 p-2 rounded text-center">
+                                <div class="font-medium">Low Impact/Low Prob</div>
+                                <div>Data breach, Tech disruption</div>
+                            </div>
+                            <div class="bg-yellow-100 p-2 rounded text-center">
+                                <div class="font-medium">Medium Impact/Med Prob</div>
+                                <div>Economic downturn</div>
+                            </div>
+                            <div class="bg-red-100 p-2 rounded text-center">
+                                <div class="font-medium">High Impact/High Prob</div>
+                                <div>Regulatory, Therapist shortage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 right-8 text-cur-gray-500 text-sm">
+                Slide 9 of 20
+            </div>
+        </div>
+
+        <!-- Slide 10: Investment Terms & Return Projections -->
+        <div class="slide absolute inset-0 bg-gradient-to-br from-cur-primary to-cur-secondary text-white p-16">
+            <h1 class="text-4xl font-bold font-poppins mb-8">Investment Terms & Return Projections</h1>
+            
+            <div class="grid grid-cols-2 gap-8 mb-8">
+                <!-- Investment Structure -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6">
+                    <h2 class="text-2xl font-bold mb-6">Series A Investment Structure</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Total Funding Required</h3>
+                            <div class="text-3xl font-bold">Rp 15 Billion</div>
+                            <div class="text-sm opacity-90">($1.0 Million USD equivalent)</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Equity Offered</h3>
+                            <div class="text-3xl font-bold">25%</div>
+                            <div class="text-sm opacity-90">Preferred shares with liquidation preference</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Pre-Money Valuation</h3>
+                            <div class="text-3xl font-bold">Rp 45 Billion</div>
+                            <div class="text-sm opacity-90">Based on 3.5x revenue multiple</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Post-Money Valuation</h3>
+                            <div class="text-3xl font-bold">Rp 60 Billion</div>
+                            <div class="text-sm opacity-90">Conservative market multiple</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Return Projections -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6">
+                    <h2 class="text-2xl font-bold mb-6">Investor Return Projections</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">5-Year IRR</h3>
+                            <div class="text-3xl font-bold">42.5%</div>
+                            <div class="text-sm opacity-90">Internal Rate of Return</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Exit Valuation (Year 5)</h3>
+                            <div class="text-3xl font-bold">Rp 750 Billion</div>
+                            <div class="text-sm opacity-90">Based on 5.2x revenue multiple</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Total Return Multiple</h3>
+                            <div class="text-3xl font-bold">12.5x</div>
+                            <div class="text-sm opacity-90">Return on initial investment</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Absolute Return</h3>
+                            <div class="text-3xl font-bold">Rp 187.5B</div>
+                            <div class="text-sm opacity-90">Total return on Rp 15B investment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exit Strategy Options -->
+            <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6">
+                <h2 class="text-2xl font-bold mb-6">Exit Strategy Options</h2>
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-center">
+                        <i class="fas fa-chart-line text-3xl mb-3"></i>
+                        <h3 class="text-lg font-semibold mb-2">IPO (Primary)</h3>
+                        <div class="text-sm opacity-90 mb-2">Target: Year 5-7</div>
+                        <div class="text-sm">Public listing on Indonesia Stock Exchange or international markets</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-center">
+                        <i class="fas fa-handshake text-3xl mb-3"></i>
+                        <h3 class="text-lg font-semibold mb-2">Strategic Acquisition</h3>
+                        <div class="text-sm opacity-90 mb-2">Target: Year 3-5</div>
+                        <div class="text-sm">Healthcare groups, insurance companies, or tech giants</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-center">
+                        <i class="fas fa-exchange-alt text-3xl mb-3"></i>
+                        <h3 class="text-lg font-semibold mb-2">Secondary Sale</h3>
+                        <div class="text-sm opacity-90 mb-2">Target: Year 4-6</div>
+                        <div class="text-sm">Private equity or growth capital funds</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 right-8 text-white text-sm opacity-70">
+                Slide 10 of 20
+            </div>
+        </div>
+
+        <!-- Slide 11: Call to Action -->
+        <div class="slide absolute inset-0 bg-gradient-to-br from-cur-accent via-cur-warm to-cur-secondary text-white p-16 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-8">
+                    <i class="fas fa-rocket text-5xl"></i>
+                </div>
+                <h1 class="text-5xl font-bold font-poppins mb-6">Ready to Transform Mental Health in Indonesia?</h1>
+                <p class="text-2xl mb-8 opacity-90">Join us in building the future of accessible, technology-enabled mental wellness</p>
+                
+                <div class="grid grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-6">
+                        <div class="text-3xl font-bold mb-2">54 Million</div>
+                        <div class="text-lg">People waiting for help</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-6">
+                        <div class="text-3xl font-bold mb-2">$2.4 Billion</div>
+                        <div class="text-lg">Market opportunity</div>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-6">
+                        <div class="text-3xl font-bold mb-2">42.5% IRR</div>
+                        <div class="text-lg">Projected returns</div>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Next Steps</h2>
+                    <div class="grid grid-cols-2 gap-6 text-left">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">📧 Contact Information</h3>
+                            <div class="space-y-1 text-sm opacity-90">
+                                <div>Email: investors@cur-heart.id</div>
+                                <div>Phone: +62 21 1234 5678</div>
+                                <div>LinkedIn: /company/cur-heart</div>
+                                <div>Website: www.cur-heart.id</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">📁 Due Diligence Materials</h3>
+                            <div class="space-y-1 text-sm opacity-90">
+                                <div>• Financial models & projections</div>
+                                <div>• Legal documentation</div>
+                                <div>• Technology architecture</div>
+                                <div>• Market research reports</div>
+                                <div>• Customer testimonials & case studies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-xl font-medium">
+                    Let's schedule a follow-up meeting to discuss your investment in CUR-HEART
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 right-8 text-white text-sm opacity-70">
+                Slide 11 of 20
+            </div>
+        </div>
+
+        <!-- Slide 12: Thank You -->
+        <div class="slide absolute inset-0 bg-cur-gray-800 text-white p-16 flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold font-poppins mb-8">Thank You</h1>
+                <div class="text-xl mb-8">Ready to transform mental healthcare in Indonesia?</div>
+                <div class="space-y-4">
+                    <div class="text-lg">
+                        <i class="fas fa-envelope mr-3 text-cur-accent"></i>
+                        contact@cur-heart.id
+                    </div>
+                    <div class="text-lg">
+                        <i class="fas fa-phone mr-3 text-cur-accent"></i>
+                        +62 21 1234 5678
+                    </div>
+                    <div class="text-lg">
+                        <i class="fas fa-globe mr-3 text-cur-accent"></i>
+                        www.cur-heart.id
+                    </div>
+                </div>
+                <div class="mt-8 text-cur-gray-400">
+                    Questions & Discussion
+                </div>
+            </div>
+            <div class="absolute bottom-8 right-8 text-white text-sm">
+                Slide 12 of 20
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-90 backdrop-blur rounded-full p-4 shadow-lg">
+        <div class="flex space-x-4">
+            <button id="prevBtn" onclick="changeSlide(-1)" class="w-12 h-12 bg-cur-primary text-white rounded-full flex items-center justify-center hover:bg-cur-secondary transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="flex items-center space-x-2" id="slideIndicator">
+                <!-- Slide indicators will be generated by JavaScript -->
+            </div>
+            <button id="nextBtn" onclick="changeSlide(1)" class="w-12 h-12 bg-cur-primary text-white rounded-full flex items-center justify-center hover:bg-cur-secondary transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        // Create slide indicators
+        function createIndicators() {
+            const indicatorContainer = document.getElementById('slideIndicator');
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.className = `w-3 h-3 rounded-full cursor-pointer transition-colors ${i === 0 ? 'bg-cur-primary' : 'bg-cur-gray-300'}`;
+                dot.onclick = () => goToSlide(i);
+                indicatorContainer.appendChild(dot);
+            }
+        }
+
+        function showSlide(n) {
+            // Hide all slides
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+            });
+            
+            // Show current slide
+            if (slides[n]) {
+                slides[n].classList.add('active');
+            }
+            
+            // Update indicators
+            const indicators = document.querySelectorAll('#slideIndicator > div');
+            indicators.forEach((indicator, index) => {
+                indicator.className = `w-3 h-3 rounded-full cursor-pointer transition-colors ${index === n ? 'bg-cur-primary' : 'bg-cur-gray-300'}`;
+            });
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = n === 0;
+            document.getElementById('nextBtn').disabled = n === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide >= totalSlides) currentSlide = totalSlides - 1;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+
+        // Initialize when DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            createIndicators();
+            showSlide(0); // Explicitly show first slide
+        });
+    </script>
+</body>
+</html>
