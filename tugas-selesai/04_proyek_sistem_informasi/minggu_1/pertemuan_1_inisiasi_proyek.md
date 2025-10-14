@@ -21,7 +21,7 @@ SATRIAMART mengalami pertumbuhan bisnis yang signifikan, namun menghadapi tantan
 - **Manajemen Pelanggan Manual:** Data pelanggan tersimpan dalam berbagai file Excel yang tersebar, menyebabkan duplikasi data dan ketidakkonsistenan informasi
 - **Kendala Manajemen Inventori:** Proses pengecekan stok dilakukan secara manual dan memakan waktu, tidak ada sistem peringatan dini untuk stok yang menipis
 - **Perencanaan Produksi Tidak Optimal:** Perencanaan produksi masih berdasarkan estimasi manual, sering menyebabkan keterlambatan pengiriman
-- **Keterbatasan Business Intelligence:** Laporan penjualan dibuat secara manual, pengambilan keputusan bisnis masih berdasarkan intuisi
+- **Keterbatasan Kecerdasan Bisnis:** Laporan penjualan dibuat secara manual, pengambilan keputusan bisnis masih berdasarkan intuisi
 
 #### Dampak Terhadap Bisnis
 - 60% waktu operasional dihabiskan untuk entri data manual
@@ -31,10 +31,10 @@ SATRIAMART mengalami pertumbuhan bisnis yang signifikan, namun menghadapi tantan
 
 ### 1.3 Kebutuhan Transformasi Digital
 Seiring dengan perkembangan teknologi dan tuntutan efisiensi operasional, SATRIAMART memerlukan transformasi digital untuk:
-- Meningkatkan competitive advantage di pasar
+- Meningkatkan keunggulan kompetitif di pasar
 - Mengoptimalkan proses bisnis melalui otomatisasi
 - Meningkatkan kualitas layanan pelanggan
-- Membangun fondasi yang scalable untuk pertumbuhan bisnis
+- Membangun fondasi yang dapat berkembang untuk pertumbuhan bisnis
 
 ---
 
@@ -42,90 +42,90 @@ Seiring dengan perkembangan teknologi dan tuntutan efisiensi operasional, SATRIA
 
 ### 2.1 Permasalahan Utama
 
-#### A. Ineffisiensi Operasional
+#### A. Inefisiensi Operasional
 **Deskripsi:** Proses bisnis yang masih manual menyebabkan pemborosan waktu dan sumber daya
 **Dampak:**
 - Produktivitas karyawan rendah
 - Biaya operasional tinggi
-- Kesalahan human error yang frequent
+- Kesalahan manusia yang sering terjadi
 
 #### B. Fragmentasi Data
 **Deskripsi:** Data tersebar di berbagai sistem dan format yang tidak terintegrasi
 **Dampak:**
 - Duplikasi data dan inkonsistensi
-- Kesulitan dalam mendapatkan informasi real-time
-- Reporting yang lambat dan tidak akurat
+- Kesulitan dalam mendapatkan informasi waktu nyata
+- Pelaporan yang lambat dan tidak akurat
 
 #### C. Kurangnya Visibilitas Bisnis
 **Deskripsi:** Manajemen tidak memiliki pandangan menyeluruh terhadap operasional bisnis
 **Dampak:**
 - Pengambilan keputusan yang lambat
-- Kesulitan dalam identifikasi bottleneck
+- Kesulitan dalam identifikasi hambatan
 - Perencanaan strategis yang tidak optimal
 
-#### D. Layanan Pelanggan yang Suboptimal
+#### D. Layanan Pelanggan yang Belum Optimal
 **Deskripsi:** Proses layanan pelanggan yang manual dan tidak terintegrasi
 **Dampak:**
-- Customer response time yang lama
-- Inconsistent customer experience
+- Waktu respons pelanggan yang lama
+- Pengalaman pelanggan yang tidak konsisten
 - Potensi kehilangan pelanggan
 
-### 2.2 Analisis Root Cause
-- **Teknologi Legacy:** Ketergantungan pada sistem manual dan tools sederhana
+### 2.2 Analisis Akar Masalah
+- **Teknologi Lama:** Ketergantungan pada sistem manual dan alat sederhana
 - **Kurangnya Integrasi:** Tidak ada sistem yang menghubungkan berbagai fungsi bisnis
-- **Skill Gap:** Kurangnya kompetensi teknologi informasi di internal
-- **Investment Priority:** IT belum menjadi prioritas investasi strategis
+- **Kesenjangan Keahlian:** Kurangnya kompetensi teknologi informasi di internal
+- **Prioritas Investasi:** TI belum menjadi prioritas investasi strategis
 
 ---
 
 ## 3. DEFINISI SASARAN PROYEK
 
-### 3.1 Sasaran Bisnis (Business Objectives)
+### 3.1 Sasaran Bisnis
 
 #### Sasaran Jangka Pendek (6-12 bulan)
 1. **Otomatisasi Proses Bisnis Utama**
    - Mengotomatisasi 80% proses manual yang ada
-   - Mengurangi waktu proses order sebesar 50%
+   - Mengurangi waktu proses pesanan sebesar 50%
    - Meningkatkan akurasi data menjadi 95%
 
 2. **Integrasi Sistem Operasional**
    - Mengintegrasikan manajemen pelanggan, inventori, dan produksi
-   - Menciptakan single source of truth untuk semua data bisnis
+   - Menciptakan sumber data tunggal untuk semua data bisnis
    - Mengurangi duplikasi data sebesar 90%
 
 3. **Peningkatan Layanan Pelanggan**
-   - Mengurangi customer response time menjadi maksimal 4 jam
-   - Meningkatkan customer satisfaction score menjadi minimal 85%
-   - Implementasi customer self-service portal
+   - Mengurangi waktu respons pelanggan menjadi maksimal 4 jam
+   - Meningkatkan skor kepuasan pelanggan menjadi minimal 85%
+   - Implementasi portal layanan mandiri pelanggan
 
 #### Sasaran Jangka Menengah (1-2 tahun)
-1. **Business Intelligence Implementation**
-   - Real-time dashboard untuk semua level manajemen
-   - Automated reporting untuk 100% laporan rutin
-   - Predictive analytics untuk demand forecasting
+1. **Implementasi Kecerdasan Bisnis**
+   - Dashboard waktu nyata untuk semua level manajemen
+   - Pelaporan otomatis untuk 100% laporan rutin
+   - Analitik prediktif untuk peramalan permintaan
 
-2. **Scalability Achievement**
+2. **Pencapaian Skalabilitas**
    - Sistem mampu menangani pertumbuhan bisnis 200%
-   - Support untuk multiple location operations
-   - Integration readiness dengan partner eksternal
+   - Dukungan untuk operasi multi-lokasi
+   - Kesiapan integrasi dengan mitra eksternal
 
-### 3.2 Sasaran Teknis (Technical Objectives)
+### 3.2 Sasaran Teknis
 
 #### Sasaran Arsitektur
-1. **Modern Web-Based Platform**
-   - Responsive design untuk akses multi-device
-   - Cloud-ready architecture untuk scalability
-   - API-first design untuk future integrations
+1. **Platform Berbasis Web Modern**
+   - Desain responsif untuk akses multi-perangkat
+   - Arsitektur siap cloud untuk skalabilitas
+   - Desain API-first untuk integrasi masa depan
 
-2. **Performance Standards**
-   - Average response time < 3 detik
-   - 99.5% system uptime
-   - Support untuk minimum 100 concurrent users
+2. **Standar Kinerja**
+   - Waktu respons rata-rata < 3 detik
+   - Waktu operasi sistem 99.5%
+   - Dukungan untuk minimum 100 pengguna bersamaan
 
-3. **Security & Compliance**
-   - Multi-factor authentication implementation
-   - Role-based access control (RBAC)
-   - Data encryption dan backup automated
+3. **Keamanan & Kepatuhan**
+   - Implementasi autentikasi multi-faktor
+   - Kontrol akses berbasis peran (RBAC)
+   - Enkripsi data dan pencadangan otomatis
 
 ---
 
@@ -133,166 +133,166 @@ Seiring dengan perkembangan teknologi dan tuntutan efisiensi operasional, SATRIA
 
 ### 4.1 Tujuan Strategis
 
-#### Primary Goals
-1. **Meningkatkan Operational Efficiency**
-   - Target: 40% improvement dalam process automation
-   - Measureable: Pengurangan waktu proses dari 8 jam menjadi 4.8 jam
-   - Timeline: Dicapai dalam 6 bulan setelah go-live
+#### Tujuan Utama
+1. **Meningkatkan Efisiensi Operasional**
+   - Target: 40% peningkatan dalam otomatisasi proses
+   - Terukur: Pengurangan waktu proses dari 8 jam menjadi 4.8 jam
+   - Timeline: Dicapai dalam 6 bulan setelah implementasi
 
-2. **Mengoptimalkan Inventory Management**
-   - Target: Real-time inventory tracking dengan 95% accuracy
-   - Measureable: Reduction stockout incidents sebesar 75%
+2. **Mengoptimalkan Manajemen Inventori**
+   - Target: Pelacakan inventori waktu nyata dengan akurasi 95%
+   - Terukur: Pengurangan insiden kehabisan stok sebesar 75%
    - Timeline: Implementasi dalam fase 1 proyek
 
-3. **Meningkatkan Customer Satisfaction**
-   - Target: Customer satisfaction score minimal 90%
-   - Measureable: Response time reduction dari 48 jam ke 4 jam
-   - Timeline: Dicapai dalam 3 bulan setelah training completion
+3. **Meningkatkan Kepuasan Pelanggan**
+   - Target: Skor kepuasan pelanggan minimal 90%
+   - Terukur: Pengurangan waktu respons dari 48 jam ke 4 jam
+   - Timeline: Dicapai dalam 3 bulan setelah penyelesaian pelatihan
 
-4. **Enable Data-Driven Decision Making**
-   - Target: 100% automated reporting untuk key business metrics
-   - Measureable: Reduction manual reporting time sebesar 80%
-   - Timeline: Dashboard completion dalam month 4
+4. **Memungkinkan Pengambilan Keputusan Berbasis Data**
+   - Target: 100% pelaporan otomatis untuk metrik bisnis kunci
+   - Terukur: Pengurangan waktu pelaporan manual sebesar 80%
+   - Timeline: Penyelesaian dashboard dalam bulan ke-4
 
 ### 4.2 Tujuan Operasional
 
-#### Functional Objectives
-1. **Customer Relationship Management Excellence**
-   - Centralized customer database dengan complete history
-   - Automated communication workflows
-   - Customer behavior analytics dan segmentation
+#### Tujuan Fungsional
+1. **Keunggulan Manajemen Hubungan Pelanggan**
+   - Basis data pelanggan terpusat dengan riwayat lengkap
+   - Alur kerja komunikasi otomatis
+   - Analitik perilaku pelanggan dan segmentasi
 
-2. **Inventory Optimization**
-   - Real-time stock level monitoring
-   - Automated reorder point management
-   - Supplier performance tracking
+2. **Optimalisasi Inventori**
+   - Pemantauan level stok waktu nyata
+   - Manajemen titik pemesanan ulang otomatis
+   - Pelacakan kinerja pemasok
 
-3. **Production Efficiency**
-   - Automated work order generation
-   - Resource optimization algorithms
-   - Quality control integration
+3. **Efisiensi Produksi**
+   - Pembuatan perintah kerja otomatis
+   - Algoritma optimalisasi sumber daya
+   - Integrasi kontrol kualitas
 
-4. **Financial Performance Improvement**
-   - Cost reduction melalui process automation
-   - Revenue increase melalui better customer service
-   - ROI achievement dalam 12 bulan
+4. **Peningkatan Kinerja Keuangan**
+   - Pengurangan biaya melalui otomatisasi proses
+   - Peningkatan pendapatan melalui layanan pelanggan yang lebih baik
+   - Pencapaian ROI dalam 12 bulan
 
 ---
 
 ## 5. FAKTOR-FAKTOR KESUKSESAN PROYEK
 
-### 5.1 Critical Success Factors (CSF)
+### 5.1 Faktor Kesuksesan Kritis
 
-#### A. Strong Leadership & Governance
-**Deskripsi:** Komitmen penuh dari top management dan struktur governance yang jelas
+#### A. Kepemimpinan & Tata Kelola yang Kuat
+**Deskripsi:** Komitmen penuh dari manajemen puncak dan struktur tata kelola yang jelas
 **Indikator Kesuksesan:**
-- Executive sponsor actively involved dalam key decisions
-- Steering committee meetings dilakukan regular
-- Clear escalation process untuk issue resolution
-- Budget approval dan resource allocation tepat waktu
+- Sponsor eksekutif terlibat aktif dalam keputusan kunci
+- Rapat komite pengarah dilakukan secara rutin
+- Proses eskalasi yang jelas untuk resolusi masalah
+- Persetujuan anggaran dan alokasi sumber daya tepat waktu
 
-#### B. Stakeholder Engagement & Buy-in
-**Deskripsi:** Keterlibatan aktif semua stakeholder kunci dan dukungan end-users
+#### B. Keterlibatan & Dukungan Pemangku Kepentingan
+**Deskripsi:** Keterlibatan aktif semua pemangku kepentingan kunci dan dukungan pengguna akhir
 **Indikator Kesuksesan:**
-- 90% attendance rate dalam stakeholder meetings
-- User acceptance testing participation > 85%
-- Change management program effectiveness score > 80%
-- Post-implementation user satisfaction > 85%
+- 90% tingkat kehadiran dalam rapat pemangku kepentingan
+- Partisipasi pengujian penerimaan pengguna > 85%
+- Skor efektivitas program manajemen perubahan > 80%
+- Kepuasan pengguna pasca implementasi > 85%
 
-#### C. Technical Excellence & Quality
-**Deskripsi:** Implementasi technical solution yang robust dan berkualitas tinggi
+#### C. Keunggulan Teknis & Kualitas
+**Deskripsi:** Implementasi solusi teknis yang kuat dan berkualitas tinggi
 **Indikator Kesuksesan:**
-- Code quality score > 85% (automated testing coverage)
-- Performance requirements 100% met
-- Security vulnerabilities = 0 critical, < 5 medium
-- System availability > 99.5% post go-live
+- Skor kualitas kode > 85% (cakupan pengujian otomatis)
+- Persyaratan kinerja 100% terpenuhi
+- Kerentanan keamanan = 0 kritis, < 5 sedang
+- Ketersediaan sistem > 99.5% pasca implementasi
 
-#### D. Effective Project Management
-**Deskripsi:** Project management practices yang proven dan consistent execution
+#### D. Manajemen Proyek yang Efektif
+**Deskripsi:** Praktik manajemen proyek yang terbukti dan eksekusi yang konsisten
 **Indikator Kesuksesan:**
-- Schedule variance < 5%
-- Budget variance < 10%
-- Scope creep < 5% of original requirements
-- Issue resolution time average < 3 days
+- Varians jadwal < 5%
+- Varians anggaran < 10%
+- Perluasan ruang lingkup < 5% dari kebutuhan asli
+- Waktu resolusi masalah rata-rata < 3 hari
 
-#### E. Change Management & Training
-**Deskripsi:** Comprehensive change management program dan effective user training
+#### E. Manajemen Perubahan & Pelatihan
+**Deskripsi:** Program manajemen perubahan komprehensif dan pelatihan pengguna yang efektif
 **Indikator Kesuksesan:**
-- 100% user training completion rate
-- Training effectiveness score > 85%
-- Post-training competency assessment pass rate > 90%
-- User adoption rate > 80% within 3 months
+- 100% tingkat penyelesaian pelatihan pengguna
+- Skor efektivitas pelatihan > 85%
+- Tingkat kelulusan penilaian kompetensi pasca pelatihan > 90%
+- Tingkat adopsi pengguna > 80% dalam 3 bulan
 
-### 5.2 Key Performance Indicators (KPIs)
+### 5.2 Indikator Kinerja Utama (IKU)
 
-#### Project Execution KPIs
-| KPI Category | Metric | Target | Measurement Frequency |
+#### IKU Pelaksanaan Proyek
+| Kategori IKU | Metrik | Target | Frekuensi Pengukuran |
 |--------------|--------|--------|--------------------|
-| **Schedule** | Schedule Performance Index (SPI) | ≥ 0.95 | Weekly |
-| **Budget** | Cost Performance Index (CPI) | ≥ 0.90 | Bi-weekly |
-| **Quality** | Defect Density | < 2 defects/KLOC | Sprint-based |
-| **Scope** | Requirements Traceability | 100% | Milestone-based |
+| **Jadwal** | Indeks Kinerja Jadwal (IKJ) | ≥ 0.95 | Mingguan |
+| **Anggaran** | Indeks Kinerja Biaya (IKB) | ≥ 0.90 | Dua minggu sekali |
+| **Kualitas** | Kepadatan Cacat | < 2 cacat/KLOC | Berbasis sprint |
+| **Ruang Lingkup** | Ketertelusuran Kebutuhan | 100% | Berbasis milestone |
 
-#### Business Impact KPIs
-| KPI Category | Baseline | Target | Timeline |
+#### IKU Dampak Bisnis
+| Kategori IKU | Baseline | Target | Timeline |
 |--------------|----------|--------|----------|
-| **Process Efficiency** | Manual: 8 hours | Automated: 4.8 hours | Month 6 |
-| **Inventory Accuracy** | 75% | 95% | Month 4 |
-| **Customer Response** | 48 hours | 4 hours | Month 5 |
-| **Data Accuracy** | 80% | 95% | Month 3 |
+| **Efisiensi Proses** | Manual: 8 jam | Otomatis: 4.8 jam | Bulan 6 |
+| **Akurasi Inventori** | 75% | 95% | Bulan 4 |
+| **Respons Pelanggan** | 48 jam | 4 jam | Bulan 5 |
+| **Akurasi Data** | 80% | 95% | Bulan 3 |
 
-### 5.3 Risk Mitigation for Success
+### 5.3 Mitigasi Risiko untuk Kesuksesan
 
-#### High-Priority Risks & Mitigation
-1. **Technical Complexity Risk**
-   - Mitigation: Proof of concept development, technical mentoring
-   - Success Factor: Early technical validation
+#### Risiko Prioritas Tinggi & Mitigasi
+1. **Risiko Kompleksitas Teknis**
+   - Mitigasi: Pengembangan bukti konsep, mentoring teknis
+   - Faktor Kesuksesan: Validasi teknis dini
 
-2. **User Adoption Risk**
-   - Mitigation: User-centric design, comprehensive training program
-   - Success Factor: Change management excellence
+2. **Risiko Adopsi Pengguna**
+   - Mitigasi: Desain berpusat pada pengguna, program pelatihan komprehensif
+   - Faktor Kesuksesan: Keunggulan manajemen perubahan
 
-3. **Integration Challenges**
-   - Mitigation: API-first architecture, incremental integration approach
-   - Success Factor: Technical architecture review
+3. **Tantangan Integrasi**
+   - Mitigasi: Arsitektur API-first, pendekatan integrasi bertahap
+   - Faktor Kesuksesan: Tinjauan arsitektur teknis
 
-4. **Resource Availability Risk**
-   - Mitigation: Cross-training, external expertise engagement
-   - Success Factor: Resource contingency planning
+4. **Risiko Ketersediaan Sumber Daya**
+   - Mitigasi: Pelatihan silang, pelibatan keahlian eksternal
+   - Faktor Kesuksesan: Perencanaan kontinjensi sumber daya
 
 ---
 
-## 6. BUSINESS CASE & JUSTIFICATION
+## 6. KASUS BISNIS & JUSTIFIKASI
 
-### 6.1 Financial Justification
+### 6.1 Justifikasi Keuangan
 
-#### Investment Summary
-- **Total Project Investment:** IDR 53,000,000
-- **Implementation Timeline:** 7 weeks
-- **Expected Annual Benefits:** IDR 345,000,000
-- **Net Present Value (3 years):** IDR 892,000,000
-- **Return on Investment (ROI):** 650% annually
-- **Payback Period:** 8 months
+#### Ringkasan Investasi
+- **Total Investasi Proyek:** IDR 53,000,000
+- **Timeline Implementasi:** 7 minggu
+- **Manfaat Tahunan yang Diharapkan:** IDR 345,000,000
+- **Nilai Sekarang Bersih (3 tahun):** IDR 892,000,000
+- **Pengembalian Investasi (ROI):** 650% per tahun
+- **Periode Pengembalian:** 8 bulan
 
-#### Cost-Benefit Analysis
-**Costs:**
-- Development & Implementation: IDR 24,000,000
-- Infrastructure & Licensing: IDR 15,000,000
-- Training & Change Management: IDR 8,000,000
-- Contingency (12%): IDR 6,000,000
+#### Analisis Biaya-Manfaat
+**Biaya:**
+- Pengembangan & Implementasi: IDR 24,000,000
+- Infrastruktur & Lisensi: IDR 15,000,000
+- Pelatihan & Manajemen Perubahan: IDR 8,000,000
+- Kontinjensi (12%): IDR 6,000,000
 
-**Annual Benefits:**
-- Process Automation Savings: IDR 156,000,000
-- Inventory Optimization: IDR 89,000,000
-- Customer Service Improvement: IDR 67,000,000
-- Better Decision Making: IDR 33,000,000
+**Manfaat Tahunan:**
+- Penghematan Otomatisasi Proses: IDR 156,000,000
+- Optimalisasi Inventori: IDR 89,000,000
+- Peningkatan Layanan Pelanggan: IDR 67,000,000
+- Pengambilan Keputusan yang Lebih Baik: IDR 33,000,000
 
-### 6.2 Strategic Alignment
-Proyek SIMS sejalan dengan strategic initiatives perusahaan:
-- **Digital Transformation:** Modernisasi operational processes
-- **Customer Experience Excellence:** Peningkatan service quality
-- **Operational Efficiency:** Cost reduction dan productivity improvement
-- **Scalable Growth:** Platform untuk business expansion
+### 6.2 Keselarasan Strategis
+Proyek SIMS sejalan dengan inisiatif strategis perusahaan:
+- **Transformasi Digital:** Modernisasi proses operasional
+- **Keunggulan Pengalaman Pelanggan:** Peningkatan kualitas layanan
+- **Efisiensi Operasional:** Pengurangan biaya dan peningkatan produktivitas
+- **Pertumbuhan yang Dapat Berkembang:** Platform untuk ekspansi bisnis
 
 ---
 
@@ -301,29 +301,29 @@ Proyek SIMS sejalan dengan strategic initiatives perusahaan:
 ### 7.1 Ringkasan Inisiasi Proyek
 SATRIAMART Integrated Management System (SIMS) merupakan proyek strategis yang akan mentransformasi operasional bisnis SATRIAMART dari sistem manual menjadi platform digital terintegrasi. Proyek ini memiliki strong business case dengan ROI 650% dan payback period hanya 8 bulan.
 
-### 7.2 Readiness Assessment
-**Green Light Indicators:**
-- ✅ Strong business case dengan clear ROI
-- ✅ Management commitment dan budget approval
-- ✅ Clear problem definition dan solution alignment
-- ✅ Realistic timeline dan resource availability
-- ✅ Proven technology stack dan architecture
+### 7.2 Penilaian Kesiapan
+**Indikator Lampu Hijau:**
+- ✅ Kasus bisnis yang kuat dengan ROI yang jelas
+- ✅ Komitmen manajemen dan persetujuan anggaran
+- ✅ Definisi masalah yang jelas dan keselarasan solusi
+- ✅ Timeline realistis dan ketersediaan sumber daya
+- ✅ Stack teknologi dan arsitektur yang terbukti
 
 ### 7.3 Rekomendasi
-Berdasarkan analisis komprehensif, kami merekomendasikan untuk **melanjutkan proyek SIMS** dengan prioritas tinggi. Proyek ini memiliki semua elemen yang diperlukan untuk sukses dan akan memberikan significant value kepada SATRIAMART.
+Berdasarkan analisis komprehensif, kami merekomendasikan untuk **melanjutkan proyek SIMS** dengan prioritas tinggi. Proyek ini memiliki semua elemen yang diperlukan untuk sukses dan akan memberikan nilai signifikan kepada SATRIAMART.
 
-### 7.4 Next Steps
-1. **Project Charter Approval:** Formal approval dari steering committee
-2. **Team Formation:** Assignment key project team members
-3. **Detailed Planning:** Develop comprehensive project plan
-4. **Stakeholder Kickoff:** Formal project initiation meeting
-
----
-
-**Dokumen ini disusun sebagai deliverable Pertemuan 1 mata kuliah Proyek Sistem Informasi untuk memenuhi requirement inisiasi proyek yang komprehensif dan realistic.**
+### 7.4 Langkah Selanjutnya
+1. **Persetujuan Piagam Proyek:** Persetujuan formal dari komite pengarah
+2. **Pembentukan Tim:** Penugasan anggota tim proyek kunci
+3. **Perencanaan Detail:** Mengembangkan rencana proyek komprehensif
+4. **Kickoff Pemangku Kepentingan:** Rapat inisiasi proyek formal
 
 ---
 
-*Prepared by: [Nama Kelompok]*  
-*Date: October 7, 2025*  
-*Document Version: 1.0*
+**Dokumen ini disusun sebagai hasil kerja Pertemuan 1 mata kuliah Proyek Sistem Informasi untuk memenuhi persyaratan inisiasi proyek yang komprehensif dan realistis.**
+
+---
+
+*Disusun oleh: [Nama Kelompok]*  
+*Tanggal: 7 Oktober 2025*  
+*Versi Dokumen: 1.0*
