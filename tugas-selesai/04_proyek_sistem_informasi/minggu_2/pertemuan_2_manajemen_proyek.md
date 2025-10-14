@@ -1,6 +1,6 @@
 # MANAJEMEN PROYEK SISTEM INFORMASI
 ## SATRIAMART Integrated Management System (SIMS)
-### Pertemuan 2: Scope, Time, Cost, Quality, Resource Management
+### Pertemuan 2: Ruang Lingkup, Waktu, Biaya, Kualitas, Manajemen Sumber Daya
 
 **Universitas Nusa Mandiri**  
 **Fakultas Teknologi Informasi**  
@@ -10,934 +10,934 @@
 
 ---
 
-## 1. RUANG LINGKUP PROYEK (PROJECT SCOPE)
+## 1. RUANG LINGKUP PROYEK
 
-### 1.1 Project Scope Statement
+### 1.1 Pernyataan Ruang Lingkup Proyek
 
-#### A. Project Objectives
-Mengembangkan sistem informasi terintegrasi SATRIAMART SIMS yang menggabungkan Customer Relationship Management (CRM), Inventory Management, Production Planning, dan Sales Analytics dalam satu platform web-based yang modern dan scalable.
+#### A. Tujuan Proyek
+Mengembangkan sistem informasi terintegrasi SATRIAMART SIMS yang menggabungkan Manajemen Hubungan Pelanggan (CRM), Manajemen Inventori, Perencanaan Produksi, dan Analitik Penjualan dalam satu platform berbasis web yang modern dan dapat berkembang.
 
-#### B. Project Deliverables
+#### B. Hasil Kerja Proyek
 
-##### Major Deliverables
-1. **Project Management Deliverables**
-   - Project Charter & Initiation Document
-   - Comprehensive Project Plan dengan WBS
-   - Risk Management Plan & Register
-   - Quality Management Plan
-   - Communication Plan & Stakeholder Matrix
+##### Hasil Kerja Utama
+1. **Hasil Kerja Manajemen Proyek**
+   - Piagam Proyek & Dokumen Inisiasi
+   - Rencana Proyek Komprehensif dengan WBS
+   - Rencana & Register Manajemen Risiko
+   - Rencana Manajemen Kualitas
+   - Rencana Komunikasi & Matriks Pemangku Kepentingan
 
-2. **Analysis & Design Deliverables**
-   - Business Requirements Document (BRD)
-   - System Design Document (SDD)
-   - Database Design (ERD) & Data Dictionary
-   - User Interface Wireframes & Prototypes
-   - System Architecture Document
+2. **Hasil Kerja Analisis & Desain**
+   - Dokumen Kebutuhan Bisnis (DKB)
+   - Dokumen Desain Sistem (DDS)
+   - Desain Basis Data (ERD) & Kamus Data
+   - Wireframe & Prototipe Antarmuka Pengguna
+   - Dokumen Arsitektur Sistem
 
-3. **Implementation Deliverables**
-   - Working System Prototype
-   - Source Code dengan Documentation
-   - Database Schema Implementation
-   - API Documentation
-   - User Interface Implementation
+3. **Hasil Kerja Implementasi**
+   - Prototipe Sistem yang Berfungsi
+   - Kode Sumber dengan Dokumentasi
+   - Implementasi Skema Basis Data
+   - Dokumentasi API
+   - Implementasi Antarmuka Pengguna
 
-4. **Testing & Deployment Deliverables**
-   - Test Plans & Test Cases
-   - User Acceptance Testing (UAT) Results
-   - Deployment Guide & Scripts
-   - System Performance Report
-   - Security Testing Report
+4. **Hasil Kerja Pengujian & Penyebaran**
+   - Rencana & Kasus Uji
+   - Hasil Pengujian Penerimaan Pengguna (UAT)
+   - Panduan & Skrip Penyebaran
+   - Laporan Kinerja Sistem
+   - Laporan Pengujian Keamanan
 
-5. **Training & Support Deliverables**
-   - User Training Materials
-   - System Administration Guide
-   - Technical Documentation
-   - User Manual & Help Documentation
-   - Support Transition Plan
+5. **Hasil Kerja Pelatihan & Dukungan**
+   - Materi Pelatihan Pengguna
+   - Panduan Administrasi Sistem
+   - Dokumentasi Teknis
+   - Manual Pengguna & Dokumentasi Bantuan
+   - Rencana Transisi Dukungan
 
-#### C. Project Boundaries
+#### C. Batasan Proyek
 
-##### In Scope (What IS included)
-✅ **CRM Module:**
-- Customer registration & profile management
-- Order management & tracking
-- Communication history & follow-up
-- Customer analytics & reporting
+##### Dalam Ruang Lingkup (Yang TERMASUK)
+✅ **Modul CRM:**
+- Registrasi & manajemen profil pelanggan
+- Manajemen & pelacakan pesanan
+- Riwayat komunikasi & tindak lanjut
+- Analitik & pelaporan pelanggan
 
-✅ **Inventory Management Module:**
-- Real-time stock tracking
-- Product catalog management
-- Automated reorder system
-- Supplier management interface
+✅ **Modul Manajemen Inventori:**
+- Pelacakan stok waktu nyata
+- Manajemen katalog produk
+- Sistem pemesanan ulang otomatis
+- Antarmuka manajemen pemasok
 
-✅ **Production Planning Module:**
-- Work order management
-- Production scheduling
-- Resource allocation
-- Quality control tracking
+✅ **Modul Perencanaan Produksi:**
+- Manajemen perintah kerja
+- Penjadwalan produksi
+- Alokasi sumber daya
+- Pelacakan kontrol kualitas
 
-✅ **Analytics Dashboard:**
-- Executive dashboard dengan KPIs
-- Sales performance analytics
-- Operational metrics
-- Custom reporting engine
+✅ **Dashboard Analitik:**
+- Dashboard eksekutif dengan KPI
+- Analitik kinerja penjualan
+- Metrik operasional
+- Mesin pelaporan khusus
 
-✅ **System Infrastructure:**
-- Web-based responsive interface
-- MySQL database implementation
-- User authentication & authorization
-- Basic system administration
+✅ **Infrastruktur Sistem:**
+- Antarmuka responsif berbasis web
+- Implementasi basis data MySQL
+- Autentikasi & otorisasi pengguna
+- Administrasi sistem dasar
 
-##### Out of Scope (What is NOT included)
-❌ **Financial Accounting Integration:** Full ERP accounting modules
-❌ **Advanced AI/ML Features:** Machine learning algorithms
-❌ **Mobile Native Apps:** iOS/Android native applications
-❌ **Third-party Integrations:** External system integrations
-❌ **Multi-language Support:** Internationalization features
-❌ **Advanced Workflow Engine:** Complex business process automation
-❌ **Data Migration:** Migration dari sistem existing
-❌ **Hardware Procurement:** Server dan infrastructure hardware
+##### Di Luar Ruang Lingkup (Yang TIDAK termasuk)
+❌ **Integrasi Akuntansi Keuangan:** Modul akuntansi ERP lengkap
+❌ **Fitur AI/ML Lanjutan:** Algoritma pembelajaran mesin
+❌ **Aplikasi Mobile Native:** Aplikasi native iOS/Android
+❌ **Integrasi Pihak Ketiga:** Integrasi sistem eksternal
+❌ **Dukungan Multi-bahasa:** Fitur internasionalisasi
+❌ **Mesin Alur Kerja Lanjutan:** Otomatisasi proses bisnis kompleks
+❌ **Migrasi Data:** Migrasi dari sistem yang ada
+❌ **Pengadaan Perangkat Keras:** Server dan perangkat keras infrastruktur
 
-### 1.2 Work Breakdown Structure (WBS)
+### 1.2 Struktur Perincian Kerja (WBS)
 
 ```
-SATRIAMART SIMS Project (1.0)
-├── 1.1 Project Management
-│   ├── 1.1.1 Project Initiation
-│   ├── 1.1.2 Project Planning
-│   ├── 1.1.3 Project Execution Control
-│   └── 1.1.4 Project Closure
-├── 1.2 Requirements & Analysis
-│   ├── 1.2.1 Business Requirements Gathering
-│   ├── 1.2.2 Stakeholder Analysis
-│   ├── 1.2.3 Process Analysis & Modeling
-│   └── 1.2.4 Requirements Validation
-├── 1.3 System Design
-│   ├── 1.3.1 System Architecture Design
-│   ├── 1.3.2 Database Design
-│   ├── 1.3.3 User Interface Design
-│   └── 1.3.4 Integration Design
-├── 1.4 System Development
-│   ├── 1.4.1 Backend Development
-│   │   ├── 1.4.1.1 Database Implementation
-│   │   ├── 1.4.1.2 API Development
-│   │   ├── 1.4.1.3 Business Logic Implementation
-│   │   └── 1.4.1.4 Security Implementation
-│   ├── 1.4.2 Frontend Development
-│   │   ├── 1.4.2.1 UI Component Development
-│   │   ├── 1.4.2.2 Dashboard Implementation
-│   │   ├── 1.4.2.3 Module Integration
-│   │   └── 1.4.2.4 Responsive Design
-│   └── 1.4.3 System Integration
-├── 1.5 Testing & Quality Assurance
-│   ├── 1.5.1 Unit Testing
-│   ├── 1.5.2 Integration Testing
-│   ├── 1.5.3 System Testing
-│   └── 1.5.4 User Acceptance Testing
-├── 1.6 Deployment & Implementation
-│   ├── 1.6.1 Environment Setup
-│   ├── 1.6.2 System Deployment
-│   ├── 1.6.3 Data Migration
-│   └── 1.6.4 Go-Live Support
-└── 1.7 Training & Knowledge Transfer
-    ├── 1.7.1 User Training Development
-    ├── 1.7.2 Training Delivery
-    ├── 1.7.3 Documentation Creation
-    └── 1.7.4 Support Transition
+Proyek SATRIAMART SIMS (1.0)
+├── 1.1 Manajemen Proyek
+│   ├── 1.1.1 Inisiasi Proyek
+│   ├── 1.1.2 Perencanaan Proyek
+│   ├── 1.1.3 Pengendalian Eksekusi Proyek
+│   └── 1.1.4 Penutupan Proyek
+├── 1.2 Kebutuhan & Analisis
+│   ├── 1.2.1 Pengumpulan Kebutuhan Bisnis
+│   ├── 1.2.2 Analisis Pemangku Kepentingan
+│   ├── 1.2.3 Analisis & Pemodelan Proses
+│   └── 1.2.4 Validasi Kebutuhan
+├── 1.3 Desain Sistem
+│   ├── 1.3.1 Desain Arsitektur Sistem
+│   ├── 1.3.2 Desain Basis Data
+│   ├── 1.3.3 Desain Antarmuka Pengguna
+│   └── 1.3.4 Desain Integrasi
+├── 1.4 Pengembangan Sistem
+│   ├── 1.4.1 Pengembangan Backend
+│   │   ├── 1.4.1.1 Implementasi Basis Data
+│   │   ├── 1.4.1.2 Pengembangan API
+│   │   ├── 1.4.1.3 Implementasi Logika Bisnis
+│   │   └── 1.4.1.4 Implementasi Keamanan
+│   ├── 1.4.2 Pengembangan Frontend
+│   │   ├── 1.4.2.1 Pengembangan Komponen UI
+│   │   ├── 1.4.2.2 Implementasi Dashboard
+│   │   ├── 1.4.2.3 Integrasi Modul
+│   │   └── 1.4.2.4 Desain Responsif
+│   └── 1.4.3 Integrasi Sistem
+├── 1.5 Pengujian & Jaminan Kualitas
+│   ├── 1.5.1 Pengujian Unit
+│   ├── 1.5.2 Pengujian Integrasi
+│   ├── 1.5.3 Pengujian Sistem
+│   └── 1.5.4 Pengujian Penerimaan Pengguna
+├── 1.6 Implementasi & Penerapan
+│   ├── 1.6.1 Pengaturan Lingkungan
+│   ├── 1.6.2 Implementasi Sistem
+│   ├── 1.6.3 Migrasi Data
+│   └── 1.6.4 Dukungan Go-Live
+└── 1.7 Pelatihan & Transfer Pengetahuan
+    ├── 1.7.1 Pengembangan Pelatihan Pengguna
+    ├── 1.7.2 Penyampaian Pelatihan
+    ├── 1.7.3 Pembuatan Dokumentasi
+    └── 1.7.4 Transisi Dukungan
 ```
 
-### 1.3 Scope Change Management
+### 1.3 Manajemen Perubahan Ruang Lingkup
 
-#### Change Control Process
-1. **Change Request Submission:** Formal change request dengan business justification
-2. **Impact Assessment:** Technical, schedule, budget, dan resource impact analysis
-3. **Stakeholder Review:** Evaluation oleh project steering committee
-4. **Approval/Rejection:** Formal decision dengan documented rationale
-5. **Implementation:** Controlled implementation dengan updated project plan
+#### Proses Pengendalian Perubahan
+1. **Pengajuan Permintaan Perubahan:** Permintaan perubahan formal dengan justifikasi bisnis
+2. **Penilaian Dampak:** Analisis dampak teknis, jadwal, anggaran, dan sumber daya
+3. **Review Pemangku Kepentingan:** Evaluasi oleh komite pengarah proyek
+4. **Persetujuan/Penolakan:** Keputusan formal dengan alasan yang terdokumentasi
+5. **Implementasi:** Implementasi terkendali dengan rencana proyek yang diperbarui
 
-#### Scope Baseline Protection
-- **Baseline Documentation:** Approved scope statement sebagai reference
-- **Change Log:** Tracking semua scope changes dengan approval status
-- **Version Control:** Document versioning untuk scope modifications
-- **Stakeholder Communication:** Regular updates tentang scope changes
+#### Perlindungan Baseline Ruang Lingkup
+- **Dokumentasi Baseline:** Pernyataan ruang lingkup yang disetujui sebagai referensi
+- **Log Perubahan:** Pelacakan semua perubahan ruang lingkup dengan status persetujuan
+- **Kontrol Versi:** Versioning dokumen untuk modifikasi ruang lingkup
+- **Komunikasi Pemangku Kepentingan:** Update berkala tentang perubahan ruang lingkup
 
 ---
 
-## 2. WAKTU PENGERJAAN PROYEK (PROJECT TIME MANAGEMENT)
+## 2. MANAJEMEN WAKTU PROYEK
 
-### 2.1 Project Timeline Overview
+### 2.1 Gambaran Umum Jadwal Proyek
 
-**Total Project Duration:** 7 Weeks (49 Calendar Days)  
-**Working Days:** 35 Days (5 days/week)  
-**Project Start Date:** January 8, 2024  
-**Project End Date:** February 23, 2024
+**Total Durasi Proyek:** 7 Minggu (49 Hari Kalender)  
+**Hari Kerja:** 35 Hari (5 hari/minggu)  
+**Tanggal Mulai Proyek:** 8 Januari 2024  
+**Tanggal Selesai Proyek:** 23 Februari 2024
 
-### 2.2 Detailed Project Schedule
+### 2.2 Jadwal Proyek Terperinci
 
-#### Phase 1: Project Initiation & Planning (Week 1)
-**Duration:** 5 days | **Effort:** 120 person-hours
+#### Fase 1: Inisiasi & Perencanaan Proyek (Minggu 1)
+**Durasi:** 5 hari | **Upaya:** 120 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| Project Charter Development | 2 days | Jan 8 | Jan 9 | - | PM, BA |
-| Stakeholder Identification | 1 day | Jan 8 | Jan 8 | - | PM |
-| Project Plan Creation | 2 days | Jan 10 | Jan 11 | Charter | PM, Team Lead |
-| Risk Assessment | 1 day | Jan 11 | Jan 11 | Plan | PM, BA |
-| Communication Plan | 1 day | Jan 12 | Jan 12 | Plan | PM |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|
+| Pengembangan Piagam Proyek | 2 hari | 8 Jan | 9 Jan | - | PM, BA |
+| Identifikasi Pemangku Kepentingan | 1 hari | 8 Jan | 8 Jan | - | PM |
+| Pembuatan Rencana Proyek | 2 hari | 10 Jan | 11 Jan | Piagam | PM, Ketua Tim |
+| Penilaian Risiko | 1 hari | 11 Jan | 11 Jan | Rencana | PM, BA |
+| Rencana Komunikasi | 1 hari | 12 Jan | 12 Jan | Rencana | PM |
 
-#### Phase 2: Requirements & Analysis (Week 2)
-**Duration:** 5 days | **Effort:** 160 person-hours
+#### Fase 2: Kebutuhan & Analisis (Minggu 2)
+**Durasi:** 5 hari | **Upaya:** 160 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| Business Requirements Gathering | 3 days | Jan 15 | Jan 17 | Charter | BA, SME |
-| Stakeholder Interviews | 2 days | Jan 15 | Jan 16 | - | BA, PM |
-| Process Analysis & Modeling | 2 days | Jan 17 | Jan 18 | Requirements | BA |
-| Requirements Documentation | 2 days | Jan 18 | Jan 19 | Analysis | BA |
-| Requirements Review & Approval | 1 day | Jan 19 | Jan 19 | Documentation | All Stakeholders |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|  
+| Pengumpulan Kebutuhan Bisnis | 3 hari | 15 Jan | 17 Jan | Piagam | BA, SME |
+| Wawancara Pemangku Kepentingan | 2 hari | 15 Jan | 16 Jan | - | BA, PM |
+| Analisis & Pemodelan Proses | 2 hari | 17 Jan | 18 Jan | Kebutuhan | BA |
+| Dokumentasi Kebutuhan | 2 hari | 18 Jan | 19 Jan | Analisis | BA |
+| Review & Persetujuan Kebutuhan | 1 hari | 19 Jan | 19 Jan | Dokumentasi | Semua Pemangku Kepentingan |
 
-#### Phase 3: System Design (Week 3)
-**Duration:** 5 days | **Effort:** 180 person-hours
+#### Fase 3: Desain Sistem (Minggu 3)
+**Durasi:** 5 hari | **Upaya:** 180 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| System Architecture Design | 2 days | Jan 22 | Jan 23 | Requirements | Architect, Dev Lead |
-| Database Design (ERD) | 2 days | Jan 22 | Jan 23 | Requirements | DB Designer |
-| User Interface Wireframes | 3 days | Jan 24 | Jan 26 | Architecture | UI/UX Designer |
-| API Specifications | 2 days | Jan 25 | Jan 26 | Architecture | Dev Lead |
-| Design Review & Approval | 1 day | Jan 26 | Jan 26 | All Designs | Tech Team |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|
+| Desain Arsitektur Sistem | 2 hari | 22 Jan | 23 Jan | Kebutuhan | Arsitek, Ketua Pengembangan |
+| Desain Basis Data (ERD) | 2 hari | 22 Jan | 23 Jan | Kebutuhan | Perancang DB |
+| Wireframe Antarmuka Pengguna | 3 hari | 24 Jan | 26 Jan | Arsitektur | Perancang UI/UX |
+| Spesifikasi API | 2 hari | 25 Jan | 26 Jan | Arsitektur | Ketua Pengembangan |
+| Review & Persetujuan Desain | 1 hari | 26 Jan | 26 Jan | Semua Desain | Tim Teknis |
 
-#### Phase 4: Development Sprint 1 (Week 4)
-**Duration:** 5 days | **Effort:** 200 person-hours
+#### Fase 4: Sprint Pengembangan 1 (Minggu 4)
+**Durasi:** 5 hari | **Upaya:** 200 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| Database Schema Implementation | 2 days | Jan 29 | Jan 30 | DB Design | Developer |
-| Backend API Development | 4 days | Jan 29 | Feb 1 | Architecture | Developer |
-| Authentication System | 2 days | Jan 31 | Feb 1 | Backend | Developer |
-| CRM Module Backend | 3 days | Jan 31 | Feb 2 | API Base | Developer |
-| Unit Testing Setup | 2 days | Feb 1 | Feb 2 | Code Base | QA, Developer |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|
+| Implementasi Skema Basis Data | 2 hari | 29 Jan | 30 Jan | Desain DB | Pengembang |
+| Pengembangan API Backend | 4 hari | 29 Jan | 1 Feb | Arsitektur | Pengembang |
+| Sistem Autentikasi | 2 hari | 31 Jan | 1 Feb | Backend | Pengembang |
+| Backend Modul CRM | 3 hari | 31 Jan | 2 Feb | Basis API | Pengembang |
+| Pengaturan Pengujian Unit | 2 hari | 1 Feb | 2 Feb | Basis Kode | QA, Pengembang |
 
-#### Phase 5: Development Sprint 2 (Week 5)
-**Duration:** 5 days | **Effort:** 200 person-hours
+#### Fase 5: Sprint Pengembangan 2 (Minggu 5)
+**Durasi:** 5 hari | **Upaya:** 200 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| Inventory Module Development | 3 days | Feb 5 | Feb 7 | CRM Module | Developer |
-| Production Module Development | 3 days | Feb 6 | Feb 8 | Inventory | Developer |
-| Frontend UI Implementation | 4 days | Feb 5 | Feb 8 | Backend APIs | Frontend Dev |
-| Dashboard Development | 3 days | Feb 7 | Feb 9 | All Modules | Frontend Dev |
-| Integration Testing | 2 days | Feb 8 | Feb 9 | All Modules | QA |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|
+| Pengembangan Modul Inventori | 3 hari | 5 Feb | 7 Feb | Modul CRM | Pengembang |
+| Pengembangan Modul Produksi | 3 hari | 6 Feb | 8 Feb | Inventori | Pengembang |
+| Implementasi UI Frontend | 4 hari | 5 Feb | 8 Feb | API Backend | Pengembang Frontend |
+| Pengembangan Dashboard | 3 hari | 7 Feb | 9 Feb | Semua Modul | Pengembang Frontend |
+| Pengujian Integrasi | 2 hari | 8 Feb | 9 Feb | Semua Modul | QA |
 
-#### Phase 6: Integration & Testing (Week 6)
-**Duration:** 5 days | **Effort:** 160 person-hours
+#### Fase 6: Integrasi & Pengujian (Minggu 6)
+**Durasi:** 5 hari | **Upaya:** 160 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| System Integration | 2 days | Feb 12 | Feb 13 | All Modules | Dev Team |
-| Comprehensive Testing | 3 days | Feb 13 | Feb 15 | Integration | QA Team |
-| Performance Testing | 2 days | Feb 14 | Feb 15 | System | QA, DevOps |
-| Security Testing | 2 days | Feb 15 | Feb 16 | System | Security QA |
-| Bug Fixes & Optimization | 2 days | Feb 15 | Feb 16 | Testing | Dev Team |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|
+| Integrasi Sistem | 2 hari | 12 Feb | 13 Feb | Semua Modul | Tim Pengembang |
+| Pengujian Komprehensif | 3 hari | 13 Feb | 15 Feb | Integrasi | Tim QA |
+| Pengujian Kinerja | 2 hari | 14 Feb | 15 Feb | Sistem | QA, DevOps |
+| Pengujian Keamanan | 2 hari | 15 Feb | 16 Feb | Sistem | QA Keamanan |
+| Perbaikan Bug & Optimisasi | 2 hari | 15 Feb | 16 Feb | Pengujian | Tim Pengembang |
 
-#### Phase 7: Deployment & Closure (Week 7)
-**Duration:** 5 days | **Effort:** 120 person-hours
+#### Fase 7: Implementasi & Penutupan (Minggu 7)
+**Durasi:** 5 hari | **Upaya:** 120 jam-orang
 
-| Task | Duration | Start Date | End Date | Dependencies | Resources |
-|------|----------|------------|----------|--------------|-----------|
-| Production Environment Setup | 1 day | Feb 19 | Feb 19 | Testing | DevOps |
-| System Deployment | 1 day | Feb 20 | Feb 20 | Environment | DevOps, Dev |
-| User Training Delivery | 2 days | Feb 20 | Feb 21 | Deployment | Trainer, PM |
-| User Acceptance Testing | 2 days | Feb 21 | Feb 22 | Training | End Users, QA |
-| Project Closure & Handover | 1 day | Feb 23 | Feb 23 | UAT | PM, Team |
+| Tugas | Durasi | Tanggal Mulai | Tanggal Selesai | Ketergantungan | Sumber Daya |
+|-------|--------|---------------|-----------------|----------------|-------------|
+| Pengaturan Lingkungan Produksi | 1 hari | 19 Feb | 19 Feb | Pengujian | DevOps |
+| Implementasi Sistem | 1 hari | 20 Feb | 20 Feb | Lingkungan | DevOps, Pengembang |
+| Penyampaian Pelatihan Pengguna | 2 hari | 20 Feb | 21 Feb | Implementasi | Pelatih, PM |
+| Pengujian Penerimaan Pengguna | 2 hari | 21 Feb | 22 Feb | Pelatihan | Pengguna Akhir, QA |
+| Penutupan & Serah Terima Proyek | 1 hari | 23 Feb | 23 Feb | UAT | PM, Tim |
 
-### 2.3 Critical Path Analysis
+### 2.3 Analisis Jalur Kritis
 
-#### Critical Path Tasks
+#### Tugas Jalur Kritis
 ```
-Project Charter → Requirements Gathering → System Design → 
-Backend Development → Frontend Development → Integration → 
-Testing → Deployment → Closure
+Piagam Proyek → Pengumpulan Kebutuhan → Desain Sistem → 
+Pengembangan Backend → Pengembangan Frontend → Integrasi → 
+Pengujian → Implementasi → Penutupan
 ```
 
-**Critical Path Duration:** 35 working days  
-**Float/Buffer:** 0 days pada critical path  
-**Risk Level:** High (no schedule buffer)
+**Durasi Jalur Kritis:** 35 hari kerja  
+**Float/Penyangga:** 0 hari pada jalur kritis  
+**Tingkat Risiko:** Tinggi (tanpa penyangga jadwal)
 
-#### Schedule Risk Mitigation
-1. **Resource Loading:** Cross-training team members untuk flexibility
-2. **Parallel Processing:** Maksimasi parallel work streams
-3. **Buffer Management:** 10% contingency time di non-critical tasks
-4. **Daily Monitoring:** Daily standup untuk early issue detection
+#### Mitigasi Risiko Jadwal
+1. **Pembebanan Sumber Daya:** Pelatihan silang anggota tim untuk fleksibilitas
+2. **Pemrosesan Paralel:** Maksimalisasi aliran kerja paralel
+3. **Manajemen Penyangga:** 10% waktu kontingensi pada tugas non-kritis
+4. **Pemantauan Harian:** Standup harian untuk deteksi masalah dini
 
-### 2.4 Schedule Management Tools
+### 2.4 Alat Manajemen Jadwal
 
-#### Project Management Tools
-- **Primary Tool:** Microsoft Project / Gantt Chart
-- **Daily Tracking:** Jira/Trello untuk task management
-- **Communication:** Slack untuk real-time coordination
-- **Reporting:** Weekly status reports dengan RAG status
+#### Alat Manajemen Proyek
+- **Alat Utama:** Microsoft Project / Diagram Gantt
+- **Pelacakan Harian:** Jira/Trello untuk manajemen tugas
+- **Komunikasi:** Slack untuk koordinasi waktu nyata
+- **Pelaporan:** Laporan status mingguan dengan status RAG
 
-#### Schedule Control Measures
-- **Earned Value Management:** Track progress vs planned
-- **Milestone Gates:** Go/No-go decisions di key milestones
-- **Schedule Performance Index (SPI):** Target ≥ 0.95
-- **Variance Analysis:** Weekly schedule variance reporting
+#### Ukuran Pengendalian Jadwal
+- **Manajemen Nilai Perolehan:** Melacak kemajuan vs rencana
+- **Gerbang Pencapaian:** Keputusan lanjut/tidak pada pencapaian kunci
+- **Indeks Kinerja Jadwal (SPI):** Target ≥ 0.95
+- **Analisis Varians:** Pelaporan varians jadwal mingguan
 
 ---
 
-## 3. RENCANA ANGGARAN BIAYA PROYEK (PROJECT COST MANAGEMENT)
+## 3. MANAJEMEN BIAYA PROYEK
 
-### 3.1 Total Project Budget Summary
+### 3.1 Ringkasan Anggaran Proyek Total
 
-**Total Project Budget:** IDR 53,000,000  
-**Budget Allocation Period:** 7 weeks  
-**Cost Control Tolerance:** ±10%  
-**Budget Baseline:** IDR 48,200,000  
-**Management Reserve:** IDR 4,800,000 (10%)
+**Total Anggaran Proyek:** IDR 53.000.000  
+**Periode Alokasi Anggaran:** 7 minggu  
+**Toleransi Pengendalian Biaya:** ±10%  
+**Baseline Anggaran:** IDR 48.200.000  
+**Cadangan Manajemen:** IDR 4.800.000 (10%)
 
-### 3.2 Detailed Cost Breakdown Structure (CBS)
+### 3.2 Struktur Perincian Biaya Terperinci (CBS)
 
-#### A. Human Resources Costs (60% - IDR 31,800,000)
+#### A. Biaya Sumber Daya Manusia (60% - IDR 31.800.000)
 
-| Role | Rate/Day | Days | Total Cost | Percentage |
-|------|----------|------|------------|------------|
-| **Project Manager** | IDR 800,000 | 35 | IDR 28,000,000 | 52.8% |
-| **System Analyst** | IDR 600,000 | 28 | IDR 16,800,000 | 31.7% |
-| **Software Developer** | IDR 700,000 | 35 | IDR 24,500,000 | 46.2% |
-| **UI/UX Designer** | IDR 500,000 | 14 | IDR 7,000,000 | 13.2% |
-| **Quality Assurance** | IDR 450,000 | 21 | IDR 9,450,000 | 17.8% |
-| **DevOps Engineer** | IDR 600,000 | 7 | IDR 4,200,000 | 7.9% |
-| **Business SME** | IDR 400,000 | 10 | IDR 4,000,000 | 7.5% |
-| **Technical Writer** | IDR 350,000 | 7 | IDR 2,450,000 | 4.6% |
-| **Trainer** | IDR 500,000 | 3 | IDR 1,500,000 | 2.8% |
-| **Subtotal HR** | | | **IDR 97,900,000** | **184.9%** |
-| **Discounted Rate (67%)** | | | **IDR 31,800,000** | **60.0%** |
+| Peran | Tarif/Hari | Hari | Total Biaya | Persentase |
+|-------|------------|------|-------------|------------|
+| **Manajer Proyek** | IDR 800.000 | 35 | IDR 28.000.000 | 52.8% |
+| **Analis Sistem** | IDR 600.000 | 28 | IDR 16.800.000 | 31.7% |
+| **Pengembang Perangkat Lunak** | IDR 700.000 | 35 | IDR 24.500.000 | 46.2% |
+| **Perancang UI/UX** | IDR 500.000 | 14 | IDR 7.000.000 | 13.2% |
+| **Jaminan Kualitas** | IDR 450.000 | 21 | IDR 9.450.000 | 17.8% |
+| **Insinyur DevOps** | IDR 600.000 | 7 | IDR 4.200.000 | 7.9% |
+| **Pakar Bisnis** | IDR 400.000 | 10 | IDR 4.000.000 | 7.5% |
+| **Penulis Teknis** | IDR 350.000 | 7 | IDR 2.450.000 | 4.6% |
+| **Pelatih** | IDR 500.000 | 3 | IDR 1.500.000 | 2.8% |
+| **Subtotal SDM** | | | **IDR 97.900.000** | **184.9%** |
+| **Tarif Diskon (67%)** | | | **IDR 31.800.000** | **60.0%** |
 
-#### B. Technology & Infrastructure Costs (25% - IDR 13,250,000)
+#### B. Biaya Teknologi & Infrastruktur (25% - IDR 13.250.000)
 
-| Category | Item | Quantity | Unit Cost | Total Cost |
-|----------|------|----------|-----------|------------|
-| **Development Tools** | | | | |
-| | IDE Licenses (VS Code Pro) | 3 | IDR 500,000 | IDR 1,500,000 |
-| | Version Control (Git Premium) | 1 | IDR 800,000 | IDR 800,000 |
-| | Project Management (Jira) | 1 | IDR 1,200,000 | IDR 1,200,000 |
-| **Cloud Infrastructure** | | | | |
-| | Development Environment | 7 weeks | IDR 300,000/week | IDR 2,100,000 |
-| | Testing Environment | 4 weeks | IDR 200,000/week | IDR 800,000 |
-| | Production Environment | 2 weeks | IDR 400,000/week | IDR 800,000 |
-| **Software Licenses** | | | | |
-| | Laravel Framework (Extended) | 1 | IDR 2,000,000 | IDR 2,000,000 |
-| | Database Tools (MySQL Workbench) | 1 | IDR 800,000 | IDR 800,000 |
-| | Testing Tools (Postman, Selenium) | 1 | IDR 1,000,000 | IDR 1,000,000 |
-| **Security & Monitoring** | | | | |
-| | SSL Certificates | 1 | IDR 500,000 | IDR 500,000 |
-| | Security Scanning Tools | 1 | IDR 750,000 | IDR 750,000 |
-| | Monitoring Tools (New Relic) | 2 months | IDR 500,000/month | IDR 1,000,000 |
-| **Subtotal Technology** | | | | **IDR 13,250,000** |
+| Kategori | Item | Kuantitas | Biaya Satuan | Total Biaya |
+|----------|------|-----------|--------------|-------------|
+| **Alat Pengembangan** | | | | |
+| | Lisensi IDE (VS Code Pro) | 3 | IDR 500.000 | IDR 1.500.000 |
+| | Kontrol Versi (Git Premium) | 1 | IDR 800.000 | IDR 800.000 |
+| | Manajemen Proyek (Jira) | 1 | IDR 1.200.000 | IDR 1.200.000 |
+| **Infrastruktur Cloud** | | | | |
+| | Lingkungan Pengembangan | 7 minggu | IDR 300.000/minggu | IDR 2.100.000 |
+| | Lingkungan Pengujian | 4 minggu | IDR 200.000/minggu | IDR 800.000 |
+| | Lingkungan Produksi | 2 minggu | IDR 400.000/minggu | IDR 800.000 |
+| **Lisensi Perangkat Lunak** | | | | |
+| | Framework Laravel (Extended) | 1 | IDR 2.000.000 | IDR 2.000.000 |
+| | Alat Basis Data (MySQL Workbench) | 1 | IDR 800.000 | IDR 800.000 |
+| | Alat Pengujian (Postman, Selenium) | 1 | IDR 1.000.000 | IDR 1.000.000 |
+| **Keamanan & Pemantauan** | | | | |
+| | Sertifikat SSL | 1 | IDR 500.000 | IDR 500.000 |
+| | Alat Pemindaian Keamanan | 1 | IDR 750.000 | IDR 750.000 |
+| | Alat Pemantauan (New Relic) | 2 bulan | IDR 500.000/bulan | IDR 1.000.000 |
+| **Subtotal Teknologi** | | | | **IDR 13.250.000** |
 
-#### C. Training & Documentation Costs (10% - IDR 5,300,000)
+#### C. Biaya Pelatihan & Dokumentasi (10% - IDR 5.300.000)
 
-| Category | Description | Quantity | Unit Cost | Total Cost |
-|----------|-------------|----------|-----------|------------|
-| **Training Materials** | | | | |
-| | User Manual Development | 1 | IDR 2,000,000 | IDR 2,000,000 |
-| | Video Training Content | 10 hours | IDR 200,000/hour | IDR 2,000,000 |
-| | Interactive Training Platform | 1 | IDR 800,000 | IDR 800,000 |
-| **Documentation** | | | | |
-| | Technical Documentation | 1 | IDR 500,000 | IDR 500,000 |
-| **Subtotal Training** | | | | **IDR 5,300,000** |
+| Kategori | Deskripsi | Kuantitas | Biaya Satuan | Total Biaya |
+|----------|-----------|-----------|--------------|-------------|
+| **Materi Pelatihan** | | | | |
+| | Pengembangan Manual Pengguna | 1 | IDR 2.000.000 | IDR 2.000.000 |
+| | Isi Pelatihan Video | 10 jam | IDR 200.000/jam | IDR 2.000.000 |
+| | Platform Pelatihan Interaktif | 1 | IDR 800.000 | IDR 800.000 |
+| **Dokumentasi** | | | | |
+| | Dokumentasi Teknis | 1 | IDR 500.000 | IDR 500.000 |
+| **Subtotal Pelatihan** | | | | **IDR 5.300.000** |
 
-#### D. Operational & Miscellaneous Costs (5% - IDR 2,650,000)
+#### D. Biaya Operasional & Lain-lain (5% - IDR 2.650.000)
 
-| Category | Description | Total Cost |
-|----------|-------------|------------|
-| **Communication** | Meeting rooms, teleconferencing | IDR 800,000 |
-| **Travel & Transportation** | Site visits, stakeholder meetings | IDR 600,000 |
-| **Office Supplies** | Stationery, printing, materials | IDR 400,000 |
-| **Contingency Operations** | Miscellaneous operational costs | IDR 850,000 |
-| **Subtotal Operational** | | **IDR 2,650,000** |
+| Kategori | Deskripsi | Total Biaya |
+|----------|-----------|-------------|
+| **Komunikasi** | Ruang rapat, telekonferensi | IDR 800.000 |
+| **Perjalanan & Transportasi** | Kunjungan lapangan, rapat pemangku kepentingan | IDR 600.000 |
+| **Perlengkapan Kantor** | Alat tulis, pencetakan, material | IDR 400.000 |
+| **Operasional Kontingensi** | Biaya operasional lain-lain | IDR 850.000 |
+| **Subtotal Operasional** | | **IDR 2.650.000** |
 
-### 3.3 Cost Management Plan
+### 3.3 Rencana Manajemen Biaya
 
-#### Budget Baseline Control
+#### Pengendalian Baseline Anggaran
 ```
-Month 1 (Weeks 1-4): IDR 32,000,000 (60.4%)
-Month 2 (Weeks 5-7): IDR 21,000,000 (39.6%)
-Total Planned: IDR 53,000,000 (100%)
+Bulan 1 (Minggu 1-4): IDR 32.000.000 (60.4%)
+Bulan 2 (Minggu 5-7): IDR 21.000.000 (39.6%)
+Total Rencana: IDR 53.000.000 (100%)
 ```
 
-#### Cash Flow Projection
+#### Proyeksi Arus Kas
 
-| Week | Weekly Budget | Cumulative Budget | Cumulative % |
-|------|---------------|-------------------|---------------|
-| Week 1 | IDR 6,500,000 | IDR 6,500,000 | 12.3% |
-| Week 2 | IDR 7,200,000 | IDR 13,700,000 | 25.8% |
-| Week 3 | IDR 8,100,000 | IDR 21,800,000 | 41.1% |
-| Week 4 | IDR 10,200,000 | IDR 32,000,000 | 60.4% |
-| Week 5 | IDR 9,800,000 | IDR 41,800,000 | 78.9% |
-| Week 6 | IDR 7,500,000 | IDR 49,300,000 | 93.0% |
-| Week 7 | IDR 3,700,000 | IDR 53,000,000 | 100.0% |
+| Minggu | Anggaran Mingguan | Anggaran Kumulatif | Kumulatif % |
+|--------|-------------------|-------------------|-------------|
+| Minggu 1 | IDR 6.500.000 | IDR 6.500.000 | 12.3% |
+| Minggu 2 | IDR 7.200.000 | IDR 13.700.000 | 25.8% |
+| Minggu 3 | IDR 8.100.000 | IDR 21.800.000 | 41.1% |
+| Minggu 4 | IDR 10.200.000 | IDR 32.000.000 | 60.4% |
+| Minggu 5 | IDR 9.800.000 | IDR 41.800.000 | 78.9% |
+| Minggu 6 | IDR 7.500.000 | IDR 49.300.000 | 93.0% |
+| Minggu 7 | IDR 3.700.000 | IDR 53.000.000 | 100.0% |
 
-#### Cost Control Measures
+#### Ukuran Pengendalian Biaya
 
-##### Earned Value Management (EVM)
-- **Planned Value (PV):** Budget baseline untuk completed work
-- **Earned Value (EV):** Budget value untuk actual completed work  
-- **Actual Cost (AC):** Actual cost yang telah dikeluarkan
-- **Cost Performance Index (CPI):** Target ≥ 0.90
-- **Schedule Performance Index (SPI):** Target ≥ 0.95
+##### Manajemen Nilai Perolehan (EVM)
+- **Nilai Terencana (PV):** Baseline anggaran untuk pekerjaan selesai
+- **Nilai Perolehan (EV):** Nilai anggaran untuk pekerjaan aktual selesai  
+- **Biaya Aktual (AC):** Biaya aktual yang telah dikeluarkan
+- **Indeks Kinerja Biaya (CPI):** Target ≥ 0.90
+- **Indeks Kinerja Jadwal (SPI):** Target ≥ 0.95
 
-##### Budget Monitoring & Control
-1. **Weekly Cost Reviews:** Budget vs actual spending analysis
-2. **Variance Analysis:** Identification dan explanation of variances >5%
-3. **Forecasting:** Updated cost projections berdasarkan current performance
-4. **Change Control:** Formal budget change approval process
-5. **Risk Reserves:** Management reserve untuk identified risks
+##### Pemantauan & Pengendalian Anggaran
+1. **Review Biaya Mingguan:** Analisis anggaran vs pengeluaran aktual
+2. **Analisis Varians:** Identifikasi dan penjelasan varians >5%
+3. **Peramalan:** Proyeksi biaya terbaru berdasarkan kinerja saat ini
+4. **Pengendalian Perubahan:** Proses persetujuan perubahan anggaran formal
+5. **Cadangan Risiko:** Cadangan manajemen untuk risiko yang teridentifikasi
 
 ---
 
-## 4. KUALITAS PROYEK (PROJECT QUALITY MANAGEMENT)
+## 4. MANAJEMEN KUALITAS PROYEK
 
-### 4.1 Quality Management Framework
+### 4.1 Kerangka Kerja Manajemen Kualitas
 
-#### Quality Policy Statement
-"SATRIAMART SIMS akan dibangun dengan standar kualitas tertinggi yang memenuhi business requirements, technical specifications, dan user expectations, dengan zero tolerance untuk critical defects pada production release."
+#### Pernyataan Kebijakan Kualitas
+"SATRIAMART SIMS akan dibangun dengan standar kualitas tertinggi yang memenuhi kebutuhan bisnis, spesifikasi teknis, dan ekspektasi pengguna, dengan toleransi nol untuk cacat kritis pada rilis produksi."
 
-#### Quality Objectives
-1. **Functional Quality:** 100% critical requirements implemented correctly
-2. **Performance Quality:** System response time <3 seconds untuk 95% transactions
-3. **Reliability Quality:** 99.5% system uptime pada production environment
-4. **Security Quality:** Zero critical security vulnerabilities
-5. **Usability Quality:** User satisfaction score ≥90% dalam UAT
+#### Tujuan Kualitas
+1. **Kualitas Fungsional:** 100% kebutuhan kritis diimplementasikan dengan benar
+2. **Kualitas Kinerja:** Waktu respons sistem <3 detik untuk 95% transaksi
+3. **Kualitas Keandalan:** 99.5% waktu aktif sistem pada lingkungan produksi
+4. **Kualitas Keamanan:** Nol kerentanan keamanan kritis
+5. **Kualitas Kegunaan:** Skor kepuasan pengguna ≥90% dalam UAT
 
-### 4.2 Quality Standards & Metrics
+### 4.2 Standar & Metrik Kualitas
 
-#### A. Code Quality Standards
+#### A. Standar Kualitas Kode
 
-##### Development Standards
-| Metric | Target | Measurement Method |
+##### Standar Pengembangan
+| Metrik | Target | Metode Pengukuran |
 |--------|--------|--------------------|
-| **Code Coverage** | ≥85% | Automated testing tools |
-| **Code Complexity** | Cyclomatic complexity ≤10 | Static analysis tools |
-| **Code Duplication** | <5% | SonarQube analysis |
-| **Documentation Coverage** | ≥80% | Documentation review |
-| **Coding Standards Compliance** | 100% | Automated linting |
+| **Cakupan Kode** | ≥85% | Alat pengujian otomatis |
+| **Kompleksitas Kode** | Kompleksitas siklik ≤10 | Alat analisis statis |
+| **Duplikasi Kode** | <5% | Analisis SonarQube |
+| **Cakupan Dokumentasi** | ≥80% | Review dokumentasi |
+| **Kepatuhan Standar Koding** | 100% | Linting otomatis |
 
-##### Technical Debt Management
-- **Technical Debt Ratio:** <5% of total development effort
-- **Code Smells:** <100 minor issues per 10K lines of code
-- **Security Hotspots:** 0 critical, <5 major security issues
-- **Maintainability Index:** ≥70 (good maintainability rating)
+##### Manajemen Utang Teknis
+- **Rasio Utang Teknis:** <5% dari total upaya pengembangan
+- **Code Smells:** <100 masalah minor per 10K baris kode
+- **Hotspot Keamanan:** 0 kritis, <5 masalah keamanan mayor
+- **Indeks Pemeliharaan:** ≥70 (rating pemeliharaan baik)
 
-#### B. Functional Quality Standards
+#### B. Standar Kualitas Fungsional
 
-##### Requirements Traceability
-| Requirement Type | Traceability Target | Verification Method |
+##### Ketertelusuran Kebutuhan
+| Jenis Kebutuhan | Target Ketertelusuran | Metode Verifikasi |
 |------------------|-------------------|---------------------|
-| **Business Requirements** | 100% | Requirements matrix |
-| **Functional Requirements** | 100% | Test case mapping |
-| **Non-functional Requirements** | 100% | Performance testing |
-| **User Stories** | 100% | Acceptance criteria |
+| **Kebutuhan Bisnis** | 100% | Matriks kebutuhan |
+| **Kebutuhan Fungsional** | 100% | Pemetaan kasus uji |
+| **Kebutuhan Non-fungsional** | 100% | Pengujian kinerja |
+| **User Stories** | 100% | Kriteria penerimaan |
 
-##### Defect Management
-| Defect Severity | Target Resolution Time | Escalation Trigger |
+##### Manajemen Cacat
+| Tingkat Keparahan Cacat | Target Waktu Penyelesaian | Pemicu Eskalasi |
 |-----------------|----------------------|-------------------|
-| **Critical (System Down)** | 4 hours | Immediate |
-| **High (Major Function)** | 24 hours | 12 hours |
-| **Medium (Minor Function)** | 72 hours | 48 hours |
-| **Low (Cosmetic)** | 1 week | 5 days |
+| **Kritis (Sistem Down)** | 4 jam | Segera |
+| **Tinggi (Fungsi Mayor)** | 24 jam | 12 jam |
+| **Sedang (Fungsi Minor)** | 72 jam | 48 jam |
+| **Rendah (Kosmetik)** | 1 minggu | 5 hari |
 
-#### C. Performance Quality Standards
+#### C. Standar Kualitas Kinerja
 
-##### Performance Benchmarks
-| Performance Metric | Target | Measurement Condition |
+##### Benchmark Kinerja
+| Metrik Kinerja | Target | Kondisi Pengukuran |
 |--------------------|--------|--------------------|
-| **Page Load Time** | <3 seconds | 90th percentile |
-| **API Response Time** | <1 second | Average response |
-| **Database Query Time** | <500ms | Complex queries |
-| **Concurrent Users** | 100 users | Without degradation |
-| **Memory Usage** | <2GB | Peak usage |
-| **CPU Utilization** | <70% | Average load |
+| **Waktu Muat Halaman** | <3 detik | Persentil ke-90 |
+| **Waktu Respons API** | <1 detik | Respons rata-rata |
+| **Waktu Query Database** | <500ms | Query kompleks |
+| **Pengguna Bersamaan** | 100 pengguna | Tanpa degradasi |
+| **Penggunaan Memori** | <2GB | Penggunaan puncak |
+| **Utilisasi CPU** | <70% | Beban rata-rata |
 
-### 4.3 Quality Assurance Process
+### 4.3 Proses Jaminan Kualitas
 
-#### A. Quality Planning Phase
+#### A. Fase Perencanaan Kualitas
 
-##### Quality Planning Activities
-1. **Quality Standards Definition:** Establish quality criteria dan metrics
-2. **Quality Roles & Responsibilities:** Define QA team structure
-3. **Quality Tools Selection:** Choose appropriate testing tools
-4. **Quality Checkpoints:** Define review dan testing milestones
-5. **Quality Training Plan:** Ensure team competency on quality practices
+##### Aktivitas Perencanaan Kualitas
+1. **Definisi Standar Kualitas:** Menetapkan kriteria kualitas dan metrik
+2. **Peran & Tanggung Jawab Kualitas:** Mendefinisikan struktur tim QA
+3. **Seleksi Alat Kualitas:** Memilih alat pengujian yang sesuai
+4. **Checkpoint Kualitas:** Mendefinisikan review dan pencapaian pengujian
+5. **Rencana Pelatihan Kualitas:** Memastikan kompetensi tim pada praktik kualitas
 
-#### B. Quality Assurance Activities
+#### B. Aktivitas Jaminan Kualitas
 
-##### Code Review Process
+##### Proses Review Kode
 ```
-1. Developer Self-Review (100% of code)
+1. Self-Review Pengembang (100% kode)
    ↓
-2. Peer Code Review (100% of code)
+2. Review Kode Rekan (100% kode)
    ↓
-3. Technical Lead Review (Critical modules)
+3. Review Ketua Teknis (Modul kritis)
    ↓
-4. Architecture Review (Design changes)
+4. Review Arsitektur (Perubahan desain)
    ↓
-5. Quality Gate Approval
+5. Persetujuan Quality Gate
 ```
 
-##### Testing Strategy
+##### Strategi Pengujian
 ```
-Testing Pyramid:
-├── Unit Tests (70% of total tests)
-│   ● Individual function/method testing
+Piramida Pengujian:
+├── Pengujian Unit (70% dari total pengujian)
+│   ● Pengujian fungsi/metode individual
 │   ● Mock dependencies
-│   ● Fast execution (<5 minutes total)
+│   ● Eksekusi cepat (<5 menit total)
 │
-├── Integration Tests (20% of total tests)
-│   ● API endpoint testing
-│   ● Database integration
-│   ● Service layer testing
+├── Pengujian Integrasi (20% dari total pengujian)
+│   ● Pengujian endpoint API
+│   ● Integrasi basis data
+│   ● Pengujian lapisan layanan
 │
-└── End-to-End Tests (10% of total tests)
-    ● Complete user workflow
-    ● Cross-browser testing
-    ● Production-like environment
+└── Pengujian End-to-End (10% dari total pengujian)
+    ● Alur kerja pengguna lengkap
+    ● Pengujian lintas browser
+    ● Lingkungan mirip produksi
 ```
 
-#### C. Quality Control Activities
+#### C. Aktivitas Pengendalian Kualitas
 
-##### Testing Phases
-1. **Developer Testing**
-   - Unit testing dengan minimum 85% coverage
-   - Local integration testing
-   - Code quality checks (linting, formatting)
+##### Fase Pengujian
+1. **Pengujian Pengembang**
+   - Pengujian unit dengan minimum 85% cakupan
+   - Pengujian integrasi lokal
+   - Pemeriksaan kualitas kode (linting, formatting)
 
-2. **QA Team Testing**
-   - Functional testing berdasarkan test cases
-   - Regression testing untuk bug fixes
-   - Performance testing benchmarks
-   - Security vulnerability scanning
+2. **Pengujian Tim QA**
+   - Pengujian fungsional berdasarkan kasus uji
+   - Pengujian regresi untuk perbaikan bug
+   - Benchmark pengujian kinerja
+   - Pemindaian kerentanan keamanan
 
-3. **User Acceptance Testing**
-   - Business scenario validation
-   - User experience evaluation
-   - Production data simulation
-   - Sign-off dari business stakeholders
+3. **Pengujian Penerimaan Pengguna**
+   - Validasi skenario bisnis
+   - Evaluasi pengalaman pengguna
+   - Simulasi data produksi
+   - Persetujuan dari pemangku kepentingan bisnis
 
 ##### Quality Gates
-| Phase | Quality Gate Criteria | Exit Criteria |
-|-------|----------------------|---------------|
-| **Design Review** | Architecture approval, design consistency | Stakeholder sign-off |
-| **Code Complete** | Code coverage ≥85%, peer review complete | No critical defects |
-| **System Testing** | All test cases pass, performance targets met | Test execution ≥95% |
-| **UAT Complete** | User acceptance ≥90%, critical scenarios pass | Business sign-off |
-| **Production Ready** | Security scan clean, deployment tested | Go-live approval |
+| Fase | Kriteria Quality Gate | Kriteria Keluar |
+|-------|----------------------|----------------|
+| **Review Desain** | Persetujuan arsitektur, konsistensi desain | Persetujuan pemangku kepentingan |
+| **Kode Selesai** | Cakupan kode ≥85%, review rekan selesai | Tidak ada cacat kritis |
+| **Pengujian Sistem** | Semua kasus uji lulus, target kinerja tercapai | Eksekusi pengujian ≥95% |
+| **UAT Selesai** | Penerimaan pengguna ≥90%, skenario kritis lulus | Persetujuan bisnis |
+| **Siap Produksi** | Pemindaian keamanan bersih, implementasi teruji | Persetujuan go-live |
 
-### 4.4 Quality Tools & Techniques
+### 4.4 Alat & Teknik Kualitas
 
-#### A. Automated Quality Tools
+#### A. Alat Kualitas Otomatis
 
-##### Code Quality Tools
-- **Static Analysis:** SonarQube untuk code quality metrics
+##### Alat Kualitas Kode
+- **Analisis Statis:** SonarQube untuk metrik kualitas kode
 - **Linting:** ESLint (JavaScript), PHP CodeSniffer (PHP)
-- **Dependency Check:** OWASP Dependency Check untuk security
-- **Code Formatting:** Prettier untuk consistent code style
+- **Pemeriksaan Dependensi:** OWASP Dependency Check untuk keamanan
+- **Format Kode:** Prettier untuk gaya kode konsisten
 
-##### Testing Tools
-- **Unit Testing:** PHPUnit untuk backend, Jest untuk frontend
-- **Integration Testing:** Postman/Newman untuk API testing
-- **E2E Testing:** Laravel Dusk untuk browser automation
-- **Performance Testing:** Apache JMeter untuk load testing
-- **Security Testing:** OWASP ZAP untuk vulnerability scanning
+##### Alat Pengujian
+- **Pengujian Unit:** PHPUnit untuk backend, Jest untuk frontend
+- **Pengujian Integrasi:** Postman/Newman untuk pengujian API
+- **Pengujian E2E:** Laravel Dusk untuk otomatisasi browser
+- **Pengujian Kinerja:** Apache JMeter untuk pengujian beban
+- **Pengujian Keamanan:** OWASP ZAP untuk pemindaian kerentanan
 
-#### B. Quality Monitoring & Reporting
+#### B. Pemantauan & Pelaporan Kualitas
 
-##### Quality Dashboards
-1. **Development Quality Dashboard**
-   - Real-time code coverage metrics
-   - Build success/failure rates
-   - Code quality trends
-   - Technical debt tracking
+##### Dashboard Kualitas
+1. **Dashboard Kualitas Pengembangan**
+   - Metrik cakupan kode waktu nyata
+   - Tingkat keberhasilan/kegagalan build
+   - Tren kualitas kode
+   - Pelacakan utang teknis
 
-2. **Testing Quality Dashboard**
-   - Test execution status
-   - Defect discovery trends
-   - Test coverage reports
-   - Performance benchmarks
+2. **Dashboard Kualitas Pengujian**
+   - Status eksekusi pengujian
+   - Tren penemuan cacat
+   - Laporan cakupan pengujian
+   - Benchmark kinerja
 
-3. **Production Quality Dashboard**
-   - System uptime monitoring
-   - Performance metrics
-   - Error rate tracking
-   - User satisfaction scores
+3. **Dashboard Kualitas Produksi**
+   - Pemantauan waktu aktif sistem
+   - Metrik kinerja
+   - Pelacakan tingkat kesalahan
+   - Skor kepuasan pengguna
 
-##### Quality Reports
-- **Weekly Quality Report:** Quality metrics summary untuk stakeholders
-- **Milestone Quality Review:** Comprehensive quality assessment
-- **Defect Analysis Report:** Root cause analysis dan prevention measures
-- **Final Quality Report:** Complete quality achievement documentation
+##### Laporan Kualitas
+- **Laporan Kualitas Mingguan:** Ringkasan metrik kualitas untuk pemangku kepentingan
+- **Review Kualitas Pencapaian:** Penilaian kualitas komprehensif
+- **Laporan Analisis Cacat:** Analisis akar penyebab dan tindakan pencegahan
+- **Laporan Kualitas Akhir:** Dokumentasi pencapaian kualitas lengkap
 
 ---
 
-## 5. SUMBER DAYA PROYEK (PROJECT RESOURCE MANAGEMENT)
+## 5. MANAJEMEN SUMBER DAYA PROYEK
 
-### 5.1 Human Resource Structure
+### 5.1 Struktur Sumber Daya Manusia
 
-#### A. Project Organization Chart
+#### A. Bagan Organisasi Proyek
 
 ```
-                    Project Sponsor
-                  (SATRIAMART Management)
+                    Sponsor Proyek
+                  (Manajemen SATRIAMART)
                            |
-                    Steering Committee
-                    (Business Stakeholders)
+                    Komite Pengarah
+                  (Pemangku Kepentingan Bisnis)
                            |
-                     Project Manager
-                    (Overall Leadership)
+                     Manajer Proyek
+                   (Kepemimpinan Keseluruhan)
                            |
         ┌──────────────────┼──────────────────┐
-   Technical Lead      Business Analyst    Quality Manager
+   Ketua Teknis        Analis Bisnis      Manajer Kualitas
         |                    |                    |
     ┌───┼───┐           ┌────┼────┐          ┌────┼────┐
-   Dev  DevOps       SME   Trainer        QA    Security
-  Team  Engineer                         Team     QA
+   Tim  Insinyur       SME   Pelatih       Tim    QA
+  Dev  DevOps                             QA   Keamanan
 ```
 
-#### B. Roles & Responsibilities Matrix (RACI)
+#### B. Matriks Peran & Tanggung Jawab (RACI)
 
-| Activity | PM | TL | Dev | BA | QA | SME | Sponsor |
+| Aktivitas | PM | TL | Dev | BA | QA | SME | Sponsor |
 |----------|----|----|-----|----|----|-----|---------|
-| **Project Charter** | A | C | I | C | I | C | R |
-| **Requirements Gathering** | C | C | I | A | I | R | C |
-| **System Design** | C | A | C | C | I | C | I |
-| **Development** | C | R | A | I | I | I | I |
-| **Testing** | C | C | C | I | A | C | I |
-| **Deployment** | R | A | C | I | C | I | C |
-| **Training** | C | I | I | C | I | A | I |
+| **Piagam Proyek** | A | C | I | C | I | C | R |
+| **Pengumpulan Kebutuhan** | C | C | I | A | I | R | C |
+| **Desain Sistem** | C | A | C | C | I | C | I |
+| **Pengembangan** | C | R | A | I | I | I | I |
+| **Pengujian** | C | C | C | I | A | C | I |
+| **Implementasi** | R | A | C | I | C | I | C |
+| **Pelatihan** | C | I | I | C | I | A | I |
 
-**Legend:** R=Responsible, A=Accountable, C=Consulted, I=Informed
+**Keterangan:** R=Bertanggung jawab, A=Akuntabel, C=Dikonsultasi, I=Diinformasikan
 
-### 5.2 Detailed Resource Allocation
+### 5.2 Alokasi Sumber Daya Terperinci
 
-#### A. Core Team Members
+#### A. Anggota Tim Inti
 
-##### 1. Project Manager (1 FTE)
-**Primary Responsibilities:**
-- Overall project leadership dan coordination
-- Stakeholder management dan communication
-- Risk management dan issue resolution
-- Budget monitoring dan resource allocation
-- Schedule management dan milestone tracking
+##### 1. Manajer Proyek (1 FTE)
+**Tanggung Jawab Utama:**
+- Kepemimpinan dan koordinasi proyek keseluruhan
+- Manajemen pemangku kepentingan dan komunikasi
+- Manajemen risiko dan penyelesaian masalah
+- Pemantauan anggaran dan alokasi sumber daya
+- Manajemen jadwal dan pelacakan pencapaian
 
-**Required Skills & Experience:**
-- PMP/PRINCE2 certification preferred
-- 3+ years project management experience
-- Strong communication dan leadership skills
-- Experience dengan IT projects
-- Stakeholder management expertise
+**Keterampilan & Pengalaman yang Dibutuhkan:**
+- Sertifikasi PMP/PRINCE2 diutamakan
+- Pengalaman manajemen proyek 3+ tahun
+- Keterampilan komunikasi dan kepemimpinan yang kuat
+- Pengalaman dengan proyek TI
+- Keahlian manajemen pemangku kepentingan
 
-**Time Allocation:**
-- Week 1-7: 100% dedicated (35 days total)
-- Daily availability: 8 hours/day
-- Key activities: Planning, monitoring, stakeholder communication
+**Alokasi Waktu:**
+- Minggu 1-7: 100% terdedikasi (35 hari total)
+- Ketersediaan harian: 8 jam/hari
+- Aktivitas kunci: Perencanaan, pemantauan, komunikasi pemangku kepentingan
 
-##### 2. Technical Lead (1 FTE)
-**Primary Responsibilities:**
-- Technical architecture design dan decisions
-- Code review dan quality assurance
-- Technical risk identification dan mitigation
-- Developer mentoring dan guidance
-- Technology stack evaluation dan selection
+##### 2. Ketua Teknis (1 FTE)
+**Tanggung Jawab Utama:**
+- Desain arsitektur teknis dan keputusan
+- Review kode dan jaminan kualitas
+- Identifikasi dan mitigasi risiko teknis
+- Mentoring dan bimbingan pengembang
+- Evaluasi dan seleksi stack teknologi
 
-**Required Skills & Experience:**
-- 5+ years software development experience
-- Expertise in Laravel, PHP, MySQL
-- Full-stack development capabilities
-- Architecture design experience
-- Team leadership experience
+**Keterampilan & Pengalaman yang Dibutuhkan:**
+- Pengalaman pengembangan perangkat lunak 5+ tahun
+- Keahlian dalam Laravel, PHP, MySQL
+- Kemampuan pengembangan full-stack
+- Pengalaman desain arsitektur
+- Pengalaman kepemimpinan tim
 
-**Time Allocation:**
-- Week 1-3: 80% (Design phase)
-- Week 4-6: 100% (Development phase)
-- Week 7: 60% (Deployment phase)
-- Total: 28 days equivalent
+**Alokasi Waktu:**
+- Minggu 1-3: 80% (Fase desain)
+- Minggu 4-6: 100% (Fase pengembangan)
+- Minggu 7: 60% (Fase implementasi)
+- Total: 28 hari setara
 
-##### 3. Software Developer (2 FTE)
-**Primary Responsibilities:**
-- Backend API development (Laravel/PHP)
-- Frontend implementation (HTML/CSS/JavaScript)
-- Database design dan implementation
-- Unit testing dan code documentation
-- Bug fixing dan performance optimization
+##### 3. Pengembang Perangkat Lunak (2 FTE)
+**Tanggung Jawab Utama:**
+- Pengembangan API backend (Laravel/PHP)
+- Implementasi frontend (HTML/CSS/JavaScript)
+- Desain dan implementasi basis data
+- Pengujian unit dan dokumentasi kode
+- Perbaikan bug dan optimisasi kinerja
 
-**Required Skills & Experience:**
-- 2+ years web development experience
-- Proficiency in PHP, Laravel framework
-- Frontend skills: HTML5, CSS3, JavaScript
-- Database skills: MySQL, SQL optimization
-- Version control: Git experience
+**Keterampilan & Pengalaman yang Dibutuhkan:**
+- Pengalaman pengembangan web 2+ tahun
+- Kemahiran dalam PHP, framework Laravel
+- Keterampilan frontend: HTML5, CSS3, JavaScript
+- Keterampilan database: MySQL, optimasi SQL
+- Kontrol versi: Pengalaman Git
 
-**Time Allocation:**
-- Developer 1: Week 1-7, 100% (35 days)
-- Developer 2: Week 4-7, 100% (20 days)
-- Combined effort: 55 person-days
-- Focus areas: Backend (60%), Frontend (40%)
+**Alokasi Waktu:**
+- Pengembang 1: Minggu 1-7, 100% (35 hari)
+- Pengembang 2: Minggu 4-7, 100% (20 hari)
+- Upaya gabungan: 55 hari-orang
+- Area fokus: Backend (60%), Frontend (40%)
 
-##### 4. Business Analyst (1 FTE)
-**Primary Responsibilities:**
-- Business requirements gathering dan analysis
-- Stakeholder interviews dan workshops
-- Process modeling dan documentation
-- User story creation dan validation
-- UAT coordination dan support
+##### 4. Analis Bisnis (1 FTE)
+**Tanggung Jawab Utama:**
+- Pengumpulan dan analisis kebutuhan bisnis
+- Wawancara dan workshop pemangku kepentingan
+- Pemodelan dan dokumentasi proses
+- Pembuatan dan validasi user story
+- Koordinasi dan dukungan UAT
 
-**Required Skills & Experience:**
-- 3+ years business analysis experience
-- Requirements gathering expertise
-- Process modeling skills (BPMN)
-- Stakeholder communication skills
-- Domain knowledge in manufacturing/retail
+**Keterampilan & Pengalaman yang Dibutuhkan:**
+- Pengalaman analisis bisnis 3+ tahun
+- Keahlian pengumpulan kebutuhan
+- Keterampilan pemodelan proses (BPMN)
+- Keterampilan komunikasi pemangku kepentingan
+- Pengetahuan domain di manufaktur/ritel
 
-**Time Allocation:**
-- Week 1-3: 100% (Requirements phase)
-- Week 4-5: 40% (Development support)
-- Week 6-7: 60% (Testing support)
-- Total: 21 days equivalent
+**Alokasi Waktu:**
+- Minggu 1-3: 100% (Fase kebutuhan)
+- Minggu 4-5: 40% (Dukungan pengembangan)
+- Minggu 6-7: 60% (Dukungan pengujian)
+- Total: 21 hari setara
 
-##### 5. Quality Assurance Engineer (1 FTE)
-**Primary Responsibilities:**
-- Test plan creation dan execution
-- Automated testing setup dan maintenance
-- Bug identification, tracking, dan verification
-- Performance testing dan optimization
-- User acceptance testing coordination
+##### 5. Insinyur Jaminan Kualitas (1 FTE)
+**Tanggung Jawab Utama:**
+- Pembuatan dan eksekusi rencana uji
+- Pengaturan dan pemeliharaan pengujian otomatis
+- Identifikasi, pelacakan, dan verifikasi bug
+- Pengujian dan optimisasi kinerja
+- Koordinasi pengujian penerimaan pengguna
 
-**Required Skills & Experience:**
-- 2+ years QA/testing experience
-- Test automation skills (Selenium, PHPUnit)
-- Performance testing tools (JMeter)
-- Bug tracking tools (Jira, Bugzilla)
+**Keterampilan & Pengalaman yang Dibutuhkan:**
+- Pengalaman QA/pengujian 2+ tahun
+- Keterampilan otomatisasi pengujian (Selenium, PHPUnit)
+- Alat pengujian kinerja (JMeter)
+- Alat pelacakan bug (Jira, Bugzilla)
 - API testing expertise (Postman)
 
-**Time Allocation:**
-- Week 3-4: 40% (Test planning)
-- Week 5-6: 100% (Testing execution)
-- Week 7: 80% (UAT support)
-- Total: 18 days equivalent
+**Alokasi Waktu:**
+- Minggu 3-4: 40% (Perencanaan pengujian)
+- Minggu 5-6: 100% (Eksekusi pengujian)
+- Minggu 7: 80% (Dukungan UAT)
+- Total: 18 hari setara
 
-#### B. Supporting Resources
+#### B. Sumber Daya Pendukung
 
-##### 6. UI/UX Designer (0.4 FTE)
-**Primary Responsibilities:**
-- User interface wireframes dan mockups
-- User experience design dan validation
-- Responsive design specifications
-- Visual design dan branding consistency
-- Usability testing support
+##### 6. Perancang UI/UX (0.4 FTE)
+**Tanggung Jawab Utama:**
+- Wireframe dan mockup antarmuka pengguna
+- Desain dan validasi pengalaman pengguna
+- Spesifikasi desain responsif
+- Konsistensi desain visual dan branding
+- Dukungan pengujian kegunaan
 
-**Time Allocation:** Week 3-4, 40% allocation (4 days total)
+**Alokasi Waktu:** Minggu 3-4, alokasi 40% (4 hari total)
 
-##### 7. DevOps Engineer (0.2 FTE)
-**Primary Responsibilities:**
-- Development environment setup
-- CI/CD pipeline configuration
-- Production deployment automation
-- Monitoring dan logging setup
-- Infrastructure as Code implementation
+##### 7. Insinyur DevOps (0.2 FTE)
+**Tanggung Jawab Utama:**
+- Pengaturan lingkungan pengembangan
+- Konfigurasi pipeline CI/CD
+- Otomatisasi implementasi produksi
+- Pengaturan pemantauan dan logging
+- Implementasi Infrastructure as Code
 
-**Time Allocation:** Week 1 & Week 6-7, 20% allocation (3 days total)
+**Alokasi Waktu:** Minggu 1 & Minggu 6-7, alokasi 20% (3 hari total)
 
-##### 8. Business Subject Matter Expert (0.3 FTE)
-**Primary Responsibilities:**
-- Business domain expertise dan guidance
-- Requirements validation dari business perspective
-- User acceptance criteria definition
-- Training content review
-- Change management support
+##### 8. Pakar Subjek Bisnis (0.3 FTE)
+**Tanggung Jawab Utama:**
+- Keahlian dan bimbingan domain bisnis
+- Validasi kebutuhan dari perspektif bisnis
+- Definisi kriteria penerimaan pengguna
+- Review konten pelatihan
+- Dukungan manajemen perubahan
 
-**Time Allocation:** Week 2-3 & Week 7, 30% allocation (5 days total)
+**Alokasi Waktu:** Minggu 2-3 & Minggu 7, alokasi 30% (5 hari total)
 
-### 5.3 Resource Acquisition Plan
+### 5.3 Rencana Akuisisi Sumber Daya
 
-#### A. Internal vs External Resources
+#### A. Sumber Daya Internal vs Eksternal
 
-##### Internal Resources (60%)
-- **Project Manager:** Internal assignment dari IT department
-- **Business Analyst:** Internal resource dari business unit
-- **Subject Matter Expert:** SATRIAMART business users
-- **End User Testers:** Existing SATRIAMART staff
+##### Sumber Daya Internal (60%)
+- **Manajer Proyek:** Penugasan internal dari departemen TI
+- **Analis Bisnis:** Sumber daya internal dari unit bisnis
+- **Pakar Subjek:** Pengguna bisnis SATRIAMART
+- **Penguji Pengguna Akhir:** Staf SATRIAMART yang ada
 
-##### External Resources (40%)
-- **Technical Lead:** External consultant (contract)
-- **Software Developers:** Mix of contract dan freelance
-- **QA Engineer:** External testing specialist
-- **UI/UX Designer:** Freelance designer
+##### Sumber Daya Eksternal (40%)
+- **Ketua Teknis:** Konsultan eksternal (kontrak)
+- **Pengembang Perangkat Lunak:** Campuran kontrak dan freelance
+- **Insinyur QA:** Spesialis pengujian eksternal
+- **Perancang UI/UX:** Perancang freelance
 
-#### B. Resource Procurement Strategy
+#### B. Strategi Pengadaan Sumber Daya
 
-##### Vendor Selection Criteria
-1. **Technical Competency:** Demonstrated expertise dalam required technologies
-2. **Experience:** Minimum experience requirements untuk each role
-3. **Availability:** Full availability during project timeline
-4. **Cost Effectiveness:** Competitive rates within budget constraints
-5. **Cultural Fit:** Alignment dengan project team dynamics
+##### Kriteria Seleksi Vendor
+1. **Kompetensi Teknis:** Keahlian yang terbukti dalam teknologi yang diperlukan
+2. **Pengalaman:** Persyaratan pengalaman minimum untuk setiap peran
+3. **Ketersediaan:** Ketersediaan penuh selama jadwal proyek
+4. **Efektivitas Biaya:** Tarif kompetitif dalam batasan anggaran
+5. **Kesesuaian Budaya:** Keselarasan dengan dinamika tim proyek
 
-##### Onboarding Process
-1. **Week -1:** Resource identification dan selection
-2. **Day 1:** Project orientation dan team introduction
-3. **Day 2:** Technical setup dan access provisioning
-4. **Day 3:** Detailed role briefing dan expectation setting
-5. **Week 1:** Integration dengan existing team members
+##### Proses Onboarding
+1. **Minggu -1:** Identifikasi dan seleksi sumber daya
+2. **Hari 1:** Orientasi proyek dan perkenalan tim
+3. **Hari 2:** Pengaturan teknis dan penyediaan akses
+4. **Hari 3:** Briefing peran terperinci dan pengaturan ekspektasi
+5. **Minggu 1:** Integrasi dengan anggota tim yang ada
 
-### 5.4 Resource Management Plan
+### 5.4 Rencana Manajemen Sumber Daya
 
-#### A. Resource Loading & Leveling
+#### A. Pembebanan & Perataan Sumber Daya
 
-##### Resource Utilization Chart
+##### Bagan Utilisasi Sumber Daya
 ```
-Week 1: PM(100%), BA(100%), SME(50%)
-Week 2: PM(100%), BA(100%), SME(50%)
-Week 3: PM(100%), BA(100%), TL(80%), Designer(40%)
-Week 4: PM(100%), TL(100%), Dev1(100%), Dev2(100%), QA(40%)
-Week 5: PM(100%), TL(100%), Dev1(100%), Dev2(100%), QA(100%)
-Week 6: PM(100%), TL(100%), Dev1(100%), Dev2(100%), QA(100%)
-Week 7: PM(100%), TL(60%), QA(80%), DevOps(20%), SME(30%)
-```
-
-##### Peak Resource Period
-- **Week 4-6:** Maximum resource utilization (5.4 FTE)
-- **Critical Period:** Week 5 (development sprint)
-- **Resource Conflicts:** Potential conflicts selama peak periods
-
-#### B. Resource Performance Management
-
-##### Performance Monitoring
-1. **Daily Standups:** Task progress dan resource utilization tracking
-2. **Weekly Performance Reviews:** Individual performance assessment
-3. **Milestone Reviews:** Resource contribution evaluation
-4. **360-Degree Feedback:** Cross-functional performance feedback
-
-##### Performance Metrics
-| Metric | Target | Frequency | Action Threshold |
-|--------|--------|-----------|------------------|
-| **Task Completion Rate** | 95% | Daily | <85% daily |
-| **Quality Standards** | 100% | Weekly | Any non-compliance |
-| **Collaboration Rating** | >4.0/5 | Bi-weekly | <3.5/5 rating |
-| **Availability** | 95% | Daily | <90% availability |
-
-#### C. Resource Risk Management
-
-##### Resource Risks & Mitigation
-1. **Key Person Risk**
-   - Risk: Critical team member unavailability
-   - Mitigation: Cross-training, documentation, backup resources
-
-2. **Skill Gap Risk**
-   - Risk: Technical expertise shortage
-   - Mitigation: Training programs, external mentoring, expert consultation
-
-3. **Resource Conflict Risk**
-   - Risk: Multiple projects competing for same resources
-   - Mitigation: Resource prioritization, stakeholder agreement, buffer planning
-
-4. **Performance Risk**
-   - Risk: Underperforming team members
-   - Mitigation: Performance monitoring, coaching, replacement planning
-
----
-
-## 6. INTEGRATION & INTERDEPENDENCIES
-
-### 6.1 Knowledge Area Integration
-
-#### Triple Constraint Integration
-```
-SCOPE ←→ TIME ←→ COST
-  ↑        ↑       ↑
-  └─ QUALITY ←→ RESOURCE
+Minggu 1: PM(100%), BA(100%), SME(50%)
+Minggu 2: PM(100%), BA(100%), SME(50%)
+Minggu 3: PM(100%), BA(100%), TL(80%), Designer(40%)
+Minggu 4: PM(100%), TL(100%), Dev1(100%), Dev2(100%), QA(40%)
+Minggu 5: PM(100%), TL(100%), Dev1(100%), Dev2(100%), QA(100%)
+Minggu 6: PM(100%), TL(100%), Dev1(100%), Dev2(100%), QA(100%)
+Minggu 7: PM(100%), TL(60%), QA(80%), DevOps(20%), SME(30%)
 ```
 
-**Integration Points:**
-- **Scope-Time:** Requirements complexity impacts development duration
-- **Time-Cost:** Schedule compression requires additional resources
-- **Cost-Quality:** Budget constraints affect quality assurance depth
-- **Quality-Resource:** Quality standards determine required skill levels
-- **Resource-Scope:** Team capabilities limit achievable scope
+##### Periode Puncak Sumber Daya
+- **Minggu 4-6:** Utilisasi sumber daya maksimum (5.4 FTE)
+- **Periode Kritis:** Minggu 5 (sprint pengembangan)
+- **Konflik Sumber Daya:** Konflik potensial selama periode puncak
 
-### 6.2 Success Criteria Integration
+#### B. Manajemen Kinerja Sumber Daya
 
-#### Integrated Success Metrics
-| Success Factor | Scope Impact | Time Impact | Cost Impact | Quality Impact | Resource Impact |
-|----------------|--------------|-------------|-------------|----------------|-----------------|
-| **Requirements Clarity** | ✅ Reduces scope creep | ✅ Prevents rework delays | ✅ Avoids cost overruns | ✅ Improves quality | ✅ Efficient resource use |
-| **Stakeholder Engagement** | ✅ Scope validation | ✅ Faster approvals | ✅ Budget support | ✅ Quality standards | ✅ Resource commitment |
-| **Technical Excellence** | ✅ Feature completeness | ✅ Development efficiency | ✅ Reduces defect costs | ✅ High quality delivery | ✅ Team productivity |
-| **Project Management** | ✅ Scope control | ✅ Schedule adherence | ✅ Budget control | ✅ Quality assurance | ✅ Resource optimization |
+##### Pemantauan Kinerja
+1. **Standup Harian:** Pelacakan kemajuan tugas dan utilisasi sumber daya
+2. **Review Kinerja Mingguan:** Penilaian kinerja individu
+3. **Review Pencapaian:** Evaluasi kontribusi sumber daya
+4. **Umpan Balik 360 Derajat:** Umpan balik kinerja lintas-fungsional
 
----
+##### Metrik Kinerja
+| Metrik | Target | Frekuensi | Ambang Tindakan |
+|--------|--------|-----------|-----------------|
+| **Tingkat Penyelesaian Tugas** | 95% | Harian | <85% harian |
+| **Standar Kualitas** | 100% | Mingguan | Ketidakpatuhan apapun |
+| **Rating Kolaborasi** | >4.0/5 | Dua mingguan | <3.5/5 rating |
+| **Ketersediaan** | 95% | Harian | <90% ketersediaan |
 
-## 7. MONITORING & CONTROL FRAMEWORK
+#### C. Manajemen Risiko Sumber Daya
 
-### 7.1 Integrated Monitoring Dashboard
+##### Risiko Sumber Daya & Mitigasi
+1. **Risiko Orang Kunci**
+   - Risiko: Ketidaktersediaan anggota tim kritis
+   - Mitigasi: Pelatihan silang, dokumentasi, sumber daya cadangan
 
-#### Executive Dashboard Metrics
-- **Schedule Health:** SPI (Schedule Performance Index)
-- **Budget Health:** CPI (Cost Performance Index)
-- **Scope Health:** Requirements completion percentage
-- **Quality Health:** Defect density dan customer satisfaction
-- **Resource Health:** Team productivity dan utilization rates
+2. **Risiko Kesenjangan Keterampilan**
+   - Risiko: Kekurangan keahlian teknis
+   - Mitigasi: Program pelatihan, mentoring eksternal, konsultasi ahli
 
-### 7.2 Risk Integration Matrix
+3. **Risiko Konflik Sumber Daya**
+   - Risiko: Beberapa proyek bersaing untuk sumber daya yang sama
+   - Mitigasi: Prioritas sumber daya, kesepakatan pemangku kepentingan, perencanaan buffer
 
-#### Cross-Knowledge Area Risks
-| Risk Category | Scope Risk | Time Risk | Cost Risk | Quality Risk | Resource Risk |
-|---------------|------------|-----------|-----------|--------------|---------------|
-| **Technical** | Feature complexity | Development delays | Additional expertise costs | Technical debt | Skill requirements |
-| **Business** | Scope creep | Requirement changes | Budget approvals | User acceptance | SME availability |
-| **External** | Vendor dependencies | Third-party delays | License costs | Integration quality | External resource |
-
----
-
-## 8. CONCLUSION & RECOMMENDATIONS
-
-### 8.1 Project Readiness Assessment
-
-#### Readiness Score: 92/100 (Excellent)
-- **Scope Definition:** 95/100 (Well-defined dengan clear boundaries)
-- **Schedule Feasibility:** 90/100 (Tight but achievable dengan proper management)
-- **Budget Adequacy:** 90/100 (Realistic budget dengan appropriate reserves)
-- **Quality Framework:** 95/100 (Comprehensive quality management approach)
-- **Resource Availability:** 90/100 (Mixed internal/external resources dengan good plan)
-
-### 8.2 Critical Success Recommendations
-
-1. **Strengthen Change Control:** Implement rigid scope change process
-2. **Resource Backup Planning:** Identify backup resources untuk critical roles
-3. **Quality Gate Enforcement:** Strict adherence to quality checkpoints
-4. **Stakeholder Communication:** Maintain regular dan transparent communication
-5. **Risk Monitoring:** Weekly risk assessment dan mitigation updates
-
-### 8.3 Go/No-Go Recommendation
-
-**RECOMMENDATION: GO**
-
-Proyek SATRIAMART SIMS memiliki strong foundation dalam semua 5 knowledge areas critical untuk project success. Dengan proper execution dari rencana yang telah disusun, proyek ini memiliki high probability of success.
-
-**Next Steps:**
-1. Stakeholder approval untuk project plan
-2. Resource procurement dan onboarding
-3. Project kickoff meeting
-4. Baseline establishment
-5. Execution phase initiation
+4. **Risiko Kinerja**
+   - Risiko: Anggota tim yang berkinerja buruk
+   - Mitigasi: Pemantauan kinerja, coaching, perencanaan penggantian
 
 ---
 
-*Dokumen ini disusun sebagai deliverable Pertemuan 2 mata kuliah Proyek Sistem Informasi untuk memenuhi requirement manajemen proyek yang komprehensif.*
+## 6. INTEGRASI & KETERGANTUNGAN ANTAR AREA
+
+### 6.1 Integrasi Area Pengetahuan
+
+#### Integrasi Triple Constraint
+```
+RUANG LINGKUP ←→ WAKTU ←→ BIAYA
+       ↑              ↑        ↑
+       └─── KUALITAS ←→ SUMBER DAYA
+```
+
+**Titik Integrasi:**
+- **Ruang Lingkup-Waktu:** Kompleksitas kebutuhan mempengaruhi durasi pengembangan
+- **Waktu-Biaya:** Kompresi jadwal memerlukan sumber daya tambahan
+- **Biaya-Kualitas:** Batasan anggaran mempengaruhi kedalaman jaminan kualitas
+- **Kualitas-Sumber Daya:** Standar kualitas menentukan tingkat keterampilan yang diperlukan
+- **Sumber Daya-Ruang Lingkup:** Kemampuan tim membatasi ruang lingkup yang dapat dicapai
+
+### 6.2 Integrasi Kriteria Keberhasilan
+
+#### Metrik Keberhasilan Terintegrasi
+| Faktor Keberhasilan | Dampak Ruang Lingkup | Dampak Waktu | Dampak Biaya | Dampak Kualitas | Dampak Sumber Daya |
+|---------------------|---------------------|--------------|--------------|-----------------|-------------------|
+| **Kejelasan Kebutuhan** | ✅ Mengurangi scope creep | ✅ Mencegah keterlambatan rework | ✅ Menghindari biaya berlebih | ✅ Meningkatkan kualitas | ✅ Penggunaan sumber daya efisien |
+| **Keterlibatan Pemangku Kepentingan** | ✅ Validasi ruang lingkup | ✅ Persetujuan lebih cepat | ✅ Dukungan anggaran | ✅ Standar kualitas | ✅ Komitmen sumber daya |
+| **Keunggulan Teknis** | ✅ Kelengkapan fitur | ✅ Efisiensi pengembangan | ✅ Mengurangi biaya cacat | ✅ Pengiriman berkualitas tinggi | ✅ Produktivitas tim |
+| **Manajemen Proyek** | ✅ Kontrol ruang lingkup | ✅ Kepatuhan jadwal | ✅ Kontrol anggaran | ✅ Jaminan kualitas | ✅ Optimisasi sumber daya |
 
 ---
 
-**Prepared by:** [Nama Kelompok]  
-**Date:** October 7, 2025  
-**Document Version:** 1.0  
-**Review Status:** Ready for Stakeholder Approval
+## 7. KERANGKA KERJA PEMANTAUAN & PENGENDALIAN
+
+### 7.1 Dashboard Pemantauan Terintegrasi
+
+#### Metrik Dashboard Eksekutif
+- **Kesehatan Jadwal:** SPI (Indeks Kinerja Jadwal)
+- **Kesehatan Anggaran:** CPI (Indeks Kinerja Biaya)
+- **Kesehatan Ruang Lingkup:** Persentase penyelesaian kebutuhan
+- **Kesehatan Kualitas:** Kepadatan cacat dan kepuasan pelanggan
+- **Kesehatan Sumber Daya:** Produktivitas tim dan tingkat utilisasi
+
+### 7.2 Matriks Integrasi Risiko
+
+#### Risiko Lintas Area Pengetahuan
+| Kategori Risiko | Risiko Ruang Lingkup | Risiko Waktu | Risiko Biaya | Risiko Kualitas | Risiko Sumber Daya |
+|-----------------|----------------------|--------------|--------------|-----------------|-------------------|
+| **Teknis** | Kompleksitas fitur | Keterlambatan pengembangan | Biaya keahlian tambahan | Utang teknis | Persyaratan keterampilan |
+| **Bisnis** | Scope creep | Perubahan kebutuhan | Persetujuan anggaran | Penerimaan pengguna | Ketersediaan SME |
+| **Eksternal** | Ketergantungan vendor | Keterlambatan pihak ketiga | Biaya lisensi | Kualitas integrasi | Sumber daya eksternal |
+
+---
+
+## 8. KESIMPULAN & REKOMENDASI
+
+### 8.1 Penilaian Kesiapan Proyek
+
+#### Skor Kesiapan: 92/100 (Sangat Baik)
+- **Definisi Ruang Lingkup:** 95/100 (Terdefinisi dengan baik dengan batasan yang jelas)
+- **Kelayakan Jadwal:** 90/100 (Ketat namun dapat dicapai dengan manajemen yang tepat)
+- **Kecukupan Anggaran:** 90/100 (Anggaran realistis dengan cadangan yang sesuai)
+- **Kerangka Kualitas:** 95/100 (Pendekatan manajemen kualitas yang komprehensif)
+- **Ketersediaan Sumber Daya:** 90/100 (Sumber daya internal/eksternal campuran dengan rencana yang baik)
+
+### 8.2 Rekomendasi Keberhasilan Kritis
+
+1. **Memperkuat Pengendalian Perubahan:** Implementasi proses perubahan ruang lingkup yang ketat
+2. **Perencanaan Cadangan Sumber Daya:** Identifikasi sumber daya cadangan untuk peran kritis
+3. **Penegakan Quality Gate:** Kepatuhan ketat pada checkpoint kualitas
+4. **Komunikasi Pemangku Kepentingan:** Menjaga komunikasi yang teratur dan transparan
+5. **Pemantauan Risiko:** Penilaian risiko mingguan dan pembaruan mitigasi
+
+### 8.3 Rekomendasi Go/No-Go
+
+**REKOMENDASI: GO**
+
+Proyek SATRIAMART SIMS memiliki fondasi yang kuat dalam semua 5 area pengetahuan yang kritis untuk keberhasilan proyek. Dengan eksekusi yang tepat dari rencana yang telah disusun, proyek ini memiliki probabilitas keberhasilan yang tinggi.
+
+**Langkah Selanjutnya:**
+1. Persetujuan pemangku kepentingan untuk rencana proyek
+2. Pengadaan dan onboarding sumber daya
+3. Rapat kickoff proyek
+4. Penetapan baseline
+5. Inisiasi fase eksekusi
+
+---
+
+*Dokumen ini disusun sebagai deliverable Pertemuan 2 mata kuliah Proyek Sistem Informasi untuk memenuhi persyaratan manajemen proyek yang komprehensif.*
+
+---
+
+**Disusun oleh:** [Nama Kelompok]  
+**Tanggal:** 7 Oktober 2025  
+**Versi Dokumen:** 1.0  
+**Status Review:** Siap untuk Persetujuan Pemangku Kepentingan
