@@ -9,10 +9,6 @@
 ---
 
 **Mata Kuliah:** Business Intelligence II  
-**Kode:** 493 - 4 SKS  
-**Dosen Pengampu:** Ridan Nurfalah, M.Kom  
-**Kelompok:** [Nama Kelompok - 3 Anggota]  
-**Tanggal:** Oktober 2025
 
 ---
 
