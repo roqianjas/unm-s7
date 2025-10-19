@@ -4,514 +4,514 @@ Berdasarkan analisis mendalam terhadap proses bisnis yang berjalan dan kondisi o
 
 #### 3.3.1 Kendala Operasional
 
-Kendala operasional berkaitan dengan pelaksanaan day-to-day business activities.
+Kendala operasional berkaitan dengan pelaksanaan aktivitas bisnis sehari-hari.
 
-**A. Ineffisiensi Proses Manual**
+**A. Inefisiensi Proses Manual**
 
-Dominasi proses manual menciptakan berbagai bottleneck:
+Dominasi proses manual menciptakan berbagai hambatan:
 
-1. **Customer Service Process**
+1. **Proses Layanan Pelanggan**
    
    **Kendala:**
-   - Response time untuk customer inquiry yang lambat (4-8 jam)
-   - Follow-up yang sering terlewat karena tidak ada reminder system
-   - Informasi customer yang tidak terkonsolidasi
-   - Difficulty dalam tracking customer interaction history
+   - Waktu respons untuk pertanyaan pelanggan yang lambat (4-8 jam)
+   - Tindak lanjut yang sering terlewat karena tidak ada sistem pengingat
+   - Informasi pelanggan yang tidak terkonsolidasi
+   - Kesulitan dalam melacak riwayat interaksi pelanggan
    
-   **Impact:**
-   - Conversion rate yang rendah (15-20%)
-   - Customer experience yang tidak optimal
-   - Missed opportunities untuk follow-up
-   - Inconsistent service quality
+   **Dampak:**
+   - Tingkat konversi yang rendah (15-20%)
+   - Pengalaman pelanggan yang tidak optimal
+   - Peluang yang terlewat untuk tindak lanjut
+   - Kualitas layanan yang tidak konsisten
 
-2. **Quotation Process**
+2. **Proses Penawaran Harga**
    
    **Kendala:**
-   - Manual calculation prone to error
-   - Time-consuming (1-3 hari untuk satu quotation)
-   - Tidak ada standardized pricing guideline
-   - Revision memerlukan calculation ulang dari awal
+   - Perhitungan manual yang rentan kesalahan
+   - Memakan waktu (1-3 hari untuk satu penawaran harga)
+   - Tidak ada panduan penetapan harga standar
+   - Revisi memerlukan perhitungan ulang dari awal
    
-   **Impact:**
-   - Slow response dalam competitive situations
-   - Pricing inconsistency
-   - Lost deals karena delayed quotation
-   - Heavy workload untuk sales team
+   **Dampak:**
+   - Respons lambat dalam situasi kompetitif
+   - Ketidakkonsistenan penetapan harga
+   - Kehilangan kesepakatan karena penawaran harga tertunda
+   - Beban kerja berat untuk tim penjualan
 
-3. **Production Planning**
+3. **Perencanaan Produksi**
    
    **Kendala:**
-   - Manual scheduling menggunakan whiteboard
-   - Sulit untuk optimize resource allocation
-   - No visibility terhadap real-time production status
-   - Planning changes sulit untuk communicate ke team
+   - Penjadwalan manual menggunakan papan tulis
+   - Sulit untuk mengoptimalkan alokasi sumber daya
+   - Tidak ada visibilitas terhadap status produksi waktu nyata
+   - Perubahan perencanaan sulit untuk dikomunikasikan ke tim
    
-   **Impact:**
-   - Suboptimal capacity utilization (68%)
-   - Production delays
-   - Rush orders disrupting schedule
-   - Overtime costs
+   **Dampak:**
+   - Pemanfaatan kapasitas yang tidak optimal (68%)
+   - Penundaan produksi
+   - Pesanan mendesak mengganggu jadwal
+   - Biaya lembur
 
 **B. Koordinasi Antar Departemen**
 
-Communication dan coordination challenges:
+Tantangan komunikasi dan koordinasi:
 
-1. **Information Flow**
+1. **Aliran Informasi**
    
    **Kendala:**
-   - Information silos antar departemen
-   - Reliance pada verbal communication
-   - Important information sering missed
-   - No centralized information repository
+   - Silo informasi antar departemen
+   - Ketergantungan pada komunikasi verbal
+   - Informasi penting sering terlewat
+   - Tidak ada repositori informasi terpusat
    
-   **Impact:**
-   - Miscommunication dan errors
-   - Rework dan corrections needed
-   - Frustrated team members
-   - Delayed decision making
+   **Dampak:**
+   - Miskomunikasi dan kesalahan
+   - Pengerjaan ulang dan koreksi diperlukan
+   - Anggota tim yang frustrasi
+   - Pengambilan keputusan tertunda
 
-2. **Handover Process**
+2. **Proses Serah Terima**
    
    **Kendala:**
-   - Incomplete information transfer antar stages
-   - Tidak ada standardized handover procedure
-   - Context loss dalam transition
-   - Dependency pada individual knowledge
+   - Transfer informasi tidak lengkap antar tahap
+   - Tidak ada prosedur serah terima standar
+   - Kehilangan konteks dalam transisi
+   - Ketergantungan pada pengetahuan individu
    
-   **Impact:**
-   - Production errors
-   - Customer requirements tidak terpenuhi
-   - Quality issues
-   - Time wasted untuk clarification
+   **Dampak:**
+   - Kesalahan produksi
+   - Kebutuhan pelanggan tidak terpenuhi
+   - Masalah kualitas
+   - Waktu terbuang untuk klarifikasi
 
-**C. Quality Control Inconsistency**
+**C. Ketidakkonsistenan Pengendalian Kualitas**
 
-Quality management challenges:
+Tantangan manajemen kualitas:
 
-1. **QC Process**
+1. **Proses Pengendalian Kualitas**
    
    **Kendala:**
-   - Paper-based checklist yang tidak always followed
-   - Inspection standards tidak completely standardized
-   - QC documentation tidak complete
-   - No systematic root cause analysis untuk defects
+   - Daftar periksa berbasis kertas yang tidak selalu diikuti
+   - Standar inspeksi tidak sepenuhnya terstandarisasi
+   - Dokumentasi pengendalian kualitas tidak lengkap
+   - Tidak ada analisis akar penyebab sistematis untuk cacat
    
-   **Impact:**
-   - Quality variation (defect rate 3.2%)
-   - Customer complaints
-   - Rework costs
-   - Reputation risk
+   **Dampak:**
+   - Variasi kualitas (tingkat cacat 3,2%)
+   - Keluhan pelanggan
+   - Biaya pengerjaan ulang
+   - Risiko reputasi
 
-2. **Traceability**
+2. **Keterlacakan**
    
    **Kendala:**
-   - Limited traceability untuk defects
-   - Difficulty dalam identifying root causes
-   - No systematic tracking untuk quality metrics
-   - Material batch tracking tidak consistent
+   - Keterlacakan terbatas untuk cacat
+   - Kesulitan dalam mengidentifikasi akar penyebab
+   - Tidak ada pelacakan sistematis untuk metrik kualitas
+   - Pelacakan batch material tidak konsisten
    
-   **Impact:**
-   - Recurring quality issues
-   - Cannot prevent similar defects
-   - Supplier quality issues tidak addressed
-   - Continuous improvement terhambat
+   **Dampak:**
+   - Masalah kualitas berulang
+   - Tidak dapat mencegah cacat serupa
+   - Masalah kualitas pemasok tidak ditangani
+   - Perbaikan berkelanjutan terhambat
 
-**D. Inventory Management**
+**D. Manajemen Inventaris**
 
-Material management challenges:
+Tantangan manajemen material:
 
-1. **Stock Visibility**
+1. **Visibilitas Stok**
    
    **Kendala:**
-   - Manual stock checking (weekly)
-   - No real-time inventory data
-   - Stock level accuracy issues
-   - Material location tracking difficulties
+   - Pemeriksaan stok manual (mingguan)
+   - Tidak ada data inventaris waktu nyata
+   - Masalah akurasi tingkat stok
+   - Kesulitan pelacakan lokasi material
    
-   **Impact:**
-   - Stock-out situations (material tidak available saat needed)
-   - Over-stock untuk certain materials (dead inventory)
-   - Production delays karena material unavailability
-   - Cash flow tied up dalam excessive inventory
+   **Dampak:**
+   - Situasi kehabisan stok (material tidak tersedia saat dibutuhkan)
+   - Stok berlebih untuk material tertentu (inventaris mati)
+   - Penundaan produksi karena ketidaktersediaan material
+   - Arus kas terikat dalam inventaris berlebih
 
-2. **Material Planning**
+2. **Perencanaan Material**
    
    **Kendala:**
-   - Reactive reorder approach
-   - No demand forecasting
-   - Lead time tidak factored accurately
-   - Safety stock levels tidak optimal
+   - Pendekatan pemesanan ulang reaktif
+   - Tidak ada perkiraan permintaan
+   - Waktu tunggu tidak diperhitungkan secara akurat
+   - Tingkat stok pengaman tidak optimal
    
-   **Impact:**
-   - Rush procurement dengan higher costs
-   - Cannot leverage volume discounts
-   - Supplier relationship strain
-   - Production disruptions
+   **Dampak:**
+   - Pengadaan mendesak dengan biaya lebih tinggi
+   - Tidak dapat memanfaatkan diskon volume
+   - Ketegangan hubungan pemasok
+   - Gangguan produksi
 
 **Tabel 3.7: Identifikasi Kendala Operasional**
 
-| Area | Kendala Utama | Frequency | Impact Level | Priority |
-|------|---------------|-----------|--------------|----------|
-| Customer Service | Slow response time | Harian | Tinggi | Tinggi |
-| Quotation | Manual calculation, time-consuming | Harian | Tinggi | Tinggi |
-| Production Planning | Manual scheduling, no visibility | Harian | Sangat Tinggi | Sangat Tinggi |
-| Coordination | Information silos, handover issues | Harian | Tinggi | Tinggi |
-| Quality Control | Inconsistent standards, poor traceability | Mingguan | Sedang-Tinggi | Sedang |
-| Inventory | No real-time data, reactive planning | Mingguan | Sedang-Tinggi | Sedang |
+| Area | Kendala Utama | Frekuensi | Tingkat Dampak | Prioritas |
+|------|---------------|-----------|----------------|-----------|
+| Layanan Pelanggan | Waktu respons lambat | Harian | Tinggi | Tinggi |
+| Penawaran Harga | Perhitungan manual, memakan waktu | Harian | Tinggi | Tinggi |
+| Perencanaan Produksi | Penjadwalan manual, tidak ada visibilitas | Harian | Sangat Tinggi | Sangat Tinggi |
+| Koordinasi | Silo informasi, masalah serah terima | Harian | Tinggi | Tinggi |
+| Pengendalian Kualitas | Standar tidak konsisten, keterlacakan buruk | Mingguan | Sedang-Tinggi | Sedang |
+| Inventaris | Tidak ada data waktu nyata, perencanaan reaktif | Mingguan | Sedang-Tinggi | Sedang |
 
 #### 3.3.2 Kendala Teknologi
 
-Technology-related challenges yang menghambat efficiency:
+Tantangan terkait teknologi yang menghambat efisiensi:
 
-**A. Infrastructure Limitations**
+**A. Keterbatasan Infrastruktur**
 
-Basic technology infrastructure:
+Infrastruktur teknologi dasar:
 
-1. **System Integration**
+1. **Integrasi Sistem**
    
    **Kendala:**
-   - No integrated system untuk business processes
-   - Data dalam berbagai formats dan locations
-   - Manual data transfer antar systems
-   - Version control issues untuk documents
+   - Tidak ada sistem terintegrasi untuk proses bisnis
+   - Data dalam berbagai format dan lokasi
+   - Transfer data manual antar sistem
+   - Masalah kontrol versi untuk dokumen
    
-   **Impact:**
-   - Data inconsistency dan errors
-   - Time wasted untuk data reconciliation
-   - Difficulty dalam getting complete information
-   - Decision making delays
+   **Dampak:**
+   - Inkonsistensi data dan kesalahan
+   - Waktu terbuang untuk rekonsiliasi data
+   - Kesulitan dalam mendapatkan informasi lengkap
+   - Penundaan pengambilan keputusan
 
-2. **Automation Gap**
+2. **Kesenjangan Otomasi**
    
    **Kendala:**
-   - Minimal automation dalam processes
-   - Repetitive manual tasks
-   - No workflow automation
-   - Email dan WhatsApp untuk critical business processes
+   - Otomasi minimal dalam proses
+   - Tugas manual yang berulang
+   - Tidak ada otomasi alur kerja
+   - Email dan WhatsApp untuk proses bisnis kritis
    
-   **Impact:**
-   - Low productivity
-   - High error rates
-   - Scalability limitations
-   - Employee frustration
+   **Dampak:**
+   - Produktivitas rendah
+   - Tingkat kesalahan tinggi
+   - Keterbatasan skalabilitas
+   - Frustrasi karyawan
 
-3. **Digital Tools**
+3. **Alat Digital**
    
    **Kendala:**
-   - Basic tools (Excel, Word, WhatsApp)
-   - No specialized business software
-   - Limited cloud adoption
-   - Outdated equipment untuk beberapa functions
+   - Alat dasar (Excel, Word, WhatsApp)
+   - Tidak ada perangkat lunak bisnis khusus
+   - Adopsi cloud terbatas
+   - Peralatan usang untuk beberapa fungsi
    
-   **Impact:**
-   - Cannot leverage technology benefits
-   - Competitive disadvantage
-   - Limited capabilities
-   - Professional image issues
+   **Dampak:**
+   - Tidak dapat memanfaatkan manfaat teknologi
+   - Kerugian kompetitif
+   - Kemampuan terbatas
+   - Masalah citra profesional
 
-**B. Data Management Issues**
+**B. Masalah Manajemen Data**
 
-Critical data management challenges:
+Tantangan manajemen data kritis:
 
-1. **Data Quality**
+1. **Kualitas Data**
    
    **Kendala:**
-   - Multiple versions of truth
-   - Data entry errors
-   - Incomplete information
-   - Outdated data tidak cleaned
+   - Banyak versi kebenaran
+   - Kesalahan entri data
+   - Informasi tidak lengkap
+   - Data usang tidak dibersihkan
    
-   **Impact:**
-   - Wrong business decisions
-   - Customer service issues
-   - Reporting inaccuracies
-   - Lost business opportunities
+   **Dampak:**
+   - Keputusan bisnis yang salah
+   - Masalah layanan pelanggan
+   - Ketidakakuratan pelaporan
+   - Peluang bisnis yang hilang
 
-2. **Data Security**
+2. **Keamanan Data**
    
    **Kendala:**
-   - No systematic backup procedures
-   - Data stored dalam personal devices
-   - No access control
-   - Vulnerability terhadap data loss
+   - Tidak ada prosedur cadangan sistematis
+   - Data disimpan dalam perangkat pribadi
+   - Tidak ada kontrol akses
+   - Kerentanan terhadap kehilangan data
    
-   **Impact:**
-   - Business continuity risk
-   - Data loss incidents
-   - Confidentiality breach risk
-   - Compliance issues potential
+   **Dampak:**
+   - Risiko kontinuitas bisnis
+   - Insiden kehilangan data
+   - Risiko pelanggaran kerahasiaan
+   - Potensi masalah kepatuhan
 
-3. **Analytics Capability**
+3. **Kemampuan Analitik**
    
    **Kendala:**
-   - No business intelligence tools
-   - Manual report generation
-   - Limited data visualization
-   - Historical data not readily accessible
+   - Tidak ada alat intelijen bisnis
+   - Pembuatan laporan manual
+   - Visualisasi data terbatas
+   - Data historis tidak mudah diakses
    
-   **Impact:**
-   - Cannot identify trends dan patterns
-   - Reactive management style
-   - Missed opportunities
-   - Suboptimal decision making
+   **Dampak:**
+   - Tidak dapat mengidentifikasi tren dan pola
+   - Gaya manajemen reaktif
+   - Peluang yang terlewat
+   - Pengambilan keputusan yang tidak optimal
 
-**C. Digital Presence Gaps**
+**C. Kesenjangan Kehadiran Digital**
 
-Online presence limitations:
+Keterbatasan kehadiran online:
 
-1. **Website dan E-Commerce**
+1. **Situs Web dan Perdagangan Elektronik**
    
    **Kendala:**
-   - Basic website dengan limited functionality
-   - No e-commerce capability
-   - Not mobile-optimized
-   - Limited SEO optimization
+   - Situs web dasar dengan fungsionalitas terbatas
+   - Tidak ada kemampuan perdagangan elektronik
+   - Tidak dioptimalkan untuk perangkat mobile
+   - Optimasi SEO terbatas
    
-   **Impact:**
-   - Limited online visibility
-   - Cannot capture online customers
-   - Losing to online competitors
-   - Market reach limitations
+   **Dampak:**
+   - Visibilitas online terbatas
+   - Tidak dapat menarik pelanggan online
+   - Kalah dari pesaing online
+   - Keterbatasan jangkauan pasar
 
-2. **Digital Marketing**
+2. **Pemasaran Digital**
    
    **Kendala:**
-   - Ad-hoc social media posts
-   - No content strategy
-   - Limited digital marketing skills
-   - No marketing automation
+   - Postingan media sosial ad-hoc
+   - Tidak ada strategi konten
+   - Keterampilan pemasaran digital terbatas
+   - Tidak ada otomasi pemasaran
    
-   **Impact:**
-   - Ineffective marketing spend
-   - Limited brand awareness
-   - Cannot compete dengan digital-savvy competitors
-   - Slow customer acquisition
+   **Dampak:**
+   - Pengeluaran pemasaran tidak efektif
+   - Kesadaran merek terbatas
+   - Tidak dapat bersaing dengan pesaing yang paham digital
+   - Akuisisi pelanggan lambat
 
-**D. Technology Skills Gap**
+**D. Kesenjangan Keterampilan Teknologi**
 
-Human capability challenges:
+Tantangan kapabilitas manusia:
 
-1. **Digital Literacy**
+1. **Literasi Digital**
    
    **Kendala:**
-   - Variable technology comfort level
-   - Resistance terhadap new systems
-   - Limited training opportunities
-   - Age dan generation gaps
+   - Tingkat kenyamanan teknologi yang bervariasi
+   - Resistensi terhadap sistem baru
+   - Peluang pelatihan terbatas
+   - Kesenjangan usia dan generasi
    
-   **Impact:**
-   - Slow technology adoption
-   - Under-utilization of available tools
-   - Change management challenges
-   - Innovation barriers
+   **Dampak:**
+   - Adopsi teknologi lambat
+   - Alat yang tersedia kurang dimanfaatkan
+   - Tantangan manajemen perubahan
+   - Hambatan inovasi
 
-2. **Technical Support**
+2. **Dukungan Teknis**
    
    **Kendala:**
-   - No dedicated IT support
-   - Reliance pada external consultants
-   - Limited troubleshooting capability
-   - System downtime impacts
+   - Tidak ada dukungan TI khusus
+   - Ketergantungan pada konsultan eksternal
+   - Kemampuan pemecahan masalah terbatas
+   - Dampak dari waktu henti sistem
    
-   **Impact:**
-   - Productivity loss
-   - Frustration dan workarounds
-   - Higher support costs
-   - System adoption reluctance
+   **Dampak:**
+   - Kehilangan produktivitas
+   - Frustrasi dan solusi sementara
+   - Biaya dukungan lebih tinggi
+   - Keengganan adopsi sistem
 
 #### 3.3.3 Kendala Manajemen
 
-Management dan strategic challenges:
+Tantangan manajemen dan strategis:
 
-**A. Strategic Planning Limitations**
+**A. Keterbatasan Perencanaan Strategis**
 
-Long-term planning challenges:
+Tantangan perencanaan jangka panjang:
 
-1. **Vision dan Strategy**
+1. **Visi dan Strategi**
    
    **Kendala:**
-   - Reactive approach terhadap market changes
-   - Limited formal strategic planning
-   - Short-term focus dominates
-   - No systematic competitive analysis
+   - Pendekatan reaktif terhadap perubahan pasar
+   - Perencanaan strategis formal terbatas
+   - Fokus jangka pendek mendominasi
+   - Tidak ada analisis kompetitif sistematis
    
-   **Impact:**
-   - Missed strategic opportunities
-   - Competitive disadvantage
-   - Direction clarity issues
-   - Resource misallocation
+   **Dampak:**
+   - Peluang strategis terlewat
+   - Kerugian kompetitif
+   - Masalah kejelasan arah
+   - Kesalahan alokasi sumber daya
 
-2. **Performance Management**
-   
-   **Kendala:**
-   - No systematic KPI tracking
-   - Limited performance measurement
-   - Ad-hoc performance reviews
-   - No clear targets dan accountability
-   
-   **Impact:**
-   - Cannot measure success objectively
-   - Difficulty dalam identifying improvement areas
-   - Employee motivation issues
-   - Performance gaps tidak addressed
-
-**B. Process Management**
-
-Business process challenges:
-
-1. **Documentation**
+2. **Manajemen Kinerja**
    
    **Kendala:**
-   - No documented SOPs
-   - Process knowledge dalam people's heads
-   - Inconsistent execution
-   - Onboarding difficulties
+   - Tidak ada pelacakan KPI sistematis
+   - Pengukuran kinerja terbatas
+   - Tinjauan kinerja ad-hoc
+   - Tidak ada target dan akuntabilitas yang jelas
    
-   **Impact:**
-   - Quality variation
-   - Training inefficiencies
-   - Knowledge loss risk
-   - Scalability barriers
+   **Dampak:**
+   - Tidak dapat mengukur kesuksesan secara objektif
+   - Kesulitan dalam mengidentifikasi area perbaikan
+   - Masalah motivasi karyawan
+   - Kesenjangan kinerja tidak ditangani
 
-2. **Continuous Improvement**
-   
-   **Kendala:**
-   - No formal improvement program
-   - Ad-hoc problem solving
-   - Lessons learned tidak captured
-   - Innovation tidak systematic
-   
-   **Impact:**
-   - Recurring problems
-   - Missed efficiency opportunities
-   - Competitive gap widening
-   - Employee disengagement
+**B. Manajemen Proses**
 
-**C. Resource Management**
+Tantangan proses bisnis:
 
-Resource optimization challenges:
-
-1. **Capacity Planning**
+1. **Dokumentasi**
    
    **Kendala:**
-   - No systematic capacity planning
-   - Reactive resource allocation
-   - Utilization metrics tidak tracked
-   - Investment decisions tidak data-driven
+   - Tidak ada SOP terdokumentasi
+   - Pengetahuan proses ada dalam kepala karyawan
+   - Pelaksanaan tidak konsisten
+   - Kesulitan orientasi karyawan baru
    
-   **Impact:**
-   - Capacity constraints limiting growth
-   - Resource underutilization
-   - Investment waste
-   - Customer commitments at risk
+   **Dampak:**
+   - Variasi kualitas
+   - Inefisiensi pelatihan
+   - Risiko kehilangan pengetahuan
+   - Hambatan skalabilitas
 
-2. **Financial Management**
-   
-   **Kendala:**
-   - Manual financial processes
-   - Cash flow visibility limitations
-   - Budget tracking tidak systematic
-   - Financial analysis basic
-   
-   **Impact:**
-   - Working capital challenges
-   - Missed financial opportunities
-   - Risk management inadequate
-   - Growth funding limitations
-
-**D. Organizational Development**
-
-People dan organization challenges:
-
-1. **Talent Management**
+2. **Perbaikan Berkelanjutan**
    
    **Kendala:**
-   - Limited recruitment capability
-   - Informal training programs
-   - No career development paths
-   - Retention challenges
+   - Tidak ada program perbaikan formal
+   - Pemecahan masalah ad-hoc
+   - Pelajaran yang didapat tidak dicatat
+   - Inovasi tidak sistematis
    
-   **Impact:**
-   - Skill gaps
-   - High turnover costs
-   - Knowledge loss
-   - Growth capability limitations
+   **Dampak:**
+   - Masalah berulang
+   - Peluang efisiensi terlewat
+   - Kesenjangan kompetitif melebar
+   - Karyawan tidak terlibat
 
-2. **Change Management**
-   
-   **Kendala:**
-   - Limited change management experience
-   - Resistance terhadap changes
-   - Communication challenges
-   - No structured change approach
-   
-   **Impact:**
-   - Failed initiatives
-   - Employee resistance
-   - Change fatigue
-   - Lost improvement opportunities
+**C. Manajemen Sumber Daya**
 
-**E. Governance dan Compliance**
+Tantangan optimasi sumber daya:
 
-Governance challenges:
-
-1. **Risk Management**
+1. **Perencanaan Kapasitas**
    
    **Kendala:**
-   - No formal risk assessment
-   - Reactive approach terhadap risks
-   - Limited insurance coverage
-   - Business continuity planning basic
+   - Tidak ada perencanaan kapasitas sistematis
+   - Alokasi sumber daya reaktif
+   - Metrik pemanfaatan tidak dilacak
+   - Keputusan investasi tidak berbasis data
    
-   **Impact:**
-   - Vulnerability terhadap disruptions
-   - Financial loss potential
-   - Business continuity risk
-   - Stakeholder confidence issues
+   **Dampak:**
+   - Kendala kapasitas membatasi pertumbuhan
+   - Pemanfaatan sumber daya rendah
+   - Pemborosan investasi
+   - Komitmen pelanggan berisiko
 
-2. **Compliance**
+2. **Manajemen Keuangan**
    
    **Kendala:**
-   - Limited understanding of regulations
-   - Ad-hoc compliance approach
-   - Documentation gaps
-   - Audit trail limitations
+   - Proses keuangan manual
+   - Keterbatasan visibilitas arus kas
+   - Pelacakan anggaran tidak sistematis
+   - Analisis keuangan dasar
    
-   **Impact:**
-   - Regulatory violation risks
-   - Penalties potential
-   - Reputation damage risk
-   - Business operation disruptions
+   **Dampak:**
+   - Tantangan modal kerja
+   - Peluang keuangan terlewat
+   - Manajemen risiko tidak memadai
+   - Keterbatasan pendanaan pertumbuhan
 
-**Summary Kendala Priority Matrix:**
+**D. Pengembangan Organisasi**
 
-Berdasarkan analisis di atas, berikut prioritization kendala berdasarkan impact dan urgency:
+Tantangan orang dan organisasi:
 
-**Priority 1 (High Impact, High Urgency) - Immediate Action Required:**
-- Production planning dan scheduling
-- Customer response time dan service quality
-- Data management dan security
-- System integration gaps
+1. **Manajemen Talenta**
+   
+   **Kendala:**
+   - Kemampuan rekrutmen terbatas
+   - Program pelatihan informal
+   - Tidak ada jalur pengembangan karir
+   - Tantangan retensi
+   
+   **Dampak:**
+   - Kesenjangan keterampilan
+   - Biaya turnover tinggi
+   - Kehilangan pengetahuan
+   - Keterbatasan kemampuan pertumbuhan
 
-**Priority 2 (High Impact, Medium Urgency) - Short-term Action:**
-- Quality control standardization
-- Inventory management
-- Quotation process efficiency
-- Inter-departmental coordination
+2. **Manajemen Perubahan**
+   
+   **Kendala:**
+   - Pengalaman manajemen perubahan terbatas
+   - Resistensi terhadap perubahan
+   - Tantangan komunikasi
+   - Tidak ada pendekatan perubahan terstruktur
+   
+   **Dampak:**
+   - Inisiatif gagal
+   - Resistensi karyawan
+   - Kelelahan perubahan
+   - Peluang perbaikan hilang
 
-**Priority 3 (Medium Impact, High Urgency) - Medium-term Action:**
-- Digital presence enhancement
-- Process documentation dan standardization
-- Performance management system
-- Analytics capability
+**E. Tata Kelola dan Kepatuhan**
 
-**Priority 4 (Medium Impact, Medium Urgency) - Long-term Action:**
-- Strategic planning formalization
-- Talent management program
-- Continuous improvement culture
-- Governance framework
+Tantangan tata kelola:
 
-Prioritization ini akan menjadi basis untuk formulation solusi di section berikutnya.
+1. **Manajemen Risiko**
+   
+   **Kendala:**
+   - Tidak ada penilaian risiko formal
+   - Pendekatan reaktif terhadap risiko
+   - Cakupan asuransi terbatas
+   - Perencanaan kontinuitas bisnis dasar
+   
+   **Dampak:**
+   - Kerentanan terhadap gangguan
+   - Potensi kerugian finansial
+   - Risiko kontinuitas bisnis
+   - Masalah kepercayaan pemangku kepentingan
+
+2. **Kepatuhan**
+   
+   **Kendala:**
+   - Pemahaman peraturan terbatas
+   - Pendekatan kepatuhan ad-hoc
+   - Kesenjangan dokumentasi
+   - Keterbatasan jejak audit
+   
+   **Dampak:**
+   - Risiko pelanggaran peraturan
+   - Potensi penalti
+   - Risiko kerusakan reputasi
+   - Gangguan operasi bisnis
+
+**Matriks Prioritas Kendala:**
+
+Berdasarkan analisis di atas, berikut prioritas kendala berdasarkan dampak dan urgensi:
+
+**Prioritas 1 (Dampak Tinggi, Urgensi Tinggi) - Tindakan Segera Diperlukan:**
+- Perencanaan dan penjadwalan produksi
+- Waktu respons pelanggan dan kualitas layanan
+- Manajemen dan keamanan data
+- Kesenjangan integrasi sistem
+
+**Prioritas 2 (Dampak Tinggi, Urgensi Sedang) - Tindakan Jangka Pendek:**
+- Standardisasi pengendalian kualitas
+- Manajemen inventaris
+- Efisiensi proses penawaran harga
+- Koordinasi antar departemen
+
+**Prioritas 3 (Dampak Sedang, Urgensi Tinggi) - Tindakan Jangka Menengah:**
+- Peningkatan kehadiran digital
+- Dokumentasi dan standardisasi proses
+- Sistem manajemen kinerja
+- Kemampuan analitik
+
+**Prioritas 4 (Dampak Sedang, Urgensi Sedang) - Tindakan Jangka Panjang:**
+- Formalisasi perencanaan strategis
+- Program manajemen talenta
+- Budaya perbaikan berkelanjutan
+- Kerangka tata kelola
+
+Prioritas ini akan menjadi dasar untuk perumusan solusi di bagian berikutnya.
 
 ---
 

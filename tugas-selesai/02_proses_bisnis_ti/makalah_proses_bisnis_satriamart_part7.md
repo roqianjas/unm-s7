@@ -7,294 +7,294 @@ Berdasarkan analisis mendalam yang telah dilakukan terhadap proses bisnis SATRIA
 
 **1. Kondisi Proses Bisnis Saat Ini**
 
-SATRIAMART memiliki proses bisnis yang lengkap mencakup seluruh value chain dari customer inquiry hingga after-sales service. Namun, mayoritas proses masih bersifat manual dengan karakteristik sebagai berikut:
+SATRIAMART memiliki proses bisnis yang lengkap mencakup seluruh rantai nilai dari pertanyaan pelanggan hingga layanan purna jual. Namun, mayoritas proses masih bersifat manual dengan karakteristik sebagai berikut:
 
-- **Customer Management:** Response time 4-8 jam, data tersebar di berbagai platform, follow-up tidak sistematis, namun memiliki personal approach yang kuat dalam membangun relationship dengan pelanggan.
+- **Manajemen Pelanggan:** Waktu respons 4-8 jam, data tersebar di berbagai platform, tindak lanjut tidak sistematis, namun memiliki pendekatan personal yang kuat dalam membangun hubungan dengan pelanggan.
 
-- **Penjualan dan Quotation:** Proses pembuatan quotation memakan waktu 1-3 hari dengan calculation manual yang prone to error, conversion rate 15-20%, namun memiliki flexibility dalam pricing dan negotiation.
+- **Penjualan dan Penawaran Harga:** Proses pembuatan penawaran harga memakan waktu 1-3 hari dengan perhitungan manual yang rentan terhadap kesalahan, tingkat konversi 15-20%, namun memiliki fleksibilitas dalam penetapan harga dan negosiasi.
 
-- **Desain dan Approval:** Kapabilitas desain yang baik dengan 1-2 revision cycles rata-rata, namun tidak ada design version control dan approval process yang formal.
+- **Desain dan Persetujuan:** Kapabilitas desain yang baik dengan rata-rata 1-2 siklus revisi, namun tidak ada kontrol versi desain dan proses persetujuan yang formal.
 
-- **Produksi:** Skilled craftsmen dengan quality focus, namun production planning manual, no real-time tracking, dan inventory management reaktif. Defect rate 3.2% masih di atas target optimal.
+- **Produksi:** Pengrajin terampil dengan fokus pada kualitas, namun perencanaan produksi manual, tidak ada pelacakan waktu nyata, dan manajemen inventaris reaktif. Tingkat cacat 3,2% masih di atas target optimal.
 
-- **Pengiriman dan After-Sales:** Packaging yang careful, flexible delivery options, namun coordination manual dan tidak ada systematic feedback collection.
+- **Pengiriman dan Layanan Purna Jual:** Pengemasan yang hati-hati, opsi pengiriman fleksibel, namun koordinasi manual dan tidak ada pengumpulan umpan balik sistematis.
 
 **2. Posisi Strategis Berdasarkan Analisis SWOT**
 
 Dari analisis SWOT yang komprehensif, dapat disimpulkan bahwa:
 
 **Kekuatan Utama:**
-- Kualitas produk premium dengan material berkualitas tinggi dan craftsmanship excellence
-- Kapabilitas kustomisasi yang tinggi dan flexible
-- Hubungan pelanggan yang kuat dengan repeat customer rate 40%
-- Organizational agility dengan quick decision making
-- Local market expertise yang mendalam
+- Kualitas produk premium dengan material berkualitas tinggi dan keunggulan keahlian pengrajin
+- Kapabilitas kustomisasi yang tinggi dan fleksibel
+- Hubungan pelanggan yang kuat dengan tingkat pelanggan berulang 40%
+- Kelincahan organisasi dengan pengambilan keputusan cepat
+- Keahlian pasar lokal yang mendalam
 
 **Kelemahan Kritis:**
 - Keterbatasan infrastruktur teknologi dengan dominasi proses manual
 - Manajemen data yang lemah dan tersebar di berbagai sistem
-- Proses standarisasi yang tidak konsisten tanpa documented SOPs
-- Keterbatasan resources dalam manpower, financial, dan infrastructure
-- Visibilitas pasar yang terbatas dengan brand awareness rendah
+- Proses standarisasi yang tidak konsisten tanpa SOP terdokumentasi
+- Keterbatasan sumber daya dalam tenaga kerja, keuangan, dan infrastruktur
+- Visibilitas pasar yang terbatas dengan kesadaran merek rendah
 
 **Peluang Strategis:**
-- Pertumbuhan pasar interior design 25-30% annually
-- Digital transformation trend membuka channel baru
-- Ekspansi segmen korporat dengan higher value contracts
-- Industry 4.0 adoption untuk efficiency improvement
-- Strategic partnership opportunities dengan designers dan architects
-- Export market potential ke ASEAN
+- Pertumbuhan pasar desain interior 25-30% per tahun
+- Tren transformasi digital membuka saluran baru
+- Ekspansi segmen korporat dengan kontrak bernilai lebih tinggi
+- Adopsi Industri 4.0 untuk peningkatan efisiensi
+- Peluang kemitraan strategis dengan desainer dan arsitek
+- Potensi pasar ekspor ke ASEAN
 
 **Ancaman yang Perlu Diantisipasi:**
-- Peningkatan kompetisi dengan new entrants dan price pressure
-- Disrupsi teknologi yang dapat mengubah competitive landscape
-- Economic uncertainty yang mempengaruhi purchasing power
-- Supply chain risks dengan limited supplier base
-- Regulatory changes terutama environmental regulations
-- Talent challenges dalam recruitment dan retention
+- Peningkatan kompetisi dengan pendatang baru dan tekanan harga
+- Disrupsi teknologi yang dapat mengubah lanskap kompetitif
+- Ketidakpastian ekonomi yang mempengaruhi daya beli
+- Risiko rantai pasokan dengan basis pemasok terbatas
+- Perubahan regulasi terutama regulasi lingkungan
+- Tantangan talenta dalam rekrutmen dan retensi
 
 **3. Kendala-Kendala yang Menghambat Optimalisasi**
 
 Kendala utama yang teridentifikasi mencakup tiga area:
 
 **Operasional:**
-- Ineffisiensi proses manual dalam customer service, quotation, dan production planning
-- Koordinasi antar departemen yang tidak optimal dengan information silos
-- Quality control inconsistency dan limited traceability
-- Inventory management reaktif dengan no real-time visibility
+- Inefisiensi proses manual dalam layanan pelanggan, penawaran harga, dan perencanaan produksi
+- Koordinasi antar departemen yang tidak optimal dengan silo informasi
+- Ketidakkonsistenan pengendalian kualitas dan keterlacakan terbatas
+- Manajemen inventaris reaktif tanpa visibilitas waktu nyata
 
 **Teknologi:**
-- Infrastructure limitations dengan no integrated system
-- Data management issues mencakup quality, security, dan analytics
-- Digital presence gaps dalam website, e-commerce, dan digital marketing
-- Technology skills gap dalam team
+- Keterbatasan infrastruktur tanpa sistem terintegrasi
+- Masalah manajemen data mencakup kualitas, keamanan, dan analitik
+- Kesenjangan kehadiran digital dalam situs web, e-commerce, dan pemasaran digital
+- Kesenjangan keterampilan teknologi dalam tim
 
 **Manajemen:**
-- Strategic planning limitations dengan reactive approach
-- Process management tanpa documented SOPs dan continuous improvement program
-- Resource management challenges dalam capacity planning dan financial management
-- Organizational development issues dalam talent management dan change management
+- Keterbatasan perencanaan strategis dengan pendekatan reaktif
+- Manajemen proses tanpa SOP terdokumentasi dan program perbaikan berkelanjutan
+- Tantangan manajemen sumber daya dalam perencanaan kapasitas dan manajemen keuangan
+- Masalah pengembangan organisasi dalam manajemen talenta dan manajemen perubahan
 
 **4. Strategi Solusi yang Komprehensif**
 
-Solusi yang dirumuskan mengikuti phased approach:
+Solusi yang dirumuskan mengikuti pendekatan bertahap:
 
-**Jangka Pendek (0-6 bulan) - Foundation Building:**
-- Customer service enhancement dengan communication system
-- Quotation process improvement dengan automated templates
-- Production planning enhancement dengan digital tools
-- Data management foundation dengan cloud storage
-- Process documentation untuk critical SOPs
-- Investment: ~Rp 30 juta dengan expected efficiency improvement 30-40%
+**Jangka Pendek (0-6 bulan) - Pembangunan Fondasi:**
+- Peningkatan layanan pelanggan dengan sistem komunikasi
+- Perbaikan proses penawaran harga dengan template otomatis
+- Peningkatan perencanaan produksi dengan alat digital
+- Fondasi manajemen data dengan penyimpanan cloud
+- Dokumentasi proses untuk SOP kritis
+- Investasi: ~Rp 30 juta dengan peningkatan efisiensi yang diharapkan 30-40%
 
-**Jangka Menengah (6-18 bulan) - System Integration:**
-- Integrated business system (ERP) implementation
-- Customer experience platform dengan portal
-- Production automation dengan IoT integration
-- Digital marketing platform dengan website dan e-commerce
-- Business intelligence untuk data-driven decisions
-- Investment: ~Rp 525 juta dengan expected revenue growth 50-70%
+**Jangka Menengah (6-18 bulan) - Integrasi Sistem:**
+- Implementasi sistem bisnis terintegrasi (ERP)
+- Platform pengalaman pelanggan dengan portal
+- Otomasi produksi dengan integrasi IoT
+- Platform pemasaran digital dengan situs web dan e-commerce
+- Intelijen bisnis untuk keputusan berbasis data
+- Investasi: ~Rp 525 juta dengan pertumbuhan pendapatan yang diharapkan 50-70%
 
-**Jangka Panjang (18-36 bulan) - Advanced Capabilities:**
-- AI dan machine learning integration untuk intelligent automation
-- Advanced manufacturing menuju smart factory
-- Ecosystem development dengan B2B marketplace
-- Innovation program untuk continuous improvement
-- Market expansion dengan multi-location strategy
-- Investment: ~Rp 1.150 juta dengan expected revenue 2-3x
+**Jangka Panjang (18-36 bulan) - Kemampuan Lanjutan:**
+- Integrasi AI dan pembelajaran mesin untuk otomasi cerdas
+- Manufaktur lanjutan menuju pabrik cerdas
+- Pengembangan ekosistem dengan marketplace B2B
+- Program inovasi untuk perbaikan berkelanjutan
+- Ekspansi pasar dengan strategi multi-lokasi
+- Investasi: ~Rp 1.150 juta dengan pendapatan yang diharapkan 2-3x
 
 **5. Potensi Dampak Transformasi**
 
 Dengan implementasi solusi yang sistematis, SATRIAMART berpotensi mencapai:
 
-**Operational Excellence:**
-- Efficiency improvement: 70-80%
-- Quality consistency: 99%+
-- On-time delivery: 95%+
-- Capacity: 3x current level
+**Keunggulan Operasional:**
+- Peningkatan efisiensi: 70-80%
+- Konsistensi kualitas: 99%+
+- Pengiriman tepat waktu: 95%+
+- Kapasitas: 3x level saat ini
 
-**Customer Experience:**
-- Response time: <2 jam
-- Customer satisfaction: 90%+
-- Conversion rate: 30-35%
-- Repeat customer: 60%+
+**Pengalaman Pelanggan:**
+- Waktu respons: <2 jam
+- Kepuasan pelanggan: 90%+
+- Tingkat konversi: 30-35%
+- Pelanggan berulang: 60%+
 
-**Business Performance:**
-- Revenue growth: 100-200% dalam 36 bulan
-- Operational cost reduction: 25-30%
-- Gross margin: 40-45%
-- Market share: leadership position
+**Kinerja Bisnis:**
+- Pertumbuhan pendapatan: 100-200% dalam 36 bulan
+- Pengurangan biaya operasional: 25-30%
+- Margin kotor: 40-45%
+- Pangsa pasar: posisi kepemimpinan
 
-**Strategic Position:**
-- Digital leadership dalam akrilik industry
-- Premium brand positioning
-- Scalable operations untuk growth
-- Competitive advantage yang sustainable
+**Posisi Strategis:**
+- Kepemimpinan digital dalam industri akrilik
+- Positioning merek premium
+- Operasi yang dapat diskalakan untuk pertumbuhan
+- Keunggulan kompetitif yang berkelanjutan
 
 ### 4.2 Saran
 
 Berdasarkan hasil analisis dan kesimpulan di atas, diajukan beberapa saran untuk SATRIAMART:
 
-**1. Saran untuk Management**
+**1. Saran untuk Manajemen**
 
-**A. Immediate Actions (Bulan 1-3):**
+**A. Tindakan Segera (Bulan 1-3):**
 
-1. **Establish Transformation Committee**
-   - Form dedicated team dengan executive sponsor
-   - Allocate budget untuk Phase 1 initiatives
-   - Set clear goals dan timeline
-   - Establish governance structure
+1. **Membentuk Komite Transformasi**
+   - Membentuk tim khusus dengan sponsor eksekutif
+   - Mengalokasikan anggaran untuk inisiatif Tahap 1
+   - Menetapkan tujuan dan timeline yang jelas
+   - Membentuk struktur tata kelola
 
-2. **Quick Win Implementation**
-   - Focus pada customer service enhancement
-   - Implement automated quotation template
-   - Setup cloud storage untuk data management
-   - Start SOP documentation
+2. **Implementasi Kemenangan Cepat**
+   - Fokus pada peningkatan layanan pelanggan
+   - Mengimplementasikan template penawaran harga otomatis
+   - Menyiapkan penyimpanan cloud untuk manajemen data
+   - Memulai dokumentasi SOP
 
-3. **Team Preparation**
-   - Communicate transformation vision ke seluruh team
-   - Address concerns dan build excitement
-   - Identify change champions
-   - Start initial training
+3. **Persiapan Tim**
+   - Mengkomunikasikan visi transformasi ke seluruh tim
+   - Mengatasi kekhawatiran dan membangun antusiasme
+   - Mengidentifikasi pemimpin perubahan
+   - Memulai pelatihan awal
 
-**B. Strategic Priorities:**
+**B. Prioritas Strategis:**
 
-1. **Technology First**
-   - Prioritize technology infrastructure development
-   - Don't compromise pada system integration
-   - Invest adequate budget untuk proper implementation
-   - Partner dengan reliable technology providers
+1. **Teknologi Pertama**
+   - Memprioritaskan pengembangan infrastruktur teknologi
+   - Tidak berkompromi pada integrasi sistem
+   - Menginvestasikan anggaran yang memadai untuk implementasi yang tepat
+   - Bermitra dengan penyedia teknologi yang andal
 
-2. **People Development**
-   - Invest dalam training dan development
-   - Build digital literacy across organization
-   - Create career development paths
-   - Develop change management capability
+2. **Pengembangan Sumber Daya Manusia**
+   - Berinvestasi dalam pelatihan dan pengembangan
+   - Membangun literasi digital di seluruh organisasi
+   - Membuat jalur pengembangan karir
+   - Mengembangkan kemampuan manajemen perubahan
 
-3. **Customer Centricity**
-   - Maintain focus pada customer experience
-   - Don't lose personal touch dalam digitalization
-   - Continuous feedback collection dan action
-   - Build loyalty program
+3. **Berpusat pada Pelanggan**
+   - Mempertahankan fokus pada pengalaman pelanggan
+   - Tidak kehilangan sentuhan personal dalam digitalisasi
+   - Pengumpulan dan tindakan umpan balik berkelanjutan
+   - Membangun program loyalitas
 
-4. **Quality Excellence**
-   - Never compromise pada quality standards
-   - Implement systematic quality management
-   - Build quality culture across organization
-   - Pursue quality certifications
+4. **Keunggulan Kualitas**
+   - Tidak pernah berkompromi pada standar kualitas
+   - Mengimplementasikan manajemen kualitas sistematis
+   - Membangun budaya kualitas di seluruh organisasi
+   - Mengejar sertifikasi kualitas
 
 **2. Saran untuk Implementasi**
 
-**A. Phased Approach:**
+**A. Pendekatan Bertahap:**
 
-1. **Start Small, Scale Fast**
-   - Begin dengan pilot projects
-   - Prove value sebelum full rollout
-   - Learn dan adjust quickly
-   - Scale successful initiatives rapidly
+1. **Mulai Kecil, Skalakan Cepat**
+   - Mulai dengan proyek percontohan
+   - Buktikan nilai sebelum peluncuran penuh
+   - Belajar dan menyesuaikan dengan cepat
+   - Skalakan inisiatif yang berhasil dengan cepat
 
-2. **Manage Change Effectively**
-   - Comprehensive communication strategy
-   - Regular updates dan celebration of wins
-   - Address resistance proactively
-   - Provide adequate support
+2. **Mengelola Perubahan Secara Efektif**
+   - Strategi komunikasi komprehensif
+   - Pembaruan rutin dan perayaan kemenangan
+   - Mengatasi resistensi secara proaktif
+   - Memberikan dukungan yang memadai
 
-3. **Measure dan Monitor**
-   - Define clear KPIs untuk each initiative
-   - Regular progress review
-   - Course correct when needed
-   - Share results transparently
+3. **Mengukur dan Memantau**
+   - Mendefinisikan KPI yang jelas untuk setiap inisiatif
+   - Tinjauan kemajuan rutin
+   - Koreksi arah ketika diperlukan
+   - Berbagi hasil secara transparan
 
-**B. Risk Management:**
+**B. Manajemen Risiko:**
 
-1. **Financial Prudence**
-   - Phase investment sesuai cash flow capacity
-   - Track ROI carefully
-   - Avoid over-committing
-   - Build contingency reserves
+1. **Kehati-hatian Keuangan**
+   - Investasi bertahap sesuai kapasitas arus kas
+   - Melacak ROI dengan cermat
+   - Menghindari komitmen berlebihan
+   - Membangun cadangan kontingensi
 
-2. **Operational Continuity**
-   - Maintain business operations during transformation
-   - Parallel running untuk critical systems
-   - Have rollback plans
-   - Test thoroughly before go-live
+2. **Kontinuitas Operasional**
+   - Mempertahankan operasi bisnis selama transformasi
+   - Menjalankan paralel untuk sistem kritis
+   - Memiliki rencana rollback
+   - Menguji secara menyeluruh sebelum peluncuran
 
-3. **People Considerations**
-   - Address job security concerns
-   - Reskill displaced workers
-   - Recognize dan reward adopters
-   - Be patient dengan learning curve
+3. **Pertimbangan Sumber Daya Manusia**
+   - Mengatasi kekhawatiran keamanan pekerjaan
+   - Melatih kembali pekerja yang terdampak
+   - Mengakui dan memberi penghargaan pada adopter
+   - Bersabar dengan kurva pembelajaran
 
 **3. Saran untuk Keberlanjutan**
 
-**A. Continuous Improvement Culture:**
+**A. Budaya Perbaikan Berkelanjutan:**
 
-1. **Make It Part of DNA**
-   - Regular improvement review sessions
-   - Encourage innovation dari all levels
-   - Reward improvement ideas
-   - Learn from failures
+1. **Menjadikannya Bagian dari DNA**
+   - Sesi tinjauan perbaikan rutin
+   - Mendorong inovasi dari semua tingkat
+   - Memberikan penghargaan untuk ide perbaikan
+   - Belajar dari kegagalan
 
-2. **Stay Current**
-   - Monitor industry trends
-   - Benchmark dengan best practices
-   - Invest dalam R&D
-   - Partner dengan innovators
+2. **Tetap Terkini**
+   - Memantau tren industri
+   - Benchmarking dengan praktik terbaik
+   - Berinvestasi dalam R&D
+   - Bermitra dengan inovator
 
-3. **Customer-Driven Innovation**
-   - Listen to customer needs
-   - Co-create dengan customers
-   - Test new ideas with customers
-   - Iterate based pada feedback
+3. **Inovasi yang Didorong Pelanggan**
+   - Mendengarkan kebutuhan pelanggan
+   - Ko-kreasi dengan pelanggan
+   - Menguji ide baru dengan pelanggan
+   - Iterasi berdasarkan umpan balik
 
-**B. Ecosystem Development:**
+**B. Pengembangan Ekosistem:**
 
-1. **Build Partnerships**
-   - Strategic alliances dengan complementary businesses
-   - Industry association participation
-   - Academic partnerships untuk innovation
-   - Technology partnerships untuk capabilities
+1. **Membangun Kemitraan**
+   - Aliansi strategis dengan bisnis pelengkap
+   - Partisipasi asosiasi industri
+   - Kemitraan akademik untuk inovasi
+   - Kemitraan teknologi untuk kemampuan
 
-2. **Market Expansion**
-   - Geographic expansion carefully planned
-   - New segment entry dengan proper preparation
-   - Export market exploration
-   - Franchise model untuk scalability
+2. **Ekspansi Pasar**
+   - Ekspansi geografis yang direncanakan dengan hati-hati
+   - Masuk segmen baru dengan persiapan yang tepat
+   - Eksplorasi pasar ekspor
+   - Model waralaba untuk skalabilitas
 
 **4. Saran untuk Penelitian Lanjutan**
 
 Untuk penelitian atau analisis lanjutan, disarankan untuk mengeksplorasi:
 
-1. **Deep Dive Topics:**
-   - Detail system architecture design untuk ERP implementation
-   - Comprehensive digital marketing strategy untuk SATRIAMART
-   - Customer behavior analysis untuk personalization strategy
-   - Supply chain optimization study
-   - Sustainability dan circular economy implementation
+1. **Topik Mendalam:**
+   - Desain arsitektur sistem detail untuk implementasi ERP
+   - Strategi pemasaran digital komprehensif untuk SATRIAMART
+   - Analisis perilaku pelanggan untuk strategi personalisasi
+   - Studi optimasi rantai pasokan
+   - Implementasi keberlanjutan dan ekonomi sirkular
 
-2. **Comparative Studies:**
-   - Benchmarking dengan best-in-class manufacturers
-   - International best practices dalam custom manufacturing
-   - Technology adoption case studies di SMEs
-   - Change management success factors
+2. **Studi Komparatif:**
+   - Benchmarking dengan produsen kelas terbaik
+   - Praktik terbaik internasional dalam manufaktur kustom
+   - Studi kasus adopsi teknologi di UKM
+   - Faktor kesuksesan manajemen perubahan
 
-3. **Impact Studies:**
-   - ROI analysis untuk specific technology investments
-   - Customer satisfaction improvement strategies
-   - Employee engagement dalam digital transformation
-   - Long-term sustainability business model
+3. **Studi Dampak:**
+   - Analisis ROI untuk investasi teknologi spesifik
+   - Strategi peningkatan kepuasan pelanggan
+   - Keterlibatan karyawan dalam transformasi digital
+   - Model bisnis keberlanjutan jangka panjang
 
 **5. Penutup**
 
-SATRIAMART berada pada titik yang krusial dalam perjalanan bisnisnya. Dengan foundation yang solid dalam kualitas produk dan customer relationships, perusahaan memiliki potential yang besar untuk growth. Namun, untuk merealisasikan potential tersebut, transformasi dalam proses bisnis dan adoption teknologi adalah imperative, bukan optional.
+SATRIAMART berada pada titik yang krusial dalam perjalanan bisnisnya. Dengan fondasi yang solid dalam kualitas produk dan hubungan pelanggan, perusahaan memiliki potensi yang besar untuk pertumbuhan. Namun, untuk merealisasikan potensi tersebut, transformasi dalam proses bisnis dan adopsi teknologi adalah keharusan, bukan pilihan.
 
-Transformasi ini bukan hanya tentang implementing technology, tetapi tentang fundamental shift dalam cara perusahaan beroperasi, mengambil keputusan, dan melayani customers. Ini adalah journey yang challenging namun sangat rewarding jika dilakukan dengan commitment, systematic approach, dan focus pada long-term value creation.
+Transformasi ini bukan hanya tentang mengimplementasikan teknologi, tetapi tentang perubahan fundamental dalam cara perusahaan beroperasi, mengambil keputusan, dan melayani pelanggan. Ini adalah perjalanan yang menantang namun sangat bermanfaat jika dilakukan dengan komitmen, pendekatan sistematis, dan fokus pada penciptaan nilai jangka panjang.
 
-Dengan vision yang clear, strategy yang solid, execution yang disciplined, dan people yang committed, SATRIAMART dapat achieve aspiration untuk menjadi market leader dalam industri dekorasi akrilik di Indonesia dan beyond.
+Dengan visi yang jelas, strategi yang solid, eksekusi yang disiplin, dan orang-orang yang berkomitmen, SATRIAMART dapat mencapai aspirasi untuk menjadi pemimpin pasar dalam industri dekorasi akrilik di Indonesia dan sekitarnya.
 
-Success tidak diukur hanya dari technology yang di-implement atau system yang di-deploy, tetapi dari improved customer satisfaction, enhanced employee experience, dan sustainable business growth yang memberikan value untuk all stakeholders.
+Kesuksesan tidak diukur hanya dari teknologi yang diimplementasikan atau sistem yang diterapkan, tetapi dari peningkatan kepuasan pelanggan, peningkatan pengalaman karyawan, dan pertumbuhan bisnis berkelanjutan yang memberikan nilai untuk semua pemangku kepentingan.
 
-Mari kita mulai journey transformasi ini dengan confidence, commitment, dan collaboration untuk membangun SATRIAMART yang lebih strong, competitive, dan future-ready.
+Mari kita mulai perjalanan transformasi ini dengan keyakinan, komitmen, dan kolaborasi untuk membangun SATRIAMART yang lebih kuat, kompetitif, dan siap menghadapi masa depan.
 
 ---
 
@@ -336,147 +336,147 @@ Ross, J. W., Beath, C. M., & Sebastian, I. M. (2017). *How to Develop a Great Di
 
 ## LAMPIRAN
 
-### Lampiran A: Flowchart Proses Bisnis
+### Lampiran A: Diagram Alir Proses Bisnis
 
-**A.1 Flowchart Proses Customer Management**
+**A.1 Diagram Alir Proses Manajemen Pelanggan**
 
-[Detailed process flow diagram menunjukkan dari customer inquiry hingga relationship management]
+[Diagram alur proses detail menunjukkan dari pertanyaan pelanggan hingga manajemen hubungan]
 
-**A.2 Flowchart Proses Penjualan dan Quotation**
+**A.2 Diagram Alir Proses Penjualan dan Penawaran Harga**
 
-[Detailed process flow diagram dari requirement gathering hingga order confirmation]
+[Diagram alur proses detail dari pengumpulan kebutuhan hingga konfirmasi pesanan]
 
-**A.3 Flowchart Proses Desain dan Approval**
+**A.3 Diagram Alir Proses Desain dan Persetujuan**
 
-[Detailed process flow diagram dari design brief hingga final approval]
+[Diagram alur proses detail dari brief desain hingga persetujuan akhir]
 
-**A.4 Flowchart Proses Produksi**
+**A.4 Diagram Alir Proses Produksi**
 
-[Detailed process flow diagram dari production planning hingga quality control]
+[Diagram alur proses detail dari perencanaan produksi hingga pengendalian kualitas]
 
-**A.5 Flowchart Proses Pengiriman dan After-Sales**
+**A.5 Diagram Alir Proses Pengiriman dan Layanan Purna Jual**
 
-[Detailed process flow diagram dari packaging hingga warranty service]
-
----
-
-### Lampiran B: Template dan Form
-
-**B.1 Customer Inquiry Form**
-
-[Template untuk standardized customer inquiry collection]
-
-**B.2 Quotation Template**
-
-[Excel-based quotation calculator template]
-
-**B.3 Design Brief Template**
-
-[Standardized design brief format untuk handover ke designer]
-
-**B.4 Production Work Order**
-
-[Work order format dengan QR code untuk tracking]
-
-**B.5 Quality Control Checklist**
-
-[Comprehensive QC checklist untuk each production stage]
+[Diagram alur proses detail dari pengemasan hingga layanan garansi]
 
 ---
 
-### Lampiran C: SWOT Analysis Detail
+### Lampiran B: Template dan Formulir
 
-**C.1 SWOT Matrix**
+**B.1 Formulir Pertanyaan Pelanggan**
 
-[Detailed SWOT matrix dengan scoring dan prioritization]
+[Template untuk pengumpulan pertanyaan pelanggan terstandarisasi]
 
-**C.2 SWOT Strategy Matrix**
+**B.2 Template Penawaran Harga**
 
-[Comprehensive strategy formulation matrix]
+[Template kalkulator penawaran harga berbasis Excel]
 
-**C.3 Action Plan**
+**B.3 Template Brief Desain**
 
-[Detailed action plan untuk each SWOT strategy]
+[Format brief desain terstandarisasi untuk serah terima ke desainer]
 
----
+**B.4 Surat Perintah Kerja Produksi**
 
-### Lampiran D: Implementation Roadmap
+[Format surat perintah kerja dengan kode QR untuk pelacakan]
 
-**D.1 Gantt Chart - Jangka Pendek**
+**B.5 Daftar Periksa Pengendalian Kualitas**
 
-[Detailed timeline untuk 6 bulan pertama]
-
-**D.2 Gantt Chart - Jangka Menengah**
-
-[Detailed timeline untuk month 6-18]
-
-**D.3 Gantt Chart - Jangka Panjang**
-
-[Detailed timeline untuk month 18-36]
-
-**D.4 Resource Allocation Plan**
-
-[Resource planning untuk each phase]
+[Daftar periksa QC komprehensif untuk setiap tahap produksi]
 
 ---
 
-### Lampiran E: Financial Analysis
+### Lampiran C: Detail Analisis SWOT
 
-**E.1 Investment Summary**
+**C.1 Matriks SWOT**
 
-[Comprehensive investment breakdown per phase]
+[Matriks SWOT detail dengan penilaian dan prioritas]
 
-**E.2 ROI Calculation**
+**C.2 Matriks Strategi SWOT**
 
-[Detailed ROI calculation dengan assumptions]
+[Matriks perumusan strategi komprehensif]
 
-**E.3 Cash Flow Projection**
+**C.3 Rencana Aksi**
 
-[36-month cash flow projection dengan implementation costs]
-
-**E.4 Sensitivity Analysis**
-
-[Sensitivity analysis untuk key assumptions]
+[Rencana aksi detail untuk setiap strategi SWOT]
 
 ---
 
-### Lampiran F: Documentation Photos
+### Lampiran D: Peta Jalan Implementasi
 
-**F.1 Workshop Sessions**
+**D.1 Diagram Gantt - Jangka Pendek**
 
-[Photos dari SWOT workshop dan brainstorming sessions]
+[Timeline detail untuk 6 bulan pertama]
 
-**F.2 Site Observations**
+**D.2 Diagram Gantt - Jangka Menengah**
 
-[Photos dari production floor dan operations]
+[Timeline detail untuk bulan 6-18]
 
-**F.3 Current Systems**
+**D.3 Diagram Gantt - Jangka Panjang**
 
-[Screenshots dari existing systems dan tools]
+[Timeline detail untuk bulan 18-36]
 
-**F.4 Team Collaboration**
+**D.4 Rencana Alokasi Sumber Daya**
 
-[Photos dokumentasi team saat analysis dan planning]
+[Perencanaan sumber daya untuk setiap tahap]
 
 ---
 
-### Lampiran G: Supporting Documents
+### Lampiran E: Analisis Keuangan
 
-**G.1 Interview Notes**
+**E.1 Ringkasan Investasi**
 
-[Summary dari interviews dengan stakeholders]
+[Rincian investasi komprehensif per tahap]
 
-**G.2 Observation Reports**
+**E.2 Perhitungan ROI**
 
-[Detailed reports dari site observations]
+[Perhitungan ROI detail dengan asumsi]
 
-**G.3 Data Analysis**
+**E.3 Proyeksi Arus Kas**
 
-[Charts dan graphs dari data analysis]
+[Proyeksi arus kas 36 bulan dengan biaya implementasi]
 
-**G.4 Benchmark Data**
+**E.4 Analisis Sensitivitas**
 
-[Industry benchmark data untuk comparison]
+[Analisis sensitivitas untuk asumsi kunci]
+
+---
+
+### Lampiran F: Foto Dokumentasi
+
+**F.1 Sesi Workshop**
+
+[Foto dari workshop SWOT dan sesi brainstorming]
+
+**F.2 Observasi Lokasi**
+
+[Foto dari lantai produksi dan operasi]
+
+**F.3 Sistem Saat Ini**
+
+[Screenshot dari sistem dan alat yang ada]
+
+**F.4 Kolaborasi Tim**
+
+[Foto dokumentasi tim saat analisis dan perencanaan]
+
+---
+
+### Lampiran G: Dokumen Pendukung
+
+**G.1 Catatan Wawancara**
+
+[Ringkasan dari wawancara dengan pemangku kepentingan]
+
+**G.2 Laporan Observasi**
+
+[Laporan detail dari observasi lokasi]
+
+**G.3 Analisis Data**
+
+[Diagram dan grafik dari analisis data]
+
+**G.4 Data Benchmark**
+
+[Data benchmark industri untuk perbandingan]
 
 ---
 
@@ -484,16 +484,8 @@ Ross, J. W., Beath, C. M., & Sebastian, I. M. (2017). *How to Develop a Great Di
 
 ---
 
-*Makalah ini disusun sebagai bagian dari tugas mata kuliah Proses Bisnis TI dengan tujuan untuk menganalisis dan memberikan rekomendasi improvement untuk SATRIAMART. Semua analisis dan rekomendasi dalam makalah ini didasarkan pada observasi, wawancara, dan best practices dalam industri.*
+*Makalah ini disusun sebagai bagian dari tugas mata kuliah Proses Bisnis TI dengan tujuan untuk menganalisis dan memberikan rekomendasi perbaikan untuk SATRIAMART. Semua analisis dan rekomendasi dalam makalah ini didasarkan pada observasi, wawancara, dan praktik terbaik dalam industri.*
 
-*Diharapkan makalah ini dapat memberikan value praktis untuk SATRIAMART dalam journey transformasi digital dan process optimization mereka.*
-
----
-
-**Depok, Oktober 2025**
-
-**Tim Penyusun**
-
-[Tanda tangan dan nama anggota kelompok]
+*Diharapkan makalah ini dapat memberikan nilai praktis untuk SATRIAMART dalam perjalanan transformasi digital dan optimasi proses mereka.*
 
 ---

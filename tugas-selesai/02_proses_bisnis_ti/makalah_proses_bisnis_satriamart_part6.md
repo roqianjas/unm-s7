@@ -4,561 +4,561 @@ Berdasarkan analisis kendala yang telah diidentifikasi, dirumuskan solusi-solusi
 
 #### 3.4.1 Solusi Jangka Pendek (0-6 Bulan)
 
-Fokus pada quick wins dan foundation building untuk improvement berkelanjutan.
+Fokus pada kemenangan cepat dan pembangunan fondasi untuk perbaikan berkelanjutan.
 
-**A. Customer Service Enhancement**
+**A. Peningkatan Layanan Pelanggan**
 
-**Objective:** Meningkatkan response time dan customer experience
+**Tujuan:** Meningkatkan waktu respons dan pengalaman pelanggan
 
-**Solusi 1: Implementasi Customer Communication System**
+**Solusi 1: Implementasi Sistem Komunikasi Pelanggan**
 
-1. **Action Items:**
-   - Setup WhatsApp Business API dengan automated responses
-   - Buat template responses untuk common inquiries
-   - Implement simple CRM menggunakan Google Workspace:
-     * Google Sheets untuk customer database
-     * Google Forms untuk standardized inquiry
-     * Google Calendar untuk follow-up reminders
-   - Training team untuk consistent communication standards
+1. **Item Tindakan:**
+   - Menyiapkan WhatsApp Business API dengan respons otomatis
+   - Membuat template respons untuk pertanyaan umum
+   - Mengimplementasikan CRM sederhana menggunakan Google Workspace:
+     * Google Sheets untuk basis data pelanggan
+     * Google Forms untuk pertanyaan standar
+     * Google Calendar untuk pengingat tindak lanjut
+   - Pelatihan tim untuk standar komunikasi yang konsisten
 
-2. **Implementation Plan:**
-   - Week 1-2: System setup dan configuration
-   - Week 3: Team training
-   - Week 4-8: Pilot run dan adjustment
-   - Month 3-6: Full implementation dan optimization
+2. **Rencana Implementasi:**
+   - Minggu 1-2: Pengaturan dan konfigurasi sistem
+   - Minggu 3: Pelatihan tim
+   - Minggu 4-8: Uji coba dan penyesuaian
+   - Bulan 3-6: Implementasi penuh dan optimasi
 
-3. **Expected Benefits:**
-   - Response time: dari 4-8 jam menjadi <2 jam
-   - Follow-up rate: dari 60% menjadi 95%
-   - Customer satisfaction: improvement 20%
-   - Conversion rate: improvement 5-8%
+3. **Manfaat yang Diharapkan:**
+   - Waktu respons: dari 4-8 jam menjadi <2 jam
+   - Tingkat tindak lanjut: dari 60% menjadi 95%
+   - Kepuasan pelanggan: peningkatan 20%
+   - Tingkat konversi: peningkatan 5-8%
 
-**Solusi 2: Standardisasi Customer Journey**
+**Solusi 2: Standardisasi Perjalanan Pelanggan**
 
-1. **Action Items:**
-   - Dokumentasi standard customer journey map
-   - Buat checklist untuk setiap stage
-   - Define service level agreements (SLAs)
-   - Implement customer feedback collection routine
+1. **Item Tindakan:**
+   - Dokumentasi peta perjalanan pelanggan standar
+   - Membuat daftar periksa untuk setiap tahap
+   - Mendefinisikan perjanjian tingkat layanan (SLA)
+   - Mengimplementasikan rutinitas pengumpulan umpan balik pelanggan
 
-2. **Quick Wins:**
-   - Consistency dalam service delivery
-   - Clear expectations untuk team dan customers
-   - Measurable service quality
+2. **Kemenangan Cepat:**
+   - Konsistensi dalam penyampaian layanan
+   - Ekspektasi jelas untuk tim dan pelanggan
+   - Kualitas layanan terukur
 
-**B. Quotation Process Improvement**
+**B. Perbaikan Proses Penawaran Harga**
 
-**Objective:** Mempercepat quotation process dan meningkatkan accuracy
+**Tujuan:** Mempercepat proses penawaran harga dan meningkatkan akurasi
 
-**Solusi 1: Automated Quotation Template**
+**Solusi 1: Template Penawaran Harga Otomatis**
 
-1. **Action Items:**
-   - Develop Excel-based quotation calculator:
-     * Product catalog dengan standardized pricing
-     * Formula untuk automatic calculation
-     * Built-in pricing rules dan discounts
-     * Professional quotation format output
-   - Create pricing guideline document
-   - Training team untuk menggunakan template
+1. **Item Tindakan:**
+   - Mengembangkan kalkulator penawaran harga berbasis Excel:
+     * Katalog produk dengan penetapan harga standar
+     * Formula untuk perhitungan otomatis
+     * Aturan penetapan harga dan diskon terintegrasi
+     * Format output penawaran harga profesional
+   - Membuat dokumen panduan penetapan harga
+   - Melatih tim untuk menggunakan template
 
-2. **Implementation:**
-   - Week 1-2: Template development
-   - Week 3: Testing dan validation
-   - Week 4: Team training
-   - Month 2-6: Usage dan continuous improvement
+2. **Implementasi:**
+   - Minggu 1-2: Pengembangan template
+   - Minggu 3: Pengujian dan validasi
+   - Minggu 4: Pelatihan tim
+   - Bulan 2-6: Penggunaan dan perbaikan berkelanjutan
 
-3. **Expected Benefits:**
-   - Quotation time: dari 1-3 hari menjadi 2-4 jam
-   - Pricing consistency: improvement 90%
-   - Error reduction: 80%
-   - Professional presentation
+3. **Manfaat yang Diharapkan:**
+   - Waktu penawaran harga: dari 1-3 hari menjadi 2-4 jam
+   - Konsistensi harga: peningkatan 90%
+   - Pengurangan kesalahan: 80%
+   - Presentasi profesional
 
-**C. Production Planning Enhancement**
+**C. Peningkatan Perencanaan Produksi**
 
-**Objective:** Improve production visibility dan scheduling
+**Tujuan:** Meningkatkan visibilitas dan penjadwalan produksi
 
-**Solusi 1: Digital Production Board**
+**Solusi 1: Papan Produksi Digital**
 
-1. **Action Items:**
-   - Implement Trello atau Notion untuk production tracking:
-     * Board untuk each production stage
-     * Cards untuk each project dengan details
-     * Team collaboration features
-     * Mobile access untuk real-time updates
-   - Daily standup meeting untuk production coordination
-   - Visual dashboard untuk management
+1. **Item Tindakan:**
+   - Mengimplementasikan Trello atau Notion untuk pelacakan produksi:
+     * Papan untuk setiap tahap produksi
+     * Kartu untuk setiap proyek dengan detail
+     * Fitur kolaborasi tim
+     * Akses mobile untuk pembaruan waktu nyata
+   - Pertemuan standup harian untuk koordinasi produksi
+   - Dasbor visual untuk manajemen
 
-2. **Benefits:**
-   - Real-time production visibility
-   - Better coordination antar team
-   - Reduced miscommunication
-   - Improved on-time delivery
+2. **Manfaat:**
+   - Visibilitas produksi waktu nyata
+   - Koordinasi lebih baik antar tim
+   - Pengurangan miskomunikasi
+   - Peningkatan pengiriman tepat waktu
 
-**Solusi 2: Material Tracking System**
+**Solusi 2: Sistem Pelacakan Material**
 
-1. **Action Items:**
-   - Simple inventory spreadsheet dengan:
-     * Current stock levels
-     * Reorder points
-     * Supplier information
-     * Lead times
-   - Weekly stock review routine
-   - Safety stock untuk critical materials
+1. **Item Tindakan:**
+   - Spreadsheet inventaris sederhana dengan:
+     * Tingkat stok saat ini
+     * Titik pemesanan ulang
+     * Informasi pemasok
+     * Waktu tunggu
+   - Rutinitas tinjauan stok mingguan
+   - Stok pengaman untuk material kritis
 
-**D. Data Management Foundation**
+**D. Fondasi Manajemen Data**
 
-**Objective:** Centralize dan secure critical business data
+**Tujuan:** Sentralisasi dan mengamankan data bisnis kritis
 
-**Solusi 1: Cloud Storage Implementation**
+**Solusi 1: Implementasi Penyimpanan Cloud**
 
-1. **Action Items:**
-   - Google Workspace atau Microsoft 365 subscription
-   - Structured folder system untuk documents:
-     * Customer files
-     * Project files
-     * Financial documents
-     * Templates dan resources
-   - Access control setup
-   - Backup automation
-   - Team training untuk cloud usage
+1. **Item Tindakan:**
+   - Berlangganan Google Workspace atau Microsoft 365
+   - Sistem folder terstruktur untuk dokumen:
+     * File pelanggan
+     * File proyek
+     * Dokumen keuangan
+     * Template dan sumber daya
+   - Pengaturan kontrol akses
+   - Otomasi cadangan
+   - Pelatihan tim untuk penggunaan cloud
 
-2. **Quick Wins:**
-   - Data accessibility improved
-   - Collaboration enabled
-   - Backup automated
-   - Version control available
+2. **Kemenangan Cepat:**
+   - Aksesibilitas data meningkat
+   - Kolaborasi diaktifkan
+   - Cadangan otomatis
+   - Kontrol versi tersedia
 
-**E. Process Documentation**
+**E. Dokumentasi Proses**
 
-**Objective:** Standardize critical processes
+**Tujuan:** Standardisasi proses kritis
 
-**Solusi 1: SOP Development**
+**Solusi 1: Pengembangan SOP**
 
-1. **Priority SOPs:**
-   - Customer inquiry handling
-   - Quotation preparation
-   - Order processing
-   - Production workflow
-   - Quality control procedures
-   - Delivery dan after-sales
+1. **SOP Prioritas:**
+   - Penanganan pertanyaan pelanggan
+   - Persiapan penawaran harga
+   - Pemrosesan pesanan
+   - Alur kerja produksi
+   - Prosedur pengendalian kualitas
+   - Pengiriman dan layanan purna jual
 
-2. **Documentation Format:**
-   - Simple flowchart visual
-   - Step-by-step written instructions
-   - Responsibilities clearly defined
-   - Tools dan templates referenced
+2. **Format Dokumentasi:**
+   - Visual diagram alir sederhana
+   - Instruksi tertulis langkah demi langkah
+   - Tanggung jawab didefinisikan dengan jelas
+   - Alat dan template direferensikan
 
-**Investment Required - Jangka Pendek:**
+**Investasi yang Diperlukan - Jangka Pendek:**
 
 - WhatsApp Business API: Rp 500.000/bulan
 - Google Workspace: Rp 2.000.000/tahun
-- Project management tool: Rp 300.000/bulan
-- Training dan consultation: Rp 10.000.000
-- Documentation dan templates: Rp 5.000.000
+- Alat manajemen proyek: Rp 300.000/bulan
+- Pelatihan dan konsultasi: Rp 10.000.000
+- Dokumentasi dan template: Rp 5.000.000
 
-**Total Investment Year 1:** ~Rp 30.000.000
+**Total Investasi Tahun 1:** ~Rp 30.000.000
 
-**Expected ROI:**
-- Efficiency improvement: 30-40%
-- Customer satisfaction: +20%
-- Error reduction: 60-70%
-- Time savings: 15-20 jam/minggu
+**ROI yang Diharapkan:**
+- Peningkatan efisiensi: 30-40%
+- Kepuasan pelanggan: +20%
+- Pengurangan kesalahan: 60-70%
+- Penghematan waktu: 15-20 jam/minggu
 
 **Tabel 3.8: Solusi Jangka Pendek dan Target Implementasi**
 
-| Solusi | Target Metrik | Baseline | Target (6 bulan) | Priority |
+| Solusi | Target Metrik | Nilai Awal | Target (6 bulan) | Prioritas |
 |--------|---------------|----------|------------------|----------|
-| Customer Response | Response time | 4-8 jam | <2 jam | Tinggi |
-| Quotation Speed | Preparation time | 1-3 hari | 2-4 jam | Tinggi |
-| Production Visibility | Real-time tracking | 0% | 90% | Sangat Tinggi |
-| Data Centralization | Cloud adoption | 20% | 100% | Tinggi |
-| Process Documentation | SOPs documented | 0% | 80% | Sedang |
+| Respons Pelanggan | Waktu respons | 4-8 jam | <2 jam | Tinggi |
+| Kecepatan Penawaran | Waktu persiapan | 1-3 hari | 2-4 jam | Tinggi |
+| Visibilitas Produksi | Pelacakan waktu nyata | 0% | 90% | Sangat Tinggi |
+| Sentralisasi Data | Adopsi cloud | 20% | 100% | Tinggi |
+| Dokumentasi Proses | SOP terdokumentasi | 0% | 80% | Sedang |
 
 #### 3.4.2 Solusi Jangka Menengah (6-18 Bulan)
 
-Fokus pada system integration dan process automation.
+Fokus pada integrasi sistem dan otomasi proses.
 
-**A. Integrated Business System**
+**A. Sistem Bisnis Terintegrasi**
 
-**Objective:** Implement integrated system untuk end-to-end process
+**Tujuan:** Mengimplementasikan sistem terintegrasi untuk proses end-to-end
 
-**Solusi 1: ERP System Implementation**
+**Solusi 1: Implementasi Sistem ERP**
 
-1. **System Selection:**
-   - Evaluate cloud-based ERP untuk SMEs:
-     * Odoo (open-source, customizable)
-     * Zoho One (comprehensive, affordable)
-     * SAP Business One (robust, scalable)
-   - Prioritize modules:
-     * CRM (Customer Relationship Management)
-     * Sales dan quotation
-     * Inventory management
-     * Production planning
-     * Financial accounting
-     * Reporting dan analytics
+1. **Pemilihan Sistem:**
+   - Evaluasi ERP berbasis cloud untuk UKM:
+     * Odoo (sumber terbuka, dapat disesuaikan)
+     * Zoho One (komprehensif, terjangkau)
+     * SAP Business One (kokoh, dapat diskalakan)
+   - Prioritas modul:
+     * CRM (Manajemen Hubungan Pelanggan)
+     * Penjualan dan penawaran harga
+     * Manajemen inventaris
+     * Perencanaan produksi
+     * Akuntansi keuangan
+     * Pelaporan dan analitik
 
-2. **Implementation Approach:**
+2. **Pendekatan Implementasi:**
    
-   **Phase 1 (Month 6-9): Foundation**
-   - System selection dan vendor agreement
-   - Infrastructure setup (cloud, network)
-   - Data migration preparation:
-     * Data cleanup dan validation
-     * Migration scripts preparation
-     * Test migration
-   - Core modules implementation:
-     * CRM module
-     * Sales module
-     * Basic inventory
+   **Tahap 1 (Bulan 6-9): Fondasi**
+   - Pemilihan sistem dan perjanjian vendor
+   - Penyiapan infrastruktur (cloud, jaringan)
+   - Persiapan migrasi data:
+     * Pembersihan dan validasi data
+     * Persiapan skrip migrasi
+     * Uji migrasi
+   - Implementasi modul inti:
+     * Modul CRM
+     * Modul penjualan
+     * Inventaris dasar
 
-   **Phase 2 (Month 10-12): Expansion**
-   - Production module implementation
-   - Financial module integration
-   - Advanced inventory features
-   - Reporting dashboards
-   - Mobile app deployment
+   **Tahap 2 (Bulan 10-12): Ekspansi**
+   - Implementasi modul produksi
+   - Integrasi modul keuangan
+   - Fitur inventaris lanjutan
+   - Dasbor pelaporan
+   - Penerapan aplikasi mobile
 
-   **Phase 3 (Month 13-15): Optimization**
-   - Process optimization based on usage
-   - Advanced features activation
-   - Integration dengan third-party services:
-     * Payment gateways
-     * Logistics providers
-     * Accounting software
-   - Performance tuning
+   **Tahap 3 (Bulan 13-15): Optimasi**
+   - Optimasi proses berdasarkan penggunaan
+   - Aktivasi fitur lanjutan
+   - Integrasi dengan layanan pihak ketiga:
+     * Gateway pembayaran
+     * Penyedia logistik
+     * Perangkat lunak akuntansi
+   - Penyetelan kinerja
 
-   **Phase 4 (Month 16-18): Stabilization**
-   - User adoption monitoring
-   - Continuous training
-   - Issue resolution
-   - Best practices development
+   **Tahap 4 (Bulan 16-18): Stabilisasi**
+   - Pemantauan adopsi pengguna
+   - Pelatihan berkelanjutan
+   - Penyelesaian masalah
+   - Pengembangan praktik terbaik
 
-3. **Change Management:**
-   - Executive sponsorship commitment
-   - Change champions identification
-   - Communication plan:
-     * Regular updates tentang progress
-     * Success stories sharing
-     * Issue escalation process
-   - Training program:
-     * Role-based training
-     * Hands-on workshops
-     * E-learning modules
-     * Continuous support
+3. **Manajemen Perubahan:**
+   - Komitmen dukungan eksekutif
+   - Identifikasi pemimpin perubahan
+   - Rencana komunikasi:
+     * Pembaruan rutin tentang kemajuan
+     * Berbagi kisah sukses
+     * Proses eskalasi masalah
+   - Program pelatihan:
+     * Pelatihan berbasis peran
+     * Workshop praktis
+     * Modul e-learning
+     * Dukungan berkelanjutan
 
-4. **Expected Benefits:**
-   - Process automation: 70% of routine tasks
-   - Data accuracy: 95%+
-   - Real-time visibility: 100%
-   - Decision making speed: 50% faster
-   - Scalability: support 3x current volume
+4. **Manfaat yang Diharapkan:**
+   - Otomasi proses: 70% dari tugas rutin
+   - Akurasi data: 95%+
+   - Visibilitas waktu nyata: 100%
+   - Kecepatan pengambilan keputusan: 50% lebih cepat
+   - Skalabilitas: mendukung 3x volume saat ini
 
-**B. Customer Experience Platform**
+**B. Platform Pengalaman Pelanggan**
 
-**Objective:** Digital customer engagement dan self-service
+**Tujuan:** Keterlibatan pelanggan digital dan layanan mandiri
 
-**Solusi 1: Customer Portal Development**
+**Solusi 1: Pengembangan Portal Pelanggan**
 
-1. **Features:**
-   - Online inquiry submission
-   - Quotation request form
-   - Order tracking
-   - Design approval workflow
-   - Document repository (invoices, warranties)
-   - Support ticket system
-   - Knowledge base
+1. **Fitur:**
+   - Pengajuan pertanyaan online
+   - Formulir permintaan penawaran harga
+   - Pelacakan pesanan
+   - Alur kerja persetujuan desain
+   - Repositori dokumen (faktur, garansi)
+   - Sistem tiket dukungan
+   - Basis pengetahuan
 
-2. **Development Approach:**
-   - Phase 1: Basic portal dengan inquiry dan tracking
-   - Phase 2: Design collaboration features
-   - Phase 3: E-commerce capability
-   - Phase 4: Mobile app
+2. **Pendekatan Pengembangan:**
+   - Tahap 1: Portal dasar dengan pertanyaan dan pelacakan
+   - Tahap 2: Fitur kolaborasi desain
+   - Tahap 3: Kemampuan e-commerce
+   - Tahap 4: Aplikasi mobile
 
-3. **Benefits:**
-   - Customer convenience 24/7
-   - Reduced service workload
-   - Better customer engagement
-   - Data collection untuk analytics
+3. **Manfaat:**
+   - Kenyamanan pelanggan 24/7
+   - Pengurangan beban kerja layanan
+   - Keterlibatan pelanggan lebih baik
+   - Pengumpulan data untuk analitik
 
-**C. Production Automation**
+**C. Otomasi Produksi**
 
-**Objective:** Smart manufacturing implementation
+**Tujuan:** Implementasi manufaktur cerdas
 
-**Solusi 1: Production Management System**
+**Solusi 1: Sistem Manajemen Produksi**
 
-1. **Components:**
-   - Automated production scheduling:
-     * Capacity-based planning
-     * Resource optimization
-     * Deadline management
-     * What-if scenario analysis
-   - Real-time tracking:
-     * QR code untuk work orders
-     * Mobile app untuk status updates
-     * Visual production dashboard
-     * Bottleneck identification
-   - Quality management:
-     * Digital QC checklists
-     * Photo documentation
-     * Defect tracking
-     * Statistical process control
+1. **Komponen:**
+   - Penjadwalan produksi otomatis:
+     * Perencanaan berbasis kapasitas
+     * Optimasi sumber daya
+     * Manajemen tenggat waktu
+     * Analisis skenario what-if
+   - Pelacakan waktu nyata:
+     * Kode QR untuk pesanan kerja
+     * Aplikasi mobile untuk pembaruan status
+     * Dasbor produksi visual
+     * Identifikasi hambatan
+   - Manajemen kualitas:
+     * Daftar periksa QC digital
+     * Dokumentasi foto
+     * Pelacakan cacat
+     * Pengendalian proses statistik
 
-2. **IoT Integration:**
-   - Production equipment monitoring
-   - Environmental sensors (temperature, humidity)
-   - Energy consumption tracking
-   - Predictive maintenance alerts
+2. **Integrasi IoT:**
+   - Pemantauan peralatan produksi
+   - Sensor lingkungan (suhu, kelembaban)
+   - Pelacakan konsumsi energi
+   - Peringatan pemeliharaan prediktif
 
-**D. Digital Marketing Platform**
+**D. Platform Pemasaran Digital**
 
-**Objective:** Online presence dan digital marketing
+**Tujuan:** Kehadiran online dan pemasaran digital
 
-**Solusi 1: Website dan E-Commerce**
+**Solusi 1: Situs Web dan E-Commerce**
 
-1. **Website Development:**
-   - Professional corporate website:
-     * Product catalog
-     * Portfolio showcase
-     * Customer testimonials
-     * Blog untuk content marketing
-     * Contact dan inquiry forms
-   - E-commerce capability:
-     * Online quotation calculator
-     * Standard product ordering
-     * Payment integration
-     * Order tracking
-   - Mobile responsive
-   - SEO optimized
+1. **Pengembangan Situs Web:**
+   - Situs web korporat profesional:
+     * Katalog produk
+     * Pameran portofolio
+     * Testimoni pelanggan
+     * Blog untuk pemasaran konten
+     * Formulir kontak dan pertanyaan
+   - Kemampuan e-commerce:
+     * Kalkulator penawaran harga online
+     * Pemesanan produk standar
+     * Integrasi pembayaran
+     * Pelacakan pesanan
+   - Responsif mobile
+   - Dioptimalkan SEO
 
-2. **Digital Marketing Strategy:**
-   - Content marketing program
-   - Social media management
-   - Email marketing automation
-   - Google Ads dan social media ads
-   - Analytics dan optimization
+2. **Strategi Pemasaran Digital:**
+   - Program pemasaran konten
+   - Manajemen media sosial
+   - Otomasi email marketing
+   - Google Ads dan iklan media sosial
+   - Analitik dan optimasi
 
-**E. Business Intelligence**
+**E. Intelijen Bisnis**
 
-**Objective:** Data-driven decision making
+**Tujuan:** Pengambilan keputusan berbasis data
 
-**Solusi 1: Analytics Platform**
+**Solusi 1: Platform Analitik**
 
-1. **Implementation:**
-   - BI tool selection (Power BI, Tableau, Looker)
-   - Data warehouse setup
-   - Dashboard development:
-     * Executive dashboard (KPIs overview)
-     * Sales dashboard (pipeline, conversion)
-     * Production dashboard (efficiency, quality)
-     * Financial dashboard (revenue, costs, margins)
-     * Customer dashboard (satisfaction, retention)
-   - Self-service reporting capability
+1. **Implementasi:**
+   - Pemilihan alat BI (Power BI, Tableau, Looker)
+   - Penyiapan gudang data
+   - Pengembangan dasbor:
+     * Dasbor eksekutif (tinjauan KPI)
+     * Dasbor penjualan (pipeline, konversi)
+     * Dasbor produksi (efisiensi, kualitas)
+     * Dasbor keuangan (pendapatan, biaya, margin)
+     * Dasbor pelanggan (kepuasan, retensi)
+   - Kemampuan pelaporan layanan mandiri
 
-2. **Analytics Capabilities:**
-   - Trend analysis
-   - Predictive analytics (demand forecasting)
-   - Customer behavior analysis
-   - Performance benchmarking
-   - Scenario planning
+2. **Kemampuan Analitik:**
+   - Analisis tren
+   - Analitik prediktif (peramalan permintaan)
+   - Analisis perilaku pelanggan
+   - Benchmarking kinerja
+   - Perencanaan skenario
 
-**Investment Required - Jangka Menengah:**
+**Investasi yang Diperlukan - Jangka Menengah:**
 
-- ERP system: Rp 150.000.000 (implementation) + Rp 30.000.000/tahun (subscription)
-- Customer portal: Rp 80.000.000
-- Production automation: Rp 100.000.000
-- Website dan e-commerce: Rp 50.000.000
-- Digital marketing: Rp 60.000.000/tahun
-- BI platform: Rp 40.000.000 + Rp 15.000.000/tahun
+- Sistem ERP: Rp 150.000.000 (implementasi) + Rp 30.000.000/tahun (langganan)
+- Portal pelanggan: Rp 80.000.000
+- Otomasi produksi: Rp 100.000.000
+- Situs web dan e-commerce: Rp 50.000.000
+- Pemasaran digital: Rp 60.000.000/tahun
+- Platform BI: Rp 40.000.000 + Rp 15.000.000/tahun
 
-**Total Investment:** ~Rp 420.000.000 (one-time) + Rp 105.000.000/tahun (recurring)
+**Total Investasi:** ~Rp 420.000.000 (satu kali) + Rp 105.000.000/tahun (berulang)
 
-**Expected ROI:**
-- Revenue growth: 50-70% dalam 18 bulan
-- Operational cost reduction: 25-30%
-- Customer acquisition cost: reduction 40%
-- Customer lifetime value: increase 60%
-- **Payback period: 18-24 bulan**
+**ROI yang Diharapkan:**
+- Pertumbuhan pendapatan: 50-70% dalam 18 bulan
+- Pengurangan biaya operasional: 25-30%
+- Biaya akuisisi pelanggan: pengurangan 40%
+- Nilai seumur hidup pelanggan: peningkatan 60%
+- **Periode pengembalian: 18-24 bulan**
 
 **Tabel 3.9: Solusi Jangka Menengah dan Timeline**
 
-| Solusi | Timeline | Expected Impact | Investment |
+| Solusi | Timeline | Dampak yang Diharapkan | Investasi |
 |--------|----------|-----------------|------------|
-| ERP System | Month 6-18 | 70% automation, 3x scalability | Rp 180M |
-| Customer Portal | Month 9-15 | 50% self-service, 24/7 availability | Rp 80M |
-| Production Automation | Month 10-16 | 40% efficiency, 90% quality | Rp 100M |
-| Digital Marketing | Month 6-18 | 3x brand awareness, 50% leads increase | Rp 110M |
-| Business Intelligence | Month 12-18 | Data-driven decisions, 50% faster insights | Rp 55M |
+| Sistem ERP | Bulan 6-18 | Otomasi 70%, skalabilitas 3x | Rp 180M |
+| Portal Pelanggan | Bulan 9-15 | Layanan mandiri 50%, ketersediaan 24/7 | Rp 80M |
+| Otomasi Produksi | Bulan 10-16 | Efisiensi 40%, kualitas 90% | Rp 100M |
+| Pemasaran Digital | Bulan 6-18 | Kesadaran merek 3x, peningkatan prospek 50% | Rp 110M |
+| Intelijen Bisnis | Bulan 12-18 | Keputusan berbasis data, wawasan 50% lebih cepat | Rp 55M |
 
 #### 3.4.3 Solusi Jangka Panjang (18-36 Bulan)
 
-Fokus pada advanced capabilities dan competitive advantage.
+Fokus pada kemampuan lanjutan dan keunggulan kompetitif.
 
-**A. AI dan Machine Learning Integration**
+**A. Integrasi AI dan Machine Learning**
 
-**Objective:** Intelligent automation dan predictive capabilities
+**Tujuan:** Otomasi cerdas dan kemampuan prediktif
 
-**Solusi 1: AI-Powered Systems**
+**Solusi 1: Sistem Bertenaga AI**
 
-1. **Applications:**
+1. **Aplikasi:**
    
-   **Demand Forecasting:**
-   - ML models untuk predict demand
-   - Seasonal pattern analysis
-   - Trend identification
-   - Inventory optimization
+   **Peramalan Permintaan:**
+   - Model ML untuk memprediksi permintaan
+   - Analisis pola musiman
+   - Identifikasi tren
+   - Optimasi inventaris
 
-   **Quality Prediction:**
-   - Computer vision untuk quality inspection
-   - Defect prediction models
-   - Root cause analysis automation
-   - Preventive quality management
+   **Prediksi Kualitas:**
+   - Visi komputer untuk inspeksi kualitas
+   - Model prediksi cacat
+   - Otomasi analisis akar penyebab
+   - Manajemen kualitas preventif
 
-   **Customer Intelligence:**
-   - Customer behavior analysis
-   - Churn prediction
-   - Personalization engine
-   - Next-best-action recommendations
+   **Intelijen Pelanggan:**
+   - Analisis perilaku pelanggan
+   - Prediksi churn
+   - Mesin personalisasi
+   - Rekomendasi tindakan terbaik berikutnya
 
-   **Price Optimization:**
-   - Dynamic pricing engine
-   - Competitive intelligence
-   - Margin optimization
-   - Deal scoring
+   **Optimasi Harga:**
+   - Mesin penetapan harga dinamis
+   - Intelijen kompetitif
+   - Optimasi margin
+   - Penilaian kesepakatan
 
-2. **Implementation:**
-   - Partner dengan AI solution providers
-   - Data preparation dan model training
-   - Pilot projects untuk proof of concept
-   - Gradual rollout berdasarkan results
+2. **Implementasi:**
+   - Bermitra dengan penyedia solusi AI
+   - Persiapan data dan pelatihan model
+   - Proyek percontohan untuk bukti konsep
+   - Peluncuran bertahap berdasarkan hasil
 
-**B. Advanced Manufacturing**
+**B. Manufaktur Lanjutan**
 
-**Objective:** Industry 4.0 capabilities
+**Tujuan:** Kemampuan Industri 4.0
 
-**Solusi 1: Smart Factory Implementation**
+**Solusi 1: Implementasi Pabrik Cerdas**
 
-1. **Components:**
-   - Advanced automation equipment
-   - IoT sensor network comprehensive
-   - Digital twin untuk production simulation
-   - Augmented reality untuk training dan maintenance
-   - Collaborative robots (cobots) untuk repetitive tasks
+1. **Komponen:**
+   - Peralatan otomasi lanjutan
+   - Jaringan sensor IoT komprehensif
+   - Kembar digital untuk simulasi produksi
+   - Augmented reality untuk pelatihan dan pemeliharaan
+   - Robot kolaboratif (cobots) untuk tugas berulang
 
-2. **Benefits:**
-   - Production efficiency: 80-90%
-   - Quality: 99%+ consistency
-   - Flexibility: rapid changeover
-   - Safety: reduced workplace accidents
+2. **Manfaat:**
+   - Efisiensi produksi: 80-90%
+   - Kualitas: konsistensi 99%+
+   - Fleksibilitas: pergantian cepat
+   - Keamanan: pengurangan kecelakaan kerja
 
-**C. Ecosystem Development**
+**C. Pengembangan Ekosistem**
 
-**Objective:** Platform dan marketplace strategy
+**Tujuan:** Strategi platform dan marketplace
 
-**Solusi 1: B2B Marketplace**
+**Solusi 1: Marketplace B2B**
 
-1. **Platform Features:**
-   - Designer dan architect portal
-   - Project collaboration tools
-   - Real-time design co-creation
-   - Integrated project management
-   - Commission dan referral program
+1. **Fitur Platform:**
+   - Portal desainer dan arsitek
+   - Alat kolaborasi proyek
+   - Ko-kreasi desain waktu nyata
+   - Manajemen proyek terintegrasi
+   - Program komisi dan rujukan
 
-2. **Ecosystem Partners:**
-   - Interior designers network
-   - Architects partnership
-   - Property developers
-   - Retail chains
-   - Complementary product manufacturers
+2. **Mitra Ekosistem:**
+   - Jaringan desainer interior
+   - Kemitraan arsitek
+   - Pengembang properti
+   - Rantai ritel
+   - Produsen produk pelengkap
 
-**D. Innovation Program**
+**D. Program Inovasi**
 
-**Objective:** Continuous innovation culture
+**Tujuan:** Budaya inovasi berkelanjutan
 
-**Solusi 1: R&D Initiative**
+**Solusi 1: Inisiatif R&D**
 
-1. **Focus Areas:**
-   - New material exploration
-   - Sustainable manufacturing
-   - Product innovation
-   - Process innovation
-   - Technology scouting
+1. **Area Fokus:**
+   - Eksplorasi material baru
+   - Manufaktur berkelanjutan
+   - Inovasi produk
+   - Inovasi proses
+   - Pencarian teknologi
 
-2. **Structure:**
-   - Dedicated innovation team
-   - Innovation budget allocation
-   - Partnership dengan universities
-   - Customer co-innovation program
-   - Regular innovation sprints
+2. **Struktur:**
+   - Tim inovasi khusus
+   - Alokasi anggaran inovasi
+   - Kemitraan dengan universitas
+   - Program ko-inovasi pelanggan
+   - Sprint inovasi reguler
 
-**E. Market Expansion**
+**E. Ekspansi Pasar**
 
-**Objective:** Geographic dan segment expansion
+**Tujuan:** Ekspansi geografis dan segmen
 
-**Solusi 1: Multi-location Strategy**
+**Solusi 1: Strategi Multi-lokasi**
 
-1. **Expansion Plan:**
-   - Showroom network dalam major cities
-   - Regional production centers
-   - Franchise model untuk selected locations
-   - Export market entry (ASEAN)
+1. **Rencana Ekspansi:**
+   - Jaringan showroom di kota-kota besar
+   - Pusat produksi regional
+   - Model waralaba untuk lokasi terpilih
+   - Masuk pasar ekspor (ASEAN)
 
-2. **Enablers:**
-   - Scalable systems dan processes
-   - Standardized operations
-   - Remote management capabilities
-   - Supply chain optimization
+2. **Enabler:**
+   - Sistem dan proses yang dapat diskalakan
+   - Operasi terstandarisasi
+   - Kemampuan manajemen jarak jauh
+   - Optimasi rantai pasokan
 
-**Investment Required - Jangka Panjang:**
+**Investasi yang Diperlukan - Jangka Panjang:**
 
-- AI dan ML systems: Rp 200.000.000
-- Smart factory upgrade: Rp 500.000.000
-- Ecosystem platform: Rp 150.000.000
-- Innovation program: Rp 100.000.000/tahun
-- Market expansion: Rp 300.000.000
+- Sistem AI dan ML: Rp 200.000.000
+- Peningkatan pabrik cerdas: Rp 500.000.000
+- Platform ekosistem: Rp 150.000.000
+- Program inovasi: Rp 100.000.000/tahun
+- Ekspansi pasar: Rp 300.000.000
 
-**Total Investment:** ~Rp 1.150.000.000
+**Total Investasi:** ~Rp 1.150.000.000
 
-**Expected Returns:**
-- Revenue: 2-3x current level
-- Market share: leadership position
-- Operational excellence: industry benchmark
-- Innovation: 30% revenue dari new products
-- **ROI: 35-40% annually**
+**Pengembalian yang Diharapkan:**
+- Pendapatan: 2-3x level saat ini
+- Pangsa pasar: posisi kepemimpinan
+- Keunggulan operasional: tolok ukur industri
+- Inovasi: 30% pendapatan dari produk baru
+- **ROI: 35-40% per tahun**
 
 **Tabel 3.10: Rencana Implementasi Solusi Jangka Panjang**
 
-| Solusi | Timeline | Strategic Impact | Investment |
+| Solusi | Timeline | Dampak Strategis | Investasi |
 |--------|----------|------------------|------------|
-| AI/ML Integration | Month 18-30 | Competitive advantage, 50% efficiency | Rp 200M |
-| Smart Factory | Month 24-36 | Industry leadership, 90% efficiency | Rp 500M |
-| B2B Marketplace | Month 20-32 | Ecosystem leadership, 2x market reach | Rp 150M |
-| Innovation Program | Continuous | Future-proofing, new revenue streams | Rp 100M/year |
-| Market Expansion | Month 24-36 | Geographic leadership, 3x revenue | Rp 300M |
+| Integrasi AI/ML | Bulan 18-30 | Keunggulan kompetitif, efisiensi 50% | Rp 200M |
+| Pabrik Cerdas | Bulan 24-36 | Kepemimpinan industri, efisiensi 90% | Rp 500M |
+| Marketplace B2B | Bulan 20-32 | Kepemimpinan ekosistem, jangkauan pasar 2x | Rp 150M |
+| Program Inovasi | Berkelanjutan | Persiapan masa depan, aliran pendapatan baru | Rp 100M/tahun |
+| Ekspansi Pasar | Bulan 24-36 | Kepemimpinan geografis, pendapatan 3x | Rp 300M |
 
-**Gambar 3.8: Roadmap Implementasi Solusi**
+**Gambar 3.8: Peta Jalan Implementasi Solusi**
 
-[Catatan: Visual timeline showing jangka pendek, menengah, dan panjang initiatives dengan dependencies dan milestones]
+[Catatan: Timeline visual yang menunjukkan inisiatif jangka pendek, menengah, dan panjang dengan ketergantungan dan tonggak pencapaian]
 
-**Success Factors untuk Implementasi:**
+**Faktor Kesuksesan untuk Implementasi:**
 
-1. **Executive Commitment:** Unwavering support dan resource allocation
-2. **Change Management:** Comprehensive program untuk adoption
-3. **Phased Approach:** Incremental implementation untuk manage risk
-4. **Quick Wins:** Early successes untuk build momentum
-5. **Measurement:** Clear KPIs dan regular monitoring
-6. **Flexibility:** Adaptability untuk adjust based on learnings
-7. **Communication:** Transparent dan regular updates
-8. **Training:** Continuous learning dan development
-9. **Support:** Adequate support systems untuk users
-10. **Celebration:** Recognition untuk milestones dan achievements
+1. **Komitmen Eksekutif:** Dukungan teguh dan alokasi sumber daya
+2. **Manajemen Perubahan:** Program komprehensif untuk adopsi
+3. **Pendekatan Bertahap:** Implementasi inkremental untuk mengelola risiko
+4. **Kemenangan Cepat:** Kesuksesan awal untuk membangun momentum
+5. **Pengukuran:** KPI jelas dan pemantauan reguler
+6. **Fleksibilitas:** Kemampuan beradaptasi untuk menyesuaikan berdasarkan pembelajaran
+7. **Komunikasi:** Pembaruan transparan dan reguler
+8. **Pelatihan:** Pembelajaran dan pengembangan berkelanjutan
+9. **Dukungan:** Sistem dukungan memadai untuk pengguna
+10. **Perayaan:** Pengakuan untuk tonggak dan pencapaian
 
-**Risk Mitigation:**
+**Mitigasi Risiko:**
 
-1. **Technical Risks:** Proof of concepts, pilot projects, expert consultation
-2. **Financial Risks:** Phased investment, ROI tracking, cost optimization
-3. **Organizational Risks:** Change management, training, communication
-4. **Market Risks:** Market research, pilot programs, flexible strategy
-5. **Operational Risks:** Parallel running, contingency planning, rollback procedures
+1. **Risiko Teknis:** Bukti konsep, proyek percontohan, konsultasi ahli
+2. **Risiko Keuangan:** Investasi bertahap, pelacakan ROI, optimasi biaya
+3. **Risiko Organisasi:** Manajemen perubahan, pelatihan, komunikasi
+4. **Risiko Pasar:** Riset pasar, program percontohan, strategi fleksibel
+5. **Risiko Operasional:** Berjalan paralel, perencanaan kontingensi, prosedur rollback
 
 Dengan implementasi solusi-solusi ini secara sistematis dan terencana, SATRIAMART akan dapat mengatasi kendala-kendala yang ada dan mencapai transformasi menuju perusahaan yang lebih efisien, kompetitif, dan siap untuk pertumbuhan berkelanjutan.
 
@@ -568,83 +568,81 @@ Dengan implementasi solusi-solusi ini secara sistematis dan terencana, SATRIAMAR
 
 Dalam pelaksanaan analisis proses bisnis ini, tim melakukan berbagai kegiatan untuk mengumpulkan informasi dan data yang akurat. Berikut dokumentasi kegiatan yang dilakukan:
 
-**A. Wawancara dengan Stakeholder**
+**A. Wawancara dengan Pemangku Kepentingan**
 
 1. **Pemilik/Direktur SATRIAMART**
    - Diskusi tentang visi, misi, dan strategi perusahaan
-   - Understanding tentang challenges dan aspirations
-   - Input tentang priorities dan constraints
+   - Pemahaman tentang tantangan dan aspirasi
+   - Masukan tentang prioritas dan kendala
 
 2. **Manajer Operasional**
-   - Deep dive ke operational processes
-   - Discussion tentang pain points
-   - Ideas untuk improvements
+   - Pendalaman proses operasional
+   - Diskusi tentang titik kesulitan
+   - Ide untuk perbaikan
 
 3. **Tim Produksi**
-   - Workshop sessions tentang production workflow
-   - Quality control discussions
-   - Technical constraints dan capabilities
+   - Sesi workshop tentang alur kerja produksi
+   - Diskusi pengendalian kualitas
+   - Kendala teknis dan kapabilitas
 
-4. **Tim Sales dan Customer Service**
-   - Customer journey mapping workshop
-   - Pain points dalam customer interactions
-   - Ideas untuk better customer experience
+4. **Tim Penjualan dan Layanan Pelanggan**
+   - Workshop pemetaan perjalanan pelanggan
+   - Titik kesulitan dalam interaksi pelanggan
+   - Ide untuk pengalaman pelanggan lebih baik
 
 **B. Observasi Langsung**
 
-1. **Workshop Visit**
-   - Observasi production process
-   - Equipment dan facility assessment
-   - Workflow dan coordination observation
+1. **Kunjungan Workshop**
+   - Observasi proses produksi
+   - Penilaian peralatan dan fasilitas
+   - Observasi alur kerja dan koordinasi
 
-2. **Office Operations**
-   - Administrative process observation
-   - System usage observation
-   - Communication pattern analysis
+2. **Operasi Kantor**
+   - Observasi proses administratif
+   - Observasi penggunaan sistem
+   - Analisis pola komunikasi
 
 **C. Dokumentasi Sistem**
 
-1. **Existing Systems Review**
-   - Screenshot current tools dan systems
-   - Data structure analysis
-   - Process flow documentation
+1. **Tinjauan Sistem yang Ada**
+   - Screenshot alat dan sistem saat ini
+   - Analisis struktur data
+   - Dokumentasi alur proses
 
-2. **Document Analysis**
-   - Sample documents review (quotations, orders, reports)
-   - Template analysis
-   - Data format assessment
+2. **Analisis Dokumen**
+   - Tinjauan dokumen sampel (penawaran harga, pesanan, laporan)
+   - Analisis template
+   - Penilaian format data
 
-**D. Workshop dan Diskusi Grup**
+**D. Workshop dan Diskusi Kelompok**
 
-1. **SWOT Analysis Workshop**
-   - Facilitated session dengan management team
-   - Collaborative SWOT identification
-   - Strategy brainstorming
+1. **Workshop Analisis SWOT**
+   - Sesi fasilitasi dengan tim manajemen
+   - Identifikasi SWOT kolaboratif
+   - Brainstorming strategi
 
-2. **Process Mapping Workshop**
-   - Collaborative process documentation
-   - Bottleneck identification
-   - Improvement ideas generation
+2. **Workshop Pemetaan Proses**
+   - Dokumentasi proses kolaboratif
+   - Identifikasi hambatan
+   - Generasi ide perbaikan
 
 **Gambar 3.9: Dokumentasi Kegiatan Analisis**
 
 [Catatan: Bagian ini akan diisi dengan foto-foto dokumentasi seperti:
 - Foto tim saat melakukan wawancara
 - Foto observasi proses produksi
-- Foto workshop SWOT analysis
+- Foto workshop analisis SWOT
 - Screenshot sistem yang digunakan
-- Foto tim saat presentasi findings
+- Foto tim saat presentasi temuan
 - Dokumentasi lainnya yang relevan]
 
 **Hasil Dokumentasi:**
-- Detailed process maps untuk all major processes
-- SWOT analysis hasil workshop
-- Pain points inventory comprehensive
-- Solution ideas dari team
-- Commitment untuk implement improvements
+- Peta proses terperinci untuk semua proses utama
+- Hasil workshop analisis SWOT
+- Inventaris titik kesulitan komprehensif
+- Ide solusi dari tim
+- Komitmen untuk mengimplementasikan perbaikan
 
-Proses analisis ini dilakukan dengan pendekatan participatory, melibatkan team SATRIAMART secara aktif untuk ensure accuracy, buy-in, dan ownership terhadap hasil analisis dan recommendations yang dihasilkan.
+Proses analisis ini dilakukan dengan pendekatan partisipatif, melibatkan tim SATRIAMART secara aktif untuk memastikan akurasi, dukungan, dan kepemilikan terhadap hasil analisis dan rekomendasi yang dihasilkan.
 
 ---
-
-<div style="page-break-after: always;"></div>

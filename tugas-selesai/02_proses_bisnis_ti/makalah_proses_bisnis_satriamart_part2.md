@@ -3,9 +3,9 @@
 
 ### 2.1 Gambaran Umum SATRIAMART
 
-SATRIAMART adalah perusahaan yang bergerak di bidang manufaktur dekorasi dan aksesoris akrilik dengan fokus pada penyediaan produk custom berkualitas tinggi. Perusahaan ini didirikan dengan visi untuk menghadirkan solusi dekorasi akrilik yang inovatif, modern, dan fungsional untuk memenuhi kebutuhan hunian, bisnis, maupun perkantoran.
+SATRIAMART adalah perusahaan yang bergerak di bidang manufaktur dekorasi dan aksesoris akrilik dengan fokus pada penyediaan produk kustom berkualitas tinggi. Perusahaan ini didirikan dengan visi untuk menghadirkan solusi dekorasi akrilik yang inovatif, modern, dan fungsional untuk memenuhi kebutuhan hunian, bisnis, maupun perkantoran.
 
-Berlokasi di Jl. Usman Dehir No.54, Limo, Depok, SATRIAMART telah melayani berbagai segmen pelanggan, mulai dari individu yang membutuhkan nomor rumah akrilik hingga perusahaan yang memerlukan signage dan papan nama untuk keperluan branding. Dengan menggunakan material akrilik premium dan desain modern, setiap produk SATRIAMART dirancang untuk memberikan kesan elegan, fungsional, dan tahan lama.
+Berlokasi di Jl. Usman Dehir No.54, Limo, Depok, SATRIAMART telah melayani berbagai segmen pelanggan, mulai dari individu yang membutuhkan nomor rumah akrilik hingga perusahaan yang memerlukan papan nama dan identitas merek untuk keperluan branding. Dengan menggunakan material akrilik premium dan desain modern, setiap produk SATRIAMART dirancang untuk memberikan kesan elegan, fungsional, dan tahan lama.
 
 **Identitas Perusahaan:**
 - **Nama Perusahaan:** SATRIAMART
@@ -18,7 +18,7 @@ Berlokasi di Jl. Usman Dehir No.54, Limo, Depok, SATRIAMART telah melayani berba
   - TikTok: @satriamart.id
   - YouTube: @satriamart.id
 
-SATRIAMART memiliki karakteristik bisnis yang unik dengan menerapkan sistem make-to-order untuk sebagian besar produknya. Hal ini memungkinkan perusahaan untuk memberikan kustomisasi yang tinggi sesuai dengan kebutuhan spesifik setiap pelanggan. Fleksibilitas dalam desain dan kemampuan produksi yang adaptif menjadi salah satu keunggulan kompetitif SATRIAMART di pasar.
+SATRIAMART memiliki karakteristik bisnis yang unik dengan menerapkan sistem pembuatan berdasarkan pesanan untuk sebagian besar produknya. Hal ini memungkinkan perusahaan untuk memberikan kustomisasi yang tinggi sesuai dengan kebutuhan spesifik setiap pelanggan. Fleksibilitas dalam desain dan kemampuan produksi yang adaptif menjadi salah satu keunggulan kompetitif SATRIAMART di pasar.
 
 Dalam menjalankan operasionalnya, SATRIAMART tidak hanya berfokus pada kualitas produk, tetapi juga pada kepuasan pelanggan melalui pelayanan yang profesional dan responsif. Perusahaan terus berupaya untuk mengikuti tren desain terkini sambil mempertahankan standar kualitas yang tinggi dalam setiap produk yang dihasilkan.
 
@@ -30,7 +30,7 @@ Dengan semakin berkembangnya permintaan pasar terhadap produk dekorasi akrilik, 
 
 Menjadi penyedia solusi dekorasi akrilik terdepan di Indonesia dengan menghadirkan desain kreatif, kualitas terbaik, dan pelayanan profesional.
 
-Visi ini mencerminkan ambisi SATRIAMART untuk menjadi pemimpin pasar dalam industri dekorasi akrilik di Indonesia. Dengan fokus pada tiga pilar utama - desain kreatif, kualitas terbaik, dan pelayanan profesional - perusahaan berkomitmen untuk memberikan value terbaik kepada pelanggan dan menjadi pilihan utama di pasar.
+Visi ini mencerminkan ambisi SATRIAMART untuk menjadi pemimpin pasar dalam industri dekorasi akrilik di Indonesia. Dengan fokus pada tiga pilar utama - desain kreatif, kualitas terbaik, dan pelayanan profesional - perusahaan berkomitmen untuk memberikan nilai terbaik kepada pelanggan dan menjadi pilihan utama di pasar.
 
 **MISI:**
 
@@ -44,11 +44,11 @@ Visi ini mencerminkan ambisi SATRIAMART untuk menjadi pemimpin pasar dalam indus
 
 3. **Menciptakan tren dekorasi akrilik yang modern dan bernilai estetika tinggi**
    
-   SATRIAMART tidak hanya mengikuti tren, tetapi juga berupaya menjadi trendsetter dalam industri dekorasi akrilik. Dengan tim desain yang kreatif dan pemahaman yang mendalam tentang preferensi pasar, perusahaan terus menghadirkan desain-desain baru yang modern dan memiliki nilai estetika tinggi.
+   SATRIAMART tidak hanya mengikuti tren, tetapi juga berupaya menjadi pelopor dalam industri dekorasi akrilik. Dengan tim desain yang kreatif dan pemahaman yang mendalam tentang preferensi pasar, perusahaan terus menghadirkan desain-desain baru yang modern dan memiliki nilai estetika tinggi.
 
 4. **Menjadi mitra terpercaya dalam mendukung citra hunian dan bisnis pelanggan**
    
-   SATRIAMART memposisikan diri sebagai mitra strategis bagi pelanggan dalam meningkatkan citra hunian atau bisnis mereka. Dengan memahami kebutuhan branding dan estetika pelanggan, perusahaan memberikan solusi yang tidak hanya fungsional tetapi juga mendukung identitas visual yang kuat.
+   SATRIAMART memposisikan diri sebagai mitra strategis bagi pelanggan dalam meningkatkan citra hunian atau bisnis mereka. Dengan memahami kebutuhan identitas merek dan estetika pelanggan, perusahaan memberikan solusi yang tidak hanya fungsional tetapi juga mendukung identitas visual yang kuat.
 
 ### 2.3 Produk dan Layanan
 
@@ -65,20 +65,20 @@ Produk unggulan yang dirancang untuk memperindah tampilan rumah dengan gaya mode
 - Dapat dikustomisasi sesuai preferensi
 - Instalasi mudah
 
-**2. Signage & Lettering Akrilik**
+**2. Papan Tanda & Huruf Akrilik**
 
-Solusi branding profesional untuk bisnis yang ingin meningkatkan visibilitas dan citra merek. Signage akrilik SATRIAMART dibuat dengan teknologi pemotongan presisi dan finishing berkualitas tinggi, cocok untuk berbagai jenis usaha mulai dari retail, F&B, hingga perkantoran.
+Solusi identitas merek profesional untuk bisnis yang ingin meningkatkan visibilitas dan citra perusahaan. Papan tanda akrilik SATRIAMART dibuat dengan teknologi pemotongan presisi dan hasil akhir berkualitas tinggi, cocok untuk berbagai jenis usaha mulai dari ritel, makanan dan minuman, hingga perkantoran.
 
 **Keunggulan:**
 - Desain profesional dan menarik perhatian
 - Material berkualitas dengan berbagai pilihan warna
-- Cocok untuk indoor dan outdoor
-- Dapat diintegrasikan dengan LED untuk efek pencahayaan
+- Cocok untuk dalam ruangan dan luar ruangan
+- Dapat diintegrasikan dengan lampu LED untuk efek pencahayaan
 - Tahan lama dan mudah perawatan
 
 **3. Papan Nama & Plakat Akrilik**
 
-Produk identitas premium untuk toko, kantor, dan berbagai jenis usaha. Papan nama dan plakat akrilik memberikan kesan profesional dan modern, dengan berbagai opsi desain yang dapat disesuaikan dengan identitas brand pelanggan.
+Produk identitas premium untuk toko, kantor, dan berbagai jenis usaha. Papan nama dan plakat akrilik memberikan kesan profesional dan modern, dengan berbagai pilihan desain yang dapat disesuaikan dengan identitas merek pelanggan.
 
 **Keunggulan:**
 - Tampilan profesional dan berkelas
@@ -101,11 +101,11 @@ Layanan kustomisasi penuh untuk berbagai kebutuhan dekorasi akrilik. SATRIAMART 
 **Proses Pemesanan:**
 
 1. **Konsultasi:** Pelanggan dapat berkonsultasi langsung melalui WhatsApp, email, atau kunjungan langsung
-2. **Desain:** Tim desain membuat mockup sesuai kebutuhan dan preferensi pelanggan
-3. **Approval:** Pelanggan melakukan review dan approval terhadap desain
+2. **Desain:** Tim desain membuat maket sesuai kebutuhan dan preferensi pelanggan
+3. **Persetujuan:** Pelanggan melakukan peninjauan dan persetujuan terhadap desain
 4. **Produksi:** Proses produksi dilakukan dengan standar kualitas tinggi
-5. **Quality Control:** Pemeriksaan kualitas sebelum pengiriman
-6. **Pengiriman:** Pengiriman dan instalasi sesuai kesepakatan
+5. **Pengendalian Kualitas:** Pemeriksaan kualitas sebelum pengiriman
+6. **Pengiriman:** Pengiriman dan pemasangan sesuai kesepakatan
 
 ### 2.4 Nilai-Nilai Perusahaan
 
