@@ -1,5 +1,6 @@
 # LAPORAN ANALISIS CUSTOMER RELATIONSHIP MANAGEMENT (CRM)
-## SATRIAMART - DEKORASI & AKSESORIS AKRILIK
+## STRATEGI DIGITAL TRANSFORMATION UNTUK MENINGKATKAN CUSTOMER EXPERIENCE DAN RETENTION DI SATRIAMART
+### DEKORASI & AKSESORIS AKRILIK PREMIUM
 
 **Universitas Nusa Mandiri**  
 **Fakultas Teknologi Informasi**  
@@ -12,6 +13,88 @@
 **Dosen Pengampu:** Fatmawati, M.Kom  
 **Kelompok:** [Nama Kelompok - 3 Anggota]  
 **Tanggal:** Oktober 2025
+
+---
+
+## TOPIK PEMBAHASAN
+
+**Fokus Utama Analisis:**
+- **Strategi Segmentasi Pelanggan** untuk pasar bisnis ke bisnis (B2B) dan bisnis ke konsumen (B2C)
+- **Pemetaan Perjalanan Pelanggan** dari kesadaran hingga advokasi
+- **Perancangan Sistem CRM Digital** dengan teknologi modern
+- **Peta Jalan Implementasi** untuk transformasi digital
+- **Analisis ROI** dan dampak bisnis
+
+**Ruang Lingkup Penelitian:**
+- Analisis kondisi terkini manajemen pelanggan di SATRIAMART
+- Perancangan strategi CRM terintegrasi untuk segmen B2B dan B2C
+- Desain sistem CRM digital dengan pendekatan mengutamakan perangkat bergerak
+- Pengembangan kerangka kerja implementasi dan pengukuran kinerja
+- Evaluasi ROI dan dampak bisnis dari investasi CRM
+
+**Metodologi Penelitian:**
+- Analisis proses bisnis dan penilaian kesenjangan
+- Analisis perilaku pelanggan dan segmentasi
+- Analisis kebutuhan teknologi dan perancangan sistem
+- Pemodelan keuangan untuk perhitungan ROI
+- Penilaian risiko dan perencanaan mitigasi
+
+---
+
+## DAFTAR ISI
+
+**BAB I: PENDAHULUAN**
+- 1.1 Latar Belakang
+- 1.2 Rumusan Masalah  
+- 1.3 Tujuan Penelitian
+- 1.4 Manfaat Penelitian
+
+**BAB II: LANDASAN TEORI**
+- 2.1 Konsep Manajemen Hubungan Pelanggan (CRM)
+- 2.2 CRM dalam Industri Manufaktur Khusus
+- 2.3 CRM Digital dan Teknologi Pendukung
+- 2.4 Pemetaan Perjalanan Pelanggan
+
+**BAB III: ANALISIS KONDISI TERKINI**
+- 3.1 Profil Bisnis SATRIAMART
+- 3.2 Analisis Segmentasi Pelanggan
+- 3.3 Proses Manajemen Pelanggan Saat Ini
+- 3.4 Tantangan Kondisi Terkini
+
+**BAB IV: PEMETAAN PERJALANAN PELANGGAN**
+- 4.1 Perjalanan Pelanggan B2C
+- 4.2 Perjalanan Pelanggan B2B
+- 4.3 Analisis Titik Masalah dan Peluang
+
+**BAB V: PERANCANGAN STRATEGI CRM**
+- 5.1 Visi dan Tujuan CRM
+- 5.2 Strategi Segmentasi Pelanggan
+- 5.3 Strategi Akuisisi Pelanggan
+- 5.4 Strategi Retensi Pelanggan
+- 5.5 Strategi Pengembangan Pelanggan
+
+**BAB VI: PERANCANGAN SISTEM CRM DIGITAL**
+- 6.1 Arsitektur Sistem
+- 6.2 Modul Inti CRM
+- 6.3 Analitik dan Pelaporan
+- 6.4 Fitur Aplikasi Bergerak
+- 6.5 Kebutuhan Integrasi
+
+**BAB VII: RENCANA IMPLEMENTASI**
+- 7.1 Peta Jalan Implementasi
+- 7.2 Kebutuhan Sumber Daya
+- 7.3 Manajemen Risiko
+- 7.4 Strategi Manajemen Perubahan
+
+**BAB VIII: PENGUKURAN KINERJA**
+- 8.1 Indikator Kinerja Utama (IKU)
+- 8.2 Analisis ROI dan Dampak Keuangan
+- 8.3 Metrik Keberhasilan dan Pemantauan
+
+**BAB IX: KESIMPULAN DAN REKOMENDASI**
+- 9.1 Kesimpulan
+- 9.2 Rekomendasi Strategis
+- 9.3 Pengembangan Masa Depan
 
 ---
 
@@ -28,669 +111,669 @@ Dalam era digital saat ini, manajemen hubungan pelanggan (Customer Relationship 
 Berdasarkan analisis awal terhadap SATRIAMART, terdapat beberapa tantangan dalam manajemen hubungan pelanggan:
 
 1. **Segmentasi Pelanggan yang Beragam**: Melayani B2B (bisnis/perkantoran) dan B2C (hunian) dengan kebutuhan yang berbeda
-2. **Proses Custom yang Kompleks**: Produk custom memerlukan interaksi intensif dengan pelanggan
-3. **Keterbatasan Sistem Digital**: Belum adanya sistem CRM terintegrasi untuk mengelola customer journey
-4. **Customer Retention**: Perlu strategi untuk mempertahankan pelanggan dan meningkatkan repeat order
+2. **Proses Kustomisasi yang Kompleks**: Produk kustomisasi memerlukan interaksi intensif dengan pelanggan
+3. **Keterbatasan Sistem Digital**: Belum adanya sistem CRM terintegrasi untuk mengelola perjalanan pelanggan
+4. **Retensi Pelanggan**: Perlu strategi untuk mempertahankan pelanggan dan meningkatkan pemesanan berulang
 
 ### 1.3 Tujuan Penelitian
 
 **Tujuan Umum:**
-Merancang strategi Customer Relationship Management yang komprehensif untuk meningkatkan customer satisfaction, retention, dan lifetime value di SATRIAMART.
+Merancang strategi Manajemen Hubungan Pelanggan yang komprehensif untuk meningkatkan kepuasan pelanggan, retensi, dan nilai seumur hidup pelanggan di SATRIAMART.
 
 **Tujuan Khusus:**
-1. Menganalisis customer segmentation dan behavior pattern di SATRIAMART
-2. Memetakan customer journey untuk produk standard dan custom
+1. Menganalisis segmentasi pelanggan dan pola perilaku di SATRIAMART
+2. Memetakan perjalanan pelanggan untuk produk standar dan kustomisasi
 3. Merancang strategi CRM digital yang sesuai dengan karakteristik bisnis
-4. Mengembangkan framework untuk mengukur efektivitas CRM implementation
+4. Mengembangkan kerangka kerja untuk mengukur efektivitas implementasi CRM
 
 ### 1.4 Manfaat Penelitian
 
 **Manfaat Akademis:**
-- Memberikan pemahaman praktis tentang implementasi CRM dalam industri manufaktur custom
-- Mengintegrasikan teori CRM dengan real business case
+- Memberikan pemahaman praktis tentang implementasi CRM dalam industri manufaktur kustomisasi
+- Mengintegrasikan teori CRM dengan kasus bisnis nyata
 
 **Manfaat Praktis:**
-- Memberikan rekomendasi strategis untuk SATRIAMART dalam meningkatkan customer management
-- Menyediakan blueprint untuk implementasi sistem CRM digital
+- Memberikan rekomendasi strategis untuk SATRIAMART dalam meningkatkan manajemen pelanggan
+- Menyediakan cetak biru untuk implementasi sistem CRM digital
 
 ---
 
 ## BAB II: LANDASAN TEORI
 
-### 2.1 Konsep Customer Relationship Management (CRM)
+### 2.1 Konsep Manajemen Hubungan Pelanggan (CRM)
 
-Customer Relationship Management adalah strategi bisnis yang berfokus pada pembangunan dan pemeliharaan hubungan jangka panjang dengan pelanggan untuk menciptakan value bagi perusahaan dan pelanggan (Kotler & Armstrong, 2018).
+Manajemen Hubungan Pelanggan adalah strategi bisnis yang berfokus pada pembangunan dan pemeliharaan hubungan jangka panjang dengan pelanggan untuk menciptakan nilai bagi perusahaan dan pelanggan (Kotler & Armstrong, 2018).
 
 **Komponen Utama CRM:**
-1. **Customer Acquisition**: Proses mendapatkan pelanggan baru
-2. **Customer Retention**: Mempertahankan pelanggan existing
-3. **Customer Development**: Meningkatkan value dari existing customers
-4. **Customer Recovery**: Memulihkan hubungan dengan lost customers
+1. **Akuisisi Pelanggan**: Proses mendapatkan pelanggan baru
+2. **Retensi Pelanggan**: Mempertahankan pelanggan yang ada
+3. **Pengembangan Pelanggan**: Meningkatkan nilai dari pelanggan yang ada
+4. **Pemulihan Pelanggan**: Memulihkan hubungan dengan pelanggan yang hilang
 
-### 2.2 CRM dalam Industri Manufaktur Custom
+### 2.2 CRM dalam Industri Manufaktur Kustomisasi
 
-Industri manufaktur dengan produk custom memiliki karakteristik khusus dalam CRM:
+Industri manufaktur dengan produk kustomisasi memiliki karakteristik khusus dalam CRM:
 
 **Karakteristik Khusus:**
-- **High Touch Sales Process**: Memerlukan konsultasi intensif
-- **Complex Decision Making**: Multiple stakeholders dalam B2B
-- **Long Sales Cycle**: Dari inquiry hingga delivery
-- **Post-Sales Service**: Support untuk customization dan maintenance
+- **Proses Penjualan Intensif**: Memerlukan konsultasi mendalam
+- **Pengambilan Keputusan Kompleks**: Banyak pemangku kepentingan dalam B2B
+- **Siklus Penjualan Panjang**: Dari permintaan hingga pengiriman
+- **Layanan Purna Jual**: Dukungan untuk kustomisasi dan pemeliharaan
 
-### 2.3 Digital CRM dan Teknologi Pendukung
+### 2.3 CRM Digital dan Teknologi Pendukung
 
-**Komponen Digital CRM:**
-1. **Customer Database Management**: Centralized customer information
-2. **Interaction Tracking**: Multi-channel communication history
-3. **Sales Pipeline Management**: Opportunity tracking dan forecasting
-4. **Analytics & Reporting**: Customer behavior analysis dan insights
+**Komponen CRM Digital:**
+1. **Manajemen Database Pelanggan**: Informasi pelanggan terpusat
+2. **Pelacakan Interaksi**: Riwayat komunikasi multi-saluran
+3. **Manajemen Saluran Penjualan**: Pelacakan peluang dan prakiraan
+4. **Analitik & Pelaporan**: Analisis perilaku pelanggan dan wawasan
 
-**Teknologi Enabler:**
-- Cloud-based CRM platforms
-- Mobile applications untuk sales team
-- Integration dengan marketing automation
-- AI untuk predictive analytics
+**Teknologi Pendukung:**
+- Platform CRM berbasis awan
+- Aplikasi bergerak untuk tim penjualan
+- Integrasi dengan otomasi pemasaran
+- Kecerdasan buatan untuk analitik prediktif
 
-### 2.4 Customer Journey Mapping
+### 2.4 Pemetaan Perjalanan Pelanggan
 
-Customer journey mapping adalah visualisasi dari seluruh pengalaman pelanggan mulai dari awareness hingga advocacy. Untuk produk custom, journey ini lebih kompleks dengan multiple touchpoints dan decision stages.
+Pemetaan perjalanan pelanggan adalah visualisasi dari seluruh pengalaman pelanggan mulai dari kesadaran hingga advokasi. Untuk produk kustomisasi, perjalanan ini lebih kompleks dengan berbagai titik sentuh dan tahap keputusan.
 
 ---
 
-## BAB III: ANALISIS CURRENT STATE
+## BAB III: ANALISIS KONDISI TERKINI
 
 ### 3.1 Profil Bisnis SATRIAMART
 
-**Business Model:**
-- **B2C Segment**: Individual customers untuk hunian (70% revenue)
-- **B2B Segment**: Bisnis dan perkantoran (30% revenue)
+**Model Bisnis:**
+- **Segmen B2C**: Pelanggan individu untuk hunian (70% pendapatan)
+- **Segmen B2B**: Bisnis dan perkantoran (30% pendapatan)
 
-**Product Portfolio:**
-1. **Nomor Rumah Akrilik** - High volume, standard customization
-2. **Signage Akrilik** - Medium volume, medium customization
-3. **Papan Nama Akrilik** - Medium volume, high customization
-4. **Aksesoris Dekorasi Custom** - Low volume, very high customization
+**Portofolio Produk:**
+1. **Nomor Rumah Akrilik** - Volume tinggi, kustomisasi standar
+2. **Papan Nama Akrilik** - Volume sedang, kustomisasi sedang
+3. **Papan Nama Akrilik** - Volume sedang, kustomisasi tinggi
+4. **Aksesoris Dekorasi Kustomisasi** - Volume rendah, kustomisasi sangat tinggi
 
-**Current Revenue Distribution:**
+**Distribusi Pendapatan Saat Ini:**
 - Nomor Rumah: 40%
-- Signage: 30%
+- Papan Nama: 30%
 - Papan Nama: 20%
-- Custom Aksesoris: 10%
+- Aksesoris Kustomisasi: 10%
 
-### 3.2 Customer Segmentation Analysis
+### 3.2 Analisis Segmentasi Pelanggan
 
-#### 3.2.1 B2C Customer Segments
+#### 3.2.1 Segmen Pelanggan B2C
 
-**Segment 1: Homeowners (50% dari B2C)**
-- **Profile**: Pemilik rumah, usia 30-50 tahun, middle to upper class
-- **Products**: Nomor rumah, aksesoris dekorasi kecil
-- **Behavior**: Price sensitive, quality conscious, seasonal buying
-- **Channel Preference**: Online marketplace, referral
+**Segmen 1: Pemilik Rumah (50% dari B2C)**
+- **Profil**: Pemilik rumah, usia 30-50 tahun, kelas menengah ke atas
+- **Produk**: Nomor rumah, aksesoris dekorasi kecil
+- **Perilaku**: Sensitif harga, peduli kualitas, pembelian musiman
+- **Preferensi Saluran**: Pasar daring, rujukan
 
-**Segment 2: Home Decorators (30% dari B2C)**
-- **Profile**: Interior enthusiasts, usia 25-40 tahun, urban
-- **Products**: Custom aksesoris, dekorasi unique
-- **Behavior**: Design oriented, willing to pay premium
-- **Channel Preference**: Social media, direct contact
+**Segmen 2: Penggemar Dekorasi Rumah (30% dari B2C)**
+- **Profil**: Penggemar interior, usia 25-40 tahun, perkotaan
+- **Produk**: Aksesoris kustomisasi, dekorasi unik
+- **Perilaku**: Berorientasi desain, bersedia membayar premium
+- **Preferensi Saluran**: Media sosial, kontak langsung
 
-**Segment 3: Small Business Owners (20% dari B2C)**
-- **Profile**: Cafe, toko kecil, home business
-- **Products**: Signage sederhana, papan nama
-- **Behavior**: Budget conscious, quick decision
-- **Channel Preference**: Direct visit, online
+**Segmen 3: Pemilik Bisnis Kecil (20% dari B2C)**
+- **Profil**: Kafe, toko kecil, bisnis rumahan
+- **Produk**: Papan nama sederhana, papan nama
+- **Perilaku**: Sadar anggaran, keputusan cepat
+- **Preferensi Saluran**: Kunjungan langsung, daring
 
-#### 3.2.2 B2B Customer Segments
+#### 3.2.2 Segmen Pelanggan B2B
 
-**Segment 1: Corporate Offices (40% dari B2B)**
-- **Profile**: Medium to large companies
-- **Products**: Corporate signage, office accessories
-- **Behavior**: Professional procurement process, bulk orders
-- **Channel Preference**: B2B sales, tender process
+**Segmen 1: Kantor Korporat (40% dari B2B)**
+- **Profil**: Perusahaan menengah hingga besar
+- **Produk**: Papan nama korporat, aksesoris kantor
+- **Perilaku**: Proses pengadaan profesional, pesanan massal
+- **Preferensi Saluran**: Penjualan B2B, proses tender
 
-**Segment 2: Retail Businesses (35% dari B2B)**
-- **Profile**: Retail stores, franchise outlets
-- **Products**: Store signage, display accessories
-- **Behavior**: Brand consistency important, repeat orders
-- **Channel Preference**: Sales representative, partnership
+**Segmen 2: Bisnis Ritel (35% dari B2B)**
+- **Profil**: Toko ritel, gerai waralaba
+- **Produk**: Papan nama toko, aksesoris tampilan
+- **Perilaku**: Konsistensi merek penting, pesanan berulang
+- **Preferensi Saluran**: Perwakilan penjualan, kemitraan
 
-**Segment 3: Interior Designers (25% dari B2B)**
-- **Profile**: Design consultants, architects
-- **Products**: Custom decorative elements
-- **Behavior**: Design quality focus, project-based
-- **Channel Preference**: Professional network, portfolio
+**Segmen 3: Desainer Interior (25% dari B2B)**
+- **Profil**: Konsultan desain, arsitek
+- **Produk**: Elemen dekoratif kustomisasi
+- **Perilaku**: Fokus kualitas desain, berbasis proyek
+- **Preferensi Saluran**: Jaringan profesional, portofolio
 
-### 3.3 Current Customer Management Process
+### 3.3 Proses Manajemen Pelanggan Saat Ini
 
-#### 3.3.1 Customer Acquisition Process
-1. **Lead Generation**: Mostly organic (referral, online search)
-2. **Initial Contact**: WhatsApp, phone, email
-3. **Consultation**: Manual consultation, design discussion
-4. **Quotation**: Manual calculation, email/WhatsApp delivery
-5. **Closing**: Direct negotiation, manual documentation
+#### 3.3.1 Proses Akuisisi Pelanggan
+1. **Generasi Prospek**: Sebagian besar organik (rujukan, pencarian daring)
+2. **Kontak Awal**: WhatsApp, telepon, surel
+3. **Konsultasi**: Konsultasi manual, diskusi desain
+4. **Penawaran**: Perhitungan manual, pengiriman surel/WhatsApp
+5. **Penutupan**: Negosiasi langsung, dokumentasi manual
 
-#### 3.3.2 Order Fulfillment Process
-1. **Order Confirmation**: Manual order tracking
-2. **Production Planning**: Basic scheduling
-3. **Progress Updates**: Ad-hoc communication
-4. **Delivery**: Local delivery service
-5. **Payment**: Cash, transfer, limited digital options
+#### 3.3.2 Proses Pemenuhan Pesanan
+1. **Konfirmasi Pesanan**: Pelacakan pesanan manual
+2. **Perencanaan Produksi**: Penjadwalan dasar
+3. **Pembaruan Kemajuan**: Komunikasi sewaktu-waktu
+4. **Pengiriman**: Layanan pengiriman lokal
+5. **Pembayaran**: Tunai, transfer, pilihan digital terbatas
 
-#### 3.3.3 Post-Sales Service
-1. **Customer Support**: Reactive, manual handling
-2. **Warranty Claims**: Case-by-case basis
-3. **Repeat Orders**: Relies on customer initiative
-4. **Feedback Collection**: Informal, inconsistent
+#### 3.3.3 Layanan Purna Jual
+1. **Dukungan Pelanggan**: Reaktif, penanganan manual
+2. **Klaim Garansi**: Kasus per kasus
+3. **Pesanan Berulang**: Bergantung pada inisiatif pelanggan
+4. **Pengumpulan Umpan Balik**: Informal, tidak konsisten
 
-### 3.4 Current State Challenges
+### 3.4 Tantangan Kondisi Terkini
 
-#### 3.4.1 Customer Data Management
-- **Scattered Information**: Customer data tersebar di WhatsApp, email, notes
-- **No Centralized Database**: Sulit tracking customer history
-- **Limited Analytics**: Tidak ada insight tentang customer behavior
-- **Poor Follow-up**: Banyak potential customers yang tidak di-follow up
+#### 3.4.1 Manajemen Data Pelanggan
+- **Informasi Tersebar**: Data pelanggan tersebar di WhatsApp, surel, catatan
+- **Tidak Ada Database Terpusat**: Sulit melacak riwayat pelanggan
+- **Analitik Terbatas**: Tidak ada wawasan tentang perilaku pelanggan
+- **Tindak Lanjut Buruk**: Banyak calon pelanggan yang tidak ditindaklanjuti
 
-#### 3.4.2 Customer Experience Issues
-- **Inconsistent Communication**: Berbeda-beda tergantung sales person
-- **Slow Response Time**: Terutama untuk complex inquiries
-- **Limited Self-Service**: Customer tidak bisa track order sendiri
-- **Manual Quotation Process**: Memakan waktu lama, prone to errors
+#### 3.4.2 Masalah Pengalaman Pelanggan
+- **Komunikasi Tidak Konsisten**: Berbeda-beda tergantung tenaga penjualan
+- **Waktu Respons Lambat**: Terutama untuk permintaan kompleks
+- **Layanan Mandiri Terbatas**: Pelanggan tidak bisa melacak pesanan sendiri
+- **Proses Penawaran Manual**: Memakan waktu lama, rentan kesalahan
 
-#### 3.4.3 Sales Process Inefficiencies
-- **No Sales Pipeline Tracking**: Sulit forecast revenue
-- **Limited Cross-selling**: Tidak ada systematic approach
-- **Poor Lead Qualification**: Effort tersebar tidak fokus
-- **No Customer Scoring**: Semua customers diperlakukan sama
+#### 3.4.3 Inefisiensi Proses Penjualan
+- **Tidak Ada Pelacakan Saluran Penjualan**: Sulit meramalkan pendapatan
+- **Penjualan Silang Terbatas**: Tidak ada pendekatan sistematis
+- **Kualifikasi Prospek Buruk**: Upaya tersebar tidak fokus
+- **Tidak Ada Penilaian Pelanggan**: Semua pelanggan diperlakukan sama
 
 ---
 
-## BAB IV: CUSTOMER JOURNEY MAPPING
+## BAB IV: PEMETAAN PERJALANAN PELANGGAN
 
-### 4.1 B2C Customer Journey
+### 4.1 Perjalanan Pelanggan B2C
 
-#### 4.1.1 Awareness Stage
-**Touchpoints:**
-- Google search untuk "nomor rumah akrilik"
-- Social media posts (Instagram, Facebook)
-- Referral dari existing customers
-- Marketplace discovery (Shopee, Tokopedia)
+#### 4.1.1 Tahap Kesadaran
+**Titik Sentuh:**
+- Pencarian Google untuk "nomor rumah akrilik"
+- Postingan media sosial (Instagram, Facebook)
+- Rujukan dari pelanggan yang ada
+- Penemuan pasar daring (Shopee, Tokopedia)
 
-**Customer Actions:**
-- Browsing online untuk inspirasi design
-- Comparing prices dengan competitors
-- Reading reviews dan testimonials
+**Tindakan Pelanggan:**
+- Menjelajah daring untuk inspirasi desain
+- Membandingkan harga dengan pesaing
+- Membaca ulasan dan testimoni
 
-**Pain Points:**
-- Limited online portfolio visibility
-- Sulit mendapatkan informasi pricing yang akurat
-- Tidak ada clear differentiation dengan competitors
+**Titik Masalah:**
+- Visibilitas portofolio daring terbatas
+- Sulit mendapatkan informasi harga yang akurat
+- Tidak ada diferensiasi yang jelas dengan pesaing
 
-**Opportunities:**
-- SEO optimization untuk local search
-- Social media content strategy
-- Customer testimonial showcase
+**Peluang:**
+- Optimasi SEO untuk pencarian lokal
+- Strategi konten media sosial
+- Showcase testimoni pelanggan
 
-#### 4.1.2 Consideration Stage
-**Touchpoints:**
-- WhatsApp consultation
-- Email inquiry
-- Direct phone call
-- Physical samples request
+#### 4.1.2 Tahap Pertimbangan
+**Titik Sentuh:**
+- Konsultasi WhatsApp
+- Permintaan surel
+- Panggilan telepon langsung
+- Permintaan sampel fisik
 
-**Customer Actions:**
-- Request quotation dengan specific requirements
-- Discuss design options dan customization
-- Compare dengan alternative suppliers
-- Evaluate value proposition
+**Tindakan Pelanggan:**
+- Meminta penawaran dengan persyaratan khusus
+- Mendiskusikan pilihan desain dan kustomisasi
+- Membandingkan dengan pemasok alternatif
+- Mengevaluasi proposisi nilai
 
-**Pain Points:**
-- Slow response time untuk complex requests
-- Limited design visualization tools
-- Uncertainty tentang final result
-- No clear timeline information
+**Titik Masalah:**
+- Waktu respons lambat untuk permintaan kompleks
+- Alat visualisasi desain terbatas
+- Ketidakpastian tentang hasil akhir
+- Tidak ada informasi timeline yang jelas
 
-**Opportunities:**
-- 24/7 chatbot untuk basic inquiries
-- Online design tool atau AR visualization
-- Clear SLA untuk response time
-- Transparent project timeline
+**Peluang:**
+- Bot percakapan 24/7 untuk permintaan dasar
+- Alat desain daring atau visualisasi AR
+- SLA yang jelas untuk waktu respons
+- Timeline proyek yang transparan
 
-#### 4.1.3 Purchase Stage
-**Touchpoints:**
-- Final quotation confirmation
-- Payment processing
-- Order confirmation
-- Production kick-off notification
+#### 4.1.3 Tahap Pembelian
+**Titik Sentuh:**
+- Konfirmasi penawaran final
+- Pemrosesan pembayaran
+- Konfirmasi pesanan
+- Notifikasi dimulainya produksi
 
-**Customer Actions:**
-- Negotiate final terms dan pricing
-- Arrange payment (DP + final payment)
-- Provide final design specifications
-- Set delivery expectations
+**Tindakan Pelanggan:**
+- Negosiasi persyaratan final dan harga
+- Mengatur pembayaran (DP + pembayaran akhir)
+- Memberikan spesifikasi desain final
+- Menetapkan harapan pengiriman
 
-**Pain Points:**
-- Manual quotation process prone to errors
-- Limited payment options
-- No automated order confirmation
-- Unclear production timeline
+**Titik Masalah:**
+- Proses penawaran manual rentan kesalahan
+- Pilihan pembayaran terbatas
+- Tidak ada konfirmasi pesanan otomatis
+- Timeline produksi tidak jelas
 
-**Opportunities:**
-- Automated quotation system
-- Multiple digital payment options
-- Real-time order tracking system
-- Production progress notifications
+**Peluang:**
+- Sistem penawaran otomatis
+- Berbagai pilihan pembayaran digital
+- Sistem pelacakan pesanan waktu nyata
+- Notifikasi kemajuan produksi
 
-#### 4.1.4 Delivery Stage
-**Touchpoints:**
-- Production progress updates
-- Quality check confirmation
-- Delivery scheduling
-- Installation support (if needed)
+#### 4.1.4 Tahap Pengiriman
+**Titik Sentuh:**
+- Pembaruan kemajuan produksi
+- Konfirmasi pemeriksaan kualitas
+- Penjadwalan pengiriman
+- Dukungan instalasi (jika diperlukan)
 
-**Customer Actions:**
-- Monitor production progress
-- Prepare for delivery
-- Conduct quality inspection
-- Arrange installation
+**Tindakan Pelanggan:**
+- Memantau kemajuan produksi
+- Mempersiapkan pengiriman
+- Melakukan inspeksi kualitas
+- Mengatur instalasi
 
-**Pain Points:**
-- Limited visibility into production status
-- Delivery scheduling conflicts
-- Quality issues discovered at delivery
-- No installation guidance
+**Titik Masalah:**
+- Visibilitas terbatas ke status produksi
+- Konflik penjadwalan pengiriman
+- Masalah kualitas ditemukan saat pengiriman
+- Tidak ada panduan instalasi
 
-**Opportunities:**
-- Real-time production tracking
-- Flexible delivery scheduling system
-- Quality assurance documentation
-- Installation video tutorials
+**Peluang:**
+- Pelacakan produksi waktu nyata
+- Sistem penjadwalan pengiriman fleksibel
+- Dokumentasi jaminan kualitas
+- Tutorial video instalasi
 
-#### 4.1.5 Post-Purchase Stage
-**Touchpoints:**
-- Delivery confirmation
-- Customer satisfaction survey
-- Warranty registration
-- Future purchase opportunities
+#### 4.1.5 Tahap Purna Beli
+**Titik Sentuh:**
+- Konfirmasi pengiriman
+- Survei kepuasan pelanggan
+- Pendaftaran garansi
+- Peluang pembelian masa depan
 
-**Customer Actions:**
-- Evaluate final product quality
-- Share feedback/reviews
-- Register warranty claims (if any)
-- Consider future purchases
+**Tindakan Pelanggan:**
+- Mengevaluasi kualitas produk akhir
+- Membagikan umpan balik/ulasan
+- Mendaftar klaim garansi (jika ada)
+- Mempertimbangkan pembelian masa depan
 
-**Pain Points:**
-- No systematic feedback collection
-- Unclear warranty terms
-- Lost contact untuk future opportunities
-- No incentive untuk referrals
+**Titik Masalah:**
+- Tidak ada pengumpulan umpan balik sistematis
+- Ketentuan garansi tidak jelas
+- Kehilangan kontak untuk peluang masa depan
+- Tidak ada insentif untuk rujukan
 
-**Opportunities:**
-- Automated satisfaction surveys
-- Clear warranty tracking system
-- Proactive customer retention campaigns
-- Referral reward programs
+**Peluang:**
+- Survei kepuasan otomatis
+- Sistem pelacakan garansi yang jelas
+- Kampanye retensi pelanggan proaktif
+- Program hadiah rujukan
 
-### 4.2 B2B Customer Journey
+### 4.2 Perjalanan Pelanggan B2B
 
-#### 4.2.1 Awareness & Research Stage
-**Touchpoints:**
-- Professional network referrals
-- LinkedIn company presence
-- Industry publications
-- Trade shows/exhibitions
-- Google Ads for business keywords
+#### 4.2.1 Tahap Kesadaran & Riset
+**Titik Sentuh:**
+- Rujukan jaringan profesional
+- Kehadiran perusahaan di LinkedIn
+- Publikasi industri
+- Pameran/ekshibisi dagang
+- Iklan Google untuk kata kunci bisnis
 
-**Customer Actions:**
-- Research potential suppliers
-- Evaluate company credibility
-- Review portfolio dan past projects
-- Check certifications dan compliance
+**Tindakan Pelanggan:**
+- Meneliti calon pemasok
+- Mengevaluasi kredibilitas perusahaan
+- Meninjau portofolio dan proyek masa lalu
+- Memeriksa sertifikasi dan kepatuhan
 
-**Pain Points:**
-- Limited professional online presence
-- No certified quality standards visible
-- Lack of case studies/portfolio
-- No clear B2B value proposition
+**Titik Masalah:**
+- Kehadiran daring profesional terbatas
+- Tidak ada standar kualitas bersertifikat yang terlihat
+- Kurangnya studi kasus/portofolio
+- Tidak ada proposisi nilai B2B yang jelas
 
-**Opportunities:**
-- Professional website dengan B2B focus
-- Industry certifications display
-- Detailed case studies publication
-- LinkedIn marketing untuk B2B
+**Peluang:**
+- Situs web profesional dengan fokus B2B
+- Tampilan sertifikasi industri
+- Publikasi studi kasus detail
+- Pemasaran LinkedIn untuk B2B
 
-#### 4.2.2 Vendor Evaluation Stage
-**Touchpoints:**
-- RFQ (Request for Quotation) submission
-- Technical consultation meetings
-- Sample requests dan evaluation
-- Reference checks dengan past clients
+#### 4.2.2 Tahap Evaluasi Vendor
+**Titik Sentuh:**
+- Pengajuan RFQ (Permintaan Penawaran)
+- Pertemuan konsultasi teknis
+- Permintaan dan evaluasi sampel
+- Pemeriksaan referensi dengan klien masa lalu
 
-**Customer Actions:**
-- Submit detailed technical requirements
-- Evaluate technical capabilities
-- Compare pricing dengan multiple vendors
-- Check references dan track record
+**Tindakan Pelanggan:**
+- Mengajukan persyaratan teknis detail
+- Mengevaluasi kemampuan teknis
+- Membandingkan harga dengan beberapa vendor
+- Memeriksa referensi dan rekam jejak
 
-**Pain Points:**
-- Slow response untuk complex RFQs
-- Limited technical documentation
-- No standardized quotation format
-- Difficulty in getting references
+**Titik Masalah:**
+- Respons lambat untuk RFQ kompleks
+- Dokumentasi teknis terbatas
+- Tidak ada format penawaran standar
+- Kesulitan mendapatkan referensi
 
-**Opportunities:**
-- Dedicated B2B quotation system
-- Technical specification templates
-- Reference customer program
-- Fast-track RFQ process
+**Peluang:**
+- Sistem penawaran B2B khusus
+- Template spesifikasi teknis
+- Program pelanggan referensi
+- Proses RFQ jalur cepat
 
-#### 4.2.3 Negotiation & Contract Stage
-**Touchpoints:**
-- Commercial negotiations
-- Contract terms discussion
-- Payment terms agreement
-- Delivery schedule confirmation
+#### 4.2.3 Tahap Negosiasi & Kontrak
+**Titik Sentuh:**
+- Negosiasi komersial
+- Diskusi persyaratan kontrak
+- Kesepakatan persyaratan pembayaran
+- Konfirmasi jadwal pengiriman
 
-**Customer Actions:**
-- Negotiate pricing dan terms
-- Review contract legal aspects
-- Arrange procurement approvals
-- Set performance expectations
+**Tindakan Pelanggan:**
+- Negosiasi harga dan persyaratan
+- Meninjau aspek hukum kontrak
+- Mengatur persetujuan pengadaan
+- Menetapkan harapan kinerja
 
-**Pain Points:**
-- Inflexible pricing struktur
-- Limited contract template options
-- Complex approval processes
-- No clear SLA definitions
+**Titik Masalah:**
+- Struktur harga tidak fleksibel
+- Pilihan template kontrak terbatas
+- Proses persetujuan kompleks
+- Tidak ada definisi SLA yang jelas
 
-**Opportunities:**
-- Tiered pricing structure
-- Standard B2B contract templates
-- Clear SLA dan KPI definitions
-- Flexible payment terms
+**Peluang:**
+- Struktur harga bertingkat
+- Template kontrak B2B standar
+- Definisi SLA dan KPI yang jelas
+- Persyaratan pembayaran fleksibel
 
-#### 4.2.4 Project Execution Stage
-**Touchpoints:**
-- Project kick-off meetings
-- Regular progress updates
-- Quality milestone checkpoints
-- Stakeholder communications
+#### 4.2.4 Tahap Eksekusi Proyek
+**Titik Sentuh:**
+- Pertemuan kick-off proyek
+- Pembaruan kemajuan rutin
+- Checkpoint milestone kualitas
+- Komunikasi pemangku kepentingan
 
-**Customer Actions:**
-- Monitor project progress
-- Provide feedback pada milestones
-- Manage internal stakeholder expectations
-- Coordinate delivery logistics
+**Tindakan Pelanggan:**
+- Memantau kemajuan proyek
+- Memberikan umpan balik pada milestone
+- Mengelola harapan pemangku kepentingan internal
+- Koordinasi logistik pengiriman
 
-**Pain Points:**
-- Limited project visibility
-- Ad-hoc communication schedule
-- No standardized reporting
-- Quality issues discovered late
+**Titik Masalah:**
+- Visibilitas proyek terbatas
+- Jadwal komunikasi sewaktu-waktu
+- Tidak ada pelaporan standar
+- Masalah kualitas ditemukan terlambat
 
-**Opportunities:**
-- Project management portal
-- Automated progress reporting
-- Quality checkpoint system
-- Stakeholder communication automation
+**Peluang:**
+- Portal manajemen proyek
+- Pelaporan kemajuan otomatis
+- Sistem checkpoint kualitas
+- Otomasi komunikasi pemangku kepentingan
 
-#### 4.2.5 Delivery & Post-Project Stage
-**Touchpoints:**
-- Final delivery dan acceptance
-- Performance evaluation
-- Invoice processing
-- Relationship maintenance
+#### 4.2.5 Tahap Pengiriman & Pasca-Proyek
+**Titik Sentuh:**
+- Pengiriman final dan penerimaan
+- Evaluasi kinerja
+- Pemrosesan faktur
+- Pemeliharaan hubungan
 
-**Customer Actions:**
-- Conduct final acceptance testing
-- Process payments
-- Evaluate vendor performance
-- Plan future projects
+**Tindakan Pelanggan:**
+- Melakukan pengujian penerimaan akhir
+- Memproses pembayaran
+- Mengevaluasi kinerja vendor
+- Merencanakan proyek masa depan
 
-**Pain Points:**
-- Complex acceptance criteria
-- Slow invoice processing
-- No systematic performance feedback
-- Lost contact untuk future opportunities
+**Titik Masalah:**
+- Kriteria penerimaan kompleks
+- Pemrosesan faktur lambat
+- Tidak ada umpan balik kinerja sistematis
+- Kehilangan kontak untuk peluang masa depan
 
-**Opportunities:**
-- Clear acceptance criteria definition
-- Automated invoicing system
-- Regular account management
-- Proactive pipeline development
+**Peluang:**
+- Definisi kriteria penerimaan yang jelas
+- Sistem faktur otomatis
+- Manajemen akun rutin
+- Pengembangan pipeline proaktif
 
 ---
 
 ## BAB V: PERANCANGAN STRATEGI CRM
 
-### 5.1 CRM Vision dan Objectives
+### 5.1 Visi dan Tujuan CRM
 
-**CRM Vision:**
-"Menjadi mitra terpercaya pelanggan dalam mewujudkan solusi akrilik berkualitas tinggi melalui pengalaman yang personal, responsif, dan professional."
+**Visi CRM:**
+"Menjadi mitra terpercaya pelanggan dalam mewujudkan solusi akrilik berkualitas tinggi melalui pengalaman yang personal, responsif, dan profesional."
 
-**Strategic Objectives:**
-1. **Customer Satisfaction**: Mencapai customer satisfaction score ≥ 90%
-2. **Customer Retention**: Meningkatkan repeat purchase rate dari 25% ke 60%
-3. **Customer Lifetime Value**: Meningkatkan average CLV sebesar 40%
-4. **Acquisition Efficiency**: Mengurangi customer acquisition cost sebesar 30%
-5. **Response Time**: Mencapai first response time < 2 jam untuk all inquiries
+**Tujuan Strategis:**
+1. **Kepuasan Pelanggan**: Mencapai skor kepuasan pelanggan ≥ 90%
+2. **Retensi Pelanggan**: Meningkatkan tingkat pembelian berulang dari 25% ke 60%
+3. **Nilai Seumur Hidup Pelanggan**: Meningkatkan rata-rata CLV sebesar 40%
+4. **Efisiensi Akuisisi**: Mengurangi biaya akuisisi pelanggan sebesar 30%
+5. **Waktu Respons**: Mencapai waktu respons pertama < 2 jam untuk semua permintaan
 
-### 5.2 Customer Segmentation Strategy
+### 5.2 Strategi Segmentasi Pelanggan
 
-#### 5.2.1 Value-Based Segmentation
+#### 5.2.1 Segmentasi Berbasis Nilai
 
-**Premium Customers (Top 20% by Revenue)**
-- **Characteristics**: High-value orders, repeat customers, referral generators
-- **Strategy**: White-glove service, dedicated account manager, priority support
-- **Benefits**: Exclusive pricing, early access to new products, premium warranty
+**Pelanggan Premium (20% Teratas berdasarkan Pendapatan)**
+- **Karakteristik**: Pesanan bernilai tinggi, pelanggan berulang, generator rujukan
+- **Strategi**: Layanan istimewa, manajer akun khusus, dukungan prioritas
+- **Manfaat**: Harga eksklusif, akses awal ke produk baru, garansi premium
 
-**Growth Customers (30% by Revenue)**
-- **Characteristics**: Medium-value orders, growth potential, occasional repeat
-- **Strategy**: Proactive relationship building, cross-selling focus
-- **Benefits**: Loyalty rewards, volume discounts, regular check-ins
+**Pelanggan Berkembang (30% berdasarkan Pendapatan)**
+- **Karakteristik**: Pesanan nilai sedang, potensi pertumbuhan, sesekali berulang
+- **Strategi**: Pembangunan hubungan proaktif, fokus penjualan silang
+- **Manfaat**: Hadiah loyalitas, diskon volume, check-in rutin
 
-**Transactional Customers (50% by Revenue)**
-- **Characteristics**: Low-value orders, price sensitive, infrequent purchases
-- **Strategy**: Efficient self-service, automation, cost optimization
-- **Benefits**: Competitive pricing, easy ordering process, quick delivery
+**Pelanggan Transaksional (50% berdasarkan Pendapatan)**
+- **Karakteristik**: Pesanan nilai rendah, sensitif harga, pembelian jarang
+- **Strategi**: Layanan mandiri efisien, otomasi, optimasi biaya
+- **Manfaat**: Harga kompetitif, proses pemesanan mudah, pengiriman cepat
 
-#### 5.2.2 Behavior-Based Segmentation
+#### 5.2.2 Segmentasi Berbasis Perilaku
 
-**Design Enthusiasts**
-- **Profile**: High customization requirements, design-focused
-- **Approach**: Creative consultation, design collaboration, premium positioning
-- **Tools**: 3D visualization, design portfolio showcase, expert consultation
+**Penggemar Desain**
+- **Profil**: Persyaratan kustomisasi tinggi, fokus desain
+- **Pendekatan**: Konsultasi kreatif, kolaborasi desain, posisi premium
+- **Alat**: Visualisasi 3D, showcase portofolio desain, konsultasi ahli
 
-**Quality Seekers**
-- **Profile**: Quality-focused, premium material preference
-- **Approach**: Quality assurance emphasis, material education, certification
-- **Tools**: Quality documentation, material samples, warranty programs
+**Pencari Kualitas**
+- **Profil**: Fokus kualitas, preferensi material premium
+- **Pendekatan**: Penekanan jaminan kualitas, edukasi material, sertifikasi
+- **Alat**: Dokumentasi kualitas, sampel material, program garansi
 
-**Convenience Seekers**
-- **Profile**: Quick decision makers, convenience-focused
-- **Approach**: Streamlined process, fast delivery, easy payment
-- **Tools**: One-click ordering, express delivery, digital payments
+**Pencari Kemudahan**
+- **Profil**: Pembuat keputusan cepat, fokus kemudahan
+- **Pendekatan**: Proses efisien, pengiriman cepat, pembayaran mudah
+- **Alat**: Pemesanan satu klik, pengiriman ekspres, pembayaran digital
 
-**Budget Conscious**
-- **Profile**: Price sensitive, basic requirements
-- **Approach**: Value positioning, cost optimization, package deals
-- **Tools**: Price comparison tools, volume discounts, budget packages
+**Sadar Anggaran**
+- **Profil**: Sensitif harga, persyaratan dasar
+- **Pendekatan**: Posisi nilai, optimasi biaya, paket bundel
+- **Alat**: Alat perbandingan harga, diskon volume, paket anggaran
 
-### 5.3 Customer Acquisition Strategy
+### 5.3 Strategi Akuisisi Pelanggan
 
-#### 5.3.1 Digital Marketing Strategy
+#### 5.3.1 Strategi Pemasaran Digital
 
-**Search Engine Optimization (SEO)**
-- Target keywords: "akrilik custom Jakarta", "nomor rumah akrilik", "signage akrilik"
-- Local SEO optimization untuk Jakarta dan sekitarnya
-- Content marketing dengan design tips dan case studies
+**Optimasi Mesin Pencari (SEO)**
+- Kata kunci target: "akrilik kustomisasi Jakarta", "nomor rumah akrilik", "papan nama akrilik"
+- Optimasi SEO lokal untuk Jakarta dan sekitarnya
+- Pemasaran konten dengan tips desain dan studi kasus
 
-**Search Engine Marketing (SEM)**
-- Google Ads untuk high-intent keywords
-- Facebook/Instagram ads untuk design inspiration
-- Retargeting campaigns untuk website visitors
+**Pemasaran Mesin Pencari (SEM)**
+- Iklan Google untuk kata kunci berminat tinggi
+- Iklan Facebook/Instagram untuk inspirasi desain
+- Kampanye penargetan ulang untuk pengunjung situs web
 
-**Social Media Marketing**
-- Instagram: Visual portfolio, behind-the-scenes content
-- Facebook: Customer testimonials, community building
-- LinkedIn: B2B content, professional networking
+**Pemasaran Media Sosial**
+- Instagram: Portofolio visual, konten behind-the-scenes
+- Facebook: Testimoni pelanggan, pembangunan komunitas
+- LinkedIn: Konten B2B, jaringan profesional
 
-**Content Marketing**
-- Blog tentang design trends, material education
-- Video tutorials untuk installation dan maintenance
-- Customer success stories dan case studies
+**Pemasaran Konten**
+- Blog tentang tren desain, edukasi material
+- Tutorial video untuk instalasi dan pemeliharaan
+- Kisah sukses pelanggan dan studi kasus
 
-#### 5.3.2 Referral Program
+#### 5.3.2 Program Rujukan
 
-**Customer Referral Program**
-- 10% discount untuk referrer
-- 5% discount untuk new customer
-- Bonus rewards untuk multiple successful referrals
+**Program Rujukan Pelanggan**
+- Diskon 10% untuk perujuk
+- Diskon 5% untuk pelanggan baru
+- Hadiah bonus untuk beberapa rujukan sukses
 
-**Professional Network Program**
-- Partner dengan interior designers
-- Architect network development
-- Trade partnership dengan material suppliers
+**Program Jaringan Profesional**
+- Bermitra dengan desainer interior
+- Pengembangan jaringan arsitek
+- Kemitraan perdagangan dengan pemasok material
 
-#### 5.3.3 Partnership Strategy
+#### 5.3.3 Strategi Kemitraan
 
-**E-commerce Partnerships**
-- Official stores di Shopee, Tokopedia, Bukalapak
-- Amazon untuk B2B marketplace
-- Specialized B2B platforms
+**Kemitraan E-commerce**
+- Toko resmi di Shopee, Tokopedia, Bukalapak
+- Amazon untuk pasar B2B
+- Platform B2B khusus
 
-**Offline Partnerships**
-- Material stores partnership
-- Home improvement centers
-- Exhibition participation
+**Kemitraan Offline**
+- Kemitraan toko material
+- Pusat perbaikan rumah
+- Partisipasi pameran
 
-### 5.4 Customer Retention Strategy
+### 5.4 Strategi Retensi Pelanggan
 
-#### 5.4.1 Loyalty Program
+#### 5.4.1 Program Loyalitas
 
-**SATRIAMART VIP Program**
-- Points untuk setiap purchase
-- Tier-based benefits (Bronze, Silver, Gold, Platinum)
-- Exclusive access to new products dan special pricing
+**Program VIP SATRIAMART**
+- Poin untuk setiap pembelian
+- Manfaat berbasis tingkat (Bronze, Silver, Gold, Platinum)
+- Akses eksklusif ke produk baru dan harga khusus
 
-**Corporate Account Program**
-- Dedicated account manager untuk corporate clients
-- Volume-based pricing structure
-- Priority production scheduling
+**Program Akun Korporat**
+- Manajer akun khusus untuk klien korporat
+- Struktur harga berbasis volume
+- Penjadwalan produksi prioritas
 
-#### 5.4.2 Customer Success Initiatives
+#### 5.4.2 Inisiatif Kesuksesan Pelanggan
 
-**Proactive Customer Support**
-- Regular check-ins dengan premium customers
-- Preventive maintenance reminders
-- Product care education
+**Dukungan Pelanggan Proaktif**
+- Check-in rutin dengan pelanggan premium
+- Pengingat pemeliharaan preventif
+- Edukasi perawatan produk
 
-**Upselling & Cross-selling**
-- Complementary product recommendations
-- Seasonal campaign untuk additional products
-- Bundle packages untuk related items
+**Penjualan Naik & Silang**
+- Rekomendasi produk pelengkap
+- Kampanye musiman untuk produk tambahan
+- Paket bundel untuk item terkait
 
-#### 5.4.3 Win-Back Campaign
+#### 5.4.3 Kampanye Kembali Menang
 
-**Lost Customer Re-engagement**
-- Automated email sequence untuk inactive customers
-- Special comeback offers
-- Survey untuk understanding churn reasons
+**Re-engagement Pelanggan yang Hilang**
+- Urutan surel otomatis untuk pelanggan tidak aktif
+- Penawaran comeback khusus
+- Survei untuk memahami alasan churn
 
-### 5.5 Customer Development Strategy
+### 5.5 Strategi Pengembangan Pelanggan
 
-#### 5.5.1 Account Growth Strategy
+#### 5.5.1 Strategi Pertumbuhan Akun
 
-**Expansion Opportunity Identification**
-- Analysis of customer purchase patterns
-- Identification of additional needs
-- Proactive proposal untuk new requirements
+**Identifikasi Peluang Ekspansi**
+- Analisis pola pembelian pelanggan
+- Identifikasi kebutuhan tambahan
+- Proposal proaktif untuk persyaratan baru
 
-**Value-Added Services**
-- Installation services
-- Maintenance contracts
-- Design consultation services
+**Layanan Nilai Tambah**
+- Layanan instalasi
+- Kontrak pemeliharaan
+- Layanan konsultasi desain
 
-#### 5.5.2 Customer Education Program
+#### 5.5.2 Program Edukasi Pelanggan
 
-**Product Knowledge Enhancement**
-- Material care guides
-- Design best practices
-- Industry trend updates
+**Peningkatan Pengetahuan Produk**
+- Panduan perawatan material
+- Praktik terbaik desain
+- Update tren industri
 
-**Digital Tools Enablement**
-- Online design tool training
-- Self-service portal usage
-- Mobile app benefits
+**Pemberdayaan Alat Digital**
+- Pelatihan alat desain daring
+- Penggunaan portal layanan mandiri
+- Manfaat aplikasi bergerak
 
 ---
 
-## BAB VI: DIGITAL CRM SYSTEM DESIGN
+## BAB VI: PERANCANGAN SISTEM CRM DIGITAL
 
-### 6.1 System Architecture
+### 6.1 Arsitektur Sistem
 
-#### 6.1.1 High-Level Architecture
+#### 6.1.1 Arsitektur Tingkat Tinggi
 
 ```
-Frontend Applications:
-├── Customer Portal (Web/Mobile)
-├── Sales Dashboard (Web)
-├── Admin Panel (Web)
-└── Mobile Sales App
+Aplikasi Frontend:
+├── Portal Pelanggan (Web/Bergerak)
+├── Dasbor Penjualan (Web)
+├── Panel Admin (Web)
+└── Aplikasi Penjualan Bergerak
 
-Backend Services:
-├── Customer Management Service
-├── Order Management Service
-├── Communication Service
-├── Analytics Service
-└── Integration Service
+Layanan Backend:
+├── Layanan Manajemen Pelanggan
+├── Layanan Manajemen Pesanan
+├── Layanan Komunikasi
+├── Layanan Analitik
+└── Layanan Integrasi
 
-Data Layer:
-├── Customer Database
-├── Transaction Database
-├── Communication Logs
-├── Analytics Data Warehouse
-└── File Storage (Images, Documents)
+Lapisan Data:
+├── Database Pelanggan
+├── Database Transaksi
+├── Log Komunikasi
+├── Data Warehouse Analitik
+└── Penyimpanan File (Gambar, Dokumen)
 
-External Integrations:
-├── Payment Gateways
-├── Email/SMS Services
-├── Social Media APIs
-├── Accounting System
-└── Production System
+Integrasi Eksternal:
+├── Gateway Pembayaran
+├── Layanan Email/SMS
+├── API Media Sosial
+├── Sistem Akuntansi
+└── Sistem Produksi
 ```
 
-#### 6.1.2 Technology Stack
+#### 6.1.2 Tumpukan Teknologi
 
 **Frontend:**
-- **Web Application**: React.js dengan Material-UI
-- **Mobile Application**: React Native untuk iOS/Android
-- **Admin Dashboard**: Vue.js dengan Element UI
+- **Aplikasi Web**: React.js dengan Material-UI
+- **Aplikasi Bergerak**: React Native untuk iOS/Android
+- **Dasbor Admin**: Vue.js dengan Element UI
 
 **Backend:**
-- **API Framework**: Node.js dengan Express.js
-- **Database**: PostgreSQL untuk transactional data
-- **Cache**: Redis untuk session dan caching
-- **Search**: Elasticsearch untuk customer search
+- **Framework API**: Node.js dengan Express.js
+- **Database**: PostgreSQL untuk data transaksional
+- **Cache**: Redis untuk sesi dan caching
+- **Pencarian**: Elasticsearch untuk pencarian pelanggan
 
-**Infrastructure:**
-- **Cloud Platform**: AWS/Google Cloud
+**Infrastruktur:**
+- **Platform Awan**: AWS/Google Cloud
 - **Container**: Docker dengan Kubernetes
-- **API Gateway**: Kong atau AWS API Gateway
-- **Monitoring**: New Relic atau DataDog
+- **Gateway API**: Kong atau AWS API Gateway
+- **Pemantauan**: New Relic atau DataDog
 
-### 6.2 Core CRM Modules
+### 6.2 Modul Inti CRM
 
-#### 6.2.1 Customer Management Module
+#### 6.2.1 Modul Manajemen Pelanggan
 
-**Features:**
-- **Customer Profiles**: Comprehensive customer information
-- **Contact Management**: Multiple contact persons per account
-- **Segmentation Engine**: Automatic customer categorization
-- **Interaction History**: Complete communication timeline
-- **Document Management**: Contracts, invoices, specifications
+**Fitur:**
+- **Profil Pelanggan**: Informasi pelanggan komprehensif
+- **Manajemen Kontak**: Beberapa orang kontak per akun
+- **Mesin Segmentasi**: Kategorisasi pelanggan otomatis
+- **Riwayat Interaksi**: Timeline komunikasi lengkap
+- **Manajemen Dokumen**: Kontrak, faktur, spesifikasi
 
-**Data Model:**
+**Model Data:**
 ```sql
-Customer:
+Pelanggan:
 - customer_id (PK)
 - company_name
 - customer_type (B2B/B2C)
@@ -699,7 +782,7 @@ Customer:
 - created_date
 - last_activity_date
 
-Contact:
+Kontak:
 - contact_id (PK)
 - customer_id (FK)
 - name
@@ -708,549 +791,549 @@ Contact:
 - phone
 - primary_contact
 
-CustomerSegment:
+SegmenPelanggan:
 - segment_id (PK)
 - segment_name
 - criteria
 - strategy
 ```
 
-#### 6.2.2 Sales Pipeline Module
+#### 6.2.2 Modul Saluran Penjualan
 
-**Features:**
-- **Opportunity Tracking**: From lead to close
-- **Stage Management**: Customizable sales stages
-- **Forecasting**: Revenue prediction based on pipeline
-- **Task Management**: Follow-up activities
-- **Quote Management**: Digital quotation system
+**Fitur:**
+- **Pelacakan Peluang**: Dari prospek hingga penutupan
+- **Manajemen Tahap**: Tahap penjualan yang dapat disesuaikan
+- **Peramalan**: Prediksi pendapatan berdasarkan saluran
+- **Manajemen Tugas**: Aktivitas tindak lanjut
+- **Manajemen Penawaran**: Sistem penawaran digital
 
-**Sales Stages:**
-1. **Lead**: Initial contact/inquiry
-2. **Qualified**: Requirement confirmed, budget available
-3. **Consultation**: Technical discussion, design phase
-4. **Proposal**: Quotation submitted
-5. **Negotiation**: Price/terms discussion
-6. **Closed Won**: Order confirmed
-7. **Closed Lost**: Opportunity lost
+**Tahap Penjualan:**
+1. **Prospek**: Kontak/permintaan awal
+2. **Berkualitas**: Persyaratan dikonfirmasi, anggaran tersedia
+3. **Konsultasi**: Diskusi teknis, fase desain
+4. **Proposal**: Penawaran diajukan
+5. **Negosiasi**: Diskusi harga/persyaratan
+6. **Menang**: Pesanan dikonfirmasi
+7. **Kalah**: Peluang hilang
 
-#### 6.2.3 Communication Management Module
+#### 6.2.3 Modul Manajemen Komunikasi
 
-**Features:**
-- **Multi-channel Integration**: Email, WhatsApp, phone, SMS
-- **Communication Templates**: Standardized responses
-- **Automated Workflows**: Trigger-based communications
-- **Communication Scheduling**: Follow-up reminders
-- **Response Tracking**: Response time analytics
+**Fitur:**
+- **Integrasi Multi-saluran**: Email, WhatsApp, telepon, SMS
+- **Template Komunikasi**: Respons standar
+- **Alur Kerja Otomatis**: Komunikasi berbasis pemicu
+- **Penjadwalan Komunikasi**: Pengingat tindak lanjut
+- **Pelacakan Respons**: Analitik waktu respons
 
-**Communication Channels:**
-- **Email**: Automated and manual campaigns
-- **WhatsApp Business API**: Real-time messaging
-- **SMS**: Transactional notifications
-- **Push Notifications**: Mobile app alerts
-- **Phone**: Call logging dan recording
+**Saluran Komunikasi:**
+- **Email**: Kampanye otomatis dan manual
+- **API Bisnis WhatsApp**: Pesan waktu nyata
+- **SMS**: Notifikasi transaksional
+- **Notifikasi Push**: Peringatan aplikasi bergerak
+- **Telepon**: Logging dan rekaman panggilan
 
-#### 6.2.4 Order Management Integration
+#### 6.2.4 Integrasi Manajemen Pesanan
 
-**Features:**
-- **Order Tracking**: Real-time status updates
-- **Production Integration**: Link dengan production system
-- **Delivery Management**: Logistics coordination
-- **Invoice Generation**: Automated billing
-- **Payment Tracking**: Payment status monitoring
+**Fitur:**
+- **Pelacakan Pesanan**: Pembaruan status waktu nyata
+- **Integrasi Produksi**: Tautan dengan sistem produksi
+- **Manajemen Pengiriman**: Koordinasi logistik
+- **Generasi Faktur**: Penagihan otomatis
+- **Pelacakan Pembayaran**: Pemantauan status pembayaran
 
-### 6.3 Analytics dan Reporting
+### 6.3 Analitik dan Pelaporan
 
-#### 6.3.1 Customer Analytics
+#### 6.3.1 Analitik Pelanggan
 
-**Key Metrics:**
-- **Customer Lifetime Value (CLV)**: Revenue potential per customer
-- **Customer Acquisition Cost (CAC)**: Cost to acquire new customer
-- **Churn Rate**: Percentage of customers lost per period
-- **Net Promoter Score (NPS)**: Customer satisfaction measurement
-- **Retention Rate**: Percentage of returning customers
+**Metrik Kunci:**
+- **Nilai Seumur Hidup Pelanggan (CLV)**: Potensi pendapatan per pelanggan
+- **Biaya Akuisisi Pelanggan (CAC)**: Biaya untuk memperoleh pelanggan baru
+- **Tingkat Churn**: Persentase pelanggan yang hilang per periode
+- **Skor Promotor Bersih (NPS)**: Pengukuran kepuasan pelanggan
+- **Tingkat Retensi**: Persentase pelanggan yang kembali
 
-**Analytics Dashboard:**
-- Customer segmentation analysis
-- Purchase behavior patterns
-- Communication effectiveness
-- Sales performance metrics
-- Revenue attribution
+**Dasbor Analitik:**
+- Analisis segmentasi pelanggan
+- Pola perilaku pembelian
+- Efektivitas komunikasi
+- Metrik kinerja penjualan
+- Atribusi pendapatan
 
-#### 6.3.2 Sales Analytics
+#### 6.3.2 Analitik Penjualan
 
-**Key Metrics:**
-- **Pipeline Value**: Total value in sales pipeline
-- **Conversion Rates**: By stage dan source
-- **Sales Velocity**: Time dari lead ke close
-- **Win/Loss Analysis**: Reasons for closing
-- **Territory Performance**: Sales by region/channel
+**Metrik Kunci:**
+- **Nilai Saluran**: Total nilai dalam saluran penjualan
+- **Tingkat Konversi**: Berdasarkan tahap dan sumber
+- **Kecepatan Penjualan**: Waktu dari prospek ke penutupan
+- **Analisis Menang/Kalah**: Alasan penutupan
+- **Kinerja Wilayah**: Penjualan berdasarkan wilayah/saluran
 
-#### 6.3.3 Marketing Analytics
+#### 6.3.3 Analitik Pemasaran
 
-**Key Metrics:**
-- **Lead Generation**: By source dan campaign
-- **Campaign ROI**: Return on marketing investment
-- **Channel Performance**: Effectiveness by channel
-- **Content Engagement**: Content performance metrics
-- **Attribution Analysis**: Multi-touch attribution
+**Metrik Kunci:**
+- **Generasi Prospek**: Berdasarkan sumber dan kampanye
+- **ROI Kampanye**: Pengembalian investasi pemasaran
+- **Kinerja Saluran**: Efektivitas berdasarkan saluran
+- **Keterlibatan Konten**: Metrik kinerja konten
+- **Analisis Atribusi**: Atribusi multi-sentuh
 
-### 6.4 Mobile Application Features
+### 6.4 Fitur Aplikasi Bergerak
 
-#### 6.4.1 Customer Mobile App
+#### 6.4.1 Aplikasi Bergerak Pelanggan
 
-**Core Features:**
-- **Product Catalog**: Browse dengan filter dan search
-- **Design Tool**: Basic customization interface
-- **Order Tracking**: Real-time status updates
-- **Communication**: Direct chat dengan sales team
-- **Account Management**: Profile dan order history
+**Fitur Inti:**
+- **Katalog Produk**: Jelajah dengan filter dan pencarian
+- **Alat Desain**: Antarmuka kustomisasi dasar
+- **Pelacakan Pesanan**: Pembaruan status waktu nyata
+- **Komunikasi**: Chat langsung dengan tim penjualan
+- **Manajemen Akun**: Profil dan riwayat pesanan
 
-**Advanced Features:**
-- **AR Visualization**: See products dalam real environment
-- **Push Notifications**: Order updates dan promotions
-- **Loyalty Program**: Points tracking dan rewards
-- **Referral System**: Easy sharing dan tracking
-- **Offline Mode**: Basic functionality tanpa internet
+**Fitur Lanjutan:**
+- **Visualisasi AR**: Lihat produk dalam lingkungan nyata
+- **Notifikasi Push**: Pembaruan pesanan dan promosi
+- **Program Loyalitas**: Pelacakan poin dan hadiah
+- **Sistem Rujukan**: Berbagi dan pelacakan mudah
+- **Mode Offline**: Fungsionalitas dasar tanpa internet
 
-#### 6.4.2 Sales Mobile App
+#### 6.4.2 Aplikasi Bergerak Penjualan
 
-**Core Features:**
-- **Customer Database**: Access customer information
-- **Lead Management**: Capture dan qualify leads
-- **Opportunity Tracking**: Update pipeline status
-- **Communication Tools**: Email, call, message integration
-- **Reporting**: Sales performance metrics
+**Fitur Inti:**
+- **Database Pelanggan**: Akses informasi pelanggan
+- **Manajemen Prospek**: Tangkap dan kualifikasi prospek
+- **Pelacakan Peluang**: Pembaruan status saluran
+- **Alat Komunikasi**: Integrasi email, panggilan, pesan
+- **Pelaporan**: Metrik kinerja penjualan
 
-**Advanced Features:**
-- **GPS Integration**: Customer visit tracking
-- **Document Scanner**: Digital document capture
-- **Offline Sync**: Work tanpa internet connection
-- **Calendar Integration**: Meeting scheduling
-- **Voice Notes**: Quick note taking
+**Fitur Lanjutan:**
+- **Integrasi GPS**: Pelacakan kunjungan pelanggan
+- **Pemindai Dokumen**: Tangkapan dokumen digital
+- **Sinkronisasi Offline**: Kerja tanpa koneksi internet
+- **Integrasi Kalender**: Penjadwalan pertemuan
+- **Catatan Suara**: Pencatatan cepat
 
-### 6.5 Integration Requirements
+### 6.5 Kebutuhan Integrasi
 
-#### 6.5.1 Internal System Integration
+#### 6.5.1 Integrasi Sistem Internal
 
-**Production System Integration:**
-- Real-time production status updates
-- Capacity planning coordination
-- Quality control integration
-- Material requirement planning
+**Integrasi Sistem Produksi:**
+- Pembaruan status produksi waktu nyata
+- Koordinasi perencanaan kapasitas
+- Integrasi kontrol kualitas
+- Perencanaan kebutuhan material
 
-**Accounting System Integration:**
-- Automated invoice generation
-- Payment reconciliation
-- Financial reporting integration
-- Tax compliance automation
+**Integrasi Sistem Akuntansi:**
+- Generasi faktur otomatis
+- Rekonsiliasi pembayaran
+- Integrasi pelaporan keuangan
+- Otomasi kepatuhan pajak
 
-**Inventory System Integration:**
-- Material availability checking
-- Automatic reorder triggers
-- Cost calculation integration
-- Supplier coordination
+**Integrasi Sistem Persediaan:**
+- Pengecekan ketersediaan material
+- Pemicu reorder otomatis
+- Integrasi perhitungan biaya
+- Koordinasi pemasok
 
-#### 6.5.2 External Service Integration
+#### 6.5.2 Integrasi Layanan Eksternal
 
-**Payment Gateway Integration:**
-- Multiple payment methods support
-- Secure payment processing
-- Automatic payment confirmation
-- Refund processing automation
+**Integrasi Gateway Pembayaran:**
+- Dukungan berbagai metode pembayaran
+- Pemrosesan pembayaran aman
+- Konfirmasi pembayaran otomatis
+- Otomasi pemrosesan refund
 
-**Communication Service Integration:**
-- Email service provider (SendGrid, Mailgun)
-- SMS gateway integration
-- WhatsApp Business API
-- Social media integration
+**Integrasi Layanan Komunikasi:**
+- Penyedia layanan email (SendGrid, Mailgun)
+- Integrasi gateway SMS
+- API Bisnis WhatsApp
+- Integrasi media sosial
 
-**Analytics Integration:**
-- Google Analytics untuk website tracking
-- Facebook Pixel untuk ads optimization
-- Custom event tracking
-- Cross-platform analytics
+**Integrasi Analitik:**
+- Google Analytics untuk pelacakan situs web
+- Facebook Pixel untuk optimasi iklan
+- Pelacakan event kustomisasi
+- Analitik lintas platform
 
 ---
 
-## BAB VII: IMPLEMENTATION PLAN
+## BAB VII: RENCANA IMPLEMENTASI
 
-### 7.1 Implementation Roadmap
+### 7.1 Peta Jalan Implementasi
 
-#### 7.1.1 Phase 1: Foundation (Month 1-2)
-**Scope:** Core CRM infrastructure dan basic functionality
+#### 7.1.1 Fase 1: Fondasi (Bulan 1-2)
+**Ruang Lingkup:** Infrastruktur CRM inti dan fungsionalitas dasar
 
-**Deliverables:**
-- Customer database setup
-- Basic customer management interface
-- Simple communication logging
-- User authentication sistem
+**Hasil yang Diharapkan:**
+- Penyiapan database pelanggan
+- Antarmuka manajemen pelanggan dasar
+- Logging komunikasi sederhana
+- Sistem autentikasi pengguna
 
-**Success Criteria:**
-- All existing customer data migrated
-- Basic customer profiles accessible
-- User dapat log communications
-- System dapat handle 100+ concurrent users
+**Kriteria Keberhasilan:**
+- Semua data pelanggan yang ada telah dimigrasikan
+- Profil pelanggan dasar dapat diakses
+- Pengguna dapat mencatat komunikasi
+- Sistem dapat menangani 100+ pengguna bersamaan
 
-#### 7.1.2 Phase 2: Sales Automation (Month 3-4)
-**Scope:** Sales pipeline dan opportunity management
+#### 7.1.2 Fase 2: Otomasi Penjualan (Bulan 3-4)
+**Ruang Lingkup:** Saluran penjualan dan manajemen peluang
 
-**Deliverables:**
-- Sales pipeline management
-- Opportunity tracking sistem
-- Basic quotation generation
-- Sales reporting dashboard
+**Hasil yang Diharapkan:**
+- Manajemen saluran penjualan
+- Sistem pelacakan peluang
+- Generasi penawaran dasar
+- Dasbor pelaporan penjualan
 
-**Success Criteria:**
-- All active opportunities tracked
-- Sales team adoption rate > 80%
-- Quotation generation time reduced 50%
-- Pipeline visibility untuk management
+**Kriteria Keberhasilan:**
+- Semua peluang aktif dilacak
+- Tingkat adopsi tim penjualan > 80%
+- Waktu generasi penawaran berkurang 50%
+- Visibilitas saluran untuk manajemen
 
-#### 7.1.3 Phase 3: Customer Experience (Month 5-6)
-**Scope:** Customer-facing features dan communication automation
+#### 7.1.3 Fase 3: Pengalaman Pelanggan (Bulan 5-6)
+**Ruang Lingkup:** Fitur pelanggan dan otomasi komunikasi
 
-**Deliverables:**
-- Customer portal launch
-- Mobile application (basic version)
-- Automated communication workflows
-- Customer satisfaction tracking
+**Hasil yang Diharapkan:**
+- Peluncuran portal pelanggan
+- Aplikasi bergerak (versi dasar)
+- Alur kerja komunikasi otomatis
+- Pelacakan kepuasan pelanggan
 
-**Success Criteria:**
-- Customer portal adoption rate > 30%
-- Mobile app downloads > 500
-- Automated workflow response rate > 90%
-- Customer satisfaction score > 85%
+**Kriteria Keberhasilan:**
+- Tingkat adopsi portal pelanggan > 30%
+- Unduhan aplikasi bergerak > 500
+- Tingkat respons alur kerja otomatis > 90%
+- Skor kepuasan pelanggan > 85%
 
-#### 7.1.4 Phase 4: Analytics & Optimization (Month 7-8)
-**Scope:** Advanced analytics dan system optimization
+#### 7.1.4 Fase 4: Analitik & Optimasi (Bulan 7-8)
+**Ruang Lingkup:** Analitik lanjutan dan optimasi sistem
 
-**Deliverables:**
-- Advanced analytics dashboard
-- Predictive analytics model
-- Performance optimization
-- Integration dengan external systems
+**Hasil yang Diharapkan:**
+- Dasbor analitik lanjutan
+- Model analitik prediktif
+- Optimasi kinerja
+- Integrasi dengan sistem eksternal
 
-**Success Criteria:**
-- Analytics dashboard providing actionable insights
-- Predictive model accuracy > 75%
-- System response time < 2 seconds
-- All integrations working seamlessly
+**Kriteria Keberhasilan:**
+- Dasbor analitik memberikan wawasan yang dapat ditindaklanjuti
+- Akurasi model prediktif > 75%
+- Waktu respons sistem < 2 detik
+- Semua integrasi berjalan dengan lancar
 
-### 7.2 Resource Requirements
+### 7.2 Kebutuhan Sumber Daya
 
-#### 7.2.1 Human Resources
+#### 7.2.1 Sumber Daya Manusia
 
-**Technical Team:**
-- **Project Manager** (1 person, full-time)
-- **Backend Developer** (2 persons, full-time)
-- **Frontend Developer** (2 persons, full-time)
-- **Mobile Developer** (1 person, full-time)
-- **UI/UX Designer** (1 person, part-time)
-- **QA Engineer** (1 person, full-time)
+**Tim Teknis:**
+- **Manajer Proyek** (1 orang, penuh waktu)
+- **Pengembang Backend** (2 orang, penuh waktu)
+- **Pengembang Frontend** (2 orang, penuh waktu)
+- **Pengembang Bergerak** (1 orang, penuh waktu)
+- **Desainer UI/UX** (1 orang, paruh waktu)
+- **Insinyur QA** (1 orang, penuh waktu)
 
-**Business Team:**
-- **Business Analyst** (1 person, full-time)
-- **CRM Specialist** (1 person, full-time)
-- **Training Coordinator** (1 person, part-time)
-- **Change Management Lead** (1 person, part-time)
+**Tim Bisnis:**
+- **Analis Bisnis** (1 orang, penuh waktu)
+- **Spesialis CRM** (1 orang, penuh waktu)
+- **Koordinator Pelatihan** (1 orang, paruh waktu)
+- **Pemimpin Manajemen Perubahan** (1 orang, paruh waktu)
 
-#### 7.2.2 Technology Infrastructure
+#### 7.2.2 Infrastruktur Teknologi
 
-**Development Environment:**
-- Cloud infrastructure (AWS/GCP): $2,000/month
-- Development tools licenses: $1,000/month
-- Testing environment: $500/month
+**Lingkungan Pengembangan:**
+- Infrastruktur awan (AWS/GCP): $2,000/bulan
+- Lisensi alat pengembangan: $1,000/bulan
+- Lingkungan pengujian: $500/bulan
 
-**Production Environment:**
-- Production cloud infrastructure: $3,000/month
-- Security dan compliance tools: $800/month
-- Monitoring dan analytics tools: $600/month
-- Backup dan disaster recovery: $400/month
+**Lingkungan Produksi:**
+- Infrastruktur awan produksi: $3,000/bulan
+- Alat keamanan dan kepatuhan: $800/bulan
+- Alat pemantauan dan analitik: $600/bulan
+- Cadangan dan pemulihan bencana: $400/bulan
 
-#### 7.2.3 Budget Estimation
+#### 7.2.3 Estimasi Anggaran
 
-**One-time Costs:**
-- Software licenses: $15,000
-- Hardware procurement: $10,000
-- Training dan certification: $8,000
-- Consultant fees: $20,000
-- **Total One-time**: $53,000
+**Biaya Sekali:**
+- Lisensi perangkat lunak: $15,000
+- Pengadaan perangkat keras: $10,000
+- Pelatihan dan sertifikasi: $8,000
+- Biaya konsultan: $20,000
+- **Total Sekali**: $53,000
 
-**Monthly Recurring Costs:**
-- Infrastructure: $4,800/month
-- Software subscriptions: $1,500/month
-- Support dan maintenance: $2,000/month
-- **Total Monthly**: $8,300/month
+**Biaya Berulang Bulanan:**
+- Infrastruktur: $4,800/bulan
+- Langganan perangkat lunak: $1,500/bulan
+- Dukungan dan pemeliharaan: $2,000/bulan
+- **Total Bulanan**: $8,300/bulan
 
-**Annual Investment:**
-- Year 1: $53,000 (one-time) + $99,600 (monthly) = $152,600
-- Year 2-3: $99,600/year
+**Investasi Tahunan:**
+- Tahun 1: $53,000 (sekali) + $99,600 (bulanan) = $152,600
+- Tahun 2-3: $99,600/tahun
 
-### 7.3 Risk Management
+### 7.3 Manajemen Risiko
 
-#### 7.3.1 Technical Risks
+#### 7.3.1 Risiko Teknis
 
-**Risk: System Performance Issues**
-- **Impact**: High - User adoption akan terhambat
-- **Probability**: Medium
-- **Mitigation**: Load testing, performance monitoring, scalable architecture
-- **Contingency**: Cloud auto-scaling, CDN implementation
+**Risiko: Masalah Kinerja Sistem**
+- **Dampak**: Tinggi - Adopsi pengguna akan terhambat
+- **Probabilitas**: Sedang
+- **Mitigasi**: Pengujian beban, pemantauan kinerja, arsitektur yang dapat diskalakan
+- **Kontingensi**: Auto-scaling awan, implementasi CDN
 
-**Risk: Data Security Breach**
-- **Impact**: Very High - Customer trust dan legal issues
-- **Probability**: Low
-- **Mitigation**: Security audit, encryption, access controls
-- **Contingency**: Incident response plan, cyber insurance
+**Risiko: Pelanggaran Keamanan Data**
+- **Dampak**: Sangat Tinggi - Kepercayaan pelanggan dan masalah hukum
+- **Probabilitas**: Rendah
+- **Mitigasi**: Audit keamanan, enkripsi, kontrol akses
+- **Kontingensi**: Rencana respons insiden, asuransi siber
 
-**Risk: Integration Failure**
-- **Impact**: Medium - Limited functionality
-- **Probability**: Medium
-- **Mitigation**: API testing, fallback mechanisms, vendor coordination
-- **Contingency**: Manual processes, alternative solutions
+**Risiko: Kegagalan Integrasi**
+- **Dampak**: Sedang - Fungsionalitas terbatas
+- **Probabilitas**: Sedang
+- **Mitigasi**: Pengujian API, mekanisme fallback, koordinasi vendor
+- **Kontingensi**: Proses manual, solusi alternatif
 
-#### 7.3.2 Business Risks
+#### 7.3.2 Risiko Bisnis
 
-**Risk: User Adoption Resistance**
-- **Impact**: High - ROI tidak tercapai
-- **Probability**: Medium
-- **Mitigation**: Training program, change management, user-friendly design
-- **Contingency**: Additional training, incentive programs
+**Risiko: Resistensi Adopsi Pengguna**
+- **Dampak**: Tinggi - ROI tidak tercapai
+- **Probabilitas**: Sedang
+- **Mitigasi**: Program pelatihan, manajemen perubahan, desain ramah pengguna
+- **Kontingensi**: Pelatihan tambahan, program insentif
 
-**Risk: Budget Overrun**
-- **Impact**: Medium - Project scope reduction
-- **Probability**: Medium
-- **Mitigation**: Detailed planning, regular monitoring, contingency reserve
-- **Contingency**: Phase prioritization, scope adjustment
+**Risiko: Pembengkakan Anggaran**
+- **Dampak**: Sedang - Pengurangan ruang lingkup proyek
+- **Probabilitas**: Sedang
+- **Mitigasi**: Perencanaan detail, pemantauan rutin, cadangan kontingensi
+- **Kontingensi**: Prioritas fase, penyesuaian ruang lingkup
 
-### 7.4 Change Management Strategy
+### 7.4 Strategi Manajemen Perubahan
 
-#### 7.4.1 Stakeholder Engagement
+#### 7.4.1 Keterlibatan Pemangku Kepentingan
 
-**Executive Level:**
-- Regular progress reports
-- ROI demonstration
-- Strategic alignment confirmation
-- Resource support assurance
+**Tingkat Eksekutif:**
+- Laporan kemajuan rutin
+- Demonstrasi ROI
+- Konfirmasi keselarasan strategis
+- Jaminan dukungan sumber daya
 
-**Management Level:**
-- Implementation planning involvement
-- Process improvement identification
-- Team preparation support
-- Success metrics definition
+**Tingkat Manajemen:**
+- Keterlibatan perencanaan implementasi
+- Identifikasi peningkatan proses
+- Dukungan persiapan tim
+- Definisi metrik keberhasilan
 
-**User Level:**
-- Early involvement dalam design
-- Comprehensive training program
-- Feedback collection dan incorporation
-- Continuous support provision
+**Tingkat Pengguna:**
+- Keterlibatan awal dalam desain
+- Program pelatihan komprehensif
+- Pengumpulan dan penggabungan umpan balik
+- Penyediaan dukungan berkelanjutan
 
-#### 7.4.2 Training Program
+#### 7.4.2 Program Pelatihan
 
-**Training Modules:**
-1. **CRM Fundamentals**: Basic concepts dan benefits
-2. **System Navigation**: Interface dan basic functions
-3. **Advanced Features**: Complex workflows dan automation
-4. **Analytics Usage**: Dashboard interpretation dan action
-5. **Mobile Application**: Mobile features dan benefits
+**Modul Pelatihan:**
+1. **Dasar-dasar CRM**: Konsep dasar dan manfaat
+2. **Navigasi Sistem**: Antarmuka dan fungsi dasar
+3. **Fitur Lanjutan**: Alur kerja kompleks dan otomasi
+4. **Penggunaan Analitik**: Interpretasi dasbor dan tindakan
+5. **Aplikasi Bergerak**: Fitur dan manfaat bergerak
 
-**Training Methods:**
-- **Classroom Training**: Interactive sessions untuk key users
-- **Online Training**: E-learning modules untuk all users
-- **Hands-on Workshops**: Practical exercises dengan real data
-- **One-on-one Coaching**: Personalized support untuk super users
-- **Documentation**: User manuals dan quick reference guides
+**Metode Pelatihan:**
+- **Pelatihan Kelas**: Sesi interaktif untuk pengguna kunci
+- **Pelatihan Daring**: Modul e-learning untuk semua pengguna
+- **Workshop Praktik Langsung**: Latihan praktis dengan data nyata
+- **Pembinaan Satu-satu**: Dukungan personal untuk super user
+- **Dokumentasi**: Manual pengguna dan panduan referensi cepat
 
-#### 7.4.3 Communication Plan
+#### 7.4.3 Rencana Komunikasi
 
-**Communication Channels:**
-- Project newsletter (monthly)
-- Town hall meetings (quarterly)
-- Email updates (bi-weekly)
-- Intranet project page
-- Feedback collection forms
+**Saluran Komunikasi:**
+- Newsletter proyek (bulanan)
+- Pertemuan umum (triwulanan)
+- Pembaruan email (dua mingguan)
+- Halaman proyek intranet
+- Formulir pengumpulan umpan balik
 
-**Key Messages:**
-- Project vision dan benefits
-- Progress updates dan milestones
-- Success stories dan wins
-- Training opportunities
-- Support availability
+**Pesan Kunci:**
+- Visi dan manfaat proyek
+- Pembaruan kemajuan dan milestone
+- Cerita sukses dan kemenangan
+- Peluang pelatihan
+- Ketersediaan dukungan
 
 ---
 
-## BAB VIII: PERFORMANCE MEASUREMENT
+## BAB VIII: PENGUKURAN KINERJA
 
-### 8.1 Key Performance Indicators (KPIs)
+### 8.1 Indikator Kinerja Utama (IKU)
 
-#### 8.1.1 Customer Satisfaction KPIs
+#### 8.1.1 IKU Kepuasan Pelanggan
 
-**Net Promoter Score (NPS)**
-- **Target**: NPS ≥ 50 (Industry benchmark: 30-40)
-- **Measurement**: Quarterly customer survey
-- **Baseline**: Current estimated NPS = 20
-- **Improvement Target**: +30 points dalam 12 bulan
+**Skor Promotor Bersih (NPS)**
+- **Target**: NPS ≥ 50 (Patokan industri: 30-40)
+- **Pengukuran**: Survei pelanggan triwulanan
+- **Baseline**: Estimasi NPS saat ini = 20
+- **Target Peningkatan**: +30 poin dalam 12 bulan
 
-**Customer Satisfaction Score (CSAT)**
+**Skor Kepuasan Pelanggan (CSAT)**
 - **Target**: CSAT ≥ 90%
-- **Measurement**: Post-transaction surveys
-- **Baseline**: Current estimated CSAT = 75%
-- **Improvement Target**: +15 points dalam 8 bulan
+- **Pengukuran**: Survei pasca-transaksi
+- **Baseline**: Estimasi CSAT saat ini = 75%
+- **Target Peningkatan**: +15 poin dalam 8 bulan
 
-**Customer Effort Score (CES)**
-- **Target**: CES ≤ 2.0 (1-5 scale, lower is better)
-- **Measurement**: Process completion surveys
-- **Baseline**: Current estimated CES = 3.5
-- **Improvement Target**: -1.5 points dalam 10 bulan
+**Skor Upaya Pelanggan (CES)**
+- **Target**: CES ≤ 2.0 (skala 1-5, semakin rendah semakin baik)
+- **Pengukuran**: Survei penyelesaian proses
+- **Baseline**: Estimasi CES saat ini = 3.5
+- **Target Peningkatan**: -1.5 poin dalam 10 bulan
 
-#### 8.1.2 Customer Retention KPIs
+#### 8.1.2 IKU Retensi Pelanggan
 
-**Customer Retention Rate**
-- **Target**: 85% annual retention rate
-- **Measurement**: Customers active year-over-year
-- **Baseline**: Current estimated retention = 60%
-- **Improvement Target**: +25 points dalam 18 bulan
+**Tingkat Retensi Pelanggan**
+- **Target**: 85% tingkat retensi tahunan
+- **Pengukuran**: Pelanggan aktif tahun ke tahun
+- **Baseline**: Estimasi retensi saat ini = 60%
+- **Target Peningkatan**: +25 poin dalam 18 bulan
 
-**Repeat Purchase Rate**
-- **Target**: 60% of customers make repeat purchase
-- **Measurement**: Customers dengan multiple orders
-- **Baseline**: Current estimated rate = 25%
-- **Improvement Target**: +35 points dalam 15 bulan
+**Tingkat Pembelian Berulang**
+- **Target**: 60% pelanggan melakukan pembelian berulang
+- **Pengukuran**: Pelanggan dengan pesanan ganda
+- **Baseline**: Estimasi tingkat saat ini = 25%
+- **Target Peningkatan**: +35 poin dalam 15 bulan
 
-**Customer Churn Rate**
-- **Target**: <15% annual churn rate
-- **Measurement**: Customers lost per year
-- **Baseline**: Current estimated churn = 40%
-- **Improvement Target**: -25 points dalam 18 bulan
+**Tingkat Churn Pelanggan**
+- **Target**: <15% tingkat churn tahunan
+- **Pengukuran**: Pelanggan yang hilang per tahun
+- **Baseline**: Estimasi churn saat ini = 40%
+- **Target Peningkatan**: -25 poin dalam 18 bulan
 
-#### 8.1.3 Customer Lifetime Value KPIs
+#### 8.1.3 IKU Nilai Seumur Hidup Pelanggan
 
-**Average Customer Lifetime Value (CLV)**
-- **Target**: Increase CLV by 40%
-- **Measurement**: (Average Purchase Value × Purchase Frequency × Customer Lifespan)
-- **Baseline**: Current estimated CLV = Rp 3,500,000
-- **Improvement Target**: Rp 4,900,000 dalam 24 bulan
+**Rata-rata Nilai Seumur Hidup Pelanggan (CLV)**
+- **Target**: Meningkatkan CLV sebesar 40%
+- **Pengukuran**: (Nilai Pembelian Rata-rata × Frekuensi Pembelian × Masa Hidup Pelanggan)
+- **Baseline**: Estimasi CLV saat ini = Rp 3,500,000
+- **Target Peningkatan**: Rp 4,900,000 dalam 24 bulan
 
-**Customer Acquisition Cost (CAC)**
-- **Target**: Reduce CAC by 30%
-- **Measurement**: Total acquisition cost / new customers acquired
-- **Baseline**: Current estimated CAC = Rp 500,000
-- **Improvement Target**: Rp 350,000 dalam 12 bulan
+**Biaya Akuisisi Pelanggan (CAC)**
+- **Target**: Mengurangi CAC sebesar 30%
+- **Pengukuran**: Total biaya akuisisi / pelanggan baru yang diperoleh
+- **Baseline**: Estimasi CAC saat ini = Rp 500,000
+- **Target Peningkatan**: Rp 350,000 dalam 12 bulan
 
-**CLV/CAC Ratio**
-- **Target**: CLV/CAC ratio ≥ 10:1
-- **Measurement**: CLV divided by CAC
-- **Baseline**: Current estimated ratio = 7:1
-- **Improvement Target**: Achieve 14:1 dalam 24 bulan
+**Rasio CLV/CAC**
+- **Target**: Rasio CLV/CAC ≥ 10:1
+- **Pengukuran**: CLV dibagi dengan CAC
+- **Baseline**: Estimasi rasio saat ini = 7:1
+- **Target Peningkatan**: Mencapai 14:1 dalam 24 bulan
 
-#### 8.1.4 Operational Efficiency KPIs
+#### 8.1.4 IKU Efisiensi Operasional
 
-**First Response Time**
-- **Target**: <2 hours untuk all inquiries
-- **Measurement**: Time dari inquiry ke first response
-- **Baseline**: Current estimated time = 8 hours
-- **Improvement Target**: -6 hours dalam 6 bulan
+**Waktu Respons Pertama**
+- **Target**: <2 jam untuk semua pertanyaan
+- **Pengukuran**: Waktu dari pertanyaan ke respons pertama
+- **Baseline**: Estimasi waktu saat ini = 8 jam
+- **Target Peningkatan**: -6 jam dalam 6 bulan
 
-**Issue Resolution Time**
-- **Target**: <24 hours untuk standard issues
-- **Measurement**: Time dari issue reported ke resolution
-- **Baseline**: Current estimated time = 72 hours
-- **Improvement Target**: -48 hours dalam 8 bulan
+**Waktu Penyelesaian Masalah**
+- **Target**: <24 jam untuk masalah standar
+- **Pengukuran**: Waktu dari laporan masalah ke penyelesaian
+- **Baseline**: Estimasi waktu saat ini = 72 jam
+- **Target Peningkatan**: -48 jam dalam 8 bulan
 
-**Quote-to-Order Conversion Rate**
-- **Target**: 40% conversion rate
-- **Measurement**: Orders received / quotes sent
-- **Baseline**: Current estimated rate = 20%
-- **Improvement Target**: +20 points dalam 12 bulan
+**Tingkat Konversi Penawaran ke Pesanan**
+- **Target**: 40% tingkat konversi
+- **Pengukuran**: Pesanan diterima / penawaran dikirim
+- **Baseline**: Estimasi tingkat saat ini = 20%
+- **Target Peningkatan**: +20 poin dalam 12 bulan
 
-### 8.2 ROI Calculation
+### 8.2 Perhitungan ROI
 
-#### 8.2.1 Investment Summary
+#### 8.2.1 Ringkasan Investasi
 
-**Total Investment (24 months):**
-- Implementation costs: $152,600 (Year 1)
-- Operational costs: $99,600 (Year 2)
-- **Total Investment**: $252,200
+**Total Investasi (24 bulan):**
+- Biaya implementasi: $152,600 (Tahun 1)
+- Biaya operasional: $99,600 (Tahun 2)
+- **Total Investasi**: $252,200
 
-#### 8.2.2 Revenue Impact
+#### 8.2.2 Dampak Pendapatan
 
-**Increased Revenue dari Retention:**
-- Customer retention improvement: 25%
-- Average customer value: Rp 3,500,000/year
-- Customer base: 500 customers
-- **Additional Revenue**: 125 customers × Rp 3,500,000 = Rp 437,500,000/year
+**Peningkatan Pendapatan dari Retensi:**
+- Peningkatan retensi pelanggan: 25%
+- Nilai rata-rata pelanggan: Rp 3,500,000/tahun
+- Basis pelanggan: 500 pelanggan
+- **Pendapatan Tambahan**: 125 pelanggan × Rp 3,500,000 = Rp 437,500,000/tahun
 
-**Increased Revenue dari CLV Growth:**
-- CLV increase: 40%
-- Current customer base: 500 customers
-- CLV improvement per customer: Rp 1,400,000
-- **Additional Revenue**: 500 × Rp 1,400,000 = Rp 700,000,000 (lifetime)
+**Peningkatan Pendapatan dari Pertumbuhan CLV:**
+- Peningkatan CLV: 40%
+- Basis pelanggan saat ini: 500 pelanggan
+- Peningkatan CLV per pelanggan: Rp 1,400,000
+- **Pendapatan Tambahan**: 500 × Rp 1,400,000 = Rp 700,000,000 (seumur hidup)
 
-**New Customer Acquisition:**
-- CAC reduction enables 30% more acquisitions
-- New customers per year: 150 additional
-- Average customer value: Rp 3,500,000
-- **Additional Revenue**: 150 × Rp 3,500,000 = Rp 525,000,000/year
+**Akuisisi Pelanggan Baru:**
+- Pengurangan CAC memungkinkan 30% lebih banyak akuisisi
+- Pelanggan baru per tahun: 150 tambahan
+- Nilai rata-rata pelanggan: Rp 3,500,000
+- **Pendapatan Tambahan**: 150 × Rp 3,500,000 = Rp 525,000,000/tahun
 
-#### 8.2.3 Cost Savings
+#### 8.2.3 Penghematan Biaya
 
-**Operational Efficiency Savings:**
-- Reduced manual processes: Rp 200,000,000/year
-- Improved resource utilization: Rp 150,000,000/year
-- Reduced customer service costs: Rp 100,000,000/year
-- **Total Cost Savings**: Rp 450,000,000/year
+**Penghematan Efisiensi Operasional:**
+- Pengurangan proses manual: Rp 200,000,000/tahun
+- Peningkatan pemanfaatan sumber daya: Rp 150,000,000/tahun
+- Pengurangan biaya layanan pelanggan: Rp 100,000,000/tahun
+- **Total Penghematan Biaya**: Rp 450,000,000/tahun
 
-#### 8.2.4 ROI Calculation
+#### 8.2.4 Perhitungan ROI
 
-**Total Benefits (Annual):**
-- Retention revenue: Rp 437,500,000
-- New customer revenue: Rp 525,000,000
-- Cost savings: Rp 450,000,000
-- **Total Annual Benefits**: Rp 1,412,500,000
+**Total Manfaat (Tahunan):**
+- Pendapatan retensi: Rp 437,500,000
+- Pendapatan pelanggan baru: Rp 525,000,000
+- Penghematan biaya: Rp 450,000,000
+- **Total Manfaat Tahunan**: Rp 1,412,500,000
 
-**ROI Calculation:**
-- Investment: $252,200 (≈ Rp 3,783,000,000)
-- Annual benefits: Rp 1,412,500,000
-- **Annual ROI**: 37.3%
-- **Payback Period**: 2.7 years
-- **3-Year NPV**: Rp 1,455,500,000 (positive)
+**Perhitungan ROI:**
+- Investasi: $252,200 (≈ Rp 3,783,000,000)
+- Manfaat tahunan: Rp 1,412,500,000
+- **ROI Tahunan**: 37.3%
+- **Periode Pengembalian**: 2.7 tahun
+- **NPV 3 Tahun**: Rp 1,455,500,000 (positif)
 
-### 8.3 Success Metrics Timeline
+### 8.3 Timeline Metrik Keberhasilan
 
-#### 8.3.1 Short-term Metrics (0-6 months)
+#### 8.3.1 Metrik Jangka Pendek (0-6 bulan)
 
-**System Adoption:**
-- User adoption rate: >80% dalam 3 bulan
-- Data migration completion: 100% dalam 1 bulan
-- System uptime: >99.5%
+**Adopsi Sistem:**
+- Tingkat adopsi pengguna: >80% dalam 3 bulan
+- Penyelesaian migrasi data: 100% dalam 1 bulan
+- Waktu operasi sistem: >99.5%
 
-**Process Improvement:**
-- Response time improvement: 50% reduction
-- Quote generation time: 60% reduction
-- Customer data accuracy: >95%
+**Peningkatan Proses:**
+- Peningkatan waktu respons: pengurangan 50%
+- Waktu generasi penawaran: pengurangan 60%
+- Akurasi data pelanggan: >95%
 
-#### 8.3.2 Medium-term Metrics (6-12 months)
+#### 8.3.2 Metrik Jangka Menengah (6-12 bulan)
 
-**Customer Experience:**
-- CSAT improvement: +10 points
-- NPS improvement: +20 points
-- Customer complaint reduction: 40%
+**Pengalaman Pelanggan:**
+- Peningkatan CSAT: +10 poin
+- Peningkatan NPS: +20 poin
+- Pengurangan keluhan pelanggan: 40%
 
-**Business Performance:**
-- Lead conversion improvement: +15%
-- Cross-selling success: +25%
-- Sales cycle reduction: 20%
+**Kinerja Bisnis:**
+- Peningkatan konversi prospek: +15%
+- Keberhasilan penjualan silang: +25%
+- Pengurangan siklus penjualan: 20%
 
-#### 8.3.3 Long-term Metrics (12-24 months)
+#### 8.3.3 Metrik Jangka Panjang (12-24 bulan)
 
-**Strategic Objectives:**
-- Customer retention: 85%
-- CLV growth: 40%
-- Market share increase: 15%
+**Tujuan Strategis:**
+- Retensi pelanggan: 85%
+- Pertumbuhan CLV: 40%
+- Peningkatan pangsa pasar: 15%
 
-**Competitive Advantage:**
-- Industry NPS leadership
-- Digital transformation completion
-- Scalable growth platform establishment
+**Keunggulan Kompetitif:**
+- Kepemimpinan NPS industri
+- Penyelesaian transformasi digital
+- Pembentukan platform pertumbuhan yang dapat diskalakan
 
 ---
 
@@ -1260,131 +1343,131 @@ CustomerSegment:
 
 Berdasarkan analisis komprehensif yang telah dilakukan terhadap SATRIAMART, dapat disimpulkan bahwa implementasi Customer Relationship Management (CRM) yang strategis dan terintegrasi merupakan kebutuhan urgent untuk mendukung pertumbuhan bisnis yang sustainable.
 
-#### 9.1.1 Key Findings
+#### 9.1.1 Temuan Utama
 
-**Current State Challenges:**
-1. **Fragmented Customer Data**: Customer information tersebar di multiple channels tanpa central repository
-2. **Reactive Customer Service**: Lack of proactive customer engagement dan relationship building
-3. **Manual Processes**: Heavy reliance pada manual processes yang inefficient dan error-prone
-4. **Limited Customer Insights**: No systematic analysis of customer behavior dan preferences
-5. **Inconsistent Experience**: Variable service quality tergantung pada individual sales person
+**Tantangan Kondisi Terkini:**
+1. **Data Pelanggan Terfragmentasi**: Informasi pelanggan tersebar di berbagai saluran tanpa repositori pusat
+2. **Layanan Pelanggan Reaktif**: Kurangnya keterlibatan pelanggan proaktif dan pembangunan hubungan
+3. **Proses Manual**: Ketergantungan berat pada proses manual yang tidak efisien dan rentan kesalahan
+4. **Wawasan Pelanggan Terbatas**: Tidak ada analisis sistematis terhadap perilaku dan preferensi pelanggan
+5. **Pengalaman Tidak Konsisten**: Kualitas layanan bervariasi tergantung pada tenaga penjualan individual
 
-**Market Opportunity:**
-1. **Underserved Digital Market**: Significant opportunity untuk digital customer engagement
-2. **Premium Positioning Potential**: Quality focus dapat justify premium pricing dengan proper CRM
-3. **B2B Growth Opportunity**: Corporate segment memiliki higher CLV potential
-4. **Referral Network**: Strong potential untuk customer advocacy program
+**Peluang Pasar:**
+1. **Pasar Digital yang Kurang Terlayani**: Peluang signifikan untuk keterlibatan pelanggan digital
+2. **Potensi Posisi Premium**: Fokus kualitas dapat membenarkan harga premium dengan CRM yang tepat
+3. **Peluang Pertumbuhan B2B**: Segmen korporat memiliki potensi CLV yang lebih tinggi
+4. **Jaringan Rujukan**: Potensi kuat untuk program advokasi pelanggan
 
-**Competitive Advantage Potential:**
-1. **Digital Differentiation**: CRM implementation akan create significant competitive moat
-2. **Customer Intimacy**: Deep customer relationships akan increase switching costs
-3. **Operational Excellence**: Process optimization akan improve cost structure
-4. **Innovation Platform**: CRM data akan enable product dan service innovation
+**Potensi Keunggulan Kompetitif:**
+1. **Diferensiasi Digital**: Implementasi CRM akan menciptakan parit kompetitif yang signifikan
+2. **Keintiman Pelanggan**: Hubungan pelanggan yang mendalam akan meningkatkan biaya perpindahan
+3. **Keunggulan Operasional**: Optimasi proses akan memperbaiki struktur biaya
+4. **Platform Inovasi**: Data CRM akan memungkinkan inovasi produk dan layanan
 
-#### 9.1.2 Strategic Impact
+#### 9.1.2 Dampak Strategis
 
-**Revenue Growth Impact:**
-- Projected revenue increase: 35-40% dalam 24 bulan
-- Customer lifetime value improvement: 40%
-- Customer retention improvement: 25%
-- New customer acquisition efficiency: 30% improvement
+**Dampak Pertumbuhan Pendapatan:**
+- Proyeksi peningkatan pendapatan: 35-40% dalam 24 bulan
+- Peningkatan nilai seumur hidup pelanggan: 40%
+- Peningkatan retensi pelanggan: 25%
+- Efisiensi akuisisi pelanggan baru: peningkatan 30%
 
-**Operational Efficiency Impact:**
-- Process automation: 60% reduction dalam manual tasks
-- Response time improvement: 75% faster customer service
-- Sales cycle optimization: 20% shorter sales cycle
-- Resource utilization: 25% improvement dalam team productivity
+**Dampak Efisiensi Operasional:**
+- Otomasi proses: pengurangan 60% dalam tugas manual
+- Peningkatan waktu respons: layanan pelanggan 75% lebih cepat
+- Optimasi siklus penjualan: siklus penjualan 20% lebih pendek
+- Pemanfaatan sumber daya: peningkatan 25% dalam produktivitas tim
 
-**Market Position Impact:**
-- Digital leadership dalam akrilik industry
-- Premium brand positioning dengan superior customer experience
-- Scalable growth platform untuk market expansion
-- Data-driven decision making capability
+**Dampak Posisi Pasar:**
+- Kepemimpinan digital dalam industri akrilik
+- Posisi merek premium dengan pengalaman pelanggan superior
+- Platform pertumbuhan yang dapat diskalakan untuk ekspansi pasar
+- Kemampuan pengambilan keputusan berbasis data
 
-### 9.2 Strategic Recommendations
+### 9.2 Rekomendasi Strategis
 
-#### 9.2.1 Immediate Actions (0-3 months)
+#### 9.2.1 Tindakan Segera (0-3 bulan)
 
-**Priority 1: Data Foundation**
-1. **Customer Data Audit**: Comprehensive audit dan consolidation of existing customer data
-2. **Data Migration Strategy**: Plan untuk moving data ke centralized CRM system
-3. **Data Quality Standards**: Establish standards untuk data accuracy dan completeness
-4. **Privacy Compliance**: Ensure GDPR/local privacy regulation compliance
+**Prioritas 1: Fondasi Data**
+1. **Audit Data Pelanggan**: Audit komprehensif dan konsolidasi data pelanggan yang ada
+2. **Strategi Migrasi Data**: Rencana untuk memindahkan data ke sistem CRM terpusat
+3. **Standar Kualitas Data**: Menetapkan standar untuk akurasi dan kelengkapan data
+4. **Kepatuhan Privasi**: Memastikan kepatuhan regulasi GDPR/privasi lokal
 
-**Priority 2: Team Preparation**
-1. **CRM Champion Identification**: Select key users untuk driving adoption
-2. **Process Documentation**: Document current processes sebagai baseline
-3. **Training Needs Assessment**: Identify skill gaps dan training requirements
-4. **Change Management Planning**: Develop comprehensive change management strategy
+**Prioritas 2: Persiapan Tim**
+1. **Identifikasi Champion CRM**: Memilih pengguna kunci untuk mendorong adopsi
+2. **Dokumentasi Proses**: Mendokumentasikan proses saat ini sebagai baseline
+3. **Penilaian Kebutuhan Pelatihan**: Mengidentifikasi kesenjangan keterampilan dan kebutuhan pelatihan
+4. **Perencanaan Manajemen Perubahan**: Mengembangkan strategi manajemen perubahan komprehensif
 
-**Priority 3: Technology Selection**
-1. **Vendor Evaluation**: Compare CRM platform options (Salesforce, HubSpot, custom)
-2. **Infrastructure Planning**: Plan cloud infrastructure dan security requirements
-3. **Integration Requirements**: Define integration needs dengan existing systems
-4. **Pilot Scope Definition**: Define scope untuk initial pilot implementation
+**Prioritas 3: Pemilihan Teknologi**
+1. **Evaluasi Vendor**: Membandingkan opsi platform CRM (Salesforce, HubSpot, kustomisasi)
+2. **Perencanaan Infrastruktur**: Merencanakan infrastruktur awan dan kebutuhan keamanan
+3. **Kebutuhan Integrasi**: Mendefinisikan kebutuhan integrasi dengan sistem yang ada
+4. **Definisi Ruang Lingkup Pilot**: Mendefinisikan ruang lingkup untuk implementasi pilot awal
 
-#### 9.2.2 Short-term Implementation (3-8 months)
+#### 9.2.2 Implementasi Jangka Pendek (3-8 bulan)
 
-**Phase 1: Core CRM Implementation**
-1. **Customer Database Setup**: Implement centralized customer management system
-2. **Sales Pipeline Management**: Deploy opportunity tracking dan sales automation
-3. **Communication Integration**: Integrate email, WhatsApp, dan phone communications
-4. **Basic Analytics**: Implement essential KPI tracking dan reporting
+**Fase 1: Implementasi CRM Inti**
+1. **Penyiapan Database Pelanggan**: Implementasi sistem manajemen pelanggan terpusat
+2. **Manajemen Saluran Penjualan**: Penerapan pelacakan peluang dan otomasi penjualan
+3. **Integrasi Komunikasi**: Integrasi email, WhatsApp, dan komunikasi telepon
+4. **Analitik Dasar**: Implementasi pelacakan KPI penting dan pelaporan
 
-**Phase 2: Customer Experience Enhancement**
-1. **Customer Portal Development**: Self-service portal untuk order tracking
-2. **Mobile Application**: Basic mobile app untuk customer engagement
-3. **Automated Workflows**: Implement trigger-based communication automation
-4. **Customer Feedback System**: Systematic satisfaction measurement
+**Fase 2: Peningkatan Pengalaman Pelanggan**
+1. **Pengembangan Portal Pelanggan**: Portal layanan mandiri untuk pelacakan pesanan
+2. **Aplikasi Bergerak**: Aplikasi bergerak dasar untuk keterlibatan pelanggan
+3. **Alur Kerja Otomatis**: Implementasi otomasi komunikasi berbasis pemicu
+4. **Sistem Umpan Balik Pelanggan**: Pengukuran kepuasan sistematis
 
-#### 9.2.3 Medium-term Optimization (8-18 months)
+#### 9.2.3 Optimasi Jangka Menengah (8-18 bulan)
 
-**Advanced Features Implementation:**
-1. **Predictive Analytics**: Customer behavior prediction dan churn prevention
-2. **AI-Powered Insights**: Machine learning untuk recommendation engine
-3. **Advanced Segmentation**: Dynamic customer segmentation based on behavior
-4. **Omnichannel Integration**: Seamless experience across all touchpoints
+**Implementasi Fitur Lanjutan:**
+1. **Analitik Prediktif**: Prediksi perilaku pelanggan dan pencegahan churn
+2. **Wawasan Bertenaga AI**: Pembelajaran mesin untuk mesin rekomendasi
+3. **Segmentasi Lanjutan**: Segmentasi pelanggan dinamis berdasarkan perilaku
+4. **Integrasi Omnichannel**: Pengalaman mulus di semua titik sentuh
 
-**Business Process Integration:**
-1. **Production Integration**: Real-time production status dalam CRM
-2. **Financial Integration**: Automated invoicing dan payment tracking
-3. **Inventory Integration**: Real-time material availability checking
-4. **Quality Management**: Quality control integration dengan customer feedback
+**Integrasi Proses Bisnis:**
+1. **Integrasi Produksi**: Status produksi waktu nyata dalam CRM
+2. **Integrasi Keuangan**: Faktur otomatis dan pelacakan pembayaran
+3. **Integrasi Persediaan**: Pengecekan ketersediaan material waktu nyata
+4. **Manajemen Kualitas**: Integrasi kontrol kualitas dengan umpan balik pelanggan
 
-#### 9.2.4 Long-term Strategic Development (18-36 months)
+#### 9.2.4 Pengembangan Strategis Jangka Panjang (18-36 bulan)
 
-**Market Expansion Support:**
-1. **Multi-location CRM**: Support untuk geographical expansion
-2. **Channel Partner Management**: B2B partner portal dan management
-3. **International Capabilities**: Multi-currency dan multi-language support
-4. **Advanced Analytics Platform**: Big data analytics untuk strategic insights
+**Dukungan Ekspansi Pasar:**
+1. **CRM Multi-lokasi**: Dukungan untuk ekspansi geografis
+2. **Manajemen Mitra Saluran**: Portal dan manajemen mitra B2B
+3. **Kemampuan Internasional**: Dukungan multi-mata uang dan multi-bahasa
+4. **Platform Analitik Lanjutan**: Analitik big data untuk wawasan strategis
 
-**Innovation Platform:**
-1. **Customer Co-creation**: Platform untuk customer-driven product innovation
-2. **IoT Integration**: Smart product capabilities dengan CRM integration
-3. **API Ecosystem**: Open API untuk third-party integrations
-4. **AI Assistant**: Customer service chatbot dengan natural language processing
+**Platform Inovasi:**
+1. **Ko-kreasi Pelanggan**: Platform untuk inovasi produk yang didorong pelanggan
+2. **Integrasi IoT**: Kemampuan produk pintar dengan integrasi CRM
+3. **Ekosistem API**: API terbuka untuk integrasi pihak ketiga
+4. **Asisten AI**: Chatbot layanan pelanggan dengan pemrosesan bahasa alami
 
-### 9.3 Implementation Recommendations
+### 9.3 Rekomendasi Implementasi
 
-#### 9.3.1 Technology Strategy
+#### 9.3.1 Strategi Teknologi
 
-**Platform Selection Criteria:**
-1. **Scalability**: Ability to grow dengan business expansion
-2. **Integration Capability**: Easy integration dengan existing systems
-3. **Customization Flexibility**: Ability to customize untuk unique business needs
-4. **Cost Effectiveness**: Total cost of ownership optimization
-5. **Vendor Stability**: Long-term vendor viability dan support
+**Kriteria Pemilihan Platform:**
+1. **Skalabilitas**: Kemampuan untuk berkembang dengan ekspansi bisnis
+2. **Kemampuan Integrasi**: Integrasi mudah dengan sistem yang ada
+3. **Fleksibilitas Kustomisasi**: Kemampuan untuk menyesuaikan kebutuhan bisnis unik
+4. **Efektivitas Biaya**: Optimasi total biaya kepemilikan
+5. **Stabilitas Vendor**: Viabilitas vendor jangka panjang dan dukungan
 
-**Recommended Approach:**
-- **Start dengan cloud-based SaaS solution** untuk faster implementation
-- **Plan untuk hybrid approach** dengan custom modules untuk unique requirements
-- **Prioritize mobile-first design** untuk user adoption
-- **Implement API-first architecture** untuk future flexibility
+**Pendekatan yang Direkomendasikan:**
+- **Mulai dengan solusi SaaS berbasis cloud** untuk implementasi yang lebih cepat
+- **Rencanakan pendekatan hibrida** dengan modul khusus untuk kebutuhan unik
+- **Prioritaskan desain mobile-first** untuk adopsi pengguna
+- **Implementasikan arsitektur API-first** untuk fleksibilitas masa depan
 
-#### 9.3.2 Organizational Strategy
+#### 9.3.2 Strategi Organisasi
 
-**Governance Structure:**
+**Struktur Tata Kelola:**
 1. **CRM Steering Committee**: Executive oversight dan strategic direction
 2. **CRM Center of Excellence**: Technical expertise dan best practices
 3. **Business Process Owners**: Process optimization dan user adoption
@@ -1394,111 +1477,111 @@ Berdasarkan analisis komprehensif yang telah dilakukan terhadap SATRIAMART, dapa
 1. **Executive Sponsorship**: Strong leadership commitment dan support
 2. **User-Centric Design**: Focus pada user experience dan adoption
 3. **Iterative Approach**: Agile implementation dengan continuous improvement
-4. **Culture Change**: Shift towards customer-centric mindset
+4. **Perubahan Budaya**: Pergeseran menuju pola pikir yang berpusat pada pelanggan
 
-#### 9.3.3 Risk Mitigation
+#### 9.3.3 Mitigasi Risiko
 
-**Key Risk Areas:**
-1. **User Adoption**: Comprehensive training dan change management
-2. **Data Quality**: Rigorous data governance dan quality controls
-3. **Integration Challenges**: Thorough testing dan fallback procedures
-4. **Security Concerns**: Multi-layer security dan regular audits
+**Area Risiko Utama:**
+1. **Adopsi Pengguna**: Pelatihan komprehensif dan manajemen perubahan
+2. **Kualitas Data**: Tata kelola data yang ketat dan kontrol kualitas
+3. **Tantangan Integrasi**: Pengujian menyeluruh dan prosedur fallback
+4. **Masalah Keamanan**: Keamanan multi-layer dan audit berkala
 
-**Mitigation Strategies:**
-1. **Pilot Implementation**: Start small dan scale gradually
-2. **Parallel Running**: Run new system alongside existing untuk transition
-3. **Backup Plans**: Contingency procedures untuk system failures
-4. **Regular Reviews**: Monthly progress reviews dan adjustments
+**Strategi Mitigasi:**
+1. **Implementasi Pilot**: Mulai kecil dan skala secara bertahap
+2. **Operasi Paralel**: Jalankan sistem baru bersama yang ada untuk transisi
+3. **Rencana Cadangan**: Prosedur kontingensi untuk kegagalan sistem
+4. **Tinjauan Berkala**: Tinjauan kemajuan bulanan dan penyesuaian
 
-### 9.4 Expected Outcomes
+### 9.4 Hasil yang Diharapkan
 
-#### 9.4.1 Business Transformation
+#### 9.4.1 Transformasi Bisnis
 
-**Customer Relationship Excellence:**
-- Transform dari transactional ke relationship-based business model
-- Achieve industry-leading customer satisfaction scores
-- Build sustainable competitive advantage melalui customer intimacy
-- Create customer advocacy network untuk organic growth
+**Keunggulan Hubungan Pelanggan:**
+- Transformasi dari model bisnis transaksional ke berbasis hubungan
+- Mencapai skor kepuasan pelanggan terdepan di industri
+- Membangun keunggulan kompetitif berkelanjutan melalui kedekatan pelanggan
+- Menciptakan jaringan advokasi pelanggan untuk pertumbuhan organik
 
-**Operational Excellence:**
-- Automate repetitive processes untuk efficiency gain
-- Improve resource utilization dan productivity
-- Reduce operational costs melalui process optimization
-- Enable data-driven decision making di all levels
+**Keunggulan Operasional:**
+- Otomatisasi proses berulang untuk peningkatan efisiensi
+- Meningkatkan pemanfaatan sumber daya dan produktivitas
+- Mengurangi biaya operasional melalui optimasi proses
+- Memungkinkan pengambilan keputusan berbasis data di semua tingkat
 
-**Growth Enablement:**
-- Support aggressive growth targets melalui scalable processes
-- Enable new market expansion dengan proven CRM framework
-- Create platform untuk product dan service innovation
-- Build foundation untuk digital transformation
+**Pendukung Pertumbuhan:**
+- Mendukung target pertumbuhan agresif melalui proses yang dapat diskalakan
+- Memungkinkan ekspansi pasar baru dengan kerangka CRM yang terbukti
+- Menciptakan platform untuk inovasi produk dan layanan
+- Membangun fondasi untuk transformasi digital
 
-#### 9.4.2 Success Metrics Achievement
+#### 9.4.2 Pencapaian Metrik Keberhasilan
 
-**Year 1 Targets:**
-- Customer satisfaction (NPS): +20 points
-- Customer retention rate: +15%
-- Sales productivity: +25%
-- Response time: 75% improvement
+**Target Tahun 1:**
+- Kepuasan pelanggan (NPS): +20 poin
+- Tingkat retensi pelanggan: +15%
+- Produktivitas penjualan: +25%
+- Waktu respons: peningkatan 75%
 
-**Year 2 Targets:**
-- Customer lifetime value: +40%
-- Customer acquisition cost: -30%
-- Market share: +15%
-- Revenue growth: +35%
+**Target Tahun 2:**
+- Nilai seumur hidup pelanggan: +40%
+- Biaya akuisisi pelanggan: -30%
+- Pangsa pasar: +15%
+- Pertumbuhan pendapatan: +35%
 
-**Year 3 Targets:**
-- Industry leadership dalam customer experience
-- Digital transformation completion
-- Sustainable competitive advantage establishment
-- Foundation untuk IPO/acquisition readiness
+**Target Tahun 3:**
+- Kepemimpinan industri dalam pengalaman pelanggan
+- Penyelesaian transformasi digital
+- Pembentukan keunggulan kompetitif berkelanjutan
+- Fondasi untuk kesiapan IPO/akuisisi
 
-### 9.5 Final Recommendations
+### 9.5 Rekomendasi Akhir
 
-#### 9.5.1 Critical Success Factors
+#### 9.5.1 Faktor Keberhasilan Kritis
 
-1. **Leadership Commitment**: Ensure unwavering executive support throughout implementation
-2. **User Adoption Focus**: Prioritize user experience dan comprehensive training programs
-3. **Data-Driven Culture**: Foster culture of data-driven decision making
-4. **Continuous Improvement**: Implement regular review dan optimization cycles
-5. **Customer-Centric Mindset**: Align all activities dengan customer value creation
+1. **Komitmen Kepemimpinan**: Memastikan dukungan eksekutif yang tak tergoyahkan selama implementasi
+2. **Fokus Adopsi Pengguna**: Memprioritaskan pengalaman pengguna dan program pelatihan komprehensif
+3. **Budaya Berbasis Data**: Memupuk budaya pengambilan keputusan berbasis data
+4. **Peningkatan Berkelanjutan**: Mengimplementasikan tinjauan berkala dan siklus optimasi
+5. **Pola Pikir Berpusat Pelanggan**: Menyelaraskan semua aktivitas dengan penciptaan nilai pelanggan
 
-#### 9.5.2 Call to Action
+#### 9.5.2 Seruan Bertindak
 
-**Immediate Next Steps:**
-1. **Secure Executive Approval**: Present business case untuk formal project approval
-2. **Allocate Resources**: Dedicate necessary human dan financial resources
-3. **Form Project Team**: Establish cross-functional implementation team
-4. **Vendor Selection**: Begin formal CRM platform evaluation process
-5. **Communication Campaign**: Launch organization-wide communication tentang CRM initiative
+**Langkah Selanjutnya yang Segera:**
+1. **Mendapatkan Persetujuan Eksekutif**: Menyajikan kasus bisnis untuk persetujuan proyek formal
+2. **Mengalokasikan Sumber Daya**: Mendedikasikan sumber daya manusia dan keuangan yang diperlukan
+3. **Membentuk Tim Proyek**: Membentuk tim implementasi lintas fungsi
+4. **Pemilihan Vendor**: Memulai proses evaluasi platform CRM formal
+5. **Kampanye Komunikasi**: Meluncurkan komunikasi organisasi tentang inisiatif CRM
 
-**Success Dependencies:**
-- Strong project management dan execution discipline
-- Adequate investment dalam training dan change management
-- Integration dengan overall digital transformation strategy
-- Alignment dengan business growth objectives
-- Commitment untuk long-term customer relationship focus
+**Ketergantungan Keberhasilan:**
+- Manajemen proyek yang kuat dan disiplin eksekusi
+- Investasi yang memadai dalam pelatihan dan manajemen perubahan
+- Integrasi dengan strategi transformasi digital secara keseluruhan
+- Keselarasan dengan tujuan pertumbuhan bisnis
+- Komitmen untuk fokus hubungan pelanggan jangka panjang
 
-SATRIAMART memiliki unique opportunity untuk menjadi digital leader dalam akrilik industry melalui strategic CRM implementation. Dengan proper execution, company dapat achieve sustainable competitive advantage, significant revenue growth, dan market leadership position dalam 24-36 bulan timeframe.
+SATRIAMART memiliki peluang unik untuk menjadi pemimpin digital dalam industri akrilik melalui implementasi CRM strategis. Dengan eksekusi yang tepat, perusahaan dapat mencapai keunggulan kompetitif berkelanjutan, pertumbuhan pendapatan yang signifikan, dan posisi kepemimpinan pasar dalam kerangka waktu 24-36 bulan.
 
 ---
 
 **LAMPIRAN**
 
-### Lampiran A: Customer Interview Summary
-[Detail hasil wawancara dengan sample customers]
+### Lampiran A: Ringkasan Wawancara Pelanggan
+[Detail hasil wawancara dengan sampel pelanggan]
 
-### Lampiran B: Competitive Analysis
-[Analisis kompetitor dan best practices]
+### Lampiran B: Analisis Kompetitif
+[Analisis kompetitor dan praktik terbaik]
 
-### Lampiran C: Technology Vendor Comparison
+### Lampiran C: Perbandingan Vendor Teknologi
 [Perbandingan platform CRM yang tersedia]
 
-### Lampiran D: Financial Model Detail
-[Model finansial lengkap dengan assumptions]
+### Lampiran D: Detail Model Keuangan
+[Model finansial lengkap dengan asumsi]
 
-### Lampiran E: Project Timeline Detail
-[Gantt chart dan milestone details]
+### Lampiran E: Detail Timeline Proyek
+[Gantt chart dan detail milestone]
 
 ---
 
-*Laporan ini merupakan hasil analisis komprehensif untuk merancang strategi Customer Relationship Management yang akan mentransformasi SATRIAMART menjadi customer-centric organization dengan sustainable competitive advantage.*
+*Laporan ini merupakan hasil analisis komprehensif untuk merancang strategi Manajemen Hubungan Pelanggan yang akan mentransformasi SATRIAMART menjadi organisasi yang berpusat pada pelanggan dengan keunggulan kompetitif berkelanjutan.*
