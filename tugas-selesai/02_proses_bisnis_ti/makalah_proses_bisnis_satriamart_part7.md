@@ -298,8 +298,6 @@ Mari kita mulai perjalanan transformasi ini dengan keyakinan, komitmen, dan kola
 
 ---
 
-<div style="page-break-after: always;"></div>
-
 ## DAFTAR PUSTAKA
 
 Hammer, M., & Champy, J. (2020). *Reengineering the Corporation: A Manifesto for Business Revolution*. New York: Harper Business.

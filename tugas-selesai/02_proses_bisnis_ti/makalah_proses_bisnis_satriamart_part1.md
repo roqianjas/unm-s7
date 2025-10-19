@@ -33,8 +33,6 @@
 
 ---
 
-<div style="page-break-after: always;"></div>
-
 ## KATA PENGANTAR
 
 Puji syukur kami panjatkan kehadirat Tuhan Yang Maha Esa atas segala rahmat dan karunia-Nya sehingga kami dapat menyelesaikan makalah yang berjudul **"Implementasi Proses Bisnis dengan Analisis SWOT pada SATRIAMART"** ini dengan baik.
@@ -56,8 +54,6 @@ Depok, Oktober 2025
 Penyusun
 
 ---
-
-<div style="page-break-after: always;"></div>
 
 ## DAFTAR ISI
 
@@ -117,8 +113,6 @@ Penyusun
 
 ---
 
-<div style="page-break-after: always;"></div>
-
 ## DAFTAR GAMBAR
 
 Gambar 2.1 Logo SATRIAMART ................................................................. 4
@@ -168,8 +162,6 @@ Tabel 3.9 Solusi Jangka Menengah dan Timeline ..................................
 Tabel 3.10 Rencana Implementasi Solusi Jangka Panjang ....................... 35
 
 ---
-
-<div style="page-break-after: always;"></div>
 
 ## BAB I
 ## PENDAHULUAN
@@ -287,5 +279,3 @@ Penelitian ini diharapkan dapat memberikan manfaat bagi berbagai pihak:
 Dengan tercapainya tujuan-tujuan penelitian ini dan terwujudnya manfaat-manfaat yang diharapkan, diharapkan dapat memberikan dampak positif yang signifikan bagi pengembangan SATRIAMART khususnya, dan industri manufaktur di Indonesia pada umumnya.
 
 ---
-
-<div style="page-break-after: always;"></div>

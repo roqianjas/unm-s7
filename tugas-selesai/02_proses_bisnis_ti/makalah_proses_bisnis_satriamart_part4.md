@@ -683,5 +683,3 @@ Meminimalkan kelemahan dan menghindari ancaman:
 [Catatan: Visual representation dari strategi-strategi yang telah dirumuskan]
 
 ---
-
-<div style="page-break-after: always;"></div>

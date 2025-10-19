@@ -757,5 +757,3 @@ Pengumpulan dan manajemen umpan balik:
 - Foto tim saat melakukan analisis]
 
 ---
-
-<div style="page-break-after: always;"></div>

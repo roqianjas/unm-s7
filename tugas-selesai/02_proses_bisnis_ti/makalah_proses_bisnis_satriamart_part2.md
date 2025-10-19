@@ -196,5 +196,3 @@ Struktur organisasi ini memungkinkan SATRIAMART untuk tetap agile dan responsif 
 Dengan struktur dan tim yang ada saat ini, SATRIAMART mampu menangani berbagai proyek dengan tingkat kompleksitas yang bervariasi, sambil tetap menjaga kualitas dan standar layanan yang tinggi.
 
 ---
-
-<div style="page-break-after: always;"></div>

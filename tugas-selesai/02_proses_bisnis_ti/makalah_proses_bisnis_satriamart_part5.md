@@ -514,5 +514,3 @@ Berdasarkan analisis di atas, berikut prioritas kendala berdasarkan dampak dan u
 Prioritas ini akan menjadi dasar untuk perumusan solusi di bagian berikutnya.
 
 ---
-
-<div style="page-break-after: always;"></div>
