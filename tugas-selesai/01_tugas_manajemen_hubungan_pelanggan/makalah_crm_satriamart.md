@@ -60,9 +60,9 @@
 
 Di era digital saat ini, persaingan bisnis semakin ketat dan pelanggan memiliki banyak pilihan. Perusahaan tidak hanya berlomba untuk mendapatkan pelanggan baru, tetapi juga harus mampu mempertahankan pelanggan yang sudah ada. Dalam konteks inilah Customer Relationship Management (CRM) menjadi sangat penting sebagai strategi bisnis yang berfokus pada pengelolaan hubungan dengan pelanggan.
 
-SATRIAMART adalah perusahaan yang bergerak di bidang dekorasi dan aksesoris akrilik premium dengan target pasar Business-to-Business (B2B) dan Business-to-Consumer (B2C). Sebagai perusahaan yang menawarkan produk kustomisasi, SATRIAMART memiliki kompleksitas tersendiri dalam mengelola hubungan dengan pelanggan karena setiap produk memiliki spesifikasi yang unik dan memerlukan komunikasi intensif dengan pelanggan.
+SATRIAMART adalah perusahaan yang bergerak di bidang dekorasi dan aksesoris akrilik premium dengan target pasar bisnis ke bisnis (B2B) dan bisnis ke konsumen (B2C). Sebagai perusahaan yang menawarkan produk kustomisasi, SATRIAMART memiliki kompleksitas tersendiri dalam mengelola hubungan dengan pelanggan karena setiap produk memiliki spesifikasi yang unik dan memerlukan komunikasi intensif dengan pelanggan.
 
-Saat ini, SATRIAMART menghadapi beberapa tantangan dalam mengelola hubungan pelanggan. Proses komunikasi dengan pelanggan masih dilakukan secara manual melalui WhatsApp dan email, data pelanggan tersebar di berbagai platform, dan belum ada sistem terintegrasi untuk melacak perjalanan pelanggan dari awal hingga akhir. Hal ini menyebabkan potensi kehilangan pelanggan, komunikasi yang tidak konsisten, dan kesulitan dalam menganalisis perilaku pelanggan.
+Saat ini, SATRIAMART menghadapi beberapa tantangan dalam mengelola hubungan pelanggan. Proses komunikasi dengan pelanggan masih dilakukan secara manual melalui WhatsApp dan surel, data pelanggan tersebar di berbagai platform, dan belum ada sistem terintegrasi untuk melacak perjalanan pelanggan dari awal hingga akhir. Hal ini menyebabkan potensi kehilangan pelanggan, komunikasi yang tidak konsisten, dan kesulitan dalam menganalisis perilaku pelanggan.
 
 Pentingnya implementasi sistem CRM pada SATRIAMART tidak hanya untuk mengatasi masalah yang ada saat ini, tetapi juga untuk mempersiapkan perusahaan dalam menghadapi pertumbuhan bisnis di masa depan. Dengan sistem CRM yang baik, perusahaan dapat meningkatkan kepuasan pelanggan, efisiensi operasional, dan pada akhirnya meningkatkan profitabilitas.
 
@@ -81,9 +81,9 @@ Berdasarkan observasi dan analisis terhadap kondisi SATRIAMART saat ini, dapat d
    - Tidak adanya sistem untuk menganalisis perilaku pelanggan
 
 3. **Bagaimana merancang sistem CRM yang sesuai dengan karakteristik bisnis SATRIAMART?**
-   - Sistem yang dapat mengakomodasi kebutuhan segmen B2B dan B2C
+   - Sistem yang dapat mengakomodasi kebutuhan segmen bisnis ke bisnis dan bisnis ke konsumen
    - Integrasi dengan proses produksi kustomisasi
-   - Kemudahan penggunaan untuk tim yang tidak memiliki latar belakang IT
+   - Kemudahan penggunaan untuk tim yang tidak memiliki latar belakang teknologi informasi
 
 4. **Apa manfaat yang dapat diperoleh SATRIAMART dari implementasi sistem CRM?**
    - Peningkatan kepuasan dan retensi pelanggan
@@ -115,8 +115,8 @@ Menganalisis dan merancang sistem Customer Relationship Management (CRM) yang ko
    - Memiliki dasar untuk pengambilan keputusan strategis berbasis data
 
 2. **Bagi Industri:**
-   - Menjadi best practice untuk perusahaan manufaktur kustomisasi sejenis
-   - Memberikan insights tentang implementasi CRM untuk segmen B2B dan B2C
+   - Menjadi praktik terbaik untuk perusahaan manufaktur kustomisasi sejenis
+   - Memberikan wawasan tentang implementasi CRM untuk segmen bisnis ke bisnis dan bisnis ke konsumen
 
 3. **Bagi Akademisi:**
    - Menambah literatur tentang implementasi CRM di Indonesia
@@ -133,7 +133,7 @@ SATRIAMART didirikan sebagai perusahaan yang berfokus pada produksi dekorasi dan
 
 Perusahaan ini memulai perjalanannya dengan melayani kebutuhan lokal untuk nomor rumah akrilik dan papan nama. Seiring dengan berkembangnya kebutuhan pasar dan meningkatnya kepercayaan pelanggan, SATRIAMART mulai mengembangkan produk-produk kustomisasi yang lebih kompleks seperti aksesoris dekorasi khusus dan elemen interior berbahan akrilik.
 
-Saat ini, SATRIAMART telah melayani ratusan pelanggan baik dari segmen B2C (konsumen individu) maupun B2B (bisnis dan perkantoran). Reputasi perusahaan dibangun atas dasar kualitas produk yang konsisten, kemampuan kustomisasi yang fleksibel, dan layanan pelanggan yang responsif.
+Saat ini, SATRIAMART telah melayani ratusan pelanggan baik dari segmen bisnis ke konsumen (konsumen individu) maupun bisnis ke bisnis (bisnis dan perkantoran). Reputasi perusahaan dibangun atas dasar kualitas produk yang konsisten, kemampuan kustomisasi yang fleksibel, dan layanan pelanggan yang responsif.
 
 ### 2.2 Visi dan Misi
 
@@ -235,16 +235,16 @@ SATRIAMART menawarkan berbagai produk dan layanan yang dapat dikategorikan sebag
 
 #### 2.4.3 Segmentasi Pasar
 
-**Segmen B2C (70% dari revenue):**
+**Segmen Bisnis ke Konsumen (70% dari pendapatan):**
 - Pemilik rumah yang membutuhkan nomor rumah dan papan nama
-- Enthusiast dekorasi rumah yang mencari aksesori unik
+- Penggemar dekorasi rumah yang mencari aksesori unik
 - Pemilik bisnis kecil seperti kafe, salon, dan toko
 
-**Segmen B2B (30% dari revenue):**
-- Perusahaan korporat untuk kebutuhan branding kantor
-- Developer properti untuk signage kompleks perumahan
-- Interior designer yang membutuhkan elemen dekoratif khusus
-- Event organizer untuk keperluan display dan backdrop
+**Segmen Bisnis ke Bisnis (30% dari pendapatan):**
+- Perusahaan korporat untuk kebutuhan merek kantor
+- Pengembang properti untuk papan penunjuk kompleks perumahan
+- Perancang interior yang membutuhkan elemen dekoratif khusus
+- Penyelenggara acara untuk keperluan tampilan dan latar belakang
 
 ---
 
@@ -257,93 +257,93 @@ Dalam melakukan analisis sistem CRM pada SATRIAMART, kami melakukan observasi me
 
 #### 3.1.1 Proses Akuisisi Pelanggan Baru
 
-**1. Lead Generation (Generasi Prospek)**
+**1. Generasi Prospek**
 Saat ini, SATRIAMART mendapatkan prospek pelanggan melalui beberapa saluran:
-- **Organic Search (40%):** Pelanggan menemukan SATRIAMART melalui pencarian Google
-- **Social Media (25%):** Instagram dan Facebook untuk showcase produk
-- **Referral (20%):** Rujukan dari pelanggan yang sudah ada
-- **Marketplace (15%):** Tokopedia dan Shopee untuk produk standar
+- **Pencarian Organik (40%):** Pelanggan menemukan SATRIAMART melalui pencarian Google
+- **Media Sosial (25%):** Instagram dan Facebook untuk menampilkan produk
+- **Rujukan (20%):** Rujukan dari pelanggan yang sudah ada
+- **Pasar Daring (15%):** Tokopedia dan Shopee untuk produk standar
 
-*Dokumentasi Kegiatan:* Kami mengamati bahwa tim marketing menggunakan spreadsheet sederhana untuk mencatat sumber lead, namun data sering tidak terupdate dan banyak prospek yang tidak tercatat dengan baik.
+*Dokumentasi Kegiatan:* Kami mengamati bahwa tim pemasaran menggunakan lembar kerja sederhana untuk mencatat sumber prospek, namun data sering tidak terupdate dan banyak prospek yang tidak tercatat dengan baik.
 
-**2. Initial Contact (Kontak Awal)**
+**2. Kontak Awal**
 Ketika prospek menghubungi SATRIAMART, komunikasi dilakukan melalui:
-- **WhatsApp Business (60%):** Channel utama untuk komunikasi cepat
-- **Email (25%):** Untuk permintaan formal dan B2B
-- **Direct Call (10%):** Untuk konsultasi kompleks
-- **Social Media DM (5%):** Instagram dan Facebook messages
+- **WhatsApp Bisnis (60%):** Saluran utama untuk komunikasi cepat
+- **Surel (25%):** Untuk permintaan formal dan bisnis ke bisnis
+- **Panggilan Langsung (10%):** Untuk konsultasi kompleks
+- **Pesan Media Sosial (5%):** Pesan Instagram dan Facebook
 
-*Temuan:* Tidak ada sistem terpusat untuk mengelola semua komunikasi ini. Tim sales menggunakan WhatsApp personal dan email individual, sehingga sulit untuk melacak riwayat komunikasi.
+*Temuan:* Tidak ada sistem terpusat untuk mengelola semua komunikasi ini. Tim penjualan menggunakan WhatsApp personal dan surel individual, sehingga sulit untuk melacak riwayat komunikasi.
 
-**3. Consultation & Needs Assessment (Konsultasi dan Penilaian Kebutuhan)**
+**3. Konsultasi dan Penilaian Kebutuhan**
 Proses konsultasi dilakukan dengan tahapan:
 - Identifikasi kebutuhan dasar pelanggan
 - Diskusi tentang spesifikasi teknis (ukuran, warna, material)
 - Penjelasan opsi kustomisasi yang tersedia
-- Estimasi harga dan timeline produksi
+- Estimasi harga dan jadwal waktu produksi
 
-*Observasi:* Proses ini sangat bergantung pada keahlian individual sales person. Tidak ada checklist standar atau template konsultasi yang digunakan, sehingga kualitas konsultasi bervariasi.
+*Observasi:* Proses ini sangat bergantung pada keahlian individual tenaga penjualan. Tidak ada daftar periksa standar atau templat konsultasi yang digunakan, sehingga kualitas konsultasi bervariasi.
 
-**4. Quotation Process (Proses Penawaran)**
+**4. Proses Penawaran**
 Pembuatan penawaran dilakukan dengan langkah:
 - Perhitungan biaya material dan produksi manual
-- Pembuatan quotation menggunakan template Word sederhana
-- Pengiriman via WhatsApp atau email
-- Follow-up manual untuk mendapatkan respons
+- Pembuatan penawaran menggunakan templat Word sederhana
+- Pengiriman via WhatsApp atau surel
+- Tindak lanjut manual untuk mendapatkan respons
 
 *Kendala Ditemukan:* Proses ini memakan waktu 2-3 hari untuk penawaran kompleks, dan sering terjadi inkonsistensi harga karena perhitungan manual.
 
 #### 3.1.2 Proses Pengelolaan Pelanggan Existing
 
-**1. Order Management (Pengelolaan Pesanan)**
+**1. Pengelolaan Pesanan**
 Setelah pelanggan menyetujui penawaran:
-- Konfirmasi pesanan via WhatsApp atau email
-- Pembuatan invoice manual menggunakan Excel
-- Pencatatan pesanan di buku log produksi
+- Konfirmasi pesanan via WhatsApp atau surel
+- Pembuatan faktur manual menggunakan Excel
+- Pencatatan pesanan di buku catatan produksi
 - Penjadwalan produksi berdasarkan antrian
 
-*Dokumentasi:* Kami menemukan bahwa sistem pencatatan pesanan masih menggunakan buku tulis dan spreadsheet terpisah, sehingga sering terjadi kesalahan data dan duplikasi informasi.
+*Dokumentasi:* Kami menemukan bahwa sistem pencatatan pesanan masih menggunakan buku tulis dan lembar kerja terpisah, sehingga sering terjadi kesalahan data dan duplikasi informasi.
 
-**2. Production Tracking (Pelacakan Produksi)**
+**2. Pelacakan Produksi**
 Proses produksi dipantau melalui:
-- Daily production meeting untuk update status
-- Whatsboard manual di area produksi
-- Komunikasi lisan antara tim produksi dan sales
-- Update ke pelanggan dilakukan secara manual
+- Pertemuan produksi harian untuk pembaruan status
+- Papan tulis manual di area produksi
+- Komunikasi lisan antara tim produksi dan penjualan
+- Pembaruan ke pelanggan dilakukan secara manual
 
-*Temuan:* Tidak ada sistem real-time untuk melacak progress produksi. Pelanggan sering menanyakan status pesanan, dan tim sales harus menanyakan langsung ke bagian produksi.
+*Temuan:* Tidak ada sistem waktu nyata untuk melacak kemajuan produksi. Pelanggan sering menanyakan status pesanan, dan tim penjualan harus menanyakan langsung ke bagian produksi.
 
-**3. Customer Communication (Komunikasi Pelanggan)**
+**3. Komunikasi Pelanggan**
 Komunikasi berkelanjutan dengan pelanggan meliputi:
-- Update progress produksi (jika diminta pelanggan)
+- Pembaruan kemajuan produksi (jika diminta pelanggan)
 - Konfirmasi perubahan spesifikasi
 - Koordinasi jadwal pengiriman
-- Penanganan komplain atau pertanyaan
+- Penanganan keluhan atau pertanyaan
 
-*Observasi:* Komunikasi sangat reaktif, hanya dilakukan ketika pelanggan menanyakan atau ada masalah. Tidak ada proactive communication untuk meningkatkan customer experience.
+*Observasi:* Komunikasi sangat reaktif, hanya dilakukan ketika pelanggan menanyakan atau ada masalah. Tidak ada komunikasi proaktif untuk meningkatkan pengalaman pelanggan.
 
-#### 3.1.3 Proses Delivery dan After-Sales
+#### 3.1.3 Proses Pengiriman dan Layanan Purna Jual
 
-**1. Delivery Coordination (Koordinasi Pengiriman)**
+**1. Koordinasi Pengiriman**
 Pengiriman produk dikelola melalui:
 - Konfirmasi alamat dan jadwal dengan pelanggan
 - Koordinasi dengan jasa pengiriman (untuk luar kota)
-- Delivery langsung oleh tim internal (untuk area lokal)
+- Pengiriman langsung oleh tim internal (untuk area lokal)
 - Konfirmasi penerimaan produk
 
-**2. Quality Control & Customer Satisfaction**
+**2. Kontrol Kualitas dan Kepuasan Pelanggan**
 Kontrol kualitas dan kepuasan pelanggan:
-- Pemeriksaan kualitas sebelum packaging
+- Pemeriksaan kualitas sebelum pengemasan
 - Dokumentasi foto produk untuk konfirmasi
-- Follow-up informal untuk memastikan kepuasan
-- Penanganan komplain case-by-case
+- Tindak lanjut informal untuk memastikan kepuasan
+- Penanganan keluhan berdasarkan kasus per kasus
 
-*Kendala:* Tidak ada sistem formal untuk mengukur customer satisfaction. Feedback hanya dikumpulkan secara informal dan tidak didokumentasikan dengan baik.
+*Kendala:* Tidak ada sistem formal untuk mengukur kepuasan pelanggan. Umpan balik hanya dikumpulkan secara informal dan tidak didokumentasikan dengan baik.
 
-**3. After-Sales Support**
+**3. Dukungan Layanan Purna Jual**
 Layanan purna jual yang diberikan:
-- Garansi 1 tahun untuk defect produksi
-- Support instalasi via WhatsApp atau call
+- Garansi 1 tahun untuk cacat produksi
+- Dukungan pemasangan via WhatsApp atau panggilan
 - Penggantian produk jika terjadi kerusakan dalam garansi
 - Konsultasi untuk pembelian tambahan
 
@@ -351,128 +351,128 @@ Layanan purna jual yang diberikan:
 
 Berdasarkan observasi proses bisnis yang berjalan, kami melakukan analisis mendalam terhadap kebutuhan sistem CRM untuk SATRIAMART:
 
-#### 3.2.1 Analisis Customer Segmentation
+#### 3.2.1 Analisis Segmentasi Pelanggan
 
-**Segmentasi Pelanggan B2C:**
+**Segmentasi Pelanggan Bisnis ke Konsumen:**
 
-*Segment 1: Homeowners (Pemilik Rumah) - 50% dari B2C*
+*Segmen 1: Pemilik Rumah - 50% dari Bisnis ke Konsumen*
 - **Karakteristik:** Usia 30-50 tahun, kelas menengah ke atas, memiliki rumah sendiri
-- **Perilaku Pembelian:** Price-sensitive, mengutamakan kualitas dan durability
-- **Channel Preference:** WhatsApp, marketplace online
-- **Purchase Frequency:** One-time purchase dengan kemungkinan repeat untuk produk berbeda
-- **Decision Making:** Melibatkan pasangan, pertimbangan budget keluarga
+- **Perilaku Pembelian:** Sensitif harga, mengutamakan kualitas dan daya tahan
+- **Preferensi Saluran:** WhatsApp, pasar daring
+- **Frekuensi Pembelian:** Pembelian sekali dengan kemungkinan berulang untuk produk berbeda
+- **Pengambilan Keputusan:** Melibatkan pasangan, pertimbangan anggaran keluarga
 
-*Segment 2: Home Decor Enthusiasts (Penggemar Dekorasi) - 30% dari B2C*
-- **Karakteristik:** Usia 25-40 tahun, urban, aktif di social media
-- **Perilaku Pembelian:** Design-oriented, willing to pay premium untuk uniqueness
-- **Channel Preference:** Instagram, Facebook, direct contact untuk konsultasi
-- **Purchase Frequency:** Multiple purchases, suka eksperimen dengan desain baru
-- **Decision Making:** Individual decision, fast decision maker
+*Segmen 2: Penggemar Dekorasi Rumah - 30% dari Bisnis ke Konsumen*
+- **Karakteristik:** Usia 25-40 tahun, perkotaan, aktif di media sosial
+- **Perilaku Pembelian:** Berorientasi desain, bersedia membayar premium untuk keunikan
+- **Preferensi Saluran:** Instagram, Facebook, kontak langsung untuk konsultasi
+- **Frekuensi Pembelian:** Pembelian berulang, suka bereksperimen dengan desain baru
+- **Pengambilan Keputusan:** Keputusan individual, pembuat keputusan cepat
 
-*Segment 3: Small Business Owners (Pemilik Bisnis Kecil) - 20% dari B2C*
-- **Karakteristik:** Pemilik cafe, salon, toko kecil, bisnis rumahan
-- **Perilaku Pembelian:** Budget-conscious, mengutamakan ROI dan brand image
-- **Channel Preference:** Direct visit, WhatsApp untuk inquiry cepat
-- **Purchase Frequency:** Initial purchase + periodic replacement/addition
-- **Decision Making:** Quick decision, fokus pada practical benefits
+*Segmen 3: Pemilik Bisnis Kecil - 20% dari Bisnis ke Konsumen*
+- **Karakteristik:** Pemilik kafe, salon, toko kecil, bisnis rumahan
+- **Perilaku Pembelian:** Sadar anggaran, mengutamakan pengembalian investasi dan citra merek
+- **Preferensi Saluran:** Kunjungan langsung, WhatsApp untuk pertanyaan cepat
+- **Frekuensi Pembelian:** Pembelian awal + penggantian/penambahan berkala
+- **Pengambilan Keputusan:** Keputusan cepat, fokus pada manfaat praktis
 
-**Segmentasi Pelanggan B2B:**
+**Segmentasi Pelanggan Bisnis ke Bisnis:**
 
-*Segment 1: Corporate Offices (Kantor Korporat) - 40% dari B2B*
-- **Karakteristik:** Perusahaan menengah-besar, professional procurement process
-- **Perilaku Pembelian:** Formal tender process, bulk orders, long-term contracts
-- **Channel Preference:** Email formal, meeting presentations
-- **Purchase Frequency:** Annual/project-based, large volume orders
-- **Decision Making:** Multiple stakeholders, lengthy approval process
+*Segmen 1: Kantor Korporat - 40% dari Bisnis ke Bisnis*
+- **Karakteristik:** Perusahaan menengah-besar, proses pengadaan profesional
+- **Perilaku Pembelian:** Proses tender formal, pesanan massal, kontrak jangka panjang
+- **Preferensi Saluran:** Surel formal, presentasi pertemuan
+- **Frekuensi Pembelian:** Tahunan/berbasis proyek, pesanan volume besar
+- **Pengambilan Keputusan:** Banyak pemangku kepentingan, proses persetujuan panjang
 
-*Segment 2: Retail Businesses (Bisnis Ritel) - 35% dari B2B*
-- **Karakteristik:** Toko retail, franchise outlets, chain stores
-- **Perilaku Pembelian:** Brand consistency important, repeat orders
-- **Channel Preference:** Account manager, online ordering system
-- **Purchase Frequency:** Quarterly/semi-annual repeat orders
-- **Decision Making:** Store manager level, standardized specifications
+*Segmen 2: Bisnis Ritel - 35% dari Bisnis ke Bisnis*
+- **Karakteristik:** Toko ritel, gerai waralaba, toko berantai
+- **Perilaku Pembelian:** Konsistensi merek penting, pesanan berulang
+- **Preferensi Saluran:** Manajer akun, sistem pemesanan daring
+- **Frekuensi Pembelian:** Pesanan berulang triwulanan/setengah tahunan
+- **Pengambilan Keputusan:** Tingkat manajer toko, spesifikasi terstandar
 
-*Segment 3: Interior Designers (Desainer Interior) - 25% dari B2B*
-- **Karakteristik:** Design consultants, architects, project-based work
-- **Perilaku Pembelian:** Quality-focused, unique customization requirements
-- **Channel Preference:** Professional network, portfolio showcases
-- **Purchase Frequency:** Project-based, varying volumes
-- **Decision Making:** Designer recommendation to end client
+*Segmen 3: Perancang Interior - 25% dari Bisnis ke Bisnis*
+- **Karakteristik:** Konsultan desain, arsitek, pekerjaan berbasis proyek
+- **Perilaku Pembelian:** Fokus kualitas, persyaratan kustomisasi unik
+- **Preferensi Saluran:** Jaringan profesional, tampilan portofolio
+- **Frekuensi Pembelian:** Berbasis proyek, volume bervariasi
+- **Pengambilan Keputusan:** Rekomendasi perancang ke klien akhir
 
-#### 3.2.2 Customer Journey Mapping
+#### 3.2.2 Pemetaan Perjalanan Pelanggan
 
-**Journey untuk Segmen B2C:**
+**Perjalanan untuk Segmen Bisnis ke Konsumen:**
 
-*Awareness Stage:*
-- Touchpoints: Google search, social media, word-of-mouth
-- Customer Actions: Browsing for inspiration, comparing prices
-- Pain Points: Limited online portfolio visibility, unclear pricing
-- Opportunities: SEO optimization, social media content strategy
+*Tahap Kesadaran:*
+- Titik Sentuh: Pencarian Google, media sosial, dari mulut ke mulut
+- Tindakan Pelanggan: Mencari inspirasi, membandingkan harga
+- Titik Masalah: Visibilitas portofolio daring terbatas, harga tidak jelas
+- Peluang: Optimasi mesin pencari, strategi konten media sosial
 
-*Consideration Stage:*
-- Touchpoints: WhatsApp consultation, email inquiries
-- Customer Actions: Requesting quotes, discussing customization
-- Pain Points: Slow response time, limited design visualization
-- Opportunities: 24/7 chatbot, online design tool, clear SLA
+*Tahap Pertimbangan:*
+- Titik Sentuh: Konsultasi WhatsApp, pertanyaan surel
+- Tindakan Pelanggan: Meminta penawaran, mendiskusikan kustomisasi
+- Titik Masalah: Waktu respons lambat, visualisasi desain terbatas
+- Peluang: Robot percakapan 24/7, alat desain daring, kesepakatan tingkat layanan yang jelas
 
-*Purchase Stage:*
-- Touchpoints: Final quotation, payment processing
-- Customer Actions: Price negotiation, payment arrangement
-- Pain Points: Manual quotation process, limited payment options
-- Opportunities: Automated quotation system, multiple payment gateways
+*Tahap Pembelian:*
+- Titik Sentuh: Penawaran final, pemrosesan pembayaran
+- Tindakan Pelanggan: Negosiasi harga, pengaturan pembayaran
+- Titik Masalah: Proses penawaran manual, pilihan pembayaran terbatas
+- Peluang: Sistem penawaran otomatis, berbagai gerbang pembayaran
 
-*Delivery Stage:*
-- Touchpoints: Production updates, delivery coordination
-- Customer Actions: Tracking order progress, preparing for delivery
-- Pain Points: Limited production visibility, scheduling conflicts
-- Opportunities: Real-time tracking system, flexible scheduling
+*Tahap Pengiriman:*
+- Titik Sentuh: Pembaruan produksi, koordinasi pengiriman
+- Tindakan Pelanggan: Melacak kemajuan pesanan, mempersiapkan pengiriman
+- Titik Masalah: Visibilitas produksi terbatas, konflik penjadwalan
+- Peluang: Sistem pelacakan waktu nyata, penjadwalan fleksibel
 
-*Post-Purchase Stage:*
-- Touchpoints: Delivery confirmation, satisfaction check
-- Customer Actions: Quality evaluation, sharing feedback
-- Pain Points: No systematic feedback collection, lost future opportunities
-- Opportunities: Automated satisfaction surveys, loyalty programs
+*Tahap Pasca Pembelian:*
+- Titik Sentuh: Konfirmasi pengiriman, pemeriksaan kepuasan
+- Tindakan Pelanggan: Evaluasi kualitas, berbagi umpan balik
+- Titik Masalah: Tidak ada pengumpulan umpan balik sistematis, kehilangan peluang masa depan
+- Peluang: Survei kepuasan otomatis, program loyalitas
 
-#### 3.2.3 Technology Gap Analysis
+#### 3.2.3 Analisis Kesenjangan Teknologi
 
-**Current Technology Stack:**
-- Communication: WhatsApp Business, Personal email, Phone calls
-- Documentation: Microsoft Word, Excel spreadsheets, Physical notebooks
-- Marketing: Instagram, Facebook organic posts, Google My Business
-- Sales: Manual quotation calculation, Word templates
-- Production: Whiteboard scheduling, Verbal communication
-- Finance: Excel for invoicing, Manual payment tracking
+**Tumpukan Teknologi Saat Ini:**
+- Komunikasi: WhatsApp Bisnis, Surel personal, Panggilan telepon
+- Dokumentasi: Microsoft Word, Lembar kerja Excel, Buku catatan fisik
+- Pemasaran: Postingan organik Instagram dan Facebook, Google Bisnisku
+- Penjualan: Perhitungan penawaran manual, Templat Word
+- Produksi: Penjadwalan papan tulis, Komunikasi verbal
+- Keuangan: Excel untuk faktur, Pelacakan pembayaran manual
 
-**Technology Gaps Identified:**
-1. **No Centralized Customer Database:** Customer information scattered across platforms
-2. **No Communication History:** Unable to track conversation history across channels
-3. **Manual Quotation Process:** Time-consuming and error-prone pricing
-4. **No Sales Pipeline Management:** Cannot forecast revenue or track opportunities
-5. **Limited Analytics:** No insights into customer behavior or business performance
-6. **No Automated Marketing:** All marketing activities done manually
-7. **No Integration:** Systems work in silos, requiring manual data transfer
+**Kesenjangan Teknologi yang Teridentifikasi:**
+1. **Tidak Ada Basis Data Pelanggan Terpusat:** Informasi pelanggan tersebar di berbagai platform
+2. **Tidak Ada Riwayat Komunikasi:** Tidak dapat melacak riwayat percakapan lintas saluran
+3. **Proses Penawaran Manual:** Penetapan harga yang memakan waktu dan rentan kesalahan
+4. **Tidak Ada Manajemen Saluran Penjualan:** Tidak dapat meramalkan pendapatan atau melacak peluang
+5. **Analitik Terbatas:** Tidak ada wawasan tentang perilaku pelanggan atau kinerja bisnis
+6. **Tidak Ada Pemasaran Otomatis:** Semua aktivitas pemasaran dilakukan manual
+7. **Tidak Ada Integrasi:** Sistem bekerja secara terpisah, memerlukan transfer data manual
 
-#### 3.2.4 Competitive Analysis
+#### 3.2.4 Analisis Persaingan
 
-**Competitor CRM Capabilities Analysis:**
+**Analisis Kemampuan CRM Pesaing:**
 
-*Direct Competitors (Local Acrylic Manufacturers):*
-- Mostly using similar manual processes
-- Some have basic websites with contact forms
-- Limited online presence and customer engagement
-- Opportunity for SATRIAMART to gain competitive advantage
+*Pesaing Langsung (Produsen Akrilik Lokal):*
+- Sebagian besar menggunakan proses manual yang serupa
+- Beberapa memiliki situs web dasar dengan formulir kontak
+- Kehadiran daring dan keterlibatan pelanggan terbatas
+- Peluang bagi SATRIAMART untuk meraih keunggulan kompetitif
 
-*Indirect Competitors (Online Printing Services):*
-- Advanced online ordering systems
-- Automated quotation and production tracking
-- Multi-channel customer support
-- Professional CRM systems implemented
-- Threat: Customer expectations raised by these services
+*Pesaing Tidak Langsung (Layanan Percetakan Daring):*
+- Sistem pemesanan daring yang canggih
+- Penawaran otomatis dan pelacakan produksi
+- Dukungan pelanggan multi-saluran
+- Sistem CRM profesional yang terimplementasi
+- Ancaman: Harapan pelanggan dinaikkan oleh layanan ini
 
-**Key Insights:**
-- SATRIAMART can differentiate through superior customer service
-- Technology adoption will be crucial for future competitiveness
-- Window of opportunity exists to lead the local market
+**Wawasan Utama:**
+- SATRIAMART dapat membedakan diri melalui layanan pelanggan yang unggul
+- Adopsi teknologi akan menjadi krusial untuk daya saing masa depan
+- Jendela peluang ada untuk memimpin pasar lokal
 
 ### 3.3 Kendala yang Dihadapi
 
@@ -489,100 +489,100 @@ Melalui observasi dan wawancara dengan tim SATRIAMART, kami mengidentifikasi ber
 - Data yang sama sering diinput berulang di berbagai platform
 
 *Dampak yang Dirasakan:*
-- Tim sales membutuhkan waktu lama untuk mencari informasi pelanggan
-- Sering terjadi miscommunication karena tidak ada single source of truth
-- Potensi kehilangan follow-up dengan prospek yang penting
+- Tim penjualan membutuhkan waktu lama untuk mencari informasi pelanggan
+- Sering terjadi miskomunikasi karena tidak ada sumber kebenaran tunggal
+- Potensi kehilangan tindak lanjut dengan prospek yang penting
 - Kesulitan dalam melakukan analisis pola pembelian pelanggan
 
-*Dokumentasi Kendala:* Kami mengamati bahwa ketika ada pelanggan lama yang menghubungi untuk pesanan tambahan, tim sales harus mencari informasi di berbagai platform dan sering kali meminta pelanggan untuk mengulangi informasi yang sebenarnya sudah pernah diberikan.
+*Dokumentasi Kendala:* Kami mengamati bahwa ketika ada pelanggan lama yang menghubungi untuk pesanan tambahan, tim penjualan harus mencari informasi di berbagai platform dan sering kali meminta pelanggan untuk mengulangi informasi yang sebenarnya sudah pernah diberikan.
 
 **2. Proses Komunikasi yang Tidak Konsisten**
 
 *Kendala Spesifik:*
-- Setiap anggota tim memiliki style komunikasi yang berbeda
-- Tidak ada template atau script standar untuk handling inquiry
-- Response time yang bervariasi tergantung ketersediaan personal
+- Setiap anggota tim memiliki gaya komunikasi yang berbeda
+- Tidak ada templat atau skrip standar untuk menangani pertanyaan
+- Waktu respons yang bervariasi tergantung ketersediaan personal
 - Informasi yang diberikan ke pelanggan sering tidak konsisten
 
 *Dampak yang Dirasakan:*
-- Customer experience yang tidak predictable
+- Pengalaman pelanggan yang tidak dapat diprediksi
 - Kebingungan pelanggan karena mendapat informasi yang berbeda
-- Image profesionalisme perusahaan yang kurang konsisten
-- Training time yang lama untuk karyawan baru
+- Citra profesionalisme perusahaan yang kurang konsisten
+- Waktu pelatihan yang lama untuk karyawan baru
 
 **3. Keterbatasan dalam Tracking dan Monitoring**
 
 *Kendala Spesifik:*
-- Tidak ada visibility terhadap sales pipeline
-- Sulit melakukan forecasting penjualan
-- Tidak ada tracking terhadap customer satisfaction
-- Monitoring performance tim sales dilakukan manual
+- Tidak ada visibilitas terhadap saluran penjualan
+- Sulit melakukan peramalan penjualan
+- Tidak ada pelacakan terhadap kepuasan pelanggan
+- Pemantauan kinerja tim penjualan dilakukan manual
 
 *Dampak yang Dirasakan:*
 - Kesulitan dalam perencanaan kapasitas produksi
-- Tidak bisa mengidentifikasi bottleneck dalam sales process
-- Tidak ada early warning untuk customer churn
-- Performance evaluation yang subjektif dan tidak data-driven
+- Tidak bisa mengidentifikasi kemacetan dalam proses penjualan
+- Tidak ada peringatan dini untuk kehilangan pelanggan
+- Evaluasi kinerja yang subjektif dan tidak berbasis data
 
 #### 3.3.2 Kendala Strategis
 
 **1. Keterbatasan dalam Customer Segmentation dan Personalization**
 
 *Kendala Spesifik:*
-- Semua pelanggan diperlakukan dengan approach yang sama
-- Tidak ada strategi khusus untuk high-value customers
-- Tidak ada program retention yang terstruktur
-- Cross-selling dan up-selling dilakukan secara ad-hoc
+- Semua pelanggan diperlakukan dengan pendekatan yang sama
+- Tidak ada strategi khusus untuk pelanggan bernilai tinggi
+- Tidak ada program retensi yang terstruktur
+- Penjualan silang dan penjualan naik dilakukan secara spontan
 
 *Dampak yang Dirasakan:*
-- Missed opportunities untuk meningkatkan customer lifetime value
-- High-value customers tidak mendapat treatment yang sesuai
-- Churn rate yang tinggi karena kurangnya engagement
-- Revenue growth yang tidak optimal
+- Peluang terlewat untuk meningkatkan nilai seumur hidup pelanggan
+- Pelanggan bernilai tinggi tidak mendapat perlakuan yang sesuai
+- Tingkat kehilangan pelanggan yang tinggi karena kurangnya keterlibatan
+- Pertumbuhan pendapatan yang tidak optimal
 
 **2. Analisis dan Reporting yang Terbatas**
 
 *Kendala Spesifik:*
-- Tidak ada dashboard untuk monitoring key metrics
-- Reporting dilakukan manual dan memakan waktu lama
-- Tidak ada insights tentang customer behavior patterns
-- Decision making berdasarkan intuition rather than data
+- Tidak ada dasbor untuk memantau metrik kunci
+- Pelaporan dilakukan manual dan memakan waktu lama
+- Tidak ada wawasan tentang pola perilaku pelanggan
+- Pengambilan keputusan berdasarkan intuisi daripada data
 
 *Dampak yang Dirasakan:*
-- Strategic planning yang kurang akurat
-- Tidak bisa mengidentifikasi opportunities dan threats dengan cepat
-- Resource allocation yang tidak optimal
-- Competitive advantage yang terbatas
+- Perencanaan strategis yang kurang akurat
+- Tidak bisa mengidentifikasi peluang dan ancaman dengan cepat
+- Alokasi sumber daya yang tidak optimal
+- Keunggulan kompetitif yang terbatas
 
 #### 3.3.3 Kendala Teknologi
 
 **1. Integrasi Sistem yang Tidak Ada**
 
 *Kendala Spesifik:*
-- Setiap function menggunakan tools yang berbeda dan tidak terintegrasi
-- Manual data entry yang berulang di berbagai sistem
-- Tidak ada real-time information sharing antar departemen
-- Version control dan data accuracy yang bermasalah
+- Setiap fungsi menggunakan alat yang berbeda dan tidak terintegrasi
+- Entri data manual yang berulang di berbagai sistem
+- Tidak ada berbagi informasi waktu nyata antar departemen
+- Kontrol versi dan akurasi data yang bermasalah
 
 *Dampak yang Dirasakan:*
-- Inefficiency dan pemborosan waktu
-- Human error yang tinggi dalam data entry
-- Delayed response dan poor coordination
-- Frustration karyawan karena repetitive tasks
+- Inefisiensi dan pemborosan waktu
+- Kesalahan manusia yang tinggi dalam entri data
+- Respons tertunda dan koordinasi yang buruk
+- Frustrasi karyawan karena tugas berulang
 
-**2. Scalability Issues**
+**2. Masalah Skalabilitas**
 
 *Kendala Spesifik:*
-- Current processes tidak bisa handle volume yang lebih besar
-- Manual processes menjadi bottleneck ketika bisnis berkembang
-- Ketergantungan tinggi pada individual knowledge
-- Training dan onboarding yang memakan waktu lama
+- Proses saat ini tidak bisa menangani volume yang lebih besar
+- Proses manual menjadi kemacetan ketika bisnis berkembang
+- Ketergantungan tinggi pada pengetahuan individual
+- Pelatihan dan orientasi yang memakan waktu lama
 
 *Dampak yang Dirasakan:*
-- Growth opportunities yang terlewat
-- Quality degradation ketika volume meningkat
-- High dependency risk pada key personnel
-- Competitive disadvantage dalam jangka panjang
+- Peluang pertumbuhan yang terlewat
+- Degradasi kualitas ketika volume meningkat
+- Risiko ketergantungan tinggi pada personel kunci
+- Kerugian kompetitif dalam jangka panjang
 
 ### 3.4 Solusi dari Kendala yang Ditemukan
 
@@ -593,104 +593,104 @@ Berdasarkan analisis mendalam terhadap kendala yang dihadapi, kami merancang sol
 **1. Implementasi Centralized Customer Database**
 
 *Solusi yang Dirancang:*
-- Unified customer database yang menyimpan semua informasi pelanggan
-- Single customer view yang mencakup contact information, purchase history, communication log, dan preferences
-- Automated data capture dari berbagai touchpoints
-- Data backup dan security yang terjamin
+- Basis data pelanggan terpadu yang menyimpan semua informasi pelanggan
+- Tampilan pelanggan tunggal yang mencakup informasi kontak, riwayat pembelian, catatan komunikasi, dan preferensi
+- Penangkapan data otomatis dari berbagai titik sentuh
+- Pencadangan data dan keamanan yang terjamin
 
 *Fitur Kunci yang Dikembangkan:*
-- **Customer Profile Management:** Comprehensive profile dengan segmentasi otomatis
-- **Contact Management:** Centralized contact dengan tagging dan categorization
-- **Communication History:** Timeline semua interaksi across all channels
-- **Document Management:** Storage untuk quotations, contracts, dan files terkait
+- **Manajemen Profil Pelanggan:** Profil komprehensif dengan segmentasi otomatis
+- **Manajemen Kontak:** Kontak terpusat dengan penandaan dan kategorisasi
+- **Riwayat Komunikasi:** Garis waktu semua interaksi lintas semua saluran
+- **Manajemen Dokumen:** Penyimpanan untuk penawaran, kontrak, dan berkas terkait
 
-*Expected Benefits:*
+*Manfaat yang Diharapkan:*
 - Pengurangan waktu pencarian informasi pelanggan hingga 80%
-- Eliminasi duplicate data entry
-- Improved customer service through better information access
-- Better data quality dan consistency
+- Eliminasi entri data duplikat
+- Peningkatan layanan pelanggan melalui akses informasi yang lebih baik
+- Kualitas dan konsistensi data yang lebih baik
 
 **2. Standardisasi Proses Komunikasi**
 
 *Solusi yang Dirancang:*
-- Template dan script standar untuk berbagai skenario komunikasi
-- Automated response untuk inquiry yang sering ditanyakan
-- SLA (Service Level Agreement) yang jelas untuk response time
-- Multi-channel communication platform yang terintegrasi
+- Templat dan skrip standar untuk berbagai skenario komunikasi
+- Respons otomatis untuk pertanyaan yang sering ditanyakan
+- Kesepakatan Tingkat Layanan yang jelas untuk waktu respons
+- Platform komunikasi multi-saluran yang terintegrasi
 
 *Fitur Kunci yang Dikembangkan:*
-- **Communication Templates:** Pre-defined responses untuk common inquiries
-- **Escalation Rules:** Automatic escalation untuk complex cases
-- **Response Time Tracking:** Monitoring dan alert untuk SLA compliance
-- **Channel Integration:** Unified inbox untuk WhatsApp, email, dan social media
+- **Templat Komunikasi:** Respons yang telah ditentukan sebelumnya untuk pertanyaan umum
+- **Aturan Eskalasi:** Eskalasi otomatis untuk kasus kompleks
+- **Pelacakan Waktu Respons:** Pemantauan dan peringatan untuk kepatuhan tingkat layanan
+- **Integrasi Saluran:** Kotak masuk terpadu untuk WhatsApp, surel, dan media sosial
 
-*Expected Benefits:*
+*Manfaat yang Diharapkan:*
 - Konsistensi komunikasi meningkat 90%
-- Response time rata-rata berkurang dari 4 jam menjadi 30 menit
-- Customer satisfaction score meningkat
-- Training time untuk karyawan baru berkurang 50%
+- Waktu respons rata-rata berkurang dari 4 jam menjadi 30 menit
+- Skor kepuasan pelanggan meningkat
+- Waktu pelatihan untuk karyawan baru berkurang 50%
 
-**3. Sales Pipeline Management System**
+**3. Sistem Manajemen Saluran Penjualan**
 
 *Solusi yang Dirancang:*
-- Visual sales pipeline dengan stage-by-stage tracking
-- Automated lead scoring dan qualification
-- Sales forecasting berdasarkan historical data dan current pipeline
-- Performance dashboard untuk monitoring tim sales
+- Saluran penjualan visual dengan pelacakan tahap demi tahap
+- Penilaian dan kualifikasi prospek otomatis
+- Peramalan penjualan berdasarkan data historis dan saluran saat ini
+- Dasbor kinerja untuk memantau tim penjualan
 
 *Fitur Kunci yang Dikembangkan:*
-- **Opportunity Management:** Track semua opportunities dari lead hingga closing
-- **Pipeline Visualization:** Kanban-style board untuk easy tracking
-- **Sales Forecasting:** Predictive analytics untuk revenue projection
-- **Activity Tracking:** Log semua sales activities dan outcomes
+- **Manajemen Peluang:** Melacak semua peluang dari prospek hingga penutupan
+- **Visualisasi Saluran:** Papan bergaya Kanban untuk pelacakan mudah
+- **Peramalan Penjualan:** Analitik prediktif untuk proyeksi pendapatan
+- **Pelacakan Aktivitas:** Mencatat semua aktivitas penjualan dan hasilnya
 
-*Expected Benefits:*
-- Sales conversion rate meningkat 25%
-- Forecast accuracy meningkat hingga 85%
-- Sales cycle time berkurang 20%
-- Better resource allocation dan capacity planning
+*Manfaat yang Diharapkan:*
+- Tingkat konversi penjualan meningkat 25%
+- Akurasi prakiraan meningkat hingga 85%
+- Waktu siklus penjualan berkurang 20%
+- Alokasi sumber daya dan perencanaan kapasitas yang lebih baik
 
 #### 3.4.2 Solusi untuk Kendala Strategis
 
-**1. Advanced Customer Segmentation dan Personalization Engine**
+**1. Segmentasi Pelanggan Lanjutan dan Mesin Personalisasi**
 
 *Solusi yang Dirancang:*
-- Automated customer segmentation berdasarkan behavior, value, dan characteristics
-- Personalized marketing campaigns dan communications
-- Targeted offers dan recommendations
-- Customer lifetime value calculation dan optimization
+- Segmentasi pelanggan otomatis berdasarkan perilaku, nilai, dan karakteristik
+- Kampanye pemasaran dan komunikasi yang dipersonalisasi
+- Penawaran dan rekomendasi yang ditargetkan
+- Perhitungan dan optimasi nilai seumur hidup pelanggan
 
 *Fitur Kunci yang Dikembangkan:*
-- **Dynamic Segmentation:** Real-time customer segmentation berdasarkan multiple criteria
-- **Personalization Engine:** Customized content dan offers per segment
-- **Campaign Management:** Automated marketing campaigns dengan targeting yang tepat
-- **CLV Analytics:** Customer lifetime value tracking dan optimization strategies
+- **Segmentasi Dinamis:** Segmentasi pelanggan waktu nyata berdasarkan berbagai kriteria
+- **Mesin Personalisasi:** Konten dan penawaran yang disesuaikan per segmen
+- **Manajemen Kampanye:** Kampanye pemasaran otomatis dengan penargetan yang tepat
+- **Analitik Nilai Seumur Hidup:** Pelacakan nilai seumur hidup pelanggan dan strategi optimasi
 
-*Expected Benefits:*
-- Customer retention rate meningkat 30%
-- Cross-selling success rate meningkat 40%
-- Marketing campaign effectiveness meningkat 50%
-- Revenue per customer meningkat 20%
+*Manfaat yang Diharapkan:*
+- Tingkat retensi pelanggan meningkat 30%
+- Tingkat keberhasilan penjualan silang meningkat 40%
+- Efektivitas kampanye pemasaran meningkat 50%
+- Pendapatan per pelanggan meningkat 20%
 
-**2. Business Intelligence dan Analytics Dashboard**
+**2. Kecerdasan Bisnis dan Dasbor Analitik**
 
 *Solusi yang Dirancang:*
-- Real-time dashboard dengan key performance indicators
-- Advanced analytics untuk customer behavior analysis
-- Predictive analytics untuk churn prevention dan sales forecasting
-- Customizable reports untuk berbagai stakeholders
+- Dasbor waktu nyata dengan indikator kinerja utama
+- Analitik lanjutan untuk analisis perilaku pelanggan
+- Analitik prediktif untuk pencegahan kehilangan pelanggan dan peramalan penjualan
+- Laporan yang dapat disesuaikan untuk berbagai pemangku kepentingan
 
 *Fitur Kunci yang Dikembangkan:*
-- **Executive Dashboard:** High-level metrics untuk management
-- **Sales Analytics:** Detailed sales performance analysis
-- **Customer Analytics:** Customer behavior dan satisfaction insights
-- **Predictive Models:** Churn prediction, sales forecasting, dan trend analysis
+- **Dasbor Eksekutif:** Metrik tingkat tinggi untuk manajemen
+- **Analitik Penjualan:** Analisis kinerja penjualan yang detail
+- **Analitik Pelanggan:** Wawasan perilaku dan kepuasan pelanggan
+- **Model Prediktif:** Prediksi kehilangan pelanggan, peramalan penjualan, dan analisis tren
 
-*Expected Benefits:*
-- Decision making speed meningkat 60%
-- Proactive problem solving mengurangi customer churn 25%
-- Strategic planning accuracy meningkat
-- ROI tracking dan optimization yang lebih baik
+*Manfaat yang Diharapkan:*
+- Kecepatan pengambilan keputusan meningkat 60%
+- Pemecahan masalah proaktif mengurangi kehilangan pelanggan 25%
+- Akurasi perencanaan strategis meningkat
+- Pelacakan dan optimasi laba atas investasi yang lebih baik
 
 #### 3.4.3 Solusi Teknologi Terintegrasi
 
@@ -699,76 +699,76 @@ Berdasarkan analisis mendalam terhadap kendala yang dihadapi, kami merancang sol
 *Solusi yang Dirancang:*
 Arsitektur CRM berbasis cloud dengan komponen-komponen berikut:
 
-**Core CRM Modules:**
-- **Contact Management:** Centralized customer database
-- **Sales Management:** Pipeline, opportunity, dan quotation management
-- **Marketing Automation:** Campaign management dan lead nurturing
-- **Customer Service:** Ticketing system dan knowledge base
-- **Analytics & Reporting:** Business intelligence dan dashboard
+**Modul Inti CRM:**
+- **Manajemen Kontak:** Basis data pelanggan terpusat
+- **Manajemen Penjualan:** Saluran, peluang, dan manajemen penawaran
+- **Otomasi Pemasaran:** Manajemen kampanye dan pengembangan prospek
+- **Layanan Pelanggan:** Sistem tiket dan basis pengetahuan
+- **Analitik & Pelaporan:** Kecerdasan bisnis dan dasbor
 
-**Integration Capabilities:**
-- **WhatsApp Business API:** Seamless integration untuk komunikasi utama
-- **Email Integration:** Sync dengan Gmail/Outlook untuk email tracking
-- **Social Media Integration:** Monitor dan respond dari Instagram/Facebook
-- **Accounting Integration:** Sync dengan sistem keuangan untuk invoicing
-- **Production System:** Integration dengan production planning
+**Kemampuan Integrasi:**
+- **API WhatsApp Bisnis:** Integrasi tanpa batas untuk komunikasi utama
+- **Integrasi Surel:** Sinkronisasi dengan Gmail/Outlook untuk pelacakan surel
+- **Integrasi Media Sosial:** Memantau dan merespons dari Instagram/Facebook
+- **Integrasi Akuntansi:** Sinkronisasi dengan sistem keuangan untuk faktur
+- **Sistem Produksi:** Integrasi dengan perencanaan produksi
 
-**Mobile Applications:**
-- **Sales Mobile App:** Field sales team dapat akses customer data dan update pipeline
-- **Customer Portal:** Self-service portal untuk customers tracking pesanan
-- **Management Dashboard:** Mobile dashboard untuk monitoring real-time
+**Aplikasi Bergerak:**
+- **Aplikasi Bergerak Penjualan:** Tim penjualan lapangan dapat mengakses data pelanggan dan memperbarui saluran
+- **Portal Pelanggan:** Portal layanan mandiri untuk pelanggan melacak pesanan
+- **Dasbor Manajemen:** Dasbor bergerak untuk pemantauan waktu nyata
 
-*Technical Specifications:*
-- **Platform:** Cloud-based SaaS solution dengan high availability
-- **Database:** Secure dan scalable database dengan regular backups
-- **Security:** End-to-end encryption dan role-based access control
-- **APIs:** RESTful APIs untuk future integrations
-- **Scalability:** Auto-scaling capability untuk handle growth
+*Spesifikasi Teknis:*
+- **Platform:** Solusi SaaS berbasis awan dengan ketersediaan tinggi
+- **Basis Data:** Basis data yang aman dan dapat diskalakan dengan pencadangan reguler
+- **Keamanan:** Enkripsi ujung ke ujung dan kontrol akses berbasis peran
+- **API:** API RESTful untuk integrasi masa depan
+- **Skalabilitas:** Kemampuan penskalaan otomatis untuk menangani pertumbuhan
 
-**2. Implementation Roadmap**
+**2. Peta Jalan Implementasi**
 
-*Phase 1 (Bulan 1-2): Foundation Setup*
-- Setup basic CRM platform dan user accounts
-- Import existing customer data dari berbagai sources
-- Training team untuk basic CRM usage
-- Setup communication channels integration
+*Fase 1 (Bulan 1-2): Pengaturan Fondasi*
+- Pengaturan platform CRM dasar dan akun pengguna
+- Impor data pelanggan yang ada dari berbagai sumber
+- Pelatihan tim untuk penggunaan CRM dasar
+- Pengaturan integrasi saluran komunikasi
 
-*Phase 2 (Bulan 3-4): Core Features Implementation*
-- Implement sales pipeline management
-- Setup automated communication templates
-- Deploy customer segmentation engine
-- Launch basic analytics dashboard
+*Fase 2 (Bulan 3-4): Implementasi Fitur Inti*
+- Implementasi manajemen saluran penjualan
+- Pengaturan templat komunikasi otomatis
+- Penerapan mesin segmentasi pelanggan
+- Peluncuran dasbor analitik dasar
 
-*Phase 3 (Bulan 5-6): Advanced Features dan Optimization*
-- Deploy marketing automation campaigns
-- Implement predictive analytics
-- Advanced customization berdasarkan user feedback
-- Performance optimization dan fine-tuning
+*Fase 3 (Bulan 5-6): Fitur Lanjutan dan Optimasi*
+- Penerapan kampanye otomasi pemasaran
+- Implementasi analitik prediktif
+- Kustomisasi lanjutan berdasarkan umpan balik pengguna
+- Optimasi kinerja dan penyesuaian halus
 
-*Expected ROI:*
-- **Year 1:** Break-even dengan peningkatan efficiency dan customer retention
-- **Year 2:** 200% ROI melalui increased sales dan reduced operational costs
-- **Year 3:** 300% ROI dengan market expansion dan customer base growth
+*Proyeksi Laba atas Investasi:*
+- **Tahun 1:** Impas dengan peningkatan efisiensi dan retensi pelanggan
+- **Tahun 2:** Laba atas investasi 200% melalui peningkatan penjualan dan pengurangan biaya operasional
+- **Tahun 3:** Laba atas investasi 300% dengan ekspansi pasar dan pertumbuhan basis pelanggan
 
-**3. Change Management dan Training Strategy**
+**3. Manajemen Perubahan dan Strategi Pelatihan**
 
-*Solusi untuk Adoption:*
-- **Phased Implementation:** Gradual rollout untuk minimize disruption
-- **Comprehensive Training:** Multi-tier training program untuk berbagai user levels
-- **Change Champions:** Identify dan train internal champions untuk support adoption
-- **Continuous Support:** Ongoing support dan feedback collection
+*Solusi untuk Adopsi:*
+- **Implementasi Bertahap:** Peluncuran bertahap untuk meminimalkan gangguan
+- **Pelatihan Komprehensif:** Program pelatihan multi-tingkat untuk berbagai level pengguna
+- **Champion Perubahan:** Mengidentifikasi dan melatih champion internal untuk mendukung adopsi
+- **Dukungan Berkelanjutan:** Dukungan berkelanjutan dan pengumpulan umpan balik
 
-*Training Program:*
-- **Executive Level:** Strategic benefits dan ROI monitoring
-- **Management Level:** Dashboard usage dan team performance tracking
-- **Sales Team:** Daily CRM usage, pipeline management, customer interaction
-- **Customer Service:** Ticket management, customer history access, response templates
+*Program Pelatihan:*
+- **Level Eksekutif:** Manfaat strategis dan pemantauan laba atas investasi
+- **Level Manajemen:** Penggunaan dasbor dan pelacakan kinerja tim
+- **Tim Penjualan:** Penggunaan CRM harian, manajemen saluran, interaksi pelanggan
+- **Layanan Pelanggan:** Manajemen tiket, akses riwayat pelanggan, templat respons
 
-*Success Metrics:*
-- User adoption rate target 95% dalam 3 bulan
-- Data quality improvement 90% dalam 6 bulan
-- Customer satisfaction improvement 25% dalam 6 bulan
-- Sales efficiency improvement 30% dalam 12 bulan
+*Metrik Keberhasilan:*
+- Target tingkat adopsi pengguna 95% dalam 3 bulan
+- Peningkatan kualitas data 90% dalam 6 bulan
+- Peningkatan kepuasan pelanggan 25% dalam 6 bulan
+- Peningkatan efisiensi penjualan 30% dalam 12 bulan
 
 ---
 
@@ -783,64 +783,64 @@ Berdasarkan analisis mendalam yang telah dilakukan terhadap sistem Customer Rela
 
 Analisis terhadap proses bisnis SATRIAMART menunjukkan bahwa perusahaan saat ini mengalami berbagai kendala dalam pengelolaan hubungan pelanggan. Proses bisnis yang berjalan masih sangat manual dan belum terintegrasi, mulai dari tahap akuisisi pelanggan hingga layanan purna jual. 
 
-**Key Findings:**
-1. **Data Management:** Data pelanggan tersebar di berbagai platform (WhatsApp, email, catatan manual) tanpa ada centralized database, menyebabkan inefficiency dan potensi data loss.
+**Temuan Utama:**
+1. **Manajemen Data:** Data pelanggan tersebar di berbagai platform (WhatsApp, surel, catatan manual) tanpa ada basis data terpusat, menyebabkan inefisiensi dan potensi kehilangan data.
 
-2. **Communication Process:** Komunikasi dengan pelanggan tidak konsisten, sangat bergantung pada individual style masing-masing sales person, dan tidak ada standard operating procedure yang jelas.
+2. **Proses Komunikasi:** Komunikasi dengan pelanggan tidak konsisten, sangat bergantung pada gaya individual masing-masing tenaga penjualan, dan tidak ada prosedur operasi standar yang jelas.
 
-3. **Sales Process:** Proses penjualan dari lead generation hingga closing masih manual, tidak ada sales pipeline visibility, dan forecasting dilakukan berdasarkan perkiraan tanpa data historical yang akurat.
+3. **Proses Penjualan:** Proses penjualan dari generasi prospek hingga penutupan masih manual, tidak ada visibilitas saluran penjualan, dan peramalan dilakukan berdasarkan perkiraan tanpa data historis yang akurat.
 
-4. **Customer Service:** Layanan pelanggan bersifat reaktif, tidak ada proactive engagement, dan tidak ada systematic approach untuk mengukur customer satisfaction.
+4. **Layanan Pelanggan:** Layanan pelanggan bersifat reaktif, tidak ada keterlibatan proaktif, dan tidak ada pendekatan sistematis untuk mengukur kepuasan pelanggan.
 
 #### 4.1.2 Customer Segmentation dan Journey Mapping
 
 Melalui analisis yang mendalam, berhasil diidentifikasi segmentasi pelanggan SATRIAMART yang terbagi menjadi dua kategori utama:
 
-**Segmen B2C (70% revenue):** Terdiri dari pemilik rumah, home decor enthusiasts, dan small business owners dengan karakteristik dan kebutuhan yang berbeda-beda.
+**Segmen Bisnis ke Konsumen (70% pendapatan):** Terdiri dari pemilik rumah, penggemar dekorasi rumah, dan pemilik bisnis kecil dengan karakteristik dan kebutuhan yang berbeda-beda.
 
-**Segmen B2B (30% revenue):** Meliputi corporate offices, retail businesses, dan interior designers dengan complexity yang lebih tinggi dalam decision making process.
+**Segmen Bisnis ke Bisnis (30% pendapatan):** Meliputi kantor korporat, bisnis ritel, dan perancang interior dengan kompleksitas yang lebih tinggi dalam proses pengambilan keputusan.
 
-Customer journey mapping menunjukkan adanya berbagai pain points di setiap tahapan, mulai dari awareness hingga post-purchase, yang menjadi opportunity untuk improvement melalui implementasi CRM yang tepat.
+Pemetaan perjalanan pelanggan menunjukkan adanya berbagai titik masalah di setiap tahapan, mulai dari kesadaran hingga pasca pembelian, yang menjadi peluang untuk perbaikan melalui implementasi CRM yang tepat.
 
 #### 4.1.3 Technology Gap dan Solution Design
 
-Gap analysis menunjukkan bahwa SATRIAMART memiliki significant technology gaps yang menghambat growth dan efficiency:
+Analisis kesenjangan menunjukkan bahwa SATRIAMART memiliki kesenjangan teknologi yang signifikan yang menghambat pertumbuhan dan efisiensi:
 
-**Major Gaps Identified:**
-- Tidak ada centralized customer database
-- Manual quotation dan pricing process
-- Lack of sales pipeline visibility
-- Limited analytics dan reporting capabilities
-- No integration antar systems yang ada
+**Kesenjangan Utama yang Teridentifikasi:**
+- Tidak ada basis data pelanggan terpusat
+- Proses penawaran dan penetapan harga manual
+- Kurangnya visibilitas saluran penjualan
+- Kemampuan analitik dan pelaporan terbatas
+- Tidak ada integrasi antar sistem yang ada
 
-**Solusi yang dirancang** berupa comprehensive CRM platform yang mencakup:
-- Centralized customer database dengan 360-degree customer view
-- Automated sales pipeline management dengan forecasting capabilities
-- Integrated communication platform untuk multi-channel customer engagement
-- Advanced analytics dan business intelligence untuk data-driven decision making
-- Mobile accessibility untuk sales team yang mobile
+**Solusi yang dirancang** berupa platform CRM komprehensif yang mencakup:
+- Basis data pelanggan terpusat dengan tampilan pelanggan 360 derajat
+- Manajemen saluran penjualan otomatis dengan kemampuan peramalan
+- Platform komunikasi terintegrasi untuk keterlibatan pelanggan multi-saluran
+- Analitik lanjutan dan kecerdasan bisnis untuk pengambilan keputusan berbasis data
+- Aksesibilitas bergerak untuk tim penjualan yang mobile
 
 #### 4.1.4 Expected Benefits dan ROI
 
-Implementasi CRM system yang dirancang diperkirakan akan memberikan benefits yang signifikan:
+Implementasi sistem CRM yang dirancang diperkirakan akan memberikan manfaat yang signifikan:
 
-**Operational Benefits:**
-- Pengurangan waktu administrative tasks hingga 60%
-- Peningkatan response time kepada pelanggan dari 4 jam menjadi 30 menit
-- Eliminasi duplicate data entry dan human errors
-- Standardisasi process dan improved consistency
+**Manfaat Operasional:**
+- Pengurangan waktu tugas administratif hingga 60%
+- Peningkatan waktu respons kepada pelanggan dari 4 jam menjadi 30 menit
+- Eliminasi entri data duplikat dan kesalahan manusia
+- Standardisasi proses dan peningkatan konsistensi
 
-**Strategic Benefits:**
-- Peningkatan sales conversion rate hingga 25%
-- Customer retention improvement sebesar 30%
-- Cross-selling success rate meningkat 40%
-- Better customer segmentation dan targeted marketing
+**Manfaat Strategis:**
+- Peningkatan tingkat konversi penjualan hingga 25%
+- Peningkatan retensi pelanggan sebesar 30%
+- Tingkat keberhasilan penjualan silang meningkat 40%
+- Segmentasi pelanggan dan pemasaran tertarget yang lebih baik
 
-**Financial Benefits:**
-- ROI projection 200% pada tahun kedua
-- Revenue growth melalui improved customer experience
-- Cost reduction melalui operational efficiency
-- Better cash flow management melalui improved forecasting
+**Manfaat Finansial:**
+- Proyeksi laba atas investasi 200% pada tahun kedua
+- Pertumbuhan pendapatan melalui peningkatan pengalaman pelanggan
+- Pengurangan biaya melalui efisiensi operasional
+- Manajemen arus kas yang lebih baik melalui peramalan yang diperbaiki
 
 ### 4.2 Saran
 
@@ -850,131 +850,131 @@ Berdasarkan analisis dan kesimpulan yang diperoleh, berikut adalah rekomendasi s
 
 **1. Quick Wins Implementation**
 
-*Immediate Actions:*
-- **Centralizing Customer Data:** Mulai mengkonsolidasikan semua customer data yang tersebar ke dalam single spreadsheet atau simple database sebagai langkah awal
-- **Communication Standardization:** Buat template responses untuk pertanyaan yang sering ditanyakan dan implement response time standards
-- **Sales Process Documentation:** Document semua sales processes yang existing dan identify immediate bottlenecks yang bisa diperbaiki
+*Tindakan Segera:*
+- **Pemusatan Data Pelanggan:** Mulai mengkonsolidasikan semua data pelanggan yang tersebar ke dalam lembar kerja tunggal atau basis data sederhana sebagai langkah awal
+- **Standardisasi Komunikasi:** Buat templat respons untuk pertanyaan yang sering ditanyakan dan terapkan standar waktu respons
+- **Dokumentasi Proses Penjualan:** Dokumentasikan semua proses penjualan yang ada dan identifikasi kemacetan langsung yang bisa diperbaiki
 
-*Expected Impact:*
-- Immediate improvement dalam response time dan consistency
-- Better organization of customer information
-- Foundation untuk CRM implementation yang lebih comprehensive
+*Dampak yang Diharapkan:*
+- Peningkatan segera dalam waktu respons dan konsistensi
+- Organisasi informasi pelanggan yang lebih baik
+- Fondasi untuk implementasi CRM yang lebih komprehensif
 
 **2. Team Preparation dan Change Management**
 
-*Preparation Steps:*
-- **Skills Assessment:** Evaluate current team capability dan identify training needs
-- **Change Champions:** Identify key personnel yang akan menjadi champion untuk CRM adoption
-- **Communication Plan:** Develop internal communication plan untuk explain benefits dan address concerns
+*Langkah Persiapan:*
+- **Penilaian Keterampilan:** Evaluasi kemampuan tim saat ini dan identifikasi kebutuhan pelatihan
+- **Champion Perubahan:** Identifikasi personel kunci yang akan menjadi champion untuk adopsi CRM
+- **Rencana Komunikasi:** Kembangkan rencana komunikasi internal untuk menjelaskan manfaat dan mengatasi kekhawatiran
 
-*Expected Impact:*
-- Better readiness untuk technology adoption
-- Reduced resistance to change
-- Smoother implementation process
+*Dampak yang Diharapkan:*
+- Kesiapan yang lebih baik untuk adopsi teknologi
+- Berkurangnya resistensi terhadap perubahan
+- Proses implementasi yang lebih lancar
 
 #### 4.2.2 Rekomendasi Jangka Menengah (6-12 Bulan)
 
 **1. Comprehensive CRM Implementation**
 
-*Implementation Strategy:*
-- **Phased Rollout:** Implement CRM dalam phases, mulai dari core features (customer database, basic pipeline) kemudian advanced features (analytics, automation)
-- **Pilot Program:** Start dengan small group atau specific customer segment untuk test dan refine system
-- **Integration Planning:** Plan integration dengan existing systems dan prepare untuk data migration
+*Strategi Implementasi:*
+- **Peluncuran Bertahap:** Implementasi CRM dalam fase, mulai dari fitur inti (basis data pelanggan, saluran dasar) kemudian fitur lanjutan (analitik, otomasi)
+- **Program Percontohan:** Mulai dengan kelompok kecil atau segmen pelanggan spesifik untuk menguji dan menyempurnakan sistem
+- **Perencanaan Integrasi:** Rencanakan integrasi dengan sistem yang ada dan persiapkan untuk migrasi data
 
-*Technical Recommendations:*
-- Pilih CRM platform yang sesuai dengan budget dan requirements SATRIAMART
-- Ensure mobile accessibility untuk sales team
-- Implement security measures yang adequate untuk protect customer data
-- Setup regular backup dan disaster recovery procedures
+*Rekomendasi Teknis:*
+- Pilih platform CRM yang sesuai dengan anggaran dan kebutuhan SATRIAMART
+- Pastikan aksesibilitas bergerak untuk tim penjualan
+- Implementasi langkah-langkah keamanan yang memadai untuk melindungi data pelanggan
+- Siapkan pencadangan reguler dan prosedur pemulihan bencana
 
-**2. Process Optimization dan Automation**
+**2. Optimasi Proses dan Otomasi**
 
-*Automation Opportunities:*
-- **Lead Qualification:** Automated lead scoring untuk prioritize prospects
-- **Follow-up Reminders:** Automated reminders untuk sales team untuk follow-up activities
-- **Customer Communication:** Automated email sequences untuk customer onboarding dan retention
-- **Reporting:** Automated daily/weekly reports untuk management
+*Peluang Otomasi:*
+- **Kualifikasi Prospek:** Penilaian prospek otomatis untuk memprioritaskan calon pelanggan
+- **Pengingat Tindak Lanjut:** Pengingat otomatis untuk tim penjualan untuk aktivitas tindak lanjut
+- **Komunikasi Pelanggan:** Rangkaian surel otomatis untuk orientasi dan retensi pelanggan
+- **Pelaporan:** Laporan harian/mingguan otomatis untuk manajemen
 
-*Expected Benefits:*
-- Significant reduction dalam manual tasks
-- Improved consistency dalam customer interactions
-- Better visibility into sales performance dan customer behavior
-- Data-driven decision making capabilities
+*Manfaat yang Diharapkan:*
+- Pengurangan signifikan dalam tugas manual
+- Peningkatan konsistensi dalam interaksi pelanggan
+- Visibilitas yang lebih baik terhadap kinerja penjualan dan perilaku pelanggan
+- Kemampuan pengambilan keputusan berbasis data
 
 #### 4.2.3 Rekomendasi Jangka Panjang (1-3 Tahun)
 
-**1. Advanced Analytics dan AI Implementation**
+**1. Analitik Lanjutan dan Implementasi Kecerdasan Buatan**
 
-*Advanced Capabilities:*
-- **Predictive Analytics:** Implement machine learning untuk predict customer churn, sales forecasting, dan demand planning
-- **Personalization Engine:** Advanced personalization untuk marketing campaigns dan customer communications
-- **Voice of Customer Analysis:** Sentiment analysis dari customer feedback untuk proactive issue resolution
-- **Competitive Intelligence:** Monitor competitor activities dan market trends
+*Kemampuan Lanjutan:*
+- **Analitik Prediktif:** Implementasi pembelajaran mesin untuk memprediksi kehilangan pelanggan, peramalan penjualan, dan perencanaan permintaan
+- **Mesin Personalisasi:** Personalisasi lanjutan untuk kampanye pemasaran dan komunikasi pelanggan
+- **Analisis Suara Pelanggan:** Analisis sentimen dari umpan balik pelanggan untuk resolusi masalah proaktif
+- **Intelijen Kompetitif:** Memantau aktivitas pesaing dan tren pasar
 
-*Strategic Impact:*
-- Competitive advantage melalui superior customer insights
-- Proactive customer management capabilities
-- Better strategic planning dan market positioning
-- Innovation opportunities berdasarkan customer data
+*Dampak Strategis:*
+- Keunggulan kompetitif melalui wawasan pelanggan yang unggul
+- Kemampuan manajemen pelanggan proaktif
+- Perencanaan strategis dan posisi pasar yang lebih baik
+- Peluang inovasi berdasarkan data pelanggan
 
-**2. Market Expansion dan Growth Strategy**
+**2. Ekspansi Pasar dan Strategi Pertumbuhan**
 
-*Expansion Opportunities:*
-- **Geographic Expansion:** Leverage CRM data untuk identify opportunities di new markets
-- **Product Line Extension:** Use customer insights untuk develop new products yang sesuai dengan customer needs
-- **Partnership Development:** Identify potential partners berdasarkan customer data dan market analysis
-- **Digital Transformation:** Full digital transformation dengan e-commerce integration dan digital marketing automation
+*Peluang Ekspansi:*
+- **Ekspansi Geografis:** Memanfaatkan data CRM untuk mengidentifikasi peluang di pasar baru
+- **Perluasan Lini Produk:** Menggunakan wawasan pelanggan untuk mengembangkan produk baru yang sesuai dengan kebutuhan pelanggan
+- **Pengembangan Kemitraan:** Mengidentifikasi mitra potensial berdasarkan data pelanggan dan analisis pasar
+- **Transformasi Digital:** Transformasi digital penuh dengan integrasi perdagangan elektronik dan otomasi pemasaran digital
 
-*Growth Enablers:*
-- Scalable infrastructure yang dapat support business growth
-- Data-driven approach untuk market expansion decisions
-- Better customer retention untuk sustainable growth
-- Innovation culture berdasarkan customer feedback dan market insights
+*Pendukung Pertumbuhan:*
+- Infrastruktur yang dapat diskalakan yang dapat mendukung pertumbuhan bisnis
+- Pendekatan berbasis data untuk keputusan ekspansi pasar
+- Retensi pelanggan yang lebih baik untuk pertumbuhan berkelanjutan
+- Budaya inovasi berdasarkan umpan balik pelanggan dan wawasan pasar
 
-#### 4.2.4 Critical Success Factors
+#### 4.2.4 Faktor Kunci Keberhasilan
 
-**1. Leadership Commitment**
-- Strong support dari management untuk ensure adequate resources dan overcome resistance
-- Clear communication tentang strategic importance dari CRM initiative
-- Regular monitoring dan measurement terhadap implementation progress
+**1. Komitmen Kepemimpinan**
+- Dukungan kuat dari manajemen untuk memastikan sumber daya yang memadai dan mengatasi resistensi
+- Komunikasi yang jelas tentang pentingnya strategis dari inisiatif CRM
+- Pemantauan dan pengukuran reguler terhadap kemajuan implementasi
 
-**2. User Adoption Strategy**
-- Comprehensive training program untuk all levels
-- Clear communication tentang benefits untuk individual users
-- Incentive structure yang align dengan CRM usage
-- Continuous support dan feedback collection
+**2. Strategi Adopsi Pengguna**
+- Program pelatihan komprehensif untuk semua tingkat
+- Komunikasi yang jelas tentang manfaat untuk pengguna individual
+- Struktur insentif yang selaras dengan penggunaan CRM
+- Dukungan berkelanjutan dan pengumpulan umpan balik
 
-**3. Data Quality Management**
-- Establish data governance policies dan procedures
-- Regular data cleansing dan quality checks
-- Training untuk all users tentang importance of data quality
-- Automated data validation rules where possible
+**3. Manajemen Kualitas Data**
+- Menetapkan kebijakan dan prosedur tata kelola data
+- Pembersihan data reguler dan pemeriksaan kualitas
+- Pelatihan untuk semua pengguna tentang pentingnya kualitas data
+- Aturan validasi data otomatis jika memungkinkan
 
-**4. Continuous Improvement**
-- Regular review dan optimization dari CRM processes
-- Feedback collection dari users dan customers
-- Stay updated dengan technology trends dan best practices
-- Flexibility untuk adapt to changing business needs
+**4. Perbaikan Berkelanjutan**
+- Tinjauan dan optimasi reguler dari proses CRM
+- Pengumpulan umpan balik dari pengguna dan pelanggan
+- Tetap terupdate dengan tren teknologi dan praktik terbaik
+- Fleksibilitas untuk beradaptasi dengan kebutuhan bisnis yang berubah
 
-#### 4.2.5 Risk Mitigation Strategies
+#### 4.2.5 Strategi Mitigasi Risiko
 
-**1. Implementation Risks**
-- **Mitigation:** Phased implementation dengan adequate testing di setiap phase
-- **Contingency Plan:** Fallback procedures jika ada system issues during transition
+**1. Risiko Implementasi**
+- **Mitigasi:** Implementasi bertahap dengan pengujian yang memadai di setiap fase
+- **Rencana Darurat:** Prosedur cadangan jika ada masalah sistem selama transisi
 
-**2. User Adoption Risks**
-- **Mitigation:** Comprehensive change management program dan ongoing support
-- **Monitoring:** Regular measurement of adoption rates dan user satisfaction
+**2. Risiko Adopsi Pengguna**
+- **Mitigasi:** Program manajemen perubahan komprehensif dan dukungan berkelanjutan
+- **Pemantauan:** Pengukuran reguler tingkat adopsi dan kepuasan pengguna
 
-**3. Data Security Risks**
-- **Mitigation:** Implement comprehensive security measures dan regular security audits
-- **Compliance:** Ensure compliance dengan relevant data protection regulations
+**3. Risiko Keamanan Data**
+- **Mitigasi:** Implementasi langkah keamanan komprehensif dan audit keamanan reguler
+- **Kepatuhan:** Memastikan kepatuhan dengan peraturan perlindungan data yang relevan
 
-**4. Budget Overrun Risks**
-- **Mitigation:** Detailed budgeting dengan contingency reserves
-- **Control:** Regular monitoring terhadap implementation costs dan ROI tracking
+**4. Risiko Pembengkakan Anggaran**
+- **Mitigasi:** Penganggaran detail dengan cadangan kontinjensi
+- **Kontrol:** Pemantauan reguler terhadap biaya implementasi dan pelacakan laba atas investasi
 
-Dengan mengikuti rekomendasi ini secara sistematis, SATRIAMART akan dapat mengatasi kendala-kendala yang saat ini dihadapi dalam pengelolaan hubungan pelanggan dan meningkatkan competitiveness di pasar. Implementasi CRM bukan hanya tentang technology adoption, tetapi juga tentang transformasi budaya organisasi menuju customer-centricity yang akan menjadi foundation untuk sustainable growth di masa depan.
+Dengan mengikuti rekomendasi ini secara sistematis, SATRIAMART akan dapat mengatasi kendala-kendala yang saat ini dihadapi dalam pengelolaan hubungan pelanggan dan meningkatkan daya saing di pasar. Implementasi CRM bukan hanya tentang adopsi teknologi, tetapi juga tentang transformasi budaya organisasi menuju fokus pada pelanggan yang akan menjadi fondasi untuk pertumbuhan berkelanjutan di masa depan.
 
 ---
 
