@@ -1002,13 +1002,229 @@ Dengan mengikuti rekomendasi ini secara sistematis, SATRIAMART akan dapat mengat
 
 ---
 
-**LAMPIRAN**
+## LAMPIRAN
 
-*Lampiran A: Customer Journey Mapping Details*  
-*Lampiran B: CRM System Architecture Diagram*  
-*Lampiran C: Implementation Timeline dan Budget*  
-*Lampiran D: Training Materials dan User Manual*  
-*Lampiran E: ROI Calculation dan Financial Projections*
+### LAMPIRAN A: Detail Pemetaan Perjalanan Pelanggan
+
+#### A.1 Matriks Perjalanan Pelanggan Segmen Bisnis ke Konsumen
+
+| Tahap | Titik Sentuh | Tindakan Pelanggan | Titik Masalah | Solusi yang Diusulkan |
+|-------|--------------|-------------------|---------------|----------------------|
+| **Kesadaran** | Pencarian Google, Media Sosial | Mencari inspirasi desain | Visibilitas online terbatas | Optimasi SEO, konten media sosial |
+| **Pertimbangan** | WhatsApp, Surel | Meminta penawaran | Waktu respons lambat | Bot percakapan 24/7, templat respons |
+| **Pembelian** | Penawaran final | Negosiasi harga | Proses manual lambat | Sistem penawaran otomatis |
+| **Pengiriman** | Update produksi | Melacak pesanan | Tidak ada visibilitas | Sistem pelacakan waktu nyata |
+| **Pasca Beli** | Konfirmasi pengiriman | Evaluasi kualitas | Tidak ada umpan balik sistematis | Survei kepuasan otomatis |
+
+#### A.2 Persona Pelanggan Detail
+
+**Persona 1: Budi - Pemilik Rumah**
+- Usia: 35 tahun, menikah, 2 anak
+- Pekerjaan: Karyawan swasta, gaji Rp 15 juta/bulan
+- Motivasi: Ingin rumah terlihat rapi dan berkelas
+- Perilaku: Membandingkan harga, membaca review
+- Saluran preferensi: WhatsApp, marketplace online
+- Keputusan: Melibatkan istri, budget Rp 500rb - 1 juta
+
+**Persona 2: Sari - Penggemar Dekorasi**
+- Usia: 28 tahun, single, urban
+- Pekerjaan: Marketing executive, gaji Rp 12 juta/bulan
+- Motivasi: Ekspresi diri melalui dekorasi unik
+- Perilaku: Aktif di Instagram, suka hal baru
+- Saluran preferensi: Instagram, konsultasi langsung
+- Keputusan: Cepat, budget Rp 1-3 juta
+
+### LAMPIRAN B: Diagram Arsitektur Sistem CRM
+
+#### B.1 Arsitektur Tingkat Tinggi
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   FRONT-END     │    │   MIDDLEWARE    │    │   BACK-END      │
+│                 │    │                 │    │                 │
+│ • Web Dashboard │◄──►│ • API Gateway   │◄──►│ • Database CRM  │
+│ • Mobile App    │    │ • Auth Service  │    │ • File Storage  │
+│ • Customer      │    │ • Integration   │    │ • Analytics DB  │
+│   Portal        │    │   Layer         │    │                 │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │                       │                       │
+         │              ┌─────────────────┐               │
+         │              │   INTEGRASI     │               │
+         └──────────────►│                 │◄──────────────┘
+                        │ • WhatsApp API  │
+                        │ • Email Service │
+                        │ • Social Media  │
+                        │ • Payment       │
+                        │   Gateway       │
+                        └─────────────────┘
+```
+
+#### B.2 Model Data Inti
+
+**Entitas Pelanggan:**
+- ID Pelanggan (Primary Key)
+- Nama Lengkap
+- Informasi Kontak (Telepon, Email, Alamat)
+- Segmen Pelanggan
+- Tanggal Registrasi
+- Status Aktif
+- Nilai Seumur Hidup
+
+**Entitas Pesanan:**
+- ID Pesanan (Primary Key)
+- ID Pelanggan (Foreign Key)
+- Tanggal Pesanan
+- Status Pesanan
+- Total Nilai
+- Produk yang Dipesan
+- Catatan Khusus
+
+### LAMPIRAN C: Jadwal Waktu dan Anggaran Implementasi
+
+#### C.1 Jadwal Waktu Implementasi (6 Bulan)
+
+| Fase | Aktivitas | Durasi | Bulan |
+|------|-----------|--------|-------|
+| **Fase 1** | Persiapan dan Setup | 2 bulan | 1-2 |
+| | • Pemilihan platform CRM | 2 minggu | 1 |
+| | • Setup infrastruktur | 2 minggu | 1-2 |
+| | • Migrasi data dasar | 3 minggu | 2 |
+| | • Training tim awal | 1 minggu | 2 |
+| **Fase 2** | Implementasi Inti | 2 bulan | 3-4 |
+| | • Deploy fitur dasar | 4 minggu | 3 |
+| | • Setup integrasi WhatsApp | 2 minggu | 3-4 |
+| | • Training komprehensif | 2 minggu | 4 |
+| **Fase 3** | Optimasi Lanjutan | 2 bulan | 5-6 |
+| | • Deploy fitur analytics | 3 minggu | 5 |
+| | • Optimasi performa | 2 minggu | 5-6 |
+| | • Evaluasi dan penyesuaian | 3 minggu | 6 |
+
+#### C.2 Rincian Anggaran
+
+| Kategori | Item | Biaya (Rupiah) |
+|----------|------|----------------|
+| **Perangkat Lunak** | | |
+| | Lisensi CRM (1 tahun) | 50.000.000 |
+| | Integrasi WhatsApp API | 12.000.000 |
+| | Tools analytics | 15.000.000 |
+| **Implementasi** | | |
+| | Konsultasi implementasi | 75.000.000 |
+| | Migrasi data | 25.000.000 |
+| | Kustomisasi sistem | 40.000.000 |
+| **Pelatihan** | | |
+| | Training tim (20 orang) | 30.000.000 |
+| | Materi training | 5.000.000 |
+| **Infrastruktur** | | |
+| | Hardware tambahan | 20.000.000 |
+| | Backup & security | 15.000.000 |
+| **Kontingensi** | 10% dari total | 28.700.000 |
+| **TOTAL** | | **315.700.000** |
+
+### LAMPIRAN D: Materi Pelatihan dan Panduan Pengguna
+
+#### D.1 Modul Pelatihan
+
+**Modul 1: Pengenalan CRM (2 jam)**
+- Konsep dasar CRM
+- Manfaat untuk SATRIAMART
+- Overview sistem baru
+
+**Modul 2: Navigasi Dasar (3 jam)**
+- Login dan dashboard
+- Menu utama dan fitur
+- Pengaturan profil pengguna
+
+**Modul 3: Manajemen Pelanggan (4 jam)**
+- Menambah data pelanggan baru
+- Mencari dan mengedit data
+- Kategorisasi dan segmentasi
+
+**Modul 4: Manajemen Penjualan (4 jam)**
+- Membuat peluang penjualan
+- Mengelola saluran penjualan
+- Membuat penawaran
+
+**Modul 5: Komunikasi dan Follow-up (3 jam)**
+- Integrasi WhatsApp
+- Template komunikasi
+- Penjadwalan follow-up
+
+**Modul 6: Laporan dan Analytics (2 jam)**
+- Membuat laporan dasar
+- Membaca dashboard analytics
+- Export data
+
+#### D.2 Checklist Harian Pengguna
+
+**Untuk Tim Penjualan:**
+- [ ] Cek dashboard untuk update terbaru
+- [ ] Review peluang yang akan expired
+- [ ] Update status komunikasi dengan prospek
+- [ ] Input data prospek baru
+- [ ] Follow-up sesuai reminder sistem
+
+**Untuk Customer Service:**
+- [ ] Cek tiket support yang masuk
+- [ ] Review kepuasan pelanggan
+- [ ] Update status pesanan
+- [ ] Koordinasi dengan tim produksi
+
+### LAMPIRAN E: Perhitungan Laba atas Investasi dan Proyeksi Keuangan
+
+#### E.1 Asumsi Perhitungan
+
+**Kondisi Saat Ini:**
+- Jumlah pelanggan aktif: 500 per bulan
+- Rata-rata nilai transaksi: Rp 2.500.000
+- Tingkat konversi: 15%
+- Tingkat retensi: 60%
+- Biaya akuisisi pelanggan: Rp 500.000
+
+**Target Setelah CRM:**
+- Peningkatan konversi: 25% (dari 15% ke 18.75%)
+- Peningkatan retensi: 30% (dari 60% ke 78%)
+- Pengurangan biaya akuisisi: 20% (ke Rp 400.000)
+- Peningkatan nilai transaksi: 15% (ke Rp 2.875.000)
+
+#### E.2 Proyeksi Pendapatan 3 Tahun
+
+| Metrik | Tahun 0 (Baseline) | Tahun 1 | Tahun 2 | Tahun 3 |
+|--------|---------------------|---------|---------|---------|
+| **Pelanggan Baru/Bulan** | 75 | 94 | 110 | 125 |
+| **Tingkat Retensi** | 60% | 70% | 75% | 78% |
+| **Nilai Transaksi Rata-rata** | 2.500.000 | 2.625.000 | 2.750.000 | 2.875.000 |
+| **Pendapatan Bulanan** | 468.750.000 | 616.125.000 | 756.250.000 | 895.312.500 |
+| **Pendapatan Tahunan** | 5.625.000.000 | 7.393.500.000 | 9.075.000.000 | 10.743.750.000 |
+
+#### E.3 Analisis Biaya-Manfaat
+
+**Investasi Awal:** Rp 315.700.000
+
+**Penghematan Tahunan:**
+- Efisiensi operasional: Rp 180.000.000
+- Pengurangan biaya akuisisi: Rp 60.000.000
+- Pengurangan churn cost: Rp 120.000.000
+- **Total Penghematan:** Rp 360.000.000/tahun
+
+**Peningkatan Pendapatan:**
+- Tahun 1: Rp 1.768.500.000
+- Tahun 2: Rp 3.450.000.000
+- Tahun 3: Rp 5.118.750.000
+
+**Perhitungan ROI:**
+- **Tahun 1:** (1.768.500.000 + 360.000.000 - 315.700.000) / 315.700.000 = **574%**
+- **Tahun 2:** ROI kumulatif = **1.156%**
+- **Tahun 3:** ROI kumulatif = **1.987%**
+
+**Payback Period:** 2,1 bulan
+
+#### E.4 Analisis Sensitivitas
+
+| Skenario | Peningkatan Konversi | ROI Tahun 1 | ROI Tahun 3 |
+|----------|---------------------|-------------|-------------|
+| **Konservatif** | 15% | 287% | 994% |
+| **Realistis** | 25% | 574% | 1.987% |
+| **Optimis** | 35% | 861% | 2.980% |
 
 ---
 
