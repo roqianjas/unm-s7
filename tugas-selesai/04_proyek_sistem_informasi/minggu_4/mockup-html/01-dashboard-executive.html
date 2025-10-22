@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Executive - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header / Top Navigation -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <!-- Logo & Brand -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari customer, order, produk..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Right Menu -->
+            <div class="flex items-center space-x-4">
+                <!-- Notifications -->
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+
+                <!-- User Profile -->
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Admin+Satria&background=3B82F6&color=fff" 
+                         class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Admin Satria</p>
+                        <p class="text-xs text-gray-500">Owner</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="flex pt-16">
+        <!-- Sidebar Navigation -->
+        <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+            <nav class="p-4 space-y-1">
+                <!-- Dashboard -->
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-50 text-blue-600 rounded-lg font-medium">
+                    <i class="fas fa-chart-line w-5"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <!-- CRM -->
+                <div class="space-y-1">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-users w-5"></i>
+                        <span>CRM</span>
+                        <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                    </a>
+                    <div class="ml-8 space-y-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Customers</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Orders</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Communications</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Complaints</a>
+                    </div>
+                </div>
+
+                <!-- Inventory -->
+                <div class="space-y-1">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-boxes w-5"></i>
+                        <span>Inventory</span>
+                        <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                    </a>
+                    <div class="ml-8 space-y-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Products</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Materials</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Stock Opname</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Suppliers</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Purchase Orders</a>
+                    </div>
+                </div>
+
+                <!-- Production -->
+                <div class="space-y-1">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-industry w-5"></i>
+                        <span>Production</span>
+                        <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                    </a>
+                    <div class="ml-8 space-y-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Work Orders</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Schedule</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Quality Control</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Resources</a>
+                    </div>
+                </div>
+
+                <!-- Analytics -->
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-chart-bar w-5"></i>
+                    <span>Analytics</span>
+                </a>
+
+                <!-- Settings -->
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-cog w-5"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-64 p-8">
+            <!-- Page Header -->
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
+                    <p class="text-gray-600 mt-1">Selamat datang, Bapak Satria! 👋 Berikut ringkasan bisnis hari ini</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg flex items-center space-x-2">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Refresh</span>
+                    </button>
+                    <div class="px-4 py-2 bg-white border border-gray-300 rounded-lg flex items-center space-x-2">
+                        <i class="fas fa-calendar text-gray-500"></i>
+                        <span class="text-gray-700">Januari 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Total Sales -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-money-bill-wave text-green-600 text-xl"></i>
+                        </div>
+                        <span class="text-green-600 text-sm font-semibold flex items-center">
+                            <i class="fas fa-arrow-up mr-1"></i>
+                            12.5%
+                        </span>
+                    </div>
+                    <h3 class="text-gray-600 text-sm font-medium mb-1">Total Penjualan</h3>
+                    <p class="text-2xl font-bold text-gray-900">Rp 245.8 Jt</p>
+                    <p class="text-xs text-gray-500 mt-2">vs bulan lalu: Rp 218.5 Jt</p>
+                </div>
+
+                <!-- Total Orders -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-blue-600 text-xl"></i>
+                        </div>
+                        <span class="text-blue-600 text-sm font-semibold flex items-center">
+                            <i class="fas fa-arrow-up mr-1"></i>
+                            8.2%
+                        </span>
+                    </div>
+                    <h3 class="text-gray-600 text-sm font-medium mb-1">Total Order</h3>
+                    <p class="text-2xl font-bold text-gray-900">342</p>
+                    <p class="text-xs text-gray-500 mt-2">28 order pending</p>
+                </div>
+
+                <!-- Total Customers -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-users text-purple-600 text-xl"></i>
+                        </div>
+                        <span class="text-purple-600 text-sm font-semibold flex items-center">
+                            <i class="fas fa-arrow-up mr-1"></i>
+                            15.3%
+                        </span>
+                    </div>
+                    <h3 class="text-gray-600 text-sm font-medium mb-1">Total Customer</h3>
+                    <p class="text-2xl font-bold text-gray-900">1,245</p>
+                    <p class="text-xs text-gray-500 mt-2">168 customer baru</p>
+                </div>
+
+                <!-- Production Orders -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-industry text-orange-600 text-xl"></i>
+                        </div>
+                        <span class="text-orange-600 text-sm font-semibold flex items-center">
+                            <i class="fas fa-minus mr-1"></i>
+                            2.1%
+                        </span>
+                    </div>
+                    <h3 class="text-gray-600 text-sm font-medium mb-1">Work Order Aktif</h3>
+                    <p class="text-2xl font-bold text-gray-900">87</p>
+                    <p class="text-xs text-gray-500 mt-2">42 dalam produksi</p>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                <!-- Sales Trend Chart -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Trend Penjualan</h3>
+                        <select class="px-3 py-1 border border-gray-300 rounded-lg text-sm">
+                            <option>7 Hari Terakhir</option>
+                            <option>30 Hari Terakhir</option>
+                            <option>3 Bulan Terakhir</option>
+                        </select>
+                    </div>
+                    <div class="h-64 flex items-end justify-between space-x-2">
+                        <div class="flex-1 bg-blue-100 rounded-t relative" style="height: 60%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">35M</div>
+                        </div>
+                        <div class="flex-1 bg-blue-100 rounded-t relative" style="height: 75%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">42M</div>
+                        </div>
+                        <div class="flex-1 bg-blue-100 rounded-t relative" style="height: 55%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">32M</div>
+                        </div>
+                        <div class="flex-1 bg-blue-100 rounded-t relative" style="height: 85%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">48M</div>
+                        </div>
+                        <div class="flex-1 bg-blue-600 rounded-t relative" style="height: 90%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">51M</div>
+                        </div>
+                        <div class="flex-1 bg-blue-100 rounded-t relative" style="height: 70%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">38M</div>
+                        </div>
+                        <div class="flex-1 bg-blue-100 rounded-t relative" style="height: 65%">
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-gray-700">36M</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-4 text-xs text-gray-500">
+                        <span>Sen</span>
+                        <span>Sel</span>
+                        <span>Rab</span>
+                        <span>Kam</span>
+                        <span>Jum</span>
+                        <span>Sab</span>
+                        <span>Min</span>
+                    </div>
+                </div>
+
+                <!-- Top Products -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-6">Produk Terlaris</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 flex-1">
+                                <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center">
+                                    <i class="fas fa-home text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Nomor Rumah Akrilik</p>
+                                    <p class="text-sm text-gray-500">PRD-001</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-semibold text-gray-900">245</p>
+                                <p class="text-xs text-gray-500">terjual</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 flex-1">
+                                <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center">
+                                    <i class="fas fa-sign text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Signage Toko</p>
+                                    <p class="text-sm text-gray-500">PRD-005</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-semibold text-gray-900">198</p>
+                                <p class="text-xs text-gray-500">terjual</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 flex-1">
+                                <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center">
+                                    <i class="fas fa-certificate text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Plakat Custom</p>
+                                    <p class="text-sm text-gray-500">PRD-012</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-semibold text-gray-900">156</p>
+                                <p class="text-xs text-gray-500">terjual</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 flex-1">
+                                <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center">
+                                    <i class="fas fa-id-card text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Name Tag Akrilik</p>
+                                    <p class="text-sm text-gray-500">PRD-008</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-semibold text-gray-900">132</p>
+                                <p class="text-xs text-gray-500">terjual</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3 flex-1">
+                                <div class="w-10 h-10 bg-gray-200 rounded flex items-center justify-center">
+                                    <i class="fas fa-trophy text-gray-600"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Trophy Custom</p>
+                                    <p class="text-sm text-gray-500">PRD-015</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-semibold text-gray-900">89</p>
+                                <p class="text-xs text-gray-500">terjual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Orders & Alerts -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Recent Orders -->
+                <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Order Terbaru</h3>
+                        <a href="#" class="text-blue-600 text-sm font-medium hover:underline">Lihat Semua</a>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Order ID</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Customer</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Produk</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Total</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="py-3 px-4 text-sm font-medium text-blue-600">ORD-2024-156</td>
+                                    <td class="py-3 px-4 text-sm text-gray-900">Budi Santoso</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">Nomor Rumah Akrilik</td>
+                                    <td class="py-3 px-4 text-sm font-semibold text-gray-900">Rp 450.000</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">Pending</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="py-3 px-4 text-sm font-medium text-blue-600">ORD-2024-155</td>
+                                    <td class="py-3 px-4 text-sm text-gray-900">PT Sejahtera</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">Signage Toko (3pcs)</td>
+                                    <td class="py-3 px-4 text-sm font-semibold text-gray-900">Rp 2.850.000</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">In Production</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="py-3 px-4 text-sm font-medium text-blue-600">ORD-2024-154</td>
+                                    <td class="py-3 px-4 text-sm text-gray-900">Ani Wijaya</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">Plakat Custom</td>
+                                    <td class="py-3 px-4 text-sm font-semibold text-gray-900">Rp 650.000</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 text-xs font-medium bg-purple-100 text-purple-800 rounded-full">QC Check</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 hover:bg-gray-50">
+                                    <td class="py-3 px-4 text-sm font-medium text-blue-600">ORD-2024-153</td>
+                                    <td class="py-3 px-4 text-sm text-gray-900">Joko Purnomo</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">Name Tag (50pcs)</td>
+                                    <td class="py-3 px-4 text-sm font-semibold text-gray-900">Rp 1.250.000</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">Ready</span>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 text-sm font-medium text-blue-600">ORD-2024-152</td>
+                                    <td class="py-3 px-4 text-sm text-gray-900">Siti Nurhaliza</td>
+                                    <td class="py-3 px-4 text-sm text-gray-600">Trophy Custom (10pcs)</td>
+                                    <td class="py-3 px-4 text-sm font-semibold text-gray-900">Rp 3.500.000</td>
+                                    <td class="py-3 px-4">
+                                        <span class="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">Completed</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Alerts & Notifications -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-6">Peringatan & Alert</h3>
+                    <div class="space-y-4">
+                        <div class="flex space-x-3 p-3 bg-red-50 rounded-lg border border-red-200">
+                            <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-medium text-red-900">Stok Material Rendah</p>
+                                <p class="text-xs text-red-700 mt-1">Acrylic Sheet 3mm tersisa 15 lembar</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
+                            <i class="fas fa-clock text-yellow-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-medium text-yellow-900">Order Delay</p>
+                                <p class="text-xs text-yellow-700 mt-1">3 order melewati deadline</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                            <i class="fas fa-info-circle text-blue-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-medium text-blue-900">Stock Opname Scheduled</p>
+                                <p class="text-xs text-blue-700 mt-1">Dijadwalkan untuk 25 Jan 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 p-3 bg-green-50 rounded-lg border border-green-200">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-medium text-green-900">Target Tercapai</p>
+                                <p class="text-xs text-green-700 mt-1">Penjualan bulan ini 102% dari target</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3 p-3 bg-purple-50 rounded-lg border border-purple-200">
+                            <i class="fas fa-user-plus text-purple-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-medium text-purple-900">Customer Baru</p>
+                                <p class="text-xs text-purple-700 mt-1">12 customer baru minggu ini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

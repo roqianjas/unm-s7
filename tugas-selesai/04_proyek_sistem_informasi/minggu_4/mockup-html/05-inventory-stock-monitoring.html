@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Monitoring - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari produk, material..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Inventory+Staff&background=10B981&color=fff" 
+                         class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Rudi Hermawan</p>
+                        <p class="text-xs text-gray-500">Inventory Staff</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-users w-5"></i>
+                <span>CRM</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-green-50 text-green-600 rounded-lg font-medium">
+                    <i class="fas fa-boxes w-5"></i>
+                    <span>Inventory</span>
+                    <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                </a>
+                <div class="ml-8 space-y-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Products</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Materials</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-green-600 bg-green-50 font-medium rounded">Stock Monitoring</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Stock Opname</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Suppliers</a>
+                </div>
+            </div>
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-industry w-5"></i>
+                <span>Production</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-boxes text-green-600 mr-3"></i>
+                    Stock Monitoring
+                </h1>
+                <p class="text-gray-600 mt-1">Monitor level stok produk dan material secara real-time</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium flex items-center space-x-2">
+                    <i class="fas fa-download"></i>
+                    <span>Export</span>
+                </button>
+                <button class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 font-semibold flex items-center space-x-2 shadow-lg shadow-green-500/30">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>Stock Opname</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Alert Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center space-x-4">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-red-600 font-medium">Stock Critical</p>
+                    <p class="text-2xl font-bold text-red-900">12 Items</p>
+                </div>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 flex items-center space-x-4">
+                <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-exclamation-circle text-yellow-600 text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-yellow-600 font-medium">Stock Low</p>
+                    <p class="text-2xl font-bold text-yellow-900">28 Items</p>
+                </div>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-lg p-4 flex items-center space-x-4">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-green-600 font-medium">Stock Normal</p>
+                    <p class="text-2xl font-bold text-green-900">186 Items</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Kategori</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua</option>
+                        <option>Produk</option>
+                        <option>Material</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Status Stok</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Status</option>
+                        <option>Critical</option>
+                        <option>Low</option>
+                        <option>Normal</option>
+                        <option>Overstock</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Lokasi</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Lokasi</option>
+                        <option>Warehouse A</option>
+                        <option>Warehouse B</option>
+                        <option>Production Floor</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Stock Level (Low to High)</option>
+                        <option>Stock Level (High to Low)</option>
+                        <option>Name (A-Z)</option>
+                        <option>Last Updated</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium">
+                        <i class="fas fa-filter mr-2"></i>
+                        Apply
+                    </button>
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                        <i class="fas fa-redo mr-2"></i>
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stock Table -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-50 border-b border-gray-200">
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">
+                                Item Code / Name
+                            </th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Kategori</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Stock Saat Ini</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Reorder Point</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Stock Progress</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Status</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Last Update</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Critical Stock Item -->
+                        <tr class="border-b border-gray-100 hover:bg-red-50 bg-red-50/30">
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-red-100 rounded flex items-center justify-center">
+                                        <i class="fas fa-layer-group text-red-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Acrylic Sheet 3mm</p>
+                                        <p class="text-xs text-gray-500">MAT-001</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">Material</span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-lg font-bold text-red-600">15</p>
+                                <p class="text-xs text-gray-500">sheets</p>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-sm font-semibold text-gray-700">50</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-full">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs font-medium text-red-600">30%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-red-600 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-red-100 text-red-800 text-xs font-semibold rounded-full flex items-center w-fit">
+                                    <i class="fas fa-exclamation-triangle mr-1"></i>
+                                    Critical
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">22 Jan 2024</p>
+                                <p class="text-xs text-gray-500">14:30</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="px-3 py-1.5 bg-green-600 text-white rounded text-xs font-medium hover:bg-green-700">
+                                        <i class="fas fa-shopping-cart mr-1"></i>
+                                        Reorder
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Low Stock Item -->
+                        <tr class="border-b border-gray-100 hover:bg-yellow-50 bg-yellow-50/30">
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-yellow-100 rounded flex items-center justify-center">
+                                        <i class="fas fa-home text-yellow-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Nomor Rumah Akrilik</p>
+                                        <p class="text-xs text-gray-500">PRD-001</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Produk</span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-lg font-bold text-yellow-600">32</p>
+                                <p class="text-xs text-gray-500">pcs</p>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-sm font-semibold text-gray-700">30</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-full">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs font-medium text-yellow-600">53%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 53%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full flex items-center w-fit">
+                                    <i class="fas fa-exclamation-circle mr-1"></i>
+                                    Low
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">22 Jan 2024</p>
+                                <p class="text-xs text-gray-500">12:15</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View Details">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded" title="Edit">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Normal Stock Item -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded flex items-center justify-center">
+                                        <i class="fas fa-sign text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Signage Toko Akrilik</p>
+                                        <p class="text-xs text-gray-500">PRD-005</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Produk</span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-lg font-bold text-green-600">125</p>
+                                <p class="text-xs text-gray-500">pcs</p>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-sm font-semibold text-gray-700">40</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-full">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs font-medium text-green-600">100%+</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full flex items-center w-fit">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    Normal
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">22 Jan 2024</p>
+                                <p class="text-xs text-gray-500">09:45</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Another Normal Item -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded flex items-center justify-center">
+                                        <i class="fas fa-certificate text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Plakat Custom</p>
+                                        <p class="text-xs text-gray-500">PRD-012</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Produk</span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-lg font-bold text-green-600">87</p>
+                                <p class="text-xs text-gray-500">pcs</p>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-sm font-semibold text-gray-700">35</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-full">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs font-medium text-green-600">100%+</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full flex items-center w-fit">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    Normal
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">21 Jan 2024</p>
+                                <p class="text-xs text-gray-500">16:20</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Material Item -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded flex items-center justify-center">
+                                        <i class="fas fa-tint text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Adhesive Glue Premium</p>
+                                        <p class="text-xs text-gray-500">MAT-008</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">Material</span>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-lg font-bold text-green-600">45</p>
+                                <p class="text-xs text-gray-500">bottles</p>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <p class="text-sm font-semibold text-gray-700">20</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="w-full">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs font-medium text-green-600">100%+</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full flex items-center w-fit">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    Normal
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">20 Jan 2024</p>
+                                <p class="text-xs text-gray-500">11:30</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-between px-6 py-4 border-t border-gray-200">
+                <p class="text-sm text-gray-600">
+                    Menampilkan <span class="font-semibold">1-10</span> dari <span class="font-semibold">226</span> items
+                </p>
+                <div class="flex items-center space-x-2">
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                        Prev
+                    </button>
+                    <button class="px-3 py-2 bg-green-600 text-white rounded-lg text-sm font-medium">1</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">2</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">3</button>
+                    <span class="px-3 py-2 text-sm text-gray-600">...</span>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">23</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        Next
+                        <i class="fas fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari customer, order, produk..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Admin+Satria&background=3B82F6&color=fff" 
+                         class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Admin Satria</p>
+                        <p class="text-xs text-gray-500">Owner</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-50 text-blue-600 rounded-lg font-medium">
+                    <i class="fas fa-users w-5"></i>
+                    <span>CRM</span>
+                    <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                </a>
+                <div class="ml-8 space-y-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 font-medium rounded">Customers</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Orders</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Communications</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Complaints</a>
+                </div>
+            </div>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-boxes w-5"></i>
+                    <span>Inventory</span>
+                    <i class="fas fa-chevron-right ml-auto text-sm"></i>
+                </a>
+            </div>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-industry w-5"></i>
+                    <span>Production</span>
+                    <i class="fas fa-chevron-right ml-auto text-sm"></i>
+                </a>
+            </div>
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-bar w-5"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-cog w-5"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-users text-blue-600 mr-3"></i>
+                    Customer Management
+                </h1>
+                <p class="text-gray-600 mt-1">Kelola data pelanggan SATRIAMART</p>
+            </div>
+            <button class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 flex items-center space-x-2 shadow-lg shadow-blue-500/30">
+                <i class="fas fa-plus"></i>
+                <span>Tambah Customer Baru</span>
+            </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600">Total Customer</p>
+                        <p class="text-2xl font-bold text-gray-900 mt-1">1,245</p>
+                    </div>
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-users text-blue-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600">Customer Individu</p>
+                        <p class="text-2xl font-bold text-gray-900 mt-1">687</p>
+                    </div>
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-user text-purple-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600">Customer Perusahaan</p>
+                        <p class="text-2xl font-bold text-gray-900 mt-1">423</p>
+                    </div>
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-building text-green-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600">Reseller</p>
+                        <p class="text-2xl font-bold text-gray-900 mt-1">135</p>
+                    </div>
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-store text-orange-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters & Search -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tipe Customer</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Semua Tipe</option>
+                        <option>Individu</option>
+                        <option>Perusahaan</option>
+                        <option>Reseller</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Status</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Semua Status</option>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                        <option>Potential</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Kota</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Semua Kota</option>
+                        <option>Jakarta</option>
+                        <option>Bogor</option>
+                        <option>Depok</option>
+                        <option>Tangerang</option>
+                        <option>Bekasi</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal Registrasi</label>
+                    <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium flex items-center justify-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Export CSV</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Table -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-50 border-b border-gray-200">
+                            <th class="text-left py-4 px-6">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-gray-300">
+                            </th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">
+                                Customer Code
+                                <i class="fas fa-sort ml-1 text-gray-400 text-xs"></i>
+                            </th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">
+                                Nama
+                                <i class="fas fa-sort ml-1 text-gray-400 text-xs"></i>
+                            </th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Email</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Telepon</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Tipe</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Total Order</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Status</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-gray-300">
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-semibold text-blue-600">CUST-0001</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=3B82F6&color=fff" 
+                                         class="w-10 h-10 rounded-full" alt="Customer">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">Budi Santoso</p>
+                                        <p class="text-xs text-gray-500">Jakarta Selatan</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">budi.santoso@email.com</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">08123456789</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full flex items-center w-fit">
+                                    <i class="fas fa-building mr-1"></i>
+                                    Perusahaan
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm font-semibold text-gray-900">47</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Active
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View Details">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded" title="Edit">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="p-2 text-red-600 hover:bg-red-50 rounded" title="Delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-gray-300">
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-semibold text-blue-600">CUST-0002</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=Ani+Wijaya&background=8B5CF6&color=fff" 
+                                         class="w-10 h-10 rounded-full" alt="Customer">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">Ani Wijaya</p>
+                                        <p class="text-xs text-gray-500">Tangerang</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">ani.wijaya@gmail.com</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">08198765432</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full flex items-center w-fit">
+                                    <i class="fas fa-user mr-1"></i>
+                                    Individu
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm font-semibold text-gray-900">12</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Active
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="p-2 text-red-600 hover:bg-red-50 rounded">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-gray-300">
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-semibold text-blue-600">CUST-0003</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=PT+Sejahtera&background=10B981&color=fff" 
+                                         class="w-10 h-10 rounded-full" alt="Customer">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">PT Sejahtera Abadi</p>
+                                        <p class="text-xs text-gray-500">Jakarta Pusat</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">info@sejahtera.co.id</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">02112345678</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full flex items-center w-fit">
+                                    <i class="fas fa-building mr-1"></i>
+                                    Perusahaan
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm font-semibold text-gray-900">89</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Active
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="p-2 text-red-600 hover:bg-red-50 rounded">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-gray-300">
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-semibold text-blue-600">CUST-0004</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=Joko+Purnomo&background=F59E0B&color=fff" 
+                                         class="w-10 h-10 rounded-full" alt="Customer">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">Joko Purnomo</p>
+                                        <p class="text-xs text-gray-500">Bekasi</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">joko.purnomo@yahoo.com</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">08134567890</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded-full flex items-center w-fit">
+                                    <i class="fas fa-store mr-1"></i>
+                                    Reseller
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm font-semibold text-gray-900">156</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Active
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="p-2 text-red-600 hover:bg-red-50 rounded">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-gray-300">
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-semibold text-blue-600">CUST-0005</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=Siti+Nurhaliza&background=EF4444&color=fff" 
+                                         class="w-10 h-10 rounded-full" alt="Customer">
+                                    <div>
+                                        <p class="text-sm font-semibold text-gray-900">Siti Nurhaliza</p>
+                                        <p class="text-xs text-gray-500">Bogor</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">siti.n@gmail.com</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-700">08567891234</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full flex items-center w-fit">
+                                    <i class="fas fa-user mr-1"></i>
+                                    Individu
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm font-semibold text-gray-900">8</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
+                                    Potential
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="p-2 text-red-600 hover:bg-red-50 rounded">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-between px-6 py-4 border-t border-gray-200">
+                <p class="text-sm text-gray-600">
+                    Menampilkan <span class="font-semibold">1-10</span> dari <span class="font-semibold">1,245</span> customer
+                </p>
+                <div class="flex items-center space-x-2">
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                        Prev
+                    </button>
+                    <button class="px-3 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium">1</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">2</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">3</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">4</button>
+                    <span class="px-3 py-2 text-sm text-gray-600">...</span>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">125</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        Next
+                        <i class="fas fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

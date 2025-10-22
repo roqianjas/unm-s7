@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari produk..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Inventory+Staff&background=10B981&color=fff" class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Dewi Susanti</p>
+                        <p class="text-xs text-gray-500">Inventory Staff</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-users w-5"></i>
+                <span>CRM</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-green-50 text-green-600 rounded-lg font-medium">
+                    <i class="fas fa-boxes w-5"></i>
+                    <span>Inventory</span>
+                    <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                </a>
+                <div class="ml-8 space-y-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-green-600 bg-green-50 font-medium rounded">Products</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Materials</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Stock Monitoring</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Stock Opname</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Suppliers</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Purchase Requisition</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Purchase Orders</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-box-open text-green-600 mr-3"></i>
+                    Product Management
+                </h1>
+                <p class="text-gray-600 mt-1">Kelola katalog produk akrilik SATRIAMART</p>
+            </div>
+            <button class="px-6 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 flex items-center space-x-2 shadow-lg shadow-green-500/30">
+                <i class="fas fa-plus"></i>
+                <span>Tambah Produk Baru</span>
+            </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-box text-green-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Total Products</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">156</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-check-circle text-blue-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Active Products</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">142</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-pause-circle text-yellow-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Discontinued</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">14</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-layer-group text-purple-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Categories</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">8</p>
+            </div>
+        </div>
+
+        <!-- Filters & Actions -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Kategori</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Kategori</option>
+                        <option>Signage</option>
+                        <option>Nomor Rumah</option>
+                        <option>Plakat/Trophy</option>
+                        <option>Name Tag</option>
+                        <option>Display Stand</option>
+                        <option>Photo Frame</option>
+                        <option>Accessories</option>
+                        <option>Custom Products</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Status</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Status</option>
+                        <option>Active</option>
+                        <option>Discontinued</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Stock Status</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>All</option>
+                        <option>In Stock</option>
+                        <option>Low Stock</option>
+                        <option>Out of Stock</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Product Name (A-Z)</option>
+                        <option>Product Name (Z-A)</option>
+                        <option>Price (Low-High)</option>
+                        <option>Price (High-Low)</option>
+                        <option>Stock (Low-High)</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium">
+                        <i class="fas fa-download mr-2"></i>Export
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-6">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=Nomor+Rumah" class="w-full h-48 object-cover rounded-t-lg" alt="Product">
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
+                        In Stock
+                    </span>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono text-gray-500">PRD-001</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Nomor Rumah</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Nomor Rumah Akrilik</h3>
+                    <p class="text-sm text-gray-600 mb-3">Standard 20x15cm, clear acrylic</p>
+                    <div class="mb-3">
+                        <div class="flex items-baseline justify-between mb-1">
+                            <span class="text-sm text-gray-600">Stock</span>
+                            <span class="text-sm font-semibold text-gray-900">32 / 50 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 64%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">Base Price</p>
+                            <p class="text-xl font-bold text-green-600">Rp 450.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-semibold">
+                            <i class="fas fa-edit mr-1"></i>Edit
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x200/10B981/FFFFFF?text=Signage" class="w-full h-48 object-cover rounded-t-lg" alt="Product">
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-yellow-500 text-white text-xs font-semibold rounded-full">
+                        Low Stock
+                    </span>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono text-gray-500">PRD-005</span>
+                        <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded">Signage</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Signage Toko Akrilik</h3>
+                    <p class="text-sm text-gray-600 mb-3">Custom size, backlit ready</p>
+                    <div class="mb-3">
+                        <div class="flex items-baseline justify-between mb-1">
+                            <span class="text-sm text-gray-600">Stock</span>
+                            <span class="text-sm font-semibold text-gray-900">8 / 30 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-yellow-500 h-2 rounded-full" style="width: 27%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">Base Price</p>
+                            <p class="text-xl font-bold text-green-600">Rp 1.250.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-semibold">
+                            <i class="fas fa-edit mr-1"></i>Edit
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x200/8B5CF6/FFFFFF?text=Plakat" class="w-full h-48 object-cover rounded-t-lg" alt="Product">
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
+                        In Stock
+                    </span>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono text-gray-500">PRD-012</span>
+                        <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded">Plakat</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Plakat Akrilik Custom</h3>
+                    <p class="text-sm text-gray-600 mb-3">30x40cm, dengan stand</p>
+                    <div class="mb-3">
+                        <div class="flex items-baseline justify-between mb-1">
+                            <span class="text-sm text-gray-600">Stock</span>
+                            <span class="text-sm font-semibold text-gray-900">45 / 50 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">Base Price</p>
+                            <p class="text-xl font-bold text-green-600">Rp 650.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-semibold">
+                            <i class="fas fa-edit mr-1"></i>Edit
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x200/F59E0B/FFFFFF?text=Trophy" class="w-full h-48 object-cover rounded-t-lg" alt="Product">
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-red-500 text-white text-xs font-semibold rounded-full">
+                        Out of Stock
+                    </span>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono text-gray-500">PRD-015</span>
+                        <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs font-semibold rounded">Trophy</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Trophy Akrilik Premium</h3>
+                    <p class="text-sm text-gray-600 mb-3">35cm height, dengan LED base</p>
+                    <div class="mb-3">
+                        <div class="flex items-baseline justify-between mb-1">
+                            <span class="text-sm text-gray-600">Stock</span>
+                            <span class="text-sm font-semibold text-red-600">0 / 20 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-red-500 h-2 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">Base Price</p>
+                            <p class="text-xl font-bold text-green-600">Rp 2.500.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-semibold">
+                            <i class="fas fa-edit mr-1"></i>Edit
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x200/EF4444/FFFFFF?text=Name+Tag" class="w-full h-48 object-cover rounded-t-lg" alt="Product">
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-green-500 text-white text-xs font-semibold rounded-full">
+                        In Stock
+                    </span>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono text-gray-500">PRD-008</span>
+                        <span class="px-2 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded">Name Tag</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Name Tag Akrilik</h3>
+                    <p class="text-sm text-gray-600 mb-3">10x5cm, dengan pin magnet</p>
+                    <div class="mb-3">
+                        <div class="flex items-baseline justify-between mb-1">
+                            <span class="text-sm text-gray-600">Stock</span>
+                            <span class="text-sm font-semibold text-gray-900">250 / 300 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 83%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">Base Price</p>
+                            <p class="text-xl font-bold text-green-600">Rp 25.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 text-sm font-semibold">
+                            <i class="fas fa-edit mr-1"></i>Edit
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow opacity-60">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x200/6B7280/FFFFFF?text=Display+Stand" class="w-full h-48 object-cover rounded-t-lg" alt="Product">
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-gray-500 text-white text-xs font-semibold rounded-full">
+                        Discontinued
+                    </span>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono text-gray-500">PRD-022</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded">Display Stand</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">Display Stand 3-Tier</h3>
+                    <p class="text-sm text-gray-600 mb-3">40x30cm, 3 tingkat</p>
+                    <div class="mb-3">
+                        <div class="flex items-baseline justify-between mb-1">
+                            <span class="text-sm text-gray-600">Stock</span>
+                            <span class="text-sm font-semibold text-gray-900">5 / 10 pcs</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-gray-400 h-2 rounded-full" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-xs text-gray-500">Base Price</p>
+                            <p class="text-xl font-bold text-gray-600">Rp 850.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="flex-1 px-3 py-2 bg-gray-400 text-white rounded-lg cursor-not-allowed text-sm font-semibold" disabled>
+                            <i class="fas fa-ban mr-1"></i>Discontinued
+                        </button>
+                        <button class="p-2 border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center justify-between">
+            <p class="text-sm text-gray-600">
+                Menampilkan <span class="font-semibold">1-6</span> dari <span class="font-semibold">156</span> products
+            </p>
+            <div class="flex items-center space-x-2">
+                <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    <i class="fas fa-chevron-left"></i> Prev
+                </button>
+                <button class="px-3 py-2 bg-green-600 text-white rounded-lg text-sm font-medium">1</button>
+                <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">2</button>
+                <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">3</button>
+                <span class="px-3 py-2 text-sm text-gray-600">...</span>
+                <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">26</button>
+                <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    Next <i class="fas fa-chevron-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

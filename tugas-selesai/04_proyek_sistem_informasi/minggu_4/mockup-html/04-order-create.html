@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari customer, order, produk..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Sales+Staff&background=3B82F6&color=fff" 
+                         class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Andi Setiawan</p>
+                        <p class="text-xs text-gray-500">Sales Staff</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-50 text-blue-600 rounded-lg font-medium">
+                    <i class="fas fa-users w-5"></i>
+                    <span>CRM</span>
+                    <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                </a>
+                <div class="ml-8 space-y-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Customers</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 font-medium rounded">Orders</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Communications</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-blue-600">CRM</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-blue-600">Orders</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-900 font-medium">Buat Order Baru</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="mb-6">
+            <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                <i class="fas fa-shopping-cart text-blue-600 mr-3"></i>
+                Buat Order Baru
+            </h1>
+            <p class="text-gray-600 mt-1">Lengkapi detail order untuk customer</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Left Column - Order Form -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Customer Selection -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-user text-blue-600 mr-2"></i>
+                        Customer
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-1">
+                                <input type="text" placeholder="Cari customer (nama, email, kode)..."
+                                       class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <button class="px-4 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                                <i class="fas fa-user-plus mr-2"></i>
+                                Baru
+                            </button>
+                        </div>
+
+                        <!-- Selected Customer Card -->
+                        <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=3B82F6&color=fff" 
+                                         class="w-12 h-12 rounded-full" alt="Customer">
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Budi Santoso</p>
+                                        <p class="text-sm text-gray-600">CUST-0001 • budi.santoso@email.com</p>
+                                        <p class="text-xs text-gray-500 mt-1">
+                                            <i class="fas fa-phone mr-1"></i>08123456789 • 
+                                            <i class="fas fa-map-marker-alt ml-2 mr-1"></i>Jakarta Selatan
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="text-red-600 hover:bg-red-50 p-2 rounded">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Information -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-file-invoice text-blue-600 mr-2"></i>
+                        Informasi Order
+                    </h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Order Number
+                            </label>
+                            <input type="text" value="ORD-2024-0157" readonly
+                                   class="w-full px-4 py-2.5 bg-gray-50 border border-gray-300 rounded-lg text-gray-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Tanggal Order
+                            </label>
+                            <input type="date" value="2024-01-22"
+                                   class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Estimasi Pengiriman <span class="text-red-500">*</span>
+                            </label>
+                            <input type="date"
+                                   class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Priority
+                            </label>
+                            <select class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Normal</option>
+                                <option>High</option>
+                                <option>Urgent</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Selection -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-semibold text-gray-900 flex items-center">
+                            <i class="fas fa-box text-blue-600 mr-2"></i>
+                            Item Produk
+                        </h2>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium flex items-center space-x-2">
+                            <i class="fas fa-plus"></i>
+                            <span>Tambah Produk</span>
+                        </button>
+                    </div>
+
+                    <!-- Product Items Table -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-700">Produk</th>
+                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-700">Qty</th>
+                                    <th class="text-right py-3 px-4 text-sm font-semibold text-gray-700">Harga</th>
+                                    <th class="text-right py-3 px-4 text-sm font-semibold text-gray-700">Subtotal</th>
+                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-700">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4 px-4">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center">
+                                                <i class="fas fa-home text-gray-600"></i>
+                                            </div>
+                                            <div>
+                                                <p class="font-medium text-gray-900">Nomor Rumah Akrilik</p>
+                                                <p class="text-xs text-gray-500">PRD-001 • Size: 20x15cm</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 px-4">
+                                        <div class="flex items-center justify-center space-x-2">
+                                            <button class="w-8 h-8 border border-gray-300 rounded hover:bg-gray-50">
+                                                <i class="fas fa-minus text-xs"></i>
+                                            </button>
+                                            <input type="number" value="2" 
+                                                   class="w-16 text-center px-2 py-1 border border-gray-300 rounded">
+                                            <button class="w-8 h-8 border border-gray-300 rounded hover:bg-gray-50">
+                                                <i class="fas fa-plus text-xs"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 px-4 text-right">
+                                        <p class="font-medium text-gray-900">Rp 450.000</p>
+                                    </td>
+                                    <td class="py-4 px-4 text-right">
+                                        <p class="font-semibold text-gray-900">Rp 900.000</p>
+                                    </td>
+                                    <td class="py-4 px-4 text-center">
+                                        <button class="text-red-600 hover:bg-red-50 p-2 rounded">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4 px-4">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-12 h-12 bg-gray-100 rounded flex items-center justify-center">
+                                                <i class="fas fa-sign text-gray-600"></i>
+                                            </div>
+                                            <div>
+                                                <p class="font-medium text-gray-900">Signage Toko Akrilik</p>
+                                                <p class="text-xs text-gray-500">PRD-005 • Custom Size</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 px-4">
+                                        <div class="flex items-center justify-center space-x-2">
+                                            <button class="w-8 h-8 border border-gray-300 rounded hover:bg-gray-50">
+                                                <i class="fas fa-minus text-xs"></i>
+                                            </button>
+                                            <input type="number" value="1" 
+                                                   class="w-16 text-center px-2 py-1 border border-gray-300 rounded">
+                                            <button class="w-8 h-8 border border-gray-300 rounded hover:bg-gray-50">
+                                                <i class="fas fa-plus text-xs"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 px-4 text-right">
+                                        <p class="font-medium text-gray-900">Rp 1.250.000</p>
+                                    </td>
+                                    <td class="py-4 px-4 text-right">
+                                        <p class="font-semibold text-gray-900">Rp 1.250.000</p>
+                                    </td>
+                                    <td class="py-4 px-4 text-center">
+                                        <button class="text-red-600 hover:bg-red-50 p-2 rounded">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Special Request -->
+                    <div class="mt-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Spesifikasi Khusus (Optional)
+                        </label>
+                        <textarea rows="3" placeholder="Masukkan spesifikasi khusus atau custom request dari customer..."
+                                  class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                </div>
+
+                <!-- Notes -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-sticky-note text-blue-600 mr-2"></i>
+                        Catatan Internal
+                    </h2>
+                    <textarea rows="3" placeholder="Catatan tambahan untuk tim internal (tidak terlihat oleh customer)..."
+                              class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+            </div>
+
+            <!-- Right Column - Order Summary -->
+            <div class="space-y-6">
+                <!-- Order Summary Card -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 sticky top-24">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-6 flex items-center">
+                        <i class="fas fa-calculator text-blue-600 mr-2"></i>
+                        Ringkasan Order
+                    </h2>
+
+                    <div class="space-y-4">
+                        <!-- Subtotal -->
+                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                            <span class="text-gray-600">Subtotal (3 items)</span>
+                            <span class="font-semibold text-gray-900">Rp 2.150.000</span>
+                        </div>
+
+                        <!-- Discount -->
+                        <div class="pb-4 border-b border-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-600">Diskon</span>
+                                <button class="text-blue-600 text-sm hover:underline">
+                                    <i class="fas fa-plus mr-1"></i>Tambah
+                                </button>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <input type="number" placeholder="0" value="5"
+                                       class="w-20 px-3 py-2 border border-gray-300 rounded-lg text-center">
+                                <select class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
+                                    <option>Persentase (%)</option>
+                                    <option>Nominal (Rp)</option>
+                                </select>
+                                <span class="font-semibold text-red-600">- Rp 107.500</span>
+                            </div>
+                        </div>
+
+                        <!-- Tax -->
+                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                            <span class="text-gray-600">PPN (11%)</span>
+                            <span class="font-semibold text-gray-900">Rp 224.675</span>
+                        </div>
+
+                        <!-- Shipping -->
+                        <div class="pb-4 border-b border-gray-200">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-600">Ongkir</span>
+                                <button class="text-blue-600 text-sm hover:underline">Edit</button>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <input type="number" placeholder="0" value="50000"
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                            </div>
+                        </div>
+
+                        <!-- Total -->
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-lg font-semibold text-gray-900">Total</span>
+                            <span class="text-2xl font-bold text-blue-600">Rp 2.317.175</span>
+                        </div>
+
+                        <!-- Payment Terms -->
+                        <div class="pt-4 border-t border-gray-200">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Metode Pembayaran
+                            </label>
+                            <select class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Cash</option>
+                                <option>Transfer Bank</option>
+                                <option>DP 50%</option>
+                                <option>Credit 30 days</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="mt-6 space-y-3">
+                        <button class="w-full px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold flex items-center justify-center space-x-2 shadow-lg shadow-blue-500/30">
+                            <i class="fas fa-check"></i>
+                            <span>Buat Order</span>
+                        </button>
+                        <button class="w-full px-4 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                            <i class="fas fa-save mr-2"></i>
+                            Simpan Draft
+                        </button>
+                        <button class="w-full px-4 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                            <i class="fas fa-times mr-2"></i>
+                            Batal
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-200 p-6">
+                    <h3 class="text-sm font-semibold text-gray-900 mb-3">Quick Actions</h3>
+                    <div class="space-y-2">
+                        <button class="w-full px-3 py-2 bg-white text-gray-700 rounded-lg hover:shadow-md text-sm flex items-center space-x-2 border border-gray-200">
+                            <i class="fas fa-file-pdf text-red-500"></i>
+                            <span>Generate Quotation</span>
+                        </button>
+                        <button class="w-full px-3 py-2 bg-white text-gray-700 rounded-lg hover:shadow-md text-sm flex items-center space-x-2 border border-gray-200">
+                            <i class="fas fa-copy text-blue-500"></i>
+                            <span>Duplicate Order</span>
+                        </button>
+                        <button class="w-full px-3 py-2 bg-white text-gray-700 rounded-lg hover:shadow-md text-sm flex items-center space-x-2 border border-gray-200">
+                            <i class="fas fa-history text-green-500"></i>
+                            <span>Order History</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Detail - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=CS+Team&background=3B82F6&color=fff" class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Dewi Lestari</p>
+                        <p class="text-xs text-gray-500">Customer Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-50 text-blue-600 rounded-lg font-medium">
+                    <i class="fas fa-users w-5"></i>
+                    <span>CRM</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 pl-12 text-blue-600 bg-blue-50 rounded-lg text-sm">
+                    <i class="fas fa-exclamation-circle w-4"></i>
+                    <span>Complaints</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-blue-600">CRM</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-blue-600">Complaints</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-900 font-medium">CMP-2024-008</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-exclamation-circle text-red-600 mr-3"></i>
+                    Complaint Details
+                </h1>
+                <p class="text-gray-600 mt-1">CMP-2024-008 • Order: ORD-2024-142</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50">
+                    <i class="fas fa-print mr-2"></i>Print
+                </button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700">
+                    <i class="fas fa-check mr-2"></i>Resolve Complaint
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Complaint Status -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-xl font-bold text-gray-900">Status & Timeline</h2>
+                        <span class="px-4 py-2 bg-orange-100 text-orange-800 text-sm font-semibold rounded-full">
+                            <i class="fas fa-sync-alt mr-1"></i>In Progress
+                        </span>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div class="w-0.5 h-full bg-green-200 mt-2"></div>
+                            </div>
+                            <div class="flex-1 pb-8">
+                                <p class="font-semibold text-gray-900">Complaint Received</p>
+                                <p class="text-sm text-gray-600">Customer reported issue via phone call</p>
+                                <p class="text-xs text-gray-500 mt-1">18 Des 2024, 10:30 • by Dewi Lestari</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div class="w-0.5 h-full bg-green-200 mt-2"></div>
+                            </div>
+                            <div class="flex-1 pb-8">
+                                <p class="font-semibold text-gray-900">Initial Investigation</p>
+                                <p class="text-sm text-gray-600">QC team inspected product, confirmed defect</p>
+                                <p class="text-xs text-gray-500 mt-1">18 Des 2024, 14:00 • by Bambang H.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-sync-alt text-orange-600"></i>
+                                </div>
+                                <div class="w-0.5 h-full bg-gray-200 mt-2"></div>
+                            </div>
+                            <div class="flex-1 pb-8">
+                                <p class="font-semibold text-gray-900">Replacement in Production</p>
+                                <p class="text-sm text-gray-600">New product being manufactured (WO-2024-095)</p>
+                                <p class="text-xs text-gray-500 mt-1">19 Des 2024, 08:00 • by Agus S.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-clock text-gray-400"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-500">Delivery & Resolution</p>
+                                <p class="text-sm text-gray-400">Pending production completion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complaint Details -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Complaint Information</h2>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Complaint Type</p>
+                            <p class="font-semibold text-gray-900">Product Quality</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Severity</p>
+                            <span class="px-3 py-1 bg-red-100 text-red-800 text-sm font-semibold rounded-full">High</span>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Reported Date</p>
+                            <p class="font-medium text-gray-900">18 Des 2024, 10:30</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Expected Resolution</p>
+                            <p class="font-medium text-gray-900">22 Des 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-sm text-gray-600 mb-2">Complaint Description</p>
+                        <div class="p-4 bg-red-50 border border-red-200 rounded-lg">
+                            <p class="text-gray-900">Produk plakat akrilik yang diterima mengalami cacat pada bagian permukaan (terdapat goresan dan beberapa bagian printing yang buram). Customer menginginkan penggantian produk secepatnya karena akan digunakan untuk acara pada tanggal 24 Desember 2024.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo Evidence -->
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-sm font-semibold text-gray-900 mb-3">Photo Evidence</p>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-image text-4xl text-gray-400"></i>
+                            </div>
+                            <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-image text-4xl text-gray-400"></i>
+                            </div>
+                            <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-image text-4xl text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resolution Actions -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Resolution Actions Taken</h2>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                            <div class="flex items-start justify-between mb-2">
+                                <p class="font-semibold text-gray-900">Product Replacement</p>
+                                <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs font-semibold rounded-full">In Progress</span>
+                            </div>
+                            <p class="text-sm text-gray-700 mb-2">Memproduksi ulang plakat akrilik dengan spesifikasi yang sama. Work Order: WO-2024-095</p>
+                            <p class="text-xs text-gray-500">Initiated: 19 Des 2024 • Est. Completion: 22 Des 2024</p>
+                        </div>
+
+                        <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                            <div class="flex items-start justify-between mb-2">
+                                <p class="font-semibold text-gray-900">Quality Investigation</p>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">Completed</span>
+                            </div>
+                            <p class="text-sm text-gray-700 mb-2">Ditemukan masalah pada proses finishing. SOP telah diperbarui untuk mencegah kejadian serupa.</p>
+                            <p class="text-xs text-gray-500">Completed: 18 Des 2024 • by Bambang H.</p>
+                        </div>
+
+                        <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                            <div class="flex items-start justify-between mb-2">
+                                <p class="font-semibold text-gray-900">Customer Communication</p>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">Completed</span>
+                            </div>
+                            <p class="text-sm text-gray-700 mb-2">Customer telah dihubungi dan dijelaskan progress penggantian. Customer menerima solusi yang ditawarkan.</p>
+                            <p class="text-xs text-gray-500">Completed: 18 Des 2024 • by Dewi Lestari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communication Log -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Communication History</h2>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center justify-between mb-1">
+                                <p class="text-sm font-semibold text-gray-900">Follow-up Call - Progress Update</p>
+                                <span class="text-xs text-gray-500">20 Des 2024, 15:00</span>
+                            </div>
+                            <p class="text-sm text-gray-700">Menginformasikan ke customer bahwa produk pengganti sedang dalam tahap finishing, estimasi selesai besok.</p>
+                            <p class="text-xs text-gray-500 mt-1">by Dewi Lestari • Phone Call</p>
+                        </div>
+
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center justify-between mb-1">
+                                <p class="text-sm font-semibold text-gray-900">Initial Response</p>
+                                <span class="text-xs text-gray-500">18 Des 2024, 11:00</span>
+                            </div>
+                            <p class="text-sm text-gray-700">Meminta maaf atas ketidaknyamanan dan menjelaskan langkah-langkah yang akan diambil untuk menyelesaikan masalah.</p>
+                            <p class="text-xs text-gray-500 mt-1">by Dewi Lestari • Phone Call</p>
+                        </div>
+
+                        <div class="p-3 bg-red-50 rounded-lg border border-red-200">
+                            <div class="flex items-center justify-between mb-1">
+                                <p class="text-sm font-semibold text-gray-900">Complaint Received</p>
+                                <span class="text-xs text-gray-500">18 Des 2024, 10:30</span>
+                            </div>
+                            <p class="text-sm text-gray-700">Customer melaporkan produk cacat via telepon, meminta penggantian segera.</p>
+                            <p class="text-xs text-gray-500 mt-1">by Dewi Lestari • Phone Call</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Note -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Add Internal Note</h2>
+                    <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg" placeholder="Add note or update about this complaint..."></textarea>
+                    <button class="mt-3 px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700">
+                        <i class="fas fa-plus mr-2"></i>Add Note
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="lg:col-span-1 space-y-6">
+                <!-- Customer Info -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Customer Information</h3>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://ui-avatars.com/api/?name=Siti+Nurhaliza&background=EF4444&color=fff&size=48" class="w-12 h-12 rounded-full" alt="">
+                        <div>
+                            <p class="font-semibold text-gray-900">Siti Nurhaliza</p>
+                            <p class="text-sm text-gray-600">CUST-0015</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-envelope w-5 mr-2"></i>
+                            <span>siti.n@email.com</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-phone w-5 mr-2"></i>
+                            <span>+62 821-9999-8888</span>
+                        </div>
+                        <div class="flex items-start text-gray-600">
+                            <i class="fas fa-map-marker-alt w-5 mr-2 mt-0.5"></i>
+                            <span>Jl. Sudirman No. 88, Jakarta Selatan</span>
+                        </div>
+                    </div>
+                    <button class="w-full mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-50">
+                        View Customer Profile
+                    </button>
+                </div>
+
+                <!-- Related Order -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Related Order</h3>
+                    <div class="p-3 bg-gray-50 rounded-lg mb-3">
+                        <p class="font-semibold text-blue-600 mb-1">ORD-2024-142</p>
+                        <p class="text-sm text-gray-600">Plakat Akrilik Custom 20x30cm</p>
+                        <p class="text-sm font-semibold text-gray-900 mt-2">Rp 850.000</p>
+                        <p class="text-xs text-gray-500">Ordered: 10 Des 2024</p>
+                    </div>
+                    <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50">
+                        View Order Details
+                    </button>
+                </div>
+
+                <!-- Priority & Assignment -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Assignment</h3>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="text-gray-600 mb-1">Assigned To</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="https://ui-avatars.com/api/?name=Dewi+Lestari&background=3B82F6&color=fff&size=32" class="w-8 h-8 rounded-full" alt="">
+                                <p class="font-semibold text-gray-900">Dewi Lestari</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Department</p>
+                            <p class="font-medium text-gray-900">Customer Service</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Escalation Level</p>
+                            <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs font-semibold rounded-full">Level 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Quick Actions</h3>
+                    <div class="space-y-2">
+                        <button class="w-full px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700">
+                            <i class="fas fa-check mr-2"></i>Mark as Resolved
+                        </button>
+                        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">
+                            <i class="fas fa-phone mr-2"></i>Call Customer
+                        </button>
+                        <button class="w-full px-4 py-2 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700">
+                            <i class="fas fa-envelope mr-2"></i>Send Email
+                        </button>
+                        <button class="w-full px-4 py-2 border border-orange-300 text-orange-700 rounded-lg text-sm font-medium hover:bg-orange-50">
+                            <i class="fas fa-level-up-alt mr-2"></i>Escalate
+                        </button>
+                        <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50">
+                            <i class="fas fa-exchange-alt mr-2"></i>Reassign
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Statistics -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Statistics</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Response Time</span>
+                            <span class="text-sm font-bold text-green-600">30 min</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Age</span>
+                            <span class="text-sm font-bold text-gray-900">2 days</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">SLA Status</span>
+                            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">On Time</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Updates</span>
+                            <span class="text-sm font-bold text-gray-900">5 times</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

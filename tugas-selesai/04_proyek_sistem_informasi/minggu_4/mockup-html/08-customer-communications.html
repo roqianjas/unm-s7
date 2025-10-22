@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Communications - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari komunikasi..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Sales+Staff&background=3B82F6&color=fff" class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Andi Setiawan</p>
+                        <p class="text-xs text-gray-500">Sales Staff</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-50 text-blue-600 rounded-lg font-medium">
+                    <i class="fas fa-users w-5"></i>
+                    <span>CRM</span>
+                    <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                </a>
+                <div class="ml-8 space-y-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Customers</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Orders</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-blue-600 bg-blue-50 font-medium rounded">Communications</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded">Complaints</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-comments text-blue-600 mr-3"></i>
+                    Customer Communications
+                </h1>
+                <p class="text-gray-600 mt-1">Kelola komunikasi dengan customer</p>
+            </div>
+            <button class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 flex items-center space-x-2 shadow-lg shadow-blue-500/30">
+                <i class="fas fa-plus"></i>
+                <span>Log Komunikasi Baru</span>
+            </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-envelope text-blue-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Email</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">156</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-green-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">WhatsApp</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">423</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-phone text-purple-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Phone Call</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">87</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-clock text-yellow-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Pending Follow-up</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">12</p>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tipe Komunikasi</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Tipe</option>
+                        <option>Email</option>
+                        <option>WhatsApp</option>
+                        <option>Phone Call</option>
+                        <option>Meeting</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Status</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Status</option>
+                        <option>Completed</option>
+                        <option>Pending Follow-up</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Customer</label>
+                    <input type="text" placeholder="Cari customer..." class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal</label>
+                    <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Communications List -->
+        <div class="space-y-4">
+            <!-- Communication Item 1 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <h3 class="text-lg font-semibold text-gray-900">Follow-up Order #ORD-2024-156</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Completed
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-4 text-sm text-gray-600 mb-3">
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=3B82F6&color=fff&size=24" class="w-6 h-6 rounded-full" alt="Customer">
+                                    <span>Budi Santoso (CUST-0001)</span>
+                                </div>
+                                <span>•</span>
+                                <span><i class="fas fa-calendar mr-1"></i>22 Jan 2024, 14:30</span>
+                                <span>•</span>
+                                <span><i class="fas fa-user mr-1"></i>By: Andi Setiawan</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                Konfirmasi pengiriman Nomor Rumah Akrilik 2 pcs. Customer konfirm alamat pengiriman sudah benar. Estimasi selesai produksi 25 Januari 2024.
+                            </p>
+                            <div class="flex items-center space-x-4">
+                                <span class="text-sm text-gray-500">
+                                    <i class="fas fa-paperclip mr-1"></i>1 attachment
+                                </span>
+                                <span class="text-sm text-gray-500">
+                                    <i class="fas fa-link mr-1"></i>Linked to: ORD-2024-156
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View Detail">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 text-gray-600 hover:bg-gray-100 rounded" title="Edit">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Item 2 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <h3 class="text-lg font-semibold text-gray-900">Request Quotation - Signage Custom</h3>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
+                                    Pending Follow-up
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-4 text-sm text-gray-600 mb-3">
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://ui-avatars.com/api/?name=PT+Sejahtera&background=10B981&color=fff&size=24" class="w-6 h-6 rounded-full" alt="Customer">
+                                    <span>PT Sejahtera Abadi (CUST-0003)</span>
+                                </div>
+                                <span>•</span>
+                                <span><i class="fas fa-calendar mr-1"></i>21 Jan 2024, 09:15</span>
+                                <span>•</span>
+                                <span><i class="fas fa-user mr-1"></i>By: Siti Nurhaliza</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                Customer request quotation untuk signage toko 3 unit dengan ukuran custom 150x80cm. Sudah kirim quotation via email. Menunggu konfirmasi customer untuk order.
+                            </p>
+                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-3">
+                                <div class="flex items-start space-x-2">
+                                    <i class="fas fa-bell text-yellow-600 mt-0.5"></i>
+                                    <div class="text-sm text-yellow-800">
+                                        <span class="font-semibold">Follow-up:</span> 23 Jan 2024, 10:00 - Contact customer untuk konfirmasi quotation
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="text-sm text-gray-500">
+                                    <i class="fas fa-paperclip mr-1"></i>2 attachments (Quotation.pdf, Design_Preview.jpg)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 text-green-600 hover:bg-green-50 rounded" title="Mark as Completed">
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View Detail">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="p-2 text-gray-600 hover:bg-gray-100 rounded" title="Edit">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Item 3 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <h3 class="text-lg font-semibold text-gray-900">Komplain Kualitas Produk</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Completed
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-4 text-sm text-gray-600 mb-3">
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://ui-avatars.com/api/?name=Ani+Wijaya&background=8B5CF6&color=fff&size=24" class="w-6 h-6 rounded-full" alt="Customer">
+                                    <span>Ani Wijaya (CUST-0002)</span>
+                                </div>
+                                <span>•</span>
+                                <span><i class="fas fa-calendar mr-1"></i>20 Jan 2024, 15:20</span>
+                                <span>•</span>
+                                <span><i class="fas fa-user mr-1"></i>By: Andi Setiawan</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                Customer komplain ada cacat pada plakat (goresan). Sudah ditangani dengan replacement produk baru. Customer puas dengan penanganan. Biaya replacement ditanggung perusahaan.
+                            </p>
+                            <div class="flex items-center space-x-4">
+                                <span class="text-sm text-gray-500">
+                                    <i class="fas fa-link mr-1"></i>Linked to: Complaint #CMP-2024-008
+                                </span>
+                                <span class="text-sm text-gray-500">
+                                    <i class="fas fa-paperclip mr-1"></i>3 attachments (foto_cacat.jpg)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View Detail">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Item 4 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-handshake text-orange-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <h3 class="text-lg font-semibold text-gray-900">Meeting - Diskusi Project Besar</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    Completed
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-4 text-sm text-gray-600 mb-3">
+                                <div class="flex items-center space-x-2">
+                                    <img src="https://ui-avatars.com/api/?name=CV+Maju&background=EF4444&color=fff&size=24" class="w-6 h-6 rounded-full" alt="Customer">
+                                    <span>CV Maju Jaya (CUST-0005)</span>
+                                </div>
+                                <span>•</span>
+                                <span><i class="fas fa-calendar mr-1"></i>19 Jan 2024, 10:00</span>
+                                <span>•</span>
+                                <span><i class="fas fa-user mr-1"></i>By: Andi Setiawan, Siti Nurhaliza</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                Meeting di kantor customer untuk membahas project pembuatan 100 trophy akrilik untuk event perusahaan. Diskusi detail desain, timeline, dan budget. Customer setuju dengan proposal. Next step: pembuatan kontrak dan DP 50%.
+                            </p>
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3">
+                                <div class="flex items-start space-x-2">
+                                    <i class="fas fa-sticky-note text-blue-600 mt-0.5"></i>
+                                    <div class="text-sm text-blue-800">
+                                        <span class="font-semibold">Meeting Notes:</span>
+                                        <ul class="list-disc ml-5 mt-1">
+                                            <li>Budget: Rp 25.000.000</li>
+                                            <li>Timeline: 3 minggu</li>
+                                            <li>Desain: Custom logo + text engraving</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="text-sm text-gray-500">
+                                    <i class="fas fa-paperclip mr-1"></i>4 attachments (Proposal.pdf, Design_Draft.ai, Budget_Breakdown.xlsx, Kontrak_Draft.pdf)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View Detail">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="mt-6 text-center">
+            <button class="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium">
+                <i class="fas fa-chevron-down mr-2"></i>Load More Communications
+            </button>
+        </div>
+    </main>
+</body>
+</html>

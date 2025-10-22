@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Management - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Cari material..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Inventory+Staff&background=10B981&color=fff" class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Dewi Susanti</p>
+                        <p class="text-xs text-gray-500">Inventory Staff</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-green-50 text-green-600 rounded-lg font-medium">
+                    <i class="fas fa-boxes w-5"></i>
+                    <span>Inventory</span>
+                    <i class="fas fa-chevron-down ml-auto text-sm"></i>
+                </a>
+                <div class="ml-8 space-y-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Products</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-green-600 bg-green-50 font-medium rounded">Materials</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Stock Monitoring</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Stock Opname</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded">Suppliers</a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-layer-group text-green-600 mr-3"></i>
+                    Material Management
+                </h1>
+                <p class="text-gray-600 mt-1">Kelola bahan baku dan material produksi</p>
+            </div>
+            <button class="px-6 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 flex items-center space-x-2 shadow-lg shadow-green-500/30">
+                <i class="fas fa-plus"></i>
+                <span>Tambah Material Baru</span>
+            </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Total Materials</p>
+                <p class="text-2xl font-bold text-gray-900 mt-1">89</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-exclamation-triangle text-red-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Critical Stock</p>
+                <p class="text-2xl font-bold text-red-600 mt-1">5</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-exclamation-circle text-yellow-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Low Stock</p>
+                <p class="text-2xl font-bold text-yellow-600 mt-1">18</p>
+            </div>
+            <div class="bg-white rounded-lg border border-gray-200 p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-check-circle text-blue-600"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">Adequate Stock</p>
+                <p class="text-2xl font-bold text-blue-600 mt-1">66</p>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Kategori Material</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Kategori</option>
+                        <option>Acrylic Sheets</option>
+                        <option>Adhesive & Glue</option>
+                        <option>Cutting Tools</option>
+                        <option>Packaging Materials</option>
+                        <option>Hardware</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Stock Status</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>All</option>
+                        <option>Critical (< 20%)</option>
+                        <option>Low (20-50%)</option>
+                        <option>Adequate (> 50%)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Supplier</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Semua Supplier</option>
+                        <option>PT Akrilik Jaya</option>
+                        <option>CV Mandiri</option>
+                        <option>Toko Bahan</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Sort By</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>Material Name (A-Z)</option>
+                        <option>Stock Level (Low-High)</option>
+                        <option>Stock Level (High-Low)</option>
+                        <option>Value (High-Low)</option>
+                    </select>
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium">
+                        <i class="fas fa-download mr-2"></i>Export
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Materials Table -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-50 border-b border-gray-200">
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Material Code</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Material Name</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Category</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Supplier</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Stock Level</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Unit</th>
+                            <th class="text-right py-4 px-6 text-sm font-semibold text-gray-700">Unit Price</th>
+                            <th class="text-left py-4 px-6 text-sm font-semibold text-gray-700">Status</th>
+                            <th class="text-center py-4 px-6 text-sm font-semibold text-gray-700">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Material 1 - Critical -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 bg-red-50">
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-mono text-gray-900">MAT-001</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Acrylic Sheet 3mm Clear</p>
+                                    <p class="text-xs text-gray-500">122x244 cm</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
+                                    Acrylic Sheets
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-900">PT Akrilik Jaya</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-red-600 mb-1">15 / 100 sheets</p>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-red-500 h-2 rounded-full" style="width: 15%"></div>
+                                    </div>
+                                    <p class="text-xs text-red-600 mt-1 font-semibold">15% - Critical!</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <span class="text-sm text-gray-900">Sheet</span>
+                            </td>
+                            <td class="py-4 px-6 text-right">
+                                <p class="text-sm font-semibold text-gray-900">Rp 350.000</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-red-100 text-red-800 text-xs font-semibold rounded-full">
+                                    <i class="fas fa-exclamation-triangle mr-1"></i>Critical
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="px-3 py-1 bg-red-600 text-white rounded text-xs font-semibold hover:bg-red-700">
+                                        <i class="fas fa-shopping-cart mr-1"></i>Reorder
+                                    </button>
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Material 2 - Low -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 bg-yellow-50">
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-mono text-gray-900">MAT-005</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Acrylic Glue Heavy Duty</p>
+                                    <p class="text-xs text-gray-500">500ml bottle</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">
+                                    Adhesive & Glue
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-900">CV Mandiri Kimia</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-yellow-600 mb-1">22 / 50 bottles</p>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 44%"></div>
+                                    </div>
+                                    <p class="text-xs text-yellow-600 mt-1 font-semibold">44% - Low</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <span class="text-sm text-gray-900">Bottle</span>
+                            </td>
+                            <td class="py-4 px-6 text-right">
+                                <p class="text-sm font-semibold text-gray-900">Rp 125.000</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
+                                    <i class="fas fa-exclamation-circle mr-1"></i>Low
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="px-3 py-1 bg-yellow-600 text-white rounded text-xs font-semibold hover:bg-yellow-700">
+                                        <i class="fas fa-shopping-cart mr-1"></i>Reorder
+                                    </button>
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Material 3 - Adequate -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-mono text-gray-900">MAT-012</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">CNC Cutting Blade</p>
+                                    <p class="text-xs text-gray-500">Premium tungsten</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs font-semibold rounded-full">
+                                    Cutting Tools
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-900">Import - Singapore</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-green-600 mb-1">28 / 40 pcs</p>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                    <p class="text-xs text-green-600 mt-1 font-semibold">70% - Adequate</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <span class="text-sm text-gray-900">Pcs</span>
+                            </td>
+                            <td class="py-4 px-6 text-right">
+                                <p class="text-sm font-semibold text-gray-900">Rp 2.500.000</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i>Adequate
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded" title="View">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded" title="Edit">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Material 4 - Adequate -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-mono text-gray-900">MAT-018</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Bubble Wrap Roll</p>
+                                    <p class="text-xs text-gray-500">125cm x 50m</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded-full">
+                                    Packaging
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-900">Toko Bahan Kemasan</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-green-600 mb-1">45 / 60 rolls</p>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                    <p class="text-xs text-green-600 mt-1 font-semibold">75% - Adequate</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <span class="text-sm text-gray-900">Roll</span>
+                            </td>
+                            <td class="py-4 px-6 text-right">
+                                <p class="text-sm font-semibold text-gray-900">Rp 85.000</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i>Adequate
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-600 hover:bg-gray-100 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Material 5 - Low -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 bg-yellow-50">
+                            <td class="py-4 px-6">
+                                <span class="text-sm font-mono text-gray-900">MAT-003</span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Acrylic Sheet 5mm Colored</p>
+                                    <p class="text-xs text-gray-500">122x244 cm - Red</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
+                                    Acrylic Sheets
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <p class="text-sm text-gray-900">PT Akrilik Jaya</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="text-center">
+                                    <p class="text-sm font-semibold text-yellow-600 mb-1">18 / 50 sheets</p>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 36%"></div>
+                                    </div>
+                                    <p class="text-xs text-yellow-600 mt-1 font-semibold">36% - Low</p>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <span class="text-sm text-gray-900">Sheet</span>
+                            </td>
+                            <td class="py-4 px-6 text-right">
+                                <p class="text-sm font-semibold text-gray-900">Rp 550.000</p>
+                            </td>
+                            <td class="py-4 px-6">
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-semibold rounded-full">
+                                    <i class="fas fa-exclamation-circle mr-1"></i>Low
+                                </span>
+                            </td>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <button class="px-3 py-1 bg-yellow-600 text-white rounded text-xs font-semibold hover:bg-yellow-700">
+                                        <i class="fas fa-shopping-cart mr-1"></i>Reorder
+                                    </button>
+                                    <button class="p-2 text-blue-600 hover:bg-blue-50 rounded">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-between px-6 py-4 border-t border-gray-200">
+                <p class="text-sm text-gray-600">
+                    Menampilkan <span class="font-semibold">1-5</span> dari <span class="font-semibold">89</span> materials
+                </p>
+                <div class="flex items-center space-x-2">
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i> Prev
+                    </button>
+                    <button class="px-3 py-2 bg-green-600 text-white rounded-lg text-sm font-medium">1</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">2</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">3</button>
+                    <span class="px-3 py-2 text-sm text-gray-600">...</span>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">18</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        Next <i class="fas fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

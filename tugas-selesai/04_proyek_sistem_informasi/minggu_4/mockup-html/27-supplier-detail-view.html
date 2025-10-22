@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Detail - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Manager&background=10B981&color=fff" class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Rina Sari</p>
+                        <p class="text-xs text-gray-500">Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-green-50 text-green-600 rounded-lg font-medium">
+                    <i class="fas fa-boxes w-5"></i>
+                    <span>Inventory</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 pl-12 text-green-600 bg-green-50 rounded-lg text-sm">
+                    <i class="fas fa-truck w-4"></i>
+                    <span>Suppliers</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-green-600">Inventory</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-green-600">Suppliers</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-900 font-medium">SUP-001</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-truck text-green-600 mr-3"></i>
+                    Supplier Details
+                </h1>
+                <p class="text-gray-600 mt-1">SUP-001 • PT Marga Cipta Sentosa</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50">
+                    <i class="fas fa-envelope mr-2"></i>Send Email
+                </button>
+                <button class="px-4 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700">
+                    <i class="fas fa-edit mr-2"></i>Edit Supplier
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Supplier Overview -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-building text-3xl text-green-600"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-gray-900">PT Marga Cipta Sentosa</h2>
+                                <p class="text-gray-600">Manufacturer • Acrylic Materials</p>
+                                <div class="flex items-center space-x-2 mt-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Active</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">Preferred Supplier</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="flex items-center space-x-1 mb-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                            <p class="text-sm text-gray-600">4.5/5.0 (28 reviews)</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="text-center p-4 bg-blue-50 rounded-lg">
+                            <p class="text-2xl font-bold text-blue-600">48</p>
+                            <p class="text-xs text-gray-600 mt-1">Total Orders</p>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <p class="text-2xl font-bold text-green-600">95%</p>
+                            <p class="text-xs text-gray-600 mt-1">On-Time Rate</p>
+                        </div>
+                        <div class="text-center p-4 bg-purple-50 rounded-lg">
+                            <p class="text-2xl font-bold text-purple-600">Rp 85 Jt</p>
+                            <p class="text-xs text-gray-600 mt-1">Total Value</p>
+                        </div>
+                        <div class="text-center p-4 bg-orange-50 rounded-lg">
+                            <p class="text-2xl font-bold text-orange-600">3 days</p>
+                            <p class="text-xs text-gray-600 mt-1">Avg Lead Time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Contact Information</h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Primary Contact</p>
+                            <p class="font-semibold text-gray-900">Bambang Supriyadi</p>
+                            <p class="text-sm text-gray-600">Sales Manager</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Phone Number</p>
+                            <p class="font-medium text-gray-900">+62 21-5555-1234</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Mobile/WhatsApp</p>
+                            <p class="font-medium text-gray-900">+62 812-3456-7890</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Email Address</p>
+                            <p class="font-medium text-blue-600">sales@margacipta.co.id</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Website</p>
+                            <p class="font-medium text-blue-600">www.margacipta.co.id</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Tax ID (NPWP)</p>
+                            <p class="font-medium text-gray-900">01.234.567.8-901.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Address Information</h3>
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-map-marker-alt text-green-600 mt-1"></i>
+                        <div>
+                            <p class="text-gray-900 font-medium">Jl. Raya Industri No. 88, Kawasan Industri MM2100</p>
+                            <p class="text-gray-600">Bekasi, Jawa Barat 17520</p>
+                            <p class="text-gray-600">Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Purchase History -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Recent Purchase Orders</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">PO Number</th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">Date</th>
+                                    <th class="px-4 py-3 text-left text-xs font-semibold text-gray-700">Items</th>
+                                    <th class="px-4 py-3 text-right text-xs font-semibold text-gray-700">Total</th>
+                                    <th class="px-4 py-3 text-center text-xs font-semibold text-gray-700">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-3 text-sm font-semibold text-blue-600">PO-2024-089</td>
+                                    <td class="px-4 py-3 text-sm text-gray-900">18 Des 2024</td>
+                                    <td class="px-4 py-3 text-sm text-gray-600">Clear Acrylic 5mm (15 sheets)</td>
+                                    <td class="px-4 py-3 text-sm text-right font-semibold">Rp 3.750.000</td>
+                                    <td class="px-4 py-3 text-center">
+                                        <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Delivered</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 text-sm font-semibold text-blue-600">PO-2024-078</td>
+                                    <td class="px-4 py-3 text-sm text-gray-900">10 Des 2024</td>
+                                    <td class="px-4 py-3 text-sm text-gray-600">Silver Mirror Acrylic (20 sheets)</td>
+                                    <td class="px-4 py-3 text-sm text-right font-semibold">Rp 6.000.000</td>
+                                    <td class="px-4 py-3 text-center">
+                                        <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Delivered</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 text-sm font-semibold text-blue-600">PO-2024-065</td>
+                                    <td class="px-4 py-3 text-sm text-gray-900">01 Des 2024</td>
+                                    <td class="px-4 py-3 text-sm text-gray-600">Mixed Acrylic (30 sheets)</td>
+                                    <td class="px-4 py-3 text-sm text-right font-semibold">Rp 8.500.000</td>
+                                    <td class="px-4 py-3 text-center">
+                                        <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">Delivered</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="mt-4 w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50">
+                        View All Purchase Orders
+                    </button>
+                </div>
+
+                <!-- Products Supplied -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Products Supplied</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-900">Clear Acrylic 5mm</p>
+                            <p class="text-sm text-gray-600">MAT-001 • 120 units ordered</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-900">Silver Mirror Acrylic</p>
+                            <p class="text-sm text-gray-600">MAT-003 • 85 units ordered</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-900">Color Acrylic Sheets</p>
+                            <p class="text-sm text-gray-600">MAT-005 • 65 units ordered</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <p class="font-semibold text-gray-900">Frosted Acrylic</p>
+                            <p class="text-sm text-gray-600">MAT-007 • 45 units ordered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="lg:col-span-1 space-y-6">
+                <!-- Terms & Conditions -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Terms & Conditions</h3>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="text-gray-600 mb-1">Payment Terms</p>
+                            <p class="font-semibold text-gray-900">Net 30 Days</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Delivery Terms</p>
+                            <p class="font-semibold text-gray-900">FOB - Free on Board</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Currency</p>
+                            <p class="font-semibold text-gray-900">IDR (Rupiah)</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Minimum Order</p>
+                            <p class="font-semibold text-gray-900">Rp 1.000.000</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Lead Time</p>
+                            <p class="font-semibold text-gray-900">3-5 days</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Credit Limit</p>
+                            <p class="font-semibold text-green-600">Rp 25.000.000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banking Info -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Banking Information</h3>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="text-gray-600 mb-1">Bank Name</p>
+                            <p class="font-semibold text-gray-900">Bank Mandiri</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Account Number</p>
+                            <p class="font-semibold text-gray-900">1370-0123-4567</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600 mb-1">Account Holder</p>
+                            <p class="font-semibold text-gray-900">PT Marga Cipta Sentosa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Performance Metrics</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-sm text-gray-600">Quality Score</span>
+                                <span class="font-bold text-green-600">98%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-sm text-gray-600">On-Time Delivery</span>
+                                <span class="font-bold text-green-600">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-sm text-gray-600">Response Time</span>
+                                <span class="font-bold text-blue-600">Excellent</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="text-sm text-gray-600">Price Competitiveness</span>
+                                <span class="font-bold text-orange-600">Good</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-orange-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documents -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Documents</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between p-2 bg-gray-50 rounded hover:bg-gray-100 cursor-pointer">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-pdf text-red-600"></i>
+                                <span class="text-sm text-gray-900">Company Profile.pdf</span>
+                            </div>
+                            <i class="fas fa-download text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 bg-gray-50 rounded hover:bg-gray-100 cursor-pointer">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-pdf text-red-600"></i>
+                                <span class="text-sm text-gray-900">NPWP Certificate.pdf</span>
+                            </div>
+                            <i class="fas fa-download text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center justify-between p-2 bg-gray-50 rounded hover:bg-gray-100 cursor-pointer">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-pdf text-red-600"></i>
+                                <span class="text-sm text-gray-900">Product Catalog 2024.pdf</span>
+                            </div>
+                            <i class="fas fa-download text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Quick Actions</h3>
+                    <div class="space-y-2">
+                        <button class="w-full px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700">
+                            <i class="fas fa-plus mr-2"></i>Create PO
+                        </button>
+                        <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">
+                            <i class="fas fa-envelope mr-2"></i>Send Email
+                        </button>
+                        <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50">
+                            <i class="fas fa-phone mr-2"></i>Call Supplier
+                        </button>
+                        <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50">
+                            <i class="fas fa-star mr-2"></i>Rate Supplier
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

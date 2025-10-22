@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Product - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">SATRIAMART SIMS</span>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+                    <img src="https://ui-avatars.com/api/?name=Manager&background=10B981&color=fff" class="w-9 h-9 rounded-full" alt="User">
+                    <div class="text-left">
+                        <p class="text-sm font-semibold text-gray-900">Rina Sari</p>
+                        <p class="text-xs text-gray-500">Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-chart-line w-5"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-green-50 text-green-600 rounded-lg font-medium">
+                    <i class="fas fa-boxes w-5"></i>
+                    <span>Inventory</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 pl-12 text-green-600 bg-green-50 rounded-lg text-sm">
+                    <i class="fas fa-box w-4"></i>
+                    <span>Products</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-green-600">Inventory</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-green-600">Products</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-900 font-medium">Add New Product</span>
+            </nav>
+        </div>
+
+        <!-- Form Container -->
+        <div class="max-w-5xl">
+            <!-- Page Header -->
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-900 flex items-center">
+                    <i class="fas fa-box-open text-green-600 mr-3"></i>
+                    Add New Product
+                </h1>
+                <p class="text-gray-600 mt-1">Tambah produk baru ke katalog SATRIAMART</p>
+            </div>
+
+            <!-- Form Card -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                <form>
+                    <!-- Product Images -->
+                    <div class="px-8 py-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Product Images</h3>
+                        <div class="grid grid-cols-5 gap-4">
+                            <!-- Main Image -->
+                            <div class="col-span-2">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Main Image</label>
+                                <div class="relative border-2 border-dashed border-gray-300 rounded-lg p-8 hover:border-green-500 transition-colors cursor-pointer">
+                                    <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                    <div class="text-center">
+                                        <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-2"></i>
+                                        <p class="text-sm font-medium text-gray-900">Upload Main Image</p>
+                                        <p class="text-xs text-gray-500 mt-1">PNG, JPG up to 5MB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Additional Images -->
+                            <div class="col-span-3">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Additional Images (Optional)</label>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div class="relative border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-green-500 transition-colors cursor-pointer aspect-square flex items-center justify-center">
+                                        <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                        <i class="fas fa-plus text-2xl text-gray-400"></i>
+                                    </div>
+                                    <div class="relative border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-green-500 transition-colors cursor-pointer aspect-square flex items-center justify-center">
+                                        <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                        <i class="fas fa-plus text-2xl text-gray-400"></i>
+                                    </div>
+                                    <div class="relative border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-green-500 transition-colors cursor-pointer aspect-square flex items-center justify-center">
+                                        <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                        <i class="fas fa-plus text-2xl text-gray-400"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Basic Information -->
+                    <div class="px-8 py-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Basic Information</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Product Code <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" value="PRD-" placeholder="PRD-XXX" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                                <p class="text-xs text-gray-500 mt-1">Auto-generated atau input manual</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Product Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" placeholder="e.g., Signage Toko Akrilik" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Category <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                                    <option value="">Select Category</option>
+                                    <option value="signage">Signage & Branding</option>
+                                    <option value="plakat">Plakat & Trophy</option>
+                                    <option value="nametag">Name Tag & ID Card</option>
+                                    <option value="display">Display & Standee</option>
+                                    <option value="custom">Custom Products</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Brand/Manufacturer
+                                </label>
+                                <input type="text" placeholder="e.g., SATRIAMART Original" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="px-8 py-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Product Description</h3>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Short Description <span class="text-red-500">*</span>
+                            </label>
+                            <textarea rows="2" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Brief description for catalog listing..." required></textarea>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Full Description
+                            </label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Detailed product description, specifications, materials, etc..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="px-8 py-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Specifications</h3>
+                        <div class="grid grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Material Type
+                                </label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option value="">Select Material</option>
+                                    <option value="clear">Clear Acrylic</option>
+                                    <option value="color">Color Acrylic</option>
+                                    <option value="mirror">Mirror Acrylic</option>
+                                    <option value="frost">Frosted Acrylic</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Thickness (mm)
+                                </label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option value="">Select Thickness</option>
+                                    <option value="2">2mm</option>
+                                    <option value="3">3mm</option>
+                                    <option value="5">5mm</option>
+                                    <option value="8">8mm</option>
+                                    <option value="10">10mm</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Default Size
+                                </label>
+                                <input type="text" placeholder="e.g., 60x40cm" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Weight (kg)
+                                </label>
+                                <input type="number" step="0.01" placeholder="0.00" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Production Time (days)
+                                </label>
+                                <input type="number" placeholder="e.g., 3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Unit of Measure
+                                </label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option value="pcs">Pieces (pcs)</option>
+                                    <option value="set">Set</option>
+                                    <option value="m2">Square Meter (m²)</option>
+                                    <option value="custom">Custom</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing -->
+                    <div class="px-8 py-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Pricing</h3>
+                        <div class="grid grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Base Price <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-3.5 text-gray-500">Rp</span>
+                                    <input type="number" placeholder="0" class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Cost Price
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-3.5 text-gray-500">Rp</span>
+                                    <input type="number" placeholder="0" class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">For profit calculation</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Margin (%)
+                                </label>
+                                <input type="number" placeholder="0" class="w-full px-4 py-3 border border-gray-300 bg-gray-50 rounded-lg" readonly>
+                                <p class="text-xs text-gray-500 mt-1">Auto-calculated</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inventory -->
+                    <div class="px-8 py-6 border-b border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Inventory Settings</h3>
+                        <div class="grid grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Current Stock
+                                </label>
+                                <input type="number" value="0" placeholder="0" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Minimum Stock
+                                </label>
+                                <input type="number" placeholder="e.g., 10" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                <p class="text-xs text-gray-500 mt-1">Alert when stock below this</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Maximum Stock
+                                </label>
+                                <input type="number" placeholder="e.g., 100" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500">
+                                <span class="text-sm font-medium text-gray-700">Track inventory for this product</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Status & Visibility -->
+                    <div class="px-8 py-6 bg-gray-50 rounded-b-xl">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Status & Visibility</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Product Status
+                                </label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                    <option value="active">Active</option>
+                                    <option value="draft">Draft</option>
+                                    <option value="discontinued">Discontinued</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Featured Product
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-green-600 border-gray-300 rounded focus:ring-green-500">
+                                    <span class="text-sm font-medium text-gray-700">Show in featured products</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="px-8 py-6 bg-gray-100 border-t border-gray-200 rounded-b-xl flex items-center justify-end space-x-3">
+                        <button type="button" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50">
+                            <i class="fas fa-times mr-2"></i>Cancel
+                        </button>
+                        <button type="button" class="px-6 py-3 border border-green-300 text-green-700 rounded-lg font-semibold hover:bg-green-50">
+                            <i class="fas fa-save mr-2"></i>Save as Draft
+                        </button>
+                        <button type="submit" class="px-8 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 shadow-lg shadow-green-500/30">
+                            <i class="fas fa-check mr-2"></i>Publish Product
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
