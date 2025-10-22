@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup & Restore - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">S</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">SATRIAMART</h1>
+                        <p class="text-xs text-gray-500">Sales & Inventory Management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 w-64">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+                
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <span class="text-indigo-600 font-semibold">AD</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="text-sm font-semibold text-gray-700">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="hidden lg:block w-64 bg-white shadow-sm min-h-screen">
+            <nav class="p-4 space-y-1">
+                <a href="01-dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-home text-lg w-5"></i>
+                    <span class="font-medium">Dashboard</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Sales</p>
+                </div>
+                <a href="05-sales-order.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-shopping-cart text-lg w-5"></i>
+                    <span class="font-medium">Sales Orders</span>
+                </a>
+                <a href="09-invoices.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-file-invoice text-lg w-5"></i>
+                    <span class="font-medium">Invoices</span>
+                </a>
+                <a href="13-customers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users text-lg w-5"></i>
+                    <span class="font-medium">Customers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Inventory</p>
+                </div>
+                <a href="17-products.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-box text-lg w-5"></i>
+                    <span class="font-medium">Products</span>
+                </a>
+                <a href="21-stock-movement.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-exchange-alt text-lg w-5"></i>
+                    <span class="font-medium">Stock Movement</span>
+                </a>
+                <a href="25-suppliers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-truck text-lg w-5"></i>
+                    <span class="font-medium">Suppliers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Production</p>
+                </div>
+                <a href="29-production-orders.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-industry text-lg w-5"></i>
+                    <span class="font-medium">Production Orders</span>
+                </a>
+                <a href="33-quality-control.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-clipboard-check text-lg w-5"></i>
+                    <span class="font-medium">Quality Control</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">System</p>
+                </div>
+                <a href="37-user-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users-cog text-lg w-5"></i>
+                    <span class="font-medium">User Management</span>
+                </a>
+                <a href="45-role-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-user-shield text-lg w-5"></i>
+                    <span class="font-medium">Roles & Permissions</span>
+                </a>
+                <a href="41-system-settings.html" class="flex items-center space-x-3 px-4 py-3 bg-indigo-50 text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-cog text-lg w-5"></i>
+                    <span class="font-medium">Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-auto">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+                    <a href="01-dashboard.html" class="hover:text-indigo-600">Dashboard</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <a href="41-system-settings.html" class="hover:text-indigo-600">Settings</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-gray-900 font-medium">Backup & Restore</span>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Backup & Restore</h2>
+                        <p class="text-gray-600 mt-1">Manage system backups and restore data</p>
+                    </div>
+                    <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition">
+                        <i class="fas fa-plus mr-2"></i>Create Backup Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Backup Status -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold text-gray-800">Backup Status</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i>Active
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid grid-cols-3 gap-6">
+                                <div class="bg-blue-50 rounded-lg p-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <i class="fas fa-database text-blue-600 text-2xl"></i>
+                                        <span class="text-xs text-blue-600 font-medium">Last 24h</span>
+                                    </div>
+                                    <p class="text-2xl font-bold text-gray-800">3</p>
+                                    <p class="text-sm text-gray-600">Backups Created</p>
+                                </div>
+                                <div class="bg-green-50 rounded-lg p-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <i class="fas fa-check-double text-green-600 text-2xl"></i>
+                                        <span class="text-xs text-green-600 font-medium">Success</span>
+                                    </div>
+                                    <p class="text-2xl font-bold text-gray-800">100%</p>
+                                    <p class="text-sm text-gray-600">Success Rate</p>
+                                </div>
+                                <div class="bg-purple-50 rounded-lg p-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <i class="fas fa-hdd text-purple-600 text-2xl"></i>
+                                        <span class="text-xs text-purple-600 font-medium">Total</span>
+                                    </div>
+                                    <p class="text-2xl font-bold text-gray-800">2.4 GB</p>
+                                    <p class="text-sm text-gray-600">Storage Used</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-lg border border-indigo-200">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-info-circle text-indigo-600 text-xl mt-0.5"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Last Successful Backup</h4>
+                                        <p class="text-sm text-gray-600 mt-1">2024-10-23 02:00 WIB - Automatic Daily Backup</p>
+                                        <p class="text-sm text-gray-600">Size: 845 MB | Duration: 3m 45s | Type: Full Backup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Manual Backup -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Create Manual Backup</h3>
+                            <p class="text-sm text-gray-600 mt-1">Create an on-demand backup of your system data</p>
+                        </div>
+                        <div class="p-6">
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Backup Type</label>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <label class="relative flex items-center p-4 border-2 border-indigo-600 bg-indigo-50 rounded-lg cursor-pointer">
+                                            <input type="radio" name="backupType" value="full" checked class="mr-3">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">Full Backup</p>
+                                                <p class="text-xs text-gray-600">Complete database and files</p>
+                                            </div>
+                                        </label>
+                                        <label class="relative flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-indigo-300">
+                                            <input type="radio" name="backupType" value="incremental" class="mr-3">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">Incremental</p>
+                                                <p class="text-xs text-gray-600">Changes since last backup</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Backup Components</label>
+                                    <div class="space-y-2">
+                                        <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                            <input type="checkbox" checked class="mr-3 w-4 h-4 text-indigo-600 rounded">
+                                            <div class="flex-1">
+                                                <span class="font-medium text-gray-800">Database</span>
+                                                <p class="text-xs text-gray-600">All tables and data (~800 MB)</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                            <input type="checkbox" checked class="mr-3 w-4 h-4 text-indigo-600 rounded">
+                                            <div class="flex-1">
+                                                <span class="font-medium text-gray-800">User Uploads</span>
+                                                <p class="text-xs text-gray-600">Images and documents (~300 MB)</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                            <input type="checkbox" checked class="mr-3 w-4 h-4 text-indigo-600 rounded">
+                                            <div class="flex-1">
+                                                <span class="font-medium text-gray-800">System Configuration</span>
+                                                <p class="text-xs text-gray-600">Settings and preferences (~5 MB)</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                            <input type="checkbox" class="mr-3 w-4 h-4 text-indigo-600 rounded">
+                                            <div class="flex-1">
+                                                <span class="font-medium text-gray-800">Application Logs</span>
+                                                <p class="text-xs text-gray-600">System logs and audit trails (~150 MB)</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Backup Description</label>
+                                    <input type="text" placeholder="e.g., Before system update" 
+                                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Compression</label>
+                                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                            <option>High (Slower, Smaller)</option>
+                                            <option selected>Medium (Balanced)</option>
+                                            <option>Low (Faster, Larger)</option>
+                                            <option>None</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Encryption</label>
+                                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                            <option selected>AES-256</option>
+                                            <option>AES-128</option>
+                                            <option>None</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                                    <i class="fas fa-exclamation-triangle text-yellow-600 text-xl mr-3"></i>
+                                    <p class="text-sm text-gray-700">Estimated size: <strong>~1.1 GB</strong> | Estimated time: <strong>4-6 minutes</strong></p>
+                                </div>
+
+                                <div class="flex space-x-3 pt-4">
+                                    <button type="button" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition">
+                                        Cancel
+                                    </button>
+                                    <button type="submit" class="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition">
+                                        <i class="fas fa-play mr-2"></i>Start Backup
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Backup History -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold text-gray-800">Backup History</h3>
+                                <div class="flex space-x-2">
+                                    <button class="px-3 py-1 text-sm border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                                        <i class="fas fa-filter mr-1"></i>Filter
+                                    </button>
+                                    <button class="px-3 py-1 text-sm border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                                        <i class="fas fa-download mr-1"></i>Export
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead class="bg-gray-50 border-b border-gray-200">
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Backup Info</th>
+                                        <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Type</th>
+                                        <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Size</th>
+                                        <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
+                                        <th class="px-6 py-3 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">backup_2024-10-23_020000</p>
+                                                <p class="text-xs text-gray-600">2024-10-23 02:00 WIB</p>
+                                                <p class="text-xs text-gray-500">Automatic Daily Backup</p>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded">Full</span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <p class="text-sm text-gray-800">845 MB</p>
+                                            <p class="text-xs text-gray-500">3m 45s</p>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                                <i class="fas fa-check mr-1"></i>Success
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <div class="flex justify-end space-x-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg" title="Download">
+                                                    <i class="fas fa-download"></i>
+                                                </button>
+                                                <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Restore">
+                                                    <i class="fas fa-undo"></i>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">backup_2024-10-22_020000</p>
+                                                <p class="text-xs text-gray-600">2024-10-22 02:00 WIB</p>
+                                                <p class="text-xs text-gray-500">Automatic Daily Backup</p>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded">Full</span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <p class="text-sm text-gray-800">832 MB</p>
+                                            <p class="text-xs text-gray-500">3m 38s</p>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                                <i class="fas fa-check mr-1"></i>Success
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <div class="flex justify-end space-x-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg" title="Download">
+                                                    <i class="fas fa-download"></i>
+                                                </button>
+                                                <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Restore">
+                                                    <i class="fas fa-undo"></i>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">backup_manual_system_update</p>
+                                                <p class="text-xs text-gray-600">2024-10-21 14:30 WIB</p>
+                                                <p class="text-xs text-gray-500">Before System Update v2.5</p>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded">Manual</span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <p class="text-sm text-gray-800">1.1 GB</p>
+                                            <p class="text-xs text-gray-500">5m 12s</p>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                                <i class="fas fa-check mr-1"></i>Success
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <div class="flex justify-end space-x-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg" title="Download">
+                                                    <i class="fas fa-download"></i>
+                                                </button>
+                                                <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Restore">
+                                                    <i class="fas fa-undo"></i>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">backup_2024-10-21_020000</p>
+                                                <p class="text-xs text-gray-600">2024-10-21 02:00 WIB</p>
+                                                <p class="text-xs text-gray-500">Automatic Daily Backup</p>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded">Full</span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <p class="text-sm text-gray-800">818 MB</p>
+                                            <p class="text-xs text-gray-500">3m 42s</p>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                                <i class="fas fa-check mr-1"></i>Success
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <div class="flex justify-end space-x-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg" title="Download">
+                                                    <i class="fas fa-download"></i>
+                                                </button>
+                                                <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Restore">
+                                                    <i class="fas fa-undo"></i>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-6 py-4">
+                                            <div>
+                                                <p class="font-semibold text-gray-800">backup_2024-10-20_140000</p>
+                                                <p class="text-xs text-gray-600">2024-10-20 14:00 WIB</p>
+                                                <p class="text-xs text-gray-500">Automatic Incremental Backup</p>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Incremental</span>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <p class="text-sm text-gray-800">124 MB</p>
+                                            <p class="text-xs text-gray-500">45s</p>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                                <i class="fas fa-check mr-1"></i>Success
+                                            </span>
+                                        </td>
+                                        <td class="px-6 py-4 text-right">
+                                            <div class="flex justify-end space-x-2">
+                                                <button class="p-2 text-blue-600 hover:bg-blue-50 rounded-lg" title="Download">
+                                                    <i class="fas fa-download"></i>
+                                                </button>
+                                                <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Restore">
+                                                    <i class="fas fa-undo"></i>
+                                                </button>
+                                                <button class="p-2 text-red-600 hover:bg-red-50 rounded-lg" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
+                            <p class="text-sm text-gray-600">Showing 5 of 45 backups</p>
+                            <div class="flex space-x-2">
+                                <button class="px-3 py-1 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">Previous</button>
+                                <button class="px-3 py-1 bg-indigo-600 text-white rounded-lg text-sm">1</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">2</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">3</button>
+                                <button class="px-3 py-1 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="space-y-6">
+                    <!-- Automatic Backup Schedule -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Automatic Backup</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-700">Enable Auto Backup</span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Frequency</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                                    <option selected>Daily at 2:00 AM</option>
+                                    <option>Every 12 hours</option>
+                                    <option>Every 6 hours</option>
+                                    <option>Weekly (Sunday 2:00 AM)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Retention Policy</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                                    <option>Keep last 7 backups</option>
+                                    <option selected>Keep last 30 days</option>
+                                    <option>Keep last 90 days</option>
+                                    <option>Keep all backups</option>
+                                </select>
+                            </div>
+
+                            <div class="pt-3 border-t border-gray-200">
+                                <div class="flex items-center justify-between text-sm mb-2">
+                                    <span class="text-gray-600">Next Backup</span>
+                                    <span class="font-semibold text-gray-800">Tomorrow 02:00</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-600">Backup Type</span>
+                                    <span class="font-semibold text-gray-800">Full Backup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Storage Info -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Storage Information</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Storage Used</span>
+                                    <span class="text-sm font-semibold text-gray-800">2.4 GB / 50 GB</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-indigo-600 h-2 rounded-full" style="width: 4.8%"></div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">4.8% of total capacity</p>
+                            </div>
+
+                            <div class="space-y-2 pt-3 border-t border-gray-200">
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-600">Total Backups</span>
+                                    <span class="font-semibold text-gray-800">45 files</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-600">Oldest Backup</span>
+                                    <span class="font-semibold text-gray-800">30 days ago</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-600">Storage Location</span>
+                                    <span class="font-semibold text-gray-800">AWS S3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restore Options -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Restore Data</h3>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <button class="w-full py-2 px-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 font-medium transition text-sm">
+                                <i class="fas fa-undo mr-2"></i>Restore from Backup
+                            </button>
+                            <button class="w-full py-2 px-4 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 font-medium transition text-sm">
+                                <i class="fas fa-upload mr-2"></i>Upload Backup File
+                            </button>
+                            <div class="pt-3 border-t border-gray-200">
+                                <p class="text-xs text-gray-600 mb-2">
+                                    <i class="fas fa-info-circle mr-1"></i>Restore Tips:
+                                </p>
+                                <ul class="text-xs text-gray-600 space-y-1 ml-4">
+                                    <li>• System will be in maintenance mode</li>
+                                    <li>• All users will be logged out</li>
+                                    <li>• Process may take 5-10 minutes</li>
+                                    <li>• Create backup before restoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Quick Actions</h3>
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <button class="w-full py-2 px-4 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition text-sm text-left">
+                                <i class="fas fa-download mr-2 text-blue-600"></i>Download All Backups
+                            </button>
+                            <button class="w-full py-2 px-4 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition text-sm text-left">
+                                <i class="fas fa-cog mr-2 text-gray-600"></i>Backup Settings
+                            </button>
+                            <button class="w-full py-2 px-4 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition text-sm text-left">
+                                <i class="fas fa-file-export mr-2 text-purple-600"></i>Export Backup List
+                            </button>
+                            <button class="w-full py-2 px-4 border border-red-300 rounded-lg text-red-700 hover:bg-red-50 font-medium transition text-sm text-left">
+                                <i class="fas fa-trash-alt mr-2"></i>Delete Old Backups
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Privacy - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-40">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-gray-600 hover:text-gray-900">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-store text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">SATRIAMART</h1>
+                        <p class="text-xs text-gray-500">Sales & Inventory Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <button class="relative text-gray-600 hover:text-gray-900">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-white text-xs flex items-center justify-center">3</span>
+                </button>
+                <div class="flex items-center space-x-3 border-l pl-4">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6366F1&color=fff" alt="Admin" class="w-9 h-9 rounded-full">
+                    <div class="hidden md:block">
+                        <p class="text-sm font-semibold text-gray-900">Admin User</p>
+                        <p class="text-xs text-gray-500">System Administrator</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="hidden lg:block w-64 bg-white border-r border-gray-200 min-h-screen">
+            <nav class="p-4 space-y-1">
+                <a href="01-dashboard.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-home text-lg w-5"></i>
+                    <span class="font-medium">Dashboard</span>
+                </a>
+                <a href="02-sales-orders.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-shopping-cart text-lg w-5"></i>
+                    <span class="font-medium">Sales</span>
+                </a>
+                <a href="07-product-list.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-box text-lg w-5"></i>
+                    <span class="font-medium">Products</span>
+                </a>
+                <a href="11-stock-overview.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-warehouse text-lg w-5"></i>
+                    <span class="font-medium">Inventory</span>
+                </a>
+                <a href="16-customer-list.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-users text-lg w-5"></i>
+                    <span class="font-medium">Customers</span>
+                </a>
+                <a href="20-supplier-list.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-truck text-lg w-5"></i>
+                    <span class="font-medium">Suppliers</span>
+                </a>
+                <a href="24-production-dashboard.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-industry text-lg w-5"></i>
+                    <span class="font-medium">Production</span>
+                </a>
+                <a href="30-report-dashboard.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-chart-bar text-lg w-5"></i>
+                    <span class="font-medium">Reports</span>
+                </a>
+                
+                <div class="pt-2">
+                    <a href="40-general-settings.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                        <i class="fas fa-cog text-lg w-5"></i>
+                        <span class="font-medium">Settings</span>
+                    </a>
+                </div>
+
+                <a href="52-help-documentation.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-question-circle text-lg w-5"></i>
+                    <span class="font-medium">Help</span>
+                </a>
+                
+                <a href="54-about.html" class="flex items-center space-x-3 px-4 py-2.5 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    <i class="fas fa-info-circle text-lg w-5"></i>
+                    <span class="font-medium">About</span>
+                </a>
+
+                <a href="56-terms-privacy.html" class="flex items-center space-x-3 px-4 py-2.5 text-indigo-600 bg-indigo-50 rounded-lg">
+                    <i class="fas fa-file-contract text-lg w-5"></i>
+                    <span class="font-medium">Terms & Privacy</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-x-hidden">
+            <!-- Breadcrumb -->
+            <div class="bg-white border-b border-gray-200 px-6 py-4">
+                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                    <a href="01-dashboard.html" class="hover:text-indigo-600">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-gray-900 font-medium">Terms & Privacy Policy</span>
+                </div>
+            </div>
+
+            <div class="p-6 max-w-5xl mx-auto">
+                <!-- Page Header -->
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-2">Terms of Service & Privacy Policy</h2>
+                    <p class="text-gray-600">Last updated: October 23, 2024</p>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 mb-6">
+                    <div class="flex border-b border-gray-200">
+                        <button class="flex-1 px-6 py-4 text-center font-semibold text-indigo-600 border-b-2 border-indigo-600 hover:bg-indigo-50 transition-colors" onclick="showTab('terms')">
+                            <i class="fas fa-file-contract mr-2"></i>
+                            Terms of Service
+                        </button>
+                        <button class="flex-1 px-6 py-4 text-center font-semibold text-gray-600 hover:bg-gray-50 transition-colors" onclick="showTab('privacy')">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            Privacy Policy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Terms of Service Tab -->
+                <div id="terms-tab" class="space-y-6">
+                    <!-- Introduction -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                            <i class="fas fa-handshake text-indigo-600 mr-3"></i>
+                            Terms of Service
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Selamat datang di SATRIAMART Sales & Inventory Management System (SIMS). Dengan mengakses dan menggunakan layanan ini, Anda setuju untuk terikat dengan syarat dan ketentuan berikut. Harap baca dengan saksama sebelum menggunakan sistem kami.
+                        </p>
+                    </div>
+
+                    <!-- 1. Acceptance of Terms -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">1. Penerimaan Ketentuan</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Dengan mengakses atau menggunakan SATRIAMART SIMS, Anda menyatakan bahwa:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Anda telah membaca, memahami, dan menyetujui untuk terikat oleh Ketentuan Layanan ini</li>
+                                <li>Anda memiliki wewenang untuk menerima ketentuan ini atas nama organisasi Anda</li>
+                                <li>Anda berusia minimal 18 tahun atau telah mencapai usia dewasa menurut hukum yang berlaku</li>
+                                <li>Penggunaan Anda akan mematuhi semua hukum dan peraturan yang berlaku</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 2. License and Access -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">2. Lisensi dan Akses</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p><strong>Pemberian Lisensi:</strong> Kami memberikan Anda lisensi terbatas, non-eksklusif, tidak dapat dipindahtangankan untuk menggunakan SATRIAMART SIMS sesuai dengan ketentuan lisensi yang telah disepakati.</p>
+                            <p><strong>Pembatasan Penggunaan:</strong> Anda tidak diperkenankan untuk:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Menyalin, memodifikasi, atau membuat karya turunan dari sistem</li>
+                                <li>Melakukan reverse engineering, decompile, atau disassemble</li>
+                                <li>Menyewakan, meminjamkan, atau menjual akses kepada pihak ketiga</li>
+                                <li>Menghapus atau mengubah pemberitahuan hak cipta atau proprietary</li>
+                                <li>Menggunakan sistem untuk tujuan ilegal atau tidak sah</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3. User Accounts -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">3. Akun Pengguna</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p><strong>Tanggung Jawab Akun:</strong></p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Anda bertanggung jawab untuk menjaga kerahasiaan kredensial akun Anda</li>
+                                <li>Anda bertanggung jawab atas semua aktivitas yang terjadi di bawah akun Anda</li>
+                                <li>Anda harus segera memberi tahu kami tentang penggunaan tidak sah</li>
+                                <li>Kami berhak menangguhkan atau menghentikan akun yang melanggar ketentuan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4. Data and Security -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">4. Data dan Keamanan</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p><strong>Kepemilikan Data:</strong> Anda memiliki semua data yang Anda input ke dalam sistem. Kami tidak mengklaim kepemilikan atas data Anda.</p>
+                            <p><strong>Keamanan Data:</strong> Kami mengimplementasikan langkah-langkah keamanan yang wajar untuk melindungi data Anda, namun tidak ada sistem yang 100% aman.</p>
+                            <p><strong>Backup Data:</strong> Kami melakukan backup data secara teratur, namun Anda tetap bertanggung jawab untuk membuat backup data Anda sendiri.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Service Availability -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">5. Ketersediaan Layanan</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami berusaha untuk menyediakan layanan dengan uptime 99.9%, namun tidak dapat menjamin layanan akan tersedia tanpa gangguan. Kami dapat melakukan maintenance terjadwal atau tidak terjadwal yang dapat menyebabkan downtime sementara.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. Payment and Fees -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">6. Pembayaran dan Biaya</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p><strong>Biaya Lisensi:</strong> Biaya lisensi didasarkan pada paket yang Anda pilih dan jumlah pengguna.</p>
+                            <p><strong>Pembayaran:</strong> Pembayaran harus dilakukan sesuai dengan jadwal yang disepakati. Keterlambatan pembayaran dapat mengakibatkan penangguhan layanan.</p>
+                            <p><strong>Refund Policy:</strong> Kebijakan pengembalian dana diterapkan sesuai dengan perjanjian lisensi yang telah disepakati.</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. Limitation of Liability -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">7. Batasan Tanggung Jawab</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Dalam batas yang diizinkan oleh hukum, kami tidak bertanggung jawab atas:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Kerugian tidak langsung, insidental, atau konsekuensial</li>
+                                <li>Kehilangan keuntungan, data, atau goodwill</li>
+                                <li>Kegagalan sistem yang disebabkan oleh faktor di luar kendali kami</li>
+                                <li>Tindakan atau kelalaian pihak ketiga</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 8. Termination -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">8. Penghentian</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami dapat menghentikan atau menangguhkan akses Anda segera, tanpa pemberitahuan sebelumnya, jika Anda melanggar Ketentuan Layanan ini. Anda dapat menghentikan penggunaan kapan saja dengan memberikan pemberitahuan tertulis sesuai dengan ketentuan kontrak.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy Policy Tab (Hidden by default) -->
+                <div id="privacy-tab" class="space-y-6 hidden">
+                    <!-- Introduction -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                            <i class="fas fa-shield-alt text-indigo-600 mr-3"></i>
+                            Privacy Policy
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            PT Satria Mandiri ("kami") berkomitmen untuk melindungi privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan SATRIAMART SIMS.
+                        </p>
+                    </div>
+
+                    <!-- 1. Information We Collect -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">1. Informasi yang Kami Kumpulkan</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p><strong>Informasi Akun:</strong></p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Nama, email, nomor telepon, dan jabatan</li>
+                                <li>Informasi perusahaan (nama, alamat, NPWP)</li>
+                                <li>Kredensial login dan preferensi akun</li>
+                            </ul>
+                            <p><strong>Informasi Bisnis:</strong></p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Data transaksi penjualan dan pembelian</li>
+                                <li>Informasi produk dan inventori</li>
+                                <li>Data pelanggan dan supplier</li>
+                                <li>Laporan dan analitik bisnis</li>
+                            </ul>
+                            <p><strong>Informasi Teknis:</strong></p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Alamat IP, browser, dan perangkat yang digunakan</li>
+                                <li>Log aktivitas dan penggunaan sistem</li>
+                                <li>Cookies dan teknologi tracking serupa</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 2. How We Use Your Information -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">2. Cara Kami Menggunakan Informasi Anda</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami menggunakan informasi yang dikumpulkan untuk:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Menyediakan dan mengelola layanan SATRIAMART SIMS</li>
+                                <li>Memproses transaksi dan mengelola akun Anda</li>
+                                <li>Meningkatkan dan mengembangkan fitur sistem</li>
+                                <li>Memberikan dukungan pelanggan dan bantuan teknis</li>
+                                <li>Mengirim pemberitahuan penting tentang layanan</li>
+                                <li>Menganalisis penggunaan untuk optimasi performa</li>
+                                <li>Mencegah penipuan dan melindungi keamanan sistem</li>
+                                <li>Mematuhi kewajiban hukum dan regulasi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3. Data Sharing -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">3. Berbagi Data</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami tidak menjual data pribadi Anda. Kami hanya membagikan informasi dalam situasi berikut:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li><strong>Dengan persetujuan Anda:</strong> Ketika Anda memberikan izin eksplisit</li>
+                                <li><strong>Penyedia layanan:</strong> Dengan vendor terpercaya yang membantu operasional kami (cloud hosting, payment gateway)</li>
+                                <li><strong>Kewajiban hukum:</strong> Ketika diwajibkan oleh hukum atau proses legal</li>
+                                <li><strong>Transfer bisnis:</strong> Dalam kasus merger, akuisisi, atau penjualan aset</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4. Data Security -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">4. Keamanan Data</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami mengimplementasikan langkah-langkah keamanan untuk melindungi data Anda:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Enkripsi data in-transit dan at-rest (SSL/TLS, AES-256)</li>
+                                <li>Kontrol akses berbasis role dan autentikasi multi-faktor</li>
+                                <li>Firewall dan monitoring keamanan 24/7</li>
+                                <li>Backup data teratur dan disaster recovery plan</li>
+                                <li>Audit keamanan dan penetration testing berkala</li>
+                                <li>Training keamanan untuk tim internal</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 5. Data Retention -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">5. Penyimpanan Data</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami menyimpan data Anda selama:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Akun Anda aktif dan menggunakan layanan kami</li>
+                                <li>Diperlukan untuk memberikan layanan kepada Anda</li>
+                                <li>Diperlukan untuk mematuhi kewajiban hukum</li>
+                                <li>Diperlukan untuk menyelesaikan sengketa</li>
+                            </ul>
+                            <p class="mt-3">Setelah penghapusan, data akan dihapus secara permanen dari sistem kami dalam waktu 90 hari, kecuali diwajibkan oleh hukum untuk disimpan lebih lama.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. Your Rights -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">6. Hak Anda</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Anda memiliki hak untuk:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li><strong>Akses:</strong> Meminta salinan data pribadi yang kami simpan</li>
+                                <li><strong>Koreksi:</strong> Memperbarui atau memperbaiki data yang tidak akurat</li>
+                                <li><strong>Penghapusan:</strong> Meminta penghapusan data pribadi Anda</li>
+                                <li><strong>Pembatasan:</strong> Membatasi pemrosesan data Anda</li>
+                                <li><strong>Portabilitas:</strong> Menerima data Anda dalam format yang dapat dibaca mesin</li>
+                                <li><strong>Keberatan:</strong> Menolak pemrosesan data Anda untuk tujuan tertentu</li>
+                            </ul>
+                            <p class="mt-3">Untuk melaksanakan hak-hak ini, hubungi kami di privacy@satriamart.com</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. Cookies -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">7. Cookies dan Teknologi Tracking</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600 space-y-3">
+                            <p>Kami menggunakan cookies dan teknologi serupa untuk:</p>
+                            <ul class="list-disc list-inside space-y-2 ml-4">
+                                <li>Menjaga sesi login Anda tetap aktif</li>
+                                <li>Mengingat preferensi dan pengaturan Anda</li>
+                                <li>Menganalisis penggunaan dan performa sistem</li>
+                                <li>Menyediakan fitur keamanan tambahan</li>
+                            </ul>
+                            <p class="mt-3">Anda dapat mengontrol penggunaan cookies melalui pengaturan browser Anda.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. Children's Privacy -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">8. Privasi Anak-anak</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600">
+                            <p>SATRIAMART SIMS tidak ditujukan untuk anak-anak di bawah usia 18 tahun. Kami tidak secara sengaja mengumpulkan informasi pribadi dari anak-anak.</p>
+                        </div>
+                    </div>
+
+                    <!-- 9. Changes to Privacy Policy -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">9. Perubahan Kebijakan Privasi</h4>
+                        <div class="prose prose-gray max-w-none text-gray-600">
+                            <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan material melalui email atau pemberitahuan dalam sistem. Tanggal "Last Updated" di bagian atas akan menunjukkan kapan kebijakan terakhir diperbarui.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-8 text-white mt-8">
+                    <h3 class="text-2xl font-bold mb-4">Pertanyaan tentang Kebijakan Kami?</h3>
+                    <p class="mb-6 opacity-90">Jika Anda memiliki pertanyaan atau kekhawatiran tentang Ketentuan Layanan atau Kebijakan Privasi kami, jangan ragu untuk menghubungi kami.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                            <i class="fas fa-envelope text-2xl mb-2"></i>
+                            <p class="text-sm font-semibold">Email</p>
+                            <p class="text-sm opacity-80">legal@satriamart.com</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                            <i class="fas fa-phone text-2xl mb-2"></i>
+                            <p class="text-sm font-semibold">Phone</p>
+                            <p class="text-sm opacity-80">+62 21 1234 5678</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4">
+                            <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                            <p class="text-sm font-semibold">Address</p>
+                            <p class="text-sm opacity-80">Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="mt-8 text-center text-gray-600">
+                    <p>&copy; 2024 PT Satria Mandiri. All rights reserved.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.getElementById('terms-tab').classList.add('hidden');
+            document.getElementById('privacy-tab').classList.add('hidden');
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.remove('hidden');
+            
+            // Update button styles
+            const buttons = document.querySelectorAll('.flex.border-b button');
+            buttons.forEach(button => {
+                button.classList.remove('text-indigo-600', 'border-b-2', 'border-indigo-600');
+                button.classList.add('text-gray-600');
+            });
+            
+            event.target.classList.remove('text-gray-600');
+            event.target.classList.add('text-indigo-600', 'border-b-2', 'border-indigo-600');
+        }
+    </script>
+</body>
+</html>

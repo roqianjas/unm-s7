@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Settings - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">S</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">SATRIAMART</h1>
+                        <p class="text-xs text-gray-500">Sales & Inventory Management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 w-64">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+                
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <span class="text-indigo-600 font-semibold">AD</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="text-sm font-semibold text-gray-700">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="hidden lg:block w-64 bg-white shadow-sm min-h-screen">
+            <nav class="p-4 space-y-1">
+                <a href="01-dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-home text-lg w-5"></i>
+                    <span class="font-medium">Dashboard</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Sales</p>
+                </div>
+                <a href="05-sales-order.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-shopping-cart text-lg w-5"></i>
+                    <span class="font-medium">Sales Orders</span>
+                </a>
+                <a href="09-invoices.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-file-invoice text-lg w-5"></i>
+                    <span class="font-medium">Invoices</span>
+                </a>
+                <a href="13-customers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users text-lg w-5"></i>
+                    <span class="font-medium">Customers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Inventory</p>
+                </div>
+                <a href="17-products.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-box text-lg w-5"></i>
+                    <span class="font-medium">Products</span>
+                </a>
+                <a href="21-stock-movement.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-exchange-alt text-lg w-5"></i>
+                    <span class="font-medium">Stock Movement</span>
+                </a>
+                <a href="25-suppliers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-truck text-lg w-5"></i>
+                    <span class="font-medium">Suppliers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Production</p>
+                </div>
+                <a href="29-production-orders.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-industry text-lg w-5"></i>
+                    <span class="font-medium">Production Orders</span>
+                </a>
+                <a href="33-quality-control.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-clipboard-check text-lg w-5"></i>
+                    <span class="font-medium">Quality Control</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">System</p>
+                </div>
+                <a href="37-user-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users-cog text-lg w-5"></i>
+                    <span class="font-medium">User Management</span>
+                </a>
+                <a href="45-role-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-user-shield text-lg w-5"></i>
+                    <span class="font-medium">Roles & Permissions</span>
+                </a>
+                <a href="41-system-settings.html" class="flex items-center space-x-3 px-4 py-3 bg-indigo-50 text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-cog text-lg w-5"></i>
+                    <span class="font-medium">Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-auto">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+                    <a href="01-dashboard.html" class="hover:text-indigo-600">Dashboard</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <a href="41-system-settings.html" class="hover:text-indigo-600">Settings</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-gray-900 font-medium">API Settings</span>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">API Settings</h2>
+                        <p class="text-gray-600 mt-1">Manage API keys and integration settings</p>
+                    </div>
+                    <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition">
+                        <i class="fas fa-plus mr-2"></i>Generate New Key
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Main Content -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- API Status -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold text-gray-800">API Status</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">
+                                    <span class="w-2 h-2 bg-green-600 rounded-full inline-block mr-2"></span>
+                                    Operational
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="bg-blue-50 rounded-lg p-4">
+                                    <i class="fas fa-exchange-alt text-blue-600 text-2xl mb-2"></i>
+                                    <p class="text-2xl font-bold text-gray-800">12.5K</p>
+                                    <p class="text-sm text-gray-600">API Calls Today</p>
+                                </div>
+                                <div class="bg-green-50 rounded-lg p-4">
+                                    <i class="fas fa-check-circle text-green-600 text-2xl mb-2"></i>
+                                    <p class="text-2xl font-bold text-gray-800">99.8%</p>
+                                    <p class="text-sm text-gray-600">Success Rate</p>
+                                </div>
+                                <div class="bg-orange-50 rounded-lg p-4">
+                                    <i class="fas fa-clock text-orange-600 text-2xl mb-2"></i>
+                                    <p class="text-2xl font-bold text-gray-800">145ms</p>
+                                    <p class="text-sm text-gray-600">Avg Response</p>
+                                </div>
+                                <div class="bg-purple-50 rounded-lg p-4">
+                                    <i class="fas fa-key text-purple-600 text-2xl mb-2"></i>
+                                    <p class="text-2xl font-bold text-gray-800">5</p>
+                                    <p class="text-sm text-gray-600">Active Keys</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- API Keys -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">API Keys</h3>
+                            <p class="text-sm text-gray-600 mt-1">Manage your API keys for integration</p>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <!-- API Key 1 -->
+                            <div class="p-6">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-3 mb-2">
+                                            <h4 class="font-semibold text-gray-800">Production API Key</h4>
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mb-3">Used for production environment</p>
+                                        <div class="flex items-center space-x-2">
+                                            <code class="flex-1 px-3 py-2 bg-gray-50 border border-gray-300 rounded text-sm font-mono text-gray-800">
+                                                xxx
+                                            </code>
+                                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-gray-600">Created:</span>
+                                        <p class="font-semibold text-gray-800">2024-01-15</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">Last Used:</span>
+                                        <p class="font-semibold text-gray-800">2 hours ago</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">API Calls:</span>
+                                        <p class="font-semibold text-gray-800">8,542 today</p>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2 mt-4">
+                                    <button class="px-3 py-1.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                        <i class="fas fa-edit mr-1"></i>Edit
+                                    </button>
+                                    <button class="px-3 py-1.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                        <i class="fas fa-chart-line mr-1"></i>View Stats
+                                    </button>
+                                    <button class="px-3 py-1.5 border border-red-300 rounded-lg text-red-700 hover:bg-red-50 text-sm">
+                                        <i class="fas fa-trash mr-1"></i>Revoke
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- API Key 2 -->
+                            <div class="p-6">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-3 mb-2">
+                                            <h4 class="font-semibold text-gray-800">Development API Key</h4>
+                                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded">Testing</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mb-3">Used for development and testing</p>
+                                        <div class="flex items-center space-x-2">
+                                            <code class="flex-1 px-3 py-2 bg-gray-50 border border-gray-300 rounded text-sm font-mono text-gray-800">
+                                                sk_test_51K4xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            </code>
+                                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-gray-600">Created:</span>
+                                        <p class="font-semibold text-gray-800">2024-01-15</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">Last Used:</span>
+                                        <p class="font-semibold text-gray-800">1 day ago</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">API Calls:</span>
+                                        <p class="font-semibold text-gray-800">234 today</p>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2 mt-4">
+                                    <button class="px-3 py-1.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                        <i class="fas fa-edit mr-1"></i>Edit
+                                    </button>
+                                    <button class="px-3 py-1.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                        <i class="fas fa-chart-line mr-1"></i>View Stats
+                                    </button>
+                                    <button class="px-3 py-1.5 border border-red-300 rounded-lg text-red-700 hover:bg-red-50 text-sm">
+                                        <i class="fas fa-trash mr-1"></i>Revoke
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- API Key 3 -->
+                            <div class="p-6">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-3 mb-2">
+                                            <h4 class="font-semibold text-gray-800">Mobile App API Key</h4>
+                                            <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">Active</span>
+                                        </div>
+                                        <p class="text-sm text-gray-600 mb-3">Used for mobile application</p>
+                                        <div class="flex items-center space-x-2">
+                                            <code class="flex-1 px-3 py-2 bg-gray-50 border border-gray-300 rounded text-sm font-mono text-gray-800">
+                                                sk_mobile_51K4xxxxxxxxxxxxxxxxxxxxxxxx
+                                            </code>
+                                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 text-sm">
+                                    <div>
+                                        <span class="text-gray-600">Created:</span>
+                                        <p class="font-semibold text-gray-800">2024-03-10</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">Last Used:</span>
+                                        <p class="font-semibold text-gray-800">5 minutes ago</p>
+                                    </div>
+                                    <div>
+                                        <span class="text-gray-600">API Calls:</span>
+                                        <p class="font-semibold text-gray-800">3,876 today</p>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-2 mt-4">
+                                    <button class="px-3 py-1.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                        <i class="fas fa-edit mr-1"></i>Edit
+                                    </button>
+                                    <button class="px-3 py-1.5 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 text-sm">
+                                        <i class="fas fa-chart-line mr-1"></i>View Stats
+                                    </button>
+                                    <button class="px-3 py-1.5 border border-red-300 rounded-lg text-red-700 hover:bg-red-50 text-sm">
+                                        <i class="fas fa-trash mr-1"></i>Revoke
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Webhook Configuration -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Webhook Configuration</h3>
+                            <p class="text-sm text-gray-600 mt-1">Configure webhook endpoints for real-time notifications</p>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Webhook URL</label>
+                                <input type="url" placeholder="https://your-domain.com/webhook" 
+                                       value="https://api.satriamart.com/webhooks/events"
+                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Secret Key</label>
+                                <div class="flex space-x-2">
+                                    <input type="password" value="whsec_xxxxxxxxxxxxxxxxxxxxxxxx" 
+                                           class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                                        <i class="fas fa-sync"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Events to Send</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                        <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-800">Order Created</span>
+                                            <p class="text-xs text-gray-600">New sales order event</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                        <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-800">Order Updated</span>
+                                            <p class="text-xs text-gray-600">Order status change</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                        <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-800">Stock Updated</span>
+                                            <p class="text-xs text-gray-600">Inventory level changes</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                        <input type="checkbox" class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-800">Low Stock Alert</span>
+                                            <p class="text-xs text-gray-600">Stock below minimum</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                        <input type="checkbox" class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-800">Customer Created</span>
+                                            <p class="text-xs text-gray-600">New customer added</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                        <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                        <div>
+                                            <span class="text-sm font-medium text-gray-800">Invoice Generated</span>
+                                            <p class="text-xs text-gray-600">New invoice created</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-3 pt-4">
+                                <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition">
+                                    <i class="fas fa-vial mr-2"></i>Test Webhook
+                                </button>
+                                <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition">
+                                    <i class="fas fa-save mr-2"></i>Save Configuration
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- API Documentation -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">API Endpoints</h3>
+                            <p class="text-sm text-gray-600 mt-1">Available API endpoints and methods</p>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">GET</span>
+                                        <code class="text-sm font-mono text-gray-800">/api/v1/products</code>
+                                    </div>
+                                    <button class="text-indigo-600 hover:text-indigo-700 text-sm">
+                                        <i class="fas fa-book mr-1"></i>View Docs
+                                    </button>
+                                </div>
+                                <p class="text-sm text-gray-600 ml-16">Retrieve list of products</p>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">POST</span>
+                                        <code class="text-sm font-mono text-gray-800">/api/v1/orders</code>
+                                    </div>
+                                    <button class="text-indigo-600 hover:text-indigo-700 text-sm">
+                                        <i class="fas fa-book mr-1"></i>View Docs
+                                    </button>
+                                </div>
+                                <p class="text-sm text-gray-600 ml-16">Create a new sales order</p>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded">PUT</span>
+                                        <code class="text-sm font-mono text-gray-800">/api/v1/stock/:id</code>
+                                    </div>
+                                    <button class="text-indigo-600 hover:text-indigo-700 text-sm">
+                                        <i class="fas fa-book mr-1"></i>View Docs
+                                    </button>
+                                </div>
+                                <p class="text-sm text-gray-600 ml-16">Update stock level for a product</p>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-bold rounded">DELETE</span>
+                                        <code class="text-sm font-mono text-gray-800">/api/v1/products/:id</code>
+                                    </div>
+                                    <button class="text-indigo-600 hover:text-indigo-700 text-sm">
+                                        <i class="fas fa-book mr-1"></i>View Docs
+                                    </button>
+                                </div>
+                                <p class="text-sm text-gray-600 ml-16">Delete a product from catalog</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-50 border-t border-gray-200">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-700 font-medium text-sm">
+                                <i class="fas fa-external-link-alt mr-2"></i>View Full API Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="space-y-6">
+                    <!-- API Configuration -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">API Configuration</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Base URL</label>
+                                <input type="text" value="https://api.satriamart.com/v1" readonly
+                                       class="w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-lg text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">API Version</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                                    <option>v1 (Current)</option>
+                                    <option>v2 (Beta)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="flex items-center justify-between cursor-pointer">
+                                    <span class="text-sm font-medium text-gray-700">Enable API</span>
+                                    <input type="checkbox" checked class="toggle">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="flex items-center justify-between cursor-pointer">
+                                    <span class="text-sm font-medium text-gray-700">Rate Limiting</span>
+                                    <input type="checkbox" checked class="toggle">
+                                </label>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Rate Limit</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                                    <option>1000 requests/hour</option>
+                                    <option selected>5000 requests/hour</option>
+                                    <option>10000 requests/hour</option>
+                                    <option>Unlimited</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Usage Stats -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Usage Statistics</h3>
+                            <p class="text-sm text-gray-600 mt-1">Last 30 days</p>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Total Requests</span>
+                                    <span class="text-sm font-semibold text-gray-800">345.2K</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-indigo-600 h-2 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Success Rate</span>
+                                    <span class="text-sm font-semibold text-green-600">99.8%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-600 h-2 rounded-full" style="width: 99.8%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Error Rate</span>
+                                    <span class="text-sm font-semibold text-red-600">0.2%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-red-600 h-2 rounded-full" style="width: 0.2%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Recent Activity</h3>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                                    <div>
+                                        <p class="text-sm text-gray-800">GET /api/v1/products</p>
+                                        <p class="text-xs text-gray-600">200 OK - 2 seconds ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                                    <div>
+                                        <p class="text-sm text-gray-800">POST /api/v1/orders</p>
+                                        <p class="text-xs text-gray-600">201 Created - 5 seconds ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                                    <div>
+                                        <p class="text-sm text-gray-800">GET /api/v1/customers</p>
+                                        <p class="text-xs text-gray-600">200 OK - 12 seconds ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
+                                    <div>
+                                        <p class="text-sm text-gray-800">PUT /api/v1/stock/123</p>
+                                        <p class="text-xs text-gray-600">401 Unauthorized - 1 min ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Quick Links</h3>
+                        </div>
+                        <div class="p-6 space-y-2">
+                            <a href="#" class="block p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-book text-indigo-600"></i>
+                                        <span class="text-sm font-medium text-gray-800">API Documentation</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-code text-green-600"></i>
+                                        <span class="text-sm font-medium text-gray-800">Code Examples</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-life-ring text-blue-600"></i>
+                                        <span class="text-sm font-medium text-gray-800">Support</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

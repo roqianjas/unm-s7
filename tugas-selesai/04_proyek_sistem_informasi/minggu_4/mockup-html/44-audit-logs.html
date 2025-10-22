@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Logs - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-store text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">SATRIAMART</h1>
+                    <p class="text-xs text-gray-500">Sales & Inventory System</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-bell"></i>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6366F1&color=fff" alt="User" class="w-8 h-8 rounded-full">
+                    <div class="text-sm">
+                        <p class="font-medium text-gray-800">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-tachometer-alt text-gray-400"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <div class="flex items-center space-x-3 px-4 py-3 text-indigo-600 bg-indigo-50 rounded-lg font-medium">
+                    <i class="fas fa-cog text-indigo-600"></i>
+                    <span>Settings</span>
+                </div>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Security</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-indigo-600 bg-indigo-50 rounded-lg text-sm font-medium">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Audit Logs</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-indigo-600">Dashboard</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-indigo-600">Settings</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-800 font-medium">Audit Logs</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-clipboard-list text-purple-600 mr-3"></i>
+                    Audit Logs
+                </h1>
+                <p class="text-gray-600 mt-1">Track all system activities and user actions</p>
+            </div>
+            <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                <i class="fas fa-download mr-2"></i>
+                Export Logs
+            </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Total Activities</p>
+                        <p class="text-2xl font-bold text-gray-800">1,245</p>
+                        <p class="text-xs text-gray-500 mt-1">Last 30 days</p>
+                    </div>
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-list text-blue-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Login Events</p>
+                        <p class="text-2xl font-bold text-gray-800">387</p>
+                        <p class="text-xs text-green-600 mt-1"><i class="fas fa-arrow-up mr-1"></i> +12% from last month</p>
+                    </div>
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-sign-in-alt text-green-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Failed Attempts</p>
+                        <p class="text-2xl font-bold text-gray-800">23</p>
+                        <p class="text-xs text-red-600 mt-1"><i class="fas fa-exclamation-triangle mr-1"></i> Requires attention</p>
+                    </div>
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-times-circle text-red-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Data Changes</p>
+                        <p class="text-2xl font-bold text-gray-800">835</p>
+                        <p class="text-xs text-gray-500 mt-1">Modifications logged</p>
+                    </div>
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-edit text-orange-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters and Search -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm mb-6">
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Search</label>
+                        <div class="relative">
+                            <input type="text" class="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Search logs...">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">User</label>
+                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option>All Users</option>
+                            <option>Admin</option>
+                            <option>Manager</option>
+                            <option>Sales</option>
+                            <option>Warehouse</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Action Type</label>
+                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option>All Actions</option>
+                            <option>Login</option>
+                            <option>Logout</option>
+                            <option>Create</option>
+                            <option>Update</option>
+                            <option>Delete</option>
+                            <option>View</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Date Range</label>
+                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option>Today</option>
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 90 days</option>
+                            <option>Custom Range</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <button class="px-3 py-1 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 text-sm">
+                            <i class="fas fa-filter mr-2"></i>
+                            Apply Filters
+                        </button>
+                        <button class="px-3 py-1 text-gray-600 hover:bg-gray-100 rounded-lg text-sm">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset
+                        </button>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        Showing <span class="font-semibold">1-50</span> of <span class="font-semibold">1,245</span> results
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audit Log Table -->
+        <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b border-gray-200">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Timestamp</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Module</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Details</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">IP Address</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <!-- Row 1 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">14:30:45</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Dewi+Lestari&background=6366F1&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Dewi Lestari</div>
+                                        <div class="text-xs text-gray-500">Sales Manager</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-sign-in-alt mr-1"></i> Login
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Authentication</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Successful login via web interface</div>
+                                <div class="text-xs text-gray-500">Session: a7f3b9c2d4e6</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.105</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 2 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">14:25:12</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Agus+Pratama&background=10B981&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Agus Pratama</div>
+                                        <div class="text-xs text-gray-500">Warehouse Staff</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-edit mr-1"></i> Update
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Inventory</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Updated stock quantity for Clear Acrylic</div>
+                                <div class="text-xs text-gray-500">From: 45.5m² → To: 52.0m²</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.112</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">14:15:33</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=EF4444&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Admin User</div>
+                                        <div class="text-xs text-gray-500">Administrator</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-plus-circle mr-1"></i> Create
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Users</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Created new user account</div>
+                                <div class="text-xs text-gray-500">Username: bambang.qc | Role: QC Staff</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.100</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 4 - Failed Login -->
+                        <tr class="hover:bg-gray-50 bg-red-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">14:10:22</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-gray-300 rounded-full mr-3 flex items-center justify-center">
+                                        <i class="fas fa-user text-gray-600 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Unknown</div>
+                                        <div class="text-xs text-gray-500">Guest</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-times-circle mr-1"></i> Failed Login
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Authentication</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Failed login attempt (invalid credentials)</div>
+                                <div class="text-xs text-red-600">Attempted username: admin123</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-red-600">203.0.113.45</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-exclamation-triangle mr-1"></i> Failed
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-red-600 hover:text-red-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 5 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">14:05:18</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Rina+Susanti&background=F59E0B&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Rina Susanti</div>
+                                        <div class="text-xs text-gray-500">Production Supervisor</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-square mr-1"></i> Complete
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Production</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Completed work order WO-2024-096</div>
+                                <div class="text-xs text-gray-500">Order: Signage 2pcs | Duration: 6hrs</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.108</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 6 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">13:58:40</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Dewi+Lestari&background=6366F1&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Dewi Lestari</div>
+                                        <div class="text-xs text-gray-500">Sales Manager</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-file-invoice mr-1"></i> Generate
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Reports</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Generated monthly sales report</div>
+                                <div class="text-xs text-gray-500">Period: September 2024 | Format: PDF</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.105</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 7 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">13:45:55</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=EF4444&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Admin User</div>
+                                        <div class="text-xs text-gray-500">Administrator</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-cog mr-1"></i> Config
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Settings</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Updated security settings</div>
+                                <div class="text-xs text-gray-500">Changed password policy requirements</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.100</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 8 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">13:30:12</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=3B82F6&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Budi Santoso</div>
+                                        <div class="text-xs text-gray-500">Sales Staff</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Customers</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Viewed customer details</div>
+                                <div class="text-xs text-gray-500">Customer: PT Maju Jaya | ID: CUST-001</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.107</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 9 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">13:20:08</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=System&background=6B7280&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">System</div>
+                                        <div class="text-xs text-gray-500">Automated Task</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-database mr-1"></i> Backup
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">System</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">Automated database backup completed</div>
+                                <div class="text-xs text-gray-500">Size: 2.3 GB | Duration: 8 minutes</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">127.0.0.1</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Row 10 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-800">22 Oct 2024</div>
+                                <div class="text-xs text-gray-500">13:10:33</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://ui-avatars.com/api/?name=Dewi+Lestari&background=6366F1&color=fff" alt="User" class="w-8 h-8 rounded-full mr-3">
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-800">Dewi Lestari</div>
+                                        <div class="text-xs text-gray-500">Sales Manager</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-sign-out-alt mr-1"></i> Logout
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-800">Authentication</span>
+                            </td>
+                            <td class="px-6 py-4">
+                                <div class="text-sm text-gray-800">User logged out</div>
+                                <div class="text-xs text-gray-500">Session duration: 2h 15m</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm font-mono text-gray-600">192.168.1.105</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i> Success
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <button class="text-indigo-600 hover:text-indigo-800">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
+                <div class="text-sm text-gray-600">
+                    Showing <span class="font-semibold">1</span> to <span class="font-semibold">10</span> of <span class="font-semibold">1,245</span> results
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="px-3 py-2 bg-indigo-600 text-white rounded-lg text-sm">1</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm">2</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm">3</button>
+                    <span class="px-2 text-gray-500">...</span>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm">125</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

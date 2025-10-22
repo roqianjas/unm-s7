@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permission Editor - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">S</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">SATRIAMART</h1>
+                        <p class="text-xs text-gray-500">Sales & Inventory Management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 w-64">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+                
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <span class="text-indigo-600 font-semibold">AD</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="text-sm font-semibold text-gray-700">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="hidden lg:block w-64 bg-white shadow-sm min-h-screen">
+            <nav class="p-4 space-y-1">
+                <a href="01-dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-home text-lg w-5"></i>
+                    <span class="font-medium">Dashboard</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Sales</p>
+                </div>
+                <a href="05-sales-order.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-shopping-cart text-lg w-5"></i>
+                    <span class="font-medium">Sales Orders</span>
+                </a>
+                <a href="09-invoices.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-file-invoice text-lg w-5"></i>
+                    <span class="font-medium">Invoices</span>
+                </a>
+                <a href="13-customers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users text-lg w-5"></i>
+                    <span class="font-medium">Customers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Inventory</p>
+                </div>
+                <a href="17-products.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-box text-lg w-5"></i>
+                    <span class="font-medium">Products</span>
+                </a>
+                <a href="21-stock-movement.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-exchange-alt text-lg w-5"></i>
+                    <span class="font-medium">Stock Movement</span>
+                </a>
+                <a href="25-suppliers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-truck text-lg w-5"></i>
+                    <span class="font-medium">Suppliers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Production</p>
+                </div>
+                <a href="29-production-orders.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-industry text-lg w-5"></i>
+                    <span class="font-medium">Production Orders</span>
+                </a>
+                <a href="33-quality-control.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-clipboard-check text-lg w-5"></i>
+                    <span class="font-medium">Quality Control</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">System</p>
+                </div>
+                <a href="37-user-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users-cog text-lg w-5"></i>
+                    <span class="font-medium">User Management</span>
+                </a>
+                <a href="45-role-management.html" class="flex items-center space-x-3 px-4 py-3 bg-indigo-50 text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-user-shield text-lg w-5"></i>
+                    <span class="font-medium">Roles & Permissions</span>
+                </a>
+                <a href="41-system-settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-cog text-lg w-5"></i>
+                    <span class="font-medium">Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-auto">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+                    <a href="01-dashboard.html" class="hover:text-indigo-600">Dashboard</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <a href="45-role-management.html" class="hover:text-indigo-600">Roles & Permissions</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <a href="46-role-detail-view.html" class="hover:text-indigo-600">Sales Manager</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-gray-900 font-medium">Edit Permissions</span>
+                </div>
+                
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <button onclick="history.back()" class="p-2 hover:bg-gray-100 rounded-lg transition">
+                            <i class="fas fa-arrow-left text-gray-600"></i>
+                        </button>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">Edit Role Permissions</h2>
+                            <p class="text-gray-600 mt-1">Configure permissions for Sales Manager role</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition">
+                            <i class="fas fa-times mr-2"></i>Cancel
+                        </button>
+                        <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition">
+                            <i class="fas fa-save mr-2"></i>Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Permission Editor -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Permission Tree -->
+                <div class="lg:col-span-3 space-y-6">
+                    <!-- Quick Actions Bar -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <button class="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 font-medium transition text-sm">
+                                    <i class="fas fa-check-double mr-2"></i>Select All
+                                </button>
+                                <button class="px-4 py-2 bg-gray-50 text-gray-600 rounded-lg hover:bg-gray-100 font-medium transition text-sm">
+                                    <i class="fas fa-times mr-2"></i>Deselect All
+                                </button>
+                                <button class="px-4 py-2 bg-gray-50 text-gray-600 rounded-lg hover:bg-gray-100 font-medium transition text-sm">
+                                    <i class="fas fa-folder-open mr-2"></i>Expand All
+                                </button>
+                                <button class="px-4 py-2 bg-gray-50 text-gray-600 rounded-lg hover:bg-gray-100 font-medium transition text-sm">
+                                    <i class="fas fa-folder mr-2"></i>Collapse All
+                                </button>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600">12 of 24 permissions enabled</span>
+                                <div class="w-32 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-indigo-600 h-2 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sales Module -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="bg-gradient-to-r from-indigo-50 to-blue-50 px-6 py-4 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" checked class="w-5 h-5 text-indigo-600 rounded">
+                                    <i class="fas fa-shopping-cart text-indigo-600 text-xl"></i>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800">Sales Module</h3>
+                                        <p class="text-sm text-gray-600">Manage sales orders, quotes, and transactions</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">4 / 4</span>
+                                    <button class="p-2 hover:bg-white/50 rounded-lg transition">
+                                        <i class="fas fa-chevron-down text-gray-600"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <!-- Sales Orders -->
+                                <div class="border-l-4 border-indigo-300 pl-4">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <label class="flex items-center space-x-3 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="font-semibold text-gray-800">Sales Orders</span>
+                                        </label>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-3 ml-7">
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">View Orders</span>
+                                            <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded">Read</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Create Orders</span>
+                                            <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">Write</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Edit Orders</span>
+                                            <span class="px-2 py-0.5 bg-yellow-100 text-yellow-700 text-xs rounded">Update</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Delete Orders</span>
+                                            <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs rounded">Delete</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Approve Discounts</span>
+                                            <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs rounded">Approve</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Cancel Orders</span>
+                                            <span class="px-2 py-0.5 bg-orange-100 text-orange-700 text-xs rounded">Cancel</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Quotations -->
+                                <div class="border-l-4 border-blue-300 pl-4">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <label class="flex items-center space-x-3 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="font-semibold text-gray-800">Quotations</span>
+                                        </label>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-3 ml-7">
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">View Quotes</span>
+                                            <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded">Read</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Create Quotes</span>
+                                            <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">Write</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Edit Quotes</span>
+                                            <span class="px-2 py-0.5 bg-yellow-100 text-yellow-700 text-xs rounded">Update</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Convert to Order</span>
+                                            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded">Convert</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Invoices -->
+                                <div class="border-l-4 border-green-300 pl-4">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <label class="flex items-center space-x-3 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="font-semibold text-gray-800">Invoices</span>
+                                        </label>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-3 ml-7">
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">View Invoices</span>
+                                            <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded">Read</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Generate Invoices</span>
+                                            <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">Create</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Void Invoices</span>
+                                            <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs rounded">Void</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2 cursor-pointer">
+                                            <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded">
+                                            <span class="text-sm text-gray-700">Send to Customer</span>
+                                            <span class="px-2 py-0.5 bg-teal-100 text-teal-700 text-xs rounded">Send</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Module -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="bg-gradient-to-r from-blue-50 to-cyan-50 px-6 py-4 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" checked class="w-5 h-5 text-blue-600 rounded">
+                                    <i class="fas fa-users text-blue-600 text-xl"></i>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800">Customer Module</h3>
+                                        <p class="text-sm text-gray-600">Manage customer data and relationships</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">3 / 4</span>
+                                    <button class="p-2 hover:bg-white/50 rounded-lg transition">
+                                        <i class="fas fa-chevron-down text-gray-600"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded">
+                                    <span class="text-gray-700">View Customer List</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded">
+                                    <span class="text-gray-700">Add New Customer</span>
+                                    <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded ml-auto">Write</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded">
+                                    <span class="text-gray-700">Update Customer Info</span>
+                                    <span class="px-2 py-0.5 bg-yellow-100 text-yellow-700 text-xs rounded ml-auto">Update</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-blue-600 rounded">
+                                    <span class="text-gray-700">Delete Customer</span>
+                                    <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs rounded ml-auto">Delete</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded">
+                                    <span class="text-gray-700">View Customer History</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-blue-600 rounded">
+                                    <span class="text-gray-700">Export Customer Data</span>
+                                    <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs rounded ml-auto">Export</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Module -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 px-6 py-4 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                                    <i class="fas fa-box text-purple-600 text-xl"></i>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800">Products Module</h3>
+                                        <p class="text-sm text-gray-600">Manage product catalog and pricing</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">2 / 6</span>
+                                    <button class="p-2 hover:bg-white/50 rounded-lg transition">
+                                        <i class="fas fa-chevron-down text-gray-600"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-purple-600 rounded">
+                                    <span class="text-gray-700">View Product List</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-purple-600 rounded">
+                                    <span class="text-gray-700">Add New Product</span>
+                                    <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded ml-auto">Write</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-purple-600 rounded">
+                                    <span class="text-gray-700">Update Product Prices</span>
+                                    <span class="px-2 py-0.5 bg-yellow-100 text-yellow-700 text-xs rounded ml-auto">Update</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-purple-600 rounded">
+                                    <span class="text-gray-700">Delete Product</span>
+                                    <span class="px-2 py-0.5 bg-red-100 text-red-700 text-xs rounded ml-auto">Delete</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-purple-600 rounded">
+                                    <span class="text-gray-700">Manage Categories</span>
+                                    <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded ml-auto">Manage</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-purple-600 rounded">
+                                    <span class="text-gray-700">Import Products</span>
+                                    <span class="px-2 py-0.5 bg-teal-100 text-teal-700 text-xs rounded ml-auto">Import</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inventory Module -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="bg-gradient-to-r from-orange-50 to-red-50 px-6 py-4 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" class="w-5 h-5 text-orange-600 rounded">
+                                    <i class="fas fa-warehouse text-orange-600 text-xl"></i>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800">Inventory Module</h3>
+                                        <p class="text-sm text-gray-600">Stock management and warehouse operations</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-medium rounded-full">1 / 5</span>
+                                    <button class="p-2 hover:bg-white/50 rounded-lg transition">
+                                        <i class="fas fa-chevron-down text-gray-600"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-orange-600 rounded">
+                                    <span class="text-gray-700">View Stock Levels</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-orange-600 rounded">
+                                    <span class="text-gray-700">Adjust Stock</span>
+                                    <span class="px-2 py-0.5 bg-yellow-100 text-yellow-700 text-xs rounded ml-auto">Adjust</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-orange-600 rounded">
+                                    <span class="text-gray-700">Stock Transfer</span>
+                                    <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 text-xs rounded ml-auto">Transfer</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-orange-600 rounded">
+                                    <span class="text-gray-700">Stock Opname</span>
+                                    <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs rounded ml-auto">Audit</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-orange-600 rounded">
+                                    <span class="text-gray-700">View Movement History</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reports Module -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 px-6 py-4 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <input type="checkbox" checked class="w-5 h-5 text-green-600 rounded">
+                                    <i class="fas fa-chart-bar text-green-600 text-xl"></i>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800">Reports Module</h3>
+                                        <p class="text-sm text-gray-600">Analytics and reporting tools</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">2 / 4</span>
+                                    <button class="p-2 hover:bg-white/50 rounded-lg transition">
+                                        <i class="fas fa-chevron-down text-gray-600"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-green-600 rounded">
+                                    <span class="text-gray-700">View Sales Reports</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-green-600 rounded">
+                                    <span class="text-gray-700">View Financial Reports</span>
+                                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs rounded ml-auto">Read</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" checked class="w-4 h-4 text-green-600 rounded">
+                                    <span class="text-gray-700">Export Reports</span>
+                                    <span class="px-2 py-0.5 bg-purple-100 text-purple-700 text-xs rounded ml-auto">Export</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer p-3 hover:bg-gray-50 rounded-lg transition">
+                                    <input type="checkbox" class="w-4 h-4 text-green-600 rounded">
+                                    <span class="text-gray-700">Create Custom Reports</span>
+                                    <span class="px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded ml-auto">Create</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="space-y-6">
+                    <!-- Permission Summary -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Permission Summary</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="text-center">
+                                <div class="relative inline-flex items-center justify-center">
+                                    <svg class="w-32 h-32 transform -rotate-90">
+                                        <circle cx="64" cy="64" r="56" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                                        <circle cx="64" cy="64" r="56" stroke="#6366f1" stroke-width="8" fill="none" 
+                                                stroke-dasharray="351.86" stroke-dashoffset="175.93" stroke-linecap="round" />
+                                    </svg>
+                                    <div class="absolute">
+                                        <p class="text-3xl font-bold text-gray-800">50%</p>
+                                        <p class="text-xs text-gray-600">Coverage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-3 pt-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-600">Total Permissions</span>
+                                    <span class="font-semibold text-gray-800">24</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-600">Enabled</span>
+                                    <span class="font-semibold text-green-600">12</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-600">Disabled</span>
+                                    <span class="font-semibold text-gray-600">12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module Breakdown -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">By Module</h3>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-sm text-gray-700">Sales</span>
+                                    <span class="text-xs font-semibold text-gray-600">4/4</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-indigo-600 h-2 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-sm text-gray-700">Customer</span>
+                                    <span class="text-xs font-semibold text-gray-600">3/4</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-sm text-gray-700">Products</span>
+                                    <span class="text-xs font-semibold text-gray-600">2/6</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-purple-600 h-2 rounded-full" style="width: 33%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-sm text-gray-700">Inventory</span>
+                                    <span class="text-xs font-semibold text-gray-600">1/5</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-orange-600 h-2 rounded-full" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-sm text-gray-700">Reports</span>
+                                    <span class="text-xs font-semibold text-gray-600">2/4</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-600 h-2 rounded-full" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Permission Types -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Permission Types</h3>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-blue-600 rounded"></div>
+                                    <span class="text-sm text-gray-700">Read</span>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-800">6</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-green-600 rounded"></div>
+                                    <span class="text-sm text-gray-700">Write</span>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-800">3</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-yellow-600 rounded"></div>
+                                    <span class="text-sm text-gray-700">Update</span>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-800">2</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-red-600 rounded"></div>
+                                    <span class="text-sm text-gray-700">Delete</span>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-800">0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-purple-600 rounded"></div>
+                                    <span class="text-sm text-gray-700">Special</span>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-800">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Change Notes -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Change Notes</h3>
+                        </div>
+                        <div class="p-6">
+                            <textarea rows="4" placeholder="Add notes about these permission changes..." 
+                                      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"></textarea>
+                            <p class="text-xs text-gray-500 mt-2">These notes will be recorded in the audit log</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

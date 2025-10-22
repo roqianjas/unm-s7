@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Import/Export - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">S</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">SATRIAMART</h1>
+                        <p class="text-xs text-gray-500">Sales & Inventory Management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 w-64">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+                
+                <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <span class="text-indigo-600 font-semibold">AD</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="text-sm font-semibold text-gray-700">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="hidden lg:block w-64 bg-white shadow-sm min-h-screen">
+            <nav class="p-4 space-y-1">
+                <a href="01-dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-home text-lg w-5"></i>
+                    <span class="font-medium">Dashboard</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Sales</p>
+                </div>
+                <a href="05-sales-order.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-shopping-cart text-lg w-5"></i>
+                    <span class="font-medium">Sales Orders</span>
+                </a>
+                <a href="09-invoices.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-file-invoice text-lg w-5"></i>
+                    <span class="font-medium">Invoices</span>
+                </a>
+                <a href="13-customers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users text-lg w-5"></i>
+                    <span class="font-medium">Customers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Inventory</p>
+                </div>
+                <a href="17-products.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-box text-lg w-5"></i>
+                    <span class="font-medium">Products</span>
+                </a>
+                <a href="21-stock-movement.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-exchange-alt text-lg w-5"></i>
+                    <span class="font-medium">Stock Movement</span>
+                </a>
+                <a href="25-suppliers.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-truck text-lg w-5"></i>
+                    <span class="font-medium">Suppliers</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Production</p>
+                </div>
+                <a href="29-production-orders.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-industry text-lg w-5"></i>
+                    <span class="font-medium">Production Orders</span>
+                </a>
+                <a href="33-quality-control.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-clipboard-check text-lg w-5"></i>
+                    <span class="font-medium">Quality Control</span>
+                </a>
+                
+                <div class="pt-4 pb-2 px-4">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">System</p>
+                </div>
+                <a href="37-user-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-users-cog text-lg w-5"></i>
+                    <span class="font-medium">User Management</span>
+                </a>
+                <a href="45-role-management.html" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-user-shield text-lg w-5"></i>
+                    <span class="font-medium">Roles & Permissions</span>
+                </a>
+                <a href="41-system-settings.html" class="flex items-center space-x-3 px-4 py-3 bg-indigo-50 text-indigo-600 rounded-lg transition">
+                    <i class="fas fa-cog text-lg w-5"></i>
+                    <span class="font-medium">Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-auto">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <div class="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+                    <a href="01-dashboard.html" class="hover:text-indigo-600">Dashboard</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <a href="41-system-settings.html" class="hover:text-indigo-600">Settings</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-gray-900 font-medium">Data Import/Export</span>
+                </div>
+                
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Data Import/Export</h2>
+                    <p class="text-gray-600 mt-1">Import and export data in various formats</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Import Data Section -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-indigo-50">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-file-import text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Import Data</h3>
+                                    <p class="text-sm text-gray-600">Upload and import data from files</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-6">
+                            <!-- Import Module Selection -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Select Data Type</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <button class="p-4 border-2 border-indigo-600 bg-indigo-50 rounded-lg text-left hover:shadow-md transition">
+                                        <i class="fas fa-box text-indigo-600 text-xl mb-2"></i>
+                                        <p class="font-semibold text-gray-800 text-sm">Products</p>
+                                        <p class="text-xs text-gray-600">Import product catalog</p>
+                                    </button>
+                                    <button class="p-4 border-2 border-gray-300 rounded-lg text-left hover:border-indigo-300 hover:shadow-md transition">
+                                        <i class="fas fa-users text-blue-600 text-xl mb-2"></i>
+                                        <p class="font-semibold text-gray-800 text-sm">Customers</p>
+                                        <p class="text-xs text-gray-600">Import customer list</p>
+                                    </button>
+                                    <button class="p-4 border-2 border-gray-300 rounded-lg text-left hover:border-indigo-300 hover:shadow-md transition">
+                                        <i class="fas fa-truck text-green-600 text-xl mb-2"></i>
+                                        <p class="font-semibold text-gray-800 text-sm">Suppliers</p>
+                                        <p class="text-xs text-gray-600">Import supplier data</p>
+                                    </button>
+                                    <button class="p-4 border-2 border-gray-300 rounded-lg text-left hover:border-indigo-300 hover:shadow-md transition">
+                                        <i class="fas fa-warehouse text-orange-600 text-xl mb-2"></i>
+                                        <p class="font-semibold text-gray-800 text-sm">Stock Data</p>
+                                        <p class="text-xs text-gray-600">Import inventory levels</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- File Upload Area -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Upload File</label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-indigo-400 transition cursor-pointer">
+                                    <i class="fas fa-cloud-upload-alt text-gray-400 text-5xl mb-3"></i>
+                                    <p class="text-gray-700 font-medium mb-1">Drag and drop file here</p>
+                                    <p class="text-sm text-gray-500 mb-3">or click to browse</p>
+                                    <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition text-sm">
+                                        <i class="fas fa-folder-open mr-2"></i>Browse Files
+                                    </button>
+                                    <p class="text-xs text-gray-500 mt-3">Supported: CSV, XLS, XLSX (Max 10MB)</p>
+                                </div>
+                            </div>
+
+                            <!-- Import Options -->
+                            <div class="space-y-3">
+                                <label class="block text-sm font-medium text-gray-700">Import Options</label>
+                                <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                    <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-800">Skip duplicates</span>
+                                        <p class="text-xs text-gray-600">Don't import records that already exist</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-800">Update existing</span>
+                                        <p class="text-xs text-gray-600">Update records if they already exist</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                    <input type="checkbox" checked class="w-4 h-4 text-indigo-600 rounded mr-3">
+                                    <div>
+                                        <span class="text-sm font-medium text-gray-800">Validate before import</span>
+                                        <p class="text-xs text-gray-600">Check data integrity before importing</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex space-x-3 pt-4">
+                                <button class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition">
+                                    <i class="fas fa-file-download mr-2"></i>Download Template
+                                </button>
+                                <button class="flex-1 px-4 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium transition">
+                                    <i class="fas fa-upload mr-2"></i>Start Import
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Imports -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Recent Imports</h3>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-4 hover:bg-gray-50">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-box text-green-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm">Products Import</p>
+                                            <p class="text-xs text-gray-600">products_catalog_oct2024.xlsx</p>
+                                            <p class="text-xs text-gray-500">2024-10-22 14:30 WIB</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                        <i class="fas fa-check mr-1"></i>Success
+                                    </span>
+                                </div>
+                                <div class="mt-2 ml-13 text-xs text-gray-600">
+                                    145 records imported, 3 skipped, 0 errors
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-gray-50">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-users text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm">Customers Import</p>
+                                            <p class="text-xs text-gray-600">customer_list_2024.csv</p>
+                                            <p class="text-xs text-gray-500">2024-10-21 09:15 WIB</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded">
+                                        <i class="fas fa-check mr-1"></i>Success
+                                    </span>
+                                </div>
+                                <div class="mt-2 ml-13 text-xs text-gray-600">
+                                    89 records imported, 12 skipped, 0 errors
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-gray-50">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-warehouse text-yellow-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm">Stock Data Import</p>
+                                            <p class="text-xs text-gray-600">inventory_update.xlsx</p>
+                                            <p class="text-xs text-gray-500">2024-10-20 16:45 WIB</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded">
+                                        <i class="fas fa-exclamation-triangle mr-1"></i>Warning
+                                    </span>
+                                </div>
+                                <div class="mt-2 ml-13 text-xs text-gray-600">
+                                    234 records imported, 15 skipped, 5 warnings
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Export Data Section -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200 bg-gradient-to-r from-green-50 to-emerald-50">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-file-export text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Export Data</h3>
+                                    <p class="text-sm text-gray-600">Download data in various formats</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-6">
+                            <!-- Export Module Selection -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Select Data Type</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center p-3 border-2 border-green-600 bg-green-50 rounded-lg cursor-pointer">
+                                        <input type="radio" name="exportType" checked class="w-4 h-4 text-green-600 mr-3">
+                                        <i class="fas fa-box text-green-600 mr-3"></i>
+                                        <div>
+                                            <span class="font-semibold text-gray-800 text-sm">Products</span>
+                                            <p class="text-xs text-gray-600">Export complete product catalog</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-green-300">
+                                        <input type="radio" name="exportType" class="w-4 h-4 text-green-600 mr-3">
+                                        <i class="fas fa-users text-blue-600 mr-3"></i>
+                                        <div>
+                                            <span class="font-semibold text-gray-800 text-sm">Customers</span>
+                                            <p class="text-xs text-gray-600">Export customer database</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-green-300">
+                                        <input type="radio" name="exportType" class="w-4 h-4 text-green-600 mr-3">
+                                        <i class="fas fa-shopping-cart text-indigo-600 mr-3"></i>
+                                        <div>
+                                            <span class="font-semibold text-gray-800 text-sm">Sales Orders</span>
+                                            <p class="text-xs text-gray-600">Export sales transactions</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-green-300">
+                                        <input type="radio" name="exportType" class="w-4 h-4 text-green-600 mr-3">
+                                        <i class="fas fa-warehouse text-orange-600 mr-3"></i>
+                                        <div>
+                                            <span class="font-semibold text-gray-800 text-sm">Stock Levels</span>
+                                            <p class="text-xs text-gray-600">Export current inventory</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center p-3 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-green-300">
+                                        <input type="radio" name="exportType" class="w-4 h-4 text-green-600 mr-3">
+                                        <i class="fas fa-truck text-purple-600 mr-3"></i>
+                                        <div>
+                                            <span class="font-semibold text-gray-800 text-sm">Suppliers</span>
+                                            <p class="text-xs text-gray-600">Export supplier information</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Export Format -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Export Format</label>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <label class="flex flex-col items-center p-4 border-2 border-green-600 bg-green-50 rounded-lg cursor-pointer">
+                                        <input type="radio" name="format" checked class="mb-2">
+                                        <i class="fas fa-file-excel text-green-600 text-2xl mb-1"></i>
+                                        <span class="text-sm font-semibold text-gray-800">XLSX</span>
+                                    </label>
+                                    <label class="flex flex-col items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-green-300">
+                                        <input type="radio" name="format" class="mb-2">
+                                        <i class="fas fa-file-csv text-blue-600 text-2xl mb-1"></i>
+                                        <span class="text-sm font-semibold text-gray-800">CSV</span>
+                                    </label>
+                                    <label class="flex flex-col items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-green-300">
+                                        <input type="radio" name="format" class="mb-2">
+                                        <i class="fas fa-file-pdf text-red-600 text-2xl mb-1"></i>
+                                        <span class="text-sm font-semibold text-gray-800">PDF</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Date Range -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Date Range (Optional)</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <label class="block text-xs text-gray-600 mb-1">From Date</label>
+                                        <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs text-gray-600 mb-1">To Date</label>
+                                        <input type="date" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Export Options -->
+                            <div class="space-y-2">
+                                <label class="block text-sm font-medium text-gray-700">Export Options</label>
+                                <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                    <input type="checkbox" checked class="w-4 h-4 text-green-600 rounded mr-3">
+                                    <span class="text-sm text-gray-800">Include column headers</span>
+                                </label>
+                                <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-green-600 rounded mr-3">
+                                    <span class="text-sm text-gray-800">Include images</span>
+                                </label>
+                                <label class="flex items-center p-3 bg-gray-50 rounded-lg cursor-pointer">
+                                    <input type="checkbox" checked class="w-4 h-4 text-green-600 rounded mr-3">
+                                    <span class="text-sm text-gray-800">Compress file (ZIP)</span>
+                                </label>
+                            </div>
+
+                            <!-- Export Info -->
+                            <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-info-circle text-blue-600 text-lg mt-0.5"></i>
+                                    <div class="text-sm">
+                                        <p class="font-semibold text-gray-800 mb-1">Export Information</p>
+                                        <p class="text-gray-600 text-xs">Estimated records: <strong>1,247 products</strong></p>
+                                        <p class="text-gray-600 text-xs">Estimated file size: <strong>~2.3 MB</strong></p>
+                                        <p class="text-gray-600 text-xs">Processing time: <strong>~10 seconds</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex space-x-3">
+                                <button class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 font-medium transition">
+                                    <i class="fas fa-times mr-2"></i>Cancel
+                                </button>
+                                <button class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium transition">
+                                    <i class="fas fa-download mr-2"></i>Export Data
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Exports -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Recent Exports</h3>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-4 hover:bg-gray-50">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-file-excel text-green-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm">products_export_2024-10-23.xlsx</p>
+                                            <p class="text-xs text-gray-600">Products • 1,247 records • 2.3 MB</p>
+                                            <p class="text-xs text-gray-500">2024-10-23 10:15 WIB</p>
+                                        </div>
+                                    </div>
+                                    <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-gray-50">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-file-csv text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm">customers_export_2024-10-22.csv</p>
+                                            <p class="text-xs text-gray-600">Customers • 456 records • 890 KB</p>
+                                            <p class="text-xs text-gray-500">2024-10-22 15:30 WIB</p>
+                                        </div>
+                                    </div>
+                                    <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-gray-50">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-file-excel text-indigo-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm">sales_orders_october_2024.xlsx</p>
+                                            <p class="text-xs text-gray-600">Sales Orders • 2,134 records • 5.1 MB</p>
+                                            <p class="text-xs text-gray-500">2024-10-21 09:00 WIB</p>
+                                        </div>
+                                    </div>
+                                    <button class="p-2 text-green-600 hover:bg-green-50 rounded-lg" title="Download">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Export Templates -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Quick Export Templates</h3>
+                            <p class="text-sm text-gray-600 mt-1">Pre-configured export templates</p>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <button class="w-full p-3 border-2 border-gray-300 rounded-lg text-left hover:border-green-500 hover:bg-green-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">Monthly Sales Report</p>
+                                        <p class="text-xs text-gray-600">All sales data for current month</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </button>
+                            <button class="w-full p-3 border-2 border-gray-300 rounded-lg text-left hover:border-green-500 hover:bg-green-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">Low Stock Products</p>
+                                        <p class="text-xs text-gray-600">Products below minimum stock level</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </button>
+                            <button class="w-full p-3 border-2 border-gray-300 rounded-lg text-left hover:border-green-500 hover:bg-green-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">Active Customers</p>
+                                        <p class="text-xs text-gray-600">Customers with orders in last 90 days</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </button>
+                            <button class="w-full p-3 border-2 border-gray-300 rounded-lg text-left hover:border-green-500 hover:bg-green-50 transition">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">Complete Inventory</p>
+                                        <p class="text-xs text-gray-600">Full inventory with stock levels</p>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
