@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Complaint - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-store text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">SATRIAMART</h1>
+                    <p class="text-xs text-gray-500">Sales & Inventory System</p>
+                </div>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="w-full px-4 py-2 pl-10 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-bell"></i>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=3B82F6&color=fff" alt="User" class="w-8 h-8 rounded-full">
+                    <div class="text-sm">
+                        <p class="font-medium text-gray-800">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-tachometer-alt text-gray-400"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <div class="flex items-center space-x-3 px-4 py-3 text-blue-600 bg-blue-50 rounded-lg font-medium">
+                    <i class="fas fa-users text-blue-600"></i>
+                    <span>CRM</span>
+                </div>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Customers</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Communications</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-blue-600 bg-blue-50 rounded-lg text-sm font-medium">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Complaints</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Orders</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-blue-600">Dashboard</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-blue-600">CRM</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-blue-600">Complaints</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-800 font-medium">Register Complaint</span>
+            </nav>
+        </div>
+
+        <!-- Form Container -->
+        <div class="max-w-4xl">
+            <!-- Page Header -->
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-orange-600 mr-3"></i>
+                    Register New Complaint
+                </h1>
+                <p class="text-gray-600 mt-1">Record and track customer complaint</p>
+            </div>
+
+            <!-- Alert Info -->
+            <div class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <div class="flex items-start space-x-3">
+                    <i class="fas fa-info-circle text-blue-600 mt-0.5"></i>
+                    <div class="flex-1 text-sm text-blue-800">
+                        <p class="font-medium mb-1">Complaint Handling SLA</p>
+                        <ul class="list-disc list-inside space-y-1 text-blue-700">
+                            <li>Critical: Response within 1 hour, resolve within 24 hours</li>
+                            <li>High: Response within 4 hours, resolve within 48 hours</li>
+                            <li>Medium: Response within 24 hours, resolve within 5 days</li>
+                            <li>Low: Response within 48 hours, resolve within 7 days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Card -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <form>
+                    <!-- Customer & Order Information -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Customer & Order Information</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Customer <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">-- Select Customer --</option>
+                                    <option value="CUST-0015" selected>CUST-0015 - Siti Nurhaliza</option>
+                                    <option value="CUST-0001">CUST-0001 - Budi Santoso</option>
+                                    <option value="CUST-0003">CUST-0003 - Ahmad Wijaya</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Related Order <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">-- Select Order --</option>
+                                    <option value="ORD-2024-142" selected>ORD-2024-142 - Rp 1.950.000 (18 Des 2024)</option>
+                                    <option value="ORD-2024-138">ORD-2024-138 - Rp 2.400.000 (15 Des 2024)</option>
+                                    <option value="ORD-2024-130">ORD-2024-130 - Rp 1.750.000 (10 Des 2024)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Customer Quick Info -->
+                        <div class="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://ui-avatars.com/api/?name=Siti+Nurhaliza&background=F59E0B&color=fff" alt="Customer" class="w-12 h-12 rounded-full">
+                                <div class="flex-1">
+                                    <p class="font-semibold text-gray-800">Siti Nurhaliza</p>
+                                    <p class="text-sm text-gray-600">
+                                        <i class="fas fa-phone text-orange-600 mr-1"></i> +62 813-9876-5432
+                                        <span class="mx-2">•</span>
+                                        <i class="fas fa-envelope text-orange-600 mr-1"></i> siti.nurhaliza@email.com
+                                    </p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-sm text-gray-600">Customer Since</p>
+                                    <p class="text-sm font-medium text-gray-800">Mar 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Complaint Details -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Complaint Details</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Complaint Type <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">-- Select Type --</option>
+                                    <option value="product" selected>Product Quality</option>
+                                    <option value="delivery">Delivery Issue</option>
+                                    <option value="service">Service Quality</option>
+                                    <option value="pricing">Pricing/Billing</option>
+                                    <option value="damage">Damaged Product</option>
+                                    <option value="wrong">Wrong Item</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Severity <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">-- Select Severity --</option>
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high" selected>High</option>
+                                    <option value="critical">Critical</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Reported Date <span class="text-red-500">*</span>
+                                </label>
+                                <input type="datetime-local" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" value="2024-12-18T14:30" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Complaint Title/Subject <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Brief description of the complaint" value="Produk Akrilik Retak dan Tidak Sesuai Ukuran" required>
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Detailed Description <span class="text-red-500">*</span>
+                            </label>
+                            <textarea rows="6" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Detailed description of the complaint..." required>Customer menerima produk signage akrilik dengan kondisi:
+1. Terdapat retakan di bagian sudut kanan atas (panjang ±5cm)
+2. Ukuran produk tidak sesuai pesanan:
+   - Pesanan: 60cm x 40cm
+   - Terima: 58cm x 39cm
+3. Warna print agak pudar dibanding sample yang disetujui
+
+Customer meminta penggantian produk atau refund penuh karena produk tidak dapat digunakan untuk keperluan bisnis mereka.
+
+Produk sudah difoto dan dilampirkan sebagai bukti.</textarea>
+                        </div>
+
+                        <!-- Affected Products -->
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Affected Products
+                            </label>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg border border-gray-200">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-image text-gray-400"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-800">Signage Toko Akrilik 60x40cm</p>
+                                            <p class="text-sm text-gray-600">PRD-005 • Qty: 1 • Rp 1.500.000</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">Defective</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Channel & Contact Info -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Complaint Channel
+                                </label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="phone">Phone Call</option>
+                                    <option value="email">Email</option>
+                                    <option value="whatsapp" selected>WhatsApp</option>
+                                    <option value="website">Website Form</option>
+                                    <option value="visit">In-Person Visit</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Contact Person
+                                </label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" value="Siti Nurhaliza" placeholder="Name of contact person">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo Evidence -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                            Photo Evidence <span class="text-sm font-normal text-gray-500">(Recommended)</span>
+                        </h3>
+                        
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-orange-400 hover:bg-orange-50 transition-colors cursor-pointer mb-4">
+                            <i class="fas fa-camera text-4xl text-gray-400 mb-3"></i>
+                            <p class="text-sm font-medium text-gray-700 mb-1">
+                                Upload photos of defective product
+                            </p>
+                            <p class="text-xs text-gray-500">
+                                JPG, PNG (max. 5MB each, up to 10 photos)
+                            </p>
+                            <input type="file" class="hidden" multiple accept=".jpg,.jpeg,.png">
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="relative group">
+                                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
+                                    <div class="w-full h-full flex items-center justify-center text-gray-400">
+                                        <i class="fas fa-image text-2xl"></i>
+                                    </div>
+                                </div>
+                                <button type="button" class="absolute top-2 right-2 w-6 h-6 bg-red-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-times text-xs"></i>
+                                </button>
+                                <p class="text-xs text-gray-600 mt-1 text-center">crack-damage.jpg</p>
+                            </div>
+                            <div class="relative group">
+                                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
+                                    <div class="w-full h-full flex items-center justify-center text-gray-400">
+                                        <i class="fas fa-image text-2xl"></i>
+                                    </div>
+                                </div>
+                                <button type="button" class="absolute top-2 right-2 w-6 h-6 bg-red-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-times text-xs"></i>
+                                </button>
+                                <p class="text-xs text-gray-600 mt-1 text-center">size-issue.jpg</p>
+                            </div>
+                            <div class="relative group">
+                                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
+                                    <div class="w-full h-full flex items-center justify-center text-gray-400">
+                                        <i class="fas fa-image text-2xl"></i>
+                                    </div>
+                                </div>
+                                <button type="button" class="absolute top-2 right-2 w-6 h-6 bg-red-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i class="fas fa-times text-xs"></i>
+                                </button>
+                                <p class="text-xs text-gray-600 mt-1 text-center">color-fade.jpg</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resolution Request -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Customer's Requested Resolution</h3>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-3">
+                                What does the customer want? <span class="text-red-500">*</span>
+                            </label>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="radio" name="resolution" value="replacement" class="text-orange-600 focus:ring-orange-500" checked>
+                                    <div class="flex-1">
+                                        <p class="font-medium text-gray-800">Product Replacement</p>
+                                        <p class="text-sm text-gray-600">Replace with new product at no additional cost</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="radio" name="resolution" value="refund" class="text-orange-600 focus:ring-orange-500">
+                                    <div class="flex-1">
+                                        <p class="font-medium text-gray-800">Full Refund</p>
+                                        <p class="text-sm text-gray-600">Return product and refund full payment</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="radio" name="resolution" value="repair" class="text-orange-600 focus:ring-orange-500">
+                                    <div class="flex-1">
+                                        <p class="font-medium text-gray-800">Repair/Fix</p>
+                                        <p class="text-sm text-gray-600">Repair the defective product</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="radio" name="resolution" value="discount" class="text-orange-600 focus:ring-orange-500">
+                                    <div class="flex-1">
+                                        <p class="font-medium text-gray-800">Partial Refund/Discount</p>
+                                        <p class="text-sm text-gray-600">Keep product with price reduction</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Additional Notes on Resolution
+                            </label>
+                            <textarea rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Any specific requests or conditions...">Customer meminta proses replacement secepatnya karena produk diperlukan untuk grand opening toko minggu depan (27 Des 2024).</textarea>
+                        </div>
+                    </div>
+
+                    <!-- Assignment -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Assignment & Priority</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Assign To <span class="text-red-500">*</span>
+                                </label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">-- Select Handler --</option>
+                                    <option value="user1" selected>Rina Kusuma (Customer Service Manager)</option>
+                                    <option value="user2">Dewi Lestari (CS Lead)</option>
+                                    <option value="user3">Agus Pratama (Production Manager)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Target Resolution Date
+                                </label>
+                                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" value="2024-12-20">
+                                <p class="text-xs text-gray-500 mt-1">Based on High severity: 48 hours SLA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internal Notes -->
+                    <div class="p-6 bg-gray-50">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Internal Notes</h3>
+                        
+                        <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" placeholder="Internal notes for team (not visible to customer)...">VIP customer - 18 orders total. Need to prioritize this case.
+Production team to investigate quality issue immediately.
+CS to contact customer within 1 hour to acknowledge complaint.</textarea>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="p-6 bg-white border-t border-gray-200 flex items-center justify-between">
+                        <button type="button" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg border border-gray-300">
+                            <i class="fas fa-times mr-2"></i>
+                            Cancel
+                        </button>
+                        <div class="flex items-center space-x-3">
+                            <button type="submit" class="px-6 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>
+                                Register Complaint
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

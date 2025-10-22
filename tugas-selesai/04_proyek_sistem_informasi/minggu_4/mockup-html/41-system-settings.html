@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Settings - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-store text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">SATRIAMART</h1>
+                    <p class="text-xs text-gray-500">Sales & Inventory System</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-bell"></i>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=6366F1&color=fff" alt="User" class="w-8 h-8 rounded-full">
+                    <div class="text-sm">
+                        <p class="font-medium text-gray-800">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-tachometer-alt text-gray-400"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <div class="flex items-center space-x-3 px-4 py-3 text-indigo-600 bg-indigo-50 rounded-lg font-medium">
+                    <i class="fas fa-cog text-indigo-600"></i>
+                    <span>Settings</span>
+                </div>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Company Profile</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-indigo-600 bg-indigo-50 rounded-lg text-sm font-medium">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>System Settings</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Security</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-indigo-600">Dashboard</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-indigo-600">Settings</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-800 font-medium">System Settings</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-sliders-h text-indigo-600 mr-3"></i>
+                    System Settings
+                </h1>
+                <p class="text-gray-600 mt-1">Configure general system preferences and defaults</p>
+            </div>
+            <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                <i class="fas fa-save mr-2"></i>
+                Save All Changes
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Left Column - Settings Forms -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Regional Settings -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                            <i class="fas fa-globe text-indigo-600 mr-3"></i>
+                            Regional Settings
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">Set your timezone, language, and regional formats</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Language</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>Bahasa Indonesia</option>
+                                    <option>English (US)</option>
+                                    <option>English (UK)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Timezone</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>Asia/Jakarta (GMT+7)</option>
+                                    <option>Asia/Makassar (GMT+8)</option>
+                                    <option>Asia/Jayapura (GMT+9)</option>
+                                    <option>UTC</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Date Format</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>DD/MM/YYYY (25/12/2024)</option>
+                                    <option>MM/DD/YYYY (12/25/2024)</option>
+                                    <option>YYYY-MM-DD (2024-12-25)</option>
+                                    <option>DD-MMM-YYYY (25-Dec-2024)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Time Format</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>24 Hour (14:30)</option>
+                                    <option>12 Hour (02:30 PM)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Week Starts On</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option>Sunday</option>
+                                    <option selected>Monday</option>
+                                    <option>Saturday</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Fiscal Year Start</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>January</option>
+                                    <option>April</option>
+                                    <option>July</option>
+                                    <option>October</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currency & Number Format -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                            <i class="fas fa-dollar-sign text-green-600 mr-3"></i>
+                            Currency & Number Format
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">Configure currency and number display formats</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Default Currency</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>IDR - Indonesian Rupiah</option>
+                                    <option>USD - US Dollar</option>
+                                    <option>EUR - Euro</option>
+                                    <option>SGD - Singapore Dollar</option>
+                                    <option>MYR - Malaysian Ringgit</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Currency Position</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>Before Amount (Rp 10,000)</option>
+                                    <option>After Amount (10,000 Rp)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Decimal Separator</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option>Period (1.50)</option>
+                                    <option selected>Comma (1,50)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Thousand Separator</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option selected>Period (1.000)</option>
+                                    <option>Comma (1,000)</option>
+                                    <option>Space (1 000)</option>
+                                    <option>None (1000)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Decimal Places</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                    <option>0</option>
+                                    <option selected>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tax Rate (PPN)</label>
+                                <div class="flex items-center space-x-2">
+                                    <input type="number" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="11" min="0" max="100" step="0.1">
+                                    <span class="text-gray-600 font-medium">%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Preview:</p>
+                            <div class="space-y-1 text-sm">
+                                <p class="text-gray-800"><span class="text-gray-600">Price:</span> <span class="font-semibold">Rp 1.500.000,00</span></p>
+                                <p class="text-gray-800"><span class="text-gray-600">Tax (11%):</span> <span class="font-semibold">Rp 165.000,00</span></p>
+                                <p class="text-gray-800"><span class="text-gray-600">Total:</span> <span class="font-semibold">Rp 1.665.000,00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Configuration -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                            <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                            Email Configuration (SMTP)
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">Configure email server for system notifications</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">SMTP Server</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="smtp.gmail.com" placeholder="smtp.example.com">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">SMTP Port</label>
+                                    <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="587" placeholder="587">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Encryption</label>
+                                    <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <option>None</option>
+                                        <option selected>TLS</option>
+                                        <option>SSL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">SMTP Username</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="notifications@satriamart.co.id" placeholder="email@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">SMTP Password</label>
+                                <div class="relative">
+                                    <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="••••••••••••" placeholder="Enter password">
+                                    <button class="absolute right-3 top-3 text-gray-400 hover:text-gray-600">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">From Name</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="SATRIAMART" placeholder="Company Name">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">From Email</label>
+                                    <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="noreply@satriamart.co.id" placeholder="noreply@example.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex items-center justify-between">
+                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Test Email
+                            </button>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-sm text-gray-600">Email Status:</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    Connected
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document & File Settings -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                            <i class="fas fa-file-alt text-orange-600 mr-3"></i>
+                            Document & File Settings
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">Configure document numbering and file upload settings</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-6">
+                            <!-- Invoice Numbering -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Invoice Number Format</label>
+                                <div class="grid grid-cols-4 gap-3">
+                                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <option selected>INV</option>
+                                        <option>INVOICE</option>
+                                        <option>FAK</option>
+                                        <option>Custom</option>
+                                    </select>
+                                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <option selected>/YYYY/</option>
+                                        <option>/YY/</option>
+                                        <option>/MM-YYYY/</option>
+                                        <option>-</option>
+                                    </select>
+                                    <input type="number" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="0001" placeholder="0001">
+                                    <div class="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg flex items-center justify-center text-sm font-mono text-gray-700">
+                                        Preview
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-2">Example: INV/2024/0001</p>
+                            </div>
+
+                            <!-- Order Numbering -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Order Number Format</label>
+                                <div class="grid grid-cols-4 gap-3">
+                                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <option selected>ORD</option>
+                                        <option>ORDER</option>
+                                        <option>SO</option>
+                                        <option>Custom</option>
+                                    </select>
+                                    <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                        <option selected>/YYYY/</option>
+                                        <option>/YY/</option>
+                                        <option>/MM-YYYY/</option>
+                                        <option>-</option>
+                                    </select>
+                                    <input type="number" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" value="0001" placeholder="0001">
+                                    <div class="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg flex items-center justify-center text-sm font-mono text-gray-700">
+                                        Preview
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-2">Example: ORD/2024/0001</p>
+                            </div>
+
+                            <!-- File Upload -->
+                            <div class="pt-6 border-t border-gray-200">
+                                <label class="block text-sm font-medium text-gray-700 mb-3">File Upload Settings</label>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs text-gray-600 mb-2">Max File Size</label>
+                                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                            <option>1 MB</option>
+                                            <option>2 MB</option>
+                                            <option selected>5 MB</option>
+                                            <option>10 MB</option>
+                                            <option>20 MB</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs text-gray-600 mb-2">Allowed File Types</label>
+                                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" value="PDF, DOC, DOCX, XLS, XLSX, PNG, JPG" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Preferences -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                            <i class="fas fa-toggle-on text-purple-600 mr-3"></i>
+                            System Preferences
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">General system behavior and features</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <!-- Feature Toggles -->
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-gray-800">Auto-Save Forms</p>
+                                    <p class="text-sm text-gray-500">Automatically save form data as you type</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" checked>
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-gray-800">Email Notifications</p>
+                                    <p class="text-sm text-gray-500">Send email notifications for important events</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" checked>
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-gray-800">Low Stock Alerts</p>
+                                    <p class="text-sm text-gray-500">Get notified when inventory is low</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" checked>
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-gray-800">Require Order Approval</p>
+                                    <p class="text-sm text-gray-500">Orders need approval before processing</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-gray-800">Maintenance Mode</p>
+                                    <p class="text-sm text-gray-500">Temporarily disable system access for maintenance</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div>
+                                    <p class="font-medium text-gray-800">Audit Logging</p>
+                                    <p class="text-sm text-gray-500">Track all system activities and changes</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" checked>
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-indigo-600"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Info & Status -->
+            <div class="space-y-6">
+                <!-- Save Actions -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm sticky top-24">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Quick Actions</h3>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <button class="w-full px-4 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-medium flex items-center justify-center">
+                            <i class="fas fa-save mr-2"></i>
+                            Save All Changes
+                        </button>
+                        <button class="w-full px-4 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 font-medium flex items-center justify-center">
+                            <i class="fas fa-undo mr-2"></i>
+                            Reset to Defaults
+                        </button>
+                        <button class="w-full px-4 py-3 border border-blue-300 text-blue-600 rounded-lg hover:bg-blue-50 font-medium flex items-center justify-center">
+                            <i class="fas fa-file-export mr-2"></i>
+                            Export Settings
+                        </button>
+                        <button class="w-full px-4 py-3 border border-green-300 text-green-600 rounded-lg hover:bg-green-50 font-medium flex items-center justify-center">
+                            <i class="fas fa-file-import mr-2"></i>
+                            Import Settings
+                        </button>
+                    </div>
+
+                    <div class="px-6 pb-6">
+                        <div class="p-3 bg-green-50 border border-green-200 rounded-lg">
+                            <p class="text-xs text-green-800">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                All settings saved successfully
+                            </p>
+                            <p class="text-xs text-gray-500 mt-1">Last saved: 2 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Information -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">System Information</h3>
+                    </div>
+                    <div class="p-6 space-y-3 text-sm">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">System Version</span>
+                            <span class="font-medium text-gray-800">v2.5.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Database</span>
+                            <span class="font-medium text-gray-800">MySQL 8.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">PHP Version</span>
+                            <span class="font-medium text-gray-800">8.2.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Server Time</span>
+                            <span class="font-medium text-gray-800">14:30:45</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-600">Uptime</span>
+                            <span class="font-medium text-gray-800">15 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Usage -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Storage Usage</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Database</span>
+                                    <span class="text-sm font-medium text-gray-800">2.3 GB / 10 GB</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-indigo-600 h-2 rounded-full" style="width: 23%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Files & Media</span>
+                                    <span class="text-sm font-medium text-gray-800">5.7 GB / 20 GB</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-600 h-2 rounded-full" style="width: 28.5%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Backups</span>
+                                    <span class="text-sm font-medium text-gray-800">1.2 GB / 5 GB</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 24%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="mt-4 w-full py-2 text-indigo-600 hover:bg-indigo-50 rounded-lg text-sm font-medium border border-indigo-200">
+                            <i class="fas fa-chart-bar mr-2"></i>
+                            View Detailed Report
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Recent Changes</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-circle text-green-500 text-xs mt-1"></i>
+                                <div>
+                                    <p class="text-gray-800">Tax rate updated to 11%</p>
+                                    <p class="text-xs text-gray-500">2 hours ago by Admin</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-circle text-green-500 text-xs mt-1"></i>
+                                <div>
+                                    <p class="text-gray-800">SMTP settings configured</p>
+                                    <p class="text-xs text-gray-500">1 day ago by Admin</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-circle text-green-500 text-xs mt-1"></i>
+                                <div>
+                                    <p class="text-gray-800">Date format changed</p>
+                                    <p class="text-xs text-gray-500">3 days ago by Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

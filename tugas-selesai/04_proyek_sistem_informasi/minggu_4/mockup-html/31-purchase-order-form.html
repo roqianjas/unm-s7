@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Purchase Order - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header & Sidebar same as previous -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-store text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">SATRIAMART</h1>
+                    <p class="text-xs text-gray-500">Sales & Inventory System</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-green-600 bg-green-50 rounded-lg font-medium">
+                <i class="fas fa-boxes text-green-600"></i>
+                <span>Inventory</span>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-green-600">Dashboard</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-green-600">Suppliers</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-800 font-medium">Create Purchase Order</span>
+            </nav>
+        </div>
+
+        <div class="max-w-5xl">
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-file-invoice text-green-600 mr-3"></i>
+                    Create Purchase Order
+                </h1>
+                <p class="text-gray-600 mt-1">Create new purchase order to supplier</p>
+            </div>
+
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <form>
+                    <!-- PO Header -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Purchase Order Information</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">PO Number</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-50" value="PO-2024-090" readonly>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">PO Date <span class="text-red-500">*</span></label>
+                                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" value="2024-12-23" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Expected Delivery</label>
+                                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" value="2024-12-28">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Supplier Selection -->
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Supplier Information</h3>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Select Supplier <span class="text-red-500">*</span></label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                <option value="">-- Select Supplier --</option>
+                                <option value="SUP-001" selected>SUP-001 - PT Marga Cipta Sentosa</option>
+                                <option value="SUP-002">SUP-002 - CV Acrylic Indonesia</option>
+                                <option value="SUP-003">SUP-003 - PT Indo Vinyl</option>
+                            </select>
+                        </div>
+
+                        <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                            <div class="grid grid-cols-4 gap-4 text-sm">
+                                <div>
+                                    <p class="text-gray-600 mb-1">Contact Person</p>
+                                    <p class="font-medium text-gray-800">Bambang Supriyadi</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 mb-1">Phone</p>
+                                    <p class="font-medium text-gray-800">+62 21-5555-1234</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 mb-1">Payment Terms</p>
+                                    <p class="font-medium text-gray-800">Net 30</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 mb-1">Lead Time</p>
+                                    <p class="font-medium text-gray-800">3-5 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Items -->
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Order Items</h3>
+                            <button type="button" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                                <i class="fas fa-plus mr-2"></i>Add Item
+                            </button>
+                        </div>
+
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead class="bg-gray-50 border-b border-gray-200">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Material</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">UoM</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Qty</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Unit Price</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Subtotal</th>
+                                        <th class="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-4 py-4">
+                                            <select class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                                                <option>Clear Acrylic 3mm</option>
+                                                <option>Silver Mirror Acrylic</option>
+                                            </select>
+                                        </td>
+                                        <td class="px-4 py-4 text-center text-sm">m²</td>
+                                        <td class="px-4 py-4">
+                                            <input type="number" class="w-20 px-3 py-2 border border-gray-300 rounded-lg text-center" value="50">
+                                        </td>
+                                        <td class="px-4 py-4">
+                                            <input type="number" class="w-28 px-3 py-2 border border-gray-300 rounded-lg text-right" value="250000">
+                                        </td>
+                                        <td class="px-4 py-4 text-right font-medium">Rp 12.500.000</td>
+                                        <td class="px-4 py-4 text-center">
+                                            <button type="button" class="text-red-600 hover:text-red-700">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-4">
+                                            <select class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                                                <option>UV Printing Ink - Black</option>
+                                            </select>
+                                        </td>
+                                        <td class="px-4 py-4 text-center text-sm">Liter</td>
+                                        <td class="px-4 py-4">
+                                            <input type="number" class="w-20 px-3 py-2 border border-gray-300 rounded-lg text-center" value="10">
+                                        </td>
+                                        <td class="px-4 py-4">
+                                            <input type="number" class="w-28 px-3 py-2 border border-gray-300 rounded-lg text-right" value="500000">
+                                        </td>
+                                        <td class="px-4 py-4 text-right font-medium">Rp 5.000.000</td>
+                                        <td class="px-4 py-4 text-center">
+                                            <button type="button" class="text-red-600 hover:text-red-700">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Summary -->
+                    <div class="p-6 border-b border-gray-200 bg-gray-50">
+                        <div class="max-w-md ml-auto space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Subtotal</span>
+                                <span class="font-medium text-gray-800">Rp 17.500.000</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Tax (PPN 11%)</span>
+                                <span class="font-medium text-gray-800">Rp 1.925.000</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Shipping Cost</span>
+                                <input type="number" class="w-32 px-3 py-1 border border-gray-300 rounded text-right" value="200000">
+                            </div>
+                            <div class="flex justify-between pt-3 border-t border-gray-300">
+                                <span class="font-semibold text-gray-800">Grand Total</span>
+                                <span class="text-xl font-bold text-green-600">Rp 19.625.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="p-6 border-b border-gray-200">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Notes/Instructions</label>
+                        <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Additional notes for supplier...">Please deliver to main warehouse. Call 1 hour before arrival.</textarea>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="p-6 flex items-center justify-between">
+                        <button type="button" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg border border-gray-300">
+                            <i class="fas fa-times mr-2"></i>Cancel
+                        </button>
+                        <div class="flex space-x-3">
+                            <button type="button" class="px-4 py-2 text-green-600 hover:bg-green-50 rounded-lg border border-green-600">
+                                <i class="fas fa-save mr-2"></i>Save Draft
+                            </button>
+                            <button type="submit" class="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium">
+                                <i class="fas fa-paper-plane mr-2"></i>Send PO to Supplier
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

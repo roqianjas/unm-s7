@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-store text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">SATRIAMART</h1>
+                    <p class="text-xs text-gray-500">Sales & Inventory System</p>
+                </div>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="w-full px-4 py-2 pl-10 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-bell"></i>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=8B5CF6&color=fff" alt="User" class="w-8 h-8 rounded-full">
+                    <div class="text-sm">
+                        <p class="font-medium text-gray-800">Admin User</p>
+                        <p class="text-xs text-gray-500">Administrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-tachometer-alt text-gray-400"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <div class="flex items-center space-x-3 px-4 py-3 text-purple-600 bg-purple-50 rounded-lg font-medium">
+                    <i class="fas fa-cog text-purple-600"></i>
+                    <span>Settings</span>
+                </div>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-purple-600 bg-purple-50 rounded-lg text-sm font-medium">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>User Management</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Company Profile</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>System Settings</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-purple-600">Dashboard</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-purple-600">Settings</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-purple-600">User Management</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-800 font-medium">User Detail</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="flex items-center justify-between mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-user-circle text-purple-600 mr-3"></i>
+                    User Profile
+                </h1>
+                <p class="text-gray-600 mt-1">Detailed information about user account</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-key mr-2"></i>
+                    Reset Password
+                </button>
+                <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                    <i class="fas fa-edit mr-2"></i>
+                    Edit User
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Left Column - Profile Info -->
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Basic Info Card -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-start space-x-6">
+                            <img src="https://ui-avatars.com/api/?name=Dewi+Lestari&background=8B5CF6&color=fff&size=128" alt="User" class="w-24 h-24 rounded-full border-4 border-purple-100">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h2 class="text-2xl font-bold text-gray-800">Dewi Lestari</h2>
+                                    <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Active</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Sales Manager • User ID: USR-005</p>
+                                
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-3 bg-purple-50 rounded-lg">
+                                        <p class="text-sm text-purple-600 mb-1">Member Since</p>
+                                        <p class="font-semibold text-gray-800">Jan 2023</p>
+                                    </div>
+                                    <div class="p-3 bg-blue-50 rounded-lg">
+                                        <p class="text-sm text-blue-600 mb-1">Last Login</p>
+                                        <p class="font-semibold text-gray-800">2 hours ago</p>
+                                    </div>
+                                    <div class="p-3 bg-green-50 rounded-lg">
+                                        <p class="text-sm text-green-600 mb-1">Status</p>
+                                        <p class="font-semibold text-gray-800">Online</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Personal Information</h3>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Full Name</p>
+                                <p class="font-medium text-gray-800">Dewi Lestari, S.E.</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Username</p>
+                                <p class="font-medium text-gray-800">dewi.lestari</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Email Address</p>
+                                <p class="font-medium text-gray-800">dewi.lestari@satriamart.com</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Phone Number</p>
+                                <p class="font-medium text-gray-800">+62 812-3456-7890</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Employee ID</p>
+                                <p class="font-medium text-gray-800">EMP-2023-005</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Department</p>
+                                <p class="font-medium text-gray-800">Sales & Marketing</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Position</p>
+                                <p class="font-medium text-gray-800">Sales Manager</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Reports To</p>
+                                <p class="font-medium text-gray-800">Agus Pratama (GM)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role & Permissions Card -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Role & Permissions</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-600 mb-2">Assigned Role</p>
+                            <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-lg font-medium">
+                                <i class="fas fa-user-tag mr-2"></i>
+                                Sales Manager
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <p class="text-sm text-gray-600 mb-3">Access Permissions</p>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-green-600"></i>
+                                    <span class="text-sm text-gray-800">View Dashboard</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-green-600"></i>
+                                    <span class="text-sm text-gray-800">Manage Customers</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-green-600"></i>
+                                    <span class="text-sm text-gray-800">Create Orders</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-green-600"></i>
+                                    <span class="text-sm text-gray-800">View Reports</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-green-600"></i>
+                                    <span class="text-sm text-gray-800">Manage Products</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                                    <i class="fas fa-check-circle text-green-600"></i>
+                                    <span class="text-sm text-gray-800">Communication</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-red-50 rounded-lg">
+                                    <i class="fas fa-times-circle text-red-600"></i>
+                                    <span class="text-sm text-gray-800">System Settings</span>
+                                </div>
+                                <div class="flex items-center space-x-2 p-3 bg-red-50 rounded-lg">
+                                    <i class="fas fa-times-circle text-red-600"></i>
+                                    <span class="text-sm text-gray-800">User Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity Log -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Recent Activity</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-sign-in-alt text-blue-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-800">Logged in</p>
+                                    <p class="text-xs text-gray-500">Today at 08:30 AM • IP: 192.168.1.105</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-shopping-cart text-green-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-800">Created order ORD-2024-156</p>
+                                    <p class="text-xs text-gray-500">Yesterday at 04:15 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-user-plus text-purple-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-800">Added new customer: Budi Santoso</p>
+                                    <p class="text-xs text-gray-500">Yesterday at 02:30 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-edit text-orange-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-800">Updated product: Signage Akrilik</p>
+                                    <p class="text-xs text-gray-500">2 days ago at 11:20 AM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-file-alt text-blue-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-gray-800">Generated sales report</p>
+                                    <p class="text-xs text-gray-500">3 days ago at 09:45 AM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="mt-4 w-full py-2 text-purple-600 hover:bg-purple-50 rounded-lg text-sm font-medium">
+                            View All Activity
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Quick Info & Actions -->
+            <div class="space-y-6">
+                <!-- Account Status Card -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Account Status</h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Account Status</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Active</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Email Verified</span>
+                            <i class="fas fa-check-circle text-green-600"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">2FA Enabled</span>
+                            <i class="fas fa-check-circle text-green-600"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Password Changed</span>
+                            <span class="text-xs text-gray-600">2 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Stats -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Performance Stats</h3>
+                        <p class="text-sm text-gray-500">Last 30 days</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">Orders Created</span>
+                                <span class="font-bold text-gray-800">42</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 84%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">New Customers</span>
+                                <span class="font-bold text-gray-800">18</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 72%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">Sales Value</span>
+                                <span class="font-bold text-gray-800">Rp 85M</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">Response Time</span>
+                                <span class="font-bold text-gray-800">2.5 hrs</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-orange-600 h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Quick Actions</h3>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <button class="w-full px-4 py-3 bg-purple-50 text-purple-700 rounded-lg hover:bg-purple-100 font-medium text-sm flex items-center justify-between">
+                            <span><i class="fas fa-edit mr-2"></i> Edit Profile</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                        <button class="w-full px-4 py-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 font-medium text-sm flex items-center justify-between">
+                            <span><i class="fas fa-key mr-2"></i> Change Password</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                        <button class="w-full px-4 py-3 bg-green-50 text-green-700 rounded-lg hover:bg-green-100 font-medium text-sm flex items-center justify-between">
+                            <span><i class="fas fa-shield-alt mr-2"></i> Security Settings</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                        <button class="w-full px-4 py-3 bg-orange-50 text-orange-700 rounded-lg hover:bg-orange-100 font-medium text-sm flex items-center justify-between">
+                            <span><i class="fas fa-history mr-2"></i> Login History</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                        <button class="w-full px-4 py-3 bg-red-50 text-red-700 rounded-lg hover:bg-red-100 font-medium text-sm flex items-center justify-between">
+                            <span><i class="fas fa-ban mr-2"></i> Deactivate Account</span>
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-800">Contact Information</h3>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-envelope text-gray-400 mt-1"></i>
+                            <div>
+                                <p class="text-sm text-gray-600">Email</p>
+                                <p class="font-medium text-gray-800">dewi.lestari@satriamart.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-phone text-gray-400 mt-1"></i>
+                            <div>
+                                <p class="text-sm text-gray-600">Phone</p>
+                                <p class="font-medium text-gray-800">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-gray-400 mt-1"></i>
+                            <div>
+                                <p class="text-sm text-gray-600">Location</p>
+                                <p class="font-medium text-gray-800">Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

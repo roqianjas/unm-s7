@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Opname - SATRIAMART SIMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+        <div class="flex items-center justify-between px-6 py-3 h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-store text-white text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">SATRIAMART</h1>
+                    <p class="text-xs text-gray-500">Sales & Inventory System</p>
+                </div>
+            </div>
+            <div class="flex-1 max-w-2xl mx-8">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="w-full px-4 py-2 pl-10 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="relative p-2 text-gray-600 hover:text-gray-800">
+                    <i class="fas fa-bell"></i>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=10B981&color=fff" alt="User" class="w-8 h-8 rounded-full">
+                    <div class="text-sm">
+                        <p class="font-medium text-gray-800">Admin User</p>
+                        <p class="text-xs text-gray-500">Warehouse Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 fixed left-0 top-16 bottom-0 overflow-y-auto">
+        <nav class="p-4 space-y-1">
+            <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg">
+                <i class="fas fa-tachometer-alt text-gray-400"></i>
+                <span>Dashboard</span>
+            </a>
+            <div class="space-y-1">
+                <div class="flex items-center space-x-3 px-4 py-3 text-green-600 bg-green-50 rounded-lg font-medium">
+                    <i class="fas fa-boxes text-green-600"></i>
+                    <span>Inventory</span>
+                </div>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Products</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Materials</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-gray-600 hover:bg-gray-50 rounded-lg text-sm">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Stock Monitoring</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-4 py-3 ml-4 text-green-600 bg-green-50 rounded-lg text-sm font-medium">
+                    <i class="fas fa-circle text-xs"></i>
+                    <span>Stock Opname</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 pt-16 p-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-600">
+                <a href="#" class="hover:text-green-600">Dashboard</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="#" class="hover:text-green-600">Inventory</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-800 font-medium">Stock Opname</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="mb-6 flex items-center justify-between">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-clipboard-check text-green-600 mr-3"></i>
+                    Stock Opname / Physical Count
+                </h1>
+                <p class="text-gray-600 mt-1">Record physical inventory count and compare with system data</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-download mr-2"></i>
+                    Import Template
+                </button>
+                <button class="px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-history mr-2"></i>
+                    Opname History
+                </button>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <div class="max-w-6xl">
+            <!-- Alert Info -->
+            <div class="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <div class="flex items-start space-x-3">
+                    <i class="fas fa-info-circle text-green-600 mt-0.5"></i>
+                    <div class="flex-1 text-sm text-green-800">
+                        <p class="font-medium mb-1">Stock Opname Guidelines</p>
+                        <ul class="list-disc list-inside space-y-1 text-green-700">
+                            <li>Count physical stock accurately and enter the actual quantity</li>
+                            <li>System will automatically calculate variance (difference between system and actual)</li>
+                            <li>Large variances will be flagged for review</li>
+                            <li>Stock adjustment will be created automatically after approval</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opname Info Card -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm mb-6">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Opname Information</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Opname Number
+                            </label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-50" value="OPN-2024-001" readonly>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Opname Date <span class="text-red-500">*</span>
+                            </label>
+                            <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" value="2024-12-23" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Location <span class="text-red-500">*</span>
+                            </label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                <option value="">-- Select Location --</option>
+                                <option value="main" selected>Main Warehouse</option>
+                                <option value="production">Production Floor</option>
+                                <option value="store">Store/Showroom</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Category Filter
+                            </label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <option value="">All Categories</option>
+                                <option value="product">Finished Products</option>
+                                <option value="material" selected>Raw Materials</option>
+                                <option value="packaging">Packaging Materials</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Counted By <span class="text-red-500">*</span>
+                            </label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                                <option value="">-- Select Person --</option>
+                                <option value="user1" selected>Bambang Supriyadi</option>
+                                <option value="user2">Rina Kusuma</option>
+                                <option value="user3">Agus Pratama</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Verified By
+                            </label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <option value="">-- Select Verifier --</option>
+                                <option value="manager" selected>Warehouse Manager</option>
+                                <option value="supervisor">Supervisor</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Notes
+                        </label>
+                        <textarea rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="General notes about this stock opname...">End of year stock opname - Materials warehouse. Focus on high-value items.</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stock Count Table -->
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Item Count</h3>
+                        <div class="flex items-center space-x-3">
+                            <div class="relative">
+                                <input type="text" placeholder="Search items..." class="px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                            </div>
+                            <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                                <i class="fas fa-plus mr-2"></i>
+                                Add Item
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Stats Summary -->
+                    <div class="grid grid-cols-4 gap-4 mb-6">
+                        <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <p class="text-sm text-gray-600 mb-1">Total Items</p>
+                            <p class="text-2xl font-bold text-gray-800">8</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                            <p class="text-sm text-green-600 mb-1">Match</p>
+                            <p class="text-2xl font-bold text-green-600">4</p>
+                        </div>
+                        <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                            <p class="text-sm text-yellow-600 mb-1">Variance</p>
+                            <p class="text-2xl font-bold text-yellow-600">3</p>
+                        </div>
+                        <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+                            <p class="text-sm text-red-600 mb-1">Not Counted</p>
+                            <p class="text-2xl font-bold text-red-600">1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50 border-b border-gray-200">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
+                                <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">UoM</th>
+                                <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">System Qty</th>
+                                <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Actual Qty</th>
+                                <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Variance</th>
+                                <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Value Impact</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Notes</th>
+                                <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <!-- Item 1 - Match -->
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Clear Acrylic 3mm</p>
+                                        <p class="text-sm text-gray-500">MAT-001</p>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">m²</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="font-medium text-gray-800">45.5</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="number" step="0.01" class="w-24 px-3 py-2 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-green-500" value="45.5">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-sm font-medium rounded">0.0</span>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">Rp 0</td>
+                                <td class="px-6 py-4">
+                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Notes...">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Match</span>
+                                </td>
+                            </tr>
+
+                            <!-- Item 2 - Over -->
+                            <tr class="hover:bg-gray-50 bg-yellow-50">
+                                <td class="px-6 py-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Silver Mirror Acrylic</p>
+                                        <p class="text-sm text-gray-500">MAT-002</p>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">m²</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="font-medium text-gray-800">12.3</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="number" step="0.01" class="w-24 px-3 py-2 border border-yellow-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-yellow-500" value="13.8">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-sm font-medium rounded">+1.5</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="text-sm text-green-600 font-medium">+Rp 375k</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500" value="Found extra stock in storage B" placeholder="Notes...">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full">Over</span>
+                                </td>
+                            </tr>
+
+                            <!-- Item 3 - Under -->
+                            <tr class="hover:bg-gray-50 bg-red-50">
+                                <td class="px-6 py-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800">UV Printing Ink - Black</p>
+                                        <p class="text-sm text-gray-500">MAT-005</p>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">Liter</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="font-medium text-gray-800">8.5</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="number" step="0.01" class="w-24 px-3 py-2 border border-red-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-red-500" value="6.2">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-red-100 text-red-700 text-sm font-medium rounded">-2.3</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="text-sm text-red-600 font-medium">-Rp 1.15M</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500" value="Possible waste/spillage" placeholder="Notes...">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">Under</span>
+                                </td>
+                            </tr>
+
+                            <!-- Item 4 - Match -->
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Protective Film</p>
+                                        <p class="text-sm text-gray-500">MAT-008</p>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">Roll</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="font-medium text-gray-800">15</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="number" step="1" class="w-24 px-3 py-2 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-green-500" value="15">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-sm font-medium rounded">0</span>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">Rp 0</td>
+                                <td class="px-6 py-4">
+                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Notes...">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Match</span>
+                                </td>
+                            </tr>
+
+                            <!-- Item 5 - Over -->
+                            <tr class="hover:bg-gray-50 bg-yellow-50">
+                                <td class="px-6 py-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Adhesive Tape</p>
+                                        <p class="text-sm text-gray-500">MAT-010</p>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">Pcs</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="font-medium text-gray-800">24</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="number" step="1" class="w-24 px-3 py-2 border border-yellow-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-yellow-500" value="28">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-sm font-medium rounded">+4</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="text-sm text-green-600 font-medium">+Rp 80k</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Notes...">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full">Over</span>
+                                </td>
+                            </tr>
+
+                            <!-- Item 6 - Not Counted -->
+                            <tr class="hover:bg-gray-50 bg-gray-100">
+                                <td class="px-6 py-4">
+                                    <div>
+                                        <p class="font-medium text-gray-800">Sandpaper Assorted</p>
+                                        <p class="text-sm text-gray-500">MAT-012</p>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">Pack</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="font-medium text-gray-800">8</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input type="number" step="1" class="w-24 px-3 py-2 border border-gray-300 rounded-lg text-center bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter qty">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-gray-200 text-gray-600 text-sm font-medium rounded">-</span>
+                                </td>
+                                <td class="px-6 py-4 text-center text-sm text-gray-600">-</td>
+                                <td class="px-6 py-4">
+                                    <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Notes...">
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs font-medium rounded-full">Not Counted</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Summary Footer -->
+                <div class="p-6 border-t border-gray-200 bg-gray-50">
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-gray-600">
+                            Showing 6 of 8 items
+                        </div>
+                        <div class="flex items-center space-x-6">
+                            <div class="text-right">
+                                <p class="text-sm text-gray-600">Total Value Variance</p>
+                                <p class="text-xl font-bold text-red-600">-Rp 695.000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-600">Completion</p>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-600 h-2 rounded-full" style="width: 87.5%"></div>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-800">87.5%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="mt-6 bg-white rounded-lg border border-gray-200 p-6 flex items-center justify-between">
+                <button type="button" class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg border border-gray-300">
+                    <i class="fas fa-times mr-2"></i>
+                    Cancel
+                </button>
+                <div class="flex items-center space-x-3">
+                    <button type="button" class="px-4 py-2 text-green-600 hover:bg-green-50 rounded-lg border border-green-600">
+                        <i class="fas fa-save mr-2"></i>
+                        Save Draft
+                    </button>
+                    <button type="button" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-700 text-white rounded-lg">
+                        <i class="fas fa-flag mr-2"></i>
+                        Submit for Review
+                    </button>
+                    <button type="button" class="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium">
+                        <i class="fas fa-check mr-2"></i>
+                        Complete & Create Adjustment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
