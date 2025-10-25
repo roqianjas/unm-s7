@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
+                        'cur-secondary-dark': '#E64555',
+                        'cur-accent': '#FFB6B9',
+                        'cur-warm': '#FFEAA7',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="01_homepage.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Beranda</a>
+                    <a href="03_services.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Layanan</a>
+                    <a href="05_therapists.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Terapis</a>
+                    <a href="07_blog.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Artikel</a>
+                    <a href="02_about.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Tentang</a>
+                    <a href="09_contact.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Kontak</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="13_login.html" class="text-cur-primary font-medium hover:underline">Masuk</a>
+                    <a href="14_register.html" class="px-6 py-3 bg-cur-primary text-white rounded-lg font-medium hover:bg-cur-primary-light transition">
+                        Daftar Sekarang
+                    </a>
+                </div>
+
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-cur-primary to-cur-primary-light text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <i class="fas fa-shield-alt text-5xl mb-4 opacity-80"></i>
+            <h1 class="text-5xl font-bold font-poppins mb-4">Kebijakan Privasi</h1>
+            <p class="text-lg text-white/90">Terakhir diperbarui: 20 Oktober 2024</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="py-8 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Daftar Isi</h2>
+            <nav class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <a href="#pendahuluan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 1. Pendahuluan
+                </a>
+                <a href="#informasi" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 2. Informasi yang Kami Kumpulkan
+                </a>
+                <a href="#penggunaan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 3. Bagaimana Kami Menggunakan Informasi
+                </a>
+                <a href="#pembagian" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 4. Pembagian Informasi
+                </a>
+                <a href="#keamanan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 5. Keamanan Data
+                </a>
+                <a href="#hak" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 6. Hak Anda
+                </a>
+                <a href="#cookies" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 7. Cookies dan Teknologi Pelacakan
+                </a>
+                <a href="#perubahan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 8. Perubahan Kebijakan
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="prose prose-lg max-w-none">
+
+                <!-- Section 1 -->
+                <div id="pendahuluan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">1</span>
+                        Pendahuluan
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Selamat datang di CUR-HEART ("kami", "kita", atau "perusahaan"). Kami berkomitmen untuk melindungi privasi dan keamanan informasi pribadi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi yang Anda berikan saat menggunakan layanan kami.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Dengan menggunakan layanan CUR-HEART, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Jika Anda tidak setuju dengan kebijakan ini, mohon untuk tidak menggunakan layanan kami.
+                        </p>
+                        <div class="bg-cur-accent/20 border-l-4 border-cur-secondary rounded-r-lg p-4 mt-4">
+                            <p class="text-gray-700 text-sm">
+                                <i class="fas fa-info-circle text-cur-primary mr-2"></i>
+                                <strong>Penting:</strong> Harap baca kebijakan ini dengan seksama untuk memahami praktik kami terkait informasi pribadi Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="informasi" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">2</span>
+                        Informasi yang Kami Kumpulkan
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.1 Informasi yang Anda Berikan</h3>
+                            <p class="text-gray-700 mb-3">Kami mengumpulkan informasi yang Anda berikan secara langsung kepada kami, termasuk:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Nama lengkap, alamat email, nomor telepon</li>
+                                <li>Tanggal lahir, jenis kelamin</li>
+                                <li>Alamat dan lokasi geografis</li>
+                                <li>Informasi medis dan riwayat kesehatan mental (untuk keperluan terapi)</li>
+                                <li>Informasi pembayaran (diproses melalui gateway pembayaran yang aman)</li>
+                                <li>Preferensi komunikasi dan layanan</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.2 Informasi yang Dikumpulkan Otomatis</h3>
+                            <p class="text-gray-700 mb-3">Saat Anda menggunakan layanan kami, kami secara otomatis mengumpulkan:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Informasi perangkat (jenis perangkat, sistem operasi, browser)</li>
+                                <li>Alamat IP dan data lokasi</li>
+                                <li>Data penggunaan layanan (halaman yang dikunjungi, waktu akses, durasi)</li>
+                                <li>Cookies dan teknologi pelacakan serupa</li>
+                                <li>Log aktivitas dan interaksi dengan platform</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.3 Informasi dari Pihak Ketiga</h3>
+                            <p class="text-gray-700">
+                                Kami mungkin menerima informasi tentang Anda dari pihak ketiga seperti partner bisnis, layanan analitik, atau platform media sosial jika Anda memilih untuk menghubungkan akun Anda dengan layanan tersebut.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="penggunaan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">3</span>
+                        Bagaimana Kami Menggunakan Informasi
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-4">Kami menggunakan informasi yang dikumpulkan untuk:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="p-4 bg-cur-primary/5 rounded-lg">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-cur-success text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-1">Penyediaan Layanan</h4>
+                                        <p class="text-sm text-gray-600">Memberikan layanan hypnotherapy dan dukungan yang Anda minta</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-cur-primary/5 rounded-lg">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-cur-success text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-1">Komunikasi</h4>
+                                        <p class="text-sm text-gray-600">Mengirimkan informasi tentang appointment, layanan, dan update</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-cur-primary/5 rounded-lg">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-cur-success text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-1">Peningkatan Layanan</h4>
+                                        <p class="text-sm text-gray-600">Menganalisis penggunaan untuk meningkatkan kualitas layanan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-cur-primary/5 rounded-lg">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-cur-success text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-1">Keamanan</h4>
+                                        <p class="text-sm text-gray-600">Melindungi keamanan platform dan mencegah fraud</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-cur-primary/5 rounded-lg">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-cur-success text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-1">Personalisasi</h4>
+                                        <p class="text-sm text-gray-600">Menyesuaikan konten dan rekomendasi untuk Anda</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-cur-primary/5 rounded-lg">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-cur-success text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 mb-1">Kepatuhan Hukum</h4>
+                                        <p class="text-sm text-gray-600">Memenuhi kewajiban hukum dan peraturan yang berlaku</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-700">
+                            Kami tidak akan menggunakan informasi Anda untuk tujuan lain tanpa persetujuan eksplisit dari Anda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="pembagian" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">4</span>
+                        Pembagian Informasi
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-4">Kami tidak menjual informasi pribadi Anda kepada pihak ketiga. Kami hanya membagikan informasi dalam situasi berikut:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="p-4 border-l-4 border-cur-primary bg-gray-50 rounded-r-lg">
+                                <h4 class="font-bold text-gray-900 mb-2">Dengan Persetujuan Anda</h4>
+                                <p class="text-sm text-gray-700">Kami akan membagikan informasi dengan pihak ketiga jika Anda telah memberikan persetujuan eksplisit.</p>
+                            </div>
+                            
+                            <div class="p-4 border-l-4 border-cur-primary bg-gray-50 rounded-r-lg">
+                                <h4 class="font-bold text-gray-900 mb-2">Penyedia Layanan</h4>
+                                <p class="text-sm text-gray-700">Kami dapat membagikan informasi dengan vendor dan penyedia layanan yang membantu operasional bisnis kami (payment gateway, cloud storage, layanan analitik).</p>
+                            </div>
+                            
+                            <div class="p-4 border-l-4 border-cur-primary bg-gray-50 rounded-r-lg">
+                                <h4 class="font-bold text-gray-900 mb-2">Kewajiban Hukum</h4>
+                                <p class="text-sm text-gray-700">Kami dapat mengungkapkan informasi jika diwajibkan oleh hukum, perintah pengadilan, atau proses hukum lainnya.</p>
+                            </div>
+                            
+                            <div class="p-4 border-l-4 border-cur-primary bg-gray-50 rounded-r-lg">
+                                <h4 class="font-bold text-gray-900 mb-2">Perlindungan Hak</h4>
+                                <p class="text-sm text-gray-700">Untuk melindungi hak, properti, atau keselamatan CUR-HEART, pengguna kami, atau publik.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-cur-warning/10 border border-cur-warning rounded-lg p-4 mt-6">
+                            <p class="text-gray-700 text-sm">
+                                <i class="fas fa-exclamation-triangle text-cur-warning mr-2"></i>
+                                <strong>Catatan:</strong> Semua pihak ketiga yang kami bagikan informasi diwajibkan untuk menjaga kerahasiaan dan keamanan data Anda sesuai dengan standar industri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div id="keamanan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">5</span>
+                        Keamanan Data
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6">
+                            Keamanan informasi pribadi Anda adalah prioritas utama kami. Kami menerapkan berbagai langkah keamanan teknis dan organisasional untuk melindungi data Anda:
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="text-center p-6 bg-gradient-to-br from-cur-primary/5 to-cur-accent/10 rounded-xl">
+                                <i class="fas fa-lock text-4xl text-cur-primary mb-3"></i>
+                                <h4 class="font-bold text-gray-900 mb-2">Enkripsi SSL/TLS</h4>
+                                <p class="text-sm text-gray-600">Semua data ditransmisikan menggunakan enkripsi standar industri</p>
+                            </div>
+                            <div class="text-center p-6 bg-gradient-to-br from-cur-primary/5 to-cur-accent/10 rounded-xl">
+                                <i class="fas fa-server text-4xl text-cur-primary mb-3"></i>
+                                <h4 class="font-bold text-gray-900 mb-2">Server Aman</h4>
+                                <p class="text-sm text-gray-600">Data disimpan di server dengan keamanan tingkat tinggi</p>
+                            </div>
+                            <div class="text-center p-6 bg-gradient-to-br from-cur-primary/5 to-cur-accent/10 rounded-xl">
+                                <i class="fas fa-user-shield text-4xl text-cur-primary mb-3"></i>
+                                <h4 class="font-bold text-gray-900 mb-2">Akses Terbatas</h4>
+                                <p class="text-sm text-gray-600">Hanya personel terotorisasi yang dapat mengakses data</p>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">Langkah keamanan tambahan yang kami terapkan:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                            <li>Audit keamanan rutin dan penetration testing</li>
+                            <li>Firewall dan sistem deteksi intrusi</li>
+                            <li>Backup data regular dan disaster recovery plan</li>
+                            <li>Pelatihan keamanan untuk semua staff</li>
+                            <li>Multi-factor authentication untuk akses sistem</li>
+                        </ul>
+
+                        <div class="bg-cur-info/10 border border-cur-info rounded-lg p-4">
+                            <p class="text-gray-700 text-sm">
+                                <i class="fas fa-info-circle text-cur-info mr-2"></i>
+                                Meskipun kami menggunakan langkah keamanan terbaik, tidak ada sistem yang 100% aman. Kami mendorong Anda untuk juga menjaga keamanan akun Anda dengan menggunakan password yang kuat dan tidak membagikan kredensial login Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6 -->
+                <div id="hak" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">6</span>
+                        Hak Anda
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-6">Anda memiliki hak-hak berikut terkait data pribadi Anda:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 w-10 h-10 bg-cur-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-eye text-cur-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Hak Akses</h4>
+                                    <p class="text-sm text-gray-700">Anda berhak meminta salinan data pribadi yang kami simpan tentang Anda.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 w-10 h-10 bg-cur-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-edit text-cur-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Hak Pembetulan</h4>
+                                    <p class="text-sm text-gray-700">Anda dapat meminta koreksi jika data Anda tidak akurat atau tidak lengkap.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 w-10 h-10 bg-cur-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-trash text-cur-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Hak Penghapusan</h4>
+                                    <p class="text-sm text-gray-700">Anda dapat meminta penghapusan data pribadi Anda dalam kondisi tertentu.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 w-10 h-10 bg-cur-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-ban text-cur-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Hak Pembatasan</h4>
+                                    <p class="text-sm text-gray-700">Anda dapat meminta pembatasan pemrosesan data pribadi Anda.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 w-10 h-10 bg-cur-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-download text-cur-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Hak Portabilitas</h4>
+                                    <p class="text-sm text-gray-700">Anda berhak menerima data pribadi dalam format yang dapat dibaca mesin.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0 w-10 h-10 bg-cur-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-times-circle text-cur-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Hak Keberatan</h4>
+                                    <p class="text-sm text-gray-700">Anda dapat menolak pemrosesan data Anda untuk tujuan tertentu.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-6 bg-cur-primary text-white rounded-xl">
+                            <h4 class="font-bold mb-2">Cara Menggunakan Hak Anda</h4>
+                            <p class="text-white/90 text-sm mb-4">
+                                Untuk menggunakan hak-hak di atas, silakan hubungi kami melalui:
+                            </p>
+                            <div class="space-y-2 text-sm">
+                                <p><i class="fas fa-envelope mr-2"></i> Email: privacy@cur-heart.id</p>
+                                <p><i class="fas fa-phone mr-2"></i> Telepon: +62 812-3456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div id="cookies" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">7</span>
+                        Cookies dan Teknologi Pelacakan
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-4">
+                            Kami menggunakan cookies dan teknologi pelacakan serupa untuk meningkatkan pengalaman Anda. Cookies adalah file teks kecil yang disimpan di perangkat Anda.
+                        </p>
+                        
+                        <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">Jenis Cookies yang Kami Gunakan:</h3>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="p-4 border border-gray-200 rounded-lg">
+                                <h4 class="font-bold text-gray-900 mb-1">Essential Cookies</h4>
+                                <p class="text-sm text-gray-700">Diperlukan untuk fungsi dasar website (login, keamanan, navigasi)</p>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg">
+                                <h4 class="font-bold text-gray-900 mb-1">Analytical Cookies</h4>
+                                <p class="text-sm text-gray-700">Membantu kami memahami bagaimana pengguna berinteraksi dengan website</p>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg">
+                                <h4 class="font-bold text-gray-900 mb-1">Functional Cookies</h4>
+                                <p class="text-sm text-gray-700">Mengingat preferensi dan pilihan Anda</p>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg">
+                                <h4 class="font-bold text-gray-900 mb-1">Marketing Cookies</h4>
+                                <p class="text-sm text-gray-700">Menampilkan iklan yang relevan berdasarkan minat Anda</p>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-700">
+                            Anda dapat mengatur preferensi cookies melalui browser Anda. Namun, menonaktifkan cookies tertentu dapat mempengaruhi fungsi website.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Section 8 -->
+                <div id="perubahan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">8</span>
+                        Perubahan Kebijakan
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 mb-4">
+                            Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk mencerminkan perubahan dalam praktik kami atau untuk alasan operasional, hukum, atau regulasi lainnya.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Perubahan akan berlaku efektif segera setelah diposting di halaman ini. Kami akan memberitahu Anda tentang perubahan material melalui email atau pemberitahuan di platform kami.
+                        </p>
+                        <div class="bg-cur-accent/20 border-l-4 border-cur-secondary rounded-r-lg p-4">
+                            <p class="text-gray-700">
+                                <i class="fas fa-calendar-alt text-cur-primary mr-2"></i>
+                                <strong>Terakhir Diperbarui:</strong> 20 Oktober 2024
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-2xl p-8 text-white text-center">
+                    <i class="fas fa-envelope text-5xl mb-4 opacity-80"></i>
+                    <h3 class="text-2xl font-bold font-poppins mb-4">Pertanyaan tentang Kebijakan Privasi?</h3>
+                    <p class="text-white/90 mb-6">
+                        Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi kami, jangan ragu untuk menghubungi kami.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="mailto:privacy@cur-heart.id" class="px-6 py-3 bg-white text-cur-primary rounded-lg font-semibold hover:bg-gray-100 transition">
+                            <i class="fas fa-envelope mr-2"></i> privacy@cur-heart.id
+                        </a>
+                        <a href="09_contact.html" class="px-6 py-3 bg-white/10 backdrop-blur text-white rounded-lg font-semibold hover:bg-white/20 transition border-2 border-white/30">
+                            <i class="fas fa-phone mr-2"></i> Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cur-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-cur-secondary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold font-poppins">CUR-HEART</span>
+                    </div>
+                    <p class="text-white/80 mb-4">
+                        Pusat hypnotherapy profesional untuk kesehatan mental yang lebih baik.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Layanan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="04_service_detail.html?id=1" class="hover:text-white transition">Stress & Anxiety</a></li>
+                        <li><a href="04_service_detail.html?id=2" class="hover:text-white transition">Trauma Healing</a></li>
+                        <li><a href="04_service_detail.html?id=3" class="hover:text-white transition">Self-Confidence</a></li>
+                        <li><a href="04_service_detail.html?id=4" class="hover:text-white transition">Sleep Therapy</a></li>
+                        <li><a href="04_service_detail.html?id=5" class="hover:text-white transition">Habit Change</a></li>
+                        <li><a href="04_service_detail.html?id=6" class="hover:text-white transition">Phobia Treatment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Perusahaan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="02_about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="05_therapists.html" class="hover:text-white transition">Tim Terapis</a></li>
+                        <li><a href="07_blog.html" class="hover:text-white transition">Artikel & Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partnership</a></li>
+                        <li><a href="09_contact.html" class="hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Kontak</h3>
+                    <ul class="space-y-4 text-white/80">
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kemang Raya No. 123<br>Jakarta Selatan 12345</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>hello@cur-heart.id</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-clock mt-1"></i>
+                            <span>Sen - Sab: 09:00 - 20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/80 text-sm">© 2024 CUR-HEART. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-white/80">
+                    <a href="11_privacy_policy.html" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="12_terms_conditions.html" class="hover:text-white transition">Syarat & Ketentuan</a>
+                    <a href="10_faq.html" class="hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

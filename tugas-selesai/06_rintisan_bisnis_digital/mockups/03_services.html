@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
+                        'cur-secondary-dark': '#E64555',
+                        'cur-accent': '#FFB6B9',
+                        'cur-warm': '#FFEAA7',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="01_homepage.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Beranda</a>
+                    <a href="03_services.html" class="text-cur-primary font-medium">Layanan</a>
+                    <a href="05_therapists.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Terapis</a>
+                    <a href="07_blog.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Artikel</a>
+                    <a href="02_about.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Tentang</a>
+                    <a href="09_contact.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Kontak</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="13_login.html" class="text-cur-primary font-medium hover:underline">Masuk</a>
+                    <a href="14_register.html" class="px-6 py-3 bg-cur-primary text-white rounded-lg font-medium hover:bg-cur-primary-light transition">
+                        Daftar Sekarang
+                    </a>
+                </div>
+
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-cur-primary to-cur-primary-light text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold font-poppins mb-6">Layanan Hypnotherapy Profesional</h1>
+            <p class="text-xl text-white/90 max-w-3xl mx-auto mb-8">
+                6 layanan terapi berbasis hypnotherapy modern dengan pendekatan evidence-based untuk mengatasi berbagai masalah kesehatan mental Anda
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#services" class="px-8 py-4 bg-cur-secondary text-white rounded-lg font-semibold hover:bg-cur-secondary-dark transition inline-flex items-center gap-2">
+                    <i class="fas fa-arrow-down"></i> Lihat Semua Layanan
+                </a>
+                <a href="09_contact.html" class="px-8 py-4 bg-white/10 backdrop-blur text-white rounded-lg font-semibold hover:bg-white/20 transition border-2 border-white/30">
+                    Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center gap-4">
+                <span class="text-gray-700 font-medium">Filter by:</span>
+                <button class="px-4 py-2 bg-cur-primary text-white rounded-lg text-sm font-medium">Semua Layanan</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Anxiety & Stress</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Trauma</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Performance</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Sleep</button>
+                <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition">Habit Change</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Stress & Anxiety Release -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cur-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cur-primary group-hover:scale-110 transition-all duration-300">
+                        <i class="fas fa-brain text-cur-primary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <span class="px-3 py-1 bg-cur-secondary/10 text-cur-secondary rounded-full text-xs font-semibold mb-4 inline-block">POPULER</span>
+                    <h3 class="text-2xl font-semibold font-poppins text-cur-primary mb-3">Stress & Anxiety Release Therapy</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Lepaskan beban stress dan kecemasan berlebih dengan teknik progressive muscle relaxation, guided imagery, dan reprogramming pikiran bawah sadar untuk hidup lebih tenang.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-clock text-cur-primary"></i>
+                            <span>Durasi: 90 menit per sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-calendar text-cur-primary"></i>
+                            <span>Program: 4-6 sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-chart-line text-cur-success"></i>
+                            <span class="font-semibold text-cur-success">Success Rate: 87%</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 mb-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <span class="text-3xl font-bold text-cur-primary">Rp 450K</span>
+                            <span class="text-sm text-gray-500">per sesi</span>
+                        </div>
+                        <p class="text-sm text-cur-secondary font-medium">Paket 6 sesi: Rp 2.000.000 (hemat Rp 700K)</p>
+                    </div>
+
+                    <a href="04_service_detail.html?id=1" class="block w-full px-6 py-3 bg-cur-primary text-white rounded-lg font-medium text-center hover:bg-cur-primary-light transition">
+                        Lihat Detail Layanan
+                    </a>
+                </div>
+
+                <!-- Service 2: Trauma Healing -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cur-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cur-secondary group-hover:scale-110 transition-all duration-300">
+                        <i class="fas fa-heart-pulse text-cur-secondary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success rounded-full text-xs font-semibold mb-4 inline-block">MOST EFFECTIVE</span>
+                    <h3 class="text-2xl font-semibold font-poppins text-cur-primary mb-3">Trauma Healing Hypnotherapy</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Pulihkan trauma masa lalu dengan metode EMDR, regression therapy, dan positive anchoring untuk mencapai inner peace dan kebahagiaan sejati.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-clock text-cur-primary"></i>
+                            <span>Durasi: 120 menit per sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-calendar text-cur-primary"></i>
+                            <span>Program: 6-10 sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-chart-line text-cur-success"></i>
+                            <span class="font-semibold text-cur-success">Success Rate: 92%</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 mb-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <span class="text-3xl font-bold text-cur-primary">Rp 550K</span>
+                            <span class="text-sm text-gray-500">per sesi</span>
+                        </div>
+                        <p class="text-sm text-cur-secondary font-medium">Paket 10 sesi: Rp 4.500.000 (hemat Rp 1M)</p>
+                    </div>
+
+                    <a href="04_service_detail.html?id=2" class="block w-full px-6 py-3 bg-cur-primary text-white rounded-lg font-medium text-center hover:bg-cur-primary-light transition">
+                        Lihat Detail Layanan
+                    </a>
+                </div>
+
+                <!-- Service 3: Self-Confidence & Motivation -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cur-accent/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cur-accent group-hover:scale-110 transition-all duration-300">
+                        <i class="fas fa-rocket text-cur-primary text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold font-poppins text-cur-primary mb-3 mt-8">Self-Confidence & Motivation Therapy</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Tingkatkan kepercayaan diri dan motivasi dengan ego strengthening, future pacing, dan success visualization untuk mencapai potensi maksimal.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-clock text-cur-primary"></i>
+                            <span>Durasi: 75 menit per sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-calendar text-cur-primary"></i>
+                            <span>Program: 3-5 sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-chart-line text-cur-success"></i>
+                            <span class="font-semibold text-cur-success">Success Rate: 89%</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 mb-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <span class="text-3xl font-bold text-cur-primary">Rp 400K</span>
+                            <span class="text-sm text-gray-500">per sesi</span>
+                        </div>
+                        <p class="text-sm text-cur-secondary font-medium">Paket 5 sesi: Rp 1.500.000 (hemat Rp 500K)</p>
+                    </div>
+
+                    <a href="04_service_detail.html?id=3" class="block w-full px-6 py-3 bg-cur-primary text-white rounded-lg font-medium text-center hover:bg-cur-primary-light transition">
+                        Lihat Detail Layanan
+                    </a>
+                </div>
+
+                <!-- Service 4: Sleep & Relaxation -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cur-info/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cur-info group-hover:scale-110 transition-all duration-300">
+                        <i class="fas fa-moon text-cur-info text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold font-poppins text-cur-primary mb-3 mt-8">Sleep & Relaxation Therapy</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Atasi insomnia dan tingkatkan kualitas tidur dengan sleep induction, brainwave entrainment, dan sleep hygiene protocol untuk istirahat optimal.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-clock text-cur-primary"></i>
+                            <span>Durasi: 60 menit per sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-calendar text-cur-primary"></i>
+                            <span>Program: 2-4 sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-chart-line text-cur-success"></i>
+                            <span class="font-semibold text-cur-success">Success Rate: 94%</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 mb-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <span class="text-3xl font-bold text-cur-primary">Rp 350K</span>
+                            <span class="text-sm text-gray-500">per sesi</span>
+                        </div>
+                        <p class="text-sm text-cur-secondary font-medium">Paket 4 sesi: Rp 1.200.000 (hemat Rp 200K)</p>
+                    </div>
+
+                    <a href="04_service_detail.html?id=4" class="block w-full px-6 py-3 bg-cur-primary text-white rounded-lg font-medium text-center hover:bg-cur-primary-light transition">
+                        Lihat Detail Layanan
+                    </a>
+                </div>
+
+                <!-- Service 5: Habit Reprogramming -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cur-success/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cur-success group-hover:scale-110 transition-all duration-300">
+                        <i class="fas fa-repeat text-cur-success text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold font-poppins text-cur-primary mb-3 mt-8">Habit Reprogramming Therapy</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Ubah kebiasaan buruk menjadi positif dengan habit loop interruption, new pattern installation, dan trigger management untuk perubahan permanen.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-clock text-cur-primary"></i>
+                            <span>Durasi: 90 menit per sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-calendar text-cur-primary"></i>
+                            <span>Program: 5-8 sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-chart-line text-cur-success"></i>
+                            <span class="font-semibold text-cur-success">Success Rate: 81%</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 mb-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <span class="text-3xl font-bold text-cur-primary">Rp 450K</span>
+                            <span class="text-sm text-gray-500">per sesi</span>
+                        </div>
+                        <p class="text-sm text-cur-secondary font-medium">Paket 8 sesi: Rp 3.000.000 (hemat Rp 600K)</p>
+                    </div>
+
+                    <a href="04_service_detail.html?id=5" class="block w-full px-6 py-3 bg-cur-primary text-white rounded-lg font-medium text-center hover:bg-cur-primary-light transition">
+                        Lihat Detail Layanan
+                    </a>
+                </div>
+
+                <!-- Service 6: Phobia & Fear Management -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-cur-warning/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cur-warning group-hover:scale-110 transition-all duration-300">
+                        <i class="fas fa-shield-heart text-cur-warning text-2xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold font-poppins text-cur-primary mb-3 mt-8">Phobia & Fear Management</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Hilangkan fobia dan ketakutan irasional dengan systematic desensitization, NLP phobia cure, dan confidence building untuk hidup tanpa ketakutan.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-clock text-cur-primary"></i>
+                            <span>Durasi: 105 menit per sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-calendar text-cur-primary"></i>
+                            <span>Program: 3-6 sesi</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fas fa-chart-line text-cur-success"></i>
+                            <span class="font-semibold text-cur-success">Success Rate: 88%</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-4 mb-6">
+                        <div class="flex items-baseline justify-between mb-2">
+                            <span class="text-3xl font-bold text-cur-primary">Rp 500K</span>
+                            <span class="text-sm text-gray-500">per sesi</span>
+                        </div>
+                        <p class="text-sm text-cur-secondary font-medium">Paket 6 sesi: Rp 2.500.000 (hemat Rp 500K)</p>
+                    </div>
+
+                    <a href="04_service_detail.html?id=6" class="block w-full px-6 py-3 bg-cur-primary text-white rounded-lg font-medium text-center hover:bg-cur-primary-light transition">
+                        Lihat Detail Layanan
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold font-poppins text-cur-primary mb-4">Mengapa Memilih CUR-HEART?</h2>
+                <p class="text-xl text-gray-600">Keunggulan layanan hypnotherapy kami</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cur-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-cur-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-cur-primary mb-2">Terapis Bersertifikat</h3>
+                    <p class="text-gray-600">Semua terapis memiliki sertifikasi internasional dari American Board of Hypnotherapy</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cur-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-flask text-cur-secondary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-cur-primary mb-2">Evidence-Based</h3>
+                    <p class="text-gray-600">Metode terbukti secara ilmiah dengan success rate 81-94%</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cur-success/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-cur-success text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-cur-primary mb-2">1,200+ Klien Puas</h3>
+                    <p class="text-gray-600">Dipercaya oleh ribuan klien dengan rating 4.9/5</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-cur-info/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-heart text-cur-info text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins text-cur-primary mb-2">Aman & Terjamin</h3>
+                    <p class="text-gray-600">Metode aman tanpa efek samping dengan jaminan kerahasiaan 100%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-cur-secondary via-cur-secondary-light to-cur-accent">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold font-poppins text-white mb-6">
+                Siap Memulai Terapi Anda?
+            </h2>
+            <p class="text-xl text-white/90 mb-8">
+                Dapatkan konsultasi gratis 30 menit untuk mengetahui layanan yang tepat untuk Anda
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="18_booking_step1.html" class="px-8 py-4 bg-white text-cur-primary rounded-lg font-semibold hover:bg-gray-100 transition inline-flex items-center gap-2">
+                    <i class="fas fa-calendar"></i> Booking Sekarang
+                </a>
+                <a href="09_contact.html" class="px-8 py-4 bg-white/10 backdrop-blur text-white rounded-lg font-semibold hover:bg-white/20 transition border-2 border-white/30 inline-flex items-center gap-2">
+                    <i class="fas fa-phone"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cur-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-cur-secondary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold font-poppins">CUR-HEART</span>
+                    </div>
+                    <p class="text-white/80 mb-4">
+                        Pusat hypnotherapy profesional untuk kesehatan mental yang lebih baik.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Layanan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="04_service_detail.html?id=1" class="hover:text-white transition">Stress & Anxiety</a></li>
+                        <li><a href="04_service_detail.html?id=2" class="hover:text-white transition">Trauma Healing</a></li>
+                        <li><a href="04_service_detail.html?id=3" class="hover:text-white transition">Self-Confidence</a></li>
+                        <li><a href="04_service_detail.html?id=4" class="hover:text-white transition">Sleep Therapy</a></li>
+                        <li><a href="04_service_detail.html?id=5" class="hover:text-white transition">Habit Change</a></li>
+                        <li><a href="04_service_detail.html?id=6" class="hover:text-white transition">Phobia Treatment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Perusahaan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="02_about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="05_therapists.html" class="hover:text-white transition">Tim Terapis</a></li>
+                        <li><a href="07_blog.html" class="hover:text-white transition">Artikel & Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partnership</a></li>
+                        <li><a href="09_contact.html" class="hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Kontak</h3>
+                    <ul class="space-y-4 text-white/80">
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kemang Raya No. 123<br>Jakarta Selatan 12345</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>hello@cur-heart.id</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-clock mt-1"></i>
+                            <span>Sen - Sab: 09:00 - 20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/80 text-sm">© 2024 CUR-HEART. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-white/80">
+                    <a href="11_privacy_policy.html" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="12_terms_conditions.html" class="hover:text-white transition">Syarat & Ketentuan</a>
+                    <a href="10_faq.html" class="hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

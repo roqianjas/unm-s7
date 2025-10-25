@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan Sistem - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Sidebar -->
+    <div class="fixed left-0 top-0 h-screen w-64 bg-white border-r border-gray-200 z-30">
+        <div class="p-6">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="w-10 h-10 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center">
+                    <i class="fas fa-heart text-white"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-cur-primary font-heading">CUR-HEART</h1>
+                    <p class="text-xs text-gray-500">Admin Panel</p>
+                </div>
+            </div>
+
+            <nav class="space-y-1">
+                <a href="37_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-home w-5"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="38_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-users w-5"></i>
+                    <span>Pengguna</span>
+                </a>
+                <a href="39_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-calendar-check w-5"></i>
+                    <span>Booking</span>
+                </a>
+                <a href="40_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-chart-line w-5"></i>
+                    <span>Keuangan</span>
+                </a>
+                <a href="41_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-lg transition">
+                    <i class="fas fa-cog w-5"></i>
+                    <span>Pengaturan</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-64">
+        <!-- Top Navbar -->
+        <nav class="bg-white border-b border-gray-200 px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold text-cur-primary font-heading">Pengaturan Sistem</h2>
+                    <p class="text-sm text-gray-600 mt-1">Konfigurasi platform dan preferensi</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Admin" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="text-sm font-semibold text-gray-900">Admin</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="p-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Column - Settings Tabs -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4">
+                        <nav class="space-y-1">
+                            <button class="w-full flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-lg transition">
+                                <i class="fas fa-sliders-h w-5"></i>
+                                <span>Umum</span>
+                            </button>
+                            <button class="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-credit-card w-5"></i>
+                                <span>Pembayaran</span>
+                            </button>
+                            <button class="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-envelope w-5"></i>
+                                <span>Email Template</span>
+                            </button>
+                            <button class="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-bell w-5"></i>
+                                <span>Notifikasi</span>
+                            </button>
+                            <button class="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-shield-alt w-5"></i>
+                                <span>Keamanan</span>
+                            </button>
+                            <button class="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                                <i class="fas fa-database w-5"></i>
+                                <span>Backup & Data</span>
+                            </button>
+                        </nav>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-cur-info to-blue-600 rounded-xl shadow-lg p-6 text-white">
+                        <h3 class="font-bold mb-2">System Version</h3>
+                        <div class="text-3xl font-bold mb-4">v2.5.1</div>
+                        <button class="w-full px-4 py-2 bg-white text-cur-info font-semibold rounded-lg hover:shadow-lg transition text-sm">
+                            <i class="fas fa-sync-alt mr-2"></i>
+                            Check Updates
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Settings Content -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- General Settings -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-6">Pengaturan Umum</h3>
+                        <div class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Nama Platform</label>
+                                    <input type="text" value="CUR-HEART" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Domain</label>
+                                    <input type="text" value="curheart.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-semibold text-gray-700 mb-2 block">Tagline</label>
+                                <input type="text" value="Solusi Terapi Hipnosis Terpercaya" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="text-sm font-semibold text-gray-700 mb-2 block">Deskripsi Meta</label>
+                                <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent resize-none">Platform terapi hipnosis online terpercaya dengan terapis bersertifikat untuk mengatasi kecemasan, depresi, dan stress.</textarea>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Email Kontak</label>
+                                    <input type="email" value="support@curheart.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Telepon</label>
+                                    <input type="tel" value="+62 21 1234 5678" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Settings -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-6">Pengaturan Bisnis</h3>
+                        <div class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Komisi Platform (%)</label>
+                                    <input type="number" value="30" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                    <p class="text-xs text-gray-500 mt-1">Terapis mendapat 70%</p>
+                                </div>
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Durasi Sesi Default (menit)</label>
+                                    <input type="number" value="60" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Batas Pembatalan (jam)</label>
+                                    <input type="number" value="24" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">Minimal Saldo Withdrawal</label>
+                                    <div class="relative">
+                                        <span class="absolute left-4 top-3 text-gray-500">Rp</span>
+                                        <input type="number" value="100000" class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Gateway -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-6">Payment Gateway</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-university text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Bank Transfer</div>
+                                        <div class="text-xs text-gray-500">BCA, Mandiri, BNI, BRI</div>
+                                    </div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cur-primary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cur-success"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-wallet text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">E-Wallet</div>
+                                        <div class="text-xs text-gray-500">GoPay, OVO, DANA, ShopeePay</div>
+                                    </div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cur-primary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cur-success"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-qrcode text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">QRIS</div>
+                                        <div class="text-xs text-gray-500">Scan QR untuk bayar</div>
+                                    </div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cur-primary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cur-success"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-credit-card text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Credit Card</div>
+                                        <div class="text-xs text-gray-500">Visa, Mastercard</div>
+                                    </div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer">
+                                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-cur-primary/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cur-success"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Toggles -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-6">Fitur Platform</h3>
+                        <div class="space-y-4">
+                            <label class="flex items-center justify-between p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <div>
+                                    <div class="font-semibold text-gray-900">Registrasi Klien Baru</div>
+                                    <div class="text-sm text-gray-500">Izinkan pengguna baru mendaftar</div>
+                                </div>
+                                <input type="checkbox" checked class="w-12 h-6 rounded-full appearance-none bg-gray-300 checked:bg-cur-success relative transition cursor-pointer">
+                            </label>
+                            <label class="flex items-center justify-between p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <div>
+                                    <div class="font-semibold text-gray-900">Aplikasi Terapis Baru</div>
+                                    <div class="text-sm text-gray-500">Terima aplikasi terapis baru</div>
+                                </div>
+                                <input type="checkbox" checked class="w-12 h-6 rounded-full appearance-none bg-gray-300 checked:bg-cur-success relative transition cursor-pointer">
+                            </label>
+                            <label class="flex items-center justify-between p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <div>
+                                    <div class="font-semibold text-gray-900">Auto-Approve Booking</div>
+                                    <div class="text-sm text-gray-500">Booking otomatis disetujui setelah pembayaran</div>
+                                </div>
+                                <input type="checkbox" checked class="w-12 h-6 rounded-full appearance-none bg-gray-300 checked:bg-cur-success relative transition cursor-pointer">
+                            </label>
+                            <label class="flex items-center justify-between p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <div>
+                                    <div class="font-semibold text-gray-900">Mode Maintenance</div>
+                                    <div class="text-sm text-gray-500">Nonaktifkan sementara akses platform</div>
+                                </div>
+                                <input type="checkbox" class="w-12 h-6 rounded-full appearance-none bg-gray-300 checked:bg-cur-error relative transition cursor-pointer">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Email Settings -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-6">Pengaturan Email</h3>
+                        <div class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">SMTP Host</label>
+                                    <input type="text" value="smtp.gmail.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label class="text-sm font-semibold text-gray-700 mb-2 block">SMTP Port</label>
+                                    <input type="number" value="587" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-semibold text-gray-700 mb-2 block">Email Pengirim</label>
+                                <input type="email" value="noreply@curheart.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            </div>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Test Email Connection
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Save Button -->
+                    <div class="flex items-center space-x-4">
+                        <button class="flex-1 px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-lg hover:shadow-lg transition">
+                            <i class="fas fa-save mr-2"></i>
+                            Simpan Semua Pengaturan
+                        </button>
+                        <button class="px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Sidebar -->
+    <div class="fixed left-0 top-0 h-screen w-64 bg-white border-r border-gray-200 z-30">
+        <div class="p-6">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="w-10 h-10 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center">
+                    <i class="fas fa-heart text-white"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-cur-primary font-heading">CUR-HEART</h1>
+                    <p class="text-xs text-gray-500">Admin Panel</p>
+                </div>
+            </div>
+
+            <nav class="space-y-1">
+                <a href="37_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-lg transition">
+                    <i class="fas fa-home w-5"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="38_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-users w-5"></i>
+                    <span>Pengguna</span>
+                </a>
+                <a href="39_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-calendar-check w-5"></i>
+                    <span>Booking</span>
+                </a>
+                <a href="40_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-chart-line w-5"></i>
+                    <span>Keuangan</span>
+                </a>
+                <a href="41_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-cog w-5"></i>
+                    <span>Pengaturan</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-64">
+        <!-- Top Navbar -->
+        <nav class="bg-white border-b border-gray-200 px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold text-cur-primary font-heading">Dashboard Admin</h2>
+                    <p class="text-sm text-gray-600 mt-1">Selamat datang kembali, Admin</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition relative">
+                        <i class="fas fa-bell"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Admin" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="text-sm font-semibold text-gray-900">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="p-8">
+            <!-- Main KPI Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-cur-primary to-cur-secondary rounded-xl shadow-lg p-6 text-white">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <span class="px-2 py-1 bg-cur-success text-white text-xs font-semibold rounded-full">
+                            +12%
+                        </span>
+                    </div>
+                    <div class="text-3xl font-bold mb-1">1,234</div>
+                    <div class="text-sm opacity-80">Total Pengguna</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-cur-info/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-user-md text-cur-info text-2xl"></i>
+                        </div>
+                        <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                            +5
+                        </span>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-1">48</div>
+                    <div class="text-sm text-gray-600">Terapis Aktif</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-cur-success/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-calendar-check text-cur-success text-2xl"></i>
+                        </div>
+                        <span class="px-2 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded-full">
+                            156
+                        </span>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-1">423</div>
+                    <div class="text-sm text-gray-600">Booking Bulan Ini</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 bg-cur-warning/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-money-bill-wave text-cur-warning text-2xl"></i>
+                        </div>
+                        <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                            +18%
+                        </span>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-1">845M</div>
+                    <div class="text-sm text-gray-600">Revenue Bulan Ini</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Column -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Revenue Chart -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-lg font-bold text-gray-900">Statistik Revenue</h3>
+                            <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                <option>6 Bulan Terakhir</option>
+                                <option>3 Bulan Terakhir</option>
+                                <option>Tahun Ini</option>
+                            </select>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-16">Mei</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-10 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 65%"></div>
+                                    <span class="absolute right-3 top-2 text-sm font-semibold text-gray-700">Rp 650M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-16">Jun</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-10 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 72%"></div>
+                                    <span class="absolute right-3 top-2 text-sm font-semibold text-gray-700">Rp 720M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-16">Jul</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-10 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 78%"></div>
+                                    <span class="absolute right-3 top-2 text-sm font-semibold text-gray-700">Rp 780M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-16">Agu</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-10 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 75%"></div>
+                                    <span class="absolute right-3 top-2 text-sm font-semibold text-gray-700">Rp 750M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-16">Sep</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-10 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 80%"></div>
+                                    <span class="absolute right-3 top-2 text-sm font-semibold text-gray-700">Rp 800M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-16">Okt</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-10 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-success to-green-400 h-full rounded-full" style="width: 85%"></div>
+                                    <span class="absolute right-3 top-2 text-sm font-semibold text-gray-700">Rp 845M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-bold text-gray-900">Aktivitas Terbaru</h3>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-cur-success/10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user-plus text-cur-success"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900">Pengguna Baru Terdaftar</div>
+                                        <div class="text-sm text-gray-600 mt-1">Rina Sari bergabung sebagai klien baru</div>
+                                        <div class="text-xs text-gray-400 mt-1">2 menit yang lalu</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-cur-info/10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-calendar-check text-cur-info"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900">Booking Baru</div>
+                                        <div class="text-sm text-gray-600 mt-1">Budi Santoso memesan sesi dengan Dr. Sarah</div>
+                                        <div class="text-xs text-gray-400 mt-1">15 menit yang lalu</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-cur-warning/10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-money-bill-wave text-cur-warning"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900">Pembayaran Diterima</div>
+                                        <div class="text-sm text-gray-600 mt-1">Transfer Rp 500.000 dari Ahmad Fauzi</div>
+                                        <div class="text-xs text-gray-400 mt-1">32 menit yang lalu</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user-md text-purple-600"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="font-semibold text-gray-900">Terapis Baru Bergabung</div>
+                                        <div class="text-sm text-gray-600 mt-1">Dr. Michael Chen mengajukan aplikasi</div>
+                                        <div class="text-xs text-gray-400 mt-1">1 jam yang lalu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-50 text-center">
+                            <button class="text-sm text-cur-primary hover:text-cur-secondary font-semibold">
+                                Lihat Semua Aktivitas <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-6">
+                    <!-- Quick Stats -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Quick Stats</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-cur-primary rounded-full"></div>
+                                    <span class="text-sm text-gray-700">Klien Aktif</span>
+                                </div>
+                                <span class="font-bold text-gray-900">856</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-cur-info rounded-full"></div>
+                                    <span class="text-sm text-gray-700">Sesi Hari Ini</span>
+                                </div>
+                                <span class="font-bold text-gray-900">32</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-cur-success rounded-full"></div>
+                                    <span class="text-sm text-gray-700">Sesi Selesai</span>
+                                </div>
+                                <span class="font-bold text-gray-900">28</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-cur-warning rounded-full"></div>
+                                    <span class="text-sm text-gray-700">Pending</span>
+                                </div>
+                                <span class="font-bold text-gray-900">4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Therapists -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Top Terapis</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 text-sm">Dr. Sarah Johnson</div>
+                                    <div class="flex items-center space-x-2 text-xs text-gray-500">
+                                        <span>147 sesi</span>
+                                        <span>•</span>
+                                        <span class="flex items-center">
+                                            <i class="fas fa-star text-cur-warning mr-1"></i>
+                                            4.9
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Michael+Chen&background=1E0E62&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 text-sm">Dr. Michael Chen</div>
+                                    <div class="flex items-center space-x-2 text-xs text-gray-500">
+                                        <span>132 sesi</span>
+                                        <span>•</span>
+                                        <span class="flex items-center">
+                                            <i class="fas fa-star text-cur-warning mr-1"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Lisa+Wong&background=FF6B7A&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 text-sm">Dr. Lisa Wong</div>
+                                    <div class="flex items-center space-x-2 text-xs text-gray-500">
+                                        <span>118 sesi</span>
+                                        <span>•</span>
+                                        <span class="flex items-center">
+                                            <i class="fas fa-star text-cur-warning mr-1"></i>
+                                            4.9
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Status -->
+                    <div class="bg-gradient-to-br from-cur-success to-green-600 rounded-xl shadow-lg p-6 text-white">
+                        <h3 class="font-bold mb-4">Status Sistem</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="opacity-80">Server</span>
+                                <span class="font-semibold">✓ Online</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="opacity-80">Database</span>
+                                <span class="font-semibold">✓ Normal</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="opacity-80">Payment Gateway</span>
+                                <span class="font-semibold">✓ Active</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="opacity-80">Uptime</span>
+                                <span class="font-semibold">99.9%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Actions -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Perlu Ditindaklanjuti</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-exclamation-circle text-cur-warning"></i>
+                                    <span class="text-sm text-gray-700">Aplikasi Terapis Baru</span>
+                                </div>
+                                <span class="px-2 py-1 bg-cur-warning text-white text-xs font-semibold rounded-full">3</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-red-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-flag text-cur-error"></i>
+                                    <span class="text-sm text-gray-700">Laporan Masalah</span>
+                                </div>
+                                <span class="px-2 py-1 bg-cur-error text-white text-xs font-semibold rounded-full">2</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-money-check text-cur-info"></i>
+                                    <span class="text-sm text-gray-700">Withdraw Request</span>
+                                </div>
+                                <span class="px-2 py-1 bg-cur-info text-white text-xs font-semibold rounded-full">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

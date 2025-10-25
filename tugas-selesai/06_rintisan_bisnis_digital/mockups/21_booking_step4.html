@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Sesi - Konfirmasi & Pembayaran - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .payment-method {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .payment-method:hover {
+            transform: translateY(-2px);
+        }
+        .payment-method.selected {
+            border-color: #1E0E62;
+            box-shadow: 0 0 0 3px rgba(30, 14, 98, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-heart text-white"></i>
+                    </div>
+                    <div>
+                        <div class="text-lg font-heading font-bold text-cur-primary">CUR-HEART</div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <a href="26_client_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Budi Santoso</div>
+                            <div class="text-xs text-gray-500">Klien</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="17_client_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="18_booking_step1.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span class="font-medium">Booking Sesi</span>
+                    </a>
+                    <a href="23_client_appointments.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Janji Temu</span>
+                    </a>
+                    <a href="25_client_progress.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Progress Saya</span>
+                    </a>
+                    <a href="26_client_messages.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Pesan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Progress Steps -->
+            <div class="max-w-5xl mx-auto mb-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-cur-success text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-cur-success">Pilih Layanan</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-cur-success mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-cur-success text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-cur-success">Pilih Terapis</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-cur-success mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-cur-success text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-cur-success">Jadwal & Waktu</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-cur-success mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            4
+                        </div>
+                        <span class="text-sm font-semibold text-cur-primary">Konfirmasi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="max-w-5xl mx-auto mb-8">
+                <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Konfirmasi & Pembayaran</h1>
+                <p class="text-gray-600">Periksa detail booking Anda dan pilih metode pembayaran</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Left Column -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Booking Details -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h2 class="text-xl font-heading font-bold text-gray-800 mb-6">Detail Booking</h2>
+                        
+                        <div class="space-y-6">
+                            <!-- Service -->
+                            <div class="flex items-start space-x-4 pb-6 border-b border-gray-200">
+                                <div class="w-14 h-14 bg-cur-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-brain text-cur-primary text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-500 mb-1">Layanan</div>
+                                    <h3 class="font-bold text-gray-800 text-lg">Terapi Kecemasan</h3>
+                                    <p class="text-sm text-gray-600 mt-1">Sesi 60 menit dengan pendekatan kognitif-behavioral dan hipnoterapi</p>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-lg font-bold text-cur-primary">Rp 350.000</div>
+                                </div>
+                            </div>
+
+                            <!-- Therapist -->
+                            <div class="flex items-start space-x-4 pb-6 border-b border-gray-200">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-14 h-14 rounded-full flex-shrink-0">
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-500 mb-1">Terapis</div>
+                                    <h3 class="font-bold text-gray-800">Dr. Sarah Johnson</h3>
+                                    <p class="text-sm text-gray-600">Psikolog Klinis • 10 Tahun Pengalaman</p>
+                                    <div class="flex items-center space-x-1 text-cur-warning mt-1">
+                                        <i class="fas fa-star text-xs"></i>
+                                        <i class="fas fa-star text-xs"></i>
+                                        <i class="fas fa-star text-xs"></i>
+                                        <i class="fas fa-star text-xs"></i>
+                                        <i class="fas fa-star-half-alt text-xs"></i>
+                                        <span class="text-xs text-gray-600 ml-1">(4.9)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Date & Time -->
+                            <div class="flex items-start space-x-4 pb-6 border-b border-gray-200">
+                                <div class="w-14 h-14 bg-cur-warning/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-calendar text-cur-warning text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-500 mb-1">Jadwal</div>
+                                    <h3 class="font-bold text-gray-800">Jumat, 25 Oktober 2024</h3>
+                                    <p class="text-sm text-gray-600">14:00 - 15:00 WIB (60 menit)</p>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-14 h-14 bg-cur-info/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-video text-cur-info text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-gray-500 mb-1">Lokasi</div>
+                                    <h3 class="font-bold text-gray-800">Online - Video Call</h3>
+                                    <p class="text-sm text-gray-600">Link meeting akan dikirim 30 menit sebelum sesi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Edit Buttons -->
+                        <div class="mt-6 pt-6 border-t border-gray-200 flex gap-3">
+                            <a href="18_booking_step1.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                <i class="fas fa-edit mr-1"></i>
+                                Ubah Layanan
+                            </a>
+                            <a href="19_booking_step2.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                <i class="fas fa-edit mr-1"></i>
+                                Ubah Terapis
+                            </a>
+                            <a href="20_booking_step3.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                <i class="fas fa-edit mr-1"></i>
+                                Ubah Jadwal
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h2 class="text-xl font-heading font-bold text-gray-800 mb-6">Metode Pembayaran</h2>
+
+                        <div class="space-y-4">
+                            <!-- E-Wallet -->
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-700 mb-3">E-Wallet</h3>
+                                <div class="space-y-3">
+                                    <div class="payment-method border-2 border-gray-200 rounded-xl p-4 flex items-center justify-between" onclick="selectPayment(this, 'gopay')">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                                                <span class="text-white font-bold text-sm">GP</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-800">GoPay</div>
+                                                <div class="text-xs text-gray-600">Bayar dengan GoPay</div>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="payment" value="gopay" class="w-5 h-5 text-cur-primary">
+                                    </div>
+
+                                    <div class="payment-method border-2 border-gray-200 rounded-xl p-4 flex items-center justify-between" onclick="selectPayment(this, 'ovo')">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
+                                                <span class="text-white font-bold text-sm">OVO</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-800">OVO</div>
+                                                <div class="text-xs text-gray-600">Bayar dengan OVO</div>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="payment" value="ovo" class="w-5 h-5 text-cur-primary">
+                                    </div>
+
+                                    <div class="payment-method border-2 border-gray-200 rounded-xl p-4 flex items-center justify-between" onclick="selectPayment(this, 'dana')">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                                                <span class="text-white font-bold text-sm">DANA</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-800">DANA</div>
+                                                <div class="text-xs text-gray-600">Bayar dengan DANA</div>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="payment" value="dana" class="w-5 h-5 text-cur-primary">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bank Transfer -->
+                            <div>
+                                <h3 class="text-sm font-semibold text-gray-700 mb-3 mt-6">Transfer Bank</h3>
+                                <div class="space-y-3">
+                                    <div class="payment-method border-2 border-gray-200 rounded-xl p-4 flex items-center justify-between" onclick="selectPayment(this, 'bca')">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center">
+                                                <span class="text-white font-bold text-xs">BCA</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-800">BCA Virtual Account</div>
+                                                <div class="text-xs text-gray-600">Transfer via BCA</div>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="payment" value="bca" class="w-5 h-5 text-cur-primary">
+                                    </div>
+
+                                    <div class="payment-method border-2 border-gray-200 rounded-xl p-4 flex items-center justify-between" onclick="selectPayment(this, 'mandiri')">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
+                                                <span class="text-white font-bold text-xs">MDR</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-800">Mandiri Virtual Account</div>
+                                                <div class="text-xs text-gray-600">Transfer via Mandiri</div>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="payment" value="mandiri" class="w-5 h-5 text-cur-primary">
+                                    </div>
+
+                                    <div class="payment-method border-2 border-gray-200 rounded-xl p-4 flex items-center justify-between" onclick="selectPayment(this, 'bni')">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center">
+                                                <span class="text-white font-bold text-xs">BNI</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-gray-800">BNI Virtual Account</div>
+                                                <div class="text-xs text-gray-600">Transfer via BNI</div>
+                                            </div>
+                                        </div>
+                                        <input type="radio" name="payment" value="bni" class="w-5 h-5 text-cur-primary">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="checkbox" id="termsCheckbox" onchange="updateConfirmButton()" class="w-5 h-5 mt-0.5 text-cur-primary border-gray-300 rounded focus:ring-cur-primary">
+                            <span class="text-sm text-gray-700">
+                                Saya menyetujui <a href="12_terms_conditions.html" class="text-cur-secondary font-semibold hover:underline">Syarat & Ketentuan</a> 
+                                dan <a href="11_privacy_policy.html" class="text-cur-secondary font-semibold hover:underline">Kebijakan Privasi</a> CUR-HEART, 
+                                serta memahami kebijakan pembatalan dan reschedule.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Right Column - Summary -->
+                <div class="space-y-6">
+                    <!-- Payment Summary -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6 sticky top-20">
+                        <h3 class="text-lg font-heading font-bold text-gray-800 mb-4">Ringkasan Pembayaran</h3>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Biaya Terapi</span>
+                                <span class="font-semibold text-gray-800">Rp 350.000</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Biaya Platform</span>
+                                <span class="font-semibold text-gray-800">Rp 10.000</span>
+                            </div>
+                            <div class="flex items-center justify-between text-cur-success">
+                                <span>Diskon Member</span>
+                                <span class="font-semibold">- Rp 0</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 mb-6 border-t-2 border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-bold text-gray-800">Total Pembayaran</span>
+                                <span class="text-2xl font-bold text-cur-primary">Rp 360.000</span>
+                            </div>
+                        </div>
+
+                        <div id="paymentWarning" class="mb-4 p-3 bg-cur-warning/10 border border-cur-warning/20 rounded-lg text-sm text-gray-700 hidden">
+                            <i class="fas fa-exclamation-triangle text-cur-warning mr-2"></i>
+                            Pilih metode pembayaran
+                        </div>
+
+                        <button id="confirmBtn" disabled class="w-full py-4 bg-gray-300 text-gray-500 font-bold rounded-xl cursor-not-allowed mb-3">
+                            <i class="fas fa-lock mr-2"></i>
+                            Konfirmasi & Bayar
+                        </button>
+
+                        <a href="20_booking_step3.html" class="block w-full py-3 border-2 border-gray-300 text-gray-700 text-center font-semibold rounded-xl hover:bg-gray-50 transition">
+                            <i class="fas fa-arrow-left mr-2"></i>
+                            Kembali
+                        </a>
+
+                        <!-- Info Box -->
+                        <div class="mt-6 p-4 bg-cur-info/10 border border-cur-info/20 rounded-xl">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-shield-alt text-cur-info text-lg mt-0.5"></i>
+                                <div class="text-xs text-gray-700">
+                                    <strong>Pembayaran Aman:</strong> Data pembayaran Anda dienkripsi dan dilindungi dengan teknologi keamanan terkini.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let selectedPayment = null;
+        let termsAccepted = false;
+
+        function selectPayment(card, paymentId) {
+            // Remove selected class from all payment methods
+            document.querySelectorAll('.payment-method').forEach(c => {
+                c.classList.remove('selected');
+            });
+
+            // Add selected class to clicked card
+            card.classList.add('selected');
+
+            // Check the radio button
+            card.querySelector('input[type="radio"]').checked = true;
+
+            // Store selected payment
+            selectedPayment = paymentId;
+
+            // Hide warning
+            document.getElementById('paymentWarning').classList.add('hidden');
+
+            updateConfirmButton();
+        }
+
+        function updateConfirmButton() {
+            const termsCheckbox = document.getElementById('termsCheckbox');
+            const confirmBtn = document.getElementById('confirmBtn');
+            const paymentWarning = document.getElementById('paymentWarning');
+
+            termsAccepted = termsCheckbox.checked;
+
+            if (selectedPayment && termsAccepted) {
+                confirmBtn.disabled = false;
+                confirmBtn.className = 'w-full py-4 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-bold rounded-xl hover:shadow-xl transition cursor-pointer mb-3';
+                confirmBtn.onclick = () => {
+                    window.location.href = '22_booking_success.html';
+                };
+            } else {
+                confirmBtn.disabled = true;
+                confirmBtn.className = 'w-full py-4 bg-gray-300 text-gray-500 font-bold rounded-xl cursor-not-allowed mb-3';
+                
+                if (!selectedPayment && termsAccepted) {
+                    paymentWarning.classList.remove('hidden');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
