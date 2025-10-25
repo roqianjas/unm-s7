@@ -13,16 +13,21 @@
                 extend: {
                     colors: {
                         'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
                         'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
+                        'cur-secondary-dark': '#E64555',
                         'cur-accent': '#FFB6B9',
+                        'cur-warm': '#FFEAA7',
                         'cur-success': '#00D26A',
                         'cur-warning': '#FFA94D',
                         'cur-error': '#FF6B7A',
                         'cur-info': '#667BC6',
                     },
                     fontFamily: {
-                        'heading': ['Poppins', 'sans-serif'],
-                        'body': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
                     }
                 }
             }
@@ -52,32 +57,27 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="01_homepage.html" class="flex items-center space-x-3">
-                        <div class="w-12 h-12 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-xl flex items-center justify-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center">
                             <i class="fas fa-heart text-white text-xl"></i>
                         </div>
-                        <div>
-                            <div class="text-xl font-heading font-bold text-cur-primary">CUR-HEART</div>
-                            <div class="text-xs text-gray-600">Hypnotherapy Center</div>
-                        </div>
+                        <span class="text-2xl font-bold font-poppins text-cur-primary">CUR-HEART</span>
                     </a>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="01_homepage.html" class="text-gray-700 hover:text-cur-secondary transition">Beranda</a>
-                    <a href="02_about.html" class="text-gray-700 hover:text-cur-secondary transition">Tentang Kami</a>
-                    <a href="03_services.html" class="text-gray-700 hover:text-cur-secondary transition">Layanan</a>
-                    <a href="05_therapists.html" class="text-gray-700 hover:text-cur-secondary transition">Terapis</a>
-                    <a href="07_blog.html" class="text-gray-700 hover:text-cur-secondary transition">Blog</a>
-                    <a href="09_contact.html" class="text-gray-700 hover:text-cur-secondary transition">Kontak</a>
+                    <a href="01_homepage.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Beranda</a>
+                    <a href="02_about.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Tentang Kami</a>
+                    <a href="03_services.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Layanan</a>
+                    <a href="05_therapists.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Terapis</a>
+                    <a href="07_blog.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Artikel</a>
+                    <a href="09_contact.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Kontak</a>
                 </div>
 
                 <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="13_login.html" class="px-5 py-2.5 text-cur-primary font-semibold hover:bg-gray-100 rounded-lg transition">
-                        Login
-                    </a>
-                    <a href="14_register.html" class="px-5 py-2.5 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-lg hover:shadow-lg transition">
+                    <a href="13_login.html" class="text-cur-primary font-medium hover:underline">Masuk</a>
+                    <a href="14_register.html" class="px-6 py-3 bg-cur-primary text-white rounded-lg font-medium hover:bg-cur-primary-light transition">
                         Daftar Sekarang
                     </a>
                 </div>
@@ -95,7 +95,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h1 class="text-3xl md:text-4xl font-heading font-bold text-cur-primary mb-4">
+                <h1 class="text-3xl md:text-4xl font-poppins font-bold text-cur-primary mb-4">
                     Buat Akun Baru
                 </h1>
                 <p class="text-lg text-gray-600 mb-2">
@@ -292,7 +292,7 @@
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-bold rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        <button type="submit" class="w-full py-4 bg-cur-primary text-white font-bold rounded-xl hover:bg-cur-primary-light transition-all duration-300">
                             <span class="flex items-center justify-center space-x-2">
                                 <span>Daftar Sekarang</span>
                                 <i class="fas fa-arrow-right"></i>
@@ -490,7 +490,7 @@
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-bold rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        <button type="submit" class="w-full py-4 bg-cur-primary text-white font-bold rounded-xl hover:bg-cur-primary-light transition-all duration-300">
                             <span class="flex items-center justify-center space-x-2">
                                 <span>Daftar sebagai Terapis</span>
                                 <i class="fas fa-arrow-right"></i>
@@ -514,29 +514,29 @@
     <!-- Benefits Section -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-2xl md:text-3xl font-heading font-bold text-center text-cur-primary mb-12">
+            <h3 class="text-2xl md:text-3xl font-poppins font-bold text-center text-cur-primary mb-12">
                 Keuntungan Bergabung dengan CUR-HEART
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    <div class="w-16 h-16 bg-cur-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-cur-secondary text-2xl"></i>
                     </div>
-                    <h4 class="text-xl font-heading font-semibold text-gray-800 mb-3">Data Aman & Terpercaya</h4>
+                    <h4 class="text-xl font-poppins font-semibold text-gray-800 mb-3">Data Aman & Terpercaya</h4>
                     <p class="text-gray-600">Informasi pribadi Anda dilindungi dengan enkripsi tingkat bank dan keamanan berlapis</p>
                 </div>
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-users text-white text-2xl"></i>
+                    <div class="w-16 h-16 bg-cur-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-cur-secondary text-2xl"></i>
                     </div>
-                    <h4 class="text-xl font-heading font-semibold text-gray-800 mb-3">Terapis Profesional</h4>
+                    <h4 class="text-xl font-poppins font-semibold text-gray-800 mb-3">Terapis Profesional</h4>
                     <p class="text-gray-600">Akses ke terapis bersertifikat dan berpengalaman dengan berbagai spesialisasi</p>
                 </div>
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-clock text-white text-2xl"></i>
+                    <div class="w-16 h-16 bg-cur-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-cur-secondary text-2xl"></i>
                     </div>
-                    <h4 class="text-xl font-heading font-semibold text-gray-800 mb-3">Fleksibel & Mudah</h4>
+                    <h4 class="text-xl font-poppins font-semibold text-gray-800 mb-3">Fleksibel & Mudah</h4>
                     <p class="text-gray-600">Booking sesi terapi kapan saja, di mana saja sesuai jadwal Anda</p>
                 </div>
             </div>
@@ -544,100 +544,88 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-cur-primary text-white pt-16 pb-8">
+    <footer class="bg-cur-primary text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Brand -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div>
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-12 h-12 bg-gradient-to-br from-cur-secondary to-cur-accent rounded-xl flex items-center justify-center">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-cur-secondary rounded-lg flex items-center justify-center">
                             <i class="fas fa-heart text-white text-xl"></i>
                         </div>
-                        <div>
-                            <div class="text-xl font-heading font-bold">CUR-HEART</div>
-                            <div class="text-xs opacity-80">Hypnotherapy Center</div>
-                        </div>
+                        <span class="text-2xl font-bold font-poppins">CUR-HEART</span>
                     </div>
-                    <p class="text-sm opacity-80 mb-6">
-                        Pusat terapi hipnoterapi profesional yang membantu Anda mencapai transformasi hidup yang lebih baik.
+                    <p class="text-white/80 mb-4">
+                        Pusat hypnotherapy profesional untuk kesehatan mental yang lebih baik.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cur-secondary transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cur-secondary transition">
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cur-secondary transition">
-                            <i class="fab fa-twitter"></i>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cur-secondary transition">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Layanan -->
                 <div>
-                    <h4 class="text-lg font-heading font-semibold mb-6">Layanan Kami</h4>
-                    <ul class="space-y-3 text-sm opacity-80">
-                        <li><a href="04_service_detail.html" class="hover:text-cur-accent transition">Terapi Kecemasan</a></li>
-                        <li><a href="04_service_detail.html" class="hover:text-cur-accent transition">Berhenti Merokok</a></li>
-                        <li><a href="04_service_detail.html" class="hover:text-cur-accent transition">Manajemen Stres</a></li>
-                        <li><a href="04_service_detail.html" class="hover:text-cur-accent transition">Pengembangan Diri</a></li>
-                        <li><a href="04_service_detail.html" class="hover:text-cur-accent transition">Terapi Trauma</a></li>
-                        <li><a href="03_services.html" class="hover:text-cur-accent transition">Lihat Semua Layanan</a></li>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Layanan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="#" class="hover:text-white transition">Stress & Anxiety</a></li>
+                        <li><a href="#" class="hover:text-white transition">Trauma Healing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Self-Confidence</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sleep Therapy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Habit Change</a></li>
+                        <li><a href="#" class="hover:text-white transition">Phobia Treatment</a></li>
                     </ul>
                 </div>
 
-                <!-- Perusahaan -->
                 <div>
-                    <h4 class="text-lg font-heading font-semibold mb-6">Perusahaan</h4>
-                    <ul class="space-y-3 text-sm opacity-80">
-                        <li><a href="02_about.html" class="hover:text-cur-accent transition">Tentang Kami</a></li>
-                        <li><a href="05_therapists.html" class="hover:text-cur-accent transition">Tim Terapis</a></li>
-                        <li><a href="07_blog.html" class="hover:text-cur-accent transition">Blog & Artikel</a></li>
-                        <li><a href="10_faq.html" class="hover:text-cur-accent transition">FAQ</a></li>
-                        <li><a href="11_privacy_policy.html" class="hover:text-cur-accent transition">Kebijakan Privasi</a></li>
-                        <li><a href="12_terms_conditions.html" class="hover:text-cur-accent transition">Syarat & Ketentuan</a></li>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Perusahaan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="#" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tim Terapis</a></li>
+                        <li><a href="#" class="hover:text-white transition">Artikel & Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partnership</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kontak</a></li>
                     </ul>
                 </div>
 
-                <!-- Kontak -->
                 <div>
-                    <h4 class="text-lg font-heading font-semibold mb-6">Hubungi Kami</h4>
-                    <ul class="space-y-4 text-sm opacity-80">
-                        <li class="flex items-start space-x-3">
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Kontak</h3>
+                    <ul class="space-y-4 text-white/80">
+                        <li class="flex gap-3">
                             <i class="fas fa-map-marker-alt mt-1"></i>
-                            <span>Jl. Kesehatan Mental No. 123<br>Jakarta Selatan 12345</span>
+                            <span>Kemang Raya No. 123<br>Jakarta Selatan 12345</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-phone"></i>
-                            <span>(021) 1234-5678</span>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+62 812-3456-7890</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-envelope"></i>
-                            <span>info@cur-heart.com</span>
+                        <li class="flex gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>hello@cur-heart.id</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>0812-3456-7890</span>
+                        <li class="flex gap-3">
+                            <i class="fas fa-clock mt-1"></i>
+                            <span>Sen - Sab: 09:00 - 20:00</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Bottom Bar -->
-            <div class="pt-8 border-t border-white/10">
-                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                    <p class="text-sm opacity-80">
-                        © 2024 CUR-HEART Hypnotherapy Center. All rights reserved.
-                    </p>
-                    <div class="flex items-center space-x-6 text-sm opacity-80">
-                        <a href="11_privacy_policy.html" class="hover:text-cur-accent transition">Privacy Policy</a>
-                        <a href="12_terms_conditions.html" class="hover:text-cur-accent transition">Terms of Service</a>
-                        <a href="09_contact.html" class="hover:text-cur-accent transition">Contact</a>
-                    </div>
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/80 text-sm">© 2024 CUR-HEART. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-white/80">
+                    <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-white transition">FAQ</a>
                 </div>
             </div>
         </div>
