@@ -40,33 +40,31 @@ Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam proyek ak
 
 ## 3. Tujuan Proyek Akhir
 
-Tujuan dari proyek akhir ini adalah untuk menjawab rumusan masalah yang telah ditetapkan, yaitu:
+Tujuan dari proyek akhir ini adalah:
 
-1. Untuk menganalisis dan mengukur tingkat kematangan tata kelola teknologi informasi pada SATRIAMART menggunakan *framework* COBIT 2019 dengan pendekatan *design factor analysis*.
+1. Menganalisis tingkat kematangan tata kelola TI pada SATRIAMART menggunakan *framework* COBIT 2019 dengan pendekatan *design factor analysis*.
 
-2. Untuk mengidentifikasi kesenjangan (*gap analysis*) antara kondisi tata kelola TI saat ini dengan target *maturity level* yang seharusnya dicapai, serta faktor-faktor kritis keberhasilan (*critical success factors*) yang memengaruhi implementasi *framework* tata kelola TI pada SATRIAMART.
+2. Mengidentifikasi kesenjangan (*gap analysis*) antara kondisi saat ini dengan target *maturity level* serta faktor kritis keberhasilan (*critical success factors*) implementasi *framework* tata kelola TI.
 
-3. Untuk merancang *framework* tata kelola teknologi informasi yang komprehensif dengan fokus pada domain kritis COBIT 2019 (EDM, APO, EDM03, dan APO12) serta menyusun *roadmap* implementasi yang terstruktur untuk meningkatkan *maturity level* SATRIAMART dari level *ad-hoc* (1.2) menuju level *managed* (3.0) dalam periode 18-24 bulan.
+3. Merancang *framework* tata kelola TI dengan fokus domain EDM, APO, EDM03, dan APO12 serta menyusun *roadmap* implementasi untuk meningkatkan *maturity level* dari *ad-hoc* (1.2) ke *managed* (3.0).
 
 ---
 
 ## 4. Manfaat Proyek Akhir
 
-Proyek akhir ini diharapkan dapat memberikan manfaat baik secara akademik maupun praktis:
-
 ### Manfaat Akademik
 
-Penelitian ini akan memperkaya literatur tentang implementasi *framework* COBIT 2019 pada perusahaan *retail* skala menengah di Indonesia, mengisi kesenjangan penelitian *existing* yang mayoritas fokus pada perusahaan manufaktur. Selain itu, penelitian ini akan menghasilkan model *assessment maturity* IT *governance* yang dapat direplikasi dan diadaptasi oleh peneliti lain serta menjadi referensi bagi mahasiswa dan akademisi yang melakukan penelitian terkait IT *governance* di sektor *retail*.
+Penelitian ini memperkaya literatur implementasi COBIT 2019 pada perusahaan *retail* skala menengah di Indonesia, mengisi kesenjangan penelitian yang mayoritas fokus pada manufaktur. Penelitian ini menghasilkan model *assessment maturity* IT *governance* yang dapat direplikasi peneliti lain dan menjadi referensi akademisi di sektor *retail*.
 
 ### Manfaat Praktis
 
-SATRIAMART akan memiliki *framework* tata kelola TI yang terstruktur dan komprehensif untuk meningkatkan efektivitas pengelolaan teknologi informasi dari level *ad-hoc* menuju level *managed*. Implementasi domain EDM, APO, EDM03, dan APO12 akan membantu SATRIAMART dalam mengelola risiko TI secara proaktif, menyelaraskan strategi TI dengan bisnis, mengoptimalkan sumber daya TI, serta memiliki *roadmap* implementasi yang jelas dan dapat dieksekusi untuk mendukung pencapaian target pertumbuhan bisnis. Model dan *roadmap* yang dikembangkan juga dapat diadaptasi oleh perusahaan *retail* skala menengah lainnya di Indonesia yang menghadapi tantangan serupa.
+SATRIAMART memperoleh *framework* tata kelola TI terstruktur untuk meningkatkan efektivitas dari level *ad-hoc* ke *managed*. Implementasi domain EDM, APO, EDM03, dan APO12 membantu mengelola risiko TI proaktif, menyelaraskan strategi TI-bisnis, mengoptimalkan sumber daya, dan memiliki *roadmap* implementasi jelas. Model ini dapat diadaptasi perusahaan *retail* sejenis di Indonesia.
 
 ---
 
 ## 5. Keterkaitan Logis Antar Bagian
 
-Proyek akhir ini memiliki keterkaitan logis yang kuat antara latar belakang, rumusan masalah, tujuan, dan manfaat. **Latar Belakang** mengidentifikasi bahwa SATRIAMART menghadapi tantangan dalam tata kelola TI dengan *maturity level* yang rendah (1.2) dan adanya *gap* penelitian dalam implementasi COBIT 2019 pada perusahaan *retail* skala menengah. **Rumusan Masalah** secara spesifik menanyakan tentang tingkat kematangan saat ini, kesenjangan dan faktor kritis yang memengaruhi, serta rekomendasi perbaikan dan *roadmap* implementasi. **Tujuan Proyek** dirancang untuk menjawab setiap rumusan masalah secara sistematis melalui *assessment*, *gap analysis* dan identifikasi *critical success factors*, serta perancangan *framework* dan *roadmap* implementasi. **Manfaat Proyek** menjelaskan kontribusi akademik berupa pengayaan literatur dan model *assessment* yang dapat direplikasi, serta manfaat praktis berupa *framework* tata kelola TI yang komprehensif, manajemen risiko yang lebih baik, keselarasan strategi, dan *roadmap* implementasi yang dapat dieksekusi oleh SATRIAMART dan perusahaan sejenis untuk meningkatkan *maturity level* dari kondisi *ad-hoc* menuju *managed*.
+**Latar Belakang** mengidentifikasi SATRIAMART menghadapi tantangan tata kelola TI dengan *maturity level* rendah (1.2) dan *gap* penelitian COBIT 2019 pada *retail* skala menengah. **Rumusan Masalah** menanyakan tingkat kematangan, kesenjangan-faktor kritis, dan rekomendasi-*roadmap* implementasi. **Tujuan Proyek** menjawab melalui *assessment*, *gap analysis*, identifikasi *critical success factors*, dan perancangan *framework-roadmap*. **Manfaat** menghasilkan pengayaan literatur dan model *assessment* (akademik), serta *framework* komprehensif dan *roadmap* implementasi (praktis) untuk meningkatkan *maturity level* dari *ad-hoc* ke *managed*.
 
 ---
 
