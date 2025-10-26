@@ -44,7 +44,7 @@ Tujuan dari proyek akhir ini adalah:
 
 1. Menganalisis tingkat kematangan tata kelola TI pada SATRIAMART menggunakan *framework* COBIT 2019 dengan pendekatan *design factor analysis*.
 
-2. Mengidentifikasi kesenjangan (*gap analysis*) antara kondisi saat ini dengan target *maturity level* serta faktor kritis keberhasilan (*critical success factors*) implementasi *framework* tata kelola TI.
+2. Mengidentifikasi kesenjangan antara kondisi saat ini dengan target *maturity level* serta faktor kritis keberhasilan  implementasi *framework* tata kelola TI.
 
 3. Merancang *framework* tata kelola TI dengan fokus domain EDM, APO, EDM03, dan APO12 serta menyusun *roadmap* implementasi untuk meningkatkan *maturity level* dari *ad-hoc* (1.2) ke *managed* (3.0).
 
