@@ -1,0 +1,349 @@
+id_biaya,tanggal,kategori_biaya,sub_kategori,nominal,keterangan,metode_pembayaran
+BYA0001,2025-01-23,Bahan Baku,LED Strip,206912,Biaya led strip bulan 01/2025,Tunai
+BYA0002,2025-01-11,Bahan Baku,Lem Akrilik,425932,Biaya lem akrilik bulan 01/2025,Tunai
+BYA0003,2025-01-17,Bahan Baku,LED Strip,208587,Biaya led strip bulan 01/2025,Transfer Bank
+BYA0004,2025-01-21,Bahan Baku,Cat Spray,339164,Biaya cat spray bulan 01/2025,Tunai
+BYA0005,2025-01-03,Bahan Baku,Lem Akrilik,110593,Biaya lem akrilik bulan 01/2025,Tunai
+BYA0006,2025-01-05,Bahan Baku,LED Strip,149657,Biaya led strip bulan 01/2025,Transfer Bank
+BYA0007,2025-01-14,Bahan Baku,Lem Akrilik,81911,Biaya lem akrilik bulan 01/2025,E-wallet
+BYA0008,2025-01-25,Bahan Baku,Lem Akrilik,1128774,Biaya lem akrilik bulan 01/2025,Tunai
+BYA0009,2025-01-11,Marketing,Facebook Ads,320587,Biaya facebook ads bulan 01/2025,Transfer Bank
+BYA0010,2025-01-19,Marketing,Konten Creator,184300,Biaya konten creator bulan 01/2025,E-wallet
+BYA0011,2025-01-22,Marketing,Facebook Ads,169565,Biaya facebook ads bulan 01/2025,E-wallet
+BYA0012,2025-01-10,Marketing,Desain Grafis,386160,Biaya desain grafis bulan 01/2025,Tunai
+BYA0013,2025-01-16,Operasional,Air,315085,Biaya air bulan 01/2025,Tunai
+BYA0014,2025-01-10,Operasional,Alat Kerja,114933,Biaya alat kerja bulan 01/2025,Transfer Bank
+BYA0015,2025-01-18,Operasional,Alat Kerja,162957,Biaya alat kerja bulan 01/2025,Tunai
+BYA0016,2025-01-02,Operasional,Internet,84535,Biaya internet bulan 01/2025,E-wallet
+BYA0017,2025-01-24,Operasional,Sewa Tempat,95310,Biaya sewa tempat bulan 01/2025,Transfer Bank
+BYA0018,2025-01-18,Operasional,Listrik,523483,Biaya listrik bulan 01/2025,E-wallet
+BYA0019,2025-01-13,Transportasi,Ekspedisi,176563,Biaya ekspedisi bulan 01/2025,Transfer Bank
+BYA0020,2025-01-20,Transportasi,Ekspedisi,71398,Biaya ekspedisi bulan 01/2025,Tunai
+BYA0021,2025-01-26,Transportasi,Ekspedisi,50024,Biaya ekspedisi bulan 01/2025,E-wallet
+BYA0022,2025-01-18,Transportasi,Ekspedisi,71788,Biaya ekspedisi bulan 01/2025,E-wallet
+BYA0023,2025-01-27,Transportasi,Bensin,219456,Biaya bensin bulan 01/2025,Tunai
+BYA0024,2025-01-19,Utilitas,Kebersihan,45405,Biaya kebersihan bulan 01/2025,E-wallet
+BYA0025,2025-01-11,Utilitas,Maintenance,30432,Biaya maintenance bulan 01/2025,Tunai
+BYA0026,2025-01-20,Utilitas,Kebersihan,40702,Biaya kebersihan bulan 01/2025,E-wallet
+BYA0027,2025-01-10,Utilitas,Kebersihan,31634,Biaya kebersihan bulan 01/2025,E-wallet
+BYA0028,2025-01-04,Utilitas,Telepon,21819,Biaya telepon bulan 01/2025,E-wallet
+BYA0029,2025-01-14,Utilitas,Kebersihan,9625,Biaya kebersihan bulan 01/2025,E-wallet
+BYA0030,2025-01-16,Utilitas,Keamanan,8424,Biaya keamanan bulan 01/2025,E-wallet
+BYA0031,2025-01-02,Utilitas,Maintenance,106573,Biaya maintenance bulan 01/2025,E-wallet
+BYA0032,2025-02-10,Bahan Baku,Akrilik Sheet,189831,Biaya akrilik sheet bulan 02/2025,E-wallet
+BYA0033,2025-02-02,Bahan Baku,Lem Akrilik,241878,Biaya lem akrilik bulan 02/2025,E-wallet
+BYA0034,2025-02-09,Bahan Baku,Cat Spray,63690,Biaya cat spray bulan 02/2025,Transfer Bank
+BYA0035,2025-02-03,Bahan Baku,Baut & Mur,62019,Biaya baut & mur bulan 02/2025,E-wallet
+BYA0036,2025-02-26,Bahan Baku,Cat Spray,472871,Biaya cat spray bulan 02/2025,Transfer Bank
+BYA0037,2025-02-24,Marketing,Konten Creator,76390,Biaya konten creator bulan 02/2025,Tunai
+BYA0038,2025-02-07,Marketing,Konten Creator,66785,Biaya konten creator bulan 02/2025,E-wallet
+BYA0039,2025-02-04,Marketing,Instagram Ads,61678,Biaya instagram ads bulan 02/2025,Tunai
+BYA0040,2025-02-17,Marketing,Instagram Ads,17337,Biaya instagram ads bulan 02/2025,E-wallet
+BYA0041,2025-02-01,Marketing,Facebook Ads,39738,Biaya facebook ads bulan 02/2025,Tunai
+BYA0042,2025-02-02,Marketing,Instagram Ads,150187,Biaya instagram ads bulan 02/2025,E-wallet
+BYA0043,2025-02-19,Operasional,Listrik,99898,Biaya listrik bulan 02/2025,E-wallet
+BYA0044,2025-02-24,Operasional,Alat Kerja,95355,Biaya alat kerja bulan 02/2025,Tunai
+BYA0045,2025-02-18,Operasional,Sewa Tempat,42746,Biaya sewa tempat bulan 02/2025,E-wallet
+BYA0046,2025-02-27,Operasional,Listrik,48702,Biaya listrik bulan 02/2025,E-wallet
+BYA0047,2025-02-07,Operasional,Alat Kerja,44690,Biaya alat kerja bulan 02/2025,Transfer Bank
+BYA0048,2025-02-19,Operasional,Sewa Tempat,172306,Biaya sewa tempat bulan 02/2025,E-wallet
+BYA0049,2025-02-17,Transportasi,Ekspedisi,40795,Biaya ekspedisi bulan 02/2025,Transfer Bank
+BYA0050,2025-02-19,Transportasi,Parkir,49000,Biaya parkir bulan 02/2025,Transfer Bank
+BYA0051,2025-02-28,Transportasi,Ojek Online,32735,Biaya ojek online bulan 02/2025,Transfer Bank
+BYA0052,2025-02-07,Transportasi,Ojek Online,106423,Biaya ojek online bulan 02/2025,Transfer Bank
+BYA0053,2025-02-05,Utilitas,Kebersihan,13378,Biaya kebersihan bulan 02/2025,Tunai
+BYA0054,2025-02-26,Utilitas,Maintenance,12679,Biaya maintenance bulan 02/2025,Tunai
+BYA0055,2025-02-20,Utilitas,Kebersihan,10817,Biaya kebersihan bulan 02/2025,Transfer Bank
+BYA0056,2025-02-16,Utilitas,Kebersihan,6282,Biaya kebersihan bulan 02/2025,Tunai
+BYA0057,2025-02-20,Utilitas,Maintenance,10113,Biaya maintenance bulan 02/2025,Tunai
+BYA0058,2025-02-08,Utilitas,Keamanan,4901,Biaya keamanan bulan 02/2025,Tunai
+BYA0059,2025-02-03,Utilitas,Kebersihan,56306,Biaya kebersihan bulan 02/2025,E-wallet
+BYA0060,2025-03-12,Bahan Baku,LED Strip,788486,Biaya led strip bulan 03/2025,E-wallet
+BYA0061,2025-03-15,Bahan Baku,LED Strip,185763,Biaya led strip bulan 03/2025,Tunai
+BYA0062,2025-03-10,Bahan Baku,LED Strip,201872,Biaya led strip bulan 03/2025,E-wallet
+BYA0063,2025-03-12,Bahan Baku,Cat Spray,996044,Biaya cat spray bulan 03/2025,Tunai
+BYA0064,2025-03-05,Marketing,Instagram Ads,63296,Biaya instagram ads bulan 03/2025,Transfer Bank
+BYA0065,2025-03-06,Marketing,Facebook Ads,98225,Biaya facebook ads bulan 03/2025,Transfer Bank
+BYA0066,2025-03-07,Marketing,Konten Creator,128849,Biaya konten creator bulan 03/2025,E-wallet
+BYA0067,2025-03-09,Marketing,Facebook Ads,45205,Biaya facebook ads bulan 03/2025,E-wallet
+BYA0068,2025-03-23,Marketing,Facebook Ads,53145,Biaya facebook ads bulan 03/2025,Tunai
+BYA0069,2025-03-22,Marketing,Konten Creator,75116,Biaya konten creator bulan 03/2025,Transfer Bank
+BYA0070,2025-03-13,Marketing,Konten Creator,49238,Biaya konten creator bulan 03/2025,Tunai
+BYA0071,2025-03-16,Marketing,Instagram Ads,355792,Biaya instagram ads bulan 03/2025,Transfer Bank
+BYA0072,2025-03-28,Operasional,Air,238505,Biaya air bulan 03/2025,Transfer Bank
+BYA0073,2025-03-16,Operasional,Air,140312,Biaya air bulan 03/2025,Tunai
+BYA0074,2025-03-09,Operasional,Listrik,129425,Biaya listrik bulan 03/2025,Transfer Bank
+BYA0075,2025-03-19,Operasional,Sewa Tempat,61154,Biaya sewa tempat bulan 03/2025,Transfer Bank
+BYA0076,2025-03-25,Operasional,Air,492551,Biaya air bulan 03/2025,Transfer Bank
+BYA0077,2025-03-02,Transportasi,Ekspedisi,59391,Biaya ekspedisi bulan 03/2025,Transfer Bank
+BYA0078,2025-03-01,Transportasi,Ojek Online,44115,Biaya ojek online bulan 03/2025,E-wallet
+BYA0079,2025-03-10,Transportasi,Parkir,89528,Biaya parkir bulan 03/2025,E-wallet
+BYA0080,2025-03-22,Transportasi,Bensin,48374,Biaya bensin bulan 03/2025,Transfer Bank
+BYA0081,2025-03-22,Transportasi,Bensin,24155,Biaya bensin bulan 03/2025,E-wallet
+BYA0082,2025-03-06,Transportasi,Bensin,217140,Biaya bensin bulan 03/2025,Tunai
+BYA0083,2025-03-07,Utilitas,Telepon,29530,Biaya telepon bulan 03/2025,Tunai
+BYA0084,2025-03-18,Utilitas,Telepon,15167,Biaya telepon bulan 03/2025,E-wallet
+BYA0085,2025-03-07,Utilitas,Kebersihan,30914,Biaya kebersihan bulan 03/2025,E-wallet
+BYA0086,2025-03-19,Utilitas,Keamanan,25900,Biaya keamanan bulan 03/2025,Tunai
+BYA0087,2025-03-09,Utilitas,Telepon,12842,Biaya telepon bulan 03/2025,Transfer Bank
+BYA0088,2025-03-20,Utilitas,Maintenance,18930,Biaya maintenance bulan 03/2025,Transfer Bank
+BYA0089,2025-03-05,Utilitas,Keamanan,18256,Biaya keamanan bulan 03/2025,Transfer Bank
+BYA0090,2025-03-04,Utilitas,Maintenance,89812,Biaya maintenance bulan 03/2025,Tunai
+BYA0091,2025-04-07,Bahan Baku,Lem Akrilik,691482,Biaya lem akrilik bulan 04/2025,Tunai
+BYA0092,2025-04-07,Bahan Baku,Cat Spray,202103,Biaya cat spray bulan 04/2025,Tunai
+BYA0093,2025-04-18,Bahan Baku,LED Strip,407021,Biaya led strip bulan 04/2025,Tunai
+BYA0094,2025-04-15,Bahan Baku,Lem Akrilik,141962,Biaya lem akrilik bulan 04/2025,E-wallet
+BYA0095,2025-04-18,Bahan Baku,LED Strip,936641,Biaya led strip bulan 04/2025,Transfer Bank
+BYA0096,2025-04-05,Marketing,Konten Creator,226119,Biaya konten creator bulan 04/2025,Tunai
+BYA0097,2025-04-24,Marketing,Instagram Ads,119728,Biaya instagram ads bulan 04/2025,E-wallet
+BYA0098,2025-04-10,Marketing,Desain Grafis,113436,Biaya desain grafis bulan 04/2025,E-wallet
+BYA0099,2025-04-15,Marketing,Facebook Ads,73429,Biaya facebook ads bulan 04/2025,Tunai
+BYA0100,2025-04-23,Marketing,Instagram Ads,79934,Biaya instagram ads bulan 04/2025,Tunai
+BYA0101,2025-04-22,Marketing,Desain Grafis,339037,Biaya desain grafis bulan 04/2025,Tunai
+BYA0102,2025-04-09,Operasional,Listrik,117958,Biaya listrik bulan 04/2025,Transfer Bank
+BYA0103,2025-04-17,Operasional,Sewa Tempat,113651,Biaya sewa tempat bulan 04/2025,Transfer Bank
+BYA0104,2025-04-05,Operasional,Listrik,101218,Biaya listrik bulan 04/2025,Tunai
+BYA0105,2025-04-13,Operasional,Internet,92778,Biaya internet bulan 04/2025,Transfer Bank
+BYA0106,2025-04-25,Operasional,Internet,70983,Biaya internet bulan 04/2025,Transfer Bank
+BYA0107,2025-04-01,Operasional,Alat Kerja,68067,Biaya alat kerja bulan 04/2025,Transfer Bank
+BYA0108,2025-04-17,Operasional,Internet,598514,Biaya internet bulan 04/2025,E-wallet
+BYA0109,2025-04-05,Transportasi,Ojek Online,158418,Biaya ojek online bulan 04/2025,Transfer Bank
+BYA0110,2025-04-28,Transportasi,Ojek Online,50564,Biaya ojek online bulan 04/2025,Transfer Bank
+BYA0111,2025-04-11,Transportasi,Bensin,86486,Biaya bensin bulan 04/2025,Transfer Bank
+BYA0112,2025-04-03,Transportasi,Ojek Online,31308,Biaya ojek online bulan 04/2025,E-wallet
+BYA0113,2025-04-17,Transportasi,Parkir,201937,Biaya parkir bulan 04/2025,Transfer Bank
+BYA0114,2025-04-18,Utilitas,Keamanan,31572,Biaya keamanan bulan 04/2025,Transfer Bank
+BYA0115,2025-04-25,Utilitas,Telepon,26093,Biaya telepon bulan 04/2025,Tunai
+BYA0116,2025-04-01,Utilitas,Telepon,18825,Biaya telepon bulan 04/2025,E-wallet
+BYA0117,2025-04-26,Utilitas,Maintenance,32689,Biaya maintenance bulan 04/2025,E-wallet
+BYA0118,2025-04-06,Utilitas,Keamanan,27125,Biaya keamanan bulan 04/2025,Tunai
+BYA0119,2025-04-10,Utilitas,Maintenance,20357,Biaya maintenance bulan 04/2025,Transfer Bank
+BYA0120,2025-04-20,Utilitas,Maintenance,8105,Biaya maintenance bulan 04/2025,Transfer Bank
+BYA0121,2025-04-08,Utilitas,Kebersihan,99590,Biaya kebersihan bulan 04/2025,Transfer Bank
+BYA0122,2025-05-27,Bahan Baku,Baut & Mur,463376,Biaya baut & mur bulan 05/2025,E-wallet
+BYA0123,2025-05-24,Bahan Baku,LED Strip,495664,Biaya led strip bulan 05/2025,E-wallet
+BYA0124,2025-05-21,Bahan Baku,Akrilik Sheet,287139,Biaya akrilik sheet bulan 05/2025,E-wallet
+BYA0125,2025-05-13,Bahan Baku,Baut & Mur,258624,Biaya baut & mur bulan 05/2025,Tunai
+BYA0126,2025-05-16,Bahan Baku,Lem Akrilik,255040,Biaya lem akrilik bulan 05/2025,Transfer Bank
+BYA0127,2025-05-26,Bahan Baku,Akrilik Sheet,129202,Biaya akrilik sheet bulan 05/2025,Transfer Bank
+BYA0128,2025-05-23,Bahan Baku,LED Strip,983282,Biaya led strip bulan 05/2025,E-wallet
+BYA0129,2025-05-28,Marketing,Konten Creator,143700,Biaya konten creator bulan 05/2025,Tunai
+BYA0130,2025-05-22,Marketing,Desain Grafis,183752,Biaya desain grafis bulan 05/2025,Tunai
+BYA0131,2025-05-23,Marketing,Konten Creator,108177,Biaya konten creator bulan 05/2025,Tunai
+BYA0132,2025-05-01,Marketing,Instagram Ads,126622,Biaya instagram ads bulan 05/2025,Tunai
+BYA0133,2025-05-11,Marketing,Konten Creator,63272,Biaya konten creator bulan 05/2025,Transfer Bank
+BYA0134,2025-05-02,Marketing,Desain Grafis,81347,Biaya desain grafis bulan 05/2025,E-wallet
+BYA0135,2025-05-20,Marketing,Instagram Ads,65348,Biaya instagram ads bulan 05/2025,Tunai
+BYA0136,2025-05-21,Marketing,Instagram Ads,376713,Biaya instagram ads bulan 05/2025,Tunai
+BYA0137,2025-05-10,Operasional,Listrik,224880,Biaya listrik bulan 05/2025,Transfer Bank
+BYA0138,2025-05-22,Operasional,Internet,171786,Biaya internet bulan 05/2025,Tunai
+BYA0139,2025-05-09,Operasional,Alat Kerja,131239,Biaya alat kerja bulan 05/2025,Tunai
+BYA0140,2025-05-10,Operasional,Alat Kerja,169759,Biaya alat kerja bulan 05/2025,Transfer Bank
+BYA0141,2025-05-19,Operasional,Sewa Tempat,62994,Biaya sewa tempat bulan 05/2025,Tunai
+BYA0142,2025-05-13,Operasional,Alat Kerja,643591,Biaya alat kerja bulan 05/2025,Tunai
+BYA0143,2025-05-02,Transportasi,Ekspedisi,145154,Biaya ekspedisi bulan 05/2025,Tunai
+BYA0144,2025-05-05,Transportasi,Parkir,117296,Biaya parkir bulan 05/2025,E-wallet
+BYA0145,2025-05-14,Transportasi,Parkir,85888,Biaya parkir bulan 05/2025,Tunai
+BYA0146,2025-05-28,Transportasi,Parkir,289957,Biaya parkir bulan 05/2025,E-wallet
+BYA0147,2025-05-11,Utilitas,Keamanan,84153,Biaya keamanan bulan 05/2025,Tunai
+BYA0148,2025-05-23,Utilitas,Maintenance,39449,Biaya maintenance bulan 05/2025,Transfer Bank
+BYA0149,2025-05-16,Utilitas,Maintenance,56981,Biaya maintenance bulan 05/2025,E-wallet
+BYA0150,2025-05-11,Utilitas,Kebersihan,37643,Biaya kebersihan bulan 05/2025,E-wallet
+BYA0151,2025-05-01,Utilitas,Telepon,100921,Biaya telepon bulan 05/2025,Tunai
+BYA0152,2025-06-18,Bahan Baku,LED Strip,677254,Biaya led strip bulan 06/2025,E-wallet
+BYA0153,2025-06-26,Bahan Baku,LED Strip,248980,Biaya led strip bulan 06/2025,Tunai
+BYA0154,2025-06-27,Bahan Baku,LED Strip,352181,Biaya led strip bulan 06/2025,E-wallet
+BYA0155,2025-06-26,Bahan Baku,Cat Spray,585140,Biaya cat spray bulan 06/2025,Transfer Bank
+BYA0156,2025-06-27,Bahan Baku,Baut & Mur,364629,Biaya baut & mur bulan 06/2025,Transfer Bank
+BYA0157,2025-06-25,Bahan Baku,Akrilik Sheet,199629,Biaya akrilik sheet bulan 06/2025,Transfer Bank
+BYA0158,2025-06-21,Bahan Baku,LED Strip,1595578,Biaya led strip bulan 06/2025,Transfer Bank
+BYA0159,2025-06-17,Marketing,Instagram Ads,165887,Biaya instagram ads bulan 06/2025,Tunai
+BYA0160,2025-06-11,Marketing,Facebook Ads,373302,Biaya facebook ads bulan 06/2025,Tunai
+BYA0161,2025-06-15,Marketing,Desain Grafis,219486,Biaya desain grafis bulan 06/2025,Transfer Bank
+BYA0162,2025-06-13,Marketing,Facebook Ads,89412,Biaya facebook ads bulan 06/2025,Transfer Bank
+BYA0163,2025-06-03,Marketing,Konten Creator,761269,Biaya konten creator bulan 06/2025,Tunai
+BYA0164,2025-06-27,Operasional,Internet,944625,Biaya internet bulan 06/2025,Tunai
+BYA0165,2025-06-11,Operasional,Sewa Tempat,311986,Biaya sewa tempat bulan 06/2025,Tunai
+BYA0166,2025-06-16,Operasional,Air,710380,Biaya air bulan 06/2025,E-wallet
+BYA0167,2025-06-19,Transportasi,Ekspedisi,309786,Biaya ekspedisi bulan 06/2025,Transfer Bank
+BYA0168,2025-06-28,Transportasi,Ojek Online,217164,Biaya ojek online bulan 06/2025,E-wallet
+BYA0169,2025-06-17,Transportasi,Bensin,134102,Biaya bensin bulan 06/2025,E-wallet
+BYA0170,2025-06-20,Transportasi,Ojek Online,233035,Biaya ojek online bulan 06/2025,Transfer Bank
+BYA0171,2025-06-01,Utilitas,Telepon,112470,Biaya telepon bulan 06/2025,Transfer Bank
+BYA0172,2025-06-18,Utilitas,Keamanan,65719,Biaya keamanan bulan 06/2025,Tunai
+BYA0173,2025-06-13,Utilitas,Kebersihan,72041,Biaya kebersihan bulan 06/2025,Tunai
+BYA0174,2025-06-21,Utilitas,Telepon,29056,Biaya telepon bulan 06/2025,Tunai
+BYA0175,2025-06-03,Utilitas,Maintenance,167757,Biaya maintenance bulan 06/2025,Tunai
+BYA0176,2025-07-13,Bahan Baku,Cat Spray,426781,Biaya cat spray bulan 07/2025,Transfer Bank
+BYA0177,2025-07-05,Bahan Baku,Lem Akrilik,172452,Biaya lem akrilik bulan 07/2025,Tunai
+BYA0178,2025-07-12,Bahan Baku,Cat Spray,237857,Biaya cat spray bulan 07/2025,Transfer Bank
+BYA0179,2025-07-22,Bahan Baku,Lem Akrilik,173400,Biaya lem akrilik bulan 07/2025,Transfer Bank
+BYA0180,2025-07-08,Bahan Baku,Lem Akrilik,161806,Biaya lem akrilik bulan 07/2025,Tunai
+BYA0181,2025-07-22,Bahan Baku,Cat Spray,241391,Biaya cat spray bulan 07/2025,E-wallet
+BYA0182,2025-07-27,Bahan Baku,Akrilik Sheet,110354,Biaya akrilik sheet bulan 07/2025,Tunai
+BYA0183,2025-07-27,Bahan Baku,LED Strip,993744,Biaya led strip bulan 07/2025,Tunai
+BYA0184,2025-07-14,Marketing,Instagram Ads,318960,Biaya instagram ads bulan 07/2025,Tunai
+BYA0185,2025-07-05,Marketing,Instagram Ads,122496,Biaya instagram ads bulan 07/2025,Tunai
+BYA0186,2025-07-17,Marketing,Facebook Ads,565658,Biaya facebook ads bulan 07/2025,E-wallet
+BYA0187,2025-07-02,Operasional,Internet,400449,Biaya internet bulan 07/2025,Transfer Bank
+BYA0188,2025-07-26,Operasional,Air,168320,Biaya air bulan 07/2025,E-wallet
+BYA0189,2025-07-14,Operasional,Alat Kerja,662148,Biaya alat kerja bulan 07/2025,E-wallet
+BYA0190,2025-07-18,Transportasi,Ojek Online,123642,Biaya ojek online bulan 07/2025,Tunai
+BYA0191,2025-07-14,Transportasi,Bensin,50904,Biaya bensin bulan 07/2025,Transfer Bank
+BYA0192,2025-07-28,Transportasi,Parkir,61894,Biaya parkir bulan 07/2025,Tunai
+BYA0193,2025-07-04,Transportasi,Ekspedisi,60915,Biaya ekspedisi bulan 07/2025,E-wallet
+BYA0194,2025-07-05,Transportasi,Parkir,41957,Biaya parkir bulan 07/2025,Transfer Bank
+BYA0195,2025-07-18,Transportasi,Ojek Online,220195,Biaya ojek online bulan 07/2025,Tunai
+BYA0196,2025-07-04,Utilitas,Telepon,81161,Biaya telepon bulan 07/2025,Tunai
+BYA0197,2025-07-03,Utilitas,Telepon,41824,Biaya telepon bulan 07/2025,E-wallet
+BYA0198,2025-07-13,Utilitas,Telepon,35726,Biaya telepon bulan 07/2025,Tunai
+BYA0199,2025-07-23,Utilitas,Maintenance,14975,Biaya maintenance bulan 07/2025,E-wallet
+BYA0200,2025-07-14,Utilitas,Keamanan,106067,Biaya keamanan bulan 07/2025,Transfer Bank
+BYA0201,2025-08-09,Bahan Baku,Cat Spray,1574469,Biaya cat spray bulan 08/2025,E-wallet
+BYA0202,2025-08-10,Bahan Baku,Akrilik Sheet,295106,Biaya akrilik sheet bulan 08/2025,E-wallet
+BYA0203,2025-08-07,Bahan Baku,Lem Akrilik,1380295,Biaya lem akrilik bulan 08/2025,Transfer Bank
+BYA0204,2025-08-10,Marketing,Instagram Ads,249952,Biaya instagram ads bulan 08/2025,Transfer Bank
+BYA0205,2025-08-10,Marketing,Instagram Ads,163537,Biaya instagram ads bulan 08/2025,Transfer Bank
+BYA0206,2025-08-27,Marketing,Konten Creator,151527,Biaya konten creator bulan 08/2025,Tunai
+BYA0207,2025-08-16,Marketing,Desain Grafis,71237,Biaya desain grafis bulan 08/2025,Tunai
+BYA0208,2025-08-05,Marketing,Konten Creator,132386,Biaya konten creator bulan 08/2025,Tunai
+BYA0209,2025-08-22,Marketing,Instagram Ads,42126,Biaya instagram ads bulan 08/2025,E-wallet
+BYA0210,2025-08-05,Marketing,Facebook Ads,489183,Biaya facebook ads bulan 08/2025,Transfer Bank
+BYA0211,2025-08-14,Operasional,Sewa Tempat,378065,Biaya sewa tempat bulan 08/2025,E-wallet
+BYA0212,2025-08-11,Operasional,Air,262087,Biaya air bulan 08/2025,Tunai
+BYA0213,2025-08-07,Operasional,Air,169802,Biaya air bulan 08/2025,E-wallet
+BYA0214,2025-08-11,Operasional,Air,135864,Biaya air bulan 08/2025,E-wallet
+BYA0215,2025-08-20,Operasional,Sewa Tempat,643007,Biaya sewa tempat bulan 08/2025,E-wallet
+BYA0216,2025-08-22,Transportasi,Parkir,120834,Biaya parkir bulan 08/2025,Tunai
+BYA0217,2025-08-19,Transportasi,Ojek Online,47844,Biaya ojek online bulan 08/2025,Transfer Bank
+BYA0218,2025-08-05,Transportasi,Parkir,79908,Biaya parkir bulan 08/2025,Tunai
+BYA0219,2025-08-18,Transportasi,Ekspedisi,36785,Biaya ekspedisi bulan 08/2025,Transfer Bank
+BYA0220,2025-08-28,Transportasi,Parkir,51858,Biaya parkir bulan 08/2025,Tunai
+BYA0221,2025-08-02,Transportasi,Bensin,26299,Biaya bensin bulan 08/2025,E-wallet
+BYA0222,2025-08-26,Transportasi,Bensin,47232,Biaya bensin bulan 08/2025,Transfer Bank
+BYA0223,2025-08-10,Transportasi,Bensin,311433,Biaya bensin bulan 08/2025,Tunai
+BYA0224,2025-08-07,Utilitas,Keamanan,73626,Biaya keamanan bulan 08/2025,E-wallet
+BYA0225,2025-08-19,Utilitas,Kebersihan,53987,Biaya kebersihan bulan 08/2025,Transfer Bank
+BYA0226,2025-08-05,Utilitas,Telepon,58276,Biaya telepon bulan 08/2025,Tunai
+BYA0227,2025-08-16,Utilitas,Telepon,24400,Biaya telepon bulan 08/2025,Tunai
+BYA0228,2025-08-02,Utilitas,Telepon,30720,Biaya telepon bulan 08/2025,Tunai
+BYA0229,2025-08-23,Utilitas,Telepon,120087,Biaya telepon bulan 08/2025,Transfer Bank
+BYA0230,2025-09-14,Bahan Baku,Baut & Mur,288748,Biaya baut & mur bulan 09/2025,E-wallet
+BYA0231,2025-09-28,Bahan Baku,Baut & Mur,177028,Biaya baut & mur bulan 09/2025,E-wallet
+BYA0232,2025-09-14,Bahan Baku,Akrilik Sheet,189859,Biaya akrilik sheet bulan 09/2025,Transfer Bank
+BYA0233,2025-09-17,Bahan Baku,LED Strip,93500,Biaya led strip bulan 09/2025,Transfer Bank
+BYA0234,2025-09-28,Bahan Baku,Lem Akrilik,384548,Biaya lem akrilik bulan 09/2025,Transfer Bank
+BYA0235,2025-09-28,Marketing,Desain Grafis,87099,Biaya desain grafis bulan 09/2025,E-wallet
+BYA0236,2025-09-14,Marketing,Facebook Ads,86594,Biaya facebook ads bulan 09/2025,Transfer Bank
+BYA0237,2025-09-06,Marketing,Desain Grafis,79510,Biaya desain grafis bulan 09/2025,Transfer Bank
+BYA0238,2025-09-12,Marketing,Desain Grafis,200270,Biaya desain grafis bulan 09/2025,E-wallet
+BYA0239,2025-09-19,Operasional,Sewa Tempat,134196,Biaya sewa tempat bulan 09/2025,E-wallet
+BYA0240,2025-09-03,Operasional,Listrik,165696,Biaya listrik bulan 09/2025,Tunai
+BYA0241,2025-09-09,Operasional,Alat Kerja,254353,Biaya alat kerja bulan 09/2025,Transfer Bank
+BYA0242,2025-09-28,Transportasi,Bensin,33696,Biaya bensin bulan 09/2025,E-wallet
+BYA0243,2025-09-18,Transportasi,Ojek Online,58342,Biaya ojek online bulan 09/2025,E-wallet
+BYA0244,2025-09-16,Transportasi,Ekspedisi,57325,Biaya ekspedisi bulan 09/2025,Tunai
+BYA0245,2025-09-11,Transportasi,Bensin,102566,Biaya bensin bulan 09/2025,Tunai
+BYA0246,2025-09-07,Utilitas,Keamanan,22839,Biaya keamanan bulan 09/2025,E-wallet
+BYA0247,2025-09-04,Utilitas,Keamanan,13561,Biaya keamanan bulan 09/2025,Transfer Bank
+BYA0248,2025-09-05,Utilitas,Maintenance,14840,Biaya maintenance bulan 09/2025,E-wallet
+BYA0249,2025-09-08,Utilitas,Keamanan,10429,Biaya keamanan bulan 09/2025,E-wallet
+BYA0250,2025-09-11,Utilitas,Telepon,8813,Biaya telepon bulan 09/2025,Transfer Bank
+BYA0251,2025-09-05,Utilitas,Maintenance,5544,Biaya maintenance bulan 09/2025,Tunai
+BYA0252,2025-09-16,Utilitas,Keamanan,49938,Biaya keamanan bulan 09/2025,Transfer Bank
+BYA0253,2025-10-07,Bahan Baku,LED Strip,456108,Biaya led strip bulan 10/2025,Tunai
+BYA0254,2025-10-03,Bahan Baku,Akrilik Sheet,307569,Biaya akrilik sheet bulan 10/2025,Tunai
+BYA0255,2025-10-08,Bahan Baku,LED Strip,290419,Biaya led strip bulan 10/2025,Tunai
+BYA0256,2025-10-12,Bahan Baku,LED Strip,98046,Biaya led strip bulan 10/2025,Transfer Bank
+BYA0257,2025-10-27,Bahan Baku,Akrilik Sheet,84912,Biaya akrilik sheet bulan 10/2025,Tunai
+BYA0258,2025-10-07,Bahan Baku,LED Strip,144142,Biaya led strip bulan 10/2025,Transfer Bank
+BYA0259,2025-10-28,Bahan Baku,Baut & Mur,830264,Biaya baut & mur bulan 10/2025,Tunai
+BYA0260,2025-10-01,Marketing,Konten Creator,66418,Biaya konten creator bulan 10/2025,Tunai
+BYA0261,2025-10-11,Marketing,Konten Creator,94760,Biaya konten creator bulan 10/2025,E-wallet
+BYA0262,2025-10-06,Marketing,Desain Grafis,51813,Biaya desain grafis bulan 10/2025,E-wallet
+BYA0263,2025-10-03,Marketing,Instagram Ads,101963,Biaya instagram ads bulan 10/2025,E-wallet
+BYA0264,2025-10-26,Marketing,Instagram Ads,92707,Biaya instagram ads bulan 10/2025,Tunai
+BYA0265,2025-10-20,Marketing,Instagram Ads,75360,Biaya instagram ads bulan 10/2025,Tunai
+BYA0266,2025-10-19,Marketing,Konten Creator,67918,Biaya konten creator bulan 10/2025,E-wallet
+BYA0267,2025-10-08,Marketing,Facebook Ads,333645,Biaya facebook ads bulan 10/2025,Transfer Bank
+BYA0268,2025-10-04,Operasional,Alat Kerja,269876,Biaya alat kerja bulan 10/2025,Tunai
+BYA0269,2025-10-24,Operasional,Alat Kerja,121680,Biaya alat kerja bulan 10/2025,Transfer Bank
+BYA0270,2025-10-12,Operasional,Alat Kerja,75843,Biaya alat kerja bulan 10/2025,Transfer Bank
+BYA0271,2025-10-27,Operasional,Alat Kerja,89402,Biaya alat kerja bulan 10/2025,E-wallet
+BYA0272,2025-10-19,Operasional,Alat Kerja,64968,Biaya alat kerja bulan 10/2025,E-wallet
+BYA0273,2025-10-15,Operasional,Air,459389,Biaya air bulan 10/2025,E-wallet
+BYA0274,2025-10-01,Transportasi,Bensin,102728,Biaya bensin bulan 10/2025,Transfer Bank
+BYA0275,2025-10-26,Transportasi,Parkir,73073,Biaya parkir bulan 10/2025,Tunai
+BYA0276,2025-10-08,Transportasi,Parkir,30617,Biaya parkir bulan 10/2025,Tunai
+BYA0277,2025-10-14,Transportasi,Parkir,44739,Biaya parkir bulan 10/2025,E-wallet
+BYA0278,2025-10-02,Transportasi,Ojek Online,29276,Biaya ojek online bulan 10/2025,Tunai
+BYA0279,2025-10-04,Transportasi,Bensin,31378,Biaya bensin bulan 10/2025,Tunai
+BYA0280,2025-10-10,Transportasi,Parkir,179624,Biaya parkir bulan 10/2025,Tunai
+BYA0281,2025-10-12,Utilitas,Keamanan,31621,Biaya keamanan bulan 10/2025,Tunai
+BYA0282,2025-10-22,Utilitas,Keamanan,37516,Biaya keamanan bulan 10/2025,E-wallet
+BYA0283,2025-10-23,Utilitas,Kebersihan,16130,Biaya kebersihan bulan 10/2025,Tunai
+BYA0284,2025-10-10,Utilitas,Keamanan,19808,Biaya keamanan bulan 10/2025,Tunai
+BYA0285,2025-10-13,Utilitas,Keamanan,20379,Biaya keamanan bulan 10/2025,Transfer Bank
+BYA0286,2025-10-01,Utilitas,Kebersihan,21063,Biaya kebersihan bulan 10/2025,E-wallet
+BYA0287,2025-10-10,Utilitas,Maintenance,99200,Biaya maintenance bulan 10/2025,E-wallet
+BYA0288,2024-01-07,Bahan Baku,Lem Akrilik,0,Biaya lem akrilik bulan 01/2024,E-wallet
+BYA0289,2024-01-16,Bahan Baku,Lem Akrilik,0,Biaya lem akrilik bulan 01/2024,Transfer Bank
+BYA0290,2024-01-06,Bahan Baku,LED Strip,0,Biaya led strip bulan 01/2024,E-wallet
+BYA0291,2024-01-16,Bahan Baku,Cat Spray,0,Biaya cat spray bulan 01/2024,Tunai
+BYA0292,2024-01-28,Bahan Baku,Lem Akrilik,0,Biaya lem akrilik bulan 01/2024,Transfer Bank
+BYA0293,2024-01-10,Bahan Baku,Akrilik Sheet,0,Biaya akrilik sheet bulan 01/2024,Tunai
+BYA0294,2024-01-20,Bahan Baku,Baut & Mur,0,Biaya baut & mur bulan 01/2024,Transfer Bank
+BYA0295,2024-01-09,Marketing,Konten Creator,0,Biaya konten creator bulan 01/2024,Tunai
+BYA0296,2024-01-18,Marketing,Konten Creator,0,Biaya konten creator bulan 01/2024,Tunai
+BYA0297,2024-01-15,Marketing,Konten Creator,0,Biaya konten creator bulan 01/2024,Tunai
+BYA0298,2024-01-20,Marketing,Facebook Ads,0,Biaya facebook ads bulan 01/2024,E-wallet
+BYA0299,2024-01-16,Marketing,Desain Grafis,0,Biaya desain grafis bulan 01/2024,Tunai
+BYA0300,2024-01-20,Marketing,Facebook Ads,0,Biaya facebook ads bulan 01/2024,Transfer Bank
+BYA0301,2024-01-28,Marketing,Desain Grafis,0,Biaya desain grafis bulan 01/2024,E-wallet
+BYA0302,2024-01-03,Marketing,Facebook Ads,0,Biaya facebook ads bulan 01/2024,Tunai
+BYA0303,2024-01-26,Operasional,Listrik,0,Biaya listrik bulan 01/2024,Tunai
+BYA0304,2024-01-20,Operasional,Internet,0,Biaya internet bulan 01/2024,Tunai
+BYA0305,2024-01-06,Operasional,Alat Kerja,0,Biaya alat kerja bulan 01/2024,Tunai
+BYA0306,2024-01-02,Operasional,Internet,0,Biaya internet bulan 01/2024,Transfer Bank
+BYA0307,2024-01-24,Operasional,Air,0,Biaya air bulan 01/2024,Tunai
+BYA0308,2024-01-15,Operasional,Alat Kerja,0,Biaya alat kerja bulan 01/2024,Tunai
+BYA0309,2024-01-04,Operasional,Alat Kerja,0,Biaya alat kerja bulan 01/2024,Tunai
+BYA0310,2024-01-23,Transportasi,Bensin,0,Biaya bensin bulan 01/2024,E-wallet
+BYA0311,2024-01-15,Transportasi,Bensin,0,Biaya bensin bulan 01/2024,Tunai
+BYA0312,2024-01-19,Transportasi,Bensin,0,Biaya bensin bulan 01/2024,Transfer Bank
+BYA0313,2024-01-27,Transportasi,Parkir,0,Biaya parkir bulan 01/2024,Transfer Bank
+BYA0314,2024-01-08,Transportasi,Ekspedisi,0,Biaya ekspedisi bulan 01/2024,Tunai
+BYA0315,2024-01-03,Utilitas,Kebersihan,0,Biaya kebersihan bulan 01/2024,Transfer Bank
+BYA0316,2024-01-19,Utilitas,Keamanan,0,Biaya keamanan bulan 01/2024,E-wallet
+BYA0317,2024-01-18,Utilitas,Kebersihan,0,Biaya kebersihan bulan 01/2024,E-wallet
+BYA0318,2024-01-24,Utilitas,Telepon,0,Biaya telepon bulan 01/2024,Transfer Bank
+BYA0319,2024-01-11,Utilitas,Keamanan,0,Biaya keamanan bulan 01/2024,Tunai
+BYA0320,2024-02-06,Bahan Baku,Lem Akrilik,0,Biaya lem akrilik bulan 02/2024,Tunai
+BYA0321,2024-02-17,Bahan Baku,Cat Spray,0,Biaya cat spray bulan 02/2024,Tunai
+BYA0322,2024-02-10,Bahan Baku,Lem Akrilik,0,Biaya lem akrilik bulan 02/2024,Transfer Bank
+BYA0323,2024-02-07,Bahan Baku,Akrilik Sheet,0,Biaya akrilik sheet bulan 02/2024,E-wallet
+BYA0324,2024-02-13,Bahan Baku,LED Strip,0,Biaya led strip bulan 02/2024,E-wallet
+BYA0325,2024-02-09,Marketing,Desain Grafis,0,Biaya desain grafis bulan 02/2024,Transfer Bank
+BYA0326,2024-02-07,Marketing,Konten Creator,0,Biaya konten creator bulan 02/2024,Transfer Bank
+BYA0327,2024-02-17,Marketing,Desain Grafis,0,Biaya desain grafis bulan 02/2024,Transfer Bank
+BYA0328,2024-02-03,Marketing,Facebook Ads,0,Biaya facebook ads bulan 02/2024,E-wallet
+BYA0329,2024-02-26,Marketing,Facebook Ads,0,Biaya facebook ads bulan 02/2024,E-wallet
+BYA0330,2024-02-20,Marketing,Konten Creator,0,Biaya konten creator bulan 02/2024,E-wallet
+BYA0331,2024-02-14,Marketing,Konten Creator,0,Biaya konten creator bulan 02/2024,E-wallet
+BYA0332,2024-02-22,Operasional,Sewa Tempat,0,Biaya sewa tempat bulan 02/2024,Transfer Bank
+BYA0333,2024-02-03,Operasional,Internet,0,Biaya internet bulan 02/2024,Tunai
+BYA0334,2024-02-03,Operasional,Alat Kerja,0,Biaya alat kerja bulan 02/2024,Tunai
+BYA0335,2024-02-06,Operasional,Alat Kerja,0,Biaya alat kerja bulan 02/2024,Transfer Bank
+BYA0336,2024-02-01,Operasional,Internet,0,Biaya internet bulan 02/2024,E-wallet
+BYA0337,2024-02-16,Operasional,Alat Kerja,0,Biaya alat kerja bulan 02/2024,Tunai
+BYA0338,2024-02-17,Operasional,Sewa Tempat,0,Biaya sewa tempat bulan 02/2024,Tunai
+BYA0339,2024-02-28,Operasional,Sewa Tempat,0,Biaya sewa tempat bulan 02/2024,Transfer Bank
+BYA0340,2024-02-02,Transportasi,Ekspedisi,0,Biaya ekspedisi bulan 02/2024,Tunai
+BYA0341,2024-02-14,Transportasi,Ojek Online,0,Biaya ojek online bulan 02/2024,Tunai
+BYA0342,2024-02-21,Transportasi,Ojek Online,0,Biaya ojek online bulan 02/2024,Transfer Bank
+BYA0343,2024-02-18,Utilitas,Telepon,0,Biaya telepon bulan 02/2024,Transfer Bank
+BYA0344,2024-02-17,Utilitas,Maintenance,0,Biaya maintenance bulan 02/2024,E-wallet
+BYA0345,2024-02-02,Utilitas,Maintenance,0,Biaya maintenance bulan 02/2024,Tunai
+BYA0346,2024-02-18,Utilitas,Kebersihan,0,Biaya kebersihan bulan 02/2024,E-wallet
+BYA0347,2024-02-04,Utilitas,Kebersihan,0,Biaya kebersihan bulan 02/2024,E-wallet
+BYA0348,2024-02-17,Utilitas,Maintenance,0,Biaya maintenance bulan 02/2024,Tunai
