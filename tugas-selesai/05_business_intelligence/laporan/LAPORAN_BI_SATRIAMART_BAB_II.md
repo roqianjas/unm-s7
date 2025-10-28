@@ -159,7 +159,7 @@ Dalam implementasi dashboard SATRIAMART menggunakan Looker Studio, proses ETL di
 
 3. **Load**: Data hasil transformasi diupload ke Google Sheets sebagai data source untuk Looker Studio.
 
-### 2.1.4 Looker Studio sebagai Tools Business Intelligence
+### 2.1.4 Looker Studio sebagai Perangkat Business Intelligence
 
 Looker Studio (sebelumnya Google Data Studio) adalah platform Business Intelligence berbasis cloud yang disediakan oleh Google untuk membuat laporan dan dashboard interaktif (Google, 2023). Looker Studio memungkinkan pengguna untuk menghubungkan berbagai data source, melakukan transformasi data, membuat visualisasi, dan sharing dashboard dengan stakeholder.
 
@@ -219,7 +219,7 @@ Pemilihan Looker Studio untuk implementasi dashboard SATRIAMART didasarkan pada 
 - **Berbasis Cloud**: Tidak memerlukan infrastruktur server sendiri.
 - **Integrasi Mudah**: Integrasi mudah dengan Google Sheets sebagai sumber data.
 - **Kolaboratif**: Memudahkan berbagi dan kolaborasi dengan tim.
-- **Mudah Dipelajari**: Relatif mudah dipelajari dibandingkan tools enterprise seperti Tableau atau Power BI.
+- **Mudah Dipelajari**: Relatif mudah dipelajari dibandingkan perangkat enterprise seperti Tableau atau Power BI.
 
 ## 2.2 Data dan Sumber Data
 

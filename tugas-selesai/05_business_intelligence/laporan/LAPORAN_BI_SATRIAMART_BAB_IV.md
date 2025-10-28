@@ -45,7 +45,7 @@ Berdasarkan hasil perancangan dan implementasi Dashboard Business Intelligence i
 6. **Kelayakan Business Intelligence untuk UMKM**
 
    Penelitian ini membuktikan bahwa teknologi Business Intelligence dapat diimplementasikan secara efektif pada perusahaan skala kecil seperti SATRIAMART dengan:
-   - **Tanpa Biaya**: Menggunakan tools gratis (Looker Studio, Google Sheets)
+   - **Tanpa Biaya**: Menggunakan perangkat gratis (Looker Studio, Google Sheets)
    - **Implementasi Mudah**: Proses implementasi relatif mudah tanpa memerlukan keahlian teknis tinggi
    - **Dampak Tinggi**: Dashboard memberikan nilai signifikan dalam mendukung pengambilan keputusan berbasis data
    - **Dapat Ditingkatkan**: Solusi dapat ditingkatkan seiring pertumbuhan bisnis
@@ -196,7 +196,7 @@ Berdasarkan hasil penelitian dan implementasi Dashboard Business Intelligence un
 
 **2. Manajemen Perubahan**
 
-- Persiapkan strategi manajemen perubahan ketika mengimplementasikan tools Business Intelligence dalam organisasi.
+- Persiapkan strategi manajemen perubahan ketika mengimplementasikan perangkat Business Intelligence dalam organisasi.
 - Atasi resistensi terhadap perubahan melalui komunikasi dan pelatihan.
 - Rayakan pencapaian cepat untuk membangun momentum dan adopsi.
 

@@ -26,7 +26,7 @@ Diajukan untuk memenuhi salah satu tugas kelompok mata kuliah
 
 Puji syukur kepada Tuhan Yang Maha Esa atas segala rahmat dan karunia-Nya sehingga penyusun dapat menyelesaikan laporan tugas akhir yang berjudul "Perancangan Dashboard Business Intelligence Interaktif untuk Mendukung Keputusan Bisnis pada SATRIAMART" dengan baik.
 
-Laporan ini disusun untuk memenuhi tugas akhir mata kuliah Business Intelligence II (Kode 493) Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Nusa Mandiri. Tujuan dari penyusunan laporan ini adalah untuk mengaplikasikan konsep Business Intelligence dalam merancang dashboard interaktif yang dapat memberikan insight data untuk mendukung pengambilan keputusan bisnis pada perusahaan skala kecil.
+Laporan ini disusun untuk memenuhi tugas akhir mata kuliah Business Intelligence II (Kode 493) Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Nusa Mandiri. Tujuan dari penyusunan laporan ini adalah untuk mengaplikasikan konsep Business Intelligence dalam merancang dashboard interaktif yang dapat memberikan wawasan data untuk mendukung pengambilan keputusan bisnis pada perusahaan skala kecil.
 
 Penyusun menyadari bahwa penyelesaian laporan ini tidak lepas dari bantuan berbagai pihak. Oleh karena itu, penyusun mengucapkan terima kasih kepada:
 
@@ -49,11 +49,11 @@ Penyusun
 
 Metodologi yang digunakan meliputi analisis kebutuhan pengguna, identifikasi Key Performance Indicators (KPI), proses Extract-Transform-Load (ETL) data, perancangan layout dashboard, implementasi menggunakan Looker Studio, serta pengujian dan evaluasi. Data yang digunakan mencakup data transaksi penjualan, data produk, data pelanggan, riwayat stok, biaya operasional, dan kampanye pemasaran selama periode 12 bulan (November 2024 - Oktober 2025).
 
-Hasil penelitian menunjukkan bahwa dashboard Business Intelligence yang dikembangkan mampu menyajikan informasi bisnis secara komprehensif melalui berbagai visualisasi seperti bar chart, line chart, pie chart, table, dan scorecard. Dashboard terdiri dari tujuh halaman utama yang mencakup Executive Summary, Sales Analysis, Product Performance, Customer Analysis, Operational Metrics, Financial Analysis, dan Marketing Performance. Insight yang dihasilkan mencakup identifikasi produk best-seller, pola seasonal sales, segmentasi pelanggan, analisis profitabilitas per kategori produk, dan evaluasi efektivitas channel penjualan.
+Hasil penelitian menunjukkan bahwa dashboard Business Intelligence yang dikembangkan mampu menyajikan informasi bisnis secara komprehensif melalui berbagai visualisasi seperti bar chart, line chart, pie chart, table, dan scorecard. Dashboard terdiri dari tujuh halaman utama yang mencakup Executive Summary, Sales Analysis, Product Performance, Customer Analysis, Operational Metrics, Financial Analysis, dan Marketing Performance. Wawasan yang dihasilkan mencakup identifikasi produk terlaris, pola penjualan musiman, segmentasi pelanggan, analisis profitabilitas per kategori produk, dan evaluasi efektivitas saluran penjualan.
 
 Implementasi dashboard Business Intelligence ini memberikan manfaat praktis bagi SATRIAMART dalam bentuk peningkatan efisiensi analisis data, pengambilan keputusan yang lebih cepat dan akurat, identifikasi peluang bisnis baru, serta optimasi strategi pemasaran dan operasional. Penelitian ini membuktikan bahwa teknologi Business Intelligence dapat diterapkan secara efektif pada perusahaan skala kecil dengan biaya yang relatif terjangkau menggunakan platform cloud-based seperti Looker Studio.
 
-**Kata kunci**: Business Intelligence, Dashboard Interaktif, Looker Studio, Visualisasi Data, Key Performance Indicators, UMKM, Analisis Data, SATRIAMART.
+**Kata kunci**: Business Intelligence, Dashboard Interaktif, Looker Studio, Visualisasi Data, Indikator Kinerja Utama, UMKM, Analisis Data, SATRIAMART.
 
 ---
 
@@ -79,7 +79,7 @@ DAFTAR LAMPIRAN
     2.1.1 Business Intelligence
     2.1.2 Dashboard dan Key Performance Indicator
     2.1.3 Proses ETL (Extract, Transform, Load)
-    2.1.4 Looker Studio sebagai Tools Business Intelligence
+    2.1.4 Looker Studio sebagai Perangkat Business Intelligence
 2.2 Data dan Sumber Data
     2.2.1 Jenis Data
     2.2.2 Sumber Data
@@ -144,7 +144,7 @@ Dashboard Business Intelligence interaktif dapat menjadi solusi untuk mengatasi 
 
 Looker Studio (sebelumnya dikenal sebagai Google Data Studio) merupakan platform Business Intelligence berbasis cloud yang disediakan oleh Google secara gratis. Platform ini memungkinkan pengguna untuk membuat dashboard interaktif dengan mudah tanpa memerlukan keahlian pemrograman yang mendalam. Looker Studio mendukung integrasi dengan berbagai sumber data termasuk Google Sheets, Google Analytics, database SQL, dan layanan cloud lainnya. Kemudahan penggunaan, biaya yang terjangkau (gratis), dan fitur kolaborasi yang baik menjadikan Looker Studio pilihan yang tepat untuk implementasi BI pada UMKM seperti SATRIAMART.
 
-Berdasarkan latar belakang tersebut, penelitian ini bertujuan untuk merancang dan mengimplementasikan dashboard Business Intelligence interaktif menggunakan Looker Studio untuk SATRIAMART. Dashboard yang dikembangkan diharapkan dapat memberikan insight yang bernilai bagi manajemen dalam mengambil keputusan strategis terkait pengembangan produk, strategi pemasaran, pengelolaan pelanggan, dan optimasi operasional bisnis. Penelitian ini juga diharapkan dapat menjadi referensi bagi UMKM lain dalam mengadopsi teknologi Business Intelligence untuk meningkatkan daya saing bisnis mereka.
+Berdasarkan latar belakang tersebut, penelitian ini bertujuan untuk merancang dan mengimplementasikan dashboard Business Intelligence interaktif menggunakan Looker Studio untuk SATRIAMART. Dashboard yang dikembangkan diharapkan dapat memberikan wawasan yang bernilai bagi manajemen dalam mengambil keputusan strategis terkait pengembangan produk, strategi pemasaran, pengelolaan pelanggan, dan optimasi operasional bisnis. Penelitian ini juga diharapkan dapat menjadi referensi bagi UMKM lain dalam mengadopsi teknologi Business Intelligence untuk meningkatkan daya saing bisnis mereka.
 
 ## 1.2 Rumusan Masalah
 
@@ -154,7 +154,7 @@ Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam penelitia
 
 2. Visualisasi data apa saja yang efektif untuk menyajikan informasi penjualan, produk, pelanggan, dan keuangan SATRIAMART?
 
-3. Insight bisnis apa yang dapat dihasilkan dari analisis data SATRIAMART menggunakan dashboard Business Intelligence?
+3. Wawasan bisnis apa yang dapat dihasilkan dari analisis data SATRIAMART menggunakan dashboard Business Intelligence?
 
 4. Bagaimana implementasi dashboard Business Intelligence dapat mendukung pengambilan keputusan bisnis pada SATRIAMART?
 
@@ -168,7 +168,7 @@ Tujuan dari penelitian ini adalah:
 
 2. Mengidentifikasi Key Performance Indicators (KPI) yang relevan dengan bisnis SATRIAMART untuk diintegrasikan dalam dashboard.
 
-3. Menganalisis data transaksi penjualan, produk, pelanggan, dan keuangan untuk menghasilkan insight bisnis yang bernilai.
+3. Menganalisis data transaksi penjualan, produk, pelanggan, dan keuangan untuk menghasilkan wawasan bisnis yang bernilai.
 
 4. Menyajikan informasi bisnis melalui visualisasi data yang efektif dan mudah dipahami oleh pengguna.
 
@@ -184,7 +184,7 @@ Tujuan dari penelitian ini adalah:
 
 2. **Pengambilan Keputusan Berbasis Data**: Manajemen dapat membuat keputusan bisnis yang lebih akurat dan terukur berdasarkan insight dari data, bukan hanya berdasarkan intuisi.
 
-3. **Identifikasi Peluang Bisnis**: Dashboard membantu mengidentifikasi produk best-seller, segmen pelanggan potensial, dan channel penjualan paling efektif untuk optimasi strategi bisnis.
+3. **Identifikasi Peluang Bisnis**: Dashboard membantu mengidentifikasi produk terlaris, segmen pelanggan potensial, dan saluran penjualan paling efektif untuk optimasi strategi bisnis.
 
 4. **Monitoring Kinerja Real-Time**: Manajemen dapat memantau kinerja bisnis secara real-time dan merespons perubahan pasar dengan lebih cepat.
 
@@ -198,13 +198,13 @@ Tujuan dari penelitian ini adalah:
 
 1. **Penerapan Ilmu Business Intelligence**: Penyusun dapat mengaplikasikan konsep dan teori Business Intelligence yang telah dipelajari dalam kasus nyata.
 
-2. **Peningkatan Kompetensi Teknis**: Penyusun memperoleh pengalaman praktis dalam menggunakan tools Business Intelligence seperti Looker Studio, Google Sheets, dan teknik analisis data.
+2. **Peningkatan Kompetensi Teknis**: Penyusun memperoleh pengalaman praktis dalam menggunakan perangkat Business Intelligence seperti Looker Studio, Google Sheets, dan teknik analisis data.
 
 3. **Pengembangan Soft Skills**: Penyusun mengembangkan kemampuan problem solving, analytical thinking, dan communication skills melalui proses penelitian dan presentasi.
 
 4. **Portfolio Project**: Hasil penelitian ini dapat menjadi portfolio yang bernilai untuk keperluan akademis maupun profesional.
 
-5. **Pemahaman Bisnis UMKM**: Penyusun memperoleh insight tentang tantangan dan peluang bisnis pada sektor UMKM khususnya di bidang dekorasi dan aksesoris.
+5. **Pemahaman Bisnis UMKM**: Penyusun memperoleh wawasan tentang tantangan dan peluang bisnis pada sektor UMKM khususnya di bidang dekorasi dan aksesoris.
 
 6. **Kontribusi Sosial**: Penyusun berkontribusi dalam membantu UMKM mengadopsi teknologi digital untuk peningkatan daya saing bisnis.
 
