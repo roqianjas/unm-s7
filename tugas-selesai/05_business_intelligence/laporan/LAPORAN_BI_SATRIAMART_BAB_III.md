@@ -36,9 +36,9 @@ Analisis data transaksi penjualan SATRIAMART dilakukan terhadap 320 transaksi se
 
 Dari analisis data, berhasil diidentifikasi beberapa pola dan kecenderungan penting:
 
-**1. Pola Musiman (*Seasonal Pattern*)**
+**1. Pola Musiman**
 
-Analisis kecenderungan menunjukkan pola musiman yang jelas:
+Analisis tren menunjukkan pola musiman yang jelas:
 - **Kuartal 4 (Okt-Des)**: Musim puncak dengan peningkatan transaksi menjelang akhir tahun
 - **Kuartal 1 (Jan-Mar)**: Musim tinggi di awal tahun, kemudian menurun di Februari
 - **Kuartal 2 (Apr-Jun)**: Peningkatan bertahap menuju puncak di Juni
@@ -113,7 +113,7 @@ Namun, analisis profitabilitas menunjukkan bahwa produk kelas menengah memberika
 
 Analisis menunjukkan perbedaan signifikan dalam nilai rata-rata pesanan antar segmen:
 - **Bisnis/UMKM**: Nilai rata-rata pesanan Rp 485.000 (tertinggi)
-- **Pemasok Kembali (*Reseller*)**: Nilai rata-rata pesanan Rp 420.000
+- **Reseller**: Nilai rata-rata pesanan Rp 420.000
 - **Individu/Ritel**: Nilai rata-rata pesanan Rp 285.000 (terendah)
 
 Pelanggan bisnis cenderung membeli produk dengan nilai lebih tinggi seperti papan petunjuk dan papan nama khusus.
@@ -124,7 +124,7 @@ Analisis tingkat konversi per saluran menunjukkan:
 - **Rujukan/Langsung**: Tingkat konversi tertinggi (60%), faktor kepercayaan tinggi
 - **WhatsApp**: Tingkat konversi 45%, interaksi personal
 - **Instagram**: Tingkat konversi 25%, keterlibatan tinggi tapi konversi moderat
-- **Platform Pasar Daring**: Tingkat konversi 20%, persaingan tinggi
+- **Marketplace**: Tingkat konversi 20%, persaingan tinggi
 
 **4. Diskon vs Nilai Pesanan**
 
@@ -150,21 +150,21 @@ Analisis ROI kampanye menunjukkan:
 - **Iklan Google**: ROI rata-rata 220%, penargetan spesifik
 - **Konten Organik**: ROI 350%, hemat biaya tapi jangkauan terbatas
 
-## 3.2 Visualisasi Data pada Proses Kecerdasan Bisnis
+## 3.2 Visualisasi Data pada Dashboard Business Intelligence
 
 ### 3.2.1 Tren Penjualan
 
-Untuk menganalisis kecenderungan penjualan, digunakan kombinasi visualisasi:
+Untuk menganalisis tren penjualan, digunakan kombinasi visualisasi:
 
 **1. Grafik Garis: Tren Pendapatan Sepanjang Waktu**
 
-Grafik garis digunakan untuk menampilkan kecenderungan pendapatan bulanan selama 12 bulan. Visualisasi ini memungkinkan identifikasi:
+Grafik garis digunakan untuk menampilkan tren pendapatan bulanan selama 12 bulan. Visualisasi ini memungkinkan identifikasi:
 - Pola pertumbuhan atau penurunan pendapatan
 - Musim puncak dan musim sepi
 - Tingkat pertumbuhan bulan ke bulan
-- Anomali atau pencilan
+- Anomali atau nilai ekstrim
 
-**Alasan Pemilihan**: Grafik garis efektif untuk menampilkan data deret waktu dan memudahkan identifikasi kecenderungan serta pola musiman.
+**Alasan Pemilihan**: Grafik garis efektif untuk menampilkan data time series dan memudahkan identifikasi tren serta pola musiman.
 
 **2. Grafik Gabungan: Pendapatan vs Jumlah Transaksi**
 
@@ -218,7 +218,7 @@ Grafik gelembung multi-dimensi menampilkan:
 - Ukuran Gelembung: Total Pendapatan
 - Warna Gelembung: Margin Laba
 
-**Wawasan**: Grafik ini membantu identifikasi titik optimal produk dalam hal harga, volume, dan profitabilitas.
+**Wawasan**: Grafik ini membantu identifikasi produk optimal dalam hal harga, volume, dan profitabilitas.
 
 **4. Grafik Batang Bertumpuk: Komposisi Pendapatan Berdasarkan Kategori**
 
@@ -237,7 +237,7 @@ Tabel detail menampilkan metrik untuk setiap produk:
 - Status Stok
 - Tingkat Pertumbuhan
 
-**Fungsi**: Tabel ini digunakan untuk analisis penelusuran detail dan referensi terperinci.
+**Fungsi**: Tabel ini digunakan untuk analisis drill-down dan referensi detail.
 
 ### 3.2.3 Analisis Pelanggan
 
@@ -254,7 +254,7 @@ Diagram lingkaran menampilkan proporsi pelanggan berdasarkan:
 
 Grafik batang horizontal menampilkan 10 pelanggan dengan total nilai pembelian tertinggi.
 
-**Wawasan**: 10% pelanggan teratas menghasilkan 40% pendapatan, mengindikasikan pentingnya retensi pelanggan untuk pelanggan bernilai tinggi.
+**Wawasan**: 10% pelanggan teratas menghasilkan 40% pendapatan, mengindikasikan pentingnya retensi pelanggan bernilai tinggi.
 
 **3. Peta Geografis: Distribusi Pelanggan**
 
@@ -273,11 +273,11 @@ Grafik garis menampilkan jumlah pelanggan baru yang terakuisisi setiap bulan.
 **5. Grafik Corong: Segmentasi RFM**
 
 Grafik corong menampilkan distribusi pelanggan berdasarkan skor RFM:
-- Juara (Kebaruan, Frekuensi, Moneter Tinggi): 15%
-- Pelanggan Setia (Frekuensi, Moneter Tinggi): 20%
-- Berisiko (Kebaruan Rendah, Frekuensi, Moneter Tinggi): 10%
-- Pelanggan Baru (Kebaruan Tinggi, Frekuensi, Moneter Rendah): 25%
-- Pelanggan Hilang (Kebaruan, Frekuensi, Moneter Rendah): 30%
+- Champions (Recency, Frequency, Monetary Tinggi): 15%
+- Loyal Customers (Frequency, Monetary Tinggi): 20%
+- At Risk (Recency Rendah, Frequency, Monetary Tinggi): 10%
+- New Customers (Recency Tinggi, Frequency, Monetary Rendah): 25%
+- Lost Customers (Recency, Frequency, Monetary Rendah): 30%
 
 **Fungsi**: Segmentasi RFM membantu pemasaran tertarget dan strategi retensi pelanggan.
 
@@ -324,17 +324,17 @@ Pemilihan jenis visualisasi dilakukan berdasarkan prinsip-prinsip praktik terbai
 **1. Kartu Skor/Kartu KPI**
 - **Digunakan untuk**: Menampilkan nilai metrik tunggal (Total Pendapatan, Total Pelanggan, Nilai Rata-rata Pesanan)
 - **Keunggulan**: Menyoroti metrik penting, mudah dipahami, menarik perhatian
-- **Implementasi**: Di bagian atas setiap halaman papan kendali
+- **Implementasi**: Di bagian atas setiap halaman dashboard
 
 **2. Grafik Garis**
-- **Digunakan untuk**: Data deret waktu, analisis kecenderungan
-- **Keunggulan**: Mudah identifikasi kecenderungan, tingkat pertumbuhan, pola musiman
-- **Kasus Penggunaan**: Kecenderungan pendapatan, kecenderungan akuisisi pelanggan, kecenderungan penjualan
+- **Digunakan untuk**: Data time series, analisis tren
+- **Keunggulan**: Mudah identifikasi tren, tingkat pertumbuhan, pola musiman
+- **Kasus Penggunaan**: Tren pendapatan, tren akuisisi pelanggan, tren penjualan
 
 **3. Grafik Batang (Vertikal/Horizontal)**
 - **Digunakan untuk**: Perbandingan antar kategori
 - **Keunggulan**: Mudah membandingkan nilai, peringkat jelas
-- **Kasus Penggunaan**: Produk teratas, pendapatan per kategori, penjualan per saluran
+- **Kasus Penggunaan**: Top produk, pendapatan per kategori, penjualan per saluran
 
 **4. Diagram Lingkaran/Donat**
 - **Digunakan untuk**: Menampilkan komposisi/proporsi (< 6 kategori)
@@ -347,7 +347,7 @@ Pemilihan jenis visualisasi dilakukan berdasarkan prinsip-prinsip praktik terbai
 - **Kasus Penggunaan**: Pendapatan vs jumlah transaksi, biaya vs laba
 
 **6. Tabel**
-- **Digunakan untuk**: Data terperinci, analisis penelusuran detail
+- **Digunakan untuk**: Data terperinci, analisis drill-down
 - **Keunggulan**: Menampilkan beberapa metrik, dapat diurutkan, dapat disaring
 - **Kasus Penggunaan**: Daftar produk dengan beberapa metrik, detail transaksi
 
@@ -363,7 +363,7 @@ Pemilihan jenis visualisasi dilakukan berdasarkan prinsip-prinsip praktik terbai
 
 **9. Diagram Sebar**
 - **Digunakan untuk**: Menampilkan hubungan antara dua variabel
-- **Keunggulan**: Mengidentifikasi korelasi, pencilan, kelompok
+- **Keunggulan**: Mengidentifikasi korelasi, outlier, kelompok
 - **Kasus Penggunaan**: Harga vs volume, nilai pelanggan vs frekuensi
 
 **10. Grafik Corong**
@@ -378,11 +378,11 @@ Pemilihan jenis visualisasi dilakukan berdasarkan prinsip-prinsip praktik terbai
 3. **Batasi Kompleksitas**: Maksimal 5-7 kategori per grafik untuk keterbacaan
 4. **Gunakan Warna dengan Tujuan**: Skema warna konsisten, soroti data penting
 5. **Berikan Konteks**: Tambahkan judul, label, anotasi untuk kejelasan
-6. **Aktifkan Interaktivitas**: Penyaring, keterangan alat, penelusuran detail untuk eksplorasi
+6. **Aktifkan Interaktivitas**: Filter, tooltip, drill-down untuk eksplorasi
 
-## 3.3 Hasil Perancangan Papan Kendali Interaktif
+## 3.3 Hasil Perancangan Dashboard Interaktif
 
-Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang saling terintegrasi dan dapat diakses melalui menu navigasi. Setiap halaman memiliki fokus analisis yang spesifik untuk mendukung pengambilan keputusan di area berbeda.
+Dashboard Business Intelligence SATRIAMART dirancang dengan 7 halaman utama yang saling terintegrasi dan dapat diakses melalui menu navigasi. Setiap halaman memiliki fokus analisis yang spesifik untuk mendukung pengambilan keputusan di area berbeda.
 
 ### 3.3.1 Ringkasan Eksekutif
 
@@ -392,8 +392,8 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 
 1. **Bagian Kepala**
    - Logo SATRIAMART
-   - Judul: "Papan Kendali Kecerdasan Bisnis SATRIAMART"
-   - Pemilih Rentang Tanggal (seluruh periode: Nov 2024 - Okt 2025)
+   - Judul: "Dashboard Business Intelligence SATRIAMART"
+   - Filter Rentang Tanggal (seluruh periode: Nov 2024 - Okt 2025)
    - Pembaruan Terakhir: 27 Oktober 2025
 
 2. **Kartu KPI (6 kartu)**
@@ -418,21 +418,21 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
      * Warna: Hijau
    
    - **Tingkat Pertumbuhan**: +12,5% bulan ke bulan
-     * Indikator: Kecenderungan positif
+     * Indikator: Tren positif
      * Warna: Hijau
 
 3. **Visualisasi Utama**
 
-   **A. Kecenderungan Pendapatan (Grafik Garis)**
+   **A. Tren Pendapatan (Grafik Garis)**
    - Sumbu-X: Bulan (Nov 2024 - Okt 2025)
    - Sumbu-Y: Pendapatan (Rp)
-   - Fitur: Keterangan alat saat diarahkan menampilkan detail pendapatan dan jumlah transaksi
+   - Fitur: Tooltip saat diarahkan menampilkan detail pendapatan dan jumlah transaksi
    - Wawasan: Puncak jelas pada Desember 2024, Juni, dan Juli 2025
 
    **B. Pendapatan Berdasarkan Saluran (Grafik Batang)**
    - WhatsApp: Rp 50.389.448 (45%)
    - Instagram: Rp 33.592.965 (30%)
-   - Platform Pasar Daring: Rp 16.796.483 (15%)
+   - Marketplace: Rp 16.796.483 (15%)
    - Langsung: Rp 11.197.655 (10%)
    - Wawasan: WhatsApp dominan sebagai saluran utama
 
@@ -452,19 +452,19 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
    **E. Segmentasi Pelanggan (Diagram Donat)**
    - Individu: 60% (108 pelanggan)
    - Bisnis: 30% (54 pelanggan)
-   - Pemasok Kembali: 10% (18 pelanggan)
+   - Reseller: 10% (18 pelanggan)
 
 5. **Ringkasan Wawasan Utama (Kotak Teks)**
    - "Musim Puncak: Desember, Juni, Juli"
    - "Saluran Teratas: WhatsApp (45% pendapatan)"
-   - "Kategori Teratas: Nomor Rumah (35% pendapatan)"
+   - "Kategori Top: Nomor Rumah (35% pendapatan)"
    - "Kepuasan Pelanggan: 4,5/5 bintang"
    - "Tingkat Penyelesaian: 85%"
 
 **Interaktivitas**:
-- Penyaring rentang tanggal mempengaruhi semua visualisasi
-- Klik pada batang/irisan lingkaran untuk penelusuran detail
-- Arahkan kursor untuk keterangan alat detail
+- Filter rentang tanggal mempengaruhi semua visualisasi
+- Klik pada batang/irisan lingkaran untuk drill-down
+- Hover untuk tooltip detail
 
 **Catatan Desain**:
 - Tata letak bersih dengan ruang putih yang cukup
@@ -479,10 +479,10 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 **Komponen Utama**:
 
 1. **Panel Kontrol (Bagian Atas)**
-   - Pemilih Rentang Tanggal
-   - Penyaring Kategori Produk (tarik-turun pilihan ganda)
-   - Penyaring Saluran (tarik-turun)
-   - Penyaring Status (Semua/Selesai/Proses/Dibatalkan)
+   - Filter Rentang Tanggal
+   - Filter Kategori Produk (dropdown multi-pilih)
+   - Filter Saluran (dropdown)
+   - Filter Status (Semua/Selesai/Proses/Dibatalkan)
 
 2. **Kartu KPI Penjualan (4 kartu)**
    - Total Penjualan: Rp 111.976.550
@@ -492,22 +492,22 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 
 3. **Grafik Utama**
 
-   **A. Penjualan Harian/Mingguan/Bulanan (Deret Waktu dengan Toggle)**
+   **A. Penjualan Harian/Mingguan/Bulanan (Time Series dengan Toggle)**
    - Tombol toggle untuk berganti tampilan (Harian/Mingguan/Bulanan)
-   - Grafik area dengan isian gradien
-   - Garis rata-rata bergerak untuk kecenderungan halus
+   - Grafik area dengan gradient fill
+   - Moving average line untuk tren halus
    - Anotasi untuk kejadian khusus (promo, liburan)
 
-   **B. 10 Produk Teratas Berdasarkan Pendapatan (Batang Horizontal)**
+   **B. Top 10 Produk Berdasarkan Pendapatan (Batang Horizontal)**
    - Diurutkan dari tertinggi
    - Gradien warna berdasarkan margin laba
-   - Saat diarahkan: Tampilkan detail produk, margin, unit terjual
+   - Hover: Tampilkan detail produk, margin, unit terjual
    - Top 3:
      * Papan Petunjuk Akrilik LED: Rp 4.200.000
      * Papan Nama Toko Premium: Rp 3.150.000
      * Papan Nama Restoran Elegant: Rp 2.380.000
 
-   **C. 10 Produk Teratas Berdasarkan Kuantitas (Batang Horizontal)**
+   **C. Top 10 Produk Berdasarkan Kuantitas (Batang Horizontal)**
    - Berbeda dari grafik pendapatan
    - Menampilkan trade-off volume vs nilai
    - Top 3:
@@ -517,10 +517,10 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 
 4. **Grafik Pendukung**
 
-   **D. Kecenderungan Pendapatan vs Laba (Grafik Gabungan)**
+   **D. Tren Pendapatan vs Laba (Grafik Gabungan)**
    - Batang: Pendapatan
    - Garis: Laba
-   - Menampilkan kecenderungan profitabilitas sepanjang waktu
+   - Menampilkan tren profitabilitas sepanjang waktu
    
    **E. Penjualan Berdasarkan Hari dalam Minggu (Grafik Batang)**
    - Wawasan: Jumat dan Sabtu paling tinggi
@@ -546,15 +546,15 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 **Komponen Utama**:
 
 1. **Panel Kontrol**
-   - Penyaring Kategori
-   - Penyaring Rentang Harga (penggeser)
-   - Urutkan Berdasarkan tarik-turun (Pendapatan/Margin/Volume)
+   - Filter Kategori
+   - Filter Rentang Harga (slider)
+   - Sort By dropdown (Pendapatan/Margin/Volume)
 
 2. **Kartu KPI Produk**
    - Total Produk Aktif: 50
-   - Terlaris: Papan Petunjuk Akrilik LED
+   - Best Seller: Papan Petunjuk Akrilik LED
    - Margin Tertinggi: Papan Nama Khusus (65%)
-   - Pergerakan Lambat: 8 produk
+   - Slow Moving: 8 produk
 
 3. **Visualisasi Utama**
 
@@ -562,12 +562,12 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
    - Menampilkan kinerja kategori sepanjang waktu
    - Mengidentifikasi preferensi kategori musiman
    
-   **B. Harga vs Volume Penjualan (Grafik Gelembung)**
+   **B. Harga vs Volume Penjualan (Bubble Chart)**
    - X: Harga
    - Y: Volume Penjualan
    - Ukuran: Pendapatan
    - Warna: Margin Laba
-   - Mengidentifikasi produk titik optimal
+   - Mengidentifikasi produk sweet spot
 
    **C. Margin Laba Berdasarkan Produk (Grafik Batang)**
    - Diurutkan dari margin tertinggi
@@ -576,13 +576,13 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 
 4. **Visualisasi Pendukung**
 
-   **D. Evolusi Campuran Produk (Grafik Area Bertumpuk)**
+   **D. Evolusi Product Mix (Stacked Area Chart)**
    - Menampilkan perubahan komposisi penjualan sepanjang waktu
    
    **E. Perputaran Persediaan Berdasarkan Kategori (Grafik Batang)**
    - Perputaran lebih tinggi = manajemen persediaan lebih baik
    
-   **F. Indikator Status Stok (Pengukur)**
+   **F. Indikator Status Stok (Gauge)**
    - Menampilkan produk yang berisiko kehabisan stok
    - Zona merah: < 5 unit
    - Zona kuning: 5-10 unit
@@ -593,7 +593,7 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
      * Nama Produk, Kategori, Harga, Unit Terjual
      * Pendapatan, Laba, Margin %, Stok, Status
    - Kode warna untuk identifikasi cepat
-   - Penelusuran detail untuk detail produk
+   - Drill-down untuk detail produk
 
 **Wawasan Utama**:
 - "20% produk menghasilkan 60% pendapatan (Pareto)"
@@ -608,9 +608,9 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 **Komponen Utama**:
 
 1. **Panel Kontrol**
-   - Penyaring Segmen Pelanggan
-   - Penyaring Kota
-   - Penyaring Skor RFM
+   - Filter Segmen Pelanggan
+   - Filter Kota
+   - Filter Skor RFM
 
 2. **Kartu KPI Pelanggan**
    - Total Pelanggan: 180
@@ -620,17 +620,17 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 
 3. **Visualisasi Utama**
 
-   **A. Segmentasi RFM (Peta Pohon)**
-   - Juara: 15% (Kebaruan, Frekuensi, Moneter Tinggi) - Ubin terbesar, hijau gelap
-   - Setia: 20% (Frekuensi, Moneter Tinggi)
-   - Berisiko: 10% (Kebaruan Rendah, Frekuensi, Moneter Tinggi) - Oranye/Kuning
-   - Baru: 25% (Kebaruan Tinggi, Frekuensi, Moneter Rendah) - Hijau muda
-   - Hilang: 30% (Kebaruan, Frekuensi, Moneter Rendah) - Abu-abu
+   **A. Segmentasi RFM (Treemap)**
+   - Champions: 15% (Recency, Frequency, Monetary Tinggi) - Tile terbesar, hijau gelap
+   - Loyal: 20% (Frequency, Monetary Tinggi)
+   - At Risk: 10% (Recency Rendah, Frequency, Monetary Tinggi) - Orange/Yellow
+   - New: 25% (Recency Tinggi, Frequency, Monetary Rendah) - Light Green
+   - Lost: 30% (Recency, Frequency, Monetary Rendah) - Gray
    
-   **B. 10 Pelanggan Teratas Berdasarkan Nilai (Grafik Batang)**
-   - Menampilkan pembeli teratas
-   - Termasuk nama pelanggan (dianonimkan), total pembelian, frekuensi
-   - Wawasan: 10% pelanggan teratas = 40% pendapatan
+   **B. Top 10 Pelanggan Berdasarkan Nilai (Grafik Batang)**
+   - Menampilkan top buyer
+   - Termasuk nama pelanggan (anonymized), total pembelian, frekuensi
+   - Wawasan: Top 10% pelanggan = 40% pendapatan
 
    **C. Distribusi Pelanggan Berdasarkan Kota (Peta Geografis)**
    - Pin pada peta Indonesia
@@ -640,51 +640,51 @@ Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang
 
 4. **Visualisasi Pendukung**
 
-   **D. Kecenderungan Akuisisi Pelanggan (Grafik Garis)**
+   **D. Tren Akuisisi Pelanggan (Grafik Garis)**
    - Pelanggan baru per bulan
-   - Menampilkan dampak kampanye pemasaran
+   - Menampilkan dampak kampanye marketing
    
-   **E. Tingkat Pembelian Ulang (Grafik Garis)**
+   **E. Repeat Purchase Rate (Grafik Garis)**
    - Melacak loyalitas sepanjang waktu
    
-   **F. Nilai Rata-rata Pelanggan Berdasarkan Segmen (Grafik Batang)**
+   **F. Customer Lifetime Value Rata-rata Berdasarkan Segmen (Grafik Batang)**
    - Bisnis: Rp 6,2 juta rata-rata
-   - Pemasok Kembali: Rp 4,8 juta rata-rata
+   - Reseller: Rp 4,8 juta rata-rata
    - Individu: Rp 2,1 juta rata-rata
 
 5. **Tabel Segmentasi Pelanggan**
-   - Segmen, Jumlah, % dari Total, Nilai Rata-rata, Tingkat Pembelian Ulang
-   - Wawasan yang dapat ditindaklanjuti untuk setiap segmen
+   - Segmen, Jumlah, % dari Total, Nilai Rata-rata, Repeat Purchase Rate
+   - Wawasan actionable untuk setiap segmen
 
 **Wawasan Utama**:
-- "Tingkat pembelian ulang 45% menunjukkan ruang untuk perbaikan"
+- "Repeat purchase rate 45% menunjukkan ruang untuk perbaikan"
 - "Segmen bisnis memiliki nilai rata-rata pesanan 3x lebih tinggi dari Individu"
 - "85% pelanggan terkonsentrasi di Jabodetabek"
-- "30% pelanggan berisiko kehilangan (kebaruan rendah)"
+- "30% pelanggan berisiko kehilangan (recency rendah)"
 
 *[Lanjutan untuk sub-bab 3.3.5 hingga 3.3.7 dan 3.4 akan dibuat dalam file terpisah]*
 
 ---
 
 **Catatan**: 
-- Tangkapan layar papan kendali akan ditambahkan dalam versi final MS Word
-- Setiap visualisasi akan disertai dengan keterangan dan nomor gambar
+- Screenshot dashboard akan ditambahkan dalam versi final MS Word
+- Setiap visualisasi akan disertai dengan caption dan nomor gambar
 - Interpretasi lebih detail akan ditambahkan dengan referensi teori
 
 ## 3.4 Analisis dan Interpretasi
 
 ### 3.4.1 Interpretasi Hasil Visualisasi
 
-Berdasarkan papan kendali yang telah dibuat, berikut interpretasi hasil visualisasi:
+Berdasarkan dashboard yang telah dibuat, berikut interpretasi hasil visualisasi:
 
-**Kecenderungan Pendapatan**:
-Papan kendali menunjukkan pola pertumbuhan pendapatan yang fluktuatif dengan puncak yang jelas pada bulan Desember (Rp 13.157.174), Juni (Rp 11.976.550), dan Juli (Rp 11.418.523). Pola ini mengindikasikan pola musiman yang kuat, di mana permintaan meningkat menjelang liburan dan periode kejadian khusus. Musim sepi terjadi di Februari dan September dengan pendapatan terendah.
+**Tren Pendapatan**:
+Dashboard menunjukkan pola pertumbuhan pendapatan yang fluktuatif dengan puncak yang jelas pada bulan Desember (Rp 13.157.174), Juni (Rp 11.976.550), dan Juli (Rp 11.418.523). Pola ini mengindikasikan seasonality yang kuat, di mana permintaan meningkat menjelang liburan dan periode event khusus. Musim sepi terjadi di Februari dan September dengan pendapatan terendah.
 
 **Kinerja Produk**:
-Analisis produk mengungkapkan bahwa Papan Petunjuk dan Papan Nama premium mendominasi pendapatan meskipun volume penjualan lebih rendah dibanding produk bernilai rendah seperti papan nama meja dan bingkai foto. Hal ini konsisten dengan konsep penjualan bernilai di mana fokus pada produk bernilai tinggi menghasilkan profitabilitas lebih baik meski volume lebih rendah.
+Analisis produk mengungkapkan bahwa Papan Petunjuk dan Papan Nama premium mendominasi pendapatan meskipun volume penjualan lebih rendah dibanding produk low-value seperti papan nama meja dan bingkai foto. Hal ini konsisten dengan konsep value-based selling di mana fokus pada produk high-value menghasilkan profitabilitas lebih baik meski volume lebih rendah.
 
 **Segmentasi Pelanggan**:
-Segmentasi RFM menunjukkan bahwa 30% pelanggan berada dalam kategori "Hilang" atau "Berisiko", mengindikasikan perlunya strategi retensi pelanggan yang lebih agresif. Pelanggan Juara dan Setia yang hanya 35% dari total basis pelanggan menghasilkan 60% dari total pendapatan, membuktikan pentingnya fokus pada pelanggan bernilai tinggi.
+Segmentasi RFM menunjukkan bahwa 30% pelanggan berada dalam kategori "Lost" atau "At Risk", mengindikasikan perlunya strategi retensi pelanggan yang lebih agresif. Pelanggan Champions dan Loyal yang hanya 35% dari total basis pelanggan menghasilkan 60% dari total pendapatan, membuktikan pentingnya fokus pada high-value customers.
 
 **Efektivitas Saluran**:
 WhatsApp sebagai saluran dominan (45% pendapatan) menunjukkan bahwa pendekatan personal dan percakapan masih sangat efektif untuk produk khusus seperti yang dijual SATRIAMART. Instagram dengan 30% pendapatan menunjukkan pentingnya konten visual untuk produk dekorasi.
@@ -692,51 +692,51 @@ WhatsApp sebagai saluran dominan (45% pendapatan) menunjukkan bahwa pendekatan p
 ### 3.4.2 Implikasi terhadap Strategi Bisnis SATRIAMART
 
 **1. Manajemen Persediaan**:
-Wawasan tentang pola musiman memungkinkan SATRIAMART untuk meningkatkan produksi dan stok persediaan menjelang musim puncak (November-Desember dan Mei-Juni) dan mengurangi persediaan di musim sepi untuk optimasi arus kas.
+Wawasan tentang seasonality memungkinkan SATRIAMART untuk meningkatkan produksi dan stok persediaan menjelang musim puncak (November-Desember dan Mei-Juni) dan mengurangi persediaan di musim sepi untuk optimasi cash flow.
 
 **2. Strategi Produk**:
-Data menunjukkan bahwa produk khusus memiliki margin lebih tinggi (65%) dibanding produk standar (40%). Strategi yang dapat diterapkan adalah mendorong kustomisasi melalui insentif penetapan harga dan menyoroti opsi kustomisasi dalam materi pemasaran.
+Data menunjukkan bahwa produk custom memiliki margin lebih tinggi (65%) dibanding produk standar (40%). Strategi yang dapat diterapkan adalah mendorong kustomisasi melalui pricing incentive dan menyoroti opsi kustomisasi dalam materi marketing.
 
 **3. Retensi Pelanggan**:
-Dengan tingkat pembelian ulang hanya 45%, SATRIAMART perlu implementasi program loyalitas, pemasaran tindak lanjut, dan penawaran personal untuk meningkatkan nilai seumur hidup pelanggan.
+Dengan repeat purchase rate hanya 45%, SATRIAMART perlu implementasi program loyalitas, follow-up marketing, dan penawaran personal untuk meningkatkan customer lifetime value.
 
-**4. Alokasi Anggaran Pemasaran**:
-Analisis ROI kampanye menunjukkan bahwa Iklan Instagram memberikan ROI tertinggi (280%). Alokasi anggaran pemasaran sebaiknya diprioritaskan pada saluran dengan ROI tinggi sambil mempertahankan kehadiran di saluran lain.
+**4. Alokasi Budget Marketing**:
+Analisis ROI kampanye menunjukkan bahwa Instagram Ads memberikan ROI tertinggi (280%). Alokasi budget marketing sebaiknya diprioritaskan pada saluran dengan ROI tinggi sambil mempertahankan kehadiran di saluran lain.
 
-**5. Strategi Penetapan Harga**:
-Analisis harga vs volume menunjukkan titik optimal pada produk Rp 100 ribu-300 ribu yang seimbang antara volume dan margin. Strategi paket bundel dapat diterapkan untuk meningkatkan nilai rata-rata pesanan.
+**5. Strategi Pricing**:
+Analisis harga vs volume menunjukkan sweet spot pada produk Rp 100 ribu-300 ribu yang balance antara volume dan margin. Strategi bundling dapat diterapkan untuk meningkatkan average order value.
 
 ### 3.4.3 Potensi Peningkatan Performa
 
-**1. Meningkatkan Tingkat Pembelian Ulang** (Target: dari 45% ke 60%)
-   - Implementasi program loyalitas dengan hadiah poin
-   - Tindak lanjut surel/WhatsApp setelah pembelian
-   - Penawaran eksklusif untuk pelanggan berulang
-   - Perkiraan dampak: +15% pendapatan
+**1. Meningkatkan Repeat Purchase Rate** (Target: dari 45% ke 60%)
+   - Implementasi program loyalitas dengan reward points
+   - Follow-up email/WhatsApp setelah pembelian
+   - Penawaran eksklusif untuk repeat customers
+   - Estimasi dampak: +15% pendapatan
 
 **2. Memperluas Jangkauan Geografis** (Target: dari 85% Jabodetabek ke 70%)
-   - Ekspansi platform pasar daring ke kota tier 2 (Bandung, Surabaya, Semarang)
-   - Kemitraan dengan pemasok kembali di luar Jabodetabek
-   - Optimasi kehadiran daring untuk jangkauan organik
-   - Perkiraan dampak: +20% basis pelanggan
+   - Ekspansi marketplace ke kota tier 2 (Bandung, Surabaya, Semarang)
+   - Partnership dengan reseller di luar Jabodetabek
+   - Optimasi online presence untuk jangkauan organik
+   - Estimasi dampak: +20% basis pelanggan
 
-**3. Penjualan Naik & Penjualan Silang** (Target: nilai rata-rata pesanan dari Rp 350 ribu ke Rp 420 ribu)
-   - Paket bundel produk (nomor rumah + papan nama meja)
-   - Sistem rekomendasi pada pembayaran
-   - Saran "Lengkapi tampilan"
-   - Perkiraan dampak: +20% nilai rata-rata pesanan
+**3. Upselling & Cross-selling** (Target: average order value dari Rp 350 ribu ke Rp 420 ribu)
+   - Product bundling (nomor rumah + papan nama meja)
+   - Recommendation system pada checkout
+   - "Complete the look" suggestions
+   - Estimasi dampak: +20% average order value
 
-**4. Mengurangi Tingkat Pembatalan** (Target: dari 7% ke 3%)
-   - Tingkatkan visualisasi produk (pratinjau 3D, mockup)
+**4. Mengurangi Cancellation Rate** (Target: dari 7% ke 3%)
+   - Tingkatkan product visualization (preview 3D, mockup)
    - Komunikasi jelas tentang timeline
-   - Manajemen ekspektasi yang lebih baik
-   - Perkiraan dampak: +4% pendapatan
+   - Better expectation management
+   - Estimasi dampak: +4% pendapatan
 
-**5. Optimasi ROI Pemasaran** (Target: ROI keseluruhan dari 250% ke 300%)
-   - Fokus anggaran pada saluran ROI tinggi (Instagram, Organik)
-   - Pengujian A/B untuk optimasi kreatif iklan
-   - Kampanye penargetan ulang untuk keranjang yang ditinggalkan
-   - Perkiraan dampak: +20% efisiensi pemasaran
+**5. Optimasi Marketing ROI** (Target: ROI keseluruhan dari 250% ke 300%)
+   - Focus budget pada saluran high-ROI (Instagram, Organic)
+   - A/B testing untuk optimasi ad creative
+   - Retargeting campaign untuk abandoned cart
+   - Estimasi dampak: +20% marketing efficiency
 
 ---
 
