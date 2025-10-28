@@ -3,236 +3,236 @@
 
 ## 4.1 Kesimpulan
 
-Berdasarkan hasil perancangan dan implementasi dashboard Business Intelligence interaktif untuk SATRIAMART menggunakan Looker Studio, dapat disimpulkan beberapa hal sebagai berikut:
+Berdasarkan hasil perancangan dan implementasi papan kendali Kecerdasan Bisnis interaktif untuk SATRIAMART menggunakan Looker Studio, dapat disimpulkan beberapa hal sebagai berikut:
 
-1. **Keberhasilan Implementasi Dashboard**
+1. **Keberhasilan Implementasi Papan Kendali**
 
-   Dashboard Business Intelligence interaktif telah berhasil dirancang dan diimplementasikan dengan 7 halaman utama yang mencakup Executive Summary, Sales Analysis, Product Performance, Customer Analysis, Operational Metrics, Financial Analysis, dan Marketing Performance. Dashboard dapat diakses secara online, responsif di berbagai devices, dan memiliki fitur interaktif yang memudahkan eksplorasi data.
+   Papan kendali Kecerdasan Bisnis interaktif telah berhasil dirancang dan diimplementasikan dengan 7 halaman utama yang mencakup Ringkasan Eksekutif, Analisis Penjualan, Kinerja Produk, Analisis Pelanggan, Metrik Operasional, Analisis Keuangan, dan Kinerja Pemasaran. Papan kendali dapat diakses secara daring, responsif di berbagai perangkat, dan memiliki fitur interaktif yang memudahkan eksplorasi data.
 
 2. **Efektivitas Visualisasi Data**
 
-   Pemilihan jenis visualisasi yang tepat (scorecard, line chart, bar chart, pie chart, geo map, heatmap, dan table) terbukti efektif dalam menyajikan informasi bisnis yang kompleks menjadi mudah dipahami. Setiap visualisasi dipilih berdasarkan karakteristik data dan tujuan analisis, mengikuti best practices dalam data visualization.
+   Pemilihan jenis visualisasi yang tepat (kartu skor, grafik garis, grafik batang, diagram lingkaran, peta geografis, peta panas, dan tabel) terbukti efektif dalam menyajikan informasi bisnis yang kompleks menjadi mudah dipahami. Setiap visualisasi dipilih berdasarkan karakteristik data dan tujuan analisis, mengikuti praktik terbaik dalam visualisasi data.
 
-3. **Insight Bisnis yang Bernilai**
+3. **Wawasan Bisnis yang Bernilai**
 
-   Dashboard berhasil menghasilkan insight bisnis yang actionable, antara lain:
-   - Identifikasi pola musiman dengan peak season di Desember, Juni, dan Juli
-   - WhatsApp dan Instagram sebagai channel paling efektif dengan kontribusi 75% revenue
-   - 20% produk menghasilkan 60% revenue (Pareto principle)
-   - Custom products memiliki profit margin 65% vs standard products 40%
-   - Repeat purchase rate 45% menunjukkan ruang untuk improvement customer retention
+   Papan kendali berhasil menghasilkan wawasan bisnis yang dapat ditindaklanjuti, antara lain:
+   - Identifikasi pola musiman dengan musim puncak di Desember, Juni, dan Juli
+   - WhatsApp dan Instagram sebagai saluran paling efektif dengan kontribusi 75% pendapatan
+   - 20% produk menghasilkan 60% pendapatan (prinsip Pareto)
+   - Produk khusus memiliki margin laba 65% vs produk standar 40%
+   - Tingkat pembelian ulang 45% menunjukkan ruang untuk peningkatan retensi pelanggan
    - Konsentrasi pelanggan 85% di Jabodetabek dengan peluang ekspansi geografis
 
-4. **Key Performance Indicators (KPI)**
+4. **Indikator Kinerja Utama (KPI)**
 
-   KPI yang berhasil diidentifikasi dan diintegrasikan dalam dashboard mencakup:
-   - Sales KPIs: Total Revenue (Rp 111.976.550), AOV (Rp 349.926), Growth Rate (+12.5%)
-   - Product KPIs: Top sellers, profit margin per product, inventory turnover
-   - Customer KPIs: Total customers (180), repeat rate (45%), CLV
-   - Operational KPIs: Completion rate (85%), fulfillment time, cancellation rate (7%)
-   - Financial KPIs: Gross profit, net profit, profit margin (48.5%)
-   - Marketing KPIs: Campaign ROI, conversion rate, cost per acquisition
+   KPI yang berhasil diidentifikasi dan diintegrasikan dalam papan kendali mencakup:
+   - KPI Penjualan: Total Pendapatan (Rp 111.976.550), Nilai Rata-rata Pesanan (Rp 349.926), Tingkat Pertumbuhan (+12,5%)
+   - KPI Produk: Penjual teratas, margin laba per produk, perputaran persediaan
+   - KPI Pelanggan: Total pelanggan (180), tingkat pembelian ulang (45%), nilai seumur hidup pelanggan
+   - KPI Operasional: Tingkat penyelesaian (85%), waktu penyelesaian, tingkat pembatalan (7%)
+   - KPI Keuangan: Laba kotor, laba bersih, margin laba (48,5%)
+   - KPI Pemasaran: ROI kampanye, tingkat konversi, biaya per akuisisi
 
 5. **Dukungan Pengambilan Keputusan**
 
-   Dashboard terbukti dapat mendukung pengambilan keputusan bisnis di berbagai area:
-   - **Inventory Planning**: Data seasonal pattern membantu perencanaan stock untuk mengantisipasi peak demand
-   - **Product Development**: Insight tentang produk best-seller dan high-margin mendukung strategi pengembangan produk
-   - **Marketing Strategy**: Analisis ROI per channel membantu optimasi alokasi marketing budget
-   - **Customer Management**: Segmentasi RFM memungkinkan targeted marketing dan customer retention strategy
-   - **Pricing Strategy**: Analisis price vs volume membantu penetapan harga optimal
+   Papan kendali terbukti dapat mendukung pengambilan keputusan bisnis di berbagai area:
+   - **Perencanaan Persediaan**: Data pola musiman membantu perencanaan stok untuk mengantisipasi permintaan puncak
+   - **Pengembangan Produk**: Wawasan tentang produk terlaris dan margin tinggi mendukung strategi pengembangan produk
+   - **Strategi Pemasaran**: Analisis ROI per saluran membantu optimasi alokasi anggaran pemasaran
+   - **Manajemen Pelanggan**: Segmentasi RFM memungkinkan pemasaran tertarget dan strategi retensi pelanggan
+   - **Strategi Penetapan Harga**: Analisis harga vs volume membantu penetapan harga optimal
 
-6. **Feasibility BI untuk UMKM**
+6. **Kelayakan Kecerdasan Bisnis untuk UMKM**
 
-   Penelitian ini membuktikan bahwa teknologi Business Intelligence dapat diimplementasikan secara efektif pada perusahaan skala kecil seperti SATRIAMART dengan:
-   - **Zero Cost**: Menggunakan free tools (Looker Studio, Google Sheets)
-   - **Easy Implementation**: Proses implementasi relatif mudah tanpa memerlukan technical expertise tinggi
-   - **High Impact**: Dashboard memberikan value signifikan dalam mendukung data-driven decision making
-   - **Scalable**: Solusi dapat di-scale seiring pertumbuhan bisnis
+   Penelitian ini membuktikan bahwa teknologi Kecerdasan Bisnis dapat diimplementasikan secara efektif pada perusahaan skala kecil seperti SATRIAMART dengan:
+   - **Tanpa Biaya**: Menggunakan perangkat gratis (Looker Studio, Google Sheets)
+   - **Implementasi Mudah**: Proses implementasi relatif mudah tanpa memerlukan keahlian teknis tinggi
+   - **Dampak Tinggi**: Papan kendali memberikan nilai signifikan dalam mendukung pengambilan keputusan berbasis data
+   - **Dapat Ditingkatkan**: Solusi dapat ditingkatkan seiring pertumbuhan bisnis
 
 7. **Proses ETL yang Sistematis**
 
-   Implementasi proses Extract-Transform-Load (ETL) yang sistematis menghasilkan data yang berkualitas dan siap untuk analisis. Proses pembersihan data, transformasi, dan aggregation memastikan akurasi dan konsistensi informasi yang disajikan dalam dashboard.
+   Implementasi proses Ekstraksi-Transformasi-Pemuatan (ETL) yang sistematis menghasilkan data yang berkualitas dan siap untuk analisis. Proses pembersihan data, transformasi, dan agregasi memastikan akurasi dan konsistensi informasi yang disajikan dalam papan kendali.
 
 8. **Manfaat Praktis untuk SATRIAMART**
 
-   Dashboard BI memberikan manfaat konkret:
-   - Efisiensi waktu analisis dari manual (hours) menjadi instant (seconds)
-   - Visibility real-time terhadap kinerja bisnis
+   Papan kendali Kecerdasan Bisnis memberikan manfaat konkret:
+   - Efisiensi waktu analisis dari manual (jam) menjadi instan (detik)
+   - Visibilitas waktu nyata terhadap kinerja bisnis
    - Identifikasi proaktif terhadap masalah operasional
-   - Data-driven insights untuk strategi growth
-   - Benchmark untuk monitoring progress dan achievement
+   - Wawasan berbasis data untuk strategi pertumbuhan
+   - Patokan untuk memantau kemajuan dan pencapaian
 
 9. **Platform Looker Studio**
 
-   Looker Studio terbukti menjadi pilihan yang tepat untuk implementasi BI pada UMKM karena:
-   - Interface intuitif dan user-friendly
+   Looker Studio terbukti menjadi pilihan yang tepat untuk implementasi Kecerdasan Bisnis pada UMKM karena:
+   - Antarmuka intuitif dan mudah digunakan
    - Integrasi mudah dengan Google Sheets
-   - Fitur kolaborasi dan sharing yang baik
-   - Update dan maintenance yang minimal
+   - Fitur kolaborasi dan berbagi yang baik
+   - Pembaruan dan pemeliharaan yang minimal
    - Dukungan komunitas dan dokumentasi yang lengkap
 
-10. **Learning Outcomes**
+10. **Hasil Pembelajaran**
 
-    Penelitian ini memberikan pembelajaran bahwa kesuksesan implementasi BI tidak hanya bergantung pada teknologi, tetapi juga pada:
-    - Pemahaman yang baik terhadap business context dan kebutuhan pengguna
+    Penelitian ini memberikan pembelajaran bahwa kesuksesan implementasi Kecerdasan Bisnis tidak hanya bergantung pada teknologi, tetapi juga pada:
+    - Pemahaman yang baik terhadap konteks bisnis dan kebutuhan pengguna
     - Kualitas data sebagai fondasi analisis
-    - Pemilihan visualisasi yang tepat untuk menyampaikan insight
-    - Iterative improvement berdasarkan user feedback
+    - Pemilihan visualisasi yang tepat untuk menyampaikan wawasan
+    - Perbaikan berulang berdasarkan umpan balik pengguna
 
 ## 4.2 Saran
 
-Berdasarkan hasil penelitian dan implementasi dashboard Business Intelligence untuk SATRIAMART, penyusun memberikan saran sebagai berikut:
+Berdasarkan hasil penelitian dan implementasi papan kendali Kecerdasan Bisnis untuk SATRIAMART, penyusun memberikan saran sebagai berikut:
 
 ### 4.2.1 Saran untuk SATRIAMART
 
-**1. Optimasi Penggunaan Dashboard**
+**1. Optimasi Penggunaan Papan Kendali**
 
-- **Training Pengguna**: Lakukan training berkala untuk semua pengguna dashboard agar dapat memaksimalkan fitur-fitur interaktif yang tersedia.
-- **Regular Review**: Jadwalkan review dashboard secara berkala (weekly/monthly) untuk monitoring KPI dan identifikasi action items.
-- **Data-Driven Culture**: Budayakan pengambilan keputusan berdasarkan data, bukan hanya intuisi. Dorong tim untuk selalu refer ke dashboard sebelum membuat keputusan strategis.
+- **Pelatihan Pengguna**: Lakukan pelatihan berkala untuk semua pengguna papan kendali agar dapat memaksimalkan fitur-fitur interaktif yang tersedia.
+- **Tinjauan Berkala**: Jadwalkan tinjauan papan kendali secara berkala (mingguan/bulanan) untuk pemantauan KPI dan identifikasi item tindakan.
+- **Budaya Berbasis Data**: Budayakan pengambilan keputusan berdasarkan data, bukan hanya intuisi. Dorong tim untuk selalu merujuk ke papan kendali sebelum membuat keputusan strategis.
 
-**2. Strategi Peningkatan Revenue**
+**2. Strategi Peningkatan Pendapatan**
 
-- **Focus on High-Margin Products**: Prioritaskan marketing dan production untuk produk dengan margin tinggi (custom products dengan margin 65%).
-- **Seasonal Planning**: Manfaatkan insight seasonal pattern untuk merencanakan campaign dan stock inventory menjelang peak season.
-- **Channel Optimization**: Alokasikan lebih banyak resource ke WhatsApp dan Instagram yang terbukti paling efektif.
+- **Fokus pada Produk Margin Tinggi**: Prioritaskan pemasaran dan produksi untuk produk dengan margin tinggi (produk khusus dengan margin 65%).
+- **Perencanaan Musiman**: Manfaatkan wawasan pola musiman untuk merencanakan kampanye dan persediaan stok menjelang musim puncak.
+- **Optimasi Saluran**: Alokasikan lebih banyak sumber daya ke WhatsApp dan Instagram yang terbukti paling efektif.
 
-**3. Customer Retention Strategy**
+**3. Strategi Retensi Pelanggan**
 
-- **Loyalty Program**: Implementasikan program loyalitas untuk meningkatkan repeat purchase rate dari 45% menjadi minimal 60%.
-- **Targeted Marketing**: Gunakan segmentasi RFM untuk melakukan targeted marketing kepada "At Risk" customers dengan special offers.
-- **Re-engagement Campaign**: Buat campaign khusus untuk "Lost" customers (30%) dengan attractive incentives.
+- **Program Loyalitas**: Implementasikan program loyalitas untuk meningkatkan tingkat pembelian ulang dari 45% menjadi minimal 60%.
+- **Pemasaran Tertarget**: Gunakan segmentasi RFM untuk melakukan pemasaran tertarget kepada pelanggan "Berisiko" dengan penawaran khusus.
+- **Kampanye Re-engagement**: Buat kampanye khusus untuk pelanggan "Hilang" (30%) dengan insentif menarik.
 
 **4. Ekspansi Geografis**
 
-- **Marketplace Expansion**: Perluas presence di marketplace yang menjangkau kota-kota besar di luar Jabodetabek (Bandung, Surabaya, Semarang).
-- **Reseller Partnership**: Bangun network reseller di wilayah yang belum ter-cover untuk mengurangi biaya logistik.
-- **Local Marketing**: Customisasi marketing content untuk target audience di different geographic regions.
+- **Perluasan Pasar Daring**: Perluas kehadiran di pasar daring yang menjangkau kota-kota besar di luar Jabodetabek (Bandung, Surabaya, Semarang).
+- **Kemitraan Reseller**: Bangun jaringan reseller di wilayah yang belum tercakup untuk mengurangi biaya logistik.
+- **Pemasaran Lokal**: Kustomisasi konten pemasaran untuk audiens target di berbagai wilayah geografis.
 
-**5. Operational Improvement**
+**5. Peningkatan Operasional**
 
-- **Reduce Cancellation Rate**: Target menurunkan cancellation rate dari 7% ke < 3% melalui better product visualization dan communication.
-- **Improve Fulfillment Time**: Optimasi proses produksi untuk mengurangi fulfillment time, mengingat korelasi positif antara fast delivery dan customer satisfaction.
-- **Quality Control**: Maintain quality tinggi karena customer satisfaction score (4.5/5) adalah competitive advantage.
+- **Pengurangan Tingkat Pembatalan**: Target menurunkan tingkat pembatalan dari 7% ke < 3% melalui visualisasi produk dan komunikasi yang lebih baik.
+- **Peningkatan Waktu Penyelesaian**: Optimasi proses produksi untuk mengurangi waktu penyelesaian, mengingat korelasi positif antara pengiriman cepat dan kepuasan pelanggan.
+- **Kontrol Kualitas**: Pertahankan kualitas tinggi karena skor kepuasan pelanggan (4,5/5) adalah keunggulan kompetitif.
 
-**6. Product Development**
+**6. Pengembangan Produk**
 
-- **Expand Custom Products**: Tingkatkan varian custom products karena margin tinggi dan demand kuat.
-- **Product Bundling**: Buat paket bundling untuk meningkatkan AOV (target dari Rp 350K ke Rp 420K).
-- **Innovation**: Develop produk-produk inovatif berdasarkan feedback dan trend market.
+- **Perluasan Produk Khusus**: Tingkatkan varian produk khusus karena margin tinggi dan permintaan kuat.
+- **Paket Bundling**: Buat paket bundling untuk meningkatkan Nilai Rata-rata Pesanan (target dari Rp 350K ke Rp 420K).
+- **Inovasi**: Kembangkan produk-produk inovatif berdasarkan umpan balik dan tren pasar.
 
-### 4.2.2 Saran untuk Pengembangan Dashboard
+### 4.2.2 Saran untuk Pengembangan Papan Kendali
 
-**1. Integrasi Real-Time Data**
+**1. Integrasi Data Waktu Nyata**
 
-- **Automated Data Pipeline**: Implementasikan automated ETL pipeline agar data terupdate otomatis tanpa manual upload.
-- **API Integration**: Integrasikan dashboard dengan API dari marketplace, social media, dan payment gateway untuk real-time data.
-- **Webhook Notification**: Setup webhook notification untuk alert ketika KPI mencapai threshold tertentu.
+- **Jalur Data Otomatis**: Implementasikan jalur ETL otomatis agar data terupdate otomatis tanpa pengunggahan manual.
+- **Integrasi API**: Integrasikan papan kendali dengan API dari pasar daring, media sosial, dan gerbang pembayaran untuk data waktu nyata.
+- **Notifikasi Webhook**: Setup notifikasi webhook untuk peringatan ketika KPI mencapai ambang batas tertentu.
 
-**2. Advanced Analytics**
+**2. Analitik Lanjutan**
 
-- **Predictive Analytics**: Tambahkan fitur predictive analytics untuk demand forecasting dan sales prediction menggunakan machine learning models.
-- **Cohort Analysis**: Implementasikan cohort analysis untuk memahami customer behavior lebih mendalam.
-- **Attribution Modeling**: Develop attribution model untuk memahami customer journey across multiple touchpoints.
+- **Analitik Prediktif**: Tambahkan fitur analitik prediktif untuk peramalan permintaan dan prediksi penjualan menggunakan model pembelajaran mesin.
+- **Analisis Kohort**: Implementasikan analisis kohort untuk memahami perilaku pelanggan lebih mendalam.
+- **Model Atribusi**: Kembangkan model atribusi untuk memahami perjalanan pelanggan melalui berbagai titik sentuh.
 
-**3. Enhanced Interactivity**
+**3. Peningkatan Interaktivitas**
 
-- **Drill-Down Capability**: Tambahkan lebih banyak drill-down features untuk exploratory analysis.
-- **Custom Alerts**: Implementasikan custom alerts yang dapat dikonfigurasi user untuk monitoring KPI critical.
-- **Comparison Features**: Tambahkan fitur untuk compare periods (YoY, MoM, vs target).
+- **Kemampuan Drill-Down**: Tambahkan lebih banyak fitur drill-down untuk analisis eksplorasi.
+- **Peringatan Khusus**: Implementasikan peringatan khusus yang dapat dikonfigurasi pengguna untuk memantau KPI kritis.
+- **Fitur Perbandingan**: Tambahkan fitur untuk membandingkan periode (tahun ke tahun, bulan ke bulan, vs target).
 
-**4. Mobile Optimization**
+**4. Optimasi Seluler**
 
-- **Mobile App**: Develop dedicated mobile app atau optimize mobile view untuk easier access.
-- **Push Notifications**: Implement push notification untuk important metrics updates.
-- **Offline Access**: Enable offline access untuk view cached dashboard data.
+- **Aplikasi Seluler**: Kembangkan aplikasi seluler khusus atau optimasi tampilan seluler untuk akses yang lebih mudah.
+- **Notifikasi Push**: Implementasikan notifikasi push untuk pembaruan metrik penting.
+- **Akses Luring**: Aktifkan akses luring untuk melihat data papan kendali yang tersimpan dalam tembolok.
 
-**5. Collaboration Features**
+**5. Fitur Kolaborasi**
 
-- **Commenting**: Tambahkan fitur commenting pada visualizations untuk team collaboration.
-- **Annotation**: Allow users untuk add annotations pada chart untuk highlight important events.
-- **Shared Insights**: Create feature untuk share specific insights via email atau messaging apps.
+- **Komentar**: Tambahkan fitur komentar pada visualisasi untuk kolaborasi tim.
+- **Anotasi**: Izinkan pengguna untuk menambahkan anotasi pada grafik untuk menyoroti kejadian penting.
+- **Berbagi Wawasan**: Buat fitur untuk berbagi wawasan spesifik melalui email atau aplikasi pesan.
 
 ### 4.2.3 Saran untuk Penelitian Lanjutan
 
 **1. Implementasi pada UMKM Lain**
 
-- Replikasi implementasi dashboard BI pada UMKM di sektor berbeda untuk validasi methodology.
-- Develop framework atau template yang dapat di-customize untuk various business types.
-- Buat case studies untuk showcase best practices BI implementation di UMKM.
+- Replikasi implementasi papan kendali Kecerdasan Bisnis pada UMKM di sektor berbeda untuk validasi metodologi.
+- Kembangkan kerangka kerja atau templat yang dapat disesuaikan untuk berbagai jenis bisnis.
+- Buat studi kasus untuk menunjukkan praktik terbaik implementasi Kecerdasan Bisnis di UMKM.
 
-**2. Advanced Analytics Implementation**
+**2. Implementasi Analitik Lanjutan**
 
-- Penelitian tentang implementasi predictive analytics untuk demand forecasting menggunakan machine learning.
-- Develop recommendation system untuk product suggestions berdasarkan customer behavior.
-- Implement sentiment analysis dari customer reviews dan social media mentions.
+- Penelitian tentang implementasi analitik prediktif untuk peramalan permintaan menggunakan pembelajaran mesin.
+- Kembangkan sistem rekomendasi untuk saran produk berdasarkan perilaku pelanggan.
+- Implementasikan analisis sentimen dari ulasan pelanggan dan penyebutan media sosial.
 
-**3. ROI Study**
+**3. Studi ROI**
 
-- Lakukan longitudinal study untuk measure actual ROI dari implementasi dashboard BI.
-- Quantify time saved, revenue increase, cost reduction sebagai hasil dari data-driven decisions.
-- Compare performance pre dan post BI implementation dengan control group.
+- Lakukan studi longitudinal untuk mengukur ROI aktual dari implementasi papan kendali Kecerdasan Bisnis.
+- Kuantifikasi waktu yang dihemat, peningkatan pendapatan, pengurangan biaya sebagai hasil dari keputusan berbasis data.
+- Bandingkan kinerja sebelum dan sesudah implementasi Kecerdasan Bisnis dengan kelompok kontrol.
 
-**4. Platform Comparison**
+**4. Perbandingan Platform**
 
-- Comparative study antara Looker Studio vs platform BI lain (Power BI, Tableau, Metabase) untuk UMKM context.
-- Evaluate trade-offs dalam hal cost, features, ease of use, dan scalability.
-- Provide recommendations untuk platform selection based on business size dan requirements.
+- Studi komparatif antara Looker Studio vs platform Kecerdasan Bisnis lain (Power BI, Tableau, Metabase) untuk konteks UMKM.
+- Evaluasi pertukaran dalam hal biaya, fitur, kemudahan penggunaan, dan skalabilitas.
+- Berikan rekomendasi untuk pemilihan platform berdasarkan ukuran bisnis dan kebutuhan.
 
-**5. Integration dengan Sistem Lain**
+**5. Integrasi dengan Sistem Lain**
 
-- Penelitian tentang integrasi dashboard BI dengan sistem ERP, CRM, atau e-commerce platform.
-- Develop connector atau middleware untuk seamless integration.
-- Study about challenges dan best practices dalam system integration.
+- Penelitian tentang integrasi papan kendali Kecerdasan Bisnis dengan sistem ERP, CRM, atau platform e-commerce.
+- Kembangkan konektor atau middleware untuk integrasi yang mulus.
+- Studi tentang tantangan dan praktik terbaik dalam integrasi sistem.
 
 ### 4.2.4 Saran Umum
 
-**1. Data Governance**
+**1. Tata Kelola Data**
 
-- Establish data governance policies untuk memastikan data quality, security, dan privacy.
-- Define roles and responsibilities untuk data management.
-- Implement data quality monitoring dan regular audits.
+- Tetapkan kebijakan tata kelola data untuk memastikan kualitas, keamanan, dan privasi data.
+- Definisikan peran dan tanggung jawab untuk manajemen data.
+- Implementasikan pemantauan kualitas data dan audit berkala.
 
-**2. Change Management**
+**2. Manajemen Perubahan**
 
-- Persiapkan change management strategy ketika implement BI tools dalam organisasi.
-- Address resistance to change melalui communication dan training.
-- Celebrate quick wins untuk build momentum dan adoption.
+- Persiapkan strategi manajemen perubahan ketika mengimplementasikan perangkat Kecerdasan Bisnis dalam organisasi.
+- Atasi resistensi terhadap perubahan melalui komunikasi dan pelatihan.
+- Rayakan kemenangan cepat untuk membangun momentum dan adopsi.
 
-**3. Continuous Improvement**
+**3. Peningkatan Berkelanjutan**
 
-- Dashboard bukan produk final, tapi living document yang perlu continuous improvement.
-- Collect regular feedback dari users dan iterate based on needs.
-- Stay updated dengan latest trends dan best practices dalam BI dan data visualization.
+- Papan kendali bukan produk akhir, tetapi dokumen hidup yang perlu peningkatan berkelanjutan.
+- Kumpulkan umpan balik berkala dari pengguna dan iterasi berdasarkan kebutuhan.
+- Tetap terupdate dengan tren dan praktik terbaik terbaru dalam Kecerdasan Bisnis dan visualisasi data.
 
-**4. Skills Development**
+**4. Pengembangan Keterampilan**
 
-- Invest dalam training dan skills development untuk team dalam area data analytics.
-- Encourage data literacy across organization, tidak hanya technical team.
-- Build internal expertise untuk sustainability dan reduce dependency on external consultants.
+- Investasikan dalam pelatihan dan pengembangan keterampilan untuk tim dalam bidang analitik data.
+- Dorong literasi data di seluruh organisasi, tidak hanya tim teknis.
+- Bangun keahlian internal untuk keberlanjutan dan kurangi ketergantungan pada konsultan eksternal.
 
-**5. Documentation**
+**5. Dokumentasi**
 
-- Maintain comprehensive documentation tentang data sources, calculations, dan assumptions.
-- Create user guides dan video tutorials untuk facilitate onboarding.
-- Document lessons learned dan best practices untuk knowledge sharing.
+- Pertahankan dokumentasi komprehensif tentang sumber data, perhitungan, dan asumsi.
+- Buat panduan pengguna dan tutorial video untuk memfasilitasi orientasi.
+- Dokumentasikan pembelajaran dan praktik terbaik untuk berbagi pengetahuan.
 
 ---
 
 ## PENUTUP AKHIR
 
-Dashboard Business Intelligence yang telah dirancang dan diimplementasikan untuk SATRIAMART merupakan stepping stone menuju organisasi yang lebih data-driven. Keberhasilan implementasi ini menunjukkan bahwa teknologi BI bukan hanya untuk perusahaan besar, tetapi juga sangat applicable dan beneficial untuk UMKM.
+Papan kendali Kecerdasan Bisnis yang telah dirancang dan diimplementasikan untuk SATRIAMART merupakan batu loncatan menuju organisasi yang lebih berbasis data. Keberhasilan implementasi ini menunjukkan bahwa teknologi Kecerdasan Bisnis bukan hanya untuk perusahaan besar, tetapi juga sangat dapat diterapkan dan bermanfaat untuk UMKM.
 
-Dengan memanfaatkan dashboard ini secara optimal dan mengimplementasikan saran-saran yang diberikan, SATRIAMART memiliki potensi untuk meningkatkan revenue, optimasi operasi, dan memperkuat competitive advantage di pasar dekorasi dan aksesoris akrilik.
+Dengan memanfaatkan papan kendali ini secara optimal dan mengimplementasikan saran-saran yang diberikan, SATRIAMART memiliki potensi untuk meningkatkan pendapatan, optimasi operasi, dan memperkuat keunggulan kompetitif di pasar dekorasi dan aksesoris akrilik.
 
-Penyusun berharap penelitian ini dapat menjadi referensi dan inspirasi bagi UMKM lain untuk mengadopsi Business Intelligence dalam rangka meningkatkan daya saing dan pertumbuhan bisnis di era digital ini.
-
----
-
-**"Data is the new oil, but insights are the new gold."**  
-**"Transform your data into decisions, and decisions into growth."**
+Penyusun berharap penelitian ini dapat menjadi referensi dan inspirasi bagi UMKM lain untuk mengadopsi Kecerdasan Bisnis dalam rangka meningkatkan daya saing dan pertumbuhan bisnis di era digital ini.
 
 ---
 
-*End of Laporan*
+**"Data adalah minyak baru, tetapi wawasan adalah emas baru."**  
+**"Ubah data Anda menjadi keputusan, dan keputusan menjadi pertumbuhan."**
+
+---
+
+*Akhir Laporan*

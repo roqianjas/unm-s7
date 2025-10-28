@@ -45,15 +45,15 @@ Penyusun
 
 # ABSTRAK
 
-Business Intelligence (BI) merupakan pendekatan sistematis untuk mengumpulkan, menganalisis, dan menyajikan informasi bisnis guna mendukung pengambilan keputusan yang lebih baik. Penelitian ini bertujuan untuk merancang dan mengimplementasikan dashboard Business Intelligence interaktif menggunakan Looker Studio untuk SATRIAMART, sebuah perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik. Dashboard dirancang untuk memberikan visualisasi data penjualan, produk, pelanggan, dan keuangan secara real-time dan interaktif.
+Kecerdasan Bisnis atau *Business Intelligence* (BI) merupakan pendekatan sistematis untuk mengumpulkan, menganalisis, dan menyajikan informasi bisnis guna mendukung pengambilan keputusan yang lebih baik. Penelitian ini bertujuan untuk merancang dan mengimplementasikan papan kendali (*dashboard*) Kecerdasan Bisnis interaktif menggunakan Looker Studio untuk SATRIAMART, sebuah perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik. Papan kendali dirancang untuk memberikan visualisasi data penjualan, produk, pelanggan, dan keuangan secara waktu nyata dan interaktif.
 
-Metodologi yang digunakan meliputi analisis kebutuhan pengguna, identifikasi Key Performance Indicators (KPI), proses Extract-Transform-Load (ETL) data, perancangan layout dashboard, implementasi menggunakan Looker Studio, serta pengujian dan evaluasi. Data yang digunakan mencakup data transaksi penjualan, data produk, data pelanggan, riwayat stok, biaya operasional, dan kampanye pemasaran selama periode 12 bulan (November 2024 - Oktober 2025).
+Metodologi yang digunakan meliputi analisis kebutuhan pengguna, identifikasi Indikator Kinerja Utama (*Key Performance Indicators* atau KPI), proses Ekstraksi-Transformasi-Pemuatan (*Extract-Transform-Load* atau ETL) data, perancangan tata letak papan kendali, implementasi menggunakan Looker Studio, serta pengujian dan evaluasi. Data yang digunakan mencakup data transaksi penjualan, data produk, data pelanggan, riwayat stok, biaya operasional, dan kampanye pemasaran selama periode 12 bulan (November 2024 - Oktober 2025).
 
-Hasil penelitian menunjukkan bahwa dashboard Business Intelligence yang dikembangkan mampu menyajikan informasi bisnis secara komprehensif melalui berbagai visualisasi seperti grafik batang, grafik garis, diagram lingkaran, tabel, dan scorecard. Dashboard terdiri dari tujuh halaman utama yang mencakup Executive Summary, Sales Analysis, Product Performance, Customer Analysis, Operational Metrics, Financial Analysis, dan Marketing Performance. Insight yang dihasilkan mencakup identifikasi produk terlaris, pola penjualan musiman, segmentasi pelanggan, analisis profitabilitas per kategori produk, dan evaluasi efektivitas channel penjualan.
+Hasil penelitian menunjukkan bahwa papan kendali Kecerdasan Bisnis yang dikembangkan mampu menyajikan informasi bisnis secara komprehensif melalui berbagai visualisasi seperti grafik batang, grafik garis, diagram lingkaran, tabel, dan kartu skor. Papan kendali terdiri dari tujuh halaman utama yang mencakup Ringkasan Eksekutif, Analisis Penjualan, Kinerja Produk, Analisis Pelanggan, Metrik Operasional, Analisis Keuangan, dan Kinerja Pemasaran. Wawasan (*insight*) yang dihasilkan mencakup identifikasi produk terlaris, pola penjualan musiman, segmentasi pelanggan, analisis profitabilitas per kategori produk, dan evaluasi efektivitas saluran penjualan.
 
-Implementasi dashboard BI ini memberikan manfaat praktis bagi SATRIAMART dalam bentuk peningkatan efisiensi analisis data, pengambilan keputusan yang lebih cepat dan akurat, identifikasi peluang bisnis baru, serta optimasi strategi pemasaran dan operasional. Penelitian ini membuktikan bahwa teknologi Business Intelligence dapat diterapkan secara efektif pada perusahaan skala kecil dengan biaya yang relatif terjangkau menggunakan platform berbasis cloud seperti Looker Studio.
+Implementasi papan kendali Kecerdasan Bisnis ini memberikan manfaat praktis bagi SATRIAMART dalam bentuk peningkatan efisiensi analisis data, pengambilan keputusan yang lebih cepat dan akurat, identifikasi peluang bisnis baru, serta optimasi strategi pemasaran dan operasional. Penelitian ini membuktikan bahwa teknologi Kecerdasan Bisnis dapat diterapkan secara efektif pada perusahaan skala kecil dengan biaya yang relatif terjangkau menggunakan platform berbasis awan seperti Looker Studio.
 
-**Kata kunci**: Business Intelligence, Dashboard Interaktif, Looker Studio, Data Visualization, KPI, UMKM, Analisis Data, SATRIAMART.
+**Kata kunci**: Kecerdasan Bisnis, Papan Kendali Interaktif, Looker Studio, Visualisasi Data, Indikator Kinerja Utama, UMKM, Analisis Data, SATRIAMART.
 
 ---
 
@@ -132,31 +132,31 @@ DAFTAR LAMPIRAN
 
 ## 1.1 Latar Belakang Masalah
 
-Dalam era digital saat ini, data telah menjadi aset penting bagi setiap organisasi bisnis, termasuk Usaha Mikro, Kecil, dan Menengah (UMKM). Ketersediaan data yang melimpah dari berbagai sumber seperti transaksi penjualan, interaksi pelanggan, dan operasional bisnis memberikan peluang besar bagi perusahaan untuk mengoptimalkan kinerja bisnis mereka. Namun, data mentah yang belum diolah tidak akan memberikan nilai tambah tanpa adanya proses analisis yang tepat. Di sinilah peran Business Intelligence (BI) menjadi sangat penting.
+Dalam era digital saat ini, data telah menjadi aset penting bagi setiap organisasi bisnis, termasuk Usaha Mikro, Kecil, dan Menengah (UMKM). Ketersediaan data yang melimpah dari berbagai sumber seperti transaksi penjualan, interaksi pelanggan, dan operasional bisnis memberikan peluang besar bagi perusahaan untuk mengoptimalkan kinerja bisnis mereka. Namun, data mentah yang belum diolah tidak akan memberikan nilai tambah tanpa adanya proses analisis yang tepat. Di sinilah peran Kecerdasan Bisnis atau *Business Intelligence* (BI) menjadi sangat penting.
 
-Business Intelligence merupakan seperangkat teknologi, aplikasi, dan praktik untuk pengumpulan, integrasi, analisis, dan presentasi informasi bisnis (Turban et al., 2021). Tujuan utama BI adalah untuk mendukung pengambilan keputusan bisnis yang lebih baik melalui penyediaan informasi yang akurat, relevan, dan tepat waktu. Dengan implementasi BI yang tepat, perusahaan dapat mengidentifikasi peluang bisnis baru, mendeteksi masalah operasional sejak dini, memahami perilaku pelanggan, dan mengoptimalkan strategi pemasaran.
+Kecerdasan Bisnis merupakan seperangkat teknologi, aplikasi, dan praktik untuk pengumpulan, integrasi, analisis, dan presentasi informasi bisnis (Turban et al., 2021). Tujuan utama BI adalah untuk mendukung pengambilan keputusan bisnis yang lebih baik melalui penyediaan informasi yang akurat, relevan, dan tepat waktu. Dengan implementasi BI yang tepat, perusahaan dapat mengidentifikasi peluang bisnis baru, mendeteksi masalah operasional sejak dini, memahami perilaku pelanggan, dan mengoptimalkan strategi pemasaran.
 
-SATRIAMART merupakan perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik dengan produk unggulan berupa nomor rumah akrilik, signage, papan nama, dan berbagai aksesoris dekorasi custom. Berlokasi di Depok, Jawa Barat, SATRIAMART melayani pelanggan dari wilayah Jabodetabek dan sekitarnya melalui berbagai channel penjualan seperti Instagram, WhatsApp, marketplace, dan offline. Seperti halnya UMKM pada umumnya, SATRIAMART menghadapi tantangan dalam mengelola dan menganalisis data bisnis yang terus bertambah setiap harinya.
+SATRIAMART merupakan perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik dengan produk unggulan berupa nomor rumah akrilik, papan petunjuk (*signage*), papan nama, dan berbagai aksesoris dekorasi khusus. Berlokasi di Depok, Jawa Barat, SATRIAMART melayani pelanggan dari wilayah Jabodetabek dan sekitarnya melalui berbagai saluran penjualan seperti Instagram, WhatsApp, platform pasar daring (*marketplace*), dan penjualan langsung. Seperti halnya UMKM pada umumnya, SATRIAMART menghadapi tantangan dalam mengelola dan menganalisis data bisnis yang terus bertambah setiap harinya.
 
-Saat ini, SATRIAMART belum memiliki sistem informasi terintegrasi untuk melakukan analisis data secara komprehensif. Proses pengambilan keputusan masih dilakukan secara manual berdasarkan intuisi dan pengalaman, tanpa dukungan analisis data yang sistematis. Kondisi ini menyebabkan beberapa permasalahan seperti kesulitan dalam mengidentifikasi produk yang paling laris, ketidakpastian dalam merencanakan stok produk, minimnya pemahaman terhadap karakteristik dan preferensi pelanggan, serta kurangnya evaluasi terhadap efektivitas channel penjualan dan kampanye pemasaran.
+Saat ini, SATRIAMART belum memiliki sistem informasi terintegrasi untuk melakukan analisis data secara komprehensif. Proses pengambilan keputusan masih dilakukan secara manual berdasarkan intuisi dan pengalaman, tanpa dukungan analisis data yang sistematis. Kondisi ini menyebabkan beberapa permasalahan seperti kesulitan dalam mengidentifikasi produk yang paling laris, ketidakpastian dalam merencanakan stok produk, minimnya pemahaman terhadap karakteristik dan preferensi pelanggan, serta kurangnya evaluasi terhadap efektivitas saluran penjualan dan kampanye pemasaran.
 
-Dashboard Business Intelligence interaktif dapat menjadi solusi untuk mengatasi permasalahan tersebut. Dashboard merupakan alat visualisasi data yang menyajikan informasi penting dalam bentuk grafik, chart, dan indikator kinerja yang mudah dipahami (Howson, 2021). Dengan dashboard, manajemen dapat memantau kinerja bisnis secara real-time, mengidentifikasi tren, dan membuat keputusan berdasarkan data yang akurat. Dashboard yang interaktif juga memungkinkan pengguna untuk melakukan eksplorasi data lebih dalam melalui fitur filter, drill-down, dan cross-filtering.
+Papan kendali (*dashboard*) Kecerdasan Bisnis interaktif dapat menjadi solusi untuk mengatasi permasalahan tersebut. Papan kendali merupakan alat visualisasi data yang menyajikan informasi penting dalam bentuk grafik, diagram, dan indikator kinerja yang mudah dipahami (Howson, 2021). Dengan papan kendali, manajemen dapat memantau kinerja bisnis secara waktu nyata (*real-time*), mengidentifikasi kecenderungan (*trend*), dan membuat keputusan berdasarkan data yang akurat. Papan kendali yang interaktif juga memungkinkan pengguna untuk melakukan eksplorasi data lebih dalam melalui fitur penyaringan (*filter*), penelusuran detail (*drill-down*), dan penyaringan silang (*cross-filtering*).
 
-Looker Studio (sebelumnya dikenal sebagai Google Data Studio) merupakan platform Business Intelligence berbasis cloud yang disediakan oleh Google secara gratis. Platform ini memungkinkan pengguna untuk membuat dashboard interaktif dengan mudah tanpa memerlukan keahlian programming yang mendalam. Looker Studio mendukung integrasi dengan berbagai sumber data termasuk Google Sheets, Google Analytics, database SQL, dan layanan cloud lainnya. Kemudahan penggunaan, biaya yang terjangkau (gratis), dan fitur kolaborasi yang baik menjadikan Looker Studio pilihan yang tepat untuk implementasi BI pada UMKM seperti SATRIAMART.
+Looker Studio (sebelumnya dikenal sebagai Google Data Studio) merupakan platform Kecerdasan Bisnis berbasis komputasi awan yang disediakan oleh Google secara gratis. Platform ini memungkinkan pengguna untuk membuat papan kendali interaktif dengan mudah tanpa memerlukan keahlian pemrograman yang mendalam. Looker Studio mendukung integrasi dengan berbagai sumber data termasuk Google Sheets, Google Analytics, basis data SQL, dan layanan awan lainnya. Kemudahan penggunaan, biaya yang terjangkau (gratis), dan fitur kolaborasi yang baik menjadikan Looker Studio pilihan yang tepat untuk implementasi BI pada UMKM seperti SATRIAMART.
 
-Berdasarkan latar belakang tersebut, penelitian ini bertujuan untuk merancang dan mengimplementasikan dashboard Business Intelligence interaktif menggunakan Looker Studio untuk SATRIAMART. Dashboard yang dikembangkan diharapkan dapat memberikan insight yang bernilai bagi manajemen dalam mengambil keputusan strategis terkait pengembangan produk, strategi pemasaran, pengelolaan pelanggan, dan optimasi operasional bisnis. Penelitian ini juga diharapkan dapat menjadi referensi bagi UMKM lain dalam mengadopsi teknologi Business Intelligence untuk meningkatkan daya saing bisnis mereka.
+Berdasarkan latar belakang tersebut, penelitian ini bertujuan untuk merancang dan mengimplementasikan papan kendali Kecerdasan Bisnis interaktif menggunakan Looker Studio untuk SATRIAMART. Papan kendali yang dikembangkan diharapkan dapat memberikan wawasan yang bernilai bagi manajemen dalam mengambil keputusan strategis terkait pengembangan produk, strategi pemasaran, pengelolaan pelanggan, dan optimasi operasional bisnis. Penelitian ini juga diharapkan dapat menjadi referensi bagi UMKM lain dalam mengadopsi teknologi Kecerdasan Bisnis untuk meningkatkan daya saing bisnis mereka.
 
 ## 1.2 Rumusan Masalah
 
 Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam penelitian ini adalah sebagai berikut:
 
-1. Bagaimana merancang dashboard Business Intelligence interaktif yang sesuai dengan kebutuhan bisnis SATRIAMART?
+1. Bagaimana merancang papan kendali Kecerdasan Bisnis interaktif yang sesuai dengan kebutuhan bisnis SATRIAMART?
 
 2. Visualisasi data apa saja yang efektif untuk menyajikan informasi penjualan, produk, pelanggan, dan keuangan SATRIAMART?
 
-3. Insight bisnis apa yang dapat dihasilkan dari analisis data SATRIAMART menggunakan dashboard Business Intelligence?
+3. Wawasan bisnis apa yang dapat dihasilkan dari analisis data SATRIAMART menggunakan papan kendali Kecerdasan Bisnis?
 
-4. Bagaimana implementasi dashboard Business Intelligence dapat mendukung pengambilan keputusan bisnis pada SATRIAMART?
+4. Bagaimana implementasi papan kendali Kecerdasan Bisnis dapat mendukung pengambilan keputusan bisnis pada SATRIAMART?
 
 5. Apa rekomendasi strategis yang dapat diberikan berdasarkan hasil analisis data untuk meningkatkan performa bisnis SATRIAMART?
 
@@ -164,47 +164,47 @@ Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam penelitia
 
 Tujuan dari penelitian ini adalah:
 
-1. Merancang dan mengimplementasikan dashboard Business Intelligence interaktif untuk SATRIAMART menggunakan Looker Studio.
+1. Merancang dan mengimplementasikan papan kendali Kecerdasan Bisnis interaktif untuk SATRIAMART menggunakan Looker Studio.
 
-2. Mengidentifikasi Key Performance Indicators (KPI) yang relevan dengan bisnis SATRIAMART untuk diintegrasikan dalam dashboard.
+2. Mengidentifikasi Indikator Kinerja Utama (KPI) yang relevan dengan bisnis SATRIAMART untuk diintegrasikan dalam papan kendali.
 
-3. Menganalisis data transaksi penjualan, produk, pelanggan, dan keuangan untuk menghasilkan insight bisnis yang bernilai.
+3. Menganalisis data transaksi penjualan, produk, pelanggan, dan keuangan untuk menghasilkan wawasan bisnis yang bernilai.
 
 4. Menyajikan informasi bisnis melalui visualisasi data yang efektif dan mudah dipahami oleh pengguna.
 
 5. Memberikan rekomendasi strategis berdasarkan hasil analisis data untuk optimasi bisnis SATRIAMART.
 
-6. Mendemonstrasikan bahwa teknologi Business Intelligence dapat diterapkan secara efektif pada perusahaan skala kecil dengan biaya terjangkau.
+6. Mendemonstrasikan bahwa teknologi Kecerdasan Bisnis dapat diterapkan secara efektif pada perusahaan skala kecil dengan biaya terjangkau.
 
 ## 1.4 Manfaat
 
 ### 1.4.1 Manfaat bagi SATRIAMART
 
-1. **Peningkatan Efisiensi Analisis Data**: SATRIAMART dapat menganalisis data bisnis dengan lebih cepat dan efisien melalui dashboard yang terintegrasi dibandingkan dengan metode manual.
+1. **Peningkatan Efisiensi Analisis Data**: SATRIAMART dapat menganalisis data bisnis dengan lebih cepat dan efisien melalui papan kendali yang terintegrasi dibandingkan dengan metode manual.
 
-2. **Pengambilan Keputusan Berbasis Data**: Manajemen dapat membuat keputusan bisnis yang lebih akurat dan terukur berdasarkan insight dari data, bukan hanya berdasarkan intuisi.
+2. **Pengambilan Keputusan Berbasis Data**: Manajemen dapat membuat keputusan bisnis yang lebih akurat dan terukur berdasarkan wawasan dari data, bukan hanya berdasarkan intuisi.
 
-3. **Identifikasi Peluang Bisnis**: Dashboard membantu mengidentifikasi produk terlaris, segmen pelanggan potensial, dan channel penjualan paling efektif untuk optimasi strategi bisnis.
+3. **Identifikasi Peluang Bisnis**: Papan kendali membantu mengidentifikasi produk terlaris, segmen pelanggan potensial, dan saluran penjualan paling efektif untuk optimasi strategi bisnis.
 
-4. **Monitoring Kinerja Real-Time**: Manajemen dapat memantau kinerja bisnis secara real-time dan merespons perubahan pasar dengan lebih cepat.
+4. **Pemantauan Kinerja Waktu Nyata**: Manajemen dapat memantau kinerja bisnis secara waktu nyata dan merespons perubahan pasar dengan lebih cepat.
 
-5. **Optimasi Inventory**: Dengan analisis data penjualan dan stok, SATRIAMART dapat mengoptimalkan manajemen inventory dan mengurangi risiko over-stock atau stock-out.
+5. **Optimasi Persediaan**: Dengan analisis data penjualan dan stok, SATRIAMART dapat mengoptimalkan manajemen persediaan dan mengurangi risiko kelebihan stok atau kehabisan stok.
 
-6. **Evaluasi Efektivitas Marketing**: Dashboard marketing performance memungkinkan evaluasi ROI kampanye pemasaran untuk alokasi budget yang lebih efektif.
+6. **Evaluasi Efektivitas Pemasaran**: Papan kendali kinerja pemasaran memungkinkan evaluasi pengembalian investasi (*return on investment* atau ROI) kampanye pemasaran untuk alokasi anggaran yang lebih efektif.
 
-7. **Peningkatan Kepuasan Pelanggan**: Dengan pemahaman yang lebih baik tentang karakteristik dan preferensi pelanggan, SATRIAMART dapat memberikan layanan yang lebih personal dan meningkatkan customer satisfaction.
+7. **Peningkatan Kepuasan Pelanggan**: Dengan pemahaman yang lebih baik tentang karakteristik dan preferensi pelanggan, SATRIAMART dapat memberikan layanan yang lebih personal dan meningkatkan kepuasan pelanggan.
 
 ### 1.4.2 Manfaat bagi Penyusun
 
-1. **Penerapan Ilmu Business Intelligence**: Penyusun dapat mengaplikasikan konsep dan teori Business Intelligence yang telah dipelajari dalam kasus nyata.
+1. **Penerapan Ilmu Kecerdasan Bisnis**: Penyusun dapat mengaplikasikan konsep dan teori Kecerdasan Bisnis yang telah dipelajari dalam kasus nyata.
 
-2. **Peningkatan Kompetensi Teknis**: Penyusun memperoleh pengalaman praktis dalam menggunakan tools Business Intelligence seperti Looker Studio, Google Sheets, dan teknik analisis data.
+2. **Peningkatan Kompetensi Teknis**: Penyusun memperoleh pengalaman praktis dalam menggunakan perangkat Kecerdasan Bisnis seperti Looker Studio, Google Sheets, dan teknik analisis data.
 
-3. **Pengembangan Soft Skills**: Penyusun mengembangkan kemampuan problem solving, analytical thinking, dan communication skills melalui proses penelitian dan presentasi.
+3. **Pengembangan Keterampilan Lunak**: Penyusun mengembangkan kemampuan pemecahan masalah, pemikiran analitis, dan keterampilan komunikasi melalui proses penelitian dan presentasi.
 
-4. **Portfolio Project**: Hasil penelitian ini dapat menjadi portfolio yang bernilai untuk keperluan akademis maupun profesional.
+4. **Portofolio Proyek**: Hasil penelitian ini dapat menjadi portofolio yang bernilai untuk keperluan akademis maupun profesional.
 
-5. **Pemahaman Bisnis UMKM**: Penyusun memperoleh insight tentang tantangan dan peluang bisnis pada sektor UMKM khususnya di bidang dekorasi dan aksesoris.
+5. **Pemahaman Bisnis UMKM**: Penyusun memperoleh wawasan tentang tantangan dan peluang bisnis pada sektor UMKM khususnya di bidang dekorasi dan aksesoris.
 
 6. **Kontribusi Sosial**: Penyusun berkontribusi dalam membantu UMKM mengadopsi teknologi digital untuk peningkatan daya saing bisnis.
 
@@ -228,37 +228,37 @@ Untuk menjaga fokus penelitian dan memastikan hasil yang optimal, ruang lingkup 
 
 4. **Cakupan Geografis**: Analisis fokus pada pelanggan di wilayah Jabodetabek dan sekitarnya sebagai pasar utama SATRIAMART.
 
-### 1.5.2 Batasan Fitur Dashboard
+### 1.5.2 Batasan Fitur Papan Kendali
 
-1. **Platform**: Dashboard dikembangkan menggunakan Looker Studio (Google Data Studio) sebagai platform Business Intelligence.
+1. **Platform**: Papan kendali dikembangkan menggunakan Looker Studio (Google Data Studio) sebagai platform Kecerdasan Bisnis.
 
-2. **Jumlah Halaman**: Dashboard terdiri dari 7 halaman utama yang mencakup Executive Summary, Sales Analysis, Product Performance, Customer Analysis, Operational Metrics, Financial Analysis, dan Marketing Performance.
+2. **Jumlah Halaman**: Papan kendali terdiri dari 7 halaman utama yang mencakup Ringkasan Eksekutif, Analisis Penjualan, Kinerja Produk, Analisis Pelanggan, Metrik Operasional, Analisis Keuangan, dan Kinerja Pemasaran.
 
-3. **Interaktivitas**: Fitur interaktif mencakup filter tanggal, filter kategori, filter channel, dan cross-filtering antar visualisasi.
+3. **Interaktivitas**: Fitur interaktif mencakup penyaring tanggal, penyaring kategori, penyaring saluran, dan penyaringan silang antar visualisasi.
 
-4. **Visualisasi**: Jenis visualisasi yang digunakan meliputi scorecard, bar chart, line chart, pie chart, combo chart, table, dan geographic map.
+4. **Visualisasi**: Jenis visualisasi yang digunakan meliputi kartu skor, grafik batang, grafik garis, diagram lingkaran, grafik gabungan, tabel, dan peta geografis.
 
-5. **Real-time Update**: Dashboard tidak terintegrasi dengan sistem real-time, update data dilakukan secara manual melalui upload ke Google Sheets.
+5. **Pembaruan Waktu Nyata**: Papan kendali tidak terintegrasi dengan sistem waktu nyata, pembaruan data dilakukan secara manual melalui unggah ke Google Sheets.
 
 ### 1.5.3 Batasan Analisis
 
 1. **Fokus Analisis**: Analisis difokuskan pada aspek penjualan, produk, pelanggan, operasional, finansial, dan pemasaran.
 
-2. **Metode Analisis**: Analisis menggunakan metode deskriptif dan eksploratif, tidak mencakup analisis prediktif atau machine learning.
+2. **Metode Analisis**: Analisis menggunakan metode deskriptif dan eksploratif, tidak mencakup analisis prediktif atau pembelajaran mesin.
 
-3. **Segmentasi Pelanggan**: Segmentasi pelanggan dilakukan berdasarkan RFM (Recency, Frequency, Monetary) dan karakteristik demografis dasar.
+3. **Segmentasi Pelanggan**: Segmentasi pelanggan dilakukan berdasarkan RFM (*Recency, Frequency, Monetary*) dan karakteristik demografis dasar.
 
-4. **Analisis Profitabilitas**: Analisis profitabilitas dihitung berdasarkan selisih harga jual dan harga modal, belum mencakup alokasi overhead cost secara detail.
+4. **Analisis Profitabilitas**: Analisis profitabilitas dihitung berdasarkan selisih harga jual dan harga modal, belum mencakup alokasi biaya overhead secara detail.
 
 ### 1.5.4 Batasan Implementasi
 
-1. **Pengguna**: Dashboard dirancang untuk digunakan oleh manajemen dan tim operasional SATRIAMART, tidak mencakup akses untuk pelanggan eksternal.
+1. **Pengguna**: Papan kendali dirancang untuk digunakan oleh manajemen dan tim operasional SATRIAMART, tidak mencakup akses untuk pelanggan eksternal.
 
-2. **Keamanan Data**: Implementasi menggunakan sharing link dengan akses terbatas, tidak mencakup sistem autentikasi dan otorisasi yang kompleks.
+2. **Keamanan Data**: Implementasi menggunakan tautan berbagi dengan akses terbatas, tidak mencakup sistem autentikasi dan otorisasi yang kompleks.
 
-3. **Skalabilitas**: Dashboard dirancang untuk volume data skala kecil hingga menengah, belum dioptimasi untuk volume data enterprise.
+3. **Skalabilitas**: Papan kendali dirancang untuk volume data skala kecil hingga menengah, belum dioptimasi untuk volume data perusahaan besar (*enterprise*).
 
-4. **Integrasi Sistem**: Dashboard tidak terintegrasi dengan sistem ERP, CRM, atau sistem enterprise lainnya, data dikelola secara terpisah di Google Sheets.
+4. **Integrasi Sistem**: Papan kendali tidak terintegrasi dengan sistem Perencanaan Sumber Daya Perusahaan (*Enterprise Resource Planning* atau ERP), Manajemen Hubungan Pelanggan (*Customer Relationship Management* atau CRM), atau sistem perusahaan lainnya, data dikelola secara terpisah di Google Sheets.
 
 ---
 

@@ -9,83 +9,83 @@ Analisis data transaksi penjualan SATRIAMART dilakukan terhadap 320 transaksi se
 
 **Temuan Utama dari Analisis Transaksi:**
 
-1. **Total Revenue**: Revenue total yang dihasilkan selama periode 12 bulan mencapai Rp 111.976.550dengan rata-rata revenue bulanan sebesar Rp 9.331.379.
+1. **Total Pendapatan**: Pendapatan total yang dihasilkan selama periode 12 bulan mencapai Rp 111.976.550 dengan rata-rata pendapatan bulanan sebesar Rp 9.331.379.
 
-2. **Average Order Value (AOV)**: Nilai rata-rata per transaksi adalah Rp 349.926, menunjukkan bahwa SATRIAMART berhasil menjual produk dengan nilai transaksi yang cukup tinggi.
+2. **Nilai Rata-rata Pesanan**: Nilai rata-rata per transaksi adalah Rp 349.926, menunjukkan bahwa SATRIAMART berhasil menjual produk dengan nilai transaksi yang cukup tinggi.
 
 3. **Distribusi Bulanan**: Terdapat variasi signifikan dalam jumlah transaksi per bulan. Bulan dengan transaksi tertinggi adalah Desember 2024 (38 transaksi), Juni 2025 (36 transaksi), dan Juli 2025 (35 transaksi). Sementara bulan dengan transaksi terendah adalah Februari 2025 (17 transaksi) dan September 2025 (16 transaksi).
 
-4. **Peak Season Identification**: Analisis menunjukkan bahwa SATRIAMART mengalami peak season pada:
+4. **Identifikasi Musim Puncak**: Analisis menunjukkan bahwa SATRIAMART mengalami musim puncak pada:
    - **Desember**: Didorong oleh periode liburan Natal dan Tahun Baru
    - **Juni-Juli**: Didorong oleh periode libur sekolah dan Hari Raya Idul Fitri
-   - **Januari**: Post-holiday effect dan awal tahun
+   - **Januari**: Efek pasca-liburan dan awal tahun
 
-5. **Channel Performance**: Dari analisis channel penjualan, ditemukan bahwa:
-   - WhatsApp adalah channel paling dominan dengan kontribusi 45% dari total transaksi
+5. **Kinerja Saluran**: Dari analisis saluran penjualan, ditemukan bahwa:
+   - WhatsApp adalah saluran paling dominan dengan kontribusi 45% dari total transaksi
    - Instagram menyumbang 30% transaksi
-   - Marketplace (Tokopedia, Shopee) menyumbang 15%
-   - Offline/Referensi menyumbang 10%
+   - Platform pasar daring (Tokopedia, Shopee) menyumbang 15%
+   - Penjualan langsung/rujukan menyumbang 10%
 
-6. **Payment Method Preference**: Metode pembayaran yang paling banyak digunakan adalah Transfer Bank (55%), diikuti oleh E-wallet (30%), dan COD (15%).
+6. **Preferensi Metode Pembayaran**: Metode pembayaran yang paling banyak digunakan adalah Transfer Bank (55%), diikuti oleh Dompet Digital (30%), dan Bayar di Tempat (15%).
 
-7. **Order Completion Rate**: Dari 320 transaksi, 85% berhasil diselesaikan dan diterima pelanggan, 8% masih dalam proses, dan 7% dibatalkan. Tingkat completion rate 85% menunjukkan kinerja operasional yang baik.
+7. **Tingkat Penyelesaian Pesanan**: Dari 320 transaksi, 85% berhasil diselesaikan dan diterima pelanggan, 8% masih dalam proses, dan 7% dibatalkan. Tingkat penyelesaian 85% menunjukkan kinerja operasional yang baik.
 
-8. **Customer Satisfaction**: Dari pesanan yang selesai, rata-rata rating pelanggan adalah 4,5 dari 5, dengan 85% pelanggan memberikan rating 4 atau 5 bintang.
+8. **Kepuasan Pelanggan**: Dari pesanan yang selesai, rata-rata penilaian pelanggan adalah 4,5 dari 5, dengan 85% pelanggan memberikan penilaian 4 atau 5 bintang.
 
 ### 3.1.2 Identifikasi Pola dan Tren
 
-Dari analisis data, berhasil diidentifikasi beberapa pola dan tren penting:
+Dari analisis data, berhasil diidentifikasi beberapa pola dan kecenderungan penting:
 
-**1. Pola Musiman (Seasonal Pattern)**
+**1. Pola Musiman (*Seasonal Pattern*)**
 
-Analisis trend menunjukkan pola musiman yang jelas:
-- **Q4 (Okt-Des)**: Peak season dengan peningkatan transaksi menjelang akhir tahun
-- **Q1 (Jan-Mar)**: High season di awal tahun, kemudian menurun di Februari
-- **Q2 (Apr-Jun)**: Peningkatan bertahap menuju peak di Juni
-- **Q3 (Jul-Sep)**: Stabil di Juli-Agustus, menurun di September
+Analisis kecenderungan menunjukkan pola musiman yang jelas:
+- **Kuartal 4 (Okt-Des)**: Musim puncak dengan peningkatan transaksi menjelang akhir tahun
+- **Kuartal 1 (Jan-Mar)**: Musim tinggi di awal tahun, kemudian menurun di Februari
+- **Kuartal 2 (Apr-Jun)**: Peningkatan bertahap menuju puncak di Juni
+- **Kuartal 3 (Jul-Sep)**: Stabil di Juli-Agustus, menurun di September
 
 Pemahaman pola musiman ini membantu SATRIAMART dalam:
-- Perencanaan inventory untuk mengantisipasi peak demand
-- Scheduling kampanye marketing di waktu yang tepat
-- Persiapan kapasitas produksi dan fulfillment
+- Perencanaan persediaan untuk mengantisipasi permintaan puncak
+- Penjadwalan kampanye pemasaran di waktu yang tepat
+- Persiapan kapasitas produksi dan penyelesaian pesanan
 
 **2. Pola Harian dan Mingguan**
 
 Analisis transaksi berdasarkan hari menunjukkan:
-- **Weekend (Sabtu-Minggu)**: 35% dari total transaksi terjadi di weekend
-- **Weekday**: 65% transaksi terjadi di hari kerja
-- **Peak Hours**: Transaksi paling banyak terjadi pada jam 10:00-14:00 (siang) dan 19:00-21:00 (malam)
+- **Akhir Pekan (Sabtu-Minggu)**: 35% dari total transaksi terjadi di akhir pekan
+- **Hari Kerja**: 65% transaksi terjadi di hari kerja
+- **Jam Sibuk**: Transaksi paling banyak terjadi pada jam 10:00-14:00 (siang) dan 19:00-21:00 (malam)
 
-Insight ini berguna untuk:
-- Scheduling tim customer service untuk peak hours
-- Timing optimal untuk posting di social media
-- Scheduling ads campaign untuk maximum reach
+Wawasan ini berguna untuk:
+- Penjadwalan tim layanan pelanggan untuk jam sibuk
+- Waktu optimal untuk mengunggah konten di media sosial
+- Penjadwalan kampanye iklan untuk jangkauan maksimum
 
-**3. Product Category Performance**
+**3. Kinerja Kategori Produk**
 
 Analisis performa per kategori produk menunjukkan:
-- **Nomor Rumah Akrilik**: Kategori paling populer dengan 35% dari total revenue
-- **Papan Nama**: Kontribusi 28% revenue, populer di segmen bisnis
-- **Signage**: Kontribusi 23% revenue, high-value items
-- **Aksesoris Dekorasi**: Kontribusi 14% revenue, volume tinggi tapi low-value
+- **Nomor Rumah Akrilik**: Kategori paling populer dengan 35% dari total pendapatan
+- **Papan Nama**: Kontribusi 28% pendapatan, populer di segmen bisnis
+- **Papan Petunjuk**: Kontribusi 23% pendapatan, barang bernilai tinggi
+- **Aksesoris Dekorasi**: Kontribusi 14% pendapatan, volume tinggi tapi bernilai rendah
 
-**4. Price Point Analysis**
+**4. Analisis Titik Harga**
 
 Analisis harga menunjukkan:
 - Produk dengan harga Rp 100.000 - Rp 300.000 paling banyak terjual (40% transaksi)
-- Produk low-end (< Rp 100.000) menghasilkan volume tinggi tapi margin rendah
-- Produk high-end (> Rp 300.000) menghasilkan margin tinggi tapi volume rendah
+- Produk kelas bawah (< Rp 100.000) menghasilkan volume tinggi tapi margin rendah
+- Produk kelas atas (> Rp 300.000) menghasilkan margin tinggi tapi volume rendah
 
-**5. Customer Behavior Pattern**
+**5. Pola Perilaku Pelanggan**
 
 Analisis perilaku pelanggan menunjukkan:
-- 55% pelanggan hanya melakukan satu kali pembelian (one-time buyers)
-- 30% pelanggan melakukan repeat purchase 2-3 kali
-- 15% pelanggan adalah loyal customers dengan 4+ transaksi
+- 55% pelanggan hanya melakukan satu kali pembelian (pembeli sekali)
+- 30% pelanggan melakukan pembelian ulang 2-3 kali
+- 15% pelanggan adalah pelanggan setia dengan 4+ transaksi
 
-Tingkat repeat purchase yang masih rendah mengindikasikan potensi untuk meningkatkan customer retention melalui loyalty program atau follow-up marketing.
+Tingkat pembelian ulang yang masih rendah mengindikasikan potensi untuk meningkatkan retensi pelanggan melalui program loyalitas atau pemasaran tindak lanjut.
 
-**6. Geographic Concentration**
+**6. Konsentrasi Geografis**
 
 Analisis geografis menunjukkan konsentrasi pelanggan:
 - Depok (lokasi bisnis): 40% pelanggan
@@ -94,11 +94,11 @@ Analisis geografis menunjukkan konsentrasi pelanggan:
 - Bekasi: 10% pelanggan
 - Wilayah lain: 15% pelanggan
 
-Konsentrasi yang tinggi di Jabodetabek (85%) mengindikasikan market penetration yang baik di area lokal, namun juga menunjukkan peluang ekspansi ke wilayah lain.
+Konsentrasi yang tinggi di Jabodetabek (85%) mengindikasikan penetrasi pasar yang baik di area lokal, namun juga menunjukkan peluang ekspansi ke wilayah lain.
 
 ### 3.1.3 Hubungan Antar Variabel
 
-Analisis korelasi antar variabel mengungkapkan beberapa relationship yang menarik:
+Analisis korelasi antar variabel mengungkapkan beberapa hubungan yang menarik:
 
 **1. Harga vs Volume Penjualan**
 
@@ -107,637 +107,637 @@ Analisis menunjukkan korelasi negatif antara harga produk dan volume penjualan:
 - Produk dengan harga Rp 100.000 - Rp 300.000 terjual rata-rata 4-6 unit per bulan
 - Produk dengan harga > Rp 300.000 terjual rata-rata 1-3 unit per bulan
 
-Namun, analisis profitabilitas menunjukkan bahwa produk mid-range memberikan balance terbaik antara volume dan margin.
+Namun, analisis profitabilitas menunjukkan bahwa produk kelas menengah memberikan keseimbangan terbaik antara volume dan margin.
 
-**2. Customer Segmentation vs Average Order Value**
+**2. Segmentasi Pelanggan vs Nilai Rata-rata Pesanan**
 
-Analisis menunjukkan perbedaan signifikan dalam AOV antar segmen:
-- **Bisnis/UMKM**: AOV Rp 485.000 (tertinggi)
-- **Reseller**: AOV Rp 420.000
-- **Individu/Retail**: AOV Rp 285.000 (terendah)
+Analisis menunjukkan perbedaan signifikan dalam nilai rata-rata pesanan antar segmen:
+- **Bisnis/UMKM**: Nilai rata-rata pesanan Rp 485.000 (tertinggi)
+- **Pemasok Kembali (*Reseller*)**: Nilai rata-rata pesanan Rp 420.000
+- **Individu/Ritel**: Nilai rata-rata pesanan Rp 285.000 (terendah)
 
-Pelanggan bisnis cenderung membeli produk dengan nilai lebih tinggi seperti signage dan papan nama custom.
+Pelanggan bisnis cenderung membeli produk dengan nilai lebih tinggi seperti papan petunjuk dan papan nama khusus.
 
-**3. Channel vs Conversion Rate**
+**3. Saluran vs Tingkat Konversi**
 
-Analisis conversion rate per channel menunjukkan:
-- **Referensi/Offline**: Conversion rate tertinggi (60%), trust factor tinggi
-- **WhatsApp**: Conversion rate 45%, personal interaction
-- **Instagram**: Conversion rate 25%, engagement tinggi tapi conversion moderat
-- **Marketplace**: Conversion rate 20%, high competition
+Analisis tingkat konversi per saluran menunjukkan:
+- **Rujukan/Langsung**: Tingkat konversi tertinggi (60%), faktor kepercayaan tinggi
+- **WhatsApp**: Tingkat konversi 45%, interaksi personal
+- **Instagram**: Tingkat konversi 25%, keterlibatan tinggi tapi konversi moderat
+- **Platform Pasar Daring**: Tingkat konversi 20%, persaingan tinggi
 
-**4. Discount vs Order Value**
+**4. Diskon vs Nilai Pesanan**
 
 Analisis menunjukkan:
 - 20% transaksi mendapatkan diskon (5%-20%)
-- Transaksi dengan diskon memiliki order value 15% lebih tinggi
+- Transaksi dengan diskon memiliki nilai pesanan 15% lebih tinggi
 - Diskon efektif untuk mendorong pembelian dalam jumlah lebih besar
 
-**5. Fulfillment Time vs Customer Satisfaction**
+**5. Waktu Penyelesaian vs Kepuasan Pelanggan**
 
-Terdapat korelasi positif antara kecepatan fulfillment dengan rating pelanggan:
-- Pesanan selesai dalam 1-3 hari: rata-rata rating 4,8
-- Pesanan selesai dalam 4-5 hari: rata-rata rating 4,5
-- Pesanan selesai > 5 hari: rata-rata rating 4,0
+Terdapat korelasi positif antara kecepatan penyelesaian dengan penilaian pelanggan:
+- Pesanan selesai dalam 1-3 hari: rata-rata penilaian 4,8
+- Pesanan selesai dalam 4-5 hari: rata-rata penilaian 4,5
+- Pesanan selesai > 5 hari: rata-rata penilaian 4,0
 
-Fast fulfillment menjadi faktor penting dalam customer satisfaction.
+Penyelesaian cepat menjadi faktor penting dalam kepuasan pelanggan.
 
-**6. Marketing Campaign ROI vs Platform**
+**6. ROI Kampanye Pemasaran vs Platform**
 
-Analisis campaign ROI menunjukkan:
-- **Instagram Ads**: ROI rata-rata 280%, engagement tinggi
-- **Facebook Ads**: ROI rata-rata 250%, reach luas
-- **Google Ads**: ROI rata-rata 220%, targeting spesifik
-- **Organic Content**: ROI 350%, cost-effective tapi limited reach
+Analisis ROI kampanye menunjukkan:
+- **Iklan Instagram**: ROI rata-rata 280%, keterlibatan tinggi
+- **Iklan Facebook**: ROI rata-rata 250%, jangkauan luas
+- **Iklan Google**: ROI rata-rata 220%, penargetan spesifik
+- **Konten Organik**: ROI 350%, hemat biaya tapi jangkauan terbatas
 
-## 3.2 Visualisasi Data pada Proses Business Intelligence
+## 3.2 Visualisasi Data pada Proses Kecerdasan Bisnis
 
 ### 3.2.1 Tren Penjualan
 
-Untuk menganalisis tren penjualan, digunakan kombinasi visualisasi:
+Untuk menganalisis kecenderungan penjualan, digunakan kombinasi visualisasi:
 
-**1. Line Chart: Revenue Trend Over Time**
+**1. Grafik Garis: Tren Pendapatan Sepanjang Waktu**
 
-Line chart digunakan untuk menampilkan tren revenue bulanan selama 12 bulan. Visualisasi ini memungkinkan identifikasi:
-- Pola pertumbuhan atau penurunan revenue
-- Peak seasons dan low seasons
-- Growth rate month-over-month
-- Anomali atau outliers
+Grafik garis digunakan untuk menampilkan kecenderungan pendapatan bulanan selama 12 bulan. Visualisasi ini memungkinkan identifikasi:
+- Pola pertumbuhan atau penurunan pendapatan
+- Musim puncak dan musim sepi
+- Tingkat pertumbuhan bulan ke bulan
+- Anomali atau pencilan
 
-**Alasan Pemilihan**: Line chart efektif untuk menampilkan data time-series dan memudahkan identifikasi trend serta seasonality.
+**Alasan Pemilihan**: Grafik garis efektif untuk menampilkan data deret waktu dan memudahkan identifikasi kecenderungan serta pola musiman.
 
-**2. Combo Chart: Revenue vs Number of Transactions**
+**2. Grafik Gabungan: Pendapatan vs Jumlah Transaksi**
 
-Combo chart (kombinasi bar dan line) digunakan untuk membandingkan:
-- Total revenue (bar chart) - axis kiri
-- Number of transactions (line chart) - axis kanan
+Grafik gabungan (kombinasi batang dan garis) digunakan untuk membandingkan:
+- Total pendapatan (grafik batang) - sumbu kiri
+- Jumlah transaksi (grafik garis) - sumbu kanan
 
-**Insight**: Visualisasi ini mengungkapkan bahwa peningkatan revenue tidak selalu diikuti oleh peningkatan jumlah transaksi, mengindikasikan variasi dalam Average Order Value.
+**Wawasan**: Visualisasi ini mengungkapkan bahwa peningkatan pendapatan tidak selalu diikuti oleh peningkatan jumlah transaksi, mengindikasikan variasi dalam Nilai Rata-rata Pesanan.
 
-**3. Heatmap: Sales by Day of Week and Hour**
+**3. Peta Panas: Penjualan Berdasarkan Hari dan Jam**
 
-Heatmap digunakan untuk menampilkan intensitas transaksi berdasarkan:
-- Rows: Day of Week (Senin - Minggu)
-- Columns: Hour of Day (00:00 - 23:00)
-- Color Intensity: Number of Transactions
+Peta panas digunakan untuk menampilkan intensitas transaksi berdasarkan:
+- Baris: Hari dalam Minggu (Senin - Minggu)
+- Kolom: Jam dalam Hari (00:00 - 23:00)
+- Intensitas Warna: Jumlah Transaksi
 
-**Insight**: Heatmap menunjukkan peak hours yang jelas (10-14 dan 19-21) dan hari dengan aktivitas tertinggi (Jumat-Sabtu).
+**Wawasan**: Peta panas menunjukkan jam sibuk yang jelas (10-14 dan 19-21) dan hari dengan aktivitas tertinggi (Jumat-Sabtu).
 
-**4. Bar Chart: Revenue by Channel**
+**4. Grafik Batang: Pendapatan Berdasarkan Saluran**
 
-Horizontal bar chart menampilkan kontribusi revenue dari setiap channel penjualan, diurutkan dari tertinggi ke terendah.
+Grafik batang horizontal menampilkan kontribusi pendapatan dari setiap saluran penjualan, diurutkan dari tertinggi ke terendah.
 
-**Insight**: WhatsApp dan Instagram mendominasi dengan total 75% dari revenue, mengindikasikan fokus marketing yang tepat.
+**Wawasan**: WhatsApp dan Instagram mendominasi dengan total 75% dari pendapatan, mengindikasikan fokus pemasaran yang tepat.
 
 ### 3.2.2 Performa Produk
 
 Analisis performa produk divisualisasikan melalui:
 
-**1. Bar Chart: Top 10 Products by Revenue**
+**1. Grafik Batang: 10 Produk Teratas Berdasarkan Pendapatan**
 
-Horizontal bar chart menampilkan 10 produk dengan revenue tertinggi.
+Grafik batang horizontal menampilkan 10 produk dengan pendapatan tertinggi.
 
 **Temuan**: 
-- Signage LED dan Papan Nama Premium mendominasi top 10
-- 20% produk menghasilkan 60% revenue (Pareto principle)
-- Custom products cenderung masuk top revenue
+- Papan petunjuk LED dan Papan Nama Premium mendominasi 10 teratas
+- 20% produk menghasilkan 60% pendapatan (prinsip Pareto)
+- Produk khusus cenderung masuk pendapatan teratas
 
-**2. Bar Chart: Top 10 Products by Quantity Sold**
+**2. Grafik Batang: 10 Produk Teratas Berdasarkan Jumlah Terjual**
 
-Berbeda dengan revenue, chart ini menampilkan produk dengan volume penjualan tertinggi.
+Berbeda dengan pendapatan, grafik ini menampilkan produk dengan volume penjualan tertinggi.
 
 **Temuan**:
-- Produk low-price seperti Name Plate dan Photo Frame masuk top volume
-- Volume tinggi tidak selalu berarti revenue tinggi
+- Produk berharga rendah seperti Papan Nama Meja dan Bingkai Foto masuk volume teratas
+- Volume tinggi tidak selalu berarti pendapatan tinggi
 
-**3. Bubble Chart: Price vs Sales Volume vs Profit Margin**
+**3. Grafik Gelembung: Harga vs Volume Penjualan vs Margin Laba**
 
-Bubble chart multi-dimensi menampilkan:
-- X-axis: Price
-- Y-axis: Sales Volume
-- Bubble Size: Total Revenue
-- Bubble Color: Profit Margin
+Grafik gelembung multi-dimensi menampilkan:
+- Sumbu-X: Harga
+- Sumbu-Y: Volume Penjualan
+- Ukuran Gelembung: Total Pendapatan
+- Warna Gelembung: Margin Laba
 
-**Insight**: Chart ini membantu identifikasi sweet spot produk yang optimal dalam hal harga, volume, dan profitabilitas.
+**Wawasan**: Grafik ini membantu identifikasi titik optimal produk dalam hal harga, volume, dan profitabilitas.
 
-**4. Stacked Bar Chart: Revenue Composition by Category**
+**4. Grafik Batang Bertumpuk: Komposisi Pendapatan Berdasarkan Kategori**
 
-Stacked bar chart menampilkan komposisi revenue dari 4 kategori produk sepanjang waktu.
+Grafik batang bertumpuk menampilkan komposisi pendapatan dari 4 kategori produk sepanjang waktu.
 
-**Insight**: Menunjukkan kontribusi konsisten dari Nomor Rumah dan Papan Nama, sementara Signage berfluktuasi (project-based).
+**Wawasan**: Menunjukkan kontribusi konsisten dari Nomor Rumah dan Papan Nama, sementara Papan Petunjuk berfluktuasi (berbasis proyek).
 
-**5. Table: Product Performance Scorecard**
+**5. Tabel: Kartu Skor Kinerja Produk**
 
-Table detail menampilkan metrics untuk setiap produk:
-- Product Name
-- Category
-- Units Sold
-- Total Revenue
-- Profit Margin
-- Stock Status
-- Growth Rate
+Tabel detail menampilkan metrik untuk setiap produk:
+- Nama Produk
+- Kategori
+- Unit Terjual
+- Total Pendapatan
+- Margin Laba
+- Status Stok
+- Tingkat Pertumbuhan
 
-**Fungsi**: Table ini digunakan untuk drill-down analysis dan referensi detail.
+**Fungsi**: Tabel ini digunakan untuk analisis penelusuran detail dan referensi terperinci.
 
 ### 3.2.3 Analisis Pelanggan
 
-Customer analysis divisualisasikan dengan:
+Analisis pelanggan divisualisasikan dengan:
 
-**1. Pie Chart: Customer Segmentation**
+**1. Diagram Lingkaran: Segmentasi Pelanggan**
 
-Pie chart menampilkan proporsi pelanggan berdasarkan:
-- Jenis Pelanggan: Individu (60%), Bisnis (30%), Reseller (10%)
+Diagram lingkaran menampilkan proporsi pelanggan berdasarkan:
+- Jenis Pelanggan: Individu (60%), Bisnis (30%), Pemasok Kembali (10%)
 
-**Alasan Pemilihan**: Pie chart efektif untuk menampilkan komposisi dan proporsi dari keseluruhan.
+**Alasan Pemilihan**: Diagram lingkaran efektif untuk menampilkan komposisi dan proporsi dari keseluruhan.
 
-**2. Bar Chart: Top 10 Customers by Total Purchase Value**
+**2. Grafik Batang: 10 Pelanggan Teratas Berdasarkan Total Nilai Pembelian**
 
-Horizontal bar chart menampilkan 10 pelanggan dengan total nilai pembelian tertinggi.
+Grafik batang horizontal menampilkan 10 pelanggan dengan total nilai pembelian tertinggi.
 
-**Insight**: 10% pelanggan top menghasilkan 40% revenue, mengindikasikan pentingnya customer retention untuk high-value customers.
+**Wawasan**: 10% pelanggan teratas menghasilkan 40% pendapatan, mengindikasikan pentingnya retensi pelanggan untuk pelanggan bernilai tinggi.
 
-**3. Geo Map: Customer Distribution**
+**3. Peta Geografis: Distribusi Pelanggan**
 
-Geographic map (Indonesia) menampilkan distribusi pelanggan per kota/kabupaten.
+Peta geografis (Indonesia) menampilkan distribusi pelanggan per kota/kabupaten.
 
-**Visual**: Pin atau shaded area pada map dengan color intensity berdasarkan jumlah pelanggan atau revenue.
+**Visual**: Pin atau area berwarna pada peta dengan intensitas warna berdasarkan jumlah pelanggan atau pendapatan.
 
-**Insight**: Visualisasi geografis menunjukkan konsentrasi tinggi di Jabodetabek dengan peluang ekspansi ke Bandung dan Surabaya.
+**Wawasan**: Visualisasi geografis menunjukkan konsentrasi tinggi di Jabodetabek dengan peluang ekspansi ke Bandung dan Surabaya.
 
-**4. Line Chart: Customer Acquisition Trend**
+**4. Grafik Garis: Tren Akuisisi Pelanggan**
 
-Line chart menampilkan jumlah pelanggan baru yang terakuisisi setiap bulan.
+Grafik garis menampilkan jumlah pelanggan baru yang terakuisisi setiap bulan.
 
-**Insight**: Customer acquisition meningkat setelah kampanye marketing dan referral program.
+**Wawasan**: Akuisisi pelanggan meningkat setelah kampanye pemasaran dan program rujukan.
 
-**5. Funnel Chart: RFM Segmentation**
+**5. Grafik Corong: Segmentasi RFM**
 
-Funnel chart menampilkan distribusi pelanggan berdasarkan RFM score:
-- Champions (High R, F, M): 15%
-- Loyal Customers (High F, M): 20%
-- At Risk (Low R, High F, M): 10%
-- New Customers (High R, Low F, M): 25%
-- Lost Customers (Low R, F, M): 30%
+Grafik corong menampilkan distribusi pelanggan berdasarkan skor RFM:
+- Juara (Kebaruan, Frekuensi, Moneter Tinggi): 15%
+- Pelanggan Setia (Frekuensi, Moneter Tinggi): 20%
+- Berisiko (Kebaruan Rendah, Frekuensi, Moneter Tinggi): 10%
+- Pelanggan Baru (Kebaruan Tinggi, Frekuensi, Moneter Rendah): 25%
+- Pelanggan Hilang (Kebaruan, Frekuensi, Moneter Rendah): 30%
 
-**Fungsi**: Segmentasi RFM membantu targeted marketing dan customer retention strategy.
+**Fungsi**: Segmentasi RFM membantu pemasaran tertarget dan strategi retensi pelanggan.
 
 ### 3.2.4 Analisis Wilayah
 
 Analisis distribusi geografis pelanggan dan penjualan:
 
-**1. Geo Map with Heat Layer**
+**1. Peta Geografis dengan Lapisan Panas**
 
-Peta Indonesia dengan heat layer menunjukkan intensity penjualan per wilayah.
+Peta Indonesia dengan lapisan panas menunjukkan intensitas penjualan per wilayah.
 
-**Color Coding**:
-- Hijau gelap: High sales concentration (Depok, Jakarta)
-- Hijau muda: Moderate sales (Tangerang, Bekasi)
-- Hijau pucat: Low sales (Bogor, Bandung)
-- No color: No sales
+**Kode Warna**:
+- Hijau gelap: Konsentrasi penjualan tinggi (Depok, Jakarta)
+- Hijau muda: Penjualan moderat (Tangerang, Bekasi)
+- Hijau pucat: Penjualan rendah (Bogor, Bandung)
+- Tanpa warna: Tidak ada penjualan
 
-**2. Bar Chart: Revenue by City**
+**2. Grafik Batang: Pendapatan Berdasarkan Kota**
 
-Horizontal bar chart menampilkan revenue contribution dari setiap kota.
+Grafik batang horizontal menampilkan kontribusi pendapatan dari setiap kota.
 
 **Ranking**:
 1. Depok: Rp 44.790.620 (40%)
 2. Jakarta Selatan: Rp 22.395.310 (20%)
 3. Tangerang: Rp 16.796.483 (15%)
 4. Bekasi: Rp 11.197.655 (10%)
-5. Other: Rp 16.796.482 (15%)
+5. Lainnya: Rp 16.796.482 (15%)
 
-**3. Table: Geographic Performance Metrics**
+**3. Tabel: Metrik Kinerja Geografis**
 
-Table menampilkan metrics per kota:
-- Number of Customers
-- Number of Transactions
-- Total Revenue
-- Average Order Value
-- Growth Rate
+Tabel menampilkan metrik per kota:
+- Jumlah Pelanggan
+- Jumlah Transaksi
+- Total Pendapatan
+- Nilai Rata-rata Pesanan
+- Tingkat Pertumbuhan
 
-**Insight**: Depok dan Jakarta memiliki AOV tertinggi, sementara kota lain memiliki ruang untuk growth.
+**Wawasan**: Depok dan Jakarta memiliki nilai rata-rata pesanan tertinggi, sementara kota lain memiliki ruang untuk pertumbuhan.
 
 ### 3.2.5 Pemilihan Jenis Visualisasi
 
-Pemilihan jenis visualisasi dilakukan berdasarkan prinsip-prinsip data visualization best practices:
+Pemilihan jenis visualisasi dilakukan berdasarkan prinsip-prinsip praktik terbaik visualisasi data:
 
-**1. Scorecard/KPI Cards**
-- **Digunakan untuk**: Menampilkan single metric value (Total Revenue, Total Customers, AOV)
-- **Keunggulan**: Highlight metrics penting, mudah dipahami, attention-grabbing
-- **Implementasi**: Di bagian atas setiap dashboard page
+**1. Kartu Skor/Kartu KPI**
+- **Digunakan untuk**: Menampilkan nilai metrik tunggal (Total Pendapatan, Total Pelanggan, Nilai Rata-rata Pesanan)
+- **Keunggulan**: Menyoroti metrik penting, mudah dipahami, menarik perhatian
+- **Implementasi**: Di bagian atas setiap halaman papan kendali
 
-**2. Line Chart**
-- **Digunakan untuk**: Time-series data, trend analysis
-- **Keunggulan**: Mudah identifikasi trend, growth rate, seasonality
-- **Use Cases**: Revenue trend, customer acquisition trend, sales trend
+**2. Grafik Garis**
+- **Digunakan untuk**: Data deret waktu, analisis kecenderungan
+- **Keunggulan**: Mudah identifikasi kecenderungan, tingkat pertumbuhan, pola musiman
+- **Kasus Penggunaan**: Kecenderungan pendapatan, kecenderungan akuisisi pelanggan, kecenderungan penjualan
 
-**3. Bar Chart (Vertical/Horizontal)**
-- **Digunakan untuk**: Comparison across categories
-- **Keunggulan**: Mudah membandingkan nilai, clear ranking
-- **Use Cases**: Top products, revenue by category, sales by channel
+**3. Grafik Batang (Vertikal/Horizontal)**
+- **Digunakan untuk**: Perbandingan antar kategori
+- **Keunggulan**: Mudah membandingkan nilai, peringkat jelas
+- **Kasus Penggunaan**: Produk teratas, pendapatan per kategori, penjualan per saluran
 
-**4. Pie/Donut Chart**
-- **Digunakan untuk**: Show composition/proportion (< 6 categories)
-- **Keunggulan**: Visual representation of percentage
-- **Use Cases**: Customer segmentation, category mix, payment method distribution
+**4. Diagram Lingkaran/Donat**
+- **Digunakan untuk**: Menampilkan komposisi/proporsi (< 6 kategori)
+- **Keunggulan**: Representasi visual persentase
+- **Kasus Penggunaan**: Segmentasi pelanggan, campuran kategori, distribusi metode pembayaran
 
-**5. Combo Chart (Bar + Line)**
-- **Digunakan untuk**: Compare two metrics dengan skala berbeda
-- **Keunggulan**: Show relationship between two variables
-- **Use Cases**: Revenue vs number of transactions, cost vs profit
+**5. Grafik Gabungan (Batang + Garis)**
+- **Digunakan untuk**: Membandingkan dua metrik dengan skala berbeda
+- **Keunggulan**: Menampilkan hubungan antara dua variabel
+- **Kasus Penggunaan**: Pendapatan vs jumlah transaksi, biaya vs laba
 
-**6. Table**
-- **Digunakan untuk**: Detailed data, drill-down analysis
-- **Keunggulan**: Show multiple metrics, sortable, filterable
-- **Use Cases**: Product list dengan multiple metrics, transaction details
+**6. Tabel**
+- **Digunakan untuk**: Data terperinci, analisis penelusuran detail
+- **Keunggulan**: Menampilkan beberapa metrik, dapat diurutkan, dapat disaring
+- **Kasus Penggunaan**: Daftar produk dengan beberapa metrik, detail transaksi
 
-**7. Geo Map**
-- **Digunakan untuk**: Geographic distribution analysis
-- **Keunggulan**: Visual representation of spatial data
-- **Use Cases**: Customer distribution, sales by region
+**7. Peta Geografis**
+- **Digunakan untuk**: Analisis distribusi geografis
+- **Keunggulan**: Representasi visual data spasial
+- **Kasus Penggunaan**: Distribusi pelanggan, penjualan per wilayah
 
-**8. Heatmap**
-- **Digunakan untuk**: Show intensity across two dimensions
-- **Keunggulan**: Identify patterns, peak periods
-- **Use Cases**: Sales by day/hour, product correlation
+**8. Peta Panas**
+- **Digunakan untuk**: Menampilkan intensitas dalam dua dimensi
+- **Keunggulan**: Mengidentifikasi pola, periode puncak
+- **Kasus Penggunaan**: Penjualan per hari/jam, korelasi produk
 
-**9. Scatter Plot**
-- **Digunakan untuk**: Show relationship between two variables
-- **Keunggulan**: Identify correlation, outliers, clusters
-- **Use Cases**: Price vs volume, customer value vs frequency
+**9. Diagram Sebar**
+- **Digunakan untuk**: Menampilkan hubungan antara dua variabel
+- **Keunggulan**: Mengidentifikasi korelasi, pencilan, kelompok
+- **Kasus Penggunaan**: Harga vs volume, nilai pelanggan vs frekuensi
 
-**10. Funnel Chart**
-- **Digunakan untuk**: Show stages in a process dengan conversion
-- **Keunggulan**: Visualize drop-off points
-- **Use Cases**: Sales funnel, customer lifecycle stages
+**10. Grafik Corong**
+- **Digunakan untuk**: Menampilkan tahapan dalam proses dengan konversi
+- **Keunggulan**: Memvisualisasikan titik penurunan
+- **Kasus Penggunaan**: Corong penjualan, tahapan siklus hidup pelanggan
 
 **Prinsip Pemilihan Visualisasi**:
 
-1. **Match Chart to Data Type**: Categorical → Bar/Pie, Temporal → Line, Geographic → Map
-2. **Consider Audience**: Simple charts untuk eksekutif, detailed charts untuk analis
-3. **Limit Complexity**: Maksimal 5-7 categories per chart untuk readability
-4. **Use Color Purposefully**: Consistent color scheme, highlight important data
-5. **Provide Context**: Add titles, labels, annotations untuk clarity
-6. **Enable Interactivity**: Filters, tooltips, drill-down untuk exploration
+1. **Sesuaikan Grafik dengan Tipe Data**: Kategorikal → Batang/Lingkaran, Temporal → Garis, Geografis → Peta
+2. **Pertimbangkan Audiens**: Grafik sederhana untuk eksekutif, grafik detail untuk analis
+3. **Batasi Kompleksitas**: Maksimal 5-7 kategori per grafik untuk keterbacaan
+4. **Gunakan Warna dengan Tujuan**: Skema warna konsisten, soroti data penting
+5. **Berikan Konteks**: Tambahkan judul, label, anotasi untuk kejelasan
+6. **Aktifkan Interaktivitas**: Penyaring, keterangan alat, penelusuran detail untuk eksplorasi
 
-## 3.3 Hasil Perancangan Dashboard Interaktif
+## 3.3 Hasil Perancangan Papan Kendali Interaktif
 
-Dashboard Business Intelligence SATRIAMART dirancang dengan 7 halaman utama yang saling terintegrasi dan dapat diakses melalui navigation menu. Setiap halaman memiliki fokus analisis yang spesifik untuk mendukung pengambilan keputusan di area berbeda.
+Papan kendali Kecerdasan Bisnis SATRIAMART dirancang dengan 7 halaman utama yang saling terintegrasi dan dapat diakses melalui menu navigasi. Setiap halaman memiliki fokus analisis yang spesifik untuk mendukung pengambilan keputusan di area berbeda.
 
-### 3.3.1 Executive Summary
+### 3.3.1 Ringkasan Eksekutif
 
-**Tujuan Halaman**: Memberikan high-level overview tentang performa bisnis secara keseluruhan untuk top management.
+**Tujuan Halaman**: Memberikan gambaran tingkat tinggi tentang performa bisnis secara keseluruhan untuk manajemen puncak.
 
 **Komponen Utama**:
 
-1. **Header Section**
+1. **Bagian Kepala**
    - Logo SATRIAMART
-   - Judul: "SATRIAMART Business Intelligence Dashboard"
-   - Date Range Selector (seluruh periode: Nov 2024 - Okt 2025)
-   - Last Update: 27 Oktober 2025
+   - Judul: "Papan Kendali Kecerdasan Bisnis SATRIAMART"
+   - Pemilih Rentang Tanggal (seluruh periode: Nov 2024 - Okt 2025)
+   - Pembaruan Terakhir: 27 Oktober 2025
 
-2. **KPI Cards (6 cards)**
-   - **Total Revenue**: Rp 111.976.550
-     * Indicator: +12.5% vs previous period
-     * Color: Green (positive)
+2. **Kartu KPI (6 kartu)**
+   - **Total Pendapatan**: Rp 111.976.550
+     * Indikator: +12,5% dibanding periode sebelumnya
+     * Warna: Hijau (positif)
    
-   - **Total Transaksi**: 320 transactions
-     * Indicator: +8.3% vs previous period
-     * Color: Green
+   - **Total Transaksi**: 320 transaksi
+     * Indikator: +8,3% dibanding periode sebelumnya
+     * Warna: Hijau
    
-   - **Total Pelanggan**: 180 customers
-     * Indicator: 153 active customers (85%)
-     * Color: Blue
+   - **Total Pelanggan**: 180 pelanggan
+     * Indikator: 153 pelanggan aktif (85%)
+     * Warna: Biru
    
-   - **Average Order Value**: Rp 349.926
-     * Indicator: +3.8% vs previous period
-     * Color: Blue
+   - **Nilai Rata-rata Pesanan**: Rp 349.926
+     * Indikator: +3,8% dibanding periode sebelumnya
+     * Warna: Biru
    
-   - **Profit Margin**: 48.5%
-     * Indicator: Healthy margin
-     * Color: Green
+   - **Margin Laba**: 48,5%
+     * Indikator: Margin sehat
+     * Warna: Hijau
    
-   - **Growth Rate**: +12.5% MoM
-     * Indicator: Positive trend
-     * Color: Green
+   - **Tingkat Pertumbuhan**: +12,5% bulan ke bulan
+     * Indikator: Kecenderungan positif
+     * Warna: Hijau
 
-3. **Primary Visualizations**
+3. **Visualisasi Utama**
 
-   **A. Revenue Trend (Line Chart)**
-   - X-axis: Month (Nov 2024 - Okt 2025)
-   - Y-axis: Revenue (Rp)
-   - Feature: Hover tooltip menampilkan revenue detail dan transaksi count
-   - Insight: Clear peak pada Desember 2024, Juni, dan Juli 2025
+   **A. Kecenderungan Pendapatan (Grafik Garis)**
+   - Sumbu-X: Bulan (Nov 2024 - Okt 2025)
+   - Sumbu-Y: Pendapatan (Rp)
+   - Fitur: Keterangan alat saat diarahkan menampilkan detail pendapatan dan jumlah transaksi
+   - Wawasan: Puncak jelas pada Desember 2024, Juni, dan Juli 2025
 
-   **B. Revenue by Channel (Bar Chart)**
+   **B. Pendapatan Berdasarkan Saluran (Grafik Batang)**
    - WhatsApp: Rp 50.389.448 (45%)
    - Instagram: Rp 33.592.965 (30%)
-   - Marketplace: Rp 16.796.483 (15%)
-   - Offline: Rp 11.197.655 (10%)
-   - Insight: WhatsApp dominan sebagai channel utama
+   - Platform Pasar Daring: Rp 16.796.483 (15%)
+   - Langsung: Rp 11.197.655 (10%)
+   - Wawasan: WhatsApp dominan sebagai saluran utama
 
-   **C. Revenue by Category (Pie Chart)**
+   **C. Pendapatan Berdasarkan Kategori (Diagram Lingkaran)**
    - Nomor Rumah: 35% (Rp 39.191.793)
    - Papan Nama: 28% (Rp 31.353.434)
-   - Signage: 23% (Rp 25.754.606)
+   - Papan Petunjuk: 23% (Rp 25.754.606)
    - Aksesoris: 14% (Rp 15.676.717)
-   - Insight: Nomor Rumah masih menjadi produk core
+   - Wawasan: Nomor Rumah masih menjadi produk inti
 
-4. **Secondary Visualizations**
+4. **Visualisasi Pendukung**
 
-   **D. Monthly Transactions Count (Bar Chart)**
+   **D. Jumlah Transaksi Bulanan (Grafik Batang)**
    - Menampilkan jumlah transaksi per bulan
-   - Highlight peak months dengan color emphasis
+   - Sorot bulan puncak dengan penekanan warna
    
-   **E. Customer Segmentation (Donut Chart)**
-   - Individu: 60% (108 customers)
-   - Bisnis: 30% (54 customers)
-   - Reseller: 10% (18 customers)
+   **E. Segmentasi Pelanggan (Diagram Donat)**
+   - Individu: 60% (108 pelanggan)
+   - Bisnis: 30% (54 pelanggan)
+   - Pemasok Kembali: 10% (18 pelanggan)
 
-5. **Key Insights Summary (Text Box)**
-   - "Peak Season: Desember, Juni, Juli"
-   - "Top Channel: WhatsApp (45% revenue)"
-   - "Top Category: Nomor Rumah (35% revenue)"
-   - "Customer Satisfaction: 4.5/5 stars"
-   - "Completion Rate: 85%"
+5. **Ringkasan Wawasan Utama (Kotak Teks)**
+   - "Musim Puncak: Desember, Juni, Juli"
+   - "Saluran Teratas: WhatsApp (45% pendapatan)"
+   - "Kategori Teratas: Nomor Rumah (35% pendapatan)"
+   - "Kepuasan Pelanggan: 4,5/5 bintang"
+   - "Tingkat Penyelesaian: 85%"
 
 **Interaktivitas**:
-- Date range filter affects all visualizations
-- Click pada bar/pie slice untuk drill-down
-- Hover untuk detail tooltips
+- Penyaring rentang tanggal mempengaruhi semua visualisasi
+- Klik pada batang/irisan lingkaran untuk penelusuran detail
+- Arahkan kursor untuk keterangan alat detail
 
-**Design Notes**:
-- Clean layout dengan white space yang cukup
-- Color scheme konsisten (green, gold, blue)
-- KPI cards dengan border dan shadow untuk emphasis
-- Grid layout 12-column untuk responsive design
+**Catatan Desain**:
+- Tata letak bersih dengan ruang putih yang cukup
+- Skema warna konsisten (hijau, emas, biru)
+- Kartu KPI dengan batas dan bayangan untuk penekanan
+- Tata letak kisi 12-kolom untuk desain responsif
 
-### 3.3.2 Sales Analysis
+### 3.3.2 Analisis Penjualan
 
-**Tujuan Halaman**: Deep-dive analysis tentang penjualan untuk sales dan marketing team.
+**Tujuan Halaman**: Analisis mendalam tentang penjualan untuk tim penjualan dan pemasaran.
 
 **Komponen Utama**:
 
-1. **Control Panel (Top Section)**
-   - Date Range Picker
-   - Product Category Filter (dropdown multi-select)
-   - Channel Filter (dropdown)
-   - Status Filter (Semua/Selesai/Proses/Dibatalkan)
+1. **Panel Kontrol (Bagian Atas)**
+   - Pemilih Rentang Tanggal
+   - Penyaring Kategori Produk (tarik-turun pilihan ganda)
+   - Penyaring Saluran (tarik-turun)
+   - Penyaring Status (Semua/Selesai/Proses/Dibatalkan)
 
-2. **Sales KPI Cards (4 cards)**
-   - Total Sales: Rp 111.976.550
-   - Growth Rate: +12.5% MoM
-   - Best Month: Desember 2024 (Rp 13.157.174)
-   - Worst Month: September 2025 (Rp 5.118.955)
+2. **Kartu KPI Penjualan (4 kartu)**
+   - Total Penjualan: Rp 111.976.550
+   - Tingkat Pertumbuhan: +12,5% bulan ke bulan
+   - Bulan Terbaik: Desember 2024 (Rp 13.157.174)
+   - Bulan Terburuk: September 2025 (Rp 5.118.955)
 
-3. **Primary Charts**
+3. **Grafik Utama**
 
-   **A. Daily/Weekly/Monthly Sales (Time Series with Toggle)**
-   - Toggle button untuk switch view (Daily/Weekly/Monthly)
-   - Area chart dengan gradient fill
-   - Moving average line untuk smooth trend
-   - Annotations untuk special events (promo, holiday)
+   **A. Penjualan Harian/Mingguan/Bulanan (Deret Waktu dengan Toggle)**
+   - Tombol toggle untuk berganti tampilan (Harian/Mingguan/Bulanan)
+   - Grafik area dengan isian gradien
+   - Garis rata-rata bergerak untuk kecenderungan halus
+   - Anotasi untuk kejadian khusus (promo, liburan)
 
-   **B. Top 10 Products by Revenue (Horizontal Bar)**
-   - Sorted dari tertinggi
-   - Color gradient berdasarkan profit margin
-   - Hover: Show product details, margin, units sold
+   **B. 10 Produk Teratas Berdasarkan Pendapatan (Batang Horizontal)**
+   - Diurutkan dari tertinggi
+   - Gradien warna berdasarkan margin laba
+   - Saat diarahkan: Tampilkan detail produk, margin, unit terjual
    - Top 3:
-     * Signage Akrilik LED: Rp 4.200.000
+     * Papan Petunjuk Akrilik LED: Rp 4.200.000
      * Papan Nama Toko Premium: Rp 3.150.000
      * Papan Nama Restoran Elegant: Rp 2.380.000
 
-   **C. Top 10 Products by Quantity (Horizontal Bar)**
-   - Berbeda dari revenue chart
-   - Show volume vs value trade-off
+   **C. 10 Produk Teratas Berdasarkan Kuantitas (Batang Horizontal)**
+   - Berbeda dari grafik pendapatan
+   - Menampilkan trade-off volume vs nilai
    - Top 3:
-     * Name Plate Desk Akrilik: 85 units
-     * Photo Frame Akrilik: 78 units
-     * Nomor Rumah Mini 1 Digit: 72 units
+     * Papan Nama Meja Akrilik: 85 unit
+     * Bingkai Foto Akrilik: 78 unit
+     * Nomor Rumah Mini 1 Digit: 72 unit
 
-4. **Secondary Charts**
+4. **Grafik Pendukung**
 
-   **D. Revenue vs Profit Trend (Combo Chart)**
-   - Bar: Revenue
-   - Line: Profit
-   - Show profitability trend over time
+   **D. Kecenderungan Pendapatan vs Laba (Grafik Gabungan)**
+   - Batang: Pendapatan
+   - Garis: Laba
+   - Menampilkan kecenderungan profitabilitas sepanjang waktu
    
-   **E. Sales by Day of Week (Bar Chart)**
-   - Insight: Jumat dan Sabtu paling tinggi
+   **E. Penjualan Berdasarkan Hari dalam Minggu (Grafik Batang)**
+   - Wawasan: Jumat dan Sabtu paling tinggi
    
-   **F. Sales by Hour (Line Chart)**
-   - Insight: Peak 10-14 dan 19-21
+   **F. Penjualan Berdasarkan Jam (Grafik Garis)**
+   - Wawasan: Puncak 10-14 dan 19-21
 
-5. **Detail Table (Bottom)**
-   - Columns: Transaction ID, Date, Customer, Product, Quantity, Total, Status, Channel
-   - Features: Sortable, searchable, paginated
-   - Export to CSV button
+5. **Tabel Detail (Bagian Bawah)**
+   - Kolom: ID Transaksi, Tanggal, Pelanggan, Produk, Kuantitas, Total, Status, Saluran
+   - Fitur: Dapat diurutkan, dapat dicari, dipaginasi
+   - Tombol ekspor ke CSV
 
-**Key Insights Text Box**:
-- "Signage LED generates highest revenue per unit"
-- "Name Plate has highest volume but lowest margin"
-- "Weekend sales account for 35% of transactions"
-- "Peak hours: 10-14 (lunch break) and 19-21 (evening)"
+**Kotak Teks Wawasan Utama**:
+- "Papan Petunjuk LED menghasilkan pendapatan tertinggi per unit"
+- "Papan Nama Meja memiliki volume tertinggi tapi margin terendah"
+- "Penjualan akhir pekan menyumbang 35% dari transaksi"
+- "Jam sibuk: 10-14 (istirahat makan siang) dan 19-21 (malam)"
 
-### 3.3.3 Product Performance
+### 3.3.3 Kinerja Produk
 
-**Tujuan Halaman**: Analisis mendalam tentang performa produk untuk inventory dan product management.
+**Tujuan Halaman**: Analisis mendalam tentang performa produk untuk manajemen persediaan dan produk.
 
 **Komponen Utama**:
 
-1. **Control Panel**
-   - Category Filter
-   - Price Range Filter (slider)
-   - Sort By dropdown (Revenue/Margin/Volume)
+1. **Panel Kontrol**
+   - Penyaring Kategori
+   - Penyaring Rentang Harga (penggeser)
+   - Urutkan Berdasarkan tarik-turun (Pendapatan/Margin/Volume)
 
-2. **Product KPI Cards**
-   - Total Active Products: 50
-   - Best Seller: Signage Akrilik LED
-   - Highest Margin: Papan Nama Custom (65%)
-   - Slow Moving: 8 products
+2. **Kartu KPI Produk**
+   - Total Produk Aktif: 50
+   - Terlaris: Papan Petunjuk Akrilik LED
+   - Margin Tertinggi: Papan Nama Khusus (65%)
+   - Pergerakan Lambat: 8 produk
 
-3. **Primary Visualizations**
+3. **Visualisasi Utama**
 
-   **A. Revenue by Category (Stacked Bar by Month)**
-   - Show category performance over time
-   - Identify seasonal category preferences
+   **A. Pendapatan Berdasarkan Kategori (Batang Bertumpuk per Bulan)**
+   - Menampilkan kinerja kategori sepanjang waktu
+   - Mengidentifikasi preferensi kategori musiman
    
-   **B. Price vs Sales Volume (Bubble Chart)**
-   - X: Price
-   - Y: Sales Volume
-   - Size: Revenue
-   - Color: Profit Margin
-   - Identify sweet spot products
+   **B. Harga vs Volume Penjualan (Grafik Gelembung)**
+   - X: Harga
+   - Y: Volume Penjualan
+   - Ukuran: Pendapatan
+   - Warna: Margin Laba
+   - Mengidentifikasi produk titik optimal
 
-   **C. Profit Margin by Product (Bar Chart)**
-   - Sorted dari highest margin
-   - Color code: Green (>50%), Yellow (30-50%), Red (<30%)
-   - Insight: Custom products memiliki margin tertinggi
+   **C. Margin Laba Berdasarkan Produk (Grafik Batang)**
+   - Diurutkan dari margin tertinggi
+   - Kode warna: Hijau (>50%), Kuning (30-50%), Merah (<30%)
+   - Wawasan: Produk khusus memiliki margin tertinggi
 
-4. **Secondary Visualizations**
+4. **Visualisasi Pendukung**
 
-   **D. Product Mix Evolution (Stacked Area Chart)**
-   - Show changing composition of sales over time
+   **D. Evolusi Campuran Produk (Grafik Area Bertumpuk)**
+   - Menampilkan perubahan komposisi penjualan sepanjang waktu
    
-   **E. Inventory Turnover by Category (Bar Chart)**
-   - Higher turnover = better inventory management
+   **E. Perputaran Persediaan Berdasarkan Kategori (Grafik Batang)**
+   - Perputaran lebih tinggi = manajemen persediaan lebih baik
    
-   **F. Stock Status Indicator (Gauge)**
-   - Show products at risk of stock-out
-   - Red zone: < 5 units
-   - Yellow zone: 5-10 units
-   - Green zone: > 10 units
+   **F. Indikator Status Stok (Pengukur)**
+   - Menampilkan produk yang berisiko kehabisan stok
+   - Zona merah: < 5 unit
+   - Zona kuning: 5-10 unit
+   - Zona hijau: > 10 unit
 
-5. **Product Performance Table**
-   - Comprehensive table dengan metrics:
-     * Product Name, Category, Price, Units Sold
-     * Revenue, Profit, Margin %, Stock, Status
-   - Color coding untuk quick identification
-   - Drill-down untuk product details
+5. **Tabel Kinerja Produk**
+   - Tabel komprehensif dengan metrik:
+     * Nama Produk, Kategori, Harga, Unit Terjual
+     * Pendapatan, Laba, Margin %, Stok, Status
+   - Kode warna untuk identifikasi cepat
+   - Penelusuran detail untuk detail produk
 
-**Key Insights**:
-- "20% products generate 60% revenue (Pareto)"
-- "Custom products have 65% margin vs standard 40%"
-- "8 products need attention (slow moving)"
-- "Nomor Rumah category has highest turnover rate"
+**Wawasan Utama**:
+- "20% produk menghasilkan 60% pendapatan (Pareto)"
+- "Produk khusus memiliki margin 65% vs standar 40%"
+- "8 produk perlu perhatian (pergerakan lambat)"
+- "Kategori Nomor Rumah memiliki tingkat perputaran tertinggi"
 
-### 3.3.4 Customer Analysis
+### 3.3.4 Analisis Pelanggan
 
-**Tujuan Halaman**: Memahami karakteristik dan behavior pelanggan untuk CRM strategy.
+**Tujuan Halaman**: Memahami karakteristik dan perilaku pelanggan untuk strategi manajemen hubungan pelanggan.
 
 **Komponen Utama**:
 
-1. **Control Panel**
-   - Customer Segment Filter
-   - City Filter
-   - RFM Score Filter
+1. **Panel Kontrol**
+   - Penyaring Segmen Pelanggan
+   - Penyaring Kota
+   - Penyaring Skor RFM
 
-2. **Customer KPI Cards**
-   - Total Customers: 180
-   - Active Customers: 153 (85%)
-   - New Customers (last 3 months): 42
-   - Repeat Rate: 45%
+2. **Kartu KPI Pelanggan**
+   - Total Pelanggan: 180
+   - Pelanggan Aktif: 153 (85%)
+   - Pelanggan Baru (3 bulan terakhir): 42
+   - Tingkat Pembelian Ulang: 45%
 
-3. **Primary Visualizations**
+3. **Visualisasi Utama**
 
-   **A. RFM Segmentation (Tree Map)**
-   - Champions: 15% (High R,F,M) - Biggest tiles, dark green
-   - Loyal: 20% (High F,M)
-   - At Risk: 10% (Low R, High F,M) - Orange/Yellow
-   - New: 25% (High R, Low F,M) - Light green
-   - Lost: 30% (Low R,F,M) - Gray
+   **A. Segmentasi RFM (Peta Pohon)**
+   - Juara: 15% (Kebaruan, Frekuensi, Moneter Tinggi) - Ubin terbesar, hijau gelap
+   - Setia: 20% (Frekuensi, Moneter Tinggi)
+   - Berisiko: 10% (Kebaruan Rendah, Frekuensi, Moneter Tinggi) - Oranye/Kuning
+   - Baru: 25% (Kebaruan Tinggi, Frekuensi, Moneter Rendah) - Hijau muda
+   - Hilang: 30% (Kebaruan, Frekuensi, Moneter Rendah) - Abu-abu
    
-   **B. Top 10 Customers by Value (Bar Chart)**
-   - Show top spenders
-   - Include customer name (anonymized), total purchase, frequency
-   - Insight: Top 10% customers = 40% revenue
+   **B. 10 Pelanggan Teratas Berdasarkan Nilai (Grafik Batang)**
+   - Menampilkan pembeli teratas
+   - Termasuk nama pelanggan (dianonimkan), total pembelian, frekuensi
+   - Wawasan: 10% pelanggan teratas = 40% pendapatan
 
-   **C. Customer Distribution by City (Geo Map)**
-   - Pins pada map Indonesia
-   - Size based on customer count
-   - Color based on revenue
-   - Zoom focus pada Jabodetabek
+   **C. Distribusi Pelanggan Berdasarkan Kota (Peta Geografis)**
+   - Pin pada peta Indonesia
+   - Ukuran berdasarkan jumlah pelanggan
+   - Warna berdasarkan pendapatan
+   - Fokus zoom pada Jabodetabek
 
-4. **Secondary Visualizations**
+4. **Visualisasi Pendukung**
 
-   **D. Customer Acquisition Trend (Line Chart)**
-   - New customers per month
-   - Show impact of marketing campaigns
+   **D. Kecenderungan Akuisisi Pelanggan (Grafik Garis)**
+   - Pelanggan baru per bulan
+   - Menampilkan dampak kampanye pemasaran
    
-   **E. Repeat Purchase Rate (Line Chart)**
-   - Track loyalty over time
+   **E. Tingkat Pembelian Ulang (Grafik Garis)**
+   - Melacak loyalitas sepanjang waktu
    
-   **F. Average Customer Value by Segment (Bar Chart)**
-   - Bisnis: Rp 6.2M average
-   - Reseller: Rp 4.8M average
-   - Individu: Rp 2.1M average
+   **F. Nilai Rata-rata Pelanggan Berdasarkan Segmen (Grafik Batang)**
+   - Bisnis: Rp 6,2 juta rata-rata
+   - Pemasok Kembali: Rp 4,8 juta rata-rata
+   - Individu: Rp 2,1 juta rata-rata
 
-5. **Customer Segmentation Table**
-   - Segment, Count, % of Total, Avg Value, Repeat Rate
-   - Actionable insights untuk setiap segment
+5. **Tabel Segmentasi Pelanggan**
+   - Segmen, Jumlah, % dari Total, Nilai Rata-rata, Tingkat Pembelian Ulang
+   - Wawasan yang dapat ditindaklanjuti untuk setiap segmen
 
-**Key Insights**:
-- "45% repeat rate shows room for improvement"
-- "Bisnis segment has 3x higher AOV than Individu"
-- "85% customers concentrated in Jabodetabek"
-- "30% customers at risk of churn (low recency)"
+**Wawasan Utama**:
+- "Tingkat pembelian ulang 45% menunjukkan ruang untuk perbaikan"
+- "Segmen bisnis memiliki nilai rata-rata pesanan 3x lebih tinggi dari Individu"
+- "85% pelanggan terkonsentrasi di Jabodetabek"
+- "30% pelanggan berisiko kehilangan (kebaruan rendah)"
 
 *[Lanjutan untuk sub-bab 3.3.5 hingga 3.3.7 dan 3.4 akan dibuat dalam file terpisah]*
 
 ---
 
 **Catatan**: 
-- Screenshot dashboard akan ditambahkan dalam versi final MS Word
-- Setiap visualisasi akan disertai dengan caption dan nomor gambar
+- Tangkapan layar papan kendali akan ditambahkan dalam versi final MS Word
+- Setiap visualisasi akan disertai dengan keterangan dan nomor gambar
 - Interpretasi lebih detail akan ditambahkan dengan referensi teori
 
 ## 3.4 Analisis dan Interpretasi
 
 ### 3.4.1 Interpretasi Hasil Visualisasi
 
-Berdasarkan dashboard yang telah dibuat, berikut interpretasi hasil visualisasi:
+Berdasarkan papan kendali yang telah dibuat, berikut interpretasi hasil visualisasi:
 
-**Revenue Trend**:
-Dashboard menunjukkan pola pertumbuhan revenue yang fluktuatif dengan peak yang jelas pada bulan Desember (Rp 13.157.174), Juni (Rp 11.976.550), dan Juli (Rp 11.418.523). Pola ini mengindikasikan seasonality yang kuat, di mana permintaan meningkat menjelang liburan dan periode special events. Low season terjadi di Februari dan September dengan revenue terendah.
+**Kecenderungan Pendapatan**:
+Papan kendali menunjukkan pola pertumbuhan pendapatan yang fluktuatif dengan puncak yang jelas pada bulan Desember (Rp 13.157.174), Juni (Rp 11.976.550), dan Juli (Rp 11.418.523). Pola ini mengindikasikan pola musiman yang kuat, di mana permintaan meningkat menjelang liburan dan periode kejadian khusus. Musim sepi terjadi di Februari dan September dengan pendapatan terendah.
 
-**Product Performance**:
-Analisis produk mengungkapkan bahwa Signage dan Papan Nama premium mendominasi revenue meskipun volume penjualan lebih rendah dibanding produk low-value seperti name plate dan photo frame. Hal ini konsisten dengan konsep value selling dimana fokus pada high-value products menghasilkan profitability lebih baik meski volume lebih rendah.
+**Kinerja Produk**:
+Analisis produk mengungkapkan bahwa Papan Petunjuk dan Papan Nama premium mendominasi pendapatan meskipun volume penjualan lebih rendah dibanding produk bernilai rendah seperti papan nama meja dan bingkai foto. Hal ini konsisten dengan konsep penjualan bernilai di mana fokus pada produk bernilai tinggi menghasilkan profitabilitas lebih baik meski volume lebih rendah.
 
-**Customer Segmentation**:
-Segmentasi RFM menunjukkan bahwa 30% pelanggan berada dalam kategori "Lost" atau "At Risk", mengindikasikan perlunya customer retention strategy yang lebih agresif. Champions dan Loyal customers yang hanya 35% dari total customer base menghasilkan 60% dari total revenue, membuktikan pentingnya fokus pada high-value customers.
+**Segmentasi Pelanggan**:
+Segmentasi RFM menunjukkan bahwa 30% pelanggan berada dalam kategori "Hilang" atau "Berisiko", mengindikasikan perlunya strategi retensi pelanggan yang lebih agresif. Pelanggan Juara dan Setia yang hanya 35% dari total basis pelanggan menghasilkan 60% dari total pendapatan, membuktikan pentingnya fokus pada pelanggan bernilai tinggi.
 
-**Channel Effectiveness**:
-WhatsApp sebagai channel dominan (45% revenue) menunjukkan bahwa pendekatan personal dan conversational masih sangat efektif untuk produk custom seperti yang dijual SATRIAMART. Instagram dengan 30% revenue menunjukkan pentingnya visual content untuk produk dekorasi.
+**Efektivitas Saluran**:
+WhatsApp sebagai saluran dominan (45% pendapatan) menunjukkan bahwa pendekatan personal dan percakapan masih sangat efektif untuk produk khusus seperti yang dijual SATRIAMART. Instagram dengan 30% pendapatan menunjukkan pentingnya konten visual untuk produk dekorasi.
 
 ### 3.4.2 Implikasi terhadap Strategi Bisnis SATRIAMART
 
-**1. Inventory Management**:
-Insight tentang seasonal pattern memungkinkan SATRIAMART untuk meningkatkan produksi dan stock inventory menjelang peak season (November-Desember dan Mei-Juni) dan mengurangi inventory di low season untuk optimasi cash flow.
+**1. Manajemen Persediaan**:
+Wawasan tentang pola musiman memungkinkan SATRIAMART untuk meningkatkan produksi dan stok persediaan menjelang musim puncak (November-Desember dan Mei-Juni) dan mengurangi persediaan di musim sepi untuk optimasi arus kas.
 
-**2. Product Strategy**:
-Data menunjukkan bahwa custom products memiliki margin lebih tinggi (65%) dibanding standard products (40%). Strategi yang dapat diterapkan adalah mendorong customization melalui pricing incentive dan highlighting customization options dalam marketing materials.
+**2. Strategi Produk**:
+Data menunjukkan bahwa produk khusus memiliki margin lebih tinggi (65%) dibanding produk standar (40%). Strategi yang dapat diterapkan adalah mendorong kustomisasi melalui insentif penetapan harga dan menyoroti opsi kustomisasi dalam materi pemasaran.
 
-**3. Customer Retention**:
-Dengan repeat rate hanya 45%, SATRIAMART perlu implementasi loyalty program, follow-up marketing, dan personalized offers untuk meningkatkan customer lifetime value.
+**3. Retensi Pelanggan**:
+Dengan tingkat pembelian ulang hanya 45%, SATRIAMART perlu implementasi program loyalitas, pemasaran tindak lanjut, dan penawaran personal untuk meningkatkan nilai seumur hidup pelanggan.
 
-**4. Marketing Budget Allocation**:
-Analisis ROI campaign menunjukkan bahwa Instagram Ads memberikan ROI tertinggi (280%). Alokasi marketing budget sebaiknya diprioritaskan pada channel dengan ROI tinggi sambil maintaining presence di channel lain.
+**4. Alokasi Anggaran Pemasaran**:
+Analisis ROI kampanye menunjukkan bahwa Iklan Instagram memberikan ROI tertinggi (280%). Alokasi anggaran pemasaran sebaiknya diprioritaskan pada saluran dengan ROI tinggi sambil mempertahankan kehadiran di saluran lain.
 
-**5. Pricing Strategy**:
-Analisis price vs volume menunjukkan sweet spot pada produk Rp 100K-300K yang balance antara volume dan margin. Strategi bundling dapat diterapkan untuk meningkatkan AOV.
+**5. Strategi Penetapan Harga**:
+Analisis harga vs volume menunjukkan titik optimal pada produk Rp 100 ribu-300 ribu yang seimbang antara volume dan margin. Strategi paket bundel dapat diterapkan untuk meningkatkan nilai rata-rata pesanan.
 
 ### 3.4.3 Potensi Peningkatan Performa
 
-**1. Increase Repeat Purchase Rate** (Target: dari 45% ke 60%)
-   - Implementasi loyalty program dengan point rewards
-   - Follow-up email/WhatsApp setelah pembelian
-   - Exclusive offers untuk repeat customers
-   - Estimated impact: +15% revenue
+**1. Meningkatkan Tingkat Pembelian Ulang** (Target: dari 45% ke 60%)
+   - Implementasi program loyalitas dengan hadiah poin
+   - Tindak lanjut surel/WhatsApp setelah pembelian
+   - Penawaran eksklusif untuk pelanggan berulang
+   - Perkiraan dampak: +15% pendapatan
 
-**2. Expand Geographic Reach** (Target: dari 85% Jabodetabek ke 70%)
-   - Marketplace expansion ke kota tier 2 (Bandung, Surabaya, Semarang)
-   - Partnership dengan reseller di luar Jabodetabek
-   - Optimize online presence untuk organic reach
-   - Estimated impact: +20% customer base
+**2. Memperluas Jangkauan Geografis** (Target: dari 85% Jabodetabek ke 70%)
+   - Ekspansi platform pasar daring ke kota tier 2 (Bandung, Surabaya, Semarang)
+   - Kemitraan dengan pemasok kembali di luar Jabodetabek
+   - Optimasi kehadiran daring untuk jangkauan organik
+   - Perkiraan dampak: +20% basis pelanggan
 
-**3. Upselling & Cross-selling** (Target: AOV dari Rp 350K ke Rp 420K)
-   - Product bundling (nomor rumah + name plate)
-   - Recommendation system pada checkout
-   - "Complete the look" suggestions
-   - Estimated impact: +20% AOV
+**3. Penjualan Naik & Penjualan Silang** (Target: nilai rata-rata pesanan dari Rp 350 ribu ke Rp 420 ribu)
+   - Paket bundel produk (nomor rumah + papan nama meja)
+   - Sistem rekomendasi pada pembayaran
+   - Saran "Lengkapi tampilan"
+   - Perkiraan dampak: +20% nilai rata-rata pesanan
 
-**4. Reduce Cancellation Rate** (Target: dari 7% ke 3%)
-   - Improve product visualization (3D preview, mockup)
-   - Clear communication tentang timeline
-   - Better expectation management
-   - Estimated impact: +4% revenue
+**4. Mengurangi Tingkat Pembatalan** (Target: dari 7% ke 3%)
+   - Tingkatkan visualisasi produk (pratinjau 3D, mockup)
+   - Komunikasi jelas tentang timeline
+   - Manajemen ekspektasi yang lebih baik
+   - Perkiraan dampak: +4% pendapatan
 
-**5. Optimize Marketing ROI** (Target: Overall ROI dari 250% ke 300%)
-   - Focus budget pada high-ROI channels (Instagram, Organic)
-   - A/B testing untuk optimize ad creative
-   - Retargeting campaign untuk abandoned carts
-   - Estimated impact: +20% marketing efficiency
+**5. Optimasi ROI Pemasaran** (Target: ROI keseluruhan dari 250% ke 300%)
+   - Fokus anggaran pada saluran ROI tinggi (Instagram, Organik)
+   - Pengujian A/B untuk optimasi kreatif iklan
+   - Kampanye penargetan ulang untuk keranjang yang ditinggalkan
+   - Perkiraan dampak: +20% efisiensi pemasaran
 
 ---
 
-*End of BAB III Pembahasan*
+*Akhir BAB III Pembahasan*
