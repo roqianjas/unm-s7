@@ -1,0 +1,30 @@
+Jawaban Soal Latihan Pertemuan 6
+1. Konsep sederhana 1 digit dengan "dua" nilai telah ditemukan oleh manusia ber-abad2 lampau tapi baru di implementasikan pd awal abad 20, saat ini di kenal dengan sebutan:
+Jawaban: b. Era Digital
+
+2. Merupakan interaksi bisnis dengan eksternal organisasi dengan memanfaatkan teknologi TI, disebut:
+Jawaban: c. E-business
+
+3. Berurutan, kurang integrasi, paper-based, mahal, dan tidak efisien, merupakan ciri dari:
+Jawaban: d. Traditional Business Model
+
+4. Berkelanjutan dan terintegrasi, yang memungkinkan beberapa peserta untuk bergabung dan berkolaborasi, merupakan ciri dari:
+Jawaban: a. E-Business Model
+
+5. Sistem informasi pendukung e-business, yg menyediakan berbagai macam kebutuhan perusahaan seperti supply chain, CRM, marketing, warehouse, shipping, dan payment, serta mampu melakukan otomatisasi proses bisnis, merupakan definisi dari:
+Jawaban: e. ERP (Enterprise Resource Planning)
+
+6. Masa/era dimana semua manusia dapat saling berkomunikasi sedemikian dekat walaupun saling berjauhan:
+Jawaban: a. Era digital
+
+7. Salah satu karakteristik era digital adalah:
+Jawaban: a. Semua serba cepat, instan dan mudah
+
+8. Dikenal sebagai basis (foundation) dari "New Digital Networked Economy" merupakan istilah yang dipakai untuk:
+Jawaban: a. Internet
+
+9. Sequential, lacking integration, paper-based, costly, and inefficient, merupakan gambaran dari:
+Jawaban: a. Traditional Business Model
+
+10. Teknologi bergeser ke arah upaya membangun konfigurasi rantai bisnis yang terintegrasi, merupakan dari:
+Jawaban: a. Siklus Penerapan TI Dalam Bisnis
