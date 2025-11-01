@@ -425,7 +425,7 @@ Berdasarkan RPS, bobot penilaian:
 
 ### Backend Stack (Laravel)
 - **PHP 8.x**: Programming language
-- **Laravel 10/11**: Web application framework
+- **Laravel 12**: Web application framework
 - **Eloquent ORM**: Database abstraction layer
 - **Laravel Authentication**: User authentication system
 - **Laravel Validation**: Form validation
@@ -457,7 +457,7 @@ Berdasarkan RPS, bobot penilaian:
 ### Deployment & Hosting
 - **Apache/Nginx**: Web server
 - **Shared Hosting/VPS**: Deployment environment
-- **cPanel/Forge/Ploi**: Server management
+- **cPanel/aaPanel**: Server management
 - **Laravel Envoy/Deployer**: Deployment automation (optional)
 
 ### Testing (Optional)
@@ -762,9 +762,13 @@ Rekomendasi struktur folder untuk pengerjaan:
 ├── 03_desain/
 │   ├── use_case_diagram.png
 │   ├── activity_diagram.png
-│   ├── erd.png
-│   ├── mockups/
-│   └── design_system/
+│   ├── erd.png                    # Entity Relationship Diagram
+│   ├── mockups/                   # Screenshot 41 mockup HTML
+│   │   ├── 01_landing.png
+│   │   ├── 02_about.png
+│   │   ├── ... (41 screenshot)
+│   │   └── 41_admin_settings.png
+│   └── design_system/             # Dokumentasi design system
 │
 ├── 04_perencanaan/
 │   ├── wbs.xlsx
@@ -790,16 +794,8 @@ Rekomendasi struktur folder untuk pengerjaan:
 │   └── surat_keterangan/
 │
 └── 08_prototype/
-    ├── source_code/               # Copy dari mockup HTML yang sudah jadi
-    │   ├── 01_landing.html
-    │   ├── 02_about.html
-    │   ├── 03_services.html
-    │   ├── ... (41 file mockup HTML)
-    │   ├── css/
-    │   ├── js/
-    │   └── images/
-    └── documentation/
-        └── technical_documentation.pdf
+    ├── panduan_prototype.pdf      # Panduan cara menggunakan prototype
+    └── informasi_prototype.pdf    # Dokumentasi fitur dan spesifikasi prototype
 ```
 
 ---
