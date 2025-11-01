@@ -6,7 +6,7 @@
 ## ✅ STATUS PENYELESAIAN: **SELESAI 100%**
 
 **Tanggal Selesai:** 28 Oktober 2025  
-**Tim:** Kelompok Orion (Roki Anjas, Fahrurozi, Susanto)  
+**Tim:** Kelompok 2 (Roki Anjas, Fahrurozi, Susanto)  
 **Kelas:** 11.7C.12
 
 ---
@@ -14,14 +14,14 @@
 ## 📁 FILE YANG DIHASILKAN
 
 ### 1. **Dokumen Utama (Lengkap)**
-📄 `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.md`
+📄 `11.7C.12_Kelompok_2_PersiapanAnalisis_v1.md`
 - **Halaman:** ~18-20 halaman
 - **Isi:** Dokumen komprehensif dengan semua bagian A-K
 - **Format:** Markdown (siap dikonversi ke PDF/DOCX)
 - **Untuk:** Dokumentasi lengkap dan arsip
 
 ### 2. **Dokumen Ringkas (Untuk Pengumpulan)**
-📄 `11.7C.12_Kelompok_Orion_PersiapanAnalisis_RINGKAS.md`
+📄 `11.7C.12_Kelompok_2_PersiapanAnalisis_RINGKAS.md`
 - **Halaman:** 5-6 halaman
 - **Isi:** Versi ringkas yang memenuhi batas 3-6 halaman
 - **Format:** Markdown (siap dikonversi ke PDF/DOCX)
@@ -186,15 +186,15 @@
 
 ### Format Pengumpulan:
 1. **Convert ke PDF/DOCX:**
-   - File: `11.7C.12_Kelompok_Orion_PersiapanAnalisis_RINGKAS.pdf`
-   - Atau: `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.pdf` (jika dosen minta lengkap)
+   - File: `11.7C.12_Kelompok_2_PersiapanAnalisis_RINGKAS.pdf`
+   - Atau: `11.7C.12_Kelompok_2_PersiapanAnalisis_v1.pdf` (jika dosen minta lengkap)
 
 2. **Upload ke Platform LMS:**
    - Nama file sesuai format: `Kelas_TeamX_PersiapanAnalisis_v1`
    - Pastikan ukuran file <10MB
 
 3. **Email Cadangan:**
-   - Subject: [IT Gov] Tugas Minggu 5 - Kelompok Orion - 11.7C.12
+   - Subject: [IT Gov] Tugas Minggu 5 - Kelompok 2 - 11.7C.12
    - Attachment: PDF + README.md (opsional)
 
 ---
@@ -225,13 +225,13 @@
 
 **Dokumen Tugas Minggu 5 telah selesai dengan kualitas tinggi dan memenuhi semua requirement dari briefing dosen.**
 
-Tim Kelompok Orion siap untuk:
+Tim Kelompok 2 siap untuk:
 1. ✅ Menerima feedback dan revisi
 2. ✅ Melanjutkan ke tahap eksekusi (Minggu 6-15)
 3. ✅ Menghasilkan laporan akhir yang berkualitas
 
 ---
 
-**Prepared by:** Kelompok Orion (Roki Anjas, Fahrurozi, Susanto)  
+**Prepared by:** Kelompok 2 (Roki Anjas, Fahrurozi, Susanto)  
 **Date:** 28 Oktober 2025  
 **Status:** READY FOR REVIEW ✅

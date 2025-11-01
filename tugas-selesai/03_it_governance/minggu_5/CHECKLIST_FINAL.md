@@ -2,7 +2,7 @@
 
 **Status:** SELESAI 100% ✅  
 **Tanggal:** 28 Oktober 2025  
-**Tim:** Kelompok Orion (Roki Anjas, Fahruroji, Susanto)
+**Tim:** Kelompok 2 (Roki Anjas, Fahruroji, Susanto)
 
 ---
 
@@ -11,8 +11,8 @@
 | No | Nama File | Fungsi | Status |
 |----|-----------|--------|--------|
 | 1 | `00_BRIEF_PENGERJAAN_TUGAS_MINGGU_5.md` | Konteks & panduan pengerjaan | ✅ Sudah ada |
-| 2 | `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.md` | **Dokumen lengkap (18-20 hal)** | ✅ SELESAI |
-| 3 | `11.7C.12_Kelompok_Orion_PersiapanAnalisis_RINGKAS.md` | **Dokumen ringkas untuk dikumpulkan (5-6 hal)** | ✅ SELESAI |
+| 2 | `11.7C.12_Kelompok_2_PersiapanAnalisis_v1.md` | **Dokumen lengkap (18-20 hal)** | ✅ SELESAI |
+| 3 | `11.7C.12_Kelompok_2_PersiapanAnalisis_RINGKAS.md` | **Dokumen ringkas untuk dikumpulkan (5-6 hal)** | ✅ SELESAI |
 | 4 | `README.md` | Informasi & navigasi dokumen | ✅ SELESAI |
 | 5 | `SUMMARY.md` | Ringkasan status pengerjaan | ✅ SELESAI |
 | 6 | `CHECKLIST_FINAL.md` | Checklist ini | ✅ SELESAI |
@@ -57,7 +57,7 @@
 | 6 | Panjang: 3-6 halaman (isi utama) | ✅ | Versi RINGKAS: 5-6 halaman |
 | 7 | Tim 2-4 orang, cantumkan peran | ✅ | 3 orang, peran jelas di halaman awal |
 | 8 | Format: PDF/Doc | ⏳ | Markdown (siap convert ke PDF/DOCX) |
-| 9 | Nama file: Kelas_TeamX_PersiapanAnalisis_v1 | ✅ | `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1` |
+| 9 | Nama file: Kelas_TeamX_PersiapanAnalisis_v1 | ✅ | `11.7C.12_Kelompok_2_PersiapanAnalisis_v1` |
 
 ---
 
@@ -257,12 +257,12 @@ Berdasarkan rubrik di brief (Total 100 poin):
 
 ## 🏆 KESIMPULAN
 
-**Tim Kelompok Orion menyatakan bahwa Tugas Minggu 5 telah selesai dengan kualitas tinggi dan siap untuk dikumpulkan serta direview oleh Dosen Pembimbing.**
+**Tim Kelompok 2 menyatakan bahwa Tugas Minggu 5 telah selesai dengan kualitas tinggi dan siap untuk dikumpulkan serta direview oleh Dosen Pembimbing.**
 
 ---
 
 **Prepared by:**  
-Kelompok Orion - Roki Anjas, Fahruroji, Susanto
+Kelompok 2 - Roki Anjas, Fahruroji, Susanto
 
 **Date:** 28 Oktober 2025
 

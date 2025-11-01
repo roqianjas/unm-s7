@@ -14,7 +14,7 @@
 **Semester:** 7 Transfer  
 **Kelas:** 11.7C.12
 
-**Tim Kelompok Orion:**
+**Tim Kelompok 2:**
 - Roki Anjas (11250066) - Ketua Tim & Analis Utama
 - Fahrurozi (11250085) - Analis Data & Dokumentasi
 - Susanto (11250068) - Analis Risiko & Validasi
@@ -26,7 +26,7 @@
 
 ## 📦 STRUKTUR DOKUMEN
 
-Dokumen utama: `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.md`
+Dokumen utama: `11.7C.12_Kelompok_2_PersiapanAnalisis_v1.md`
 
 ### Bagian-Bagian Dokumen:
 
@@ -195,7 +195,7 @@ Dokumen utama: `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.md`
 ## 📝 CATATAN PENTING
 
 1. **Format Pengumpulan:**
-   - Nama File: `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.pdf` (atau .docx)
+   - Nama File: `11.7C.12_Kelompok_2_PersiapanAnalisis_v1.pdf` (atau .docx)
    - Panjang: 3-6 halaman isi utama + lampiran
    - Font: Times New Roman 12pt, spasi 1.5
 
@@ -221,7 +221,7 @@ Dokumen utama: `11.7C.12_Kelompok_Orion_PersiapanAnalisis_v1.md`
 
 ## 📞 KONTAK TIM
 
-**Email:** kelompok.orion.itgov@example.edu  
+**Email:** 11250066@nusamandiri.ac.id  
 **Koordinator:** Roki Anjas (11250066)
 
 ---
