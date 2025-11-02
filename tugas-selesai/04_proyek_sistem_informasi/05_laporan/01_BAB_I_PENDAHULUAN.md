@@ -3,7 +3,59 @@
 
 ## 1.1 Latar Belakang Masalah
 
+---
+
+**[GAMBAR 1.1 - Logo CUR-HEART (Hypnotherapy & Mind Wellness Center)]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│          [INSERT LOGO CUR-HEART DI SINI]                    │
+│                                                             │
+│   Format: PNG/JPG dengan background transparan             │
+│   Recommended size: 400x400px atau 800x800px (high-res)    │
+│   Placement: Center-aligned                                 │
+│                                                             │
+│   File location: assets/images/logo-curheart.png           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 1.1: Logo CUR-HEART sebagai identitas brand perusahaan hypnotherapy dan mind wellness center_
+
+---
+
 Kesehatan mental telah menjadi salah satu isu kesehatan global yang paling mendesak di abad ke-21. Menurut data World Health Organization (WHO) tahun 2023, lebih dari 450 juta orang di seluruh dunia mengalami gangguan kesehatan mental, dengan proyeksi peningkatan yang signifikan setiap tahunnya. Di Indonesia, situasinya tidak kalah mengkhawatirkan. Berdasarkan data Riset Kesehatan Dasar (Riskesdas) Kementerian Kesehatan Republik Indonesia tahun 2023, prevalensi gangguan kesehatan mental di Indonesia mencapai 20% dari total populasi, yang berarti sekitar 1 dari 5 orang Indonesia mengalami masalah kesehatan mental mulai dari tingkat ringan hingga berat.
+
+---
+
+**[GAMBAR 1.2 - Statistik Kesehatan Mental Indonesia 2024]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT INFOGRAFIS/CHART STATISTIK KESEHATAN MENTAL]     │
+│                                                             │
+│   Konten yang harus ditampilkan:                           │
+│   - Bar chart atau pie chart prevalensi gangguan mental    │
+│   - Data: 20% populasi Indonesia (54 juta orang)           │
+│   - Breakdown: Stres (35%), Kecemasan (28%),               │
+│     Depresi (22%), Trauma (15%)                            │
+│   - Perbandingan rasio psikiater (1:200,000 vs WHO 1:100K)│
+│                                                             │
+│   Format: PNG/JPG full-color infographic                   │
+│   Recommended size: 1200x800px atau 1600x1200px            │
+│   Style: Modern, data visualization dengan icon/chart      │
+│                                                             │
+│   File location: assets/images/stats-kesehatan-mental.png  │
+│   Tool: Canva, Adobe Illustrator, atau Figma               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 1.2: Statistik prevalensi gangguan kesehatan mental di Indonesia berdasarkan data Riskesdas 2023, menunjukkan 20% populasi atau sekitar 1 dari 5 orang mengalami masalah kesehatan mental_
+
+---
 
 Fenomena ini dipicu oleh berbagai faktor kompleks yang saling berkaitan. Tekanan pekerjaan yang semakin tinggi di era kompetisi global, ketidakstabilan ekonomi pascapandemi COVID-19, disrupsi digital yang mengubah pola interaksi sosial, serta perubahan nilai-nilai sosial yang cepat telah menciptakan lingkungan yang penuh dengan stressor psikologis. Generasi milenial dan Z, yang merupakan angkatan kerja produktif saat ini, dilaporkan mengalami tingkat stres dan kecemasan yang lebih tinggi dibandingkan generasi sebelumnya. Kondisi ini diperparah dengan masih tingginya stigma sosial terhadap gangguan kesehatan mental di masyarakat Indonesia, yang menyebabkan banyak penderita enggan mencari bantuan profesional.
 
@@ -95,6 +147,41 @@ Permasalahan-permasalahan tersebut secara kumulatif menyebabkan berbagai dampak 
 
 Oleh karena itu, pengembangan sistem informasi manajemen booking dan terapi berbasis web yang terintegrasi, secure, dan user-friendly menjadi kebutuhan mendesak untuk mengatasi permasalahan-permasalahan tersebut dan mendukung pertumbuhan CUR-HEART yang berkelanjutan.
 
+---
+
+**[GAMBAR 1.3 - Perbandingan Booking Manual vs Online]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT COMPARISON DIAGRAM/INFOGRAPHIC]                  │
+│                                                             │
+│   Konten yang harus ditampilkan:                           │
+│                                                             │
+│   BOOKING MANUAL (Kiri)         VS    BOOKING ONLINE (Kanan)│
+│   ┌──────────────────────┐           ┌──────────────────┐  │
+│   │ 📱 WhatsApp Chat     │           │ 💻 Web System    │  │
+│   │ ⏱️  15-20 menit       │           │ ⏱️  2-3 menit     │  │
+│   │ 👤 Admin manual      │           │ 🤖 Otomatis      │  │
+│   │ 📊 60% conversion    │           │ 📊 85% conversion│  │
+│   │ ❌ Double booking    │           │ ✅ No conflicts   │  │
+│   │ 📝 Paper records     │           │ 💾 Digital DB    │  │
+│   │ 🔓 No security       │           │ 🔐 Encrypted     │  │
+│   └──────────────────────┘           └──────────────────┘  │
+│                                                             │
+│   Format: PNG/JPG comparison infographic                   │
+│   Recommended size: 1400x900px                             │
+│   Style: Split-screen comparison dengan icon & metrics     │
+│                                                             │
+│   File location: assets/images/comparison-booking.png      │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 1.3: Perbandingan efisiensi dan efektivitas antara sistem booking manual (existing) vs sistem booking online (proposed solution)_
+
+---
+
 **Tabel 1.1 Identifikasi Masalah dan Dampaknya**
 
 | No | Masalah | Kondisi Saat Ini | Dampak Negatif | Prioritas |
@@ -113,6 +200,54 @@ Oleh karena itu, pengembangan sistem informasi manajemen booking dan terapi berb
 ## 1.3 Ruang Lingkup
 
 Untuk memfokuskan pembahasan dan memastikan keberhasilan proyek, penelitian ini menetapkan batasan-batasan ruang lingkup sebagai berikut:
+
+---
+
+**[GAMBAR 1.4 - Diagram Ruang Lingkup Sistem]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT SCOPE DIAGRAM / SYSTEM BOUNDARY DIAGRAM]         │
+│                                                             │
+│   Center: CUR-HEART System (blue box)                      │
+│                                                             │
+│   INTERNAL MODULES (inside boundary):                      │
+│   ┌─────────────────────────────────────────┐             │
+│   │ 1. Authentication & User Management     │             │
+│   │ 2. Public Information Pages             │             │
+│   │ 3. Booking & Scheduling                 │             │
+│   │ 4. Client Dashboard (10 pages)          │             │
+│   │ 5. Therapist Dashboard (10 pages)       │             │
+│   │ 6. Admin Dashboard (5 pages)            │             │
+│   │ 7. Payment Integration                  │             │
+│   │ 8. Reporting & Analytics                │             │
+│   └─────────────────────────────────────────┘             │
+│                                                             │
+│   EXTERNAL SYSTEMS (outside boundary):                     │
+│   - Midtrans Payment Gateway                               │
+│   - Email Service (SMTP/SendGrid)                          │
+│   - Cloud Storage (for files)                              │
+│                                                             │
+│   OUT OF SCOPE (marked with X):                            │
+│   ✗ Mobile native app (iOS/Android)                        │
+│   ✗ Video conferencing built-in                            │
+│   ✗ AI chatbot / ML features                               │
+│   ✗ Multi-language support                                 │
+│                                                             │
+│   Format: Block diagram dengan color-coding                │
+│   Style: Professional, clean lines                         │
+│   Recommended size: 1200x1000px                            │
+│                                                             │
+│   File: assets/images/system-scope-diagram.png             │
+│   Tool: Draw.io, Lucidchart, atau Microsoft Visio          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 1.4: Diagram ruang lingkup sistem CUR-HEART menunjukkan modul-modul yang termasuk dalam pengembangan (in scope) dan yang dikecualikan (out of scope)_
+
+---
 
 ### 1.3.1 Ruang Lingkup Sistem
 
@@ -703,7 +838,7 @@ Mengembangkan sistem informasi manajemen booking dan terapi berbasis web dengan 
    Membangun platform self-service yang comprehensive, di mana klien dapat mengakses informasi lengkap tentang layanan, profil terapis, jadwal ketersediaan, pricing, riwayat booking, catatan dari terapis, dan progress tracking secara mandiri melalui dashboard yang intuitif, sehingga meningkatkan transparansi, empowerment, dan kepuasan klien.
 
 6. **Menyediakan Dashboard Monitoring dan Business Intelligence:**
-   Mengembangkan dashboard admin dengan key performance indicators (KPIs) dan reporting system yang menyediakan insight operasional dan bisnis seperti jumlah booking, revenue, tingkat okupansi terapis, customer satisfaction, dan trend analysis dengan visualisasi chart yang mudah dipahami, untuk mendukung data-driven decision making dalam strategi pengembangan bisnis CUR-HEART.
+   Mengembangkan dashboard admin dengan key performance indicators (KPI) dan reporting system yang menyediakan insight operasional dan bisnis seperti jumlah booking, revenue, tingkat okupansi terapis, customer satisfaction, dan trend analysis dengan visualisasi chart yang mudah dipahami, untuk mendukung data-driven decision making dalam strategi pengembangan bisnis CUR-HEART.
 
 7. **Mengintegrasikan Sistem Pembayaran Digital:**
    Mengimplementasikan sistem pembayaran terintegrasi dengan multiple payment methods (transfer bank, credit/debit card, e-wallet, QRIS) melalui payment gateway, dengan automatic invoice generation, digital receipt, dan payment tracking, sehingga mengurangi friction dalam customer journey dan mempercepat proses payment verification.
