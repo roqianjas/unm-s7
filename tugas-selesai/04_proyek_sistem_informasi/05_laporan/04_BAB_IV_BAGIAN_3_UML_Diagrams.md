@@ -8,6 +8,104 @@ UML (Unified Modeling Language) adalah bahasa pemodelan standar yang digunakan u
 
 Use Case Diagram menggambarkan interaksi antara aktor (pengguna sistem) dengan sistem, serta fungsi-fungsi yang dapat dilakukan oleh masing-masing aktor.
 
+---
+
+**[GAMBAR 4.10 - Use Case Diagram (4 Actors, 30+ Use Cases)]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT COMPREHENSIVE USE CASE DIAGRAM]                  │
+│                                                             │
+│   CUR-HEART SYSTEM USE CASE DIAGRAM                        │
+│   UML Standard Notation                                    │
+│                                                             │
+│   ACTORS (4 Primary + 1 External):                         │
+│                                                             │
+│   🚶 Guest (Visitor)                                        │
+│   • View landing page / services                           │
+│   • View therapist profiles                                │
+│   • Register account                                       │
+│   • Login to system                                        │
+│                                                             │
+│   👤 Client (Customer)                                      │
+│   • ALL Guest capabilities +                               │
+│   • Make booking (includes: select service, therapist,     │
+│     schedule, payment)                                     │
+│   • View appointments                                      │
+│   • Reschedule/Cancel booking                              │
+│   • View progress tracker                                  │
+│   • Send messages (chat therapist)                         │
+│   • Submit reviews                                         │
+│   • Manage profile                                         │
+│                                                             │
+│   👨‍⚕️ Therapist (Staff)                                    │
+│   • View therapist dashboard                               │
+│   • Manage work schedule (availability)                    │
+│   • Block/Unblock dates                                    │
+│   • View appointments                                      │
+│   • Complete session (write therapy notes)                 │
+│   • Update client progress                                 │
+│   • Respond to messages                                    │
+│   • View reviews/ratings                                   │
+│   • Manage profile & credentials                           │
+│                                                             │
+│   👔 Admin (Administrator)                                  │
+│   • View admin dashboard                                   │
+│   • Manage users (CRUD all roles)                          │
+│   • Manage therapists (approve/suspend)                    │
+│   • Manage services (CRUD)                                 │
+│   • Manage bookings (view, modify, cancel)                 │
+│   • View financial reports                                 │
+│   • Manage system settings                                 │
+│   • View activity logs                                     │
+│   • Send notifications                                     │
+│                                                             │
+│   💳 Payment Gateway (External System)                      │
+│   • Process payment                                        │
+│   • Send payment confirmation                              │
+│   • Handle refunds                                         │
+│                                                             │
+│   KEY RELATIONSHIPS:                                        │
+│   • <<include>>: Mandatory sub-use case                    │
+│     (e.g., Make Booking includes Select Service)           │
+│   • <<extend>>: Optional use case                          │
+│     (e.g., Cancel Booking extends View Appointments)       │
+│   • Generalization: Inheritance                            │
+│     (e.g., Client inherits Guest capabilities)             │
+│                                                             │
+│   TOTAL USE CASES: 35+                                     │
+│   • Guest: 6 use cases                                     │
+│   • Client: 14 use cases (includes Guest)                  │
+│   • Therapist: 12 use cases                                │
+│   • Admin: 15 use cases                                    │
+│   • Payment Gateway: 3 interactions                        │
+│                                                             │
+│   CRITICAL FLOWS:                                           │
+│   1. Booking Flow (Client → System → Payment Gateway)      │
+│   2. Session Completion (Therapist → Therapy Notes)        │
+│   3. User Management (Admin → CRUD operations)             │
+│                                                             │
+│   Format: UML Use Case Diagram PNG                         │
+│   Recommended size: 2000x1400px (large, readable)          │
+│   Style: Standard UML notation dengan stick figures        │
+│   Colors: Actors (outside), System boundary (box),         │
+│           Use cases (ovals inside system)                   │
+│                                                             │
+│   File: assets/images/use-case-diagram-complete.png        │
+│   Tool: Visual Paradigm, draw.io, StarUML, atau Lucidchart │
+│                                                             │
+│   PRIORITY: P1 - CRITICAL                                   │
+│   Must show: All actors, system boundary, use cases,       │
+│              <<include>>/<<extend>> relationships clearly   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.10: Use Case Diagram lengkap sistem CUR-HEART dengan 4 actors, 35+ use cases, showing Guest/Client/Therapist/Admin interactions_
+
+---
+
 #### Aktor dalam Sistem CUR-HEART
 
 **1. Guest (Pengunjung)**
@@ -318,6 +416,101 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna sistem) dengan s
 ### B. Activity Diagram
 
 Activity Diagram menggambarkan alur kerja (workflow) dari proses bisnis dalam sistem. Berikut adalah activity diagram untuk proses-proses utama:
+
+---
+
+**[GAMBAR 4.11 - Activity Diagram: Booking Process Flow]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT ACTIVITY DIAGRAM - BOOKING FLOW]                 │
+│                                                             │
+│   CUR-HEART ACTIVITY DIAGRAM                               │
+│   Process: Client Booking Workflow (End-to-End)            │
+│                                                             │
+│   SWIMLANES (3 Actors):                                    │
+│   ┌──────────────────────────────────────────────┐         │
+│   │ CLIENT                                       │         │
+│   ├──────────────────────────────────────────────┤         │
+│   │ • Start (Login)                              │         │
+│   │ • Browse services                            │         │
+│   │ • Select service                             │         │
+│   │ • Select therapist                           │         │
+│   │ • Choose date & time                         │         │
+│   │ • Enter booking details                      │         │
+│   │ • Make payment                               │         │
+│   │ • Receive confirmation                       │         │
+│   │ • End                                        │         │
+│   └──────────────────────────────────────────────┘         │
+│                                                             │
+│   ┌──────────────────────────────────────────────┐         │
+│   │ SYSTEM                                       │         │
+│   ├──────────────────────────────────────────────┤         │
+│   │ • Validate login                             │         │
+│   │ • Fetch services list                        │         │
+│   │ • Validate service selection                 │         │
+│   │ • Filter therapists by service               │         │
+│   │ • Get therapist availability                 │         │
+│   │ • Check slot availability (Decision)         │         │
+│   │ • Create booking record                      │         │
+│   │ • Process payment (Payment Gateway)          │         │
+│   │ • Update booking status                      │         │
+│   │ • Send notification                          │         │
+│   │ • Generate confirmation                      │         │
+│   └──────────────────────────────────────────────┘         │
+│                                                             │
+│   ┌──────────────────────────────────────────────┐         │
+│   │ PAYMENT GATEWAY                              │         │
+│   ├──────────────────────────────────────────────┤         │
+│   │ • Receive payment request                    │         │
+│   │ • Validate payment method                    │         │
+│   │ • Process transaction                        │         │
+│   │ • Return payment result (Success/Failed)     │         │
+│   └──────────────────────────────────────────────┘         │
+│                                                             │
+│   KEY ELEMENTS:                                             │
+│   • ● (Start node) - Begin booking process                 │
+│   • ◉ (End node) - Booking confirmed / cancelled           │
+│   • ◇ (Decision) - Slot available? Payment success?        │
+│   • ▭ (Activity) - Each action/step                        │
+│   • → (Flow) - Sequential flow                             │
+│   • ━ (Fork/Join) - Parallel activities                    │
+│                                                             │
+│   DECISION POINTS (Critical):                               │
+│   1. "Is slot still available?"                            │
+│      YES → Proceed to booking                              │
+│      NO → Show error, re-select time                       │
+│                                                             │
+│   2. "Payment successful?"                                 │
+│      YES → Confirm booking, send notification              │
+│      NO → Cancel booking, show error                       │
+│                                                             │
+│   ALTERNATE FLOWS:                                          │
+│   • Slot unavailable → Loop back to date selection         │
+│   • Payment failed → Retry or cancel                       │
+│   • Validation error → Show error message                  │
+│                                                             │
+│   TOTAL ACTIVITIES: 20+ nodes                              │
+│   DECISION NODES: 3                                        │
+│   SWIMLANES: 3 (Client, System, Payment Gateway)           │
+│                                                             │
+│   Format: UML Activity Diagram (Swimlane) PNG              │
+│   Recommended size: 1800x2400px (vertical, detailed)       │
+│   Style: UML standard dengan swimlanes, clear labels       │
+│                                                             │
+│   File: assets/images/activity-diagram-booking-flow.png    │
+│   Tool: Visual Paradigm, draw.io, Lucidchart               │
+│                                                             │
+│   PRIORITY: P1 - CRITICAL                                   │
+│   Must show: Swimlanes, decision points, happy & sad paths │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.11: Activity Diagram untuk proses booking lengkap dengan 3 swimlanes (Client, System, Payment Gateway), showing decision points dan alternate flows_
+
+---
 
 #### 1. Activity Diagram: Proses Booking Layanan
 
@@ -770,6 +963,110 @@ Activity Diagram menggambarkan alur kerja (workflow) dari proses bisnis dalam si
 ### C. Sequence Diagram
 
 Sequence Diagram menggambarkan interaksi antar objek dalam sistem berdasarkan urutan waktu. Berikut adalah sequence diagram untuk use case kritis:
+
+---
+
+**[GAMBAR 4.12 - Sequence Diagram: Booking Process Interaction]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT SEQUENCE DIAGRAM - BOOKING PROCESS]              │
+│                                                             │
+│   CUR-HEART SEQUENCE DIAGRAM                               │
+│   Scenario: Client Makes Booking (Happy Path)              │
+│                                                             │
+│   OBJECTS/LIFELINES (7):                                   │
+│   1. Client (Actor)                                        │
+│   2. Browser (UI)                                          │
+│   3. BookingController (Laravel Controller)                │
+│   4. BookingService (Business Logic)                       │
+│   5. TherapistModel (Data Access)                          │
+│   6. PaymentGateway (External API)                         │
+│   7. Database (MySQL)                                      │
+│                                                             │
+│   MESSAGE FLOW (Sequential):                               │
+│                                                             │
+│   Client → Browser                                         │
+│   1. "Click Book Now"                                      │
+│                                                             │
+│   Browser → BookingController                              │
+│   2. "GET /booking/create"                                 │
+│   3. ← Return booking form                                 │
+│                                                             │
+│   Client → Browser                                         │
+│   4. "Fill form & Submit"                                  │
+│                                                             │
+│   Browser → BookingController                              │
+│   5. "POST /booking/store" (service_id, therapist_id,      │
+│       date, time)                                          │
+│                                                             │
+│   BookingController → BookingService                       │
+│   6. "validateBooking(data)"                               │
+│                                                             │
+│   BookingService → TherapistModel                          │
+│   7. "checkAvailability(therapist_id, date, time)"         │
+│                                                             │
+│   TherapistModel → Database                                │
+│   8. "SELECT * FROM therapist_availability WHERE..."       │
+│   9. ← Return availability data                            │
+│                                                             │
+│   (Decision: If available)                                 │
+│                                                             │
+│   BookingService → Database                                │
+│   10. "INSERT INTO bookings (...)"                         │
+│   11. ← Return booking_id                                  │
+│                                                             │
+│   BookingController → PaymentGateway                       │
+│   12. "createPayment(booking_id, amount)"                  │
+│   13. ← Return payment_url                                 │
+│                                                             │
+│   BookingController → Browser                              │
+│   14. ← Redirect to payment_url                            │
+│                                                             │
+│   Browser → PaymentGateway                                 │
+│   15. "Complete payment (Midtrans page)"                   │
+│   16. ← Payment success callback                           │
+│                                                             │
+│   PaymentGateway → BookingController                       │
+│   17. "POST /payment/callback" (transaction_status)        │
+│                                                             │
+│   BookingController → Database                             │
+│   18. "UPDATE bookings SET status='confirmed'"             │
+│   19. "INSERT INTO payments (...)"                         │
+│   20. ← Success                                            │
+│                                                             │
+│   BookingController → Browser                              │
+│   21. ← Return confirmation page                           │
+│                                                             │
+│   KEY FEATURES:                                             │
+│   • Synchronous calls (solid arrows →)                     │
+│   • Return messages (dashed arrows ←)                      │
+│   • Activation boxes (vertical rectangles on lifelines)    │
+│   • ALT frame (alternative flow for errors)                │
+│   • OPT frame (optional payment gateway interaction)       │
+│                                                             │
+│   TOTAL MESSAGES: 21                                       │
+│   DECISION POINTS: 1 (availability check)                  │
+│   EXTERNAL SYSTEMS: 1 (Payment Gateway)                    │
+│                                                             │
+│   Format: UML Sequence Diagram PNG                         │
+│   Recommended size: 2000x1600px (horizontal, wide)         │
+│   Style: UML standard dengan lifelines, activation boxes   │
+│                                                             │
+│   File: assets/images/sequence-diagram-booking.png         │
+│   Tool: Visual Paradigm, draw.io, PlantUML, Lucidchart    │
+│                                                             │
+│   PRIORITY: P1 - CRITICAL                                   │
+│   Must show: All objects, message sequence numbers,        │
+│              return messages, activation periods            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.12: Sequence Diagram untuk proses booking dengan 7 objects/lifelines, 21 messages, showing interaction between Client, Browser, Controllers, Services, Models, Payment Gateway, and Database_
+
+---
 
 #### 1. Sequence Diagram: User Authentication (Login)
 

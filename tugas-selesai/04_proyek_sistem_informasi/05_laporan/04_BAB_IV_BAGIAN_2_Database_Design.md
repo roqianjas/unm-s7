@@ -6,6 +6,94 @@ Sistem menggunakan relational database (MySQL) dengan schema yang dinormalisasi 
 
 ### Entity Relationship Diagram (ERD)
 
+---
+
+**[GAMBAR 4.9 - Entity Relationship Diagram (ERD) - 15 Tables]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT COMPREHENSIVE ERD - 15 ENTITIES]                 │
+│                                                             │
+│   CUR-HEART DATABASE SCHEMA (MySQL)                        │
+│   Normalization: Third Normal Form (3NF)                   │
+│                                                             │
+│   CORE ENTITIES (5):                                       │
+│   ┌──────────┐  ┌──────────┐  ┌──────────┐                │
+│   │  users   │  │therapists│  │ clients  │                │
+│   │  (auth)  │  │ (staff)  │  │ (cust.)  │                │
+│   └──────────┘  └──────────┘  └──────────┘                │
+│        │             │              │                       │
+│        └─────────────┴──────────────┘                      │
+│                      │                                      │
+│   ┌──────────┐  ┌───▼──────┐  ┌──────────┐                │
+│   │ services │  │ bookings │  │ payments │                │
+│   │ (master) │  │ (trans.) │  │ (fin.)   │                │
+│   └──────────┘  └──────────┘  └──────────┘                │
+│                                                             │
+│   SUPPORTING ENTITIES (10):                                │
+│   • therapist_services (many-to-many)                      │
+│   • therapist_availability (schedule)                      │
+│   • therapist_blocked_dates (exceptions)                   │
+│   • education (therapist qualifications)                   │
+│   • certifications (credentials)                           │
+│   • therapy_notes (session records)                        │
+│   • client_progress (tracking metrics)                     │
+│   • reviews (ratings & feedback)                           │
+│   • notifications (system alerts)                          │
+│   • activity_logs (audit trail)                            │
+│                                                             │
+│   KEY RELATIONSHIPS:                                        │
+│   users (1) ─→ (1) therapists/clients                      │
+│   therapists (M) ─→ (M) services (via pivot)               │
+│   bookings (M) ─→ (1) clients/therapists/services          │
+│   bookings (1) ─→ (1) payments                             │
+│   bookings (1) ─→ (1) therapy_notes                        │
+│   clients (1) ─→ (M) client_progress                       │
+│   therapists (1) ─→ (M) reviews                            │
+│                                                             │
+│   CRITICAL FEATURES:                                        │
+│   ✅ Foreign Key Constraints (data integrity)              │
+│   ✅ Soft Deletes (audit trail preservation)               │
+│   ✅ Indexing (performance optimization)                   │
+│   ✅ ENUM Fields (data validation)                         │
+│   ✅ JSON Fields (flexible metadata storage)               │
+│   ✅ Timestamps (created_at, updated_at)                   │
+│                                                             │
+│   TOTAL STATISTICS:                                         │
+│   • Total Tables: 15                                        │
+│   • Primary Keys: 15                                        │
+│   • Foreign Keys: 28                                        │
+│   • Unique Constraints: 8                                   │
+│   • Indexes: 35+                                            │
+│   • Estimated Row Count (1 year): 50,000+                  │
+│                                                             │
+│   NORMALIZATION COMPLIANCE:                                 │
+│   1NF: ✅ Atomic values, no repeating groups               │
+│   2NF: ✅ No partial dependencies                          │
+│   3NF: ✅ No transitive dependencies                       │
+│                                                             │
+│   Format: ERD Crow's Foot Notation PNG                     │
+│   Recommended size: 2400x1600px (large, detailed)          │
+│   Style: Professional dengan color-coded entity types      │
+│   Colors: Users (blue), Transactions (green),              │
+│           Supporting (yellow), System (gray)                │
+│                                                             │
+│   File: assets/images/erd-curheart-15-tables.png           │
+│   Tool: MySQL Workbench (recommended) atau Visual Paradigm │
+│   Alternative: dbdiagram.io, draw.io, Lucidchart           │
+│                                                             │
+│   PRIORITY: P1 - CRITICAL                                   │
+│   Must include: All 15 tables, relationships, cardinality,  │
+│                 primary/foreign keys clearly labeled        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.9: Entity Relationship Diagram (ERD) lengkap sistem CUR-HEART dengan 15 tables, 28 foreign keys, normalized to 3NF_
+
+---
+
 Berikut adalah Entity Relationship Diagram yang menggambarkan struktur database sistem:
 
 ```

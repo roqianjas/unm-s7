@@ -16,6 +16,58 @@ Dengan visi menjadi pusat terapi kejiwaan berbasis hypnotherapy modern dan spiri
 5. **Habit Reprogramming Therapy** - Mengubah kebiasaan negatif seperti merokok atau menunda pekerjaan
 6. **Phobia & Fear Management** - Menangani rasa takut berlebihan terhadap situasi tertentu
 
+---
+
+**[GAMBAR 4.1 - Organizational Structure CUR-HEART]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT ORGANIZATION CHART DIAGRAM]                      │
+│                                                             │
+│   Struktur Organisasi CUR-HEART:                           │
+│                                                             │
+│              ┌──────────────────────┐                      │
+│              │   OWNER/FOUNDER      │                      │
+│              │   (Dr. Sarah W.)     │                      │
+│              └──────────┬───────────┘                      │
+│                         │                                   │
+│         ┌───────────────┼───────────────┐                 │
+│         │               │               │                 │
+│   ┌─────┴──────┐  ┌────┴─────┐  ┌─────┴──────┐          │
+│   │HEAD         │  │OPERATIONS│  │ FINANCE &  │          │
+│   │THERAPIST    │  │MANAGER   │  │ ADMIN      │          │
+│   │(Michael A.) │  │          │  │            │          │
+│   └─────┬──────┘  └────┬─────┘  └─────┬──────┘          │
+│         │               │               │                 │
+│    ┌────┴────┐     ┌────┴────┐    ┌────┴────┐           │
+│    │TERAPIS  │     │CUSTOMER │    │FINANCE  │           │
+│    │(5 orang)│     │SERVICE  │    │STAFF    │           │
+│    │         │     │(2 orang)│    │(1 orang)│           │
+│    └─────────┘     └─────────┘    └─────────┘           │
+│                                                             │
+│   Total Team: 10 orang                                     │
+│   - 1 Owner/Founder                                        │
+│   - 1 Head Therapist                                       │
+│   - 5 Therapists                                           │
+│   - 1 Operations Manager                                   │
+│   - 2 Customer Service/Admin                               │
+│   - 1 Finance Staff                                        │
+│                                                             │
+│   Format: Organizational Chart PNG/JPG                     │
+│   Recommended size: 1200x800px                             │
+│   Style: Professional hierarchy diagram dengan foto/icon   │
+│                                                             │
+│   File: assets/images/organizational-structure-curheart.png│
+│   Tool: Microsoft Visio, Draw.io, PowerPoint, atau Canva  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.1: Struktur organisasi CUR-HEART menunjukkan hierarchy dari Owner hingga staff operasional dengan total 10 anggota tim_
+
+---
+
 Namun, pertumbuhan ini tidak diiringi dengan sistem operasional yang memadai. Proses booking yang masih manual melalui WhatsApp dan telepon, manajemen jadwal terapis menggunakan spreadsheet, serta dokumentasi sesi terapi dalam format kertas dan file Word terpisah menimbulkan berbagai inefficiency yang menghambat kualitas layanan dan potensi pertumbuhan bisnis.
 
 ### 4.1.2 Permasalahan yang Dihadapi
@@ -103,6 +155,69 @@ Sistem manual tidak dapat mengakomodasi growth:
 
 ---
 
+**[GAMBAR 4.2 - Current Business Process (As-Is)]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT AS-IS BUSINESS PROCESS FLOWCHART]                │
+│                                                             │
+│   PROSES BOOKING & TERAPI EXISTING (MANUAL):               │
+│                                                             │
+│   CLIENT                  ADMIN              THERAPIST      │
+│     │                       │                    │          │
+│     │ 1. Inquiry via        │                    │          │
+│     │    WhatsApp/Phone     │                    │          │
+│     ├──────────────────────>│                    │          │
+│     │                       │ 2. Check schedule  │          │
+│     │                       │    manually        │          │
+│     │                       ├───────────────────>│          │
+│     │                       │<───────────────────┤          │
+│     │                       │ 3. Confirm slot    │          │
+│     │<──────────────────────┤                    │          │
+│     │ 4. Transfer payment   │                    │          │
+│     ├──────────────────────>│                    │          │
+│     │                       │ 5. Manual verify   │          │
+│     │                       │    (hours/days)    │          │
+│     │<──────────────────────┤                    │          │
+│     │ 6. Attend session     │                    │          │
+│     ├───────────────────────┼───────────────────>│          │
+│     │                       │                    │ 7. Conduct│
+│     │                       │                    │   therapy │
+│     │                       │                    │ 8. Write  │
+│     │                       │                    │   notes   │
+│     │                       │                    │   manual  │
+│     │                       │                    │   (15 min)│
+│     │                       │<───────────────────┤          │
+│     │                       │ 9. Update Excel    │          │
+│     │                       │    (end of day)    │          │
+│     ▼                       ▼                    ▼          │
+│                                                             │
+│   Pain Points:                                              │
+│   ❌ 15-20 min/booking                                      │
+│   ❌ 8-10 double bookings/month                             │
+│   ❌ Manual payment verification (hours/days)               │
+│   ❌ 15 min documentation/session                           │
+│   ❌ No real-time data                                      │
+│   ❌ 40% conversion loss                                    │
+│                                                             │
+│   Total Process Time: ~45 minutes per booking              │
+│   Error Rate: 8-10% (scheduling conflicts)                 │
+│                                                             │
+│   Format: Process Flowchart PNG/JPG                        │
+│   Recommended size: 1400x1000px                            │
+│   Style: Swimlane diagram dengan pain points highlighted   │
+│                                                             │
+│   File: assets/images/as-is-business-process.png           │
+│   Tool: Draw.io, Lucidchart, Microsoft Visio               │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.2: Current business process (As-Is) menunjukkan alur booking manual dengan total waktu ~45 menit per booking dan error rate 8-10%_
+
+---
+
 ### 4.1.3 Tujuan Proyek
 
 Proyek ini memiliki tujuan utama dan tujuan khusus sebagai berikut:
@@ -162,6 +277,68 @@ Low Power
 - **Keep Satisfied:** Dosen Pembimbing (High Power, Medium Interest)
 - **Keep Informed:** Admin Staff, Klien (Medium Power, High Interest)
 - **Monitor:** Universitas (Low Power, Medium Interest)
+
+---
+
+**[GAMBAR 4.3 - Stakeholder Power-Interest Matrix]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT POWER-INTEREST MATRIX DIAGRAM]                   │
+│                                                             │
+│   STAKEHOLDER ANALYSIS - POWER vs INTEREST MATRIX          │
+│                                                             │
+│   HIGH POWER                                                │
+│        │                                                    │
+│        │  MANAGE CLOSELY      │  KEEP SATISFIED            │
+│        │  ┌────────────────┐  │  ┌───────────────┐        │
+│        │  │ • Owner        │  │  │ • Dosen       │        │
+│        │  │ • Terapis (5)  │  │  │   Pembimbing  │        │
+│        │  │ • Tim Dev (3)  │  │  │               │        │
+│        │  └────────────────┘  │  └───────────────┘        │
+│        │──────────────────────┼────────────────────        │
+│        │  MONITOR            │  KEEP INFORMED             │
+│        │  ┌────────────────┐  │  ┌───────────────┐        │
+│        │  │ • (None)       │  │  │ • Admin (2)   │        │
+│        │  │                │  │  │ • Klien       │        │
+│        │  │                │  │  │ • Universitas │        │
+│        │  └────────────────┘  │  └───────────────┘        │
+│   LOW POWER                                                 │
+│        └───────────────────────┼────────────────────>       │
+│              LOW INTEREST         HIGH INTEREST            │
+│                                                             │
+│   Quadrant Details:                                         │
+│   ┌─ MANAGE CLOSELY (7 stakeholders):                      │
+│   │  High engagement, weekly/daily communication           │
+│   │  Critical untuk project success                        │
+│   │                                                         │
+│   ┌─ KEEP SATISFIED (1 stakeholder):                       │
+│   │  Regular updates, involve in key decisions             │
+│   │  Academic oversight & quality assurance                │
+│   │                                                         │
+│   ┌─ KEEP INFORMED (3 stakeholder groups):                 │
+│   │  Regular communication, feedback loops                 │
+│   │  Important users & beneficiaries                       │
+│   │                                                         │
+│   └─ MONITOR (0 stakeholders):                             │
+│      Minimal communication, periodic updates               │
+│                                                             │
+│   Total Stakeholders: 11 groups, 23 individuals            │
+│                                                             │
+│   Format: 2x2 Matrix Diagram PNG/JPG                       │
+│   Recommended size: 1200x1000px                            │
+│   Style: Quadrant matrix dengan stakeholder positioning    │
+│                                                             │
+│   File: assets/images/stakeholder-power-interest-matrix.png│
+│   Tool: PowerPoint, Canva, Draw.io, atau Excel            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.3: Stakeholder Power-Interest Matrix menunjukkan positioning 11 stakeholder groups untuk strategi engagement yang tepat_
+
+---
 
 ### 4.1.5 Project Charter
 
@@ -330,6 +507,82 @@ Ruang lingkup proyek didefinisikan menggunakan **Work Breakdown Structure (WBS)*
 **Total Work Packages:** 36 level-3 packages  
 **Total Duration:** 77 hari kerja (11 minggu)
 
+---
+
+**[GAMBAR 4.4 - Work Breakdown Structure (WBS) CUR-HEART System]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT WBS HIERARCHICAL DIAGRAM - 3 LEVELS]             │
+│                                                             │
+│   Level 1: PROJECT (Root)                                  │
+│   CUR-HEART System Development                             │
+│   │                                                         │
+│   ├─ 1.1 Project Management (77 days)                      │
+│   │  ├─ 1.1.1 Project Planning (3 days)                    │
+│   │  ├─ 1.1.2 Progress Monitoring (77 days)                │
+│   │  ├─ 1.1.3 Risk Management (77 days)                    │
+│   │  └─ 1.1.4 Stakeholder Communication (77 days)          │
+│   │                                                         │
+│   ├─ 1.2 Requirements Analysis (11 days)                   │
+│   │  ├─ 1.2.1 Stakeholder Interviews (5 days)              │
+│   │  ├─ 1.2.2 Business Process Analysis (3 days)           │
+│   │  ├─ 1.2.3 Requirements Documentation (3 days)          │
+│   │  └─ 1.2.4 Requirements Validation (1 day)              │
+│   │                                                         │
+│   ├─ 1.3 System Design (14 days)                           │
+│   │  ├─ 1.3.1 Architecture Design (3 days)                 │
+│   │  ├─ 1.3.2 Database Design (4 days)                     │
+│   │  ├─ 1.3.3 UI/UX Design (5 days)                        │
+│   │  └─ 1.3.4 Security Design (2 days)                     │
+│   │                                                         │
+│   ├─ 1.4 Development (28 days)                             │
+│   │  ├─ 1.4.1 Environment Setup (2 days)                   │
+│   │  ├─ 1.4.2 Backend Development (10 days)                │
+│   │  ├─ 1.4.3 Frontend Development (12 days)               │
+│   │  ├─ 1.4.4 Integration (5 days)                         │
+│   │  └─ 1.4.5 Code Review (2 days)                         │
+│   │                                                         │
+│   ├─ 1.5 Testing (14 days)                                 │
+│   │  ├─ 1.5.1 Unit Testing (3 days)                        │
+│   │  ├─ 1.5.2 Integration Testing (3 days)                 │
+│   │  ├─ 1.5.3 Functional Testing (4 days)                  │
+│   │  ├─ 1.5.4 Usability Testing (3 days)                   │
+│   │  └─ 1.5.5 User Acceptance Testing (2 days)             │
+│   │                                                         │
+│   ├─ 1.6 Deployment (7 days)                               │
+│   │  ├─ 1.6.1 Production Setup (2 days)                    │
+│   │  ├─ 1.6.2 Application Deployment (2 days)              │
+│   │  ├─ 1.6.3 Go-Live (1 day)                              │
+│   │  └─ 1.6.4 User Training (2 days)                       │
+│   │                                                         │
+│   └─ 1.7 Documentation (21 days, parallel)                 │
+│      ├─ 1.7.1 Technical Documentation (7 days)             │
+│      ├─ 1.7.2 User Documentation (5 days)                  │
+│      ├─ 1.7.3 Capstone Report (14 days)                    │
+│      └─ 1.7.4 Presentation Materials (7 days)              │
+│                                                             │
+│   Summary:                                                  │
+│   • 7 Level-2 Phases                                       │
+│   • 36 Level-3 Work Packages                               │
+│   • 77 Working Days (11 weeks)                             │
+│   • Team: 3 Developers                                     │
+│                                                             │
+│   Format: Hierarchical Tree Diagram PNG                    │
+│   Recommended size: 1800x1400px                            │
+│   Style: Tree structure dengan color coding per phase      │
+│                                                             │
+│   File: assets/images/wbs-curheart-3-levels.png            │
+│   Tool: Microsoft Project, WBS Chart Pro, atau Draw.io     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.4: Work Breakdown Structure (WBS) 3-level proyek CUR-HEART dengan 7 phases, 36 work packages, durasi 77 hari_
+
+---
+
 **Scope Baseline:**
 
 Scope Statement yang approved pada tanggal 29 September 2024 mencakup:
@@ -405,6 +658,67 @@ Scope Statement yang approved pada tanggal 29 September 2024 mencakup:
 **Critical Path:** Initiation → Requirements → Design → Development → Integration → Testing → UAT → Deployment  
 **Current Progress:** 45% complete (Phase 1-3 done, Phase 4 in progress)
 
+---
+
+**[GAMBAR 4.5 - Gantt Chart Project Schedule (77 Working Days)]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT GANTT CHART - 11 WEEKS TIMELINE]                 │
+│                                                             │
+│   PROJECT: CUR-HEART System Development                    │
+│   Timeline: 16 Sep 2024 - 1 Dec 2024 (77 days)             │
+│                                                             │
+│   Task Name              Week                               │
+│                    1  2  3  4  5  6  7  8  9  10 11        │
+│   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━      │
+│   1. Initiation    ██                                       │
+│   M1: Approved     ⭐                                       │
+│                                                             │
+│   2. Requirements  ░░██████                                 │
+│   M2: SRS Done        ⭐                                    │
+│                                                             │
+│   3. Design           ░░░░████████                          │
+│   M3: Design Done            ⭐                             │
+│                                                             │
+│   4. Development            ░░░░██████████████████          │
+│   M4: Code Done                                  ⭐         │
+│                                                             │
+│   5. Testing                                ░░░░████████    │
+│   M5: UAT Pass                                      ⭐      │
+│                                                             │
+│   6. Deployment                                     ░░░░██  │
+│   M6: Go-Live                                           ⭐  │
+│                                                             │
+│   7. Documentation                      ████████████████    │
+│   M7: Complete                                          ⭐  │
+│   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━      │
+│                                                             │
+│   Legend:                                                   │
+│   ██ = Completed     ░░ = Dependency/Buffer                 │
+│   ⭐ = Milestone     (Dates shown)                          │
+│                                                             │
+│   Critical Path (Red): Init → Req → Design → Dev →         │
+│                       Integration → Test → Deploy           │
+│   Total Duration: 77 working days                          │
+│   Milestones: 7 major milestones                           │
+│   Dependencies: Sequential with some parallel tasks         │
+│                                                             │
+│   Format: Gantt Chart PNG/PDF                              │
+│   Recommended size: 1800x1000px                            │
+│   Style: Professional dengan critical path highlighted      │
+│                                                             │
+│   File: assets/images/gantt-chart-77-days.png              │
+│   Tool: Microsoft Project, GanttProject, atau Excel        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.5: Gantt Chart project schedule 77 hari kerja (11 minggu) dengan 7 phases, 7 milestones, dan critical path_
+
+---
+
 ### 4.2.3 Biaya Proyek (Cost Management)
 
 **Tabel 4.6 Budget Breakdown (Rp 5,000,000 Total)**
@@ -436,6 +750,63 @@ Scope Statement yang approved pada tanggal 29 September 2024 mencakup:
 | **Contingency Reserve** | | | | **1.000.000** | 20% | Critical |
 | | Buffer for unexpected costs | 1.000.000 | 1 | 1.000.000 | 20% | Buffer |
 | **TOTAL PROJECT BUDGET** | | | | **5.000.000** | 100% | |
+
+---
+
+**[GAMBAR 4.6 - Budget Allocation Breakdown (Rp 5,000,000)]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT BUDGET PIE CHART + BAR COMPARISON]               │
+│                                                             │
+│   TOTAL BUDGET: Rp 5,000,000                               │
+│                                                             │
+│   ┌─────────────────────────────────────────┐              │
+│   │   PIE CHART - Budget Allocation         │              │
+│   │                                         │              │
+│   │     Infrastructure 30%                  │              │
+│   │     Rp 1,500,000                        │              │
+│   │                                         │              │
+│   │     Third-Party Services 24%            │              │
+│   │     Rp 1,200,000                        │              │
+│   │                                         │              │
+│   │     Contingency 20%                     │              │
+│   │     Rp 1,000,000                        │              │
+│   │                                         │              │
+│   │     Dev Tools 16%                       │              │
+│   │     Rp 800,000                          │              │
+│   │                                         │              │
+│   │     Documentation 10%                   │              │
+│   │     Rp 500,000                          │              │
+│   └─────────────────────────────────────────┘              │
+│                                                             │
+│   BAR CHART - Spending by Category:                        │
+│   Infrastructure    ████████████████░░ 30%                 │
+│   Third-Party       ████████████░░░░░░ 24%                 │
+│   Contingency       ████████████░░░░░░ 20%                 │
+│   Dev Tools         ████████░░░░░░░░░░ 16%                 │
+│   Documentation     █████░░░░░░░░░░░░░ 10%                 │
+│                                                             │
+│   Key Highlights:                                          │
+│   • Largest: Infrastructure (Rp 1.5M - hosting, domain)    │
+│   • Critical: Third-Party APIs (Rp 1.2M - payment, email)  │
+│   • Buffer: Contingency 20% (Rp 1M reserved)               │
+│   • Free Tools: VS Code, MySQL, GitHub (Rp 0)              │
+│                                                             │
+│   Format: Combo Chart (Pie + Bar) PNG                      │
+│   Recommended size: 1600x900px                             │
+│   Style: Professional dengan color coding                  │
+│                                                             │
+│   File: assets/images/budget-allocation-5m.png             │
+│   Tool: Excel, Google Sheets, atau Canva                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.6: Budget allocation breakdown Rp 5 juta dengan pie chart alokasi 5 kategori dan bar chart perbandingan_
+
+---
 
 **Cost Performance Index (CPI):**
 
@@ -621,6 +992,70 @@ Untuk menghindari resource overallocation, beberapa tasks dilakukan parallel:
 **Risk Score Calculation:** Probability (%) × Impact (1-10)  
 **Priority Levels:** Critical (>3.5), High (2.0-3.5), Medium (1.0-2.0), Low (<1.0)
 
+---
+
+**[GAMBAR 4.7 - Risk Matrix (Probability vs Impact with 12 Risks)]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT RISK MATRIX - 12 IDENTIFIED RISKS]               │
+│                                                             │
+│   CUR-HEART PROJECT RISK MATRIX                            │
+│                                                             │
+│   IMPACT (Severity) →                                      │
+│   P                                                         │
+│   r                                                         │
+│   o    High    │                   │ R01      │ R03        │
+│   b  (40-60%)  │                   │ Scope    │ Resource   │
+│   a            │                   │ Creep    │ Unavail    │
+│   b            │─────────────────────────────────────────  │
+│   i  Medium    │          │ R02      │ R08      │ R10      │
+│   l  (30-40%)  │          │ Tech     │ Timeline │ User     │
+│   i            │          │ Complex  │ Delay    │ Adoption │
+│   t            │─────────────────────────────────────────  │
+│   y  Low       │ R09      │ R04 R11  │ R06      │ R07      │
+│      (10-30%)  │ Budget   │ Stake/   │ Perf     │ Security │
+│   ↓            │ Overrun  │ 3rdParty │ Issues   │ CRITICAL │
+│                └─────────────────────────────────────────  │
+│                  Low(1-3)  Medium(4-6) High(7-8) Crit(9-10)│
+│                         IMPACT (Severity) →                 │
+│                                                             │
+│   Color Coding:                                            │
+│   🔴 CRITICAL (Score > 3.5): R01 (4.0), R08 (2.8)          │
+│   🟡 HIGH (Score 2.0-3.5): R02, R05, R10, R12 (2.1-2.4)    │
+│   🟢 MEDIUM (Score 1.0-2.0): R03, R04, R06, R11 (1.5-2.1)  │
+│   ⚪ LOW (Score < 1.0): R07, R09 (1.0)                     │
+│                                                             │
+│   Top 3 Critical Risks:                                    │
+│   1. R01 - Scope Creep (4.0): MoSCoW prioritization        │
+│   2. R08 - Timeline Delay (2.8): Weekly monitoring         │
+│   3. R05 - Payment Integration (2.4): Early testing        │
+│                                                             │
+│   Risk Distribution:                                       │
+│   • Critical Priority: 2 risks (17%)                       │
+│   • High Priority: 4 risks (33%)                           │
+│   • Medium Priority: 4 risks (33%)                         │
+│   • Low Priority: 2 risks (17%)                            │
+│                                                             │
+│   Mitigation Status:                                       │
+│   ⚠️ Active Monitoring: 6 risks                            │
+│   ✅ Under Control: 6 risks                                │
+│                                                             │
+│   Format: Risk Matrix PNG dengan positioning 12 risks      │
+│   Recommended size: 1600x1000px                            │
+│   Style: Professional dengan color-coded quadrants         │
+│                                                             │
+│   File: assets/images/risk-matrix-12-risks.png             │
+│   Tool: PowerPoint, Excel, atau draw.io                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.7: Risk matrix probability vs impact dengan 12 identified risks, menunjukkan R01 (Scope Creep) dan R08 (Timeline Delay) sebagai critical priorities_
+
+---
+
 **Risk Response Strategies:**
 
 1. **Avoid:** Eliminate risk (e.g., choose proven technology instead of experimental)
@@ -657,6 +1092,70 @@ Risks di-review setiap weekly meeting:
 3. Two-way communication (feedback encouraged)
 4. Documented important decisions
 5. Escalation path for urgent issues
+
+---
+
+**[GAMBAR 4.8 - Communication Matrix Stakeholder]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT COMMUNICATION MATRIX VISUAL]                      │
+│                                                             │
+│   STAKEHOLDER COMMUNICATION MATRIX                          │
+│   CUR-HEART Project (8 Stakeholder Groups)                 │
+│                                                             │
+│   Frequency Axis (Vertical) vs Formality (Horizontal)      │
+│                                                             │
+│   Daily  │ Dev Team (3)                   │                │
+│          │ Discord/Standup                │                │
+│          │ ━━━━━━━━━━━━                   │                │
+│   Weekly │ Owner           │ Dosen        │                │
+│          │ Status Report   │ Consultation │                │
+│          │ ━━━━━━━━━      │ ━━━━━━━━━   │                │
+│          │                                │                │
+│ Bi-Week  │ Terapis (5)     │ Admin (2)    │                │
+│          │ WhatsApp Demo   │ Training     │                │
+│          │ ━━━━━━━━━      │ ━━━━━━━     │                │
+│          │                                │                │
+│ Monthly  │                                │ Universitas    │
+│          │                                │ Progress Report│
+│          │                                │ ━━━━━━━━━━━   │
+│ As-Need  │ Tech Mentor     │ Clients (10) │                │
+│          │ Code Review     │ UAT Testing  │                │
+│          │ ━━━━━━━━━      │ ━━━━━━━━━   │                │
+│          └───────────────────────────────────────────────  │
+│            Informal          Semi-Formal       Formal       │
+│                        FORMALITY →                          │
+│                                                             │
+│   Legend:                                                   │
+│   📧 Formal: Email, Reports, Documentation                  │
+│   💬 Informal: WhatsApp, Chat, Phone                        │
+│   🎯 Semi-Formal: Meetings, Presentations, Demos           │
+│                                                             │
+│   Communication Volume:                                     │
+│   • Highest: Dev Team (daily, 40 hrs/week)                 │
+│   • High: Owner + Dosen (weekly, 2-3 hrs/week)             │
+│   • Medium: Terapis + Admin (bi-weekly, 1 hr/week)         │
+│   • Low: Mentor, Clients, Univ (as-needed, <1 hr/week)     │
+│                                                             │
+│   Total Stakeholders: 26 individuals                        │
+│   • Internal Team: 3 (core developers)                      │
+│   • External: 23 (owner, faculty, users, mentors)          │
+│                                                             │
+│   Format: Communication Matrix Chart PNG                    │
+│   Recommended size: 1600x900px                             │
+│   Style: Professional quadrant/matrix dengan labels         │
+│                                                             │
+│   File: assets/images/communication-matrix.png              │
+│   Tool: PowerPoint, Excel, atau Canva                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.8: Communication matrix stakeholder menunjukkan frequency dan formality level untuk 8 stakeholder groups (26 individuals)_
+
+---
 
 **Communication Tools:**
 

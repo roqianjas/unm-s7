@@ -7,33 +7,6 @@ Penelitian dan pengembangan sistem informasi manajemen booking dan terapi CUR-HE
 
 ---
 
-**Tabel 3.4 Tahapan SDLC Waterfall - Detail Fase dan Aktivitas**
-
-| Fase | Durasi (Week) | Tujuan Utama | Key Activities | Tools & Methods | Deliverables/Output | Success Criteria | Challenges/Risks | Mitigation Strategy | Team Involvement |
-|------|-------------|-------------|---------------|----------------|-------------------|----------------|------------------|-------------------|------------------|
-| **1. Analisis Kebutuhan** | Week 1-2<br>(14 hari)<br>Sep 16-29, 2024 | • Memahami kebutuhan bisnis CUR-HEART<br>• Mengidentifikasi permasalahan sistem existing<br>• Mendefinisikan functional & non-functional requirements<br>• Establish baseline untuk project scope | **Studi Pendahuluan:**<br>• Literature review (health info systems, booking systems)<br>• Best practices study<br>• Regulatory compliance (UU PDP)<br>• Benchmarking competitor systems<br><br>**Observasi Lapangan:**<br>• 5-7 hari observasi di CUR-HEART<br>• Document As-Is processes<br>• Identify pain points & inefficiencies<br>• Time & motion study<br><br>**Wawancara:**<br>• Owner (1): Vision, KPIs, budget, success criteria<br>• Terapis (3): Workflow, challenges, desired features<br>• Admin (2): Current processes, issues, time-consuming tasks<br>• Sample Clients (5): Experience, expectations, privacy concerns<br><br>**Analisis Dokumen:**<br>• Review SOPs, forms, reports<br>• Analyze historical data (bookings, revenue)<br>• Identify data migration needs<br><br>**Requirements Elicitation:**<br>• Brainstorming sessions dengan stakeholders<br>• MoSCoW prioritization (Must/Should/Could/Won't have)<br>• Functional requirements definition<br>• Non-functional requirements (performance, security, usability) | **Tools:**<br>• Observation checklist<br>• Interview guide<br>• Audio recorder<br>• Camera (documentation)<br>• Spreadsheet (data analysis)<br>• Microsoft Visio/Draw.io (flowcharts)<br><br>**Methods:**<br>• Observasi partisipatif & non-partisipatif<br>• Semi-structured interviews<br>• Document analysis<br>• SWOT analysis<br>• GAP analysis (As-Is vs To-Be)<br>• MoSCoW prioritization | **Documents:**<br>✅ Software Requirements Specification (SRS) - 30 hal:<br>  - Executive summary<br>  - Current system analysis (As-Is)<br>  - Problem statement<br>  - Proposed system (To-Be)<br>  - Functional req (40+ requirements)<br>  - Non-functional req (15+ requirements)<br>  - Assumptions & constraints<br>  - Success criteria<br>✅ Feasibility Study - 10 hal (Technical, Economic, Operational)<br>✅ Business Process Flowcharts (5 processes)<br>✅ Interview Transcripts (11 files, 50 hal)<br>✅ Observation Notes (15 hal)<br>✅ Requirements Traceability Matrix | ✅ 100% stakeholder buy-in<br>✅ Clear, prioritized requirements list<br>✅ Signed-off SRS dari owner<br>✅ Feasibility approved (Technical: Yes, Economic: ROI 1,743%, Operational: Yes)<br>✅ Zero scope ambiguity<br>✅ Baseline documented | ⚠️ **Risks:**<br>• Scope creep (requests tambahan dari stakeholders)<br>• Ambiguous requirements<br>• Stakeholder availability (busy schedules)<br>• Limited access to confidential data<br>• Incomplete documentation existing<br><br>⚠️ **Challenges:**<br>• Balancing wants vs needs (prioritization)<br>• Getting honest feedback (social desirability bias)<br>• Time constraint (only 2 weeks) | ✅ Establish change control process (no scope changes after sign-off)<br>✅ Flexible interview scheduling<br>✅ Multiple data collection methods (triangulation)<br>✅ Clear prioritization framework (MoSCoW)<br>✅ Frequent communication dengan owner<br>✅ Document everything immediately<br>✅ NDA untuk confidential data access | **All team members:**<br>• Roki: Lead interviews dengan owner & therapists, document SRS<br>• Susanto: Conduct client interviews, UI/UX requirements gathering<br>• Fahruroji: Document analysis, data requirements analysis<br><br>**External:**<br>• 11 stakeholders interviewed<br>• Rani (supervisor): Methodology guidance |
-| **2. Desain Sistem** | Week 3-4<br>(14 hari)<br>Sep 30 - Oct 13, 2024 | • Merancang arsitektur sistem end-to-end<br>• Desain database schema (normalized)<br>• Desain UI/UX (wireframes & mockups)<br>• Create technical blueprint untuk development | **Arsitektur Sistem:**<br>• Define system architecture (monolithic Laravel MVC)<br>• Tech stack finalization (Laravel 10, PHP 8.2, MySQL 8, Tailwind 3.3)<br>• Deployment architecture (server req, hosting)<br>• Security architecture design<br><br>**Database Design:**<br>• Entity identification (16 core entities)<br>• ERD creation (relationships mapping)<br>• Normalization hingga 3NF<br>• Database schema design (tables, columns, data types, constraints)<br>• Laravel migration planning<br>• Indexing strategy<br><br>**UI/UX Design:**<br>• User personas development (3 personas)<br>• Information architecture (sitemap)<br>• Low-fidelity wireframes (15 key pages)<br>• High-fidelity mockups (41 pages) dalam Figma<br>• Design system (colors, typography, components)<br>• Responsive design untuk mobile/tablet/desktop<br>• Accessibility considerations (WCAG 2.1)<br><br>**UML Diagrams:**<br>• Use case diagrams (3 actors, 25 use cases)<br>• Activity diagrams (5 key processes)<br>• Sequence diagrams (10 critical scenarios)<br>• Class diagrams (optional)<br><br>**Security Design:**<br>• Authentication mechanism (Laravel Sanctum)<br>• Authorization (RBAC - Role-Based Access Control)<br>• Encryption strategy (Hashing passwords, encrypting PII)<br>• OWASP Top 10 mitigation strategies<br>• Audit logging design | **Tools:**<br>• MySQL Workbench (ERD & schema)<br>• Figma (UI/UX mockups)<br>• Balsamiq/Figma (wireframes)<br>• Draw.io/Visual Paradigm (UML)<br>• Microsoft Visio (architecture diagrams)<br>• Lucidchart<br><br>**Methods:**<br>• Entity-Relationship modeling<br>• Database normalization (1NF → 3NF)<br>• User-Centered Design (UCD)<br>• Design Thinking<br>• Heuristic evaluation<br>• Responsive web design principles<br>• Security by Design | **Documents:**<br>✅ System Design Document (SDD) - 40 hal:<br>  - System architecture diagram<br>  - Technology stack justification<br>  - Deployment architecture<br>✅ Database Design Document - 25 hal:<br>  - ERD (16 entities, 20 relationships)<br>  - Database schema (16 tables, 150+ columns)<br>  - Data dictionary (all entities, attributes, types)<br>  - Migration scripts planning<br>  - Indexing strategy (15 indexes)<br>✅ UI/UX Design Document - 50 hal:<br>  - User personas (3)<br>  - Wireframes (15 pages)<br>  - High-fidelity mockups (41 pages)<br>  - Design system documentation<br>  - User flow diagrams (10 flows)<br>✅ UML Diagrams Set:<br>  - Use case diagrams (25 use cases)<br>  - Activity diagrams (5)<br>  - Sequence diagrams (10)<br>✅ Security Design Document - 12 hal | ✅ Design approved by stakeholders (owner, 3 therapists, 2 admin)<br>✅ Database normalized (3NF achieved)<br>✅ UI mockups validated dengan 5 sample users<br>✅ Zero technical feasibility concerns<br>✅ Security measures cover OWASP Top 10<br>✅ Responsive design tested pada 5 screen sizes | ⚠️ **Risks:**<br>• Design-reality gap (design tidak implementable)<br>• Stakeholder disagreement pada UI design<br>• Over-engineering (too complex)<br>• Database performance issues (normalization vs performance trade-off)<br>• Design tidak user-friendly<br><br>⚠️ **Challenges:**<br>• Balancing aesthetics vs usability<br>• Designing untuk diverse user tech-savviness<br>• Fitting 41 mockups dalam 2 weeks | ✅ Early prototyping & validation<br>✅ Iterative design dengan stakeholder feedback loops<br>✅ Adhere to proven design patterns<br>✅ Indexing strategy untuk performance<br>✅ Usability testing pada mockups (not just coding)<br>✅ Time boxing (2 days wireframes, 8 days mockups, 2 days UML, 2 days review) | **Susanto (Lead UI/UX):**<br>• Wireframes, mockups, design system, user testing<br><br>**Fahruroji (Lead DB):**<br>• ERD, schema, normalization, migration planning<br><br>**Roki (Architect):**<br>• System architecture, UML, security design, tech stack decisions<br><br>**External:**<br>• 8 stakeholders (design review sessions)<br>• Rani: Technical review |
-| **3. Implementasi** | Week 5-8<br>(28 hari)<br>Oct 14 - Nov 10, 2024 | • Develop sistem sesuai design specifications<br>• Implement all functional requirements<br>• Code backend (Laravel) & frontend (Blade, Tailwind)<br>• Integrate payment gateway & email service<br>• Build working prototype | **Environment Setup:**<br>• Dev environment (XAMPP, VS Code, Git, Composer, NPM)<br>• Laravel 10 installation<br>• MySQL database setup<br>• Tailwind CSS configuration<br>• Version control (GitHub repo)<br><br>**Database Implementation:**<br>• Laravel migrations (16 tables)<br>• Eloquent models (16 models dengan relationships)<br>• Seeders untuk sample data (100+ records)<br><br>**Backend Development:**<br>• Authentication (register, login, logout, email verify, password reset)<br>• Models dengan relationships (hasMany, belongsTo, morphMany, etc.)<br>• Controllers (15 controllers, 120+ methods)<br>• CRUD operations untuk all entities<br>• Business logic (booking algorithm, availability check, payment processing)<br>• Middleware (auth, role-based access control)<br>• Service layer (complex business logic extraction)<br>• API endpoints (RESTful for payment webhooks)<br><br>**Frontend Development:**<br>• Blade layout templates (master layout, components)<br>• Public pages (landing, about, services, therapists, blog, contact - 10 pages)<br>• Auth pages (login, register, forgot/reset password - 4 pages)<br>• Client dashboard (7 main sections, 15 pages)<br>• Therapist dashboard (9 sections, 18 pages)<br>• Admin dashboard (8 sections, 16 pages)<br>• Tailwind CSS styling (responsive design)<br>• JavaScript interactivity (form validation, modals, AJAX, charts)<br><br>**Integration:**<br>• Midtrans payment gateway (sandbox testing)<br>• SMTP email service (notification emails)<br>• File uploads (profile photos, documents)<br><br>**Code Quality:**<br>• Code review & refactoring<br>• Laravel best practices<br>• Commenting & documentation<br>• Meaningful Git commits (150+ commits) | **Tools:**<br>• VS Code (IDE)<br>• XAMPP/Laragon (local server)<br>• Git/GitHub (version control)<br>• Composer (PHP dependencies)<br>• NPM (JS dependencies)<br>• Postman (API testing)<br>• Browser DevTools<br>• PHPMyAdmin (DB management)<br><br>**Technologies:**<br>• Laravel 10.x (Framework)<br>• PHP 8.2 (Language)<br>• MySQL 8.0 (Database)<br>• Tailwind CSS 3.3 (Styling)<br>• Blade (Templating)<br>• JavaScript (Interactivity)<br>• Chart.js (Visualizations)<br>• Midtrans SDK (Payment)<br>• Laravel Mail (Email) | **Deliverables:**<br>✅ **Working Web Application:**<br>  - 60+ pages (public, auth, dashboards)<br>  - 15 controllers<br>  - 16 models dengan relationships<br>  - 16 database tables dengan data<br>  - 120+ routes<br>  - Payment integration (functional in sandbox)<br>  - Email notifications (6 types)<br>  - Responsive UI (mobile, tablet, desktop)<br><br>✅ **Source Code:**<br>  - GitHub repository (private)<br>  - 150+ commits dengan meaningful messages<br>  - ~15,000 lines of code<br>  - Code organized (MVC pattern)<br><br>✅ **Documentation:**<br>  - Installation guide (5 hal)<br>  - Configuration guide (env variables)<br>  - Database seeding instructions<br>  - API integration docs (Midtrans) | ✅ 100% functional requirements implemented (40/40 requirements)<br>✅ Zero critical bugs in development<br>✅ Code passes Laravel best practices linting<br>✅ All CRUD operations working<br>✅ Payment integration successful (sandbox)<br>✅ Email delivery 100%<br>✅ Responsive on all devices<br>✅ Page load time <2 seconds (local) | ⚠️ **Risks:**<br>• Technical challenges (payment integration complexity)<br>• Time constraint (28 days untuk 60+ pages)<br>• Team member unavailability (illness, other commitments)<br>• Third-party service issues (payment gateway downtime)<br>• Scope creep (additional features requested)<br>• Merge conflicts (Git)<br><br>⚠️ **Challenges:**<br>• Complex booking algorithm (availability check, conflict detection)<br>• Real-time updates (booking conflicts)<br>• File upload handling (validation, storage)<br>• Responsive design consistency | ✅ Pair programming untuk complex features<br>✅ Daily standup meetings (15 min)<br>✅ Task breakdown (Trello/Jira board)<br>✅ Clear Git workflow (feature branches, PR reviews)<br>✅ Early payment gateway integration (Week 5, not Week 8)<br>✅ Code reviews before merge<br>✅ Frequent commits (prevent data loss)<br>✅ Backup database regularly<br>✅ Stub external services untuk testing (no dependency on uptime)<br>✅ Timebox features (stick to MVP, defer nice-to-haves) | **Roki (Backend Lead):**<br>• Auth, booking logic, payment, API, code review<br>• ~40% codebase<br><br>**Susanto (Frontend Lead):**<br>• All views (60+ pages), Tailwind styling, JavaScript<br>• ~35% codebase<br><br>**Fahruroji (Full-stack):**<br>• Database migrations/seeders, CRUD operations, dashboard features<br>• ~25% codebase<br><br>**Daily collaboration:**<br>• Daily standup (in-person/WhatsApp)<br>• Code reviews (GitHub PRs)<br>• Pair programming (complex features) |
-| **4. Pengujian** | Week 9-10<br>(14 hari)<br>Nov 11-24, 2024 | • Ensure sistem works correctly<br>• Memenuhi 100% functional requirements<br>• Bebas dari critical bugs<br>• Good user experience (SUS score ≥70)<br>• Ready for production deployment | **Unit Testing:**<br>• PHPUnit test cases (30+ tests)<br>• Test critical business logic (booking algorithm, payment calculation)<br>• Code coverage target: 70% untuk core modules<br><br>**Integration Testing:**<br>• Test module interactions<br>• Database operations (CRUD)<br>• API integrations (payment webhook, email sending)<br>• Auth flows<br><br>**Functional Testing:**<br>• Test plan dengan 150+ test cases<br>• Black-box testing semua fitur:<br>  - Authentication (register, login, email verify, password reset)<br>  - Booking flow (4 steps, all paths)<br>  - Therapist scheduling<br>  - Session documentation<br>  - Payment processing<br>  - Notifications (6 types)<br>  - Dashboard features<br>  - Admin operations<br>• Bug tracking (priority: Critical, Major, Minor, Trivial)<br><br>**Usability Testing:**<br>• Recruit 18 participants (5 therapists, 8 clients, 4 admin, 1 healthcare prof)<br>• Define 15 task scenarios<br>• 2-hour testing sessions (per participant)<br>• System Usability Scale (SUS) questionnaire<br>• Think-aloud protocol<br>• Screen recording & observation<br>• Post-test interviews<br><br>**Performance Testing:**<br>• Load testing (simulate 50 concurrent users)<br>• Page load time measurement<br>• Database query optimization (N+1 queries, indexing)<br><br>**Security Testing:**<br>• OWASP Top 10 vulnerability checks<br>• Penetration testing (basic)<br>• Authentication/authorization testing (privilege escalation attempts)<br><br>**UAT (User Acceptance Testing):**<br>• Real stakeholders test sistem dalam realistic scenarios<br>• Owner, 3 therapists, 2 admin, 5 clients<br>• Sign-off criteria: 90% functional requirements met | **Tools:**<br>• PHPUnit (unit tests)<br>• Laravel Dusk (browser tests)<br>• Postman (API testing)<br>• OWASP ZAP (security scanning)<br>• GTmetrix/Lighthouse (performance)<br>• Screen recorder (OBS Studio)<br>• Google Forms (SUS survey)<br>• Excel (test case tracking, bug log)<br><br>**Methods:**<br>• Test-Driven Development (TDD) principles<br>• Black-box testing<br>• Usability testing (SUS)<br>• Heuristic evaluation (Nielsen's 10 heuristics)<br>• Think-aloud protocol<br>• Bug triage (severity & priority) | **Documents:**<br>✅ Test Plan - 20 hal:<br>  - Test strategy<br>  - Test cases (150+ cases)<br>  - Test schedule<br>  - Roles & responsibilities<br>✅ Unit Test Results:<br>  - 30 test cases (100% pass)<br>  - Code coverage: 72%<br>✅ Functional Test Results - 15 hal:<br>  - Test execution log<br>  - Bug report (25 bugs found: 2 critical, 8 major, 15 minor)<br>  - Bug fixes log (100% critical & major fixed)<br>✅ Usability Test Results - 18 hal:<br>  - SUS scores (18 participants)<br>  - Average SUS: 78.5/100 (Good)<br>  - Task success rates (avg 92%)<br>  - Time on task analysis<br>  - Issues found & recommendations<br>✅ UAT Sign-off Document:<br>  - 90% requirements met (36/40 functional req)<br>  - Stakeholder signatures<br>  - Deferred features (4 requirements moved to Phase 2)<br>✅ Performance Test Results:<br>  - Page load times (avg 1.8s)<br>  - 50 concurrent users handled<br>✅ Security Test Results:<br>  - OWASP Top 10: All mitigated<br>  - No critical vulnerabilities | ✅ 100% critical & major bugs fixed<br>✅ SUS score ≥70 (Good usability) → **Achieved: 78.5**<br>✅ 90% functional requirements met → **Achieved: 90%**<br>✅ UAT sign-off dari owner<br>✅ Task success rate ≥80% → **Achieved: 92%**<br>✅ Zero critical security vulnerabilities<br>✅ Performance targets met (page load <2s, handle 50 users) | ⚠️ **Risks:**<br>• Late discovery of critical bugs (time untuk fix limited)<br>• UAT participant no-shows<br>• Usability issues requiring major UI changes<br>• Performance bottlenecks under load<br>• Security vulnerabilities requiring architectural changes<br><br>⚠️ **Challenges:**<br>• Writing comprehensive test cases (150+)<br>• Recruiting & scheduling 18 UAT participants<br>• Balancing bug fixing dengan testing (time constraint)<br>• Stakeholder expectations vs reality (feature completeness) | ✅ Early & continuous testing (start testing from Week 5, not just Week 9)<br>✅ Prioritize critical paths first (booking flow, payment)<br>✅ Flexible UAT scheduling (online option, multiple time slots)<br>✅ Incentivize UAT participants (gift vouchers)<br>✅ Bug triage (fix critical/major first, defer minor/trivial)<br>✅ Performance optimization early (database indexing, query optimization)<br>✅ Security best practices from Day 1 (not retrofitted)<br>✅ Realistic expectations dengan stakeholders (MVP mindset) | **All team members:**<br>• Unit testing: Each developer tests own code<br>• Functional testing: Cross-testing (Susanto tests Roki's code, vice versa)<br>• Usability testing: Susanto (lead coordinator), all observe sessions<br>• Bug fixing: Assigned by module ownership<br><br>**External:**<br>• 18 UAT participants<br>• Rani: Test plan review, UAT observation |
-| **5. Deployment** | Week 11<br>(7 hari)<br>Nov 25 - Dec 1, 2024 | • Deploy sistem ke production environment<br>• Migrate data dari old system (if any)<br>• Train users<br>• Go-live dengan minimal downtime<br>• Handover ke CUR-HEART | **Server Setup:**<br>• VPS procurement (Niagahoster/Dewaweb, 2 CPU, 4GB RAM)<br>• Server configuration (Ubuntu 22.04, Nginx, PHP 8.2, MySQL 8.0)<br>• SSL certificate installation (Let's Encrypt)<br>• Domain setup (cur-heart.id)<br>• Firewall configuration<br><br>**Application Deployment:**<br>• Git clone/pull dari repository<br>• Composer install (production dependencies)<br>• NPM build (production assets)<br>• Environment configuration (.env untuk production)<br>• Database migration ke production<br>• Seeding initial data (services, admin users)<br><br>**Data Migration (if needed):**<br>• Export data dari old system (Excel/manual records)<br>• Data cleaning & transformation<br>• Import ke new database<br>• Data validation<br><br>**Testing Production:**<br>• Smoke testing (critical paths)<br>• Payment gateway testing (production mode)<br>• Email deliverability testing<br><br>**Monitoring Setup:**<br>• Error logging (Laravel log viewer)<br>• Uptime monitoring (UptimeRobot)<br>• Performance monitoring (Google Analytics)<br><br>**User Training:**<br>• Training sessions untuk admin (2 jam)<br>• Training sessions untuk therapists (2 jam)<br>• User manual distribution<br>• Q&A sessions<br><br>**Go-Live:**<br>• Announce launch (email, WhatsApp)<br>• Monitor closely (first 24-48 hours)<br>• On-call support | **Tools:**<br>• VPS (Niagahoster/Dewaweb)<br>• SSH client (PuTTY, Terminal)<br>• FileZilla (SFTP)<br>• Nginx (Web server)<br>• Certbot (SSL)<br>• Git (deployment)<br>• UptimeRobot (monitoring)<br>• Google Analytics<br><br>**Methods:**<br>• CI/CD principles (manual deployment with checklist)<br>• Blue-green deployment (minimize downtime)<br>• Database migration (not full replacement)<br>• Phased rollout (soft launch → full launch) | **Deliverables:**<br>✅ **Production System:**<br>  - Live website (https://cur-heart.id)<br>  - SSL secured<br>  - Database populated dengan real data<br>  - Payment gateway (production mode)<br>  - Email service (production SMTP)<br><br>✅ **Documentation:**<br>  - User Manual (20 hal) - untuk clients, therapists, admin<br>  - Admin Manual (15 hal) - system administration<br>  - Deployment Checklist (completed)<br>  - Rollback Plan (5 hal)<br><br>✅ **Training Materials:**<br>  - Training slides (30 slides)<br>  - Video tutorials (5 videos, 20 min total)<br>  - Quick reference guides (cheat sheets)<br><br>✅ **Monitoring:**<br>  - Uptime monitoring dashboard<br>  - Error log access (for admin)<br>  - Google Analytics (traffic tracking)<br><br>✅ **Handover:**<br>  - Handover document (10 hal)<br>  - Admin credentials (secure transfer)<br>  - Support contact info<br>  - Maintenance contract (if any) | ✅ Sistem live dan accessible 24/7<br>✅ SSL valid<br>✅ Zero critical errors pada launch day<br>✅ Payment gateway functional (production)<br>✅ User training completed (100% attendance)<br>✅ Users can perform basic tasks independently<br>✅ Downtime during deployment <1 hour<br>✅ Uptime ≥99.5% (first month) | ⚠️ **Risks:**<br>• Server/hosting issues (downtime, misconfig)<br>• SSL certificate problems<br>• Payment gateway production mode issues<br>• Data migration errors (data loss, corruption)<br>• User resistance to change (prefer old manual system)<br>• Insufficient training (users can't use system)<br>• Launch day traffic spike (server overload)<br><br>⚠️ **Challenges:**<br>• Coordinating downtime window (minimal business impact)<br>• Training diverse tech-savviness users<br>• First-time deployment (learning curve) | ✅ Choose reliable hosting provider (uptime guarantee)<br>✅ Deployment rehearsal (staging environment first)<br>✅ Comprehensive deployment checklist<br>✅ Database backup before migration (rollback ready)<br>✅ Change management (communicate benefits to users)<br>✅ Hands-on training (not just slides)<br>✅ Record training sessions (video for later reference)<br>✅ Staggered user onboarding (not all at once)<br>✅ Hotline support (first week intensive support)<br>✅ Rollback plan ready (in case of critical issues) | **Roki (DevOps Lead):**<br>• Server setup, deployment, monitoring<br><br>**Fahruroji:**<br>• Database migration, data validation<br><br>**Susanto:**<br>• User manual creation, training materials, training sessions<br><br>**All team:**<br>• Training facilitation, launch day monitoring<br><br>**External:**<br>• CUR-HEART owner (go-live approval)<br>• 6 staff (training attendance) |
-| **6. Maintenance & Evaluasi** | Ongoing<br>(Post-launch)<br>Dec 2, 2024 onwards | • Ensure sistem berjalan stabil<br>• Fix bugs yang ditemukan post-launch<br>• User support<br>• Performance optimization<br>• Evaluate success vs KPIs | **Bug Monitoring & Fixing:**<br>• Monitor error logs daily (first week), weekly (after)<br>• User-reported bugs (support tickets)<br>• Prioritize & fix bugs<br>• Release patches/updates<br><br>**User Support:**<br>• Respond to support inquiries (email, WhatsApp)<br>• Troubleshooting assistance<br>• Feature clarification<br><br>**Performance Monitoring:**<br>• Monitor uptime, page load times<br>• Database performance (query optimization)<br>• Server resource utilization<br><br>**User Feedback Collection:**<br>• Post-launch survey (after 1 month)<br>• Usage analytics (Google Analytics)<br>• Feature requests log<br><br>**System Evaluation:**<br>• Compare actual vs expected KPIs<br>• Success metrics:<br>  - Booking volume (target: +50%)<br>  - Admin time savings (target: -60%)<br>  - User satisfaction (target: SUS ≥70)<br>  - Revenue impact (target: +30%)<br><br>**Enhancement Planning:**<br>• Prioritize feature requests untuk Phase 2<br>• Bug fixes roadmap<br>• Improvement recommendations | **Tools:**<br>• Laravel Log Viewer<br>• UptimeRobot (uptime)<br>• Google Analytics (usage)<br>• Support ticketing system (email, spreadsheet)<br>• Google Forms (feedback survey)<br><br>**Methods:**<br>• Agile maintenance (iterative patches)<br>• Data-driven decision making (analytics)<br>• Continuous improvement (Kaizen) | **Deliverables:**<br>✅ **Bug Fix Logs:**<br>  - Post-launch bugs (10 bugs in Month 1)<br>  - 100% critical bugs fixed within 24h<br>  - 90% major bugs fixed within 1 week<br><br>✅ **Support Reports:**<br>  - Support tickets resolved (20 tickets in Month 1, avg response time 4 hours)<br><br>✅ **Performance Reports:**<br>  - Uptime: 99.8% (Month 1)<br>  - Avg page load: 1.9s<br>  - 50 concurrent users peak: 35<br><br>✅ **User Feedback Reports:**<br>  - Post-launch survey (15 responses)<br>  - Satisfaction: 8.5/10<br>  - Feature requests (12 requests)<br><br>✅ **System Evaluation Report (BAB V):**<br>  - KPIs achieved vs target<br>  - Success stories<br>  - Lessons learned<br>  - Recommendations untuk improvements<br>  - Phase 2 roadmap | ✅ System uptime ≥99% (ongoing)<br>✅ Critical bugs fixed within 24h<br>✅ User satisfaction maintained (SUS ≥70)<br>✅ KPIs met or exceeded:<br>  - Booking volume: +65% (target: +50%) ✅<br>  - Admin time: -70% (target: -60%) ✅<br>  - Revenue: +42% (target: +30%) ✅<br>✅ Support tickets resolved timely (avg <8h) | ⚠️ **Risks:**<br>• Unexpected bugs in production (edge cases)<br>• User training gaps (repeated questions)<br>• Server issues (hosting provider problems)<br>• Feature creep (excessive enhancement requests)<br>• Team unavailable for support (graduation, other commitments)<br><br>⚠️ **Challenges:**<br>• Balancing support dengan other commitments (classes, other projects)<br>• Scope of "lifetime" support (how long?) | ✅ Comprehensive documentation (reduces support tickets)<br>✅ FAQ section (self-service)<br>✅ Define support SLA (e.g., 3 months intensive, then handover)<br>✅ Train CUR-HEART staff untuk basic troubleshooting<br>✅ Remote access tools (TeamViewer) untuk efficient support<br>✅ Version control (easy rollback if update causes issues)<br>✅ Handover plan (knowledge transfer to in-house IT atau external vendor) | **On-call support:**<br>• Roki: Backend issues, server issues<br>• Susanto: Frontend issues, UI bugs<br>• Fahruroji: Database issues, data problems<br><br>**Shared:**<br>• Support rotation (not overburden one person)<br>• Handover to CUR-HEART (Month 3) |
-
-**SDLC Summary:**
-
-| Metric | Total |
-|--------|-------|
-| **Total Duration** | 16 weeks (11 weeks development + 5 weeks documentation/presentation) |
-| **Total Person-Days** | 231 person-days (77 days × 3 developers) |
-| **Total Phases** | 6 main phases (+ 3 post-deployment phases) |
-| **Total Deliverables** | 35+ documents |
-| **Total Code** | ~15,000 lines |
-| **Total Pages (application)** | 60+ pages |
-| **Total Test Cases** | 150+ |
-| **Total Participants (research)** | 38 individuals |
-| **Success Rate** | 90% functional requirements met, SUS 78.5/100, UAT approved |
-
----
-
 **[GAMBAR 3.1 - Flowchart Metodologi Penelitian]**
 
 ```
@@ -43,7 +16,7 @@ Penelitian dan pengembangan sistem informasi manajemen booking dan terapi CUR-HE
 │                                                             │
 │   Flow (top to bottom):                                    │
 │                                                             │
-│   START (Aug 19, 2024)                                     │
+│   START (Sep 16, 2024)                                     │
 │     ↓                                                       │
 │   ┌────────────────────────────────────────────────┐       │
 │   │ 1. IDENTIFIKASI MASALAH (Week 1)               │       │
@@ -63,8 +36,8 @@ Penelitian dan pengembangan sistem informasi manajemen booking dan terapi CUR-HE
 │     ↓                                                       │
 │   ┌────────────────────────────────────────────────┐       │
 │   │ 3. ANALISIS KEBUTUHAN (Week 2)                 │       │
-│   │    - Functional requirements (40 req)          │       │
-│   │    - Non-functional requirements (15 req)      │       │
+│   │    - Functional requirements (40+ req)         │       │
+│   │    - Non-functional requirements (15+ req)     │       │
 │   │    - Feasibility study (Tech, Econ, Ops)       │       │
 │   │    Output: SRS Document (30 hal)               │       │
 │   └────────────────────────────────────────────────┘       │
@@ -116,13 +89,117 @@ Penelitian dan pengembangan sistem informasi manajemen booking dan terapi CUR-HE
 │                                                             │
 │   Format: Flowchart dengan decision points                 │
 │   Recommended size: 1000x1600px (portrait)                 │
+│   Style: Professional diagram dengan icon per fase         │
 │                                                             │
 │   File: assets/images/research-methodology-flowchart.png   │
+│   Tool: Draw.io, Lucidchart, atau Microsoft Visio          │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 3.1: Flowchart metodologi penelitian yang menggambarkan tahapan sistematis dari identifikasi masalah hingga evaluasi sistem menggunakan Waterfall SDLC_
+_Gambar 3.1: Flowchart metodologi penelitian yang menggambarkan tahapan sistematis dari identifikasi masalah hingga evaluasi sistem menggunakan Waterfall SDLC dengan 8 fase utama_
+
+---
+
+**Tabel 3.4 Tahapan SDLC Waterfall - Detail Fase dan Aktivitas**
+
+| Fase | Durasi (Week) | Tujuan Utama | Key Activities | Tools & Methods | Deliverables/Output | Success Criteria | Challenges/Risks | Mitigation Strategy | Team Involvement |
+|------|-------------|-------------|---------------|----------------|-------------------|----------------|------------------|-------------------|------------------|
+| **1. Analisis Kebutuhan** | Week 1-2<br>(14 hari)<br>Sep 16-29, 2024 | • Memahami kebutuhan bisnis CUR-HEART<br>• Mengidentifikasi permasalahan sistem existing<br>• Mendefinisikan functional & non-functional requirements<br>• Establish baseline untuk project scope | **Studi Pendahuluan:**<br>• Literature review (health info systems, booking systems)<br>• Best practices study<br>• Regulatory compliance (UU PDP)<br>• Benchmarking competitor systems<br><br>**Observasi Lapangan:**<br>• 5-7 hari observasi di CUR-HEART<br>• Document As-Is processes<br>• Identify pain points & inefficiencies<br>• Time & motion study<br><br>**Wawancara:**<br>• Owner (1): Vision, KPIs, budget, success criteria<br>• Terapis (3): Workflow, challenges, desired features<br>• Admin (2): Current processes, issues, time-consuming tasks<br>• Sample Clients (5): Experience, expectations, privacy concerns<br><br>**Analisis Dokumen:**<br>• Review SOPs, forms, reports<br>• Analyze historical data (bookings, revenue)<br>• Identify data migration needs<br><br>**Requirements Elicitation:**<br>• Brainstorming sessions dengan stakeholders<br>• MoSCoW prioritization (Must/Should/Could/Won't have)<br>• Functional requirements definition<br>• Non-functional requirements (performance, security, usability) | **Tools:**<br>• Observation checklist<br>• Interview guide<br>• Audio recorder<br>• Camera (documentation)<br>• Spreadsheet (data analysis)<br>• Microsoft Visio/Draw.io (flowcharts)<br><br>**Methods:**<br>• Observasi partisipatif & non-partisipatif<br>• Semi-structured interviews<br>• Document analysis<br>• SWOT analysis<br>• GAP analysis (As-Is vs To-Be)<br>• MoSCoW prioritization | **Documents:**<br>✅ Software Requirements Specification (SRS) - 30 hal:<br>  - Executive summary<br>  - Current system analysis (As-Is)<br>  - Problem statement<br>  - Proposed system (To-Be)<br>  - Functional req (40+ requirements)<br>  - Non-functional req (15+ requirements)<br>  - Assumptions & constraints<br>  - Success criteria<br>✅ Feasibility Study - 10 hal (Technical, Economic, Operational)<br>✅ Business Process Flowcharts (5 processes)<br>✅ Interview Transcripts (11 files, 50 hal)<br>✅ Observation Notes (15 hal)<br>✅ Requirements Traceability Matrix | ✅ 100% stakeholder buy-in<br>✅ Clear, prioritized requirements list<br>✅ Signed-off SRS dari owner<br>✅ Feasibility approved (Technical: Yes, Economic: ROI 1,743%, Operational: Yes)<br>✅ Zero scope ambiguity<br>✅ Baseline documented | ⚠️ **Risks:**<br>• Scope creep (requests tambahan dari stakeholders)<br>• Ambiguous requirements<br>• Stakeholder availability (busy schedules)<br>• Limited access to confidential data<br>• Incomplete documentation existing<br><br>⚠️ **Challenges:**<br>• Balancing wants vs needs (prioritization)<br>• Getting honest feedback (social desirability bias)<br>• Time constraint (only 2 weeks) | ✅ Establish change control process (no scope changes after sign-off)<br>✅ Flexible interview scheduling<br>✅ Multiple data collection methods (triangulation)<br>✅ Clear prioritization framework (MoSCoW)<br>✅ Frequent communication dengan owner<br>✅ Document everything immediately<br>✅ NDA untuk confidential data access | **All team members:**<br>• Roki: Lead interviews dengan owner & therapists, document SRS<br>• Susanto: Conduct client interviews, UI/UX requirements gathering<br>• Fahruroji: Document analysis, data requirements analysis<br><br>**External:**<br>• 11 stakeholders interviewed<br>• Rani (supervisor): Methodology guidance |
+| **2. Desain Sistem** | Week 3-4<br>(14 hari)<br>Sep 30 - Oct 13, 2024 | • Merancang arsitektur sistem end-to-end<br>• Desain database schema (normalized)<br>• Desain UI/UX (wireframes & mockups)<br>• Create technical blueprint untuk development | **Arsitektur Sistem:**<br>• Define system architecture (monolithic Laravel MVC)<br>• Tech stack finalization (Laravel 10, PHP 8.2, MySQL 8, Tailwind 3.3)<br>• Deployment architecture (server req, hosting)<br>• Security architecture design<br><br>**Database Design:**<br>• Entity identification (16 core entities)<br>• ERD creation (relationships mapping)<br>• Normalization hingga 3NF<br>• Database schema design (tables, columns, data types, constraints)<br>• Laravel migration planning<br>• Indexing strategy<br><br>**UI/UX Design:**<br>• User personas development (3 personas)<br>• Information architecture (sitemap)<br>• Low-fidelity wireframes (15 key pages)<br>• High-fidelity mockups (41 pages) dalam Figma<br>• Design system (colors, typography, components)<br>• Responsive design untuk mobile/tablet/desktop<br>• Accessibility considerations (WCAG 2.1)<br><br>**UML Diagrams:**<br>• Use case diagrams (3 actors, 25 use cases)<br>• Activity diagrams (5 key processes)<br>• Sequence diagrams (10 critical scenarios)<br>• Class diagrams (optional)<br><br>**Security Design:**<br>• Authentication mechanism (Laravel Sanctum)<br>• Authorization (RBAC - Role-Based Access Control)<br>• Encryption strategy (Hashing passwords, encrypting PII)<br>• OWASP Top 10 mitigation strategies<br>• Audit logging design | **Tools:**<br>• MySQL Workbench (ERD & schema)<br>• Figma (UI/UX mockups)<br>• Balsamiq/Figma (wireframes)<br>• Draw.io/Visual Paradigm (UML)<br>• Microsoft Visio (architecture diagrams)<br>• Lucidchart<br><br>**Methods:**<br>• Entity-Relationship modeling<br>• Database normalization (1NF → 3NF)<br>• User-Centered Design (UCD)<br>• Design Thinking<br>• Heuristic evaluation<br>• Responsive web design principles<br>• Security by Design | **Documents:**<br>✅ System Design Document (SDD) - 40 hal:<br>  - System architecture diagram<br>  - Technology stack justification<br>  - Deployment architecture<br>✅ Database Design Document - 25 hal:<br>  - ERD (16 entities, 20 relationships)<br>  - Database schema (16 tables, 150+ columns)<br>  - Data dictionary (all entities, attributes, types)<br>  - Migration scripts planning<br>  - Indexing strategy (15 indexes)<br>✅ UI/UX Design Document - 50 hal:<br>  - User personas (3)<br>  - Wireframes (15 pages)<br>  - High-fidelity mockups (41 pages)<br>  - Design system documentation<br>  - User flow diagrams (10 flows)<br>✅ UML Diagrams Set:<br>  - Use case diagrams (25 use cases)<br>  - Activity diagrams (5)<br>  - Sequence diagrams (10)<br>✅ Security Design Document - 12 hal | ✅ Design approved by stakeholders (owner, 3 therapists, 2 admin)<br>✅ Database normalized (3NF achieved)<br>✅ UI mockups validated dengan 5 sample users<br>✅ Zero technical feasibility concerns<br>✅ Security measures cover OWASP Top 10<br>✅ Responsive design tested pada 5 screen sizes | ⚠️ **Risks:**<br>• Design-reality gap (design tidak implementable)<br>• Stakeholder disagreement pada UI design<br>• Over-engineering (too complex)<br>• Database performance issues (normalization vs performance trade-off)<br>• Design tidak user-friendly<br><br>⚠️ **Challenges:**<br>• Balancing aesthetics vs usability<br>• Designing untuk diverse user tech-savviness<br>• Fitting 41 mockups dalam 2 weeks | ✅ Early prototyping & validation<br>✅ Iterative design dengan stakeholder feedback loops<br>✅ Adhere to proven design patterns<br>✅ Indexing strategy untuk performance<br>✅ Usability testing pada mockups (not just coding)<br>✅ Time boxing (2 days wireframes, 8 days mockups, 2 days UML, 2 days review) | **Susanto (Lead UI/UX):**<br>• Wireframes, mockups, design system, user testing<br><br>**Fahruroji (Lead DB):**<br>• ERD, schema, normalization, migration planning<br><br>**Roki (Architect):**<br>• System architecture, UML, security design, tech stack decisions<br><br>**External:**<br>• 8 stakeholders (design review sessions)<br>• Rani: Technical review |
+| **3. Implementasi** | Week 5-8<br>(28 hari)<br>Oct 14 - Nov 10, 2024 | • Develop sistem sesuai design specifications<br>• Implement all functional requirements<br>• Code backend (Laravel) & frontend (Blade, Tailwind)<br>• Integrate payment gateway & email service<br>• Build working prototype | **Environment Setup:**<br>• Dev environment (XAMPP, VS Code, Git, Composer, NPM)<br>• Laravel 10 installation<br>• MySQL database setup<br>• Tailwind CSS configuration<br>• Version control (GitHub repo)<br><br>**Database Implementation:**<br>• Laravel migrations (16 tables)<br>• Eloquent models (16 models dengan relationships)<br>• Seeders untuk sample data (100+ records)<br><br>**Backend Development:**<br>• Authentication (register, login, logout, email verify, password reset)<br>• Models dengan relationships (hasMany, belongsTo, morphMany, etc.)<br>• Controllers (15 controllers, 120+ methods)<br>• CRUD operations untuk all entities<br>• Business logic (booking algorithm, availability check, payment processing)<br>• Middleware (auth, role-based access control)<br>• Service layer (complex business logic extraction)<br>• API endpoints (RESTful for payment webhooks)<br><br>**Frontend Development:**<br>• Blade layout templates (master layout, components)<br>• Public pages (landing, about, services, therapists, blog, contact - 10 pages)<br>• Auth pages (login, register, forgot/reset password - 4 pages)<br>• Client dashboard (7 main sections, 15 pages)<br>• Therapist dashboard (9 sections, 18 pages)<br>• Admin dashboard (8 sections, 16 pages)<br>• Tailwind CSS styling (responsive design)<br>• JavaScript interactivity (form validation, modals, AJAX, charts)<br><br>**Integration:**<br>• Midtrans payment gateway (sandbox testing)<br>• SMTP email service (notification emails)<br>• File uploads (profile photos, documents)<br><br>**Code Quality:**<br>• Code review & refactoring<br>• Laravel best practices<br>• Commenting & documentation<br>• Meaningful Git commits (150+ commits) | **Tools:**<br>• VS Code (IDE)<br>• XAMPP/Laragon (local server)<br>• Git/GitHub (version control)<br>• Composer (PHP dependencies)<br>• NPM (JS dependencies)<br>• Postman (API testing)<br>• Browser DevTools<br>• PHPMyAdmin (DB management)<br><br>**Technologies:**<br>• Laravel 10.x (Framework)<br>• PHP 8.2 (Language)<br>• MySQL 8.0 (Database)<br>• Tailwind CSS 3.3 (Styling)<br>• Blade (Templating)<br>• JavaScript (Interactivity)<br>• Chart.js (Visualizations)<br>• Midtrans SDK (Payment)<br>• Laravel Mail (Email) | **Deliverables:**<br>✅ **Working Web Application:**<br>  - 60+ pages (public, auth, dashboards)<br>  - 15 controllers<br>  - 16 models dengan relationships<br>  - 16 database tables dengan data<br>  - 120+ routes<br>  - Payment integration (functional in sandbox)<br>  - Email notifications (6 types)<br>  - Responsive UI (mobile, tablet, desktop)<br><br>✅ **Source Code:**<br>  - GitHub repository (private)<br>  - 150+ commits dengan meaningful messages<br>  - ~15,000 lines of code<br>  - Code organized (MVC pattern)<br><br>✅ **Documentation:**<br>  - Installation guide (5 hal)<br>  - Configuration guide (env variables)<br>  - Database seeding instructions<br>  - API integration docs (Midtrans) | ✅ 100% functional requirements implemented (40/40 requirements)<br>✅ Zero critical bugs in development<br>✅ Code passes Laravel best practices linting<br>✅ All CRUD operations working<br>✅ Payment integration successful (sandbox)<br>✅ Email delivery 100%<br>✅ Responsive on all devices<br>✅ Page load time <2 seconds (local) | ⚠️ **Risks:**<br>• Technical challenges (payment integration complexity)<br>• Time constraint (28 days untuk 60+ pages)<br>• Team member unavailability (illness, other commitments)<br>• Third-party service issues (payment gateway downtime)<br>• Scope creep (additional features requested)<br>• Merge conflicts (Git)<br><br>⚠️ **Challenges:**<br>• Complex booking algorithm (availability check, conflict detection)<br>• Real-time updates (booking conflicts)<br>• File upload handling (validation, storage)<br>• Responsive design consistency | ✅ Pair programming untuk complex features<br>✅ Daily standup meetings (15 min)<br>✅ Task breakdown (Trello/Jira board)<br>✅ Clear Git workflow (feature branches, PR reviews)<br>✅ Early payment gateway integration (Week 5, not Week 8)<br>✅ Code reviews before merge<br>✅ Frequent commits (prevent data loss)<br>✅ Backup database regularly<br>✅ Stub external services untuk testing (no dependency on uptime)<br>✅ Timebox features (stick to MVP, defer nice-to-haves) | **Roki (Backend Lead):**<br>• Auth, booking logic, payment, API, code review<br>• ~40% codebase<br><br>**Susanto (Frontend Lead):**<br>• All views (60+ pages), Tailwind styling, JavaScript<br>• ~35% codebase<br><br>**Fahruroji (Full-stack):**<br>• Database migrations/seeders, CRUD operations, dashboard features<br>• ~25% codebase<br><br>**Daily collaboration:**<br>• Daily standup (in-person/WhatsApp)<br>• Code reviews (GitHub PRs)<br>• Pair programming (complex features) |
+| **4. Pengujian** | Week 9-10<br>(14 hari)<br>Nov 11-24, 2024 | • Ensure sistem works correctly<br>• Memenuhi 100% functional requirements<br>• Bebas dari critical bugs<br>• Good user experience (SUS score ≥70)<br>• Ready for production deployment | **Unit Testing:**<br>• PHPUnit test cases (30+ tests)<br>• Test critical business logic (booking algorithm, payment calculation)<br>• Code coverage target: 70% untuk core modules<br><br>**Integration Testing:**<br>• Test module interactions<br>• Database operations (CRUD)<br>• API integrations (payment webhook, email sending)<br>• Auth flows<br><br>**Functional Testing:**<br>• Test plan dengan 150+ test cases<br>• Black-box testing semua fitur:<br>  - Authentication (register, login, email verify, password reset)<br>  - Booking flow (4 steps, all paths)<br>  - Therapist scheduling<br>  - Session documentation<br>  - Payment processing<br>  - Notifications (6 types)<br>  - Dashboard features<br>  - Admin operations<br>• Bug tracking (priority: Critical, Major, Minor, Trivial)<br><br>**Usability Testing:**<br>• Recruit 18 participants (5 therapists, 8 clients, 4 admin, 1 healthcare prof)<br>• Define 15 task scenarios<br>• 2-hour testing sessions (per participant)<br>• System Usability Scale (SUS) questionnaire<br>• Think-aloud protocol<br>• Screen recording & observation<br>• Post-test interviews<br><br>**Performance Testing:**<br>• Load testing (simulate 50 concurrent users)<br>• Page load time measurement<br>• Database query optimization (N+1 queries, indexing)<br><br>**Security Testing:**<br>• OWASP Top 10 vulnerability checks<br>• Penetration testing (basic)<br>• Authentication/authorization testing (privilege escalation attempts)<br><br>**UAT (User Acceptance Testing):**<br>• Real stakeholders test sistem dalam realistic scenarios<br>• Owner, 3 therapists, 2 admin, 5 clients<br>• Sign-off criteria: 90% functional requirements met | **Tools:**<br>• PHPUnit (unit tests)<br>• Laravel Dusk (browser tests)<br>• Postman (API testing)<br>• OWASP ZAP (security scanning)<br>• GTmetrix/Lighthouse (performance)<br>• Screen recorder (OBS Studio)<br>• Google Forms (SUS survey)<br>• Excel (test case tracking, bug log)<br><br>**Methods:**<br>• Test-Driven Development (TDD) principles<br>• Black-box testing<br>• Usability testing (SUS)<br>• Heuristic evaluation (Nielsen's 10 heuristics)<br>• Think-aloud protocol<br>• Bug triage (severity & priority) | **Documents:**<br>✅ Test Plan - 20 hal:<br>  - Test strategy<br>  - Test cases (150+ cases)<br>  - Test schedule<br>  - Roles & responsibilities<br>✅ Unit Test Results:<br>  - 30 test cases (100% pass)<br>  - Code coverage: 72%<br>✅ Functional Test Results - 15 hal:<br>  - Test execution log<br>  - Bug report (25 bugs found: 2 critical, 8 major, 15 minor)<br>  - Bug fixes log (100% critical & major fixed)<br>✅ Usability Test Results - 18 hal:<br>  - SUS scores (18 participants)<br>  - Average SUS: 78.5/100 (Good)<br>  - Task success rates (avg 92%)<br>  - Time on task analysis<br>  - Issues found & recommendations<br>✅ UAT Sign-off Document:<br>  - 90% requirements met (36/40 functional req)<br>  - Stakeholder signatures<br>  - Deferred features (4 requirements moved to Phase 2)<br>✅ Performance Test Results:<br>  - Page load times (avg 1.8s)<br>  - 50 concurrent users handled<br>✅ Security Test Results:<br>  - OWASP Top 10: All mitigated<br>  - No critical vulnerabilities | ✅ 100% critical & major bugs fixed<br>✅ SUS score ≥70 (Good usability) → **Achieved: 78.5**<br>✅ 90% functional requirements met → **Achieved: 90%**<br>✅ UAT sign-off dari owner<br>✅ Task success rate ≥80% → **Achieved: 92%**<br>✅ Zero critical security vulnerabilities<br>✅ Performance targets met (page load <2s, handle 50 users) | ⚠️ **Risks:**<br>• Late discovery of critical bugs (time untuk fix limited)<br>• UAT participant no-shows<br>• Usability issues requiring major UI changes<br>• Performance bottlenecks under load<br>• Security vulnerabilities requiring architectural changes<br><br>⚠️ **Challenges:**<br>• Writing comprehensive test cases (150+)<br>• Recruiting & scheduling 18 UAT participants<br>• Balancing bug fixing dengan testing (time constraint)<br>• Stakeholder expectations vs reality (feature completeness) | ✅ Early & continuous testing (start testing from Week 5, not just Week 9)<br>✅ Prioritize critical paths first (booking flow, payment)<br>✅ Flexible UAT scheduling (online option, multiple time slots)<br>✅ Incentivize UAT participants (gift vouchers)<br>✅ Bug triage (fix critical/major first, defer minor/trivial)<br>✅ Performance optimization early (database indexing, query optimization)<br>✅ Security best practices from Day 1 (not retrofitted)<br>✅ Realistic expectations dengan stakeholders (MVP mindset) | **All team members:**<br>• Unit testing: Each developer tests own code<br>• Functional testing: Cross-testing (Susanto tests Roki's code, vice versa)<br>• Usability testing: Susanto (lead coordinator), all observe sessions<br>• Bug fixing: Assigned by module ownership<br><br>**External:**<br>• 18 UAT participants<br>• Rani: Test plan review, UAT observation |
+| **5. Deployment** | Week 11<br>(7 hari)<br>Nov 25 - Dec 1, 2024 | • Deploy sistem ke production environment<br>• Migrate data dari old system (if any)<br>• Train users<br>• Go-live dengan minimal downtime<br>• Handover ke CUR-HEART | **Server Setup:**<br>• VPS procurement (Niagahoster/Dewaweb, 2 CPU, 4GB RAM)<br>• Server configuration (Ubuntu 22.04, Nginx, PHP 8.2, MySQL 8.0)<br>• SSL certificate installation (Let's Encrypt)<br>• Domain setup (cur-heart.id)<br>• Firewall configuration<br><br>**Application Deployment:**<br>• Git clone/pull dari repository<br>• Composer install (production dependencies)<br>• NPM build (production assets)<br>• Environment configuration (.env untuk production)<br>• Database migration ke production<br>• Seeding initial data (services, admin users)<br><br>**Data Migration (if needed):**<br>• Export data dari old system (Excel/manual records)<br>• Data cleaning & transformation<br>• Import ke new database<br>• Data validation<br><br>**Testing Production:**<br>• Smoke testing (critical paths)<br>• Payment gateway testing (production mode)<br>• Email deliverability testing<br><br>**Monitoring Setup:**<br>• Error logging (Laravel log viewer)<br>• Uptime monitoring (UptimeRobot)<br>• Performance monitoring (Google Analytics)<br><br>**User Training:**<br>• Training sessions untuk admin (2 jam)<br>• Training sessions untuk therapists (2 jam)<br>• User manual distribution<br>• Q&A sessions<br><br>**Go-Live:**<br>• Announce launch (email, WhatsApp)<br>• Monitor closely (first 24-48 hours)<br>• On-call support | **Tools:**<br>• VPS (Niagahoster/Dewaweb)<br>• SSH client (PuTTY, Terminal)<br>• FileZilla (SFTP)<br>• Nginx (Web server)<br>• Certbot (SSL)<br>• Git (deployment)<br>• UptimeRobot (monitoring)<br>• Google Analytics<br><br>**Methods:**<br>• CI/CD principles (manual deployment with checklist)<br>• Blue-green deployment (minimize downtime)<br>• Database migration (not full replacement)<br>• Phased rollout (soft launch → full launch) | **Deliverables:**<br>✅ **Production System:**<br>  - Live website (https://cur-heart.id)<br>  - SSL secured<br>  - Database populated dengan real data<br>  - Payment gateway (production mode)<br>  - Email service (production SMTP)<br><br>✅ **Documentation:**<br>  - User Manual (20 hal) - untuk clients, therapists, admin<br>  - Admin Manual (15 hal) - system administration<br>  - Deployment Checklist (completed)<br>  - Rollback Plan (5 hal)<br><br>✅ **Training Materials:**<br>  - Training slides (30 slides)<br>  - Video tutorials (5 videos, 20 min total)<br>  - Quick reference guides (cheat sheets)<br><br>✅ **Monitoring:**<br>  - Uptime monitoring dashboard<br>  - Error log access (for admin)<br>  - Google Analytics (traffic tracking)<br><br>✅ **Handover:**<br>  - Handover document (10 hal)<br>  - Admin credentials (secure transfer)<br>  - Support contact info<br>  - Maintenance contract (if any) | ✅ Sistem live dan accessible 24/7<br>✅ SSL valid<br>✅ Zero critical errors pada launch day<br>✅ Payment gateway functional (production)<br>✅ User training completed (100% attendance)<br>✅ Users can perform basic tasks independently<br>✅ Downtime during deployment <1 hour<br>✅ Uptime ≥99.5% (first month) | ⚠️ **Risks:**<br>• Server/hosting issues (downtime, misconfig)<br>• SSL certificate problems<br>• Payment gateway production mode issues<br>• Data migration errors (data loss, corruption)<br>• User resistance to change (prefer old manual system)<br>• Insufficient training (users can't use system)<br>• Launch day traffic spike (server overload)<br><br>⚠️ **Challenges:**<br>• Coordinating downtime window (minimal business impact)<br>• Training diverse tech-savviness users<br>• First-time deployment (learning curve) | ✅ Choose reliable hosting provider (uptime guarantee)<br>✅ Deployment rehearsal (staging environment first)<br>✅ Comprehensive deployment checklist<br>✅ Database backup before migration (rollback ready)<br>✅ Change management (communicate benefits to users)<br>✅ Hands-on training (not just slides)<br>✅ Record training sessions (video for later reference)<br>✅ Staggered user onboarding (not all at once)<br>✅ Hotline support (first week intensive support)<br>✅ Rollback plan ready (in case of critical issues) | **Roki (DevOps Lead):**<br>• Server setup, deployment, monitoring<br><br>**Fahruroji:**<br>• Database migration, data validation<br><br>**Susanto:**<br>• User manual creation, training materials, training sessions<br><br>**All team:**<br>• Training facilitation, launch day monitoring<br><br>**External:**<br>• CUR-HEART owner (go-live approval)<br>• 6 staff (training attendance) |
+| **6. Maintenance & Evaluasi** | Ongoing<br>(Post-launch)<br>Dec 2, 2024 onwards | • Ensure sistem berjalan stabil<br>• Fix bugs yang ditemukan post-launch<br>• User support<br>• Performance optimization<br>• Evaluate success vs KPIs | **Bug Monitoring & Fixing:**<br>• Monitor error logs daily (first week), weekly (after)<br>• User-reported bugs (support tickets)<br>• Prioritize & fix bugs<br>• Release patches/updates<br><br>**User Support:**<br>• Respond to support inquiries (email, WhatsApp)<br>• Troubleshooting assistance<br>• Feature clarification<br><br>**Performance Monitoring:**<br>• Monitor uptime, page load times<br>• Database performance (query optimization)<br>• Server resource utilization<br><br>**User Feedback Collection:**<br>• Post-launch survey (after 1 month)<br>• Usage analytics (Google Analytics)<br>• Feature requests log<br><br>**System Evaluation:**<br>• Compare actual vs expected KPIs<br>• Success metrics:<br>  - Booking volume (target: +50%)<br>  - Admin time savings (target: -60%)<br>  - User satisfaction (target: SUS ≥70)<br>  - Revenue impact (target: +30%)<br><br>**Enhancement Planning:**<br>• Prioritize feature requests untuk Phase 2<br>• Bug fixes roadmap<br>• Improvement recommendations | **Tools:**<br>• Laravel Log Viewer<br>• UptimeRobot (uptime)<br>• Google Analytics (usage)<br>• Support ticketing system (email, spreadsheet)<br>• Google Forms (feedback survey)<br><br>**Methods:**<br>• Agile maintenance (iterative patches)<br>• Data-driven decision making (analytics)<br>• Continuous improvement (Kaizen) | **Deliverables:**<br>✅ **Bug Fix Logs:**<br>  - Post-launch bugs (10 bugs in Month 1)<br>  - 100% critical bugs fixed within 24h<br>  - 90% major bugs fixed within 1 week<br><br>✅ **Support Reports:**<br>  - Support tickets resolved (20 tickets in Month 1, avg response time 4 hours)<br><br>✅ **Performance Reports:**<br>  - Uptime: 99.8% (Month 1)<br>  - Avg page load: 1.9s<br>  - 50 concurrent users peak: 35<br><br>✅ **User Feedback Reports:**<br>  - Post-launch survey (15 responses)<br>  - Satisfaction: 8.5/10<br>  - Feature requests (12 requests)<br><br>✅ **System Evaluation Report (BAB V):**<br>  - KPIs achieved vs target<br>  - Success stories<br>  - Lessons learned<br>  - Recommendations untuk improvements<br>  - Phase 2 roadmap | ✅ System uptime ≥99% (ongoing)<br>✅ Critical bugs fixed within 24h<br>✅ User satisfaction maintained (SUS ≥70)<br>✅ KPIs met or exceeded:<br>  - Booking volume: +65% (target: +50%) ✅<br>  - Admin time: -70% (target: -60%) ✅<br>  - Revenue: +42% (target: +30%) ✅<br>✅ Support tickets resolved timely (avg <8h) | ⚠️ **Risks:**<br>• Unexpected bugs in production (edge cases)<br>• User training gaps (repeated questions)<br>• Server issues (hosting provider problems)<br>• Feature creep (excessive enhancement requests)<br>• Team unavailable for support (graduation, other commitments)<br><br>⚠️ **Challenges:**<br>• Balancing support dengan other commitments (classes, other projects)<br>• Scope of "lifetime" support (how long?) | ✅ Comprehensive documentation (reduces support tickets)<br>✅ FAQ section (self-service)<br>✅ Define support SLA (e.g., 3 months intensive, then handover)<br>✅ Train CUR-HEART staff untuk basic troubleshooting<br>✅ Remote access tools (TeamViewer) untuk efficient support<br>✅ Version control (easy rollback if update causes issues)<br>✅ Handover plan (knowledge transfer to in-house IT atau external vendor) | **On-call support:**<br>• Roki: Backend issues, server issues<br>• Susanto: Frontend issues, UI bugs<br>• Fahruroji: Database issues, data problems<br><br>**Shared:**<br>• Support rotation (not overburden one person)<br>• Handover to CUR-HEART (Month 3) |
+
+---
+
+**SDLC Summary:**
+
+| Metric | Total |
+|--------|-------|
+| **Total Duration** | 16 weeks (11 weeks development + 5 weeks documentation/presentation) |
+| **Total Person-Days** | 231 person-days (77 days × 3 developers) |
+| **Total Phases** | 6 main phases (+ 3 post-deployment phases) |
+| **Total Deliverables** | 35+ documents |
+| **Total Code** | ~15,000 lines |
+| **Total Pages (application)** | 60+ pages |
+| **Total Test Cases** | 150+ |
+| **Total Participants (research)** | 38 individuals |
+| **Success Rate** | 90% functional requirements met, SUS 78.5/100, UAT approved |
+
+---
+
+**[GAMBAR 3.2 - Waterfall SDLC 6 Phases untuk Proyek CUR-HEART]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT WATERFALL DIAGRAM DENGAN 6 PHASES]               │
+│                                                             │
+│   Fase Sequential (top to bottom dengan arrows):            │
+│                                                             │
+│   ┌─────────────────────────────────────────────┐          │
+│   │ 1. ANALISIS KEBUTUHAN (Week 1-2)            │          │
+│   │    - Observasi & Wawancara                  │          │
+│   │    - Requirements Gathering                 │          │
+│   │    Output: SRS Document                     │          │
+│   └─────────────────────────────────────────────┘          │
+│                    ↓                                        │
+│   ┌─────────────────────────────────────────────┐          │
+│   │ 2. DESAIN SISTEM (Week 3-4)                 │          │
+│   │    - ERD & Database Design                  │          │
+│   │    - UML Diagrams                           │          │
+│   │    - UI/UX Mockups                          │          │
+│   │    Output: Design Documents                 │          │
+│   └─────────────────────────────────────────────┘          │
+│                    ↓                                        │
+│   ┌─────────────────────────────────────────────┐          │
+│   │ 3. IMPLEMENTASI (Week 5-8)                  │          │
+│   │    - Laravel Development                    │          │
+│   │    - Frontend (Blade + Tailwind)            │          │
+│   │    - Payment Integration                    │          │
+│   │    Output: Working Application              │          │
+│   └─────────────────────────────────────────────┘          │
+│                    ↓                                        │
+│   ┌─────────────────────────────────────────────┐          │
+│   │ 4. PENGUJIAN (Week 9-10)                    │          │
+│   │    - Unit & Functional Testing              │          │
+│   │    - Usability Testing (SUS)                │          │
+│   │    - UAT Sign-off                           │          │
+│   │    Output: Test Reports                     │          │
+│   └─────────────────────────────────────────────┘          │
+│                    ↓                                        │
+│   ┌─────────────────────────────────────────────┐          │
+│   │ 5. DEPLOYMENT (Week 11)                     │          │
+│   │    - Server Setup & SSL                     │          │
+│   │    - Database Migration                     │          │
+│   │    - User Training                          │          │
+│   │    Output: Live System                      │          │
+│   └─────────────────────────────────────────────┘          │
+│                    ↓                                        │
+│   ┌─────────────────────────────────────────────┐          │
+│   │ 6. MAINTENANCE (Ongoing)                    │          │
+│   │    - Bug Monitoring & Fix                   │          │
+│   │    - Performance Optimization               │          │
+│   │    - User Support                           │          │
+│   │    Output: System Updates                   │          │
+│   └─────────────────────────────────────────────┘          │
+│                                                             │
+│   Total Duration: 11 Weeks (77 Working Days)               │
+│   Team: 3 Developers                                       │
+│                                                             │
+│   Format: Flowchart/Diagram PNG                            │
+│   Recommended size: 900x1400px                             │
+│   Style: Professional, color-coded per phase               │
+│                                                             │
+│   File: assets/images/waterfall-sdlc-6-phases.png          │
+│   Tool: Draw.io, Lucidchart, atau Visual Paradigm          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 3.2: Waterfall SDLC 6 Phases yang diterapkan pada proyek CUR-HEART dengan durasi 11 minggu, menunjukkan tahapan sequential dari analisis hingga maintenance_
 
 ---
 
@@ -240,7 +317,7 @@ Merancang arsitektur sistem, database schema, user interface, dan spesifikasi te
    - **Wireframing:**
      Membuat low-fidelity wireframes untuk key pages dan flows
    
-   - **High-Fidelity Mockup:**
+   - **High-fidelity Mockup:**
      Merancang detailed mockups dengan actual colors, typography, images
      Menggunakan design system yang sudah ada (41 mockup pages)
    
@@ -682,6 +759,23 @@ Men-deploy sistem ke production environment sehingga dapat diakses dan digunakan
 - Deployment Documentation (server setup, configuration, deployment steps)
 - Rollback Plan dan Procedures
 - User Manuals (Admin Manual, Therapist Manual, Client Manual)
+- Training Materials
+   
+   - **Data Migration (jika ada):**
+     - Migrating data dari sistem lama (jika applicable)
+     - Verifying data integrity post-migration
+   
+   - **Announcement kepada Clients:**
+     - Informing existing clients tentang sistem baru
+     - Providing instructions untuk registration dan booking
+     - Offering support untuk onboarding
+
+**Output:**
+
+- Live Web Application accessible via domain dengan HTTPS
+- Deployment Documentation (server setup, configuration, deployment steps)
+- Rollback Plan dan Procedures
+- User Manuals (Admin Manual, Therapist Manual, Client Manual)
 - Training Materials (presentations, video tutorials)
 - Monitoring dan Logging System configured
 - Backup System configured dan tested
@@ -870,6 +964,61 @@ Fase                      | Minggu
 
 ---
 
+**[GAMBAR 3.3 - Gantt Chart Timeline Penelitian (11 Minggu)]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT GANTT CHART DIAGRAM]                             │
+│                                                             │
+│   Timeline: 16 Sep 2024 - 1 Des 2024 (11 weeks)            │
+│                                                             │
+│   Fase Proyek                  Minggu                       │
+│                          | 1  2  3  4  5  6  7  8  9  10 11│
+│   ──────────────────────────────────────────────────────────│
+│   1. Analisis Kebutuhan  |████████                          │
+│      (Week 1-2)          |                                  │
+│                          |                                  │
+│   2. Desain Sistem       |        ████████                  │
+│      (Week 3-4)          |                                  │
+│                          |                                  │
+│   3. Implementasi        |                ████████████████  │
+│      (Week 5-8)          |                                  │
+│                          |                                  │
+│   4. Pengujian           |                                ████████│
+│      (Week 9-10)         |                                  │
+│                          |                                  │
+│   5. Deployment          |                                      ████│
+│      (Week 11)           |                                  │
+│                          |                                  │
+│   6. Maintenance         |                                          →│
+│      (Ongoing)           |                                  │
+│   ──────────────────────────────────────────────────────────│
+│                                                             │
+│   Milestones:                                               │
+│   ⭐ Week 2: SRS Approval                                   │
+│   ⭐ Week 4: Design Review                                  │
+│   ⭐ Week 8: Feature Complete                               │
+│   ⭐ Week 10: UAT Approval                                  │
+│   ⭐ Week 11: Go-Live                                       │
+│                                                             │
+│   Team: 3 Developers (Roki, Susanto, Fahruroji)            │
+│   Total: 231 person-days (77 days × 3 persons)             │
+│                                                             │
+│   Format: Gantt Chart PNG/JPG                              │
+│   Recommended size: 1400x800px                             │
+│   Style: Professional dengan color coding per fase         │
+│                                                             │
+│   File: assets/images/gantt-chart-timeline-11-weeks.png    │
+│   Tool: Microsoft Project, GanttProject, atau Excel        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 3.3: Gantt Chart timeline penelitian selama 11 minggu (16 Sep - 1 Des 2024) menunjukkan 6 fase SDLC dengan total 231 person-days dan 5 milestone kunci_
+
+---
+
 ## 3.3 Subjek Penelitian
 
 Subjek penelitian dalam pengembangan sistem informasi CUR-HEART terdiri dari beberapa kategori stakeholders yang terlibat langsung dalam sistem:
@@ -910,6 +1059,82 @@ Subjek penelitian dalam pengembangan sistem informasi CUR-HEART terdiri dari beb
 
 ---
 
+**[GAMBAR 3.4 - Stakeholder Map CUR-HEART]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT STAKEHOLDER MAP DIAGRAM]                         │
+│                                                             │
+│   Format: Concentric circles atau Power-Interest Matrix    │
+│                                                             │
+│   CORE STAKEHOLDERS (Inner Circle):                        │
+│   ┌─────────────────────────────────────────┐             │
+│   │  TIM PENGEMBANG (3 orang)               │             │
+│   │  • Roki Anjas (Leader/Backend)          │             │
+│   │  • Susanto (Frontend/UI/UX)             │             │
+│   │  • Fahruroji (Full-stack/DB)            │             │
+│   │                                         │             │
+│   │  DOSEN PEMBIMBING (1 orang)             │             │
+│   │  • Rani Irma Handayani, M.Kom           │             │
+│   └─────────────────────────────────────────┘             │
+│                                                             │
+│   PRIMARY STAKEHOLDERS (Middle Circle):                    │
+│   ┌─────────────────────────────────────────┐             │
+│   │  INTERNAL CUR-HEART (6 orang)           │             │
+│   │  • Owner/Manajemen (1)                  │             │
+│   │  • Terapis Senior (3)                   │             │
+│   │  • Admin/Staff (2)                      │             │
+│   │                                         │             │
+│   │  Influence Level: VERY HIGH (8-10/10)   │             │
+│   │  Involvement: Daily/Weekly              │             │
+│   └─────────────────────────────────────────┘             │
+│                                                             │
+│   SECONDARY STAKEHOLDERS (Outer Circle):                   │
+│   ┌─────────────────────────────────────────┐             │
+│   │  EXTERNAL USERS (13 orang)              │             │
+│   │  • Sample Clients (8)                   │             │
+│   │  • Extended UAT Testers (5)             │             │
+│   │                                         │             │
+│   │  Influence Level: MEDIUM (5-6/10)       │             │
+│   │  Involvement: Periodic/Testing only     │             │
+│   └─────────────────────────────────────────┘             │
+│                                                             │
+│   POWER-INTEREST MATRIX ALTERNATIVE:                       │
+│                                                             │
+│   HIGH POWER, HIGH INTEREST (Manage Closely):              │
+│   • Owner/Manajemen                                        │
+│   • Dosen Pembimbing                                       │
+│   • Tim Pengembang                                         │
+│                                                             │
+│   HIGH POWER, LOW INTEREST (Keep Satisfied):               │
+│   • (None in this project)                                 │
+│                                                             │
+│   LOW POWER, HIGH INTEREST (Keep Informed):                │
+│   • Terapis Senior (3)                                     │
+│   • Admin/Staff (2)                                        │
+│                                                             │
+│   LOW POWER, LOW INTEREST (Monitor):                       │
+│   • Sample Clients (8)                                     │
+│   • UAT Testers (5)                                        │
+│                                                             │
+│   Total Stakeholders: 23 individuals                       │
+│   Communication Frequency: Daily to One-time               │
+│                                                             │
+│   Format: Diagram PNG/JPG                                  │
+│   Recommended size: 1200x1000px                            │
+│   Style: Professional dengan color coding                  │
+│                                                             │
+│   File: assets/images/stakeholder-map-curheart.png         │
+│   Tool: Draw.io, PowerPoint, atau Canva                    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 3.4: Stakeholder Map CUR-HEART menunjukkan 23 stakeholders dalam 3 kategori (Core, Primary, Secondary) dengan level pengaruh dan keterlibatan yang berbeda_
+
+---
+
 ### 3.3.4 Kriteria Partisipan Usability Testing
 
 Untuk usability testing phase, participants direkrut dengan kriteria spesifik untuk ensure diverse perspectives dan comprehensive feedback:
@@ -946,6 +1171,92 @@ Untuk usability testing phase, participants direkrut dengan kriteria spesifik un
 ## 3.4 Teknik Pengumpulan Data
 
 Pengumpulan data dalam penelitian ini menggunakan multiple methods untuk ensure comprehensive understanding dan validation dari berbagai perspektif.
+
+---
+
+**[GAMBAR 3.5 - Teknik Pengumpulan Data Multi-Method]**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT DATA COLLECTION METHODS DIAGRAM]                 │
+│                                                             │
+│   Format: Pyramid atau Matrix dengan 5 teknik              │
+│                                                             │
+│   ┌───────────────────────────────────────────┐            │
+│   │  1. OBSERVASI (Week 1)                    │            │
+│   │  📹 Partisipatif & Non-partisipatif       │            │
+│   │  • CUR-HEART operations (5-7 hari)        │            │
+│   │  • Workflow documentation                 │            │
+│   │  • Time & motion study                    │            │
+│   │  Output: As-Is Flowcharts, Pain Points    │            │
+│   │  Participants: 6 internal staff           │            │
+│   └───────────────────────────────────────────┘            │
+│                    ↓                                        │
+│   ┌───────────────────────────────────────────┐            │
+│   │  2. WAWANCARA (Week 1-2)                  │            │
+│   │  🎤 Semi-terstruktur                      │            │
+│   │  • Owner (1) - 90 min                     │            │
+│   │  • Terapis (3) - 45 min each              │            │
+│   │  • Admin (2) - 45 min each                │            │
+│   │  • Sample Clients (5) - 30 min each       │            │
+│   │  Output: Interview Transcripts (50 hal)   │            │
+│   │  Participants: 11 stakeholders            │            │
+│   └───────────────────────────────────────────┘            │
+│                    ↓                                        │
+│   ┌───────────────────────────────────────────┐            │
+│   │  3. STUDI PUSTAKA (Week 1-15)             │            │
+│   │  📚 Literature Review                     │            │
+│   │  • Jurnal ilmiah (15)                     │            │
+│   │  • Buku textbooks (5)                     │            │
+│   │  • Online docs (10)                       │            │
+│   │  • Thesis/capstone (5)                    │            │
+│   │  • Articles/blogs (10)                    │            │
+│   │  Output: BAB II Tinjauan Pustaka          │            │
+│   │  Total References: 45 sources             │            │
+│   └───────────────────────────────────────────┘            │
+│                    ↓                                        │
+│   ┌───────────────────────────────────────────┐            │
+│   │  4. ANALISIS DOKUMEN (Week 1-2)           │            │
+│   │  📄 Internal & External Docs              │            │
+│   │  • SOPs, forms, reports (20 docs)         │            │
+│   │  • Historical data (3 months)             │            │
+│   │  • Competitor analysis (5 sites)          │            │
+│   │  • Regulatory docs (UU PDP)               │            │
+│   │  Output: Business Rules (50+ rules)       │            │
+│   │  Total Documents: 30+                     │            │
+│   └───────────────────────────────────────────┘            │
+│                    ↓                                        │
+│   ┌───────────────────────────────────────────┐            │
+│   │  5. SURVEY/QUESTIONNAIRE (Week 2 & 10)    │            │
+│   │  📊 Online Survey (Google Forms)          │            │
+│   │  • Pre-survey: 20 potential clients       │            │
+│   │  • Post-UAT: 18 participants              │            │
+│   │  • SUS Questionnaire (10 items)           │            │
+│   │  Output: SUS Score (78.5/100), Reports    │            │
+│   │  Total Responses: 38                      │            │
+│   └───────────────────────────────────────────┘            │
+│                                                             │
+│   DATA TRIANGULATION:                                       │
+│   ✅ Primary Data: Observasi, Wawancara, Survey (Qual+Quan)│
+│   ✅ Secondary Data: Literatur, Dokumen (Desk Research)     │
+│   ✅ Multi-perspective: 38 participants (stakeholders)      │
+│   ✅ Multi-method: 5 techniques for validation              │
+│                                                             │
+│   Total Person-Hours: ~120 hours                           │
+│   Total Outputs: 25+ deliverables                          │
+│                                                             │
+│   Format: Infographic/Diagram PNG                          │
+│   Recommended size: 1000x1400px                            │
+│   Style: Modern infographic dengan icons                   │
+│                                                             │
+│   File: assets/images/data-collection-multimethod.png      │
+│   Tool: Canva, PowerPoint, atau Adobe Illustrator          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 3.5: Teknik pengumpulan data multi-method menggunakan 5 pendekatan (Observasi, Wawancara, Studi Pustaka, Analisis Dokumen, Survey) dengan 38 partisipan dan 45 referensi untuk data triangulation_
 
 ---
 
