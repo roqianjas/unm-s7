@@ -4,6 +4,13 @@
 
 Pemilihan teknologi dalam proyek CUR-HEART didasarkan pada pertimbangan matang terkait kebutuhan bisnis, kompleksitas sistem, skalabilitas, maintainability, dan kompetensi tim. Sistem ini mengadopsi **Monolithic Architecture** dengan **Laravel Full-Stack Framework** sebagai pondasi utama.
 
+---
+
+**[GAMBAR 4.61 - Technology Stack Diagram]** 🔧
+_Complete tech stack: Laravel, MySQL, Tailwind, Alpine.js, Midtrans_
+
+---
+
 ### 4.6.1 Arsitektur Sistem: Monolithic vs. Microservices
 
 #### A. Pemilihan Monolithic Architecture
@@ -975,6 +982,11 @@ cur-heart-system/
 
 ---
 
+**[GAMBAR 4.63 - Development Workflow]** 🔧
+_Git branching strategy, CI/CD pipeline, testing stages_
+
+---
+
 ### 4.6.3 Development Tools
 
 #### A. Integrated Development Environment (IDE)
@@ -1095,6 +1107,20 @@ GUI untuk database management:
 
 ---
 
+**[GAMBAR 4.64 - Testing Strategy Pyramid]** 🧪
+_Unit tests, integration tests, system tests, UAT pyramid_
+
+**[GAMBAR 4.65 - Test Coverage Report]** 🧪
+_Code coverage metrics, tested modules, coverage percentages_
+
+**[GAMBAR 4.66 - Performance Testing Results]** 🧪
+_Load testing charts, response times, concurrent users capacity_
+
+**[GAMBAR 4.67 - Security Testing Report]** 🧪
+_OWASP ZAP scan results, vulnerabilities found/fixed_
+
+---
+
 #### D. Testing Tools
 
 **1. PHPUnit (Unit & Feature Tests)**
@@ -1156,6 +1182,17 @@ php artisan view:cache
 npm run build
 php artisan queue:restart
 ```
+
+---
+
+**[GAMBAR 4.62 - Deployment Architecture]** 🔧
+_Server infrastructure: VPS, database, CDN, external APIs_
+
+**[GAMBAR 4.68 - Implementation Timeline]** 📅
+_Actual vs planned timeline, milestones achieved_
+
+**[GAMBAR 4.69 - Code Quality Metrics]** 📊
+_Maintainability index, cyclomatic complexity, code smells_
 
 ---
 
@@ -1322,6 +1359,23 @@ MAIL_FROM_NAME="CUR-HEART"
 - **Whereby**: API-based embedded rooms
 
 **Alternative**: Build in-house dengan WebRTC (future enhancement)
+
+---
+
+**[GAMBAR 4.70 - Business Intelligence Dashboard]** 📊
+_Revenue analytics, booking trends, user growth charts_
+
+**[GAMBAR 4.71 - Booking Analytics]** 📊
+_Booking patterns by time, service popularity, conversion rates_
+
+**[GAMBAR 4.72 - User Behavior Analytics]** 📊
+_User journey, page views, session duration, bounce rates_
+
+**[GAMBAR 4.73 - Therapist Performance Metrics]** 📊
+_Therapist ratings, session completion, earnings comparison_
+
+**[GAMBAR 4.74 - Financial Reports Dashboard]** 📊
+_Monthly revenue, payment methods breakdown, projections_
 
 ---
 

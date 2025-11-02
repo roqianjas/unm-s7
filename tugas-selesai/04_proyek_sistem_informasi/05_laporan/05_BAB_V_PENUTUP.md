@@ -7,6 +7,11 @@ Berdasarkan hasil penelitian dan pembahasan yang telah diuraikan pada bab-bab se
 
 ### 5.1.1 Pencapaian Tujuan Penelitian
 
+**[GAMBAR 5.1 - Project Achievement Summary]** 🏆
+_Overall project metrics: 7/7 objectives achieved, ROI 1,743%, timeline & budget met_
+
+---
+
 Proyek Capstone ini telah **berhasil mencapai seluruh tujuan** yang telah ditetapkan pada Bab I, dengan rincian sebagai berikut:
 
 ---
@@ -169,6 +174,11 @@ Sistem telah melalui proses testing yang comprehensive:
 
 ---
 
+**[GAMBAR 5.2 - Before vs After Comparison]** 📊
+_Manual vs Automated system: efficiency gains, time savings, error reduction_
+
+---
+
 **Tabel 5.2 Hasil Testing dan Quality Assurance**
 
 | No | Jenis Testing | Target/Criteria | Results | Pass/Fail | Total Test Cases | Passed | Failed | Issues Found | Critical Issues | Resolved | Metrics | Comments |
@@ -311,6 +321,11 @@ Sistem telah memberikan value yang terukur kepada CUR-HEART:
 - **Digital progress notes** lebih efisien dari paper-based
 - **Automated scheduling** reduce back-and-forth communication
 - **Earnings dashboard** memberikan visibility terhadap income
+
+---
+
+**[GAMBAR 5.3 - System Impact Visualization]** 📈
+_Key impacts: 60% efficiency increase, 25% booking capacity increase, 9/10 satisfaction_
 
 ---
 
@@ -704,6 +719,9 @@ Lebih dari sekadar memenuhi requirements akademik, proyek ini telah memberikan *
 ## 5.2 Saran
 
 Berdasarkan hasil pengembangan dan evaluasi sistem yang telah dilakukan, berikut adalah beberapa saran untuk pengembangan dan perbaikan sistem di masa depan:
+
+**[GAMBAR 5.4 - Future Roadmap]** 🚀
+_Phase 2 features: Mobile app, AI recommendations, video sessions, advanced analytics_
 
 ---
 

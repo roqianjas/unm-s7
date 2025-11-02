@@ -23,6 +23,80 @@ Design system CUR-HEART terdiri dari beberapa elemen utama yang akan dijelaskan 
 
 #### 4.3.5.2 Color Palette & Typography
 
+---
+
+**[GAMBAR 4.15 - Design System: Color Palette]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT COLOR PALETTE DESIGN]                            │
+│                                                             │
+│   CUR-HEART COLOR SYSTEM                                   │
+│   Professional & Calming Palette                           │
+│                                                             │
+│   PRIMARY COLORS:                                           │
+│   ┌──────────┐  ┌──────────┐                               │
+│   │ Navy Blue│  │   Pink   │                               │
+│   │ #1E0E62  │  │ #FF6B7A  │                               │
+│   │ █████████│  │ █████████│                               │
+│   │ Trust &  │  │ Empathy &│                               │
+│   │ Stability│  │ Warmth   │                               │
+│   └──────────┘  └──────────┘                               │
+│                                                             │
+│   SECONDARY COLORS:                                         │
+│   ┌──────────┐  ┌──────────┐  ┌──────────┐                │
+│   │Light Pur.│  │Soft Pink │  │  White   │                │
+│   │ #EEEAF9  │  │ #FFE5E8  │  │ #FFFFFF  │                │
+│   │ █████████│  │ █████████│  │ █████████│                │
+│   └──────────┘  └──────────┘  └──────────┘                │
+│                                                             │
+│   GRAYSCALE:                                                │
+│   ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐            │
+│   │#333  │ │#666  │ │#999  │ │#CCC  │ │#F5F5 │            │
+│   │██████│ │██████│ │██████│ │██████│ │██████│            │
+│   │Dark  │ │Med.  │ │Light │ │Border│ │BG    │            │
+│   └──────┘ └──────┘ └──────┘ └──────┘ └──────┘            │
+│                                                             │
+│   SEMANTIC COLORS:                                          │
+│   ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+│   │ Success  │  │ Warning  │  │  Danger  │  │   Info   │  │
+│   │ #10B981  │  │ #F59E0B  │  │ #EF4444  │  │ #3B82F6  │  │
+│   │ █████████│  │ █████████│  │ █████████│  │ █████████│  │
+│   │  Green   │  │  Orange  │  │   Red    │  │   Blue   │  │
+│   └──────────┘  └──────────┘  └──────────┘  └──────────┘  │
+│                                                             │
+│   COLOR USAGE EXAMPLES:                                     │
+│   • Headers/Nav: Navy Blue (#1E0E62)                        │
+│   • CTA Buttons: Pink (#FF6B7A)                             │
+│   • Backgrounds: Light Purple (#EEEAF9), White              │
+│   • Body Text: Dark Gray (#333333)                          │
+│   • Success: Green (#10B981) - Approved, Completed          │
+│   • Warning: Orange (#F59E0B) - Pending, Review             │
+│   • Danger: Red (#EF4444) - Error, Cancel, Delete           │
+│                                                             │
+│   ACCESSIBILITY:                                            │
+│   ✅ WCAG 2.1 AA Compliant                                  │
+│   ✅ Contrast Ratio: 4.5:1 minimum for text                 │
+│   ✅ Color blind friendly combinations                      │
+│                                                             │
+│   Format: Color Palette PNG dengan hex codes               │
+│   Recommended size: 1600x1200px                            │
+│   Style: Professional swatch board dengan samples          │
+│                                                             │
+│   File: assets/images/design-system-color-palette.png      │
+│   Tool: Figma, Adobe XD, atau Canva                        │
+│                                                             │
+│   PRIORITY: P2 - HIGH                                       │
+│   Must show: All colors dengan hex codes, usage examples   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.15: Design System Color Palette CUR-HEART dengan primary colors (Navy Blue, Pink), secondary colors, grayscale, dan semantic colors yang WCAG AA compliant_
+
+---
+
 **A. Color Palette (Palet Warna)**
 
 Pemilihan warna dalam CUR-HEART dirancang untuk mencerminkan nilai-nilai profesionalisme, kepercayaan, dan kesehatan mental. Berikut adalah palet warna yang digunakan:
@@ -47,6 +121,106 @@ Pemilihan warna dalam CUR-HEART dirancang untuk mencerminkan nilai-nilai profesi
 - **Info Blue (#3B82F6)**: Informational messages
 
 Palet warna ini dipilih berdasarkan prinsip-prinsip psikologi warna dalam konteks kesehatan mental, di mana warna-warna yang menenangkan dan profesional sangat penting untuk menciptakan rasa aman dan percaya bagi klien.
+
+---
+
+**[GAMBAR 4.16 - Design System: Typography System]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT TYPOGRAPHY SYSTEM]                               │
+│                                                             │
+│   CUR-HEART TYPOGRAPHY SYSTEM                              │
+│   Modern & Readable Type Scale                             │
+│                                                             │
+│   FONT FAMILIES:                                            │
+│                                                             │
+│   PRIMARY (Headings):                                       │
+│   Poppins - Sans-serif                                     │
+│   Aa Bb Cc Dd Ee Ff Gg Hh                                  │
+│   Weights: 400 (Regular), 500 (Medium),                    │
+│            600 (SemiBold), 700 (Bold)                      │
+│   Usage: H1-H6, Navigation, Buttons                        │
+│                                                             │
+│   SECONDARY (Body):                                         │
+│   Inter - Sans-serif                                       │
+│   Aa Bb Cc Dd Ee Ff Gg Hh                                  │
+│   Weights: 400 (Regular), 500 (Medium), 600 (SemiBold)     │
+│   Usage: Paragraphs, Labels, Tables, Forms                 │
+│                                                             │
+│   TYPE SCALE (Modular Scale 1.25):                         │
+│                                                             │
+│   H1 - Display Large                                       │
+│   36px / 2.25rem - Line Height 43px                        │
+│   Poppins Bold (700)                                       │
+│   Usage: Page titles, hero headings                        │
+│                                                             │
+│   H2 - Display Medium                                      │
+│   30px / 1.875rem - Line Height 36px                       │
+│   Poppins SemiBold (600)                                   │
+│   Usage: Section titles                                    │
+│                                                             │
+│   H3 - Heading Large                                       │
+│   24px / 1.5rem - Line Height 29px                         │
+│   Poppins SemiBold (600)                                   │
+│   Usage: Subsection titles, card headers                   │
+│                                                             │
+│   H4 - Heading Medium                                      │
+│   20px / 1.25rem - Line Height 24px                        │
+│   Poppins Medium (500)                                     │
+│   Usage: Component titles                                  │
+│                                                             │
+│   H5 - Heading Small                                       │
+│   18px / 1.125rem - Line Height 22px                       │
+│   Poppins Medium (500)                                     │
+│   Usage: Small headings, emphasis                          │
+│                                                             │
+│   Body Large                                               │
+│   16px / 1rem - Line Height 24px (1.5x)                    │
+│   Inter Regular (400)                                      │
+│   Usage: Important body text, intro paragraphs             │
+│                                                             │
+│   Body Regular                                             │
+│   14px / 0.875rem - Line Height 21px (1.5x)                │
+│   Inter Regular (400)                                      │
+│   Usage: Standard body text, form inputs                   │
+│                                                             │
+│   Body Small / Caption                                     │
+│   12px / 0.75rem - Line Height 18px (1.5x)                 │
+│   Inter Regular (400)                                      │
+│   Usage: Captions, helper text, footnotes                  │
+│                                                             │
+│   SPACING & RHYTHM:                                         │
+│   • Headings: Line height 1.2x (tight)                     │
+│   • Body: Line height 1.5x (comfortable)                   │
+│   • Paragraph spacing: 1em bottom margin                   │
+│   • Letter spacing: -0.02em for large headings             │
+│                                                             │
+│   EXAMPLES:                                                 │
+│   [Show sample text in each size with actual rendering]    │
+│                                                             │
+│   ACCESSIBILITY:                                            │
+│   ✅ Minimum 12px font size                                 │
+│   ✅ Line height ≥ 1.5 for body text                        │
+│   ✅ High contrast ratios maintained                        │
+│                                                             │
+│   Format: Typography Specimen PNG                          │
+│   Recommended size: 1600x2000px (vertical)                 │
+│   Style: Type specimen board dengan samples                │
+│                                                             │
+│   File: assets/images/design-system-typography.png         │
+│   Tool: Figma, Adobe XD, atau design software              │
+│                                                             │
+│   PRIORITY: P2 - HIGH                                       │
+│   Must show: Font samples, sizes, weights, line heights    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.16: Typography System CUR-HEART dengan Poppins (headings) dan Inter (body), showing complete type scale dari H1 (36px) hingga Caption (12px) dengan line heights dan weights_
+
+---
 
 **B. Typography (Tipografi)**
 
@@ -81,6 +255,115 @@ Tipografi yang dipilih untuk CUR-HEART mengutamakan keterbacaan (readability) da
 Pemilihan kombinasi Poppins dan Inter memberikan keseimbangan antara karakter yang friendly (untuk headings) dan profesional (untuk body text), sesuai dengan positioning CUR-HEART sebagai layanan hypnotherapy yang modern dan terpercaya.
 
 #### 4.3.5.3 Component Library
+
+---
+
+**[GAMBAR 4.17 - Design System: Component Library]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT COMPONENT LIBRARY]                               │
+│                                                             │
+│   CUR-HEART COMPONENT LIBRARY                              │
+│   Reusable UI Components                                   │
+│                                                             │
+│   BUTTONS (8 Variants):                                     │
+│   ┌────────────────┐  ┌────────────────┐                   │
+│   │  Primary Btn   │  │ Secondary Btn  │                   │
+│   │  [Pink BG]     │  │ [White + Navy] │                   │
+│   └────────────────┘  └────────────────┘                   │
+│   ┌────────────────┐  ┌────────────────┐                   │
+│   │  Outline Btn   │  │   Ghost Btn    │                   │
+│   │ [Border only]  │  │  [Text only]   │                   │
+│   └────────────────┘  └────────────────┘                   │
+│   States: Default, Hover, Active, Disabled, Loading        │
+│                                                             │
+│   FORM INPUTS (6 Types):                                    │
+│   • Text Input (single line)                                │
+│   • Textarea (multi line)                                   │
+│   • Select Dropdown                                         │
+│   • Checkbox                                                │
+│   • Radio Button                                            │
+│   • Date/Time Picker                                        │
+│   States: Default, Focus, Error, Success, Disabled          │
+│                                                             │
+│   CARDS (4 Variants):                                       │
+│   ┌─────────────────────────┐                               │
+│   │ Service Card            │                               │
+│   │ [Image + Title + Price] │                               │
+│   └─────────────────────────┘                               │
+│   ┌─────────────────────────┐                               │
+│   │ Therapist Profile Card  │                               │
+│   │ [Photo + Bio + Rating]  │                               │
+│   └─────────────────────────┘                               │
+│   ┌─────────────────────────┐                               │
+│   │ Booking Summary Card    │                               │
+│   │ [Details + Status]      │                               │
+│   └─────────────────────────┘                               │
+│                                                             │
+│   NAVIGATION:                                               │
+│   • Top Navigation Bar (desktop)                            │
+│   • Mobile Hamburger Menu                                   │
+│   • Sidebar (admin/therapist dashboard)                     │
+│   • Breadcrumbs                                             │
+│   • Pagination                                              │
+│                                                             │
+│   ALERTS & NOTIFICATIONS:                                   │
+│   • Success Alert (green)                                   │
+│   • Warning Alert (orange)                                  │
+│   • Error Alert (red)                                       │
+│   • Info Alert (blue)                                       │
+│   • Toast Notification (auto-dismiss)                       │
+│                                                             │
+│   MODALS & OVERLAYS:                                        │
+│   • Confirmation Modal                                      │
+│   • Form Modal                                              │
+│   • Image Lightbox                                          │
+│   • Loading Overlay                                         │
+│                                                             │
+│   TABLES:                                                   │
+│   • Data Table (sortable, filterable)                       │
+│   • Responsive Table (mobile-friendly)                      │
+│   • Table with actions                                      │
+│                                                             │
+│   BADGES & LABELS:                                          │
+│   • Status Badge (Pending, Confirmed, Completed, etc.)      │
+│   • Role Label (Client, Therapist, Admin)                   │
+│   • Count Badge (notifications, messages)                   │
+│                                                             │
+│   OTHER COMPONENTS:                                         │
+│   • Avatar (user photo)                                     │
+│   • Rating Stars (1-5 stars)                                │
+│   • Progress Bar                                            │
+│   • Tabs                                                    │
+│   • Accordion                                               │
+│   • Tooltip                                                 │
+│   • Skeleton Loader (loading state)                         │
+│                                                             │
+│   TOTAL COMPONENTS: 30+                                     │
+│   All components are:                                       │
+│   ✅ Responsive (mobile-first)                              │
+│   ✅ Accessible (WCAG AA)                                   │
+│   ✅ Reusable (DRY principle)                               │
+│   ✅ Documented (usage guidelines)                          │
+│                                                             │
+│   Format: Component Library PNG (grid layout)              │
+│   Recommended size: 2400x3000px (large, detailed)          │
+│   Style: Component showcase dengan states & variations     │
+│                                                             │
+│   File: assets/images/design-system-components.png         │
+│   Tool: Figma, Adobe XD (preferred for interactive)        │
+│                                                             │
+│   PRIORITY: P2 - HIGH                                       │
+│   Must show: All major components dengan variations        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.17: Component Library CUR-HEART dengan 30+ reusable components (buttons, forms, cards, navigation, alerts, modals, tables, badges) dengan states dan variations_
+
+---
 
 Component library adalah kumpulan komponen UI yang dapat digunakan kembali (reusable) di berbagai halaman aplikasi. Berikut adalah komponen-komponen utama dalam CUR-HEART design system:
 
@@ -281,9 +564,223 @@ Component library ini memungkinkan pengembangan yang lebih cepat dan konsisten, 
 
 ---
 
+**[GAMBAR 4.18 - Layout & Grid System]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT LAYOUT & GRID SYSTEM]                            │
+│                                                             │
+│   CUR-HEART LAYOUT SYSTEM                                  │
+│   Responsive Grid & Spacing                                │
+│                                                             │
+│   GRID SYSTEM (12-Column):                                  │
+│   ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐        │
+│   │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │10 │11 │12 │        │
+│   └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘        │
+│                                                             │
+│   BREAKPOINTS:                                              │
+│   • Mobile (xs): < 640px (full width)                       │
+│   • Tablet (sm): ≥ 640px (2 columns)                        │
+│   • Desktop (md): ≥ 768px (3-4 columns)                     │
+│   • Large (lg): ≥ 1024px (4 columns)                        │
+│   • XL (xl): ≥ 1280px (max-width 1280px container)          │
+│                                                             │
+│   LAYOUT PATTERNS:                                          │
+│                                                             │
+│   1. Single Column (Mobile):                                │
+│   ┌─────────────────────────┐                               │
+│   │       Header            │                               │
+│   ├─────────────────────────┤                               │
+│   │                         │                               │
+│   │       Content           │                               │
+│   │     (Full Width)        │                               │
+│   │                         │                               │
+│   ├─────────────────────────┤                               │
+│   │       Footer            │                               │
+│   └─────────────────────────┘                               │
+│                                                             │
+│   2. Two Column (Tablet):                                   │
+│   ┌─────────────────────────┐                               │
+│   │       Header            │                               │
+│   ├───────────┬─────────────┤                               │
+│   │  Sidebar  │   Main      │                               │
+│   │  (4 cols) │  (8 cols)   │                               │
+│   │           │             │                               │
+│   ├───────────┴─────────────┤                               │
+│   │       Footer            │                               │
+│   └─────────────────────────┘                               │
+│                                                             │
+│   3. Three Column (Desktop):                                │
+│   ┌─────────────────────────────────────┐                   │
+│   │          Header (Full)              │                   │
+│   ├─────┬───────────────────────┬───────┤                   │
+│   │ L.  │       Main            │ Right │                   │
+│   │ Bar │     (8 cols)          │ Aside │                   │
+│   │(2)  │                       │ (2)   │                   │
+│   ├─────┴───────────────────────┴───────┤                   │
+│   │          Footer (Full)              │                   │
+│   └─────────────────────────────────────┘                   │
+│                                                             │
+│   SPACING SCALE (8px base):                                 │
+│   • 0: 0px                                                  │
+│   • 1: 4px  (0.25rem) - Tight spacing                       │
+│   • 2: 8px  (0.5rem) - Base unit                            │
+│   • 3: 12px (0.75rem)                                       │
+│   • 4: 16px (1rem) - Standard spacing                       │
+│   • 6: 24px (1.5rem) - Section spacing                      │
+│   • 8: 32px (2rem) - Large spacing                          │
+│   • 12: 48px (3rem) - Extra large spacing                   │
+│   • 16: 64px (4rem) - Hero spacing                          │
+│                                                             │
+│   CONTAINER WIDTHS:                                         │
+│   • Mobile: 100% (with 16px padding)                        │
+│   • Tablet: 640px max                                       │
+│   • Desktop: 1024px max                                     │
+│   • Large: 1280px max (standard)                            │
+│                                                             │
+│   COMMON LAYOUTS:                                           │
+│   • Landing Page: Hero + Features Grid (3 cols)             │
+│   • Services Page: Card Grid (3 cols desktop, 1 mobile)     │
+│   • Dashboard: Sidebar + Main Content                       │
+│   • Form Pages: Centered form (max 600px width)             │
+│   • Detail Pages: 2/3 main + 1/3 sidebar                    │
+│                                                             │
+│   Format: Layout System Diagram PNG                         │
+│   Recommended size: 2000x1600px                            │
+│   Style: Wireframe-style dengan grid overlay               │
+│                                                             │
+│   File: assets/images/design-system-layout-grid.png        │
+│   Tool: Figma, Adobe XD, atau wireframing tool             │
+│                                                             │
+│   PRIORITY: P2 - HIGH                                       │
+│   Must show: Grid system, breakpoints, layout patterns     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.18: Layout & Grid System CUR-HEART dengan 12-column grid, 5 breakpoints responsive, spacing scale (8px base), dan common layout patterns_
+
+---
+
+**[GAMBAR 4.19 - Iconography System]** 🔴 **CRITICAL**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   [INSERT ICONOGRAPHY SYSTEM]                              │
+│                                                             │
+│   CUR-HEART ICON LIBRARY                                   │
+│   Consistent Visual Language                               │
+│                                                             │
+│   ICON STYLE:                                               │
+│   • Style: Outline (stroke-based)                           │
+│   • Stroke Width: 2px                                       │
+│   • Corner Radius: 2px (rounded)                            │
+│   • Grid: 24x24px base                                      │
+│   • Format: SVG (scalable, crisp)                           │
+│                                                             │
+│   ICON SIZES:                                               │
+│   • XS: 16x16px - Inline text icons                         │
+│   • SM: 20x20px - Button icons                              │
+│   • MD: 24x24px - Standard (default)                        │
+│   • LG: 32x32px - Feature icons                             │
+│   • XL: 48x48px - Hero/empty state icons                    │
+│                                                             │
+│   ICON CATEGORIES (100+ icons):                             │
+│                                                             │
+│   NAVIGATION (12 icons):                                    │
+│   🏠 Home  📋 Dashboard  👤 Profile  ⚙️ Settings            │
+│   📅 Calendar  💬 Messages  🔔 Notifications  📊 Reports    │
+│   ❓ Help  🚪 Logout  ◀️ Back  ☰ Menu                       │
+│                                                             │
+│   BOOKING & SERVICES (15 icons):                            │
+│   📝 Book  ✅ Confirm  ❌ Cancel  🔄 Reschedule              │
+│   🧘 Therapy  💆 Session  🕐 Time  📍 Location              │
+│   💰 Payment  💳 Card  🏦 Bank  📄 Receipt                  │
+│   ⏱️ Duration  🎯 Service  📞 Contact                       │
+│                                                             │
+│   USER & PROFILE (10 icons):                                │
+│   👤 User  👥 Users  ⭐ Rating  💬 Review                   │
+│   📧 Email  📱 Phone  🎂 Birthday  🏥 Medical               │
+│   🔐 Security  ✏️ Edit                                      │
+│                                                             │
+│   STATUS & ACTIONS (15 icons):                              │
+│   ✅ Success  ⚠️ Warning  ❌ Error  ℹ️ Info                 │
+│   ⏳ Pending  ⏸️ Paused  ▶️ Active  ⏹️ Stopped              │
+│   ➕ Add  ➖ Remove  🗑️ Delete  💾 Save                     │
+│   📤 Upload  📥 Download  🔍 Search                         │
+│                                                             │
+│   MEDIA & CONTENT (8 icons):                                │
+│   📸 Camera  🎥 Video  🖼️ Image  📂 Folder                  │
+│   📄 Document  📊 Chart  📈 Graph  🎨 Design                │
+│                                                             │
+│   THERAPY SPECIFIC (10 icons):                              │
+│   🧠 Mental Health  💭 Thought  😌 Calm  🎯 Focus           │
+│   💪 Strength  ❤️ Heart  🌟 Star  ✨ Magic                 │
+│   🌈 Progress  🎭 Emotion                                   │
+│                                                             │
+│   SOCIAL (5 icons):                                         │
+│   👍 Like  💬 Comment  📢 Share  🔔 Bell                    │
+│   ⚡ Trending                                               │
+│                                                             │
+│   ICON USAGE GUIDELINES:                                    │
+│   • Always pair with text labels (accessibility)            │
+│   • Use consistent size within same context                 │
+│   • Maintain 2px stroke width for consistency               │
+│   • Color: Inherit from parent or use semantic colors       │
+│   • Align center with text baseline                         │
+│                                                             │
+│   ICON LIBRARY:                                             │
+│   Primary: Heroicons v2 (Tailwind UI official)             │
+│   Secondary: Font Awesome (for additional needs)            │
+│   Custom: Therapy-specific icons (10 custom)                │
+│                                                             │
+│   Format: Icon Library PNG (grid showcase)                 │
+│   Recommended size: 2400x2000px                            │
+│   Style: Icon grid dengan labels dan sizes                 │
+│                                                             │
+│   File: assets/images/design-system-iconography.png        │
+│   Tool: Figma, Adobe Illustrator, atau icon editor         │
+│                                                             │
+│   PRIORITY: P2 - HIGH                                       │
+│   Must show: All icon categories, sizes, usage examples    │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+_Gambar 4.19: Iconography System CUR-HEART dengan 100+ outline icons, 5 sizes (16-48px), organized by categories (Navigation, Booking, User, Status, Media, Therapy-specific, Social)_
+
+---
+
 ### 4.3.5.4 Mockup Halaman Public (Public Pages)
 
 Public pages adalah halaman-halaman yang dapat diakses oleh semua pengunjung tanpa perlu login terlebih dahulu. Halaman-halaman ini berfungsi sebagai front-facing website yang memberikan informasi tentang CUR-HEART, layanan yang ditawarkan, dan mendorong pengunjung untuk melakukan booking atau registrasi.
+
+---
+
+**[GAMBAR 4.20 - Mockup: Landing Page (Homepage)]** 📱
+_Public page - Hero section, services overview, therapists, testimonials_
+
+**[GAMBAR 4.21 - Mockup: Services List Page]** 📱
+_Public page - Grid 6 layanan dengan pricing dan descriptions_
+
+**[GAMBAR 4.22 - Mockup: Service Detail Page]** 📱
+_Public page - Detailed service info, benefits, booking CTA_
+
+**[GAMBAR 4.23 - Mockup: Therapists Directory]** 📱
+_Public page - Grid therapist profiles dengan filter/search_
+
+**[GAMBAR 4.24 - Mockup: Therapist Profile Detail]** 📱
+_Public page - Bio, credentials, specializations, reviews, booking_
+
+**[GAMBAR 4.25 - Mockup: About Us Page]** 📱
+_Public page - Company story, values, team, certifications_
+
+**[GAMBAR 4.26 - Mockup: Contact Us Page]** 📱
+_Public page - Contact form, location map, social media links_
+
+---
 
 #### A. Landing Page (Homepage)
 
@@ -1331,6 +1828,22 @@ User registering/booking → Required to accept terms → Click link → Terms p
 
 Authentication pages adalah halaman-halaman yang menangani proses login, registrasi, dan password recovery. Desain authentication pages harus balance antara security, usability, dan user experience yang smooth.
 
+---
+
+**[GAMBAR 4.27 - Mockup: Login Page]** 🔐
+_Auth page - Email/password form, remember me, forgot password link_
+
+**[GAMBAR 4.28 - Mockup: Register Page]** 🔐
+_Auth page - Multi-step registration form, terms acceptance_
+
+**[GAMBAR 4.29 - Mockup: Forgot Password Page]** 🔐
+_Auth page - Email input for password reset link_
+
+**[GAMBAR 4.30 - Mockup: Reset Password Page]** 🔐
+_Auth page - New password form with confirmation_
+
+---
+
 #### A. Login Page
 
 **Deskripsi:**
@@ -1685,6 +2198,40 @@ User → Click reset link from email → Token validated → Enter new password 
 ### 4.3.5.7 Mockup Client Dashboard (Client Dashboard Pages)
 
 Client Dashboard adalah area setelah login khusus untuk klien yang telah terdaftar. Dashboard ini memungkinkan klien untuk booking sessions, manage appointments, track progress, dan berkomunikasi dengan terapis.
+
+---
+
+**[GAMBAR 4.31 - Mockup: Client Dashboard Main]** 👤
+_Client dashboard - Overview cards, upcoming appointments, quick actions_
+
+**[GAMBAR 4.32 - Mockup: Client Book Service Page]** 👤
+_Client - Select service, therapist, date/time, payment_
+
+**[GAMBAR 4.33 - Mockup: Client Appointments List]** 👤
+_Client - Table/cards of all bookings dengan status dan actions_
+
+**[GAMBAR 4.34 - Mockup: Client Appointment Detail]** 👤
+_Client - Full booking details, reschedule/cancel options_
+
+**[GAMBAR 4.35 - Mockup: Client Payment Page]** 👤
+_Client - Payment gateway integration, proof upload_
+
+**[GAMBAR 4.36 - Mockup: Client Therapy Notes View]** 👤
+_Client - Read-only view of session notes from therapist_
+
+**[GAMBAR 4.37 - Mockup: Client Progress Tracking]** 👤
+_Client - Charts showing anxiety, confidence, sleep quality metrics_
+
+**[GAMBAR 4.38 - Mockup: Client Messages/Chat]** 👤
+_Client - Chat interface with therapist_
+
+**[GAMBAR 4.39 - Mockup: Client Profile Settings]** 👤
+_Client - Edit personal info, emergency contact, preferences_
+
+**[GAMBAR 4.40 - Mockup: Client Reviews Page]** 👤
+_Client - Submit/edit reviews and ratings for therapist_
+
+---
 
 #### A. Client Dashboard (Main)
 
@@ -2779,6 +3326,40 @@ Client → Messages → Select therapist conversation → Read messages → Type
 ### 4.3.5.8 Mockup Therapist Dashboard (Therapist Dashboard Pages)
 
 Therapist Dashboard adalah area khusus untuk terapis yang telah terdaftar dan approved. Dashboard ini memungkinkan terapis untuk manage schedule, appointments, clients, sessions, dan earnings.
+
+---
+
+**[GAMBAR 4.41 - Mockup: Therapist Dashboard Main]** 👨‍⚕️
+_Therapist dashboard - Today's schedule, stats, quick actions_
+
+**[GAMBAR 4.42 - Mockup: Therapist Appointments Calendar]** 👨‍⚕️
+_Therapist - Calendar view of all bookings, filter by status_
+
+**[GAMBAR 4.43 - Mockup: Therapist Availability Management]** 👨‍⚕️
+_Therapist - Set weekly schedule, block dates/times_
+
+**[GAMBAR 4.44 - Mockup: Therapist Clients List]** 👨‍⚕️
+_Therapist - Table of all clients with search/filter_
+
+**[GAMBAR 4.45 - Mockup: Therapist Client Detail View]** 👨‍⚕️
+_Therapist - Client profile, history, progress data_
+
+**[GAMBAR 4.46 - Mockup: Therapist Write Session Notes]** 👨‍⚕️
+_Therapist - Form to write therapy notes after session_
+
+**[GAMBAR 4.47 - Mockup: Therapist Update Client Progress]** 👨‍⚕️
+_Therapist - Input metrics: anxiety, confidence, sleep quality_
+
+**[GAMBAR 4.48 - Mockup: Therapist Reviews Page]** 👨‍⚕️
+_Therapist - View all ratings and reviews from clients_
+
+**[GAMBAR 4.49 - Mockup: Therapist Earnings Dashboard]** 👨‍⚕️
+_Therapist - Revenue charts, transaction history_
+
+**[GAMBAR 4.50 - Mockup: Therapist Profile Settings]** 👨‍⚕️
+_Therapist - Edit bio, credentials, photo, specializations_
+
+---
 
 #### A. Therapist Dashboard (Main)
 
@@ -3943,6 +4524,40 @@ Therapist → Profile Settings → Edit sections → Upload media → Preview ch
 ### 4.3.5.9 Mockup Admin Dashboard (Admin Dashboard Pages)
 
 Admin Dashboard adalah area khusus untuk administrator sistem yang memiliki akses penuh untuk manage users, bookings, finances, dan system settings. Interface dirancang untuk efficiency dan comprehensive data management.
+
+---
+
+**[GAMBAR 4.51 - Mockup: Admin Dashboard Main]** 👔
+_Admin dashboard - System stats, charts, recent activities_
+
+**[GAMBAR 4.52 - Mockup: Admin Users Management]** 👔
+_Admin - Table of all users (clients, therapists) with CRUD actions_
+
+**[GAMBAR 4.53 - Mockup: Admin Therapist Approval]** 👔
+_Admin - Review therapist applications, approve/reject_
+
+**[GAMBAR 4.54 - Mockup: Admin Services Management]** 👔
+_Admin - CRUD services: name, price, description, status_
+
+**[GAMBAR 4.55 - Mockup: Admin Bookings Management]** 👔
+_Admin - View/edit all bookings, override statuses_
+
+**[GAMBAR 4.56 - Mockup: Admin Payment Verification]** 👔
+_Admin - Manual payment verification, approve/reject proofs_
+
+**[GAMBAR 4.57 - Mockup: Admin Financial Reports]** 👔
+_Admin - Revenue charts, transaction reports, export data_
+
+**[GAMBAR 4.58 - Mockup: Admin Activity Logs]** 👔
+_Admin - System audit trail, user actions, timestamps_
+
+**[GAMBAR 4.59 - Mockup: Admin System Settings]** 👔
+_Admin - Configure system parameters, maintenance mode_
+
+**[GAMBAR 4.60 - Mockup: Admin Notifications Management]** 👔
+_Admin - Send bulk notifications, manage templates_
+
+---
 
 #### A. Admin Dashboard (Main)
 
