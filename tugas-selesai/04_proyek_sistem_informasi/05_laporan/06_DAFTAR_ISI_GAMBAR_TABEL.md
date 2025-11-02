@@ -308,22 +308,20 @@ Tabel 1.3   Manfaat Penelitian untuk Stakeholders ..............................
 
 **BAB II TINJAUAN PUSTAKA**
 
-Tabel 2.1   Perbandingan SDLC Methodologies ................................................. 22  
-Tabel 2.2   Layanan Hypnotherapy CUR-HEART .............................................. 24  
-Tabel 2.3   Perbandingan PHP Frameworks ....................................................... 26  
-Tabel 2.4   Laravel vs Express.js vs Django Comparison .................................... 28  
-Tabel 2.5   MySQL vs PostgreSQL vs MongoDB Comparison ............................ 30  
-Tabel 2.6   Tailwind CSS vs Bootstrap vs Custom CSS ...................................... 32  
-Tabel 2.7   Ringkasan Penelitian Terkait ........................................................... 42  
+Tabel 2.1   Perbandingan Model SDLC ............................................................. 22  
+Tabel 2.2   Perbandingan PHP Frameworks ....................................................... 26  
+Tabel 2.3   Perbandingan Database Management Systems ................................... 30  
+Tabel 2.4   Perbandingan CSS Frameworks ....................................................... 32  
+Tabel 2.5   Summary of Related Research (Penelitian Terkait) ............................ 42  
 
 **BAB III METODOLOGI PENELITIAN**
 
-Tabel 3.1   Fase-Fase SDLC Waterfall dengan Durasi ....................................... 45  
-Tabel 3.2   Jadwal Penelitian Detail (Minggu 1-11) ............................................ 56  
-Tabel 3.3   Daftar Narasumber Wawancara ........................................................ 59  
-Tabel 3.4   Daftar Dokumen yang Dianalisis ...................................................... 60  
-Tabel 3.5   Responden Survei ............................................................................ 61  
-Tabel 3.6   Kompetitor Benchmarking Analysis ................................................. 62  
+Tabel 3.1   Jadwal Penelitian dan Pengembangan Sistem .................................... 45  
+Tabel 3.2   Stakeholder Analysis & Involvement Matrix ..................................... 50  
+Tabel 3.3   Teknik Pengumpulan Data ............................................................... 53  
+Tabel 3.4   Tahapan SDLC Waterfall - Detail Fase dan Aktivitas ........................ 44  
+Tabel 3.5   Dokumentasi dan Deliverables per Fase SDLC ................................. 58  
+Tabel 3.6   Metode Pengujian dan Evaluasi Sistem ............................................ 61  
 
 **BAB IV HASIL PENELITIAN DAN PEMBAHASAN**
 
@@ -348,42 +346,43 @@ Tabel 4.18  Deskripsi Tabel Database - Bookings ................................
 Tabel 4.19  Deskripsi Tabel Database - Payments .............................................. 99  
 Tabel 4.20  Deskripsi Tabel Database - Sessions ................................................ 100  
 Tabel 4.21  Deskripsi Tabel Database - Reviews ................................................ 100  
-Tabel 4.22  Indexing Strategy per Table ............................................................ 104  
-Tabel 4.23  Use Case List dengan Actors ........................................................... 107  
-Tabel 4.24  Key Success Factors (KSF) Categorization ...................................... 115  
-Tabel 4.25  Critical Success Factors (CSF) dengan Indicators ............................. 117  
-Tabel 4.26  Key Performance Indicators (KPI) - Technical ................................. 118  
-Tabel 4.27  Key Performance Indicators (KPI) - Business .................................. 119  
-Tabel 4.28  Key Performance Indicators (KPI) - Operational .............................. 119  
-Tabel 4.29  Benefits Analysis - CUR-HEART .................................................... 122  
-Tabel 4.30  Benefits Analysis - Clients .............................................................. 123  
-Tabel 4.31  Benefits Analysis - Therapists ......................................................... 124  
-Tabel 4.32  ROI Calculation .............................................................................. 126  
-Tabel 4.33  5-Year Cost-Benefit Analysis .......................................................... 127  
-Tabel 4.34  Monolithic vs Microservices Decision Matrix .................................. 132  
-Tabel 4.35  Laravel Security Features ................................................................ 136  
-Tabel 4.36  PHP 8.x Modern Features Used ....................................................... 138  
-Tabel 4.37  MySQL 8.0 Features Utilized .......................................................... 140  
-Tabel 4.38  Tailwind Breakpoints Configuration ................................................ 142  
-Tabel 4.39  Development Tools & Extensions .................................................... 147  
-Tabel 4.40  Server Requirements Specification .................................................. 148  
-Tabel 4.41  Third-Party Services Integration ...................................................... 150  
-Tabel 4.42  Documentation Deliverables ........................................................... 153  
-Tabel 4.43  Video Promosi Production Details ................................................... 156  
-Tabel 4.44  X-Banner Content Structure ............................................................ 158  
-Tabel 4.45  Presentation Slide Structure (20 Slides) ........................................... 161  
-Tabel 4.46  Social Media Metrics Targets .......................................................... 165  
+Tabel 4.22  Deskripsi Tabel Database - Therapist Services ................................. 101  
+Tabel 4.23  Deskripsi Tabel Database - Session Notes ....................................... 102  
+Tabel 4.24  Deskripsi Tabel Database - Therapist Availability ............................ 102  
+Tabel 4.25  Deskripsi Tabel Database - Therapist Blocked Dates ........................ 103  
+Tabel 4.26  Deskripsi Tabel Database - Client Progress ...................................... 103  
+Tabel 4.27  Deskripsi Tabel Database - Messages .............................................. 104  
+Tabel 4.28  Deskripsi Tabel Database - Education ............................................. 104  
+Tabel 4.29  Deskripsi Tabel Database - Certifications ........................................ 105  
+Tabel 4.30  Indexing Strategy per Table ............................................................ 106  
+Tabel 4.31  Use Case List dengan Actors ........................................................... 107  
+Tabel 4.32  Key Success Factors (KSF) Categorization ...................................... 115  
+Tabel 4.33  Critical Success Factors (CSF) dengan Indicators ............................. 117  
+Tabel 4.34  Key Performance Indicators (KPI) - Technical Metrics ..................... 118  
+Tabel 4.35  Key Performance Indicators (KPI) - Business & User Metrics .......... 119  
+Tabel 4.36  Key Performance Indicators (KPI) - Operational Metrics .................. 120  
+Tabel 4.37  Benefits Analysis - CUR-HEART (Organization) ............................. 122  
+Tabel 4.38  Benefits Analysis - Clients (End Users) ............................................ 123  
+Tabel 4.39  Benefits Analysis - Therapists (Service Providers) ............................ 124  
+Tabel 4.40  ROI Calculation - First Year Analysis .............................................. 126  
+Tabel 4.41  5-Year Cost-Benefit Analysis Projection .......................................... 127  
+Tabel 4.42  Monolithic vs Microservices Decision Matrix .................................. 132  
+Tabel 4.43  Laravel Security Features Implementation ........................................ 136  
+Tabel 4.44  PHP 8.x Modern Features Utilized in CUR-HEART .......................... 138  
+Tabel 4.45  MySQL 8.0 Advanced Features Utilized .......................................... 140  
+Tabel 4.46  Tailwind CSS Breakpoints & Responsive Configuration ................... 142  
 
 **BAB V PENUTUP**
 
-Tabel 5.1   Pencapaian Tujuan Penelitian - Summary ......................................... 171  
-Tabel 5.2   Test Results Summary ..................................................................... 172  
-Tabel 5.3   Teori dan Penerapannya dalam Proyek ............................................. 174  
-Tabel 5.4   Lessons Learned Categorization ....................................................... 181  
-Tabel 5.5   Feature Enhancement Prioritization Matrix ....................................... 188  
-Tabel 5.6   Annual IT Operating Budget ........................................................... 198  
-Tabel 5.7   Investment Prioritization (ROI-Based) .............................................. 199  
-Tabel 5.8   Research Topics untuk Future Studies .............................................. 201  
+Tabel 5.1   Pencapaian Tujuan dan Evaluasi Proyek .......................................... 171  
+Tabel 5.2   Hasil Testing dan Quality Assurance ................................................ 172  
+Tabel 5.3   Business Impact & ROI Realisasi (Post-Launch Evaluation) .............. 174  
+Tabel 5.4   Lessons Learned - Successes, Challenges, dan Recommendations ...... 181  
+Tabel 5.6   Rekomendasi Pengembangan Fase 2 (Future Enhancements) ............. 188  
+Tabel 5.7   Rekomendasi Operasional dan Manajemen ....................................... 195  
+Tabel 5.8   Rekomendasi Penelitian Lanjutan (Future Research Topics) .............. 201  
+
+**CATATAN**: Tabel 5.5 sengaja tidak ada (skip numbering) dalam dokumen asli.  
 
 ---
 
