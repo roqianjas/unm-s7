@@ -246,6 +246,75 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna sistem) dengan s
 
 ---
 
+**Tabel 4.31 Use Case List dengan Actors**
+
+| UC ID | Use Case Name | Actor(s) | Priority | Complexity | Description |
+|-------|---------------|----------|----------|------------|-------------|
+| **Authentication & Authorization** | | | | | |
+| UC-01 | Register | Guest | Must Have | Low | User registrasi akun baru (client atau therapist) |
+| UC-02 | Login | All Users | Must Have | Low | User login ke sistem dengan email dan password |
+| UC-03 | Logout | All Users | Must Have | Low | User logout dari sistem |
+| UC-04 | Forgot Password | Guest | Must Have | Medium | User request reset password via email |
+| UC-05 | Reset Password | Guest | Must Have | Medium | User set password baru dengan token |
+| UC-06 | Verify Email | Guest | Should Have | Low | User verify email setelah registrasi |
+| **Client Use Cases** | | | | | |
+| UC-07 | Browse Services | Client, Guest | Must Have | Low | User browse katalog layanan terapi |
+| UC-08 | View Service Detail | Client, Guest | Must Have | Low | User lihat detail lengkap service |
+| UC-09 | Browse Therapists | Client, Guest | Must Have | Low | User browse directory terapis |
+| UC-10 | View Therapist Profile | Client, Guest | Must Have | Medium | User lihat profil lengkap terapis |
+| UC-11 | Check Therapist Availability | Client | Must Have | High | User cek jadwal available terapis |
+| UC-12 | Create Booking | Client | Must Have | High | User booking session terapi (4-step flow) |
+| UC-13 | View Booking History | Client | Must Have | Medium | User lihat riwayat booking |
+| UC-14 | Reschedule Booking | Client | Should Have | Medium | User ubah jadwal booking (min 24h before) |
+| UC-15 | Cancel Booking | Client | Should Have | Medium | User batalkan booking dengan reason |
+| UC-16 | Make Payment | Client | Must Have | High | User bayar booking (transfer/gateway) |
+| UC-17 | Upload Payment Proof | Client | Must Have | Medium | User upload bukti transfer |
+| UC-18 | View Session Notes Summary | Client | Should Have | Medium | User lihat summary catatan terapi |
+| UC-19 | Track Progress | Client | Should Have | Medium | User lihat visualisasi progress terapi |
+| UC-20 | Self-Assess Progress | Client | Could Have | Low | User input self-assessment metrics |
+| UC-21 | Submit Review | Client | Should Have | Medium | User submit rating dan review setelah session |
+| UC-22 | Send Message | Client | Could Have | Medium | User kirim pesan ke terapis/admin |
+| UC-23 | Update Profile | Client | Must Have | Low | User update profile information |
+| **Therapist Use Cases** | | | | | |
+| UC-24 | View Appointments | Therapist | Must Have | Medium | Terapis lihat jadwal appointments |
+| UC-25 | Set Weekly Availability | Therapist | Must Have | Medium | Terapis set jam kerja per hari |
+| UC-26 | Block Specific Dates | Therapist | Must Have | Medium | Terapis block tanggal (cuti, libur) |
+| UC-27 | Accept/Reject Booking | Therapist | Should Have | Medium | Terapis approve atau decline booking |
+| UC-28 | Start Session | Therapist | Must Have | Low | Terapis mark session as started |
+| UC-29 | End Session | Therapist | Must Have | Medium | Terapis mark session as completed |
+| UC-30 | Document Session Notes | Therapist | Must Have | High | Terapis input detailed session notes |
+| UC-31 | View Client History | Therapist | Must Have | Medium | Terapis lihat riwayat session client |
+| UC-32 | Assess Client Progress | Therapist | Should Have | Medium | Terapis input progress assessment |
+| UC-33 | Upload Session Attachments | Therapist | Could Have | Low | Terapis upload supporting documents |
+| UC-34 | Respond to Reviews | Therapist | Could Have | Low | Terapis reply to client reviews |
+| UC-35 | View Earnings Report | Therapist | Should Have | Medium | Terapis lihat laporan pendapatan |
+| UC-36 | Update Professional Profile | Therapist | Must Have | Medium | Terapis update bio, credentials, certifications |
+| UC-37 | Manage Services Offered | Therapist | Should Have | Low | Terapis pilih services yang dikuasai |
+| **Admin Use Cases** | | | | | |
+| UC-38 | View Dashboard Overview | Admin | Must Have | Medium | Admin lihat summary metrics sistem |
+| UC-39 | Manage Users (CRUD) | Admin | Must Have | High | Admin create/read/update/delete users |
+| UC-40 | Approve Therapist | Admin | Must Have | Medium | Admin verify dan approve new therapist |
+| UC-41 | Manage Services (CRUD) | Admin | Must Have | Medium | Admin kelola services catalog |
+| UC-42 | View All Bookings | Admin | Must Have | Medium | Admin monitor semua bookings |
+| UC-43 | Verify Manual Payments | Admin | Must Have | High | Admin approve/reject payment proofs |
+| UC-44 | Generate Financial Reports | Admin | Should Have | High | Admin export laporan keuangan |
+| UC-45 | Generate Analytics Reports | Admin | Should Have | High | Admin export laporan analytics |
+| UC-46 | Moderate Reviews | Admin | Should Have | Medium | Admin approve/hide inappropriate reviews |
+| UC-47 | Send Bulk Notifications | Admin | Could Have | Medium | Admin kirim announcement ke users |
+| UC-48 | Manage System Settings | Admin | Must Have | Medium | Admin ubah konfigurasi sistem |
+| UC-49 | View Audit Logs | Admin | Should Have | Low | Admin lihat activity logs |
+| UC-50 | Backup Database | Admin | Must Have | Low | Admin trigger manual backup |
+
+**Use Case Summary:**
+- **Total Use Cases:** 50
+- **Must Have:** 32 (64%)
+- **Should Have:** 14 (28%)
+- **Could Have:** 4 (8%)
+- **Actors:** 4 (Guest, Client, Therapist, Admin)
+- **Average Complexity:** Medium
+
+---
+
 ### B. Activity Diagram
 
 Activity Diagram menggambarkan alur kerja (workflow) dari proses bisnis dalam sistem. Berikut adalah activity diagram untuk proses-proses utama:

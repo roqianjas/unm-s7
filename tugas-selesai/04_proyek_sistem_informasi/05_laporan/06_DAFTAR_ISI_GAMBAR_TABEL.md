@@ -181,13 +181,10 @@ DAFTAR TABEL ...................................................................
 
 DAFTAR PUSTAKA ....................................................................................... 260  
 
-LAMPIRAN A: Mockup dan Screenshot Sistem ................................................ 264  
-LAMPIRAN B: Code Samples dan Technical Documentation ............................ 306  
-LAMPIRAN C: Testing Results dan Quality Assurance ..................................... 316  
-LAMPIRAN D: Project Management Documents ............................................... 324  
-LAMPIRAN E: Surat Keterangan Riset dan Keabsahan Data ............................. 331  
+LAMPIRAN A: Bukti Keabsahan Data dan Kebenaran Produk ........................... 264  
+LAMPIRAN B: Bukti Serah Terima Produk ...................................................... 306  
 
-DAFTAR RIWAYAT HIDUP ........................................................................... 334  
+DAFTAR RIWAYAT HIDUP ........................................................................... 348  
 
 ---
 
@@ -299,65 +296,6 @@ Gambar 4.72 Video Promosi Storyboard ...........................................
 Gambar 4.73 X-Banner Design Layout (60x160 cm) .......................................... 214  
 Gambar 4.74 Social Media Campaign Timeline ................................................. 219  
 
-**LAMPIRAN A: Mockup dan Screenshot Sistem**
-
-Gambar A.1  Landing Page (Homepage) ........................................................... 209  
-Gambar A.2  About Us Page ............................................................................. 210  
-Gambar A.3  Services Catalog Page .................................................................. 211  
-Gambar A.4  Service Detail Page ...................................................................... 212  
-Gambar A.5  Therapists Directory Page ............................................................. 213  
-Gambar A.6  Therapist Profile Page .................................................................. 214  
-Gambar A.7  Blog List Page .............................................................................. 215  
-Gambar A.8  Blog Detail Page ........................................................................... 216  
-Gambar A.9  Contact Us Page ........................................................................... 217  
-Gambar A.10 FAQ Page .................................................................................... 218  
-Gambar A.11 Privacy Policy Page ..................................................................... 219  
-Gambar A.12 Terms & Conditions Page ............................................................ 220  
-Gambar A.13 Login Page .................................................................................. 221  
-Gambar A.14 Register Page (Client & Therapist) ............................................... 222  
-Gambar A.15 Forgot Password Page .................................................................. 223  
-Gambar A.16 Reset Password Page ................................................................... 224  
-Gambar A.17 Client Dashboard (Main) ............................................................. 225  
-Gambar A.18 Booking Step 1 - Select Service ................................................... 226  
-Gambar A.19 Booking Step 2 - Choose Therapist .............................................. 227  
-Gambar A.20 Booking Step 3 - Select Schedule & Time .................................... 228  
-Gambar A.21 Booking Step 4 - Confirmation & Payment ................................... 229  
-Gambar A.22 Booking Success Page ................................................................. 230  
-Gambar A.23 Client Appointments List ............................................................. 231  
-Gambar A.24 Appointment Detail Page ............................................................. 232  
-Gambar A.25 Client Progress Tracking Dashboard ............................................ 233  
-Gambar A.26 Client Messages (Chat with Therapist) ......................................... 234  
-Gambar A.27 Therapist Dashboard (Main) ........................................................ 235  
-Gambar A.28 Therapist Schedule Management .................................................. 236  
-Gambar A.29 Therapist Availability Settings ..................................................... 237  
-Gambar A.30 Therapist Clients List .................................................................. 238  
-Gambar A.31 Client Profile View (Therapist Perspective) .................................. 239  
-Gambar A.32 Session Room (Video Conferencing) ............................................ 240  
-Gambar A.33 Session Notes Entry Form ........................................................... 241  
-Gambar A.34 Therapist Session History ............................................................ 242  
-Gambar A.35 Therapist Earnings Dashboard ..................................................... 243  
-Gambar A.36 Therapist Profile Edit Page .......................................................... 244  
-Gambar A.37 Admin Dashboard (Main) ............................................................ 245  
-Gambar A.38 Admin Users Management .......................................................... 246  
-Gambar A.39 Admin Bookings Management ..................................................... 247  
-Gambar A.40 Admin Financial Reports ............................................................. 248  
-Gambar A.41 Admin System Settings ............................................................... 249  
-
-**LAMPIRAN B: Code Samples**
-
-Gambar B.1  Laravel Migration - Create Bookings Table ................................... 251  
-Gambar B.2  Eloquent Model - Booking.php ..................................................... 252  
-Gambar B.3  Controller - BookingController.php .............................................. 253  
-Gambar B.4  Blade Template - booking_step1.blade.php ................................... 254  
-Gambar B.5  Tailwind Config - tailwind.config.js .............................................. 255  
-
-**LAMPIRAN D: Project Management**
-
-Gambar D.1  Project Charter Document ............................................................ 269  
-Gambar D.2  Risk Register Matrix ..................................................................... 270  
-Gambar D.3  Communication Plan Matrix ......................................................... 271  
-Gambar D.4  Team RACI Matrix ...................................................................... 272  
-
 ---
 
 ## DAFTAR TABEL
@@ -447,21 +385,6 @@ Tabel 5.6   Annual IT Operating Budget .........................................
 Tabel 5.7   Investment Prioritization (ROI-Based) .............................................. 199  
 Tabel 5.8   Research Topics untuk Future Studies .............................................. 201  
 
-**LAMPIRAN C: Testing Results**
-
-Tabel C.1   Unit Test Results Summary ............................................................. 261  
-Tabel C.2   Feature Test Results ........................................................................ 262  
-Tabel C.3   User Acceptance Testing (UAT) Checklist ....................................... 263  
-Tabel C.4   Performance Test Results ................................................................ 264  
-Tabel C.5   Security Test Results ....................................................................... 265  
-Tabel C.6   Cross-Browser Compatibility Test ................................................... 266  
-Tabel C.7   Responsive Design Test Results ....................................................... 267  
-
-**LAMPIRAN D: Project Management**
-
-Tabel D.1   Meeting Minutes Log ...................................................................... 273  
-Tabel D.2   Change Request Log ....................................................................... 274  
-
 ---
 
 **CATATAN PENGGUNAAN DAFTAR ISI, GAMBAR, DAN TABEL:**
@@ -473,7 +396,6 @@ Tabel D.2   Change Request Log .................................................
 3. **Cross-Reference**: Dalam penulisan, selalu reference gambar dan tabel dengan format:
    - "Seperti terlihat pada Gambar 4.9..."
    - "Berdasarkan Tabel 4.5..."
-   - "Lihat Lampiran A, Gambar A.17 untuk screenshot lengkap..."
 
 4. **Caption Format**:
    - **Gambar**: Caption di bawah gambar, format "Gambar [Bab].[Nomor] [Judul Gambar]"
@@ -482,9 +404,11 @@ Tabel D.2   Change Request Log .................................................
 
 5. **Numbering**: 
    - Penomoran per bab (e.g., Gambar 4.1, 4.2, ... untuk BAB IV)
-   - Lampiran menggunakan huruf (e.g., Gambar A.1, B.1, C.1)
 
-6. **Lampiran**: Total 41 mockup screenshots akan dimasukkan ke Lampiran A dengan caption dan keterangan singkat masing-masing.
+6. **Lampiran**: 
+   - **Lampiran A**: Bukti Keabsahan Data (wawancara, observasi, dokumen pendukung)
+   - **Lampiran B**: Bukti Serah Terima Produk (berita acara, surat pernyataan)
+   - **UI/UX Mockup**: Sudah dibahas lengkap di BAB IV section 4.3.5, tidak perlu duplikasi di lampiran
 
 ---
 

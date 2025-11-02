@@ -95,6 +95,21 @@ Permasalahan-permasalahan tersebut secara kumulatif menyebabkan berbagai dampak 
 
 Oleh karena itu, pengembangan sistem informasi manajemen booking dan terapi berbasis web yang terintegrasi, secure, dan user-friendly menjadi kebutuhan mendesak untuk mengatasi permasalahan-permasalahan tersebut dan mendukung pertumbuhan CUR-HEART yang berkelanjutan.
 
+**Tabel 1.1 Identifikasi Masalah dan Dampaknya**
+
+| No | Masalah | Kondisi Saat Ini | Dampak Negatif | Prioritas |
+|----|---------|------------------|----------------|-----------|
+| 1 | Proses Booking Tidak Efisien | Manual via WhatsApp/Telepon, memakan waktu 5-10 menit per booking | Conversion rate rendah (60%), kehilangan 40% potensial klien | Sangat Tinggi |
+| 2 | Manajemen Jadwal Tidak Terintegrasi | Spreadsheet terpisah untuk setiap terapis, tidak real-time | 8-10 kasus double booking per bulan, ketimpangan workload terapis | Sangat Tinggi |
+| 3 | Dokumentasi Terapi Tidak Terstruktur | Kertas fisik atau file Word terpisah, tidak ada template standar | Waktu dokumentasi 10-15 menit per sesi, risiko kehilangan data tinggi | Tinggi |
+| 4 | Tidak Ada Tracking Progress | Catatan manual tidak terstruktur, tidak ada metrics objektif | Sulitnya evaluasi efektivitas terapi, klien tidak melihat progress | Tinggi |
+| 5 | Akses Informasi Terbatas | Klien harus selalu menghubungi admin untuk informasi | Ketergantungan tinggi pada admin, user experience buruk | Sedang |
+| 6 | Kesulitan Pengambilan Keputusan | Data tersebar, tidak ada dashboard atau reporting | Laporan bulanan memakan waktu berhari-hari, sulit identifikasi trend | Tinggi |
+| 7 | Sistem Pembayaran Manual | Transfer bank dengan konfirmasi manual, tidak ada invoice otomatis | Konfirmasi lambat (berjam-jam/hari), reconciliation manual rawan error | Sedang |
+| 8 | Risiko Keamanan Data Tinggi | File tidak ter-encrypt, tidak ada access control atau audit trail | Tidak compliant UU PDP No. 27/2022, risiko data breach | Sangat Tinggi |
+
+**Sumber:** Hasil observasi, wawancara stakeholder, dan analisis proses bisnis CUR-HEART (September 2024)
+
 ## 1.3 Ruang Lingkup
 
 Untuk memfokuskan pembahasan dan memastikan keberhasilan proyek, penelitian ini menetapkan batasan-batasan ruang lingkup sebagai berikut:
@@ -585,6 +600,23 @@ Untuk memastikan fokus pengembangan, beberapa fitur di bawah ini **tidak** terma
    - Sistem didesain untuk single tenant (CUR-HEART saja)
    - Tidak ada fitur white-label atau franchise management
 
+**Tabel 1.2 Batasan Sistem**
+
+| No | Aspek | Tidak Termasuk dalam Scope | Alternatif/Solusi | Alasan |
+|----|-------|----------------------------|-------------------|--------|
+| 1 | Video Conference | Develop native video engine sendiri | Integrasi third-party (Zoom API, Google Meet, Whereby) via iframe | Kompleksitas tinggi, membutuhkan spesialisasi WebRTC, tidak cost-effective |
+| 2 | Mobile App | Aplikasi iOS/Android native | Responsive web design (mobile-friendly browser access) | Resource dan timeline terbatas, web app cukup untuk MVP |
+| 3 | AI/ML | Diagnosis otomatis, chatbot AI, rekomendasi ML-based | Rule-based logic, manual assignment oleh admin/user | Memerlukan data training besar dan expertise khusus AI/ML |
+| 4 | Telemedicine | Prescription obat, resep medis | Fokus hypnotherapy dan konseling saja | Regulasi medis ketat, memerlukan izin khusus dari Kemenkes |
+| 5 | Multi-Language | Interface dalam bahasa asing (English, dll.) | Bahasa Indonesia saja | Target market lokal Indonesia, simplify development |
+| 6 | Third-Party Integrations | EMR systems, insurance providers, social login | Payment gateway (Midtrans) saja | Fokus pada core functionality, hindari dependency berlebihan |
+| 7 | Advanced Analytics | Predictive analytics, forecasting, data mining | Descriptive analytics dan basic reporting | Complexity tinggi, tidak prioritas untuk fase 1 |
+| 8 | Multi-Tenant | White-label, franchise management, multi-company | Single tenant untuk CUR-HEART saja | Scope proyek untuk satu organisasi, simplify architecture |
+
+**Sumber:** Hasil scoping meeting dengan stakeholder dan analisis technical feasibility (September 2024)
+
+**Catatan:** Fitur-fitur di atas dapat dikembangkan di fase berikutnya (future enhancement) setelah sistem core berhasil diimplementasikan dan dievaluasi.
+
 ### 1.3.5 Ruang Lingkup Metodologi
 
 1. **Metodologi Pengembangan:**
@@ -788,6 +820,20 @@ Penelitian dan pengembangan sistem informasi ini diharapkan memberikan manfaat k
 
 5. **Penciptaan Lapangan Kerja:**
    Sukses dan pertumbuhan CUR-HEART yang didukung oleh sistem informasi yang baik akan membuka peluang kerja baru untuk terapis, admin, IT support, dan posisi lainnya, berkontribusi pada penyerapan tenaga kerja.
+
+**Tabel 1.3 Manfaat Penelitian untuk Stakeholders**
+
+| Stakeholder | Manfaat Utama | Metrics/Indikator Keberhasilan | Impact |
+|-------------|---------------|--------------------------------|--------|
+| **CUR-HEART (Organisasi)** | Peningkatan efisiensi operasional 60%, revenue meningkat, data-driven decision making | • Reduction administrative time 60%<br>• Conversion rate 60% → 85%<br>• Okupansi terapis optimal<br>• Zero double booking | Sangat Tinggi |
+| **Terapis** | Kemudahan manajemen jadwal, efisiensi dokumentasi (15 menit → 5-7 menit), transparansi earnings | • Time saving dokumentasi 50%<br>• Work-life balance membaik<br>• Visibilitas earnings real-time<br>• Performance insights untuk improvement | Tinggi |
+| **Klien** | Booking 24/7, transparansi informasi, kontrol autonomy, progress visibility, privacy terjamin | • Booking anytime/anywhere<br>• Informed decision dengan review & rating<br>• Self-service (reschedule, cancel)<br>• Progress tracking objektif | Sangat Tinggi |
+| **Akademik** | Kontribusi ilmu pengetahuan, case study pembelajaran, best practices documentation | • Referensi penelitian lanjutan<br>• Case study untuk mata kuliah SI/RPL<br>• Kolaborasi industri-akademik | Sedang |
+| **Masyarakat** | Peningkatan akses kesehatan mental, pengurangan stigma, edukasi, model digitalisasi UMKM | • Lebih banyak akses layanan mental health<br>• Awareness kesehatan mental meningkat<br>• Inspirasi digitalisasi UMKM<br>• Penciptaan lapangan kerja | Tinggi |
+
+**Sumber:** Analisis dampak proyek terhadap stakeholders (September 2024)
+
+**Catatan:** Metrics keberhasilan akan diukur melalui User Acceptance Testing (UAT), survey kepuasan pengguna, dan monitoring KPI sistem selama 3-6 bulan pertama implementasi.
 
 Dengan demikian, penelitian dan pengembangan sistem informasi manajemen booking dan terapi CUR-HEART ini memiliki potensi dampak positif yang luas, tidak hanya bagi organisasi CUR-HEART itu sendiri, tetapi juga bagi terapis, klien, komunitas akademik, dan masyarakat luas dalam upaya meningkatkan akses dan kualitas layanan kesehatan mental di Indonesia.
 

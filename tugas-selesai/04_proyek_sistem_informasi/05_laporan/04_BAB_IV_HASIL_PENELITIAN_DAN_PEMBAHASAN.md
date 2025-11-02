@@ -86,6 +86,23 @@ Sistem manual tidak dapat mengakomodasi growth:
 - Sulit untuk ekspansi ke lokasi cabang baru
 - Technology infrastructure tidak mendukung scale
 
+**Tabel 4.1 Analisis Masalah dengan Data Kuantitatif**
+
+| No | Masalah | Data Kuantitatif | Dampak | Prioritas |
+|----|---------|------------------|--------|-----------|
+| 1 | Conversion Rate Booking Rendah | 60% dari inquiry menjadi booking (40% loss) | Loss potensial revenue Rp 20 juta/bulan | Critical |
+| 2 | Konflik Jadwal & Double Booking | 8-10 kasus per bulan | Customer dissatisfaction, reputasi negatif | High |
+| 3 | Waktu Dokumentasi Terapi Lama | 15 menit per sesi x 120 sesi/bulan = 30 jam/bulan | Inefisiensi operasional, terapis tidak produktif | High |
+| 4 | Tidak Ada Data untuk Decision | Laporan bulanan butuh 2-3 hari kerja | Missed opportunities, keputusan tidak optimal | High |
+| 5 | Pengalaman Klien Kurang Optimal | Retention rate hanya 45% | Churn tinggi, kehilangan repeat customers | Critical |
+| 6 | Beban Administratif Tinggi | Admin menghabiskan 70% waktu untuk tugas manual | Cost tinggi, tidak scalable | High |
+| 7 | Security & Privacy Risks | Data sensitif tersimpan tidak encrypted | Resiko legal, pelanggaran UU PDP | Critical |
+| 8 | Hambatan Skalabilitas | Sistem manual tidak support growth >20 terapis | Tidak bisa ekspansi, kehilangan market share | Medium |
+
+**Sumber:** Observasi lapangan dan wawancara dengan CUR-HEART Management, September 2024
+
+---
+
 ### 4.1.3 Tujuan Proyek
 
 Proyek ini memiliki tujuan utama dan tujuan khusus sebagai berikut:
@@ -109,22 +126,19 @@ Mengembangkan sistem informasi manajemen booking dan terapi berbasis web yang te
 
 Analisis stakeholder mengidentifikasi pihak-pihak yang terlibat dan berkepentingan dalam proyek:
 
-**1. Primary Stakeholders:**
+**Tabel 4.2 Stakeholder Analysis Matrix**
 
-| Stakeholder | Role | Interest | Influence | Engagement Strategy |
-|-------------|------|----------|-----------|---------------------|
-| Owner CUR-HEART | Decision Maker | ROI, Business Growth, Competitive Advantage | Very High | Weekly progress updates, milestone approvals, UAT involvement |
-| Terapis (5 orang) | Primary Users | Ease of use, Time saving, Better client management | High | Requirements workshop, usability testing, training sessions |
-| Admin Staff (2 orang) | System Operators | Workload reduction, Efficiency | High | Process mapping sessions, UAT, comprehensive training |
-| Klien (Existing & Potential) | End Users | Convenience, Privacy, Good UX | Medium | User research, usability testing, feedback surveys |
+| Stakeholder | Role | Kategori | Interest Level | Power/Influence | Kebutuhan Utama | Engagement Strategy | Frekuensi Komunikasi |
+|-------------|------|----------|----------------|-----------------|-----------------|---------------------|---------------------|
+| Owner CUR-HEART | Decision Maker, Sponsor | Primary | Very High | Very High | ROI, growth, competitive advantage | Manage Closely - Weekly updates, milestone approvals | Weekly |
+| Terapis (5 orang) | Primary Users | Primary | Very High | High | Ease of use, time saving, better client management | Manage Closely - Requirements workshop, UAT | Bi-weekly |
+| Admin Staff (2 orang) | System Operators | Primary | High | High | Workload reduction, efficiency | Manage Closely - Process mapping, training | Weekly |
+| Klien Aktif | End Users | Primary | High | Medium | Convenience, privacy, good UX | Keep Informed - User research, feedback surveys | Monthly |
+| Dosen Pembimbing | Academic Supervisor | Secondary | High | High | Quality, learning outcomes, documentation | Keep Satisfied - Weekly consultation, reviews | Weekly |
+| Tim Pengembang (3 orang) | Project Team | Internal | Very High | Very High | Successful delivery, learning, portfolio | Manage Closely - Daily standups, collaboration | Daily |
+| Universitas Nusa Mandiri | Academic Institution | Secondary | Medium | Medium | Student achievement, industry collaboration | Keep Informed - Progress reports, presentations | Monthly |
 
-**2. Secondary Stakeholders:**
-
-| Stakeholder | Role | Interest | Influence | Engagement Strategy |
-|-------------|------|----------|-----------|---------------------|
-| Dosen Pembimbing | Academic Supervisor | Quality, Learning outcomes, Documentation | High | Weekly consultation, progress reviews, technical guidance |
-| Tim Pengembang | Project Team | Successful delivery, Learning, Portfolio | Very High | Daily standups, collaborative development, peer reviews |
-| Universitas Nusa Mandiri | Academic Institution | Student achievement, Industry collaboration | Medium | Progress reports, final presentation, documentation submission |
+**Sumber:** Analisis Stakeholder CUR-HEART, September 2024
 
 **Stakeholder Power-Interest Matrix:**
 
@@ -153,17 +167,34 @@ Low Power
 
 **Project Charter - Sistem Informasi CUR-HEART**
 
-**Project Title:** Pengembangan Sistem Informasi Manajemen Booking dan Terapi CUR-HEART Berbasis Web
+**Tabel 4.3 Project Charter - Executive Summary**
 
-**Project Manager:** Roki Anjas (NIM: 11250066)
+| Elemen | Deskripsi |
+|--------|-----------|
+| **Project Title** | Pengembangan Sistem Informasi Manajemen Booking dan Terapi CUR-HEART Berbasis Web |
+| **Project Manager** | Roki Anjas (NIM: 11250066) |
+| **Project Sponsor** | CUR-HEART Management |
+| **Academic Supervisor** | Rani Irma Handayani, M.Kom |
+| **Development Team** | 3 developers (Full Stack) |
+| **Project Start Date** | 16 September 2024 |
+| **Target Completion** | 1 Desember 2024 (11 minggu / 77 hari kerja) |
+| **Total Budget** | Rp 5.000.000 |
+| **Methodology** | Waterfall SDLC (6 phases) |
+| **Target Users** | 3 roles: Admin, Therapist (5 orang), Client (100+ existing) |
+| **Platform** | Web-based application (responsive design) |
+| **Technology Stack** | Laravel 10, PHP 8.2, MySQL 8.0, Tailwind CSS 3.0 |
+| **Main Objective** | Meningkatkan efisiensi operasional min 40%, conversion rate dari 60% ke 85% |
+| **Key Deliverables** | 1) Web application production-ready<br>2) Source code & documentation<br>3) Capstone report (80-100 hal)<br>4) Training materials<br>5) Presentation & demo video |
+| **Success Criteria** | 1) 95%+ functional requirements implemented<br>2) SUS score ≥ 80/100<br>3) UAT passed<br>4) No critical bugs<br>5) Conversion rate ≥ 75% |
+| **Key Constraints** | 1) Timeline: 11 minggu strict<br>2) Budget: Rp 5 juta<br>3) Team: 3 developers<br>4) Academic requirement: Must use Laravel |
 
-**Project Sponsor:** CUR-HEART Management
+**Project Authorization:**
 
-**Project Start Date:** 16 September 2024
-
-**Target Completion Date:** 1 Desember 2024
-
-**Budget:** Rp 5.000.000 (estimasi untuk hosting, domain, payment gateway setup, development tools)
+| Name | Role | Signature | Date |
+|------|------|-----------|------|
+| [Owner Name] | Project Sponsor | _____________ | ___/___/___ |
+| Roki Anjas | Project Manager | _____________ | ___/___/___ |
+| Rani Irma Handayani, M.Kom | Academic Supervisor | _____________ | ___/___/___ |
 
 **Project Objectives:**
 1. Develop fully functional web-based booking and therapy management system
@@ -253,55 +284,51 @@ Low Power
 
 Ruang lingkup proyek didefinisikan menggunakan **Work Breakdown Structure (WBS)** yang memecah deliverables menjadi work packages yang dapat dimanage.
 
-**WBS Level 1 - Major Deliverables:**
+**Tabel 4.4 Work Breakdown Structure (Level 1-3)**
 
-```
-1.0 Sistem Informasi CUR-HEART
-│
-├── 1.1 Project Management
-│   ├── 1.1.1 Project Planning
-│   ├── 1.1.2 Progress Monitoring
-│   ├── 1.1.3 Risk Management
-│   └── 1.1.4 Stakeholder Communication
-│
-├── 1.2 Requirements Analysis
-│   ├── 1.2.1 Stakeholder Interviews
-│   ├── 1.2.2 Business Process Analysis
-│   ├── 1.2.3 Requirements Documentation
-│   └── 1.2.4 Requirements Validation
-│
-├── 1.3 System Design
-│   ├── 1.3.1 Architecture Design
-│   ├── 1.3.2 Database Design
-│   ├── 1.3.3 UI/UX Design
-│   └── 1.3.4 Security Design
-│
-├── 1.4 Development
-│   ├── 1.4.1 Environment Setup
-│   ├── 1.4.2 Backend Development
-│   ├── 1.4.3 Frontend Development
-│   ├── 1.4.4 Integration
-│   └── 1.4.5 Code Review
-│
-├── 1.5 Testing
-│   ├── 1.5.1 Unit Testing
-│   ├── 1.5.2 Integration Testing
-│   ├── 1.5.3 Functional Testing
-│   ├── 1.5.4 Usability Testing
-│   └── 1.5.5 UAT
-│
-├── 1.6 Deployment
-│   ├── 1.6.1 Production Setup
-│   ├── 1.6.2 Data Migration
-│   ├── 1.6.3 Go-Live
-│   └── 1.6.4 Post-Deployment Support
-│
-└── 1.7 Documentation
-    ├── 1.7.1 Technical Documentation
-    ├── 1.7.2 User Documentation
-    ├── 1.7.3 Capstone Report
-    └── 1.7.4 Presentation Materials
-```
+| WBS Code | Work Package | Deliverables | Duration | Responsible |
+|----------|--------------|--------------|----------|-------------|
+| **1.0** | **Sistem Informasi CUR-HEART** | Sistem booking & terapi lengkap | 77 hari | Tim Proyek |
+| 1.1 | Project Management | Project documentation | 77 hari | Project Manager |
+| 1.1.1 | Project Planning | Project charter, WBS, schedule, budget | 3 hari | Project Manager |
+| 1.1.2 | Progress Monitoring | Weekly status reports | 77 hari | Project Manager |
+| 1.1.3 | Risk Management | Risk register, mitigation plans | 77 hari | Project Manager |
+| 1.1.4 | Stakeholder Communication | Communication logs | 77 hari | Project Manager |
+| 1.2 | Requirements Analysis | SRS document | 11 hari | Business Analyst |
+| 1.2.1 | Stakeholder Interviews | Interview transcripts | 5 hari | Business Analyst |
+| 1.2.2 | Business Process Analysis | As-Is & To-Be process models | 3 hari | Business Analyst |
+| 1.2.3 | Requirements Documentation | Functional & non-functional requirements | 3 hari | Business Analyst |
+| 1.2.4 | Requirements Validation | Validated SRS | 1 hari | Business Analyst |
+| 1.3 | System Design | Design documents | 14 hari | System Designer |
+| 1.3.1 | Architecture Design | Architecture diagram, tech stack decision | 3 hari | System Architect |
+| 1.3.2 | Database Design | ERD, table structures, normalization | 4 hari | Database Designer |
+| 1.3.3 | UI/UX Design | Mockups, design system, component library | 5 hari | UI/UX Designer |
+| 1.3.4 | Security Design | Security architecture, authentication flow | 2 hari | Security Specialist |
+| 1.4 | Development | Working application | 28 hari | Development Team |
+| 1.4.1 | Environment Setup | Dev, staging, prod environments | 2 hari | DevOps |
+| 1.4.2 | Backend Development | APIs, business logic, database | 10 hari | Backend Developer |
+| 1.4.3 | Frontend Development | UI implementation | 12 hari | Frontend Developer |
+| 1.4.4 | Integration | Integrated system | 5 hari | Full Stack Developer |
+| 1.4.5 | Code Review | Code quality reports | 2 hari | Senior Developer |
+| 1.5 | Testing | Test reports, bug tracking | 14 hari | QA Team |
+| 1.5.1 | Unit Testing | Unit test coverage report | 3 hari | Developers |
+| 1.5.2 | Integration Testing | Integration test results | 3 hari | QA Engineer |
+| 1.5.3 | Functional Testing | Functional test cases executed | 4 hari | QA Engineer |
+| 1.5.4 | Usability Testing | Usability test report (SUS score) | 3 hari | UX Researcher |
+| 1.5.5 | User Acceptance Testing (UAT) | UAT approval, acceptance criteria met | 2 hari | Stakeholders |
+| 1.6 | Deployment | Live production system | 7 hari | DevOps Team |
+| 1.6.1 | Production Setup | Server configured, domain live | 2 hari | DevOps |
+| 1.6.2 | Application Deployment | App deployed to production | 2 hari | DevOps |
+| 1.6.3 | Go-Live | System operational | 1 hari | Project Manager |
+| 1.6.4 | User Training | Trained users, training materials | 2 hari | Trainer |
+| 1.7 | Documentation | Complete project documentation | 21 hari | Documentation Team |
+| 1.7.1 | Technical Documentation | API docs, architecture docs, DB schema | 7 hari | Tech Writer |
+| 1.7.2 | User Documentation | User manual, admin guide | 5 hari | Tech Writer |
+| 1.7.3 | Capstone Report | Final report (80-100 pages) | 14 hari | Project Team |
+| 1.7.4 | Presentation Materials | Slides, demo video | 7 hari | Project Team |
+
+**Total Work Packages:** 36 level-3 packages  
+**Total Duration:** 77 hari kerja (11 minggu)
 
 **Scope Baseline:**
 
@@ -331,123 +358,133 @@ Scope Statement yang approved pada tanggal 29 September 2024 mencakup:
 
 ### 4.2.2 Jadwal Proyek (Schedule Management)
 
-**Project Schedule - Gantt Chart:**
+**Tabel 4.5 Project Schedule dengan Milestones**
 
-| ID | Task Name | Duration | Start | End | Predecessors |
-|----|-----------|----------|-------|-----|--------------|
-| 1 | **Project Initiation** | 3 days | 16-Sep | 18-Sep | - |
-| 1.1 | Kick-off meeting | 1 day | 16-Sep | 16-Sep | - |
-| 1.2 | Stakeholder identification | 1 day | 17-Sep | 17-Sep | 1.1 |
-| 1.3 | Project charter approval | 1 day | 18-Sep | 18-Sep | 1.2 |
-| 2 | **Requirements Analysis** | 11 days | 19-Sep | 29-Sep | 1 |
-| 2.1 | Stakeholder interviews | 5 days | 19-Sep | 23-Sep | 1.3 |
-| 2.2 | Business process observation | 3 days | 19-Sep | 21-Sep | 1.3 |
-| 2.3 | Document analysis | 2 days | 24-Sep | 25-Sep | 2.1,2.2 |
-| 2.4 | Requirements documentation | 3 days | 26-Sep | 28-Sep | 2.3 |
-| 2.5 | Requirements validation | 1 day | 29-Sep | 29-Sep | 2.4 |
-| 3 | **System Design** | 14 days | 30-Sep | 13-Oct | 2 |
-| 3.1 | Architecture design | 3 days | 30-Sep | 2-Oct | 2.5 |
-| 3.2 | Database design | 4 days | 3-Oct | 6-Oct | 3.1 |
-| 3.3 | UI/UX design | 5 days | 7-Oct | 11-Oct | 3.1 |
-| 3.4 | Security design | 2 days | 12-Oct | 13-Oct | 3.2,3.3 |
-| 3.5 | Design review | 1 day | 13-Oct | 13-Oct | 3.4 |
-| 4 | **Development** | 28 days | 14-Oct | 10-Nov | 3 |
-| 4.1 | Environment setup | 2 days | 14-Oct | 15-Oct | 3.5 |
-| 4.2 | Database implementation | 3 days | 16-Oct | 18-Oct | 4.1 |
-| 4.3 | Authentication system | 4 days | 19-Oct | 22-Oct | 4.2 |
-| 4.4 | Backend development | 10 days | 23-Oct | 1-Nov | 4.3 |
-| 4.5 | Frontend development | 12 days | 23-Oct | 3-Nov | 4.3 |
-| 4.6 | Integration | 5 days | 4-Nov | 8-Nov | 4.4,4.5 |
-| 4.7 | Code review | 2 days | 9-Nov | 10-Nov | 4.6 |
-| 5 | **Testing** | 14 days | 11-Nov | 24-Nov | 4 |
-| 5.1 | Unit testing | 3 days | 11-Nov | 13-Nov | 4.7 |
-| 5.2 | Integration testing | 3 days | 14-Nov | 16-Nov | 5.1 |
-| 5.3 | Functional testing | 4 days | 17-Nov | 20-Nov | 5.2 |
-| 5.4 | Usability testing | 3 days | 21-Nov | 23-Nov | 5.3 |
-| 5.5 | UAT | 2 days | 23-Nov | 24-Nov | 5.4 |
-| 6 | **Deployment** | 7 days | 25-Nov | 1-Dec | 5 |
-| 6.1 | Production environment setup | 2 days | 25-Nov | 26-Nov | 5.5 |
-| 6.2 | Application deployment | 2 days | 27-Nov | 28-Nov | 6.1 |
-| 6.3 | Go-live | 1 day | 29-Nov | 29-Nov | 6.2 |
-| 6.4 | User training | 2 days | 30-Nov | 1-Dec | 6.3 |
-| 7 | **Documentation** | 21 days | 11-Nov | 1-Dec | - |
-| 7.1 | Technical documentation | 7 days | 11-Nov | 17-Nov | 5.1 |
-| 7.2 | User documentation | 5 days | 18-Nov | 22-Nov | 7.1 |
-| 7.3 | Capstone report writing | 14 days | 18-Nov | 1-Dec | 7.1 |
-| 7.4 | Presentation preparation | 7 days | 25-Nov | 1-Dec | 7.3 |
+| Phase | Task Name | Duration | Start | End | Status | Milestone |
+|-------|-----------|----------|-------|-----|--------|-----------|
+| **1. Initiation** | Project kick-off & charter | 3 hari | 16-Sep | 18-Sep | ✅ Complete | M1: Project Approved |
+| | Kick-off meeting | 1 hari | 16-Sep | 16-Sep | ✅ | |
+| | Stakeholder identification | 1 hari | 17-Sep | 17-Sep | ✅ | |
+| | Project charter approval | 1 hari | 18-Sep | 18-Sep | ✅ | |
+| **2. Requirements** | Analysis & documentation | 11 hari | 19-Sep | 29-Sep | ✅ Complete | M2: Requirements Complete |
+| | Stakeholder interviews | 5 hari | 19-Sep | 23-Sep | ✅ | |
+| | Business process analysis | 3 hari | 19-Sep | 21-Sep | ✅ | |
+| | Requirements documentation | 3 hari | 26-Sep | 28-Sep | ✅ | |
+| | Requirements validation | 1 hari | 29-Sep | 29-Sep | ✅ | |
+| **3. Design** | System & UI/UX design | 14 hari | 30-Sep | 13-Oct | ✅ Complete | M3: Design Complete |
+| | Architecture design | 3 hari | 30-Sep | 2-Oct | ✅ | |
+| | Database design | 4 hari | 3-Oct | 6-Oct | ✅ | |
+| | UI/UX design | 5 hari | 7-Oct | 11-Oct | ✅ | |
+| | Security design | 2 hari | 12-Oct | 13-Oct | ✅ | |
+| **4. Development** | Coding & integration | 28 hari | 14-Oct | 10-Nov | ⏳ In Progress | M4: Development Complete |
+| | Environment setup | 2 hari | 14-Oct | 15-Oct | ✅ | |
+| | Database implementation | 3 hari | 16-Oct | 18-Oct | ✅ | |
+| | Authentication system | 4 hari | 19-Oct | 22-Oct | ✅ | |
+| | Backend development | 10 hari | 23-Oct | 1-Nov | ⏳ | |
+| | Frontend development | 12 hari | 23-Oct | 3-Nov | ⏳ | |
+| | Integration | 5 hari | 4-Nov | 8-Nov | 🔜 Upcoming | |
+| | Code review | 2 hari | 9-Nov | 10-Nov | 🔜 | |
+| **5. Testing** | QA & UAT | 14 hari | 11-Nov | 24-Nov | 🔜 Upcoming | M5: Testing Complete |
+| | Unit testing | 3 hari | 11-Nov | 13-Nov | 🔜 | |
+| | Integration testing | 3 hari | 14-Nov | 16-Nov | 🔜 | |
+| | Functional testing | 4 hari | 17-Nov | 20-Nov | 🔜 | |
+| | Usability testing (SUS) | 3 hari | 21-Nov | 23-Nov | 🔜 | |
+| | UAT | 2 hari | 23-Nov | 24-Nov | 🔜 | |
+| **6. Deployment** | Go-live & training | 7 hari | 25-Nov | 1-Dec | 🔜 Upcoming | M6: System Live |
+| | Production setup | 2 hari | 25-Nov | 26-Nov | 🔜 | |
+| | App deployment | 2 hari | 27-Nov | 28-Nov | 🔜 | |
+| | Go-live | 1 hari | 29-Nov | 29-Nov | 🔜 | M6: System Live |
+| | User training | 2 hari | 30-Nov | 1-Dec | 🔜 | M7: Project Complete |
+| **7. Documentation** | Reports & materials | 21 hari | 11-Nov | 1-Dec | ⏳ In Progress | M7: Project Complete |
+| | Technical documentation | 7 hari | 11-Nov | 17-Nov | ⏳ | |
+| | User documentation | 5 hari | 18-Nov | 22-Nov | 🔜 | |
+| | Capstone report | 14 hari | 18-Nov | 1-Dec | ⏳ | |
+| | Presentation prep | 7 hari | 25-Nov | 1-Dec | 🔜 | |
 
-**Critical Path:**
-
-Initiation → Requirements → Design → Development (Backend & Frontend) → Integration → Testing → UAT → Deployment → Go-Live
-
-Total Duration: **77 days (11 minggu)**
-
-**Milestones:**
-
-| Milestone | Date | Deliverable |
-|-----------|------|-------------|
-| M1: Project Approved | 18-Sep-2024 | Project Charter signed |
-| M2: Requirements Complete | 29-Sep-2024 | SRS Document approved |
-| M3: Design Complete | 13-Oct-2024 | Design Documents approved |
-| M4: Development Complete | 10-Nov-2024 | Working application |
-| M5: Testing Complete | 24-Nov-2024 | UAT passed, bugs fixed |
-| M6: System Live | 29-Nov-2024 | Production deployment |
-| M7: Project Complete | 1-Dec-2024 | All deliverables submitted |
+**Total Duration:** 77 hari kerja (11 minggu)  
+**Critical Path:** Initiation → Requirements → Design → Development → Integration → Testing → UAT → Deployment  
+**Current Progress:** 45% complete (Phase 1-3 done, Phase 4 in progress)
 
 ### 4.2.3 Biaya Proyek (Cost Management)
 
-**Budget Breakdown:**
+**Tabel 4.6 Budget Breakdown (Rp 5,000,000 Total)**
 
-| Category | Item | Cost (Rp) | Notes |
-|----------|------|-----------|-------|
-| **Infrastructure** | | **1.500.000** | |
-| | Domain (.com, 1 tahun) | 150.000 | curheart.com |
-| | VPS Hosting (3 bulan) | 900.000 | 2 CPU, 4GB RAM, 80GB SSD |
-| | SSL Certificate | 0 | Let's Encrypt (free) |
-| | Backup Storage | 150.000 | Google Drive Business |
-| | CDN Service (optional) | 300.000 | Cloudflare Pro |
-| **Development Tools** | | **800.000** | |
-| | Code Editor (VS Code) | 0 | Free |
-| | Design Tools (Figma Pro) | 200.000 | 1 month subscription |
-| | Database Tools | 0 | Free (phpMyAdmin, MySQL Workbench) |
-| | Version Control (GitHub) | 0 | Free tier |
-| | Project Management Tool | 100.000 | Trello/Asana premium |
-| | Communication Tools | 0 | Discord/Slack free |
-| | Testing Tools | 500.000 | Browser testing, performance tools |
-| **Third-Party Services** | | **1.200.000** | |
-| | Payment Gateway Setup | 0 | No setup fee (Midtrans) |
-| | Payment Gateway Transaction | 500.000 | Testing credit |
-| | Email Service (SMTP) | 200.000 | SendGrid/Mailgun |
-| | SMS Service (optional) | 300.000 | Twilio credits untuk testing |
-| | Analytics Tools | 0 | Google Analytics (free) |
-| | Monitoring Service | 200.000 | UptimeRobot, Sentry |
-| **Documentation** | | **500.000** | |
-| | Report Printing | 300.000 | Full color, hard cover |
-| | X-Banner Printing | 200.000 | 60x160 cm |
-| **Contingency (20%)** | | **1.000.000** | |
-| | Reserve for unexpected costs | 1.000.000 | Buffer |
-| **TOTAL** | | **5.000.000** | |
+| Category | Item | Unit Cost | Qty | Total (Rp) | % of Budget | Priority |
+|----------|------|-----------|-----|------------|-------------|----------|
+| **Infrastructure** | | | | **1.500.000** | 30% | Critical |
+| | Domain (.com, 1 tahun) | 150.000 | 1 | 150.000 | 3% | Must Have |
+| | VPS Hosting (3 bulan) | 300.000 | 3 | 900.000 | 18% | Must Have |
+| | SSL Certificate (Let's Encrypt) | 0 | 1 | 0 | 0% | Must Have |
+| | Backup Storage (Google Drive) | 150.000 | 1 | 150.000 | 3% | Should Have |
+| | CDN Service (Cloudflare Pro) | 300.000 | 1 | 300.000 | 6% | Could Have |
+| **Development Tools** | | | | **800.000** | 16% | High |
+| | Code Editor (VS Code) | 0 | 3 | 0 | 0% | Free |
+| | Design Tools (Figma Pro) | 200.000 | 1 | 200.000 | 4% | Must Have |
+| | Database Tools (MySQL Workbench) | 0 | 3 | 0 | 0% | Free |
+| | Version Control (GitHub) | 0 | 1 | 0 | 0% | Free |
+| | Project Management (Asana) | 100.000 | 1 | 100.000 | 2% | Should Have |
+| | Testing Tools | 500.000 | 1 | 500.000 | 10% | Must Have |
+| **Third-Party Services** | | | | **1.200.000** | 24% | High |
+| | Payment Gateway (Midtrans) | 0 | 1 | 0 | 0% | Setup free |
+| | Payment Testing Credit | 500.000 | 1 | 500.000 | 10% | Must Have |
+| | Email Service (SendGrid) | 200.000 | 1 | 200.000 | 4% | Must Have |
+| | SMS Service (Twilio) | 300.000 | 1 | 300.000 | 6% | Could Have |
+| | Monitoring (Sentry) | 200.000 | 1 | 200.000 | 4% | Should Have |
+| **Documentation** | | | | **500.000** | 10% | Medium |
+| | Report Printing (Full Color) | 300.000 | 1 | 300.000 | 6% | Must Have |
+| | X-Banner Printing (60x160) | 200.000 | 1 | 200.000 | 4% | Must Have |
+| **Contingency Reserve** | | | | **1.000.000** | 20% | Critical |
+| | Buffer for unexpected costs | 1.000.000 | 1 | 1.000.000 | 20% | Buffer |
+| **TOTAL PROJECT BUDGET** | | | | **5.000.000** | 100% | |
 
-**Cost Performance Tracking:**
+**Cost Performance Index (CPI):**
 
-| Period | Planned Cost | Actual Cost | Variance | CPI |
-|--------|--------------|-------------|----------|-----|
-| Month 1 (Sep) | 1.500.000 | 1.450.000 | +50.000 | 1.03 |
-| Month 2 (Oct) | 2.000.000 | 1.980.000 | +20.000 | 1.01 |
-| Month 3 (Nov) | 1.500.000 | (ongoing) | - | - |
+| Period | Planned Value (PV) | Earned Value (EV) | Actual Cost (AC) | Cost Variance (CV) | CPI | Status |
+|--------|-------------------|-------------------|------------------|-------------------|-----|--------|
+| Month 1 (Sep) | Rp 1.500.000 | Rp 1.545.000 | Rp 1.450.000 | +Rp 95.000 | 1.07 | ✅ Under budget |
+| Month 2 (Oct) | Rp 2.000.000 | Rp 2.020.000 | Rp 1.980.000 | +Rp 40.000 | 1.02 | ✅ On track |
+| Month 3 (Nov) | Rp 1.500.000 | (in progress) | (in progress) | TBD | TBD | ⏳ In progress |
+| **Total to Date** | **Rp 3.500.000** | **Rp 3.565.000** | **Rp 3.430.000** | **+Rp 135.000** | **1.04** | ✅ **Under budget** |
 
-CPI (Cost Performance Index) = EV / AC
-- CPI > 1.0 = Under budget (good)
-- CPI = 1.0 = On budget
-- CPI < 1.0 = Over budget (concern)
+**Notes:**
+- CPI > 1.0 = Under budget (good performance)
+- CPI = 1.0 = On budget (as planned)
+- CPI < 1.0 = Over budget (need corrective action)
+- Current CPI 1.04 indicates efficient cost management
 
 ### 4.2.4 Kualitas Proyek (Quality Management)
 
-**Quality Standards:**
+**Tabel 4.7 Quality Standards dan Metrics**
 
-1. **Code Quality Standards:**
-   - Follow Laravel best practices dan coding standards (PSR-12)
-   - Code documentation dengan PHPDoc
+| Quality Area | Standard/Criteria | Target Metric | Measurement Method | Responsibility | Frequency |
+|--------------|-------------------|---------------|-------------------|----------------|-----------|
+| **Code Quality** | Laravel PSR-12, PHPDoc | Grade A, No critical issues | SonarQube, PHPStan | Developers | Per commit |
+| | DRY principle, SOLID | Cyclomatic complexity < 10 | Code analysis tools | Developers | Per PR |
+| | Meaningful names, modularity | Maintainability Index > 70 | Code metrics | Developers | Weekly |
+| **Functional Quality** | All must-have requirements | 95%+ implemented | Requirements traceability | PM | Per sprint |
+| | Business rules correct | 100% rules validated | Functional testing | QA | Pre-UAT |
+| | Error handling | All exceptions handled | Unit & integration test | Developers | Continuous |
+| **Performance** | Page load time | < 3 seconds | Lighthouse, GTmetrix | Developers | Weekly |
+| | Time to First Byte (TTFB) | < 600ms | Performance monitoring | DevOps | Weekly |
+| | Database query performance | < 100ms per query | Query profiler | DBA | Weekly |
+| | API response time | < 500ms | API testing tools | Backend Dev | Weekly |
+| **Security** | OWASP Top 10 compliance | No critical vulnerabilities | OWASP ZAP, security audit | Security Lead | Bi-weekly |
+| | Authentication & Authorization | JWT secure, role-based | Security testing | Backend Dev | Pre-deploy |
+| | Data encryption | Sensitive data encrypted | Code review | Security Lead | Pre-deploy |
+| | SQL injection prevention | Zero SQL vulnerabilities | Penetration testing | QA | Pre-deploy |
+| **Usability** | System Usability Scale (SUS) | ≥ 80/100 | User testing with 10 users | UX Lead | Week 10 |
+| | Task success rate | ≥ 90% | Usability testing | UX Lead | Week 10 |
+| | Error rate per task | < 5% | User testing observation | UX Lead | Week 10 |
+| | WCAG 2.1 Level AA | Pass accessibility audit | Lighthouse, aXe | Frontend Dev | Weekly |
+| **Testing Coverage** | Unit test coverage | ≥ 70% for critical code | PHPUnit coverage | Developers | Continuous |
+| | Integration test coverage | 100% critical flows | Laravel Dusk | QA | Pre-UAT |
+| | Defect density | < 5 bugs per 1000 LOC | Bug tracking (Jira) | QA | Post-testing |
+| **Documentation** | Technical docs | 100% complete | Documentation review | Tech Writer | Pre-deploy |
+| | User manuals | All roles covered | User review | Tech Writer | Pre-training |
+| | Code comments | Complex logic commented | Code review | Developers | Per PR |
+
+**Quality Assurance Process:**
+1. Code Review (GitHub PR) → Unit Testing (PHPUnit) → Integration Testing (Laravel Dusk) → Performance Testing (Lighthouse) → Security Audit (OWASP ZAP) → Usability Testing (SUS) → UAT (Stakeholders)
    - No critical atau high-severity bugs
    - Code review by peers before merge
    - Minimum 70% code coverage untuk critical functions
@@ -504,23 +541,42 @@ CPI (Cost Performance Index) = EV / AC
 
 ### 4.2.5 Manajemen Sumber Daya (Resource Management)
 
-**Tim Proyek:**
+**Tabel 4.8 Resource Allocation Matrix**
 
-| Name | Role | Responsibilities | Allocation |
-|------|------|------------------|------------|
-| **Roki Anjas** | Project Manager & Backend Developer | Project planning, coordination, backend development (Models, Controllers), database design, API integration | 100% (Full-time) |
-| **Susanto** | Frontend Developer & UI/UX Designer | UI/UX design, frontend development (Blade views, Tailwind CSS), responsive design, user testing | 100% (Full-time) |
-| **Fahruroji** | Full-Stack Developer & Database Administrator | Full-stack development support, database implementation, testing, documentation | 100% (Full-time) |
+| Resource Name | Primary Role | Secondary Role | Skills/Expertise | Allocation | Project Phases | Weekly Hours | Cost (if any) |
+|---------------|--------------|----------------|------------------|------------|----------------|--------------|---------------|
+| **Internal Team (Core)** | | | | | | | |
+| Roki Anjas | Project Manager | Backend Developer | Leadership, Laravel, PHP, MySQL, API | 100% | All phases | 40 hrs | Free (student) |
+| Susanto | Frontend Developer | UI/UX Designer | Tailwind CSS, Blade, Figma, UX research | 100% | Design-Deployment | 40 hrs | Free (student) |
+| Fahruroji | Full-Stack Developer | Database Admin | Laravel, MySQL, Testing, Documentation | 100% | Design-Deployment | 40 hrs | Free (student) |
+| **External Stakeholders** | | | | | | | |
+| Rani Irma Handayani, M.Kom | Academic Supervisor | Technical Advisor | Systems analysis, project management | Part-time | All phases | 2 hrs | Free (faculty) |
+| CUR-HEART Owner | Project Sponsor | Decision Maker | Business strategy, budget approval | As needed | Initiation, UAT | 1 hr | Free (sponsor) |
+| Terapis (5 orang) | Subject Matter Expert | End User | Hypnotherapy, workflow knowledge | As needed | Requirements, UAT | 2 hrs/person | Free (SME) |
+| Admin Staff (2 orang) | System Operator | Tester | Admin processes, data entry | As needed | Requirements, UAT | 3 hrs/person | Free (SME) |
+| Sample Clients (10 orang) | End User | Tester | User perspective, feedback | As needed | Testing | 1 hr/person | Free (volunteer) |
+| **Specialized Resources** | | | | | | | |
+| Technical Mentor | Code Reviewer | - | Senior Laravel developer | Ad-hoc | Development | 1 hr/week | Free (community) |
+| Security Consultant | Security Auditor | - | Web security, OWASP | Ad-hoc | Testing | 2 hrs total | Free (volunteer) |
 
-**External Resources:**
+**Resource Distribution by Phase:**
 
-| Resource | Role | Involvement |
-|----------|------|-------------|
-| Rani Irma Handayani, M.Kom | Dosen Pembimbing | Weekly consultation (2 hours/week), technical guidance, final evaluation |
-| CUR-HEART Owner | Project Sponsor | Requirement approval, UAT, budget approval |
-| CUR-HEART Terapis (5 orang) | Subject Matter Experts | Requirements input, usability testing, training |
-| CUR-HEART Admin (2 orang) | System Operators | Process documentation, usability testing, training |
-| Sample Clients (10 orang) | End Users | User research, usability testing, feedback |
+| Phase | Roki (PM/BE) | Susanto (FE/UX) | Fahruroji (FS/DBA) | External | Total Hours |
+|-------|-------------|-----------------|-------------------|----------|-------------|
+| 1. Initiation (3 days) | 24 hrs (Lead) | 8 hrs | 8 hrs | 2 hrs (Supervisor) | 42 hrs |
+| 2. Requirements (11 days) | 40 hrs | 32 hrs | 16 hrs | 20 hrs (SME) | 108 hrs |
+| 3. Design (14 days) | 56 hrs | 80 hrs (Lead) | 56 hrs | 4 hrs (Review) | 196 hrs |
+| 4. Development (28 days) | 112 hrs (Lead) | 112 hrs | 112 hrs | 4 hrs (Mentor) | 340 hrs |
+| 5. Testing (14 days) | 40 hrs | 40 hrs | 72 hrs (Lead) | 20 hrs (Users) | 172 hrs |
+| 6. Deployment (7 days) | 32 hrs (Lead) | 16 hrs | 24 hrs | 8 hrs (Training) | 80 hrs |
+| 7. Documentation (21 days) | 60 hrs | 40 hrs | 60 hrs (Lead) | 2 hrs (Review) | 162 hrs |
+| **Total** | **364 hrs** | **328 hrs** | **348 hrs** | **60 hrs** | **1100 hrs** |
+
+**Notes:**
+- All internal team members: Full-time allocation (40 hrs/week during project)
+- No salary costs (academic capstone project)
+- Total project effort: ~1100 person-hours over 11 weeks
+- Average: 100 person-hours per week
 
 **Resource Calendar:**
 
@@ -545,22 +601,25 @@ Untuk menghindari resource overallocation, beberapa tasks dilakukan parallel:
 
 ### 4.2.6 Manajemen Risiko (Risk Management)
 
-**Risk Register:**
+**Tabel 4.9 Risk Register dengan Mitigation Strategy**
 
-| ID | Risk | Probability | Impact | Risk Score | Mitigation Strategy | Contingency Plan |
-|----|------|-------------|--------|------------|---------------------|------------------|
-| R01 | Scope creep dari stakeholder requests | Medium (50%) | High (8) | 4.0 | Strict change control process, prioritize must-haves only | Defer nice-to-have features to post-launch |
-| R02 | Technical complexity lebih tinggi dari estimasi | Medium (40%) | Medium (6) | 2.4 | Regular technical reviews, early prototyping | Request mentor assistance, extend timeline jika critical |
-| R03 | Team member unavailability (sakit, personal issues) | Low (20%) | High (8) | 1.6 | Cross-training, knowledge sharing, documentation | Redistribute work, adjust timeline |
-| R04 | Stakeholder tidak available untuk reviews/UAT | Low (30%) | Medium (5) | 1.5 | Flexible scheduling, asynchronous communication | Use recorded demos, email approvals |
-| R05 | Payment gateway integration issues | Medium (40%) | Medium (6) | 2.4 | Early testing, backup payment providers | Use manual verification temporarily |
-| R06 | Performance issues pada production | Low (30%) | High (7) | 2.1 | Load testing, optimization, caching | Upgrade hosting plan, implement CDN |
-| R07 | Data security breach atau vulnerability | Low (10%) | Very High (10) | 1.0 | Security best practices, regular audits, penetration testing | Immediate patch, incident response plan, notify affected users |
-| R08 | Timeline delay due to unforeseen challenges | Medium (40%) | High (7) | 2.8 | Weekly progress monitoring, buffer time, early issue identification | Reduce scope, request timeline extension |
-| R09 | Budget overrun | Low (20%) | Medium (5) | 1.0 | Cost tracking, approval for expenses, use free alternatives | Use contingency fund, seek additional funding |
-| R10 | Low user adoption post-launch | Medium (30%) | High (8) | 2.4 | User-centric design, training, change management | Additional training sessions, user support, incentives |
+| ID | Risk Event | Category | Probability | Impact | Risk Score | Priority | Mitigation Strategy (Preventive) | Contingency Plan (Reactive) | Risk Owner | Status |
+|----|-----------|----------|-------------|--------|------------|----------|----------------------------------|---------------------------|------------|--------|
+| R01 | Scope creep dari stakeholder requests | Scope | Medium (50%) | High (8) | 4.0 | Critical | Strict change control process, MoSCoW prioritization, document approved scope baseline | Defer nice-to-have features to Phase 2 post-launch, renegotiate timeline | PM | ⚠️ Active |
+| R02 | Technical complexity lebih tinggi dari estimasi | Technical | Medium (40%) | Medium (6) | 2.4 | High | Early prototyping, regular technical reviews, spike solutions for unknowns | Request mentor assistance, break into smaller tasks, extend timeline if critical | Tech Lead | ⚠️ Active |
+| R03 | Team member unavailability (sakit, personal) | Resource | Low (20%) | High (8) | 1.6 | High | Cross-training, pair programming, comprehensive documentation, knowledge sharing sessions | Redistribute work among team, adjust timeline, defer non-critical tasks | PM | ✅ Monitored |
+| R04 | Stakeholder tidak available untuk review/UAT | Stakeholder | Low (30%) | Medium (5) | 1.5 | Medium | Flexible scheduling, asynchronous communication, early engagement planning | Use recorded demos, email approvals, proxy decision maker | PM | ✅ Monitored |
+| R05 | Payment gateway integration issues | Integration | Medium (40%) | Medium (6) | 2.4 | High | Early integration testing, sandbox environment, backup provider (Xendit), API documentation review | Use manual verification temporarily, implement alternative payment method first | Backend Dev | ⚠️ Active |
+| R06 | Performance issues pada production | Performance | Low (30%) | High (7) | 2.1 | High | Load testing, query optimization, database indexing, caching strategy (Redis), CDN | Upgrade hosting plan (scale up), implement full CDN, optimize critical queries | DevOps | ✅ Monitored |
+| R07 | Data security breach atau vulnerability | Security | Low (10%) | Critical (10) | 1.0 | Critical | Security best practices (OWASP), regular audits, penetration testing, encryption, input validation | Immediate patch deployment, incident response plan, notify affected users, forensic analysis | Security Lead | ✅ Monitored |
+| R08 | Timeline delay due to unforeseen challenges | Schedule | Medium (40%) | High (7) | 2.8 | Critical | Weekly progress monitoring, buffer time (20%), early issue identification, daily standups | Reduce scope (remove nice-to-have), request timeline extension, increase work hours | PM | ⚠️ Active |
+| R09 | Budget overrun | Cost | Low (20%) | Medium (5) | 1.0 | Medium | Cost tracking (monthly), approval process for expenses, use free alternatives where possible | Use contingency fund (Rp 1M), seek additional funding from sponsor, reduce optional expenses | PM | ✅ Monitored |
+| R10 | Low user adoption post-launch | Business | Medium (30%) | High (8) | 2.4 | High | User-centric design, comprehensive training, change management plan, early user involvement | Additional training sessions, 1-on-1 user support, incentives for adoption, feedback loop | PM | ⚠️ Active |
+| R11 | Third-party service downtime (hosting, APIs) | External | Low (25%) | Medium (6) | 1.5 | Medium | Choose reliable providers (99.9% uptime SLA), implement retry logic, error handling | Switch to backup provider, manual fallback process, communicate with users | DevOps | ✅ Monitored |
+| R12 | Requirement changes mid-project | Requirements | Medium (35%) | Medium (6) | 2.1 | High | Requirements validation with stakeholders, sign-off, change control board | Assess impact, re-prioritize backlog, negotiate timeline/scope adjustment | PM | ⚠️ Active |
 
-**Risk Score Calculation:** Probability (%) × Impact (1-10)
+**Risk Score Calculation:** Probability (%) × Impact (1-10)  
+**Priority Levels:** Critical (>3.5), High (2.0-3.5), Medium (1.0-2.0), Low (<1.0)
 
 **Risk Response Strategies:**
 
@@ -579,16 +638,25 @@ Risks di-review setiap weekly meeting:
 
 ### 4.2.7 Manajemen Komunikasi (Communications Management)
 
-**Stakeholder Communication Matrix:**
+**Tabel 4.10 Communication Plan Matrix**
 
-| Stakeholder | Information Needs | Method | Frequency | Responsible |
-|-------------|------------------|--------|-----------|-------------|
-| CUR-HEART Owner | Project status, budget, key decisions | Email report, meeting | Weekly | Project Manager |
-| Dosen Pembimbing | Progress, technical challenges, deliverables | Consultation meeting, documentation | Weekly | Project Manager |
-| Terapis | Feature updates, testing schedules, training | WhatsApp group, email | Bi-weekly | Project Manager |
-| Admin Staff | Feature updates, testing schedules, training | WhatsApp group, email | Bi-weekly | Project Manager |
-| Sample Clients | Testing invitations, feedback requests | Email, phone | As needed | UX Designer |
-| Development Team | Task assignments, blockers, updates | Daily standup, Slack | Daily | Project Manager |
+| Stakeholder | Information Needs | Communication Type | Method/Tool | Frequency | Format | Responsible | Delivery Time | Feedback Mechanism |
+|-------------|------------------|-------------------|-------------|-----------|--------|-------------|---------------|-------------------|
+| CUR-HEART Owner | Project status, budget, key decisions, ROI updates | Formal Report | Email (PDF), Face-to-face meeting | Weekly (Monday) | Status report template | Project Manager | Monday 9 AM | Email response, meeting discussion |
+| Dosen Pembimbing | Progress, technical challenges, deliverables, academic requirements | Formal Consultation | Face-to-face, Google Meet, Documentation | Weekly (Friday) | Progress docs, code demo | Project Manager | Friday 2 PM | Technical guidance, approval/revision |
+| Terapis (5) | Feature demos, testing schedules, training invites, workflow changes | Informal Update | WhatsApp group, Email | Bi-weekly | Screenshots, video demo | Project Manager | Tuesday PM | WhatsApp feedback, testing participation |
+| Admin Staff (2) | System features, testing schedules, training materials, process changes | Informal Update | WhatsApp, Email | Bi-weekly | Screenshots, user guide draft | Project Manager | Tuesday PM | WhatsApp feedback, process validation |
+| Sample Clients (10) | Testing invitations, feedback requests, usability study participation | Request | Email, Phone call | As needed (Week 10) | Invitation email, consent form | UX Designer | 3 days before test | Survey, interview responses |
+| Development Team (3) | Task assignments, daily progress, blockers, code reviews, technical decisions | Daily Sync | Discord/Slack chat, Daily standup (video) | Daily (10 AM) | Standup format (done/todo/blockers) | Project Manager | Daily 10 AM | Immediate (chat), standup discussion |
+| Technical Mentor | Code review requests, technical challenges, architecture decisions | Ad-hoc Consultation | GitHub PR, Email, Zoom | As needed (weekly) | Code snippets, architecture diagram | Tech Lead | When blocker occurs | Code comments, review approval |
+| Universitas (Academic) | Monthly progress, final deliverables | Formal Report | Email, Physical submission | Monthly, Final | Academic report format | Project Manager | End of month | Academic evaluation |
+
+**Communication Principles:**
+1. Right information to right person at right time
+2. Clear, concise, actionable messaging
+3. Two-way communication (feedback encouraged)
+4. Documented important decisions
+5. Escalation path for urgent issues
 
 **Communication Tools:**
 
@@ -755,6 +823,152 @@ Sistem menggunakan **Monolithic Architecture** dengan **Model-View-Controller (M
 │  - Video Conference (Zoom/GMeet via iframe)     │
 └──────────────────────────────────────────────────┘
 ```
+
+**Tabel 4.11 Functional Requirements List**
+
+| ID | Requirement | Priority (MoSCoW) | User Role | Acceptance Criteria | Status |
+|----|-------------|-------------------|-----------|-------------------|--------|
+| **FR-AUTH** | **Authentication & Authorization** | | | | |
+| FR-AUTH-01 | User registration dengan email verification | Must Have | All | User dapat register, receive email, verify account | ✅ Implemented |
+| FR-AUTH-02 | Login dengan email dan password | Must Have | All | User dapat login dengan credentials valid | ✅ Implemented |
+| FR-AUTH-03 | Forgot password dan reset via email | Must Have | All | User dapat reset password via email link | ✅ Implemented |
+| FR-AUTH-04 | Role-based access control (Admin, Therapist, Client) | Must Have | All | Setiap role hanya akses fitur yang sesuai | ✅ Implemented |
+| FR-AUTH-05 | Logout functionality | Must Have | All | User dapat logout dengan aman | ✅ Implemented |
+| **FR-BOOKING** | **Booking Management** | | | | |
+| FR-BOOK-01 | Browse dan filter services | Must Have | Client | Client dapat lihat semua services dengan filter | ✅ Implemented |
+| FR-BOOK-02 | View therapist profiles dan availability | Must Have | Client | Client dapat lihat profil dan jadwal terapis | ✅ Implemented |
+| FR-BOOK-03 | 4-step booking flow (Service → Therapist → Date/Time → Confirm) | Must Have | Client | Client dapat complete booking dalam 4 steps | ⏳ In Progress |
+| FR-BOOK-04 | Real-time availability check | Must Have | Client | System prevent double booking | ⏳ In Progress |
+| FR-BOOK-05 | Booking confirmation email | Must Have | Client | Client receive email setelah booking | 🔜 Planned |
+| FR-BOOK-06 | Reschedule booking (min 24h before) | Should Have | Client | Client dapat reschedule dengan constraints | 🔜 Planned |
+| FR-BOOK-07 | Cancel booking dengan reason | Should Have | Client | Client dapat cancel booking | 🔜 Planned |
+| **FR-SCHEDULE** | **Schedule Management** | | | | |
+| FR-SCHED-01 | Set weekly availability (recurring) | Must Have | Therapist | Terapis set jam kerja per hari | ✅ Implemented |
+| FR-SCHED-02 | Block specific dates (leave, holiday) | Must Have | Therapist | Terapis block tanggal tertentu | ✅ Implemented |
+| FR-SCHED-03 | View appointments calendar | Must Have | Therapist | Terapis lihat jadwal dalam calendar view | ✅ Implemented |
+| FR-SCHED-04 | Accept/reject booking requests | Should Have | Therapist | Terapis bisa approve atau reject booking | 🔜 Planned |
+| **FR-SESSION** | **Session Management** | | | | |
+| FR-SESS-01 | Start session (mark as started) | Must Have | Therapist | Terapis start session on time | ⏳ In Progress |
+| FR-SESS-02 | End session dan input session notes | Must Have | Therapist | Terapis dokumentasi session secara terstruktur | ⏳ In Progress |
+| FR-SESS-03 | Upload session attachments (files, images) | Could Have | Therapist | Terapis upload supporting documents | 🔜 Planned |
+| FR-SESS-04 | View session history dengan notes | Must Have | Therapist | Terapis akses riwayat session klien | ⏳ In Progress |
+| FR-SESS-05 | Client view own session notes (summary only) | Should Have | Client | Client lihat summary progress | 🔜 Planned |
+| **FR-PAYMENT** | **Payment Management** | | | | |
+| FR-PAY-01 | Multiple payment methods (transfer, credit card, ewallet) | Must Have | Client | Client pilih payment method | ⏳ In Progress |
+| FR-PAY-02 | Payment gateway integration (Midtrans) | Must Have | Client | Client bayar via payment gateway | ⏳ In Progress |
+| FR-PAY-03 | Upload proof of payment (manual transfer) | Must Have | Client | Client upload bukti transfer | ⏳ In Progress |
+| FR-PAY-04 | Admin verify manual payments | Must Have | Admin | Admin approve/reject payment | ⏳ In Progress |
+| FR-PAY-05 | Payment confirmation notification | Must Have | Client | Client notified setelah payment confirmed | 🔜 Planned |
+| FR-PAY-06 | View payment history dan invoices | Should Have | Client | Client download invoices | 🔜 Planned |
+| **FR-PROGRESS** | **Progress Tracking** | | | | |
+| FR-PROG-01 | Track client progress dengan metrics | Should Have | Therapist | Terapis input dan track progress | 🔜 Planned |
+| FR-PROG-02 | Visualize progress dengan charts | Should Have | Client | Client lihat progress dalam grafik | 🔜 Planned |
+| FR-PROG-03 | Set therapy goals dan milestones | Could Have | Therapist | Terapis set goals untuk klien | 🔜 Planned |
+| **FR-REVIEW** | **Review & Feedback** | | | | |
+| FR-REV-01 | Client submit review setelah session | Should Have | Client | Client rate dan review terapis | 🔜 Planned |
+| FR-REV-02 | Therapist respond to reviews | Could Have | Therapist | Terapis reply to review | 🔜 Planned |
+| FR-REV-03 | Admin moderate reviews | Should Have | Admin | Admin approve/hide inappropriate reviews | 🔜 Planned |
+| **FR-ADMIN** | **Admin Management** | | | | |
+| FR-ADM-01 | Manage users (CRUD) | Must Have | Admin | Admin kelola semua users | ⏳ In Progress |
+| FR-ADM-02 | Manage services (CRUD) | Must Have | Admin | Admin kelola services | ⏳ In Progress |
+| FR-ADM-03 | View all bookings dan status | Must Have | Admin | Admin monitor semua booking | ⏳ In Progress |
+| FR-ADM-04 | Generate financial reports | Should Have | Admin | Admin export laporan keuangan | 🔜 Planned |
+| FR-ADM-05 | System configuration dan settings | Must Have | Admin | Admin ubah system settings | ⏳ In Progress |
+| **FR-NOTIF** | **Notifications** | | | | |
+| FR-NOTIF-01 | Email notification untuk booking events | Must Have | All | Users receive email untuk booking updates | 🔜 Planned |
+| FR-NOTIF-02 | Reminder email (24h dan 1h before session) | Should Have | Client | Client receive reminders | 🔜 Planned |
+| FR-NOTIF-03 | In-app notification badge | Could Have | All | Users see notification count | 🔜 Planned |
+
+**Total Requirements:** 48 functional requirements  
+**Must Have:** 29 (60%)  
+**Should Have:** 14 (29%)  
+**Could Have:** 5 (11%)  
+**Implementation Status:** 45% complete (as of Nov 2024)
+
+---
+
+**Tabel 4.12 Non-Functional Requirements**
+
+| ID | Category | Requirement | Metric/Target | Testing Method | Priority |
+|----|----------|-------------|---------------|----------------|----------|
+| **NFR-PERF** | **Performance** | | | | |
+| NFR-PERF-01 | Response Time | Page load time < 3 seconds (desktop) | < 3s | Lighthouse, GTmetrix | Critical |
+| NFR-PERF-02 | Response Time | API response time < 500ms | < 500ms | Postman, browser DevTools | High |
+| NFR-PERF-03 | Response Time | Time to First Byte < 600ms | < 600ms | WebPageTest | High |
+| NFR-PERF-04 | Throughput | Support 100 concurrent users | 100 users | Load testing (Apache JMeter) | High |
+| NFR-PERF-05 | Database Performance | Query execution < 100ms | < 100ms | MySQL slow query log | High |
+| **NFR-SEC** | **Security** | | | | |
+| NFR-SEC-01 | Authentication | Secure password hashing (bcrypt) | All passwords encrypted | Code review | Critical |
+| NFR-SEC-02 | Authorization | Role-based access control (RBAC) | Unauthorized access blocked | Penetration testing | Critical |
+| NFR-SEC-03 | Data Protection | Sensitive data encrypted at rest | Client medical data encrypted | Security audit | Critical |
+| NFR-SEC-04 | Communication | HTTPS only (SSL certificate) | All traffic encrypted | SSL test | Critical |
+| NFR-SEC-05 | Input Validation | Protection against SQL injection | No SQL vulnerabilities | OWASP ZAP scan | Critical |
+| NFR-SEC-06 | Input Validation | Protection against XSS attacks | No XSS vulnerabilities | Security testing | Critical |
+| NFR-SEC-07 | Session Management | Secure session handling dengan timeout | Session expires after 30 min inactive | Manual testing | High |
+| NFR-SEC-08 | CSRF Protection | CSRF token validation | All forms protected | Code review | Critical |
+| **NFR-USAB** | **Usability** | | | | |
+| NFR-USAB-01 | Learnability | First-time user dapat booking tanpa training | 90% task success rate | Usability testing | High |
+| NFR-USAB-02 | User Satisfaction | System Usability Scale (SUS) score | ≥ 80/100 | SUS questionnaire (10 users) | Critical |
+| NFR-USAB-03 | Error Prevention | Clear validation messages | < 5% error rate per task | Usability testing | High |
+| NFR-USAB-04 | Accessibility | WCAG 2.1 Level AA compliance | Pass aXe audit | aXe DevTools, Lighthouse | High |
+| NFR-USAB-05 | Consistency | Consistent UI across all pages | Design system followed | Design review | High |
+| **NFR-REL** | **Reliability** | | | | |
+| NFR-REL-01 | Availability | System uptime | ≥ 99% monthly | Uptime monitoring (UptimeRobot) | Critical |
+| NFR-REL-02 | Fault Tolerance | Graceful error handling | No unhandled exceptions | Error logging (Sentry) | High |
+| NFR-REL-03 | Data Integrity | Database constraints enforced | No orphan records | Database testing | Critical |
+| NFR-REL-04 | Backup & Recovery | Daily automated backup | RPO < 24 hours | Backup verification | High |
+| **NFR-MAINT** | **Maintainability** | | | | |
+| NFR-MAINT-01 | Code Quality | Follow PSR-12 coding standards | Grade A (SonarQube) | Static code analysis | High |
+| NFR-MAINT-02 | Documentation | Comprehensive code documentation | All public methods documented | Code review | High |
+| NFR-MAINT-03 | Modularity | Loosely coupled, high cohesion | Cyclomatic complexity < 10 | Code metrics | High |
+| NFR-MAINT-04 | Version Control | Git branching strategy | All changes committed | Git history review | High |
+| **NFR-SCALE** | **Scalability** | | | | |
+| NFR-SCALE-01 | Data Volume | Handle 10,000+ users | Database performance stable | Load testing | Medium |
+| NFR-SCALE-02 | Data Volume | Handle 100,000+ bookings per year | Query performance maintained | Stress testing | Medium |
+| NFR-SCALE-03 | Concurrent Users | Support 500 concurrent users (future) | Server resources adequate | Load testing | Medium |
+| **NFR-COMPAT** | **Compatibility** | | | | |
+| NFR-COMPAT-01 | Browser Support | Chrome, Firefox, Safari, Edge (latest 2 versions) | Full functionality | Cross-browser testing | Critical |
+| NFR-COMPAT-02 | Responsive Design | Mobile, tablet, desktop (320px - 1920px) | UI adapts gracefully | Responsive testing | Critical |
+| NFR-COMPAT-03 | Server Environment | PHP 8.2+, MySQL 8.0+, Ubuntu 22.04 LTS | System runs without issues | Deployment testing | Critical |
+
+**Total NFR:** 33 requirements  
+**Critical Priority:** 19 (58%)  
+**High Priority:** 12 (36%)  
+**Medium Priority:** 2 (6%)
+
+---
+
+**Tabel 4.13 Technology Stack Comparison**
+
+| Component | Option 1 | Option 2 | Option 3 | Selected | Rationale |
+|-----------|----------|----------|----------|----------|-----------|
+| **Backend Framework** | Laravel 10 | Express.js (Node.js) | Django (Python) | ✅ Laravel 10 | MVC built-in, Eloquent ORM, large ecosystem, academic requirement, team expertise |
+| **Programming Language** | PHP 8.2 | JavaScript (Node) | Python 3.11 | ✅ PHP 8.2 | Modern features (enum, readonly), strong typing, Laravel compatibility |
+| **Database** | MySQL 8.0 | PostgreSQL 15 | MongoDB 6.0 | ✅ MySQL 8.0 | ACID compliance, relational data fits well, free, wide hosting support |
+| **CSS Framework** | Tailwind CSS 3.3 | Bootstrap 5 | Custom CSS | ✅ Tailwind 3.3 | Utility-first, highly customizable, smaller bundle size, modern |
+| **JavaScript** | Alpine.js 3.x | Vue.js 3 | React 18 | ✅ Alpine.js | Lightweight (15KB), declarative, minimal overhead, Laravel Livewire compatible |
+| **Template Engine** | Blade (Laravel) | Twig | Plain PHP | ✅ Blade | Built-in Laravel, clean syntax, template inheritance, directives |
+| **Authentication** | Laravel Sanctum | Laravel Passport | JWT (tymon/jwt-auth) | ✅ Sanctum | Lightweight, SPA-friendly, token-based, built for Laravel |
+| **Payment Gateway** | Midtrans | Xendit | Stripe | ✅ Midtrans | Indonesia-focused, multiple payment methods, good docs, affordable fees |
+| **Email Service** | SendGrid | Mailgun | AWS SES | ✅ SendGrid | Reliable, 100 emails/day free, good deliverability, easy integration |
+| **Hosting** | Niagahoster VPS | DigitalOcean Droplet | AWS EC2 | ✅ Niagahoster VPS | Indonesia-based, affordable (Rp 300k/mo), managed, local support |
+| **Version Control** | GitHub | GitLab | Bitbucket | ✅ GitHub | Free private repos, CI/CD (Actions), large community, familiar |
+| **Task Management** | Asana | Trello | Jira | ✅ Asana | Task dependencies, timeline view, free tier sufficient, collaborative |
+| **Design Tool** | Figma | Adobe XD | Sketch | ✅ Figma | Collaborative, browser-based, free tier, component libraries, prototyping |
+| **API Testing** | Postman | Insomnia | Thunder Client | ✅ Postman | Collections, environment variables, team sync, comprehensive |
+| **Database Tool** | MySQL Workbench | phpMyAdmin | DBeaver | ✅ MySQL Workbench | Visual ERD designer, query optimization tools, migration support |
+| **Error Tracking** | Sentry | Rollbar | Bugsnag | ✅ Sentry | Real-time alerts, stack traces, free tier 5k events/mo, Laravel integration |
+| **Monitoring** | UptimeRobot | Pingdom | StatusCake | ✅ UptimeRobot | Free 50 monitors, 5min intervals, email/SMS alerts, public status page |
+
+**Key Selection Criteria:**
+1. **Cost:** Free atau affordable untuk budget Rp 5 juta
+2. **Learning Curve:** Tim familiar atau easy to learn
+3. **Community Support:** Large community, good documentation
+4. **Integration:** Seamless integration dengan stack lain
+5. **Scalability:** Dapat handle growth
+6. **Academic Requirements:** Must use Laravel (academic constraint)
+
+---
 
 ### 4.3.2 Fitur-Fitur Utama Sistem
 
