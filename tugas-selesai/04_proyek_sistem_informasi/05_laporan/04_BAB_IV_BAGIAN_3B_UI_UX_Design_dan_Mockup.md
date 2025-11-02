@@ -759,26 +759,41 @@ Public pages adalah halaman-halaman yang dapat diakses oleh semua pengunjung tan
 
 ---
 
-**[GAMBAR 4.20 - Mockup: Landing Page (Homepage)]** 📱
+**[GAMBAR 4.20 - Mockup Landing Page (Homepage)]** 📱
 _Public page - Hero section, services overview, therapists, testimonials_
 
-**[GAMBAR 4.21 - Mockup: Services List Page]** 📱
-_Public page - Grid 6 layanan dengan pricing dan descriptions_
-
-**[GAMBAR 4.22 - Mockup: Service Detail Page]** 📱
-_Public page - Detailed service info, benefits, booking CTA_
-
-**[GAMBAR 4.23 - Mockup: Therapists Directory]** 📱
-_Public page - Grid therapist profiles dengan filter/search_
-
-**[GAMBAR 4.24 - Mockup: Therapist Profile Detail]** 📱
-_Public page - Bio, credentials, specializations, reviews, booking_
-
-**[GAMBAR 4.25 - Mockup: About Us Page]** 📱
+**[GAMBAR 4.21 - Mockup About Us Page]** 📱
 _Public page - Company story, values, team, certifications_
 
-**[GAMBAR 4.26 - Mockup: Contact Us Page]** 📱
+**[GAMBAR 4.22 - Mockup Services Catalog Page]** 📱
+_Public page - Grid 6 layanan dengan pricing dan descriptions_
+
+**[GAMBAR 4.23 - Mockup Service Detail Page]** 📱
+_Public page - Detailed service info, benefits, booking CTA_
+
+**[GAMBAR 4.24 - Mockup Therapists Directory Page]** 📱
+_Public page - Grid therapist profiles dengan filter/search_
+
+**[GAMBAR 4.25 - Mockup Therapist Profile Page]** 📱
+_Public page - Bio, credentials, specializations, reviews, booking_
+
+**[GAMBAR 4.26 - Mockup Blog List Page]** 📱
+_Public page - Blog articles list dengan search dan filter_
+
+**[GAMBAR 4.27 - Mockup Blog Detail Page]** 📱
+_Public page - Full blog article dengan related posts_
+
+**[GAMBAR 4.28 - Mockup Contact Us Page]** 📱
 _Public page - Contact form, location map, social media links_
+
+**[GAMBAR 4.29 - Mockup FAQ Page]** 📱
+_Public page - Frequently Asked Questions dengan accordion_
+
+**[GAMBAR 4.30 - Mockup Privacy Policy Page]** 📱
+_Public page - Privacy policy dan data protection information_
+
+**[GAMBAR 4.31 - Mockup Terms & Conditions Page]** 📱
+_Public page - Terms of service dan usage conditions_
 
 ---
 
@@ -1830,16 +1845,16 @@ Authentication pages adalah halaman-halaman yang menangani proses login, registr
 
 ---
 
-**[GAMBAR 4.27 - Mockup: Login Page]** 🔐
+**[GAMBAR 4.32 - Mockup Login Page]** 🔐
 _Auth page - Email/password form, remember me, forgot password link_
 
-**[GAMBAR 4.28 - Mockup: Register Page]** 🔐
+**[GAMBAR 4.33 - Mockup Register Page (Client & Therapist)]** 🔐
 _Auth page - Multi-step registration form, terms acceptance_
 
-**[GAMBAR 4.29 - Mockup: Forgot Password Page]** 🔐
+**[GAMBAR 4.34 - Mockup Forgot Password Page]** 🔐
 _Auth page - Email input for password reset link_
 
-**[GAMBAR 4.30 - Mockup: Reset Password Page]** 🔐
+**[GAMBAR 4.35 - Mockup Reset Password Page]** 🔐
 _Auth page - New password form with confirmation_
 
 ---
@@ -2201,35 +2216,35 @@ Client Dashboard adalah area setelah login khusus untuk klien yang telah terdaft
 
 ---
 
-**[GAMBAR 4.31 - Mockup: Client Dashboard Main]** 👤
+**[GAMBAR 4.36 - Mockup Client Dashboard (Main)]** 👤
 _Client dashboard - Overview cards, upcoming appointments, quick actions_
 
-**[GAMBAR 4.32 - Mockup: Client Book Service Page]** 👤
-_Client - Select service, therapist, date/time, payment_
+**[GAMBAR 4.37 - Mockup Booking Step 1 - Select Service]** 👤
+_Client - Select service with descriptions and pricing_
 
-**[GAMBAR 4.33 - Mockup: Client Appointments List]** 👤
+**[GAMBAR 4.38 - Mockup Booking Step 2 - Choose Therapist]** 👤
+_Client - Choose therapist with profiles and availability_
+
+**[GAMBAR 4.39 - Mockup Booking Step 3 - Select Date & Time]** 👤
+_Client - Calendar picker and available time slots_
+
+**[GAMBAR 4.40 - Mockup Booking Step 4 - Confirm & Payment]** 👤
+_Client - Booking summary, payment method selection_
+
+**[GAMBAR 4.41 - Mockup Booking Success Page]** 👤
+_Client - Confirmation message, booking details, next steps_
+
+**[GAMBAR 4.42 - Mockup My Appointments List]** 👤
 _Client - Table/cards of all bookings dengan status dan actions_
 
-**[GAMBAR 4.34 - Mockup: Client Appointment Detail]** 👤
+**[GAMBAR 4.43 - Mockup Appointment Detail Page]** 👤
 _Client - Full booking details, reschedule/cancel options_
 
-**[GAMBAR 4.35 - Mockup: Client Payment Page]** 👤
-_Client - Payment gateway integration, proof upload_
-
-**[GAMBAR 4.36 - Mockup: Client Therapy Notes View]** 👤
-_Client - Read-only view of session notes from therapist_
-
-**[GAMBAR 4.37 - Mockup: Client Progress Tracking]** 👤
+**[GAMBAR 4.44 - Mockup Client Progress Tracking Dashboard]** 👤
 _Client - Charts showing anxiety, confidence, sleep quality metrics_
 
-**[GAMBAR 4.38 - Mockup: Client Messages/Chat]** 👤
+**[GAMBAR 4.45 - Mockup Client Messages (Chat with Therapist)]** 👤
 _Client - Chat interface with therapist_
-
-**[GAMBAR 4.39 - Mockup: Client Profile Settings]** 👤
-_Client - Edit personal info, emergency contact, preferences_
-
-**[GAMBAR 4.40 - Mockup: Client Reviews Page]** 👤
-_Client - Submit/edit reviews and ratings for therapist_
 
 ---
 
@@ -3329,34 +3344,34 @@ Therapist Dashboard adalah area khusus untuk terapis yang telah terdaftar dan ap
 
 ---
 
-**[GAMBAR 4.41 - Mockup: Therapist Dashboard Main]** 👨‍⚕️
+**[GAMBAR 4.46 - Mockup Therapist Dashboard (Main)]** 👨‍⚕️
 _Therapist dashboard - Today's schedule, stats, quick actions_
 
-**[GAMBAR 4.42 - Mockup: Therapist Appointments Calendar]** 👨‍⚕️
+**[GAMBAR 4.47 - Mockup Therapist Schedule Management]** 👨‍⚕️
 _Therapist - Calendar view of all bookings, filter by status_
 
-**[GAMBAR 4.43 - Mockup: Therapist Availability Management]** 👨‍⚕️
+**[GAMBAR 4.48 - Mockup Therapist Availability Settings]** 👨‍⚕️
 _Therapist - Set weekly schedule, block dates/times_
 
-**[GAMBAR 4.44 - Mockup: Therapist Clients List]** 👨‍⚕️
+**[GAMBAR 4.49 - Mockup Therapist Clients List]** 👨‍⚕️
 _Therapist - Table of all clients with search/filter_
 
-**[GAMBAR 4.45 - Mockup: Therapist Client Detail View]** 👨‍⚕️
+**[GAMBAR 4.50 - Mockup Client Profile View (Therapist Perspective)]** 👨‍⚕️
 _Therapist - Client profile, history, progress data_
 
-**[GAMBAR 4.46 - Mockup: Therapist Write Session Notes]** 👨‍⚕️
+**[GAMBAR 4.51 - Mockup Session Room (Video Conferencing)]** 👨‍⚕️
+_Therapist - Video call interface for online sessions_
+
+**[GAMBAR 4.52 - Mockup Session Notes Entry Form]** 👨‍⚕️
 _Therapist - Form to write therapy notes after session_
 
-**[GAMBAR 4.47 - Mockup: Therapist Update Client Progress]** 👨‍⚕️
-_Therapist - Input metrics: anxiety, confidence, sleep quality_
+**[GAMBAR 4.53 - Mockup Therapist Session History]** 👨‍⚕️
+_Therapist - List of all completed sessions with notes_
 
-**[GAMBAR 4.48 - Mockup: Therapist Reviews Page]** 👨‍⚕️
-_Therapist - View all ratings and reviews from clients_
-
-**[GAMBAR 4.49 - Mockup: Therapist Earnings Dashboard]** 👨‍⚕️
+**[GAMBAR 4.54 - Mockup Therapist Earnings Dashboard]** 👨‍⚕️
 _Therapist - Revenue charts, transaction history_
 
-**[GAMBAR 4.50 - Mockup: Therapist Profile Settings]** 👨‍⚕️
+**[GAMBAR 4.55 - Mockup Therapist Profile Edit Page]** 👨‍⚕️
 _Therapist - Edit bio, credentials, photo, specializations_
 
 ---
@@ -4527,35 +4542,20 @@ Admin Dashboard adalah area khusus untuk administrator sistem yang memiliki akse
 
 ---
 
-**[GAMBAR 4.51 - Mockup: Admin Dashboard Main]** 👔
+**[GAMBAR 4.56 - Mockup Admin Dashboard (Main)]** 👔
 _Admin dashboard - System stats, charts, recent activities_
 
-**[GAMBAR 4.52 - Mockup: Admin Users Management]** 👔
+**[GAMBAR 4.57 - Mockup Admin Users Management]** 👔
 _Admin - Table of all users (clients, therapists) with CRUD actions_
 
-**[GAMBAR 4.53 - Mockup: Admin Therapist Approval]** 👔
-_Admin - Review therapist applications, approve/reject_
-
-**[GAMBAR 4.54 - Mockup: Admin Services Management]** 👔
-_Admin - CRUD services: name, price, description, status_
-
-**[GAMBAR 4.55 - Mockup: Admin Bookings Management]** 👔
+**[GAMBAR 4.58 - Mockup Admin Bookings Management]** 👔
 _Admin - View/edit all bookings, override statuses_
 
-**[GAMBAR 4.56 - Mockup: Admin Payment Verification]** 👔
-_Admin - Manual payment verification, approve/reject proofs_
-
-**[GAMBAR 4.57 - Mockup: Admin Financial Reports]** 👔
+**[GAMBAR 4.59 - Mockup Admin Financial Reports]** 👔
 _Admin - Revenue charts, transaction reports, export data_
 
-**[GAMBAR 4.58 - Mockup: Admin Activity Logs]** 👔
-_Admin - System audit trail, user actions, timestamps_
-
-**[GAMBAR 4.59 - Mockup: Admin System Settings]** 👔
+**[GAMBAR 4.60 - Mockup Admin System Settings]** 👔
 _Admin - Configure system parameters, maintenance mode_
-
-**[GAMBAR 4.60 - Mockup: Admin Notifications Management]** 👔
-_Admin - Send bulk notifications, manage templates_
 
 ---
 
@@ -5384,6 +5384,22 @@ Admin → System Settings → Navigate to category → Modify settings → Test 
 ### 4.3.5.10 Responsive Design Approach
 
 Dalam pengembangan UI/UX CUR-HEART, pendekatan responsive design diterapkan untuk memastikan aplikasi dapat diakses dan digunakan secara optimal di berbagai perangkat (desktop, tablet, mobile). Berikut adalah strategi dan implementasi responsive design:
+
+---
+
+**[GAMBAR 4.61 - Responsive Design Breakpoints Illustration]** 📱💻
+_Breakpoint visualization: mobile (320-767px), tablet (768-1023px), desktop (1024px+)_
+
+**[GAMBAR 4.62 - Mobile vs Desktop Layout Comparison]** 📱💻
+_Side-by-side comparison of landing page, dashboard, and booking flow on mobile vs desktop_
+
+**[GAMBAR 4.63 - Touch Target Size Guidelines (44px minimum)]** 👆
+_Button and interactive element sizing for mobile usability (WCAG 2.1 compliant)_
+
+**[GAMBAR 4.64 - Accessibility Features - WCAG Compliance]** ♿
+_Color contrast ratios, keyboard navigation, screen reader support, alt texts_
+
+---
 
 **Breakpoint Strategy:**
 - **Mobile Portrait**: 320px - 575px (iPhone SE, small phones)

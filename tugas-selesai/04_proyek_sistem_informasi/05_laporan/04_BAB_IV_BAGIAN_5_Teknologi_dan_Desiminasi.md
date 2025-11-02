@@ -982,8 +982,11 @@ cur-heart-system/
 
 ---
 
-**[GAMBAR 4.63 - Development Workflow]** 🔧
-_Git branching strategy, CI/CD pipeline, testing stages_
+**[GAMBAR 4.68 - Monolithic vs Microservices Comparison]** 🔧
+_Architecture comparison diagram with decision matrix_
+
+**[GAMBAR 4.69 - Laravel MVC Request Flow]** 🔧
+_Request lifecycle: Routes → Controllers → Models → Views_
 
 ---
 
@@ -1107,20 +1110,6 @@ GUI untuk database management:
 
 ---
 
-**[GAMBAR 4.64 - Testing Strategy Pyramid]** 🧪
-_Unit tests, integration tests, system tests, UAT pyramid_
-
-**[GAMBAR 4.65 - Test Coverage Report]** 🧪
-_Code coverage metrics, tested modules, coverage percentages_
-
-**[GAMBAR 4.66 - Performance Testing Results]** 🧪
-_Load testing charts, response times, concurrent users capacity_
-
-**[GAMBAR 4.67 - Security Testing Report]** 🧪
-_OWASP ZAP scan results, vulnerabilities found/fixed_
-
----
-
 #### D. Testing Tools
 
 **1. PHPUnit (Unit & Feature Tests)**
@@ -1185,14 +1174,11 @@ php artisan queue:restart
 
 ---
 
-**[GAMBAR 4.62 - Deployment Architecture]** 🔧
-_Server infrastructure: VPS, database, CDN, external APIs_
+**[GAMBAR 4.70 - Server Infrastructure Diagram]** 🔧
+_VPS, database, web server, external APIs integration_
 
-**[GAMBAR 4.68 - Implementation Timeline]** 📅
-_Actual vs planned timeline, milestones achieved_
-
-**[GAMBAR 4.69 - Code Quality Metrics]** 📊
-_Maintainability index, cyclomatic complexity, code smells_
+**[GAMBAR 4.71 - Midtrans Payment Gateway Integration Flow]** �
+_Payment request → Snap API → Payment page → Callback → Verification_
 
 ---
 
@@ -1362,20 +1348,14 @@ MAIL_FROM_NAME="CUR-HEART"
 
 ---
 
-**[GAMBAR 4.70 - Business Intelligence Dashboard]** 📊
-_Revenue analytics, booking trends, user growth charts_
+**[GAMBAR 4.72 - Video Promosi Storyboard]** �
+_Scene breakdown, script, visual elements for promo video_
 
-**[GAMBAR 4.71 - Booking Analytics]** 📊
-_Booking patterns by time, service popularity, conversion rates_
+**[GAMBAR 4.73 - X-Banner Design Layout (60x160 cm)]** 🎨
+_Promotional banner design for exhibitions and events_
 
-**[GAMBAR 4.72 - User Behavior Analytics]** 📊
-_User journey, page views, session duration, bounce rates_
-
-**[GAMBAR 4.73 - Therapist Performance Metrics]** 📊
-_Therapist ratings, session completion, earnings comparison_
-
-**[GAMBAR 4.74 - Financial Reports Dashboard]** 📊
-_Monthly revenue, payment methods breakdown, projections_
+**[GAMBAR 4.74 - Social Media Campaign Timeline]** �
+_Content calendar, posting schedule, engagement metrics_
 
 ---
 

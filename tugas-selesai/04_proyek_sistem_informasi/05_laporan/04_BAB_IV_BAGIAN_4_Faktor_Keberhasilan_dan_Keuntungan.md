@@ -319,6 +319,11 @@ KPI adalah metrik terukur yang digunakan untuk monitor dan evaluate keberhasilan
 
 ---
 
+**[GAMBAR 4.65 - KPI Dashboard Metrics Visualization]** 📊
+_Real-time dashboard showing system performance, user adoption, revenue, and satisfaction metrics_
+
+---
+
 **Tabel 4.34 Key Performance Indicators (KPI) - Technical Metrics**
 
 | KPI Category | KPI Name | Definition | Target Value | Baseline (Current) | Measurement Method | Measurement Tool | Frequency | Owner | Action If Below Target |
@@ -598,6 +603,11 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 
 ---
 
+**[GAMBAR 4.66 - ROI Projection Graph (5 Years)]** 📈
+_5-year ROI projection chart showing investment recovery, net benefits, and cumulative returns_
+
+---
+
 **Tabel 4.40 ROI Calculation - First Year Analysis**
 
 | Cost/Benefit Category | Line Item | Quantity/Rate | Unit Cost | Frequency | Annual Amount (Rp) | Calculation Method | Notes |
@@ -658,6 +668,13 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 3. **Low Development Cost**: Rp 0 (academic project, in-house team)
 4. **Modest Recurring Costs**: Rp 9.75M/year (infrastructure + services)
 5. **Fast Payback**: Less than 1 month to recover investment
+
+---
+
+---
+
+**[GAMBAR 4.67 - Cost-Benefit Analysis Chart]** 📊
+_Comparative analysis of total costs vs total benefits over 5 years with break-even point visualization_
 
 ---
 
