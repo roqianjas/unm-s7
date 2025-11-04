@@ -91,7 +91,7 @@ Sistem ini diharapkan dapat memberikan solusi komprehensif untuk manajemen opera
 
 ## 1.2 Identifikasi Masalah
 
-Berdasarkan analisis kondisi eksisting pada CUR-HEART (Hypnotherapy & Mind Wellness Center) melalui observasi, wawancara dengan stakeholder, dan studi dokumentasi proses bisnis, teridentifikasi beberapa permasalahan utama yang menghambat efektivitas dan efisiensi operasional, yaitu:
+Berdasarkan analisis kondisi eksisting pada CUR-HEART (Hypnotherapy & Mind Wellness Center) melalui observasi, wawancara dengan pemangku kepentingan, dan studi dokumentasi proses bisnis, teridentifikasi beberapa permasalahan utama yang menghambat efektivitas dan efisiensi operasional, yaitu:
 
 1. **Proses Pemesanan yang Tidak Efisien**
    
@@ -141,15 +141,15 @@ Berdasarkan analisis kondisi eksisting pada CUR-HEART (Hypnotherapy & Mind Welln
    
    Data klien yang bersifat sangat sensitif (informasi medis, riwayat trauma, masalah psikologis) disimpan dalam format yang tidak aman seperti berkas Word yang tidak terenkripsi, kertas fisik di lemari arsip biasa, atau bahkan di obrolan WhatsApp yang tidak privat. Tidak ada mekanisme pengendalian akses yang tepat, sehingga siapa saja yang memiliki akses ke komputer atau lemari arsip dapat membuka data klien.
    
-   Tidak ada jejak audit (*audit trail*) atau sistem pencatatan yang mencatat siapa saja yang mengakses data klien dan kapan, sehingga jika terjadi pelanggaran data sulit untuk melakukan investigasi. Kepatuhan terhadap regulasi perlindungan data pribadi seperti UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi tidak dapat dipastikan. Klien juga tidak memiliki mekanisme untuk meminta akses, pembaruan, atau penghapusan data pribadi mereka sesuai dengan hak yang dijamin oleh undang-undang, yang dapat menimbulkan risiko hukum.
+   Tidak ada jejak audit atau sistem pencatatan yang mencatat siapa saja yang mengakses data klien dan kapan, sehingga jika terjadi pelanggaran data sulit untuk melakukan investigasi. Kepatuhan terhadap regulasi perlindungan data pribadi seperti UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi tidak dapat dipastikan. Klien juga tidak memiliki mekanisme untuk meminta akses, pembaruan, atau penghapusan data pribadi mereka sesuai dengan hak yang dijamin oleh undang-undang, yang dapat menimbulkan risiko hukum.
 
-Permasalahan-permasalahan tersebut secara kumulatif menyebabkan berbagai dampak negatif, antara lain: (1) Penurunan efisiensi operasional dengan waktu yang terbuang untuk tugas-tugas administratif yang seharusnya dapat diotomasi; (2) Potensi kehilangan pendapatan karena tingkat konversi yang rendah dan perpindahan pelanggan (*customer churn*) yang tinggi akibat pengalaman pengguna yang buruk; (3) Risiko reputasi jika terjadi kesalahan penjadwalan, kehilangan data, atau pelanggaran data yang dapat merusak kepercayaan klien; (4) Terhambatnya skalabilitas bisnis karena sistem manual tidak dapat mengakomodasi pertumbuhan jumlah terapis dan klien; (5) Hilangnya peluang untuk mengoptimalkan operasional dan strategi bisnis karena ketiadaan analitik data dan kecerdasan bisnis.
+Permasalahan-permasalahan tersebut secara kumulatif menyebabkan berbagai dampak negatif, antara lain: (1) Penurunan efisiensi operasional dengan waktu yang terbuang untuk tugas-tugas administratif yang seharusnya dapat diotomasi; (2) Potensi kehilangan pendapatan karena tingkat konversi yang rendah dan perpindahan pelanggan yang tinggi akibat pengalaman pengguna yang buruk; (3) Risiko reputasi jika terjadi kesalahan penjadwalan, kehilangan data, atau pelanggaran data yang dapat merusak kepercayaan klien; (4) Terhambatnya skalabilitas bisnis karena sistem manual tidak dapat mengakomodasi pertumbuhan jumlah terapis dan klien; (5) Hilangnya peluang untuk mengoptimalkan operasional dan strategi bisnis karena ketiadaan analitik data dan kecerdasan bisnis.
 
 Oleh karena itu, pengembangan sistem informasi manajemen pemesanan dan terapi berbasis web yang terpadu, aman, dan mudah digunakan menjadi kebutuhan mendesak untuk mengatasi permasalahan-permasalahan tersebut dan mendukung pertumbuhan CUR-HEART yang berkelanjutan.
 
 ---
 
-**[GAMBAR 1.3 - Perbandingan Booking Manual vs Online]**
+**[GAMBAR 1.3 - Perbandingan Pemesanan Manual vs Daring]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -158,22 +158,22 @@ Oleh karena itu, pengembangan sistem informasi manajemen pemesanan dan terapi be
 │                                                             │
 │   Konten yang harus ditampilkan:                           │
 │                                                             │
-│   BOOKING MANUAL (Kiri)         VS    BOOKING ONLINE (Kanan)│
+│   PEMESANAN MANUAL (Kiri)      VS  PEMESANAN DARING (Kanan)│
 │   ┌──────────────────────┐           ┌──────────────────┐  │
-│   │ 📱 WhatsApp Chat     │           │ 💻 Web System    │  │
+│   │ 📱 Obrolan WhatsApp  │           │ 💻 Sistem Web    │  │
 │   │ ⏱️  15-20 menit       │           │ ⏱️  2-3 menit     │  │
 │   │ 👤 Admin manual      │           │ 🤖 Otomatis      │  │
-│   │ 📊 60% conversion    │           │ 📊 85% conversion│  │
-│   │ ❌ Double booking    │           │ ✅ No conflicts   │  │
-│   │ 📝 Paper records     │           │ 💾 Digital DB    │  │
-│   │ 🔓 No security       │           │ 🔐 Encrypted     │  │
+│   │ 📊 60% konversi      │           │ 📊 85% konversi  │  │
+│   │ ❌ Pemesanan ganda   │           │ ✅ Tanpa konflik │  │
+│   │ 📝 Catatan kertas    │           │ 💾 Basis data    │  │
+│   │ 🔓 Tanpa keamanan    │           │ 🔐 Terenkripsi   │  │
 │   └──────────────────────┘           └──────────────────┘  │
 │                                                             │
-│   Format: PNG/JPG comparison infographic                   │
-│   Recommended size: 1400x900px                             │
-│   Style: Split-screen comparison dengan icon & metrics     │
+│   Format: PNG/JPG infografis perbandingan                  │
+│   Ukuran yang disarankan: 1400x900px                       │
+│   Gaya: Perbandingan layar terpisah dengan ikon & metrik   │
 │                                                             │
-│   File location: assets/images/comparison-booking.png      │
+│   Lokasi berkas: assets/images/comparison-booking.png      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -212,28 +212,28 @@ Untuk memfokuskan pembahasan dan memastikan keberhasilan proyek, penelitian ini 
 │                                                             │
 │   Center: CUR-HEART System (blue box)                      │
 │                                                             │
-│   INTERNAL MODULES (inside boundary):                      │
+│   MODUL INTERNAL (dalam batasan):                          │
 │   ┌─────────────────────────────────────────┐             │
-│   │ 1. Authentication & User Management     │             │
-│   │ 2. Public Information Pages             │             │
-│   │ 3. Booking & Scheduling                 │             │
-│   │ 4. Client Dashboard (10 pages)          │             │
-│   │ 5. Therapist Dashboard (10 pages)       │             │
-│   │ 6. Admin Dashboard (5 pages)            │             │
-│   │ 7. Payment Integration                  │             │
-│   │ 8. Reporting & Analytics                │             │
+│   │ 1. Autentikasi & Manajemen Pengguna     │             │
+│   │ 2. Halaman Informasi Publik             │             │
+│   │ 3. Pemesanan & Penjadwalan              │             │
+│   │ 4. Dasbor Klien (10 halaman)            │             │
+│   │ 5. Dasbor Terapis (10 halaman)          │             │
+│   │ 6. Dasbor Admin (5 halaman)             │             │
+│   │ 7. Integrasi Pembayaran                 │             │
+│   │ 8. Pelaporan & Analitik                 │             │
 │   └─────────────────────────────────────────┘             │
 │                                                             │
-│   EXTERNAL SYSTEMS (outside boundary):                     │
-│   - Midtrans Payment Gateway                               │
-│   - Email Service (SMTP/SendGrid)                          │
-│   - Cloud Storage (for files)                              │
+│   SISTEM EKSTERNAL (di luar batasan):                      │
+│   - Gerbang Pembayaran Midtrans                            │
+│   - Layanan Surel (SMTP/SendGrid)                          │
+│   - Penyimpanan Awan (untuk berkas)                        │
 │                                                             │
-│   OUT OF SCOPE (marked with X):                            │
-│   ✗ Mobile native app (iOS/Android)                        │
-│   ✗ Video conferencing built-in                            │
-│   ✗ AI chatbot / ML features                               │
-│   ✗ Multi-language support                                 │
+│   DI LUAR CAKUPAN (ditandai X):                            │
+│   ✗ Aplikasi seluler bawaan (iOS/Android)                  │
+│   ✗ Konferensi video bawaan                                │
+│   ✗ Fitur *chatbot* KA / pembelajaran mesin                │
+│   ✗ Dukungan multibahasa                                   │
 │                                                             │
 │   Format: Block diagram dengan color-coding                │
 │   Style: Professional, clean lines                         │
@@ -245,7 +245,7 @@ Untuk memfokuskan pembahasan dan memastikan keberhasilan proyek, penelitian ini 
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 1.4: Diagram ruang lingkup sistem CUR-HEART menunjukkan modul-modul yang termasuk dalam pengembangan (in scope) dan yang dikecualikan (out of scope)_
+_Gambar 1.4: Diagram ruang lingkup sistem CUR-HEART menunjukkan modul-modul yang termasuk dalam pengembangan (dalam cakupan) dan yang dikecualikan (di luar cakupan)_
 
 ---
 
@@ -402,155 +402,155 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi sebagai berikut:
    - Tombol tindakan cepat (kelola jadwal, lihat klien, mulai sesi)
    - Metrik kinerja (tingkat penyelesaian sesi, penilaian rata-rata, waktu respons)
 
-2. **Schedule Management:**
-   - Weekly dan monthly calendar view
-   - Add, edit, atau delete availability slots
-   - Set recurring schedule (e.g., every Monday 09:00-12:00)
-   - Block dates untuk cuti atau personal time
-   - Drag and drop untuk adjust schedule
-   - Export schedule to external calendar (Google Calendar, iCal)
+2. **Manajemen Jadwal:**
+   - Tampilan kalender mingguan dan bulanan
+   - Tambah, sunting, atau hapus slot ketersediaan
+   - Atur jadwal berulang (misalnya, setiap Senin 09:00-12:00)
+   - Blokir tanggal untuk cuti atau waktu pribadi
+   - Seret dan lepas untuk menyesuaikan jadwal
+   - Ekspor jadwal ke kalender eksternal (Google Calendar, iCal)
 
-3. **Availability Settings:**
-   - Set working hours per day
-   - Set break time antar sesi
-   - Set maximum sessions per day untuk avoid overwork
-   - Set advance booking window (e.g., klien harus booking minimal H-2)
-   - Set buffer time sebelum dan sesudah sesi
-   - Override availability untuk special occasions
+3. **Pengaturan Ketersediaan:**
+   - Atur jam kerja per hari
+   - Atur waktu istirahat antar sesi
+   - Atur maksimal sesi per hari untuk menghindari kelebihan kerja
+   - Atur jendela pemesanan di muka (misalnya, klien harus memesan minimal H-2)
+   - Atur waktu penyangga sebelum dan sesudah sesi
+   - Timpa ketersediaan untuk acara khusus
 
-4. **Clients Management:**
-   - List semua klien yang pernah ditangani
-   - Client profile dengan informasi demografis dan kontak
-   - Session history dengan setiap klien
-   - Progress summary untuk setiap klien
-   - Notes dan observations
-   - Flag atau tag untuk klien yang perlu special attention
+4. **Manajemen Klien:**
+   - Daftar semua klien yang pernah ditangani
+   - Profil klien dengan informasi demografis dan kontak
+   - Riwayat sesi dengan setiap klien
+   - Ringkasan kemajuan untuk setiap klien
+   - Catatan dan pengamatan
+   - Penanda atau label untuk klien yang perlu perhatian khusus
 
-5. **Session Room:**
-   - Virtual room untuk conduct online session (video call integration)
-   - Session timer dengan alert 5 menit sebelum waktu habis
-   - Quick access ke client profile dan previous notes
-   - Real-time note-taking pad
-   - End session button dengan automatic logging
+5. **Ruang Sesi:**
+   - Ruang virtual untuk melakukan sesi daring (integrasi panggilan video)
+   - Penghitung waktu sesi dengan peringatan 5 menit sebelum waktu habis
+   - Akses cepat ke profil klien dan catatan sebelumnya
+   - Papan pencatatan waktu nyata
+   - Tombol akhiri sesi dengan pencatatan otomatis
 
-6. **Session Notes:**
-   - Template notes sesuai jenis terapi
-   - Rich text editor dengan formatting options
-   - Structured fields (client condition, intervention, response, plan)
-   - Attach files atau images jika diperlukan
-   - Private notes (hanya untuk terapis) dan shared notes (bisa dilihat klien)
-   - Auto-save draft untuk prevent data loss
+6. **Catatan Sesi:**
+   - Templat catatan sesuai jenis terapi
+   - Penyunting teks kaya dengan opsi pemformatan
+   - Bidang terstruktur (kondisi klien, intervensi, respons, rencana)
+   - Lampirkan berkas atau gambar jika diperlukan
+   - Catatan pribadi (hanya untuk terapis) dan catatan bersama (dapat dilihat klien)
+   - Simpan draf otomatis untuk mencegah kehilangan data
 
-7. **Session History:**
-   - Complete history semua sesi yang sudah dilakukan
-   - Filter berdasarkan klien, date range, atau jenis layanan
-   - View notes dari sesi sebelumnya
-   - Analytics (session completion rate, no-show rate)
-   - Export history untuk reporting atau audit
+7. **Riwayat Sesi:**
+   - Riwayat lengkap semua sesi yang sudah dilakukan
+   - Saring berdasarkan klien, rentang tanggal, atau jenis layanan
+   - Lihat catatan dari sesi sebelumnya
+   - Analitik (tingkat penyelesaian sesi, tingkat tidak hadir)
+   - Ekspor riwayat untuk pelaporan atau audit
 
-8. **Earnings:**
-   - Summary total earnings (today, this week, this month, this year)
-   - Earnings breakdown per layanan atau per klien
-   - Pending payments dan paid payments
-   - Commission rate atau fee structure
-   - Export financial report untuk tax purposes
-   - Charts untuk visualisasi earnings trend
+8. **Penghasilan:**
+   - Ringkasan total penghasilan (hari ini, minggu ini, bulan ini, tahun ini)
+   - Rincian penghasilan per layanan atau per klien
+   - Pembayaran tertunda dan pembayaran lunas
+   - Tarif komisi atau struktur biaya
+   - Ekspor laporan keuangan untuk keperluan pajak
+   - Diagram untuk visualisasi tren penghasilan
 
-**F. Modul Dashboard Admin**
+**F. Modul Dasbor Admin**
 
-1. **Dashboard Overview:**
-   - Key metrics cards (total users, active bookings, revenue today, pending issues)
-   - Real-time booking notifications
-   - System health status (server, database, storage)
-   - Quick actions (add user, approve booking, generate report)
-   - Recent activities log
-   - Announcements management untuk broadcast ke users
+1. **Ikhtisar Dasbor:**
+   - Kartu metrik kunci (total pengguna, pemesanan aktif, pendapatan hari ini, masalah tertunda)
+   - Notifikasi pemesanan waktu nyata
+   - Status kesehatan sistem (server, basis data, penyimpanan)
+   - Tindakan cepat (tambah pengguna, setujui pemesanan, buat laporan)
+   - Log aktivitas terkini
+   - Manajemen pengumuman untuk siaran ke pengguna
 
-2. **Users Management:**
-   - List semua users (klien, terapis, admin) dengan pagination
-   - Search dan filter users berdasarkan role, status, atau registration date
-   - View user profile dengan detail lengkap
-   - Edit user information atau permissions
-   - Activate, deactivate, atau delete user account
-   - Assign atau change user role
-   - Send email atau notification ke user secara individual atau bulk
+2. **Manajemen Pengguna:**
+   - Daftar semua pengguna (klien, terapis, admin) dengan paginasi
+   - Cari dan saring pengguna berdasarkan peran, status, atau tanggal pendaftaran
+   - Lihat profil pengguna dengan detail lengkap
+   - Sunting informasi atau izin pengguna
+   - Aktifkan, nonaktifkan, atau hapus akun pengguna
+   - Tetapkan atau ubah peran pengguna
+   - Kirim surel atau notifikasi ke pengguna secara individual atau massal
 
-3. **Therapists Management:**
-   - Approval workflow untuk registrasi terapis baru
-   - Verify dokumen sertifikasi dan kredensial
-   - Set commission rate atau payment scheme untuk setiap terapis
-   - Performance monitoring (rating, session count, earnings)
-   - Suspend atau deactivate terapis jika ada pelanggaran
-   - Assign layanan atau spesialisasi ke terapis
+3. **Manajemen Terapis:**
+   - Alur persetujuan untuk pendaftaran terapis baru
+   - Verifikasi dokumen sertifikasi dan kredensial
+   - Atur tarif komisi atau skema pembayaran untuk setiap terapis
+   - Pemantauan kinerja (penilaian, jumlah sesi, penghasilan)
+   - Tangguhkan atau nonaktifkan terapis jika ada pelanggaran
+   - Tetapkan layanan atau spesialisasi ke terapis
 
-4. **Services Management:**
-   - CRUD operations untuk layanan (Create, Read, Update, Delete)
-   - Set nama layanan, deskripsi, durasi, dan harga
-   - Upload thumbnail image untuk setiap layanan
-   - Activate atau deactivate layanan
-   - Set layanan visibility (public atau private)
-   - Assign layanan ke terapis tertentu
+4. **Manajemen Layanan:**
+   - Operasi CRUD untuk layanan (Buat, Baca, Perbarui, Hapus)
+   - Atur nama layanan, deskripsi, durasi, dan harga
+   - Unggah gambar mini untuk setiap layanan
+   - Aktifkan atau nonaktifkan layanan
+   - Atur visibilitas layanan (publik atau pribadi)
+   - Tetapkan layanan ke terapis tertentu
 
-5. **Bookings Management:**
-   - View semua bookings dengan berbagai status
-   - Filter dan search bookings berdasarkan multiple criteria
-   - Manual booking creation (walk-in atau phone booking)
-   - Approve atau reject booking (jika approval workflow enabled)
-   - Reschedule atau cancel booking atas nama klien atau terapis
-   - Resolve konflik jadwal (double booking, overlapping)
-   - Send custom notifications ke klien atau terapis
+5. **Manajemen Pemesanan:**
+   - Lihat semua pemesanan dengan berbagai status
+   - Saring dan cari pemesanan berdasarkan berbagai kriteria
+   - Pembuatan pemesanan manual (kunjungan langsung atau pemesanan telepon)
+   - Setujui atau tolak pemesanan (jika alur persetujuan diaktifkan)
+   - Jadwal ulang atau batalkan pemesanan atas nama klien atau terapis
+   - Selesaikan konflik jadwal (pemesanan ganda, tumpang tindih)
+   - Kirim notifikasi khusus ke klien atau terapis
 
-6. **Payments Management:**
-   - View semua transactions dengan status
-   - Verify manual payment (transfer bank)
-   - Approve atau reject refund requests
-   - Generate invoice secara manual
-   - Configure payment methods dan gateways
-   - Set pricing, discounts, atau promo codes
-   - Payment reconciliation tool
+6. **Manajemen Pembayaran:**
+   - Lihat semua transaksi dengan status
+   - Verifikasi pembayaran manual (transfer bank)
+   - Setujui atau tolak permintaan pengembalian dana
+   - Buat faktur secara manual
+   - Konfigurasi metode dan gerbang pembayaran
+   - Atur harga, diskon, atau kode promo
+   - Alat rekonsiliasi pembayaran
 
-7. **Financial Reports:**
-   - Revenue report (daily, weekly, monthly, yearly) dengan visual charts
-   - Bookings report (jumlah booking, conversion rate, cancellation rate)
-   - Therapists performance report (ranking, earnings, ratings)
-   - Services report (most booked, revenue per service)
-   - Customer report (new customers, retention rate, lifetime value)
-   - Export reports to PDF, Excel, atau CSV
-   - Customizable date range dan filters
+7. **Laporan Keuangan:**
+   - Laporan pendapatan (harian, mingguan, bulanan, tahunan) dengan diagram visual
+   - Laporan pemesanan (jumlah pemesanan, tingkat konversi, tingkat pembatalan)
+   - Laporan kinerja terapis (peringkat, penghasilan, penilaian)
+   - Laporan layanan (paling dipesan, pendapatan per layanan)
+   - Laporan pelanggan (pelanggan baru, tingkat retensi, nilai seumur hidup)
+   - Ekspor laporan ke PDF, Excel, atau CSV
+   - Rentang tanggal dan penyaringan yang dapat disesuaikan
 
-8. **System Settings:**
-   - General settings (site name, logo, tagline, timezone)
-   - Email settings (SMTP configuration, email templates)
-   - SMS settings (gateway configuration, templates)
-   - Payment gateway settings (API keys, webhook URLs)
-   - Notification settings (enable/disable email, SMS, push notifications)
-   - Booking settings (advance booking days, cancellation policy, buffer time)
-   - Security settings (session timeout, password policy, 2FA)
-   - Backup dan restore database
+8. **Pengaturan Sistem:**
+   - Pengaturan umum (nama situs, logo, slogan, zona waktu)
+   - Pengaturan surel (konfigurasi SMTP, templat surel)
+   - Pengaturan SMS (konfigurasi gerbang, templat)
+   - Pengaturan gerbang pembayaran (kunci API, URL webhook)
+   - Pengaturan notifikasi (aktifkan/nonaktifkan surel, SMS, notifikasi dorong)
+   - Pengaturan pemesanan (hari pemesanan di muka, kebijakan pembatalan, waktu penyangga)
+   - Pengaturan keamanan (batas waktu sesi, kebijakan kata sandi, 2FA)
+   - Cadangkan dan pulihkan basis data
 
 **G. Modul Pembayaran**
 
-1. **Payment Integration:**
-   - Multiple payment methods (transfer bank manual, credit/debit card, e-wallet, QRIS)
-   - Integration dengan payment gateway (Midtrans, Xendit, atau sejenisnya)
-   - Secure payment processing dengan encryption
-   - Automatic payment verification untuk digital payments
-   - Manual verification workflow untuk bank transfer
+1. **Integrasi Pembayaran:**
+   - Berbagai metode pembayaran (transfer bank manual, kartu kredit/debit, dompet elektronik, QRIS)
+   - Integrasi dengan gerbang pembayaran (Midtrans, Xendit, atau sejenisnya)
+   - Pemrosesan pembayaran aman dengan enkripsi
+   - Verifikasi pembayaran otomatis untuk pembayaran digital
+   - Alur verifikasi manual untuk transfer bank
 
-2. **Invoice dan Receipt:**
-   - Automatic invoice generation setelah booking confirmed
-   - Digital receipt setelah payment completed
-   - PDF download untuk invoice dan receipt
-   - Email invoice dan receipt ke klien
-   - Invoice number dengan format standardized
-   - Detailed line items (layanan, duration, price, tax, total)
+2. **Faktur dan Tanda Terima:**
+   - Pembuatan faktur otomatis setelah pemesanan dikonfirmasi
+   - Tanda terima digital setelah pembayaran selesai
+   - Unduh PDF untuk faktur dan tanda terima
+   - Kirim faktur dan tanda terima ke surel klien
+   - Nomor faktur dengan format terstandarisasi
+   - Rincian item terperinci (layanan, durasi, harga, pajak, total)
 
-3. **Payment Tracking:**
-   - Payment status tracking (pending, processing, completed, failed)
-   - Payment history untuk klien dan admin
-   - Refund management untuk cancelled bookings
-   - Payment reminder untuk pending payments
-   - Late payment fee atau early payment discount (optional)
+3. **Pelacakan Pembayaran:**
+   - Pelacakan status pembayaran (tertunda, memproses, selesai, gagal)
+   - Riwayat pembayaran untuk klien dan admin
+   - Manajemen pengembalian dana untuk pemesanan yang dibatalkan
+   - Pengingat pembayaran untuk pembayaran tertunda
+   - Biaya keterlambatan pembayaran atau diskon pembayaran awal (opsional)
 
 **H. Modul Notifikasi dan Komunikasi**
 
@@ -804,11 +804,11 @@ Luaran yang dihasilkan dari proyek ini adalah:
    - *X-Banner* infografis proyek
 
 4. **Tambahan:**
-   - Video promosi CUR-HEART (2-3 menit) untuk YouTube/Instagram/TikTok
+   - Video promosi CUR-HEART (2-3 menit) untuk berbagai media sosial
    - Surat keterangan riset dari CUR-HEART
    - Dokumen keabsahan data dan produk
 
-Dengan batasan ruang lingkup yang jelas ini, proyek dapat difokuskan pada pengembangan fitur-fitur core yang paling critical untuk operasional CUR-HEART, sambil tetap memastikan kualitas dan kelengkapan implementasi.
+Dengan batasan ruang lingkup yang jelas ini, proyek dapat difokuskan pada pengembangan fitur-fitur inti yang paling krusial untuk operasional CUR-HEART, sambil tetap memastikan kualitas dan kelengkapan implementasi.
 
 ## 1.4 Tujuan dan Manfaat Penelitian
 
@@ -882,7 +882,7 @@ Penelitian dan pengembangan sistem informasi ini diharapkan memberikan manfaat k
 #### 1.4.2.2 Manfaat bagi Terapis
 
 1. **Kemudahan Manajemen Jadwal:**
-   Terapis dapat dengan mudah mengatur ketersediaan, memblokir tanggal untuk cuti, dan melihat gambaran umum jadwal mereka dalam tampilan mingguan atau bulanan, sehingga dapat melakukan keseimbangan kehidupan kerja yang lebih baik dan mengurangi kelelahan (*burnout*).
+   Terapis dapat dengan mudah mengatur ketersediaan, memblokir tanggal untuk cuti, dan melihat gambaran umum jadwal mereka dalam tampilan mingguan atau bulanan, sehingga dapat melakukan keseimbangan kehidupan kerja yang lebih baik dan mengurangi kelelahan.
 
 2. **Efisiensi Dokumentasi:**
    Sistem dokumentasi terapi yang terstruktur dengan templat dan penyimpanan otomatis akan menghemat waktu terapis dalam mencatat hasil sesi (dari 10-15 menit menjadi 5-7 menit), dan memudahkan pengambilan riwayat terapi klien untuk referensi di sesi berikutnya.
@@ -930,14 +930,14 @@ Penelitian dan pengembangan sistem informasi ini diharapkan memberikan manfaat k
 2. **Referensi untuk Penelitian Selanjutnya:**
    Laporan dan dokumentasi lengkap dari proyek ini dapat menjadi referensi bagi mahasiswa atau peneliti lain yang tertarik mengembangkan sistem serupa atau melakukan studi lanjutan tentang transformasi digital di sektor kesehatan mental.
 
-3. **Studi Kasus untuk Pembelajaran:**
+2. **Studi Kasus untuk Pembelajaran:**
    Proyek ini dapat dijadikan studi kasus dalam mata kuliah terkait seperti Sistem Informasi Manajemen, Rekayasa Perangkat Lunak, Manajemen Proyek Teknologi Informasi, atau Desain Antarmuka Pengguna, memberikan contoh nyata implementasi teori ke praktik.
 
-4. **Dokumentasi Praktik Terbaik:**
+3. **Dokumentasi Praktik Terbaik:**
    Dokumentasi metodologi, proses pengembangan, keputusan desain, dan pelajaran yang dipetik dari proyek ini dapat menjadi panduan praktik terbaik untuk pengembangan sistem informasi serupa di masa depan.
 
-5. **Kolaborasi Industri-Akademik:**
-   Proyek ini menunjukkan kolaborasi yang efektif antara dunia akademik (Universitas Nusa Mandiri) dengan industri (CUR-HEART), memperkuat keterkaitan dan kesepadanan (*link and match*) antara pendidikan tinggi dengan kebutuhan dunia kerja.
+4. **Kolaborasi Industri-Akademik:**
+   Proyek ini menunjukkan kolaborasi yang efektif antara dunia akademik (Universitas Nusa Mandiri) dengan industri (CUR-HEART), memperkuat keterkaitan dan kesepadanan antara pendidikan tinggi dengan kebutuhan dunia kerja.
 
 #### 1.4.2.5 Manfaat bagi Masyarakat Luas
 
@@ -968,7 +968,7 @@ Penelitian dan pengembangan sistem informasi ini diharapkan memberikan manfaat k
 
 **Sumber:** Analisis dampak proyek terhadap pemangku kepentingan (September 2024)
 
-**Catatan:** Metrik keberhasilan akan diukur melalui Pengujian Penerimaan Pengguna (*User Acceptance Testing*/UAT), survei kepuasan pengguna, dan pemantauan KPI sistem selama 3-6 bulan pertama implementasi.
+**Catatan:** Metrik keberhasilan akan diukur melalui Pengujian Penerimaan Pengguna, survei kepuasan pengguna, dan pemantauan KPI sistem selama 3-6 bulan pertama implementasi.
 
 Dengan demikian, penelitian dan pengembangan sistem informasi manajemen pemesanan dan terapi CUR-HEART ini memiliki potensi dampak positif yang luas, tidak hanya bagi organisasi CUR-HEART itu sendiri, tetapi juga bagi terapis, klien, komunitas akademik, dan masyarakat luas dalam upaya meningkatkan akses dan kualitas layanan kesehatan mental di Indonesia.
 
