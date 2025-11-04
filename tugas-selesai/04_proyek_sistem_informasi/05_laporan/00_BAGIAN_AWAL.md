@@ -10,9 +10,9 @@
 
 **LAPORAN CAPSTONE PROJECT**
 
-**SISTEM INFORMASI MANAJEMEN BOOKING DAN TERAPI  
-CUR-HEART (HYPNOTHERAPY & MIND WELLNESS CENTER)  
-BERBASIS WEB DENGAN FRAMEWORK LARAVEL**
+**SISTEM INFORMASI MANAJEMEN PEMESANAN DAN TERAPI  
+CUR-HEART (PUSAT HIPNOTERAPI & KESEHATAN MENTAL)  
+BERBASIS WEB DENGAN KERANGKA KERJA LARAVEL**
 
 Disusun untuk Memenuhi Salah Satu Syarat  
 Menyelesaikan Mata Kuliah Proyek Sistem Informasi  
@@ -73,42 +73,42 @@ Membuat dan mempresentasikan tugas projek kelompok dalam bentuk laporan proyek s
 
 **METODE PENGERJAAN TUGAS**
 
-- Tata cara pengerjaannya: Tugas dikerjakan secara kelompok.
+- Tata cara pengerjaannya: Tugas dikerjakan secara berkelompok.
 
-- Cara pembuatan artikel penelitian: Untuk template laporan proyek sistem informasi dapat dilihat pada pedoman Capstone Project
+- Cara pembuatan artikel penelitian: Untuk templat laporan proyek sistem informasi dapat dilihat pada pedoman Proyek Akhir (*Capstone Project*)
 
 **BENTUK DAN FORMAT LUARAN**
 
-- Objek Garapan: Lembaga/instansi/organisasi yang ada dilingkungan masyarakat
+- Objek Garapan: Lembaga/instansi/organisasi yang ada di lingkungan masyarakat
 
 - Yang harus dikerjakan dan batasan-batasan:
-  1. Mahasiswa mendefinisikan permasalahan penelitian sesuai kondisi dilingkungan masing-masing
-  2. Membuat laporan proyek sistem informasi sesuai dengan pedoman Capstone Project.
+  1. Mahasiswa mendefinisikan permasalahan penelitian sesuai kondisi di lingkungan masing-masing
+  2. Membuat laporan proyek sistem informasi sesuai dengan pedoman Proyek Akhir (*Capstone Project*)
 
 - Bentuk Luaran:
-  1. Laporan Proyek Sistem Informasi dibuat dengan sistematika dan format sesuai dengan penulisan yang sudah ditetapkan.
-  2. Slide presentasi powerpoint
+  1. Laporan Proyek Sistem Informasi dibuat dengan sistematika dan format sesuai dengan penulisan yang sudah ditetapkan
+  2. Salindia presentasi PowerPoint
   3. Laporan Penelitian dalam bentuk PDF
 
-- Tugas dipresentasikan dihadapan Dosen
+- Tugas dipresentasikan di hadapan Dosen
 
 **INDIKATOR KRITERIA DAN BOBOT PENILAIAN**
 
 a. Ketepatan waktu pengumpulan Laporan Proyek Sistem Informasi (Bobot 20%)  
-   Mahasiswa mengumpulkan Laporan proyek sistem informasi sesuai dengan waktu yang telah ditentukan
+   Mahasiswa mengumpulkan laporan proyek sistem informasi sesuai dengan waktu yang telah ditentukan
 
 b. Laporan Proyek Sistem Informasi (30%)
    1. Ketepatan sistematika penyusunan laporan Proyek Sistem Informasi sesuai dengan standar panduan
-   2. laporan Proyek Sistem Informasi sesuai dengan ejaan Bahasa Indonesia yang benar dan sesuai dengan standar
-   3. Konsistensi dalam penggunaan istilah, warna, symbol, dan lambang
+   2. Laporan Proyek Sistem Informasi sesuai dengan ejaan Bahasa Indonesia yang benar dan sesuai dengan standar
+   3. Konsistensi dalam penggunaan istilah, warna, simbol, dan lambang
    4. Kerapihan buku laporan yang dikumpulkan
-   5. Kelengkapan penggunaan fitur-fitur yang ada dalam MS Word dalam penulisan dan sajian proposal penelitian
+   5. Kelengkapan penggunaan fitur-fitur yang ada dalam MS Word dalam penulisan dan sajian usulan penelitian
 
-c. Penyusunan Slide Presentasi (Bobot 20%)  
-   Jelas dan konsisten sederhana dan inovatif, menampilkan gambar dan blok sistem tulisan menggunakan font yang mudah dibaca, jika diperlukan didukung dengan gambar yang relevan.
+c. Penyusunan Salindia Presentasi (Bobot 20%)  
+   Jelas dan konsisten, sederhana dan inovatif, menampilkan gambar dan blok sistem tulisan menggunakan jenis huruf yang mudah dibaca, jika diperlukan didukung dengan gambar yang relevan
 
 d. Presentasi (Bobot 30%)  
-   Bahasa tubuh, penguasaan materi, penguasaan audiensi, pengendalian waktu (15 menit presentasi +5 menit diskusi), kejelasan dan ketajaman paparan, penguasaan media presentasi.
+   Bahasa tubuh, penguasaan materi, penguasaan audiensi, pengendalian waktu (15 menit presentasi + 5 menit diskusi), kejelasan dan ketajaman paparan, penguasaan media presentasi
 
 **JADWAL PELAKSANAAN**
 
@@ -136,9 +136,9 @@ Tugas dikerjakan secara kelompok
 
 **LEMBAR PENGESAHAN**
 
-Laporan Capstone Project dengan judul:
+Laporan Proyek Akhir (*Capstone Project*) dengan judul:
 
-**"SISTEM INFORMASI MANAJEMEN BOOKING DAN TERAPI CUR-HEART (HYPNOTHERAPY & MIND WELLNESS CENTER) BERBASIS WEB DENGAN FRAMEWORK LARAVEL"**
+**"SISTEM INFORMASI MANAJEMEN PEMESANAN DAN TERAPI CUR-HEART (PUSAT HIPNOTERAPI & KESEHATAN MENTAL) BERBASIS WEB DENGAN KERANGKA KERJA LARAVEL"**
 
 Disusun oleh:
 
@@ -177,11 +177,11 @@ Tanggal: _________________
 
 Bismillahirrahmanirrahim,
 
-Alhamdulillah, puji syukur kehadirat Allah SWT yang telah melimpahkan rahmat, hidayah, dan karunia-Nya sehingga penulis dapat menyelesaikan Laporan Capstone Project yang berjudul **"Sistem Informasi Manajemen Booking dan Terapi CUR-HEART (Hypnotherapy & Mind Wellness Center) Berbasis Web dengan Framework Laravel"** dengan baik.
+Alhamdulillah, puji syukur kehadirat Allah SWT yang telah melimpahkan rahmat, hidayah, dan karunia-Nya sehingga penulis dapat menyelesaikan Laporan Proyek Akhir (*Capstone Project*) yang berjudul **"Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) Berbasis Web dengan Kerangka Kerja Laravel"** dengan baik.
 
-Laporan ini disusun untuk memenuhi salah satu syarat menyelesaikan mata kuliah Proyek Sistem Informasi pada Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Nusa Mandiri. Laporan ini membahas tentang perancangan dan pengembangan sistem informasi yang dapat membantu mengelola layanan terapi kesehatan mental berbasis hypnotherapy secara efektif dan efisien.
+Laporan ini disusun untuk memenuhi salah satu syarat menyelesaikan mata kuliah Proyek Sistem Informasi pada Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Nusa Mandiri. Laporan ini membahas tentang perancangan dan pengembangan sistem informasi yang dapat membantu mengelola layanan terapi kesehatan mental berbasis hipnoterapi secara efektif dan efisien.
 
-Dalam era digital saat ini, kesehatan mental menjadi perhatian utama masyarakat. Tingginya tingkat stres, kecemasan, dan gangguan mental lainnya menuntut adanya solusi yang mudah diakses dan profesional. CUR-HEART hadir sebagai pusat layanan hypnotherapy dan kesehatan mental yang membutuhkan sistem informasi terintegrasi untuk mengelola proses booking, manajemen terapis, hingga dokumentasi sesi terapi. Melalui proyek ini, penulis berupaya merancang sistem yang dapat menjawab kebutuhan tersebut dengan memanfaatkan teknologi web modern berbasis framework Laravel.
+Dalam era digital saat ini, kesehatan mental menjadi perhatian utama masyarakat. Tingginya tingkat stres, kecemasan, dan gangguan mental lainnya menuntut adanya solusi yang mudah diakses dan profesional. CUR-HEART hadir sebagai pusat layanan hipnoterapi dan kesehatan mental yang membutuhkan sistem informasi terpadu untuk mengelola proses pemesanan, manajemen terapis, hingga dokumentasi sesi terapi. Melalui proyek ini, penulis berupaya merancang sistem yang dapat menjawab kebutuhan tersebut dengan memanfaatkan teknologi web modern berbasis kerangka kerja (*framework*) Laravel.
 
 Penulis menyadari bahwa laporan ini masih jauh dari sempurna. Oleh karena itu, kritik dan saran yang membangun sangat penulis harapkan demi perbaikan di masa yang akan datang. Semoga laporan ini dapat memberikan manfaat bagi pembaca dan menjadi referensi untuk pengembangan sistem informasi di bidang kesehatan mental.
 
@@ -197,25 +197,25 @@ Tim Penulis
 
 **ABSTRAK**
 
-**Roki Anjas, Susanto, Fahruroji. 2025. Sistem Informasi Manajemen Booking dan Terapi CUR-HEART (Hypnotherapy & Mind Wellness Center) Berbasis Web dengan Framework Laravel. Laporan Capstone Project. Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Nusa Mandiri.**
+**Roki Anjas, Susanto, Fahruroji. 2025. Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) Berbasis Web dengan Kerangka Kerja Laravel. Laporan Proyek Akhir. Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Nusa Mandiri.**
 
-Kesehatan mental menjadi isu krusial di era modern, di mana sekitar 20% penduduk Indonesia mengalami gangguan kesehatan mental namun terkendala akses layanan yang memadai. CUR-HEART sebagai pusat layanan hypnotherapy dan kesehatan mental membutuhkan sistem informasi terintegrasi untuk mengelola proses bisnis secara efektif. Penelitian ini bertujuan merancang dan mengembangkan sistem informasi manajemen booking dan terapi berbasis web menggunakan framework Laravel yang dapat memfasilitasi proses booking layanan, manajemen terapis, dokumentasi sesi terapi, serta monitoring progress klien.
+Kesehatan mental menjadi isu krusial di era modern, di mana sekitar 20% penduduk Indonesia mengalami gangguan kesehatan mental namun terkendala akses layanan yang memadai. CUR-HEART sebagai pusat layanan hipnoterapi dan kesehatan mental membutuhkan sistem informasi terpadu untuk mengelola proses bisnis secara efektif. Penelitian ini bertujuan merancang dan mengembangkan sistem informasi manajemen pemesanan dan terapi berbasis web menggunakan kerangka kerja (*framework*) Laravel yang dapat memfasilitasi proses pemesanan layanan, manajemen terapis, dokumentasi sesi terapi, serta pemantauan kemajuan klien.
 
-Metodologi penelitian menggunakan pendekatan System Development Life Cycle (SDLC) dengan model waterfall yang meliputi tahapan analisis kebutuhan, desain sistem, implementasi, testing, dan deployment. Teknik pengumpulan data dilakukan melalui observasi, wawancara dengan stakeholder, dan studi literatur. Analisis sistem menghasilkan identifikasi kebutuhan fungsional meliputi modul autentikasi multi-role (admin, terapis, klien), sistem booking multi-step, manajemen jadwal terapis, ruang sesi virtual, dokumentasi catatan terapi, tracking progress klien, sistem pembayaran, dan pelaporan keuangan. Perancangan sistem menggunakan Unified Modeling Language (UML) untuk use case diagram, activity diagram, dan sequence diagram, serta Entity Relationship Diagram (ERD) untuk desain basis data.
+Metodologi penelitian menggunakan pendekatan Siklus Hidup Pengembangan Sistem (*System Development Life Cycle*/SDLC) dengan model air terjun (*waterfall*) yang meliputi tahapan analisis kebutuhan, desain sistem, implementasi, pengujian, dan penerapan. Teknik pengumpulan data dilakukan melalui observasi, wawancara dengan pemangku kepentingan, dan studi literatur. Analisis sistem menghasilkan identifikasi kebutuhan fungsional meliputi modul autentikasi berbagai peran (admin, terapis, klien), sistem pemesanan bertahap, manajemen jadwal terapis, ruang sesi virtual, dokumentasi catatan terapi, pelacakan kemajuan klien, sistem pembayaran, dan pelaporan keuangan. Perancangan sistem menggunakan Bahasa Pemodelan Terpadu (*Unified Modeling Language*/UML) untuk diagram kasus penggunaan (*use case diagram*), diagram aktivitas (*activity diagram*), dan diagram urutan (*sequence diagram*), serta Diagram Hubungan Entitas (*Entity Relationship Diagram*/ERD) untuk desain basis data.
 
-Hasil penelitian menghasilkan sistem informasi berbasis web dengan arsitektur monolitik menggunakan Laravel Framework 10.x, database MySQL, dan interface responsif dengan Tailwind CSS. Sistem terdiri dari 41 halaman antarmuka yang mencakup 8 halaman publik, 4 halaman autentikasi, 10 halaman dashboard klien, 10 halaman dashboard terapis, dan 5 halaman dashboard admin. Fitur utama sistem meliputi booking flow 4 langkah (pilih layanan, pilih terapis, pilih jadwal, konfirmasi pembayaran), manajemen ketersediaan terapis, ruang sesi virtual terintegrasi, dokumentasi catatan terapi terstruktur, serta dashboard monitoring dengan visualisasi data real-time.
+Hasil penelitian menghasilkan sistem informasi berbasis web dengan arsitektur monolitik menggunakan Kerangka Kerja Laravel 10.x, basis data MySQL, dan antarmuka responsif dengan Tailwind CSS. Sistem terdiri dari 41 halaman antarmuka yang mencakup 8 halaman publik, 4 halaman autentikasi, 10 halaman dasbor klien, 10 halaman dasbor terapis, dan 5 halaman dasbor admin. Fitur utama sistem meliputi alur pemesanan 4 langkah (pilih layanan, pilih terapis, pilih jadwal, konfirmasi pembayaran), manajemen ketersediaan terapis, ruang sesi virtual terpadu, dokumentasi catatan terapi terstruktur, serta dasbor pemantauan dengan visualisasi data waktu nyata (*real-time*).
 
-Pengujian sistem dilakukan secara fungsional menggunakan black-box testing terhadap setiap modul dan fitur sistem, serta usability testing dengan melibatkan calon pengguna untuk mengevaluasi kemudahan penggunaan interface. Hasil pengujian menunjukkan bahwa sistem berhasil memenuhi kebutuhan fungsional dengan tingkat keberhasilan 95% dan mendapat feedback positif dari pengguna dengan skor usability 82 dari 100. Sistem ini diharapkan dapat meningkatkan efisiensi operasional CUR-HEART, memudahkan akses layanan bagi klien, serta mendukung dokumentasi dan monitoring terapi secara sistematis.
+Pengujian sistem dilakukan secara fungsional menggunakan pengujian kotak hitam (*black-box testing*) terhadap setiap modul dan fitur sistem, serta pengujian kegunaan (*usability testing*) dengan melibatkan calon pengguna untuk mengevaluasi kemudahan penggunaan antarmuka. Hasil pengujian menunjukkan bahwa sistem berhasil memenuhi kebutuhan fungsional dengan tingkat keberhasilan 95% dan mendapat tanggapan positif dari pengguna dengan skor kegunaan 82 dari 100. Sistem ini diharapkan dapat meningkatkan efisiensi operasional CUR-HEART, memudahkan akses layanan bagi klien, serta mendukung dokumentasi dan pemantauan terapi secara sistematis.
 
-**Kata Kunci:** Sistem Informasi, Manajemen Booking, Hypnotherapy, Kesehatan Mental, Laravel Framework, Web Application
+**Kata Kunci:** Sistem Informasi, Manajemen Pemesanan, Hipnoterapi, Kesehatan Mental, Kerangka Kerja Laravel, Aplikasi Web
 
 ---
 
 **ABSTRACT**
 
-**Roki Anjas, Susanto, Fahruroji. 2025. Booking and Therapy Management Information System for CUR-HEART (Hypnotherapy & Mind Wellness Center) Web-Based Application Using Laravel Framework. Capstone Project Report. Information Systems Study Program, Faculty of Information Technology, Nusa Mandiri University.**
+**Roki Anjas, Susanto, Fahruroji. 2025. Booking and Therapy Management Information System for CUR-HEART (Hypnotherapy & Mind Wellness Center) Web-Based Application Using Laravel Framework. Final Project Report. Information Systems Study Program, Faculty of Information Technology, Nusa Mandiri University.**
 
-Mental health has become a crucial issue in the modern era, where approximately 20% of Indonesia's population experiences mental health disorders but faces barriers in accessing adequate services. CUR-HEART as a hypnotherapy and mental health service center requires an integrated information system to manage business processes effectively. This research aims to design and develop a web-based booking and therapy management information system using the Laravel framework that can facilitate service booking processes, therapist management, therapy session documentation, and client progress monitoring.
+Mental health has become a crucial issue in the modern era, where approximately 20% of Indonesia's population experiences mental health disorders but faces barriers in accessing adequate services. CUR-HEART, as a hypnotherapy and mental health service center, requires an integrated information system to manage business processes effectively. This research aims to design and develop a web-based booking and therapy management information system using the Laravel framework that can facilitate service booking processes, therapist management, therapy session documentation, and client progress monitoring.
 
 The research methodology uses a System Development Life Cycle (SDLC) approach with a waterfall model covering stages of requirements analysis, system design, implementation, testing, and deployment. Data collection techniques were conducted through observation, stakeholder interviews, and literature studies. System analysis resulted in the identification of functional requirements including multi-role authentication module (admin, therapist, client), multi-step booking system, therapist schedule management, virtual session room, therapy notes documentation, client progress tracking, payment system, and financial reporting.
 

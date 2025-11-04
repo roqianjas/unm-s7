@@ -21,11 +21,11 @@
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 1.1: Logo CUR-HEART sebagai identitas brand perusahaan hypnotherapy dan mind wellness center_
+_Gambar 1.1: Logo CUR-HEART sebagai identitas merek perusahaan pusat hipnoterapi dan kesehatan mental_
 
 ---
 
-Kesehatan mental telah menjadi salah satu isu kesehatan global yang paling mendesak di abad ke-21. Menurut data World Health Organization (WHO) tahun 2023, lebih dari 450 juta orang di seluruh dunia mengalami gangguan kesehatan mental, dengan proyeksi peningkatan yang signifikan setiap tahunnya. Di Indonesia, situasinya tidak kalah mengkhawatirkan. Berdasarkan data Riset Kesehatan Dasar (Riskesdas) Kementerian Kesehatan Republik Indonesia tahun 2023, prevalensi gangguan kesehatan mental di Indonesia mencapai 20% dari total populasi, yang berarti sekitar 1 dari 5 orang Indonesia mengalami masalah kesehatan mental mulai dari tingkat ringan hingga berat.
+Kesehatan mental telah menjadi salah satu isu kesehatan global yang paling mendesak di abad ke-21. Menurut data Organisasi Kesehatan Dunia (*World Health Organization*/WHO) tahun 2023, lebih dari 450 juta orang di seluruh dunia mengalami gangguan kesehatan mental, dengan proyeksi peningkatan yang signifikan setiap tahunnya. Di Indonesia, situasinya tidak kalah mengkhawatirkan. Berdasarkan data Riset Kesehatan Dasar (Riskesdas) Kementerian Kesehatan Republik Indonesia tahun 2023, prevalensi gangguan kesehatan mental di Indonesia mencapai 20% dari total populasi, yang berarti sekitar 1 dari 5 orang Indonesia mengalami masalah kesehatan mental mulai dari tingkat ringan hingga berat.
 
 ---
 
@@ -57,95 +57,95 @@ _Gambar 1.2: Statistik prevalensi gangguan kesehatan mental di Indonesia berdasa
 
 ---
 
-Fenomena ini dipicu oleh berbagai faktor kompleks yang saling berkaitan. Tekanan pekerjaan yang semakin tinggi di era kompetisi global, ketidakstabilan ekonomi pascapandemi COVID-19, disrupsi digital yang mengubah pola interaksi sosial, serta perubahan nilai-nilai sosial yang cepat telah menciptakan lingkungan yang penuh dengan stressor psikologis. Generasi milenial dan Z, yang merupakan angkatan kerja produktif saat ini, dilaporkan mengalami tingkat stres dan kecemasan yang lebih tinggi dibandingkan generasi sebelumnya. Kondisi ini diperparah dengan masih tingginya stigma sosial terhadap gangguan kesehatan mental di masyarakat Indonesia, yang menyebabkan banyak penderita enggan mencari bantuan profesional.
+Fenomena ini dipicu oleh berbagai faktor kompleks yang saling berkaitan. Tekanan pekerjaan yang semakin tinggi di era persaingan global, ketidakstabilan ekonomi pascapandemi COVID-19, gangguan digital yang mengubah pola interaksi sosial, serta perubahan nilai-nilai sosial yang cepat telah menciptakan lingkungan yang penuh dengan pemicu stres (*stressor*) psikologis. Generasi milenial dan Z, yang merupakan angkatan kerja produktif saat ini, dilaporkan mengalami tingkat stres dan kecemasan yang lebih tinggi dibandingkan generasi sebelumnya. Kondisi ini diperparah dengan masih tingginya stigma sosial terhadap gangguan kesehatan mental di masyarakat Indonesia, yang menyebabkan banyak penderita enggan mencari bantuan profesional.
 
-Meskipun kesadaran akan pentingnya kesehatan mental mulai meningkat, akses terhadap layanan kesehatan mental yang berkualitas masih sangat terbatas. Indonesia memiliki rasio psikiater dan psikolog yang sangat rendah, yaitu hanya sekitar 1 tenaga kesehatan mental untuk setiap 200.000 penduduk, jauh di bawah standar WHO yang merekomendasikan 1:100.000. Selain itu, layanan kesehatan mental konvensional seringkali dianggap memiliki waktu tunggu yang lama, biaya yang tinggi, lokasi yang tidak mudah diakses, serta proses administrasi yang rumit. Hal ini menjadi hambatan signifikan bagi masyarakat yang membutuhkan bantuan segera.
+Meskipun kesadaran akan pentingnya kesehatan mental mulai meningkat, akses terhadap layanan kesehatan mental yang berkualitas masih sangat terbatas. Indonesia memiliki rasio psikiater dan psikolog yang sangat rendah, yaitu hanya sekitar 1 tenaga kesehatan mental untuk setiap 200.000 penduduk, jauh di bawah standar WHO yang merekomendasikan 1:100.000. Selain itu, layanan kesehatan mental konvensional seringkali dianggap memiliki waktu tunggu yang lama, biaya yang tinggi, lokasi yang tidak mudah diakses, serta proses administrasi yang rumit. Hal ini menjadi hambatan berarti bagi masyarakat yang membutuhkan bantuan segera.
 
-Di tengah keterbatasan tersebut, metode terapi alternatif berbasis hypnotherapy mulai mendapat perhatian sebagai solusi yang efektif dan efisien. Hypnotherapy adalah metode terapi yang menggunakan teknik hipnosis untuk mengakses alam bawah sadar seseorang, membantu mengatasi berbagai masalah psikologis seperti trauma, stres, kecemasan, fobia, hingga kebiasaan buruk yang sulit dihilangkan. Berbeda dengan persepsi keliru di masyarakat, hypnotherapy adalah praktik terapi yang berbasis ilmu pengetahuan dan telah diakui oleh berbagai organisasi kesehatan mental internasional, termasuk American Psychological Association (APA) dan British Medical Association (BMA).
+Di tengah keterbatasan tersebut, metode terapi alternatif berbasis hipnoterapi mulai mendapat perhatian sebagai solusi yang efektif dan efisien. Hipnoterapi (*hypnotherapy*) adalah metode terapi yang menggunakan teknik hipnosis untuk mengakses alam bawah sadar seseorang, membantu mengatasi berbagai masalah psikologis seperti trauma, stres, kecemasan, fobia, hingga kebiasaan buruk yang sulit dihilangkan. Berbeda dengan persepsi keliru di masyarakat, hipnoterapi adalah praktik terapi yang berbasis ilmu pengetahuan dan telah diakui oleh berbagai organisasi kesehatan mental internasional, termasuk Asosiasi Psikologi Amerika (*American Psychological Association*/APA) dan Asosiasi Medis Inggris (*British Medical Association*/BMA).
 
-Penelitian ilmiah telah membuktikan efektivitas hypnotherapy dalam menangani berbagai kondisi psikologis. Sebuah meta-analisis yang dipublikasikan dalam Journal of Clinical Psychology tahun 2023 menunjukkan bahwa hypnotherapy memiliki tingkat keberhasilan 75-85% dalam mengatasi gangguan kecemasan, lebih tinggi dibandingkan terapi kognitif-perilaku konvensional yang mencapai 60-70%. Keunggulan lain dari hypnotherapy adalah durasi terapi yang relatif lebih singkat, dengan rata-rata 6-8 sesi dibandingkan 12-20 sesi untuk terapi konvensional, sehingga lebih cost-effective bagi klien.
+Penelitian ilmiah telah membuktikan efektivitas hipnoterapi dalam menangani berbagai kondisi psikologis. Sebuah meta-analisis yang dipublikasikan dalam *Journal of Clinical Psychology* tahun 2023 menunjukkan bahwa hipnoterapi memiliki tingkat keberhasilan 75-85% dalam mengatasi gangguan kecemasan, lebih tinggi dibandingkan terapi kognitif-perilaku konvensional yang mencapai 60-70%. Keunggulan lain dari hipnoterapi adalah durasi terapi yang relatif lebih singkat, dengan rata-rata 6-8 sesi dibandingkan 12-20 sesi untuk terapi konvensional, sehingga lebih hemat biaya bagi klien.
 
-CUR-HEART (Hypnotherapy & Mind Wellness Center) hadir sebagai pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hypnotherapy modern dengan nilai-nilai spiritualitas dan humanisme. Didirikan dengan visi menjadi pusat terapi kejiwaan yang terpercaya dan profesional, CUR-HEART menyediakan berbagai layanan terapi seperti Stress & Anxiety Release Therapy, Trauma Healing Hypnotherapy, Self-Confidence & Motivation Therapy, Sleep & Relaxation Therapy, Habit Reprogramming Therapy, dan Phobia & Fear Management. Seluruh terapis di CUR-HEART memiliki sertifikasi profesional dan latar belakang pendidikan psikologi yang memadai, sehingga dapat memberikan layanan yang aman, etis, dan sesuai standar praktik internasional.
+CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental/*Hypnotherapy & Mind Wellness Center*) hadir sebagai pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hipnoterapi modern dengan nilai-nilai spiritualitas dan humanisme. Didirikan dengan visi menjadi pusat terapi kejiwaan yang terpercaya dan profesional, CUR-HEART menyediakan berbagai layanan terapi seperti Terapi Pelepasan Stres & Kecemasan, Hipnoterapi Penyembuhan Trauma, Terapi Kepercayaan Diri & Motivasi, Terapi Tidur & Relaksasi, Terapi Pemrograman Ulang Kebiasaan, dan Pengelolaan Fobia & Ketakutan. Seluruh terapis di CUR-HEART memiliki sertifikasi profesional dan latar belakang pendidikan psikologi yang memadai, sehingga dapat memberikan layanan yang aman, etis, dan sesuai standar praktik internasional.
 
-Namun, dalam menjalankan operasionalnya, CUR-HEART menghadapi berbagai tantangan manajerial yang menghambat efisiensi dan kualitas layanan. Proses booking layanan terapi yang masih dilakukan secara manual melalui telepon atau WhatsApp seringkali menyebabkan miscommunication, double booking, dan kesulitan dalam tracking status booking. Manajemen jadwal terapis yang dilakukan menggunakan spreadsheet atau kalender manual tidak efisien dan rawan kesalahan, terutama ketika jumlah terapis dan klien semakin meningkat. Dokumentasi catatan sesi terapi yang masih menggunakan kertas atau file Word terpisah menyulitkan dalam pencarian riwayat terapi dan monitoring progress klien secara sistematis.
+Namun, dalam menjalankan operasionalnya, CUR-HEART menghadapi berbagai tantangan manajerial yang menghambat efisiensi dan kualitas layanan. Proses pemesanan layanan terapi yang masih dilakukan secara manual melalui telepon atau WhatsApp seringkali menyebabkan kesalahpahaman komunikasi, pemesanan ganda (*double booking*), dan kesulitan dalam pelacakan status pemesanan. Manajemen jadwal terapis yang dilakukan menggunakan lembar kerja (*spreadsheet*) atau kalender manual tidak efisien dan rawan kesalahan, terutama ketika jumlah terapis dan klien semakin meningkat. Dokumentasi catatan sesi terapi yang masih menggunakan kertas atau berkas Word terpisah menyulitkan dalam pencarian riwayat terapi dan pemantauan kemajuan klien secara sistematis.
 
-Lebih lanjut, tidak adanya sistem informasi terintegrasi menyebabkan CUR-HEART kesulitan dalam menganalisis data operasional seperti tingkat okupansi terapis, layanan yang paling diminati, revenue stream, hingga kepuasan klien. Hal ini menghambat pengambilan keputusan strategis berbasis data (data-driven decision making) yang sangat penting untuk pengembangan bisnis. Klien juga mengalami ketidaknyamanan karena tidak memiliki platform yang memudahkan mereka untuk melihat informasi layanan, profil terapis, ketersediaan jadwal, riwayat booking, serta tracking progress terapi mereka secara mandiri.
+Lebih lanjut, tidak adanya sistem informasi terpadu menyebabkan CUR-HEART kesulitan dalam menganalisis data operasional seperti tingkat hunian terapis, layanan yang paling diminati, aliran pendapatan, hingga kepuasan klien. Hal ini menghambat pengambilan keputusan strategis berbasis data yang sangat penting untuk pengembangan bisnis. Klien juga mengalami ketidaknyamanan karena tidak memiliki platform yang memudahkan mereka untuk melihat informasi layanan, profil terapis, ketersediaan jadwal, riwayat pemesanan, serta pelacakan kemajuan terapi mereka secara mandiri.
 
-Menghadapi permasalahan tersebut, pengembangan sistem informasi manajemen booking dan terapi berbasis web menjadi solusi yang sangat diperlukan. Sistem informasi yang baik dapat mengotomatisasi proses bisnis yang berulang, meningkatkan akurasi data, memfasilitasi komunikasi antara klien dan terapis, serta menyediakan dashboard monitoring yang membantu manajemen dalam pengambilan keputusan. Berdasarkan studi literatur, implementasi sistem informasi manajemen di sektor layanan kesehatan terbukti dapat meningkatkan efisiensi operasional hingga 40%, mengurangi kesalahan administrasi hingga 60%, dan meningkatkan kepuasan pelanggan hingga 35%.
+Menghadapi permasalahan tersebut, pengembangan sistem informasi manajemen pemesanan dan terapi berbasis web menjadi solusi yang sangat diperlukan. Sistem informasi yang baik dapat mengotomatisasi proses bisnis yang berulang, meningkatkan akurasi data, memfasilitasi komunikasi antara klien dan terapis, serta menyediakan dasbor pemantauan yang membantu manajemen dalam pengambilan keputusan. Berdasarkan studi literatur, implementasi sistem informasi manajemen di sektor layanan kesehatan terbukti dapat meningkatkan efisiensi operasional hingga 40%, mengurangi kesalahan administrasi hingga 60%, dan meningkatkan kepuasan pelanggan hingga 35%.
 
-Dalam konteks teknologi, pemilihan framework yang tepat sangat krusial untuk kesuksesan proyek sistem informasi. Laravel dipilih sebagai framework utama karena beberapa keunggulan signifikan. Laravel adalah framework PHP modern yang mengikuti arsitektur MVC (Model-View-Controller) yang memisahkan logika bisnis, presentasi, dan data secara jelas, sehingga memudahkan pengembangan dan maintenance. Laravel memiliki ekosistem yang sangat lengkap dengan fitur built-in seperti Eloquent ORM untuk database abstraction, Blade templating engine untuk view layer, authentication system yang robust, migration untuk database versioning, dan scheduler untuk task automation.
+Dalam konteks teknologi, pemilihan kerangka kerja (*framework*) yang tepat sangat krusial untuk kesuksesan proyek sistem informasi. Laravel dipilih sebagai kerangka kerja utama karena beberapa keunggulan signifikan. Laravel adalah kerangka kerja PHP modern yang mengikuti arsitektur MVC (*Model-View-Controller*) yang memisahkan logika bisnis, presentasi, dan data secara jelas, sehingga memudahkan pengembangan dan pemeliharaan. Laravel memiliki ekosistem yang sangat lengkap dengan fitur bawaan seperti Eloquent ORM untuk abstraksi basis data, mesin templat Blade untuk lapisan tampilan, sistem autentikasi yang andal, migrasi untuk pengelolaan versi basis data, dan penjadwal untuk otomatisasi tugas.
 
-Keunggulan lain Laravel adalah produktivitas tinggi dalam pengembangan. Dengan menggunakan Artisan CLI, developer dapat dengan cepat generate boilerplate code, menjalankan migration, seeding data, dan berbagai task automation lainnya. Laravel juga memiliki dokumentasi yang sangat lengkap dan komunitas yang besar, sehingga memudahkan troubleshooting dan learning curve. Dari segi keamanan, Laravel menyediakan fitur-fitur security best practices seperti CSRF protection, SQL injection prevention, XSS protection, dan password hashing dengan bcrypt/argon2, yang sangat penting untuk sistem yang menangani data sensitif kesehatan mental klien.
+Keunggulan lain Laravel adalah produktivitas tinggi dalam pengembangan. Dengan menggunakan Artisan CLI, pengembang dapat dengan cepat menghasilkan kode dasar (*boilerplate code*), menjalankan migrasi, penyemaian data, dan berbagai otomatisasi tugas lainnya. Laravel juga memiliki dokumentasi yang sangat lengkap dan komunitas yang besar, sehingga memudahkan pemecahan masalah dan kurva pembelajaran. Dari segi keamanan, Laravel menyediakan fitur-fitur praktik terbaik keamanan seperti perlindungan CSRF, pencegahan injeksi SQL, perlindungan XSS, dan hashing kata sandi dengan bcrypt/argon2, yang sangat penting untuk sistem yang menangani data sensitif kesehatan mental klien.
 
-Untuk interface design, proyek ini mengintegrasikan Tailwind CSS sebagai framework CSS utility-first yang memungkinkan pembuatan interface yang modern, responsif, dan konsisten dengan cepat. Tailwind CSS bekerja sangat baik dengan Blade templating engine Laravel, memungkinkan developer untuk membangun komponen UI yang reusable dan maintainable. Kombinasi Laravel dan Tailwind CSS juga mendukung pendekatan development yang efisien dengan hot-reload dan build optimization.
+Untuk desain antarmuka, proyek ini mengintegrasikan Tailwind CSS sebagai kerangka kerja CSS berbasis utilitas (*utility-first*) yang memungkinkan pembuatan antarmuka yang modern, responsif, dan konsisten dengan cepat. Tailwind CSS bekerja sangat baik dengan mesin templat Blade Laravel, memungkinkan pengembang untuk membangun komponen antarmuka pengguna yang dapat digunakan kembali dan mudah dipelihara. Kombinasi Laravel dan Tailwind CSS juga mendukung pendekatan pengembangan yang efisien dengan pemuatan ulang otomatis (*hot-reload*) dan optimasi pembangunan.
 
-Penelitian ini menggunakan pendekatan System Development Life Cycle (SDLC) dengan model waterfall yang sistematis, meliputi tahapan analisis kebutuhan, desain sistem, implementasi, testing, dan deployment. Pemilihan model waterfall didasarkan pada sifat proyek yang memiliki requirement yang jelas dan stabil, serta memerlukan dokumentasi yang komprehensif untuk setiap tahapan. Analisis kebutuhan dilakukan melalui teknik observasi langsung terhadap proses bisnis CUR-HEART, wawancara mendalam dengan stakeholder (owner, terapis, dan klien), serta studi literatur terhadap best practices sistem manajemen booking di industri layanan kesehatan.
+Penelitian ini menggunakan pendekatan Siklus Hidup Pengembangan Sistem (*System Development Life Cycle*/SDLC) dengan model air terjun (*waterfall*) yang sistematis, meliputi tahapan analisis kebutuhan, desain sistem, implementasi, pengujian, dan penerapan. Pemilihan model air terjun didasarkan pada sifat proyek yang memiliki persyaratan yang jelas dan stabil, serta memerlukan dokumentasi yang komprehensif untuk setiap tahapan. Analisis kebutuhan dilakukan melalui teknik observasi langsung terhadap proses bisnis CUR-HEART, wawancara mendalam dengan pemangku kepentingan (pemilik, terapis, dan klien), serta studi literatur terhadap praktik terbaik sistem manajemen pemesanan di industri layanan kesehatan.
 
-Dari tahapan analisis, teridentifikasi kebutuhan fungsional sistem yang meliputi: (1) Modul autentikasi multi-role yang dapat mengakomodasi peran admin, terapis, dan klien dengan hak akses yang berbeda; (2) Sistem booking multi-step yang user-friendly dengan flow: pemilihan layanan → pemilihan terapis → pemilihan jadwal → konfirmasi dan pembayaran; (3) Manajemen jadwal terapis dengan fitur pengaturan availability, blocking date, dan recurring schedule; (4) Dashboard monitoring yang menampilkan key metrics seperti jumlah booking, revenue, tingkat okupansi, dan rating terapis; (5) Sistem dokumentasi catatan terapi yang terstruktur dengan template sesuai jenis layanan; (6) Fitur tracking progress klien dengan visualisasi grafik perkembangan; (7) Sistem pembayaran terintegrasi dengan multiple payment gateway; (8) Modul pelaporan dan analytics untuk business intelligence.
+Dari tahapan analisis, teridentifikasi kebutuhan fungsional sistem yang meliputi: (1) Modul autentikasi berbagai peran yang dapat mengakomodasi peran admin, terapis, dan klien dengan hak akses yang berbeda; (2) Sistem pemesanan bertahap yang mudah digunakan dengan alur: pemilihan layanan → pemilihan terapis → pemilihan jadwal → konfirmasi dan pembayaran; (3) Manajemen jadwal terapis dengan fitur pengaturan ketersediaan, pemblokiran tanggal, dan jadwal berulang; (4) Dasbor pemantauan yang menampilkan metrik kunci seperti jumlah pemesanan, pendapatan, tingkat hunian, dan penilaian terapis; (5) Sistem dokumentasi catatan terapi yang terstruktur dengan templat sesuai jenis layanan; (6) Fitur pelacakan kemajuan klien dengan visualisasi grafik perkembangan; (7) Sistem pembayaran terpadu dengan berbagai gerbang pembayaran; (8) Modul pelaporan dan analitik untuk kecerdasan bisnis.
 
-Desain sistem menggunakan pendekatan berorientasi objek dengan Unified Modeling Language (UML) untuk memodelkan use case diagram, activity diagram, sequence diagram, dan class diagram. Database dirancang menggunakan Entity Relationship Diagram (ERD) dengan normalisasi hingga bentuk normal ketiga (3NF) untuk menghindari redundansi data dan menjaga integritas. Interface design dikembangkan dengan pendekatan mobile-first responsive design, mengingat 65% pengguna layanan kesehatan digital mengakses melalui perangkat mobile.
+Desain sistem menggunakan pendekatan berorientasi objek dengan Bahasa Pemodelan Terpadu (*Unified Modeling Language*/UML) untuk memodelkan diagram kasus penggunaan, diagram aktivitas, diagram urutan, dan diagram kelas. Basis data dirancang menggunakan Diagram Hubungan Entitas (*Entity Relationship Diagram*/ERD) dengan normalisasi hingga bentuk normal ketiga (3NF) untuk menghindari redundansi data dan menjaga integritas. Desain antarmuka dikembangkan dengan pendekatan desain responsif mengutamakan perangkat seluler (*mobile-first responsive design*), mengingat 65% pengguna layanan kesehatan digital mengakses melalui perangkat seluler.
 
-Hasil akhir dari proyek ini adalah sistem informasi berbasis web dengan arsitektur monolitik menggunakan Laravel Framework yang terdiri dari 41 halaman interface, meliputi 8 halaman publik (landing page, about, services, therapists, blog), 4 halaman autentikasi (login, register, forgot password, reset password), 10 halaman dashboard klien (dashboard, booking flow, appointments, progress tracking, messages), 10 halaman dashboard terapis (dashboard, schedule, availability, clients management, session room, notes, history, earnings), dan 5 halaman dashboard admin (dashboard, users management, bookings management, financial reports, system settings).
+Hasil akhir dari proyek ini adalah sistem informasi berbasis web dengan arsitektur monolitik menggunakan Kerangka Kerja Laravel yang terdiri dari 41 halaman antarmuka, meliputi 8 halaman publik (halaman arahan, tentang kami, layanan, terapis, blog), 4 halaman autentikasi (masuk, daftar, lupa kata sandi, atur ulang kata sandi), 10 halaman dasbor klien (dasbor, alur pemesanan, janji temu, pelacakan kemajuan, pesan), 10 halaman dasbor terapis (dasbor, jadwal, ketersediaan, manajemen klien, ruang sesi, catatan, riwayat, pendapatan), dan 5 halaman dasbor admin (dasbor, manajemen pengguna, manajemen pemesanan, laporan keuangan, pengaturan sistem).
 
-Sistem ini diharapkan dapat memberikan solusi komprehensif untuk manajemen operasional CUR-HEART, meningkatkan pengalaman pengguna dalam mengakses layanan terapi kesehatan mental, serta mendukung pengambilan keputusan berbasis data untuk pengembangan bisnis yang berkelanjutan. Lebih jauh, proyek ini diharapkan dapat menjadi model referensi untuk pengembangan sistem informasi serupa di industri layanan kesehatan mental di Indonesia, serta berkontribusi pada peningkatan akses masyarakat terhadap layanan kesehatan mental yang berkualitas dan terjangkau.
+Sistem ini diharapkan dapat memberikan solusi komprehensif untuk manajemen operasional CUR-HEART, meningkatkan pengalaman pengguna dalam mengakses layanan terapi kesehatan mental, serta mendukung pengambilan keputusan berbasis data untuk pengembangan bisnis yang berkelanjutan. Lebih jauh, proyek ini diharapkan dapat menjadi model rujukan untuk pengembangan sistem informasi serupa di industri layanan kesehatan mental di Indonesia, serta berkontribusi pada peningkatan akses masyarakat terhadap layanan kesehatan mental yang berkualitas dan terjangkau.
 
 ## 1.2 Identifikasi Masalah
 
 Berdasarkan analisis kondisi eksisting pada CUR-HEART (Hypnotherapy & Mind Wellness Center) melalui observasi, wawancara dengan stakeholder, dan studi dokumentasi proses bisnis, teridentifikasi beberapa permasalahan utama yang menghambat efektivitas dan efisiensi operasional, yaitu:
 
-1. **Proses Booking yang Tidak Efisien**
+1. **Proses Pemesanan yang Tidak Efisien**
    
-   Proses booking layanan terapi yang masih dilakukan secara manual melalui komunikasi telepon, WhatsApp, atau email mengakibatkan berbagai masalah operasional. Klien harus menghubungi admin secara langsung untuk menanyakan ketersediaan jadwal terapis, yang seringkali memakan waktu lama terutama di jam sibuk. Admin harus melakukan checking manual terhadap kalender terapis satu per satu, yang memakan waktu rata-rata 5-10 menit per booking. Tidak jarang terjadi miscommunication antara klien, admin, dan terapis mengenai jadwal, layanan yang dipilih, atau informasi penting lainnya.
+   Proses pemesanan layanan terapi yang masih dilakukan secara manual melalui komunikasi telepon, WhatsApp, atau surel mengakibatkan berbagai masalah operasional. Klien harus menghubungi admin secara langsung untuk menanyakan ketersediaan jadwal terapis, yang seringkali memakan waktu lama terutama di jam sibuk. Admin harus melakukan pemeriksaan manual terhadap kalender terapis satu per satu, yang memakan waktu rata-rata 5-10 menit per pemesanan. Tidak jarang terjadi kesalahpahaman komunikasi antara klien, admin, dan terapis mengenai jadwal, layanan yang dipilih, atau informasi penting lainnya.
    
-   Lebih lanjut, proses konfirmasi booking yang memerlukan komunikasi bolak-balik menyebabkan conversion rate dari inquiry menjadi actual booking hanya mencapai 60%, yang berarti 40% potensial klien membatalkan niat mereka karena proses yang rumit. Klien juga tidak memiliki kemudahan untuk melihat profil lengkap terapis, membaca review dari klien lain, atau membandingkan layanan yang tersedia sebelum membuat keputusan, sehingga mengurangi transparansi dan trust.
+   Lebih lanjut, proses konfirmasi pemesanan yang memerlukan komunikasi bolak-balik menyebabkan tingkat konversi dari pertanyaan menjadi pemesanan aktual hanya mencapai 60%, yang berarti 40% calon klien membatalkan niat mereka karena proses yang rumit. Klien juga tidak memiliki kemudahan untuk melihat profil lengkap terapis, membaca ulasan dari klien lain, atau membandingkan layanan yang tersedia sebelum membuat keputusan, sehingga mengurangi transparansi dan kepercayaan.
 
-2. **Ketiadaan Sistem Manajemen Jadwal Terapis Terintegrasi**
+2. **Ketiadaan Sistem Manajemen Jadwal Terapis Terpadu**
    
-   Manajemen jadwal terapis yang dilakukan menggunakan spreadsheet Excel atau Google Calendar manual tidak efisien dan rawan konflik jadwal. Setiap terapis mengelola kalendernya sendiri dengan format yang berbeda-beda, menyulitkan admin untuk melakukan sinkronisasi dan checking ketersediaan secara real-time. Ketika seorang terapis berhalangan hadir atau ada perubahan jadwal mendadak, proses notifikasi dan rescheduling kepada klien yang terdampak dilakukan secara manual satu per satu, yang sangat memakan waktu dan berisiko ada klien yang terlewat.
+   Manajemen jadwal terapis yang dilakukan menggunakan lembar kerja Excel atau Kalender Google manual tidak efisien dan rawan konflik jadwal. Setiap terapis mengelola kalendernya sendiri dengan format yang berbeda-beda, menyulitkan admin untuk melakukan sinkronisasi dan pemeriksaan ketersediaan secara waktu nyata (*real-time*). Ketika seorang terapis berhalangan hadir atau ada perubahan jadwal mendadak, proses pemberitahuan dan penjadwalan ulang kepada klien yang terdampak dilakukan secara manual satu per satu, yang sangat memakan waktu dan berisiko ada klien yang terlewat.
    
-   Tidak adanya sistem blocking date untuk cuti atau keperluan pribadi terapis juga menyebabkan seringkali terjadi double booking atau kesalahan penjadwalan. Terapis kesulitan melihat overview jadwal mereka dalam periode mingguan atau bulanan, sehingga sulit melakukan perencanaan workload yang optimal. Admin juga tidak memiliki visibility terhadap tingkat okupansi setiap terapis, sehingga seringkali terjadi ketimpangan beban kerja di mana beberapa terapis overbooked sementara yang lain underutilized.
+   Tidak adanya sistem pemblokiran tanggal untuk cuti atau keperluan pribadi terapis juga menyebabkan seringkali terjadi pemesanan ganda (*double booking*) atau kesalahan penjadwalan. Terapis kesulitan melihat gambaran umum jadwal mereka dalam periode mingguan atau bulanan, sehingga sulit melakukan perencanaan beban kerja yang optimal. Admin juga tidak memiliki visibilitas terhadap tingkat hunian setiap terapis, sehingga seringkali terjadi ketimpangan beban kerja di mana beberapa terapis kelebihan pemesanan (*overbooked*) sementara yang lain kurang dimanfaatkan (*underutilized*).
 
 3. **Dokumentasi Catatan Terapi yang Tidak Terstruktur**
    
-   Dokumentasi catatan sesi terapi yang masih menggunakan metode konvensional (kertas fisik atau file Word terpisah) menimbulkan berbagai masalah serius. Terapis harus menulis atau mengetik catatan secara manual setelah setiap sesi, yang memakan waktu tambahan 10-15 menit dan mengurangi efisiensi. Catatan yang tersimpan dalam format fisik atau file terpisah sangat sulit dicari kembali ketika terapis membutuhkan informasi riwayat terapi klien untuk sesi berikutnya, terutama jika klien memiliki multiple sessions dengan interval waktu yang lama.
+   Dokumentasi catatan sesi terapi yang masih menggunakan metode konvensional (kertas fisik atau berkas Word terpisah) menimbulkan berbagai masalah serius. Terapis harus menulis atau mengetik catatan secara manual setelah setiap sesi, yang memakan waktu tambahan 10-15 menit dan mengurangi efisiensi. Catatan yang tersimpan dalam format fisik atau berkas terpisah sangat sulit dicari kembali ketika terapis membutuhkan informasi riwayat terapi klien untuk sesi berikutnya, terutama jika klien memiliki beberapa sesi dengan interval waktu yang lama.
    
-   Tidak adanya template atau format standar untuk catatan terapi menyebabkan inkonsistensi dalam dokumentasi antar terapis, yang dapat menimbulkan masalah jika ada transfer klien dari satu terapis ke terapis lain. Risiko kehilangan data juga sangat tinggi, baik karena kerusakan file, kehilangan dokumen fisik, atau human error dalam penyimpanan. Lebih kritis lagi, tidak ada backup system yang menjamin keamanan data klien yang bersifat sangat sensitif dan confidential.
+   Tidak adanya templat atau format standar untuk catatan terapi menyebabkan inkonsistensi dalam dokumentasi antar terapis, yang dapat menimbulkan masalah jika ada pengalihan klien dari satu terapis ke terapis lain. Risiko kehilangan data juga sangat tinggi, baik karena kerusakan berkas, kehilangan dokumen fisik, atau kesalahan manusia dalam penyimpanan. Lebih kritis lagi, tidak ada sistem pencadangan (*backup system*) yang menjamin keamanan data klien yang bersifat sangat sensitif dan rahasia.
 
-4. **Tidak Ada Sistem Tracking Progress Klien**
+4. **Tidak Ada Sistem Pelacakan Kemajuan Klien**
    
-   Ketiadaan sistem tracking progress klien yang sistematis menyulitkan terapis dalam mengevaluasi efektivitas terapi dan membuat adjustment treatment plan. Terapis hanya mengandalkan ingatan dan catatan manual yang tidak terstruktur untuk mengingat kondisi dan perkembangan setiap klien. Klien juga tidak memiliki visibility terhadap progress mereka sendiri, sehingga tidak dapat melihat secara objektif bagaimana kondisi mereka berkembang dari waktu ke waktu.
+   Ketiadaan sistem pelacakan kemajuan klien yang sistematis menyulitkan terapis dalam mengevaluasi efektivitas terapi dan membuat penyesuaian rencana perawatan. Terapis hanya mengandalkan ingatan dan catatan manual yang tidak terstruktur untuk mengingat kondisi dan perkembangan setiap klien. Klien juga tidak memiliki visibilitas terhadap kemajuan mereka sendiri, sehingga tidak dapat melihat secara objektif bagaimana kondisi mereka berkembang dari waktu ke waktu.
    
-   Tidak adanya data progress yang terukur menyulitkan dalam menjustifikasi keberhasilan terapi, baik kepada klien maupun untuk keperluan akreditasi atau riset. CUR-HEART juga kehilangan peluang untuk menggunakan data progress sebagai testimonial atau case study yang dapat meningkatkan kredibilitas layanan. Terapis kesulitan mengidentifikasi klien yang memerlukan attention khusus atau follow-up intensif karena tidak ada sistem flagging atau alert otomatis.
+   Tidak adanya data kemajuan yang terukur menyulitkan dalam membuktikan keberhasilan terapi, baik kepada klien maupun untuk keperluan akreditasi atau riset. CUR-HEART juga kehilangan peluang untuk menggunakan data kemajuan sebagai testimoni atau studi kasus yang dapat meningkatkan kredibilitas layanan. Terapis kesulitan mengidentifikasi klien yang memerlukan perhatian khusus atau tindak lanjut intensif karena tidak ada sistem penandaan (*flagging*) atau peringatan otomatis.
 
 5. **Keterbatasan Akses Informasi bagi Klien**
    
-   Klien mengalami kesulitan dalam mengakses informasi lengkap tentang layanan, terapis, jadwal ketersediaan, dan pricing secara mandiri. Mereka harus selalu menghubungi admin untuk mendapatkan informasi, yang tidak efisien terutama di luar jam operasional kantor. Klien tidak dapat melihat riwayat booking mereka, status pembayaran, atau catatan penting dari terapis dengan mudah.
+   Klien mengalami kesulitan dalam mengakses informasi lengkap tentang layanan, terapis, jadwal ketersediaan, dan harga secara mandiri. Mereka harus selalu menghubungi admin untuk mendapatkan informasi, yang tidak efisien terutama di luar jam operasional kantor. Klien tidak dapat melihat riwayat pemesanan mereka, status pembayaran, atau catatan penting dari terapis dengan mudah.
    
-   Tidak adanya platform self-service menyebabkan klien sangat bergantung pada admin untuk setiap transaksi atau informasi, yang mengurangi sense of autonomy dan empowerment klien. Klien juga tidak dapat melakukan rescheduling atau cancelation booking secara mandiri, harus selalu melalui admin yang seringkali tidak responsif di waktu-waktu tertentu. Pengalaman pengguna (user experience) yang kurang optimal ini dapat mengurangi kepuasan dan loyalitas klien.
+   Tidak adanya platform layanan mandiri (*self-service*) menyebabkan klien sangat bergantung pada admin untuk setiap transaksi atau informasi, yang mengurangi rasa otonomi dan pemberdayaan klien. Klien juga tidak dapat melakukan penjadwalan ulang atau pembatalan pemesanan secara mandiri, harus selalu melalui admin yang seringkali tidak responsif di waktu-waktu tertentu. Pengalaman pengguna yang kurang optimal ini dapat mengurangi kepuasan dan loyalitas klien.
 
 6. **Kesulitan dalam Pengambilan Keputusan Manajerial**
    
-   Manajemen CUR-HEART mengalami kesulitan dalam mengakses data operasional dan bisnis yang diperlukan untuk pengambilan keputusan strategis. Tidak ada dashboard atau reporting system yang menyediakan key performance indicators (KPI) seperti jumlah booking harian/mingguan/bulanan, conversion rate, revenue per layanan, tingkat okupansi terapis, atau customer satisfaction score.
+   Manajemen CUR-HEART mengalami kesulitan dalam mengakses data operasional dan bisnis yang diperlukan untuk pengambilan keputusan strategis. Tidak ada dasbor atau sistem pelaporan yang menyediakan indikator kinerja utama (*Key Performance Indicators*/KPI) seperti jumlah pemesanan harian/mingguan/bulanan, tingkat konversi, pendapatan per layanan, tingkat hunian terapis, atau skor kepuasan pelanggan.
    
-   Data yang tersebar di berbagai platform (WhatsApp chat, email, spreadsheet, file fisik) sangat sulit dikompilasi dan dianalisis secara menyeluruh. Pembuatan laporan bulanan atau triwulanan harus dilakukan secara manual dengan mengumpulkan data dari berbagai sumber, yang memakan waktu berhari-hari dan rawan kesalahan. Manajemen kesulitan mengidentifikasi trend atau pattern dalam bisnis, seperti peak hours, layanan yang paling diminati, atau karakteristik customer segment yang paling profitable.
+   Data yang tersebar di berbagai platform (obrolan WhatsApp, surel, lembar kerja, berkas fisik) sangat sulit dikompilasi dan dianalisis secara menyeluruh. Pembuatan laporan bulanan atau triwulanan harus dilakukan secara manual dengan mengumpulkan data dari berbagai sumber, yang memakan waktu berhari-hari dan rawan kesalahan. Manajemen kesulitan mengidentifikasi tren atau pola dalam bisnis, seperti jam sibuk, layanan yang paling diminati, atau karakteristik segmen pelanggan yang paling menguntungkan.
    
-   Ketiadaan business intelligence juga menyebabkan CUR-HEART kehilangan peluang untuk optimasi operasional, seperti capacity planning yang lebih baik, pricing strategy yang lebih kompetitif, atau marketing campaign yang lebih targeted. Hal ini menghambat pertumbuhan bisnis dan daya saing di pasar layanan kesehatan mental yang semakin kompetitif.
+   Ketiadaan kecerdasan bisnis (*business intelligence*) juga menyebabkan CUR-HEART kehilangan peluang untuk optimasi operasional, seperti perencanaan kapasitas yang lebih baik, strategi penetapan harga yang lebih kompetitif, atau kampanye pemasaran yang lebih tertarget. Hal ini menghambat pertumbuhan bisnis dan daya saing di pasar layanan kesehatan mental yang semakin kompetitif.
 
-7. **Tidak Ada Sistem Pembayaran Terintegrasi**
+7. **Tidak Ada Sistem Pembayaran Terpadu**
    
-   Proses pembayaran yang masih dilakukan secara manual melalui transfer bank dengan konfirmasi manual sangat tidak efisien dan menimbulkan friction dalam customer journey. Klien harus melakukan transfer, kemudian mengirimkan bukti transfer ke admin, dan menunggu konfirmasi manual yang kadang memakan waktu berjam-jam bahkan berhari-hari. Tidak ada automated receipt atau invoice generation, semuanya dibuat manual menggunakan template Word atau Excel.
+   Proses pembayaran yang masih dilakukan secara manual melalui transfer bank dengan konfirmasi manual sangat tidak efisien dan menimbulkan hambatan dalam perjalanan pelanggan. Klien harus melakukan transfer, kemudian mengirimkan bukti transfer ke admin, dan menunggu konfirmasi manual yang kadang memakan waktu berjam-jam bahkan berhari-hari. Tidak ada pembuatan tanda terima atau faktur otomatis, semuanya dibuat manual menggunakan templat Word atau Excel.
    
-   Tracking status pembayaran klien sangat sulit dilakukan, seringkali terjadi missing payment atau double payment yang memerlukan waktu lama untuk diverifikasi. Admin harus melakukan reconciliation manual antara catatan booking dengan transaction history di rekening bank, yang memakan waktu signifikan dan rawan kesalahan human error. Tidak adanya multiple payment options (credit card, e-wallet, QRIS) juga mengurangi convenience bagi klien yang prefer metode pembayaran digital modern.
+   Pelacakan status pembayaran klien sangat sulit dilakukan, seringkali terjadi pembayaran yang hilang atau pembayaran ganda yang memerlukan waktu lama untuk diverifikasi. Admin harus melakukan rekonsiliasi manual antara catatan pemesanan dengan riwayat transaksi di rekening bank, yang memakan waktu signifikan dan rawan kesalahan manusia. Tidak adanya berbagai pilihan pembayaran (kartu kredit, dompet elektronik, QRIS) juga mengurangi kemudahan bagi klien yang lebih suka metode pembayaran digital modern.
 
 8. **Risiko Keamanan dan Privasi Data yang Tinggi**
    
-   Data klien yang bersifat sangat sensitif (informasi medis, riwayat trauma, masalah psikologis) disimpan dalam format yang tidak secure seperti file Word tidak ter-encrypt, kertas fisik di filing cabinet biasa, atau bahkan di WhatsApp chat yang tidak private. Tidak ada access control mechanism yang proper, sehingga siapa saja yang memiliki akses ke komputer atau filing cabinet dapat membuka data klien.
+   Data klien yang bersifat sangat sensitif (informasi medis, riwayat trauma, masalah psikologis) disimpan dalam format yang tidak aman seperti berkas Word yang tidak terenkripsi, kertas fisik di lemari arsip biasa, atau bahkan di obrolan WhatsApp yang tidak privat. Tidak ada mekanisme pengendalian akses yang tepat, sehingga siapa saja yang memiliki akses ke komputer atau lemari arsip dapat membuka data klien.
    
-   Tidak ada audit trail atau log system yang mencatat siapa saja yang mengakses data klien kapan, sehingga jika terjadi data breach sulit untuk melakukan investigasi. Compliance terhadap regulasi perlindungan data pribadi seperti UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi tidak dapat dipastikan. Klien juga tidak memiliki mekanisme untuk request akses, update, atau deletion data pribadi mereka sesuai dengan hak yang dijamin oleh undang-undang, yang dapat menimbulkan risiko legal.
+   Tidak ada jejak audit (*audit trail*) atau sistem pencatatan yang mencatat siapa saja yang mengakses data klien dan kapan, sehingga jika terjadi pelanggaran data sulit untuk melakukan investigasi. Kepatuhan terhadap regulasi perlindungan data pribadi seperti UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi tidak dapat dipastikan. Klien juga tidak memiliki mekanisme untuk meminta akses, pembaruan, atau penghapusan data pribadi mereka sesuai dengan hak yang dijamin oleh undang-undang, yang dapat menimbulkan risiko hukum.
 
-Permasalahan-permasalahan tersebut secara kumulatif menyebabkan berbagai dampak negatif, antara lain: (1) Penurunan efisiensi operasional dengan waktu yang terbuang untuk administrative tasks yang seharusnya dapat diotomasi; (2) Potensi kehilangan revenue karena conversion rate yang rendah dan customer churn yang tinggi akibat user experience yang buruk; (3) Risiko reputasi jika terjadi kesalahan scheduling, kehilangan data, atau data breach yang dapat merusak kepercayaan klien; (4) Terhambatnya skalabilitas bisnis karena sistem manual tidak dapat mengakomodasi pertumbuhan jumlah terapis dan klien; (5) Missed opportunities untuk mengoptimalkan operasional dan strategi bisnis karena ketiadaan data analytics dan business intelligence.
+Permasalahan-permasalahan tersebut secara kumulatif menyebabkan berbagai dampak negatif, antara lain: (1) Penurunan efisiensi operasional dengan waktu yang terbuang untuk tugas-tugas administratif yang seharusnya dapat diotomasi; (2) Potensi kehilangan pendapatan karena tingkat konversi yang rendah dan perpindahan pelanggan (*customer churn*) yang tinggi akibat pengalaman pengguna yang buruk; (3) Risiko reputasi jika terjadi kesalahan penjadwalan, kehilangan data, atau pelanggaran data yang dapat merusak kepercayaan klien; (4) Terhambatnya skalabilitas bisnis karena sistem manual tidak dapat mengakomodasi pertumbuhan jumlah terapis dan klien; (5) Hilangnya peluang untuk mengoptimalkan operasional dan strategi bisnis karena ketiadaan analitik data dan kecerdasan bisnis.
 
-Oleh karena itu, pengembangan sistem informasi manajemen booking dan terapi berbasis web yang terintegrasi, secure, dan user-friendly menjadi kebutuhan mendesak untuk mengatasi permasalahan-permasalahan tersebut dan mendukung pertumbuhan CUR-HEART yang berkelanjutan.
+Oleh karena itu, pengembangan sistem informasi manajemen pemesanan dan terapi berbasis web yang terpadu, aman, dan mudah digunakan menjadi kebutuhan mendesak untuk mengatasi permasalahan-permasalahan tersebut dan mendukung pertumbuhan CUR-HEART yang berkelanjutan.
 
 ---
 
@@ -178,7 +178,7 @@ Oleh karena itu, pengembangan sistem informasi manajemen booking dan terapi berb
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 1.3: Perbandingan efisiensi dan efektivitas antara sistem booking manual (existing) vs sistem booking online (proposed solution)_
+_Gambar 1.3: Perbandingan efisiensi dan efektivitas antara sistem pemesanan manual (kondisi saat ini) vs sistem pemesanan daring (solusi yang diusulkan)_
 
 ---
 
@@ -186,20 +186,20 @@ _Gambar 1.3: Perbandingan efisiensi dan efektivitas antara sistem booking manual
 
 | No | Masalah | Kondisi Saat Ini | Dampak Negatif | Prioritas |
 |----|---------|------------------|----------------|-----------|
-| 1 | Proses Booking Tidak Efisien | Manual via WhatsApp/Telepon, memakan waktu 5-10 menit per booking | Conversion rate rendah (60%), kehilangan 40% potensial klien | Sangat Tinggi |
-| 2 | Manajemen Jadwal Tidak Terintegrasi | Spreadsheet terpisah untuk setiap terapis, tidak real-time | 8-10 kasus double booking per bulan, ketimpangan workload terapis | Sangat Tinggi |
-| 3 | Dokumentasi Terapi Tidak Terstruktur | Kertas fisik atau file Word terpisah, tidak ada template standar | Waktu dokumentasi 10-15 menit per sesi, risiko kehilangan data tinggi | Tinggi |
-| 4 | Tidak Ada Tracking Progress | Catatan manual tidak terstruktur, tidak ada metrics objektif | Sulitnya evaluasi efektivitas terapi, klien tidak melihat progress | Tinggi |
-| 5 | Akses Informasi Terbatas | Klien harus selalu menghubungi admin untuk informasi | Ketergantungan tinggi pada admin, user experience buruk | Sedang |
-| 6 | Kesulitan Pengambilan Keputusan | Data tersebar, tidak ada dashboard atau reporting | Laporan bulanan memakan waktu berhari-hari, sulit identifikasi trend | Tinggi |
-| 7 | Sistem Pembayaran Manual | Transfer bank dengan konfirmasi manual, tidak ada invoice otomatis | Konfirmasi lambat (berjam-jam/hari), reconciliation manual rawan error | Sedang |
-| 8 | Risiko Keamanan Data Tinggi | File tidak ter-encrypt, tidak ada access control atau audit trail | Tidak compliant UU PDP No. 27/2022, risiko data breach | Sangat Tinggi |
+| 1 | Proses Pemesanan Tidak Efisien | Manual via WhatsApp/Telepon, memakan waktu 5-10 menit per pemesanan | Tingkat konversi rendah (60%), kehilangan 40% calon klien | Sangat Tinggi |
+| 2 | Manajemen Jadwal Tidak Terpadu | Lembar kerja terpisah untuk setiap terapis, tidak waktu nyata | 8-10 kasus pemesanan ganda per bulan, ketimpangan beban kerja terapis | Sangat Tinggi |
+| 3 | Dokumentasi Terapi Tidak Terstruktur | Kertas fisik atau berkas Word terpisah, tidak ada templat standar | Waktu dokumentasi 10-15 menit per sesi, risiko kehilangan data tinggi | Tinggi |
+| 4 | Tidak Ada Pelacakan Kemajuan | Catatan manual tidak terstruktur, tidak ada metrik objektif | Sulitnya evaluasi efektivitas terapi, klien tidak melihat kemajuan | Tinggi |
+| 5 | Akses Informasi Terbatas | Klien harus selalu menghubungi admin untuk informasi | Ketergantungan tinggi pada admin, pengalaman pengguna buruk | Sedang |
+| 6 | Kesulitan Pengambilan Keputusan | Data tersebar, tidak ada dasbor atau pelaporan | Laporan bulanan memakan waktu berhari-hari, sulit identifikasi tren | Tinggi |
+| 7 | Sistem Pembayaran Manual | Transfer bank dengan konfirmasi manual, tidak ada faktur otomatis | Konfirmasi lambat (berjam-jam/hari), rekonsiliasi manual rawan kesalahan | Sedang |
+| 8 | Risiko Keamanan Data Tinggi | Berkas tidak terenkripsi, tidak ada pengendalian akses atau jejak audit | Tidak patuh UU PDP No. 27/2022, risiko pelanggaran data | Sangat Tinggi |
 
-**Sumber:** Hasil observasi, wawancara stakeholder, dan analisis proses bisnis CUR-HEART (September 2024)
+**Sumber:** Hasil observasi, wawancara pemangku kepentingan, dan analisis proses bisnis CUR-HEART (September 2024)
 
 ## 1.3 Ruang Lingkup
 
-Untuk memfokuskan pembahasan dan memastikan keberhasilan proyek, penelitian ini menetapkan batasan-batasan ruang lingkup sebagai berikut:
+Untuk memfokuskan pembahasan dan memastikan keberhasilan proyek, penelitian ini menetapkan batasan-batasan cakupan sebagai berikut:
 
 ---
 
@@ -255,152 +255,152 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi sebagai berikut:
 
 **A. Modul Autentikasi dan Manajemen Pengguna**
 
-1. **Registrasi Multi-Role:**
-   - Registrasi akun untuk klien dengan form lengkap (nama, email, nomor telepon, alamat, tanggal lahir, jenis kelamin)
-   - Registrasi akun untuk terapis dengan verifikasi dokumen sertifikasi
-   - Proses verifikasi email menggunakan email verification link
-   - Password policy yang strong dengan minimal 8 karakter kombinasi huruf, angka, dan simbol
+1. **Pendaftaran Berbagai Peran:**
+   - Pendaftaran akun untuk klien dengan formulir lengkap (nama, surel, nomor telepon, alamat, tanggal lahir, jenis kelamin)
+   - Pendaftaran akun untuk terapis dengan verifikasi dokumen sertifikasi
+   - Proses verifikasi surel menggunakan tautan verifikasi
+   - Kebijakan kata sandi yang kuat dengan minimal 8 karakter kombinasi huruf, angka, dan simbol
 
-2. **Login System:**
-   - Login menggunakan email dan password dengan session management yang aman
-   - Role-based access control (RBAC) untuk admin, terapis, dan klien
-   - Remember me functionality dengan secure cookie
-   - Auto logout setelah periode inaktivitas tertentu untuk keamanan
+2. **Sistem Masuk:**
+   - Masuk menggunakan surel dan kata sandi dengan manajemen sesi yang aman
+   - Pengendalian akses berbasis peran (*Role-based Access Control*/RBAC) untuk admin, terapis, dan klien
+   - Fungsi ingat saya dengan kuki (*cookie*) yang aman
+   - Keluar otomatis setelah periode tidak aktif tertentu untuk keamanan
 
-3. **Password Management:**
-   - Forgot password dengan reset link dikirim ke email
-   - Reset password dengan token validation dan expiry time
-   - Change password dari dashboard user
-   - Password history untuk mencegah penggunaan password lama
+3. **Manajemen Kata Sandi:**
+   - Lupa kata sandi dengan tautan atur ulang dikirim ke surel
+   - Atur ulang kata sandi dengan validasi token dan waktu kedaluwarsa
+   - Ubah kata sandi dari dasbor pengguna
+   - Riwayat kata sandi untuk mencegah penggunaan kata sandi lama
 
-4. **Profile Management:**
-   - Edit profile untuk semua role user
-   - Upload dan crop foto profile
-   - Update informasi kontak dan preferensi
-   - Privacy settings untuk mengatur visibility data
+4. **Manajemen Profil:**
+   - Sunting profil untuk semua peran pengguna
+   - Unggah dan potong foto profil
+   - Perbarui informasi kontak dan preferensi
+   - Pengaturan privasi untuk mengatur visibilitas data
 
 **B. Modul Informasi Publik**
 
-1. **Landing Page:**
-   - Hero section dengan value proposition CUR-HEART
-   - Overview layanan yang tersedia dengan card preview
-   - Testimonial dari klien yang puas
-   - Call-to-action button untuk booking atau registrasi
-   - Blog section dengan artikel terbaru tentang kesehatan mental
+1. **Halaman Arahan (*Landing Page*):**
+   - Bagian utama (*hero section*) dengan proposisi nilai CUR-HEART
+   - Ikhtisar layanan yang tersedia dengan pratinjau kartu
+   - Testimoni dari klien yang puas
+   - Tombol ajakan bertindak (*call-to-action*) untuk pemesanan atau pendaftaran
+   - Bagian blog dengan artikel terbaru tentang kesehatan mental
 
-2. **About Page:**
+2. **Halaman Tentang Kami:**
    - Informasi lengkap tentang CUR-HEART (visi, misi, nilai)
    - Sejarah singkat berdirinya CUR-HEART
-   - Tim pendiri dan manajemen dengan profile singkat
+   - Tim pendiri dan manajemen dengan profil singkat
    - Sertifikasi dan akreditasi yang dimiliki
-   - Lokasi dan kontak informasi
+   - Lokasi dan informasi kontak
 
-3. **Services Page:**
+3. **Halaman Layanan:**
    - Daftar semua layanan terapi yang tersedia
    - Detail setiap layanan (deskripsi, manfaat, durasi, harga)
-   - FAQ untuk setiap kategori layanan
-   - Related articles untuk edukasi
-   - CTA button untuk book now
+   - Pertanyaan yang Sering Diajukan (FAQ) untuk setiap kategori layanan
+   - Artikel terkait untuk edukasi
+   - Tombol ajakan bertindak untuk pesan sekarang
 
-4. **Therapists Directory:**
-   - Daftar semua terapis dengan foto dan profile singkat
-   - Filter berdasarkan spesialisasi, rating, atau availability
-   - Detail profile terapis (pendidikan, sertifikasi, pengalaman, spesialisasi)
-   - Rating dan review dari klien sebelumnya
-   - Schedule availability preview
+4. **Direktori Terapis:**
+   - Daftar semua terapis dengan foto dan profil singkat
+   - Penyaringan berdasarkan spesialisasi, penilaian, atau ketersediaan
+   - Detail profil terapis (pendidikan, sertifikasi, pengalaman, spesialisasi)
+   - Penilaian dan ulasan dari klien sebelumnya
+   - Pratinjau ketersediaan jadwal
 
-5. **Blog/Articles:**
-   - Artikel edukatif tentang kesehatan mental dan hypnotherapy
-   - Kategori artikel (stress management, self-improvement, mental health tips)
-   - Search dan filter artikel
-   - Related articles suggestion
-   - Share to social media functionality
+5. **Blog/Artikel:**
+   - Artikel edukatif tentang kesehatan mental dan hipnoterapi
+   - Kategori artikel (manajemen stres, pengembangan diri, tips kesehatan mental)
+   - Pencarian dan penyaringan artikel
+   - Saran artikel terkait
+   - Fungsi berbagi ke media sosial
 
-6. **Contact dan FAQ:**
-   - Form kontak untuk inquiry umum
-   - FAQ section dengan accordion UI
-   - Live chat atau WhatsApp integration (optional)
-   - Google Maps integration untuk lokasi
-   - Business hours dan kontak emergency
+6. **Kontak dan FAQ:**
+   - Formulir kontak untuk pertanyaan umum
+   - Bagian FAQ dengan antarmuka akordeon
+   - Obrolan langsung (*live chat*) atau integrasi WhatsApp (opsional)
+   - Integrasi Google Maps untuk lokasi
+   - Jam operasional dan kontak darurat
 
-**C. Modul Booking dan Penjadwalan**
+**C. Modul Pemesanan dan Penjadwalan**
 
-1. **Multi-Step Booking Flow:**
-   - **Step 1:** Pemilihan layanan terapi dari catalog dengan preview detail dan harga
-   - **Step 2:** Pemilihan terapis dengan informasi profile, rating, dan availability
-   - **Step 3:** Pemilihan tanggal dan time slot dengan calendar interactive
-   - **Step 4:** Konfirmasi booking dengan review summary dan payment options
-   - Progress indicator yang jelas di setiap step
-   - Kemampuan untuk kembali ke step sebelumnya untuk edit pilihan
-   - Save draft booking untuk dilanjutkan nanti
+1. **Alur Pemesanan Bertahap:**
+   - **Langkah 1:** Pemilihan layanan terapi dari katalog dengan pratinjau detail dan harga
+   - **Langkah 2:** Pemilihan terapis dengan informasi profil, penilaian, dan ketersediaan
+   - **Langkah 3:** Pemilihan tanggal dan slot waktu dengan kalender interaktif
+   - **Langkah 4:** Konfirmasi pemesanan dengan ringkasan tinjauan dan opsi pembayaran
+   - Indikator kemajuan yang jelas di setiap langkah
+   - Kemampuan untuk kembali ke langkah sebelumnya untuk menyunting pilihan
+   - Simpan draf pemesanan untuk dilanjutkan nanti
 
-2. **Calendar dan Availability Management:**
-   - Interactive calendar dengan visualisasi slot tersedia dan terbooked
-   - Filter berdasarkan terapis, layanan, atau rentang tanggal
-   - Automatic blocking untuk slot yang sudah terbooked
-   - Indication untuk peak hours atau recommended time slots
-   - Synchronization dengan calendar terapis secara real-time
+2. **Kalender dan Manajemen Ketersediaan:**
+   - Kalender interaktif dengan visualisasi slot tersedia dan terpesan
+   - Penyaringan berdasarkan terapis, layanan, atau rentang tanggal
+   - Pemblokiran otomatis untuk slot yang sudah terpesan
+   - Indikasi untuk jam sibuk atau slot waktu yang direkomendasikan
+   - Sinkronisasi dengan kalender terapis secara waktu nyata
 
-3. **Booking Management:**
-   - View daftar semua booking dengan status (pending, confirmed, completed, cancelled)
-   - Detail booking dengan informasi lengkap (klien, terapis, layanan, waktu, status)
-   - Reschedule functionality dengan checking availability baru
-   - Cancel booking dengan policy dan refund rules
-   - Send reminder notification (email dan/atau SMS) H-1 dan H-0 sebelum sesi
-   - Booking history dengan filter dan search capability
+3. **Manajemen Pemesanan:**
+   - Tampilan daftar semua pemesanan dengan status (tertunda, dikonfirmasi, selesai, dibatalkan)
+   - Detail pemesanan dengan informasi lengkap (klien, terapis, layanan, waktu, status)
+   - Fungsi penjadwalan ulang dengan pemeriksaan ketersediaan baru
+   - Pembatalan pemesanan dengan kebijakan dan aturan pengembalian dana
+   - Kirim notifikasi pengingat (surel dan/atau SMS) H-1 dan H-0 sebelum sesi
+   - Riwayat pemesanan dengan kemampuan penyaringan dan pencarian
 
-**D. Modul Dashboard Klien**
+**D. Modul Dasbor Klien**
 
-1. **Dashboard Overview:**
-   - Summary card (upcoming appointments, completed sessions, progress score)
-   - Quick action buttons (book new session, view appointments, contact therapist)
-   - Recent activities timeline
-   - Announcements atau news dari CUR-HEART
-   - Motivational quote atau mental health tips of the day
+1. **Ikhtisar Dasbor:**
+   - Kartu ringkasan (janji temu mendatang, sesi selesai, skor kemajuan)
+   - Tombol tindakan cepat (pesan sesi baru, lihat janji temu, hubungi terapis)
+   - Linimasa aktivitas terkini
+   - Pengumuman atau berita dari CUR-HEART
+   - Kutipan motivasi atau tips kesehatan mental hari ini
 
-2. **My Appointments:**
-   - List view dan calendar view untuk semua appointments
-   - Detail setiap appointment dengan informasi terapis, layanan, dan waktu
-   - Status tracking (upcoming, in-progress, completed, cancelled)
-   - Action buttons (reschedule, cancel, join session)
-   - Download appointment confirmation PDF
+2. **Janji Temu Saya:**
+   - Tampilan daftar dan tampilan kalender untuk semua janji temu
+   - Detail setiap janji temu dengan informasi terapis, layanan, dan waktu
+   - Pelacakan status (mendatang, berlangsung, selesai, dibatalkan)
+   - Tombol tindakan (jadwal ulang, batal, gabung sesi)
+   - Unduh konfirmasi janji temu PDF
 
-3. **Booking History:**
-   - Complete history semua booking yang pernah dilakukan
-   - Filter berdasarkan date range, status, atau terapis
-   - Search functionality
-   - Export history to PDF atau Excel
-   - Repeat booking untuk booking ulang dengan terapis yang sama
+3. **Riwayat Pemesanan:**
+   - Riwayat lengkap semua pemesanan yang pernah dilakukan
+   - Penyaringan berdasarkan rentang tanggal, status, atau terapis
+   - Fungsi pencarian
+   - Ekspor riwayat ke PDF atau Excel
+   - Pemesanan berulang untuk pemesanan ulang dengan terapis yang sama
 
-4. **Progress Tracking:**
-   - Visualisasi progress terapi dengan chart (line chart, bar chart)
-   - Self-assessment questionnaire sebelum dan sesudah terapi
-   - Comparison chart untuk melihat improvement
-   - Notes dari terapis tentang progress
-   - Download progress report
+4. **Pelacakan Kemajuan:**
+   - Visualisasi kemajuan terapi dengan diagram (diagram garis, diagram batang)
+   - Kuesioner penilaian mandiri sebelum dan sesudah terapi
+   - Diagram perbandingan untuk melihat perbaikan
+   - Catatan dari terapis tentang kemajuan
+   - Unduh laporan kemajuan
 
-5. **Messages:**
-   - Inbox untuk komunikasi dengan terapis atau admin
-   - Compose message dengan rich text editor
-   - Attachment support (images, documents)
-   - Read receipt dan timestamp
-   - Archive dan delete messages
+5. **Pesan:**
+   - Kotak masuk untuk komunikasi dengan terapis atau admin
+   - Tulis pesan dengan penyunting teks kaya
+   - Dukungan lampiran (gambar, dokumen)
+   - Tanda terima baca dan stempel waktu
+   - Arsipkan dan hapus pesan
 
-6. **Payment History:**
-   - List semua transaksi dengan detail (tanggal, jumlah, metode, status)
-   - Filter dan search transactions
-   - Download invoice atau receipt
-   - Payment reminder untuk pending payments
-   - Payment method management (saved cards, e-wallet)
+6. **Riwayat Pembayaran:**
+   - Daftar semua transaksi dengan detail (tanggal, jumlah, metode, status)
+   - Penyaringan dan pencarian transaksi
+   - Unduh faktur atau tanda terima
+   - Pengingat pembayaran untuk pembayaran tertunda
+   - Manajemen metode pembayaran (kartu tersimpan, dompet elektronik)
 
-**E. Modul Dashboard Terapis**
+**E. Modul Dasbor Terapis**
 
-1. **Dashboard Overview:**
-   - Summary statistics (today's sessions, total clients, earnings this month, rating)
-   - Today's schedule dengan detail klien dan layanan
-   - Notifications (new booking, rescheduling, cancellation)
-   - Quick action buttons (manage schedule, view clients, start session)
-   - Performance metrics (session completion rate, average rating, response time)
+1. **Ikhtisar Dasbor:**
+   - Statistik ringkasan (sesi hari ini, total klien, penghasilan bulan ini, penilaian)
+   - Jadwal hari ini dengan detail klien dan layanan
+   - Notifikasi (pemesanan baru, penjadwalan ulang, pembatalan)
+   - Tombol tindakan cepat (kelola jadwal, lihat klien, mulai sesi)
+   - Metrik kinerja (tingkat penyelesaian sesi, penilaian rata-rata, waktu respons)
 
 2. **Schedule Management:**
    - Weekly dan monthly calendar view
@@ -554,144 +554,144 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi sebagai berikut:
 
 **H. Modul Notifikasi dan Komunikasi**
 
-1. **Email Notifications:**
-   - Welcome email setelah registrasi
-   - Email verification link
-   - Booking confirmation email dengan detail lengkap
-   - Reminder email H-1 dan H-0 sebelum sesi
-   - Rescheduling atau cancellation notification
-   - Payment confirmation email
-   - Password reset email
+1. **Notifikasi Surel:**
+   - Surel selamat datang setelah pendaftaran
+   - Tautan verifikasi surel
+   - Surel konfirmasi pemesanan dengan detail lengkap
+   - Surel pengingat H-1 dan H-0 sebelum sesi
+   - Notifikasi penjadwalan ulang atau pembatalan
+   - Surel konfirmasi pembayaran
+   - Surel atur ulang kata sandi
 
-2. **In-App Notifications:**
-   - Real-time notifications di dashboard
-   - Notification bell icon dengan badge counter
-   - Notification center dengan list semua notifications
-   - Mark as read/unread functionality
-   - Delete notifications
-   - Notification preferences (enable/disable certain types)
+2. **Notifikasi Dalam Aplikasi:**
+   - Notifikasi waktu nyata di dasbor
+   - Ikon lonceng notifikasi dengan penghitung lencana
+   - Pusat notifikasi dengan daftar semua notifikasi
+   - Fungsi tandai sebagai dibaca/belum dibaca
+   - Hapus notifikasi
+   - Preferensi notifikasi (aktifkan/nonaktifkan jenis tertentu)
 
-3. **SMS Notifications (Optional):**
-   - SMS reminder H-0 sebelum sesi
-   - SMS confirmation code untuk sensitive actions
-   - SMS alert untuk critical updates
+3. **Notifikasi SMS (Opsional):**
+   - Pengingat SMS H-0 sebelum sesi
+   - Kode konfirmasi SMS untuk tindakan sensitif
+   - Peringatan SMS untuk pembaruan kritis
 
-**I. Modul Reporting dan Analytics**
+**I. Modul Pelaporan dan Analitik**
 
-1. **Operational Reports:**
-   - Booking reports dengan visualization
-   - Therapist utilization reports
-   - Service popularity reports
-   - Customer demographics reports
+1. **Laporan Operasional:**
+   - Laporan pemesanan dengan visualisasi
+   - Laporan pemanfaatan terapis
+   - Laporan popularitas layanan
+   - Laporan demografis pelanggan
 
-2. **Financial Reports:**
-   - Revenue and earnings reports
-   - Payment collection reports
-   - Outstanding payments reports
-   - Tax reports
+2. **Laporan Keuangan:**
+   - Laporan pendapatan dan penghasilan
+   - Laporan penagihan pembayaran
+   - Laporan pembayaran tertunggak
+   - Laporan pajak
 
-3. **Performance Reports:**
-   - Therapist ratings dan feedback reports
-   - Customer satisfaction reports
-   - Session completion rates
-   - No-show dan cancellation rates
+3. **Laporan Kinerja:**
+   - Laporan penilaian dan umpan balik terapis
+   - Laporan kepuasan pelanggan
+   - Tingkat penyelesaian sesi
+   - Tingkat tidak hadir dan pembatalan
 
-4. **Export Capabilities:**
-   - Export reports ke PDF untuk presentation
-   - Export ke Excel untuk further analysis
-   - Export ke CSV untuk data import ke tools lain
+4. **Kemampuan Ekspor:**
+   - Ekspor laporan ke PDF untuk presentasi
+   - Ekspor ke Excel untuk analisis lebih lanjut
+   - Ekspor ke CSV untuk impor data ke perangkat lain
 
 ### 1.3.2 Ruang Lingkup Teknis
 
 **A. Platform dan Teknologi:**
 
-1. **Backend Framework:**
-   - Laravel Framework 10.x (PHP 8.x)
-   - Eloquent ORM untuk database abstraction
-   - Laravel Authentication untuk user management
-   - Laravel Scheduler untuk task automation
-   - Laravel Queue untuk background jobs
+1. **Kerangka Kerja Backend:**
+   - Kerangka Kerja Laravel 10.x (PHP 8.x)
+   - Eloquent ORM untuk abstraksi basis data
+   - Laravel Authentication untuk manajemen pengguna
+   - Laravel Scheduler untuk otomatisasi tugas
+   - Laravel Queue untuk pekerjaan latar belakang
 
-2. **Frontend Framework:**
-   - Blade Templating Engine (built-in Laravel)
-   - Tailwind CSS untuk utility-first styling
-   - Alpine.js untuk lightweight JavaScript interactivity
-   - Livewire untuk dynamic components (optional)
+2. **Kerangka Kerja Frontend:**
+   - Mesin Templat Blade (bawaan Laravel)
+   - Tailwind CSS untuk penggayaan berbasis utilitas
+   - Alpine.js untuk interaktivitas JavaScript ringan
+   - Livewire untuk komponen dinamis (opsional)
 
-3. **Database:**
-   - MySQL 8.0 sebagai RDBMS
-   - Laravel Migration untuk database versioning
-   - Laravel Seeder untuk sample data generation
+3. **Basis Data:**
+   - MySQL 8.0 sebagai RDBMS (*Relational Database Management System*)
+   - Laravel Migration untuk pengelolaan versi basis data
+   - Laravel Seeder untuk pembuatan data contoh
 
-4. **Development Tools:**
-   - Git untuk version control
-   - Composer untuk PHP dependency management
-   - NPM untuk frontend dependency management
-   - Laravel Mix/Vite untuk asset compilation
+4. **Perangkat Pengembangan:**
+   - Git untuk pengendalian versi
+   - Composer untuk manajemen dependensi PHP
+   - NPM untuk manajemen dependensi frontend
+   - Laravel Mix/Vite untuk kompilasi aset
 
 **B. Arsitektur Sistem:**
 
-1. **Monolithic Architecture:**
-   - Single codebase untuk frontend dan backend
-   - Server-side rendering dengan Blade templates
-   - Traditional MVC pattern
+1. **Arsitektur Monolitik:**
+   - Basis kode tunggal untuk frontend dan backend
+   - Perenderan sisi server dengan templat Blade
+   - Pola MVC tradisional
 
-2. **Design Patterns:**
-   - MVC (Model-View-Controller) architecture
-   - Repository pattern untuk data access layer (optional)
-   - Service layer pattern untuk business logic
-   - Observer pattern untuk event handling
+2. **Pola Desain:**
+   - Arsitektur MVC (*Model-View-Controller*)
+   - Pola repositori untuk lapisan akses data (opsional)
+   - Pola lapisan layanan untuk logika bisnis
+   - Pola pengamat (*observer*) untuk penanganan kejadian
 
 **C. Keamanan:**
 
-1. **Authentication dan Authorization:**
-   - Laravel Sanctum atau built-in authentication
-   - Role-based access control (RBAC)
-   - Middleware untuk route protection
-   - CSRF protection
+1. **Autentikasi dan Otorisasi:**
+   - Laravel Sanctum atau autentikasi bawaan
+   - Pengendalian akses berbasis peran (RBAC)
+   - Middleware untuk perlindungan rute
+   - Perlindungan CSRF
 
-2. **Data Security:**
-   - Password hashing dengan Bcrypt/Argon2
-   - SQL injection prevention dengan prepared statements
-   - XSS prevention dengan output escaping
-   - Data encryption untuk sensitive information
+2. **Keamanan Data:**
+   - Hashing kata sandi dengan Bcrypt/Argon2
+   - Pencegahan injeksi SQL dengan pernyataan tersiap (*prepared statements*)
+   - Pencegahan XSS dengan pelolosan keluaran
+   - Enkripsi data untuk informasi sensitif
 
-3. **Compliance:**
+3. **Kepatuhan:**
    - Mengikuti prinsip-prinsip GDPR dan UU PDP Indonesia
-   - Privacy policy dan terms of service
-   - Data retention dan deletion policy
+   - Kebijakan privasi dan ketentuan layanan
+   - Kebijakan retensi dan penghapusan data
 
-**D. Deployment:**
+**D. Penerapan:**
 
-1. **Server Environment:**
-   - Apache atau Nginx web server
+1. **Lingkungan Server:**
+   - Server web Apache atau Nginx
    - PHP 8.x
    - MySQL 8.0
-   - SSL certificate untuk HTTPS
+   - Sertifikat SSL untuk HTTPS
 
 2. **Hosting:**
-   - Shared hosting atau VPS
-   - cPanel atau aaPanel untuk server management
+   - Hosting bersama (*shared hosting*) atau VPS
+   - cPanel atau aaPanel untuk manajemen server
 
 ### 1.3.3 Ruang Lingkup Pengguna
 
 Sistem ini diperuntukkan bagi tiga kategori pengguna utama:
 
-1. **Admin/Owner CUR-HEART:**
+1. **Admin/Pemilik CUR-HEART:**
    - Mengelola seluruh aspek sistem
-   - Monitoring dan reporting
+   - Pemantauan dan pelaporan
    - Konfigurasi sistem
 
 2. **Terapis:**
-   - Mengelola jadwal dan availability
+   - Mengelola jadwal dan ketersediaan
    - Mengelola sesi terapi dan dokumentasi
    - Komunikasi dengan klien
-   - Melihat earnings dan performance
+   - Melihat penghasilan dan kinerja
 
 3. **Klien:**
-   - Melakukan booking layanan terapi
-   - Mengelola appointments
-   - Tracking progress terapi
+   - Melakukan pemesanan layanan terapi
+   - Mengelola janji temu
+   - Pelacakan kemajuan terapi
    - Komunikasi dengan terapis
    - Manajemen pembayaran
 
@@ -699,109 +699,109 @@ Sistem ini diperuntukkan bagi tiga kategori pengguna utama:
 
 Untuk memastikan fokus pengembangan, beberapa fitur di bawah ini **tidak** termasuk dalam ruang lingkup proyek ini:
 
-1. **Fitur Video Conference Native:**
-   - Sistem tidak mengembangkan video conference engine sendiri
-   - Menggunakan integrasi dengan platform third-party seperti Zoom, Google Meet, atau Whereby melalui iframe atau API
+1. **Fitur Konferensi Video Bawaan (*Native*):**
+   - Sistem tidak mengembangkan mesin konferensi video sendiri
+   - Menggunakan integrasi dengan platform pihak ketiga seperti Zoom, Google Meet, atau Whereby melalui *iframe* atau API
 
-2. **Mobile Application:**
-   - Tidak ada development aplikasi mobile native (iOS/Android)
-   - Sistem menggunakan responsive web design yang mobile-friendly
-   - Dapat diakses melalui mobile browser
+2. **Aplikasi Seluler (*Mobile Application*):**
+   - Tidak ada pengembangan aplikasi seluler bawaan (iOS/Android)
+   - Sistem menggunakan desain web responsif yang ramah seluler
+   - Dapat diakses melalui peramban seluler
 
-3. **Artificial Intelligence/Machine Learning:**
-   - Tidak ada fitur AI untuk diagnosis atau rekomendasi terapi otomatis
-   - Tidak ada chatbot AI untuk customer service
-   - Rekomendasi terapis atau layanan masih berbasis rule-based logic
+3. **Kecerdasan Buatan/Pembelajaran Mesin (*Artificial Intelligence/Machine Learning*):**
+   - Tidak ada fitur kecerdasan buatan untuk diagnosis atau rekomendasi terapi otomatis
+   - Tidak ada *chatbot* kecerdasan buatan untuk layanan pelanggan
+   - Rekomendasi terapis atau layanan masih berbasis logika aturan
 
-4. **Telemedicine Prescriptions:**
-   - Sistem tidak menangani prescription obat atau resep medis
-   - Fokus pada terapi hypnotherapy dan konseling
+4. **Resep Telemedis (*Telemedicine Prescriptions*):**
+   - Sistem tidak menangani resep obat atau resep medis
+   - Fokus pada terapi hipnoterapi dan konseling
 
-5. **Multi-Language Support:**
-   - Interface hanya dalam Bahasa Indonesia
-   - Tidak ada internationalization (i18n) atau localization (l10n)
+5. **Dukungan Multibahasa (*Multi-Language Support*):**
+   - Antarmuka hanya dalam Bahasa Indonesia
+   - Tidak ada internasionalisasi atau lokalisasi
 
-6. **Third-Party Integrations (selain payment):**
-   - Tidak ada integrasi dengan electronic medical record (EMR) systems lain
-   - Tidak ada integrasi dengan insurance providers
-   - Tidak ada social media login (Google, Facebook)
+6. **Integrasi Pihak Ketiga (selain pembayaran):**
+   - Tidak ada integrasi dengan sistem rekam medis elektronik lain
+   - Tidak ada integrasi dengan penyedia asuransi
+   - Tidak ada *login* media sosial (Google, Facebook)
 
-7. **Advanced Analytics dan Business Intelligence:**
-   - Tidak ada predictive analytics atau forecasting
-   - Tidak ada complex data mining atau machine learning models
-   - Reporting terbatas pada descriptive analytics
+7. **Analitik Lanjutan dan Intelijen Bisnis (*Advanced Analytics dan Business Intelligence*):**
+   - Tidak ada analitik prediktif atau peramalan
+   - Tidak ada penambangan data kompleks atau model pembelajaran mesin
+   - Pelaporan terbatas pada analitik deskriptif
 
-8. **Multi-Tenant Architecture:**
-   - Sistem didesain untuk single tenant (CUR-HEART saja)
-   - Tidak ada fitur white-label atau franchise management
+8. **Arsitektur Multi-Penyewa (*Multi-Tenant Architecture*):**
+   - Sistem didesain untuk penyewa tunggal (CUR-HEART saja)
+   - Tidak ada fitur *white-label* atau manajemen waralaba
 
 **Tabel 1.2 Batasan Sistem**
 
-| No | Aspek | Tidak Termasuk dalam Scope | Alternatif/Solusi | Alasan |
+| No | Aspek | Tidak Termasuk dalam Cakupan | Alternatif/Solusi | Alasan |
 |----|-------|----------------------------|-------------------|--------|
-| 1 | Video Conference | Develop native video engine sendiri | Integrasi third-party (Zoom API, Google Meet, Whereby) via iframe | Kompleksitas tinggi, membutuhkan spesialisasi WebRTC, tidak cost-effective |
-| 2 | Mobile App | Aplikasi iOS/Android native | Responsive web design (mobile-friendly browser access) | Resource dan timeline terbatas, web app cukup untuk MVP |
-| 3 | AI/ML | Diagnosis otomatis, chatbot AI, rekomendasi ML-based | Rule-based logic, manual assignment oleh admin/user | Memerlukan data training besar dan expertise khusus AI/ML |
-| 4 | Telemedicine | Prescription obat, resep medis | Fokus hypnotherapy dan konseling saja | Regulasi medis ketat, memerlukan izin khusus dari Kemenkes |
-| 5 | Multi-Language | Interface dalam bahasa asing (English, dll.) | Bahasa Indonesia saja | Target market lokal Indonesia, simplify development |
-| 6 | Third-Party Integrations | EMR systems, insurance providers, social login | Payment gateway (Midtrans) saja | Fokus pada core functionality, hindari dependency berlebihan |
-| 7 | Advanced Analytics | Predictive analytics, forecasting, data mining | Descriptive analytics dan basic reporting | Complexity tinggi, tidak prioritas untuk fase 1 |
-| 8 | Multi-Tenant | White-label, franchise management, multi-company | Single tenant untuk CUR-HEART saja | Scope proyek untuk satu organisasi, simplify architecture |
+| 1 | Konferensi Video | Mengembangkan mesin video bawaan sendiri | Integrasi pihak ketiga (Zoom API, Google Meet, Whereby) melalui *iframe* | Kompleksitas tinggi, membutuhkan spesialisasi WebRTC, tidak efektif biaya |
+| 2 | Aplikasi Seluler | Aplikasi iOS/Android bawaan | Desain web responsif (akses peramban ramah seluler) | Sumber daya dan tenggat waktu terbatas, aplikasi web cukup untuk produk minimum *viable* |
+| 3 | Kecerdasan Buatan/Pembelajaran Mesin | Diagnosis otomatis, *chatbot* kecerdasan buatan, rekomendasi berbasis pembelajaran mesin | Logika berbasis aturan, penugasan manual oleh admin/pengguna | Memerlukan data pelatihan besar dan keahlian khusus kecerdasan buatan/pembelajaran mesin |
+| 4 | Telemedis | Resep obat, resep medis | Fokus hipnoterapi dan konseling saja | Regulasi medis ketat, memerlukan izin khusus dari Kemenkes |
+| 5 | Multibahasa | Antarmuka dalam bahasa asing (Inggris, dll.) | Bahasa Indonesia saja | Target pasar lokal Indonesia, menyederhanakan pengembangan |
+| 6 | Integrasi Pihak Ketiga | Sistem rekam medis elektronik, penyedia asuransi, *login* sosial | Gerbang pembayaran (Midtrans) saja | Fokus pada fungsi inti, hindari ketergantungan berlebihan |
+| 7 | Analitik Lanjutan | Analitik prediktif, peramalan, penambangan data | Analitik deskriptif dan pelaporan dasar | Kompleksitas tinggi, tidak prioritas untuk fase 1 |
+| 8 | Multi-Penyewa | *White-label*, manajemen waralaba, multi-perusahaan | Penyewa tunggal untuk CUR-HEART saja | Cakupan proyek untuk satu organisasi, menyederhanakan arsitektur |
 
-**Sumber:** Hasil scoping meeting dengan stakeholder dan analisis technical feasibility (September 2024)
+**Sumber:** Hasil pertemuan penentuan cakupan dengan pemangku kepentingan dan analisis kelayakan teknis (September 2024)
 
-**Catatan:** Fitur-fitur di atas dapat dikembangkan di fase berikutnya (future enhancement) setelah sistem core berhasil diimplementasikan dan dievaluasi.
+**Catatan:** Fitur-fitur di atas dapat dikembangkan di fase berikutnya (peningkatan masa depan) setelah sistem inti berhasil diimplementasikan dan dievaluasi.
 
 ### 1.3.5 Ruang Lingkup Metodologi
 
 1. **Metodologi Pengembangan:**
-   - System Development Life Cycle (SDLC) dengan model Waterfall
-   - Tahapan: Analisis → Desain → Implementasi → Testing → Deployment
+   - Siklus Hidup Pengembangan Sistem (*System Development Life Cycle*/SDLC) dengan model Air Terjun (*Waterfall*)
+   - Tahapan: Analisis → Desain → Implementasi → Pengujian → Penerapan
 
 2. **Teknik Pengumpulan Data:**
-   - Observasi terhadap proses bisnis existing
-   - Wawancara dengan stakeholders (owner, terapis, sample klien)
-   - Studi literatur dan best practices
+   - Observasi terhadap proses bisnis yang ada
+   - Wawancara dengan pemangku kepentingan (*owner*, terapis, sampel klien)
+   - Studi literatur dan praktik terbaik
    - Analisis dokumen internal CUR-HEART
 
 3. **Teknik Analisis Sistem:**
    - Analisis kebutuhan fungsional dan non-fungsional
-   - Use Case Analysis dengan UML Use Case Diagram
-   - Process modeling dengan Activity Diagram
-   - Data modeling dengan Entity Relationship Diagram (ERD)
+   - Analisis Kasus Pakai (*Use Case Analysis*) dengan Diagram Kasus Pakai UML
+   - Pemodelan proses dengan Diagram Aktivitas (*Activity Diagram*)
+   - Pemodelan data dengan Diagram Relasi Entitas (*Entity Relationship Diagram*/ERD)
 
 4. **Teknik Desain:**
-   - Database design dengan normalisasi hingga 3NF
-   - UI/UX design dengan wireframe dan high-fidelity mockup
-   - System architecture design
-   - Security design
+   - Desain basis data dengan normalisasi hingga Bentuk Normal Ketiga (3NF)
+   - Desain antarmuka pengguna dengan kerangka kawat (*wireframe*) dan maket fidelitas tinggi (*high-fidelity mockup*)
+   - Desain arsitektur sistem
+   - Desain keamanan
 
-5. **Teknik Testing:**
-   - Unit testing untuk individual functions
-   - Functional testing dengan black-box approach
-   - Usability testing dengan sample users
-   - User Acceptance Testing (UAT) dengan stakeholders
+5. **Teknik Pengujian:**
+   - Pengujian unit (*unit testing*) untuk fungsi individual
+   - Pengujian fungsional dengan pendekatan kotak hitam (*black-box*)
+   - Pengujian kebergunaan (*usability testing*) dengan sampel pengguna
+   - Pengujian Penerimaan Pengguna (*User Acceptance Testing*/UAT) dengan pemangku kepentingan
 
-### 1.3.6 Ruang Lingkup Deliverables
+### 1.3.6 Ruang Lingkup Luaran (*Deliverables*)
 
 Luaran yang dihasilkan dari proyek ini adalah:
 
 1. **Dokumentasi:**
-   - Laporan Capstone Project lengkap (80-100 halaman)
-   - System documentation (technical documentation)
-   - User manual untuk setiap role user
-   - Database schema documentation
+   - Laporan Proyek Akhir (*Capstone Project*) lengkap (80-100 halaman)
+   - Dokumentasi sistem (dokumentasi teknis)
+   - Panduan pengguna untuk setiap peran pengguna
+   - Dokumentasi skema basis data
 
 2. **Sistem:**
-   - Web application functional prototype
-   - Source code lengkap di repository GitHub
-   - Database dengan sample data
-   - Deployment guide
+   - Prototipe fungsional aplikasi web
+   - Kode sumber lengkap di repositori GitHub
+   - Basis data dengan data sampel
+   - Panduan penerapan (*deployment*)
 
 3. **Presentasi:**
-   - Slide presentasi PowerPoint (15-20 slides)
-   - Video demo sistem (5-10 menit)
-   - X-Banner infografis proyek
+   - Salindia presentasi PowerPoint (15-20 salindia)
+   - Video demonstrasi sistem (5-10 menit)
+   - *X-Banner* infografis proyek
 
 4. **Tambahan:**
    - Video promosi CUR-HEART (2-3 menit) untuk YouTube/Instagram/TikTok
@@ -818,39 +818,39 @@ Penelitian dan pengembangan sistem informasi ini memiliki tujuan-tujuan sebagai 
 
 #### 1.4.1.1 Tujuan Umum
 
-Mengembangkan sistem informasi manajemen booking dan terapi berbasis web dengan framework Laravel yang terintegrasi, efisien, user-friendly, dan secure untuk mendukung operasional CUR-HEART (Hypnotherapy & Mind Wellness Center) dalam memberikan layanan kesehatan mental yang berkualitas dan mudah diakses oleh masyarakat.
+Mengembangkan sistem informasi manajemen pemesanan dan terapi berbasis web dengan kerangka kerja Laravel yang terpadu, efisien, mudah digunakan, dan aman untuk mendukung operasional CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) dalam memberikan layanan kesehatan mental yang berkualitas dan mudah diakses oleh masyarakat.
 
 #### 1.4.1.2 Tujuan Khusus
 
-1. **Mengotomatisasi Proses Booking:**
-   Mengembangkan sistem booking online dengan multi-step flow yang user-friendly, memungkinkan klien untuk melakukan booking layanan terapi secara mandiri 24/7 tanpa harus menghubungi admin, dengan visualisasi ketersediaan jadwal secara real-time, sehingga meningkatkan conversion rate dari inquiry menjadi actual booking dan mengurangi beban kerja administratif.
+1. **Mengotomatisasi Proses Pemesanan:**
+   Mengembangkan sistem pemesanan daring dengan alur bertahap yang mudah digunakan, memungkinkan klien untuk melakukan pemesanan layanan terapi secara mandiri 24/7 tanpa harus menghubungi admin, dengan visualisasi ketersediaan jadwal secara waktu nyata, sehingga meningkatkan tingkat konversi dari pertanyaan menjadi pemesanan aktual dan mengurangi beban kerja administratif.
 
 2. **Mengintegrasikan Manajemen Jadwal Terapis:**
-   Membangun sistem manajemen jadwal terapis yang terintegrasi dengan availability management, blocking date, recurring schedule, dan auto-sync dengan booking klien, sehingga mengeliminasi konflik jadwal, mengurangi risiko double booking, dan memudahkan terapis dalam mengatur workload secara optimal.
+   Membangun sistem manajemen jadwal terapis yang terpadu dengan manajemen ketersediaan, pemblokiran tanggal, jadwal berulang, dan sinkronisasi otomatis dengan pemesanan klien, sehingga mengeliminasi konflik jadwal, mengurangi risiko pemesanan ganda, dan memudahkan terapis dalam mengatur beban kerja secara optimal.
 
 3. **Menyediakan Sistem Dokumentasi Terapi yang Terstruktur:**
-   Merancang dan mengimplementasikan sistem dokumentasi catatan sesi terapi yang terstruktur dengan template sesuai jenis layanan, rich text editor, auto-save functionality, dan search capability, yang memudahkan terapis dalam mencatat dan mengakses riwayat terapi klien secara cepat dan akurat, serta menjamin keamanan dan backup data yang proper.
+   Merancang dan mengimplementasikan sistem dokumentasi catatan sesi terapi yang terstruktur dengan templat sesuai jenis layanan, penyunting teks kaya (*rich text editor*), fungsi penyimpanan otomatis, dan kemampuan pencarian, yang memudahkan terapis dalam mencatat dan mengakses riwayat terapi klien secara cepat dan akurat, serta menjamin keamanan dan pencadangan data yang tepat.
 
-4. **Memfasilitasi Tracking Progress Klien:**
-   Mengembangkan fitur tracking progress klien dengan self-assessment questionnaire, visualisasi chart perkembangan kondisi klien dari waktu ke waktu, dan summary report yang dapat di-download, sehingga membantu terapis dalam mengevaluasi efektivitas terapi dan membuat adjustment treatment plan, serta memberdayakan klien untuk melihat progress mereka secara objektif.
+4. **Memfasilitasi Pelacakan Kemajuan Klien:**
+   Mengembangkan fitur pelacakan kemajuan klien dengan kuesioner penilaian mandiri, visualisasi diagram perkembangan kondisi klien dari waktu ke waktu, dan laporan ringkasan yang dapat diunduh, sehingga membantu terapis dalam mengevaluasi efektivitas terapi dan membuat penyesuaian rencana perawatan, serta memberdayakan klien untuk melihat kemajuan mereka secara objektif.
 
 5. **Meningkatkan Akses Informasi bagi Klien:**
-   Membangun platform self-service yang comprehensive, di mana klien dapat mengakses informasi lengkap tentang layanan, profil terapis, jadwal ketersediaan, pricing, riwayat booking, catatan dari terapis, dan progress tracking secara mandiri melalui dashboard yang intuitif, sehingga meningkatkan transparansi, empowerment, dan kepuasan klien.
+   Membangun platform layanan mandiri yang komprehensif, di mana klien dapat mengakses informasi lengkap tentang layanan, profil terapis, jadwal ketersediaan, harga, riwayat pemesanan, catatan dari terapis, dan pelacakan kemajuan secara mandiri melalui dasbor yang intuitif, sehingga meningkatkan transparansi, pemberdayaan, dan kepuasan klien.
 
-6. **Menyediakan Dashboard Monitoring dan Business Intelligence:**
-   Mengembangkan dashboard admin dengan key performance indicators (KPI) dan reporting system yang menyediakan insight operasional dan bisnis seperti jumlah booking, revenue, tingkat okupansi terapis, customer satisfaction, dan trend analysis dengan visualisasi chart yang mudah dipahami, untuk mendukung data-driven decision making dalam strategi pengembangan bisnis CUR-HEART.
+6. **Menyediakan Dasbor Pemantauan dan Kecerdasan Bisnis:**
+   Mengembangkan dasbor admin dengan indikator kinerja utama (KPI) dan sistem pelaporan yang menyediakan wawasan operasional dan bisnis seperti jumlah pemesanan, pendapatan, tingkat hunian terapis, kepuasan pelanggan, dan analisis tren dengan visualisasi diagram yang mudah dipahami, untuk mendukung pengambilan keputusan berbasis data dalam strategi pengembangan bisnis CUR-HEART.
 
 7. **Mengintegrasikan Sistem Pembayaran Digital:**
-   Mengimplementasikan sistem pembayaran terintegrasi dengan multiple payment methods (transfer bank, credit/debit card, e-wallet, QRIS) melalui payment gateway, dengan automatic invoice generation, digital receipt, dan payment tracking, sehingga mengurangi friction dalam customer journey dan mempercepat proses payment verification.
+   Mengimplementasikan sistem pembayaran terpadu dengan berbagai metode pembayaran (transfer bank, kartu kredit/debit, dompet elektronik, QRIS) melalui gerbang pembayaran (*payment gateway*), dengan pembuatan faktur otomatis, tanda terima digital, dan pelacakan pembayaran, sehingga mengurangi hambatan dalam perjalanan pelanggan dan mempercepat proses verifikasi pembayaran.
 
 8. **Menjamin Keamanan dan Privasi Data Klien:**
-   Menerapkan best practices security measures seperti authentication dengan role-based access control, password hashing dengan Bcrypt, data encryption untuk sensitive information, CSRF protection, SQL injection prevention, audit trail, dan compliance terhadap UU Perlindungan Data Pribadi, untuk melindungi data klien yang sangat sensitif dan menjaga trust terhadap CUR-HEART.
+   Menerapkan langkah-langkah keamanan praktik terbaik seperti autentikasi dengan pengendalian akses berbasis peran, hashing kata sandi dengan Bcrypt, enkripsi data untuk informasi sensitif, perlindungan CSRF, pencegahan injeksi SQL, jejak audit, dan kepatuhan terhadap UU Perlindungan Data Pribadi, untuk melindungi data klien yang sangat sensitif dan menjaga kepercayaan terhadap CUR-HEART.
 
 9. **Meningkatkan Efisiensi Operasional:**
-   Menghasilkan sistem yang dapat mengurangi waktu yang terbuang untuk administrative tasks yang repetitive hingga minimal 60%, mengeliminasi human error dalam scheduling dan documentation hingga minimal 80%, serta meningkatkan throughput booking dan sesi terapi hingga minimal 40%, sehingga CUR-HEART dapat melayani lebih banyak klien dengan resource yang sama.
+   Menghasilkan sistem yang dapat mengurangi waktu yang terbuang untuk tugas-tugas administratif yang berulang hingga minimal 60%, mengeliminasi kesalahan manusia dalam penjadwalan dan dokumentasi hingga minimal 80%, serta meningkatkan hasil pemesanan dan sesi terapi hingga minimal 40%, sehingga CUR-HEART dapat melayani lebih banyak klien dengan sumber daya yang sama.
 
 10. **Membangun Fondasi untuk Skalabilitas Bisnis:**
-    Merancang arsitektur sistem yang scalable dan maintainable, dengan modular code structure, database yang normalized, dan documentation yang comprehensive, sehingga memudahkan pengembangan fitur-fitur baru di masa depan dan mendukung pertumbuhan bisnis CUR-HEART dalam jangka panjang.
+    Merancang arsitektur sistem yang dapat dikembangkan dan mudah dipelihara, dengan struktur kode modular, basis data yang dinormalisasi, dan dokumentasi yang komprehensif, sehingga memudahkan pengembangan fitur-fitur baru di masa depan dan mendukung pertumbuhan bisnis CUR-HEART dalam jangka panjang.
 
 ### 1.4.2 Manfaat Penelitian
 
@@ -859,117 +859,117 @@ Penelitian dan pengembangan sistem informasi ini diharapkan memberikan manfaat k
 #### 1.4.2.1 Manfaat bagi CUR-HEART (Organisasi)
 
 1. **Peningkatan Efisiensi Operasional:**
-   Sistem akan mengotomatisasi proses-proses manual yang repetitive, mengurangi waktu administrative tasks hingga 60%, sehingga staff dapat fokus pada value-added activities seperti customer service dan quality assurance. Eliminasi double booking, kesalahan scheduling, dan lost booking akan menghemat biaya operational losses.
+   Sistem akan mengotomatisasi proses-proses manual yang berulang, mengurangi waktu tugas administratif hingga 60%, sehingga staf dapat fokus pada aktivitas bernilai tambah seperti layanan pelanggan dan jaminan kualitas. Eliminasi pemesanan ganda, kesalahan penjadwalan, dan kehilangan pemesanan akan menghemat biaya kerugian operasional.
 
-2. **Peningkatan Revenue:**
-   Dengan sistem booking 24/7 yang user-friendly dan conversion rate yang lebih tinggi (diharapkan meningkat dari 60% menjadi 85%), jumlah klien baru dan repeat booking akan meningkat signifikan. Optimalisasi jadwal terapis berdasarkan data availability dan demand akan meningkatkan tingkat okupansi dan mengoptimalkan revenue per terapis.
+2. **Peningkatan Pendapatan:**
+   Dengan sistem pemesanan 24/7 yang mudah digunakan dan tingkat konversi yang lebih tinggi (diharapkan meningkat dari 60% menjadi 85%), jumlah klien baru dan pemesanan berulang akan meningkat signifikan. Optimalisasi jadwal terapis berdasarkan data ketersediaan dan permintaan akan meningkatkan tingkat hunian dan mengoptimalkan pendapatan per terapis.
 
-3. **Data-Driven Decision Making:**
-   Dashboard analytics dan reporting system akan menyediakan insight bisnis yang actionable, memungkinkan manajemen untuk membuat keputusan strategis berbasis data seperti capacity planning, pricing strategy, marketing campaign targeting, dan service portfolio optimization.
+3. **Pengambilan Keputusan Berbasis Data:**
+   Dasbor analitik dan sistem pelaporan akan menyediakan wawasan bisnis yang dapat ditindaklanjuti, memungkinkan manajemen untuk membuat keputusan strategis berbasis data seperti perencanaan kapasitas, strategi penetapan harga, penargetan kampanye pemasaran, dan optimalisasi portofolio layanan.
 
-4. **Competitive Advantage:**
-   Sebagai salah satu pusat hypnotherapy pertama di Indonesia yang memiliki sistem informasi terintegrasi dan professional, CUR-HEART akan memiliki positioning yang kuat di pasar dan membedakan diri dari kompetitor yang masih menggunakan sistem manual.
+4. **Keunggulan Kompetitif:**
+   Sebagai salah satu pusat hipnoterapi pertama di Indonesia yang memiliki sistem informasi terpadu dan profesional, CUR-HEART akan memiliki posisi yang kuat di pasar dan membedakan diri dari pesaing yang masih menggunakan sistem manual.
 
 5. **Skalabilitas Bisnis:**
-   Sistem yang robust dan scalable akan mendukung ekspansi bisnis CUR-HEART, baik dari segi penambahan terapis, penambahan lokasi cabang, maupun penambahan layanan baru, tanpa harus melakukan overhaul sistem secara besar-besaran.
+   Sistem yang kokoh dan dapat dikembangkan akan mendukung ekspansi bisnis CUR-HEART, baik dari segi penambahan terapis, penambahan lokasi cabang, maupun penambahan layanan baru, tanpa harus melakukan perombakan sistem secara besar-besaran.
 
-6. **Compliance dan Risk Mitigation:**
-   Sistem yang mengikuti regulasi perlindungan data pribadi dan menerapkan security best practices akan mengurangi risiko legal dan reputational damage akibat data breach atau non-compliance, sekaligus meningkatkan kepercayaan klien dan stakeholders.
+6. **Kepatuhan dan Mitigasi Risiko:**
+   Sistem yang mengikuti regulasi perlindungan data pribadi dan menerapkan praktik terbaik keamanan akan mengurangi risiko hukum dan kerusakan reputasi akibat pelanggaran data atau ketidakpatuhan, sekaligus meningkatkan kepercayaan klien dan pemangku kepentingan.
 
-7. **Brand Image dan Credibility:**
-   Memiliki sistem digital yang modern dan profesional akan meningkatkan persepsi brand CUR-HEART sebagai pusat terapi yang trustworthy, innovative, dan client-centric, yang akan menarik lebih banyak klien potensial terutama dari segmen digital-savvy.
+7. **Citra Merek dan Kredibilitas:**
+   Memiliki sistem digital yang modern dan profesional akan meningkatkan persepsi merek CUR-HEART sebagai pusat terapi yang terpercaya, inovatif, dan berpusat pada klien, yang akan menarik lebih banyak calon klien terutama dari segmen yang melek digital.
 
 #### 1.4.2.2 Manfaat bagi Terapis
 
 1. **Kemudahan Manajemen Jadwal:**
-   Terapis dapat dengan mudah mengatur availability, blocking date untuk cuti, dan melihat overview jadwal mereka dalam weekly atau monthly view, sehingga dapat melakukan work-life balance yang lebih baik dan mengurangi burnout.
+   Terapis dapat dengan mudah mengatur ketersediaan, memblokir tanggal untuk cuti, dan melihat gambaran umum jadwal mereka dalam tampilan mingguan atau bulanan, sehingga dapat melakukan keseimbangan kehidupan kerja yang lebih baik dan mengurangi kelelahan (*burnout*).
 
 2. **Efisiensi Dokumentasi:**
-   Sistem dokumentasi terapi yang terstruktur dengan template dan auto-save akan menghemat waktu terapis dalam mencatat hasil sesi (dari 10-15 menit menjadi 5-7 menit), dan memudahkan retrieval riwayat terapi klien untuk referensi di sesi berikutnya.
+   Sistem dokumentasi terapi yang terstruktur dengan templat dan penyimpanan otomatis akan menghemat waktu terapis dalam mencatat hasil sesi (dari 10-15 menit menjadi 5-7 menit), dan memudahkan pengambilan riwayat terapi klien untuk referensi di sesi berikutnya.
 
-3. **Better Client Management:**
-   Dengan akses ke client profile yang lengkap, session history, dan progress tracking dalam satu platform, terapis dapat memberikan treatment yang lebih personalized dan effective, meningkatkan success rate terapi dan kepuasan klien.
+3. **Manajemen Klien yang Lebih Baik:**
+   Dengan akses ke profil klien yang lengkap, riwayat sesi, dan pelacakan kemajuan dalam satu platform, terapis dapat memberikan perawatan yang lebih personal dan efektif, meningkatkan tingkat keberhasilan terapi dan kepuasan klien.
 
-4. **Transparansi Earnings:**
-   Dashboard earnings yang real-time dan detailed akan memberikan transparansi kepada terapis mengenai penghasilan mereka, jumlah sesi yang telah dilakukan, dan performance metrics, sehingga dapat memotivasi dan memberikan sense of fairness.
+4. **Transparansi Penghasilan:**
+   Dasbor penghasilan yang waktu nyata dan terperinci akan memberikan transparansi kepada terapis mengenai penghasilan mereka, jumlah sesi yang telah dilakukan, dan metrik kinerja, sehingga dapat memotivasi dan memberikan rasa keadilan.
 
-5. **Professional Development:**
-   Data performance seperti rating, feedback dari klien, dan session completion rate akan memberikan insight kepada terapis mengenai area yang perlu improvement, mendukung continuous professional development mereka.
+5. **Pengembangan Profesional:**
+   Data kinerja seperti penilaian, umpan balik dari klien, dan tingkat penyelesaian sesi akan memberikan wawasan kepada terapis mengenai area yang perlu perbaikan, mendukung pengembangan profesional berkelanjutan mereka.
 
-6. **Reduced Administrative Burden:**
-   Terapis tidak perlu lagi mengurus hal-hal administratif seperti konfirmasi booking, reschedule, payment collection, atau reminder ke klien, karena semua sudah diotomasi oleh sistem, sehingga dapat fokus sepenuhnya pada delivery terapi yang berkualitas.
+6. **Pengurangan Beban Administratif:**
+   Terapis tidak perlu lagi mengurus hal-hal administratif seperti konfirmasi pemesanan, penjadwalan ulang, penagihan pembayaran, atau pengingat ke klien, karena semua sudah diotomasi oleh sistem, sehingga dapat fokus sepenuhnya pada penyampaian terapi yang berkualitas.
 
 #### 1.4.2.3 Manfaat bagi Klien
 
 1. **Kemudahan Akses Layanan:**
-   Klien dapat melakukan booking kapan saja dan di mana saja (24/7) hanya dengan beberapa klik melalui smartphone atau komputer, tanpa harus menunggu jam operasional kantor atau khawatir admin tidak responsif, mengurangi barrier to entry untuk mendapatkan bantuan mental health.
+   Klien dapat melakukan pemesanan kapan saja dan di mana saja (24/7) hanya dengan beberapa klik melalui ponsel pintar atau komputer, tanpa harus menunggu jam operasional kantor atau khawatir admin tidak responsif, mengurangi hambatan masuk untuk mendapatkan bantuan kesehatan mental.
 
 2. **Transparansi dan Informasi Lengkap:**
-   Klien dapat melihat informasi lengkap tentang layanan, profil terapis dengan credential dan spesialisasi, rating dan review dari klien lain, serta pricing yang jelas, membantu mereka membuat informed decision dan meningkatkan kepercayaan terhadap layanan.
+   Klien dapat melihat informasi lengkap tentang layanan, profil terapis dengan kredensial dan spesialisasi, penilaian dan ulasan dari klien lain, serta harga yang jelas, membantu mereka membuat keputusan yang terinformasi dan meningkatkan kepercayaan terhadap layanan.
 
-3. **Kontrol dan Autonomy:**
-   Fitur self-service seperti reschedule, cancel booking, view appointments, dan download documents memberikan sense of control dan autonomy kepada klien atas perjalanan terapi mereka, yang psikologis sangat penting untuk empowerment dan engagement.
+3. **Kontrol dan Otonomi:**
+   Fitur layanan mandiri seperti penjadwalan ulang, pembatalan pemesanan, tampilan janji temu, dan unduhan dokumen memberikan rasa kontrol dan otonomi kepada klien atas perjalanan terapi mereka, yang secara psikologis sangat penting untuk pemberdayaan dan keterlibatan.
 
-4. **Progress Visibility:**
-   Klien dapat melihat progress mereka secara objektif melalui chart dan metrics, memberikan motivasi dan hope bahwa terapi mereka effective dan kondisi mereka improving, meningkatkan adherence terhadap treatment plan.
+4. **Visibilitas Kemajuan:**
+   Klien dapat melihat kemajuan mereka secara objektif melalui diagram dan metrik, memberikan motivasi dan harapan bahwa terapi mereka efektif dan kondisi mereka membaik, meningkatkan kepatuhan terhadap rencana perawatan.
 
-5. **Privacy dan Confidentiality:**
-   Sistem yang secure dengan access control yang ketat menjamin bahwa data pribadi dan riwayat terapi klien terlindungi dengan baik, memberikan peace of mind bahwa informasi sensitif mereka tidak akan bocor atau disalahgunakan.
+5. **Privasi dan Kerahasiaan:**
+   Sistem yang aman dengan pengendalian akses yang ketat menjamin bahwa data pribadi dan riwayat terapi klien terlindungi dengan baik, memberikan ketenangan pikiran bahwa informasi sensitif mereka tidak akan bocor atau disalahgunakan.
 
-6. **Better Communication:**
-   Fitur messaging dengan terapis memungkinkan klien untuk berkomunikasi dengan mudah jika ada pertanyaan atau concerns di luar jadwal sesi, meningkatkan continuity of care dan responsiveness terhadap kebutuhan klien.
+6. **Komunikasi yang Lebih Baik:**
+   Fitur pengiriman pesan dengan terapis memungkinkan klien untuk berkomunikasi dengan mudah jika ada pertanyaan atau kekhawatiran di luar jadwal sesi, meningkatkan kesinambungan perawatan dan responsivitas terhadap kebutuhan klien.
 
 7. **Pengalaman Pengguna yang Baik:**
-   Interface yang modern, clean, dan user-friendly dengan responsive design akan memberikan pengalaman yang pleasant dan tidak overwhelming, terutama untuk klien yang sedang dalam kondisi mental yang fragile.
+   Antarmuka yang modern, bersih, dan mudah digunakan dengan desain responsif akan memberikan pengalaman yang menyenangkan dan tidak membebani, terutama untuk klien yang sedang dalam kondisi mental yang rapuh.
 
 #### 1.4.2.4 Manfaat bagi Akademik
 
 1. **Kontribusi Ilmu Pengetahuan:**
-   Penelitian ini memberikan kontribusi pada body of knowledge di bidang sistem informasi, khususnya dalam konteks aplikasi sistem informasi untuk industri layanan kesehatan mental di Indonesia, yang masih relatif minim penelitiannya dibandingkan sektor healthcare lain.
+   Penelitian ini memberikan kontribusi pada khasanah ilmu pengetahuan di bidang sistem informasi, khususnya dalam konteks aplikasi sistem informasi untuk industri layanan kesehatan mental di Indonesia, yang masih relatif minim penelitiannya dibandingkan sektor layanan kesehatan lain.
 
 2. **Referensi untuk Penelitian Selanjutnya:**
-   Laporan dan dokumentasi lengkap dari proyek ini dapat menjadi referensi bagi mahasiswa atau peneliti lain yang tertarik mengembangkan sistem serupa atau melakukan studi lanjutan tentang digital transformation di sektor kesehatan mental.
+   Laporan dan dokumentasi lengkap dari proyek ini dapat menjadi referensi bagi mahasiswa atau peneliti lain yang tertarik mengembangkan sistem serupa atau melakukan studi lanjutan tentang transformasi digital di sektor kesehatan mental.
 
-3. **Case Study untuk Pembelajaran:**
-   Proyek ini dapat dijadikan case study dalam mata kuliah terkait seperti Sistem Informasi Manajemen, Rekayasa Perangkat Lunak, Manajemen Proyek Teknologi Informasi, atau Desain Interface Pengguna, memberikan contoh nyata implementasi teori ke praktik.
+3. **Studi Kasus untuk Pembelajaran:**
+   Proyek ini dapat dijadikan studi kasus dalam mata kuliah terkait seperti Sistem Informasi Manajemen, Rekayasa Perangkat Lunak, Manajemen Proyek Teknologi Informasi, atau Desain Antarmuka Pengguna, memberikan contoh nyata implementasi teori ke praktik.
 
-4. **Best Practices Documentation:**
-   Dokumentasi metodologi, proses pengembangan, design decisions, dan lessons learned dari proyek ini dapat menjadi panduan best practices untuk pengembangan sistem informasi serupa di masa depan.
+4. **Dokumentasi Praktik Terbaik:**
+   Dokumentasi metodologi, proses pengembangan, keputusan desain, dan pelajaran yang dipetik dari proyek ini dapat menjadi panduan praktik terbaik untuk pengembangan sistem informasi serupa di masa depan.
 
 5. **Kolaborasi Industri-Akademik:**
-   Proyek ini menunjukkan kolaborasi yang efektif antara dunia akademik (Universitas Nusa Mandiri) dengan industri (CUR-HEART), memperkuat link and match antara pendidikan tinggi dengan kebutuhan dunia kerja.
+   Proyek ini menunjukkan kolaborasi yang efektif antara dunia akademik (Universitas Nusa Mandiri) dengan industri (CUR-HEART), memperkuat keterkaitan dan kesepadanan (*link and match*) antara pendidikan tinggi dengan kebutuhan dunia kerja.
 
 #### 1.4.2.5 Manfaat bagi Masyarakat Luas
 
 1. **Peningkatan Akses Kesehatan Mental:**
-   Dengan sistem yang memudahkan akses ke layanan hypnotherapy yang berkualitas, lebih banyak masyarakat yang membutuhkan akan dapat mencari bantuan untuk masalah kesehatan mental mereka, berkontribusi pada peningkatan kesejahteraan mental masyarakat Indonesia.
+   Dengan sistem yang memudahkan akses ke layanan hipnoterapi yang berkualitas, lebih banyak masyarakat yang membutuhkan akan dapat mencari bantuan untuk masalah kesehatan mental mereka, berkontribusi pada peningkatan kesejahteraan mental masyarakat Indonesia.
 
 2. **Pengurangan Stigma:**
-   Sistem digital yang modern dan profesional dapat membantu mengurangi stigma terhadap terapi kesehatan mental, dengan membuat proses mencari bantuan lebih normalized dan less intimidating, terutama bagi generasi digital native.
+   Sistem digital yang modern dan profesional dapat membantu mengurangi stigma terhadap terapi kesehatan mental, dengan membuat proses mencari bantuan lebih normal dan tidak menakutkan, terutama bagi generasi yang lahir di era digital.
 
 3. **Edukasi Kesehatan Mental:**
-   Konten edukatif di blog dan resources section dalam sistem akan meningkatkan literasi masyarakat tentang kesehatan mental, hypnotherapy, dan pentingnya self-care, berkontribusi pada awareness dan prevention.
+   Konten edukatif di blog dan bagian sumber daya dalam sistem akan meningkatkan literasi masyarakat tentang kesehatan mental, hipnoterapi, dan pentingnya perawatan diri, berkontribusi pada kesadaran dan pencegahan.
 
 4. **Model untuk UMKM Layanan Kesehatan:**
-   Proyek ini dapat menjadi model atau inspirasi bagi UMKM lain di sektor layanan kesehatan atau wellness untuk melakukan digitalisasi operasional mereka, berkontribusi pada transformasi digital ekonomi nasional.
+   Proyek ini dapat menjadi model atau inspirasi bagi UMKM lain di sektor layanan kesehatan atau kebugaran untuk melakukan digitalisasi operasional mereka, berkontribusi pada transformasi digital ekonomi nasional.
 
 5. **Penciptaan Lapangan Kerja:**
-   Sukses dan pertumbuhan CUR-HEART yang didukung oleh sistem informasi yang baik akan membuka peluang kerja baru untuk terapis, admin, IT support, dan posisi lainnya, berkontribusi pada penyerapan tenaga kerja.
+   Kesuksesan dan pertumbuhan CUR-HEART yang didukung oleh sistem informasi yang baik akan membuka peluang kerja baru untuk terapis, admin, dukungan TI, dan posisi lainnya, berkontribusi pada penyerapan tenaga kerja.
 
-**Tabel 1.3 Manfaat Penelitian untuk Stakeholders**
+**Tabel 1.3 Manfaat Penelitian untuk Pemangku Kepentingan**
 
-| Stakeholder | Manfaat Utama | Metrics/Indikator Keberhasilan | Impact |
+| Pemangku Kepentingan | Manfaat Utama | Metrik/Indikator Keberhasilan | Dampak |
 |-------------|---------------|--------------------------------|--------|
-| **CUR-HEART (Organisasi)** | Peningkatan efisiensi operasional 60%, revenue meningkat, data-driven decision making | • Reduction administrative time 60%<br>• Conversion rate 60% → 85%<br>• Okupansi terapis optimal<br>• Zero double booking | Sangat Tinggi |
-| **Terapis** | Kemudahan manajemen jadwal, efisiensi dokumentasi (15 menit → 5-7 menit), transparansi earnings | • Time saving dokumentasi 50%<br>• Work-life balance membaik<br>• Visibilitas earnings real-time<br>• Performance insights untuk improvement | Tinggi |
-| **Klien** | Booking 24/7, transparansi informasi, kontrol autonomy, progress visibility, privacy terjamin | • Booking anytime/anywhere<br>• Informed decision dengan review & rating<br>• Self-service (reschedule, cancel)<br>• Progress tracking objektif | Sangat Tinggi |
-| **Akademik** | Kontribusi ilmu pengetahuan, case study pembelajaran, best practices documentation | • Referensi penelitian lanjutan<br>• Case study untuk mata kuliah SI/RPL<br>• Kolaborasi industri-akademik | Sedang |
-| **Masyarakat** | Peningkatan akses kesehatan mental, pengurangan stigma, edukasi, model digitalisasi UMKM | • Lebih banyak akses layanan mental health<br>• Awareness kesehatan mental meningkat<br>• Inspirasi digitalisasi UMKM<br>• Penciptaan lapangan kerja | Tinggi |
+| **CUR-HEART (Organisasi)** | Peningkatan efisiensi operasional 60%, pendapatan meningkat, pengambilan keputusan berbasis data | • Pengurangan waktu administratif 60%<br>• Tingkat konversi 60% → 85%<br>• Hunian terapis optimal<br>• Nol pemesanan ganda | Sangat Tinggi |
+| **Terapis** | Kemudahan manajemen jadwal, efisiensi dokumentasi (15 menit → 5-7 menit), transparansi penghasilan | • Penghematan waktu dokumentasi 50%<br>• Keseimbangan kehidupan kerja membaik<br>• Visibilitas penghasilan waktu nyata<br>• Wawasan kinerja untuk perbaikan | Tinggi |
+| **Klien** | Pemesanan 24/7, transparansi informasi, kontrol otonomi, visibilitas kemajuan, privasi terjamin | • Pemesanan kapan saja/di mana saja<br>• Keputusan terinformasi dengan ulasan & penilaian<br>• Layanan mandiri (jadwal ulang, batal)<br>• Pelacakan kemajuan objektif | Sangat Tinggi |
+| **Akademik** | Kontribusi ilmu pengetahuan, studi kasus pembelajaran, dokumentasi praktik terbaik | • Referensi penelitian lanjutan<br>• Studi kasus untuk mata kuliah SI/RPL<br>• Kolaborasi industri-akademik | Sedang |
+| **Masyarakat** | Peningkatan akses kesehatan mental, pengurangan stigma, edukasi, model digitalisasi UMKM | • Lebih banyak akses layanan kesehatan mental<br>• Kesadaran kesehatan mental meningkat<br>• Inspirasi digitalisasi UMKM<br>• Penciptaan lapangan kerja | Tinggi |
 
-**Sumber:** Analisis dampak proyek terhadap stakeholders (September 2024)
+**Sumber:** Analisis dampak proyek terhadap pemangku kepentingan (September 2024)
 
-**Catatan:** Metrics keberhasilan akan diukur melalui User Acceptance Testing (UAT), survey kepuasan pengguna, dan monitoring KPI sistem selama 3-6 bulan pertama implementasi.
+**Catatan:** Metrik keberhasilan akan diukur melalui Pengujian Penerimaan Pengguna (*User Acceptance Testing*/UAT), survei kepuasan pengguna, dan pemantauan KPI sistem selama 3-6 bulan pertama implementasi.
 
-Dengan demikian, penelitian dan pengembangan sistem informasi manajemen booking dan terapi CUR-HEART ini memiliki potensi dampak positif yang luas, tidak hanya bagi organisasi CUR-HEART itu sendiri, tetapi juga bagi terapis, klien, komunitas akademik, dan masyarakat luas dalam upaya meningkatkan akses dan kualitas layanan kesehatan mental di Indonesia.
+Dengan demikian, penelitian dan pengembangan sistem informasi manajemen pemesanan dan terapi CUR-HEART ini memiliki potensi dampak positif yang luas, tidak hanya bagi organisasi CUR-HEART itu sendiri, tetapi juga bagi terapis, klien, komunitas akademik, dan masyarakat luas dalam upaya meningkatkan akses dan kualitas layanan kesehatan mental di Indonesia.
 
 ---
