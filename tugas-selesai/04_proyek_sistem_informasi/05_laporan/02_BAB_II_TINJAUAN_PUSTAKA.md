@@ -354,60 +354,60 @@ Meskipun menggunakan Air Terjun, beberapa adaptasi dilakukan:
 
 ---
 
-### 2.1.4 Hypnotherapy dan Kesehatan Mental
+### 2.1.4 Hipnoterapi dan Kesehatan Mental
 
-#### 2.1.4.1 Pengertian Hypnotherapy
+#### 2.1.4.1 Pengertian Hipnoterapi
 
-Hipnoterapi adalah bentuk terapi komplementer yang menggunakan teknik hipnosis untuk membantu individu mencapai perubahan positif dalam pikiran, perasaan, dan perilaku mereka (*American Psychological Association*, 2020). Menurut Yapko (2012), hipnoterapi adalah aplikasi terapeutik dari hipnosis yang melibatkan relaksasi terpandu (*guided relaxation*), konsentrasi intens, dan perhatian terfokus untuk mencapai keadaan kesadaran yang meningkat (*trance state*).
+Hipnoterapi (*hypnotherapy*) adalah bentuk terapi komplementer yang menggunakan teknik hipnosis untuk membantu individu mencapai perubahan positif dalam pikiran, perasaan, dan perilaku mereka (*American Psychological Association*, 2020). Menurut Yapko (2012), hipnoterapi adalah aplikasi terapeutik dari hipnosis yang melibatkan relaksasi terpandu (*guided relaxation*), konsentrasi intens, dan perhatian terfokus untuk mencapai keadaan kesadaran yang meningkat (*trance state*).
 
 Dalam keadaan *trance*, klien menjadi lebih reseptif terhadap saran yang diberikan oleh terapis. Hal ini memungkinkan akses ke pikiran bawah sadar (*unconscious mind*) di mana kepercayaan, kenangan, dan emosi disimpan. Melalui saran yang dirancang dengan hati-hati, terapis dapat membantu klien mengubah pola pikir, mengatasi trauma, mengurangi kecemasan, dan melakukan perubahan perilaku yang diinginkan.
 
 ---
 
-**[GAMBAR 2.4 - Mekanisme Hypnotherapy pada Otak]**
+**[GAMBAR 2.4 - Mekanisme Hipnoterapi pada Otak]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT BRAIN DIAGRAM DENGAN HYPNOTHERAPY MECHANISM]     │
+│   [INSERT BRAIN DIAGRAM DENGAN MEKANISME HIPNOTERAPI]      │
 │                                                             │
 │   Konten yang harus ditampilkan:                           │
-│   - Diagram otak (side view)                               │
-│   - Label bagian: Conscious Mind, Subconscious Mind        │
-│   - Arrows showing hypnotherapy process flow               │
-│   - Brainwave states: Beta → Alpha → Theta                 │
-│   - Text boxes explaining each stage                       │
+│   - Diagram otak (tampilan samping)                        │
+│   - Label bagian: Pikiran Sadar, Pikiran Bawah Sadar      │
+│   - Anak panah menunjukkan alur proses hipnoterapi         │
+│   - Keadaan gelombang otak: Beta → Alpha → Theta          │
+│   - Kotak teks menjelaskan setiap tahapan                  │
 │                                                             │
-│   Stages:                                                  │
-│   1. Normal State (Beta waves 14-30 Hz)                    │
-│      - Conscious mind active                               │
-│      - Analytical, logical thinking                        │
+│   Tahapan:                                                 │
+│   1. Keadaan Normal (Gelombang Beta 14-30 Hz)              │
+│      - Pikiran sadar aktif                                 │
+│      - Pemikiran analitis dan logis                        │
 │                                                             │
-│   2. Relaxation (Alpha waves 8-14 Hz)                      │
-│      - Beginning of trance                                 │
-│      - Mind-body connection                                │
+│   2. Relaksasi (Gelombang Alpha 8-14 Hz)                   │
+│      - Awal keadaan *trance*                               │
+│      - Koneksi pikiran-tubuh                               │
 │                                                             │
-│   3. Trance State (Theta waves 4-8 Hz)                     │
-│      - Subconscious access                                 │
-│      - Heightened suggestibility                           │
-│      - Memory processing                                   │
+│   3. Keadaan *Trance* (Gelombang Theta 4-8 Hz)             │
+│      - Akses ke pikiran bawah sadar                        │
+│      - Peningkatan daya terima saran                       │
+│      - Pemrosesan memori                                   │
 │                                                             │
-│   Format: Medical/scientific illustration style            │
-│   Recommended size: 1200x800px                             │
-│   Style: Professional medical diagram dengan color-coding  │
+│   Format: Gaya ilustrasi medis/ilmiah                      │
+│   Ukuran yang disarankan: 1200x800px                       │
+│   Gaya: Diagram medis profesional dengan kode warna       │
 │                                                             │
-│   File: assets/images/hypnotherapy-brain-mechanism.png     │
+│   File: assets/images/hipnoterapi-mekanisme-otak.png       │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 2.4: Mekanisme kerja hypnotherapy pada otak manusia yang memengaruhi conscious dan subconscious mind melalui perubahan brainwave states_
+_Gambar 2.4: Mekanisme kerja hipnoterapi pada otak manusia yang memengaruhi pikiran sadar dan pikiran bawah sadar melalui perubahan keadaan gelombang otak_
 
 ---
 
-#### 2.1.4.2 Efektivitas Hypnotherapy
+#### 2.1.4.2 Efektivitas Hipnoterapi
 
-Berbagai penelitian ilmiah telah membuktikan efektivitas hypnotherapy dalam menangani berbagai kondisi psikologis:
+Berbagai penelitian ilmiah telah membuktikan efektivitas hipnoterapi dalam menangani berbagai kondisi psikologis:
 
 **Studi Meta-Analisis:**
 - Kirsch et al. (1995) dalam meta-analisis terhadap 18 studi menemukan bahwa terapi kognitif-perilaku dikombinasikan dengan hipnosis memiliki ukuran efek yang lebih besar (d=0.87) dibandingkan terapi kognitif-perilaku tanpa hipnosis (d=0.51).
@@ -1505,7 +1505,7 @@ Penelitian ini relevan karena menggunakan metodologi air terjun yang sama dan me
 
 **Penelitian 2:**
 
-**Judul:** "Development of Online Mental Health Consultation Platform Using Laravel Framework"
+**Judul:** "Development of Online Mental Health Consultation Platform Using Laravel Framework" (Pengembangan Platform Konsultasi Kesehatan Mental Daring Menggunakan Kerangka Kerja Laravel)
 
 **Penulis:** Chen, X., Li, Y., & Wang, Z. (2021)
 
@@ -1582,7 +1582,7 @@ Penelitian ini membenarkan pemilihan Laravel sebagai kerangka kerja untuk proyek
 - Tidak ada analisis spesifik untuk persyaratan aplikasi kesehatan
 - Pertimbangan keamanan untuk penanganan data sensitif tidak dieksplorasi secara mendalam
 
-### 2.2.4 Penelitian tentang UI/UX untuk Healthcare
+### 2.2.4 Penelitian tentang UI/UX untuk Layanan Kesehatan
 
 **Penelitian 6:**
 
@@ -1611,7 +1611,7 @@ Penelitian ini sangat relevan untuk menginformasikan keputusan desain dalam sist
 | No | Penulis & Tahun | Judul Penelitian | Metodologi | Teknologi | Fitur Utama | Hasil/Temuan | Gap yang Teridentifikasi | Relevansi CUR-HEART |
 |----|----------------|-----------------|------------|-----------|-------------|-------------|-------------------------|-------------------|
 | 1 | Pratama & Kusumawati (2022) | Rancang Bangun Sistem Informasi Manajemen Rumah Sakit Berbasis Web dengan Metode Air Terjun | SDLC Air Terjun | PHP, MySQL, Bootstrap | • Pendaftaran pasien<br>• Rekam medis elektronik<br>• Penjadwalan dokter<br>• Sistem penagihan | • Efisiensi admin +45%<br>• Waktu tunggu -30%<br>• Implementasi sukses di RS kecil | ❌ Tidak ada fitur pelacakan kemajuan terapi<br>❌ Penjadwalan tidak fleksibel untuk terapis<br>❌ UI/UX tidak dioptimasi untuk kesehatan mental | ⚠️ SEDANG<br>**Dapat Diadopsi**: Metodologi air terjun, konsep alur pemesanan<br>**Berbeda**: Rumah sakit umum vs terapi khusus |
-| 2 | Chen, Li, & Wang (2021) | Development of Online Mental Health Consultation Platform Using Laravel Framework | *Agile* | Laravel, MySQL, WebRTC | • Konsultasi daring<br>• Penjadwalan janji temu<br>• Konferensi video<br>• Catatan pasien | • Kepuasan pengguna 85%<br>• Pengurangan ketidakhadiran 70%<br>• Sistem pengingat efektif | ❌ Tidak fokus hipnoterapi spesifik<br>❌ Pemantauan kinerja terbatas<br>❌ Verifikasi pembayaran manual | ⭐ TINGGI<br>**Dapat Diadopsi**: Arsitektur Laravel, domain kesehatan mental, sistem pengingat<br>**Ditingkatkan**: Otomasi pembayaran, analitik terapis |
+| 2 | Chen, Li, & Wang (2021) | Pengembangan Platform Konsultasi Kesehatan Mental Daring Menggunakan Kerangka Kerja Laravel | *Agile* | Laravel, MySQL, WebRTC | • Konsultasi daring<br>• Penjadwalan janji temu<br>• Konferensi video<br>• Catatan pasien | • Kepuasan pengguna 85%<br>• Pengurangan ketidakhadiran 70%<br>• Sistem pengingat efektif | ❌ Tidak fokus hipnoterapi spesifik<br>❌ Pemantauan kinerja terbatas<br>❌ Verifikasi pembayaran manual | ⭐ TINGGI<br>**Dapat Diadopsi**: Arsitektur Laravel, domain kesehatan mental, sistem pengingat<br>**Ditingkatkan**: Otomasi pembayaran, analitik terapis |
 | 3 | Wijaya & Lestari (2023) | Sistem Informasi Pemesanan Salon Kecantikan Berbasis Web dengan Fitur Penjadwalan Waktu Nyata | Purwarupa | PHP natif, MySQL, Bootstrap | • Pemesanan waktu nyata<br>• Pemilihan penyedia layanan<br>• Algoritma penjadwalan<br>• Pencegahan konflik | • Konversi pemesanan +60%<br>• Konflik penjadwalan -40%<br>• Optimasi algoritma sukses | ❌ Tidak ada dokumentasi sesi<br>❌ Tidak ada pelacakan kemajuan klien<br>❌ Layanan transaksional (bukan terapi) | ⚠️ SEDANG<br>**Dapat Diadopsi**: Alur pemesanan, ketersediaan waktu nyata, algoritma konflik<br>**Berbeda**: Layanan salon vs sesi terapi |
 | 4 | Hartono, Santoso, & Wijayanti (2022) | Aplikasi Manajemen Pemesanan dan Penjadwalan Klinik Kesehatan Menggunakan Kerangka Kerja Laravel | Air Terjun | Laravel 9, MySQL, Tailwind CSS | • Pemesanan daring<br>• Manajemen antrian<br>• Rekam medis<br>• Dasbor pelaporan | • Persyaratan fungsional 90%<br>• Kepuasan pengguna 82%<br>• Sistem stabil di produksi | ❌ Klinik umum, bukan terapi khusus<br>❌ Alur pemesanan 1 langkah sederhana<br>❌ Fitur terapis minimal | ⭐⭐ SANGAT TINGGI<br>**Dapat Diadopsi**: Tumpukan teknologi sama persis (Laravel+MySQL+Tailwind), sistem pemesanan, pelaporan<br>**Ditingkatkan**: Pemesanan multi-langkah, dasbor terapis |
 | 5 | Nugroho & Setiawan (2021) | Analisis Perbandingan Performa Kerangka Kerja PHP (Laravel, CodeIgniter, Symfony) untuk Pengembangan Aplikasi Web | Studi Komparatif | Laravel 8, CodeIgniter 4, Symfony 5 | • *Benchmarking* kinerja<br>• Analisis pemeliharaan kode<br>• Pengujian skalabilitas | • Laravel: keseimbangan terbaik produktivitas & kinerja<br>• 15% lebih lambat dari CodeIgniter<br>• Ekosistem jauh lebih baik | ❌ Tidak ada analisis spesifik untuk aplikasi kesehatan<br>❌ Keamanan untuk data sensitif tidak mendalam | ⚠️ SEDANG<br>**Dapat Diadopsi**: Bukti pemilihan Laravel, ekspektasi kinerja<br>**Nilai**: Justifikasi kerangka kerja |
@@ -1654,37 +1654,37 @@ Dengan mengatasi kesenjangan yang teridentifikasi dan membangun di atas pengetah
 │             al. 2021]   Wijaya      Rahayu      HEART     │
 │                         2022]       2023]       2024      │
 │                                                             │
-│   Key Milestones:                                          │
-│   2021: Online Mental Health Platform (Laravel+WebRTC)     │
-│   2022: Hospital Management (Waterfall+Web)                │
-│   2022: Clinic Booking (Laravel+Tailwind) ← Most similar   │
-│   2023: Salon Booking (Real-time scheduling)               │
-│   2023: UX Design for Mental Health (Research)             │
-│   2024: ★ CUR-HEART Hypnotherapy Management System         │
+│   Tonggak Pencapaian Utama:                                │
+│   2021: Platform Kesehatan Mental Daring (Laravel+WebRTC)  │
+│   2022: Manajemen Rumah Sakit (Air Terjun+Web)             │
+│   2022: Pemesanan Klinik (Laravel+Tailwind) ← Paling mirip │
+│   2023: Pemesanan Salon (Penjadwalan waktu nyata)          │
+│   2023: Desain UX untuk Kesehatan Mental (Riset)           │
+│   2024: ★ Sistem Manajemen Hipnoterapi CUR-HEART           │
 │                                                             │
-│   Evolution of Features:                                   │
-│   2020-2021: Basic booking + consultation                  │
-│   2022: + Queue management, Laravel adoption               │
-│   2023: + Real-time scheduling, UX focus                   │
-│   2024: + Progress tracking, therapist analytics,          │
-│          specialized hypnotherapy features                 │
+│   Evolusi Fitur:                                           │
+│   2020-2021: Pemesanan dasar + konsultasi                  │
+│   2022: + Manajemen antrian, adopsi Laravel                │
+│   2023: + Penjadwalan waktu nyata, fokus UX                │
+│   2024: + Pelacakan kemajuan, analitik terapis,            │
+│          fitur hipnoterapi khusus                          │
 │                                                             │
-│   Gap Analysis:                                            │
-│   Previous: General healthcare/mental health apps          │
-│   CUR-HEART: Specialized hypnotherapy management           │
-│              + Therapist-centric features                  │
-│              + Comprehensive progress tracking             │
-│              + Healthcare-grade security                   │
+│   Analisis Kesenjangan:                                    │
+│   Sebelumnya: Aplikasi kesehatan/kesehatan mental umum     │
+│   CUR-HEART: Manajemen hipnoterapi khusus                  │
+│              + Fitur berpusat pada terapis                 │
+│              + Pelacakan kemajuan komprehensif             │
+│              + Keamanan tingkat layanan kesehatan          │
 │                                                             │
-│   Format: Timeline dengan milestone markers                │
-│   Recommended size: 1400x600px (landscape)                 │
-│   Style: Modern timeline infographic                       │
+│   Format: Garis waktu dengan penanda tonggak               │
+│   Ukuran yang disarankan: 1400x600px (lanskap)             │
+│   Gaya: Infografis garis waktu modern                      │
 │                                                             │
 │   File: assets/images/penelitian-terkait-timeline.png      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 2.11: Timeline penelitian-penelitian terkait (2020-2024) yang menunjukkan evolusi sistem informasi kesehatan dan posisi proyek CUR-HEART dalam mengisi gap domain-specific hypnotherapy management_
+_Gambar 2.11: Garis waktu penelitian-penelitian terkait (2020-2024) yang menunjukkan evolusi sistem informasi kesehatan dan posisi proyek CUR-HEART dalam mengisi kesenjangan manajemen hipnoterapi khusus domain_
 
 ---
