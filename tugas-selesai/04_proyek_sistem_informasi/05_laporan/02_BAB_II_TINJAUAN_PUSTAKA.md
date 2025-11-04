@@ -9,11 +9,11 @@
 
 Sistem informasi merupakan kombinasi terorganisir dari manusia, perangkat keras (*hardware*), perangkat lunak (*software*), jaringan komunikasi, dan sumber daya data yang mengumpulkan, mengubah, dan menyebarkan informasi dalam sebuah organisasi (O'Brien & Marakas, 2017). Menurut Laudon & Laudon (2020), sistem informasi adalah seperangkat komponen yang saling berhubungan yang berfungsi mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan, koordinasi, kontrol, analisis, dan visualisasi dalam sebuah organisasi.
 
-Whitten & Bentley (2019) mendefinisikan sistem informasi sebagai pengaturan orang, data, proses, dan teknologi informasi yang berinteraksi untuk mengumpulkan, memproses, menyimpan, dan menyediakan sebagai keluaran informasi yang dibutuhkan untuk mendukung sebuah organisasi. Definisi ini menekankan bahwa sistem informasi bukan hanya tentang teknologi, tetapi juga tentang bagaimana teknologi tersebut digunakan oleh manusia untuk mencapai tujuan organisasi.
+Whitten & Bentley (2019) mendefinisikan sistem informasi sebagai pengaturan orang, data, proses, dan teknologi informasi yang berinteraksi untuk mengumpulkan, memproses, menyimpan, dan menyediakan informasi yang dibutuhkan sebagai keluaran untuk mendukung sebuah organisasi. Definisi ini menekankan bahwa sistem informasi bukan hanya tentang teknologi, tetapi juga tentang bagaimana teknologi tersebut digunakan oleh manusia untuk mencapai tujuan organisasi.
 
 Stair & Reynolds (2018) menjelaskan bahwa sistem informasi terdiri dari lima komponen utama yang saling berinteraksi:
 
-1. **Perangkat Keras (*Hardware*):** Komputer, server, perangkat penyimpanan, dan peralatan lainnya yang digunakan untuk masukan, proses, dan keluaran data.
+1. **Perangkat Keras (*Hardware*):** Komputer, server, perangkat penyimpanan, dan peralatan lainnya yang digunakan untuk memasukkan, memproses, dan mengeluarkan data.
 
 2. **Perangkat Lunak (*Software*):** Program dan aplikasi yang memberikan instruksi kepada perangkat keras untuk melakukan pemrosesan data, termasuk sistem operasi, sistem manajemen basis data, dan aplikasi bisnis.
 
@@ -78,7 +78,7 @@ Menurut Laudon & Laudon (2020), sistem informasi dalam organisasi dapat dikatego
    Sistem yang membantu manajemen dalam membuat keputusan semi-terstruktur atau tidak terstruktur melalui analisis data dan pemodelan.
 
 4. **Sistem Pendukung Eksekutif (*Executive Support System*/ESS):**
-   Sistem yang dirancang untuk membantu eksekutif senior dalam melakukan perencanaan strategis dan pengambilan keputusan melalui dasbor dan laporan ringkasan.
+   Sistem yang dirancang untuk membantu eksekutif senior melakukan perencanaan strategis dan pengambilan keputusan melalui dasbor dan laporan ringkasan.
 
 Dalam konteks proyek ini, sistem informasi CUR-HEART termasuk kategori **Sistem Pemrosesan Transaksi (TPS)** karena menangani transaksi pemesanan, pembayaran, dan dokumentasi sesi terapi, serta **Sistem Informasi Manajemen (MIS)** karena menyediakan pelaporan dan analitik untuk mendukung pengambilan keputusan manajerial.
 
@@ -155,7 +155,7 @@ Dalam perkembangan modern, Kendala Tiga Sisi diperluas menjadi **Segitiga Manaje
 │   7️⃣  Communications Management                            │
 │   8️⃣  Risk Management                                      │
 │   9️⃣  Procurement Management                               │
-│   🔟 Stakeholder Management                                │
+│   🔟 Manajemen Pemangku Kepentingan                        │
 │                                                             │
 │   Format: Circular/radial diagram atau hexagon layout      │
 │   Style: Color-coded per knowledge area                    │
@@ -188,7 +188,7 @@ Model Air Terjun (*Waterfall*), yang pertama kali diperkenalkan oleh Winston Roy
 1. **Proses Sekuensial (*Sequential Process*):** Setiap fase harus diselesaikan sepenuhnya sebelum fase berikutnya dimulai.
 2. **Didorong Dokumentasi (*Documentation-Driven*):** Setiap fase menghasilkan dokumentasi yang lengkap sebagai masukan untuk fase berikutnya.
 3. **Perencanaan Prediktif (*Predictive Planning*):** Semua persyaratan didefinisikan di awal proyek dan diharapkan tidak berubah.
-4. **Tinjauan Formal (*Formal Reviews*):** Setiap fase diakhiri dengan tinjauan formal atau persetujuan sebelum melanjutkan.
+4. **Tinjauan Formal (*Formal Reviews*):** Setiap fase diakhiri dengan tinjauan formal atau persetujuan sebelum melanjutkan ke fase berikutnya.
 
 **Tahapan Model Air Terjun:**
 
@@ -212,7 +212,7 @@ Model Air Terjun (*Waterfall*), yang pertama kali diperkenalkan oleh Winston Roy
 
 4. **Pengujian (*Testing*):**
    - Pengujian integrasi untuk menguji interaksi antar modul
-   - Pengujian sistem untuk menguji sistem secara keseluruhan
+   - Pengujian sistem untuk menguji keseluruhan sistem
    - Pengujian Penerimaan Pengguna (*User Acceptance Testing*/UAT) dengan keterlibatan pengguna
    - Perbaikan *bug* dan pengujian ulang
 
@@ -220,7 +220,7 @@ Model Air Terjun (*Waterfall*), yang pertama kali diperkenalkan oleh Winston Roy
    - Instalasi sistem di lingkungan produksi
    - Migrasi data dari sistem lama (jika ada)
    - Pelatihan pengguna dan transfer pengetahuan
-   - Peluncuran (*go-live*) dan serah terima ke tim operasi
+   - Peluncuran dan serah terima ke tim operasi
 
 6. **Pemeliharaan (*Maintenance*):**
    - Perbaikan *bug* dan resolusi masalah
@@ -237,7 +237,7 @@ Model Air Terjun (*Waterfall*), yang pertama kali diperkenalkan oleh Winston Roy
 │                                                             │
 │   [INSERT WATERFALL DIAGRAM]                               │
 │                                                             │
-│   6 Fase Sequential (top to bottom):                       │
+│   6 Fase Berurutan (dari atas ke bawah):                   │
 │   ┌────────────────────────────┐                           │
 │   │ 1. REQUIREMENTS ANALYSIS   │                           │
 │   └────────────────────────────┘                           │
@@ -272,7 +272,7 @@ Model Air Terjun (*Waterfall*), yang pertama kali diperkenalkan oleh Winston Roy
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 2.3: Model Waterfall SDLC dengan 6 fase sequential yang digunakan dalam pengembangan sistem CUR-HEART_
+_Gambar 2.3: Model Waterfall SDLC dengan 6 fase berurutan yang digunakan dalam pengembangan sistem CUR-HEART_
 
 ---
 
@@ -313,7 +313,7 @@ Selain Waterfall, terdapat beberapa model SDLC lain yang populer. Berikut adalah
 | **Air Terjun** (*Waterfall*) | • Sekuensial, linear<br>• Berbasis dokumentasi<br>• Perencanaan prediktif<br>• Tinjauan fase formal | 1. Persyaratan<br>2. Desain<br>3. Implementasi<br>4. Pengujian<br>5. Penerapan<br>6. Pemeliharaan | • Mudah dipahami & dikelola<br>• Dokumentasi lengkap<br>• Kemajuan terukur<br>• Tonggak jelas<br>• Cocok untuk tim kecil | • Tidak fleksibel terhadap perubahan<br>• Perangkat lunak berfungsi di akhir<br>• Risiko tinggi jika kesalahan di awal<br>• Keterlibatan pelanggan terbatas | • Persyaratan jelas & stabil<br>• Proyek terstruktur<br>• Garis waktu tetap<br>• Dokumentasi penting | ✅ **95%** (DIPILIH)<br>Alasan: Persyaratan stabil, garis waktu tetap (11 minggu), dokumentasi akademik |
 | ***Agile* (Scrum)** | • Iteratif & inkremental<br>• Fleksibel & adaptif<br>• Kolaborasi berkelanjutan<br>• *Sprint* (2-4 minggu) | Iterasi berulang:<br>1. Perencanaan *Sprint*<br>2. *Daily Standups*<br>3. Pengembangan<br>4. Tinjauan *Sprint*<br>5. Retrospektif | • Fleksibel terhadap perubahan<br>• Luaran sering<br>• Keterlibatan pelanggan tinggi<br>• Mitigasi risiko<br>• Kolaborasi tim | • Garis waktu kurang dapat diprediksi<br>• Dokumentasi minimal<br>• Memerlukan tim berpengalaman<br>• Risiko perluasan cakupan<br>• Komitmen harian diperlukan | • Persyaratan berkembang<br>• Pelanggan tersedia harian<br>• Tim berpengalaman<br>• Proyek jangka panjang | ⚠️ **60%**<br>Perhatian: Garis waktu ketat, tim baru, dokumentasi akademik diperlukan |
 | **Spiral** | • Berbasis risiko<br>• Purwarupa iteratif<br>• Putaran berganda<br>• Analisis risiko setiap putaran | Putaran berulang:<br>1. Perencanaan<br>2. Analisis Risiko<br>3. Rekayasa<br>4. Evaluasi | • Manajemen risiko sangat baik<br>• Fleksibilitas tinggi<br>• Purwarupa awal<br>• Cocok untuk proyek kompleks | • Kompleks untuk dikelola<br>• Mahal (analisis risiko)<br>• Memerlukan ahli risiko<br>• Memakan waktu | • Proyek berisiko tinggi<br>• Sistem besar & kompleks<br>• Persyaratan tidak pasti<br>• Aplikasi kritis | ❌ **40%**<br>Perhatian: Berlebihan untuk skala proyek, tidak ada ahli risiko, biaya tinggi |
-| **Model-V** (*V-Model*) | • Ekstensi Air Terjun<br>• Penekanan pengujian<br>• Verifikasi & Validasi<br>• Setiap fase dev = fase uji | Sekuensial dengan pengujian paralel:<br>1. Persyaratan → Uji Penerimaan<br>2. Desain → Uji Sistem<br>3. Desain Modul → Uji Integrasi<br>4. Pengodean → Uji Unit | • Jaminan kualitas tinggi<br>• Perencanaan uji awal<br>• Luaran jelas<br>• Baik untuk kritis-keselamatan | • Kaku seperti Air Terjun<br>• Tidak fleksibel<br>• Memerlukan persyaratan lengkap<br>• Pengujian mahal | • Sistem kritis-keselamatan<br>• Aplikasi medis/penerbangan<br>• Keandalan tinggi diperlukan<br>• Persyaratan jelas | ⚠️ **50%**<br>Perhatian: Berlebihan untuk pengujian, bukan kritis-keselamatan, terlalu kaku |
+| **Model-V** (*V-Model*) | • Ekstensi Air Terjun<br>• Penekanan pengujian<br>• Verifikasi & Validasi<br>• Setiap fase pengembangan = fase uji | Sekuensial dengan pengujian paralel:<br>1. Persyaratan → Uji Penerimaan<br>2. Desain → Uji Sistem<br>3. Desain Modul → Uji Integrasi<br>4. Pengodean → Uji Unit | • Jaminan kualitas tinggi<br>• Perencanaan uji awal<br>• Luaran jelas<br>• Baik untuk kritis-keselamatan | • Kaku seperti Air Terjun<br>• Tidak fleksibel<br>• Memerlukan persyaratan lengkap<br>• Pengujian mahal | • Sistem kritis-keselamatan<br>• Aplikasi medis/penerbangan<br>• Keandalan tinggi diperlukan<br>• Persyaratan jelas | ⚠️ **50%**<br>Perhatian: Berlebihan untuk pengujian, bukan kritis-keselamatan, terlalu kaku |
 | **RAD** (*Rapid Application Development*) | • Purwarupa cepat<br>• Berfokus pengguna<br>• *Timeboxed* (60-90 hari)<br>• Komponen dapat digunakan ulang | 1. Perencanaan Persyaratan<br>2. Desain Pengguna (lokakarya JAD)<br>3. Konstruksi (purwarupa)<br>4. *Cutover* (pengujian & penerapan) | • Pengembangan cepat<br>• Keterlibatan pengguna tinggi<br>• Pengodean manual berkurang<br>• Umpan balik awal | • Memerlukan pengembang terampil<br>• Tidak dapat diskalakan untuk tim besar<br>• Masalah kinerja mungkin<br>• Bergantung pada tim kuat | • Proyek kritis-waktu<br>• Proyek kecil-menengah<br>• Sistem modular<br>• Tim berpengalaman | ⚠️ **70%**<br>Potensi: Pengiriman cepat, tapi dokumentasi kurang, tim belum berpengalaman RAD |
 | **DevOps** | • Integrasi Dev + Ops<br>• *Pipeline* CI/CD<br>• Otomasi berat<br>• Pemantauan berkelanjutan | Siklus berkelanjutan:<br>1. Rencana<br>2. Kode<br>3. *Build*<br>4. Uji (otomatis)<br>5. Rilis<br>6. Terapkan<br>7. Operasikan<br>8. Pantau | • Pengiriman cepat<br>• Otomasi & efisiensi<br>• Umpan balik berkelanjutan<br>• Keandalan tinggi<br>• Skalabilitas | • Memerlukan budaya DevOps<br>• Pengaturan awal kompleks<br>• Kurva belajar perangkat<br>• Perlu keahlian otomasi | • Aplikasi *cloud-native*<br>• *Microservices*<br>• Rilis sering<br>• Organisasi besar | ❌ **35%**<br>Perhatian: Overhead pengaturan, aplikasi monolitik, penerapan tunggal, tim belum siap DevOps |
 | **Iteratif** (*Iterative*) | • Siklus berulang<br>• Peningkatan bertahap<br>• Bangun-tingkatkan-bangun<br>• Versi berfungsi awal | Iterasi berulang:<br>1. Analisis<br>2. Desain<br>3. Implementasi<br>4. Pengujian<br>→ Ulangi dengan peningkatan | • Sistem berfungsi awal<br>• Pelajaran diterapkan<br>• Pengurangan risiko<br>• Fleksibilitas | • Memerlukan perencanaan baik<br>• Overhead manajemen<br>• Perubahan cakupan bisa mahal | • Proyek menengah<br>• Beberapa ketidakpastian<br>• Penyempurnaan progresif | ⚠️ **65%**<br>Potensi: Baik untuk pembelajaran, tapi kendala garis waktu, overhead manajemen |
@@ -323,20 +323,20 @@ Selain Waterfall, terdapat beberapa model SDLC lain yang populer. Berikut adalah
 
 | Kriteria | Weight | Waterfall Score | Agile Score | Spiral Score | RAD Score | DevOps Score | Winner |
 |------------------|--------|----------------|------------|-------------|-----------|-------------|--------|
-| **Requirements Clarity** | 20% | 5/5 (Very clear) | 3/5 (Flexible) | 4/5 (Risk-driven) | 3/5 (Evolving) | 3/5 (Continuous) | **Waterfall** |
-| **Timeline Constraints** | 20% | 5/5 (Predictable) | 2/5 (Variable) | 2/5 (Complex) | 4/5 (Fast) | 3/5 (Setup time) | **Waterfall** |
-| **Team Experience** | 15% | 5/5 (Easy) | 3/5 (Needs exp) | 2/5 (Complex) | 3/5 (Skilled) | 2/5 (DevOps exp) | **Waterfall** |
-| **Documentation Needs** | 15% | 5/5 (Excellent) | 2/5 (Minimal) | 4/5 (Good) | 2/5 (Limited) | **Waterfall** |
-| **Budget Constraints** | 10% | 5/5 (Low cost) | 3/5 (Medium) | 2/5 (High) | 4/5 (Fast=cheap) | 2/5 (Tooling cost) | **Waterfall** |
-| **Flexibility Needs** | 10% | 2/5 (Rigid) | 5/5 (Very flexible) | 5/5 (Iterative) | 4/5 (Flexible) | 4/5 (Adaptive) | **Agile/Spiral** |
-| **Risk Level** | 5% | 2/5 (High early risk) | 4/5 (Mitigated) | 5/5 (Risk-focused) | 3/5 (Medium) | 4/5 (Continuous) | **Spiral** |
-| **Project Size** | 5% | 5/5 (Small-medium) | 4/5 (Scalable) | 3/5 (Large) | 5/5 (Small-medium) | 3/5 (Large) | **Waterfall/RAD** |
-| **TOTAL WEIGHTED SCORE** | 100% | **4.6/5 (92%)** | **3.1/5 (62%)** | **3.4/5 (68%)** | **3.4/5 (68%)** | **2.7/5 (54%)** | **✅ WATERFALL** |
+| **Kejelasan Persyaratan** | 20% | 5/5 (Very clear) | 3/5 (Flexible) | 4/5 (Risk-driven) | 3/5 (Evolving) | 3/5 (Continuous) | **Waterfall** |
+| **Kendala Waktu** | 20% | 5/5 (Predictable) | 2/5 (Variable) | 2/5 (Complex) | 4/5 (Fast) | 3/5 (Setup time) | **Waterfall** |
+| **Pengalaman Tim** | 15% | 5/5 (Easy) | 3/5 (Needs exp) | 2/5 (Complex) | 3/5 (Skilled) | 2/5 (DevOps exp) | **Waterfall** |
+| **Kebutuhan Dokumentasi** | 15% | 5/5 (Excellent) | 2/5 (Minimal) | 4/5 (Good) | 2/5 (Limited) | **Waterfall** |
+| **Kendala Anggaran** | 10% | 5/5 (Low cost) | 3/5 (Medium) | 2/5 (High) | 4/5 (Fast=cheap) | 2/5 (Tooling cost) | **Waterfall** |
+| **Kebutuhan Fleksibilitas** | 10% | 2/5 (Rigid) | 5/5 (Very flexible) | 5/5 (Iterative) | 4/5 (Flexible) | 4/5 (Adaptive) | **Agile/Spiral** |
+| **Tingkat Risiko** | 5% | 2/5 (High early risk) | 4/5 (Mitigated) | 5/5 (Risk-focused) | 3/5 (Medium) | 4/5 (Continuous) | **Spiral** |
+| **Ukuran Proyek** | 5% | 5/5 (Small-medium) | 4/5 (Scalable) | 3/5 (Large) | 5/5 (Small-medium) | 3/5 (Large) | **Waterfall/RAD** |
+| **TOTAL SKOR BERBOBOT** | 100% | **4.6/5 (92%)** | **3.1/5 (62%)** | **3.4/5 (68%)** | **3.4/5 (68%)** | **2.7/5 (54%)** | **✅ WATERFALL** |
 
 **Final Decision: Waterfall Model ✅**
 
 **Alasan Pemilihan untuk CUR-HEART:**
-1. ✅ **Stabilitas Persyaratan**: Persyaratan sudah jelas dari analisis bisnis yang ada di CUR-HEART
+1. ✅ **Persyaratan yang Jelas dan Stabil**: Persyaratan sistem sudah terdefinisi dengan jelas berdasarkan analisis proses bisnis CUR-HEART yang ada
 2. ✅ **Garis Waktu Tetap**: Semester akademik = 11 minggu (tidak dapat dinegosiasikan)
 3. ✅ **Dokumentasi**: Proyek akhir (*Capstone project*) memerlukan dokumentasi lengkap untuk penilaian
 4. ✅ **Struktur Tim**: Tim kecil (3 orang) dengan struktur jelas, mudah koordinasi dengan Air Terjun
@@ -460,7 +460,7 @@ Sebelum memilih Laravel, dilakukan evaluasi terhadap berbagai PHP frameworks pop
 
 **Tabel 2.2 Perbandingan PHP Frameworks**
 
-| Framework | Version (2024) | Architecture | Learning Curve | Performance | Community | Features | Database ORM | Best For | CUR-HEART Score |
+| Framework | Versi (2024) | Architecture | Learning Curve | Performance | Community | Features | Database ORM | Best For | CUR-HEART Score |
 |-----------|---------------|-------------|---------------|-------------|-----------|----------|--------------|----------|----------------|
 | **Laravel** | 10.x | MVC | Medium | Good | ⭐⭐⭐⭐⭐ Largest | Full-stack, Eloquent ORM, Blade, Artisan, Queue, Auth | Eloquent (Active Record) | Full-stack web apps, APIs, rapid development | ✅ **95%** DIPILIH |
 | **Symfony** | 6.x | MVC/Components | Steep | Excellent | ⭐⭐⭐⭐ Large | Highly modular, reusable components, enterprise-grade | Doctrine (Data Mapper) | Enterprise apps, large teams, flexibility | ⚠️ 60% Too complex |
@@ -832,7 +832,7 @@ Sebelum memilih MySQL, dilakukan evaluasi berbagai database systems:
 | Kriteria | Bobot | MySQL | PostgreSQL | MongoDB | SQLite | Pemenang |
 |----------|--------|-------|------------|---------|--------|--------|
 | **Kesesuaian Data Relasional** | 25% | 5/5 (Sempurna untuk data terstruktur) | 5/5 (Sangat baik) | 2/5 (Model dokumen) | 5/5 (Relasional) | **MySQL/PostgreSQL** |
-| **Integrasi Laravel** | 20% | 5/5 (Dukungan *first-class*) | 5/5 (Sangat baik) | 4/5 (Baik via paket) | 4/5 (Dev saja) | **MySQL/PostgreSQL** |
+| **Integrasi Laravel** | 20% | 5/5 (Dukungan utama) | 5/5 (Sangat baik) | 4/5 (Baik via paket) | 4/5 (Dev saja) | **MySQL/PostgreSQL** |
 | **Biaya (Anggaran Rp 5 juta)** | 15% | 5/5 (Gratis, sumber terbuka) | 5/5 (Gratis) | 4/5 (Gratis, opsi komersial) | 5/5 (Gratis) | **Semua sumber terbuka** |
 | **Kinerja** | 15% | 5/5 (Cepat untuk aplikasi web) | 5/5 (Kueri kompleks lebih baik) | 5/5 (*Writes* cepat) | 3/5 (Terbatas) | **MySQL/PostgreSQL** |
 | **Ketersediaan *Hosting*** | 10% | 5/5 (Semua *hosting* punya) | 4/5 (Sebagian besar *hosting*) | 3/5 (*Hosting* khusus) | 3/5 (Tidak untuk produksi) | **MySQL** |
