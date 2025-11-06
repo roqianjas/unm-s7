@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Sesi - Jadwal & Waktu - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .date-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .date-card:hover {
+            transform: translateY(-2px);
+        }
+        .date-card.selected {
+            background: linear-gradient(135deg, #1E0E62 0%, #FF6B7A 100%);
+            color: white;
+            border-color: #1E0E62;
+        }
+        .time-slot {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .time-slot:hover {
+            transform: translateY(-2px);
+        }
+        .time-slot.selected {
+            background: linear-gradient(135deg, #1E0E62 0%, #FF6B7A 100%);
+            color: white;
+            border-color: #1E0E62;
+        }
+        .time-slot.unavailable {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .time-slot.unavailable:hover {
+            transform: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <a href="26_client_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Budi Santoso</div>
+                            <div class="text-xs text-gray-500">Klien</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="17_client_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="18_booking_step1.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span class="font-medium">Booking Sesi</span>
+                    </a>
+                    <a href="23_client_appointments.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Janji Temu</span>
+                    </a>
+                    <a href="25_client_progress.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Progress Saya</span>
+                    </a>
+                    <a href="26_client_messages.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Pesan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Progress Steps -->
+            <div class="max-w-5xl mx-auto mb-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-cur-success text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-cur-success">Pilih Layanan</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-cur-success mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-cur-success text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-cur-success">Pilih Terapis</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-cur-success mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            3
+                        </div>
+                        <span class="text-sm font-semibold text-cur-primary">Jadwal & Waktu</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-200 mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold mb-2">
+                            4
+                        </div>
+                        <span class="text-sm text-gray-500">Konfirmasi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="max-w-5xl mx-auto mb-8">
+                <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Pilih Jadwal & Waktu</h1>
+                <p class="text-gray-600">Pilih tanggal dan waktu yang tersedia untuk sesi terapi dengan <span class="font-semibold text-cur-primary">Dr. Sarah Johnson</span></p>
+            </div>
+
+            <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Left Column - Calendar -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Month Navigation -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <button class="p-2 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-chevron-left text-gray-600"></i>
+                            </button>
+                            <h2 class="text-xl font-heading font-bold text-gray-800">Oktober 2024</h2>
+                            <button class="p-2 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-chevron-right text-gray-600"></i>
+                            </button>
+                        </div>
+
+                        <!-- Dates Grid -->
+                        <div class="grid grid-cols-7 gap-3">
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">MIN</div>
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">SEN</div>
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">SEL</div>
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">RAB</div>
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">KAM</div>
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">JUM</div>
+                            <div class="text-center text-xs font-semibold text-gray-500 py-2">SAB</div>
+
+                            <!-- Empty cells for alignment -->
+                            <div></div><div></div><div></div><div></div>
+
+                            <!-- Date 1 -->
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">1</div>
+                                <div class="text-xs text-gray-400 mt-1">Tidak tersedia</div>
+                            </div>
+
+                            <!-- Dates 2-24 (past) -->
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">2</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">3</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">4</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">5</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">6</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">7</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">8</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">9</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">10</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">11</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">12</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">13</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">14</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">15</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">16</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">17</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">18</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">19</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">20</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">21</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">22</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">23</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center opacity-50">
+                                <div class="text-sm font-semibold text-gray-400">24</div>
+                            </div>
+
+                            <!-- Today - 25 -->
+                            <div class="date-card border-2 border-cur-primary rounded-lg p-3 text-center bg-cur-primary/5" onclick="selectDate(this, '2024-10-25')">
+                                <div class="text-sm font-bold text-cur-primary">25</div>
+                                <div class="text-xs text-cur-primary mt-1">Hari Ini</div>
+                            </div>
+
+                            <!-- Available dates -->
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center" onclick="selectDate(this, '2024-10-26')">
+                                <div class="text-sm font-semibold text-gray-800">26</div>
+                                <div class="text-xs text-cur-success mt-1">5 slot</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center" onclick="selectDate(this, '2024-10-27')">
+                                <div class="text-sm font-semibold text-gray-800">27</div>
+                                <div class="text-xs text-cur-success mt-1">8 slot</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center" onclick="selectDate(this, '2024-10-28')">
+                                <div class="text-sm font-semibold text-gray-800">28</div>
+                                <div class="text-xs text-cur-success mt-1">6 slot</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center" onclick="selectDate(this, '2024-10-29')">
+                                <div class="text-sm font-semibold text-gray-800">29</div>
+                                <div class="text-xs text-cur-success mt-1">7 slot</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center" onclick="selectDate(this, '2024-10-30')">
+                                <div class="text-sm font-semibold text-gray-800">30</div>
+                                <div class="text-xs text-cur-success mt-1">4 slot</div>
+                            </div>
+                            <div class="date-card border-2 border-gray-200 rounded-lg p-3 text-center" onclick="selectDate(this, '2024-10-31')">
+                                <div class="text-sm font-semibold text-gray-800">31</div>
+                                <div class="text-xs text-cur-success mt-1">9 slot</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Slots -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-heading font-bold text-gray-800 mb-4">Pilih Waktu Sesi</h3>
+                        <p class="text-sm text-gray-600 mb-4" id="selectedDateText">Pilih tanggal terlebih dahulu</p>
+
+                        <!-- Morning -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-2 mb-3">
+                                <i class="fas fa-sun text-cur-warning"></i>
+                                <h4 class="font-semibold text-gray-700">Pagi (08:00 - 12:00)</h4>
+                            </div>
+                            <div class="grid grid-cols-3 md:grid-cols-4 gap-3" id="morningSlots">
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '08:00')">
+                                    08:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '09:00')">
+                                    09:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400 unavailable">
+                                    10:00
+                                    <div class="text-xs">Penuh</div>
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '11:00')">
+                                    11:00
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Afternoon -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-2 mb-3">
+                                <i class="fas fa-cloud-sun text-cur-info"></i>
+                                <h4 class="font-semibold text-gray-700">Siang (12:00 - 17:00)</h4>
+                            </div>
+                            <div class="grid grid-cols-3 md:grid-cols-4 gap-3" id="afternoonSlots">
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400 unavailable">
+                                    12:00
+                                    <div class="text-xs">Istirahat</div>
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '13:00')">
+                                    13:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '14:00')">
+                                    14:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '15:00')">
+                                    15:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '16:00')">
+                                    16:00
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Evening -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-3">
+                                <i class="fas fa-moon text-cur-primary"></i>
+                                <h4 class="font-semibold text-gray-700">Sore (17:00 - 21:00)</h4>
+                            </div>
+                            <div class="grid grid-cols-3 md:grid-cols-4 gap-3" id="eveningSlots">
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '17:00')">
+                                    17:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '18:00')">
+                                    18:00
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400 unavailable">
+                                    19:00
+                                    <div class="text-xs">Penuh</div>
+                                </div>
+                                <div class="time-slot border-2 border-gray-200 rounded-lg p-3 text-center text-sm font-medium text-gray-400" onclick="selectTime(this, '20:00')">
+                                    20:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Summary -->
+                <div class="space-y-6">
+                    <!-- Booking Summary -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6 sticky top-20">
+                        <h3 class="text-lg font-heading font-bold text-gray-800 mb-4">Ringkasan Booking</h3>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <div class="text-xs text-gray-500 mb-1">Layanan</div>
+                                <div class="font-semibold text-gray-800">Terapi Kecemasan</div>
+                                <div class="text-sm text-gray-600">60 menit</div>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-200">
+                                <div class="text-xs text-gray-500 mb-1">Terapis</div>
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                    <div>
+                                        <div class="font-semibold text-gray-800">Dr. Sarah Johnson</div>
+                                        <div class="text-sm text-gray-600">Psikolog Klinis</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-200">
+                                <div class="text-xs text-gray-500 mb-1">Tanggal & Waktu</div>
+                                <div id="summaryDateTime" class="font-semibold text-gray-400">
+                                    Belum dipilih
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-200">
+                                <div class="text-xs text-gray-500 mb-1">Lokasi</div>
+                                <div class="font-semibold text-gray-800">Online - Video Call</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-cur-primary/5 to-cur-secondary/5 rounded-xl p-4 mb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">Biaya Terapi</span>
+                                <span class="font-semibold text-gray-800">Rp 350.000</span>
+                            </div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-600">Biaya Platform</span>
+                                <span class="font-semibold text-gray-800">Rp 10.000</span>
+                            </div>
+                            <div class="pt-2 border-t border-gray-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-semibold text-gray-800">Total</span>
+                                    <span class="text-xl font-bold text-cur-primary">Rp 360.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="nextBtn" disabled class="w-full py-3 bg-gray-300 text-gray-500 font-semibold rounded-xl cursor-not-allowed mb-3">
+                            Lanjut ke Pembayaran
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+
+                        <a href="19_booking_step2.html" class="block w-full py-3 border-2 border-gray-300 text-gray-700 text-center font-semibold rounded-xl hover:bg-gray-50 transition">
+                            <i class="fas fa-arrow-left mr-2"></i>
+                            Kembali
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let selectedDate = null;
+        let selectedTime = null;
+
+        function selectDate(card, date) {
+            // Remove selected class from all date cards
+            document.querySelectorAll('.date-card').forEach(c => {
+                if (!c.classList.contains('opacity-50')) {
+                    c.classList.remove('selected');
+                }
+            });
+
+            // Add selected class to clicked card
+            card.classList.add('selected');
+            selectedDate = date;
+
+            // Update date text
+            const dateObj = new Date(date);
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('selectedDateText').textContent = dateObj.toLocaleDateString('id-ID', options);
+
+            // Enable time slots
+            document.querySelectorAll('.time-slot:not(.unavailable)').forEach(slot => {
+                slot.classList.remove('text-gray-400');
+                slot.classList.add('text-gray-800');
+            });
+
+            updateSummary();
+        }
+
+        function selectTime(card, time) {
+            if (card.classList.contains('unavailable')) return;
+            if (!selectedDate) {
+                alert('Pilih tanggal terlebih dahulu');
+                return;
+            }
+
+            // Remove selected class from all time slots
+            document.querySelectorAll('.time-slot').forEach(c => {
+                c.classList.remove('selected');
+            });
+
+            // Add selected class to clicked card
+            card.classList.add('selected');
+            selectedTime = time;
+
+            updateSummary();
+        }
+
+        function updateSummary() {
+            const summaryElement = document.getElementById('summaryDateTime');
+            const nextBtn = document.getElementById('nextBtn');
+
+            if (selectedDate && selectedTime) {
+                const dateObj = new Date(selectedDate);
+                const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+                const dateStr = dateObj.toLocaleDateString('id-ID', options);
+                summaryElement.innerHTML = `<div class="text-cur-primary">${dateStr}</div><div class="text-cur-primary mt-1">${selectedTime} WIB</div>`;
+                summaryElement.classList.remove('text-gray-400');
+                
+                // Enable next button
+                nextBtn.disabled = false;
+                nextBtn.className = 'w-full py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-xl hover:shadow-lg transition cursor-pointer mb-3';
+                nextBtn.onclick = () => {
+                    window.location.href = '21_booking_step4.html';
+                };
+            } else if (selectedDate) {
+                summaryElement.textContent = 'Pilih waktu';
+                summaryElement.classList.add('text-gray-400');
+            }
+        }
+    </script>
+</body>
+</html>

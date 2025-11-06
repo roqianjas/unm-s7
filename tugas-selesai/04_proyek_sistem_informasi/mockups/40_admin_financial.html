@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Keuangan - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="37_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="38_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="39_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="40_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="41_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Main Financial Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="md:col-span-2 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-xl shadow-lg p-8 text-white">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <p class="text-sm opacity-80 mb-1">Total Revenue Bulan Ini</p>
+                            <h3 class="text-4xl font-bold font-heading">Rp 845.000.000</h3>
+                        </div>
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-line text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+18% dari bulan lalu</span>
+                        </div>
+                        <span>•</span>
+                        <span>423 transaksi</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <i class="fas fa-hand-holding-usd text-2xl text-cur-success"></i>
+                        <span class="text-xs text-gray-500">Komisi Platform</span>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-1">253M</div>
+                    <div class="text-sm text-gray-600">30% dari revenue</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <i class="fas fa-users-cog text-2xl text-cur-info"></i>
+                        <span class="text-xs text-gray-500">Untuk Terapis</span>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-1">592M</div>
+                    <div class="text-sm text-gray-600">70% dari revenue</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Column -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Revenue Chart -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-lg font-bold text-gray-900">Trend Revenue</h3>
+                            <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                <option>6 Bulan Terakhir</option>
+                                <option>3 Bulan Terakhir</option>
+                                <option>Tahun Ini</option>
+                            </select>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-20">Mei '24</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-12 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 65%"></div>
+                                    <span class="absolute right-3 top-3 text-sm font-semibold text-gray-700">Rp 650M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-20">Jun '24</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-12 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 72%"></div>
+                                    <span class="absolute right-3 top-3 text-sm font-semibold text-gray-700">Rp 720M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-20">Jul '24</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-12 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 78%"></div>
+                                    <span class="absolute right-3 top-3 text-sm font-semibold text-gray-700">Rp 780M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-20">Agu '24</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-12 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 75%"></div>
+                                    <span class="absolute right-3 top-3 text-sm font-semibold text-gray-700">Rp 750M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-20">Sep '24</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-12 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-primary to-cur-info h-full rounded-full" style="width: 80%"></div>
+                                    <span class="absolute right-3 top-3 text-sm font-semibold text-gray-700">Rp 800M</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-sm text-gray-600 w-20">Okt '24</span>
+                                <div class="flex-1 bg-gray-100 rounded-full h-12 relative overflow-hidden">
+                                    <div class="bg-gradient-to-r from-cur-success to-green-400 h-full rounded-full" style="width: 85%"></div>
+                                    <span class="absolute right-3 top-3 text-sm font-semibold text-gray-700">Rp 845M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Transactions -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-bold text-gray-900">Transaksi Terbaru</h3>
+                                <select class="px-3 py-1 border border-gray-300 rounded-lg text-sm">
+                                    <option>Semua</option>
+                                    <option>Pembayaran</option>
+                                    <option>Withdrawal</option>
+                                    <option>Refund</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-cur-success/10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-arrow-down text-cur-success text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Pembayaran Booking</div>
+                                            <div class="text-sm text-gray-500 mt-1">Budi Santoso - Terapi Kecemasan</div>
+                                            <div class="text-xs text-gray-400 mt-1">#CH-1025-001 • 25 Okt 2024, 14:23</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="font-bold text-cur-success text-lg">+Rp 500.000</div>
+                                        <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full mt-1 inline-block">
+                                            Berhasil
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-cur-error/10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-arrow-up text-cur-error text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Withdrawal Terapis</div>
+                                            <div class="text-sm text-gray-500 mt-1">Dr. Sarah Johnson - BCA ***4829</div>
+                                            <div class="text-xs text-gray-400 mt-1">#WD-1025-003 • 25 Okt 2024, 12:15</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="font-bold text-cur-error text-lg">-Rp 6.300.000</div>
+                                        <span class="px-2 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded-full mt-1 inline-block">
+                                            Diproses
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-12 h-12 bg-cur-success/10 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-arrow-down text-cur-success text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Pembayaran Booking</div>
+                                            <div class="text-sm text-gray-500 mt-1">Ahmad Fauzi - Terapi Stress</div>
+                                            <div class="text-xs text-gray-400 mt-1">#CH-1024-087 • 24 Okt 2024, 18:42</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="font-bold text-cur-success text-lg">+Rp 500.000</div>
+                                        <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full mt-1 inline-block">
+                                            Berhasil
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-50 text-center border-t border-gray-200">
+                            <button class="text-sm text-cur-primary hover:text-cur-secondary font-semibold">
+                                Lihat Semua Transaksi <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-6">
+                    <!-- Payment Methods -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Metode Pembayaran</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-credit-card text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 text-sm">Transfer Bank</div>
+                                        <div class="text-xs text-gray-500">325 transaksi</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-gray-900">77%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-wallet text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 text-sm">E-Wallet</div>
+                                        <div class="text-xs text-gray-500">85 transaksi</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-gray-900">20%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-purple-50 rounded-lg">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-qrcode text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900 text-sm">QRIS</div>
+                                        <div class="text-xs text-gray-500">13 transaksi</div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-gray-900">3%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Commission Breakdown -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Breakdown Komisi</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Komisi Platform (30%)</span>
+                                    <span class="font-bold text-gray-900">Rp 253M</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-cur-primary h-2 rounded-full" style="width: 30%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-600">Komisi Terapis (70%)</span>
+                                    <span class="font-bold text-gray-900">Rp 592M</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-cur-info h-2 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Withdrawals -->
+                    <div class="bg-gradient-to-br from-cur-warning to-yellow-600 rounded-xl shadow-lg p-6 text-white">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-bold">Withdrawal Pending</h3>
+                            <i class="fas fa-clock text-2xl opacity-80"></i>
+                        </div>
+                        <div class="text-4xl font-bold mb-2">5</div>
+                        <div class="text-sm opacity-80 mb-4">Request menunggu approval</div>
+                        <button class="w-full px-4 py-2 bg-white text-cur-warning font-semibold rounded-lg hover:shadow-lg transition">
+                            Proses Sekarang
+                        </button>
+                    </div>
+
+                    <!-- Top Revenue Therapists -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Top Revenue Terapis</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 text-sm">Dr. Sarah Johnson</div>
+                                    <div class="text-xs text-gray-500">Rp 32.5M • 147 sesi</div>
+                                </div>
+                                <i class="fas fa-trophy text-yellow-500"></i>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Michael+Chen&background=1E0E62&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 text-sm">Dr. Michael Chen</div>
+                                    <div class="text-xs text-gray-500">Rp 29.2M • 132 sesi</div>
+                                </div>
+                                <i class="fas fa-medal text-gray-400"></i>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Lisa+Wong&background=FF6B7A&color=fff" alt="Therapist" class="w-10 h-10 rounded-full">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-900 text-sm">Dr. Lisa Wong</div>
+                                    <div class="text-xs text-gray-500">Rp 26.1M • 118 sesi</div>
+                                </div>
+                                <i class="fas fa-award text-orange-400"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Summary -->
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 class="font-bold text-gray-900 mb-4">Summary Keuangan</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Total Transaksi</span>
+                                <span class="font-bold text-gray-900">423</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Rata-rata/Transaksi</span>
+                                <span class="font-bold text-gray-900">Rp 2.0M</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Success Rate</span>
+                                <span class="font-bold text-cur-success">94.8%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Refund Rate</span>
+                                <span class="font-bold text-cur-error">5.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

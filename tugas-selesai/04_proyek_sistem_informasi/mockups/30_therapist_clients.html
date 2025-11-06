@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klien - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Dr. Sarah Johnson</div>
+                            <div class="text-xs text-gray-500">Terapis</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="27_therapist_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="28_therapist_schedule.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="font-medium">Jadwal</span>
+                    </a>
+                    <a href="29_therapist_availability.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clock"></i>
+                        <span class="font-medium">Ketersediaan</span>
+                    </a>
+                    <a href="30_therapist_clients.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Klien</span>
+                    </a>
+                    <a href="34_therapist_session_history.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-history"></i>
+                        <span class="font-medium">Riwayat Sesi</span>
+                    </a>
+                    <a href="35_therapist_earnings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-wallet"></i>
+                        <span class="font-medium">Pendapatan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="36_therapist_profile_edit.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-user-edit"></i>
+                            <span class="font-medium">Edit Profil</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Daftar Klien</h1>
+                <p class="text-gray-600">Kelola dan pantau semua klien Anda</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-cur-primary/10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-users text-cur-primary text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800">45</span>
+                    </div>
+                    <div class="text-sm text-gray-600">Total Klien</div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-cur-success/10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-user-check text-cur-success text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800">38</span>
+                    </div>
+                    <div class="text-sm text-gray-600">Aktif</div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-cur-warning/10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-user-plus text-cur-warning text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800">7</span>
+                    </div>
+                    <div class="text-sm text-gray-600">Baru Bulan Ini</div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-12 h-12 bg-cur-info/10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-chart-line text-cur-info text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gray-800">92%</span>
+                    </div>
+                    <div class="text-sm text-gray-600">Retensi Rate</div>
+                </div>
+            </div>
+
+            <!-- Filters & Search -->
+            <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Cari klien..." class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <select class="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <option>Semua Status</option>
+                        <option>Aktif</option>
+                        <option>Tidak Aktif</option>
+                        <option>Selesai</option>
+                    </select>
+                    <select class="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <option>Semua Layanan</option>
+                        <option>Terapi Kecemasan</option>
+                        <option>Manajemen Stres</option>
+                        <option>Berhenti Merokok</option>
+                        <option>Pengembangan Diri</option>
+                    </select>
+                    <select class="px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <option>Urutkan: Terbaru</option>
+                        <option>Nama A-Z</option>
+                        <option>Nama Z-A</option>
+                        <option>Sesi Terbanyak</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Clients List -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50 border-b border-gray-200">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Klien</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Layanan</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Total Sesi</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Sesi Terakhir</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Progress</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <!-- Client 1 -->
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Budi Santoso" class="w-10 h-10 rounded-full">
+                                        <div>
+                                            <div class="font-semibold text-gray-800">Budi Santoso</div>
+                                            <div class="text-xs text-gray-500">budi.santoso@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-primary/10 text-cur-primary text-xs font-medium rounded-full">
+                                        Terapi Kecemasan
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="font-semibold text-gray-800">8 sesi</div>
+                                    <div class="text-xs text-gray-500">dari 10 paket</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-800">18 Okt 2024</div>
+                                    <div class="text-xs text-gray-500">6 hari lalu</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-cur-success rounded-full h-2" style="width: 80%"></div>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-700">80%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                                        Aktif
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="31_client_profile_view.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                        Lihat Detail
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Client 2 -->
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://ui-avatars.com/api/?name=Siti+Aminah&background=FF6B7A&color=fff" alt="Siti Aminah" class="w-10 h-10 rounded-full">
+                                        <div>
+                                            <div class="font-semibold text-gray-800">Siti Aminah</div>
+                                            <div class="text-xs text-gray-500">siti.aminah@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-warning/10 text-cur-warning text-xs font-medium rounded-full">
+                                        Manajemen Stres
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="font-semibold text-gray-800">3 sesi</div>
+                                    <div class="text-xs text-gray-500">dari 8 paket</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-800">20 Okt 2024</div>
+                                    <div class="text-xs text-gray-500">4 hari lalu</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-cur-warning rounded-full h-2" style="width: 38%"></div>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-700">38%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                                        Aktif
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="31_client_profile_view.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                        Lihat Detail
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Client 3 -->
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://ui-avatars.com/api/?name=Ahmad+Fauzi&background=667BC6&color=fff" alt="Ahmad Fauzi" class="w-10 h-10 rounded-full">
+                                        <div>
+                                            <div class="font-semibold text-gray-800">Ahmad Fauzi</div>
+                                            <div class="text-xs text-gray-500">ahmad.fauzi@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-secondary/10 text-cur-secondary text-xs font-medium rounded-full">
+                                        Berhenti Merokok
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="font-semibold text-gray-800">5 sesi</div>
+                                    <div class="text-xs text-gray-500">dari 6 paket</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-800">22 Okt 2024</div>
+                                    <div class="text-xs text-gray-500">2 hari lalu</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-cur-info rounded-full h-2" style="width: 83%"></div>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-700">83%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                                        Aktif
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="31_client_profile_view.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                        Lihat Detail
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Client 4 -->
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://ui-avatars.com/api/?name=Rina+Sari&background=00D26A&color=fff" alt="Rina Sari" class="w-10 h-10 rounded-full">
+                                        <div>
+                                            <div class="font-semibold text-gray-800">Rina Sari</div>
+                                            <div class="text-xs text-gray-500">rina.sari@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-primary/10 text-cur-primary text-xs font-medium rounded-full">
+                                        Terapi Kecemasan
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="font-semibold text-gray-800">1 sesi</div>
+                                    <div class="text-xs text-gray-500">dari 10 paket</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-800">23 Okt 2024</div>
+                                    <div class="text-xs text-gray-500">1 hari lalu</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-cur-error rounded-full h-2" style="width: 10%"></div>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-700">10%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded-full">
+                                        Baru
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="31_client_profile_view.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                        Lihat Detail
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Client 5 -->
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://ui-avatars.com/api/?name=Dimas+Putra&background=FFA94D&color=fff" alt="Dimas Putra" class="w-10 h-10 rounded-full">
+                                        <div>
+                                            <div class="font-semibold text-gray-800">Dimas Putra</div>
+                                            <div class="text-xs text-gray-500">dimas.putra@email.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-cur-info/10 text-cur-info text-xs font-medium rounded-full">
+                                        Pengembangan Diri
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="font-semibold text-gray-800">12 sesi</div>
+                                    <div class="text-xs text-gray-500">dari 12 paket</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="text-sm text-gray-800">15 Okt 2024</div>
+                                    <div class="text-xs text-gray-500">9 hari lalu</div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                            <div class="bg-cur-success rounded-full h-2" style="width: 100%"></div>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-700">100%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-gray-200 text-gray-600 text-xs font-semibold rounded-full">
+                                        Selesai
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="31_client_profile_view.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                        Lihat Detail
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="px-6 py-4 border-t border-gray-200">
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-gray-600">
+                            Menampilkan <span class="font-semibold">1-5</span> dari <span class="font-semibold">45</span> klien
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="px-4 py-2 bg-cur-primary text-white rounded-lg text-sm font-medium">1</button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition">2</button>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition">3</button>
+                            <span class="px-2 text-gray-500">...</span>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition">9</button>
+                            <button class="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
