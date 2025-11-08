@@ -3,9 +3,9 @@
 **Mata Kuliah:** Proyek Sistem Informasi II  
 **Kode Mata Kuliah:** 494  
 **Dosen:** Ika Kurniawati, M.Kom  
-**Nama:** [NAMA MAHASISWA]  
-**NIM:** [NIM MAHASISWA]  
-**Kelas:** [KELAS]
+**Nama:** Roki Anjas  
+**NIM:** 11250066  
+**Kelas:** 11.7C.12
 
 ---
 
@@ -89,33 +89,33 @@ Tanda tangan dari sponsor proyek atau manajemen sebagai persetujuan resmi untuk 
 
 **a. Rencana Ruang Lingkup (Scope Management Plan)**
 
-Tujuannya adalah untuk mendetailkan apa saja yang akan dikerjakan dalam proyek ini. Rencana ini mencakup pembuatan WBS (Work Breakdown Structure) yang memecah pekerjaan besar menjadi tugas-tugas kecil yang lebih mudah dikelola. Dengan rencana ini, tim proyek jadi paham batasan pekerjaan mereka dan tidak ada pekerjaan yang kelewatan atau malah ngerjain sesuatu yang sebenarnya di luar scope.
+Tujuannya adalah untuk mendetailkan apa saja yang akan dikerjakan dalam proyek ini. Rencana ini mencakup pembuatan WBS (Work Breakdown Structure) yang memecah pekerjaan besar menjadi tugas-tugas kecil yang lebih mudah dikelola. Dengan rencana ini, tim proyek jadi paham batasan pekerjaan mereka dan tidak ada pekerjaan yang kelewatan atau malah mengerjakan sesuatu yang sebenarnya di luar scope.
 
 **b. Rencana Jadwal (Schedule Management Plan)**
 
-Tujuannya untuk mengatur waktu pengerjaan setiap aktivitas dalam proyek. Di sini dibuat timeline kapan setiap pekerjaan harus dimulai dan selesai, siapa yang bertanggung jawab, dan bagaimana ketergantungan antar tugas. Biasanya dibantu dengan tools kayak Gantt Chart atau Microsoft Project. Dengan rencana jadwal yang baik, proyek bisa selesai tepat waktu dan kalau ada keterlambatan bisa langsung terdeteksi.
+Tujuannya untuk mengatur waktu pengerjaan setiap aktivitas dalam proyek. Di sini dibuat timeline kapan setiap pekerjaan harus dimulai dan selesai, siapa yang bertanggung jawab, dan bagaimana ketergantungan antar tugas. Biasanya dibantu dengan tools seperti Gantt Chart atau Microsoft Project. Dengan rencana jadwal yang baik, proyek bisa selesai tepat waktu dan kalau ada keterlambatan bisa langsung terdeteksi.
 
 **c. Rencana Sumber Daya (Resource Management Plan)**
 
-Tujuannya untuk menentukan sumber daya apa saja yang dibutuhkan, baik itu manusia (developer, analis, tester), peralatan (server, komputer, software), maupun material lainnya. Rencana ini juga mengatur bagaimana alokasi sumber daya tersebut agar efisien dan tidak ada yang overload atau malah nganggur. Dengan rencana ini, manajer proyek bisa memastikan bahwa semua yang dibutuhkan tersedia saat diperlukan.
+Tujuannya untuk menentukan sumber daya apa saja yang dibutuhkan, baik itu manusia (developer, analis, tester), peralatan (server, komputer, software), maupun material lainnya. Rencana ini juga mengatur bagaimana alokasi sumber daya tersebut agar efisien dan tidak ada yang overload atau malah menganggur. Dengan rencana ini, manajer proyek bisa memastikan bahwa semua yang dibutuhkan tersedia saat diperlukan.
 
-**d. Rencana Manajemen Risiko (Risk Management Plan)** *(Bonus)*
+**d. Rencana Manajemen Risiko (Risk Management Plan)**
 
 Tujuannya untuk mengidentifikasi risiko-risiko yang mungkin terjadi dan merencanakan cara mengatasinya. Misalnya kalau ada risiko staff gudang susah beradaptasi dengan sistem baru, maka direncanakan pelatihan yang lebih intensif. Dengan rencana risiko, proyek lebih siap menghadapi masalah yang muncul.
 
-**e. Rencana Komunikasi (Communication Management Plan)** *(Bonus)*
+**e. Rencana Komunikasi (Communication Management Plan)**
 
 Tujuannya untuk mengatur bagaimana informasi proyek akan dikomunikasikan ke stakeholder. Siapa yang perlu dapat laporan, seberapa sering, dalam format apa, dan melalui media apa. Ini penting supaya semua pihak tetap terinformasi dan tidak ada miskomunikasi.
 
 ### 4. Mengapa penting untuk menyusun Work Breakdown Structure (WBS) dalam tahap ini?
 
-WBS itu penting banget karena beberapa alasan:
+WBS itu sangat penting karena beberapa alasan:
 
 **a. Memecah Kompleksitas**
-Proyek SIM-Gudang ini kompleks dan melibatkan banyak hal. Dengan WBS, pekerjaan besar dipecah jadi bagian-bagian kecil yang lebih mudah dipahami dan dikerjakan. Misalnya dari "Pengembangan SIM-Gudang" dipecah jadi "Analisis Kebutuhan", "Desain Database", "Pemrograman", "Testing", dan seterusnya.
+Proyek SIM-Gudang ini kompleks dan melibatkan banyak hal. Dengan WBS, pekerjaan besar dipecah menjadi bagian-bagian kecil yang lebih mudah dipahami dan dikerjakan. Misalnya dari "Pengembangan SIM-Gudang" dipecah menjadi "Analisis Kebutuhan", "Desain Database", "Pemrograman", "Testing", dan seterusnya.
 
 **b. Memudahkan Estimasi**
-Kalau pekerjaan sudah dipecah jadi tugas-tugas kecil, jadi lebih gampang estimasi berapa lama waktu yang dibutuhkan dan berapa biayanya. Lebih akurat daripada estimasi untuk pekerjaan besar yang masih abstrak.
+Kalau pekerjaan sudah dipecah menjadi tugas-tugas kecil, jadi lebih mudah estimasi berapa lama waktu yang dibutuhkan dan berapa biayanya. Lebih akurat daripada estimasi untuk pekerjaan besar yang masih abstrak.
 
 **c. Pembagian Tanggung Jawab**
 WBS membantu manajer proyek untuk assign tugas ke anggota tim. Setiap orang jadi jelas apa tugasnya dan bertanggung jawab untuk bagian mana.
@@ -124,10 +124,10 @@ WBS membantu manajer proyek untuk assign tugas ke anggota tim. Setiap orang jadi
 Dengan WBS, progress proyek bisa dipantau dengan lebih detail. Bisa dilihat tugas mana yang sudah selesai, mana yang masih berjalan, dan mana yang terlambat. Ini memudahkan kontrol proyek.
 
 **e. Menghindari Pekerjaan yang Terlewat**
-Dengan memecah pekerjaan secara sistematis, kemungkinan ada pekerjaan penting yang kelewatan jadi lebih kecil. Semua aspek proyek bisa tercakup.
+Dengan memecah pekerjaan secara sistematis, kemungkinan ada pekerjaan penting yang terlewat menjadi lebih kecil. Semua aspek proyek bisa tercakup.
 
 **f. Dasar untuk Perencanaan Lain**
-WBS menjadi dasar untuk membuat rencana jadwal, rencana biaya, dan rencana lainnya. Tanpa WBS, sulit untuk bikin perencanaan yang detail dan akurat.
+WBS menjadi dasar untuk membuat rencana jadwal, rencana biaya, dan rencana lainnya. Tanpa WBS, sulit untuk membuat perencanaan yang detail dan akurat.
 
 ---
 
@@ -136,28 +136,28 @@ WBS menjadi dasar untuk membuat rencana jadwal, rencana biaya, dan rencana lainn
 ### 5. Tantangan yang mungkin terjadi dalam tahap pelaksanaan proyek SIM-Gudang
 
 **a. Resistensi dari Pengguna**
-Staff gudang yang sudah terbiasa dengan sistem manual atau sistem lama mungkin menolak untuk menggunakan sistem baru. Mereka mungkin merasa sistem baru ribet atau takut tidak bisa menggunakannya. Ini bisa menghambat proses implementasi.
+Staff gudang yang sudah terbiasa dengan sistem manual atau sistem lama mungkin menolak untuk menggunakan sistem baru. Mereka mungkin merasa sistem baru rumit atau takut tidak bisa menggunakannya. Ini bisa menghambat proses implementasi.
 
 **b. Masalah Integrasi Sistem**
-Karena SIM-Gudang harus terintegrasi dengan sistem akuntansi dan distribusi yang sudah ada, bisa jadi ada masalah kompatibilitas atau kesulitan teknis dalam menghubungkan sistem-sistem tersebut. Format data yang berbeda atau API yang tidak standar bisa jadi kendala.
+Karena SIM-Gudang harus terintegrasi dengan sistem akuntansi dan distribusi yang sudah ada, mungkin ada masalah kompatibilitas atau kesulitan teknis dalam menghubungkan sistem-sistem tersebut. Format data yang berbeda atau API yang tidak standar bisa menjadi kendala.
 
 **c. Perubahan Kebutuhan (Scope Creep)**
-Saat pengembangan berjalan, bisa aja stakeholder minta tambahan fitur atau perubahan dari kebutuhan awal. Kalau tidak dikelola dengan baik, ini bisa bikin proyek jadi melebar, budget membengkak, dan jadwal mundur.
+Saat pengembangan berjalan, mungkin stakeholder meminta tambahan fitur atau perubahan dari kebutuhan awal. Kalau tidak dikelola dengan baik, ini bisa membuat proyek menjadi melebar, budget membengkak, dan jadwal mundur.
 
 **d. Keterbatasan Sumber Daya**
-Developer atau analis mungkin tidak selalu available karena ada pekerjaan lain. Atau bisa jadi ada anggota tim yang keluar di tengah proyek. Ini bisa mengganggu kelancaran pengembangan.
+Developer atau analis mungkin tidak selalu available karena ada pekerjaan lain. Atau mungkin ada anggota tim yang keluar di tengah proyek. Ini bisa mengganggu kelancaran pengembangan.
 
 **e. Masalah Teknis**
 Bisa muncul bug atau error yang tidak terduga saat coding atau testing. Atau mungkin performa sistem tidak sesuai harapan sehingga perlu optimisasi lebih lanjut.
 
 **f. Kurangnya Data Awal yang Akurat**
-Untuk migrasi data dari sistem lama ke sistem baru, dibutuhkan data yang akurat. Kalau data di sistem lama amburadul atau tidak lengkap, proses migrasi jadi sulit dan sistem baru bisa mulai dengan data yang kurang baik.
+Untuk migrasi data dari sistem lama ke sistem baru, dibutuhkan data yang akurat. Kalau data di sistem lama tidak teratur atau tidak lengkap, proses migrasi menjadi sulit dan sistem baru bisa mulai dengan data yang kurang baik.
 
 **g. Masalah Komunikasi**
 Miskomunikasi antara tim developer dengan user atau antar anggota tim bisa menyebabkan hasil pengembangan tidak sesuai harapan. Misalnya developer salah paham kebutuhan user sehingga fitur yang dibuat tidak tepat.
 
 **h. Kendala Jadwal**
-Bisa jadi ada tugas yang ternyata lebih lama dari perkiraan, atau ada ketergantungan tugas yang membuat delay di satu bagian berdampak ke bagian lain.
+Mungkin ada tugas yang ternyata lebih lama dari perkiraan, atau ada ketergantungan tugas yang membuat delay di satu bagian berdampak ke bagian lain.
 
 ### 6. Bagaimana cara manajer proyek memastikan kualitas hasil pengembangan sistem?
 
@@ -174,7 +174,7 @@ Memastikan ada proses testing yang menyeluruh, mulai dari unit testing (testing 
 Dengan melibatkan staff gudang sejak tahap awal, misalnya saat validasi kebutuhan atau saat demo prototype, manajer proyek bisa memastikan bahwa sistem yang dikembangkan sesuai dengan kebutuhan user dan mudah digunakan.
 
 **e. Menggunakan Quality Assurance Tools**
-Bisa pakai tools untuk automated testing atau tools untuk track bug dan issue. Ini membantu memastikan kualitas dan mempercepat proses quality assurance.
+Bisa menggunakan tools untuk automated testing atau tools untuk track bug dan issue. Ini membantu memastikan kualitas dan mempercepat proses quality assurance.
 
 **f. Dokumentasi yang Baik**
 Memastikan semua proses dan hasil pengembangan didokumentasikan dengan baik. Dokumentasi yang lengkap memudahkan maintenance dan pengembangan ke depannya.

@@ -1,10 +1,10 @@
 # JAWABAN KUIS PROSES BISNIS TI
 
 **Mata Kuliah:** Proses Bisnis TI  
-**Dosen:** [NAMA DOSEN]  
-**Nama:** [NAMA MAHASISWA]  
-**NIM:** [NIM MAHASISWA]  
-**Kelas:** [KELAS]
+**Dosen:** EDHI PRAYITNO
+**Nama:** Roki Anjas  
+**NIM:** 11250066  
+**Kelas:** 11.7C.12
 
 ---
 
@@ -26,7 +26,7 @@
    Implementasi adalah tahap memastikan bahwa proses bisnis yang direncanakan berjalan sesuai dengan strategi perusahaan.
 
 6. **E. Corporation**  
-   Corporation adalah bentuk kepemilikan bisnis yang dimiliki oleh lebih dari satu orang atau pemegang saham, bisa berbentuk perusahaan swasta atau pemerintah.
+   Corporation adalah bentuk kepemilikan bisnis yang dimiliki oleh lebih dari satu orang atau pemegang saham, dapat berbentuk perusahaan swasta atau pemerintah.
 
 7. **E. Proses Bisnis**  
    Proses bisnis melibatkan manusia, peralatan, unit organisasi, kebijakan dan prosedur dalam pelaksanaannya.
@@ -70,7 +70,7 @@
 20. **A. Tujuan dan target penetapan sasaran bisnis**  
     Alokasi sumber daya yang diprioritaskan untuk mencapai sasaran perusahaan merupakan bagian dari tujuan dan target penetapan sasaran bisnis.
 
-21. **E. Tidak tahu keahlian apa yang bisa dijual**  
+21. **E. Tidak tahu keahlian apa yang dapat dijual**  
     Ini bukan termasuk motivasi dalam berusaha, karena merupakan kondisi ketidaksiapan, bukan motivasi.
 
 22. **A. Strategi Bisnis**  
@@ -83,7 +83,7 @@
     Kebijakan pemerintah, pelanggan, pesaing, bank, bursa saham termasuk dalam lingkungan eksternal.
 
 25. **A. Strength**  
-    Strength adalah kekuatan yang dimiliki perusahaan yang bisa memberikan pengaruh positif saat ini atau masa depan.
+    Strength adalah kekuatan yang dimiliki perusahaan yang dapat memberikan pengaruh positif saat ini atau masa depan.
 
 26. **B. Konfigurasi**  
     Konfigurasi adalah tahapan yang meliputi seleksi sistem, implementasi, tes dan deployment.
