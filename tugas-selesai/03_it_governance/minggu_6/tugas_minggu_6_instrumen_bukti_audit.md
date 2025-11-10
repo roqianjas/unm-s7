@@ -230,11 +230,11 @@ Berdasarkan analisis kebutuhan dan hasil systematic literature review, proyek in
 
 | No | Item Kebijakan | Status | Target Completion | PIC |
 |----|----------------|--------|-------------------|-----|
-| 1 | Kebijakan Manajemen Risiko TI | ⬜ Belum Ada | Q1 Minggu 3 | Manager TI |
-| 2 | Kebijakan Keamanan Informasi & Access Control | ⬜ Belum Ada | Q3 Minggu 33-34 | Manager TI |
-| 3 | Kebijakan Backup & Disaster Recovery | ⬜ Belum Ada | Q3 Minggu 35-36 | Manager TI |
-| 4 | Kebijakan Change Management | ⬜ Belum Ada | Q3 Minggu 37-38 | Manager TI |
-| 5 | Kebijakan Monitoring & Pelaporan Kinerja TI | ⬜ Belum Ada | Q2 Minggu 17 | Manager TI |
+| 1 | Kebijakan Manajemen Risiko TI | Belum Ada | Q1 Minggu 3 | Manager TI |
+| 2 | Kebijakan Keamanan Informasi & Access Control | Belum Ada | Q3 Minggu 33-34 | Manager TI |
+| 3 | Kebijakan Backup & Disaster Recovery | Belum Ada | Q3 Minggu 35-36 | Manager TI |
+| 4 | Kebijakan Change Management | Belum Ada | Q3 Minggu 37-38 | Manager TI |
+| 5 | Kebijakan Monitoring & Pelaporan Kinerja TI | Belum Ada | Q2 Minggu 17 | Manager TI |
 
 ---
 
@@ -308,22 +308,22 @@ Seluruh data aplikasi, database, dan file penting yang mendukung operasional SAT
 
 | KPI | Target | Aktual | Status | Trend | Keterangan |
 |-----|--------|--------|--------|-------|------------|
-| Risk Coverage Ratio | ≥ 80% | 45% | 🔴 Belum Tercapai | ➡️ | Perlu percepat penyusunan risk treatment plan |
-| Incident Reduction | -5%/bulan | -2% | 🟡 Perlu Perbaikan | ⬇️ | Insiden menurun namun belum sesuai target |
-| SOP Compliance | 100% | 30% | 🔴 Belum Tercapai | ⬆️ | Dokumentasi SOP sedang dalam progress |
-| System Uptime | ≥ 99% | 97.5% | 🟡 Perlu Perbaikan | ➡️ | Downtime 2.5% akibat maintenance tidak terencana |
-| Backup Success Rate | 100% | 95% | 🟡 Perlu Perbaikan | ⬆️ | 5% gagal karena storage penuh |
-| Restore Test Success | ≥ 1/bulan | 0 | 🔴 Belum Tercapai | ➡️ | Belum ada schedule restore test |
+| Risk Coverage Ratio | ≥ 80% | 45% | Belum Tercapai | Stabil | Perlu percepat penyusunan risk treatment plan |
+| Incident Reduction | -5%/bulan | -2% | Perlu Perbaikan | Menurun | Insiden menurun namun belum sesuai target |
+| SOP Compliance | 100% | 30% | Belum Tercapai | Meningkat | Dokumentasi SOP sedang dalam progress |
+| System Uptime | ≥ 99% | 97.5% | Perlu Perbaikan | Stabil | Downtime 2.5% akibat maintenance tidak terencana |
+| Backup Success Rate | 100% | 95% | Perlu Perbaikan | Meningkat | 5% gagal karena storage penuh |
+| Restore Test Success | ≥ 1/bulan | 0 | Belum Tercapai | Stabil | Belum ada schedule restore test |
 
 **Keterangan Status:**
-- 🟢 **Tercapai:** Aktual ≥ Target
-- 🟡 **Perlu Perbaikan:** Aktual 70-99% dari Target
-- 🔴 **Belum Tercapai:** Aktual < 70% dari Target
+- **Tercapai:** Aktual ≥ Target
+- **Perlu Perbaikan:** Aktual 70-99% dari Target
+- **Belum Tercapai:** Aktual < 70% dari Target
 
 **Trend:**
-- ⬆️ Meningkat
-- ➡️ Stabil
-- ⬇️ Menurun
+- Meningkat: Menunjukkan perbaikan dari periode sebelumnya
+- Stabil: Tidak ada perubahan signifikan
+- Menurun: Menunjukkan penurunan dari periode sebelumnya
 
 ---
 
@@ -331,18 +331,30 @@ Seluruh data aplikasi, database, dan file penting yang mendukung operasional SAT
 
 #### Risk Register SATRIAMART
 
-| ID | Kategori Risiko | Deskripsi Risiko | Penyebab | Dampak | Prob | Impact | Level | Risk Owner | Treatment | Status |
-|----|-----------------|------------------|----------|--------|------|--------|-------|------------|-----------|--------|
-| R001 | Keamanan | Kehilangan data akibat tidak ada backup teratur | Backup tidak terjadwal, storage terbatas | Kehilangan data transaksi dan customer | Tinggi (4) | Tinggi (4) | **16 - TINGGI** | Staff TI | • Implementasi backup otomatis<br>• Upgrade storage capacity<br>• Restore testing bulanan | 🔴 Open |
-| R002 | Operasional | Downtime sistem aplikasi POS | Server tidak stabil, tidak ada monitoring | Gangguan penjualan, customer complaint | Sedang (3) | Tinggi (4) | **12 - TINGGI** | Staff TI | • Setup monitoring tool<br>• Maintenance berkala<br>• Upgrade server | 🔴 Open |
-| R003 | Keamanan | Akses tidak authorized ke data sensitif | Kontrol akses lemah, tidak ada review berkala | Data breach, kehilangan kepercayaan customer | Sedang (3) | Tinggi (4) | **12 - TINGGI** | Manager TI | • Implementasi access control matrix<br>• Review akses kuartalan<br>• Pelatihan awareness | 🔴 Open |
-| R004 | Compliance | Tidak ada dokumentasi SOP proses TI | Prioritas rendah dokumentasi | Inkonsistensi layanan, sulit audit | Tinggi (4) | Sedang (3) | **12 - TINGGI** | Manager TI | • Program dokumentasi SOP<br>• Template standar<br>• Review berkala | 🟡 In Progress |
-| R005 | Strategic | Ketidakselarasan investasi TI dengan tujuan bisnis | Tidak ada framework governance | ROI TI rendah, pemborosan anggaran | Sedang (3) | Sedang (3) | **9 - SEDANG** | Direktur | • Implementasi COBIT 2019<br>• IT-Business alignment workshop<br>• KPI dashboard | 🟡 In Progress |
+**Tabel 1: Identifikasi dan Penilaian Risiko**
 
-**Risk Level Matrix:**
-- **15-25:** Risiko Tinggi (Merah) - Butuh mitigasi segera
-- **8-12:** Risiko Sedang (Kuning) - Monitor dan mitigasi preventif
-- **1-6:** Risiko Rendah (Hijau) - Monitor rutin
+| ID | Kategori | Deskripsi Risiko | Prob | Impact | Level | Owner |
+|----|----------|------------------|------|--------|-------|-------|
+| R001 | Keamanan | Kehilangan data akibat tidak ada backup teratur | 4 | 4 | 16 - Tinggi | Staff TI |
+| R002 | Operasional | Downtime sistem aplikasi POS | 3 | 4 | 12 - Tinggi | Staff TI |
+| R003 | Keamanan | Akses tidak authorized ke data sensitif | 3 | 4 | 12 - Tinggi | Manager TI |
+| R004 | Compliance | Tidak ada dokumentasi SOP proses TI | 4 | 3 | 12 - Tinggi | Manager TI |
+| R005 | Strategic | Ketidakselarasan investasi TI dengan tujuan bisnis | 3 | 3 | 9 - Sedang | Direktur |
+
+**Tabel 2: Rencana Mitigasi Risiko**
+
+| ID | Rencana Treatment/Mitigasi | Status |
+|----|----------------------------|--------|
+| R001 | Implementasi backup otomatis, Upgrade storage capacity, Restore testing bulanan | Open |
+| R002 | Setup monitoring tool, Maintenance berkala, Upgrade server | Open |
+| R003 | Implementasi access control matrix, Review akses kuartalan, Pelatihan awareness keamanan | Open |
+| R004 | Program dokumentasi SOP, Template standar, Review dan update SOP berkala | In Progress |
+| R005 | Implementasi COBIT 2019, IT-Business alignment workshop, KPI dashboard | In Progress |
+
+**Keterangan Penilaian:**
+- **Probabilitas (Prob):** 1=Sangat Rendah, 2=Rendah, 3=Sedang, 4=Tinggi, 5=Sangat Tinggi
+- **Impact:** 1=Sangat Rendah, 2=Rendah, 3=Sedang, 4=Tinggi, 5=Sangat Tinggi
+- **Level Risiko:** Prob × Impact (1-6=Rendah, 8-12=Sedang, 15-25=Tinggi)
 
 ---
 
