@@ -5,16 +5,16 @@
 
 ### 4.1.1 Latar Belakang Proyek
 
-Proyek pengembangan Sistem Informasi Manajemen Booking dan Terapi CUR-HEART diinisiasi berdasarkan kebutuhan mendesak untuk mengoptimalkan operasional pusat layanan hypnotherapy dan kesehatan mental yang semakin berkembang. CUR-HEART (Hypnotherapy & Mind Wellness Center), sebagai salah satu pioneer dalam layanan hypnotherapy profesional di Indonesia, mengalami pertumbuhan signifikan dalam jumlah klien dan terapis sejak berdiri pada tahun 2023.
+Proyek pengembangan Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART diinisiasi berdasarkan kebutuhan mendesak untuk mengoptimalkan operasional pusat layanan hipnoterapi dan kesehatan mental yang semakin berkembang. CUR-HEART (*Hypnotherapy & Mind Wellness Center*), sebagai salah satu pelopor dalam layanan hipnoterapi profesional di Indonesia, mengalami pertumbuhan signifikan dalam jumlah klien dan terapis sejak berdiri pada tahun 2023.
 
-Dengan visi menjadi pusat terapi kejiwaan berbasis hypnotherapy modern dan spiritual yang terpercaya di Indonesia, CUR-HEART menyediakan enam layanan utama:
+Dengan visi menjadi pusat terapi kejiwaan berbasis hipnoterapi modern dan spiritual yang terpercaya di Indonesia, CUR-HEART menyediakan enam layanan utama:
 
-1. **Stress & Anxiety Release Therapy** - Mengatasi stres berlebih dan kecemasan yang mengganggu aktivitas sehari-hari
-2. **Trauma Healing Hypnotherapy** - Menghapus dampak emosional dari pengalaman traumatis masa lalu
-3. **Self-Confidence & Motivation Therapy** - Meningkatkan kepercayaan diri dan semangat hidup
-4. **Sleep & Relaxation Therapy** - Mengatasi insomnia dan gangguan tidur dengan teknik relaksasi mendalam
-5. **Habit Reprogramming Therapy** - Mengubah kebiasaan negatif seperti merokok atau menunda pekerjaan
-6. **Phobia & Fear Management** - Menangani rasa takut berlebihan terhadap situasi tertentu
+1. **Terapi Pelepasan Stres & Kecemasan** (*Stress & Anxiety Release Therapy*) - Mengatasi stres berlebih dan kecemasan yang mengganggu aktivitas sehari-hari
+2. **Hipnoterapi Penyembuhan Trauma** (*Trauma Healing Hypnotherapy*) - Menghapus dampak emosional dari pengalaman traumatis masa lalu
+3. **Terapi Kepercayaan Diri & Motivasi** (*Self-Confidence & Motivation Therapy*) - Meningkatkan kepercayaan diri dan semangat hidup
+4. **Terapi Tidur & Relaksasi** (*Sleep & Relaxation Therapy*) - Mengatasi insomnia dan gangguan tidur dengan teknik relaksasi mendalam
+5. **Terapi Pemrograman Ulang Kebiasaan** (*Habit Reprogramming Therapy*) - Mengubah kebiasaan negatif seperti merokok atau menunda pekerjaan
+6. **Manajemen Fobia & Ketakutan** (*Phobia & Fear Management*) - Menangani rasa takut berlebihan terhadap situasi tertentu
 
 ---
 
@@ -28,35 +28,35 @@ Dengan visi menjadi pusat terapi kejiwaan berbasis hypnotherapy modern dan spiri
 │   Struktur Organisasi CUR-HEART:                           │
 │                                                             │
 │              ┌──────────────────────┐                      │
-│              │   OWNER/FOUNDER      │                      │
+│              │   PEMILIK/PENDIRI    │                      │
 │              │   (Dr. Sarah W.)     │                      │
 │              └──────────┬───────────┘                      │
 │                         │                                   │
 │         ┌───────────────┼───────────────┐                 │
 │         │               │               │                 │
 │   ┌─────┴──────┐  ┌────┴─────┐  ┌─────┴──────┐          │
-│   │HEAD         │  │OPERATIONS│  │ FINANCE &  │          │
-│   │THERAPIST    │  │MANAGER   │  │ ADMIN      │          │
+│   │KEPALA       │  │MANAJER   │  │ KEUANGAN & │          │
+│   │TERAPIS      │  │OPERASIONAL│  │ ADMIN      │          │
 │   │(Michael A.) │  │          │  │            │          │
 │   └─────┬──────┘  └────┬─────┘  └─────┬──────┘          │
 │         │               │               │                 │
 │    ┌────┴────┐     ┌────┴────┐    ┌────┴────┐           │
-│    │TERAPIS  │     │CUSTOMER │    │FINANCE  │           │
-│    │(5 orang)│     │SERVICE  │    │STAFF    │           │
+│    │TERAPIS  │     │LAYANAN  │    │STAF     │           │
+│    │(5 orang)│     │PELANGGAN│    │KEUANGAN │           │
 │    │         │     │(2 orang)│    │(1 orang)│           │
 │    └─────────┘     └─────────┘    └─────────┘           │
 │                                                             │
-│   Total Team: 10 orang                                     │
-│   - 1 Owner/Founder                                        │
-│   - 1 Head Therapist                                       │
-│   - 5 Therapists                                           │
-│   - 1 Operations Manager                                   │
-│   - 2 Customer Service/Admin                               │
-│   - 1 Finance Staff                                        │
+│   Total Tim: 10 orang                                      │
+│   - 1 Pemilik/Pendiri                                      │
+│   - 1 Kepala Terapis                                       │
+│   - 5 Terapis                                              │
+│   - 1 Manajer Operasional                                  │
+│   - 2 Layanan Pelanggan/Admin                              │
+│   - 1 Staf Keuangan                                        │
 │                                                             │
-│   Format: Organizational Chart PNG/JPG                     │
-│   Recommended size: 1200x800px                             │
-│   Style: Professional hierarchy diagram dengan foto/icon   │
+│   Format: Bagan Organisasi PNG/JPG                         │
+│   Ukuran rekomendasi: 1200x800px                           │
+│   Gaya: Diagram hierarki profesional dengan foto/ikon      │
 │                                                             │
 │   File: assets/images/organizational-structure-curheart.png│
 │   Tool: Microsoft Visio, Draw.io, PowerPoint, atau Canva  │
@@ -64,94 +64,94 @@ Dengan visi menjadi pusat terapi kejiwaan berbasis hypnotherapy modern dan spiri
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.1: Struktur organisasi CUR-HEART menunjukkan hierarchy dari Owner hingga staff operasional dengan total 10 anggota tim_
+_Gambar 4.1: Struktur organisasi CUR-HEART menunjukkan hierarki dari Pemilik hingga staf operasional dengan total 10 anggota tim_
 
 ---
 
-Namun, pertumbuhan ini tidak diiringi dengan sistem operasional yang memadai. Proses booking yang masih manual melalui WhatsApp dan telepon, manajemen jadwal terapis menggunakan spreadsheet, serta dokumentasi sesi terapi dalam format kertas dan file Word terpisah menimbulkan berbagai inefficiency yang menghambat kualitas layanan dan potensi pertumbuhan bisnis.
+Namun, pertumbuhan ini tidak diiringi dengan sistem operasional yang memadai. Proses pemesanan yang masih manual melalui WhatsApp dan telepon, manajemen jadwal terapis menggunakan spreadsheet, serta dokumentasi sesi terapi dalam format kertas dan file Word terpisah menimbulkan berbagai ketidakefisienan yang menghambat kualitas layanan dan potensi pertumbuhan bisnis.
 
 ### 4.1.2 Permasalahan yang Dihadapi
 
-Berdasarkan observasi lapangan dan wawancara mendalam dengan stakeholders CUR-HEART pada September 2024, teridentifikasi delapan permasalahan kritis:
+Berdasarkan observasi lapangan dan wawancara mendalam dengan pemangku kepentingan CUR-HEART pada September 2024, teridentifikasi delapan permasalahan kritis:
 
-**1. Conversion Rate Booking yang Rendah (60%)**
+**1. Tingkat Konversi Pemesanan yang Rendah (60%)**
 
-Dari 100 inquiry yang masuk, hanya 60 yang berubah menjadi actual booking. Data historis menunjukkan bahwa 40% potensial klien membatalkan niat mereka karena:
-- Proses booking yang memakan waktu (rata-rata 15-20 menit komunikasi bolak-balik)
+Dari 100 pertanyaan yang masuk, hanya 60 yang berubah menjadi pemesanan aktual. Data historis menunjukkan bahwa 40% calon klien membatalkan niat mereka karena:
+- Proses pemesanan yang memakan waktu (rata-rata 15-20 menit komunikasi bolak-balik)
 - Harus menghubungi admin di jam kerja saja
-- Tidak bisa langsung melihat availability terapis secara real-time
+- Tidak bisa langsung melihat ketersediaan terapis secara waktu nyata
 - Informasi tidak lengkap tentang layanan dan terapis
 
-**2. Konflik Jadwal dan Double Booking (8-10 kasus per bulan)**
+**2. Konflik Jadwal dan Pemesanan Ganda (8-10 kasus per bulan)**
 
 Manajemen jadwal manual menggunakan Google Calendar terpisah untuk setiap terapis menyebabkan:
-- 8-10 kasus double booking per bulan yang harus direscheduled emergency
+- 8-10 kasus pemesanan ganda per bulan yang harus dijadwalkan ulang darurat
 - Kesulitan saat terapis berhalangan mendadak (sakit, urgent matter)
-- Tidak ada visibility terhadap total kapasitas dan okupansi
-- Ketimpangan workload antar terapis (beberapa overbooked, yang lain underutilized)
+- Tidak ada visibilitas terhadap total kapasitas dan okupansi
+- Ketimpangan beban kerja antar terapis (beberapa *overbooked*, yang lain kurang dimanfaatkan)
 
 **3. Waktu Dokumentasi Terapi yang Lama (15 menit per sesi)**
 
 Terapis menghabiskan rata-rata 15 menit setelah setiap sesi untuk:
 - Menulis catatan sesi secara manual di buku atau Word
-- Menyimpan dan mencari file dengan naming convention yang tidak konsisten
+- Menyimpan dan mencari file dengan konvensi penamaan yang tidak konsisten
 - Kesulitan mengakses riwayat terapi klien sebelum sesi berikutnya
-- Risiko kehilangan data tinggi (file corrupt, lost document)
+- Risiko kehilangan data tinggi (file rusak, dokumen hilang)
 
-**4. Tidak Ada Data untuk Decision Making**
+**4. Tidak Ada Data untuk Pengambilan Keputusan**
 
-Manajemen kesulitan mendapatkan insight bisnis karena:
+Manajemen kesulitan mendapatkan wawasan bisnis karena:
 - Data tersebar di berbagai platform (WhatsApp, Excel, file fisik)
 - Pembuatan laporan bulanan memakan waktu 2-3 hari kerja
-- Tidak ada visibility terhadap KPI penting (conversion rate, revenue per service, therapist utilization)
+- Tidak ada visibilitas terhadap KPI penting (tingkat konversi, pendapatan per layanan, utilisasi terapis)
 - Keputusan bisnis masih berbasis intuisi, bukan data
 
 **5. Pengalaman Klien yang Kurang Optimal**
 
-Klien mengalami frustration karena:
+Klien mengalami frustrasi karena:
 - Harus selalu menghubungi admin untuk segala informasi
-- Tidak ada platform untuk tracking progress terapi mereka
-- Tidak bisa reschedule atau cancel booking secara mandiri
+- Tidak ada platform untuk melacak kemajuan terapi mereka
+- Tidak bisa menjadwalkan ulang atau membatalkan pemesanan secara mandiri
 - Proses pembayaran manual dengan konfirmasi yang lama
 
 **6. Beban Administratif yang Tinggi**
 
 Admin menghabiskan 70% waktu kerja untuk:
 - Menjawab pertanyaan yang sama berulang kali
-- Mengelola booking dan reschedule manual
+- Mengelola pemesanan dan penjadwalan ulang manual
 - Verifikasi pembayaran manual
-- Mengompilasi data untuk reporting
+- Mengompilasi data untuk pelaporan
 
-**7. Security dan Privacy Risks**
+**7. Risiko Keamanan dan Privasi**
 
 Data klien yang sangat sensitif (riwayat trauma, masalah psikologis):
-- Disimpan dalam format tidak secure (Word tidak ter-encrypt, kertas fisik)
-- Tidak ada access control yang proper
-- Tidak ada audit trail
+- Disimpan dalam format tidak aman (Word tidak terenkripsi, kertas fisik)
+- Tidak ada kontrol akses yang tepat
+- Tidak ada jejak audit
 - Berpotensi melanggar UU Perlindungan Data Pribadi
 
 **8. Hambatan Skalabilitas**
 
-Sistem manual tidak dapat mengakomodasi growth:
+Sistem manual tidak dapat mengakomodasi pertumbuhan:
 - Penambahan terapis baru memperumit koordinasi
-- Tidak bisa efisien handle volume booking yang meningkat
+- Tidak bisa efisien menangani volume pemesanan yang meningkat
 - Sulit untuk ekspansi ke lokasi cabang baru
-- Technology infrastructure tidak mendukung scale
+- Infrastruktur teknologi tidak mendukung skala
 
 **Tabel 4.1 Analisis Masalah dengan Data Kuantitatif**
 
 | No | Masalah | Data Kuantitatif | Dampak | Prioritas |
 |----|---------|------------------|--------|-----------|
-| 1 | Conversion Rate Booking Rendah | 60% dari inquiry menjadi booking (40% loss) | Loss potensial revenue Rp 20 juta/bulan | Critical |
-| 2 | Konflik Jadwal & Double Booking | 8-10 kasus per bulan | Customer dissatisfaction, reputasi negatif | High |
-| 3 | Waktu Dokumentasi Terapi Lama | 15 menit per sesi x 120 sesi/bulan = 30 jam/bulan | Inefisiensi operasional, terapis tidak produktif | High |
-| 4 | Tidak Ada Data untuk Decision | Laporan bulanan butuh 2-3 hari kerja | Missed opportunities, keputusan tidak optimal | High |
-| 5 | Pengalaman Klien Kurang Optimal | Retention rate hanya 45% | Churn tinggi, kehilangan repeat customers | Critical |
-| 6 | Beban Administratif Tinggi | Admin menghabiskan 70% waktu untuk tugas manual | Cost tinggi, tidak scalable | High |
-| 7 | Security & Privacy Risks | Data sensitif tersimpan tidak encrypted | Resiko legal, pelanggaran UU PDP | Critical |
-| 8 | Hambatan Skalabilitas | Sistem manual tidak support growth >20 terapis | Tidak bisa ekspansi, kehilangan market share | Medium |
+| 1 | Tingkat Konversi Pemesanan Rendah | 60% dari pertanyaan menjadi pemesanan (40% hilang) | Kehilangan potensi pendapatan Rp 20 juta/bulan | Kritis |
+| 2 | Konflik Jadwal & Pemesanan Ganda | 8-10 kasus per bulan | Ketidakpuasan pelanggan, reputasi negatif | Tinggi |
+| 3 | Waktu Dokumentasi Terapi Lama | 15 menit per sesi x 120 sesi/bulan = 30 jam/bulan | Inefisiensi operasional, terapis tidak produktif | Tinggi |
+| 4 | Tidak Ada Data untuk Keputusan | Laporan bulanan butuh 2-3 hari kerja | Kehilangan peluang, keputusan tidak optimal | Tinggi |
+| 5 | Pengalaman Klien Kurang Optimal | Tingkat retensi hanya 45% | *Churn* tinggi, kehilangan pelanggan berulang | Kritis |
+| 6 | Beban Administratif Tinggi | Admin menghabiskan 70% waktu untuk tugas manual | Biaya tinggi, tidak dapat diskalakan | Tinggi |
+| 7 | Risiko Keamanan & Privasi | Data sensitif tersimpan tidak terenkripsi | Risiko legal, pelanggaran UU PDP | Kritis |
+| 8 | Hambatan Skalabilitas | Sistem manual tidak mendukung pertumbuhan >20 terapis | Tidak bisa ekspansi, kehilangan pangsa pasar | Sedang |
 
-**Sumber:** Observasi lapangan dan wawancara dengan CUR-HEART Management, September 2024
+**Sumber:** Observasi lapangan dan wawancara dengan Manajemen CUR-HEART, September 2024
 
 ---
 
@@ -160,53 +160,53 @@ Sistem manual tidak dapat mengakomodasi growth:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT AS-IS BUSINESS PROCESS FLOWCHART]                │
+│   [SISIPKAN DIAGRAM ALUR PROSES BISNIS AS-IS]              │
 │                                                             │
-│   PROSES BOOKING & TERAPI EXISTING (MANUAL):               │
+│   PROSES PEMESANAN & TERAPI YANG ADA (MANUAL):             │
 │                                                             │
-│   CLIENT                  ADMIN              THERAPIST      │
+│   KLIEN                  ADMIN              TERAPIS         │
 │     │                       │                    │          │
-│     │ 1. Inquiry via        │                    │          │
-│     │    WhatsApp/Phone     │                    │          │
+│     │ 1. Pertanyaan via     │                    │          │
+│     │    WhatsApp/Telepon   │                    │          │
 │     ├──────────────────────>│                    │          │
-│     │                       │ 2. Check schedule  │          │
-│     │                       │    manually        │          │
+│     │                       │ 2. Cek jadwal      │          │
+│     │                       │    manual          │          │
 │     │                       ├───────────────────>│          │
 │     │                       │<───────────────────┤          │
-│     │                       │ 3. Confirm slot    │          │
+│     │                       │ 3. Konfirmasi slot │          │
 │     │<──────────────────────┤                    │          │
-│     │ 4. Transfer payment   │                    │          │
+│     │ 4. Transfer pembayaran│                    │          │
 │     ├──────────────────────>│                    │          │
-│     │                       │ 5. Manual verify   │          │
-│     │                       │    (hours/days)    │          │
+│     │                       │ 5. Verifikasi manual│         │
+│     │                       │    (jam/hari)      │          │
 │     │<──────────────────────┤                    │          │
-│     │ 6. Attend session     │                    │          │
+│     │ 6. Hadiri sesi        │                    │          │
 │     ├───────────────────────┼───────────────────>│          │
-│     │                       │                    │ 7. Conduct│
-│     │                       │                    │   therapy │
-│     │                       │                    │ 8. Write  │
-│     │                       │                    │   notes   │
+│     │                       │                    │ 7. Laksanakan│
+│     │                       │                    │   terapi  │
+│     │                       │                    │ 8. Tulis  │
+│     │                       │                    │   catatan │
 │     │                       │                    │   manual  │
-│     │                       │                    │   (15 min)│
+│     │                       │                    │   (15 mnt)│
 │     │                       │<───────────────────┤          │
-│     │                       │ 9. Update Excel    │          │
-│     │                       │    (end of day)    │          │
+│     │                       │ 9. Perbarui Excel  │          │
+│     │                       │    (akhir hari)    │          │
 │     ▼                       ▼                    ▼          │
 │                                                             │
-│   Pain Points:                                              │
-│   ❌ 15-20 min/booking                                      │
-│   ❌ 8-10 double bookings/month                             │
-│   ❌ Manual payment verification (hours/days)               │
-│   ❌ 15 min documentation/session                           │
-│   ❌ No real-time data                                      │
-│   ❌ 40% conversion loss                                    │
+│   Titik Masalah:                                            │
+│   ❌ 15-20 menit/pemesanan                                  │
+│   ❌ 8-10 pemesanan ganda/bulan                             │
+│   ❌ Verifikasi pembayaran manual (jam/hari)                │
+│   ❌ 15 menit dokumentasi/sesi                              │
+│   ❌ Tidak ada data waktu nyata                             │
+│   ❌ 40% kehilangan konversi                                │
 │                                                             │
-│   Total Process Time: ~45 minutes per booking              │
-│   Error Rate: 8-10% (scheduling conflicts)                 │
+│   Total Waktu Proses: ~45 menit per pemesanan              │
+│   Tingkat Error: 8-10% (konflik penjadwalan)               │
 │                                                             │
-│   Format: Process Flowchart PNG/JPG                        │
-│   Recommended size: 1400x1000px                            │
-│   Style: Swimlane diagram dengan pain points highlighted   │
+│   Format: Diagram Alur Proses PNG/JPG                      │
+│   Ukuran rekomendasi: 1400x1000px                          │
+│   Gaya: Diagram swimlane dengan titik masalah ditandai     │
 │                                                             │
 │   File: assets/images/as-is-business-process.png           │
 │   Tool: Draw.io, Lucidchart, Microsoft Visio               │
@@ -214,7 +214,7 @@ Sistem manual tidak dapat mengakomodasi growth:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.2: Current business process (As-Is) menunjukkan alur booking manual dengan total waktu ~45 menit per booking dan error rate 8-10%_
+_Gambar 4.2: Proses bisnis saat ini (As-Is) menunjukkan alur pemesanan manual dengan total waktu ~45 menit per pemesanan dan tingkat error 8-10%_
 
 ---
 
@@ -224,59 +224,59 @@ Proyek ini memiliki tujuan utama dan tujuan khusus sebagai berikut:
 
 **Tujuan Utama:**
 
-Mengembangkan sistem informasi manajemen booking dan terapi berbasis web yang terintegrasi, efisien, user-friendly, dan secure untuk meningkatkan efisiensi operasional CUR-HEART minimal 40%, meningkatkan conversion rate booking dari 60% menjadi 85%, dan memberikan foundation untuk skalabilitas bisnis jangka panjang.
+Mengembangkan sistem informasi manajemen pemesanan dan terapi berbasis web yang terintegrasi, efisien, ramah pengguna, dan aman untuk meningkatkan efisiensi operasional CUR-HEART minimal 40%, meningkatkan tingkat konversi pemesanan dari 60% menjadi 85%, dan memberikan fondasi untuk skalabilitas bisnis jangka panjang.
 
 **Tujuan Khusus:**
 
-1. Mengotomatisasi proses booking dengan multi-step flow yang intuitif, memungkinkan klien booking 24/7
-2. Mengintegrasikan manajemen jadwal terapis untuk eliminasi konflik scheduling
+1. Mengotomatisasi proses pemesanan dengan alur multi-langkah yang intuitif, memungkinkan klien memesan 24/7
+2. Mengintegrasikan manajemen jadwal terapis untuk eliminasi konflik penjadwalan
 3. Menyediakan sistem dokumentasi terapi terstruktur yang menghemat waktu hingga 60%
-4. Memfasilitasi tracking progress klien dengan visualisasi data yang meaningful
-5. Menyediakan dashboard business intelligence untuk data-driven decision making
+4. Memfasilitasi pelacakan kemajuan klien dengan visualisasi data yang bermakna
+5. Menyediakan dasbor intelijen bisnis untuk pengambilan keputusan berbasis data
 6. Mengimplementasikan sistem pembayaran digital terintegrasi
-7. Menjamin keamanan data klien sesuai compliance UU PDP
-8. Meningkatkan user experience untuk semua stakeholders (admin, terapis, klien)
+7. Menjamin keamanan data klien sesuai kepatuhan UU PDP
+8. Meningkatkan pengalaman pengguna untuk semua pemangku kepentingan (admin, terapis, klien)
 
-### 4.1.4 Stakeholder Analysis
+### 4.1.4 Analisis Pemangku Kepentingan
 
-Analisis stakeholder mengidentifikasi pihak-pihak yang terlibat dan berkepentingan dalam proyek:
+Analisis pemangku kepentingan mengidentifikasi pihak-pihak yang terlibat dan berkepentingan dalam proyek:
 
-**Tabel 4.2 Stakeholder Analysis Matrix**
+**Tabel 4.2 Matriks Analisis Pemangku Kepentingan**
 
-| Stakeholder | Role | Kategori | Interest Level | Power/Influence | Kebutuhan Utama | Engagement Strategy | Frekuensi Komunikasi |
+| Pemangku Kepentingan | Peran | Kategori | Tingkat Kepentingan | Kekuatan/Pengaruh | Kebutuhan Utama | Strategi Keterlibatan | Frekuensi Komunikasi |
 |-------------|------|----------|----------------|-----------------|-----------------|---------------------|---------------------|
-| Owner CUR-HEART | Decision Maker, Sponsor | Primary | Very High | Very High | ROI, growth, competitive advantage | Manage Closely - Weekly updates, milestone approvals | Weekly |
-| Terapis (5 orang) | Primary Users | Primary | Very High | High | Ease of use, time saving, better client management | Manage Closely - Requirements workshop, UAT | Bi-weekly |
-| Admin Staff (2 orang) | System Operators | Primary | High | High | Workload reduction, efficiency | Manage Closely - Process mapping, training | Weekly |
-| Klien Aktif | End Users | Primary | High | Medium | Convenience, privacy, good UX | Keep Informed - User research, feedback surveys | Monthly |
-| Dosen Pembimbing | Academic Supervisor | Secondary | High | High | Quality, learning outcomes, documentation | Keep Satisfied - Weekly consultation, reviews | Weekly |
-| Tim Pengembang (3 orang) | Project Team | Internal | Very High | Very High | Successful delivery, learning, portfolio | Manage Closely - Daily standups, collaboration | Daily |
-| Universitas Nusa Mandiri | Academic Institution | Secondary | Medium | Medium | Student achievement, industry collaboration | Keep Informed - Progress reports, presentations | Monthly |
+| Pemilik CUR-HEART | Pengambil Keputusan, Sponsor | Primer | Sangat Tinggi | Sangat Tinggi | ROI, pertumbuhan, keunggulan kompetitif | Kelola Erat - Update mingguan, persetujuan tonggak | Mingguan |
+| Terapis (5 orang) | Pengguna Utama | Primer | Sangat Tinggi | Tinggi | Kemudahan penggunaan, penghematan waktu, manajemen klien lebih baik | Kelola Erat - Lokakarya kebutuhan, UAT | Dua minggu sekali |
+| Staf Admin (2 orang) | Operator Sistem | Primer | Tinggi | Tinggi | Pengurangan beban kerja, efisiensi | Kelola Erat - Pemetaan proses, pelatihan | Mingguan |
+| Klien Aktif | Pengguna Akhir | Primer | Tinggi | Sedang | Kenyamanan, privasi, UX yang baik | Tetap Informasi - Riset pengguna, survei umpan balik | Bulanan |
+| Dosen Pembimbing | Pembimbing Akademik | Sekunder | Tinggi | Tinggi | Kualitas, hasil pembelajaran, dokumentasi | Jaga Kepuasan - Konsultasi mingguan, tinjauan | Mingguan |
+| Tim Pengembang (3 orang) | Tim Proyek | Internal | Sangat Tinggi | Sangat Tinggi | Penyampaian sukses, pembelajaran, portofolio | Kelola Erat - Standup harian, kolaborasi | Harian |
+| Universitas Nusa Mandiri | Institusi Akademik | Sekunder | Sedang | Sedang | Prestasi mahasiswa, kolaborasi industri | Tetap Informasi - Laporan kemajuan, presentasi | Bulanan |
 
-**Sumber:** Analisis Stakeholder CUR-HEART, September 2024
+**Sumber:** Analisis Pemangku Kepentingan CUR-HEART, September 2024
 
-**Stakeholder Power-Interest Matrix:**
+**Matriks Kekuatan-Kepentingan Pemangku Kepentingan:**
 
 ```
-High Power
+Kekuatan Tinggi
     │
-    │   [Owner]        [Dosen Pembimbing]
+    │   [Pemilik]      [Dosen Pembimbing]
     │   [Terapis]      [Tim Pengembang]
     │
     │   [Admin]
     │
     │   [Klien]        [Universitas]
     │
-    └─────────────────────────────────────► High Interest
-Low Power                                    
+    └─────────────────────────────────────► Kepentingan Tinggi
+Kekuatan Rendah                                    
 ```
 
-**Stakeholder Engagement Plan:**
+**Rencana Keterlibatan Pemangku Kepentingan:**
 
-- **Manage Closely:** Owner, Terapis, Tim Pengembang (High Power, High Interest)
-- **Keep Satisfied:** Dosen Pembimbing (High Power, Medium Interest)
-- **Keep Informed:** Admin Staff, Klien (Medium Power, High Interest)
-- **Monitor:** Universitas (Low Power, Medium Interest)
+- **Kelola Erat:** Pemilik, Terapis, Tim Pengembang (Kekuatan Tinggi, Kepentingan Tinggi)
+- **Jaga Kepuasan:** Dosen Pembimbing (Kekuatan Tinggi, Kepentingan Sedang)
+- **Tetap Informasi:** Staf Admin, Klien (Kekuatan Sedang, Kepentingan Tinggi)
+- **Pantau:** Universitas (Kekuatan Rendah, Kepentingan Sedang)
 
 ---
 
@@ -340,238 +340,242 @@ _Gambar 4.3: Stakeholder Power-Interest Matrix menunjukkan positioning 11 stakeh
 
 ---
 
-### 4.1.5 Project Charter
+### 4.1.5 Piagam Proyek (*Project Charter*)
 
-**Project Charter - Sistem Informasi CUR-HEART**
+**Piagam Proyek - Sistem Informasi CUR-HEART**
 
-**Tabel 4.3 Project Charter - Executive Summary**
+**Tabel 4.3 Piagam Proyek - Ringkasan Eksekutif**
 
 | Elemen | Deskripsi |
 |--------|-----------|
-| **Project Title** | Pengembangan Sistem Informasi Manajemen Booking dan Terapi CUR-HEART Berbasis Web |
-| **Project Manager** | Roki Anjas (NIM: 11250066) |
-| **Project Sponsor** | CUR-HEART Management |
-| **Academic Supervisor** | Rani Irma Handayani, M.Kom |
-| **Development Team** | 3 developers (Full Stack) |
-| **Project Start Date** | 16 September 2024 |
-| **Target Completion** | 1 Desember 2024 (11 minggu / 77 hari kerja) |
-| **Total Budget** | Rp 5.000.000 |
-| **Methodology** | Waterfall SDLC (6 phases) |
-| **Target Users** | 3 roles: Admin, Therapist (5 orang), Client (100+ existing) |
-| **Platform** | Web-based application (responsive design) |
-| **Technology Stack** | Laravel 10, PHP 8.2, MySQL 8.0, Tailwind CSS 3.0 |
-| **Main Objective** | Meningkatkan efisiensi operasional min 40%, conversion rate dari 60% ke 85% |
-| **Key Deliverables** | 1) Web application production-ready<br>2) Source code & documentation<br>3) Capstone report (80-100 hal)<br>4) Training materials<br>5) Presentation & demo video |
-| **Success Criteria** | 1) 95%+ functional requirements implemented<br>2) SUS score ≥ 80/100<br>3) UAT passed<br>4) No critical bugs<br>5) Conversion rate ≥ 75% |
-| **Key Constraints** | 1) Timeline: 11 minggu strict<br>2) Budget: Rp 5 juta<br>3) Team: 3 developers<br>4) Academic requirement: Must use Laravel |
+| **Judul Proyek** | Pengembangan Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART Berbasis Web |
+| **Manajer Proyek** | Roki Anjas (NIM: 11250066) |
+| **Sponsor Proyek** | Manajemen CUR-HEART |
+| **Pembimbing Akademik** | Rani Irma Handayani, M.Kom |
+| **Tim Pengembang** | 3 pengembang (*Full Stack*) |
+| **Tanggal Mulai Proyek** | 16 September 2024 |
+| **Target Penyelesaian** | 1 Desember 2024 (11 minggu / 77 hari kerja) |
+| **Total Anggaran** | Rp 5.000.000 |
+| **Metodologi** | *Waterfall* SDLC (6 fase) |
+| **Pengguna Target** | 3 peran: Admin, Terapis (5 orang), Klien (100+ existing) |
+| **Platform** | Aplikasi berbasis web (*responsive design*) |
+| **Teknologi** | Laravel 10, PHP 8.2, MySQL 8.0, Tailwind CSS 3.0 |
+| **Tujuan Utama** | Meningkatkan efisiensi operasional min 40%, tingkat konversi dari 60% ke 85% |
+| **Hasil Kunci** | 1) Aplikasi web siap produksi<br>2) Kode sumber & dokumentasi<br>3) Laporan *capstone* (80-100 hal)<br>4) Materi pelatihan<br>5) Presentasi & video demo |
+| **Kriteria Keberhasilan** | 1) 95%+ kebutuhan fungsional terimplementasi<br>2) Skor SUS ≥ 80/100<br>3) UAT lulus<br>4) Tidak ada *bug* kritis<br>5) Tingkat konversi ≥ 75% |
+| **Batasan Kunci** | 1) Waktu: 11 minggu ketat<br>2) Anggaran: Rp 5 juta<br>3) Tim: 3 pengembang<br>4) Kebutuhan akademik: Harus gunakan Laravel |
 
-**Project Authorization:**
+**Otorisasi Proyek:**
 
 | Name | Role | Signature | Date |
 |------|------|-----------|------|
-| [Owner Name] | Project Sponsor | _____________ | ___/___/___ |
-| Roki Anjas | Project Manager | _____________ | ___/___/___ |
-| Rani Irma Handayani, M.Kom | Academic Supervisor | _____________ | ___/___/___ |
+**Otorisasi Proyek:**
 
-**Project Objectives:**
-1. Develop fully functional web-based booking and therapy management system
-2. Achieve minimum 95% functional requirements compliance
-3. Achieve minimum 80/100 System Usability Scale (SUS) score
-4. Complete within 11-week timeframe
-5. Stay within allocated budget
-6. Provide comprehensive documentation
+| Nama | Peran | Tanda Tangan | Tanggal |
+|------|------|-----------|------|
+| [Nama Pemilik] | Sponsor Proyek | _____________ | ___/___/___ |
+| Roki Anjas | Manajer Proyek | _____________ | ___/___/___ |
+| Rani Irma Handayani, M.Kom | Pembimbing Akademik | _____________ | ___/___/___ |
 
-**Project Scope:**
+**Tujuan Proyek:**
+1. Mengembangkan sistem manajemen pemesanan dan terapi berbasis web yang fungsional penuh
+2. Mencapai minimal 95% kepatuhan kebutuhan fungsional
+3. Mencapai minimal skor 80/100 *System Usability Scale* (SUS)
+4. Menyelesaikan dalam jangka waktu 11 minggu
+5. Tetap dalam anggaran yang dialokasikan
+6. Menyediakan dokumentasi komprehensif
 
-**In Scope:**
-- Web application with 41 pages (public, authentication, dashboards)
-- Multi-role authentication (admin, therapist, client)
-- Online booking system with 4-step flow
-- Therapist schedule management
-- Session documentation system
-- Client progress tracking
-- Payment integration (manual verification dan digital payment gateway)
-- Dashboard analytics and reporting
-- Email notifications
-- Responsive design (mobile-friendly)
+**Ruang Lingkup Proyek:**
 
-**Out of Scope:**
-- Native mobile applications (iOS/Android)
-- AI-powered features (chatbot, recommendations)
-- Video conference native integration (akan gunakan third-party iframe)
-- Multi-language support (English only dalam Indonesia)
-- Electronic prescription atau medical records integration
-- Multi-tenant architecture
+**Termasuk dalam Ruang Lingkup:**
+- Aplikasi web dengan 41 halaman (publik, autentikasi, dasbor)
+- Autentikasi multi-peran (admin, terapis, klien)
+- Sistem pemesanan *online* dengan alur 4 langkah
+- Manajemen jadwal terapis
+- Sistem dokumentasi sesi
+- Pelacakan kemajuan klien
+- Integrasi pembayaran (verifikasi manual dan *payment gateway* digital)
+- Analitik dan pelaporan dasbor
+- Notifikasi email
+- Desain responsif (*mobile-friendly*)
 
-**Key Deliverables:**
-1. Functional web application (production-ready)
-2. Source code repository (GitHub)
-3. Complete documentation (technical, user manual)
-4. Capstone project report (80-100 pages)
-5. Presentation slides and demo video
-6. Training materials for users
+**Tidak Termasuk dalam Ruang Lingkup:**
+- Aplikasi *mobile native* (iOS/Android)
+- Fitur berbasis AI (*chatbot*, rekomendasi)
+- Integrasi konferensi video *native* (akan gunakan *iframe third-party*)
+- Dukungan multi-bahasa (hanya Bahasa Indonesia)
+- Resep elektronik atau integrasi rekam medis
+- Arsitektur *multi-tenant*
 
-**Success Criteria:**
-1. All must-have functional requirements implemented
-2. System passes UAT with stakeholder approval
-3. SUS score ≥ 80/100
-4. No critical or high-severity bugs in production
-5. System uptime ≥ 99% in first month
-6. Conversion rate increase from 60% to minimum 75%
-7. Documentation complete and approved
+**Hasil Utama (*Key Deliverables*):**
+1. Aplikasi web fungsional (siap produksi)
+2. Repositori kode sumber (GitHub)
+3. Dokumentasi lengkap (teknis, manual pengguna)
+4. Laporan proyek *capstone* (80-100 halaman)
+5. Slide presentasi dan video demo
+6. Materi pelatihan untuk pengguna
 
-**Key Risks:**
+**Kriteria Keberhasilan:**
+1. Semua kebutuhan fungsional wajib terimplementasi
+2. Sistem lulus UAT dengan persetujuan pemangku kepentingan
+3. Skor SUS ≥ 80/100
+4. Tidak ada *bug* kritis atau tingkat tinggi di produksi
+5. *Uptime* sistem ≥ 99% di bulan pertama
+6. Peningkatan tingkat konversi dari 60% ke minimal 75%
+7. Dokumentasi lengkap dan disetujui
 
-| Risk | Probability | Impact | Mitigation Strategy |
+**Risiko Kunci:**
+
+| Risiko | Probabilitas | Dampak | Strategi Mitigasi |
 |------|-------------|--------|---------------------|
-| Scope creep | Medium | High | Strict change control process, prioritize must-haves |
-| Technical challenges | Medium | Medium | Regular technical reviews, mentor consultation |
-| Stakeholder unavailability | Low | Medium | Flexible scheduling, asynchronous communication |
-| Timeline delay | Medium | High | Weekly monitoring, buffer time allocation |
-| Integration issues | Low | High | Early testing of integrations, backup plans |
-| Data security breach | Low | Very High | Security best practices, regular audits |
+| Perluasan ruang lingkup (*scope creep*) | Sedang | Tinggi | Proses kontrol perubahan ketat, prioritaskan kebutuhan wajib |
+| Tantangan teknis | Sedang | Sedang | Tinjauan teknis reguler, konsultasi mentor |
+| Pemangku kepentingan tidak tersedia | Rendah | Sedang | Penjadwalan fleksibel, komunikasi asinkron |
+| Keterlambatan jadwal | Sedang | Tinggi | Pemantauan mingguan, alokasi waktu *buffer* |
+| Masalah integrasi | Rendah | Tinggi | Pengujian integrasi awal, rencana cadangan |
+| Pelanggaran keamanan data | Rendah | Sangat Tinggi | Praktik keamanan terbaik, audit reguler |
 
-**Assumptions:**
-- CUR-HEART will provide required business information and documents
-- Stakeholders will be available for interviews and testing
-- Internet connection and development tools will be available
-- Payment gateway APIs will be accessible for testing
-- Existing client data (if any migration needed) is available
+**Asumsi:**
+- CUR-HEART akan menyediakan informasi bisnis dan dokumen yang dibutuhkan
+- Pemangku kepentingan akan tersedia untuk wawancara dan pengujian
+- Koneksi internet dan alat pengembangan akan tersedia
+- API *payment gateway* akan dapat diakses untuk pengujian
+- Data klien yang ada (jika perlu migrasi) tersedia
 
-**Constraints:**
-- Timeline: Must complete within 11 weeks (semester schedule)
-- Budget: Limited to Rp 5.000.000
-- Resources: 3-person development team
-- Technology: Must use Laravel framework (academic requirement)
-- Compliance: Must adhere to data protection regulations
+**Batasan:**
+- Waktu: Harus selesai dalam 11 minggu (jadwal semester)
+- Anggaran: Terbatas Rp 5.000.000
+- Sumber Daya: Tim pengembang 3 orang
+- Teknologi: Harus menggunakan *framework* Laravel (kebutuhan akademik)
+- Kepatuhan: Harus mematuhi regulasi perlindungan data
 
-**Approval:**
+**Persetujuan:**
 
-| Name | Role | Signature | Date |
+| Nama | Peran | Tanda Tangan | Tanggal |
 |------|------|-----------|------|
-| [Owner Name] | Project Sponsor | _____________ | ___/___/___ |
-| Roki Anjas | Project Manager | _____________ | ___/___/___ |
-| Rani Irma Handayani, M.Kom | Academic Supervisor | _____________ | ___/___/___ |
+| [Nama Pemilik] | Sponsor Proyek | _____________ | ___/___/___ |
+| Roki Anjas | Manajer Proyek | _____________ | ___/___/___ |
+| Rani Irma Handayani, M.Kom | Pembimbing Akademik | _____________ | ___/___/___ |
 
 ---
 
 ## 4.2 Perencanaan Proyek
 
-### 4.2.1 Ruang Lingkup Proyek (Scope Management)
+### 4.2.1 Manajemen Ruang Lingkup Proyek
 
-Ruang lingkup proyek didefinisikan menggunakan **Work Breakdown Structure (WBS)** yang memecah deliverables menjadi work packages yang dapat dimanage.
+Ruang lingkup proyek didefinisikan menggunakan **Struktur Rincian Kerja** (*Work Breakdown Structure* - WBS) yang memecah hasil utama menjadi paket kerja yang dapat dikelola.
 
-**Tabel 4.4 Work Breakdown Structure (Level 1-3)**
+**Tabel 4.4 Struktur Rincian Kerja (*Work Breakdown Structure*) Level 1-3**
 
-| WBS Code | Work Package | Deliverables | Duration | Responsible |
+| Kode WBS | Paket Kerja | Hasil | Durasi | Penanggung Jawab |
 |----------|--------------|--------------|----------|-------------|
-| **1.0** | **Sistem Informasi CUR-HEART** | Sistem booking & terapi lengkap | 77 hari | Tim Proyek |
-| 1.1 | Project Management | Project documentation | 77 hari | Project Manager |
-| 1.1.1 | Project Planning | Project charter, WBS, schedule, budget | 3 hari | Project Manager |
-| 1.1.2 | Progress Monitoring | Weekly status reports | 77 hari | Project Manager |
-| 1.1.3 | Risk Management | Risk register, mitigation plans | 77 hari | Project Manager |
-| 1.1.4 | Stakeholder Communication | Communication logs | 77 hari | Project Manager |
-| 1.2 | Requirements Analysis | SRS document | 11 hari | Business Analyst |
-| 1.2.1 | Stakeholder Interviews | Interview transcripts | 5 hari | Business Analyst |
-| 1.2.2 | Business Process Analysis | As-Is & To-Be process models | 3 hari | Business Analyst |
-| 1.2.3 | Requirements Documentation | Functional & non-functional requirements | 3 hari | Business Analyst |
-| 1.2.4 | Requirements Validation | Validated SRS | 1 hari | Business Analyst |
-| 1.3 | System Design | Design documents | 14 hari | System Designer |
-| 1.3.1 | Architecture Design | Architecture diagram, tech stack decision | 3 hari | System Architect |
-| 1.3.2 | Database Design | ERD, table structures, normalization | 4 hari | Database Designer |
-| 1.3.3 | UI/UX Design | Mockups, design system, component library | 5 hari | UI/UX Designer |
-| 1.3.4 | Security Design | Security architecture, authentication flow | 2 hari | Security Specialist |
-| 1.4 | Development | Working application | 28 hari | Development Team |
-| 1.4.1 | Environment Setup | Dev, staging, prod environments | 2 hari | DevOps |
-| 1.4.2 | Backend Development | APIs, business logic, database | 10 hari | Backend Developer |
-| 1.4.3 | Frontend Development | UI implementation | 12 hari | Frontend Developer |
-| 1.4.4 | Integration | Integrated system | 5 hari | Full Stack Developer |
-| 1.4.5 | Code Review | Code quality reports | 2 hari | Senior Developer |
-| 1.5 | Testing | Test reports, bug tracking | 14 hari | QA Team |
-| 1.5.1 | Unit Testing | Unit test coverage report | 3 hari | Developers |
-| 1.5.2 | Integration Testing | Integration test results | 3 hari | QA Engineer |
-| 1.5.3 | Functional Testing | Functional test cases executed | 4 hari | QA Engineer |
-| 1.5.4 | Usability Testing | Usability test report (SUS score) | 3 hari | UX Researcher |
-| 1.5.5 | User Acceptance Testing (UAT) | UAT approval, acceptance criteria met | 2 hari | Stakeholders |
-| 1.6 | Deployment | Live production system | 7 hari | DevOps Team |
-| 1.6.1 | Production Setup | Server configured, domain live | 2 hari | DevOps |
-| 1.6.2 | Application Deployment | App deployed to production | 2 hari | DevOps |
-| 1.6.3 | Go-Live | System operational | 1 hari | Project Manager |
-| 1.6.4 | User Training | Trained users, training materials | 2 hari | Trainer |
-| 1.7 | Documentation | Complete project documentation | 21 hari | Documentation Team |
-| 1.7.1 | Technical Documentation | API docs, architecture docs, DB schema | 7 hari | Tech Writer |
-| 1.7.2 | User Documentation | User manual, admin guide | 5 hari | Tech Writer |
-| 1.7.3 | Capstone Report | Final report (80-100 pages) | 14 hari | Project Team |
-| 1.7.4 | Presentation Materials | Slides, demo video | 7 hari | Project Team |
+| **1.0** | **Sistem Informasi CUR-HEART** | Sistem pemesanan & terapi lengkap | 77 hari | Tim Proyek |
+| 1.1 | Manajemen Proyek | Dokumentasi proyek | 77 hari | Manajer Proyek |
+| 1.1.1 | Perencanaan Proyek | Piagam proyek, WBS, jadwal, anggaran | 3 hari | Manajer Proyek |
+| 1.1.2 | Pemantauan Kemajuan | Laporan status mingguan | 77 hari | Manajer Proyek |
+| 1.1.3 | Manajemen Risiko | Daftar risiko, rencana mitigasi | 77 hari | Manajer Proyek |
+| 1.1.4 | Komunikasi Pemangku Kepentingan | Log komunikasi | 77 hari | Manajer Proyek |
+| 1.2 | Analisis Kebutuhan | Dokumen SRS | 11 hari | Analis Bisnis |
+| 1.2.1 | Wawancara Pemangku Kepentingan | Transkrip wawancara | 5 hari | Analis Bisnis |
+| 1.2.2 | Analisis Proses Bisnis | Model proses As-Is & To-Be | 3 hari | Analis Bisnis |
+| 1.2.3 | Dokumentasi Kebutuhan | Kebutuhan fungsional & non-fungsional | 3 hari | Analis Bisnis |
+| 1.2.4 | Validasi Kebutuhan | SRS tervalidasi | 1 hari | Analis Bisnis |
+| 1.3 | Perancangan Sistem | Dokumen desain | 14 hari | Perancang Sistem |
+| 1.3.1 | Desain Arsitektur | Diagram arsitektur, keputusan *tech stack* | 3 hari | Arsitek Sistem |
+| 1.3.2 | Desain Basis Data | ERD, struktur tabel, normalisasi | 4 hari | Perancang Basis Data |
+| 1.3.3 | Desain UI/UX | *Mockup*, sistem desain, pustaka komponen | 5 hari | Perancang UI/UX |
+| 1.3.4 | Desain Keamanan | Arsitektur keamanan, alur autentikasi | 2 hari | Spesialis Keamanan |
+| 1.4 | Pengembangan | Aplikasi yang berfungsi | 28 hari | Tim Pengembang |
+| 1.4.1 | Pengaturan Lingkungan | Lingkungan dev, *staging*, produksi | 2 hari | DevOps |
+| 1.4.2 | Pengembangan *Backend* | API, logika bisnis, basis data | 10 hari | Pengembang *Backend* |
+| 1.4.3 | Pengembangan *Frontend* | Implementasi UI | 12 hari | Pengembang *Frontend* |
+| 1.4.4 | Integrasi | Sistem terintegrasi | 5 hari | Pengembang *Full Stack* |
+| 1.4.5 | Tinjauan Kode (*Code Review*) | Laporan kualitas kode | 2 hari | Pengembang Senior |
+| 1.5 | Pengujian | Laporan uji, pelacakan *bug* | 14 hari | Tim QA |
+| 1.5.1 | Pengujian Unit (*Unit Testing*) | Laporan cakupan pengujian unit | 3 hari | Pengembang |
+| 1.5.2 | Pengujian Integrasi | Hasil pengujian integrasi | 3 hari | Teknisi QA |
+| 1.5.3 | Pengujian Fungsional | Kasus uji fungsional dijalankan | 4 hari | Teknisi QA |
+| 1.5.4 | Pengujian Kegunaan (*Usability*) | Laporan uji kegunaan (skor SUS) | 3 hari | Peneliti UX |
+| 1.5.5 | Pengujian Penerimaan Pengguna (UAT) | Persetujuan UAT, kriteria diterima | 2 hari | Pemangku Kepentingan |
+| 1.6 | Peluncuran (*Deployment*) | Sistem produksi aktif | 7 hari | Tim DevOps |
+| 1.6.1 | Pengaturan Produksi | Server terkonfigurasi, domain aktif | 2 hari | DevOps |
+| 1.6.2 | Peluncuran Aplikasi | Aplikasi diluncurkan ke produksi | 2 hari | DevOps |
+| 1.6.3 | *Go-Live* | Sistem operasional | 1 hari | Manajer Proyek |
+| 1.6.4 | Pelatihan Pengguna | Pengguna terlatih, materi pelatihan | 2 hari | Pelatih |
+| 1.7 | Dokumentasi | Dokumentasi proyek lengkap | 21 hari | Tim Dokumentasi |
+| 1.7.1 | Dokumentasi Teknis | Dokumentasi API, arsitektur, skema DB | 7 hari | Penulis Teknis |
+| 1.7.2 | Dokumentasi Pengguna | Manual pengguna, panduan admin | 5 hari | Penulis Teknis |
+| 1.7.3 | Laporan *Capstone* | Laporan akhir (80-100 halaman) | 14 hari | Tim Proyek |
+| 1.7.4 | Materi Presentasi | Slide, video demo | 7 hari | Tim Proyek |
 
-**Total Work Packages:** 36 level-3 packages  
-**Total Duration:** 77 hari kerja (11 minggu)
+**Total Paket Kerja:** 36 paket level-3  
+**Total Durasi:** 77 hari kerja (11 minggu)
 
 ---
 
-**[GAMBAR 4.4 - Work Breakdown Structure (WBS) CUR-HEART System]**
+**[GAMBAR 4.4 - Struktur Rincian Kerja (WBS) Sistem CUR-HEART]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   [INSERT WBS HIERARCHICAL DIAGRAM - 3 LEVELS]             │
 │                                                             │
-│   Level 1: PROJECT (Root)                                  │
-│   CUR-HEART System Development                             │
+│   Level 1: PROYEK (Root)                                   │
+│   Pengembangan Sistem CUR-HEART                            │
 │   │                                                         │
-│   ├─ 1.1 Project Management (77 days)                      │
-│   │  ├─ 1.1.1 Project Planning (3 days)                    │
-│   │  ├─ 1.1.2 Progress Monitoring (77 days)                │
-│   │  ├─ 1.1.3 Risk Management (77 days)                    │
-│   │  └─ 1.1.4 Stakeholder Communication (77 days)          │
+│   ├─ 1.1 Manajemen Proyek (77 hari)                        │
+│   │  ├─ 1.1.1 Perencanaan Proyek (3 hari)                  │
+│   │  ├─ 1.1.2 Pemantauan Kemajuan (77 hari)                │
+│   │  ├─ 1.1.3 Manajemen Risiko (77 hari)                   │
+│   │  └─ 1.1.4 Komunikasi Pemangku Kepentingan (77 hari)    │
 │   │                                                         │
-│   ├─ 1.2 Requirements Analysis (11 days)                   │
-│   │  ├─ 1.2.1 Stakeholder Interviews (5 days)              │
-│   │  ├─ 1.2.2 Business Process Analysis (3 days)           │
-│   │  ├─ 1.2.3 Requirements Documentation (3 days)          │
-│   │  └─ 1.2.4 Requirements Validation (1 day)              │
+│   ├─ 1.2 Analisis Kebutuhan (11 hari)                      │
+│   │  ├─ 1.2.1 Wawancara Pemangku Kepentingan (5 hari)      │
+│   │  ├─ 1.2.2 Analisis Proses Bisnis (3 hari)              │
+│   │  ├─ 1.2.3 Dokumentasi Kebutuhan (3 hari)               │
+│   │  └─ 1.2.4 Validasi Kebutuhan (1 hari)                  │
 │   │                                                         │
-│   ├─ 1.3 System Design (14 days)                           │
-│   │  ├─ 1.3.1 Architecture Design (3 days)                 │
-│   │  ├─ 1.3.2 Database Design (4 days)                     │
-│   │  ├─ 1.3.3 UI/UX Design (5 days)                        │
-│   │  └─ 1.3.4 Security Design (2 days)                     │
+│   ├─ 1.3 Perancangan Sistem (14 hari)                      │
+│   │  ├─ 1.3.1 Desain Arsitektur (3 hari)                   │
+│   │  ├─ 1.3.2 Desain Basis Data (4 hari)                   │
+│   │  ├─ 1.3.3 Desain UI/UX (5 hari)                        │
+│   │  └─ 1.3.4 Desain Keamanan (2 hari)                     │
 │   │                                                         │
-│   ├─ 1.4 Development (28 days)                             │
-│   │  ├─ 1.4.1 Environment Setup (2 days)                   │
-│   │  ├─ 1.4.2 Backend Development (10 days)                │
-│   │  ├─ 1.4.3 Frontend Development (12 days)               │
-│   │  ├─ 1.4.4 Integration (5 days)                         │
-│   │  └─ 1.4.5 Code Review (2 days)                         │
+│   ├─ 1.4 Pengembangan (28 hari)                            │
+│   │  ├─ 1.4.1 Pengaturan Lingkungan (2 hari)               │
+│   │  ├─ 1.4.2 Pengembangan Backend (10 hari)               │
+│   │  ├─ 1.4.3 Pengembangan Frontend (12 hari)              │
+│   │  ├─ 1.4.4 Integrasi (5 hari)                           │
+│   │  └─ 1.4.5 Tinjauan Kode (2 hari)                       │
 │   │                                                         │
-│   ├─ 1.5 Testing (14 days)                                 │
-│   │  ├─ 1.5.1 Unit Testing (3 days)                        │
-│   │  ├─ 1.5.2 Integration Testing (3 days)                 │
-│   │  ├─ 1.5.3 Functional Testing (4 days)                  │
-│   │  ├─ 1.5.4 Usability Testing (3 days)                   │
-│   │  └─ 1.5.5 User Acceptance Testing (2 days)             │
+│   ├─ 1.5 Pengujian (14 hari)                               │
+│   │  ├─ 1.5.1 Pengujian Unit (3 hari)                      │
+│   │  ├─ 1.5.2 Pengujian Integrasi (3 hari)                 │
+│   │  ├─ 1.5.3 Pengujian Fungsional (4 hari)                │
+│   │  ├─ 1.5.4 Pengujian Kegunaan (3 hari)                  │
+│   │  └─ 1.5.5 Pengujian Penerimaan Pengguna (2 hari)       │
 │   │                                                         │
-│   ├─ 1.6 Deployment (7 days)                               │
-│   │  ├─ 1.6.1 Production Setup (2 days)                    │
-│   │  ├─ 1.6.2 Application Deployment (2 days)              │
-│   │  ├─ 1.6.3 Go-Live (1 day)                              │
-│   │  └─ 1.6.4 User Training (2 days)                       │
+│   ├─ 1.6 Peluncuran (7 hari)                               │
+│   │  ├─ 1.6.1 Pengaturan Produksi (2 hari)                 │
+│   │  ├─ 1.6.2 Peluncuran Aplikasi (2 hari)                 │
+│   │  ├─ 1.6.3 Go-Live (1 hari)                             │
+│   │  └─ 1.6.4 Pelatihan Pengguna (2 hari)                  │
 │   │                                                         │
-│   └─ 1.7 Documentation (21 days, parallel)                 │
-│      ├─ 1.7.1 Technical Documentation (7 days)             │
-│      ├─ 1.7.2 User Documentation (5 days)                  │
-│      ├─ 1.7.3 Capstone Report (14 days)                    │
-│      └─ 1.7.4 Presentation Materials (7 days)              │
+│   └─ 1.7 Dokumentasi (21 hari, paralel)                    │
+│      ├─ 1.7.1 Dokumentasi Teknis (7 hari)                  │
+│      ├─ 1.7.2 Dokumentasi Pengguna (5 hari)                │
+│      ├─ 1.7.3 Laporan Capstone (14 hari)                   │
+│      └─ 1.7.4 Materi Presentasi (7 hari)                   │
 │                                                             │
-│   Summary:                                                  │
-│   • 7 Level-2 Phases                                       │
-│   • 36 Level-3 Work Packages                               │
-│   • 77 Working Days (11 weeks)                             │
-│   • Team: 3 Developers                                     │
+│   Ringkasan:                                                │
+│   • 7 Fase Level-2                                         │
+│   • 36 Paket Kerja Level-3                                 │
+│   • 77 Hari Kerja (11 minggu)                              │
+│   • Tim: 3 Pengembang                                      │
 │                                                             │
-│   Format: Hierarchical Tree Diagram PNG                    │
-│   Recommended size: 1800x1400px                            │
-│   Style: Tree structure dengan color coding per phase      │
+│   Format: Diagram Pohon Hierarkis PNG                      │
+│   Ukuran rekomendasi: 1800x1400px                          │
+│   Gaya: Struktur pohon dengan kode warna per fase          │
 │                                                             │
 │   File: assets/images/wbs-curheart-3-levels.png            │
 │   Tool: Microsoft Project, WBS Chart Pro, atau Draw.io     │
@@ -579,135 +583,136 @@ Ruang lingkup proyek didefinisikan menggunakan **Work Breakdown Structure (WBS)*
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.4: Work Breakdown Structure (WBS) 3-level proyek CUR-HEART dengan 7 phases, 36 work packages, durasi 77 hari_
+_Gambar 4.4: Struktur Rincian Kerja (WBS) 3-level proyek CUR-HEART dengan 7 fase, 36 paket kerja, durasi 77 hari_
 
 ---
 
-**Scope Baseline:**
+**Garis Dasar Ruang Lingkup (*Scope Baseline*):**
 
-Scope Statement yang approved pada tanggal 29 September 2024 mencakup:
+Pernyataan ruang lingkup yang disetujui pada tanggal 29 September 2024 mencakup:
 
-1. **Product Scope:**
-   - Web application dengan 41 halaman interface
-   - Multi-role system (Admin, Therapist, Client)
-   - Online booking system dengan real-time availability
-   - Comprehensive dashboard untuk setiap role
-   - Payment integration dengan multiple methods
-   - Email notification system
-   - Responsive design untuk mobile dan desktop
+1. **Ruang Lingkup Produk:**
+   - Aplikasi web dengan 41 halaman antarmuka
+   - Sistem multi-peran (Admin, Terapis, Klien)
+   - Sistem pemesanan *online* dengan ketersediaan *real-time*
+   - Dasbor komprehensif untuk setiap peran
+   - Integrasi pembayaran dengan beberapa metode
+   - Sistem notifikasi email
+   - Desain responsif untuk *mobile* dan *desktop*
 
-2. **Project Scope:**
-   - Analysis, design, development, testing, dan deployment
-   - Duration: 11 minggu
-   - Team: 3 developers
-   - Methodology: Waterfall SDLC
+2. **Ruang Lingkup Proyek:**
+   - Analisis, desain, pengembangan, pengujian, dan peluncuran
+   - Durasi: 11 minggu
+   - Tim: 3 pengembang
+   - Metodologi: *Waterfall* SDLC
 
-3. **Acceptance Criteria:**
-   - Semua functional requirements dari MoSCoW "Must Have" terimplementasi
-   - System lolos UAT dengan approval stakeholders
-   - No critical bugs di production
-   - Documentation lengkap dan approved
-   - User training completed
+3. **Kriteria Penerimaan:**
+   - Semua kebutuhan fungsional dari MoSCoW "Harus Ada" terimplementasi
+   - Sistem lolos UAT dengan persetujuan pemangku kepentingan
+   - Tidak ada *bug* kritis di produksi
+   - Dokumentasi lengkap dan disetujui
+   - Pelatihan pengguna selesai
 
-### 4.2.2 Jadwal Proyek (Schedule Management)
+### 4.2.2 Manajemen Jadwal Proyek
 
-**Tabel 4.5 Project Schedule dengan Milestones**
+**Tabel 4.5 Jadwal Proyek dengan Tonggak Pencapaian (*Milestones*)**
 
-| Phase | Task Name | Duration | Start | End | Status | Milestone |
+| Fase | Nama Tugas | Durasi | Mulai | Selesai | Status | Tonggak |
 |-------|-----------|----------|-------|-----|--------|-----------|
-| **1. Initiation** | Project kick-off & charter | 3 hari | 16-Sep | 18-Sep | ✅ Complete | M1: Project Approved |
-| | Kick-off meeting | 1 hari | 16-Sep | 16-Sep | ✅ | |
-| | Stakeholder identification | 1 hari | 17-Sep | 17-Sep | ✅ | |
-| | Project charter approval | 1 hari | 18-Sep | 18-Sep | ✅ | |
-| **2. Requirements** | Analysis & documentation | 11 hari | 19-Sep | 29-Sep | ✅ Complete | M2: Requirements Complete |
-| | Stakeholder interviews | 5 hari | 19-Sep | 23-Sep | ✅ | |
-| | Business process analysis | 3 hari | 19-Sep | 21-Sep | ✅ | |
-| | Requirements documentation | 3 hari | 26-Sep | 28-Sep | ✅ | |
-| | Requirements validation | 1 hari | 29-Sep | 29-Sep | ✅ | |
-| **3. Design** | System & UI/UX design | 14 hari | 30-Sep | 13-Oct | ✅ Complete | M3: Design Complete |
-| | Architecture design | 3 hari | 30-Sep | 2-Oct | ✅ | |
-| | Database design | 4 hari | 3-Oct | 6-Oct | ✅ | |
-| | UI/UX design | 5 hari | 7-Oct | 11-Oct | ✅ | |
-| | Security design | 2 hari | 12-Oct | 13-Oct | ✅ | |
-| **4. Development** | Coding & integration | 28 hari | 14-Oct | 10-Nov | ⏳ In Progress | M4: Development Complete |
-| | Environment setup | 2 hari | 14-Oct | 15-Oct | ✅ | |
-| | Database implementation | 3 hari | 16-Oct | 18-Oct | ✅ | |
-| | Authentication system | 4 hari | 19-Oct | 22-Oct | ✅ | |
-| | Backend development | 10 hari | 23-Oct | 1-Nov | ⏳ | |
-| | Frontend development | 12 hari | 23-Oct | 3-Nov | ⏳ | |
-| | Integration | 5 hari | 4-Nov | 8-Nov | 🔜 Upcoming | |
-| | Code review | 2 hari | 9-Nov | 10-Nov | 🔜 | |
-| **5. Testing** | QA & UAT | 14 hari | 11-Nov | 24-Nov | 🔜 Upcoming | M5: Testing Complete |
-| | Unit testing | 3 hari | 11-Nov | 13-Nov | 🔜 | |
-| | Integration testing | 3 hari | 14-Nov | 16-Nov | 🔜 | |
-| | Functional testing | 4 hari | 17-Nov | 20-Nov | 🔜 | |
-| | Usability testing (SUS) | 3 hari | 21-Nov | 23-Nov | 🔜 | |
+| **1. Inisiasi** | *Kick-off* proyek & piagam | 3 hari | 16-Sep | 18-Sep | ✅ Selesai | M1: Proyek Disetujui |
+| | Rapat *kick-off* | 1 hari | 16-Sep | 16-Sep | ✅ | |
+| | Identifikasi pemangku kepentingan | 1 hari | 17-Sep | 17-Sep | ✅ | |
+| | Persetujuan piagam proyek | 1 hari | 18-Sep | 18-Sep | ✅ | |
+| **2. Kebutuhan** | Analisis & dokumentasi | 11 hari | 19-Sep | 29-Sep | ✅ Selesai | M2: Kebutuhan Selesai |
+| | Wawancara pemangku kepentingan | 5 hari | 19-Sep | 23-Sep | ✅ | |
+| | Analisis proses bisnis | 3 hari | 19-Sep | 21-Sep | ✅ | |
+| | Dokumentasi kebutuhan | 3 hari | 26-Sep | 28-Sep | ✅ | |
+| | Validasi kebutuhan | 1 hari | 29-Sep | 29-Sep | ✅ | |
+| **3. Desain** | Desain sistem & UI/UX | 14 hari | 30-Sep | 13-Oct | ✅ Selesai | M3: Desain Selesai |
+| | Desain arsitektur | 3 hari | 30-Sep | 2-Oct | ✅ | |
+| | Desain basis data | 4 hari | 3-Oct | 6-Oct | ✅ | |
+| | Desain UI/UX | 5 hari | 7-Oct | 11-Oct | ✅ | |
+| | Desain keamanan | 2 hari | 12-Oct | 13-Oct | ✅ | |
+| **4. Pengembangan** | Pengkodean & integrasi | 28 hari | 14-Oct | 10-Nov | ⏳ Sedang Berjalan | M4: Pengembangan Selesai |
+| | Pengaturan lingkungan | 2 hari | 14-Oct | 15-Oct | ✅ | |
+| | Implementasi basis data | 3 hari | 16-Oct | 18-Oct | ✅ | |
+| | Sistem autentikasi | 4 hari | 19-Oct | 22-Oct | ✅ | |
+| | Pengembangan *backend* | 10 hari | 23-Oct | 1-Nov | ⏳ | |
+| | Pengembangan *frontend* | 12 hari | 23-Oct | 3-Nov | ⏳ | |
+| | Integrasi | 5 hari | 4-Nov | 8-Nov | 🔜 Akan Datang | |
+| | Tinjauan kode | 2 hari | 9-Nov | 10-Nov | 🔜 | |
+| **5. Pengujian** | QA & UAT | 14 hari | 11-Nov | 24-Nov | 🔜 Akan Datang | M5: Pengujian Selesai |
+| | Pengujian unit | 3 hari | 11-Nov | 13-Nov | 🔜 | |
+| | Pengujian integrasi | 3 hari | 14-Nov | 16-Nov | 🔜 | |
+| | Pengujian fungsional | 4 hari | 17-Nov | 20-Nov | 🔜 | |
+| | Pengujian kegunaan (SUS) | 3 hari | 21-Nov | 23-Nov | 🔜 | |
 | | UAT | 2 hari | 23-Nov | 24-Nov | 🔜 | |
-| **6. Deployment** | Go-live & training | 7 hari | 25-Nov | 1-Dec | 🔜 Upcoming | M6: System Live |
-| | Production setup | 2 hari | 25-Nov | 26-Nov | 🔜 | |
-| | App deployment | 2 hari | 27-Nov | 28-Nov | 🔜 | |
-| | Go-live | 1 hari | 29-Nov | 29-Nov | 🔜 | M6: System Live |
-| | User training | 2 hari | 30-Nov | 1-Dec | 🔜 | M7: Project Complete |
-| **7. Documentation** | Reports & materials | 21 hari | 11-Nov | 1-Dec | ⏳ In Progress | M7: Project Complete |
-| | Technical documentation | 7 hari | 11-Nov | 17-Nov | ⏳ | |
-| | User documentation | 5 hari | 18-Nov | 22-Nov | 🔜 | |
-| | Capstone report | 14 hari | 18-Nov | 1-Dec | ⏳ | |
-| | Presentation prep | 7 hari | 25-Nov | 1-Dec | 🔜 | |
+| **6. Peluncuran** | *Go-live* & pelatihan | 7 hari | 25-Nov | 1-Dec | 🔜 Akan Datang | M6: Sistem Aktif |
+| | Pengaturan produksi | 2 hari | 25-Nov | 26-Nov | 🔜 | |
+| | Peluncuran aplikasi | 2 hari | 27-Nov | 28-Nov | 🔜 | |
+| | *Go-live* | 1 hari | 29-Nov | 29-Nov | 🔜 | M6: Sistem Aktif |
+| | Pelatihan pengguna | 2 hari | 30-Nov | 1-Dec | 🔜 | M7: Proyek Selesai |
+| **7. Dokumentasi** | Laporan & materi | 21 hari | 11-Nov | 1-Dec | ⏳ Sedang Berjalan | M7: Proyek Selesai |
+| | Dokumentasi teknis | 7 hari | 11-Nov | 17-Nov | ⏳ | |
+| | Dokumentasi pengguna | 5 hari | 18-Nov | 22-Nov | 🔜 | |
+| | Laporan *capstone* | 14 hari | 18-Nov | 1-Dec | ⏳ | |
+| | Persiapan presentasi | 7 hari | 25-Nov | 1-Dec | 🔜 | |
 
-**Total Duration:** 77 hari kerja (11 minggu)  
-**Critical Path:** Initiation → Requirements → Design → Development → Integration → Testing → UAT → Deployment  
-**Current Progress:** 45% complete (Phase 1-3 done, Phase 4 in progress)
+**Total Durasi:** 77 hari kerja (11 minggu)  
+**Jalur Kritis (*Critical Path*):** Inisiasi → Kebutuhan → Desain → Pengembangan → Integrasi → Pengujian → UAT → Peluncuran  
+**Kemajuan Saat Ini:** 45% selesai (Fase 1-3 selesai, Fase 4 sedang berjalan)
 
 ---
 
-**[GAMBAR 4.5 - Gantt Chart Project Schedule (77 Working Days)]**
+**[GAMBAR 4.5 - Diagram Gantt Jadwal Proyek (77 Hari Kerja)]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   [INSERT GANTT CHART - 11 WEEKS TIMELINE]                 │
 │                                                             │
-│   PROJECT: CUR-HEART System Development                    │
-│   Timeline: 16 Sep 2024 - 1 Dec 2024 (77 days)             │
+│   PROYEK: Pengembangan Sistem CUR-HEART                    │
+│   Garis Waktu: 16 Sep 2024 - 1 Des 2024 (77 hari)          │
 │                                                             │
-│   Task Name              Week                               │
+│   Nama Tugas           Minggu                               │
 │                    1  2  3  4  5  6  7  8  9  10 11        │
 │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━      │
-│   1. Initiation    ██                                       │
-│   M1: Approved     ⭐                                       │
+│   1. Inisiasi      ██                                       │
+│   M1: Disetujui    ⭐                                       │
 │                                                             │
-│   2. Requirements  ░░██████                                 │
-│   M2: SRS Done        ⭐                                    │
+│   2. Kebutuhan     ░░██████                                 │
+│   M2: SRS Selesai     ⭐                                    │
 │                                                             │
-│   3. Design           ░░░░████████                          │
-│   M3: Design Done            ⭐                             │
+│   3. Desain           ░░░░████████                          │
+│   M3: Desain Selesai         ⭐                             │
 │                                                             │
-│   4. Development            ░░░░██████████████████          │
-│   M4: Code Done                                  ⭐         │
+│   4. Pengembangan           ░░░░██████████████████          │
+│   M4: Kode Selesai                               ⭐         │
 │                                                             │
-│   5. Testing                                ░░░░████████    │
-│   M5: UAT Pass                                      ⭐      │
+│   5. Pengujian                              ░░░░████████    │
+│   M5: UAT Lulus                                     ⭐      │
 │                                                             │
-│   6. Deployment                                     ░░░░██  │
+│   6. Peluncuran                                     ░░░░██  │
 │   M6: Go-Live                                           ⭐  │
 │                                                             │
-│   7. Documentation                      ████████████████    │
-│   M7: Complete                                          ⭐  │
+│   7. Dokumentasi                        ████████████████    │
+│   M7: Selesai                                           ⭐  │
 │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━      │
 │                                                             │
-│   Legend:                                                   │
-│   ██ = Completed     ░░ = Dependency/Buffer                 │
-│   ⭐ = Milestone     (Dates shown)                          │
+│   Legenda:                                                  │
+│   ██ = Selesai       ░░ = Dependensi/Buffer                 │
+│   ⭐ = Tonggak       (Tanggal ditampilkan)                  │
 │                                                             │
-│   Critical Path (Red): Init → Req → Design → Dev →         │
-│                       Integration → Test → Deploy           │
-│   Total Duration: 77 working days                          │
-│   Milestones: 7 major milestones                           │
-│   Dependencies: Sequential with some parallel tasks         │
+│   Jalur Kritis (Merah): Inisiasi → Kebutuhan → Desain →    │
+│                         Pengembangan → Integrasi →          │
+│                         Pengujian → Peluncuran              │
+│   Total Durasi: 77 hari kerja                              │
+│   Tonggak: 7 tonggak utama                                 │
+│   Dependensi: Berurutan dengan beberapa tugas paralel       │
 │                                                             │
 │   Format: Gantt Chart PNG/PDF                              │
-│   Recommended size: 1800x1000px                            │
-│   Style: Professional dengan critical path highlighted      │
+│   Ukuran rekomendasi: 1800x1000px                          │
+│   Gaya: Profesional dengan jalur kritis disorot            │
 │                                                             │
 │   File: assets/images/gantt-chart-77-days.png              │
 │   Tool: Microsoft Project, GanttProject, atau Excel        │
@@ -715,88 +720,88 @@ Scope Statement yang approved pada tanggal 29 September 2024 mencakup:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.5: Gantt Chart project schedule 77 hari kerja (11 minggu) dengan 7 phases, 7 milestones, dan critical path_
+_Gambar 4.5: Diagram Gantt jadwal proyek 77 hari kerja (11 minggu) dengan 7 fase, 7 tonggak, dan jalur kritis_
 
 ---
 
-### 4.2.3 Biaya Proyek (Cost Management)
+### 4.2.3 Manajemen Biaya Proyek
 
-**Tabel 4.6 Budget Breakdown (Rp 5,000,000 Total)**
+**Tabel 4.6 Rincian Anggaran (Total Rp 5.000.000)**
 
-| Category | Item | Unit Cost | Qty | Total (Rp) | % of Budget | Priority |
+| Kategori | Item | Biaya Unit | Qty | Total (Rp) | % Anggaran | Prioritas |
 |----------|------|-----------|-----|------------|-------------|----------|
-| **Infrastructure** | | | | **1.500.000** | 30% | Critical |
-| | Domain (.com, 1 tahun) | 150.000 | 1 | 150.000 | 3% | Must Have |
-| | VPS Hosting (3 bulan) | 300.000 | 3 | 900.000 | 18% | Must Have |
-| | SSL Certificate (Let's Encrypt) | 0 | 1 | 0 | 0% | Must Have |
-| | Backup Storage (Google Drive) | 150.000 | 1 | 150.000 | 3% | Should Have |
-| | CDN Service (Cloudflare Pro) | 300.000 | 1 | 300.000 | 6% | Could Have |
-| **Development Tools** | | | | **800.000** | 16% | High |
-| | Code Editor (VS Code) | 0 | 3 | 0 | 0% | Free |
-| | Design Tools (Figma Pro) | 200.000 | 1 | 200.000 | 4% | Must Have |
-| | Database Tools (MySQL Workbench) | 0 | 3 | 0 | 0% | Free |
-| | Version Control (GitHub) | 0 | 1 | 0 | 0% | Free |
-| | Project Management (Asana) | 100.000 | 1 | 100.000 | 2% | Should Have |
-| | Testing Tools | 500.000 | 1 | 500.000 | 10% | Must Have |
-| **Third-Party Services** | | | | **1.200.000** | 24% | High |
-| | Payment Gateway (Midtrans) | 0 | 1 | 0 | 0% | Setup free |
-| | Payment Testing Credit | 500.000 | 1 | 500.000 | 10% | Must Have |
-| | Email Service (SendGrid) | 200.000 | 1 | 200.000 | 4% | Must Have |
-| | SMS Service (Twilio) | 300.000 | 1 | 300.000 | 6% | Could Have |
-| | Monitoring (Sentry) | 200.000 | 1 | 200.000 | 4% | Should Have |
-| **Documentation** | | | | **500.000** | 10% | Medium |
-| | Report Printing (Full Color) | 300.000 | 1 | 300.000 | 6% | Must Have |
-| | X-Banner Printing (60x160) | 200.000 | 1 | 200.000 | 4% | Must Have |
-| **Contingency Reserve** | | | | **1.000.000** | 20% | Critical |
-| | Buffer for unexpected costs | 1.000.000 | 1 | 1.000.000 | 20% | Buffer |
-| **TOTAL PROJECT BUDGET** | | | | **5.000.000** | 100% | |
+| **Infrastruktur** | | | | **1.500.000** | 30% | Kritis |
+| | Domain (.com, 1 tahun) | 150.000 | 1 | 150.000 | 3% | Harus Ada |
+| | *Hosting* VPS (3 bulan) | 300.000 | 3 | 900.000 | 18% | Harus Ada |
+| | Sertifikat SSL (Let's Encrypt) | 0 | 1 | 0 | 0% | Harus Ada |
+| | Penyimpanan Cadangan (Google Drive) | 150.000 | 1 | 150.000 | 3% | Sebaiknya Ada |
+| | Layanan CDN (Cloudflare Pro) | 300.000 | 1 | 300.000 | 6% | Bisa Ada |
+| **Alat Pengembangan** | | | | **800.000** | 16% | Tinggi |
+| | Editor Kode (VS Code) | 0 | 3 | 0 | 0% | Gratis |
+| | Alat Desain (Figma Pro) | 200.000 | 1 | 200.000 | 4% | Harus Ada |
+| | Alat Basis Data (MySQL Workbench) | 0 | 3 | 0 | 0% | Gratis |
+| | Kontrol Versi (GitHub) | 0 | 1 | 0 | 0% | Gratis |
+| | Manajemen Proyek (Asana) | 100.000 | 1 | 100.000 | 2% | Sebaiknya Ada |
+| | Alat Pengujian | 500.000 | 1 | 500.000 | 10% | Harus Ada |
+| **Layanan Pihak Ketiga** | | | | **1.200.000** | 24% | Tinggi |
+| | *Payment Gateway* (Midtrans) | 0 | 1 | 0 | 0% | Setup gratis |
+| | Kredit Uji Pembayaran | 500.000 | 1 | 500.000 | 10% | Harus Ada |
+| | Layanan Email (SendGrid) | 200.000 | 1 | 200.000 | 4% | Harus Ada |
+| | Layanan SMS (Twilio) | 300.000 | 1 | 300.000 | 6% | Bisa Ada |
+| | Pemantauan (Sentry) | 200.000 | 1 | 200.000 | 4% | Sebaiknya Ada |
+| **Dokumentasi** | | | | **500.000** | 10% | Sedang |
+| | Pencetakan Laporan (*Full Color*) | 300.000 | 1 | 300.000 | 6% | Harus Ada |
+| | Pencetakan X-Banner (60x160) | 200.000 | 1 | 200.000 | 4% | Harus Ada |
+| **Cadangan Kontinjensi** | | | | **1.000.000** | 20% | Kritis |
+| | *Buffer* untuk biaya tak terduga | 1.000.000 | 1 | 1.000.000 | 20% | *Buffer* |
+| **TOTAL ANGGARAN PROYEK** | | | | **5.000.000** | 100% | |
 
 ---
 
-**[GAMBAR 4.6 - Budget Allocation Breakdown (Rp 5,000,000)]**
+**[GAMBAR 4.6 - Rincian Alokasi Anggaran (Rp 5.000.000)]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   [INSERT BUDGET PIE CHART + BAR COMPARISON]               │
 │                                                             │
-│   TOTAL BUDGET: Rp 5,000,000                               │
+│   TOTAL ANGGARAN: Rp 5.000.000                             │
 │                                                             │
 │   ┌─────────────────────────────────────────┐              │
-│   │   PIE CHART - Budget Allocation         │              │
+│   │   DIAGRAM PIE - Alokasi Anggaran        │              │
 │   │                                         │              │
-│   │     Infrastructure 30%                  │              │
-│   │     Rp 1,500,000                        │              │
+│   │     Infrastruktur 30%                   │              │
+│   │     Rp 1.500.000                        │              │
 │   │                                         │              │
-│   │     Third-Party Services 24%            │              │
-│   │     Rp 1,200,000                        │              │
+│   │     Layanan Pihak Ketiga 24%            │              │
+│   │     Rp 1.200.000                        │              │
 │   │                                         │              │
-│   │     Contingency 20%                     │              │
-│   │     Rp 1,000,000                        │              │
+│   │     Kontinjensi 20%                     │              │
+│   │     Rp 1.000.000                        │              │
 │   │                                         │              │
-│   │     Dev Tools 16%                       │              │
-│   │     Rp 800,000                          │              │
+│   │     Alat Pengembangan 16%               │              │
+│   │     Rp 800.000                          │              │
 │   │                                         │              │
-│   │     Documentation 10%                   │              │
-│   │     Rp 500,000                          │              │
+│   │     Dokumentasi 10%                     │              │
+│   │     Rp 500.000                          │              │
 │   └─────────────────────────────────────────┘              │
 │                                                             │
-│   BAR CHART - Spending by Category:                        │
-│   Infrastructure    ████████████████░░ 30%                 │
-│   Third-Party       ████████████░░░░░░ 24%                 │
-│   Contingency       ████████████░░░░░░ 20%                 │
-│   Dev Tools         ████████░░░░░░░░░░ 16%                 │
-│   Documentation     █████░░░░░░░░░░░░░ 10%                 │
+│   DIAGRAM BATANG - Pengeluaran per Kategori:               │
+│   Infrastruktur     ████████████████░░ 30%                 │
+│   Pihak Ketiga      ████████████░░░░░░ 24%                 │
+│   Kontinjensi       ████████████░░░░░░ 20%                 │
+│   Alat Dev          ████████░░░░░░░░░░ 16%                 │
+│   Dokumentasi       █████░░░░░░░░░░░░░ 10%                 │
 │                                                             │
-│   Key Highlights:                                          │
-│   • Largest: Infrastructure (Rp 1.5M - hosting, domain)    │
-│   • Critical: Third-Party APIs (Rp 1.2M - payment, email)  │
-│   • Buffer: Contingency 20% (Rp 1M reserved)               │
-│   • Free Tools: VS Code, MySQL, GitHub (Rp 0)              │
+│   Sorotan Kunci:                                           │
+│   • Terbesar: Infrastruktur (Rp 1.5M - hosting, domain)   │
+│   • Kritis: API Pihak Ketiga (Rp 1.2M - pembayaran, email)│
+│   • Buffer: Kontinjensi 20% (Rp 1M dicadangkan)            │
+│   • Alat Gratis: VS Code, MySQL, GitHub (Rp 0)             │
 │                                                             │
-│   Format: Combo Chart (Pie + Bar) PNG                      │
-│   Recommended size: 1600x900px                             │
-│   Style: Professional dengan color coding                  │
+│   Format: Diagram Kombo (Pie + Bar) PNG                    │
+│   Ukuran rekomendasi: 1600x900px                           │
+│   Gaya: Profesional dengan kode warna                      │
 │                                                             │
 │   File: assets/images/budget-allocation-5m.png             │
 │   Tool: Excel, Google Sheets, atau Canva                   │
@@ -804,156 +809,156 @@ _Gambar 4.5: Gantt Chart project schedule 77 hari kerja (11 minggu) dengan 7 pha
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.6: Budget allocation breakdown Rp 5 juta dengan pie chart alokasi 5 kategori dan bar chart perbandingan_
+_Gambar 4.6: Rincian alokasi anggaran Rp 5 juta dengan diagram *pie* untuk 5 kategori dan diagram batang perbandingan_
 
 ---
 
-**Cost Performance Index (CPI):**
+**Indeks Kinerja Biaya (*Cost Performance Index* - CPI):**
 
-| Period | Planned Value (PV) | Earned Value (EV) | Actual Cost (AC) | Cost Variance (CV) | CPI | Status |
+| Periode | Nilai Terencana (PV) | Nilai Hasil (EV) | Biaya Aktual (AC) | Varian Biaya (CV) | CPI | Status |
 |--------|-------------------|-------------------|------------------|-------------------|-----|--------|
-| Month 1 (Sep) | Rp 1.500.000 | Rp 1.545.000 | Rp 1.450.000 | +Rp 95.000 | 1.07 | ✅ Under budget |
-| Month 2 (Oct) | Rp 2.000.000 | Rp 2.020.000 | Rp 1.980.000 | +Rp 40.000 | 1.02 | ✅ On track |
-| Month 3 (Nov) | Rp 1.500.000 | (in progress) | (in progress) | TBD | TBD | ⏳ In progress |
-| **Total to Date** | **Rp 3.500.000** | **Rp 3.565.000** | **Rp 3.430.000** | **+Rp 135.000** | **1.04** | ✅ **Under budget** |
+| Bulan 1 (Sep) | Rp 1.500.000 | Rp 1.545.000 | Rp 1.450.000 | +Rp 95.000 | 1.07 | ✅ Di bawah anggaran |
+| Bulan 2 (Okt) | Rp 2.000.000 | Rp 2.020.000 | Rp 1.980.000 | +Rp 40.000 | 1.02 | ✅ Sesuai rencana |
+| Bulan 3 (Nov) | Rp 1.500.000 | (sedang berjalan) | (sedang berjalan) | TBD | TBD | ⏳ Sedang berjalan |
+| **Total s.d. Kini** | **Rp 3.500.000** | **Rp 3.565.000** | **Rp 3.430.000** | **+Rp 135.000** | **1.04** | ✅ **Di bawah anggaran** |
 
-**Notes:**
-- CPI > 1.0 = Under budget (good performance)
-- CPI = 1.0 = On budget (as planned)
-- CPI < 1.0 = Over budget (need corrective action)
-- Current CPI 1.04 indicates efficient cost management
+**Catatan:**
+- CPI > 1.0 = Di bawah anggaran (kinerja baik)
+- CPI = 1.0 = Sesuai anggaran (sesuai rencana)
+- CPI < 1.0 = Melebihi anggaran (perlu tindakan korektif)
+- CPI saat ini 1.04 menunjukkan manajemen biaya yang efisien
 
-### 4.2.4 Kualitas Proyek (Quality Management)
+### 4.2.4 Manajemen Kualitas Proyek
 
-**Tabel 4.7 Quality Standards dan Metrics**
+**Tabel 4.7 Standar dan Metrik Kualitas**
 
-| Quality Area | Standard/Criteria | Target Metric | Measurement Method | Responsibility | Frequency |
+| Area Kualitas | Standar/Kriteria | Metrik Target | Metode Pengukuran | Penanggung Jawab | Frekuensi |
 |--------------|-------------------|---------------|-------------------|----------------|-----------|
-| **Code Quality** | Laravel PSR-12, PHPDoc | Grade A, No critical issues | SonarQube, PHPStan | Developers | Per commit |
-| | DRY principle, SOLID | Cyclomatic complexity < 10 | Code analysis tools | Developers | Per PR |
-| | Meaningful names, modularity | Maintainability Index > 70 | Code metrics | Developers | Weekly |
-| **Functional Quality** | All must-have requirements | 95%+ implemented | Requirements traceability | PM | Per sprint |
-| | Business rules correct | 100% rules validated | Functional testing | QA | Pre-UAT |
-| | Error handling | All exceptions handled | Unit & integration test | Developers | Continuous |
-| **Performance** | Page load time | < 3 seconds | Lighthouse, GTmetrix | Developers | Weekly |
-| | Time to First Byte (TTFB) | < 600ms | Performance monitoring | DevOps | Weekly |
-| | Database query performance | < 100ms per query | Query profiler | DBA | Weekly |
-| | API response time | < 500ms | API testing tools | Backend Dev | Weekly |
-| **Security** | OWASP Top 10 compliance | No critical vulnerabilities | OWASP ZAP, security audit | Security Lead | Bi-weekly |
-| | Authentication & Authorization | JWT secure, role-based | Security testing | Backend Dev | Pre-deploy |
-| | Data encryption | Sensitive data encrypted | Code review | Security Lead | Pre-deploy |
-| | SQL injection prevention | Zero SQL vulnerabilities | Penetration testing | QA | Pre-deploy |
-| **Usability** | System Usability Scale (SUS) | ≥ 80/100 | User testing with 10 users | UX Lead | Week 10 |
-| | Task success rate | ≥ 90% | Usability testing | UX Lead | Week 10 |
-| | Error rate per task | < 5% | User testing observation | UX Lead | Week 10 |
-| | WCAG 2.1 Level AA | Pass accessibility audit | Lighthouse, aXe | Frontend Dev | Weekly |
-| **Testing Coverage** | Unit test coverage | ≥ 70% for critical code | PHPUnit coverage | Developers | Continuous |
-| | Integration test coverage | 100% critical flows | Laravel Dusk | QA | Pre-UAT |
-| | Defect density | < 5 bugs per 1000 LOC | Bug tracking (Jira) | QA | Post-testing |
-| **Documentation** | Technical docs | 100% complete | Documentation review | Tech Writer | Pre-deploy |
-| | User manuals | All roles covered | User review | Tech Writer | Pre-training |
-| | Code comments | Complex logic commented | Code review | Developers | Per PR |
+| **Kualitas Kode** | Laravel PSR-12, PHPDoc | Grade A, Tidak ada isu kritis | SonarQube, PHPStan | Pengembang | Per *commit* |
+| | Prinsip DRY, SOLID | Kompleksitas siklomatis < 10 | Alat analisis kode | Pengembang | Per PR |
+| | Nama bermakna, modularitas | Indeks Kemudahan Pemeliharaan > 70 | Metrik kode | Pengembang | Mingguan |
+| **Kualitas Fungsional** | Semua kebutuhan wajib | 95%+ terimplementasi | Pelacakan kebutuhan | PM | Per *sprint* |
+| | Aturan bisnis benar | 100% aturan tervalidasi | Pengujian fungsional | QA | Pra-UAT |
+| | Penanganan error | Semua eksepsi ditangani | Uji unit & integrasi | Pengembang | Berkelanjutan |
+| **Kinerja** | Waktu muat halaman | < 3 detik | Lighthouse, GTmetrix | Pengembang | Mingguan |
+| | *Time to First Byte* (TTFB) | < 600ms | Pemantauan kinerja | DevOps | Mingguan |
+| | Kinerja *query* basis data | < 100ms per *query* | *Profiler query* | DBA | Mingguan |
+| | Waktu respons API | < 500ms | Alat uji API | Pengembang *Backend* | Mingguan |
+| **Keamanan** | Kepatuhan OWASP Top 10 | Tidak ada kerentanan kritis | OWASP ZAP, audit keamanan | Pemimpin Keamanan | Dua mingguan |
+| | Autentikasi & Otorisasi | JWT aman, berbasis peran | Pengujian keamanan | Pengembang *Backend* | Pra-*deploy* |
+| | Enkripsi data | Data sensitif terenkripsi | Tinjauan kode | Pemimpin Keamanan | Pra-*deploy* |
+| | Pencegahan injeksi SQL | Nol kerentanan SQL | Uji penetrasi | QA | Pra-*deploy* |
+| **Kegunaan** | *System Usability Scale* (SUS) | ≥ 80/100 | Uji pengguna dengan 10 orang | Pemimpin UX | Minggu 10 |
+| | Tingkat keberhasilan tugas | ≥ 90% | Pengujian kegunaan | Pemimpin UX | Minggu 10 |
+| | Tingkat error per tugas | < 5% | Observasi uji pengguna | Pemimpin UX | Minggu 10 |
+| | WCAG 2.1 Level AA | Lulus audit aksesibilitas | Lighthouse, aXe | Pengembang *Frontend* | Mingguan |
+| **Cakupan Pengujian** | Cakupan uji unit | ≥ 70% untuk kode kritis | Cakupan PHPUnit | Pengembang | Berkelanjutan |
+| | Cakupan uji integrasi | 100% alur kritis | Laravel Dusk | QA | Pra-UAT |
+| | Densitas defek | < 5 *bug* per 1000 LOC | Pelacakan *bug* (Jira) | QA | Pasca-pengujian |
+| **Dokumentasi** | Dokumentasi teknis | 100% lengkap | Tinjauan dokumentasi | Penulis Teknis | Pra-*deploy* |
+| | Manual pengguna | Semua peran tercakup | Tinjauan pengguna | Penulis Teknis | Pra-pelatihan |
+| | Komentar kode | Logika kompleks berkomentar | Tinjauan kode | Pengembang | Per PR |
 
-**Quality Assurance Process:**
-1. Code Review (GitHub PR) → Unit Testing (PHPUnit) → Integration Testing (Laravel Dusk) → Performance Testing (Lighthouse) → Security Audit (OWASP ZAP) → Usability Testing (SUS) → UAT (Stakeholders)
-   - No critical atau high-severity bugs
-   - Code review by peers before merge
-   - Minimum 70% code coverage untuk critical functions
+**Proses Jaminan Kualitas:**
+1. Tinjauan Kode (GitHub PR) → Pengujian Unit (PHPUnit) → Pengujian Integrasi (Laravel Dusk) → Pengujian Kinerja (Lighthouse) → Audit Keamanan (OWASP ZAP) → Pengujian Kegunaan (SUS) → UAT (Pemangku Kepentingan)
+   - Tidak ada *bug* kritis atau tingkat tinggi
+   - Tinjauan kode oleh rekan sebelum *merge*
+   - Minimum 70% cakupan kode untuk fungsi kritis
 
-2. **Performance Standards:**
-   - Page load time < 3 seconds (on average connection)
-   - Time to First Byte (TTFB) < 600ms
-   - Database query optimization (no N+1 problems)
-   - Image optimization (max 500KB per image)
-   - Lighthouse score ≥ 80 untuk Performance
+2. **Standar Kinerja:**
+   - Waktu muat halaman < 3 detik (pada koneksi rata-rata)
+   - *Time to First Byte* (TTFB) < 600ms
+   - Optimasi *query* basis data (tidak ada masalah N+1)
+   - Optimasi gambar (maks 500KB per gambar)
+   - Skor Lighthouse ≥ 80 untuk Kinerja
 
-3. **Security Standards:**
-   - OWASP Top 10 vulnerabilities mitigated
-   - Data encryption untuk sensitive information
-   - Secure authentication dan authorization
-   - Regular security audits
-   - Compliance dengan UU Perlindungan Data Pribadi
+3. **Standar Keamanan:**
+   - Kerentanan OWASP Top 10 dimitigasi
+   - Enkripsi data untuk informasi sensitif
+   - Autentikasi dan otorisasi yang aman
+   - Audit keamanan reguler
+   - Kepatuhan terhadap UU Perlindungan Data Pribadi
 
-4. **Usability Standards:**
-   - System Usability Scale (SUS) score ≥ 80/100
-   - Task success rate ≥ 90%
-   - Error rate < 5% per task
-   - Accessibility WCAG 2.1 Level AA (minimum)
+4. **Standar Kegunaan:**
+   - Skor *System Usability Scale* (SUS) ≥ 80/100
+   - Tingkat keberhasilan tugas ≥ 90%
+   - Tingkat error < 5% per tugas
+   - Aksesibilitas WCAG 2.1 Level AA (minimum)
 
-5. **Documentation Standards:**
-   - Complete technical documentation (architecture, database, APIs)
-   - Comprehensive user manuals untuk setiap role
-   - Code comments untuk complex logic
-   - README files dengan setup instructions
-   - Change log maintained
+5. **Standar Dokumentasi:**
+   - Dokumentasi teknis lengkap (arsitektur, basis data, API)
+   - Manual pengguna komprehensif untuk setiap peran
+   - Komentar kode untuk logika kompleks
+   - File README dengan instruksi *setup*
+   - *Change log* dipelihara
 
-**Quality Assurance Activities:**
+**Aktivitas Jaminan Kualitas:**
 
-| Activity | Frequency | Responsibility | Tool/Method |
+| Aktivitas | Frekuensi | Penanggung Jawab | Alat/Metode |
 |----------|-----------|----------------|-------------|
-| Code Review | Per pull request | Peer developer | GitHub PR review |
-| Unit Testing | Continuous | Developer | PHPUnit |
-| Integration Testing | Per integration | QA/Developer | Laravel Dusk, Postman |
-| Performance Testing | Weekly | Developer | Lighthouse, GTmetrix |
-| Security Audit | Bi-weekly | Security lead | OWASP ZAP, manual review |
-| Usability Testing | Once (Week 10) | UX lead | User sessions |
-| UAT | Once (Week 10) | Stakeholders | Acceptance criteria |
+| Tinjauan Kode | Per *pull request* | Pengembang rekan | Tinjauan PR GitHub |
+| Pengujian Unit | Berkelanjutan | Pengembang | PHPUnit |
+| Pengujian Integrasi | Per integrasi | QA/Pengembang | Laravel Dusk, Postman |
+| Pengujian Kinerja | Mingguan | Pengembang | Lighthouse, GTmetrix |
+| Audit Keamanan | Dua mingguan | Pemimpin keamanan | OWASP ZAP, tinjauan manual |
+| Pengujian Kegunaan | Sekali (Minggu 10) | Pemimpin UX | Sesi pengguna |
+| UAT | Sekali (Minggu 10) | Pemangku Kepentingan | Kriteria penerimaan |
 
-**Quality Metrics:**
+**Metrik Kualitas:**
 
-| Metric | Target | Measurement Method |
+| Metrik | Target | Metode Pengukuran |
 |--------|--------|-------------------|
-| Defect Density | < 5 bugs per 1000 LOC | Bug tracking tool |
-| Test Coverage | ≥ 70% for critical code | Code coverage tool |
-| Performance Score | ≥ 80/100 (Lighthouse) | Lighthouse audit |
-| Security Score | A rating | Security scanner |
-| Usability Score | ≥ 80/100 (SUS) | User testing |
-| Code Quality | Grade A | Code analysis tool |
+| Densitas Defek | < 5 *bug* per 1000 LOC | Alat pelacakan *bug* |
+| Cakupan Uji | ≥ 70% untuk kode kritis | Alat cakupan kode |
+| Skor Kinerja | ≥ 80/100 (Lighthouse) | Audit Lighthouse |
+| Skor Keamanan | Rating A | *Scanner* keamanan |
+| Skor Kegunaan | ≥ 80/100 (SUS) | Pengujian pengguna |
+| Kualitas Kode | Grade A | Alat analisis kode |
 
-### 4.2.5 Manajemen Sumber Daya (Resource Management)
+### 4.2.5 Manajemen Sumber Daya
 
-**Tabel 4.8 Resource Allocation Matrix**
+**Tabel 4.8 Matriks Alokasi Sumber Daya**
 
-| Resource Name | Primary Role | Secondary Role | Skills/Expertise | Allocation | Project Phases | Weekly Hours | Cost (if any) |
+| Nama Sumber Daya | Peran Utama | Peran Sekunder | Keahlian/Ketrampilan | Alokasi | Fase Proyek | Jam Mingguan | Biaya (jika ada) |
 |---------------|--------------|----------------|------------------|------------|----------------|--------------|---------------|
-| **Internal Team (Core)** | | | | | | | |
-| Roki Anjas | Project Manager | Backend Developer | Leadership, Laravel, PHP, MySQL, API | 100% | All phases | 40 hrs | Free (student) |
-| Susanto | Frontend Developer | UI/UX Designer | Tailwind CSS, Blade, Figma, UX research | 100% | Design-Deployment | 40 hrs | Free (student) |
-| Fahruroji | Full-Stack Developer | Database Admin | Laravel, MySQL, Testing, Documentation | 100% | Design-Deployment | 40 hrs | Free (student) |
-| **External Stakeholders** | | | | | | | |
-| Rani Irma Handayani, M.Kom | Academic Supervisor | Technical Advisor | Systems analysis, project management | Part-time | All phases | 2 hrs | Free (faculty) |
-| CUR-HEART Owner | Project Sponsor | Decision Maker | Business strategy, budget approval | As needed | Initiation, UAT | 1 hr | Free (sponsor) |
-| Terapis (5 orang) | Subject Matter Expert | End User | Hypnotherapy, workflow knowledge | As needed | Requirements, UAT | 2 hrs/person | Free (SME) |
-| Admin Staff (2 orang) | System Operator | Tester | Admin processes, data entry | As needed | Requirements, UAT | 3 hrs/person | Free (SME) |
-| Sample Clients (10 orang) | End User | Tester | User perspective, feedback | As needed | Testing | 1 hr/person | Free (volunteer) |
-| **Specialized Resources** | | | | | | | |
-| Technical Mentor | Code Reviewer | - | Senior Laravel developer | Ad-hoc | Development | 1 hr/week | Free (community) |
-| Security Consultant | Security Auditor | - | Web security, OWASP | Ad-hoc | Testing | 2 hrs total | Free (volunteer) |
+| **Tim Internal (Inti)** | | | | | | | |
+| Roki Anjas | Manajer Proyek | Pengembang *Backend* | Kepemimpinan, Laravel, PHP, MySQL, API | 100% | Semua fase | 40 jam | Gratis (mahasiswa) |
+| Susanto | Pengembang *Frontend* | Perancang UI/UX | Tailwind CSS, Blade, Figma, Riset UX | 100% | Desain-Peluncuran | 40 jam | Gratis (mahasiswa) |
+| Fahruroji | Pengembang *Full-Stack* | Admin Basis Data | Laravel, MySQL, Pengujian, Dokumentasi | 100% | Desain-Peluncuran | 40 jam | Gratis (mahasiswa) |
+| **Pemangku Kepentingan Eksternal** | | | | | | | |
+| Rani Irma Handayani, M.Kom | Pembimbing Akademik | Penasihat Teknis | Analisis sistem, manajemen proyek | Paruh waktu | Semua fase | 2 jam | Gratis (dosen) |
+| Pemilik CUR-HEART | Sponsor Proyek | Pengambil Keputusan | Strategi bisnis, persetujuan anggaran | Sesuai kebutuhan | Inisiasi, UAT | 1 jam | Gratis (sponsor) |
+| Terapis (5 orang) | Ahli Materi Subjek | Pengguna Akhir | Hipnoterapi, pengetahuan alur kerja | Sesuai kebutuhan | Kebutuhan, UAT | 2 jam/orang | Gratis (SME) |
+| Staf Admin (2 orang) | Operator Sistem | Penguji | Proses admin, entri data | Sesuai kebutuhan | Kebutuhan, UAT | 3 jam/orang | Gratis (SME) |
+| Klien Sampel (10 orang) | Pengguna Akhir | Penguji | Perspektif pengguna, umpan balik | Sesuai kebutuhan | Pengujian | 1 jam/orang | Gratis (sukarelawan) |
+| **Sumber Daya Spesialis** | | | | | | | |
+| Mentor Teknis | Peninjau Kode | - | Pengembang Laravel senior | Ad-hoc | Pengembangan | 1 jam/minggu | Gratis (komunitas) |
+| Konsultan Keamanan | Auditor Keamanan | - | Keamanan web, OWASP | Ad-hoc | Pengujian | 2 jam total | Gratis (sukarelawan) |
 
-**Resource Distribution by Phase:**
+**Distribusi Sumber Daya per Fase:**
 
-| Phase | Roki (PM/BE) | Susanto (FE/UX) | Fahruroji (FS/DBA) | External | Total Hours |
+| Fase | Roki (PM/BE) | Susanto (FE/UX) | Fahruroji (FS/DBA) | Eksternal | Total Jam |
 |-------|-------------|-----------------|-------------------|----------|-------------|
-| 1. Initiation (3 days) | 24 hrs (Lead) | 8 hrs | 8 hrs | 2 hrs (Supervisor) | 42 hrs |
-| 2. Requirements (11 days) | 40 hrs | 32 hrs | 16 hrs | 20 hrs (SME) | 108 hrs |
-| 3. Design (14 days) | 56 hrs | 80 hrs (Lead) | 56 hrs | 4 hrs (Review) | 196 hrs |
-| 4. Development (28 days) | 112 hrs (Lead) | 112 hrs | 112 hrs | 4 hrs (Mentor) | 340 hrs |
-| 5. Testing (14 days) | 40 hrs | 40 hrs | 72 hrs (Lead) | 20 hrs (Users) | 172 hrs |
-| 6. Deployment (7 days) | 32 hrs (Lead) | 16 hrs | 24 hrs | 8 hrs (Training) | 80 hrs |
-| 7. Documentation (21 days) | 60 hrs | 40 hrs | 60 hrs (Lead) | 2 hrs (Review) | 162 hrs |
-| **Total** | **364 hrs** | **328 hrs** | **348 hrs** | **60 hrs** | **1100 hrs** |
+| 1. Inisiasi (3 hari) | 24 jam (Pimpinan) | 8 jam | 8 jam | 2 jam (Pembimbing) | 42 jam |
+| 2. Kebutuhan (11 hari) | 40 jam | 32 jam | 16 jam | 20 jam (SME) | 108 jam |
+| 3. Desain (14 hari) | 56 jam | 80 jam (Pimpinan) | 56 jam | 4 jam (Tinjauan) | 196 jam |
+| 4. Pengembangan (28 hari) | 112 jam (Pimpinan) | 112 jam | 112 jam | 4 jam (Mentor) | 340 jam |
+| 5. Pengujian (14 hari) | 40 jam | 40 jam | 72 jam (Pimpinan) | 20 jam (Pengguna) | 172 jam |
+| 6. Peluncuran (7 hari) | 32 jam (Pimpinan) | 16 jam | 24 jam | 8 jam (Pelatihan) | 80 jam |
+| 7. Dokumentasi (21 hari) | 60 jam | 40 jam | 60 jam (Pimpinan) | 2 jam (Tinjauan) | 162 jam |
+| **Total** | **364 jam** | **328 jam** | **348 jam** | **60 jam** | **1100 jam** |
 
-**Notes:**
-- All internal team members: Full-time allocation (40 hrs/week during project)
-- No salary costs (academic capstone project)
-- Total project effort: ~1100 person-hours over 11 weeks
-- Average: 100 person-hours per week
+**Catatan:**
+- Semua anggota tim internal: Alokasi penuh waktu (40 jam/minggu selama proyek)
+- Tidak ada biaya gaji (proyek *capstone* akademik)
+- Total upaya proyek: ~1100 jam-orang selama 11 minggu
+- Rata-rata: 100 jam-orang per minggu
 
-**Resource Calendar:**
+**Kalender Sumber Daya:**
 
 ```
-      September         October          November
-Week: 1  2  3  4    5  6  7  8    9  10 11
+      September         Oktober          November
+Minggu: 1  2  3  4    5  6  7  8    9  10 11
 ────────────────────────────────────────────
 Roki: ████████████████████████████████████
 Susanto: ████████████████████████████████████
@@ -963,88 +968,88 @@ Owner:  █       █        █        █    █
 Terapis:     █              █         █
 ```
 
-**Resource Leveling:**
+**Perataan Sumber Daya (*Resource Leveling*):**
 
-Untuk menghindari resource overallocation, beberapa tasks dilakukan parallel:
-- Backend dan Frontend development (Week 5-8)
-- Testing dan Documentation (Week 9-11)
-- Code dapat di-distribute berdasarkan module untuk parallel work
+Untuk menghindari alokasi sumber daya yang berlebihan, beberapa tugas dilakukan paralel:
+- Pengembangan *backend* dan *frontend* (Minggu 5-8)
+- Pengujian dan Dokumentasi (Minggu 9-11)
+- Kode dapat didistribusikan berdasarkan modul untuk kerja paralel
 
-### 4.2.6 Manajemen Risiko (Risk Management)
+### 4.2.6 Manajemen Risiko
 
-**Tabel 4.9 Risk Register dengan Mitigation Strategy**
+**Tabel 4.9 Daftar Risiko dengan Strategi Mitigasi**
 
-| ID | Risk Event | Category | Probability | Impact | Risk Score | Priority | Mitigation Strategy (Preventive) | Contingency Plan (Reactive) | Risk Owner | Status |
+| ID | Peristiwa Risiko | Kategori | Probabilitas | Dampak | Skor Risiko | Prioritas | Strategi Mitigasi (Preventif) | Rencana Kontinjensi (Reaktif) | Pemilik Risiko | Status |
 |----|-----------|----------|-------------|--------|------------|----------|----------------------------------|---------------------------|------------|--------|
-| R01 | Scope creep dari stakeholder requests | Scope | Medium (50%) | High (8) | 4.0 | Critical | Strict change control process, MoSCoW prioritization, document approved scope baseline | Defer nice-to-have features to Phase 2 post-launch, renegotiate timeline | PM | ⚠️ Active |
-| R02 | Technical complexity lebih tinggi dari estimasi | Technical | Medium (40%) | Medium (6) | 2.4 | High | Early prototyping, regular technical reviews, spike solutions for unknowns | Request mentor assistance, break into smaller tasks, extend timeline if critical | Tech Lead | ⚠️ Active |
-| R03 | Team member unavailability (sakit, personal) | Resource | Low (20%) | High (8) | 1.6 | High | Cross-training, pair programming, comprehensive documentation, knowledge sharing sessions | Redistribute work among team, adjust timeline, defer non-critical tasks | PM | ✅ Monitored |
-| R04 | Stakeholder tidak available untuk review/UAT | Stakeholder | Low (30%) | Medium (5) | 1.5 | Medium | Flexible scheduling, asynchronous communication, early engagement planning | Use recorded demos, email approvals, proxy decision maker | PM | ✅ Monitored |
-| R05 | Payment gateway integration issues | Integration | Medium (40%) | Medium (6) | 2.4 | High | Early integration testing, sandbox environment, backup provider (Xendit), API documentation review | Use manual verification temporarily, implement alternative payment method first | Backend Dev | ⚠️ Active |
-| R06 | Performance issues pada production | Performance | Low (30%) | High (7) | 2.1 | High | Load testing, query optimization, database indexing, caching strategy (Redis), CDN | Upgrade hosting plan (scale up), implement full CDN, optimize critical queries | DevOps | ✅ Monitored |
-| R07 | Data security breach atau vulnerability | Security | Low (10%) | Critical (10) | 1.0 | Critical | Security best practices (OWASP), regular audits, penetration testing, encryption, input validation | Immediate patch deployment, incident response plan, notify affected users, forensic analysis | Security Lead | ✅ Monitored |
-| R08 | Timeline delay due to unforeseen challenges | Schedule | Medium (40%) | High (7) | 2.8 | Critical | Weekly progress monitoring, buffer time (20%), early issue identification, daily standups | Reduce scope (remove nice-to-have), request timeline extension, increase work hours | PM | ⚠️ Active |
-| R09 | Budget overrun | Cost | Low (20%) | Medium (5) | 1.0 | Medium | Cost tracking (monthly), approval process for expenses, use free alternatives where possible | Use contingency fund (Rp 1M), seek additional funding from sponsor, reduce optional expenses | PM | ✅ Monitored |
-| R10 | Low user adoption post-launch | Business | Medium (30%) | High (8) | 2.4 | High | User-centric design, comprehensive training, change management plan, early user involvement | Additional training sessions, 1-on-1 user support, incentives for adoption, feedback loop | PM | ⚠️ Active |
-| R11 | Third-party service downtime (hosting, APIs) | External | Low (25%) | Medium (6) | 1.5 | Medium | Choose reliable providers (99.9% uptime SLA), implement retry logic, error handling | Switch to backup provider, manual fallback process, communicate with users | DevOps | ✅ Monitored |
-| R12 | Requirement changes mid-project | Requirements | Medium (35%) | Medium (6) | 2.1 | High | Requirements validation with stakeholders, sign-off, change control board | Assess impact, re-prioritize backlog, negotiate timeline/scope adjustment | PM | ⚠️ Active |
+| R01 | Perluasan ruang lingkup dari permintaan pemangku kepentingan | Ruang Lingkup | Sedang (50%) | Tinggi (8) | 4.0 | Kritis | Proses kontrol perubahan ketat, prioritas MoSCoW, dokumentasi garis dasar ruang lingkup yang disetujui | Tunda fitur *nice-to-have* ke Fase 2 pasca-peluncuran, negosiasi ulang jadwal | PM | ⚠️ Aktif |
+| R02 | Kompleksitas teknis lebih tinggi dari estimasi | Teknis | Sedang (40%) | Sedang (6) | 2.4 | Tinggi | *Prototyping* awal, tinjauan teknis reguler, solusi *spike* untuk hal yang tidak diketahui | Minta bantuan mentor, pecah menjadi tugas kecil, perpanjang jadwal jika kritis | Pemimpin Teknis | ⚠️ Aktif |
+| R03 | Ketidaktersediaan anggota tim (sakit, pribadi) | Sumber Daya | Rendah (20%) | Tinggi (8) | 1.6 | Tinggi | Pelatihan silang, *pair programming*, dokumentasi komprehensif, sesi berbagi pengetahuan | Distribusi ulang pekerjaan antar tim, sesuaikan jadwal, tunda tugas non-kritis | PM | ✅ Dipantau |
+| R04 | Pemangku kepentingan tidak tersedia untuk tinjauan/UAT | Pemangku Kepentingan | Rendah (30%) | Sedang (5) | 1.5 | Sedang | Penjadwalan fleksibel, komunikasi asinkron, perencanaan keterlibatan awal | Gunakan demo yang direkam, persetujuan email, pengambil keputusan proksi | PM | ✅ Dipantau |
+| R05 | Masalah integrasi *payment gateway* | Integrasi | Sedang (40%) | Sedang (6) | 2.4 | Tinggi | Pengujian integrasi awal, lingkungan *sandbox*, penyedia cadangan (Xendit), tinjauan dokumentasi API | Gunakan verifikasi manual sementara, implementasi metode pembayaran alternatif terlebih dahulu | Pengembang *Backend* | ⚠️ Aktif |
+| R06 | Masalah kinerja pada produksi | Kinerja | Rendah (30%) | Tinggi (7) | 2.1 | Tinggi | Uji beban, optimasi *query*, indeks basis data, strategi *caching* (Redis), CDN | Tingkatkan paket *hosting* (*scale up*), implementasi CDN penuh, optimalkan *query* kritis | DevOps | ✅ Dipantau |
+| R07 | Pelanggaran keamanan data atau kerentanan | Keamanan | Rendah (10%) | Kritis (10) | 1.0 | Kritis | Praktik keamanan terbaik (OWASP), audit reguler, uji penetrasi, enkripsi, validasi input | Peluncuran *patch* segera, rencana respons insiden, beri tahu pengguna yang terkena dampak, analisis forensik | Pemimpin Keamanan | ✅ Dipantau |
+| R08 | Keterlambatan jadwal karena tantangan tak terduga | Jadwal | Sedang (40%) | Tinggi (7) | 2.8 | Kritis | Pemantauan kemajuan mingguan, waktu *buffer* (20%), identifikasi masalah awal, *standup* harian | Kurangi ruang lingkup (hapus *nice-to-have*), minta perpanjangan jadwal, tingkatkan jam kerja | PM | ⚠️ Aktif |
+| R09 | Pembengkakan anggaran | Biaya | Rendah (20%) | Sedang (5) | 1.0 | Sedang | Pelacakan biaya (bulanan), proses persetujuan pengeluaran, gunakan alternatif gratis bila memungkinkan | Gunakan dana kontinjensi (Rp 1M), cari pendanaan tambahan dari sponsor, kurangi biaya opsional | PM | ✅ Dipantau |
+| R10 | Adopsi pengguna rendah pasca-peluncuran | Bisnis | Sedang (30%) | Tinggi (8) | 2.4 | Tinggi | Desain berpusat pengguna, pelatihan komprehensif, rencana manajemen perubahan, keterlibatan pengguna awal | Sesi pelatihan tambahan, dukungan pengguna 1-on-1, insentif untuk adopsi, *loop* umpan balik | PM | ⚠️ Aktif |
+| R11 | *Downtime* layanan pihak ketiga (*hosting*, API) | Eksternal | Rendah (25%) | Sedang (6) | 1.5 | Sedang | Pilih penyedia andal (SLA *uptime* 99.9%), implementasi logika *retry*, penanganan error | Beralih ke penyedia cadangan, proses *fallback* manual, komunikasi dengan pengguna | DevOps | ✅ Dipantau |
+| R12 | Perubahan kebutuhan di tengah proyek | Kebutuhan | Sedang (35%) | Sedang (6) | 2.1 | Tinggi | Validasi kebutuhan dengan pemangku kepentingan, persetujuan, dewan kontrol perubahan | Nilai dampak, prioritaskan ulang *backlog*, negosiasi penyesuaian jadwal/ruang lingkup | PM | ⚠️ Aktif |
 
-**Risk Score Calculation:** Probability (%) × Impact (1-10)  
-**Priority Levels:** Critical (>3.5), High (2.0-3.5), Medium (1.0-2.0), Low (<1.0)
+**Perhitungan Skor Risiko:** Probabilitas (%) × Dampak (1-10)  
+**Tingkat Prioritas:** Kritis (>3.5), Tinggi (2.0-3.5), Sedang (1.0-2.0), Rendah (<1.0)
 
 ---
 
-**[GAMBAR 4.7 - Risk Matrix (Probability vs Impact with 12 Risks)]**
+**[GAMBAR 4.7 - Matriks Risiko (Probabilitas vs Dampak dengan 12 Risiko)]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   [INSERT RISK MATRIX - 12 IDENTIFIED RISKS]               │
 │                                                             │
-│   CUR-HEART PROJECT RISK MATRIX                            │
+│   MATRIKS RISIKO PROYEK CUR-HEART                          │
 │                                                             │
-│   IMPACT (Severity) →                                      │
+│   DAMPAK (Keparahan) →                                     │
 │   P                                                         │
 │   r                                                         │
-│   o    High    │                   │ R01      │ R03        │
-│   b  (40-60%)  │                   │ Scope    │ Resource   │
-│   a            │                   │ Creep    │ Unavail    │
+│   o    Tinggi  │                   │ R01      │ R03        │
+│   b  (40-60%)  │                   │ Perluasan│ Sumber     │
+│   a            │                   │ Lingkup  │ Daya       │
 │   b            │─────────────────────────────────────────  │
-│   i  Medium    │          │ R02      │ R08      │ R10      │
-│   l  (30-40%)  │          │ Tech     │ Timeline │ User     │
-│   i            │          │ Complex  │ Delay    │ Adoption │
+│   i  Sedang    │          │ R02      │ R08      │ R10      │
+│   l  (30-40%)  │          │ Kompleks │ Jadwal   │ Adopsi   │
+│   i            │          │ Teknis   │ Terlambat│ Pengguna │
 │   t            │─────────────────────────────────────────  │
-│   y  Low       │ R09      │ R04 R11  │ R06      │ R07      │
-│      (10-30%)  │ Budget   │ Stake/   │ Perf     │ Security │
-│   ↓            │ Overrun  │ 3rdParty │ Issues   │ CRITICAL │
+│   a  Rendah    │ R09      │ R04 R11  │ R06      │ R07      │
+│   s  (10-30%)  │ Anggaran │ Stakehld/│ Kinerja  │ Keamanan │
+│   ↓            │ Bengkak  │ Pihak-3  │ Masalah  │ KRITIS   │
 │                └─────────────────────────────────────────  │
-│                  Low(1-3)  Medium(4-6) High(7-8) Crit(9-10)│
-│                         IMPACT (Severity) →                 │
+│                  Rendah  Sedang(4-6) Tinggi(7-8) Kritis(9-10)│
+│                      (1-3)       DAMPAK (Keparahan) →       │
 │                                                             │
-│   Color Coding:                                            │
-│   🔴 CRITICAL (Score > 3.5): R01 (4.0), R08 (2.8)          │
-│   🟡 HIGH (Score 2.0-3.5): R02, R05, R10, R12 (2.1-2.4)    │
-│   🟢 MEDIUM (Score 1.0-2.0): R03, R04, R06, R11 (1.5-2.1)  │
-│   ⚪ LOW (Score < 1.0): R07, R09 (1.0)                     │
+│   Kode Warna:                                              │
+│   🔴 KRITIS (Skor > 3.5): R01 (4.0), R08 (2.8)             │
+│   🟡 TINGGI (Skor 2.0-3.5): R02, R05, R10, R12 (2.1-2.4)   │
+│   🟢 SEDANG (Skor 1.0-2.0): R03, R04, R06, R11 (1.5-2.1)   │
+│   ⚪ RENDAH (Skor < 1.0): R07, R09 (1.0)                    │
 │                                                             │
-│   Top 3 Critical Risks:                                    │
-│   1. R01 - Scope Creep (4.0): MoSCoW prioritization        │
-│   2. R08 - Timeline Delay (2.8): Weekly monitoring         │
-│   3. R05 - Payment Integration (2.4): Early testing        │
+│   3 Risiko Kritis Teratas:                                 │
+│   1. R01 - Perluasan Lingkup (4.0): Prioritas MoSCoW       │
+│   2. R08 - Keterlambatan Jadwal (2.8): Pantau mingguan     │
+│   3. R05 - Integrasi Pembayaran (2.4): Uji awal            │
 │                                                             │
-│   Risk Distribution:                                       │
-│   • Critical Priority: 2 risks (17%)                       │
-│   • High Priority: 4 risks (33%)                           │
-│   • Medium Priority: 4 risks (33%)                         │
-│   • Low Priority: 2 risks (17%)                            │
+│   Distribusi Risiko:                                       │
+│   • Prioritas Kritis: 2 risiko (17%)                       │
+│   • Prioritas Tinggi: 4 risiko (33%)                       │
+│   • Prioritas Sedang: 4 risiko (33%)                       │
+│   • Prioritas Rendah: 2 risiko (17%)                       │
 │                                                             │
-│   Mitigation Status:                                       │
-│   ⚠️ Active Monitoring: 6 risks                            │
-│   ✅ Under Control: 6 risks                                │
+│   Status Mitigasi:                                         │
+│   ⚠️ Pemantauan Aktif: 6 risiko                            │
+│   ✅ Terkendali: 6 risiko                                  │
 │                                                             │
-│   Format: Risk Matrix PNG dengan positioning 12 risks      │
-│   Recommended size: 1600x1000px                            │
-│   Style: Professional dengan color-coded quadrants         │
+│   Format: Matriks Risiko PNG dengan posisi 12 risiko       │
+│   Ukuran rekomendasi: 1600x1000px                          │
+│   Gaya: Profesional dengan kuadran kode warna              │
 │                                                             │
 │   File: assets/images/risk-matrix-12-risks.png             │
 │   Tool: PowerPoint, Excel, atau draw.io                    │
@@ -1052,100 +1057,100 @@ Untuk menghindari resource overallocation, beberapa tasks dilakukan parallel:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.7: Risk matrix probability vs impact dengan 12 identified risks, menunjukkan R01 (Scope Creep) dan R08 (Timeline Delay) sebagai critical priorities_
+_Gambar 4.7: Matriks risiko probabilitas vs dampak dengan 12 risiko teridentifikasi, menunjukkan R01 (Perluasan Lingkup) dan R08 (Keterlambatan Jadwal) sebagai prioritas kritis_
 
 ---
 
-**Risk Response Strategies:**
+**Strategi Respons Risiko:**
 
-1. **Avoid:** Eliminate risk (e.g., choose proven technology instead of experimental)
-2. **Mitigate:** Reduce probability or impact (e.g., thorough testing to reduce bugs)
-3. **Transfer:** Shift risk to third party (e.g., use managed hosting untuk infrastructure risks)
-4. **Accept:** Accept risk jika low impact (e.g., minor UI inconsistencies)
+1. **Hindari (*Avoid*):** Eliminasi risiko (mis., pilih teknologi terbukti daripada eksperimental)
+2. **Mitigasi (*Mitigate*):** Kurangi probabilitas atau dampak (mis., pengujian menyeluruh untuk kurangi *bug*)
+3. **Transfer (*Transfer*):** Alihkan risiko ke pihak ketiga (mis., gunakan *managed hosting* untuk risiko infrastruktur)
+4. **Terima (*Accept*):** Terima risiko jika dampak rendah (mis., inkonsistensi UI minor)
 
-**Risk Monitoring:**
+**Pemantauan Risiko:**
 
-Risks di-review setiap weekly meeting:
-- Update risk probability dan impact
-- Check effectiveness of mitigation strategies
-- Identify new risks
-- Document lessons learned
+Risiko ditinjau setiap rapat mingguan:
+- Perbarui probabilitas dan dampak risiko
+- Periksa efektivitas strategi mitigasi
+- Identifikasi risiko baru
+- Dokumentasikan pelajaran yang dipetik
 
-### 4.2.7 Manajemen Komunikasi (Communications Management)
+### 4.2.7 Manajemen Komunikasi
 
-**Tabel 4.10 Communication Plan Matrix**
+**Tabel 4.10 Matriks Rencana Komunikasi**
 
-| Stakeholder | Information Needs | Communication Type | Method/Tool | Frequency | Format | Responsible | Delivery Time | Feedback Mechanism |
+| Pemangku Kepentingan | Kebutuhan Informasi | Jenis Komunikasi | Metode/Alat | Frekuensi | Format | Penanggung Jawab | Waktu Pengiriman | Mekanisme Umpan Balik |
 |-------------|------------------|-------------------|-------------|-----------|--------|-------------|---------------|-------------------|
-| CUR-HEART Owner | Project status, budget, key decisions, ROI updates | Formal Report | Email (PDF), Face-to-face meeting | Weekly (Monday) | Status report template | Project Manager | Monday 9 AM | Email response, meeting discussion |
-| Dosen Pembimbing | Progress, technical challenges, deliverables, academic requirements | Formal Consultation | Face-to-face, Google Meet, Documentation | Weekly (Friday) | Progress docs, code demo | Project Manager | Friday 2 PM | Technical guidance, approval/revision |
-| Terapis (5) | Feature demos, testing schedules, training invites, workflow changes | Informal Update | WhatsApp group, Email | Bi-weekly | Screenshots, video demo | Project Manager | Tuesday PM | WhatsApp feedback, testing participation |
-| Admin Staff (2) | System features, testing schedules, training materials, process changes | Informal Update | WhatsApp, Email | Bi-weekly | Screenshots, user guide draft | Project Manager | Tuesday PM | WhatsApp feedback, process validation |
-| Sample Clients (10) | Testing invitations, feedback requests, usability study participation | Request | Email, Phone call | As needed (Week 10) | Invitation email, consent form | UX Designer | 3 days before test | Survey, interview responses |
-| Development Team (3) | Task assignments, daily progress, blockers, code reviews, technical decisions | Daily Sync | Discord/Slack chat, Daily standup (video) | Daily (10 AM) | Standup format (done/todo/blockers) | Project Manager | Daily 10 AM | Immediate (chat), standup discussion |
-| Technical Mentor | Code review requests, technical challenges, architecture decisions | Ad-hoc Consultation | GitHub PR, Email, Zoom | As needed (weekly) | Code snippets, architecture diagram | Tech Lead | When blocker occurs | Code comments, review approval |
-| Universitas (Academic) | Monthly progress, final deliverables | Formal Report | Email, Physical submission | Monthly, Final | Academic report format | Project Manager | End of month | Academic evaluation |
+| Pemilik CUR-HEART | Status proyek, anggaran, keputusan kunci, pembaruan ROI | Laporan Formal | Email (PDF), Rapat tatap muka | Mingguan (Senin) | Templat laporan status | Manajer Proyek | Senin 9 pagi | Respons email, diskusi rapat |
+| Dosen Pembimbing | Kemajuan, tantangan teknis, hasil, kebutuhan akademik | Konsultasi Formal | Tatap muka, Google Meet, Dokumentasi | Mingguan (Jumat) | Dokumen kemajuan, demo kode | Manajer Proyek | Jumat 2 siang | Panduan teknis, persetujuan/revisi |
+| Terapis (5) | Demo fitur, jadwal pengujian, undangan pelatihan, perubahan alur kerja | Pembaruan Informal | Grup WhatsApp, Email | Dua mingguan | *Screenshot*, video demo | Manajer Proyek | Selasa sore | Umpan balik WhatsApp, partisipasi uji |
+| Staf Admin (2) | Fitur sistem, jadwal pengujian, materi pelatihan, perubahan proses | Pembaruan Informal | WhatsApp, Email | Dua mingguan | *Screenshot*, draf panduan pengguna | Manajer Proyek | Selasa sore | Umpan balik WhatsApp, validasi proses |
+| Klien Sampel (10) | Undangan pengujian, permintaan umpan balik, partisipasi studi kegunaan | Permintaan | Email, Panggilan telepon | Sesuai kebutuhan (Minggu 10) | Email undangan, formulir persetujuan | Perancang UX | 3 hari sebelum uji | Survei, respons wawancara |
+| Tim Pengembang (3) | Penugasan tugas, kemajuan harian, hambatan, tinjauan kode, keputusan teknis | Sinkronisasi Harian | Obrolan Discord/Slack, *Standup* harian (video) | Harian (10 pagi) | Format *standup* (*done/todo/blockers*) | Manajer Proyek | Harian 10 pagi | Segera (obrolan), diskusi *standup* |
+| Mentor Teknis | Permintaan tinjauan kode, tantangan teknis, keputusan arsitektur | Konsultasi Ad-hoc | GitHub PR, Email, Zoom | Sesuai kebutuhan (mingguan) | *Snippet* kode, diagram arsitektur | Pemimpin Teknis | Saat hambatan terjadi | Komentar kode, persetujuan tinjauan |
+| Universitas (Akademik) | Kemajuan bulanan, hasil akhir | Laporan Formal | Email, Pengiriman fisik | Bulanan, Akhir | Format laporan akademik | Manajer Proyek | Akhir bulan | Evaluasi akademik |
 
-**Communication Principles:**
-1. Right information to right person at right time
-2. Clear, concise, actionable messaging
-3. Two-way communication (feedback encouraged)
-4. Documented important decisions
-5. Escalation path for urgent issues
+**Prinsip Komunikasi:**
+1. Informasi yang tepat kepada orang yang tepat pada waktu yang tepat
+2. Pesan yang jelas, ringkas, dan dapat ditindaklanjuti
+3. Komunikasi dua arah (umpan balik didorong)
+4. Dokumentasi keputusan penting
+5. Jalur eskalasi untuk masalah mendesak
 
 ---
 
-**[GAMBAR 4.8 - Communication Matrix Stakeholder]**
+**[GAMBAR 4.8 - Matriks Komunikasi Pemangku Kepentingan]**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   [INSERT COMMUNICATION MATRIX VISUAL]                      │
 │                                                             │
-│   STAKEHOLDER COMMUNICATION MATRIX                          │
-│   CUR-HEART Project (8 Stakeholder Groups)                 │
+│   MATRIKS KOMUNIKASI PEMANGKU KEPENTINGAN                   │
+│   Proyek CUR-HEART (8 Kelompok Pemangku Kepentingan)       │
 │                                                             │
-│   Frequency Axis (Vertical) vs Formality (Horizontal)      │
+│   Sumbu Frekuensi (Vertikal) vs Formalitas (Horizontal)    │
 │                                                             │
-│   Daily  │ Dev Team (3)                   │                │
+│   Harian │ Tim Dev (3)                    │                │
 │          │ Discord/Standup                │                │
 │          │ ━━━━━━━━━━━━                   │                │
-│   Weekly │ Owner           │ Dosen        │                │
-│          │ Status Report   │ Consultation │                │
+│ Mingguan │ Pemilik         │ Dosen        │                │
+│          │ Laporan Status  │ Konsultasi   │                │
 │          │ ━━━━━━━━━      │ ━━━━━━━━━   │                │
 │          │                                │                │
-│ Bi-Week  │ Terapis (5)     │ Admin (2)    │                │
-│          │ WhatsApp Demo   │ Training     │                │
+│ Dua      │ Terapis (5)     │ Admin (2)    │                │
+│ Minggu   │ WhatsApp Demo   │ Pelatihan    │                │
 │          │ ━━━━━━━━━      │ ━━━━━━━     │                │
 │          │                                │                │
-│ Monthly  │                                │ Universitas    │
-│          │                                │ Progress Report│
+│ Bulanan  │                                │ Universitas    │
+│          │                                │ Laporan Kemajuan│
 │          │                                │ ━━━━━━━━━━━   │
-│ As-Need  │ Tech Mentor     │ Clients (10) │                │
-│          │ Code Review     │ UAT Testing  │                │
+│ Sesuai   │ Mentor Teknis   │ Klien (10)   │                │
+│ Kebutuhan│ Tinjauan Kode   │ Uji UAT      │                │
 │          │ ━━━━━━━━━      │ ━━━━━━━━━   │                │
 │          └───────────────────────────────────────────────  │
 │            Informal          Semi-Formal       Formal       │
-│                        FORMALITY →                          │
+│                        FORMALITAS →                         │
 │                                                             │
-│   Legend:                                                   │
-│   📧 Formal: Email, Reports, Documentation                  │
-│   💬 Informal: WhatsApp, Chat, Phone                        │
-│   🎯 Semi-Formal: Meetings, Presentations, Demos           │
+│   Legenda:                                                  │
+│   📧 Formal: Email, Laporan, Dokumentasi                    │
+│   💬 Informal: WhatsApp, Obrolan, Telepon                   │
+│   🎯 Semi-Formal: Rapat, Presentasi, Demo                  │
 │                                                             │
-│   Communication Volume:                                     │
-│   • Highest: Dev Team (daily, 40 hrs/week)                 │
-│   • High: Owner + Dosen (weekly, 2-3 hrs/week)             │
-│   • Medium: Terapis + Admin (bi-weekly, 1 hr/week)         │
-│   • Low: Mentor, Clients, Univ (as-needed, <1 hr/week)     │
+│   Volume Komunikasi:                                        │
+│   • Tertinggi: Tim Dev (harian, 40 jam/minggu)             │
+│   • Tinggi: Pemilik + Dosen (mingguan, 2-3 jam/minggu)     │
+│   • Sedang: Terapis + Admin (dua mingguan, 1 jam/minggu)   │
+│   • Rendah: Mentor, Klien, Univ (kebutuhan, <1 jam/minggu) │
 │                                                             │
-│   Total Stakeholders: 26 individuals                        │
-│   • Internal Team: 3 (core developers)                      │
-│   • External: 23 (owner, faculty, users, mentors)          │
+│   Total Pemangku Kepentingan: 26 individu                   │
+│   • Tim Internal: 3 (pengembang inti)                       │
+│   • Eksternal: 23 (pemilik, dosen, pengguna, mentor)       │
 │                                                             │
-│   Format: Communication Matrix Chart PNG                    │
-│   Recommended size: 1600x900px                             │
-│   Style: Professional quadrant/matrix dengan labels         │
+│   Format: Diagram Matriks Komunikasi PNG                    │
+│   Ukuran rekomendasi: 1600x900px                           │
+│   Gaya: Matriks/kuadran profesional dengan label           │
 │                                                             │
 │   File: assets/images/communication-matrix.png              │
 │   Tool: PowerPoint, Excel, atau Canva                       │
@@ -1153,236 +1158,236 @@ Risks di-review setiap weekly meeting:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.8: Communication matrix stakeholder menunjukkan frequency dan formality level untuk 8 stakeholder groups (26 individuals)_
+_Gambar 4.8: Matriks komunikasi pemangku kepentingan menunjukkan frekuensi dan tingkat formalitas untuk 8 kelompok pemangku kepentingan (26 individu)_
 
 ---
 
-**Communication Tools:**
+**Alat Komunikasi:**
 
-1. **Internal Team:**
-   - Discord/Slack: Daily communication, quick questions
-   - GitHub: Code reviews, issue tracking
-   - Trello/Asana: Task management
-   - Google Drive: Document sharing
+1. **Tim Internal:**
+   - Discord/Slack: Komunikasi harian, pertanyaan cepat
+   - GitHub: Tinjauan kode, pelacakan masalah
+   - Trello/Asana: Manajemen tugas
+   - Google Drive: Berbagi dokumen
 
-2. **With Stakeholders:**
-   - Email: Formal communication, reports
-   - WhatsApp: Quick updates, coordination
-   - Zoom/Google Meet: Remote meetings
-   - Face-to-face: Important discussions, demos
+2. **Dengan Pemangku Kepentingan:**
+   - Email: Komunikasi formal, laporan
+   - WhatsApp: Pembaruan cepat, koordinasi
+   - Zoom/Google Meet: Rapat jarak jauh
+   - Tatap muka: Diskusi penting, demo
 
-**Meeting Schedule:**
+**Jadwal Rapat:**
 
-| Meeting | Participants | Frequency | Duration | Purpose |
+| Rapat | Peserta | Frekuensi | Durasi | Tujuan |
 |---------|-------------|-----------|----------|---------|
-| Daily Standup | Development Team | Daily | 15 min | Progress update, blockers |
-| Weekly Status | PM, Dosen Pembimbing | Weekly | 60 min | Progress review, guidance |
-| Stakeholder Review | PM, Owner, SMEs | Bi-weekly | 90 min | Demo, feedback, decisions |
-| Sprint Planning | Development Team | Every 2 weeks | 120 min | Plan upcoming work |
-| Retrospective | Development Team | Every 2 weeks | 60 min | Lessons learned, improvements |
+| *Standup* Harian | Tim Pengembang | Harian | 15 menit | Pembaruan kemajuan, hambatan |
+| Status Mingguan | PM, Dosen Pembimbing | Mingguan | 60 menit | Tinjauan kemajuan, panduan |
+| Tinjauan Pemangku Kepentingan | PM, Pemilik, SME | Dua mingguan | 90 menit | Demo, umpan balik, keputusan |
+| Perencanaan *Sprint* | Tim Pengembang | Setiap 2 minggu | 120 menit | Rencanakan pekerjaan mendatang |
+| Retrospektif | Tim Pengembang | Setiap 2 minggu | 60 menit | Pelajaran dipetik, perbaikan |
 
-**Reporting:**
+**Pelaporan:**
 
-1. **Weekly Status Report** (Email to Owner dan Dosen)
-   - Accomplishments this week
-   - Planned activities next week
-   - Issues dan blockers
-   - Budget status
-   - Risks dan mitigation
+1. **Laporan Status Mingguan** (Email ke Pemilik dan Dosen)
+   - Pencapaian minggu ini
+   - Aktivitas yang direncanakan minggu depan
+   - Masalah dan hambatan
+   - Status anggaran
+   - Risiko dan mitigasi
 
-2. **Monthly Progress Report** (Formal document)
-   - Executive summary
-   - Detailed progress by work package
-   - Milestone achievements
-   - Budget vs. actual
-   - Updated schedule
-   - Risk register
-   - Photos/screenshots
+2. **Laporan Kemajuan Bulanan** (Dokumen formal)
+   - Ringkasan eksekutif
+   - Kemajuan terperinci per paket kerja
+   - Pencapaian tonggak (*milestone*)
+   - Anggaran vs. aktual
+   - Jadwal yang diperbarui
+   - Daftar risiko
+   - Foto/*screenshot*
 
-### 4.2.8 Manajemen Pengadaan (Procurement Management - jika ada)
+### 4.2.8 Manajemen Pengadaan (jika ada)
 
-Untuk proyek ini, procurement minimal karena menggunakan mostly open-source tools dan free services. Namun, beberapa items yang di-procure:
+Untuk proyek ini, pengadaan minimal karena sebagian besar menggunakan alat *open-source* dan layanan gratis. Namun, beberapa item yang diadakan:
 
-| Item | Vendor | Contract Type | Amount | Status |
+| Item | Vendor | Jenis Kontrak | Jumlah | Status |
 |------|--------|---------------|--------|--------|
-| VPS Hosting | Niagahoster/IDCloudHost | Fixed Price | Rp 900.000 | Ordered |
-| Domain Registration | Namecheap/Niagahoster | Fixed Price | Rp 150.000 | Ordered |
-| Payment Gateway (Midtrans) | Midtrans | Pay-per-transaction | Variable | Integrated |
-| Email Service | SendGrid | Pay-as-you-go | Rp 200.000 | Active |
-| Backup Storage | Google Drive Business | Subscription | Rp 150.000 | Active |
+| *Hosting* VPS | Niagahoster/IDCloudHost | Harga Tetap | Rp 900.000 | Dipesan |
+| Registrasi Domain | Namecheap/Niagahoster | Harga Tetap | Rp 150.000 | Dipesan |
+| *Payment Gateway* (Midtrans) | Midtrans | Bayar per transaksi | Variabel | Terintegrasi |
+| Layanan Email | SendGrid | Bayar sesuai penggunaan | Rp 200.000 | Aktif |
+| Penyimpanan Cadangan | Google Drive Business | Langganan | Rp 150.000 | Aktif |
 
-Semua procurement follow standard process:
-1. Requirements identification
-2. Vendor research dan comparison
-3. Budget approval
-4. Order/signup
-5. Configuration dan testing
-6. Invoice processing
+Semua pengadaan mengikuti proses standar:
+1. Identifikasi kebutuhan
+2. Riset dan perbandingan vendor
+3. Persetujuan anggaran
+4. Pemesanan/*signup*
+5. Konfigurasi dan pengujian
+6. Pemrosesan faktur
 
 ---
 
-## 4.3 Deskripsi Produk / Servis
+## 4.3 Deskripsi Produk / Layanan
 
 ### 4.3.1 Gambaran Umum Sistem
 
-Sistem Informasi Manajemen Booking dan Terapi CUR-HEART adalah aplikasi web full-stack berbasis Laravel yang dirancang khusus untuk mendukung operasional pusat layanan hypnotherapy dan kesehatan mental. Sistem ini mengintegrasikan seluruh proses bisnis mulai dari booking layanan, manajemen jadwal terapis, conduct sesi terapi, dokumentasi, hingga pelaporan dalam satu platform yang unified, secure, dan user-friendly.
+Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART adalah aplikasi web *full-stack* berbasis Laravel yang dirancang khusus untuk mendukung operasional pusat layanan hipnoterapi dan kesehatan mental. Sistem ini mengintegrasikan seluruh proses bisnis mulai dari pemesanan layanan, manajemen jadwal terapis, pelaksanaan sesi terapi, dokumentasi, hingga pelaporan dalam satu platform yang terpadu, aman, dan ramah pengguna.
 
 **Karakteristik Utama Sistem:**
 
-1. **Multi-Role Architecture:** Mendukung tiga role pengguna utama (Admin, Therapist, Client) dengan hak akses dan interface yang disesuaikan
-2. **Real-Time Availability:** Menampilkan ketersediaan jadwal terapis secara real-time untuk booking
-3. **Comprehensive Workflow:** Cover seluruh client journey dari awareness hingga post-therapy follow-up
-4. **Data-Driven:** Menyediakan analytics dan reporting untuk business intelligence
-5. **Secure dan Compliant:** Mengikuti security best practices dan compliance regulations
-6. **Responsive Design:** Accessible dari desktop, tablet, dan smartphone dengan experience yang optimal
-7. **Scalable Architecture:** Dapat accommodate pertumbuhan users dan data tanpa major refactoring
+1. **Arsitektur Multi-Peran:** Mendukung tiga peran pengguna utama (Admin, Terapis, Klien) dengan hak akses dan antarmuka yang disesuaikan
+2. **Ketersediaan *Real-Time*:** Menampilkan ketersediaan jadwal terapis secara *real-time* untuk pemesanan
+3. **Alur Kerja Komprehensif:** Mencakup seluruh perjalanan klien dari kesadaran hingga tindak lanjut pasca-terapi
+4. **Berbasis Data:** Menyediakan analitik dan pelaporan untuk intelijen bisnis
+5. **Aman dan Patuh:** Mengikuti praktik keamanan terbaik dan regulasi kepatuhan
+6. **Desain Responsif:** Dapat diakses dari desktop, tablet, dan *smartphone* dengan pengalaman yang optimal
+7. **Arsitektur Skalabel:** Dapat menampung pertumbuhan pengguna dan data tanpa *refactoring* besar
 
 **Arsitektur Sistem:**
 
-Sistem menggunakan **Monolithic Architecture** dengan **Model-View-Controller (MVC) Pattern**:
+Sistem menggunakan **Arsitektur Monolitik** dengan **Pola Model-View-Controller (MVC)**:
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                  CLIENT LAYER                        │
-│  (Web Browser - Desktop, Tablet, Mobile)            │
-└────────────┬────────────────────────────────────────┘
-             │ HTTPS Requests
-             ├─────────────────────────────────────────┐
-             │                                         │
-┌────────────▼───────────────────────────────────┐   │
-│            PRESENTATION LAYER                   │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │    Blade Templates (Views)               │  │   │
-│  │  - Public Pages                           │  │   │
-│  │  - Authentication Pages                   │  │   │
-│  │  - Dashboard (Admin, Therapist, Client)  │  │   │
-│  │  - Components (Forms, Tables, Charts)    │  │   │
-│  └──────────────────────────────────────────┘  │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │    Tailwind CSS + JavaScript             │  │   │
-│  └──────────────────────────────────────────┘  │   │
-└────────────┬───────────────────────────────────┘   │
-             │                                         │
-┌────────────▼───────────────────────────────────┐   │
-│           APPLICATION LAYER                     │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │          Routes (web.php)                 │  │   │
-│  └──────────────────────────────────────────┘  │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │    Middleware                             │  │   │
-│  │  - Authentication                         │  │   │
-│  │  - Authorization (Role-based)            │  │   │
-│  │  - CSRF Protection                        │  │   │
-│  └──────────────────────────────────────────┘  │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │        Controllers                        │  │   │
-│  │  - AuthController                         │  │   │
-│  │  - BookingController                      │  │   │
-│  │  - TherapistController                    │  │   │
-│  │  - SessionController                      │  │   │
-│  │  - PaymentController                      │  │   │
-│  │  - DashboardController                    │  │   │
-│  │  - ReportController                       │  │   │
-│  └──────────────────────────────────────────┘  │   │
-└────────────┬───────────────────────────────────┘   │
-             │                                         │
-┌────────────▼───────────────────────────────────┐   │
-│          BUSINESS LOGIC LAYER                   │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │         Models (Eloquent ORM)            │  │   │
-│  │  - User, Therapist, Client               │  │   │
-│  │  - Service, Booking                       │  │   │
-│  │  - Session, SessionNote                   │  │   │
-│  │  - Payment, Transaction                   │  │   │
-│  │  - Review, Progress                       │  │   │
-│  └──────────────────────────────────────────┘  │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │         Business Rules                    │  │   │
-│  │  - Validation Rules                       │  │   │
-│  │  - Business Logic                         │  │   │
-│  │  - Relationships                          │  │   │
-│  └──────────────────────────────────────────┘  │   │
-└────────────┬───────────────────────────────────┘   │
-             │                                         │
-┌────────────▼───────────────────────────────────┐   │
-│             DATA LAYER                          │   │
-│  ┌──────────────────────────────────────────┐  │   │
-│  │         MySQL Database                    │  │   │
-│  │  - Tables (normalized to 3NF)            │  │   │
-│  │  - Indexes for performance                │  │   │
-│  │  - Foreign Keys for integrity             │  │   │
-│  └──────────────────────────────────────────┘  │   │
-└─────────────────────────────────────────────────┘   │
-                                                       │
-┌──────────────────────────────────────────────────┐ │
-│          EXTERNAL SERVICES                        │ │
-│  - Payment Gateway (Midtrans)                    │◄┘
-│  - Email Service (SMTP)                          │
-│  - SMS Service (optional)                        │
-│  - Video Conference (Zoom/GMeet via iframe)     │
-└──────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                  LAPISAN KLIEN                              │
+│  (Browser Web - Desktop, Tablet, Mobile)                    │
+└────────────┬────────────────────────────────────────────────┘
+             │ Permintaan HTTPS
+             ├─────────────────────────────────────────────────┐
+             │                                                 │
+┌────────────▼───────────────────────────────────────────┐   │
+│            LAPISAN PRESENTASI                           │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │    Templat Blade (Views)                         │  │   │
+│  │  - Halaman Publik                                 │  │   │
+│  │  - Halaman Autentikasi                           │  │   │
+│  │  - Dasbor (Admin, Terapis, Klien)               │  │   │
+│  │  - Komponen (Formulir, Tabel, Grafik)           │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │    Tailwind CSS + JavaScript                     │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+└────────────┬───────────────────────────────────────────┘   │
+             │                                                 │
+┌────────────▼───────────────────────────────────────────┐   │
+│           LAPISAN APLIKASI                              │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │          Rute (web.php)                          │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │    Middleware                                     │  │   │
+│  │  - Autentikasi                                    │  │   │
+│  │  - Otorisasi (Berbasis peran)                    │  │   │
+│  │  - Proteksi CSRF                                  │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │        Kontroler                                  │  │   │
+│  │  - AuthController                                 │  │   │
+│  │  - BookingController                              │  │   │
+│  │  - TherapistController                            │  │   │
+│  │  - SessionController                              │  │   │
+│  │  - PaymentController                              │  │   │
+│  │  - DashboardController                            │  │   │
+│  │  - ReportController                               │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+└────────────┬───────────────────────────────────────────┘   │
+             │                                                 │
+┌────────────▼───────────────────────────────────────────┐   │
+│          LAPISAN LOGIKA BISNIS                          │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │         Model (Eloquent ORM)                     │  │   │
+│  │  - User, Therapist, Client                       │  │   │
+│  │  - Service, Booking                              │  │   │
+│  │  - Session, SessionNote                          │  │   │
+│  │  - Payment, Transaction                          │  │   │
+│  │  - Review, Progress                              │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │         Aturan Bisnis                            │  │   │
+│  │  - Aturan Validasi                               │  │   │
+│  │  - Logika Bisnis                                 │  │   │
+│  │  - Relasi                                        │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+└────────────┬───────────────────────────────────────────┘   │
+             │                                                 │
+┌────────────▼───────────────────────────────────────────┐   │
+│             LAPISAN DATA                                │   │
+│  ┌──────────────────────────────────────────────────┐  │   │
+│  │         Basis Data MySQL                         │  │   │
+│  │  - Tabel (dinormalisasi ke 3NF)                 │  │   │
+│  │  - Indeks untuk kinerja                          │  │   │
+│  │  - Kunci Asing untuk integritas                 │  │   │
+│  └──────────────────────────────────────────────────┘  │   │
+└─────────────────────────────────────────────────────────┘   │
+                                                               │
+┌──────────────────────────────────────────────────────────┐ │
+│          LAYANAN EKSTERNAL                                │ │
+│  - Payment Gateway (Midtrans)                            │◄┘
+│  - Layanan Email (SMTP)                                  │
+│  - Layanan SMS (opsional)                                │
+│  - Konferensi Video (Zoom/GMeet via iframe)             │
+└──────────────────────────────────────────────────────────┘
 ```
 
-**Tabel 4.11 Functional Requirements List**
+**Tabel 4.11 Daftar Kebutuhan Fungsional**
 
-| ID | Requirement | Priority (MoSCoW) | User Role | Acceptance Criteria | Status |
+| ID | Kebutuhan | Prioritas (MoSCoW) | Peran Pengguna | Kriteria Penerimaan | Status |
 |----|-------------|-------------------|-----------|-------------------|--------|
-| **FR-AUTH** | **Authentication & Authorization** | | | | |
-| FR-AUTH-01 | User registration dengan email verification | Must Have | All | User dapat register, receive email, verify account | ✅ Implemented |
-| FR-AUTH-02 | Login dengan email dan password | Must Have | All | User dapat login dengan credentials valid | ✅ Implemented |
-| FR-AUTH-03 | Forgot password dan reset via email | Must Have | All | User dapat reset password via email link | ✅ Implemented |
-| FR-AUTH-04 | Role-based access control (Admin, Therapist, Client) | Must Have | All | Setiap role hanya akses fitur yang sesuai | ✅ Implemented |
-| FR-AUTH-05 | Logout functionality | Must Have | All | User dapat logout dengan aman | ✅ Implemented |
-| **FR-BOOKING** | **Booking Management** | | | | |
-| FR-BOOK-01 | Browse dan filter services | Must Have | Client | Client dapat lihat semua services dengan filter | ✅ Implemented |
-| FR-BOOK-02 | View therapist profiles dan availability | Must Have | Client | Client dapat lihat profil dan jadwal terapis | ✅ Implemented |
-| FR-BOOK-03 | 4-step booking flow (Service → Therapist → Date/Time → Confirm) | Must Have | Client | Client dapat complete booking dalam 4 steps | ⏳ In Progress |
-| FR-BOOK-04 | Real-time availability check | Must Have | Client | System prevent double booking | ⏳ In Progress |
-| FR-BOOK-05 | Booking confirmation email | Must Have | Client | Client receive email setelah booking | 🔜 Planned |
-| FR-BOOK-06 | Reschedule booking (min 24h before) | Should Have | Client | Client dapat reschedule dengan constraints | 🔜 Planned |
-| FR-BOOK-07 | Cancel booking dengan reason | Should Have | Client | Client dapat cancel booking | 🔜 Planned |
-| **FR-SCHEDULE** | **Schedule Management** | | | | |
-| FR-SCHED-01 | Set weekly availability (recurring) | Must Have | Therapist | Terapis set jam kerja per hari | ✅ Implemented |
-| FR-SCHED-02 | Block specific dates (leave, holiday) | Must Have | Therapist | Terapis block tanggal tertentu | ✅ Implemented |
-| FR-SCHED-03 | View appointments calendar | Must Have | Therapist | Terapis lihat jadwal dalam calendar view | ✅ Implemented |
-| FR-SCHED-04 | Accept/reject booking requests | Should Have | Therapist | Terapis bisa approve atau reject booking | 🔜 Planned |
-| **FR-SESSION** | **Session Management** | | | | |
-| FR-SESS-01 | Start session (mark as started) | Must Have | Therapist | Terapis start session on time | ⏳ In Progress |
-| FR-SESS-02 | End session dan input session notes | Must Have | Therapist | Terapis dokumentasi session secara terstruktur | ⏳ In Progress |
-| FR-SESS-03 | Upload session attachments (files, images) | Could Have | Therapist | Terapis upload supporting documents | 🔜 Planned |
-| FR-SESS-04 | View session history dengan notes | Must Have | Therapist | Terapis akses riwayat session klien | ⏳ In Progress |
-| FR-SESS-05 | Client view own session notes (summary only) | Should Have | Client | Client lihat summary progress | 🔜 Planned |
-| **FR-PAYMENT** | **Payment Management** | | | | |
-| FR-PAY-01 | Multiple payment methods (transfer, credit card, ewallet) | Must Have | Client | Client pilih payment method | ⏳ In Progress |
-| FR-PAY-02 | Payment gateway integration (Midtrans) | Must Have | Client | Client bayar via payment gateway | ⏳ In Progress |
-| FR-PAY-03 | Upload proof of payment (manual transfer) | Must Have | Client | Client upload bukti transfer | ⏳ In Progress |
-| FR-PAY-04 | Admin verify manual payments | Must Have | Admin | Admin approve/reject payment | ⏳ In Progress |
-| FR-PAY-05 | Payment confirmation notification | Must Have | Client | Client notified setelah payment confirmed | 🔜 Planned |
-| FR-PAY-06 | View payment history dan invoices | Should Have | Client | Client download invoices | 🔜 Planned |
-| **FR-PROGRESS** | **Progress Tracking** | | | | |
-| FR-PROG-01 | Track client progress dengan metrics | Should Have | Therapist | Terapis input dan track progress | 🔜 Planned |
-| FR-PROG-02 | Visualize progress dengan charts | Should Have | Client | Client lihat progress dalam grafik | 🔜 Planned |
-| FR-PROG-03 | Set therapy goals dan milestones | Could Have | Therapist | Terapis set goals untuk klien | 🔜 Planned |
-| **FR-REVIEW** | **Review & Feedback** | | | | |
-| FR-REV-01 | Client submit review setelah session | Should Have | Client | Client rate dan review terapis | 🔜 Planned |
-| FR-REV-02 | Therapist respond to reviews | Could Have | Therapist | Terapis reply to review | 🔜 Planned |
-| FR-REV-03 | Admin moderate reviews | Should Have | Admin | Admin approve/hide inappropriate reviews | 🔜 Planned |
-| **FR-ADMIN** | **Admin Management** | | | | |
-| FR-ADM-01 | Manage users (CRUD) | Must Have | Admin | Admin kelola semua users | ⏳ In Progress |
-| FR-ADM-02 | Manage services (CRUD) | Must Have | Admin | Admin kelola services | ⏳ In Progress |
-| FR-ADM-03 | View all bookings dan status | Must Have | Admin | Admin monitor semua booking | ⏳ In Progress |
-| FR-ADM-04 | Generate financial reports | Should Have | Admin | Admin export laporan keuangan | 🔜 Planned |
-| FR-ADM-05 | System configuration dan settings | Must Have | Admin | Admin ubah system settings | ⏳ In Progress |
-| **FR-NOTIF** | **Notifications** | | | | |
-| FR-NOTIF-01 | Email notification untuk booking events | Must Have | All | Users receive email untuk booking updates | 🔜 Planned |
-| FR-NOTIF-02 | Reminder email (24h dan 1h before session) | Should Have | Client | Client receive reminders | 🔜 Planned |
-| FR-NOTIF-03 | In-app notification badge | Could Have | All | Users see notification count | 🔜 Planned |
+| **FR-AUTH** | **Autentikasi & Otorisasi** | | | | |
+| FR-AUTH-01 | Registrasi pengguna dengan verifikasi email | Harus Ada | Semua | Pengguna dapat registrasi, terima email, verifikasi akun | ✅ Terimplementasi |
+| FR-AUTH-02 | Login dengan email dan kata sandi | Harus Ada | Semua | Pengguna dapat login dengan kredensial valid | ✅ Terimplementasi |
+| FR-AUTH-03 | Lupa kata sandi dan *reset* via email | Harus Ada | Semua | Pengguna dapat *reset* kata sandi via tautan email | ✅ Terimplementasi |
+| FR-AUTH-04 | Kontrol akses berbasis peran (Admin, Terapis, Klien) | Harus Ada | Semua | Setiap peran hanya akses fitur yang sesuai | ✅ Terimplementasi |
+| FR-AUTH-05 | Fungsi *logout* | Harus Ada | Semua | Pengguna dapat *logout* dengan aman | ✅ Terimplementasi |
+| **FR-BOOKING** | **Manajemen Pemesanan** | | | | |
+| FR-BOOK-01 | Telusuri dan filter layanan | Harus Ada | Klien | Klien dapat lihat semua layanan dengan filter | ✅ Terimplementasi |
+| FR-BOOK-02 | Lihat profil terapis dan ketersediaan | Harus Ada | Klien | Klien dapat lihat profil dan jadwal terapis | ✅ Terimplementasi |
+| FR-BOOK-03 | Alur pemesanan 4 langkah (Layanan → Terapis → Tanggal/Waktu → Konfirmasi) | Harus Ada | Klien | Klien dapat selesaikan pemesanan dalam 4 langkah | ⏳ Sedang Berjalan |
+| FR-BOOK-04 | Pengecekan ketersediaan *real-time* | Harus Ada | Klien | Sistem cegah pemesanan ganda | ⏳ Sedang Berjalan |
+| FR-BOOK-05 | Email konfirmasi pemesanan | Harus Ada | Klien | Klien terima email setelah pemesanan | 🔜 Direncanakan |
+| FR-BOOK-06 | Jadwal ulang pemesanan (min 24 jam sebelum) | Sebaiknya Ada | Klien | Klien dapat jadwal ulang dengan batasan | 🔜 Direncanakan |
+| FR-BOOK-07 | Batalkan pemesanan dengan alasan | Sebaiknya Ada | Klien | Klien dapat batalkan pemesanan | 🔜 Direncanakan |
+| **FR-SCHEDULE** | **Manajemen Jadwal** | | | | |
+| FR-SCHED-01 | Atur ketersediaan mingguan (berulang) | Harus Ada | Terapis | Terapis atur jam kerja per hari | ✅ Terimplementasi |
+| FR-SCHED-02 | Blokir tanggal tertentu (cuti, libur) | Harus Ada | Terapis | Terapis blokir tanggal tertentu | ✅ Terimplementasi |
+| FR-SCHED-03 | Lihat kalender janji temu | Harus Ada | Terapis | Terapis lihat jadwal dalam tampilan kalender | ✅ Terimplementasi |
+| FR-SCHED-04 | Terima/tolak permintaan pemesanan | Sebaiknya Ada | Terapis | Terapis bisa setujui atau tolak pemesanan | 🔜 Direncanakan |
+| **FR-SESSION** | **Manajemen Sesi** | | | | |
+| FR-SESS-01 | Mulai sesi (tandai sebagai dimulai) | Harus Ada | Terapis | Terapis mulai sesi tepat waktu | ⏳ Sedang Berjalan |
+| FR-SESS-02 | Akhiri sesi dan input catatan sesi | Harus Ada | Terapis | Terapis dokumentasi sesi secara terstruktur | ⏳ Sedang Berjalan |
+| FR-SESS-03 | Unggah lampiran sesi (file, gambar) | Bisa Ada | Terapis | Terapis unggah dokumen pendukung | 🔜 Direncanakan |
+| FR-SESS-04 | Lihat riwayat sesi dengan catatan | Harus Ada | Terapis | Terapis akses riwayat sesi klien | ⏳ Sedang Berjalan |
+| FR-SESS-05 | Klien lihat catatan sesi sendiri (ringkasan saja) | Sebaiknya Ada | Klien | Klien lihat ringkasan kemajuan | 🔜 Direncanakan |
+| **FR-PAYMENT** | **Manajemen Pembayaran** | | | | |
+| FR-PAY-01 | Beberapa metode pembayaran (transfer, kartu kredit, *ewallet*) | Harus Ada | Klien | Klien pilih metode pembayaran | ⏳ Sedang Berjalan |
+| FR-PAY-02 | Integrasi *payment gateway* (Midtrans) | Harus Ada | Klien | Klien bayar via *payment gateway* | ⏳ Sedang Berjalan |
+| FR-PAY-03 | Unggah bukti pembayaran (transfer manual) | Harus Ada | Klien | Klien unggah bukti transfer | ⏳ Sedang Berjalan |
+| FR-PAY-04 | Admin verifikasi pembayaran manual | Harus Ada | Admin | Admin setujui/tolak pembayaran | ⏳ Sedang Berjalan |
+| FR-PAY-05 | Notifikasi konfirmasi pembayaran | Harus Ada | Klien | Klien diberi tahu setelah pembayaran dikonfirmasi | 🔜 Direncanakan |
+| FR-PAY-06 | Lihat riwayat pembayaran dan faktur | Sebaiknya Ada | Klien | Klien unduh faktur | 🔜 Direncanakan |
+| **FR-PROGRESS** | **Pelacakan Kemajuan** | | | | |
+| FR-PROG-01 | Lacak kemajuan klien dengan metrik | Sebaiknya Ada | Terapis | Terapis input dan lacak kemajuan | 🔜 Direncanakan |
+| FR-PROG-02 | Visualisasi kemajuan dengan grafik | Sebaiknya Ada | Klien | Klien lihat kemajuan dalam grafik | 🔜 Direncanakan |
+| FR-PROG-03 | Atur tujuan dan tonggak terapi | Bisa Ada | Terapis | Terapis atur tujuan untuk klien | 🔜 Direncanakan |
+| **FR-REVIEW** | **Ulasan & Umpan Balik** | | | | |
+| FR-REV-01 | Klien kirim ulasan setelah sesi | Sebaiknya Ada | Klien | Klien beri nilai dan ulasan terapis | 🔜 Direncanakan |
+| FR-REV-02 | Terapis tanggapi ulasan | Bisa Ada | Terapis | Terapis balas ulasan | 🔜 Direncanakan |
+| FR-REV-03 | Admin moderasi ulasan | Sebaiknya Ada | Admin | Admin setujui/sembunyikan ulasan tidak pantas | 🔜 Direncanakan |
+| **FR-ADMIN** | **Manajemen Admin** | | | | |
+| FR-ADM-01 | Kelola pengguna (CRUD) | Harus Ada | Admin | Admin kelola semua pengguna | ⏳ Sedang Berjalan |
+| FR-ADM-02 | Kelola layanan (CRUD) | Harus Ada | Admin | Admin kelola layanan | ⏳ Sedang Berjalan |
+| FR-ADM-03 | Lihat semua pemesanan dan status | Harus Ada | Admin | Admin pantau semua pemesanan | ⏳ Sedang Berjalan |
+| FR-ADM-04 | Buat laporan keuangan | Sebaiknya Ada | Admin | Admin ekspor laporan keuangan | 🔜 Direncanakan |
+| FR-ADM-05 | Konfigurasi dan pengaturan sistem | Harus Ada | Admin | Admin ubah pengaturan sistem | ⏳ Sedang Berjalan |
+| **FR-NOTIF** | **Notifikasi** | | | | |
+| FR-NOTIF-01 | Notifikasi email untuk peristiwa pemesanan | Harus Ada | Semua | Pengguna terima email untuk pembaruan pemesanan | 🔜 Direncanakan |
+| FR-NOTIF-02 | Email pengingat (24 jam dan 1 jam sebelum sesi) | Sebaiknya Ada | Klien | Klien terima pengingat | 🔜 Direncanakan |
+| FR-NOTIF-03 | Lencana notifikasi dalam aplikasi | Bisa Ada | Semua | Pengguna lihat jumlah notifikasi | 🔜 Direncanakan |
 
-**Total Requirements:** 48 functional requirements  
-**Must Have:** 29 (60%)  
-**Should Have:** 14 (29%)  
-**Could Have:** 5 (11%)  
-**Implementation Status:** 45% complete (as of Nov 2024)
+**Total Kebutuhan:** 48 kebutuhan fungsional  
+**Harus Ada:** 29 (60%)  
+**Sebaiknya Ada:** 14 (29%)  
+**Bisa Ada:** 5 (11%)  
+**Status Implementasi:** 45% selesai (per Nov 2024)
 
 ---
 
@@ -1416,56 +1421,56 @@ Sistem menggunakan **Monolithic Architecture** dengan **Model-View-Controller (M
 | NFR-REL-02 | Fault Tolerance | Graceful error handling | No unhandled exceptions | Error logging (Sentry) | High |
 | NFR-REL-03 | Data Integrity | Database constraints enforced | No orphan records | Database testing | Critical |
 | NFR-REL-04 | Backup & Recovery | Daily automated backup | RPO < 24 hours | Backup verification | High |
-| **NFR-MAINT** | **Maintainability** | | | | |
-| NFR-MAINT-01 | Code Quality | Follow PSR-12 coding standards | Grade A (SonarQube) | Static code analysis | High |
-| NFR-MAINT-02 | Documentation | Comprehensive code documentation | All public methods documented | Code review | High |
-| NFR-MAINT-03 | Modularity | Loosely coupled, high cohesion | Cyclomatic complexity < 10 | Code metrics | High |
-| NFR-MAINT-04 | Version Control | Git branching strategy | All changes committed | Git history review | High |
-| **NFR-SCALE** | **Scalability** | | | | |
-| NFR-SCALE-01 | Data Volume | Handle 10,000+ users | Database performance stable | Load testing | Medium |
-| NFR-SCALE-02 | Data Volume | Handle 100,000+ bookings per year | Query performance maintained | Stress testing | Medium |
-| NFR-SCALE-03 | Concurrent Users | Support 500 concurrent users (future) | Server resources adequate | Load testing | Medium |
-| **NFR-COMPAT** | **Compatibility** | | | | |
-| NFR-COMPAT-01 | Browser Support | Chrome, Firefox, Safari, Edge (latest 2 versions) | Full functionality | Cross-browser testing | Critical |
-| NFR-COMPAT-02 | Responsive Design | Mobile, tablet, desktop (320px - 1920px) | UI adapts gracefully | Responsive testing | Critical |
-| NFR-COMPAT-03 | Server Environment | PHP 8.2+, MySQL 8.0+, Ubuntu 22.04 LTS | System runs without issues | Deployment testing | Critical |
+| **NFR-MAINT** | **Kemudahan Pemeliharaan** | | | | |
+| NFR-MAINT-01 | Kualitas Kode | Ikuti standar *coding* PSR-12 | Grade A (SonarQube) | Analisis kode statis | Tinggi |
+| NFR-MAINT-02 | Dokumentasi | Dokumentasi kode komprehensif | Semua metode publik terdokumentasi | Tinjauan kode | Tinggi |
+| NFR-MAINT-03 | Modularitas | *Loosely coupled*, *high cohesion* | Kompleksitas siklomatis < 10 | Metrik kode | Tinggi |
+| NFR-MAINT-04 | Kontrol Versi | Strategi *branching* Git | Semua perubahan di-*commit* | Tinjauan riwayat Git | Tinggi |
+| **NFR-SCALE** | **Skalabilitas** | | | | |
+| NFR-SCALE-01 | Volume Data | Menangani 10.000+ pengguna | Kinerja basis data stabil | Uji beban | Sedang |
+| NFR-SCALE-02 | Volume Data | Menangani 100.000+ pemesanan per tahun | Kinerja *query* terjaga | Uji *stress* | Sedang |
+| NFR-SCALE-03 | Pengguna Bersamaan | Mendukung 500 pengguna bersamaan (masa depan) | Sumber daya server memadai | Uji beban | Sedang |
+| **NFR-COMPAT** | **Kompatibilitas** | | | | |
+| NFR-COMPAT-01 | Dukungan *Browser* | Chrome, Firefox, Safari, Edge (2 versi terbaru) | Fungsionalitas penuh | Pengujian *cross-browser* | Kritis |
+| NFR-COMPAT-02 | Desain Responsif | *Mobile*, tablet, desktop (320px - 1920px) | UI menyesuaikan dengan baik | Pengujian responsif | Kritis |
+| NFR-COMPAT-03 | Lingkungan Server | PHP 8.2+, MySQL 8.0+, Ubuntu 22.04 LTS | Sistem berjalan tanpa masalah | Pengujian *deployment* | Kritis |
 
-**Total NFR:** 33 requirements  
-**Critical Priority:** 19 (58%)  
-**High Priority:** 12 (36%)  
-**Medium Priority:** 2 (6%)
+**Total NFR:** 33 kebutuhan  
+**Prioritas Kritis:** 19 (58%)  
+**Prioritas Tinggi:** 12 (36%)  
+**Prioritas Sedang:** 2 (6%)
 
 ---
 
-**Tabel 4.13 Technology Stack Comparison**
+**Tabel 4.13 Perbandingan Tumpukan Teknologi**
 
-| Component | Option 1 | Option 2 | Option 3 | Selected | Rationale |
+| Komponen | Opsi 1 | Opsi 2 | Opsi 3 | Dipilih | Alasan |
 |-----------|----------|----------|----------|----------|-----------|
-| **Backend Framework** | Laravel 10 | Express.js (Node.js) | Django (Python) | ✅ Laravel 10 | MVC built-in, Eloquent ORM, large ecosystem, academic requirement, team expertise |
-| **Programming Language** | PHP 8.2 | JavaScript (Node) | Python 3.11 | ✅ PHP 8.2 | Modern features (enum, readonly), strong typing, Laravel compatibility |
-| **Database** | MySQL 8.0 | PostgreSQL 15 | MongoDB 6.0 | ✅ MySQL 8.0 | ACID compliance, relational data fits well, free, wide hosting support |
-| **CSS Framework** | Tailwind CSS 3.3 | Bootstrap 5 | Custom CSS | ✅ Tailwind 3.3 | Utility-first, highly customizable, smaller bundle size, modern |
-| **JavaScript** | Alpine.js 3.x | Vue.js 3 | React 18 | ✅ Alpine.js | Lightweight (15KB), declarative, minimal overhead, Laravel Livewire compatible |
-| **Template Engine** | Blade (Laravel) | Twig | Plain PHP | ✅ Blade | Built-in Laravel, clean syntax, template inheritance, directives |
-| **Authentication** | Laravel Sanctum | Laravel Passport | JWT (tymon/jwt-auth) | ✅ Sanctum | Lightweight, SPA-friendly, token-based, built for Laravel |
-| **Payment Gateway** | Midtrans | Xendit | Stripe | ✅ Midtrans | Indonesia-focused, multiple payment methods, good docs, affordable fees |
-| **Email Service** | SendGrid | Mailgun | AWS SES | ✅ SendGrid | Reliable, 100 emails/day free, good deliverability, easy integration |
-| **Hosting** | Niagahoster VPS | DigitalOcean Droplet | AWS EC2 | ✅ Niagahoster VPS | Indonesia-based, affordable (Rp 300k/mo), managed, local support |
-| **Version Control** | GitHub | GitLab | Bitbucket | ✅ GitHub | Free private repos, CI/CD (Actions), large community, familiar |
-| **Task Management** | Asana | Trello | Jira | ✅ Asana | Task dependencies, timeline view, free tier sufficient, collaborative |
-| **Design Tool** | Figma | Adobe XD | Sketch | ✅ Figma | Collaborative, browser-based, free tier, component libraries, prototyping |
-| **API Testing** | Postman | Insomnia | Thunder Client | ✅ Postman | Collections, environment variables, team sync, comprehensive |
-| **Database Tool** | MySQL Workbench | phpMyAdmin | DBeaver | ✅ MySQL Workbench | Visual ERD designer, query optimization tools, migration support |
-| **Error Tracking** | Sentry | Rollbar | Bugsnag | ✅ Sentry | Real-time alerts, stack traces, free tier 5k events/mo, Laravel integration |
-| **Monitoring** | UptimeRobot | Pingdom | StatusCake | ✅ UptimeRobot | Free 50 monitors, 5min intervals, email/SMS alerts, public status page |
+| ***Framework Backend*** | Laravel 10 | Express.js (Node.js) | Django (Python) | ✅ Laravel 10 | MVC *built-in*, Eloquent ORM, ekosistem besar, kebutuhan akademik, keahlian tim |
+| **Bahasa Pemrograman** | PHP 8.2 | JavaScript (Node) | Python 3.11 | ✅ PHP 8.2 | Fitur modern (*enum*, *readonly*), *strong typing*, kompatibilitas Laravel |
+| **Basis Data** | MySQL 8.0 | PostgreSQL 15 | MongoDB 6.0 | ✅ MySQL 8.0 | Kepatuhan ACID, data relasional cocok, gratis, dukungan *hosting* luas |
+| ***Framework* CSS** | Tailwind CSS 3.3 | Bootstrap 5 | CSS Kustom | ✅ Tailwind 3.3 | *Utility-first*, sangat dapat disesuaikan, ukuran *bundle* lebih kecil, modern |
+| **JavaScript** | Alpine.js 3.x | Vue.js 3 | React 18 | ✅ Alpine.js | Ringan (15KB), deklaratif, *overhead* minimal, kompatibel Laravel Livewire |
+| **Mesin Templat** | Blade (Laravel) | Twig | PHP Biasa | ✅ Blade | *Built-in* Laravel, sintaks bersih, pewarisan templat, direktif |
+| **Autentikasi** | Laravel Sanctum | Laravel Passport | JWT (tymon/jwt-auth) | ✅ Sanctum | Ringan, ramah SPA, berbasis token, dibuat untuk Laravel |
+| ***Payment Gateway*** | Midtrans | Xendit | Stripe | ✅ Midtrans | Fokus Indonesia, beberapa metode pembayaran, dokumentasi baik, biaya terjangkau |
+| **Layanan Email** | SendGrid | Mailgun | AWS SES | ✅ SendGrid | Andal, 100 email/hari gratis, *deliverability* baik, integrasi mudah |
+| ***Hosting*** | Niagahoster VPS | DigitalOcean Droplet | AWS EC2 | ✅ Niagahoster VPS | Berbasis Indonesia, terjangkau (Rp 300k/bln), terkelola, dukungan lokal |
+| **Kontrol Versi** | GitHub | GitLab | Bitbucket | ✅ GitHub | Repo privat gratis, CI/CD (Actions), komunitas besar, familiar |
+| **Manajemen Tugas** | Asana | Trello | Jira | ✅ Asana | Dependensi tugas, tampilan *timeline*, tier gratis cukup, kolaboratif |
+| **Alat Desain** | Figma | Adobe XD | Sketch | ✅ Figma | Kolaboratif, berbasis *browser*, tier gratis, pustaka komponen, *prototyping* |
+| **Pengujian API** | Postman | Insomnia | Thunder Client | ✅ Postman | Koleksi, variabel lingkungan, sinkronisasi tim, komprehensif |
+| **Alat Basis Data** | MySQL Workbench | phpMyAdmin | DBeaver | ✅ MySQL Workbench | Perancang ERD visual, alat optimasi *query*, dukungan migrasi |
+| **Pelacakan Error** | Sentry | Rollbar | Bugsnag | ✅ Sentry | Pemberitahuan *real-time*, *stack trace*, tier gratis 5k *event*/bln, integrasi Laravel |
+| **Pemantauan** | UptimeRobot | Pingdom | StatusCake | ✅ UptimeRobot | Gratis 50 monitor, interval 5 menit, pemberitahuan email/SMS, halaman status publik |
 
-**Key Selection Criteria:**
-1. **Cost:** Free atau affordable untuk budget Rp 5 juta
-2. **Learning Curve:** Tim familiar atau easy to learn
-3. **Community Support:** Large community, good documentation
-4. **Integration:** Seamless integration dengan stack lain
-5. **Scalability:** Dapat handle growth
-6. **Academic Requirements:** Must use Laravel (academic constraint)
+**Kriteria Pemilihan Utama:**
+1. **Biaya:** Gratis atau terjangkau untuk anggaran Rp 5 juta
+2. **Kurva Belajar:** Tim familiar atau mudah dipelajari
+3. **Dukungan Komunitas:** Komunitas besar, dokumentasi baik
+4. **Integrasi:** Integrasi mulus dengan *stack* lain
+5. **Skalabilitas:** Dapat menangani pertumbuhan
+6. **Kebutuhan Akademik:** Harus menggunakan Laravel (batasan akademik)
 
 ---
 
@@ -1511,1170 +1516,1168 @@ Halaman utama yang menjadi first touchpoint untuk visitors. Dirancang untuk conv
 - **Footer:**
   - Quick links (About, Services, Therapists, Blog, Contact, FAQ)
   - Social media icons
-  - Copyright information
-  - Privacy Policy dan Terms & Conditions links
+  - Informasi hak cipta (*copyright*)
+  - Tautan Kebijakan Privasi dan Syarat & Ketentuan
 
-**2. About Page (02_about.html)**
+**2. Halaman Tentang Kami (02_about.html)**
 
-Halaman "Tentang Kami" yang membangun trust dan credibility:
+Halaman "Tentang Kami" yang membangun kepercayaan dan kredibilitas:
 
-- **Company Story:** Narrative tentang founding CUR-HEART, visi, misi
-- **Our Approach:** Penjelasan tentang pendekatan hypnotherapy yang digunakan
-- **Certifications:** Display sertifikat dan akreditasi
-- **Team Section:** Photos dan bios dari founders/key management
-- **Values:** Core values perusahaan (Professional, Empathetic, Scientific, Confidential)
-- **Achievements:** Milestones dan recognition yang diterima
+- **Kisah Perusahaan:** Narasi tentang pendirian CUR-HEART, visi, misi
+- **Pendekatan Kami:** Penjelasan tentang pendekatan hipnoterapi yang digunakan
+- **Sertifikasi:** Tampilan sertifikat dan akreditasi
+- **Bagian Tim:** Foto dan biografi dari pendiri/manajemen kunci
+- **Nilai:** Nilai inti perusahaan (Profesional, Empatik, Ilmiah, Rahasia)
+- **Pencapaian:** Tonggak pencapaian dan pengakuan yang diterima
 
-**3. Services Page (03_services.html)**
+**3. Halaman Layanan (03_services.html)**
 
-Katalog lengkap semua layanan dengan filtering:
+Katalog lengkap semua layanan dengan fitur penyaringan:
 
-- **Services Grid:** Card layout untuk 6 layanan, setiap card berisi:
-  - Icon/illustration representatif
-  - Service name
-  - Short description (2-3 kalimat)
-  - Duration dan price range
-  - "Learn More" button → link ke service detail page
+- **Kisi-Kisi Layanan:** Tata letak kartu untuk 6 layanan, setiap kartu berisi:
+  - Ikon/ilustrasi representatif
+  - Nama layanan
+  - Deskripsi singkat (2-3 kalimat)
+  - Durasi dan rentang harga
+  - Tombol "Pelajari Lebih Lanjut" → tautan ke halaman detail layanan
   
-- **Filter/Sort Options:**
-  - Filter by category (Stress Management, Personal Growth, Habit Change)
-  - Sort by popularity, price, duration
+- **Opsi Penyaringan/Pengurutan:**
+  - Saring berdasarkan kategori (Manajemen Stres, Pertumbuhan Pribadi, Perubahan Kebiasaan)
+  - Urutkan berdasarkan popularitas, harga, durasi
   
-- **FAQ Section:** Common questions tentang layanan
+- **Bagian FAQ:** Pertanyaan umum tentang layanan
 
-**4. Service Detail Page (04_services_detail.html)**
+**4. Halaman Detail Layanan (04_services_detail.html)**
 
 Halaman detail untuk setiap layanan individual:
 
-- **Service Header:** Name, icon, breadcrumb navigation
-- **Detailed Description:** Comprehensive explanation tentang layanan
-- **What to Expect:** Outline tentang what happens during session
-- **Benefits:** Bullet list benefits yang bisa didapatkan
-- **Ideal For:** Target audience/kondisi yang suitable
-- **Duration & Pricing:** Clear information
-- **Success Stories:** Testimonials specific untuk layanan ini
-- **Available Therapists:** List terapis yang menyediakan layanan ini dengan photos, names, specializations
-- **CTA Button:** "Book This Service" → redirect ke booking flow
+- ***Header* Layanan:** Nama, ikon, navigasi *breadcrumb*
+- **Deskripsi Detail:** Penjelasan komprehensif tentang layanan
+- **Apa yang Diharapkan:** Garis besar tentang apa yang terjadi selama sesi
+- **Manfaat:** Daftar poin manfaat yang bisa didapatkan
+- **Ideal Untuk:** Audiens target/kondisi yang sesuai
+- **Durasi & Harga:** Informasi jelas
+- **Kisah Sukses:** Testimoni spesifik untuk layanan ini
+- **Terapis Tersedia:** Daftar terapis yang menyediakan layanan ini dengan foto, nama, spesialisasi
+- **Tombol CTA:** "Pesan Layanan Ini" → arahkan ke alur pemesanan
 
-**5. Therapists Directory (05_therapists.html)**
+**5. Direktori Terapis (05_therapists.html)**
 
-Directory semua terapis dengan filtering dan search:
+Direktori semua terapis dengan fitur penyaringan dan pencarian:
 
-- **Therapists Grid:** Card layout, setiap card menampilkan:
-  - Professional photo
-  - Name dan credentials (M.Psi., C.Ht.)
-  - Specializations (tags: Anxiety, Trauma, Motivation)
-  - Years of experience
-  - Rating (e.g., 4.9★ from 120 reviews)
-  - "View Profile" button
+- **Kisi-Kisi Terapis:** Tata letak kartu, setiap kartu menampilkan:
+  - Foto profesional
+  - Nama dan kredensial (M.Psi., C.Ht.)
+  - Spesialisasi (*tag*: Kecemasan, Trauma, Motivasi)
+  - Tahun pengalaman
+  - Peringkat (mis., 4,9★ dari 120 ulasan)
+  - Tombol "Lihat Profil"
   
-- **Filter Options:**
-  - By specialization
-  - By rating
-  - By availability
-  - By years of experience
+- **Opsi Penyaringan:**
+  - Berdasarkan spesialisasi
+  - Berdasarkan peringkat
+  - Berdasarkan ketersediaan
+  - Berdasarkan tahun pengalaman
   
-- **Search Bar:** Search by name
-- **Sort Options:** Name A-Z, Rating, Experience
+- **Bilah Pencarian:** Cari berdasarkan nama
+- **Opsi Pengurutan:** Nama A-Z, Peringkat, Pengalaman
 
-**6. Therapist Profile Page (06_therapist_profile.html)**
+**6. Halaman Profil Terapis (06_therapist_profile.html)**
 
-Profile detail page untuk individual terapis:
+Halaman detail profil untuk terapis individual:
 
-- **Profile Header:**
-  - Large professional photo
-  - Name, credentials, title
-  - Rating dan total reviews
-  - Years of experience
-  - Specializations (badges/tags)
-  - "Book with This Therapist" button
+- ***Header* Profil:**
+  - Foto profesional besar
+  - Nama, kredensial, gelar
+  - Peringkat dan total ulasan
+  - Tahun pengalaman
+  - Spesialisasi (lencana/*tag*)
+  - Tombol "Pesan dengan Terapis Ini"
   
-- **About Section:** Bio paragraph tentang background, philosophy, approach
-- **Education:** List pendidikan formal dengan institutions dan years
-- **Certifications:** Professional certifications dengan issuing bodies
-- **Services Offered:** Layanan-layanan yang dikuasai
-- **Availability Calendar:** Mini calendar showing available dates (next 2 weeks preview)
-- **Reviews Section:**
-  - Overall rating breakdown (5★: 80%, 4★: 15%, etc.)
-  - Individual reviews dengan client name (anonymized if preferred), date, rating, comment
-  - Pagination untuk multiple reviews
+- **Bagian Tentang:** Paragraf biografi tentang latar belakang, filosofi, pendekatan
+- **Pendidikan:** Daftar pendidikan formal dengan institusi dan tahun
+- **Sertifikasi:** Sertifikasi profesional dengan badan penerbit
+- **Layanan yang Ditawarkan:** Layanan-layanan yang dikuasai
+- **Kalender Ketersediaan:** Kalender mini menampilkan tanggal tersedia (pratinjau 2 minggu ke depan)
+- **Bagian Ulasan:**
+  - Rincian peringkat keseluruhan (5★: 80%, 4★: 15%, dll.)
+  - Ulasan individual dengan nama klien (dianonimkan jika diinginkan), tanggal, peringkat, komentar
+  - Halaman berganda untuk banyak ulasan
   
-- **Related Therapists:** "You may also like" section dengan 3 terapis similar
+- **Terapis Terkait:** Bagian "Anda mungkin juga suka" dengan 3 terapis serupa
 
-**7. Blog List Page (07_blog_list.html)**
+**7. Halaman Daftar Blog (07_blog_list.html)**
 
-Archive page untuk semua artikel blog/educational content:
+Halaman arsip untuk semua artikel blog/konten edukatif:
 
-- **Featured Article:** Hero section dengan latest atau featured article
-- **Articles Grid:** Card layout untuk articles, setiap card berisi:
-  - Thumbnail image
-  - Category tag (e.g., Mental Health, Self-Care, Success Stories)
-  - Title
-  - Excerpt (first 150 characters)
-  - Author name dan publish date
-  - "Read More" link
+- **Artikel Unggulan:** Bagian *hero* dengan artikel terbaru atau unggulan
+- **Kisi-Kisi Artikel:** Tata letak kartu untuk artikel, setiap kartu berisi:
+  - Gambar mini
+  - *Tag* kategori (mis., Kesehatan Mental, Perawatan Diri, Kisah Sukses)
+  - Judul
+  - Kutipan (150 karakter pertama)
+  - Nama penulis dan tanggal publikasi
+  - Tautan "Baca Selengkapnya"
   
-- **Sidebar:**
-  - Search bar
-  - Categories list
-  - Popular articles
-  - Tags cloud
+- **Bilah Samping:**
+  - Bilah pencarian
+  - Daftar kategori
+  - Artikel populer
+  - Awan *tag*
   
-- **Pagination:** Navigate through multiple pages of articles
+- **Halaman Berganda:** Navigasi melalui beberapa halaman artikel
 
-**8. Blog Detail Page (08_blog_detail.html)**
+**8. Halaman Detail Blog (08_blog_detail.html)**
 
-Individual article page:
+Halaman artikel individual:
 
-- **Article Header:**
-  - Title (H1)
-  - Author info dengan photo
-  - Publish date dan reading time estimate
-  - Category dan tags
-  - Share buttons (social media)
+- ***Header* Artikel:**
+  - Judul (H1)
+  - Informasi penulis dengan foto
+  - Tanggal publikasi dan estimasi waktu baca
+  - Kategori dan *tag*
+  - Tombol bagikan (media sosial)
   
-- **Article Content:**
-  - Rich text content dengan images, headings, lists, quotes
-  - Proper typography dan spacing untuk readability
-  - Table of contents untuk long articles (sticky sidebar)
+- **Konten Artikel:**
+  - Konten teks kaya dengan gambar, judul, daftar, kutipan
+  - Tipografi dan spasi yang tepat untuk keterbacaan
+  - Daftar isi untuk artikel panjang (bilah samping lengket/*sticky*)
   
-- **Engagement:**
-  - Like/helpful button
-  - Comment section (optional)
+- **Keterlibatan:**
+  - Tombol suka/membantu
+  - Bagian komentar (opsional)
   
-- **Related Articles:** 3-4 related articles at bottom
-- **CTA:** "Ready to start your journey? Book a session now"
+- **Artikel Terkait:** 3-4 artikel terkait di bagian bawah
+- **CTA:** "Siap memulai perjalanan Anda? Pesan sesi sekarang"
 
-#### B. Support Pages (4 halaman)
+#### B. Halaman Dukungan (4 halaman)
 
-**9. Contact Page (09_contact.html)**
+**9. Halaman Kontak (09_contact.html)**
 
-- **Contact Form:** Name, email, phone, subject, message fields
-- **Contact Information:** Address, phone numbers, email, business hours
-- **Google Maps Embed:** Interactive map showing location
-- **Social Media Links**
-- **FAQ Link:** Redirect to FAQ page for common questions
+- **Formulir Kontak:** Kolom nama, email, telepon, subjek, pesan
+- **Informasi Kontak:** Alamat, nomor telepon, email, jam operasional
+- **Peta Google *Embed*:** Peta interaktif menampilkan lokasi
+- **Tautan Media Sosial**
+- **Tautan FAQ:** Arahkan ke halaman FAQ untuk pertanyaan umum
 
-**10. FAQ Page (10_faq.html)**
+**10. Halaman FAQ (10_faq.html)**
 
-- **Search Bar:** Search through FAQs
-- **Categories:** General, Booking, Services, Payment, Privacy
-- **Accordion Layout:** Click to expand answers
-- **Contact Prompt:** "Didn't find your answer? Contact us"
+- **Bilah Pencarian:** Cari melalui FAQ
+- **Kategori:** Umum, Pemesanan, Layanan, Pembayaran, Privasi
+- **Tata Letak Akordeon:** Klik untuk memperluas jawaban
+- **Ajakan Kontak:** "Tidak menemukan jawaban Anda? Hubungi kami"
 
-**11. Privacy Policy Page (11_privacy_policy.html)**
+**11. Halaman Kebijakan Privasi (11_privacy_policy.html)**
 
-- **Legal Document:** Comprehensive privacy policy
-- **Sections:** Data collection, usage, protection, rights, cookies
-- **Last Updated Date**
-- **Compliance Statement:** UU No. 27 Tahun 2022 tentang PDP
+- **Dokumen Legal:** Kebijakan privasi komprehensif
+- **Bagian:** Pengumpulan data, penggunaan, perlindungan, hak, *cookie*
+- **Tanggal Pembaruan Terakhir**
+- **Pernyataan Kepatuhan:** UU No. 27 Tahun 2022 tentang PDP
 
-**12. Terms & Conditions Page (12_terms_conditions.html)**
+**12. Halaman Syarat & Ketentuan (12_terms_conditions.html)**
 
-- **Legal Document:** Terms of service
-- **Sections:** User obligations, service usage, cancellation policy, liability, disputes
-- **Acceptance Checkbox:** Required during registration
+- **Dokumen Legal:** Syarat layanan
+- **Bagian:** Kewajiban pengguna, penggunaan layanan, kebijakan pembatalan, tanggung jawab, sengketa
+- **Kotak Centang Penerimaan:** Diperlukan saat pendaftaran
 
-#### C. Authentication Pages (4 halaman)
+#### C. Halaman Autentikasi (4 halaman)
 
-**13. Login Page (13_login.html)**
+**13. Halaman Login (13_login.html)**
 
-- **Login Form:**
-  - Email field
-  - Password field dengan show/hide toggle
-  - "Remember Me" checkbox
-  - "Forgot Password?" link
-  - "Login" button (primary CTA)
+- **Formulir Login:**
+  - Kolom email
+  - Kolom kata sandi dengan tombol tampilkan/sembunyikan
+  - Kotak centang "Ingat Saya"
+  - Tautan "Lupa Kata Sandi?"
+  - Tombol "Masuk" (CTA utama)
   
-- **Social Login (optional):** Google, Facebook login buttons
-- **Registration Link:** "Don't have an account? Sign Up"
-- **Branding:** Logo, tagline
-- **Illustration/Image:** Calming visual di side (split-screen layout)
+- **Login Sosial (opsional):** Tombol login Google, Facebook
+- **Tautan Pendaftaran:** "Belum punya akun? Daftar"
+- **Pencitraan Merek (*Branding*):** Logo, *tagline*
+- **Ilustrasi/Gambar:** Visual menenangkan di samping (tata letak layar terpisah/*split-screen*)
 
-**14. Register Page (14_register.html)**
+**14. Halaman Pendaftaran (14_register.html)**
 
-- **Registration Form:**
-  - Full Name
-  - Email Address
-  - Phone Number
-  - Password (dengan strength indicator)
-  - Confirm Password
-  - Terms & Conditions acceptance checkbox
+- **Formulir Pendaftaran:**
+  - Nama Lengkap
+  - Alamat Email
+  - Nomor Telepon
+  - Kata Sandi (dengan indikator kekuatan)
+  - Konfirmasi Kata Sandi
+  - Kotak centang penerimaan Syarat & Ketentuan
   
-- **User Type Selection:**
-  - Radio buttons atau tabs: "Client" atau "Therapist"
-  - Different forms untuk each type (therapists need additional info: credentials, specializations)
+- **Pemilihan Tipe Pengguna:**
+  - Tombol radio atau *tab*: "Klien" atau "Terapis"
+  - Formulir berbeda untuk setiap tipe (terapis memerlukan info tambahan: kredensial, spesialisasi)
   
-- **"Create Account" Button**
-- **Login Link:** "Already have an account? Login"
-- **Email Verification Notice:** "We'll send verification email"
+- **Tombol "Buat Akun"**
+- **Tautan Login:** "Sudah punya akun? Masuk"
+- **Pemberitahuan Verifikasi Email:** "Kami akan mengirim email verifikasi"
 
-**15. Forgot Password Page (15_forgot_password.html)**
+**15. Halaman Lupa Kata Sandi (15_forgot_password.html)**
 
-- **Instruction Text:** "Enter your email to receive reset link"
-- **Email Input Field**
-- **"Send Reset Link" Button**
-- **Back to Login Link**
-- **Success Message:** "Reset link sent! Check your email"
+- **Teks Instruksi:** "Masukkan email Anda untuk menerima tautan pengaturan ulang"
+- **Kolom Input Email**
+- **Tombol "Kirim Tautan Pengaturan Ulang"**
+- **Tautan Kembali ke Login**
+- **Pesan Sukses:** "Tautan pengaturan ulang terkirim! Periksa email Anda"
 
-**16. Reset Password Page (16_reset_password.html)**
+**16. Halaman Atur Ulang Kata Sandi (16_reset_password.html)**
 
-- **Token Validation:** System checks if reset token valid dan not expired
-- **New Password Form:**
-  - New Password field dengan strength indicator
-  - Confirm New Password field
+- **Validasi Token:** Sistem memeriksa apakah token pengaturan ulang valid dan tidak kedaluwarsa
+- **Formulir Kata Sandi Baru:**
+  - Kolom Kata Sandi Baru dengan indikator kekuatan
+  - Kolom Konfirmasi Kata Sandi Baru
   
-- **"Reset Password" Button**
-- **Success Redirect:** After successful reset, redirect ke login dengan success message
+- **Tombol "Atur Ulang Kata Sandi"**
+- **Pengalihan Sukses:** Setelah pengaturan ulang berhasil, arahkan ke login dengan pesan sukses
 
-#### D. Client Dashboard (10 halaman)
+#### D. Dasbor Klien (10 halaman)
 
-**17. Client Dashboard Main (17_client_dashboard.html)**
+**17. Dasbor Utama Klien (17_client_dashboard.html)**
 
-Overview dashboard untuk klien setelah login:
+Dasbor ikhtisar untuk klien setelah login:
 
-- **Welcome Header:** "Welcome back, [Client Name]!"
-- **Summary Cards:**
-  - Upcoming Appointments (count dengan next appointment details)
-  - Completed Sessions (total count)
-  - Progress Score (percentage atau score)
-  - Pending Payments (if any)
+- ***Header* Sambutan:** "Selamat datang kembali, [Nama Klien]!"
+- **Kartu Ringkasan:**
+  - Janji Temu Mendatang (jumlah dengan detail janji temu berikutnya)
+  - Sesi Selesai (total jumlah)
+  - Skor Kemajuan (persentase atau skor)
+  - Pembayaran Tertunda (jika ada)
   
-- **Upcoming Appointments Widget:**
-  - List 2-3 upcoming appointments dengan:
-    - Date dan time
-    - Service name
-    - Therapist name dan photo
-    - "View Details" atau "Join Session" button (if online)
-  - "View All" link → redirects to appointments page
+- ***Widget* Janji Temu Mendatang:**
+  - Daftar 2-3 janji temu mendatang dengan:
+    - Tanggal dan waktu
+    - Nama layanan
+    - Nama terapis dan foto
+    - Tombol "Lihat Detail" atau "Gabung Sesi" (jika *online*)
+  - Tautan "Lihat Semua" → arahkan ke halaman janji temu
   
-- **Quick Actions:**
-  - Large buttons: "Book New Session", "View My Progress", "Contact Therapist"
+- **Tindakan Cepat:**
+  - Tombol besar: "Pesan Sesi Baru", "Lihat Kemajuan Saya", "Hubungi Terapis"
   
-- **Recent Activities Timeline:**
-  - Last session completed
-  - Payment confirmed
-  - Appointment rescheduled
-  - etc.
+- **Linimasa Aktivitas Terkini:**
+  - Sesi terakhir selesai
+  - Pembayaran dikonfirmasi
+  - Janji temu dijadwalkan ulang
+  - dll.
   
-- **Announcements/News:**
-  - System announcements
-  - Tips of the day
-  - Upcoming events atau workshops
+- **Pengumuman/Berita:**
+  - Pengumuman sistem
+  - Tips hari ini
+  - Acara atau lokakarya mendatang
   
-- **Motivational Quote:** Random mental health quote atau affirmation
+- **Kutipan Motivasi:** Kutipan kesehatan mental atau afirmasi acak
 
-**18. Booking Step 1 - Select Service (18_booking_step1.html)**
+**18. Pemesanan Langkah 1 - Pilih Layanan (18_booking_step1.html)**
 
-Tahap 1 dari 4-step booking flow:
+Tahap 1 dari alur pemesanan 4 langkah:
 
-- **Progress Indicator:** Visual stepper showing "Step 1 of 4"
-- **Page Title:** "Choose Your Service"
-- **Services Grid:** Similar to services catalog, tapi dengan selection mechanism:
-  - Radio buttons atau clickable cards
-  - Highlight selected service
+- **Indikator Kemajuan:** *Stepper* visual menampilkan "Langkah 1 dari 4"
+- **Judul Halaman:** "Pilih Layanan Anda"
+- **Kisi-Kisi Layanan:** Mirip dengan katalog layanan, tetapi dengan mekanisme pemilihan:
+  - Tombol radio atau kartu yang dapat diklik
+  - Sorot layanan yang dipilih
   
-- **Service Preview:** When service selected, show:
-  - Full description
-  - Duration
-  - Price
+- **Pratinjau Layanan:** Saat layanan dipilih, tampilkan:
+  - Deskripsi lengkap
+  - Durasi
+  - Harga
   
-- **Navigation:**
-  - "Next" button (enabled only when service selected) → go to Step 2
-  - "Cancel" button → back to dashboard
+- **Navigasi:**
+  - Tombol "Berikutnya" (diaktifkan hanya saat layanan dipilih) → ke Langkah 2
+  - Tombol "Batal" → kembali ke dasbor
 
-**19. Booking Step 2 - Select Therapist (19_booking_step2.html)**
+**19. Pemesanan Langkah 2 - Pilih Terapis (19_booking_step2.html)**
 
-- **Progress Indicator:** "Step 2 of 4"
-- **Page Title:** "Choose Your Therapist"
-- **Filter:** Show only therapists yang provide selected service
-- **Therapists Grid:** Similar to directory, dengan selection:
-  - Radio buttons atau clickable cards
-  - Show availability indicator (e.g., "Available this week")
+- **Indikator Kemajuan:** "Langkah 2 dari 4"
+- **Judul Halaman:** "Pilih Terapis Anda"
+- **Penyaringan:** Tampilkan hanya terapis yang menyediakan layanan yang dipilih
+- **Kisi-Kisi Terapis:** Mirip dengan direktori, dengan pemilihan:
+  - Tombol radio atau kartu yang dapat diklik
+  - Tampilkan indikator ketersediaan (mis., "Tersedia minggu ini")
   
-- **Therapist Preview:** When selected, show:
-  - Profile summary
-  - Specializations
-  - Rating
-  - "View Full Profile" link (opens modal atau new tab)
+- **Pratinjau Terapis:** Saat dipilih, tampilkan:
+  - Ringkasan profil
+  - Spesialisasi
+  - Peringkat
+  - Tautan "Lihat Profil Lengkap" (buka modal atau *tab* baru)
   
-- **Navigation:**
-  - "Back" button → return to Step 1
-  - "Next" button → go to Step 3
+- **Navigasi:**
+  - Tombol "Kembali" → kembali ke Langkah 1
+  - Tombol "Berikutnya" → ke Langkah 3
 
-**20. Booking Step 3 - Select Date & Time (20_booking_step3.html)**
+**20. Pemesanan Langkah 3 - Pilih Tanggal & Waktu (20_booking_step3.html)**
 
-- **Progress Indicator:** "Step 3 of 4"
-- **Page Title:** "Choose Date & Time"
-- **Calendar Widget:** Interactive calendar showing:
-  - Available dates (clickable)
-  - Unavailable dates (grayed out)
-  - Current month dengan prev/next navigation
+- **Indikator Kemajuan:** "Langkah 3 dari 4"
+- **Judul Halaman:** "Pilih Tanggal & Waktu"
+- ***Widget* Kalender:** Kalender interaktif menampilkan:
+  - Tanggal tersedia (dapat diklik)
+  - Tanggal tidak tersedia (berwarna abu-abu)
+  - Bulan saat ini dengan navigasi sebelumnya/berikutnya
   
-- **Time Slots:** When date selected, show available time slots:
-  - Grid of buttons: "09:00 AM", "10:30 AM", "01:00 PM", etc.
-  - Disabled/grayed out untuk slots already booked
-  - Highlight selected slot
+- **Slot Waktu:** Saat tanggal dipilih, tampilkan slot waktu tersedia:
+  - Kisi tombol: "09:00", "10:30", "13:00", dll.
+  - Dinonaktifkan/berwarna abu-abu untuk slot yang sudah dipesan
+  - Sorot slot yang dipilih
   
-- **Duration Display:** "Session duration: 60 minutes"
-- **Selected Summary:** Box showing:
-  - Service: [Name]
-  - Therapist: [Name]
-  - Date: [Selected Date]
-  - Time: [Selected Time]
+- **Tampilan Durasi:** "Durasi sesi: 60 menit"
+- **Ringkasan Pilihan:** Kotak menampilkan:
+  - Layanan: [Nama]
+  - Terapis: [Nama]
+  - Tanggal: [Tanggal Dipilih]
+  - Waktu: [Waktu Dipilih]
   
-- **Navigation:**
-  - "Back" button → Step 2
-  - "Next" button → Step 4
+- **Navigasi:**
+  - Tombol "Kembali" → Langkah 2
+  - Tombol "Berikutnya" → Langkah 4
 
-**21. Booking Step 4 - Confirmation & Payment (21_booking_step4.html)**
+**21. Pemesanan Langkah 4 - Konfirmasi & Pembayaran (21_booking_step4.html)**
 
-- **Progress Indicator:** "Step 4 of 4"
-- **Page Title:** "Confirm & Pay"
-- **Booking Summary:** Complete recap:
-  - Service name, description, duration
-  - Therapist name, photo
-  - Date and time
-  - Location (if physical) atau "Online Session"
+- **Indikator Kemajuan:** "Langkah 4 dari 4"
+- **Judul Halaman:** "Konfirmasi & Bayar"
+- **Ringkasan Pemesanan:** Rekap lengkap:
+  - Nama layanan, deskripsi, durasi
+  - Nama terapis, foto
+  - Tanggal dan waktu
+  - Lokasi (jika fisik) atau "Sesi *Online*"
   - Subtotal
-  - Tax (if applicable)
-  - Total amount
+  - Pajak (jika berlaku)
+  - Total jumlah
   
-- **Client Information:** Pre-filled dengan logged-in user data:
-  - Name
+- **Informasi Klien:** Terisi otomatis dengan data pengguna yang login:
+  - Nama
   - Email
-  - Phone
-  - Special notes/requests (textarea - optional)
+  - Telepon
+  - Catatan/permintaan khusus (*textarea* - opsional)
   
-- **Payment Method Selection:**
-  - Radio buttons:
-    - Credit/Debit Card (via payment gateway)
-    - Bank Transfer (manual)
-    - E-Wallet (GoPay, OVO, Dana)
+- **Pemilihan Metode Pembayaran:**
+  - Tombol radio:
+    - Kartu Kredit/Debit (via *payment gateway*)
+    - Transfer Bank (manual)
+    - Dompet Digital (*E-Wallet*) (GoPay, OVO, Dana)
     - QRIS
   
-- **Terms Agreement:** Checkbox untuk agree dengan cancellation policy
-- **Navigation:**
-  - "Back" button → Step 3
-  - "Confirm & Pay" button (primary CTA) → process payment
+- **Persetujuan Syarat:** Kotak centang untuk menyetujui kebijakan pembatalan
+- **Navigasi:**
+  - Tombol "Kembali" → Langkah 3
+  - Tombol "Konfirmasi & Bayar" (CTA utama) → proses pembayaran
 
-**22. Booking Success Page (22_booking_success.html)**
+**22. Halaman Sukses Pemesanan (22_booking_success.html)**
 
-Confirmation page after successful booking:
+Halaman konfirmasi setelah pemesanan berhasil:
 
-- **Success Icon:** Large checkmark atau success animation
-- **Success Message:** "Booking Confirmed!"
-- **Booking Details:**
-  - Booking reference number
-  - Service, Therapist, Date, Time
-  - Payment status
+- **Ikon Sukses:** Tanda centang besar atau animasi sukses
+- **Pesan Sukses:** "Pemesanan Dikonfirmasi!"
+- **Detail Pemesanan:**
+  - Nomor referensi pemesanan
+  - Layanan, Terapis, Tanggal, Waktu
+  - Status pembayaran
   
-- **Next Steps:**
-  - "You'll receive confirmation email at [email]"
-  - "Reminder will be sent 1 day before session"
-  - If online: "Link to join will be sent via email"
+- **Langkah Berikutnya:**
+  - "Anda akan menerima email konfirmasi di [email]"
+  - "Pengingat akan dikirim 1 hari sebelum sesi"
+  - Jika *online*: "Tautan untuk bergabung akan dikirim via email"
   
-- **Actions:**
-  - "View My Appointments" button → go to appointments page
-  - "Book Another Session" button → restart booking flow
-  - "Download Confirmation" button → generate PDF
+- **Tindakan:**
+  - Tombol "Lihat Janji Temu Saya" → ke halaman janji temu
+  - Tombol "Pesan Sesi Lain" → mulai ulang alur pemesanan
+  - Tombol "Unduh Konfirmasi" → hasilkan PDF
 
-**23. Client Appointments List (23_client_appointments.html)**
+**23. Daftar Janji Temu Klien (23_client_appointments.html)**
 
-List view semua appointments klien:
+Tampilan daftar semua janji temu klien:
 
-- **View Toggles:** Tabs atau buttons to switch:
-  - List View (default)
-  - Calendar View
+- **Pengalih Tampilan:** *Tab* atau tombol untuk beralih:
+  - Tampilan Daftar (*default*)
+  - Tampilan Kalender
   
-- **Filter Options:**
-  - Status: All, Upcoming, Completed, Cancelled
-  - Date range picker
+- **Opsi Penyaringan:**
+  - Status: Semua, Mendatang, Selesai, Dibatalkan
+  - Pemilih rentang tanggal
   
-- **Appointments List:** Table atau card layout, setiap row/card shows:
-  - Date & Time
-  - Service name
-  - Therapist name dan photo
-  - Status badge (Upcoming: blue, Completed: green, Cancelled: red)
-  - Actions dropdown:
-    - View Details
-    - Reschedule (if upcoming)
-    - Cancel (if upcoming dan within policy)
-    - Join Session (if online dan time to join)
-    - Download Receipt
+- **Daftar Janji Temu:** Tabel atau tata letak kartu, setiap baris/kartu menampilkan:
+  - Tanggal & Waktu
+  - Nama layanan
+  - Nama terapis dan foto
+  - Lencana status (Mendatang: biru, Selesai: hijau, Dibatalkan: merah)
+  - *Dropdown* tindakan:
+    - Lihat Detail
+    - Jadwalkan Ulang (jika mendatang)
+    - Batalkan (jika mendatang dan dalam kebijakan)
+    - Gabung Sesi (jika *online* dan waktu bergabung)
+    - Unduh Tanda Terima
   
-- **Pagination:** Navigate through pages if many appointments
-- **Empty State:** If no appointments, show encouraging message dan "Book Your First Session" button
+- **Halaman Berganda:** Navigasi melalui halaman jika banyak janji temu
+- **Keadaan Kosong:** Jika tidak ada janji temu, tampilkan pesan mendorong dan tombol "Pesan Sesi Pertama Anda"
 
-**24. Appointment Detail Page (24_appointment_detail.html)**
+**24. Halaman Detail Janji Temu (24_appointment_detail.html)**
 
-Detail page untuk individual appointment:
+Halaman detail untuk janji temu individual:
 
-- **Breadcrumb:** Dashboard > Appointments > [Booking ID]
-- **Appointment Header:**
-  - Status badge
-  - Booking reference number
-  - Date created
+- ***Breadcrumb*:** Dasbor > Janji Temu > [ID Pemesanan]
+- ***Header* Janji Temu:**
+  - Lencana status
+  - Nomor referensi pemesanan
+  - Tanggal dibuat
   
-- **Details Section:**
-  - **Service Information:**
-    - Service name dan description
-    - Duration
-    - Price
+- **Bagian Detail:**
+  - **Informasi Layanan:**
+    - Nama dan deskripsi layanan
+    - Durasi
+    - Harga
   
-  - **Therapist Information:**
-    - Photo, name, credentials
-    - Specializations
-    - Contact button (opens messaging)
+  - **Informasi Terapis:**
+    - Foto, nama, kredensial
+    - Spesialisasi
+    - Tombol kontak (buka perpesanan)
   
-  - **Schedule:**
-    - Date dan time
-    - Location atau online link (if session time)
+  - **Jadwal:**
+    - Tanggal dan waktu
+    - Lokasi atau tautan *online* (jika waktu sesi)
   
-  - **Client Notes:** Any special requests submitted
-  - **Therapist Notes:** (visible after session) Summary dari terapis
+  - **Catatan Klien:** Permintaan khusus yang dikirimkan
+  - **Catatan Terapis:** (terlihat setelah sesi) Ringkasan dari terapis
   
-- **Payment Information:**
-  - Amount
-  - Payment method
-  - Payment status
-  - Transaction ID
-  - Invoice download button
+- **Informasi Pembayaran:**
+  - Jumlah
+  - Metode pembayaran
+  - Status pembayaran
+  - ID transaksi
+  - Tombol unduh faktur
   
-- **Actions:**
-  - If upcoming:
-    - "Reschedule" button
-    - "Cancel Appointment" button (dengan confirmation modal)
-    - "Add to Calendar" button (download .ics file)
-  - If online dan time to join:
-    - "Join Session" button (large, prominent)
-  - If completed:
-    - "Leave Review" button
-    - "Book Again dengan Therapist yang Sama" button
+- **Tindakan:**
+  - Jika mendatang:
+    - Tombol "Jadwalkan Ulang"
+    - Tombol "Batalkan Janji Temu" (dengan modal konfirmasi)
+    - Tombol "Tambah ke Kalender" (unduh file .ics)
+  - Jika *online* dan waktu bergabung:
+    - Tombol "Gabung Sesi" (besar, menonjol)
+  - Jika selesai:
+    - Tombol "Berikan Ulasan"
+    - Tombol "Pesan Lagi dengan Terapis yang Sama"
 
-**25. Client Progress Tracking (25_client_progress.html)**
+**25. Pelacakan Kemajuan Klien (25_client_progress.html)**
 
-Visualisasi progress terapi klien:
+Visualisasi kemajuan terapi klien:
 
-- **Progress Overview Cards:**
-  - Total Sessions Completed
-  - Current Streak (consecutive weeks/months)
-  - Overall Progress Score (algorithm-based)
-  - Improvement Percentage
+- **Kartu Ikhtisar Kemajuan:**
+  - Total Sesi Selesai
+  - *Streak* Saat Ini (minggu/bulan berturut-turut)
+  - Skor Kemajuan Keseluruhan (berbasis algoritma)
+  - Persentase Peningkatan
   
-- **Self-Assessment History:**
-  - Line chart showing scores over time
-  - Multiple series untuk different metrics (e.g., Anxiety Level, Confidence Level, Sleep Quality)
-  - Interactive: hover untuk see exact values
-  - Date range selector
+- **Riwayat Penilaian Mandiri:**
+  - Grafik garis menampilkan skor dari waktu ke waktu
+  - Beberapa seri untuk metrik berbeda (mis., Tingkat Kecemasan, Tingkat Kepercayaan Diri, Kualitas Tidur)
+  - Interaktif: *hover* untuk melihat nilai tepat
+  - Pemilih rentang tanggal
   
-- **Progress Notes dari Terapis:**
-  - Timeline view showing notes setiap after session
-  - Expand/collapse untuk read full notes
+- **Catatan Kemajuan dari Terapis:**
+  - Tampilan linimasa menampilkan catatan setiap setelah sesi
+  - Perluas/ciutkan untuk membaca catatan lengkap
   
-- **Goals Tracking:**
-  - List personal goals yang diset dengan terapis
-  - Progress bar untuk each goal
-  - Completion status
+- **Pelacakan Tujuan:**
+  - Daftar tujuan pribadi yang ditetapkan dengan terapis
+  - Bilah kemajuan untuk setiap tujuan
+  - Status penyelesaian
   
-- **Milestones:**
-  - Achievement badges (e.g., "First Session", "10 Sessions", "3 Months Consistent")
-  - Gamification elements untuk motivation
+- **Tonggak Pencapaian:**
+  - Lencana pencapaian (mis., "Sesi Pertama", "10 Sesi", "3 Bulan Konsisten")
+  - Elemen gamifikasi untuk motivasi
   
-- **Download Report:** Button to download comprehensive progress report dalam PDF
+- **Unduh Laporan:** Tombol untuk mengunduh laporan kemajuan komprehensif dalam PDF
 
-**26. Client Messages/Inbox (26_client_messages.html)**
+**26. Pesan/Kotak Masuk Klien (26_client_messages.html)**
 
-Communication hub untuk communicate dengan terapis atau admin:
+*Hub* komunikasi untuk berkomunikasi dengan terapis atau admin:
 
-- **Inbox Layout:**
-  - Left sidebar: List conversations dengan:
-    - Contact photo dan name
-    - Last message preview
-    - Timestamp
-    - Unread indicator (badge dengan count)
+- **Tata Letak Kotak Masuk:**
+  - Bilah samping kiri: Daftar percakapan dengan:
+    - Foto dan nama kontak
+    - Pratinjau pesan terakhir
+    - Stempel waktu
+    - Indikator belum dibaca (lencana dengan jumlah)
   
-  - Right pane: Selected conversation:
-    - Message thread (chronological)
-    - Each message shows sender, timestamp, content
-    - Support attachments (view images, download documents)
+  - Panel kanan: Percakapan yang dipilih:
+    - Utas pesan (kronologis)
+    - Setiap pesan menampilkan pengirim, stempel waktu, konten
+    - Dukungan lampiran (lihat gambar, unduh dokumen)
     
-- **Compose Message:**
-  - Rich text editor
-  - Attachment button
-  - "Send" button
+- **Tulis Pesan:**
+  - Editor teks kaya
+  - Tombol lampiran
+  - Tombol "Kirim"
   
-- **Filter/Search:**
-  - Search messages by keyword
-  - Filter by sender (Therapist, Admin)
+- **Penyaringan/Pencarian:**
+  - Cari pesan berdasarkan kata kunci
+  - Saring berdasarkan pengirim (Terapis, Admin)
   
-- **Notifications:** Real-time notifications untuk new messages
-- **Archive:** Option to archive old conversations
+- **Notifikasi:** Notifikasi waktu nyata untuk pesan baru
+- **Arsip:** Opsi untuk mengarsipkan percakapan lama
 
-#### E. Therapist Dashboard (10 halaman)
+#### E. Dasbor Terapis (10 halaman)
 
-**27. Therapist Dashboard Main (27_therapist_dashboard.html)**
+**27. Dasbor Utama Terapis (27_therapist_dashboard.html)**
 
-Overview dashboard untuk terapis setelah login:
+Dasbor ikhtisar untuk terapis setelah login:
 
-- **Welcome Header:** "Welcome, Dr. [Name]"
-- **Today's Schedule Widget:**
-  - Timeline view of today's appointments
-  - Each appointment shows:
-    - Time
-    - Client name (clickable → view client profile)
-    - Service type
-    - Status (Upcoming, In Progress, Completed)
-    - Quick action: "Start Session", "View Details"
+- ***Header* Sambutan:** "Selamat Datang, Dr. [Nama]"
+- ***Widget* Jadwal Hari Ini:**
+  - Tampilan linimasa janji temu hari ini
+  - Setiap janji temu menampilkan:
+    - Waktu
+    - Nama klien (dapat diklik → lihat profil klien)
+    - Tipe layanan
+    - Status (Mendatang, Sedang Berjalan, Selesai)
+    - Tindakan cepat: "Mulai Sesi", "Lihat Detail"
   
-- **Summary Statistics Cards:**
-  - Today's Sessions (count)
-  - Total Clients (all-time)
-  - This Month's Earnings (Rp amount)
-  - Average Rating (★ 4.8 dari 5)
+- **Kartu Statistik Ringkasan:**
+  - Sesi Hari Ini (jumlah)
+  - Total Klien (sepanjang waktu)
+  - Pendapatan Bulan Ini (jumlah Rp)
+  - Peringkat Rata-rata (★ 4,8 dari 5)
   
-- **Quick Actions:**
-  - "Manage My Schedule"
-  - "View All Clients"
-  - "Check Messages"
+- **Tindakan Cepat:**
+  - "Kelola Jadwal Saya"
+  - "Lihat Semua Klien"
+  - "Periksa Pesan"
   
-- **Notifications Panel:**
-  - New booking requests (if approval workflow enabled)
-  - Rescheduling requests dari clients
-  - Payment confirmations
-  - System announcements
+- **Panel Notifikasi:**
+  - Permintaan pemesanan baru (jika alur kerja persetujuan diaktifkan)
+  - Permintaan penjadwalan ulang dari klien
+  - Konfirmasi pembayaran
+  - Pengumuman sistem
   
-- **Performance Metrics:**
-  - Chart showing sessions over time (line chart - last 30 days)
-  - Session completion rate (%)
-  - No-show rate (%)
+- **Metrik Kinerja:**
+  - Grafik menampilkan sesi dari waktu ke waktu (grafik garis - 30 hari terakhir)
+  - Tingkat penyelesaian sesi (%)
+  - Tingkat ketidakhadiran (%)
   
-- **Upcoming Appointments (Next 7 Days):**
-  - List view dengan date, time, client, service
-  - "View Full Schedule" link
+- **Janji Temu Mendatang (7 Hari Ke Depan):**
+  - Tampilan daftar dengan tanggal, waktu, klien, layanan
+  - Tautan "Lihat Jadwal Lengkap"
 
-**28. Therapist Schedule Management (28_therapist_schedule.html)**
+**28. Manajemen Jadwal Terapis (28_therapist_schedule.html)**
 
-Calendar management untuk terapis:
+Manajemen kalender untuk terapis:
 
-- **Calendar Views:**
-  - Tabs to switch: Day, Week, Month
-  - Large calendar grid showing all appointments
+- **Tampilan Kalender:**
+  - *Tab* untuk beralih: Hari, Minggu, Bulan
+  - Kisi kalender besar menampilkan semua janji temu
   
-- **Appointment Display dalam Calendar:**
-  - Colored blocks representing appointments
-  - Color-coded by service type atau status
-  - Show time, client name (truncated if long)
-  - Click appointment → modal dengan details dan actions
+- **Tampilan Janji Temu dalam Kalender:**
+  - Blok berwarna mewakili janji temu
+  - Kode warna berdasarkan tipe layanan atau status
+  - Tampilkan waktu, nama klien (dipotong jika panjang)
+  - Klik janji temu → modal dengan detail dan tindakan
   
-- **Legend:** Explain color codes
-- **Actions:**
-  - Add manual block (for walk-in atau phone bookings) - admin only
-  - View/Edit/Cancel appointments
+- **Legenda:** Menjelaskan kode warna
+- **Tindakan:**
+  - Tambah blok manual (untuk *walk-in* atau pemesanan telepon) - hanya admin
+  - Lihat/Edit/Batalkan janji temu
   
-- **Integration:**
-  - "Export to Google Calendar" button
-  - "Download as PDF" untuk print
+- **Integrasi:**
+  - Tombol "Ekspor ke Google Calendar"
+  - "Unduh sebagai PDF" untuk cetak
 
-**29. Therapist Availability Settings (29_therapist_availability.html)**
+**29. Pengaturan Ketersediaan Terapis (29_therapist_availability.html)**
 
-Interface untuk set working hours dan availability:
+Antarmuka untuk mengatur jam kerja dan ketersediaan:
 
-- **Regular Schedule:**
-  - Weekly grid (Monday - Sunday)
-  - For each day:
-    - Toggle: Available / Unavailable
-    - If available: Time slots (start time - end time)
-    - Add multiple time slots per day (e.g., 09:00-12:00 dan 14:00-17:00)
-    - "Copy to All Days" option untuk consistency
+- **Jadwal Reguler:**
+  - Kisi mingguan (Senin - Minggu)
+  - Untuk setiap hari:
+    - Pengalih: Tersedia / Tidak Tersedia
+    - Jika tersedia: Slot waktu (waktu mulai - waktu selesai)
+    - Tambah beberapa slot waktu per hari (mis., 09:00-12:00 dan 14:00-17:00)
+    - Opsi "Salin ke Semua Hari" untuk konsistensi
   
-- **Break Time Settings:**
-  - Default break duration between sessions (e.g., 15 minutes)
-  - Lunch break time
+- **Pengaturan Waktu Istirahat:**
+  - Durasi istirahat *default* antara sesi (mis., 15 menit)
+  - Waktu istirahat makan siang
   
-- **Blocked Dates (Cuti/Off Days):**
-  - Calendar widget untuk select dates
-  - List blocked dates dengan delete option
-  - Reason field (optional - for personal tracking)
+- **Tanggal Diblokir (Cuti/Hari Libur):**
+  - *Widget* kalender untuk memilih tanggal
+  - Daftar tanggal diblokir dengan opsi hapus
+  - Kolom alasan (opsional - untuk pelacakan pribadi)
   
-- **Advance Booking Window:**
-  - Setting: "Clients can book up to X days in advance"
-  - Setting: "Require minimum X days notice for booking"
+- **Jendela Pemesanan di Muka:**
+  - Pengaturan: "Klien dapat memesan hingga X hari di muka"
+  - Pengaturan: "Memerlukan minimal X hari pemberitahuan untuk pemesanan"
   
-- **Maximum Sessions per Day:**
-  - Number input untuk prevent overwork
+- **Maksimum Sesi per Hari:**
+  - Input angka untuk mencegah kelebihan kerja
   
-- **Override Availability:**
-  - Option untuk temporarily override untuk specific dates (special hours)
+- **Penggantian Ketersediaan:**
+  - Opsi untuk sementara mengganti untuk tanggal tertentu (jam khusus)
   
-- **Save Changes Button:** Commit changes, refresh availability dalam booking system
+- **Tombol Simpan Perubahan:** Terapkan perubahan, segarkan ketersediaan dalam sistem pemesanan
 
-**30. Therapist Clients List (30_therapist_clients.html)**
+**30. Daftar Klien Terapis (30_therapist_clients.html)**
 
-Manage dan view list semua klien yang pernah ditangani:
+Kelola dan lihat daftar semua klien yang pernah ditangani:
 
-- **Clients Table:**
-  - Columns:
-    - Client Photo & Name
-    - Last Session Date
-    - Total Sessions (count)
-    - Status (Active, Inactive, Completed)
-    - Progress Indicator (visual gauge atau percentage)
-    - Actions (View Profile, Send Message)
+- **Tabel Klien:**
+  - Kolom:
+    - Foto & Nama Klien
+    - Tanggal Sesi Terakhir
+    - Total Sesi (jumlah)
+    - Status (Aktif, Tidak Aktif, Selesai)
+    - Indikator Kemajuan (pengukur visual atau persentase)
+    - Tindakan (Lihat Profil, Kirim Pesan)
   
-- **Search & Filter:**
-  - Search by name atau email
-  - Filter by status
-  - Sort by name, last session, total sessions
+- **Pencarian & Penyaringan:**
+  - Cari berdasarkan nama atau email
+  - Saring berdasarkan status
+  - Urutkan berdasarkan nama, sesi terakhir, total sesi
   
-- **Pagination**
-- **Click Row:** Go to client profile detail page
+- **Halaman Berganda**
+- **Klik Baris:** Ke halaman detail profil klien
 
-**31. Client Profile View (Therapist Side) (31_client_profile_view.html)**
+**31. Tampilan Profil Klien (Sisi Terapis) (31_client_profile_view.html)**
 
-Detailed view client profile dari perspektif terapis:
+Tampilan detail profil klien dari perspektif terapis:
 
-- **Client Information:**
-  - Photo, name, age, gender, contact info
-  - Initial consultation date
-  - Total sessions completed
-  - Current status (Active/Inactive)
+- **Informasi Klien:**
+  - Foto, nama, usia, jenis kelamin, info kontak
+  - Tanggal konsultasi awal
+  - Total sesi selesai
+  - Status saat ini (Aktif/Tidak Aktif)
   
-- **Session History dengan Client:**
-  - Table listing all sessions:
-    - Date, Service, Duration, Status
-    - Link to view session notes
+- **Riwayat Sesi dengan Klien:**
+  - Tabel daftar semua sesi:
+    - Tanggal, Layanan, Durasi, Status
+    - Tautan untuk melihat catatan sesi
   
-- **Progress Summary:**
-  - Chart showing progress metrics over time
-  - Goals dan achievements
+- **Ringkasan Kemajuan:**
+  - Grafik menampilkan metrik kemajuan dari waktu ke waktu
+  - Tujuan dan pencapaian
   
-- **Notes & Observations:**
-  - Private notes hanya visible untuk terapis
-  - Add new note button
-  - Chronological list previous notes
+- **Catatan & Observasi:**
+  - Catatan privat hanya terlihat untuk terapis
+  - Tombol tambah catatan baru
+  - Daftar kronologis catatan sebelumnya
   
-- **Flags/Tags:**
-  - Mark client dengan flags (e.g., "Requires Follow-up", "High Priority")
+- ***Flag*/Tag:**
+  - Tandai klien dengan *flag* (mis., "Perlu Tindak Lanjut", "Prioritas Tinggi")
   
-- **Actions:**
-  - "Send Message" button
-  - "Schedule Session" button (shortcut untuk book dengan client ini)
-  - "Generate Progress Report" button (PDF export)
+- **Tindakan:**
+  - Tombol "Kirim Pesan"
+  - Tombol "Jadwalkan Sesi" (pintasan untuk memesan dengan klien ini)
+  - Tombol "Hasilkan Laporan Kemajuan" (ekspor PDF)
 
-**32. Session Room (32_session_room.html)**
+**32. Ruang Sesi (32_session_room.html)**
 
-Virtual room untuk conduct session (primarily untuk online sessions):
+Ruang virtual untuk melakukan sesi (terutama untuk sesi *online*):
 
-- **Video Conference Area:**
-  - Embedded iframe dari Zoom/Google Meet/Whereby
-  - Full-screen toggle
-  - Mute/Unmute, Camera On/Off controls
+- **Area Konferensi Video:**
+  - *Iframe embed* dari Zoom/Google Meet/Whereby
+  - Pengalih layar penuh
+  - Kontrol Bisukan/Buka Bisukan, Kamera Nyala/Mati
   
-- **Session Information Panel:**
-  - Client name
-  - Service type
-  - Session start time
-  - Timer showing elapsed time
-  - "End Session" button (prominent, red)
+- **Panel Informasi Sesi:**
+  - Nama klien
+  - Tipe layanan
+  - Waktu mulai sesi
+  - Penghitung waktu menampilkan waktu berlalu
+  - Tombol "Akhiri Sesi" (menonjol, merah)
   
-- **Quick Access:**
-  - Button to view client profile dalam modal (non-intrusive)
-  - Button to view previous session notes dalam modal
+- **Akses Cepat:**
+  - Tombol untuk melihat profil klien dalam modal (tidak mengganggu)
+  - Tombol untuk melihat catatan sesi sebelumnya dalam modal
   
-- **Note-Taking Pad:**
-  - Collapsible side panel atau bottom drawer
-  - Real-time note editor (autosave every minute)
-  - Quick template insertion (untuk common observations)
+- **Panel Pencatatan:**
+  - Panel samping atau laci bawah yang dapat diciutkan
+  - Editor catatan waktu nyata (simpan otomatis setiap menit)
+  - Penyisipan templat cepat (untuk observasi umum)
   
-- **Session Timer Alert:**
-  - Alert notification 5 minutes before scheduled end time
+- **Peringatan Penghitung Waktu Sesi:**
+  - Pemberitahuan peringatan 5 menit sebelum waktu akhir terjadwal
   
-- **Post-Session:**
-  - Clicking "End Session" → prompt to save notes dan mark session completed
-  - Redirect to session notes page untuk finalize documentation
+- **Pasca-Sesi:**
+  - Mengklik "Akhiri Sesi" → ajakan untuk menyimpan catatan dan menandai sesi selesai
+  - Arahkan ke halaman catatan sesi untuk menyelesaikan dokumentasi
 
-**33. Session Notes Editor (33_session_notes.html)**
+**33. Editor Catatan Sesi (33_session_notes.html)**
 
-Structured editor untuk document session:
+Editor terstruktur untuk mendokumentasikan sesi:
 
-- **Session Header:**
-  - Client name
-  - Date dan time
-  - Service type
+- ***Header* Sesi:**
+  - Nama klien
+  - Tanggal dan waktu
+  - Tipe layanan
   
-- **Note Template Fields:** (customizable berdasarkan service type)
-  - **Client Condition:** Dropdown atau radio (Calm, Anxious, Distressed, etc.) + textarea untuk details
-  - **Issues Discussed:** Textarea
-  - **Techniques Used:** Checkboxes (e.g., Progressive Relaxation, Visualization, Cognitive Restructuring) + textarea
-  - **Client Response:** Textarea
-  - **Progress Assessment:** Rating scale (1-10) + comments
-  - **Goals for Next Session:** Textarea
-  - **Therapist Observations:** Textarea (private)
-  - **Recommendations:** Textarea (can be shared dengan client)
+- **Kolom Templat Catatan:** (dapat disesuaikan berdasarkan tipe layanan)
+  - **Kondisi Klien:** *Dropdown* atau radio (Tenang, Cemas, Tertekan, dll.) + *textarea* untuk detail
+  - **Masalah yang Dibahas:** *Textarea*
+  - **Teknik yang Digunakan:** Kotak centang (mis., Relaksasi Progresif, Visualisasi, Restrukturisasi Kognitif) + *textarea*
+  - **Respons Klien:** *Textarea*
+  - **Penilaian Kemajuan:** Skala peringkat (1-10) + komentar
+  - **Tujuan untuk Sesi Berikutnya:** *Textarea*
+  - **Observasi Terapis:** *Textarea* (privat)
+  - **Rekomendasi:** *Textarea* (dapat dibagikan dengan klien)
   
-- **Attachments:**
-  - Upload files atau images if needed
+- **Lampiran:**
+  - Unggah file atau gambar jika diperlukan
   
-- **Save Options:**
-  - "Save Draft" (not finalized)
-  - "Save & Finalize" (mark session complete)
+- **Opsi Simpan:**
+  - "Simpan Draf" (belum diselesaikan)
+  - "Simpan & Selesaikan" (tandai sesi selesai)
   
-- **Sharing Options:**
-  - Toggle: "Share observation dengan client" (controls visibility)
+- **Opsi Berbagi:**
+  - Pengalih: "Bagikan observasi dengan klien" (kontrol visibilitas)
   
-- **Rich Text Formatting:** Bold, italic, bullet lists, etc.
-- **Auto-Save:** Draft auto-saved every 2 minutes
-- **Navigate:** "Back to Session History" link
+- **Pemformatan Teks Kaya:** Tebal, miring, daftar poin, dll.
+- **Simpan Otomatis:** Draf disimpan otomatis setiap 2 menit
+- **Navigasi:** Tautan "Kembali ke Riwayat Sesi"
 
-**34. Therapist Session History (34_therapist_session_history.html)**
+**34. Riwayat Sesi Terapis (34_therapist_session_history.html)**
 
-Archive all sessions conducted:
+Arsip semua sesi yang dilakukan:
 
-- **Filters:**
-  - Date range
-  - Client (dropdown)
-  - Service type (dropdown)
-  - Status (Completed, No-show, Cancelled)
+- **Penyaringan:**
+  - Rentang tanggal
+  - Klien (*dropdown*)
+  - Tipe layanan (*dropdown*)
+  - Status (Selesai, Tidak Hadir, Dibatalkan)
   
-- **Sessions Table:**
-  - Columns:
-    - Date & Time
-    - Client Name
-    - Service Type
-    - Duration
+- **Tabel Sesi:**
+  - Kolom:
+    - Tanggal & Waktu
+    - Nama Klien
+    - Tipe Layanan
+    - Durasi
     - Status
-    - Actions (View Notes, Edit Notes)
+    - Tindakan (Lihat Catatan, Edit Catatan)
   
-- **Search:** By client name atau session ID
-- **Export:** Download filtered results as CSV atau PDF report
-- **Pagination**
-- **Summary Stats:** Total sessions dalam filtered view, total hours
+- **Pencarian:** Berdasarkan nama klien atau ID sesi
+- **Ekspor:** Unduh hasil penyaringan sebagai CSV atau laporan PDF
+- **Halaman Berganda**
+- **Statistik Ringkasan:** Total sesi dalam tampilan penyaringan, total jam
 
-**35. Therapist Earnings Dashboard (35_therapist_earnings.html)**
+**35. Dasbor Pendapatan Terapis (35_therapist_earnings.html)**
 
-Financial tracking untuk terapis:
+Pelacakan keuangan untuk terapis:
 
-- **Earnings Summary Cards:**
-  - Today's Earnings
-  - This Week's Earnings
-  - This Month's Earnings
-  - Total Earnings (all-time)
+- **Kartu Ringkasan Pendapatan:**
+  - Pendapatan Hari Ini
+  - Pendapatan Minggu Ini
+  - Pendapatan Bulan Ini
+  - Total Pendapatan (sepanjang waktu)
   
-- **Earnings Chart:**
-  - Line atau bar chart showing earnings over time
-  - Granularity options: Daily, Weekly, Monthly, Yearly
-  - Date range selector
+- **Grafik Pendapatan:**
+  - Grafik garis atau batang menampilkan pendapatan dari waktu ke waktu
+  - Opsi granularitas: Harian, Mingguan, Bulanan, Tahunan
+  - Pemilih rentang tanggal
   
-- **Breakdown by Service:**
-  - Pie atau donut chart
-  - Shows revenue contribution dari each service type
-  - Table dengan service name, sessions count, total revenue
+- **Rincian per Layanan:**
+  - Grafik pai atau donat
+  - Menampilkan kontribusi pendapatan dari setiap tipe layanan
+  - Tabel dengan nama layanan, jumlah sesi, total pendapatan
   
-- **Breakdown by Month:**
-  - Table showing each month's earnings, sessions, average per session
+- **Rincian per Bulan:**
+  - Tabel menampilkan pendapatan setiap bulan, sesi, rata-rata per sesi
   
-- **Pending Payments:**
-  - List sessions yang belum paid (if applicable)
-  - Follow-up actions
+- **Pembayaran Tertunda:**
+  - Daftar sesi yang belum dibayar (jika berlaku)
+  - Tindakan tindak lanjut
   
-- **Commission Structure Display:**
-  - If applicable, show commission rate atau payment scheme
+- **Tampilan Struktur Komisi:**
+  - Jika berlaku, tampilkan tingkat komisi atau skema pembayaran
   
-- **Download Reports:**
-  - Generate PDF atau Excel report untuk accounting atau tax purposes
-  - Custom date range selector
+- **Unduh Laporan:**
+  - Hasilkan laporan PDF atau Excel untuk akuntansi atau tujuan pajak
+  - Pemilih rentang tanggal kustom
   
-- **Payment History:**
-  - Link to detailed transaction history (if paid by CUR-HEART)
+- **Riwayat Pembayaran:**
+  - Tautan ke riwayat transaksi detail (jika dibayar oleh CUR-HEART)
 
-**36. Therapist Profile Settings (36_therapist_profile_edit.html)**
+**36. Pengaturan Profil Terapis (36_therapist_profile_edit.html)**
 
-Edit own profile information:
+Edit informasi profil sendiri:
 
-- **Profile Photo:**
-  - Current photo display
-  - Upload new photo button (with crop functionality)
+- **Foto Profil:**
+  - Tampilan foto saat ini
+  - Tombol unggah foto baru (dengan fungsi potong)
   
-- **Personal Information:**
-  - Full Name
+- **Informasi Pribadi:**
+  - Nama Lengkap
   - Email
-  - Phone Number
-  - Date of Birth
+  - Nomor Telepon
+  - Tanggal Lahir
   
-- **Professional Information:**
-  - Title/Credentials (e.g., M.Psi., C.Ht.)
-  - Years of Experience
-  - Specializations (multi-select tags)
-  - Bio/About (rich textarea)
+- **Informasi Profesional:**
+  - Gelar/Kredensial (mis., M.Psi., C.Ht.)
+  - Tahun Pengalaman
+  - Spesialisasi (*tag* multi-pilih)
+  - Bio/Tentang (*textarea* kaya)
   
-- **Education:**
-  - Add/Edit/Delete education entries
-  - Fields: Institution, Degree, Field of Study, Year
+- **Pendidikan:**
+  - Tambah/Edit/Hapus entri pendidikan
+  - Kolom: Institusi, Gelar, Bidang Studi, Tahun
   
-- **Certifications:**
-  - Add/Edit/Delete certification entries
-  - Fields: Certification Name, Issuing Organization, Year, Expiry (if applicable)
-  - Upload certificate images
+- **Sertifikasi:**
+  - Tambah/Edit/Hapus entri sertifikasi
+  - Kolom: Nama Sertifikasi, Organisasi Penerbit, Tahun, Kedaluwarsa (jika berlaku)
+  - Unggah gambar sertifikat
   
-- **Services Offered:**
-  - Checkboxes untuk select which services terapis can provide
+- **Layanan yang Ditawarkan:**
+  - Kotak centang untuk memilih layanan mana yang dapat disediakan terapis
   
-- **Privacy Settings:**
-  - Public profile visibility toggle
-  - Display email/phone to clients toggle
+- **Pengaturan Privasi:**
+  - Pengalih visibilitas profil publik
+  - Pengalih tampilkan email/telepon ke klien
   
-- **Account Settings:**
-  - Change password
-  - Notification preferences (email, SMS)
+- **Pengaturan Akun:**
+  - Ubah kata sandi
+  - Preferensi notifikasi (email, SMS)
   
-- **"Save Changes" Button**
-- **"Cancel" Button** (discard changes)
+- **Tombol "Simpan Perubahan"**
+- **Tombol "Batal"** (buang perubahan)
 
-#### F. Admin Dashboard (5 halaman)
+#### F. Dasbor Admin (5 halaman)
 
-**37. Admin Dashboard Main (37_admin_dashboard.html)**
+**37. Dasbor Utama Admin (37_admin_dashboard.html)**
 
-Central command center untuk admin/owner:
+Pusat komando sentral untuk admin/pemilik:
 
-- **Key Performance Indicators (KPIs):**
-  - Today's Revenue (Rp amount)
-  - Total Users (count dengan breakdown: X clients, Y therapists)
-  - Active Bookings (current open bookings count)
-  - Pending Issues (approvals, verifications, complaints count)
+- **Indikator Kinerja Utama (KPI):**
+  - Pendapatan Hari Ini (jumlah Rp)
+  - Total Pengguna (jumlah dengan rincian: X klien, Y terapis)
+  - Pemesanan Aktif (jumlah pemesanan terbuka saat ini)
+  - Masalah Tertunda (persetujuan, verifikasi, jumlah keluhan)
   
-- **Real-Time Activity Feed:**
-  - New registrations
-  - New bookings
-  - Payments received
-  - Sessions completed
-  - Timestamps dan user names
+- ***Feed* Aktivitas Waktu Nyata:**
+  - Pendaftaran baru
+  - Pemesanan baru
+  - Pembayaran diterima
+  - Sesi selesai
+  - Stempel waktu dan nama pengguna
   
-- **Revenue Chart:**
-  - Line chart showing daily revenue over last 30 days
-  - Comparison dengan previous period (percentage change)
+- **Grafik Pendapatan:**
+  - Grafik garis menampilkan pendapatan harian selama 30 hari terakhir
+  - Perbandingan dengan periode sebelumnya (perubahan persentase)
   
-- **Bookings Overview:**
-  - Bar chart showing bookings by status (Upcoming, Completed, Cancelled)
-  - Monthly comparison
+- **Ikhtisar Pemesanan:**
+  - Grafik batang menampilkan pemesanan berdasarkan status (Mendatang, Selesai, Dibatalkan)
+  - Perbandingan bulanan
   
-- **Services Popularity:**
-  - Horizontal bar chart showing number of bookings per service
-  - Helps identify most/least popular services
+- **Popularitas Layanan:**
+  - Grafik batang horizontal menampilkan jumlah pemesanan per layanan
+  - Membantu mengidentifikasi layanan paling/paling tidak populer
   
-- **Therapist Performance:**
-  - Table listing therapists dengan:
-    - Name
-    - Total Sessions This Month
-    - Revenue Generated
-    - Average Rating
-  - Sort options
+- **Kinerja Terapis:**
+  - Tabel daftar terapis dengan:
+    - Nama
+    - Total Sesi Bulan Ini
+    - Pendapatan Dihasilkan
+    - Peringkat Rata-rata
+  - Opsi pengurutan
   
-- **System Health:**
-  - Server status (Online/Offline)
-  - Database size
-  - Last backup timestamp
-  - Warnings atau alerts (e.g., low disk space, failed cron jobs)
+- **Kesehatan Sistem:**
+  - Status server (*Online*/*Offline*)
+  - Ukuran basis data
+  - Stempel waktu cadangan terakhir
+  - Peringatan atau pemberitahuan (mis., ruang disk rendah, pekerjaan *cron* gagal)
   
-- **Quick Actions:**
-  - "Add New User"
-  - "Create Manual Booking"
-  - "Generate Report"
-  - "System Settings"
+- **Tindakan Cepat:**
+  - "Tambah Pengguna Baru"
+  - "Buat Pemesanan Manual"
+  - "Hasilkan Laporan"
+  - "Pengaturan Sistem"
 
-**38. Admin Users Management (38_admin_users.html)**
+**38. Manajemen Pengguna Admin (38_admin_users.html)**
 
-CRUD operations untuk all users:
+Operasi CRUD untuk semua pengguna:
 
-- **Users Table:**
-  - Columns:
+- **Tabel Pengguna:**
+  - Kolom:
     - ID
-    - Photo & Name
+    - Foto & Nama
     - Email
-    - Role (Admin, Therapist, Client)
-    - Status (Active, Inactive, Suspended)
-    - Registration Date
-    - Last Login
-    - Actions (View, Edit, Delete/Suspend)
+    - Peran (Admin, Terapis, Klien)
+    - Status (Aktif, Tidak Aktif, Ditangguhkan)
+    - Tanggal Pendaftaran
+    - Login Terakhir
+    - Tindakan (Lihat, Edit, Hapus/Tangguhkan)
   
-- **Filters:**
-  - By Role
-  - By Status
-  - By Registration Date Range
+- **Penyaringan:**
+  - Berdasarkan Peran
+  - Berdasarkan Status
+  - Berdasarkan Rentang Tanggal Pendaftaran
   
-- **Search:** By name, email, atau ID
-- **Sort:** By any column
-- **Bulk Actions:**
-  - Select multiple users
-  - Bulk activate/deactivate
-  - Bulk email
+- **Pencarian:** Berdasarkan nama, email, atau ID
+- **Pengurutan:** Berdasarkan kolom apa pun
+- **Tindakan Massal:**
+  - Pilih beberapa pengguna
+  - Aktifkan/nonaktifkan massal
+  - Email massal
   
-- **Add New User Button:**
-  - Opens modal atau navigate to form
-  - Fields: Name, Email, Phone, Role, Password (auto-generate option)
-  - Send welcome email checkbox
+- **Tombol Tambah Pengguna Baru:**
+  - Buka modal atau navigasi ke formulir
+  - Kolom: Nama, Email, Telepon, Peran, Kata Sandi (opsi *auto-generate*)
+  - Kotak centang kirim email sambutan
   
-- **Edit User:**
-  - Modal atau separate page
-  - Edit all user details
-  - Change role
-  - Reset password
-  - Suspend/activate account
+- **Edit Pengguna:**
+  - Modal atau halaman terpisah
+  - Edit semua detail pengguna
+  - Ubah peran
+  - Atur ulang kata sandi
+  - Tangguhkan/aktifkan akun
   
-- **Delete User:**
-  - Confirmation modal with warning
-  - Soft delete (mark as deleted but retain data) vs. hard delete
+- **Hapus Pengguna:**
+  - Modal konfirmasi dengan peringatan
+  - Hapus lunak (tandai sebagai dihapus tetapi simpan data) vs. hapus keras
   
-- **Export Users:**
-  - Download user list as CSV atau Excel
+- **Ekspor Pengguna:**
+  - Unduh daftar pengguna sebagai CSV atau Excel
 
-**Therapists Sub-Management:**
+**Sub-Manajemen Terapis:**
 
-- **Pending Approvals:**
-  - List new therapist registrations waiting approval
-  - View submitted documents (credentials, certificates)
-  - Actions: Approve, Reject (with reason), Request More Info
+- **Persetujuan Tertunda:**
+  - Daftar pendaftaran terapis baru menunggu persetujuan
+  - Lihat dokumen yang dikirimkan (kredensial, sertifikat)
+  - Tindakan: Setujui, Tolak (dengan alasan), Minta Info Lebih
   
-- **Verify Documents:**
-  - Image viewer untuk uploaded certificates
-  - Validation checklist
-  - Approval workflow
+- **Verifikasi Dokumen:**
+  - Penampil gambar untuk sertifikat yang diunggah
+  - *Checklist* validasi
+  - Alur kerja persetujuan
   
-- **Assign Services:**
-  - Which services terapis approved untuk provide
+- **Tetapkan Layanan:**
+  - Layanan mana yang disetujui terapis untuk disediakan
   
-- **Set Commission:**
-  - Commission rate atau fixed fee per session
-  - Different rates untuk different services
+- **Tetapkan Komisi:**
+  - Tingkat komisi atau biaya tetap per sesi
+  - Tingkat berbeda untuk layanan berbeda
 
-**39. Admin Bookings Management (39_admin_bookings.html)**
+**39. Manajemen Pemesanan Admin (39_admin_bookings.html)**
 
-Manage all bookings system-wide:
+Kelola semua pemesanan di seluruh sistem:
 
-- **Bookings Table:**
-  - Columns:
-    - Booking ID
-    - Date & Time
-    - Client Name
-    - Therapist Name
-    - Service
-    - Status (Pending, Confirmed, Completed, Cancelled)
-    - Payment Status (Paid, Pending, Refunded)
-    - Actions (View, Edit, Cancel, Resched
+- **Tabel Pemesanan:**
+  - Kolom:
+    - ID Pemesanan
+    - Tanggal & Waktu
+    - Nama Klien
+    - Nama Terapis
+    - Layanan
+    - Status (Tertunda, Dikonfirmasi, Selesai, Dibatalkan)
+    - Status Pembayaran (Dibayar, Tertunda, Dikembalikan)
+    - Tindakan (Lihat, Edit, Batalkan, Jadwalkan Ulang)
+  
+- **Penyaringan:**
+  - Berdasarkan Status
+  - Berdasarkan Status Pembayaran
+  - Berdasarkan Rentang Tanggal
+  - Berdasarkan Terapis
+  - Berdasarkan Layanan
+  
+- **Pencarian:** Berdasarkan ID pemesanan, nama klien, atau nama terapis
+- **Pengalih Tampilan Kalender:** Beralih ke tampilan kalender menampilkan semua pemesanan
+- **Deteksi Konflik:** Sorot pemesanan ganda atau konflik penjadwalan (*flag* merah)
+- **Buat Pemesanan Manual:**
+  - Tombol untuk membuat pemesanan atas nama klien (*walk-in* atau pemesanan telepon)
+  - Panduan mirip dengan alur pemesanan klien
+  - Opsi untuk menandai sebagai dibayar segera
+  
+- **Edit Pemesanan:**
+  - Ubah tanggal/waktu
+  - Ubah terapis
+  - Perbarui status
+  - Tambah catatan admin
+  
+- **Batalkan Pemesanan:**
+  - *Dropdown* alasan
+  - Pemrosesan pengembalian dana (jika berlaku)
+  - Notifikasi otomatis ke klien dan terapis
+  
+- **Tindakan Massal:**
+  - Ekspor data pemesanan
+  - Batalkan massal (mis., jika terapis tidak tersedia untuk sepanjang hari)
+  
+- **Panel Statistik:**
+  - Total pemesanan periode dipilih
+  - Tingkat konversi (pertanyaan ke pemesanan dikonfirmasi)
+  - Tingkat pembatalan
+  - Tingkat ketidakhadiran
 
-ule)
-  
-- **Filters:**
-  - By Status
-  - By Payment Status
-  - By Date Range
-  - By Therapist
-  - By Service
-  
-- **Search:** By booking ID, client name, atau therapist name
-- **Calendar View Toggle:** Switch to calendar view showing all bookings
-- **Conflict Detection:** Highlight double bookings atau scheduling conflicts (red flags)
-- **Create Manual Booking:**
-  - Button to create booking on behalf of client (walk-in atau phone bookings)
-  - Wizard similar to client booking flow
-  - Option to mark as paid immediately
-  
-- **Edit Booking:**
-  - Change date/time
-  - Change therapist
-  - Update status
-  - Add admin notes
-  
-- **Cancel Booking:**
-  - Reason dropdown
-  - Refund processing (if applicable)
-  - Automatic notification to client dan therapist
-  
-- **Bulk Actions:**
-  - Export bookings data
-  - Bulk cancel (e.g., if therapist unavailable for entire day)
-  
-- **Statistics Panel:**
-  - Total bookings selected period
-  - Conversion rate (inquiries to confirmed bookings)
-  - Cancellation rate
-  - No-show rate
+**40. Laporan Keuangan Admin (40_admin_financial.html)**
 
-**40. Admin Financial Reports (40_admin_financial.html)**
+Pelaporan keuangan dan analitik komprehensif:
 
-Comprehensive financial reporting dan analytics:
-
-- **Revenue Dashboard:**
-  - **Total Revenue Cards:**
-    - Today
-    - This Week
-    - This Month
-    - This Year
+- **Dasbor Pendapatan:**
+  - **Kartu Total Pendapatan:**
+    - Hari Ini
+    - Minggu Ini
+    - Bulan Ini
+    - Tahun Ini
   
-  - **Revenue Trend Chart:**
-    - Line chart over customizable period
-    - Options: Daily, Weekly, Monthly, Yearly
-    - Compare dengan previous period (overlay atau dual-axis)
+  - **Grafik Tren Pendapatan:**
+    - Grafik garis selama periode yang dapat disesuaikan
+    - Opsi: Harian, Mingguan, Bulanan, Tahunan
+    - Bandingkan dengan periode sebelumnya (*overlay* atau sumbu ganda)
   
-  - **Revenue by Service:**
-    - Pie atau bar chart
-    - Shows which services generating most revenue
-    - Table dengan detailed breakdown: Service name, total bookings, total revenue, average price
+  - **Pendapatan per Layanan:**
+    - Grafik pai atau batang
+    - Menampilkan layanan mana yang menghasilkan pendapatan terbanyak
+    - Tabel dengan rincian detail: Nama layanan, total pemesanan, total pendapatan, harga rata-rata
   
-  - **Revenue by Therapist:**
+  - **Pendapatan per Terapis:**
     - Bar chart ranking therapists
-    - Table: Therapist name, sessions, revenue, commission paid, net untuk business
+    - Tabel: Nama terapis, sesi, pendapatan, komisi dibayar, bersih untuk bisnis
   
-- **Payments Tracking:**
-  - **Payment Status Overview:**
-    - Paid (green): count & amount
-    - Pending (yellow): count & amount
-    - Failed (red): count & amount
-    - Refunded (gray): count & amount
+- **Pelacakan Pembayaran:**
+  - **Ikhtisar Status Pembayaran:**
+    - Dibayar (hijau): jumlah & nilai
+    - Tertunda (kuning): jumlah & nilai
+    - Gagal (merah): jumlah & nilai
+    - Dikembalikan (abu-abu): jumlah & nilai
   
-  - **Outstanding Payments:**
-    - Table list bookings dengan pending payments
-    - Days overdue
-    - Actions: Send reminder, mark as paid, cancel booking
+  - **Pembayaran Tertunggak:**
+    - Daftar tabel pemesanan dengan pembayaran tertunda
+    - Hari terlambat
+    - Tindakan: Kirim pengingat, tandai sebagai dibayar, batalkan pemesanan
   
-  - **Manual Verification Queue:**
-    - For bank transfer payments
-    - Upload proof of payment images
-    - Verify and approve
+  - **Antrean Verifikasi Manual:**
+    - Untuk pembayaran transfer bank
+    - Unggah gambar bukti pembayaran
+    - Verifikasi dan setujui
   
-- **Refunds:**
-  - List refund requests
-  - Approval workflow
-  - Refund processing
+- **Pengembalian Dana:**
+  - Daftar permintaan pengembalian dana
+  - Alur kerja persetujuan
+  - Pemrosesan pengembalian dana
   
-- **Expenses (Optional):**
-  - Track operational expenses (rent, utilities, marketing)
-  - Profit calculation (Revenue - Expenses)
+- **Pengeluaran (Opsional):**
+  - Lacak pengeluaran operasional (sewa, utilitas, pemasaran)
+  - Perhitungan laba (Pendapatan - Pengeluaran)
   
-- **Tax Reports:**
-  - Calculate tax liabilities
-  - Generate tax-ready reports untuk accountant
+- **Laporan Pajak:**
+  - Hitung kewajiban pajak
+  - Hasilkan laporan siap pajak untuk akuntan
   
-- **Financial Forecasting:**
-  - Projected revenue based on trends
-  - Seasonal analysis
+- **Prakiraan Keuangan:**
+  - Proyeksi pendapatan berdasarkan tren
+  - Analisis musiman
   
-- **Export Options:**
-  - Download reports dalam PDF, Excel, CSV
-  - Email reports to stakeholders
-  - Schedule automated reports (daily/weekly/monthly)
+- **Opsi Ekspor:**
+  - Unduh laporan dalam PDF, Excel, CSV
+  - Email laporan ke pemangku kepentingan
+  - Jadwalkan laporan otomatis (harian/mingguan/bulanan)
 
-**41. Admin System Settings (41_admin_settings.html)**
+**41. Pengaturan Sistem Admin (41_admin_settings.html)**
 
-Configuration hub untuk system-wide settings:
+*Hub* konfigurasi untuk pengaturan di seluruh sistem:
 
-- **General Settings:**
-  - Site Name
-  - Site Logo Upload
-  - Tagline/Slogan
-  - Contact Information (address, phone, email)
-  - Business Hours
-  - Timezone
+- **Pengaturan Umum:**
+  - Nama Situs
+  - Unggah Logo Situs
+  - *Tagline*/Slogan
+  - Informasi Kontak (alamat, telepon, email)
+  - Jam Operasional
+  - Zona Waktu
   
-- **Email Settings:**
-  - SMTP Configuration:
-    - SMTP Host
-    - SMTP Port
-    - SMTP Username
-    - SMTP Password
-    - Encryption (TLS/SSL)
-  - Test Email Button (send test email to verify configuration)
-  - Email Templates Management:
-    - List templates (welcome, booking confirmation, reminder, etc.)
-    - Edit template content (variables support: {{name}}, {{date}}, etc.)
+- **Pengaturan Email:**
+  - Konfigurasi SMTP:
+    - *Host* SMTP
+    - *Port* SMTP
+    - Nama Pengguna SMTP
+    - Kata Sandi SMTP
+    - Enkripsi (TLS/SSL)
+  - Tombol Email Uji (kirim email uji untuk memverifikasi konfigurasi)
+  - Manajemen Templat Email:
+    - Daftar templat (sambutan, konfirmasi pemesanan, pengingat, dll.)
+    - Edit konten templat (dukungan variabel: {{nama}}, {{tanggal}}, dll.)
   
-- **SMS Settings (Optional):**
-  - SMS Gateway Configuration
-  - API Key
-  - Sender ID
-  - Test SMS Button
+- **Pengaturan SMS (Opsional):**
+  - Konfigurasi *Gateway* SMS
+  - Kunci API
+  - ID Pengirim
+  - Tombol SMS Uji
   
-- **Payment Gateway Settings:**
-  - Midtrans/Xendit Configuration:
-    - API Keys (Server Key, Client Key)
-    - Merchant ID
-    - Test/Production Mode Toggle
-  - Webhook URL display
-  - Payment Methods Enabled (checkboxes: Credit Card, E-Wallet, Bank Transfer, QRIS)
+- **Pengaturan *Payment Gateway*:**
+  - Konfigurasi Midtrans/Xendit:
+    - Kunci API (*Server Key*, *Client Key*)
+    - ID *Merchant*
+    - Pengalih Mode Uji/Produksi
+  - Tampilan URL *Webhook*
+  - Metode Pembayaran Diaktifkan (kotak centang: Kartu Kredit, Dompet Digital, Transfer Bank, QRIS)
   
-- **Booking Settings:**
-  - Advance Booking Days (how far in advance clients can book)
-  - Minimum Notice Period (e.g., must book at least 2 days in advance)
-  - Default Session Buffer Time (minutes between sessions)
-  - Cancellation Policy:
-    - Allow cancellation up to X hours before session
-    - Refund percentage based on notice period
-  - Auto-confirmation (or require admin approval)
+- **Pengaturan Pemesanan:**
+  - Hari Pemesanan di Muka (seberapa jauh di muka klien dapat memesan)
+  - Periode Pemberitahuan Minimum (mis., harus memesan minimal 2 hari di muka)
+  - Waktu *Buffer* Sesi *Default* (menit antara sesi)
+  - Kebijakan Pembatalan:
+    - Izinkan pembatalan hingga X jam sebelum sesi
+    - Persentase pengembalian dana berdasarkan periode pemberitahuan
+  - Konfirmasi otomatis (atau memerlukan persetujuan admin)
   
-- **Notification Settings:**
-  - Enable/Disable Email Notifications (toggle untuk each type):
-    - Welcome Email
-    - Email Verification
-    - Booking Confirmation
-    - Booking Reminder (H-1)
-    - Booking Reminder (H-0, 1 hour before)
-    - Rescheduling Notification
-    - Cancellation Notification
-    - Payment Confirmation
-    - Review Request
-  - Enable/Disable SMS Notifications
-  - Enable/Disable Push Notifications (for future mobile app)
+- **Pengaturan Notifikasi:**
+  - Aktifkan/Nonaktifkan Notifikasi Email (pengalih untuk setiap tipe):
+    - Email Sambutan
+    - Verifikasi Email
+    - Konfirmasi Pemesanan
+    - Pengingat Pemesanan (H-1)
+    - Pengingat Pemesanan (H-0, 1 jam sebelumnya)
+    - Notifikasi Penjadwalan Ulang
+    - Notifikasi Pembatalan
+    - Konfirmasi Pembayaran
+    - Permintaan Ulasan
+  - Aktifkan/Nonaktifkan Notifikasi SMS
+  - Aktifkan/Nonaktifkan Notifikasi *Push* (untuk aplikasi seluler masa depan)
   
-- **Security Settings:**
-  - Password Policy:
-    - Minimum Length
-    - Require Uppercase
-    - Require Numbers
-    - Require Special Characters
-  - Session Timeout (minutes)
-  - Two-Factor Authentication (2FA) Enforcement
-  - Login Attempt Limit
-  - IP Whitelist/Blacklist (optional, for admin access)
+- **Pengaturan Keamanan:**
+  - Kebijakan Kata Sandi:
+    - Panjang Minimum
+    - Memerlukan Huruf Besar
+    - Memerlukan Angka
+    - Memerlukan Karakter Khusus
+  - Waktu Tunggu Sesi (menit)
+  - Penegakan Autentikasi Dua Faktor (2FA)
+  - Batas Percobaan Login
+  - *Whitelist*/*Blacklist* IP (opsional, untuk akses admin)
   
-- **Backup Settings:**
-  - Automatic Backup Schedule (daily, weekly, monthly)
-  - Backup Storage Location (local, Google Drive, Dropbox)
-  - Backup Retention Period (how long to keep backups)
-  - Manual Backup Button (trigger immediate backup)
-  - Restore dari Backup (upload and restore)
+- **Pengaturan Cadangan:**
+  - Jadwal Cadangan Otomatis (harian, mingguan, bulanan)
+  - Lokasi Penyimpanan Cadangan (lokal, Google Drive, Dropbox)
+  - Periode Retensi Cadangan (berapa lama menyimpan cadangan)
+  - Tombol Cadangan Manual (picu cadangan segera)
+  - Pulihkan dari Cadangan (unggah dan pulihkan)
   
-- **Maintenance Mode:**
-  - Toggle Maintenance Mode (show "Under Maintenance" page to visitors)
-  - Maintenance Message (customizable text)
-  - Whitelist IPs (admin can still access during maintenance)
+- **Mode Pemeliharaan:**
+  - Pengalih Mode Pemeliharaan (tampilkan halaman "Dalam Pemeliharaan" ke pengunjung)
+  - Pesan Pemeliharaan (teks yang dapat disesuaikan)
+  - *Whitelist* IP (admin masih dapat mengakses selama pemeliharaan)
   
-- **Analytics:**
-  - Google Analytics Tracking ID
-  - Facebook Pixel ID
-  - Enable/Disable Tracking
+- **Analitik:**
+  - ID Pelacakan Google Analytics
+  - ID Piksel Facebook
+  - Aktifkan/Nonaktifkan Pelacakan
   
 - **Legal:**
-  - Privacy Policy Editor (rich text)
-  - Terms & Conditions Editor (rich text)
-  - Cookie Policy Editor (rich text)
-  - Last Updated Timestamps
+  - Editor Kebijakan Privasi (teks kaya)
+  - Editor Syarat & Ketentuan (teks kaya)
+  - Editor Kebijakan *Cookie* (teks kaya)
+  - Stempel Waktu Pembaruan Terakhir
   
-- **Advanced Settings (Developer):**
-  - Debug Mode (enable/disable error displaying)
-  - Log Level (error, warning, info, debug)
-  - Cache Settings (enable/disable, clear cache button)
-  - Queue Settings
+- **Pengaturan Lanjutan (Pengembang):**
+  - Mode *Debug* (aktifkan/nonaktifkan tampilan kesalahan)
+  - Level *Log* (*error*, *warning*, *info*, *debug*)
+  - Pengaturan *Cache* (aktifkan/nonaktifkan, tombol bersihkan *cache*)
+  - Pengaturan Antrean
   
-- **"Save Changes" Button:** Applies all settings (with confirmation)
-- **"Reset to Default" Button:** Revert to default settings (with warning)
+- **Tombol "Simpan Perubahan":** Terapkan semua pengaturan (dengan konfirmasi)
+- **Tombol "Atur Ulang ke *Default*":** Kembalikan ke pengaturan *default* (dengan peringatan)
 
 ---
 
-### 4.3.3 Database Design
+### 4.3.3 Perancangan Basis Data
 
-Sistem menggunakan relational database (MySQL) dengan schema yang dinormalisasi hingga Third Normal Form (3NF) untuk mengurangi redundansi dan menjaga data integrity.
+Sistem menggunakan basis data relasional (MySQL) dengan skema yang dinormalisasi hingga Bentuk Normal Ketiga (3NF) untuk mengurangi redundansi dan menjaga integritas data.
 
-**Entity Relationship Diagram (ERD):**
+**Diagram Hubungan Entitas (ERD):**
 
 ```
 ┌─────────────┐

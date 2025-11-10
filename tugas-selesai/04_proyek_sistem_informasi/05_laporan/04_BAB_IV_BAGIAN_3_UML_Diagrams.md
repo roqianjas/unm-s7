@@ -1,152 +1,153 @@
 # BAB IV - HASIL PENELITIAN DAN PEMBAHASAN (Bagian 3)
 
-## 4.3.4 UML Diagrams (Unified Modeling Language)
+## 4.3.4 Diagram UML (*Unified Modeling Language*)
 
-UML (Unified Modeling Language) adalah bahasa pemodelan standar yang digunakan untuk memvisualisasikan, menspesifikasikan, membangun, dan mendokumentasikan sistem perangkat lunak. Dalam proyek CUR-HEART, kami menggunakan tiga jenis diagram UML utama untuk menggambarkan struktur dan perilaku sistem.
+UML (*Unified Modeling Language*) adalah bahasa pemodelan standar yang digunakan untuk memvisualisasikan, menspesifikasikan, membangun, dan mendokumentasikan sistem perangkat lunak. Dalam proyek CUR-HEART, kami menggunakan tiga jenis diagram UML utama untuk menggambarkan struktur dan perilaku sistem.
 
-### A. Use Case Diagram
+### A. Diagram Kasus Penggunaan (*Use Case Diagram*)
 
-Use Case Diagram menggambarkan interaksi antara aktor (pengguna sistem) dengan sistem, serta fungsi-fungsi yang dapat dilakukan oleh masing-masing aktor.
+Diagram Kasus Penggunaan menggambarkan interaksi antara aktor (pengguna sistem) dengan sistem, serta fungsi-fungsi yang dapat dilakukan oleh masing-masing aktor.
 
 ---
 
-**[GAMBAR 4.10 - Use Case Diagram (4 Actors, 30+ Use Cases)]** 🔴 **CRITICAL**
+**[GAMBAR 4.10 - Diagram Kasus Penggunaan (4 Aktor, 30+ Kasus Penggunaan)]** 🔴 **KRITIS**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT COMPREHENSIVE USE CASE DIAGRAM]                  │
+│   [SISIPKAN DIAGRAM KASUS PENGGUNAAN KOMPREHENSIF]         │
 │                                                             │
-│   CUR-HEART SYSTEM USE CASE DIAGRAM                        │
-│   UML Standard Notation                                    │
+│   DIAGRAM KASUS PENGGUNAAN SISTEM CUR-HEART                │
+│   Notasi Standar UML                                       │
 │                                                             │
-│   ACTORS (4 Primary + 1 External):                         │
+│   AKTOR (4 Primer + 1 Eksternal):                          │
 │                                                             │
-│   🚶 Guest (Visitor)                                        │
-│   • View landing page / services                           │
-│   • View therapist profiles                                │
-│   • Register account                                       │
-│   • Login to system                                        │
+│   🚶 Tamu (Pengunjung)                                      │
+│   • Melihat halaman utama / layanan                        │
+│   • Melihat profil terapis                                 │
+│   • Mendaftar akun                                         │
+│   • Masuk ke sistem                                        │
 │                                                             │
-│   👤 Client (Customer)                                      │
-│   • ALL Guest capabilities +                               │
-│   • Make booking (includes: select service, therapist,     │
-│     schedule, payment)                                     │
-│   • View appointments                                      │
-│   • Reschedule/Cancel booking                              │
-│   • View progress tracker                                  │
-│   • Send messages (chat therapist)                         │
-│   • Submit reviews                                         │
-│   • Manage profile                                         │
+│   👤 Klien (Pelanggan)                                      │
+│   • SEMUA kemampuan Tamu +                                 │
+│   • Membuat pemesanan (termasuk: pilih layanan, terapis,   │
+│     jadwal, pembayaran)                                    │
+│   • Melihat janji temu                                     │
+│   • Menjadwal ulang/Membatalkan pemesanan                  │
+│   • Melihat pelacak kemajuan                               │
+│   • Mengirim pesan (obrolan terapis)                       │
+│   • Mengirim ulasan                                        │
+│   • Mengelola profil                                       │
 │                                                             │
-│   👨‍⚕️ Therapist (Staff)                                    │
-│   • View therapist dashboard                               │
-│   • Manage work schedule (availability)                    │
-│   • Block/Unblock dates                                    │
-│   • View appointments                                      │
-│   • Complete session (write therapy notes)                 │
-│   • Update client progress                                 │
-│   • Respond to messages                                    │
-│   • View reviews/ratings                                   │
-│   • Manage profile & credentials                           │
+│   👨‍⚕️ Terapis (Staf)                                       │
+│   • Melihat dasbor terapis                                 │
+│   • Mengelola jadwal kerja (ketersediaan)                  │
+│   • Memblokir/Membuka blokir tanggal                       │
+│   • Melihat janji temu                                     │
+│   • Menyelesaikan sesi (menulis catatan terapi)            │
+│   • Memperbarui kemajuan klien                             │
+│   • Merespons pesan                                        │
+│   • Melihat ulasan/penilaian                               │
+│   • Mengelola profil & kredensial                          │
 │                                                             │
 │   👔 Admin (Administrator)                                  │
-│   • View admin dashboard                                   │
-│   • Manage users (CRUD all roles)                          │
-│   • Manage therapists (approve/suspend)                    │
-│   • Manage services (CRUD)                                 │
-│   • Manage bookings (view, modify, cancel)                 │
-│   • View financial reports                                 │
-│   • Manage system settings                                 │
-│   • View activity logs                                     │
-│   • Send notifications                                     │
+│   • Melihat dasbor admin                                   │
+│   • Mengelola pengguna (CRUD semua peran)                  │
+│   • Mengelola terapis (menyetujui/menangguhkan)            │
+│   • Mengelola layanan (CRUD)                               │
+│   • Mengelola pemesanan (melihat, mengubah, membatalkan)   │
+│   • Melihat laporan keuangan                               │
+│   • Mengelola pengaturan sistem                            │
+│   • Melihat catatan aktivitas                              │
+│   • Mengirim pemberitahuan                                 │
 │                                                             │
-│   💳 Payment Gateway (External System)                      │
-│   • Process payment                                        │
-│   • Send payment confirmation                              │
-│   • Handle refunds                                         │
+│   💳 Gerbang Pembayaran (Sistem Eksternal)                  │
+│   • Memproses pembayaran                                   │
+│   • Mengirim konfirmasi pembayaran                         │
+│   • Menangani pengembalian dana                            │
 │                                                             │
-│   KEY RELATIONSHIPS:                                        │
-│   • <<include>>: Mandatory sub-use case                    │
-│     (e.g., Make Booking includes Select Service)           │
-│   • <<extend>>: Optional use case                          │
-│     (e.g., Cancel Booking extends View Appointments)       │
-│   • Generalization: Inheritance                            │
-│     (e.g., Client inherits Guest capabilities)             │
+│   RELASI KUNCI:                                             │
+│   • <<include>>: Sub-kasus penggunaan wajib                │
+│     (mis., Membuat Pemesanan mencakup Pilih Layanan)       │
+│   • <<extend>>: Kasus penggunaan opsional                  │
+│     (mis., Batalkan Pemesanan memperluas Lihat Janji Temu) │
+│   • Generalisasi: Pewarisan                                │
+│     (mis., Klien mewarisi kemampuan Tamu)                  │
 │                                                             │
-│   TOTAL USE CASES: 35+                                     │
-│   • Guest: 6 use cases                                     │
-│   • Client: 14 use cases (includes Guest)                  │
-│   • Therapist: 12 use cases                                │
-│   • Admin: 15 use cases                                    │
-│   • Payment Gateway: 3 interactions                        │
+│   TOTAL KASUS PENGGUNAAN: 35+                              │
+│   • Tamu: 6 kasus penggunaan                               │
+│   • Klien: 14 kasus penggunaan (termasuk Tamu)             │
+│   • Terapis: 12 kasus penggunaan                           │
+│   • Admin: 15 kasus penggunaan                             │
+│   • Gerbang Pembayaran: 3 interaksi                        │
 │                                                             │
-│   CRITICAL FLOWS:                                           │
-│   1. Booking Flow (Client → System → Payment Gateway)      │
-│   2. Session Completion (Therapist → Therapy Notes)        │
-│   3. User Management (Admin → CRUD operations)             │
+│   ALUR KRITIS:                                              │
+│   1. Alur Pemesanan (Klien → Sistem → Gerbang Pembayaran)  │
+│   2. Penyelesaian Sesi (Terapis → Catatan Terapi)          │
+│   3. Manajemen Pengguna (Admin → operasi CRUD)             │
 │                                                             │
-│   Format: UML Use Case Diagram PNG                         │
-│   Recommended size: 2000x1400px (large, readable)          │
-│   Style: Standard UML notation dengan stick figures        │
-│   Colors: Actors (outside), System boundary (box),         │
-│           Use cases (ovals inside system)                   │
+│   Format: Diagram Kasus Penggunaan UML PNG                 │
+│   Ukuran yang direkomendasikan: 2000x1400px (besar, mudah dibaca) │
+│   Gaya: Notasi UML standar dengan figura batang            │
+│   Warna: Aktor (luar), Batas sistem (kotak),               │
+│          Kasus penggunaan (oval di dalam sistem)            │
 │                                                             │
 │   File: assets/images/use-case-diagram-complete.png        │
-│   Tool: Visual Paradigm, draw.io, StarUML, atau Lucidchart │
+│   Alat: Visual Paradigm, draw.io, StarUML, atau Lucidchart │
 │                                                             │
-│   PRIORITY: P1 - CRITICAL                                   │
-│   Must show: All actors, system boundary, use cases,       │
-│              <<include>>/<<extend>> relationships clearly   │
+│   PRIORITAS: P1 - KRITIS                                    │
+│   Harus menampilkan: Semua aktor, batas sistem, kasus      │
+│                      penggunaan, relasi <<include>>/<<extend>> │
+│                      dengan jelas                           │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.10: Use Case Diagram lengkap sistem CUR-HEART dengan 4 actors, 35+ use cases, showing Guest/Client/Therapist/Admin interactions_
+_Gambar 4.10: Diagram Kasus Penggunaan lengkap sistem CUR-HEART dengan 4 aktor, 35+ kasus penggunaan, menampilkan interaksi Tamu/Klien/Terapis/Admin_
 
 ---
 
 #### Aktor dalam Sistem CUR-HEART
 
-**1. Guest (Pengunjung)**
+**1. Tamu (*Guest*)**
 - Belum terautentikasi
 - Dapat melihat informasi publik
 
-**2. Client (Klien)**
-- User terautentikasi dengan role client
-- Dapat melakukan booking dan mengakses layanan
+**2. Klien (*Client*)**
+- Pengguna terautentikasi dengan peran klien
+- Dapat melakukan pemesanan dan mengakses layanan
 
-**3. Therapist (Terapis)**
-- User terautentikasi dengan role therapist
+**3. Terapis (*Therapist*)**
+- Pengguna terautentikasi dengan peran terapis
 - Mengelola jadwal dan melakukan sesi terapi
 
 **4. Admin (Administrator)**
-- User terautentikasi dengan role admin
+- Pengguna terautentikasi dengan peran admin
 - Mengelola seluruh sistem
 
-**5. Payment Gateway**
+**5. Gerbang Pembayaran (*Payment Gateway*)**
 - Sistem eksternal untuk pemrosesan pembayaran
 
-**Use Case Diagram Lengkap:**
+**Diagram Kasus Penggunaan Lengkap:**
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────┐
 │                    SISTEM INFORMASI CUR-HEART                              │
-│                         USE CASE DIAGRAM                                   │
+│                    DIAGRAM KASUS PENGGUNAAN                                │
 └────────────────────────────────────────────────────────────────────────────┘
 
 ┌──────────┐                                                      ┌──────────┐
 │          │                                                      │          │
-│  Guest   │                                                      │  Client  │
+│   Tamu   │                                                      │  Klien   │
 │          │                                                      │          │
 └────┬─────┘                                                      └────┬─────┘
      │                                                                 │
      │  ┌────────────────────────────────────────────────────────┐   │
-     ├──┤ Melihat Landing Page                                   │   │
+     ├──┤ Melihat Halaman Utama                                  │   │
      │  └────────────────────────────────────────────────────────┘   │
      │                                                                 │
      │  ┌────────────────────────────────────────────────────────┐   │
-     ├──┤ Melihat Daftar Layanan                                │◄──┤
+     ├──┤ Melihat Daftar Layanan                                 │◄──┤
      │  └────────────────────────────────────────────────────────┘   │
      │                                                                 │
      │  ┌────────────────────────────────────────────────────────┐   │
@@ -339,201 +340,202 @@ _Gambar 4.10: Use Case Diagram lengkap sistem CUR-HEART dengan 4 actors, 35+ use
 
 **Penjelasan Relasi:**
 
-- **<<include>>**: Use case yang wajib dieksekusi (misal: Booking harus include Memilih Layanan)
-- **<<extend>>**: Use case opsional yang memperluas fungsionalitas (misal: Mengelola Users bisa diperluas dengan Approve Terapis)
+- **<<include>>**: Kasus penggunaan yang wajib dieksekusi (misal: Pemesanan harus menyertakan Memilih Layanan)
+- **<<extend>>**: Kasus penggunaan opsional yang memperluas fungsionalitas (misal: Mengelola Pengguna bisa diperluas dengan Menyetujui Terapis)
 
 ---
 
-**Tabel 4.31 Use Case List dengan Actors**
+**Tabel 4.31 Daftar Kasus Penggunaan dengan Aktor**
 
-| UC ID | Use Case Name | Actor(s) | Priority | Complexity | Description |
+| ID KP | Nama Kasus Penggunaan | Aktor | Prioritas | Kompleksitas | Deskripsi |
 |-------|---------------|----------|----------|------------|-------------|
-| **Authentication & Authorization** | | | | | |
-| UC-01 | Register | Guest | Must Have | Low | User registrasi akun baru (client atau therapist) |
-| UC-02 | Login | All Users | Must Have | Low | User login ke sistem dengan email dan password |
-| UC-03 | Logout | All Users | Must Have | Low | User logout dari sistem |
-| UC-04 | Forgot Password | Guest | Must Have | Medium | User request reset password via email |
-| UC-05 | Reset Password | Guest | Must Have | Medium | User set password baru dengan token |
-| UC-06 | Verify Email | Guest | Should Have | Low | User verify email setelah registrasi |
-| **Client Use Cases** | | | | | |
-| UC-07 | Browse Services | Client, Guest | Must Have | Low | User browse katalog layanan terapi |
-| UC-08 | View Service Detail | Client, Guest | Must Have | Low | User lihat detail lengkap service |
-| UC-09 | Browse Therapists | Client, Guest | Must Have | Low | User browse directory terapis |
-| UC-10 | View Therapist Profile | Client, Guest | Must Have | Medium | User lihat profil lengkap terapis |
-| UC-11 | Check Therapist Availability | Client | Must Have | High | User cek jadwal available terapis |
-| UC-12 | Create Booking | Client | Must Have | High | User booking session terapi (4-step flow) |
-| UC-13 | View Booking History | Client | Must Have | Medium | User lihat riwayat booking |
-| UC-14 | Reschedule Booking | Client | Should Have | Medium | User ubah jadwal booking (min 24h before) |
-| UC-15 | Cancel Booking | Client | Should Have | Medium | User batalkan booking dengan reason |
-| UC-16 | Make Payment | Client | Must Have | High | User bayar booking (transfer/gateway) |
-| UC-17 | Upload Payment Proof | Client | Must Have | Medium | User upload bukti transfer |
-| UC-18 | View Session Notes Summary | Client | Should Have | Medium | User lihat summary catatan terapi |
-| UC-19 | Track Progress | Client | Should Have | Medium | User lihat visualisasi progress terapi |
-| UC-20 | Self-Assess Progress | Client | Could Have | Low | User input self-assessment metrics |
-| UC-21 | Submit Review | Client | Should Have | Medium | User submit rating dan review setelah session |
-| UC-22 | Send Message | Client | Could Have | Medium | User kirim pesan ke terapis/admin |
-| UC-23 | Update Profile | Client | Must Have | Low | User update profile information |
-| **Therapist Use Cases** | | | | | |
-| UC-24 | View Appointments | Therapist | Must Have | Medium | Terapis lihat jadwal appointments |
-| UC-25 | Set Weekly Availability | Therapist | Must Have | Medium | Terapis set jam kerja per hari |
-| UC-26 | Block Specific Dates | Therapist | Must Have | Medium | Terapis block tanggal (cuti, libur) |
-| UC-27 | Accept/Reject Booking | Therapist | Should Have | Medium | Terapis approve atau decline booking |
-| UC-28 | Start Session | Therapist | Must Have | Low | Terapis mark session as started |
-| UC-29 | End Session | Therapist | Must Have | Medium | Terapis mark session as completed |
-| UC-30 | Document Session Notes | Therapist | Must Have | High | Terapis input detailed session notes |
-| UC-31 | View Client History | Therapist | Must Have | Medium | Terapis lihat riwayat session client |
-| UC-32 | Assess Client Progress | Therapist | Should Have | Medium | Terapis input progress assessment |
-| UC-33 | Upload Session Attachments | Therapist | Could Have | Low | Terapis upload supporting documents |
-| UC-34 | Respond to Reviews | Therapist | Could Have | Low | Terapis reply to client reviews |
-| UC-35 | View Earnings Report | Therapist | Should Have | Medium | Terapis lihat laporan pendapatan |
-| UC-36 | Update Professional Profile | Therapist | Must Have | Medium | Terapis update bio, credentials, certifications |
-| UC-37 | Manage Services Offered | Therapist | Should Have | Low | Terapis pilih services yang dikuasai |
-| **Admin Use Cases** | | | | | |
-| UC-38 | View Dashboard Overview | Admin | Must Have | Medium | Admin lihat summary metrics sistem |
-| UC-39 | Manage Users (CRUD) | Admin | Must Have | High | Admin create/read/update/delete users |
-| UC-40 | Approve Therapist | Admin | Must Have | Medium | Admin verify dan approve new therapist |
-| UC-41 | Manage Services (CRUD) | Admin | Must Have | Medium | Admin kelola services catalog |
-| UC-42 | View All Bookings | Admin | Must Have | Medium | Admin monitor semua bookings |
-| UC-43 | Verify Manual Payments | Admin | Must Have | High | Admin approve/reject payment proofs |
-| UC-44 | Generate Financial Reports | Admin | Should Have | High | Admin export laporan keuangan |
-| UC-45 | Generate Analytics Reports | Admin | Should Have | High | Admin export laporan analytics |
-| UC-46 | Moderate Reviews | Admin | Should Have | Medium | Admin approve/hide inappropriate reviews |
-| UC-47 | Send Bulk Notifications | Admin | Could Have | Medium | Admin kirim announcement ke users |
-| UC-48 | Manage System Settings | Admin | Must Have | Medium | Admin ubah konfigurasi sistem |
-| UC-49 | View Audit Logs | Admin | Should Have | Low | Admin lihat activity logs |
-| UC-50 | Backup Database | Admin | Must Have | Low | Admin trigger manual backup |
+| **Autentikasi & Otorisasi** | | | | | |
+| UC-01 | Registrasi | Tamu | Harus Ada | Rendah | Pengguna mendaftar akun baru (klien atau terapis) |
+| UC-02 | Masuk | Semua Pengguna | Harus Ada | Rendah | Pengguna masuk ke sistem dengan email dan kata sandi |
+| UC-03 | Keluar | Semua Pengguna | Harus Ada | Rendah | Pengguna keluar dari sistem |
+| UC-04 | Lupa Kata Sandi | Tamu | Harus Ada | Sedang | Pengguna meminta atur ulang kata sandi melalui email |
+| UC-05 | Atur Ulang Kata Sandi | Tamu | Harus Ada | Sedang | Pengguna mengatur kata sandi baru dengan token |
+| UC-06 | Verifikasi Email | Tamu | Sebaiknya Ada | Rendah | Pengguna memverifikasi email setelah registrasi |
+| **Kasus Penggunaan Klien** | | | | | |
+| UC-07 | Telusuri Layanan | Klien, Tamu | Harus Ada | Rendah | Pengguna menelusuri katalog layanan terapi |
+| UC-08 | Lihat Detail Layanan | Klien, Tamu | Harus Ada | Rendah | Pengguna melihat detail lengkap layanan |
+| UC-09 | Telusuri Terapis | Klien, Tamu | Harus Ada | Rendah | Pengguna menelusuri direktori terapis |
+| UC-10 | Lihat Profil Terapis | Klien, Tamu | Harus Ada | Sedang | Pengguna melihat profil lengkap terapis |
+| UC-11 | Cek Ketersediaan Terapis | Klien | Harus Ada | Tinggi | Pengguna mengecek jadwal ketersediaan terapis |
+| UC-12 | Buat Pemesanan | Klien | Harus Ada | Tinggi | Pengguna memesan sesi terapi (alur 4 langkah) |
+| UC-13 | Lihat Riwayat Pemesanan | Klien | Harus Ada | Sedang | Pengguna melihat riwayat pemesanan |
+| UC-14 | Jadwal Ulang Pemesanan | Klien | Sebaiknya Ada | Sedang | Pengguna mengubah jadwal pemesanan (min. 24 jam sebelumnya) |
+| UC-15 | Batalkan Pemesanan | Klien | Sebaiknya Ada | Sedang | Pengguna membatalkan pemesanan dengan alasan |
+| UC-16 | Lakukan Pembayaran | Klien | Harus Ada | Tinggi | Pengguna membayar pemesanan (transfer/gateway) |
+| UC-17 | Unggah Bukti Pembayaran | Klien | Harus Ada | Sedang | Pengguna mengunggah bukti transfer |
+| UC-18 | Lihat Ringkasan Catatan Sesi | Klien | Sebaiknya Ada | Sedang | Pengguna melihat ringkasan catatan terapi |
+| UC-19 | Lacak Perkembangan | Klien | Sebaiknya Ada | Sedang | Pengguna melihat visualisasi perkembangan terapi |
+| UC-20 | Penilaian Mandiri Perkembangan | Klien | Bisa Ada | Rendah | Pengguna memasukkan metrik penilaian mandiri |
+| UC-21 | Kirim Ulasan | Klien | Sebaiknya Ada | Sedang | Pengguna mengirim rating dan ulasan setelah sesi |
+| UC-22 | Kirim Pesan | Klien | Bisa Ada | Sedang | Pengguna mengirim pesan ke terapis/admin |
+| UC-23 | Perbarui Profil | Klien | Harus Ada | Rendah | Pengguna memperbarui informasi profil |
+| **Kasus Penggunaan Terapis** | | | | | |
+| UC-24 | Lihat Jadwal Temu | Terapis | Harus Ada | Sedang | Terapis melihat jadwal pertemuan |
+| UC-25 | Atur Ketersediaan Mingguan | Terapis | Harus Ada | Sedang | Terapis mengatur jam kerja per hari |
+| UC-26 | Blokir Tanggal Tertentu | Terapis | Harus Ada | Sedang | Terapis memblokir tanggal (cuti, libur) |
+| UC-27 | Terima/Tolak Pemesanan | Terapis | Sebaiknya Ada | Sedang | Terapis menyetujui atau menolak pemesanan |
+| UC-28 | Mulai Sesi | Terapis | Harus Ada | Rendah | Terapis menandai sesi telah dimulai |
+| UC-29 | Akhiri Sesi | Terapis | Harus Ada | Sedang | Terapis menandai sesi telah selesai |
+| UC-30 | Dokumentasi Catatan Sesi | Terapis | Harus Ada | Tinggi | Terapis memasukkan catatan sesi detail |
+| UC-31 | Lihat Riwayat Klien | Terapis | Harus Ada | Sedang | Terapis melihat riwayat sesi klien |
+| UC-32 | Nilai Perkembangan Klien | Terapis | Sebaiknya Ada | Sedang | Terapis memasukkan penilaian perkembangan |
+| UC-33 | Unggah Lampiran Sesi | Terapis | Bisa Ada | Rendah | Terapis mengunggah dokumen pendukung |
+| UC-34 | Tanggapi Ulasan | Terapis | Bisa Ada | Rendah | Terapis membalas ulasan klien |
+| UC-35 | Lihat Laporan Pendapatan | Terapis | Sebaiknya Ada | Sedang | Terapis melihat laporan pendapatan |
+| UC-36 | Perbarui Profil Profesional | Terapis | Harus Ada | Sedang | Terapis memperbarui bio, kredensial, sertifikasi |
+| UC-37 | Kelola Layanan yang Ditawarkan | Terapis | Sebaiknya Ada | Rendah | Terapis memilih layanan yang dikuasai |
+| **Kasus Penggunaan Admin** | | | | | |
+| UC-38 | Lihat Ikhtisar Dasbor | Admin | Harus Ada | Sedang | Admin melihat ringkasan metrik sistem |
+| UC-39 | Kelola Pengguna (CRUD) | Admin | Harus Ada | Tinggi | Admin membuat/baca/perbarui/hapus pengguna |
+| UC-40 | Setujui Terapis | Admin | Harus Ada | Sedang | Admin memverifikasi dan menyetujui terapis baru |
+| UC-41 | Kelola Layanan (CRUD) | Admin | Harus Ada | Sedang | Admin mengelola katalog layanan |
+| UC-42 | Lihat Semua Pemesanan | Admin | Harus Ada | Sedang | Admin memantau semua pemesanan |
+| UC-43 | Verifikasi Pembayaran Manual | Admin | Harus Ada | Tinggi | Admin menyetujui/menolak bukti pembayaran |
+| UC-44 | Buat Laporan Keuangan | Admin | Sebaiknya Ada | Tinggi | Admin mengekspor laporan keuangan |
+| UC-45 | Buat Laporan Analitik | Admin | Sebaiknya Ada | Tinggi | Admin mengekspor laporan analitik |
+| UC-46 | Moderasi Ulasan | Admin | Sebaiknya Ada | Sedang | Admin menyetujui/menyembunyikan ulasan tidak pantas |
+| UC-47 | Kirim Notifikasi Massal | Admin | Bisa Ada | Sedang | Admin mengirim pengumuman ke pengguna |
+| UC-48 | Kelola Pengaturan Sistem | Admin | Harus Ada | Sedang | Admin mengubah konfigurasi sistem |
+| UC-49 | Lihat Log Audit | Admin | Sebaiknya Ada | Rendah | Admin melihat log aktivitas |
+| UC-50 | Cadangkan Basis Data | Admin | Harus Ada | Rendah | Admin memicu pencadangan manual |
 
-**Use Case Summary:**
-- **Total Use Cases:** 50
-- **Must Have:** 32 (64%)
-- **Should Have:** 14 (28%)
-- **Could Have:** 4 (8%)
-- **Actors:** 4 (Guest, Client, Therapist, Admin)
-- **Average Complexity:** Medium
-
----
-
-### B. Activity Diagram
-
-Activity Diagram menggambarkan alur kerja (workflow) dari proses bisnis dalam sistem. Berikut adalah activity diagram untuk proses-proses utama:
+**Ringkasan Kasus Penggunaan:**
+- **Total Kasus Penggunaan:** 50
+- **Harus Ada:** 32 (64%)
+- **Sebaiknya Ada:** 14 (28%)
+- **Bisa Ada:** 4 (8%)
+- **Aktor:** 4 (Tamu, Klien, Terapis, Admin)
+- **Kompleksitas Rata-rata:** Sedang
 
 ---
 
-**[GAMBAR 4.11 - Activity Diagram: Booking Process Flow]** 🔴 **CRITICAL**
+### B. Diagram Aktivitas
+
+Diagram Aktivitas menggambarkan alur kerja (*workflow*) dari proses bisnis dalam sistem. Berikut adalah diagram aktivitas untuk proses-proses utama:
+
+---
+
+**[GAMBAR 4.11 - Diagram Aktivitas: Alur Proses Pemesanan]** 🔴 **CRITICAL**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT ACTIVITY DIAGRAM - BOOKING FLOW]                 │
+│   [SISIPKAN DIAGRAM AKTIVITAS - ALUR PEMESANAN]            │
 │                                                             │
-│   CUR-HEART ACTIVITY DIAGRAM                               │
-│   Process: Client Booking Workflow (End-to-End)            │
+│   DIAGRAM AKTIVITAS CUR-HEART                              │
+│   Proses: Alur Kerja Pemesanan Klien (End-to-End)         │
 │                                                             │
-│   SWIMLANES (3 Actors):                                    │
+│   SWIMLANES (3 Aktor):                                     │
 │   ┌──────────────────────────────────────────────┐         │
-│   │ CLIENT                                       │         │
+│   │ KLIEN                                        │         │
 │   ├──────────────────────────────────────────────┤         │
-│   │ • Start (Login)                              │         │
-│   │ • Browse services                            │         │
-│   │ • Select service                             │         │
-│   │ • Select therapist                           │         │
-│   │ • Choose date & time                         │         │
-│   │ • Enter booking details                      │         │
-│   │ • Make payment                               │         │
-│   │ • Receive confirmation                       │         │
-│   │ • End                                        │         │
+│   │ • Mulai (Login)                              │         │
+│   │ • Telusuri layanan                           │         │
+│   │ • Pilih layanan                              │         │
+│   │ • Pilih terapis                              │         │
+│   │ • Pilih tanggal & waktu                      │         │
+│   │ • Masukkan detail pemesanan                  │         │
+│   │ • Lakukan pembayaran                         │         │
+│   │ • Terima konfirmasi                          │         │
+│   │ • Selesai                                    │         │
 │   └──────────────────────────────────────────────┘         │
 │                                                             │
 │   ┌──────────────────────────────────────────────┐         │
-│   │ SYSTEM                                       │         │
+│   │ SISTEM                                       │         │
 │   ├──────────────────────────────────────────────┤         │
-│   │ • Validate login                             │         │
-│   │ • Fetch services list                        │         │
-│   │ • Validate service selection                 │         │
-│   │ • Filter therapists by service               │         │
-│   │ • Get therapist availability                 │         │
-│   │ • Check slot availability (Decision)         │         │
-│   │ • Create booking record                      │         │
-│   │ • Process payment (Payment Gateway)          │         │
-│   │ • Update booking status                      │         │
-│   │ • Send notification                          │         │
-│   │ • Generate confirmation                      │         │
+│   │ • Validasi login                             │         │
+│   │ • Ambil daftar layanan                       │         │
+│   │ • Validasi pilihan layanan                   │         │
+│   │ • Filter terapis berdasarkan layanan         │         │
+│   │ • Ambil ketersediaan terapis                 │         │
+│   │ • Cek ketersediaan slot (Keputusan)          │         │
+│   │ • Buat rekaman pemesanan                     │         │
+│   │ • Proses pembayaran (Gateway Pembayaran)     │         │
+│   │ • Perbarui status pemesanan                  │         │
+│   │ • Kirim notifikasi                           │         │
+│   │ • Buat konfirmasi                            │         │
 │   └──────────────────────────────────────────────┘         │
 │                                                             │
 │   ┌──────────────────────────────────────────────┐         │
-│   │ PAYMENT GATEWAY                              │         │
+│   │ GATEWAY PEMBAYARAN                           │         │
 │   ├──────────────────────────────────────────────┤         │
-│   │ • Receive payment request                    │         │
-│   │ • Validate payment method                    │         │
-│   │ • Process transaction                        │         │
-│   │ • Return payment result (Success/Failed)     │         │
+│   │ • Terima permintaan pembayaran               │         │
+│   │ • Validasi metode pembayaran                 │         │
+│   │ • Proses transaksi                           │         │
+│   │ • Kembalikan hasil pembayaran (Sukses/Gagal) │         │
 │   └──────────────────────────────────────────────┘         │
 │                                                             │
-│   KEY ELEMENTS:                                             │
-│   • ● (Start node) - Begin booking process                 │
-│   • ◉ (End node) - Booking confirmed / cancelled           │
-│   • ◇ (Decision) - Slot available? Payment success?        │
-│   • ▭ (Activity) - Each action/step                        │
-│   • → (Flow) - Sequential flow                             │
-│   • ━ (Fork/Join) - Parallel activities                    │
+│   ELEMEN KUNCI:                                             │
+│   • ● (Node awal) - Mulai proses pemesanan                 │
+│   • ◉ (Node akhir) - Pemesanan dikonfirmasi / dibatalkan   │
+│   • ◇ (Keputusan) - Slot tersedia? Pembayaran sukses?      │
+│   • ▭ (Aktivitas) - Setiap aksi/langkah                    │
+│   • → (Alur) - Alur berurutan                              │
+│   • ━ (Fork/Join) - Aktivitas paralel                      │
 │                                                             │
-│   DECISION POINTS (Critical):                               │
-│   1. "Is slot still available?"                            │
-│      YES → Proceed to booking                              │
-│      NO → Show error, re-select time                       │
+│   TITIK KEPUTUSAN (Kritis):                                 │
+│   1. "Apakah slot masih tersedia?"                         │
+│      YA → Lanjutkan ke pemesanan                           │
+│      TIDAK → Tampilkan error, pilih ulang waktu            │
 │                                                             │
-│   2. "Payment successful?"                                 │
-│      YES → Confirm booking, send notification              │
-│      NO → Cancel booking, show error                       │
+│   2. "Apakah pembayaran berhasil?"                         │
+│      YA → Konfirmasi pemesanan, kirim notifikasi           │
+│      TIDAK → Batalkan pemesanan, tampilkan error           │
 │                                                             │
-│   ALTERNATE FLOWS:                                          │
-│   • Slot unavailable → Loop back to date selection         │
-│   • Payment failed → Retry or cancel                       │
-│   • Validation error → Show error message                  │
+│   ALUR ALTERNATIF:                                          │
+│   • Slot tidak tersedia → Loop kembali ke pilihan tanggal  │
+│   • Pembayaran gagal → Coba ulang atau batalkan            │
+│   • Error validasi → Tampilkan pesan error                 │
 │                                                             │
-│   TOTAL ACTIVITIES: 20+ nodes                              │
-│   DECISION NODES: 3                                        │
-│   SWIMLANES: 3 (Client, System, Payment Gateway)           │
+│   TOTAL AKTIVITAS: 20+ node                                │
+│   NODE KEPUTUSAN: 3                                        │
+│   SWIMLANES: 3 (Klien, Sistem, Gateway Pembayaran)         │
 │                                                             │
-│   Format: UML Activity Diagram (Swimlane) PNG              │
-│   Recommended size: 1800x2400px (vertical, detailed)       │
-│   Style: UML standard dengan swimlanes, clear labels       │
+│   Format: Diagram Aktivitas UML (Swimlane) PNG            │
+│   Ukuran rekomendasi: 1800x2400px (vertikal, detail)      │
+│   Gaya: Standar UML dengan swimlanes, label jelas         │
 │                                                             │
 │   File: assets/images/activity-diagram-booking-flow.png    │
 │   Tool: Visual Paradigm, draw.io, Lucidchart               │
 │                                                             │
-│   PRIORITY: P1 - CRITICAL                                   │
-│   Must show: Swimlanes, decision points, happy & sad paths │
+│   PRIORITAS: P1 - CRITICAL                                  │
+│   Harus menampilkan: Swimlanes, titik keputusan, alur      │
+│   positif & negatif                                        │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.11: Activity Diagram untuk proses booking lengkap dengan 3 swimlanes (Client, System, Payment Gateway), showing decision points dan alternate flows_
+_Gambar 4.11: Diagram Aktivitas untuk proses pemesanan lengkap dengan 3 swimlanes (Klien, Sistem, Gateway Pembayaran), menampilkan titik keputusan dan alur alternatif_
 
 ---
 
-#### 1. Activity Diagram: Proses Booking Layanan
+#### 1. Diagram Aktivitas: Proses Pemesanan Layanan
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│              ACTIVITY DIAGRAM - PROSES BOOKING LAYANAN                   │
+│            DIAGRAM AKTIVITAS - PROSES PEMESANAN LAYANAN                  │
 └──────────────────────────────────────────────────────────────────────────┘
 
-    Client                  Sistem                     Therapist
+    Klien                   Sistem                     Terapis
       │                       │                            │
       │                       │                            │
      ●─┐                      │                            │
-      START                   │                            │
+     MULAI                    │                            │
       │                       │                            │
       ├──────────────────────►│                            │
       │   Pilih Layanan       │                            │
       │                       │                            │
       │◄──────────────────────┤                            │
-      │  Tampilkan List       │                            │
+      │  Tampilkan Daftar     │                            │
       │    Layanan            │                            │
       │                       │                            │
       ├──────────────────────►│                            │
-      │  Submit Layanan       │                            │
+      │  Kirim Layanan        │                            │
       │                       │                            │
       │                    ┌──▼───┐                        │
       │                    │Validasi│                       │
@@ -544,460 +546,471 @@ _Gambar 4.11: Activity Diagram untuk proses booking lengkap dengan 3 swimlanes (
       │                   ╲       ╱                        │
       │                    ╲     ╱                         │
       │                     ╲   ╱                          │
-      │                No   ╱ ╲  Yes                       │
+      │              Tidak  ╱ ╲  Ya                        │
       │◄────────────────────┘  └────┐                     │
-      │  Error Message              │                     │
+      │  Pesan Error                │                     │
       │                             ▼                     │
       │                    ┌─────────────────┐            │
       │                    │ Filter Terapis  │            │
-      │                    │ by Layanan      │            │
+      │                    │ per Layanan     │            │
       │                    └────────┬────────┘            │
       │◄────────────────────────────┤                     │
-      │  Tampilkan List Terapis     │                     │
+      │  Tampilkan Daftar Terapis   │                     │
       │                             │                     │
       ├─────────────────────────────►                     │
       │  Pilih Terapis              │                     │
       │                             │                     │
       │                    ┌────────▼────────┐            │
-      │                    │ Get Availability│            │
-      │                    │   Terapis       │            │
+      │                    │ Ambil           │            │
+      │                    │ Ketersediaan    │            │
+      │                    │ Terapis         │            │
       │                    └────────┬────────┘            │
       │◄────────────────────────────┤                     │
-      │  Tampilkan Calendar         │                     │
+      │  Tampilkan Kalender         │                     │
       │                             │                     │
       ├─────────────────────────────►                     │
       │  Pilih Tanggal & Waktu      │                     │
       │                             │                     │
       │                    ┌────────▼────────┐            │
-      │                    │ Check Conflict  │            │
+      │                    │ Cek Konflik     │            │
       │                    └────────┬────────┘            │
       │                             │                     │
       │                          ╱     ╲                  │
-      │                         ╱Conflict?╲               │
+      │                         ╱Konflik?╲               │
       │                         ╲       ╱                 │
       │                          ╲     ╱                  │
-      │                Yes        ╲   ╱   No              │
+      │                 Ya       ╲   ╱   Tidak            │
       │◄──────────────────────────┘  └───┐               │
-      │  Slot Unavailable                │               │
+      │  Slot Tidak Tersedia             │               │
       │                                  ▼               │
       │                         ┌─────────────────┐      │
-      │                         │ Create Booking  │      │
-      │                         │   (Pending)     │      │
+      │                         │ Buat Pemesanan  │      │
+      │                         │   (Tertunda)    │      │
       │                         └────────┬────────┘      │
       │◄─────────────────────────────────┤               │
-      │  Tampilkan Ringkasan Booking     │               │
+      │  Tampilkan Ringkasan Pemesanan   │               │
       │                                  │               │
       ├──────────────────────────────────►               │
       │  Konfirmasi & Bayar              │               │
       │                                  │               │
       │                         ┌────────▼────────┐      │
-      │                         │ Process Payment │      │
+      │                         │ Proses Pembayaran│      │
       │                         └────────┬────────┘      │
       │                                  │               │
       │                               ╱     ╲            │
-      │                              ╱Success?╲          │
+      │                              ╱Berhasil?╲         │
       │                              ╲       ╱           │
       │                               ╲     ╱            │
-      │                   No           ╲   ╱  Yes        │
+      │              Tidak             ╲   ╱  Ya         │
       │                        ┌────────┘  └─────┐       │
       │                        │                 │       │
       │               ┌────────▼─────┐  ┌────────▼──────┐│
-      │               │Cancel Booking│  │Update Booking ││
-      │               │              │  │  (Confirmed)  ││
+      │               │Batalkan      │  │Perbarui       ││
+      │               │Pemesanan     │  │Pemesanan      ││
+      │               │              │  │(Dikonfirmasi) ││
       │               └──────┬───────┘  └────────┬──────┘│
       │◄──────────────────────┤                  │       │
-      │  Payment Failed       │                  │       │
+      │  Pembayaran Gagal     │                  │       │
       │                       │         ┌────────▼──────┐│
-      │                       │         │Send Email     ││
-      │                       │         │Notification   ││
+      │                       │         │Kirim Email    ││
+      │                       │         │Notifikasi     ││
       │                       │         └────────┬──────┘│
       │                       │                  │       │
       │                       │                  ├───────┼───────────►
-      │                       │                  │  Email to Therapist
+      │                       │                  │  Email ke Terapis
       │                       │                  │       │
       │◄──────────────────────┴──────────────────┤       │
-      │  Booking Confirmation                    │       │
+      │  Konfirmasi Pemesanan                    │       │
       │                                          │       │
      ─┴─                                         │       │
-     END                                         │       │
+   SELESAI                                       │       │
                                                  │       │
                                             ┌────▼───┐   │
                                             │Notifikasi  │
-                                            │Booking Baru│
+                                            │Pemesanan   │
+                                            │Baru        │
                                             └────────┘   │
                                                  │       │
                                                 ●─┴─     │
-                                               END       │
+                                             SELESAI     │
 ```
 
 **Keterangan:**
-- **●** : Start/End point
-- **╱ ╲** : Decision/branching point
-- **┌──┐** : Activity/process
-- **→** : Flow direction
+- **●** : Titik Mulai/Selesai
+- **╱ ╲** : Titik Keputusan/percabangan
+- **┌──┐** : Aktivitas/proses
+- **→** : Arah alur
 
 **Proses:**
-1. Client memilih layanan dari katalog
+1. Klien memilih layanan dari katalog
 2. Sistem memfilter terapis yang menyediakan layanan tersebut
-3. Client memilih terapis
-4. Sistem menampilkan availability calendar
-5. Client memilih tanggal dan waktu
-6. Sistem check conflict dengan booking lain
-7. Jika available, create booking dengan status "pending"
-8. Client melakukan pembayaran
-9. Jika pembayaran sukses:
-   - Update booking status menjadi "confirmed"
-   - Send email notification ke client dan therapist
+3. Klien memilih terapis
+4. Sistem menampilkan kalender ketersediaan
+5. Klien memilih tanggal dan waktu
+6. Sistem mengecek konflik dengan pemesanan lain
+7. Jika tersedia, buat pemesanan dengan status "tertunda"
+8. Klien melakukan pembayaran
+9. Jika pembayaran berhasil:
+   - Perbarui status pemesanan menjadi "dikonfirmasi"
+   - Kirim notifikasi email ke klien dan terapis
 10. Jika pembayaran gagal:
-    - Cancel booking
-    - Show error message
+    - Batalkan pemesanan
+    - Tampilkan pesan error
 
 ---
 
-#### 2. Activity Diagram: Proses Conduct Therapy Session
+#### 2. Diagram Aktivitas: Proses Pelaksanaan Sesi Terapi
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│           ACTIVITY DIAGRAM - CONDUCT THERAPY SESSION                     │
+│         DIAGRAM AKTIVITAS - PELAKSANAAN SESI TERAPI                      │
 └──────────────────────────────────────────────────────────────────────────┘
 
-    Therapist              Sistem                    Client
+    Terapis                Sistem                    Klien
       │                      │                          │
       │                      │                          │
      ●─┐                     │                          │
-    START                    │                          │
+   MULAI                     │                          │
       │                      │                          │
       │              ┌───────▼───────┐                  │
-      │              │ Reminder Email│                  │
-      │              │   H-1         │                  │
+      │              │ Email         │                  │
+      │              │ Pengingat H-1 │                  │
       │              └───────┬───────┘                  │
       │                      │                          │
       │◄─────────────────────┼──────────────────────────┤
-      │     Receive Reminder │    Receive Reminder      │
+      │  Terima Pengingat    │  Terima Pengingat        │
       │                      │                          │
       │              ┌───────▼───────┐                  │
-      │              │Session Day     │                  │
-      │              │Check Time      │                  │
+      │              │Hari Sesi      │                  │
+      │              │Cek Waktu      │                  │
       │              └───────┬───────┘                  │
       │                      │                          │
       │                   ╱     ╲                       │
-      │                  ╱ Time to ╲                    │
-      │                  ╲  start? ╱                    │
+      │                  ╱ Waktu   ╲                    │
+      │                  ╲  mulai? ╱                    │
       │                   ╲       ╱                     │
-      │         No         ╲     ╱  Yes                 │
+      │       Tidak        ╲     ╱  Ya                  │
       │          ┌──────────┘   └─────────┐             │
       │          │                        │             │
-      │          │ Wait                   ▼             │
+      │          │ Tunggu                 ▼             │
       │          └───────────►   ┌────────────────┐     │
-      │                         │Enable "Join     │     │
-      │                         │Session" Button  │     │
+      │                         │Aktifkan Tombol │     │
+      │                         │"Gabung Sesi"   │     │
       │                         └────────┬────────┘     │
       │                                  │             │
       │◄─────────────────────────────────┼─────────────┤
-      │    Join Session Link             │  Join Session Link
+      │    Link Gabung Sesi              │  Link Gabung Sesi
       │                                  │             │
       ├──────────────────────────────────►            │
-      │    Click "Join Session"          │             │
+      │    Klik "Gabung Sesi"            │             │
       │                                  │             │
       │                         ┌────────▼────────┐    │
-      │                         │Create Session   │    │
-      │                         │Record           │    │
+      │                         │Buat Rekaman     │    │
+      │                         │Sesi             │    │
       │                         └────────┬────────┘    │
       │                                  │             │
       │                         ┌────────▼────────┐    │
-      │                         │Open Session Room│    │
-      │                         │(Video Call)     │    │
+      │                         │Buka Ruang Sesi  │    │
+      │                         │(Panggilan Video)│    │
       │                         └────────┬────────┘    │
       │◄─────────────────────────────────┼─────────────┤
-      │    Session Room Interface        │  Session Room Interface
+      │    Antarmuka Ruang Sesi          │  Antarmuka Ruang Sesi
       │                                  │             │
       ├──────────────────────────────────┼─────────────►
-      │    Start Video Call              │  Join Video Call
+      │    Mulai Panggilan Video         │  Gabung Panggilan Video
       │                                  │             │
       ├──────────────────────────────────┼─────────────►
       │◄─────────────────────────────────┼─────────────┤
-      │    Video & Audio Stream          │  Video & Audio Stream
+      │    Streaming Video & Audio       │  Streaming Video & Audio
       │                                  │             │
       ├──────────────────────────────────►            │
-      │    Conduct Therapy               │             │
-      │    (Discussion, Hypnosis, etc)   │             │
+      │    Laksanakan Terapi             │             │
+      │    (Diskusi, Hipnosis, dll)      │             │
       │                                  │             │
       │    ┌─────────────────┐           │             │
-      │    │ Take Notes      │           │             │
+      │    │ Buat Catatan    │           │             │
       │    │ (Real-time)     │           │             │
       │    └────────┬────────┘           │             │
       │             │                    │             │
       │    ┌────────▼────────┐           │             │
-      │───►│ Autosave Notes  │           │             │
-      │    │ Every 2 minutes │           │             │
+      │───►│ Simpan Otomatis │           │             │
+      │    │ Setiap 2 menit  │           │             │
       │    └─────────────────┘           │             │
       │                                  │             │
       │                               ╱     ╲          │
-      │                              ╱Session ╲        │
-      │                              ╲Complete?╱       │
+      │                              ╱  Sesi  ╲        │
+      │                              ╲ Selesai?╱       │
       │                               ╲       ╱        │
-      │             No                 ╲     ╱  Yes    │
+      │          Tidak                 ╲     ╱  Ya     │
       │          ┌─────────────────────┘   └──────┐   │
-      │          │ Continue                       │   │
+      │          │ Lanjutkan                      │   │
       │          └───────────►                    │   │
       │                                           ▼   │
       ├───────────────────────────────────────────►   │
-      │    End Video Call                         │   │
+      │    Akhiri Panggilan Video                 │   │
       │                                           │   │
       │                              ┌────────────▼───┤
-      │                              │Record End Time │
-      │                              │Update Duration │
+      │                              │Rekam Waktu     │
+      │                              │Selesai         │
+      │                              │Perbarui Durasi │
       │                              └────────────┬───┘
       │                                           │   │
       │◄──────────────────────────────────────────┤   │
-      │    Redirect to Session Notes Page         │   │
+      │   Alihkan ke Halaman Catatan Sesi         │   │
       │                                           │   │
       ├───────────────────────────────────────────►   │
-      │    Complete Session Notes                 │   │
-      │    (Condition, Techniques,                │   │
-      │     Progress, Recommendations)            │   │
+      │   Lengkapi Catatan Sesi                   │   │
+      │   (Kondisi, Teknik,                       │   │
+      │    Kemajuan, Rekomendasi)                 │   │
       │                                           │   │
       │                              ┌────────────▼───┤
-      │                              │ Save Notes     │
-      │                              │ Mark Session   │
-      │                              │ Completed      │
+      │                              │ Simpan Catatan │
+      │                              │ Tandai Sesi    │
+      │                              │ Selesai        │
       │                              └────────────┬───┘
       │                                           │   │
       │                              ┌────────────▼───┤
-      │                              │ Update Client  │
-      │                              │ Progress Score │
+      │                              │ Perbarui Skor  │
+      │                              │ Kemajuan Klien │
       │                              └────────────┬───┘
       │                                           │   │
       │                              ┌────────────▼───┤
-      │                              │Send Follow-up  │
-      │                              │Email & Request │
-      │                              │Review          │
+      │                              │Kirim Email     │
+      │                              │Tindak Lanjut & │
+      │                              │Minta Ulasan    │
       │                              └────────────┬───┘
       │                                           │   │
       │◄──────────────────────────────────────────┼───┤
-      │    Success Notification                   │ Email Notification
+      │    Notifikasi Berhasil                    │ Notifikasi Email
       │                                           │   │
      ─┴─                                          │  ●─┴─
-     END                                          │  END
+   SELESAI                                        │ SELESAI
                                                   │
 ```
 
 **Proses:**
-1. Sistem send reminder email H-1 ke client dan therapist
-2. Pada hari H, sistem check waktu session
-3. 15 menit sebelum session, enable "Join Session" button
-4. Client dan therapist join session room
-5. Therapist start video call
-6. Conduct therapy session dengan video call
-7. Therapist take notes real-time (autosave setiap 2 menit)
-8. Setelah session selesai, end video call
-9. Sistem record end time dan calculate duration
-10. Therapist finalize session notes
-11. Sistem update client progress score
-12. Send follow-up email dan request review
+1. Sistem mengirim email pengingat H-1 ke klien dan terapis
+2. Pada hari H, sistem mengecek waktu sesi
+3. 15 menit sebelum sesi, aktifkan tombol "Gabung Sesi"
+4. Klien dan terapis bergabung ke ruang sesi
+5. Terapis memulai panggilan video
+6. Laksanakan sesi terapi dengan panggilan video
+7. Terapis membuat catatan real-time (simpan otomatis setiap 2 menit)
+8. Setelah sesi selesai, akhiri panggilan video
+9. Sistem merekam waktu selesai dan menghitung durasi
+10. Terapis melengkapi catatan sesi
+11. Sistem memperbarui skor kemajuan klien
+12. Kirim email tindak lanjut dan minta ulasan
 
 ---
 
-#### 3. Activity Diagram: Proses Verifikasi Pembayaran Manual (Admin)
+#### 3. Diagram Aktivitas: Proses Verifikasi Pembayaran Manual (Admin)
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│        ACTIVITY DIAGRAM - VERIFIKASI PEMBAYARAN MANUAL (ADMIN)          │
+│      DIAGRAM AKTIVITAS - VERIFIKASI PEMBAYARAN MANUAL (ADMIN)           │
 └──────────────────────────────────────────────────────────────────────────┘
 
-    Client                  Sistem                     Admin
+    Klien                   Sistem                     Admin
       │                       │                          │
       │                       │                          │
      ●─┐                      │                          │
-    START                     │                          │
+   MULAI                      │                          │
       │                       │                          │
       ├──────────────────────►│                          │
       │  Pilih Metode         │                          │
-      │  Bank Transfer        │                          │
+      │  Transfer Bank        │                          │
       │                       │                          │
       │◄──────────────────────┤                          │
-      │  Show Bank Account    │                          │
-      │  Info & Instructions  │                          │
+      │  Tampilkan Info       │                          │
+      │  Rekening Bank &      │                          │
+      │  Instruksi            │                          │
       │                       │                          │
       ├──────────────────────►│                          │
-      │  Confirm Order        │                          │
+      │  Konfirmasi Pesanan   │                          │
       │                       │                          │
       │              ┌────────▼────────┐                 │
-      │              │Create Booking   │                 │
-      │              │Status: Pending  │                 │
-      │              │Payment          │                 │
+      │              │Buat Pemesanan   │                 │
+      │              │Status: Menunggu │                 │
+      │              │Pembayaran       │                 │
       │              └────────┬────────┘                 │
       │◄──────────────────────┤                          │
-      │  Booking Number &     │                          │
-      │  Payment Instructions │                          │
+      │  Nomor Pemesanan &    │                          │
+      │  Instruksi Pembayaran │                          │
       │                       │                          │
       ├──────────────────────►│                          │
-      │  Transfer to Bank     │                          │
+      │  Transfer ke Bank     │                          │
       │                       │                          │
       ├──────────────────────►│                          │
-      │  Upload Proof of      │                          │
-      │  Payment (Screenshot) │                          │
+      │  Unggah Bukti         │                          │
+      │  Pembayaran (Foto)    │                          │
       │                       │                          │
       │              ┌────────▼────────┐                 │
-      │              │Save Proof File  │                 │
-      │              │Update Payment   │                 │
-      │              │Status:Processing│                 │
+      │              │Simpan File Bukti│                 │
+      │              │Perbarui Status  │                 │
+      │              │Pembayaran:      │                 │
+      │              │Sedang Diproses  │                 │
       │              └────────┬────────┘                 │
       │                       │                          │
       │              ┌────────▼────────┐                 │
-      │              │Notify Admin     │                 │
-      │              │(Email + System) │                 │
+      │              │Notifikasi Admin │                 │
+      │              │(Email + Sistem) │                 │
       │              └────────┬────────┘                 │
       │                       │                          │
       │                       ├──────────────────────────►
-      │                       │   New Payment to Verify  │
+      │                       │  Pembayaran Baru untuk   │
+      │                       │  Diverifikasi            │
       │                       │                          │
       │                       │              ┌───────────▼──────┐
-      │                       │              │Access Admin Panel│
-      │                       │              │Financial Reports │
+      │                       │              │Akses Panel Admin │
+      │                       │              │Laporan Keuangan  │
       │                       │              └───────────┬──────┘
       │                       │                          │
       │                       │              ┌───────────▼──────┐
-      │                       │              │View Pending      │
-      │                       │              │Payments List     │
+      │                       │              │Lihat Daftar      │
+      │                       │              │Pembayaran        │
+      │                       │              │Tertunda          │
       │                       │              └───────────┬──────┘
       │                       │                          │
       │                       │              ┌───────────▼──────┐
-      │                       │              │Click Payment     │
-      │                       │              │to Verify         │
+      │                       │              │Klik Pembayaran   │
+      │                       │              │untuk Diverifikasi│
       │                       │              └───────────┬──────┘
       │                       │                          │
       │                       │              ┌───────────▼──────┐
-      │                       │              │View Details:     │
-      │                       │              │- Booking Info    │
-      │                       │              │- Amount          │
-      │                       │              │- Proof of Payment│
+      │                       │              │Lihat Detail:     │
+      │                       │              │- Info Pemesanan  │
+      │                       │              │- Jumlah          │
+      │                       │              │- Bukti Pembayaran│
       │                       │              └───────────┬──────┘
       │                       │                          │
       │                       │              ┌───────────▼──────┐
-      │                       │              │Download & Check  │
-      │                       │              │Proof Image       │
+      │                       │              │Unduh & Cek       │
+      │                       │              │Gambar Bukti      │
       │                       │              └───────────┬──────┘
       │                       │                          │
       │                       │              ┌───────────▼──────┐
-      │                       │              │Check Bank Account│
+      │                       │              │Cek Rekening Bank │
       │                       │              │(via Mobile Bank) │
       │                       │              └───────────┬──────┘
       │                       │                          │
       │                       │                       ╱     ╲
-      │                       │                      ╱Payment ╲
-      │                       │                      ╲ Valid? ╱
+      │                       │                      ╱Pembayaran╲
+      │                       │                      ╲  Valid?  ╱
       │                       │                       ╲       ╱
-      │                       │           No           ╲     ╱  Yes
+      │                       │          Tidak         ╲     ╱  Ya
       │                       │              ┌──────────┘   └────────┐
       │                       │              │                       │
       │                       │    ┌─────────▼─────┐     ┌──────────▼────┐
-      │                       │    │Reject Payment │     │Approve Payment │
-      │                       │    │Enter Reason   │     │Enter Ref. No. │
+      │                       │    │Tolak Pembayaran│    │Setujui         │
+      │                       │    │               │     │Pembayaran      │
+      │                       │    │Masukkan Alasan│     │Masukkan No.Ref│
       │                       │    └─────────┬─────┘     └──────────┬────┘
       │                       │              │                       │
       │                       │    ┌─────────▼─────┐     ┌──────────▼────┐
-      │                       │◄───┤Update Payment │     │Update Payment  │
-      │                       │    │Status: Failed │     │Status:Completed│
+      │                       │◄───┤Perbarui Status│     │Perbarui Status │
+      │                       │    │Pembayaran:    │     │Pembayaran:     │
+      │                       │    │Gagal          │     │Selesai         │
       │                       │    └─────────┬─────┘     └──────────┬────┘
       │                       │              │                       │
       │                       │    ┌─────────▼─────┐     ┌──────────▼────┐
-      │                       │◄───┤Send Email:    │     │Send Email:     │
-      │                       │    │Payment Rejected│    │Payment Confirmed│
+      │                       │◄───┤Kirim Email:   │     │Kirim Email:    │
+      │                       │    │Pembayaran     │     │Pembayaran      │
+      │                       │    │Ditolak        │     │Dikonfirmasi    │
       │                       │    └─────────┬─────┘     └──────────┬────┘
       │                       │              │                       │
       │◄──────────────────────┼──────────────┴───────────────────────┘
-      │  Email Notification   │
+      │  Notifikasi Email     │
       │                       │
       │                    ╱     ╲
-      │                   ╱Approved?╲
+      │                   ╱Disetujui?╲
       │                   ╲       ╱
-      │        No          ╲     ╱  Yes
+      │       Tidak        ╲     ╱  Ya
       │          ┌──────────┘   └──────┐
       │          │                     │
       │    ┌─────▼─────┐      ┌────────▼────┐
-      │    │Re-upload  │      │Booking      │
-      │    │Proof or   │      │Confirmed    │
-      │    │Request    │      └────────┬────┘
-      │    │Refund     │               │
-      │    └─────┬─────┘      ┌────────▼────┐
-      │          │            │Send Calendar│
-      │          │            │Invite (.ics)│
+      │    │Unggah Ulang│     │Pemesanan    │
+      │    │Bukti atau  │     │Dikonfirmasi │
+      │    │Minta       │     └────────┬────┘
+      │    │Pengembalian│              │
+      │    │Dana        │     ┌────────▼────┐
+      │    └─────┬─────┘      │Kirim Undangan│
+      │          │            │Kalender (.ics)│
       │          │            └────────┬────┘
       │          │                     │
       │          │◄────────────────────┤
-      │          │   Calendar File     │
+      │          │   File Kalender     │
       │          │                     │
      ─┴──────────┴─                   ─┴─
-     END         END                  END
+   SELESAI     SELESAI              SELESAI
 ```
 
 **Proses:**
-1. Client pilih bank transfer sebagai payment method
-2. Sistem show bank account details dan instructions
-3. Client transfer dana ke bank account CUR-HEART
-4. Client upload proof of payment (screenshot)
-5. Sistem save file dan update payment status ke "processing"
-6. Sistem notify admin ada payment baru untuk diverifikasi
-7. Admin access financial reports panel
-8. Admin view list pending payments
-9. Admin click specific payment untuk verify
-10. Admin check proof of payment image
-11. Admin cross-check dengan mobile banking transaction history
+1. Klien memilih transfer bank sebagai metode pembayaran
+2. Sistem menampilkan detail rekening bank dan instruksi
+3. Klien mentransfer dana ke rekening bank CUR-HEART
+4. Klien mengunggah bukti pembayaran (foto)
+5. Sistem menyimpan file dan memperbarui status pembayaran ke "sedang diproses"
+6. Sistem memberitahu admin ada pembayaran baru untuk diverifikasi
+7. Admin mengakses panel laporan keuangan
+8. Admin melihat daftar pembayaran tertunda
+9. Admin mengklik pembayaran tertentu untuk diverifikasi
+10. Admin mengecek gambar bukti pembayaran
+11. Admin melakukan cek silang dengan riwayat transaksi mobile banking
 12. Jika valid:
-    - Admin approve payment
-    - Enter reference number
-    - Update payment status ke "completed"
-    - Update booking status ke "confirmed"
-    - Send confirmation email ke client
-    - Send calendar invite (.ics file)
+    - Admin menyetujui pembayaran
+    - Masukkan nomor referensi
+    - Perbarui status pembayaran ke "selesai"
+    - Perbarui status pemesanan ke "dikonfirmasi"
+    - Kirim email konfirmasi ke klien
+    - Kirim undangan kalender (file .ics)
 13. Jika tidak valid:
-    - Admin reject payment
-    - Enter rejection reason
-    - Update payment status ke "failed"
-    - Send rejection email ke client
-    - Client bisa re-upload proof atau request refund
+    - Admin menolak pembayaran
+    - Masukkan alasan penolakan
+    - Perbarui status pembayaran ke "gagal"
+    - Kirim email penolakan ke klien
+    - Klien bisa mengunggah ulang bukti atau minta pengembalian dana
 
 ---
 
-### C. Sequence Diagram
+### C. Diagram Sekuens
 
-Sequence Diagram menggambarkan interaksi antar objek dalam sistem berdasarkan urutan waktu. Berikut adalah sequence diagram untuk use case kritis:
+Diagram Sekuens menggambarkan interaksi antar objek dalam sistem berdasarkan urutan waktu. Berikut adalah diagram sekuens untuk kasus penggunaan kritis:
 
 ---
 
-**[GAMBAR 4.12 - Sequence Diagram: Booking Process Interaction]** 🔴 **CRITICAL**
+**[GAMBAR 4.12 - Diagram Sekuens: Interaksi Proses Pemesanan]** 🔴 **CRITICAL**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT SEQUENCE DIAGRAM - BOOKING PROCESS]              │
+│   [SISIPKAN DIAGRAM SEKUENS - PROSES PEMESANAN]            │
 │                                                             │
-│   CUR-HEART SEQUENCE DIAGRAM                               │
-│   Scenario: Client Makes Booking (Happy Path)              │
+│   DIAGRAM SEKUENS CUR-HEART                                │
+│   Skenario: Klien Melakukan Pemesanan (Alur Positif)       │
 │                                                             │
-│   OBJECTS/LIFELINES (7):                                   │
-│   1. Client (Actor)                                        │
-│   2. Browser (UI)                                          │
-│   3. BookingController (Laravel Controller)                │
-│   4. BookingService (Business Logic)                       │
-│   5. TherapistModel (Data Access)                          │
-│   6. PaymentGateway (External API)                         │
+│   OBJEK/LIFELINE (7):                                      │
+│   1. Klien (Aktor)                                         │
+│   2. Peramban (UI)                                         │
+│   3. BookingController (Kontroler Laravel)                 │
+│   4. BookingService (Logika Bisnis)                        │
+│   5. TherapistModel (Akses Data)                           │
+│   6. PaymentGateway (API Eksternal)                        │
 │   7. Database (MySQL)                                      │
 │                                                             │
-│   MESSAGE FLOW (Sequential):                               │
+│   ALUR PESAN (Berurutan):                                  │
 │                                                             │
-│   Client → Browser                                         │
-│   1. "Click Book Now"                                      │
+│   Klien → Peramban                                         │
+│   1. "Klik Pesan Sekarang"                                 │
 │                                                             │
-│   Browser → BookingController                              │
+│   Peramban → BookingController                             │
 │   2. "GET /booking/create"                                 │
-│   3. ← Return booking form                                 │
+│   3. ← Kembalikan formulir pemesanan                       │
 │                                                             │
-│   Client → Browser                                         │
-│   4. "Fill form & Submit"                                  │
+│   Klien → Peramban                                         │
+│   4. "Isi formulir & Kirim"                                │
 │                                                             │
-│   Browser → BookingController                              │
+│   Peramban → BookingController                             │
 │   5. "POST /booking/store" (service_id, therapist_id,      │
 │       date, time)                                          │
 │                                                             │
@@ -1009,24 +1022,24 @@ Sequence Diagram menggambarkan interaksi antar objek dalam sistem berdasarkan ur
 │                                                             │
 │   TherapistModel → Database                                │
 │   8. "SELECT * FROM therapist_availability WHERE..."       │
-│   9. ← Return availability data                            │
+│   9. ← Kembalikan data ketersediaan                        │
 │                                                             │
-│   (Decision: If available)                                 │
+│   (Keputusan: Jika tersedia)                               │
 │                                                             │
 │   BookingService → Database                                │
 │   10. "INSERT INTO bookings (...)"                         │
-│   11. ← Return booking_id                                  │
+│   11. ← Kembalikan booking_id                              │
 │                                                             │
 │   BookingController → PaymentGateway                       │
 │   12. "createPayment(booking_id, amount)"                  │
-│   13. ← Return payment_url                                 │
+│   13. ← Kembalikan payment_url                             │
 │                                                             │
-│   BookingController → Browser                              │
-│   14. ← Redirect to payment_url                            │
+│   BookingController → Peramban                             │
+│   14. ← Alihkan ke payment_url                             │
 │                                                             │
-│   Browser → PaymentGateway                                 │
-│   15. "Complete payment (Midtrans page)"                   │
-│   16. ← Payment success callback                           │
+│   Peramban → PaymentGateway                                │
+│   15. "Selesaikan pembayaran (halaman Midtrans)"           │
+│   16. ← Callback pembayaran berhasil                       │
 │                                                             │
 │   PaymentGateway → BookingController                       │
 │   17. "POST /payment/callback" (transaction_status)        │
@@ -1034,231 +1047,236 @@ Sequence Diagram menggambarkan interaksi antar objek dalam sistem berdasarkan ur
 │   BookingController → Database                             │
 │   18. "UPDATE bookings SET status='confirmed'"             │
 │   19. "INSERT INTO payments (...)"                         │
-│   20. ← Success                                            │
+│   20. ← Berhasil                                           │
 │                                                             │
-│   BookingController → Browser                              │
-│   21. ← Return confirmation page                           │
+│   BookingController → Peramban                             │
+│   21. ← Kembalikan halaman konfirmasi                      │
 │                                                             │
-│   KEY FEATURES:                                             │
-│   • Synchronous calls (solid arrows →)                     │
-│   • Return messages (dashed arrows ←)                      │
-│   • Activation boxes (vertical rectangles on lifelines)    │
-│   • ALT frame (alternative flow for errors)                │
-│   • OPT frame (optional payment gateway interaction)       │
+│   FITUR KUNCI:                                             │
+│   • Panggilan sinkron (panah solid →)                      │
+│   • Pesan kembali (panah putus-putus ←)                    │
+│   • Kotak aktivasi (persegi vertikal pada lifeline)        │
+│   • Frame ALT (alur alternatif untuk error)                │
+│   • Frame OPT (interaksi payment gateway opsional)         │
 │                                                             │
-│   TOTAL MESSAGES: 21                                       │
-│   DECISION POINTS: 1 (availability check)                  │
-│   EXTERNAL SYSTEMS: 1 (Payment Gateway)                    │
+│   TOTAL PESAN: 21                                          │
+│   TITIK KEPUTUSAN: 1 (pengecekan ketersediaan)             │
+│   SISTEM EKSTERNAL: 1 (Payment Gateway)                    │
 │                                                             │
-│   Format: UML Sequence Diagram PNG                         │
-│   Recommended size: 2000x1600px (horizontal, wide)         │
-│   Style: UML standard dengan lifelines, activation boxes   │
+│   Format: Diagram Sekuens UML PNG                          │
+│   Ukuran rekomendasi: 2000x1600px (horizontal, lebar)      │
+│   Gaya: Standar UML dengan lifeline, kotak aktivasi        │
 │                                                             │
 │   File: assets/images/sequence-diagram-booking.png         │
 │   Tool: Visual Paradigm, draw.io, PlantUML, Lucidchart    │
 │                                                             │
-│   PRIORITY: P1 - CRITICAL                                   │
-│   Must show: All objects, message sequence numbers,        │
-│              return messages, activation periods            │
+│   PRIORITAS: P1 - CRITICAL                                 │
+│   Harus menampilkan: Semua objek, nomor urut pesan,        │
+│                     pesan kembali, periode aktivasi         │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.12: Sequence Diagram untuk proses booking dengan 7 objects/lifelines, 21 messages, showing interaction between Client, Browser, Controllers, Services, Models, Payment Gateway, and Database_
+_Gambar 4.12: Diagram Sekuens untuk proses pemesanan dengan 7 objek/lifeline, 21 pesan, menampilkan interaksi antara Klien, Peramban, Kontroler, Layanan, Model, Payment Gateway, dan Basis Data_
 
 ---
 
-#### 1. Sequence Diagram: User Authentication (Login)
+#### 1. Diagram Sekuens: Autentikasi Pengguna (Login)
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│              SEQUENCE DIAGRAM - USER AUTHENTICATION                      │
+│            DIAGRAM SEKUENS - AUTENTIKASI PENGGUNA                        │
 └──────────────────────────────────────────────────────────────────────────┘
 
-Client      Browser        LoginController    AuthMiddleware    UserModel    Database
+Klien     Peramban       LoginController    AuthMiddleware    UserModel    Database
   │             │                 │                │                │            │
-  │   Open      │                 │                │                │            │
-  │ Login Page  │                 │                │                │            │
+  │   Buka      │                 │                │                │            │
+  │ Halaman     │                 │                │                │            │
+  │  Login      │                 │                │                │            │
   ├────────────►│                 │                │                │            │
   │             │   GET /login    │                │                │            │
   │             ├────────────────►│                │                │            │
   │             │                 │                │                │            │
-  │             │   Return View   │                │                │            │
+  │             │  Kembalikan View│                │                │            │
   │             │◄────────────────┤                │                │            │
   │             │                 │                │                │            │
   │◄────────────┤                 │                │                │            │
-  │ Show Login  │                 │                │                │            │
-  │    Form     │                 │                │                │            │
+  │ Tampilkan   │                 │                │                │            │
+  │  Formulir   │                 │                │                │            │
+  │  Login      │                 │                │                │            │
   │             │                 │                │                │            │
-  │   Enter     │                 │                │                │            │
-  │ Credentials │                 │                │                │            │
+  │   Masukkan  │                 │                │                │            │
+  │ Kredensial  │                 │                │                │            │
   │ (Email +    │                 │                │                │            │
   │  Password)  │                 │                │                │            │
   │             │                 │                │                │            │
-  │   Submit    │                 │                │                │            │
-  │    Form     │                 │                │                │            │
+  │   Kirim     │                 │                │                │            │
+  │  Formulir   │                 │                │                │            │
   ├────────────►│                 │                │                │            │
   │             │ POST /login     │                │                │            │
   │             │ {email,password}│                │                │            │
   │             ├────────────────►│                │                │            │
   │             │                 │                │                │            │
-  │             │                 │  Validate CSRF Token            │            │
+  │             │                 │  Validasi CSRF Token            │            │
   │             │                 ├────────────────►                │            │
   │             │                 │                │                │            │
   │             │                 │    Valid       │                │            │
   │             │                 │◄────────────────                │            │
   │             │                 │                │                │            │
-  │             │                 │  Validate Input                 │            │
-  │             │                 │  (email format,│                │            │
-  │             │                 │   required)    │                │            │
+  │             │                 │  Validasi Input                 │            │
+  │             │                 │  (format email,│                │            │
+  │             │                 │   diperlukan)  │                │            │
   │             │                 │                │                │            │
-  │             │                 │  Find User by Email             │            │
+  │             │                 │  Cari Pengguna berdasarkan Email│            │
   │             │                 ├─────────────────────────────────►           │
   │             │                 │                │                │            │
   │             │                 │                │ SELECT * FROM users        │
   │             │                 │                │  WHERE email = ?           │
   │             │                 │                │                ├───────────►
   │             │                 │                │                │            │
-  │             │                 │                │      User Data │            │
+  │             │                 │                │   Data Pengguna│            │
   │             │                 │                │◄───────────────┼────────────┤
   │             │                 │                │                │            │
-  │             │                 │    User Object │                │            │
+  │             │                 │   Objek Pengguna                │            │
   │             │                 │◄─────────────────────────────────           │
   │             │                 │                │                │            │
-  │             │                 │  Check if User Exists           │            │
+  │             │                 │  Cek apakah Pengguna Ada        │            │
   │             │                 │                │                │            │
   │             │                 │ ╔═════════════════════════════╗ │            │
-  │             │                 │ ║  Alt [User Not Found]       ║ │            │
+  │             │                 │ ║  Alt [Pengguna Tidak        ║ │            │
+  │             │                 │ ║       Ditemukan]            ║ │            │
   │             │                 │ ╠═════════════════════════════╣ │            │
-  │             │                 │ ║  Return Error               ║ │            │
-  │             │                 │ ║  "Invalid Credentials"      ║ │            │
+  │             │                 │ ║  Kembalikan Error           ║ │            │
+  │             │                 │ ║  "Kredensial Tidak Valid"   ║ │            │
   │             │   Error 401     │ ╚═════════════════════════════╝ │            │
   │             │◄────────────────┤                │                │            │
   │◄────────────┤                 │                │                │            │
-  │  Show Error │                 │                │                │            │
-  │   Message   │                 │                │                │            │
+  │  Tampilkan  │                 │                │                │            │
+  │  Pesan      │                 │                │                │            │
+  │  Error      │                 │                │                │            │
   │             │                 │ ╔═════════════════════════════╗ │            │
-  │             │                 │ ║  Alt [User Found]           ║ │            │
+  │             │                 │ ║  Alt [Pengguna Ditemukan]   ║ │            │
   │             │                 │ ╠═════════════════════════════╣ │            │
-  │             │                 │ ║  Verify Password Hash       ║ │            │
+  │             │                 │ ║  Verifikasi Hash Password   ║ │            │
   │             │                 │ ║  (bcrypt compare)           ║ │            │
   │             │                 │ ╚══════════════╦══════════════╝ │            │
   │             │                 │                ▼                │            │
   │             │                 │  ╔═══════════════════════════╗  │            │
-  │             │                 │  ║ Alt [Password Mismatch]   ║  │            │
+  │             │                 │  ║ Alt [Password Tidak Cocok]║  │            │
   │             │                 │  ╠═══════════════════════════╣  │            │
-  │             │                 │  ║ Return Error              ║  │            │
-  │             │                 │  ║ "Invalid Credentials"     ║  │            │
+  │             │                 │  ║ Kembalikan Error          ║  │            │
+  │             │                 │  ║ "Kredensial Tidak Valid"  ║  │            │
   │             │   Error 401     │  ╚═══════════════════════════╝  │            │
   │             │◄────────────────┤                │                │            │
   │◄────────────┤                 │                │                │            │
-  │  Show Error │                 │                │                │            │
+  │  Tampilkan  │                 │                │                │            │
+  │  Error      │                 │                │                │            │
   │             │                 │  ╔═══════════════════════════╗  │            │
-  │             │                 │  ║ Alt [Password Match]      ║  │            │
+  │             │                 │  ║ Alt [Password Cocok]      ║  │            │
   │             │                 │  ╠═══════════════════════════╣  │            │
-  │             │                 │  ║ Check User Status         ║  │            │
-  │             │                 │  ║ (active/inactive/suspended║  │            │
+  │             │                 │  ║ Cek Status Pengguna       ║  │            │
+  │             │                 │  ║ (aktif/nonaktif/suspend)  ║  │            │
   │             │                 │  ╚═══════════╦═══════════════╝  │            │
   │             │                 │              ▼                  │            │
   │             │                 │  ╔═══════════════════════════╗  │            │
-  │             │                 │  ║ Alt [Status != active]    ║  │            │
+  │             │                 │  ║ Alt [Status != aktif]     ║  │            │
   │             │                 │  ╠═══════════════════════════╣  │            │
-  │             │                 │  ║ Return Error              ║  │            │
-  │             │                 │  ║ "Account suspended/       ║  │            │
-  │             │                 │  ║  inactive"                ║  │            │
+  │             │                 │  ║ Kembalikan Error          ║  │            │
+  │             │                 │  ║ "Akun ditangguhkan/       ║  │            │
+  │             │                 │  ║  tidak aktif"             ║  │            │
   │             │   Error 403     │  ╚═══════════════════════════╝  │            │
   │             │◄────────────────┤                │                │            │
   │◄────────────┤                 │                │                │            │
   │             │                 │  ╔═══════════════════════════╗  │            │
-  │             │                 │  ║ Alt [Status = active]     ║  │            │
+  │             │                 │  ║ Alt [Status = aktif]      ║  │            │
   │             │                 │  ╠═══════════════════════════╣  │            │
-  │             │                 │  ║ Create Session            ║  │            │
+  │             │                 │  ║ Buat Sesi                 ║  │            │
   │             │                 │  ║ (Laravel Session)         ║  │            │
   │             │                 │  ╚═══════════════════════════╝  │            │
   │             │                 │                │                │            │
-  │             │                 │  Store User ID in Session       │            │
+  │             │                 │  Simpan ID Pengguna di Sesi     │            │
   │             │                 │                │                │            │
-  │             │                 │  Generate Session Token         │            │
+  │             │                 │  Buat Token Sesi                │            │
   │             │                 │                │                │            │
-  │             │                 │  Update last_login              │            │
+  │             │                 │  Perbarui last_login            │            │
   │             │                 ├─────────────────────────────────►           │
   │             │                 │                │                │            │
   │             │                 │                │  UPDATE users  │            │
   │             │                 │                │  SET last_login = NOW()    │
   │             │                 │                │  WHERE id = ?  ├───────────►
   │             │                 │                │                │            │
-  │             │                 │                │   Success      │            │
+  │             │                 │                │   Berhasil     │            │
   │             │                 │◄─────────────────────────────────┼────────────┤
   │             │                 │                │                │            │
-  │             │                 │  Log Activity  │                │            │
-  │             │                 │  "User X logged in"             │            │
+  │             │                 │  Log Aktivitas │                │            │
+  │             │                 │  "Pengguna X masuk"             │            │
   │             │                 │                │                │            │
-  │             │                 │  Redirect Based on Role         │            │
-  │             │                 │  - Client → /client/dashboard   │            │
-  │             │                 │  - Therapist → /therapist/dash  │            │
+  │             │                 │  Alihkan Berdasarkan Peran      │            │
+  │             │                 │  - Klien → /client/dashboard    │            │
+  │             │                 │  - Terapis → /therapist/dash    │            │
   │             │                 │  - Admin → /admin/dashboard     │            │
   │             │                 │                │                │            │
   │             │   Redirect 302  │                │                │            │
   │             │◄────────────────┤                │                │            │
   │             │                 │                │                │            │
   │◄────────────┤                 │                │                │            │
-  │   Navigate  │                 │                │                │            │
-  │     to      │                 │                │                │            │
-  │  Dashboard  │                 │                │                │            │
+  │   Navigasi  │                 │                │                │            │
+  │     ke      │                 │                │                │            │
+  │  Dasbor     │                 │                │                │            │
   │             │                 │                │                │            │
 ```
 
 **Objek yang Terlibat:**
-- **Client**: End user (browser)
-- **Browser**: User agent
-- **LoginController**: Controller yang handle login logic
-- **AuthMiddleware**: Middleware untuk authentication dan authorization
-- **UserModel**: Model Eloquent untuk user data
-- **Database**: MySQL database
+- **Klien**: Pengguna akhir (browser)
+- **Peramban**: User agent
+- **LoginController**: Kontroler yang menangani logika login
+- **AuthMiddleware**: Middleware untuk autentikasi dan otorisasi
+- **UserModel**: Model Eloquent untuk data pengguna
+- **Database**: Basis data MySQL
 
 **Proses:**
-1. Client buka login page (GET request)
-2. Server return login form view
-3. User enter credentials (email + password)
-4. Submit form (POST request)
-5. System validate CSRF token
-6. System validate input format
-7. System query database untuk find user by email
-8. System check if user exists
-9. System verify password using bcrypt
-10. System check user account status
-11. If semua valid:
-    - Create session
-    - Store user ID dalam session
-    - Generate session token (cookie)
-    - Update last_login timestamp
-    - Log activity
-    - Redirect ke dashboard sesuai role
-12. If ada error (credentials invalid, account suspended, dll):
-    - Return error message
-    - Redirect back ke login form
+1. Klien membuka halaman login (GET request)
+2. Server mengembalikan tampilan formulir login
+3. Pengguna memasukkan kredensial (email + password)
+4. Kirim formulir (POST request)
+5. Sistem memvalidasi CSRF token
+6. Sistem memvalidasi format input
+7. Sistem melakukan kueri basis data untuk mencari pengguna berdasarkan email
+8. Sistem mengecek apakah pengguna ada
+9. Sistem memverifikasi password menggunakan bcrypt
+10. Sistem mengecek status akun pengguna
+11. Jika semua valid:
+    - Buat sesi
+    - Simpan ID pengguna dalam sesi
+    - Buat token sesi (cookie)
+    - Perbarui timestamp last_login
+    - Log aktivitas
+    - Alihkan ke dasbor sesuai peran
+12. Jika ada error (kredensial tidak valid, akun ditangguhkan, dll):
+    - Kembalikan pesan error
+    - Alihkan kembali ke formulir login
 
 ---
 
-### D. Class Diagram
+### D. Diagram Kelas
 
-Class Diagram menggambarkan struktur statis sistem, menunjukkan kelas-kelas, atribut, metode, dan hubungan antar kelas.
+Diagram Kelas menggambarkan struktur statis sistem, menunjukkan kelas-kelas, atribut, metode, dan hubungan antar kelas.
 
 ---
 
-**[GAMBAR 4.13 - Class Diagram (Laravel MVC Architecture)]** 🔴 **CRITICAL**
+**[GAMBAR 4.13 - Diagram Kelas (Arsitektur MVC Laravel)]** 🔴 **CRITICAL**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT CLASS DIAGRAM - LARAVEL MVC]                     │
+│   [SISIPKAN DIAGRAM KELAS - LARAVEL MVC]                   │
 │                                                             │
-│   CUR-HEART CLASS DIAGRAM                                  │
-│   Laravel 10.x MVC Architecture                            │
+│   DIAGRAM KELAS CUR-HEART                                  │
+│   Arsitektur MVC Laravel 10.x                              │
 │                                                             │
-│   MAIN CLASSES (15 Core Classes):                          │
+│   KELAS UTAMA (15 Kelas Inti):                             │
 │                                                             │
-│   MODELS (Eloquent - Data Layer):                          │
+│   MODEL (Eloquent - Lapisan Data):                         │
 │   ┌─────────────────────────┐                              │
 │   │ User                    │                              │
 │   ├─────────────────────────┤                              │
@@ -1273,7 +1291,7 @@ Class Diagram menggambarkan struktur statis sistem, menunjukkan kelas-kelas, atr
 │   │ + notifications(): HasMany                             │
 │   └─────────────────────────┘                              │
 │              △                                              │
-│              │ (inherits)                                   │
+│              │ (mewarisi)                                   │
 │     ┌────────┴────────┐                                    │
 │     │                 │                                    │
 │   ┌─▼──────────┐  ┌──▼─────────┐                          │
@@ -1429,64 +1447,65 @@ Component Architecture menggambarkan struktur high-level sistem, menunjukkan kom
 │   │  │  ├─────────────────────────────────┤      │ │  │
 │   │  │  │ Eloquent ORM                    │      │ │  │
 │   │  │  │ • User, Therapist, Client       │      │ │  │
-│   │  │  │ • Booking, Service, Payment     │      │ │  │
+│   │  │  │ • Pemesanan, Layanan, Pembayaran    │      │ │  │
 │   │  │  └──────┬──────────────────────────┘      │ │  │
 │   │  │         │                                  │ │  │
 │   │  └─────────┼──────────────────────────────────┘ │  │
 │   └────────────┼────────────────────────────────────┘  │
-│                │ Database Queries                      │
+│                │ Kueri Basis Data                      │
 │   ┌────────────▼────────────────────────────────────┐  │
-│   │ DATA LAYER (Persistence)                       │  │
+│   │ LAPISAN DATA (Persistence)                     │  │
 │   ├────────────────────────────────────────────────┤  │
 │   │                                                │  │
 │   │  ┌──────────────────┐                          │  │
 │   │  │  MySQL 8.0       │                          │  │
-│   │  │  (Primary DB)    │                          │  │
-│   │  │  • 15 Tables     │                          │  │
-│   │  │  • Normalized 3NF│                          │  │
+│   │  │  (DB Utama)      │                          │  │
+│   │  │  • 15 Tabel      │                          │  │
+│   │  │  • Dinormalisasi 3NF                        │  │
 │   │  └──────────────────┘                          │  │
 │   │                                                │  │
 │   └────────────────────────────────────────────────┘  │
 │                                                         │
 │   ┌─────────────────────────────────────────────────┐  │
-│   │ EXTERNAL INTEGRATIONS                           │  │
+│   │ INTEGRASI EKSTERNAL                             │  │
 │   ├─────────────────────────────────────────────────┤  │
 │   │                                                 │  │
 │   │  ┌────────────┐  ┌────────────┐  ┌──────────┐ │  │
 │   │  │ Midtrans   │  │  SendGrid  │  │  Twilio  │ │  │
-│   │  │ (Payment)  │  │  (Email)   │  │  (SMS)   │ │  │
+│   │  │(Pembayaran)│  │  (Email)   │  │  (SMS)   │ │  │
 │   │  └────────────┘  └────────────┘  └──────────┘ │  │
 │   │                                                 │  │
 │   └─────────────────────────────────────────────────┘  │
 │                                                         │
-│   KEY COMPONENTS:                                       │
-│   • Total Layers: 3 (Presentation, Application, Data)   │
+│   KOMPONEN KUNCI:                                       │
+│   • Total Lapisan: 3 (Presentasi, Aplikasi, Data)      │
 │   • Framework: Laravel 10.x (PHP 8.1)                   │
 │   • Frontend: Blade + Tailwind CSS + Alpine.js          │
-│   • ORM: Eloquent (Active Record pattern)               │
-│   • Database: MySQL 8.0                                 │
-│   • External APIs: 3 (Payment, Email, SMS)              │
+│   • ORM: Eloquent (pola Active Record)                  │
+│   • Basis Data: MySQL 8.0                               │
+│   • API Eksternal: 3 (Pembayaran, Email, SMS)           │
 │                                                         │
-│   COMMUNICATION PATTERNS:                               │
-│   • Client ↔ Server: HTTP/HTTPS (RESTful-like)          │
-│   • Server ↔ Database: PDO/MySQL driver                 │
-│   • Server ↔ External: HTTP REST APIs                   │
+│   POLA KOMUNIKASI:                                      │
+│   • Klien ↔ Server: HTTP/HTTPS (mirip RESTful)          │
+│   • Server ↔ Basis Data: PDO/driver MySQL               │
+│   • Server ↔ Eksternal: HTTP REST APIs                  │
 │                                                         │
-│   Format: Component/Architecture Diagram PNG            │
-│   Recommended size: 2000x1600px                         │
-│   Style: Layered architecture dengan clear boundaries   │
+│   Format: Diagram Komponen/Arsitektur PNG               │
+│   Ukuran rekomendasi: 2000x1600px                       │
+│   Gaya: Arsitektur berlapis dengan batas jelas          │
 │                                                         │
 │   File: assets/images/component-architecture.png        │
 │   Tool: draw.io, Lucidchart, Visual Paradigm           │
 │                                                         │
-│   PRIORITY: P1 - CRITICAL                               │
-│   Must show: All layers, components, communication flow │
+│   PRIORITAS: P1 - CRITICAL                              │
+│   Harus menampilkan: Semua lapisan, komponen, alur      │
+│                     komunikasi                          │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.14: Component Architecture Diagram sistem CUR-HEART dengan 3-tier architecture (Presentation, Application, Data), menunjukkan Laravel framework structure dan external integrations_
+_Gambar 4.14: Diagram Arsitektur Komponen sistem CUR-HEART dengan arsitektur 3-tier (Presentasi, Aplikasi, Data), menampilkan struktur framework Laravel dan integrasi eksternal_
 
 ---
 
-**[File ini mencakup Use Case, Activity, Sequence, Class Diagram, dan Component Architecture. Lanjut ke Design System di file terpisah]**
+**[File ini mencakup Diagram Kasus Penggunaan, Aktivitas, Sekuens, Kelas, dan Arsitektur Komponen. Lanjut ke Sistem Desain di file terpisah]**

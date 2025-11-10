@@ -1,49 +1,49 @@
 # BAB IV - HASIL PENELITIAN DAN PEMBAHASAN (Bagian 2)
 
-## 4.3.3 Database Design
+## 4.3.3 Perancangan Basis Data
 
-Sistem menggunakan relational database (MySQL) dengan schema yang dinormalisasi hingga Third Normal Form (3NF) untuk mengurangi redundansi dan menjaga data integrity.
+Sistem menggunakan basis data relasional (MySQL) dengan skema yang dinormalisasi hingga Bentuk Normal Ketiga (*Third Normal Form*/3NF) untuk mengurangi redundansi dan menjaga integritas data.
 
-### Entity Relationship Diagram (ERD)
+### Diagram Relasi Entitas (*Entity Relationship Diagram*/ERD)
 
 ---
 
-**[GAMBAR 4.9 - Entity Relationship Diagram (ERD) - 15 Tables]** 🔴 **CRITICAL**
+**[GAMBAR 4.9 - Diagram Relasi Entitas (ERD) - 15 Tabel]** 🔴 **KRITIS**
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   [INSERT COMPREHENSIVE ERD - 15 ENTITIES]                 │
+│   [SISIPKAN ERD KOMPREHENSIF - 15 ENTITAS]                 │
 │                                                             │
-│   CUR-HEART DATABASE SCHEMA (MySQL)                        │
-│   Normalization: Third Normal Form (3NF)                   │
+│   SKEMA BASIS DATA CUR-HEART (MySQL)                       │
+│   Normalisasi: Bentuk Normal Ketiga (3NF)                  │
 │                                                             │
-│   CORE ENTITIES (5):                                       │
+│   ENTITAS INTI (5):                                        │
 │   ┌──────────┐  ┌──────────┐  ┌──────────┐                │
 │   │  users   │  │therapists│  │ clients  │                │
-│   │  (auth)  │  │ (staff)  │  │ (cust.)  │                │
+│   │ (autent.)│  │ (staf)   │  │ (pelang.)│                │
 │   └──────────┘  └──────────┘  └──────────┘                │
 │        │             │              │                       │
 │        └─────────────┴──────────────┘                      │
 │                      │                                      │
 │   ┌──────────┐  ┌───▼──────┐  ┌──────────┐                │
 │   │ services │  │ bookings │  │ payments │                │
-│   │ (master) │  │ (trans.) │  │ (fin.)   │                │
+│   │ (master) │  │(transaksi)│  │(keuangan)│                │
 │   └──────────┘  └──────────┘  └──────────┘                │
 │                                                             │
-│   SUPPORTING ENTITIES (10):                                │
-│   • therapist_services (many-to-many)                      │
-│   • therapist_availability (schedule)                      │
-│   • therapist_blocked_dates (exceptions)                   │
-│   • education (therapist qualifications)                   │
-│   • certifications (credentials)                           │
-│   • therapy_notes (session records)                        │
-│   • client_progress (tracking metrics)                     │
-│   • reviews (ratings & feedback)                           │
-│   • notifications (system alerts)                          │
-│   • activity_logs (audit trail)                            │
+│   ENTITAS PENDUKUNG (10):                                  │
+│   • therapist_services (banyak-ke-banyak)                  │
+│   • therapist_availability (jadwal)                        │
+│   • therapist_blocked_dates (pengecualian)                 │
+│   • education (kualifikasi terapis)                        │
+│   • certifications (kredensial)                            │
+│   • therapy_notes (catatan sesi)                           │
+│   • client_progress (pelacakan metrik)                     │
+│   • reviews (penilaian & umpan balik)                      │
+│   • notifications (pemberitahuan sistem)                   │
+│   • activity_logs (jejak audit)                            │
 │                                                             │
-│   KEY RELATIONSHIPS:                                        │
+│   RELASI KUNCI:                                             │
 │   users (1) ─→ (1) therapists/clients                      │
 │   therapists (M) ─→ (M) services (via pivot)               │
 │   bookings (M) ─→ (1) clients/therapists/services          │
@@ -52,58 +52,59 @@ Sistem menggunakan relational database (MySQL) dengan schema yang dinormalisasi 
 │   clients (1) ─→ (M) client_progress                       │
 │   therapists (1) ─→ (M) reviews                            │
 │                                                             │
-│   CRITICAL FEATURES:                                        │
-│   ✅ Foreign Key Constraints (data integrity)              │
-│   ✅ Soft Deletes (audit trail preservation)               │
-│   ✅ Indexing (performance optimization)                   │
-│   ✅ ENUM Fields (data validation)                         │
-│   ✅ JSON Fields (flexible metadata storage)               │
-│   ✅ Timestamps (created_at, updated_at)                   │
+│   FITUR KRITIS:                                             │
+│   ✅ Batasan Kunci Asing (integritas data)                 │
+│   ✅ Penghapusan Lunak (preservasi jejak audit)            │
+│   ✅ Pengindeksan (optimasi kinerja)                       │
+│   ✅ Bidang ENUM (validasi data)                           │
+│   ✅ Bidang JSON (penyimpanan metadata fleksibel)          │
+│   ✅ Stempel Waktu (created_at, updated_at)                │
 │                                                             │
-│   TOTAL STATISTICS:                                         │
-│   • Total Tables: 15                                        │
-│   • Primary Keys: 15                                        │
-│   • Foreign Keys: 28                                        │
-│   • Unique Constraints: 8                                   │
-│   • Indexes: 35+                                            │
-│   • Estimated Row Count (1 year): 50,000+                  │
+│   STATISTIK TOTAL:                                          │
+│   • Total Tabel: 15                                         │
+│   • Kunci Primer: 15                                        │
+│   • Kunci Asing: 28                                         │
+│   • Batasan Unik: 8                                         │
+│   • Indeks: 35+                                             │
+│   • Estimasi Jumlah Baris (1 tahun): 50.000+               │
 │                                                             │
-│   NORMALIZATION COMPLIANCE:                                 │
-│   1NF: ✅ Atomic values, no repeating groups               │
-│   2NF: ✅ No partial dependencies                          │
-│   3NF: ✅ No transitive dependencies                       │
+│   KEPATUHAN NORMALISASI:                                    │
+│   1NF: ✅ Nilai atomik, tanpa grup berulang                │
+│   2NF: ✅ Tanpa ketergantungan parsial                     │
+│   3NF: ✅ Tanpa ketergantungan transitif                   │
 │                                                             │
-│   Format: ERD Crow's Foot Notation PNG                     │
-│   Recommended size: 2400x1600px (large, detailed)          │
-│   Style: Professional dengan color-coded entity types      │
-│   Colors: Users (blue), Transactions (green),              │
-│           Supporting (yellow), System (gray)                │
+│   Format: ERD Notasi Crow's Foot PNG                       │
+│   Ukuran yang direkomendasikan: 2400x1600px (besar)        │
+│   Gaya: Profesional dengan tipe entitas berkode warna      │
+│   Warna: Users (biru), Transactions (hijau),               │
+│           Supporting (kuning), System (abu-abu)             │
 │                                                             │
 │   File: assets/images/erd-curheart-15-tables.png           │
-│   Tool: MySQL Workbench (recommended) atau Visual Paradigm │
-│   Alternative: dbdiagram.io, draw.io, Lucidchart           │
+│   Alat: MySQL Workbench (direkomendasikan) atau Visual     │
+│         Paradigm                                            │
+│   Alternatif: dbdiagram.io, draw.io, Lucidchart            │
 │                                                             │
-│   PRIORITY: P1 - CRITICAL                                   │
-│   Must include: All 15 tables, relationships, cardinality,  │
-│                 primary/foreign keys clearly labeled        │
+│   PRIORITAS: P1 - KRITIS                                    │
+│   Harus menyertakan: Semua 15 tabel, relasi, kardinalitas, │
+│                      kunci primer/asing yang jelas          │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-_Gambar 4.9: Entity Relationship Diagram (ERD) lengkap sistem CUR-HEART dengan 15 tables, 28 foreign keys, normalized to 3NF_
+_Gambar 4.9: Diagram Relasi Entitas (ERD) lengkap sistem CUR-HEART dengan 15 tabel, 28 kunci asing, dinormalisasi hingga 3NF_
 
 ---
 
-Berikut adalah Entity Relationship Diagram yang menggambarkan struktur database sistem:
+Berikut adalah Diagram Relasi Entitas yang menggambarkan struktur basis data sistem:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                            DATABASE SCHEMA                                   │
-│                     CUR-HEART Information System                             │
+│                            SKEMA BASIS DATA                                  │
+│                  Sistem Informasi CUR-HEART                                  │
 └─────────────────────────────────────────────────────────────────────────────┘
 
 ┌─────────────┐
-│    users    │ (Central Authentication Table)
+│    users    │ (Tabel Autentikasi Pusat)
 ├─────────────┤
 │ id (PK)     │
 │ name        │
@@ -224,68 +225,68 @@ Berikut adalah Entity Relationship Diagram yang menggambarkan struktur database 
                                                 └────────────────┘
 ```
 
-### Deskripsi Tabel-tabel Utama
+### Deskripsi Tabel-Tabel Utama
 
 #### 1. Tabel `users`
-Tabel central untuk autentikasi semua pengguna sistem (admin, therapist, client).
+Tabel pusat untuk autentikasi semua pengguna sistem (admin, terapis, klien).
 
-**Tabel 4.14 Deskripsi Tabel Database - Users**
+**Tabel 4.14 Deskripsi Tabel Basis Data - Users**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
 | `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik pengguna |
 | `name` | VARCHAR(255) | NOT NULL | Nama lengkap pengguna |
-| `email` | VARCHAR(255) | UNIQUE, NOT NULL | Email untuk login |
-| `password` | VARCHAR(255) | NOT NULL | Password ter-hash (bcrypt) |
-| `role` | ENUM | NOT NULL | Role: 'admin', 'therapist', 'client' |
+| `email` | VARCHAR(255) | UNIQUE, NOT NULL | Surel untuk masuk sistem |
+| `password` | VARCHAR(255) | NOT NULL | Kata sandi terenkripsi (bcrypt) |
+| `role` | ENUM | NOT NULL | Peran: 'admin', 'therapist', 'client' |
 | `phone` | VARCHAR(20) | NULLABLE | Nomor telepon |
 | `status` | ENUM | DEFAULT 'active' | Status: 'active', 'inactive', 'suspended' |
-| `email_verified_at` | TIMESTAMP | NULLABLE | Waktu verifikasi email |
-| `remember_token` | VARCHAR(100) | NULLABLE | Token "remember me" |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
-| `deleted_at` | TIMESTAMP | NULLABLE | Soft delete timestamp |
+| `email_verified_at` | TIMESTAMP | NULLABLE | Waktu verifikasi surel |
+| `remember_token` | VARCHAR(100) | NULLABLE | Token "ingat saya" |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
+| `deleted_at` | TIMESTAMP | NULLABLE | Stempel waktu penghapusan lunak |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `email`
-- INDEX pada `role` untuk filtering cepat
+- INDEX pada `role` untuk penyaringan cepat
 
 **Relasi:**
 - Has One: `therapists` (jika role = 'therapist')
 - Has One: `clients` (jika role = 'client')
-- Has Many: `messages` (sebagai sender atau receiver)
+- Has Many: `messages` (sebagai pengirim atau penerima)
 
 ---
 
 #### 2. Tabel `therapists`
-Extended profile untuk users dengan role therapist.
+Profil lengkap untuk pengguna dengan peran terapis.
 
-**Tabel 4.15 Deskripsi Tabel Database - Therapists**
+**Tabel 4.15 Deskripsi Tabel Basis Data - Therapists**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
 | `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik terapis |
-| `user_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Referensi ke `users.id` (CASCADE ON DELETE) |
-| `credentials` | VARCHAR(255) | NULLABLE | Gelar/kredensial (e.g., "M.Psi., C.Ht.") |
-| `specializations` | TEXT/JSON | NULLABLE | Spesialisasi (e.g., "Anxiety, Trauma, Stress") |
-| `bio` | TEXT | NULLABLE | Biografi profesional (max 1000 kata) |
+| `user_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Rujukan ke `users.id` (CASCADE ON DELETE) |
+| `credentials` | VARCHAR(255) | NULLABLE | Gelar/kredensial (mis., "M.Psi., C.Ht.") |
+| `specializations` | TEXT/JSON | NULLABLE | Spesialisasi (mis., "Kecemasan, Trauma, Stres") |
+| `bio` | TEXT | NULLABLE | Biografi profesional (maks. 1000 kata) |
 | `years_experience` | INT UNSIGNED | DEFAULT 0 | Tahun pengalaman praktik |
-| `rating` | DECIMAL(3,2) | DEFAULT 0.00 | Rating rata-rata (range 0.00-5.00) |
-| `total_reviews` | INT UNSIGNED | DEFAULT 0 | Jumlah total review yang diterima |
+| `rating` | DECIMAL(3,2) | DEFAULT 0.00 | Penilaian rata-rata (rentang 0,00-5,00) |
+| `total_reviews` | INT UNSIGNED | DEFAULT 0 | Jumlah total ulasan yang diterima |
 | `is_verified` | BOOLEAN | DEFAULT FALSE | Status verifikasi oleh admin |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `user_id`
-- INDEX pada `rating` untuk sorting
-- INDEX pada `is_verified` untuk filtering
+- INDEX pada `rating` untuk pengurutan
+- INDEX pada `is_verified` untuk penyaringan
 
 **Relasi:**
 - Belongs To: `users`
-- Has Many: `therapist_services` (many-to-many dengan services)
+- Has Many: `therapist_services` (banyak-ke-banyak dengan services)
 - Has Many: `bookings`
 - Has Many: `therapist_availability`
 - Has Many: `therapist_blocked_dates`
@@ -296,23 +297,23 @@ Extended profile untuk users dengan role therapist.
 ---
 
 #### 3. Tabel `clients`
-Extended profile untuk users dengan role client.
+Profil lengkap untuk pengguna dengan peran klien.
 
-**Tabel 4.16 Deskripsi Tabel Database - Clients**
+**Tabel 4.16 Deskripsi Tabel Basis Data - Clients**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
 | `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik klien |
-| `user_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Referensi ke `users.id` (CASCADE ON DELETE) |
+| `user_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Rujukan ke `users.id` (CASCADE ON DELETE) |
 | `date_of_birth` | DATE | NULLABLE | Tanggal lahir klien |
 | `gender` | ENUM | NULLABLE | Jenis kelamin: 'male', 'female', 'other' |
 | `address` | TEXT | NULLABLE | Alamat lengkap |
 | `emergency_contact` | VARCHAR(255) | NULLABLE | Kontak darurat (nama & nomor) |
 | `medical_history` | TEXT | NULLABLE, ENCRYPTED | Riwayat medis relevan (terenkripsi) |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `user_id`
 
@@ -328,51 +329,51 @@ Extended profile untuk users dengan role client.
 #### 4. Tabel `services`
 Katalog semua layanan terapi yang ditawarkan.
 
-**Tabel 4.17 Deskripsi Tabel Database - Services**
+**Tabel 4.17 Deskripsi Tabel Basis Data - Services**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
 | `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik layanan |
-| `name` | VARCHAR(255) | NOT NULL | Nama layanan (e.g., "Hypnotherapy untuk Kecemasan") |
-| `slug` | VARCHAR(255) | UNIQUE, NOT NULL | URL-friendly identifier (e.g., "hypnotherapy-kecemasan") |
+| `name` | VARCHAR(255) | NOT NULL | Nama layanan (mis., "Hipnoterapi untuk Kecemasan") |
+| `slug` | VARCHAR(255) | UNIQUE, NOT NULL | Pengidentifikasi ramah URL (mis., "hipnoterapi-kecemasan") |
 | `description` | TEXT | NOT NULL | Deskripsi lengkap layanan |
 | `duration` | INT UNSIGNED | NOT NULL | Durasi sesi dalam menit (60, 90, 120) |
 | `price` | DECIMAL(10,2) | NOT NULL | Harga layanan dalam Rupiah |
-| `category` | VARCHAR(100) | NULLABLE | Kategori (e.g., "Stress Management", "Personal Growth") |
-| `icon` | VARCHAR(255) | NULLABLE | Nama file icon/image |
+| `category` | VARCHAR(100) | NULLABLE | Kategori (mis., "Manajemen Stres", "Pengembangan Diri") |
+| `icon` | VARCHAR(255) | NULLABLE | Nama berkas ikon/gambar |
 | `status` | ENUM | DEFAULT 'active' | Status: 'active', 'inactive' |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `slug`
 - INDEX pada `status` dan `category`
 
 **Relasi:**
-- Has Many: `therapist_services` (many-to-many dengan therapists)
+- Has Many: `therapist_services` (banyak-ke-banyak dengan therapists)
 - Has Many: `bookings`
 
 ---
 
 #### 5. Tabel `therapist_services`
-Pivot table untuk relasi many-to-many antara therapists dan services.
+Tabel pivot untuk relasi banyak-ke-banyak antara terapis dan layanan.
 
-**Tabel 4.22 Deskripsi Tabel Database - Therapist Services**
+**Tabel 4.22 Deskripsi Tabel Basis Data - Therapist Services**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
 | `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik relasi |
-| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `therapists.id` (CASCADE ON DELETE) |
-| `service_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `services.id` (CASCADE ON DELETE) |
-| `is_primary` | BOOLEAN | DEFAULT FALSE | Apakah ini primary specialization terapis |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `therapists.id` (CASCADE ON DELETE) |
+| `service_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `services.id` (CASCADE ON DELETE) |
+| `is_primary` | BOOLEAN | DEFAULT FALSE | Apakah ini spesialisasi utama terapis |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
-- UNIQUE COMPOSITE INDEX pada (`therapist_id`, `service_id`) untuk prevent duplicates
-- INDEX pada `therapist_id` dan `service_id` untuk queries
+- UNIQUE COMPOSITE INDEX pada (`therapist_id`, `service_id`) untuk mencegah duplikasi
+- INDEX pada `therapist_id` dan `service_id` untuk kueri
 
 **Relasi:**
 - Belongs To: `therapists`
@@ -381,40 +382,40 @@ Pivot table untuk relasi many-to-many antara therapists dan services.
 ---
 
 #### 6. Tabel `bookings`
-Records semua booking/appointment.
+Rekaman semua pemesanan/janji temu.
 
-**Tabel 4.18 Deskripsi Tabel Database - Bookings**
+**Tabel 4.18 Deskripsi Tabel Basis Data - Bookings**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik booking |
-| `booking_number` | VARCHAR(50) | UNIQUE, NOT NULL | Nomor booking (format: "BK-YYYYMMDD-XXXX") |
-| `client_id` | BIGINT UNSIGNED | FOREIGN KEY | Referensi ke `users.id` (client role) |
-| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY | Referensi ke `therapists.id` |
-| `service_id` | BIGINT UNSIGNED | FOREIGN KEY | Referensi ke `services.id` |
-| `booking_date` | DATE | NOT NULL | Tanggal appointment |
-| `time_slot` | TIME | NOT NULL | Jam mulai appointment |
-| `duration` | INT UNSIGNED | NOT NULL | Durasi dalam menit (dari service) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik pemesanan |
+| `booking_number` | VARCHAR(50) | UNIQUE, NOT NULL | Nomor pemesanan (format: "BK-YYYYMMDD-XXXX") |
+| `client_id` | BIGINT UNSIGNED | FOREIGN KEY | Rujukan ke `users.id` (peran klien) |
+| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY | Rujukan ke `therapists.id` |
+| `service_id` | BIGINT UNSIGNED | FOREIGN KEY | Rujukan ke `services.id` |
+| `booking_date` | DATE | NOT NULL | Tanggal janji temu |
+| `time_slot` | TIME | NOT NULL | Jam mulai janji temu |
+| `duration` | INT UNSIGNED | NOT NULL | Durasi dalam menit (dari layanan) |
 | `location_type` | ENUM | DEFAULT 'office' | Tipe: 'office', 'online' |
-| `meeting_link` | VARCHAR(500) | NULLABLE | Link meeting untuk online session |
+| `meeting_link` | VARCHAR(500) | NULLABLE | Tautan pertemuan untuk sesi daring |
 | `status` | ENUM | DEFAULT 'pending' | Status: 'pending', 'confirmed', 'completed', 'cancelled', 'no_show' |
 | `cancellation_reason` | TEXT | NULLABLE | Alasan pembatalan |
-| `cancelled_by` | BIGINT UNSIGNED | NULLABLE | User ID yang membatalkan |
+| `cancelled_by` | BIGINT UNSIGNED | NULLABLE | ID pengguna yang membatalkan |
 | `cancelled_at` | TIMESTAMP | NULLABLE | Waktu pembatalan |
-| `notes` | TEXT | NULLABLE | Catatan dari client |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
-| `deleted_at` | TIMESTAMP | NULLABLE | Soft delete timestamp |
+| `notes` | TEXT | NULLABLE | Catatan dari klien |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
+| `deleted_at` | TIMESTAMP | NULLABLE | Stempel waktu penghapusan lunak |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `booking_number`
 - INDEX pada `client_id`, `therapist_id`, `service_id`
 - INDEX pada `booking_date`, `status`
-- COMPOSITE INDEX pada (`therapist_id`, `booking_date`, `time_slot`) untuk conflict checking
+- COMPOSITE INDEX pada (`therapist_id`, `booking_date`, `time_slot`) untuk pemeriksaan konflik
 
 **Relasi:**
-- Belongs To: `users` (client)
+- Belongs To: `users` (klien)
 - Belongs To: `therapists`
 - Belongs To: `services`
 - Has One: `payment`
@@ -424,32 +425,32 @@ Records semua booking/appointment.
 ---
 
 #### 7. Tabel `payments`
-Transaction records untuk semua pembayaran.
+Rekaman transaksi untuk semua pembayaran.
 
-**Tabel 4.19 Deskripsi Tabel Database - Payments**
+**Tabel 4.19 Deskripsi Tabel Basis Data - Payments**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik payment |
-| `booking_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Referensi ke `bookings.id` (CASCADE ON DELETE) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik pembayaran |
+| `booking_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Rujukan ke `bookings.id` (CASCADE ON DELETE) |
 | `amount` | DECIMAL(10,2) | NOT NULL | Jumlah pembayaran dalam Rupiah |
 | `method` | ENUM | NOT NULL | Metode: 'credit_card', 'bank_transfer', 'ewallet', 'qris', 'cash' |
 | `status` | ENUM | DEFAULT 'pending' | Status: 'pending', 'processing', 'completed', 'failed', 'refunded' |
-| `transaction_id` | VARCHAR(255) | UNIQUE, NULLABLE | ID transaksi dari payment gateway |
-| `payment_gateway` | VARCHAR(50) | NULLABLE | Nama gateway (e.g., 'midtrans', 'xendit') |
-| `payment_details` | JSON | NULLABLE | Data response dari gateway |
-| `proof_of_payment` | VARCHAR(255) | NULLABLE | Path file bukti transfer |
-| `paid_at` | TIMESTAMP | NULLABLE | Waktu pembayaran sukses |
-| `refunded_at` | TIMESTAMP | NULLABLE | Waktu refund |
-| `refund_amount` | DECIMAL(10,2) | NULLABLE | Jumlah refund (jika ada) |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `transaction_id` | VARCHAR(255) | UNIQUE, NULLABLE | ID transaksi dari gerbang pembayaran |
+| `payment_gateway` | VARCHAR(50) | NULLABLE | Nama gerbang (mis., 'midtrans', 'xendit') |
+| `payment_details` | JSON | NULLABLE | Data respons dari gerbang |
+| `proof_of_payment` | VARCHAR(255) | NULLABLE | Jalur berkas bukti transfer |
+| `paid_at` | TIMESTAMP | NULLABLE | Waktu pembayaran berhasil |
+| `refunded_at` | TIMESTAMP | NULLABLE | Waktu pengembalian dana |
+| `refund_amount` | DECIMAL(10,2) | NULLABLE | Jumlah pengembalian dana (jika ada) |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
-- UNIQUE INDEX pada `booking_id` (one payment per booking)
+- UNIQUE INDEX pada `booking_id` (satu pembayaran per pemesanan)
 - INDEX pada `transaction_id`, `status`
-- INDEX pada `paid_at` untuk reporting
+- INDEX pada `paid_at` untuk pelaporan
 
 **Relasi:**
 - Belongs To: `bookings`
@@ -457,25 +458,25 @@ Transaction records untuk semua pembayaran.
 ---
 
 #### 8. Tabel `sessions`
-Actual therapy sessions yang dilaksanakan.
+Sesi terapi aktual yang dilaksanakan.
 
-**Tabel 4.20 Deskripsi Tabel Database - Sessions**
+**Tabel 4.20 Deskripsi Tabel Basis Data - Sessions**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik session |
-| `booking_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Referensi ke `bookings.id` (CASCADE ON DELETE) |
-| `started_at` | TIMESTAMP | NULLABLE | Waktu mulai session aktual |
-| `ended_at` | TIMESTAMP | NULLABLE | Waktu selesai session aktual |
-| `actual_duration` | INT UNSIGNED | NULLABLE | Durasi aktual dalam menit (calculated) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik sesi |
+| `booking_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Rujukan ke `bookings.id` (CASCADE ON DELETE) |
+| `started_at` | TIMESTAMP | NULLABLE | Waktu mulai sesi aktual |
+| `ended_at` | TIMESTAMP | NULLABLE | Waktu selesai sesi aktual |
+| `actual_duration` | INT UNSIGNED | NULLABLE | Durasi aktual dalam menit (terhitung) |
 | `status` | ENUM | DEFAULT 'scheduled' | Status: 'scheduled', 'in_progress', 'completed', 'cancelled' |
 | `attendance_status` | ENUM | NULLABLE | Kehadiran: 'present', 'absent', 'late' |
 | `session_type` | ENUM | NOT NULL | Tipe: 'first_consultation', 'follow_up', 'final' |
-| `notes` | TEXT | NULLABLE | Catatan singkat session |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `notes` | TEXT | NULLABLE | Catatan singkat sesi |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `booking_id`
 - INDEX pada `status`, `started_at`
@@ -487,30 +488,30 @@ Actual therapy sessions yang dilaksanakan.
 ---
 
 #### 9. Tabel `session_notes`
-Detailed documentation setiap session oleh therapist.
+Dokumentasi rinci setiap sesi oleh terapis.
 
-**Tabel 4.23 Deskripsi Tabel Database - Session Notes**
+**Tabel 4.23 Deskripsi Tabel Basis Data - Session Notes**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik session note |
-| `session_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Referensi ke `sessions.id` (CASCADE ON DELETE) |
-| `condition` | VARCHAR(255) | NULLABLE | Kondisi client saat datang |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik catatan sesi |
+| `session_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Rujukan ke `sessions.id` (CASCADE ON DELETE) |
+| `condition` | VARCHAR(255) | NULLABLE | Kondisi klien saat datang |
 | `chief_complaint` | TEXT | NULLABLE | Keluhan utama yang disampaikan |
-| `discussion` | TEXT | NULLABLE | Topik yang didiskusikan selama session |
-| `techniques_used` | TEXT/JSON | NULLABLE | Teknik terapi yang digunakan (array) |
-| `client_response` | TEXT | NULLABLE | Respons dan reaksi client terhadap terapi |
-| `progress_score` | INT | CHECK (1-10), NULLABLE | Skor progress subjektif dari terapis |
-| `breakthrough` | BOOLEAN | DEFAULT FALSE | Apakah terjadi breakthrough signifikan |
-| `goals_next_session` | TEXT | NULLABLE | Goals dan target untuk session berikutnya |
-| `observations` | TEXT | NULLABLE | Observasi terapis (private, tidak dibagikan) |
-| `recommendations` | TEXT | NULLABLE | Rekomendasi untuk client |
-| `homework` | TEXT | NULLABLE | Tugas/latihan untuk client |
-| `is_shared_with_client` | BOOLEAN | DEFAULT FALSE | Apakah note dibagikan ke client |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `discussion` | TEXT | NULLABLE | Topik yang didiskusikan selama sesi |
+| `techniques_used` | TEXT/JSON | NULLABLE | Teknik terapi yang digunakan (larik) |
+| `client_response` | TEXT | NULLABLE | Respons dan reaksi klien terhadap terapi |
+| `progress_score` | INT | CHECK (1-10), NULLABLE | Skor kemajuan subjektif dari terapis |
+| `breakthrough` | BOOLEAN | DEFAULT FALSE | Apakah terjadi terobosan signifikan |
+| `goals_next_session` | TEXT | NULLABLE | Tujuan dan target untuk sesi berikutnya |
+| `observations` | TEXT | NULLABLE | Pengamatan terapis (pribadi, tidak dibagikan) |
+| `recommendations` | TEXT | NULLABLE | Rekomendasi untuk klien |
+| `homework` | TEXT | NULLABLE | Tugas/latihan untuk klien |
+| `is_shared_with_client` | BOOLEAN | DEFAULT FALSE | Apakah catatan dibagikan ke klien |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - UNIQUE INDEX pada `session_id`
 - INDEX pada `progress_score`
@@ -521,24 +522,24 @@ Detailed documentation setiap session oleh therapist.
 ---
 
 #### 10. Tabel `reviews`
-Client reviews untuk therapists setelah session.
+Ulasan klien untuk terapis setelah sesi.
 
-**Tabel 4.21 Deskripsi Tabel Database - Reviews**
+**Tabel 4.21 Deskripsi Tabel Basis Data - Reviews**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik review |
-| `booking_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Referensi ke `bookings.id` (CASCADE ON DELETE) |
-| `rating` | INT | NOT NULL, CHECK (1-5) | Rating 1-5 bintang untuk layanan |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik ulasan |
+| `booking_id` | BIGINT UNSIGNED | FOREIGN KEY, UNIQUE | Rujukan ke `bookings.id` (CASCADE ON DELETE) |
+| `rating` | INT | NOT NULL, CHECK (1-5) | Penilaian 1-5 bintang untuk layanan |
 | `comment` | TEXT | NULLABLE | Komentar dan ulasan dari klien |
-| `is_anonymous` | BOOLEAN | DEFAULT FALSE | Tampilkan review secara anonim |
+| `is_anonymous` | BOOLEAN | DEFAULT FALSE | Tampilkan ulasan secara anonim |
 | `is_approved` | BOOLEAN | DEFAULT TRUE | Status persetujuan untuk publikasi |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu review dibuat |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu ulasan dibuat |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
-- UNIQUE INDEX pada `booking_id` (one review per booking)
+- UNIQUE INDEX pada `booking_id` (satu ulasan per pemesanan)
 - INDEX pada `rating`, `is_approved`
 
 **Relasi:**
@@ -547,88 +548,88 @@ Client reviews untuk therapists setelah session.
 ---
 
 #### 11. Tabel `therapist_availability`
-Regular weekly schedule therapists.
+Jadwal mingguan reguler terapis.
 
-**Tabel 4.24 Deskripsi Tabel Database - Therapist Availability**
+**Tabel 4.24 Deskripsi Tabel Basis Data - Therapist Availability**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik availability |
-| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `therapists.id` (CASCADE ON DELETE) |
-| `day_of_week` | INT | NOT NULL, CHECK (0-6) | Hari dalam minggu (0=Sunday, 6=Saturday) |
-| `start_time` | TIME | NOT NULL | Jam mulai kerja (e.g., 09:00) |
-| `end_time` | TIME | NOT NULL | Jam selesai kerja (e.g., 17:00) |
-| `is_available` | BOOLEAN | DEFAULT TRUE | Toggle on/off untuk specific day |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik ketersediaan |
+| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `therapists.id` (CASCADE ON DELETE) |
+| `day_of_week` | INT | NOT NULL, CHECK (0-6) | Hari dalam minggu (0=Minggu, 6=Sabtu) |
+| `start_time` | TIME | NOT NULL | Jam mulai kerja (mis., 09:00) |
+| `end_time` | TIME | NOT NULL | Jam selesai kerja (mis., 17:00) |
+| `is_available` | BOOLEAN | DEFAULT TRUE | Pengaturan hidup/mati untuk hari tertentu |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
-- UNIQUE COMPOSITE INDEX pada (`therapist_id`, `day_of_week`, `start_time`) untuk prevent overlaps
+- UNIQUE COMPOSITE INDEX pada (`therapist_id`, `day_of_week`, `start_time`) untuk mencegah tumpang tindih
 - INDEX pada `therapist_id`
 
 **Relasi:**
 - Belongs To: `therapists`
 
-**Business Logic:**
-- System menggunakan tabel ini untuk generate available time slots
-- Buffer time (15 minutes) ditambahkan antara sessions
-- Break times di-handle sebagai blocked periods
+**Logika Bisnis:**
+- Sistem menggunakan tabel ini untuk membangkitkan slot waktu tersedia
+- Waktu jeda (15 menit) ditambahkan antara sesi
+- Waktu istirahat ditangani sebagai periode terblokir
 
 ---
 
 #### 12. Tabel `therapist_blocked_dates`
-Specific dates di mana therapist tidak available (cuti, libur).
+Tanggal tertentu di mana terapis tidak tersedia (cuti, libur).
 
-**Tabel 4.25 Deskripsi Tabel Database - Therapist Blocked Dates**
+**Tabel 4.25 Deskripsi Tabel Basis Data - Therapist Blocked Dates**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik blocked date |
-| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `therapists.id` (CASCADE ON DELETE) |
-| `blocked_date` | DATE | NOT NULL | Tanggal yang di-block |
-| `reason` | VARCHAR(255) | NULLABLE | Alasan blocking (e.g., "Cuti", "Sakit", "Libur Nasional") |
-| `is_full_day` | BOOLEAN | DEFAULT TRUE | Full day atau partial block |
-| `start_time` | TIME | NULLABLE | Jam mulai blocking jika partial |
-| `end_time` | TIME | NULLABLE | Jam selesai blocking jika partial |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik tanggal terblokir |
+| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `therapists.id` (CASCADE ON DELETE) |
+| `blocked_date` | DATE | NOT NULL | Tanggal yang diblokir |
+| `reason` | VARCHAR(255) | NULLABLE | Alasan pemblokiran (mis., "Cuti", "Sakit", "Libur Nasional") |
+| `is_full_day` | BOOLEAN | DEFAULT TRUE | Seharian penuh atau sebagian |
+| `start_time` | TIME | NULLABLE | Jam mulai pemblokiran jika sebagian |
+| `end_time` | TIME | NULLABLE | Jam selesai pemblokiran jika sebagian |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - INDEX pada (`therapist_id`, `blocked_date`)
 
 **Relasi:**
 - Belongs To: `therapists`
 
-**Business Logic:**
-- System check tabel ini sebelum show available dates
-- Blocked dates tidak muncul dalam calendar booking
+**Logika Bisnis:**
+- Sistem memeriksa tabel ini sebelum menampilkan tanggal tersedia
+- Tanggal terblokir tidak muncul dalam kalender pemesanan
 
 ---
 
 #### 13. Tabel `client_progress`
-Progress tracking metrics untuk clients.
+Pelacakan metrik kemajuan untuk klien.
 
-**Tabel 4.26 Deskripsi Tabel Database - Client Progress**
+**Tabel 4.26 Deskripsi Tabel Basis Data - Client Progress**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik progress record |
-| `client_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `clients.id` (CASCADE ON DELETE) |
-| `assessment_date` | DATE | NOT NULL | Tanggal assessment dilakukan |
-| `anxiety_level` | INT | CHECK (1-10), NULLABLE | Level kecemasan (1=rendah, 10=tinggi) |
-| `confidence_level` | INT | CHECK (1-10), NULLABLE | Level kepercayaan diri (1=rendah, 10=tinggi) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik rekaman kemajuan |
+| `client_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `clients.id` (CASCADE ON DELETE) |
+| `assessment_date` | DATE | NOT NULL | Tanggal penilaian dilakukan |
+| `anxiety_level` | INT | CHECK (1-10), NULLABLE | Tingkat kecemasan (1=rendah, 10=tinggi) |
+| `confidence_level` | INT | CHECK (1-10), NULLABLE | Tingkat kepercayaan diri (1=rendah, 10=tinggi) |
 | `sleep_quality` | INT | CHECK (1-10), NULLABLE | Kualitas tidur (1=buruk, 10=sangat baik) |
-| `stress_level` | INT | CHECK (1-10), NULLABLE | Level stress (1=rendah, 10=tinggi) |
-| `overall_wellbeing` | INT | CHECK (1-10), NULLABLE | Overall well-being (1=rendah, 10=tinggi) |
-| `overall_score` | DECIMAL(3,1) | COMPUTED, NULLABLE | Rata-rata score dari metrics (auto-calculated) |
-| `notes` | TEXT | NULLABLE | Catatan tambahan self-assessment |
-| `assessed_by` | ENUM | NOT NULL | Sumber assessment: 'self', 'therapist' |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `stress_level` | INT | CHECK (1-10), NULLABLE | Tingkat stres (1=rendah, 10=tinggi) |
+| `overall_wellbeing` | INT | CHECK (1-10), NULLABLE | Kesejahteraan menyeluruh (1=rendah, 10=tinggi) |
+| `overall_score` | DECIMAL(3,1) | COMPUTED, NULLABLE | Skor rata-rata dari metrik (terhitung otomatis) |
+| `notes` | TEXT | NULLABLE | Catatan tambahan penilaian mandiri |
+| `assessed_by` | ENUM | NOT NULL | Sumber penilaian: 'self', 'therapist' |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - INDEX pada (`client_id`, `assessment_date`)
 - INDEX pada `overall_score`
@@ -636,64 +637,64 @@ Progress tracking metrics untuk clients.
 **Relasi:**
 - Belongs To: `clients`
 
-**Business Logic:**
-- Client bisa self-assess antara sessions
-- Therapist bisa input assessment setelah session
-- System generate charts dari historical data
+**Logika Bisnis:**
+- Klien dapat melakukan penilaian mandiri antara sesi
+- Terapis dapat memasukkan penilaian setelah sesi
+- Sistem membangkitkan grafik dari data historis
 
 ---
 
 #### 14. Tabel `messages`
-Internal messaging system antara users.
+Sistem pesan internal antara pengguna.
 
-**Tabel 4.27 Deskripsi Tabel Database - Messages**
+**Tabel 4.27 Deskripsi Tabel Basis Data - Messages**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik message |
-| `sender_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `users.id` sebagai pengirim (CASCADE ON DELETE) |
-| `receiver_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `users.id` sebagai penerima (CASCADE ON DELETE) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik pesan |
+| `sender_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `users.id` sebagai pengirim (CASCADE ON DELETE) |
+| `receiver_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `users.id` sebagai penerima (CASCADE ON DELETE) |
 | `subject` | VARCHAR(255) | NULLABLE | Subjek pesan |
 | `content` | TEXT | NOT NULL | Isi pesan |
 | `is_read` | BOOLEAN | DEFAULT FALSE | Status sudah dibaca atau belum |
 | `read_at` | TIMESTAMP | NULLABLE | Waktu pesan dibaca |
-| `parent_message_id` | BIGINT UNSIGNED | FOREIGN KEY, NULLABLE | Referensi ke `messages.id` untuk threaded conversation |
-| `attachment_path` | VARCHAR(255) | NULLABLE | Path ke file attachment |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `parent_message_id` | BIGINT UNSIGNED | FOREIGN KEY, NULLABLE | Rujukan ke `messages.id` untuk percakapan berantai |
+| `attachment_path` | VARCHAR(255) | NULLABLE | Jalur ke berkas lampiran |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
-- INDEX pada (`receiver_id`, `is_read`) untuk inbox queries
+- INDEX pada (`receiver_id`, `is_read`) untuk kueri kotak masuk
 - INDEX pada `sender_id`
-- INDEX pada `parent_message_id` untuk threads
+- INDEX pada `parent_message_id` untuk utas
 
 **Relasi:**
-- Belongs To: `users` (sebagai sender)
-- Belongs To: `users` (sebagai receiver)
-- Has Many: `messages` (sebagai parent untuk replies)
+- Belongs To: `users` (sebagai pengirim)
+- Belongs To: `users` (sebagai penerima)
+- Has Many: `messages` (sebagai induk untuk balasan)
 
 ---
 
 #### 15. Tabel `education`
-Pendidikan formal therapists.
+Pendidikan formal terapis.
 
-**Tabel 4.28 Deskripsi Tabel Database - Education**
+**Tabel 4.28 Deskripsi Tabel Basis Data - Education**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik education record |
-| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `therapists.id` (CASCADE ON DELETE) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik rekaman pendidikan |
+| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `therapists.id` (CASCADE ON DELETE) |
 | `institution` | VARCHAR(255) | NOT NULL | Nama institusi pendidikan |
-| `degree` | VARCHAR(100) | NOT NULL | Gelar (e.g., "S1 Psikologi", "S2 Psikologi Klinis") |
+| `degree` | VARCHAR(100) | NOT NULL | Gelar (mis., "S1 Psikologi", "S2 Psikologi Klinis") |
 | `field_of_study` | VARCHAR(255) | NOT NULL | Bidang studi atau jurusan |
 | `start_year` | YEAR | NOT NULL | Tahun mulai pendidikan |
 | `end_year` | YEAR | NULLABLE | Tahun selesai (NULL jika masih berjalan) |
 | `is_current` | BOOLEAN | DEFAULT FALSE | Apakah masih menjalani pendidikan ini |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - INDEX pada `therapist_id`
 
@@ -703,25 +704,25 @@ Pendidikan formal therapists.
 ---
 
 #### 16. Tabel `certifications`
-Sertifikasi profesional therapists.
+Sertifikasi profesional terapis.
 
-**Tabel 4.29 Deskripsi Tabel Database - Certifications**
+**Tabel 4.29 Deskripsi Tabel Basis Data - Certifications**
 
-| Kolom | Tipe Data | Constraint | Deskripsi |
-|-------|-----------|------------|-----------|
-| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik certification record |
-| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Referensi ke `therapists.id` (CASCADE ON DELETE) |
+| Kolom | Tipe Data | Batasan | Deskripsi |
+|-------|-----------|---------|-----------|
+| `id` | BIGINT UNSIGNED | PRIMARY KEY, AUTO_INCREMENT | ID unik rekaman sertifikasi |
+| `therapist_id` | BIGINT UNSIGNED | FOREIGN KEY, NOT NULL | Rujukan ke `therapists.id` (CASCADE ON DELETE) |
 | `certification_name` | VARCHAR(255) | NOT NULL | Nama sertifikat profesional |
 | `issuing_organization` | VARCHAR(255) | NOT NULL | Organisasi atau lembaga penerbit sertifikat |
 | `issue_date` | DATE | NOT NULL | Tanggal sertifikat diterbitkan |
-| `expiry_date` | DATE | NULLABLE | Tanggal kadaluarsa (NULL jika lifetime) |
+| `expiry_date` | DATE | NULLABLE | Tanggal kadaluarsa (NULL jika seumur hidup) |
 | `credential_id` | VARCHAR(100) | NULLABLE | ID kredensial untuk verifikasi |
-| `file_path` | VARCHAR(255) | NULLABLE | Path ke file scan sertifikat |
+| `file_path` | VARCHAR(255) | NULLABLE | Jalur ke berkas pindai sertifikat |
 | `is_verified` | BOOLEAN | DEFAULT FALSE | Sudah diverifikasi oleh admin |
-| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan record |
-| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu update terakhir |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pembuatan rekaman |
+| `updated_at` | TIMESTAMP | ON UPDATE CURRENT_TIMESTAMP | Waktu pembaruan terakhir |
 
-**Indexes:**
+**Indeks:**
 - PRIMARY KEY pada `id`
 - INDEX pada `therapist_id`
 - INDEX pada `is_verified`
@@ -731,29 +732,29 @@ Sertifikasi profesional therapists.
 
 ---
 
-### Normalisasi Database
+### Normalisasi Basis Data
 
-Database telah dinormalisasi hingga **Third Normal Form (3NF)** dengan karakteristik:
+Basis data telah dinormalisasi hingga **Bentuk Normal Ketiga (Third Normal Form/3NF)** dengan karakteristik:
 
-**1NF (First Normal Form):**
-- ✅ Semua columns berisi atomic values (tidak ada multi-valued attributes)
-- ✅ Setiap column berisi values dari single domain
-- ✅ Setiap column name unik
-- ✅ Order di mana data disimpan tidak matter
+**1NF (Bentuk Normal Pertama):**
+- ✅ Semua kolom berisi nilai atomik (tidak ada atribut bernilai ganda)
+- ✅ Setiap kolom berisi nilai dari satu domain
+- ✅ Setiap nama kolom unik
+- ✅ Urutan penyimpanan data tidak berpengaruh
 
-**2NF (Second Normal Form):**
+**2NF (Bentuk Normal Kedua):**
 - ✅ Memenuhi 1NF
-- ✅ Tidak ada partial dependencies (semua non-key attributes fully dependent pada primary key)
-- ✅ Pivot tables (`therapist_services`) digunakan untuk many-to-many relationships
+- ✅ Tidak ada ketergantungan parsial (semua atribut non-kunci sepenuhnya bergantung pada kunci primer)
+- ✅ Tabel pivot (`therapist_services`) digunakan untuk relasi banyak-ke-banyak
 
-**3NF (Third Normal Form):**
+**3NF (Bentuk Normal Ketiga):**
 - ✅ Memenuhi 2NF
-- ✅ Tidak ada transitive dependencies (non-key attributes tidak depend pada non-key attributes lain)
-- ✅ Extended profiles (`therapists`, `clients`) separated dari `users` table
+- ✅ Tidak ada ketergantungan transitif (atribut non-kunci tidak bergantung pada atribut non-kunci lain)
+- ✅ Profil lengkap (`therapists`, `clients`) dipisahkan dari tabel `users`
 
 **Contoh Normalisasi:**
 
-*Sebelum normalisasi (denormalized):*
+*Sebelum normalisasi (tidak dinormalisasi):*
 ```
 bookings: id, client_name, client_email, therapist_name, therapist_credentials, 
           service_name, service_price, date, time, ...
@@ -768,92 +769,92 @@ bookings: id, client_id (FK), therapist_id (FK), service_id (FK), date, time, ..
 ```
 
 Keuntungan:
-- **Data Consistency:** Update data client/therapist/service hanya di satu tempat
-- **Storage Efficiency:** Mengurangi redundansi data
-- **Maintenance:** Easier to maintain dan update
-- **Integrity:** Foreign key constraints ensure referential integrity
+- **Konsistensi Data:** Pembaruan data klien/terapis/layanan hanya di satu tempat
+- **Efisiensi Penyimpanan:** Mengurangi redundansi data
+- **Pemeliharaan:** Lebih mudah dipelihara dan diperbarui
+- **Integritas:** Batasan kunci asing memastikan integritas referensial
 
 ---
 
-### Indexing Strategy
+### Strategi Pengindeksan
 
-Indexes diterapkan untuk optimize query performance. Berikut adalah ringkasan indexing strategy untuk setiap tabel:
+Indeks diterapkan untuk mengoptimalkan kinerja kueri. Berikut adalah ringkasan strategi pengindeksan untuk setiap tabel:
 
-**Tabel 4.30 Indexing Strategy per Table**
+**Tabel 4.30 Strategi Pengindeksan per Tabel**
 
-| Table Name | Index Type | Columns | Purpose | Estimated Performance Gain |
-|------------|------------|---------|---------|---------------------------|
-| `users` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `email` | Login authentication, prevent duplicate emails | 95%+ faster login |
-| | INDEX | `role` | Filter users by role (admin/therapist/client) | 80% faster role queries |
-| | INDEX | `status` | Filter active/inactive users | 75% faster status queries |
-| `therapists` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `user_id` | One-to-one relationship enforcement | Essential |
-| | INDEX | `rating` | Sort therapists by rating | 85% faster sorting |
-| | INDEX | `is_verified` | Filter verified therapists | 70% faster filtering |
-| `clients` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `user_id` | One-to-one relationship enforcement | Essential |
-| `services` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `slug` | URL routing lookup | 90%+ faster page loads |
-| | INDEX | `status`, `category` | Filter active services by category | 80% faster catalog queries |
-| `therapist_services` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE COMPOSITE | `(therapist_id, service_id)` | Prevent duplicate assignments | Essential integrity |
-| | INDEX | `therapist_id` | Find services for therapist | 85% faster |
-| | INDEX | `service_id` | Find therapists for service | 85% faster |
-| `bookings` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `booking_number` | Quick booking lookup | 95%+ faster |
-| | INDEX | `client_id` | Client booking history | 90% faster |
-| | INDEX | `therapist_id` | Therapist schedule | 90% faster |
-| | INDEX | `service_id` | Service usage analytics | 80% faster |
-| | INDEX | `booking_date`, `status` | Calendar view, filter by status | 85% faster calendar |
-| | COMPOSITE INDEX | `(therapist_id, booking_date, time_slot)` | Double-booking prevention | Critical for integrity |
-| `payments` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `booking_id` | One payment per booking | Essential |
-| | UNIQUE INDEX | `transaction_id` | Gateway transaction lookup | 90%+ faster |
-| | INDEX | `status` | Filter pending/completed payments | 80% faster |
-| | INDEX | `paid_at` | Financial reporting by date | 85% faster reports |
-| `sessions` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `booking_id` | One session per booking | Essential |
-| | INDEX | `status`, `started_at` | Filter active sessions, timeline | 80% faster |
-| `session_notes` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `session_id` | One note per session | Essential |
-| | INDEX | `progress_score` | Progress analytics | 75% faster analytics |
-| `reviews` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE INDEX | `booking_id` | One review per booking | Essential |
-| | INDEX | `rating`, `is_approved` | Filter/sort reviews | 85% faster display |
-| `therapist_availability` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | UNIQUE COMPOSITE | `(therapist_id, day_of_week, start_time)` | Prevent overlapping schedules | Critical for integrity |
-| | INDEX | `therapist_id` | Fetch therapist schedule | 90% faster |
-| `therapist_blocked_dates` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | INDEX | `(therapist_id, blocked_date)` | Check availability for dates | 85% faster availability check |
-| `client_progress` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | INDEX | `(client_id, assessment_date)` | Progress chart generation | 90% faster chart queries |
-| | INDEX | `overall_score` | Analytics and reporting | 75% faster |
-| `messages` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | COMPOSITE INDEX | `(receiver_id, is_read)` | Inbox queries (unread first) | 95%+ faster inbox |
-| | INDEX | `sender_id` | Sent messages history | 85% faster |
-| | INDEX | `parent_message_id` | Threaded conversations | 80% faster threads |
-| `education` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | INDEX | `therapist_id` | Fetch therapist education | 85% faster |
-| `certifications` | PRIMARY KEY | `id` | Unique identifier lookup | Essential |
-| | INDEX | `therapist_id` | Fetch therapist certifications | 85% faster |
-| | INDEX | `is_verified` | Filter verified certifications | 75% faster admin review |
+| Nama Tabel | Tipe Indeks | Kolom | Tujuan | Estimasi Peningkatan Kinerja |
+|------------|-------------|-------|--------|------------------------------|
+| `users` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `email` | Autentikasi masuk, cegah duplikasi surel | 95%+ lebih cepat masuk |
+| | INDEX | `role` | Filter pengguna berdasarkan peran (admin/terapis/klien) | 80% lebih cepat kueri peran |
+| | INDEX | `status` | Filter pengguna aktif/tidak aktif | 75% lebih cepat kueri status |
+| `therapists` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `user_id` | Penegakan relasi satu-ke-satu | Esensial |
+| | INDEX | `rating` | Urutkan terapis berdasarkan penilaian | 85% lebih cepat pengurutan |
+| | INDEX | `is_verified` | Filter terapis terverifikasi | 70% lebih cepat penyaringan |
+| `clients` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `user_id` | Penegakan relasi satu-ke-satu | Esensial |
+| `services` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `slug` | Pencarian perutean URL | 90%+ lebih cepat muat halaman |
+| | INDEX | `status`, `category` | Filter layanan aktif berdasarkan kategori | 80% lebih cepat kueri katalog |
+| `therapist_services` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE COMPOSITE | `(therapist_id, service_id)` | Cegah duplikasi penugasan | Integritas esensial |
+| | INDEX | `therapist_id` | Temukan layanan untuk terapis | 85% lebih cepat |
+| | INDEX | `service_id` | Temukan terapis untuk layanan | 85% lebih cepat |
+| `bookings` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `booking_number` | Pencarian pemesanan cepat | 95%+ lebih cepat |
+| | INDEX | `client_id` | Riwayat pemesanan klien | 90% lebih cepat |
+| | INDEX | `therapist_id` | Jadwal terapis | 90% lebih cepat |
+| | INDEX | `service_id` | Analitik penggunaan layanan | 80% lebih cepat |
+| | INDEX | `booking_date`, `status` | Tampilan kalender, filter berdasarkan status | 85% lebih cepat kalender |
+| | COMPOSITE INDEX | `(therapist_id, booking_date, time_slot)` | Pencegahan pemesanan ganda | Kritis untuk integritas |
+| `payments` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `booking_id` | Satu pembayaran per pemesanan | Esensial |
+| | UNIQUE INDEX | `transaction_id` | Pencarian transaksi gerbang | 90%+ lebih cepat |
+| | INDEX | `status` | Filter pembayaran tertunda/selesai | 80% lebih cepat |
+| | INDEX | `paid_at` | Pelaporan keuangan berdasarkan tanggal | 85% lebih cepat laporan |
+| `sessions` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `booking_id` | Satu sesi per pemesanan | Esensial |
+| | INDEX | `status`, `started_at` | Filter sesi aktif, garis waktu | 80% lebih cepat |
+| `session_notes` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `session_id` | Satu catatan per sesi | Esensial |
+| | INDEX | `progress_score` | Analitik kemajuan | 75% lebih cepat analitik |
+| `reviews` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE INDEX | `booking_id` | Satu ulasan per pemesanan | Esensial |
+| | INDEX | `rating`, `is_approved` | Filter/urutkan ulasan | 85% lebih cepat tampilan |
+| `therapist_availability` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | UNIQUE COMPOSITE | `(therapist_id, day_of_week, start_time)` | Cegah jadwal tumpang tindih | Kritis untuk integritas |
+| | INDEX | `therapist_id` | Ambil jadwal terapis | 90% lebih cepat |
+| `therapist_blocked_dates` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | INDEX | `(therapist_id, blocked_date)` | Periksa ketersediaan untuk tanggal | 85% lebih cepat pemeriksaan |
+| `client_progress` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | INDEX | `(client_id, assessment_date)` | Pembangkitan grafik kemajuan | 90% lebih cepat kueri grafik |
+| | INDEX | `overall_score` | Analitik dan pelaporan | 75% lebih cepat |
+| `messages` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | COMPOSITE INDEX | `(receiver_id, is_read)` | Kueri kotak masuk (belum dibaca dahulu) | 95%+ lebih cepat kotak masuk |
+| | INDEX | `sender_id` | Riwayat pesan terkirim | 85% lebih cepat |
+| | INDEX | `parent_message_id` | Percakapan berantai | 80% lebih cepat utas |
+| `education` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | INDEX | `therapist_id` | Ambil pendidikan terapis | 85% lebih cepat |
+| `certifications` | PRIMARY KEY | `id` | Pencarian pengidentifikasi unik | Esensial |
+| | INDEX | `therapist_id` | Ambil sertifikasi terapis | 85% lebih cepat |
+| | INDEX | `is_verified` | Filter sertifikasi terverifikasi | 75% lebih cepat tinjauan admin |
 
-**Index Design Principles:**
-1. **Primary Keys:** Auto-indexed untuk semua tables (BTREE)
-2. **Foreign Keys:** Always indexed untuk fast JOIN operations
-3. **Unique Constraints:** Automatically create indexes
-4. **Frequently Queried Columns:** `status`, `date` fields, boolean flags
-5. **Composite Indexes:** Left-to-right rule - most selective column first
-6. **Avoid Over-Indexing:** Balance between read performance dan write overhead
-7. **Monitor Usage:** Use `EXPLAIN` query plan analysis
+**Prinsip Desain Indeks:**
+1. **Kunci Primer:** Diindeks otomatis untuk semua tabel (BTREE)
+2. **Kunci Asing:** Selalu diindeks untuk operasi JOIN cepat
+3. **Batasan Unik:** Otomatis membuat indeks
+4. **Kolom yang Sering Dikueri:** Bidang `status`, `date`, flag boolean
+5. **Indeks Komposit:** Aturan kiri-ke-kanan - kolom paling selektif dahulu
+6. **Hindari Pengindeksan Berlebihan:** Keseimbangan antara kinerja baca dan overhead tulis
+7. **Pantau Penggunaan:** Gunakan analisis rencana kueri `EXPLAIN`
 
-**Performance Impact:**
-- Total indexes: 52 indexes across 16 tables
-- Query performance improvement: 70-95% faster for indexed queries
-- Trade-off: ~5-10% slower INSERT/UPDATE operations (acceptable)
-- Storage overhead: ~15-20% additional disk space (minimal)
+**Dampak Kinerja:**
+- Total indeks: 52 indeks di 16 tabel
+- Peningkatan kinerja kueri: 70-95% lebih cepat untuk kueri terindeks
+- Pertukaran: ~5-10% lebih lambat operasi INSERT/UPDATE (dapat diterima)
+- Overhead penyimpanan: ~15-20% ruang disk tambahan (minimal)
 
 ---
 
-**[Lanjut ke Bagian 3: UML Diagrams - File terpisah]**
+**[Lanjut ke Bagian 3: Diagram UML - Berkas terpisah]**
