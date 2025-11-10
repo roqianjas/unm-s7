@@ -5449,7 +5449,7 @@ _Rasio kontras warna, navigasi keyboard, dukungan pembaca layar, teks alt_
 
 4. **Formulir & Input (*Forms & Inputs*)**:
    - *Desktop*: Formulir multi-kolom, label sebaris
-   - *Mobile*: Kolom tunggal, label di atas input, target sentuh lebih besar (minimal 44px)
+   - *Mobile*: Kolom tunggal, label di atas *input*, target sentuh lebih besar (minimal 44px)
 
 5. **Tabel (*Tables*)**:
    - *Desktop*: Tabel penuh dengan semua kolom
@@ -5466,21 +5466,21 @@ _Rasio kontras warna, navigasi keyboard, dukungan pembaca layar, teks alt_
    - Rasio aspek dipertahankan
    - Galeri ramah sentuh dengan geser (*swipe*)
 
-8. **Widget *Dashboard***:
+8. ***Widget Dashboard***:
    - *Desktop*: *Grid* multi-kolom, seret & lepas (*drag & drop*)
    - *Mobile*: Kolom tunggal, urutan prioritas, bagian yang dapat dilipat
 
 9. **Grafik & Diagram (*Charts & Graphs*)**:
    - Berbasis SVG (dapat diskalakan)
    - Tampilan sederhana pada *mobile*
-   - Interaksi ramah sentuh (cubit, zoom)
+   - Interaksi ramah sentuh (cubit, *zoom*)
 
 **Optimasi Sentuh & Gestur (*Touch & Gesture Optimization*):**
 - Target sentuh minimal: 44x44px (standar Apple HIG)
 - Spasi memadai antar elemen interaktif
-- Gestur geser: Navigasi *carousel*, geser-untuk-hapus
+- Gestur geser: Navigasi *carousel*, geser-untuk-hapus (*swipe-to-delete*)
 - Tarik-untuk-muat-ulang (*pull-to-refresh*) pada *mobile*
-- Menu konteks tekan-lama (*long-press*)
+- Menu konteks tekan-lama (*long-press context menu*)
 
 **Optimasi Kinerja (*Performance Optimization*):**
 - Kemampuan Aplikasi Web Progresif (*Progressive Web App* / PWA)
@@ -5517,7 +5517,7 @@ Selain desain visual, pengalaman pengguna secara keseluruhan adalah fokus utama 
 - **Indikator Fokus (*Focus Indicators*)**: Jelas dan terlihat untuk pengguna *keyboard*
 - **Teks Alternatif (*Alternative Text*)**: Semua gambar memiliki teks alt
 - **Keterangan & Transkrip (*Captions & Transcripts*)**: Konten video (jika ada)
-- **Teks yang Dapat Diubah Ukurannya (*Resizable Text*)**: Mendukung zoom browser hingga 200%
+- **Teks yang Dapat Diubah Ukurannya (*Resizable Text*)**: Mendukung *zoom* browser hingga 200%
 
 **3. Kinerja & Kecepatan (*Performance & Speed*):**
 - **Waktu Muat Halaman (*Page Load Time*)**: Target <3 detik untuk *first contentful paint*
@@ -5527,9 +5527,9 @@ Selain desain visual, pengalaman pengguna secara keseluruhan adalah fokus utama 
 - **Kinerja yang Dirasakan (*Perceived Performance*)**: Layar *skeleton*, pemuatan progresif
 
 **4. Pencegahan & Pemulihan Kesalahan (*Error Prevention & Recovery*):**
-- **Validasi Sebaris (*Inline Validation*)**: Umpan balik waktu nyata pada input formulir
+- **Validasi Sebaris (*Inline Validation*)**: Umpan balik waktu nyata pada *input* formulir
 - **Dialog Konfirmasi (*Confirmation Dialogs*)**: Untuk tindakan destruktif (hapus, batalkan *booking*)
-- **Kemampuan Membatalkan (*Undo Capabilities*)**: Jika memungkinkan (penyimpanan draft)
+- **Kemampuan Membatalkan (*Undo Capabilities*)**: Jika memungkinkan (penyimpanan *draft*)
 - **Pesan Kesalahan yang Jelas (*Clear Error Messages*)**: Panduan spesifik dan dapat ditindaklanjuti
 - **Nilai *Default* yang Membantu (*Helpful Defaults*)**: Nilai awal yang masuk akal sudah terisi
 
@@ -5557,19 +5557,19 @@ Selain desain visual, pengalaman pengguna secara keseluruhan adalah fokus utama 
 - **Status Tombol (*Button States*)**: Efek *hover*, status aktif, status *disabled*
 - **Animasi *Loading***: *Spinner* halus, bilah kemajuan
 - **Transisi (*Transitions*)**: *Fade in*, animasi geser (cepat, 200-300ms)
-- **Umpan Balik Formulir (*Form Feedback*)**: Tanda centang untuk input valid, animasi goyang untuk kesalahan
+- **Umpan Balik Formulir (*Form Feedback*)**: Tanda centang untuk *input* valid, animasi goyang untuk kesalahan
 - ***Notification Toast***: Geser masuk dengan halus, tutup otomatis
 
 **9. Strategi Konten (*Content Strategy*):**
 - **Konten yang Dapat Dipindai (*Scannable Content*)**: Judul, poin *bullet*, paragraf pendek
 - **Pengungkapan Progresif (*Progressive Disclosure*)**: Tampilkan info penting dulu, detail sesuai permintaan
 - **Bahasa Sederhana (*Plain Language*)**: Hindari jargon medis, jelaskan istilah bila perlu
-***Placeholder* yang Membantu (*Helpful Placeholders*)**: Teks contoh dalam kolom input
+- ***Placeholder* yang Membantu (*Helpful Placeholders*)**: Teks contoh dalam kolom *input*
 - **Bantuan Kontekstual (*Contextual Help*)**: Ikon info dengan *tooltip*
 
 **10. Pertimbangan Mengutamakan *Mobile* (*Mobile-First Considerations*):**
 - **Ramah Jempol (*Thumb-Friendly*)**: Tindakan penting dalam jangkauan mudah
-- **Input Minimal (*Minimal Input*)**: Gunakan *picker*, *dropdown* daripada mengetik jika memungkinkan
+- ***Input* Minimal (*Minimal Input*)**: Gunakan *picker*, *dropdown* daripada mengetik jika memungkinkan
 - **Kemampuan *Offline***: Fungsionalitas dasar saat koneksi hilang
 - **Dukungan Orientasi (*Orientation Support*)**: Bekerja dalam mode potret dan lanskap
 - **Fitur Asli (*Native Features*)**: Gunakan kemampuan perangkat (kamera, lokasi, notifikasi)
@@ -5618,3 +5618,4 @@ Dengan sistem desain (*design system*) dan *mockup* yang telah dikembangkan ini,
 ---
 
 *Catatan: Tangkapan layar (*screenshot*) visual dan detail implementasi teknis dari setiap *mockup* dapat dilihat pada file HTML yang tersimpan di direktori *mockups*. Setiap file HTML merupakan prototipe fungsional (*functional prototype*) yang dapat dibuka di browser untuk melihat interaksi dan responsivitas secara langsung.*
+
