@@ -23,46 +23,7 @@ Stair & Reynolds (2018) menjelaskan bahwa sistem informasi terdiri dari lima kom
 
 5. **Prosedur (*Procedures*):** Kebijakan, aturan, dan metode yang mengatur bagaimana sistem digunakan, termasuk prosedur masukan data, proses, keluaran, dan pencadangan.
 
----
-
 **[GAMBAR 2.1 - Komponen Sistem Informasi]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT DIAGRAM KOMPONEN SISTEM INFORMASI]               │
-│                                                             │
-│   Center: SISTEM INFORMASI (center circle)                 │
-│                                                             │
-│   5 Komponen (surrounding circles with icons):             │
-│                                                             │
-│      🖥️  HARDWARE                                          │
-│      (Komputer, Server, Storage)                           │
-│                                                             │
-│   💿 SOFTWARE          SISTEM         📊 DATA              │
-│   (OS, Apps, DB)    INFORMASI      (Facts, Info)          │
-│                                                             │
-│      👥 PEOPLE                                              │
-│      (Users, IT Staff)                                     │
-│                                                             │
-│      📋 PROCEDURES                                          │
-│      (Policies, Rules)                                     │
-│                                                             │
-│   Arrows showing interaction between all components        │
-│                                                             │
-│   Format: Circular diagram atau pentagon diagram           │
-│   Style: Clean, professional, dengan icon per komponen     │
-│   Recommended size: 1000x800px                             │
-│                                                             │
-│   File: assets/images/komponen-sistem-informasi.png        │
-│   Reference: Stair & Reynolds (2018)                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.1: Lima komponen utama sistem informasi yang saling berinteraksi (Stair & Reynolds, 2018)_
-
----
 
 #### 2.1.1.2 Jenis-jenis Sistem Informasi
 
@@ -133,43 +94,7 @@ Dalam perkembangan modern, Kendala Tiga Sisi diperluas menjadi **Segitiga Manaje
 9. **Manajemen Pengadaan Proyek (*Project Procurement Management*):** Mengelola vendor dan pemasok.
 10. **Manajemen Pemangku Kepentingan Proyek (*Project Stakeholder Management*):** Mengelola ekspektasi dan keterlibatan pemangku kepentingan.
 
----
-
 **[GAMBAR 2.2 - Knowledge Areas PMBOK 6th Edition]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT DIAGRAM 10 KNOWLEDGE AREAS PMBOK]                │
-│                                                             │
-│   Center: PROJECT MANAGEMENT (core)                        │
-│                                                             │
-│   10 Knowledge Areas (surrounding the center):             │
-│                                                             │
-│   1️⃣  Integration Management                               │
-│   2️⃣  Scope Management                                     │
-│   3️⃣  Schedule Management                                  │
-│   4️⃣  Cost Management                                      │
-│   5️⃣  Quality Management                                   │
-│   6️⃣  Resource Management                                  │
-│   7️⃣  Communications Management                            │
-│   8️⃣  Risk Management                                      │
-│   9️⃣  Procurement Management                               │
-│   🔟 Manajemen Pemangku Kepentingan                        │
-│                                                             │
-│   Format: Circular/radial diagram atau hexagon layout      │
-│   Style: Color-coded per knowledge area                    │
-│   Recommended size: 1200x900px                             │
-│                                                             │
-│   File: assets/images/pmbok-knowledge-areas.png            │
-│   Reference: PMI PMBOK Guide 6th Edition (2017)            │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.2: Sepuluh knowledge areas dalam Project Management Body of Knowledge (PMBOK) 6th Edition yang menjadi panduan manajemen proyek sistem informasi_
-
----
 
 ### 2.1.3 Siklus Hidup Pengembangan Sistem (*System Development Life Cycle*/SDLC)
 
@@ -228,53 +153,8 @@ Model Air Terjun (*Waterfall*), yang pertama kali diperkenalkan oleh Winston Roy
    - Peningkatan dan pengembangan fitur baru
    - Pembaruan dan tambalan rutin
 
----
 
 **[GAMBAR 2.3 - Waterfall SDLC Model]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT WATERFALL DIAGRAM]                               │
-│                                                             │
-│   6 Fase Berurutan (dari atas ke bawah):                   │
-│   ┌────────────────────────────┐                           │
-│   │ 1. REQUIREMENTS ANALYSIS   │                           │
-│   └────────────────────────────┘                           │
-│              ↓                                              │
-│   ┌────────────────────────────┐                           │
-│   │ 2. SYSTEM DESIGN           │                           │
-│   └────────────────────────────┘                           │
-│              ↓                                              │
-│   ┌────────────────────────────┐                           │
-│   │ 3. IMPLEMENTATION          │                           │
-│   └────────────────────────────┘                           │
-│              ↓                                              │
-│   ┌────────────────────────────┐                           │
-│   │ 4. TESTING                 │                           │
-│   └────────────────────────────┘                           │
-│              ↓                                              │
-│   ┌────────────────────────────┐                           │
-│   │ 5. DEPLOYMENT              │                           │
-│   └────────────────────────────┘                           │
-│              ↓                                              │
-│   ┌────────────────────────────┐                           │
-│   │ 6. MAINTENANCE             │                           │
-│   └────────────────────────────┘                           │
-│                                                             │
-│   Format: Flowchart dengan arrow ke bawah                  │
-│   Style: Clean, professional dengan box per fase           │
-│   Recommended size: 800x1200px (portrait)                  │
-│                                                             │
-│   File: assets/images/waterfall-sdlc-model.png             │
-│   Reference: Royce (1970), Sommerville (2016)              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.3: Model Waterfall SDLC dengan 6 fase berurutan yang digunakan dalam pengembangan sistem CUR-HEART_
-
----
 
 **Kelebihan Model Air Terjun:**
 
@@ -302,57 +182,15 @@ Dalam proyek sistem informasi CUR-HEART ini, model Air Terjun dipilih karena:
 
 #### 2.1.3.3 Model SDLC Lainnya (Comparison)
 
-Selain Waterfall, terdapat beberapa model SDLC lain yang populer. Berikut adalah perbandingan berbagai model SDLC:
+Selain Waterfall, terdapat beberapa model SDLC lain yang populer seperti *Agile*, Spiral, V-Model, RAD, dan DevOps. Namun, model **Waterfall dipilih untuk proyek CUR-HEART** dengan pertimbangan berikut:
 
----
+1. **Persyaratan Jelas dan Stabil**: Kebutuhan sistem sudah teridentifikasi dengan baik melalui analisis bisnis CUR-HEART
+2. **Garis Waktu Tetap**: Proyek dibatasi waktu semester akademik (11 minggu) sehingga memerlukan perencanaan yang terukur
+3. **Dokumentasi Lengkap**: Kebutuhan akademik memerlukan dokumentasi komprehensif di setiap fase
+4. **Tim Kecil dan Terstruktur**: Pengembangan dilakukan oleh tim kecil dengan struktur jelas, cocok dengan model sekuensial
+5. **Skala Proyek Sesuai**: Sistem dengan kompleksitas menengah yang tidak memerlukan iterasi *sprint* berulang
 
-**Tabel 2.1 Perbandingan Model SDLC**
-
-| Model | Karakteristik Utama | Tahapan/Siklus | Kelebihan | Kekurangan | Cocok Untuk | CUR-HEART Fit Score |
-|-------|-------------------|---------------|-----------|------------|------------|-------------------|
-| **Air Terjun** (*Waterfall*) | • Sekuensial, linear<br>• Berbasis dokumentasi<br>• Perencanaan prediktif<br>• Tinjauan fase formal | 1. Persyaratan<br>2. Desain<br>3. Implementasi<br>4. Pengujian<br>5. Penerapan<br>6. Pemeliharaan | • Mudah dipahami & dikelola<br>• Dokumentasi lengkap<br>• Kemajuan terukur<br>• Tonggak jelas<br>• Cocok untuk tim kecil | • Tidak fleksibel terhadap perubahan<br>• Perangkat lunak berfungsi di akhir<br>• Risiko tinggi jika kesalahan di awal<br>• Keterlibatan pelanggan terbatas | • Persyaratan jelas & stabil<br>• Proyek terstruktur<br>• Garis waktu tetap<br>• Dokumentasi penting | ✅ **95%** (DIPILIH)<br>Alasan: Persyaratan stabil, garis waktu tetap (11 minggu), dokumentasi akademik |
-| ***Agile* (Scrum)** | • Iteratif & inkremental<br>• Fleksibel & adaptif<br>• Kolaborasi berkelanjutan<br>• *Sprint* (2-4 minggu) | Iterasi berulang:<br>1. Perencanaan *Sprint*<br>2. *Daily Standups*<br>3. Pengembangan<br>4. Tinjauan *Sprint*<br>5. Retrospektif | • Fleksibel terhadap perubahan<br>• Luaran sering<br>• Keterlibatan pelanggan tinggi<br>• Mitigasi risiko<br>• Kolaborasi tim | • Garis waktu kurang dapat diprediksi<br>• Dokumentasi minimal<br>• Memerlukan tim berpengalaman<br>• Risiko perluasan cakupan<br>• Komitmen harian diperlukan | • Persyaratan berkembang<br>• Pelanggan tersedia harian<br>• Tim berpengalaman<br>• Proyek jangka panjang | ⚠️ **60%**<br>Perhatian: Garis waktu ketat, tim baru, dokumentasi akademik diperlukan |
-| **Spiral** | • Berbasis risiko<br>• Purwarupa iteratif<br>• Putaran berganda<br>• Analisis risiko setiap putaran | Putaran berulang:<br>1. Perencanaan<br>2. Analisis Risiko<br>3. Rekayasa<br>4. Evaluasi | • Manajemen risiko sangat baik<br>• Fleksibilitas tinggi<br>• Purwarupa awal<br>• Cocok untuk proyek kompleks | • Kompleks untuk dikelola<br>• Mahal (analisis risiko)<br>• Memerlukan ahli risiko<br>• Memakan waktu | • Proyek berisiko tinggi<br>• Sistem besar & kompleks<br>• Persyaratan tidak pasti<br>• Aplikasi kritis | ❌ **40%**<br>Perhatian: Berlebihan untuk skala proyek, tidak ada ahli risiko, biaya tinggi |
-| **Model-V** (*V-Model*) | • Ekstensi Air Terjun<br>• Penekanan pengujian<br>• Verifikasi & Validasi<br>• Setiap fase pengembangan = fase uji | Sekuensial dengan pengujian paralel:<br>1. Persyaratan → Uji Penerimaan<br>2. Desain → Uji Sistem<br>3. Desain Modul → Uji Integrasi<br>4. Pengodean → Uji Unit | • Jaminan kualitas tinggi<br>• Perencanaan uji awal<br>• Luaran jelas<br>• Baik untuk kritis-keselamatan | • Kaku seperti Air Terjun<br>• Tidak fleksibel<br>• Memerlukan persyaratan lengkap<br>• Pengujian mahal | • Sistem kritis-keselamatan<br>• Aplikasi medis/penerbangan<br>• Keandalan tinggi diperlukan<br>• Persyaratan jelas | ⚠️ **50%**<br>Perhatian: Berlebihan untuk pengujian, bukan kritis-keselamatan, terlalu kaku |
-| **RAD** (*Rapid Application Development*) | • Purwarupa cepat<br>• Berfokus pengguna<br>• *Timeboxed* (60-90 hari)<br>• Komponen dapat digunakan ulang | 1. Perencanaan Persyaratan<br>2. Desain Pengguna (lokakarya JAD)<br>3. Konstruksi (purwarupa)<br>4. *Cutover* (pengujian & penerapan) | • Pengembangan cepat<br>• Keterlibatan pengguna tinggi<br>• Pengodean manual berkurang<br>• Umpan balik awal | • Memerlukan pengembang terampil<br>• Tidak dapat diskalakan untuk tim besar<br>• Masalah kinerja mungkin<br>• Bergantung pada tim kuat | • Proyek kritis-waktu<br>• Proyek kecil-menengah<br>• Sistem modular<br>• Tim berpengalaman | ⚠️ **70%**<br>Potensi: Pengiriman cepat, tapi dokumentasi kurang, tim belum berpengalaman RAD |
-| **DevOps** | • Integrasi Dev + Ops<br>• *Pipeline* CI/CD<br>• Otomasi berat<br>• Pemantauan berkelanjutan | Siklus berkelanjutan:<br>1. Rencana<br>2. Kode<br>3. *Build*<br>4. Uji (otomatis)<br>5. Rilis<br>6. Terapkan<br>7. Operasikan<br>8. Pantau | • Pengiriman cepat<br>• Otomasi & efisiensi<br>• Umpan balik berkelanjutan<br>• Keandalan tinggi<br>• Skalabilitas | • Memerlukan budaya DevOps<br>• Pengaturan awal kompleks<br>• Kurva belajar perangkat<br>• Perlu keahlian otomasi | • Aplikasi *cloud-native*<br>• *Microservices*<br>• Rilis sering<br>• Organisasi besar | ❌ **35%**<br>Perhatian: Overhead pengaturan, aplikasi monolitik, penerapan tunggal, tim belum siap DevOps |
-| **Iteratif** (*Iterative*) | • Siklus berulang<br>• Peningkatan bertahap<br>• Bangun-tingkatkan-bangun<br>• Versi berfungsi awal | Iterasi berulang:<br>1. Analisis<br>2. Desain<br>3. Implementasi<br>4. Pengujian<br>→ Ulangi dengan peningkatan | • Sistem berfungsi awal<br>• Pelajaran diterapkan<br>• Pengurangan risiko<br>• Fleksibilitas | • Memerlukan perencanaan baik<br>• Overhead manajemen<br>• Perubahan cakupan bisa mahal | • Proyek menengah<br>• Beberapa ketidakpastian<br>• Penyempurnaan progresif | ⚠️ **65%**<br>Potensi: Baik untuk pembelajaran, tapi kendala garis waktu, overhead manajemen |
-| **Purwarupa** (*Prototyping*) | • Bangun-uji-sempurnakan<br>• Maket awal<br>• Didorong umpan balik pengguna<br>• Buang atau evolusioner | 1. Identifikasi Persyaratan<br>2. Kembangkan Purwarupa<br>3. Evaluasi Pengguna<br>4. Sempurnakan Purwarupa<br>5. Implementasi Sistem Final | • Umpan balik pengguna awal<br>• Klarifikasi persyaratan<br>• Risiko penolakan berkurang<br>• UX lebih baik | • Risiko analisis tidak lengkap<br>• Iterasi tanpa akhir mungkin<br>• Kinerja tidak dioptimalkan<br>• Mungkin melewatkan persyaratan | • Proyek berat UI/UX<br>• Kebutuhan pengguna tidak jelas<br>• Solusi inovatif | ⚠️ **55%**<br>Digunakan untuk: Purwarupa UI/UX (Figma), tapi bukan pendekatan SDLC penuh |
-
-**Detailed Comparison Matrix:**
-
-| Kriteria | Weight | Waterfall Score | Agile Score | Spiral Score | RAD Score | DevOps Score | Winner |
-|------------------|--------|----------------|------------|-------------|-----------|-------------|--------|
-| **Kejelasan Persyaratan** | 20% | 5/5 (Very clear) | 3/5 (Flexible) | 4/5 (Risk-driven) | 3/5 (Evolving) | 3/5 (Continuous) | **Waterfall** |
-| **Kendala Waktu** | 20% | 5/5 (Predictable) | 2/5 (Variable) | 2/5 (Complex) | 4/5 (Fast) | 3/5 (Setup time) | **Waterfall** |
-| **Pengalaman Tim** | 15% | 5/5 (Easy) | 3/5 (Needs exp) | 2/5 (Complex) | 3/5 (Skilled) | 2/5 (DevOps exp) | **Waterfall** |
-| **Kebutuhan Dokumentasi** | 15% | 5/5 (Excellent) | 2/5 (Minimal) | 4/5 (Good) | 2/5 (Limited) | **Waterfall** |
-| **Kendala Anggaran** | 10% | 5/5 (Low cost) | 3/5 (Medium) | 2/5 (High) | 4/5 (Fast=cheap) | 2/5 (Tooling cost) | **Waterfall** |
-| **Kebutuhan Fleksibilitas** | 10% | 2/5 (Rigid) | 5/5 (Very flexible) | 5/5 (Iterative) | 4/5 (Flexible) | 4/5 (Adaptive) | **Agile/Spiral** |
-| **Tingkat Risiko** | 5% | 2/5 (High early risk) | 4/5 (Mitigated) | 5/5 (Risk-focused) | 3/5 (Medium) | 4/5 (Continuous) | **Spiral** |
-| **Ukuran Proyek** | 5% | 5/5 (Small-medium) | 4/5 (Scalable) | 3/5 (Large) | 5/5 (Small-medium) | 3/5 (Large) | **Waterfall/RAD** |
-| **TOTAL SKOR BERBOBOT** | 100% | **4.6/5 (92%)** | **3.1/5 (62%)** | **3.4/5 (68%)** | **3.4/5 (68%)** | **2.7/5 (54%)** | **✅ WATERFALL** |
-
-**Final Decision: Waterfall Model ✅**
-
-**Alasan Pemilihan untuk CUR-HEART:**
-1. ✅ **Persyaratan yang Jelas dan Stabil**: Persyaratan sistem sudah terdefinisi dengan jelas berdasarkan analisis proses bisnis CUR-HEART yang ada
-2. ✅ **Garis Waktu Tetap**: Semester akademik = 11 minggu (tidak dapat dinegosiasikan)
-3. ✅ **Dokumentasi**: Proyek akhir (*Capstone project*) memerlukan dokumentasi lengkap untuk penilaian
-4. ✅ **Struktur Tim**: Tim kecil (3 orang) dengan struktur jelas, mudah koordinasi dengan Air Terjun
-5. ✅ **Anggaran**: Anggaran minimal, Air Terjun tidak memerlukan perangkat/infrastruktur mahal
-6. ✅ **Kompleksitas**: Skala proyek menengah, tidak memerlukan model kompleks seperti Spiral
-7. ✅ **Ketersediaan Pemangku Kepentingan**: Pemangku kepentingan CUR-HEART tidak bisa keterlibatan harian (persyaratan *Agile*)
-8. ✅ **Tujuan Pembelajaran**: Air Terjun cocok untuk pembelajaran metodologi SDLC secara akademik
-
-**Implementasi Air Terjun Termodifikasi:**
-Meskipun menggunakan Air Terjun, beberapa adaptasi dilakukan:
-- **Purwarupa untuk UI/UX**: Menggunakan Figma untuk umpan balik pengguna awal (pendekatan hibrid)
-- **Pengujian Bertahap**: Pengujian dimulai dari tahap implementasi (pengujian unit), tidak menunggu akhir
-- **Tinjauan Mingguan**: Tinjauan kemajuan mingguan untuk deteksi masalah awal
-- **Titik Periksa Pemangku Kepentingan**: Validasi di akhir setiap fase utama (Persyaratan, Desain, Implementasi)
-
----
+Model *Agile* kurang sesuai karena memerlukan tim berpengalaman dan dokumentasi minimal. Model Spiral terlalu kompleks untuk skala proyek ini. Model lain seperti DevOps memerlukan infrastruktur CI/CD yang berlebihan untuk proyek akademik.
 
 ### 2.1.4 Hipnoterapi dan Kesehatan Mental
 
@@ -362,48 +200,8 @@ Hipnoterapi (*hypnotherapy*) adalah bentuk terapi komplementer yang menggunakan 
 
 Dalam keadaan *trance*, klien menjadi lebih reseptif terhadap saran yang diberikan oleh terapis. Hal ini memungkinkan akses ke pikiran bawah sadar (*unconscious mind*) di mana kepercayaan, kenangan, dan emosi disimpan. Melalui saran yang dirancang dengan hati-hati, terapis dapat membantu klien mengubah pola pikir, mengatasi trauma, mengurangi kecemasan, dan melakukan perubahan perilaku yang diinginkan.
 
----
-
 **[GAMBAR 2.4 - Mekanisme Hipnoterapi pada Otak]**
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT BRAIN DIAGRAM DENGAN MEKANISME HIPNOTERAPI]      │
-│                                                             │
-│   Konten yang harus ditampilkan:                           │
-│   - Diagram otak (tampilan samping)                        │
-│   - Label bagian: Pikiran Sadar, Pikiran Bawah Sadar      │
-│   - Anak panah menunjukkan alur proses hipnoterapi         │
-│   - Keadaan gelombang otak: Beta → Alpha → Theta          │
-│   - Kotak teks menjelaskan setiap tahapan                  │
-│                                                             │
-│   Tahapan:                                                 │
-│   1. Keadaan Normal (Gelombang Beta 14-30 Hz)              │
-│      - Pikiran sadar aktif                                 │
-│      - Pemikiran analitis dan logis                        │
-│                                                             │
-│   2. Relaksasi (Gelombang Alpha 8-14 Hz)                   │
-│      - Awal keadaan *trance*                               │
-│      - Koneksi pikiran-tubuh                               │
-│                                                             │
-│   3. Keadaan *Trance* (Gelombang Theta 4-8 Hz)             │
-│      - Akses ke pikiran bawah sadar                        │
-│      - Peningkatan daya terima saran                       │
-│      - Pemrosesan memori                                   │
-│                                                             │
-│   Format: Gaya ilustrasi medis/ilmiah                      │
-│   Ukuran yang disarankan: 1200x800px                       │
-│   Gaya: Diagram medis profesional dengan kode warna       │
-│                                                             │
-│   File: assets/images/hipnoterapi-mekanisme-otak.png       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.4: Mekanisme kerja hipnoterapi pada otak manusia yang memengaruhi pikiran sadar dan pikiran bawah sadar melalui perubahan keadaan gelombang otak_
-
----
 
 #### 2.1.4.2 Efektivitas Hipnoterapi
 
@@ -454,342 +252,51 @@ Menurut Riset Kesehatan Dasar (Riskesdas) Kementerian Kesehatan RI tahun 2023, p
 
 Laravel adalah kerangka kerja PHP sumber terbuka (*open-source*) yang dirancang untuk mempermudah dan mempercepat pengembangan aplikasi web dengan sintaksis yang elegan dan ekspresif (Otwell, 2021). Laravel mengikuti arsitektur Model-View-Controller (MVC) yang memisahkan logika bisnis dari logika presentasi, sehingga kode menjadi lebih terorganisir, mudah dipelihara, dan dapat diskalakan.
 
-Sebelum memilih Laravel, dilakukan evaluasi terhadap berbagai PHP frameworks populer:
+Laravel dipilih sebagai kerangka kerja pengembangan untuk CUR-HEART karena beberapa keunggulan dibandingkan alternatif lain (*Symfony*, *CodeIgniter*, *Yii*, *Slim*):
 
----
+1. **Kecepatan Pengembangan**: Fitur bawaan seperti Artisan CLI, Eloquent ORM, dan sistem autentikasi mempercepat pengembangan hingga 40% dibanding framework minimal
+2. **Kurva Pembelajaran**: Dokumentasi komprehensif dan komunitas besar (1 juta+ pengembang) mempermudah pembelajaran
+3. **Fitur Lengkap**: *Full-stack framework* dengan Blade templating, routing, middleware, dan queue system tanpa perlu library eksternal
+4. **Keamanan Bawaan**: CSRF protection, XSS prevention, password hashing (bcrypt), dan enkripsi data
+5. **Ekosistem Kuat**: 15,000+ package di Packagist dan resource pembelajaran seperti Laracasts
+6. **Skalabilitas**: Mendukung pengembangan API untuk aplikasi mobile masa depan dengan Laravel Sanctum
 
-**Tabel 2.2 Perbandingan PHP Frameworks**
+Framework alternatif kurang sesuai: *Symfony* terlalu kompleks untuk tenggat 11 minggu, *CodeIgniter* kurang fitur modern, *Slim/Lumen* memerlukan terlalu banyak development dari nol.
 
-| Framework | Versi (2024) | Architecture | Learning Curve | Performance | Community | Features | Database ORM | Best For | CUR-HEART Score |
-|-----------|---------------|-------------|---------------|-------------|-----------|----------|--------------|----------|----------------|
-| **Laravel** | 10.x | MVC | Medium | Good | ⭐⭐⭐⭐⭐ Largest | Full-stack, Eloquent ORM, Blade, Artisan, Queue, Auth | Eloquent (Active Record) | Full-stack web apps, APIs, rapid development | ✅ **95%** DIPILIH |
-| **Symfony** | 6.x | MVC/Components | Steep | Excellent | ⭐⭐⭐⭐ Large | Highly modular, reusable components, enterprise-grade | Doctrine (Data Mapper) | Enterprise apps, large teams, flexibility | ⚠️ 60% Too complex |
-| **CodeIgniter** | 4.x | MVC | Easy | Very Good | ⭐⭐⭐ Medium | Lightweight, simple, fast | Query Builder (basic) | Small-medium projects, beginners, legacy migration | ⚠️ 50% Too basic |
-| **Yii** | 2.0 | MVC | Medium | Very Good | ⭐⭐ Small | High performance, security-focused, Gii code generator | Active Record | High-performance apps, China-focused | ⚠️ 55% Smaller community |
-| **CakePHP** | 4.x | MVC | Medium | Good | ⭐⭐ Small | Convention over configuration, rapid scaffolding | ORM (Active Record) | Rapid prototyping, CRUD apps | ⚠️ 50% Aging framework |
-| **Slim** | 4.x | Micro | Easy | Excellent | ⭐⭐⭐ Medium | Lightweight, routing-focused, minimal | None (use any) | APIs, microservices, minimal overhead | ❌ 40% Not full-stack |
-| **Lumen** | 10.x | Micro (Laravel) | Easy (if know Laravel) | Excellent | ⭐⭐⭐⭐ Large | Laravel subset, API-focused, very fast | Eloquent (optional) | RESTful APIs, microservices | ⚠️ 65% API-only focus |
-| **Phalcon** | 5.x | MVC | Steep | Excellent | ⭐⭐ Small | C extension, fastest PHP framework, low-level | Phalcon ORM | High-performance apps, experienced devs | ❌ 45% Complex setup |
+#### 2.1.5.2 Fitur Utama Laravel
 
-**Matriks Perbandingan Terperinci:**
+Menurut dokumentasi resmi Laravel (Laravel Documentation, 2023), Laravel menyediakan fitur-fitur utama yang mendukung pengembangan sistem CUR-HEART:
 
-| Kriteria | Bobot | Laravel | Symfony | CodeIgniter | Slim | Pemenang |
-|----------|--------|---------|---------|-------------|------|--------|
-| **Kemudahan Belajar** | 15% | 4/5 (Dokumentasi bagus) | 2/5 (Kompleks) | 5/5 (Sederhana) | 4/5 (Minimal) | **Laravel/Slim** |
-| **Kecepatan Pengembangan** | 20% | 5/5 (Artisan, Eloquent) | 3/5 (Lebih banyak kode) | 4/5 (Sederhana) | 3/5 (Kerja manual) | **Laravel** |
-| **Fitur & Ekosistem** | 20% | 5/5 (*Full-stack*) | 5/5 (Modular) | 2/5 (Dasar) | 1/5 (Minimal) | **Laravel/Symfony** |
-| **Kinerja** | 10% | 4/5 (Baik) | 5/5 (Sangat baik) | 5/5 (Cepat) | 5/5 (Sangat cepat) | **Symfony/Slim** |
-| **Komunitas & Dukungan** | 15% | 5/5 (Terbesar) | 4/5 (Besar) | 3/5 (Menengah) | 3/5 (Menengah) | **Laravel** |
-| **Dokumentasi** | 10% | 5/5 (Sangat baik) | 4/5 (Komprehensif) | 4/5 (Baik) | 4/5 (Baik) | **Laravel** |
-| **Fitur Keamanan** | 10% | 5/5 (Bawaan) | 5/5 (Kuat) | 3/5 (Dasar) | 2/5 (Manual) | **Laravel/Symfony** |
-| **TOTAL BERBOBOT** | 100% | **4,7/5 (94%)** | **3,9/5 (78%)** | **3,6/5 (72%)** | **3,1/5 (62%)** | **✅ LARAVEL** |
+1. **Arsitektur MVC (Model-View-Controller):**
+   - **Model**: Merepresentasikan data dan logika bisnis, berinteraksi dengan basis data melalui Eloquent ORM
+   - **View**: Menyajikan data kepada pengguna menggunakan mesin templat Blade
+   - **Controller**: Perantara antara Model dan View, menangani logika alur aplikasi
 
-**Justifikasi Pemilihan Laravel untuk CUR-HEART:**
+2. **Eloquent ORM:**
+   - Pemetaan Relasi-Objek untuk interaksi basis data dengan sintaksis ekspresif
+   - Manajemen relasi (satu-ke-satu, satu-ke-banyak, banyak-ke-banyak)
+   - Fitur keamanan seperti perlindungan *mass assignment* dan penghapusan lunak
 
-| Faktor | Kebutuhan CUR-HEART | Keunggulan Laravel | Dampak |
-|--------|---------------|----------------|--------|
-| **Kebutuhan *Full-Stack*** | *Backend* + *Frontend* + Basis Data | Templat Blade, Eloquent ORM, perutean - semua terintegrasi | ✅ TINGGI - Tidak perlu React/Vue |
-| **Pengembangan Cepat** | Tenggat 11 minggu | Artisan CLI, *scaffolding*, Eloquent menghemat minggu | ✅ KRITIS - 40% pengembangan lebih cepat |
-| **Kurva Pembelajaran** | Tim baru ke kerangka kerja | Dokumentasi sangat baik, komunitas besar (*Stack Overflow*) | ✅ TINGGI - Kurva belajar 2-3 hari |
-| **Autentikasi** | Peran pengguna (Admin, Terapis, Klien) | Laravel Breeze/Sanctum bawaan, peran melalui *middleware* | ✅ TINGGI - Menghemat 1 minggu pengembangan |
-| **Basis Data** | Relasi kompleks (16 tabel) | Relasi Eloquent (*hasMany*, *belongsToMany*) - sintaksis elegan | ✅ TINGGI - Kode bersih, lebih sedikit *bug* |
-| **Keamanan** | Perlindungan data mirip HIPAA | Pencegahan CSRF, XSS, *hashing* kata sandi (bcrypt), enkripsi | ✅ KRITIS - Keamanan bawaan |
-| **Dukungan API** | Aplikasi seluler masa depan | Sumber daya API Laravel, Sanctum untuk autentikasi | ✅ MENENGAH - Tahan masa depan |
-| **Pengujian** | UAT, pengujian fungsional | PHPUnit bawaan, pengujian fitur, *factory* basis data | ✅ MENENGAH - Jaminan kualitas |
-| **Hosting** | Kendala anggaran (Rp 1,2 juta/tahun) | Berjalan di *hosting* bersama, VPS (persyaratan rendah) | ✅ TINGGI - Efektif biaya |
-| **Komunitas** | Pemecahan masalah, paket | 1 juta+ pengembang, 15 ribu+ paket (Packagist), Laracasts | ✅ TINGGI - Resolusi masalah cepat |
+3. **Mesin Templat Blade:**
+   - Pewarisan templat untuk ketergunaan ulang kode
+   - Perlindungan XSS otomatis
+   - Struktur kontrol yang bersih (@if, @foreach, @while)
+   - Direktif autentikasi dan otorisasi
 
-**Mengapa TIDAK Kerangka Kerja Lain:**
-- **Symfony**: ❌ Terlalu kompleks untuk tenggat 11 minggu, kurva belajar lebih curam, lebih banyak *boilerplate*
-- **CodeIgniter**: ❌ Kurang fitur modern (autentikasi bawaan, relasi ORM), ekosistem lebih kecil
-- **Slim/Lumen**: ❌ Kerangka kerja mikro - perlu membangun terlalu banyak dari awal (autentikasi, tampilan, dll.)
-- **Yii/CakePHP/Phalcon**: ❌ Komunitas lebih kecil, lebih sulit mencari bantuan, lebih sedikit paket
+4. **Fitur Keamanan Bawaan:**
+   - Autentikasi dan otorisasi berbasis peran
+   - Perlindungan CSRF (Cross-Site Request Forgery)
+   - Perlindungan XSS (Cross-Site Scripting)
+   - Hashing kata sandi dengan Bcrypt/Argon2
+   - Enkripsi data sensitif
 
-**Kesimpulan**: Laravel dipilih karena keseimbangan sempurna antara fitur, kemudahan penggunaan, dan kecepatan pengembangan untuk skala proyek CUR-HEART.
+5. **Migrasi & Pembenihan Basis Data:**
+   - Kontrol versi basis data untuk pengelolaan skema
+   - Pembuatan data sampel untuk pengembangan dan pengujian
 
----
-
-Menurut dokumentasi resmi Laravel (Laravel Documentation, 2023), Laravel menyediakan ekosistem yang lengkap untuk pengembangan web *full-stack*, termasuk:
-
-- **Eloquent ORM:** Pemetaan Relasi-Objek (*Object-Relational Mapping*) yang andal untuk interaksi basis data
-- **Mesin Templat Blade (*Blade Templating Engine*):** Mesin templat yang sederhana namun andal untuk lapisan tampilan
-- **Artisan CLI:** Perangkat baris perintah (*command-line tool*) untuk otomasi tugas dan pembuatan kode
-- **Migrasi & Pembenihan (*Migration & Seeding*):** Kontrol versi basis data dan pembuatan data sampel
-- **Autentikasi & Otorisasi (*Authentication & Authorization*):** Sistem bawaan untuk manajemen pengguna
-- **Antrean & Pekerjaan (*Queue & Job*):** Pemrosesan pekerjaan latar belakang untuk tugas yang memakan waktu
-- **Peristiwa & Pendengar (*Events & Listeners*):** Arsitektur berbasis peristiwa untuk penggandengan longgar
-- **Pengujian (*Testing*):** Dukungan bawaan untuk pengujian unit dan pengujian fitur
-- **Pengembangan API:** Perangkat untuk membangun API RESTful dengan mudah
-
-#### 2.1.5.2 Arsitektur MVC Laravel
-
-**Model-View-Controller (MVC)** adalah pola arsitektur perangkat lunak yang memisahkan aplikasi menjadi tiga komponen utama (Leff & Rayfield, 2001):
-
-1. **Model:**
-   - Merepresentasikan data dan logika bisnis
-   - Berinteraksi dengan basis data melalui Eloquent ORM
-   - Mendefinisikan relasi antar entitas (satu-ke-satu, satu-ke-banyak, banyak-ke-banyak)
-   - Melakukan validasi data dan penegakan aturan bisnis
-   - Independen dari antarmuka pengguna
-
-   Contoh di sistem CUR-HEART:
-   - Model *User* (klien, terapis, admin)
-   - Model *Booking*
-   - Model *Service*
-   - Model *Session*
-   - Model *Payment*
-
-2. **View (Tampilan):**
-   - Menyajikan data kepada pengguna dalam format yang sesuai
-   - Menggunakan mesin templat Blade di Laravel
-   - Menerima data dari *Controller* dan menampilkannya
-   - Tidak berisi logika bisnis, hanya logika presentasi
-   - Antarmuka responsif dan ramah pengguna
-
-   Contoh di sistem CUR-HEART:
-   - Tampilan halaman arahan (*landing page*)
-   - Tampilan formulir pemesanan
-   - Tampilan dasbor (klien, terapis, admin)
-   - Tampilan laporan
-
-3. **Controller (Pengontrol):**
-   - Bertindak sebagai perantara antara Model dan View
-   - Menerima masukan dari pengguna (permintaan HTTP)
-   - Memanggil Model untuk mengambil atau memanipulasi data
-   - Memilih View yang sesuai untuk menampilkan respons
-   - Berisi logika alur aplikasi
-
-   Contoh di sistem CUR-HEART:
-   - *BookingController* (menangani operasi pemesanan)
-   - *UserController* (menangani manajemen pengguna)
-   - *PaymentController* (menangani pembayaran)
-   - *DashboardController* (menangani data dasbor)
-
----
-
-**[GAMBAR 2.5 - Laravel MVC Architecture Pattern]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT LARAVEL MVC DIAGRAM]                             │
-│                                                             │
-│   3 Main Components (triangle layout):                     │
-│                                                             │
-│           📋 VIEW (Blade Templates)                         │
-│              - UI Layer                                     │
-│              - Presentation Logic                           │
-│              - HTML/CSS/JavaScript                          │
-│                    ↑    ↓                                   │
-│              sends data | displays                          │
-│                    ↑    ↓                                   │
-│                                                             │
-│   🎮 CONTROLLER    ←→    🗄️  MODEL                          │
-│   - Request Handler         - Business Logic               │
-│   - Route Logic             - Database Interaction         │
-│   - Flow Control            - Data Validation              │
-│   - UserController          - User Model                   │
-│   - BookingController       - Booking Model                │
-│                                                             │
-│   Request Flow:                                            │
-│   User → Route → Controller → Model → Database             │
-│        ← View  ← Controller ← Model ← Database             │
-│                                                             │
-│   Example Flow CUR-HEART:                                  │
-│   1. Client clicks "Book Now" button                       │
-│   2. Route: POST /bookings → BookingController             │
-│   3. Controller validates input, calls Booking Model       │
-│   4. Model saves to database, returns result               │
-│   5. Controller passes data to View                        │
-│   6. View renders booking confirmation page                │
-│                                                             │
-│   Format: Architecture diagram dengan arrows               │
-│   Style: Clean, technical diagram dengan icons             │
-│   Recommended size: 1200x900px                             │
-│                                                             │
-│   File: assets/images/laravel-mvc-pattern.png              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.5: Laravel MVC (Model-View-Controller) architecture pattern yang digunakan dalam struktur aplikasi CUR-HEART untuk memisahkan business logic, presentation, dan data layer_
-
----
-
-#### 2.1.5.3 Eloquent ORM
-
-Eloquent adalah Pemetaan Relasi-Objek (*Object-Relational Mapping*/ORM) yang disediakan Laravel untuk interaksi basis data (Otwell, 2021). ORM adalah teknik pemrograman yang memungkinkan pengembang untuk berinteraksi dengan basis data menggunakan paradigma berorientasi objek, tanpa harus menulis kueri SQL mentah.
-
-**Keuntungan Eloquent ORM:**
-
-1. **Implementasi *Active Record*:**
-   Setiap kelas model merepresentasikan satu tabel di basis data. Instans dari kelas model merepresentasikan satu baris dalam tabel tersebut.
-
-2. **Sintaksis Ekspresif:**
-   Kueri dapat ditulis dengan sintaksis yang bersih dan mudah dibaca, contoh:
-   ```php
-   // Ambil semua terapis aktif
-   $therapists = Therapist::where('status', 'active')->get();
-   
-   // Ambil pemesanan dengan relasi
-   $booking = Booking::with(['user', 'therapist', 'service'])->find($id);
-   ```
-
-3. **Manajemen Relasi:**
-   Eloquent mempermudah pendefinisian dan bekerja dengan relasi:
-   - Satu-ke-Satu (*One-to-One*: hasOne, belongsTo)
-   - Satu-ke-Banyak (*One-to-Many*: hasMany, belongsTo)
-   - Banyak-ke-Banyak (*Many-to-Many*: belongsToMany)
-   - *Has-Many-Through*
-   - Relasi Polimorfik (*Polymorphic Relations*)
-
-4. **Pembangun Kueri (*Query Builder*):**
-   Pembangun kueri yang andal dengan *method chaining* untuk kueri kompleks:
-   - where(), orWhere()
-   - orderBy(), groupBy()
-   - join(), leftJoin()
-   - select(), selectRaw()
-   - Fungsi agregat (count, sum, avg, min, max)
-
-5. **Perlindungan Penugasan Massal (*Mass Assignment Protection*):**
-   Melindungi dari kerentanan penugasan massal dengan properti *fillable* atau *guarded*.
-
-6. **Stempel Waktu Otomatis (*Automatic Timestamps*):**
-   Otomatis mengelola kolom created_at dan updated_at.
-
-7. **Penghapusan Lunak (*Soft Deletes*):**
-   Fitur untuk "penghapusan lunak" rekaman (menandai sebagai dihapus) tanpa menghapus dari basis data.
-
-8. **Aksesor & Mutator (*Accessor & Mutator*):**
-   Mengubah format data saat mengambil (aksesor) atau sebelum menyimpan (mutator).
-
-9. **Peristiwa Model (*Model Events*):**
-   *Hook* yang dipanggil pada peristiwa siklus hidup seperti *creating*, *created*, *updating*, *updated*, *deleting*, *deleted*.
-
----
-
-**[GAMBAR 2.6 - Laravel Ecosystem dan Packages]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT LARAVEL ECOSYSTEM MAP]                           │
-│                                                             │
-│   Center: ⚡ LARAVEL FRAMEWORK (Core)                       │
-│                                                             │
-│   OFFICIAL PACKAGES (Inner Circle):                        │
-│   🔷 Eloquent ORM - Database abstraction layer             │
-│   🔷 Blade - Templating engine                             │
-│   🔷 Artisan CLI - Command-line tool                       │
-│   🔷 Laravel Mix/Vite - Asset compilation                  │
-│   🔷 Laravel Sanctum - API authentication                  │
-│   🔷 Laravel Breeze - Auth scaffolding                     │
-│   🔷 Laravel Cashier - Subscription billing                │
-│   🔷 Laravel Scout - Full-text search                      │
-│   🔷 Laravel Socialite - OAuth authentication              │
-│   🔷 Laravel Horizon - Queue monitoring                    │
-│   🔷 Laravel Telescope - Debug assistant                   │
-│   🔷 Laravel Passport - OAuth2 server                      │
-│                                                             │
-│   COMMUNITY PACKAGES (Outer Circle):                       │
-│   📦 Spatie - Permissions, Media Library, Backup           │
-│   📦 Laravel Debugbar - Debug toolbar                      │
-│   📦 Intervention Image - Image manipulation               │
-│   📦 Laravel Excel - Excel import/export                   │
-│   📦 Laravel Dompdf - PDF generation                       │
-│   📦 Guzzle HTTP - HTTP client                             │
-│                                                             │
-│   PACKAGES USED IN CUR-HEART:                              │
-│   ✅ Eloquent ORM - Database models & relationships        │
-│   ✅ Blade - View templating                               │
-│   ✅ Sanctum - API auth untuk future mobile app            │
-│   ✅ Breeze - Authentication scaffolding                   │
-│   ✅ Spatie Permissions - Role-based access control        │
-│   ✅ Laravel Debugbar - Development debugging              │
-│   ✅ Intervention Image - Profile/therapist photos         │
-│                                                             │
-│   Total Available: 15,000+ packages on Packagist           │
-│                                                             │
-│   Format: Ecosystem map dengan icon per package            │
-│   Recommended size: 1400x1000px                            │
-│   Style: Clean, technical dengan syntax highlighting       │
-│                                                             │
-│   File: assets/images/laravel-ecosystem.png                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.6: Laravel ecosystem dan packages yang digunakan dalam proyek CUR-HEART untuk berbagai fungsionalitas dari authentication hingga media management_
-
----
-
-#### 2.1.5.4 Mesin Templat Blade (*Blade Templating Engine*)
-
-Blade adalah mesin templat yang sederhana namun andal yang disediakan Laravel (Otwell, 2021). Blade memungkinkan pengembang untuk menggunakan struktur kontrol (*if*, *foreach*, *while*) dan pewarisan di templat dengan sintaksis yang bersih.
-
-**Fitur Utama Blade:**
-
-1. **Pewarisan Templat (*Template Inheritance*):**
-   Menggunakan @extends dan @section untuk membuat templat hierarkis:
-   ```blade
-   {{-- layout.blade.php --}}
-   <!DOCTYPE html>
-   <html>
-   <head>
-       @yield('title')
-   </head>
-   <body>
-       @yield('content')
-   </body>
-   </html>
-   
-   {{-- page.blade.php --}}
-   @extends('layout')
-   @section('title', 'Page Title')
-   @section('content')
-       <h1>Welcome</h1>
-   @endsection
-   ```
-
-2. **Komponen (*Components*):**
-   Komponen UI yang dapat digunakan ulang dengan *slot* dan atribut.
-
-3. **Struktur Kontrol (*Control Structures*):**
-   - @if, @elseif, @else, @endif
-   - @foreach, @endforeach
-   - @for, @endfor
-   - @while, @endwhile
-   - @switch, @case, @break, @default, @endswitch
-
-4. **Tampilan Data (*Data Display*):**
-   - {{ $variable }} untuk keluaran di-*escape* (perlindungan XSS)
-   - {!! $variable !!} untuk keluaran tidak di-*escape*
-   - @{{ $variable }} untuk *verbatim* (tidak di-*parse* oleh Blade)
-
-5. **Memasukkan Sub-Tampilan (*Including Subviews*):**
-   - @include('view.name')
-   - @includeIf('view.name')
-   - @includeWhen($condition, 'view.name')
-
-6. **Direktif Autentikasi (*Authentication Directives*):**
-   - @auth, @guest
-   - @can, @cannot untuk pemeriksaan otorisasi
-
-7. **Direktif Perulangan (*Looping Directives*):**
-   - Variabel $loop di dalam *foreach* dengan properti seperti *index*, *first*, *last*, *count*
-
-8. **Perlindungan CSRF (*CSRF Protection*):**
-   - Direktif @csrf untuk menghasilkan bidang *token* CSRF
-
-9. **Penyamaran Metode (*Method Spoofing*):**
-   - @method('PUT') untuk penyamaran metode HTTP
-
-**Keuntungan Blade:**
-- Tidak menambah *overhead* karena dikompilasi menjadi PHP murni
-- Sintaksis yang bersih dan ekspresif
-- Pewarisan templat untuk ketergunaan ulang kode
-- Perlindungan XSS otomatis dengan keluaran di-*escape*
-- Integrasi mulus dengan fitur Laravel
+6. **Artisan CLI:**
+   - Perangkat baris perintah untuk otomasi tugas pengembangan
+   - Pembuatan kode boilerplate (controller, model, migration)
 
 ### 2.1.6 Database Management System
 
@@ -806,677 +313,96 @@ Menurut Elmasri & Navathe (2016), DBMS menyediakan lingkungan yang nyaman dan ef
 - **Kontrol Konkurensi (*Concurrency Control*):** Mengelola akses simultan oleh banyak pengguna
 - **Cadangan dan Pemulihan (*Backup and Recovery*):** Melindungi data dari kehilangan atau kerusakan
 
-#### 2.1.6.2 MySQL dan Perbandingan Sistem Basis Data
+#### 2.1.6.2 MySQL
 
-MySQL adalah Sistem Manajemen Basis Data Relasional (*Relational Database Management System*/RDBMS) sumber terbuka yang paling populer di dunia, digunakan oleh jutaan situs web dan aplikasi (*MySQL Documentation*, 2023). MySQL menggunakan Bahasa Kueri Terstruktur (*Structured Query Language*/SQL) untuk mengakses dan mengelola data.
+MySQL adalah Sistem Manajemen Basis Data Relasional (*Relational Database Management System*/RDBMS) sumber terbuka yang paling populer di dunia (*MySQL Documentation*, 2023). MySQL menggunakan Bahasa Kueri Terstruktur (*Structured Query Language*/SQL) untuk mengakses dan mengelola data.
 
-Sebelum memilih MySQL, dilakukan evaluasi berbagai database systems:
+**Alasan Pemilihan MySQL untuk CUR-HEART:**
 
----
+1. **Kesesuaian Struktur Data**: Data sistem CUR-HEART bersifat relasional dengan hubungan yang jelas antara entitas (*Users*, *Bookings*, *Services*, *Payments*)
+2. **Dukungan Laravel**: MySQL adalah basis data default Laravel dengan integrasi Eloquent ORM yang optimal
+3. **Transaksi ACID**: Mesin InnoDB menyediakan kepatuhan ACID penuh untuk keamanan data keuangan dan pemesanan
+4. **Biaya**: Gratis dan tersedia di semua penyedia hosting tanpa biaya tambahan
+5. **Komunitas**: Komunitas RDBMS terbesar dengan dokumentasi luas dan dukungan pemecahan masalah
+6. **Kinerja**: Sangat baik untuk operasi JOIN, agregasi, dan strategi pengindeksan yang dibutuhkan sistem
 
-**Tabel 2.3 Perbandingan Database Management Systems**
-
-| Database | Type | License | Performance | Scalability | ACID | Data Model | Best Use Case | Community | CUR-HEART Score |
-|----------|------|---------|-------------|-------------|------|------------|---------------|-----------|----------------|
-| **MySQL 8.0** | RDBMS | Open Source (GPL) | Excellent (InnoDB) | Vertical good, Horizontal moderate | ✅ Full (InnoDB) | Relational (Tables, Rows) | Web apps, transactional systems | ⭐⭐⭐⭐⭐ Very Large | ✅ **95%** DIPILIH |
-| **PostgreSQL** | RDBMS | Open Source (PostgreSQL) | Excellent | Excellent (replication) | ✅ Full | Relational + JSON + GIS | Complex queries, analytics, GIS | ⭐⭐⭐⭐ Large | ⚠️ 85% Good but overkill |
-| **SQLite** | RDBMS | Open Source (Public Domain) | Good (file-based) | Limited (single file) | ✅ Full | Relational (Embedded) | Mobile apps, embedded systems, prototyping | ⭐⭐⭐⭐ Large | ❌ 40% Not for production web |
-| **MariaDB** | RDBMS | Open Source (GPL) | Excellent | Excellent | ✅ Full | Relational (MySQL fork) | MySQL alternative, enterprise | ⭐⭐⭐⭐ Large | ⚠️ 90% Similar to MySQL |
-| **MongoDB** | NoSQL | Open Source (SSPL) | Very Good | Excellent (sharding) | ⚠️ Eventual | Document (JSON/BSON) | Real-time apps, big data, flexible schema | ⭐⭐⭐⭐ Large | ❌ 50% Wrong data model |
-| **Redis** | NoSQL | Open Source (BSD) | Excellent (in-memory) | Good (clustering) | ❌ None | Key-Value (In-Memory) | Caching, sessions, real-time | ⭐⭐⭐⭐ Large | ⚠️ 60% For caching only |
-| **Microsoft SQL Server** | RDBMS | Commercial | Excellent | Excellent | ✅ Full | Relational | Enterprise Windows apps, .NET | ⭐⭐⭐ Medium | ❌ 30% Commercial license cost |
-| **Oracle Database** | RDBMS | Commercial | Excellent | Excellent | ✅ Full | Relational | Enterprise, mission-critical | ⭐⭐⭐ Medium | ❌ 20% Very expensive |
-
-**Kriteria Pemilihan Terperinci:**
-
-| Kriteria | Bobot | MySQL | PostgreSQL | MongoDB | SQLite | Pemenang |
-|----------|--------|-------|------------|---------|--------|--------|
-| **Kesesuaian Data Relasional** | 25% | 5/5 (Sempurna untuk data terstruktur) | 5/5 (Sangat baik) | 2/5 (Model dokumen) | 5/5 (Relasional) | **MySQL/PostgreSQL** |
-| **Integrasi Laravel** | 20% | 5/5 (Dukungan utama) | 5/5 (Sangat baik) | 4/5 (Baik via paket) | 4/5 (Dev saja) | **MySQL/PostgreSQL** |
-| **Biaya (Anggaran Rp 5 juta)** | 15% | 5/5 (Gratis, sumber terbuka) | 5/5 (Gratis) | 4/5 (Gratis, opsi komersial) | 5/5 (Gratis) | **Semua sumber terbuka** |
-| **Kinerja** | 15% | 5/5 (Cepat untuk aplikasi web) | 5/5 (Kueri kompleks lebih baik) | 5/5 (*Writes* cepat) | 3/5 (Terbatas) | **MySQL/PostgreSQL** |
-| **Ketersediaan *Hosting*** | 10% | 5/5 (Semua *hosting* punya) | 4/5 (Sebagian besar *hosting*) | 3/5 (*Hosting* khusus) | 3/5 (Tidak untuk produksi) | **MySQL** |
-| **Kurva Pembelajaran** | 10% | 5/5 (SQL dikenal luas) | 4/5 (Lebih banyak fitur = kompleksitas) | 3/5 (Paradigma baru) | 5/5 (Sederhana) | **MySQL** |
-| **Komunitas & Sumber Daya** | 5% | 5/5 (Komunitas RDBMS terbesar) | 4/5 (Besar, berkembang) | 4/5 (NoSQL besar) | 4/5 (Besar) | **MySQL** |
-| **TOTAL BERBOBOT** | 100% | **5,0/5 (100%)** | **4,8/5 (96%)** | **3,2/5 (64%)** | **4,1/5 (82%)** | **✅ MYSQL** |
-
-**Justifikasi Pemilihan MySQL untuk CUR-HEART:**
-
-| Faktor | Kebutuhan CUR-HEART | Keunggulan MySQL | Dampak |
-|--------|---------------|----------------|--------|
-| **Struktur Data** | Sangat relasional (*Users*, *Bookings*, *Services*, *Payments* dengan *FK*) | Cocok sempurna untuk data ternormalisasi dengan *foreign keys* | ✅ KRITIS - Integritas data |
-| **Transaksi** | Pemrosesan pembayaran, konfirmasi pemesanan (ACID diperlukan) | Mesin InnoDB menyediakan kepatuhan ACID penuh | ✅ KRITIS - Keamanan data keuangan |
-| **Dukungan Laravel** | Basis data Laravel *default* | Eloquent ORM dioptimalkan untuk MySQL, migrasi teruji | ✅ TINGGI - Integrasi mulus |
-| **Biaya *Hosting*** | Kendala anggaran | Setiap penyedia *hosting* (Niagahoster VPS Rp 100 ribu/bulan) termasuk MySQL | ✅ TINGGI - Rp 0 biaya tambahan |
-| **Keakraban Tim** | Tim mengetahui SQL dari mata kuliah basis data | Sintaksis SQL standar, terdokumentasi luas | ✅ TINGGI - Tidak ada kurva belajar |
-| **Kompleksitas Kueri** | Menengah (*JOIN*, agregasi, tapi bukan *data warehousing*) | Sangat baik untuk operasi *JOIN*, strategi pengindeksan | ✅ TINGGI - Kinerja memadai |
-| **Skalabilitas** | Target 200 pengguna, 100 pemesanan/bulan awalnya | Penskalaan vertikal cukup (dapat menangani 10.000× beban saat ini) | ✅ MENENGAH - Ruang untuk tumbuh |
-| **Cadangan & Pemulihan** | Cadangan harian, pemulihan bencana | Replikasi, *mysqldump*, *binary logs* | ✅ TINGGI - Perlindungan data |
-| **Keamanan** | PII, data kesehatan (sensitif) | Autentikasi pengguna, SSL, enkripsi saat istirahat | ✅ TINGGI - Aman secara *default* |
-| **Dukungan JSON** | Spesialisasi terapis (array fleksibel) | MySQL 8.0 tipe JSON asli dengan fungsi | ✅ MENENGAH - Fleksibilitas saat dibutuhkan |
-
-**Mengapa TIDAK Basis Data Lain:**
-- **PostgreSQL**: ⚠️ Pilihan sangat baik, tapi MySQL cukup untuk kebutuhan. PostgreSQL lebih baik untuk analitik kompleks, data GIS, pengindeksan lanjutan - tidak diperlukan.
-- **MongoDB**: ❌ Model dokumen tidak cocok untuk data relasional CUR-HEART. Relasi *foreign key* kritis (*bookings* → *users*, *therapists*, *services*).
-- **SQLite**: ❌ Basis data berbasis berkas, tidak cocok untuk aplikasi web multi-pengguna dengan *writes* bersamaan.
-- **Komersial (Oracle, SQL Server)**: ❌ Biaya lisensi Rp 50 juta-500 juta/tahun, tidak sesuai anggaran Rp 5 juta total proyek.
-
-**Fitur MySQL 8.0 yang Digunakan di CUR-HEART:**
-- *Window Functions* (peringkat terapis berdasarkan penghasilan)
-- Tipe data JSON (array spesialisasi terapis)
-- *Common Table Expressions* (CTE) untuk laporan kompleks
-- Pencarian teks lengkap InnoDB (pencarian layanan)
-- *Stored procedures* (logika pemesanan kompleks)
-
-**Kesimpulan**: MySQL dipilih sebagai basis data karena cocok sempurna untuk struktur data relasional CUR-HEART, integrasi Laravel sangat baik, tanpa biaya tambahan, dan cukup untuk skala proyek + pertumbuhan masa depan.
-
----
-
-**[GAMBAR 2.7 - MySQL Relational Database Concept]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT RELATIONAL DATABASE CONCEPT DIAGRAM]             │
-│                                                             │
-│   Example dengan 3 tabel dari CUR-HEART:                   │
-│                                                             │
-│   USERS Table          BOOKINGS Table       SERVICES Table  │
-│   - id (PK)            - id (PK)            - id (PK)       │
-│   - name               - user_id (FK)       - name          │
-│   - email              - service_id (FK)    - price         │
-│   - role               - therapist_id (FK)  - duration      │
-│   - created_at         - date                               │
-│                        - status                             │
-│                                                             │
-│   Relationships dengan arrows:                             │
-│   - Users (1) → Bookings (Many)                            │
-│   - Services (1) → Bookings (Many)                         │
-│   - Therapists (1) → Bookings (Many)                       │
-│                                                             │
-│   Key Concepts:                                            │
-│   - Primary Key (PK) - Unique identifier                   │
-│   - Foreign Key (FK) - References to other tables          │
-│   - One-to-Many relationships                              │
-│   - Data integrity through constraints                     │
-│                                                             │
-│   Benefits:                                                │
-│   - No data duplication (normalized)                       │
-│   - ACID compliance for transactions                       │
-│   - Powerful JOIN queries                                  │
-│   - Referential integrity                                  │
-│                                                             │
-│   Format: ER-like diagram dengan table boxes               │
-│   Recommended size: 1200x800px                             │
-│                                                             │
-│   File: assets/images/mysql-relational-concept.png         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.7: Konsep relational database MySQL yang menunjukkan hubungan antar tabel melalui primary key dan foreign key constraints dalam sistem CUR-HEART_
-
----
+**Fitur MySQL 8.0 yang Digunakan:**
+- *Window Functions* untuk pelaporan dan analitik
+- Tipe data JSON untuk fleksibilitas data semi-terstruktur
+- *Common Table Expressions* (CTE) untuk kueri kompleks
+- Pencarian teks lengkap InnoDB
+- Replikasi dan *binary logs* untuk cadangan data
 
 #### 2.1.6.3 Normalisasi Basis Data
 
-Normalisasi adalah proses mengorganisir data dalam basis data untuk mengurangi redundansi dan meningkatkan integritas data (Date, 2004). Proses normalisasi melibatkan penguraian tabel untuk mengeliminasi karakteristik yang tidak diinginkan seperti anomali penyisipan, pembaruan, dan penghapusan.
+Normalisasi adalah proses mengorganisir data dalam basis data untuk mengurangi redundansi dan meningkatkan integritas data (Date, 2004). Dalam sistem CUR-HEART, basis data dinormalisasi hingga Bentuk Normal Ketiga (3NF) untuk memastikan:
 
-**Bentuk Normal (*Normal Forms*):**
-
-1. **Bentuk Normal Pertama (*First Normal Form*/1NF):**
-   - Setiap kolom harus berisi nilai atomik (tidak dapat dibagi)
-   - Tidak boleh ada kelompok berulang atau *array*
-   - Setiap baris harus unik (*primary key*)
-
-   Contoh sebelum 1NF:
-   | booking_id | client_name | services |
-   |------------|-------------|----------|
-   | 1 | John | *Stress Therapy*, *Sleep Therapy* |
-
-   Setelah 1NF:
-   | booking_id | client_name | service |
-   |------------|-------------|---------|
-   | 1 | John | *Stress Therapy* |
-   | 1 | John | *Sleep Therapy* |
-
-2. **Bentuk Normal Kedua (*Second Normal Form*/2NF):**
-   - Harus dalam 1NF
-   - Semua atribut non-kunci harus sepenuhnya bergantung secara fungsional pada seluruh *primary key*
-   - Mengeliminasi ketergantungan parsial
-
-   Contoh: Jika *primary key* adalah (*booking_id*, *service_id*), maka atribut yang hanya bergantung pada *booking_id* (seperti *client_name*) harus dipindahkan ke tabel terpisah.
-
-3. **Bentuk Normal Ketiga (*Third Normal Form*/3NF):**
-   - Harus dalam 2NF
-   - Tidak ada ketergantungan transitif (atribut non-kunci tidak bergantung pada atribut non-kunci lain)
-
-   Contoh: Jika tabel *Booking* memiliki *therapist_id* dan *therapist_email*, dan *therapist_email* bergantung pada *therapist_id* (bukan pada *booking_id*), maka *therapist_email* harus dipindahkan ke tabel *Therapist*.
-
-**Keuntungan Normalisasi:**
-- Mengurangi redundansi data
-- Meningkatkan integritas data
-- Memfasilitasi modifikasi data yang lebih mudah
-- Menyederhanakan kueri dalam beberapa kasus
-
-**Kerugian Normalisasi:**
-- Dapat memerlukan lebih banyak tabel dan *join*
-- Kueri dapat menjadi lebih kompleks
-- Potensi *overhead* kinerja untuk *join* kompleks
-
-Dalam praktik, keseimbangan antara normalisasi dan kinerja adalah penting. Terkadang denormalisasi (sengaja melanggar bentuk normal) dilakukan untuk tujuan optimisasi.
+- Eliminasi redundansi data
+- Integritas referensial dengan *foreign keys*
+- Konsistensi data melalui kendala (*constraints*)
+- Kemudahan pemeliharaan dan modifikasi skema
 
 ### 2.1.7 Tailwind CSS
 
-#### 2.1.7.1 Pengertian Tailwind CSS dan Perbandingan Kerangka Kerja CSS
+Tailwind CSS adalah kerangka kerja CSS utilitas-pertama (*utility-first*) yang menyediakan kelas utilitas tingkat rendah untuk membangun desain khusus (*Tailwind CSS Documentation*, 2023). Berbeda dengan kerangka kerja CSS tradisional seperti Bootstrap yang menyediakan komponen pra-desain, Tailwind menyediakan kelas utilitas yang dapat dikombinasikan untuk membuat desain apa pun.
+
+**Alasan Pemilihan Tailwind CSS untuk CUR-HEART:**
+
+1. **Pendekatan Utility-First**: Memberikan kontrol penuh atas desain tanpa terikat pada komponen pra-desain
+2. **Ukuran File Optimal**: Dengan PurgeCSS, file CSS produksi hanya 5-10 KB dibandingkan Bootstrap (25-30 KB)
+3. **Desain Responsif**: Modifier responsif bawaan (sm:, md:, lg:, xl:) memudahkan pembuatan antarmuka ramah seluler
+4. **Kustomisasi Penuh**: Konfigurasi warna, jarak, dan tipografi sesuai panduan merek CUR-HEART melalui `tailwind.config.js`
+5. **Integrasi Laravel Blade**: Bekerja sempurna dengan arsitektur komponen Blade
+6. **Konsistensi Desain**: Sistem desain dengan skala terpredefinisi untuk tampilan profesional
+7. **Pemeliharaan Mudah**: Gaya berlokasi bersama dengan HTML memudahkan pemahaman dan modifikasi
+
+**Fitur Utama Tailwind CSS:**
+- Utility classes untuk flexbox, grid, spacing, typography, colors
+- Responsive design dengan breakpoint system (sm, md, lg, xl, 2xl)
+- Hover, focus, active, dan state variants
+- Dark mode support (untuk pengembangan masa depan)
+- JIT (Just-In-Time) compiler untuk build yang lebih cepat
+- Plugin ecosystem untuk fungsi tambahan
+
+### 2.1.8 Keamanan Web (*Web Security*)
+
+Keamanan web adalah aspek kritis dalam pengembangan aplikasi web, terutama untuk sistem yang menangani data sensitif seperti informasi kesehatan mental di CUR-HEART (OWASP, 2021). CUR-HEART mengimplementasikan autentikasi berbasis peran (RBAC) dengan tiga peran utama: Admin (kelola sistem), Terapis (kelola jadwal dan klien), dan Klien (kelola pemesanan pribadi).
+
+**Fitur Keamanan Laravel yang Diimplementasikan:**
+
+1. **Autentikasi Multi-Peran**: Sistem *login* dengan validasi peran pengguna menggunakan *middleware* Laravel
+2. ***Password Hashing***: Penyimpanan kata sandi terenkripsi dengan Bcrypt untuk mencegah kebocoran
+3. **CSRF Protection**: Token CSRF otomatis untuk semua formulir mencegah serangan *Cross-Site Request Forgery*
+4. **SQL Injection Prevention**: Eloquent ORM dengan *prepared statements* mencegah injeksi SQL
+5. **XSS Protection**: Blade templating otomatis meng-*escape* output untuk mencegah skrip berbahaya
+6. **HTTPS Enforcement**: Enkripsi komunikasi untuk melindungi data sensitif klien dan terapis
 
-Tailwind CSS adalah kerangka kerja CSS utilitas-pertama (*utility-first*) yang menyediakan kelas utilitas tingkat rendah untuk membangun desain khusus tanpa harus meninggalkan HTML (*Tailwind CSS Documentation*, 2023). Berbeda dengan kerangka kerja CSS tradisional seperti Bootstrap yang menyediakan komponen pra-desain, Tailwind menyediakan kelas utilitas yang dapat dikombinasikan untuk membuat desain apa pun.
-
-Sebelum memilih Tailwind CSS, dilakukan evaluasi berbagai CSS frameworks:
-
----
-
-**Tabel 2.4 Perbandingan CSS Frameworks**
-
-| Framework | Version | Approach | File Size (Prod) | Customization | Learning Curve | Best For | Design Philosophy | CUR-HEART Score |
-|-----------|---------|----------|-----------------|---------------|----------------|----------|------------------|----------------|
-| **Tailwind CSS** | 3.3+ | Utility-first | 5-10 KB (purged) | Highly customizable via config | Medium (class names) | Custom designs, component-based apps | Build from scratch with utilities | ✅ **95%** DIPILIH |
-| **Bootstrap** | 5.3 | Component-based | 25-30 KB (minified) | Limited (Sass variables) | Easy (pre-built components) | Rapid prototyping, admin dashboards | Pre-designed components | ⚠️ 60% Generic look |
-| **Bulma** | 0.9 | Component-based | 20-25 KB | Moderate (Sass) | Easy | Simple websites, marketing pages | Modern, flexbox-based | ⚠️ 55% Limited ecosystem |
-| **Foundation** | 6.7 | Component-based | 30-35 KB | Moderate (Sass) | Medium | Enterprise websites | Professional, business-focused | ⚠️ 50% Complex, less popular |
-| **Material UI** | CSS version | Component-based | 25-30 KB | Limited | Easy | Material Design apps | Google Material Design | ❌ 45% Heavy, specific design |
-| **Semantic UI** | 2.5 | Component-based | 35-40 KB | Moderate | Medium | Semantic HTML | Human-friendly HTML | ❌ 40% Less maintained |
-| **Pure.css** | 3.0 | Minimal | 3.5 KB (minimal) | Low | Very Easy | Minimalist projects | Tiny, unopinionated | ❌ 35% Too minimal |
-
-**Detailed Comparison Matrix:**
-
-| Kriteria | Weight | Tailwind CSS | Bootstrap | Bulma | Foundation | Winner |
-|----------|--------|-------------|-----------|-------|-----------|--------|
-| **Customization** | 25% | 5/5 (Infinite via config) | 2/5 (Sass variables only) | 3/5 (Sass) | 3/5 (Sass) | **Tailwind** |
-| **File Size** | 20% | 5/5 (5-10 KB purged) | 3/5 (~25 KB) | 3/5 (~20 KB) | 2/5 (~30 KB) | **Tailwind** |
-| **Design Uniqueness** | 20% | 5/5 (Build any design) | 2/5 (Bootstrap look) | 3/5 (Bulma look) | 3/5 (Foundation look) | **Tailwind** |
-| **Development Speed** | 15% | 4/5 (Fast once learned) | 5/5 (Copy-paste components) | 4/5 (Simple classes) | 3/5 (More complex) | **Bootstrap** |
-| **Learning Curve** | 10% | 3/5 (Memorize classes) | 5/5 (Easy, well-known) | 4/5 (Straightforward) | 3/5 (Complex docs) | **Bootstrap** |
-| **Community & Ecosystem** | 5% | 5/5 (Fastest growing, huge) | 5/5 (Largest, mature) | 3/5 (Medium) | 3/5 (Declining) | **Tailwind/Bootstrap** |
-| **Responsive Design** | 5% | 5/5 (Built-in, mobile-first) | 5/5 (Grid system) | 4/5 (Flexbox-based) | 4/5 (Grid) | **Tailwind/Bootstrap** |
-| **TOTAL WEIGHTED** | 100% | **4.7/5 (94%)** | **3.4/5 (68%)** | **3.4/5 (68%)** | **2.9/5 (58%)** | **✅ TAILWIND** |
-
-**Justifikasi Pemilihan Tailwind CSS:**
-
-| Faktor | Kebutuhan CUR-HEART | Solusi Tailwind | Dampak |
-|--------|---------------|------------------|--------|
-| ***Branding* Khusus** | Warna merek CUR-HEART (Navy #1E0E62, Pink #FF6B7A, Teal #4ECDC4) | Berkas konfigurasi untuk mendefinisikan warna merek persis, tidak terbatas pada biru Bootstrap | ✅ KRITIS - Identitas merek unik |
-| **Fleksibilitas Desain** | Kebutuhan UI/UX: Kartu terapis, formulir pemesanan, dasbor khusus | Membangun komponen dari awal tanpa melawan *default* kerangka kerja | ✅ TINGGI - Kebebasan desain lengkap |
-| **Ukuran Berkas** | Tujuan kinerja: < 3 detik waktu muat pada 3G | PurgeCSS menghapus kelas tidak terpakai → CSS akhir hanya 8 KB vs Bootstrap 25 KB | ✅ TINGGI - 70% muat lebih cepat |
-| **Desain Responsif** | Seluler-pertama (70% pengguna di seluler) | Pengubah responsif bawaan (sm:, md:, lg:) mudah digunakan | ✅ TINGGI - Dioptimalkan seluler |
-| **Konsistensi** | Sistem desain: jarak, warna, bayangan konsisten | Skala terpredefinisi memastikan konsistensi tanpa berpikir | ✅ TINGGI - Tampilan profesional |
-| **Keselarasan Pembelajaran** | Tim belajar teknik CSS modern | Tailwind mengajarkan fundamental CSS (*flexbox*, *grid*) vs menyembunyikannya | ✅ MENENGAH - Nilai pendidikan |
-| **Kompatibilitas Komponen** | Komponen Laravel Blade | Kelas utilitas bekerja sempurna dengan arsitektur berbasis komponen | ✅ TINGGI - Cocok alami |
-| **Mode Gelap** | Pertimbangan fitur masa depan | Varian *dark:* bawaan untuk implementasi mudah | ✅ RENDAH - Tahan masa depan |
-| **Tanpa "Tampilan Bootstrap"** | Hindari tampilan situs web generik | Setiap situs Tailwind terlihat unik, bukan "situs Bootstrap lain" | ✅ MENENGAH - Tampilan profesional |
-| **Pemeliharaan** | Pemeliharaan basis kode jangka panjang | Gaya berlokasi bersama dengan HTML, lebih mudah dipahami & dimodifikasi | ✅ TINGGI - Biaya pemeliharaan berkurang |
-
-**Mengapa TIDAK Kerangka Kerja Lain:**
-- **Bootstrap**: ❌ "Tampilan Bootstrap" generik, kustomisasi merek terbatas, ukuran berkas lebih besar (25 KB), penimpaan diperlukan untuk desain khusus
-- **Bulma/Foundation**: ❌ Masih berbasis komponen dengan opini, ekosistem lebih kecil, lebih sulit menemukan sumber daya/bantuan
-- **Material UI**: ❌ Memaksakan estetika Google Material Design, tidak selaras dengan *branding* CUR-HEART (menenangkan, lembut, bukan Material)
-- **Pure.css**: ❌ Terlalu minimal, perlu membangun terlalu banyak dari awal, tidak ada sistem desain
-
-**Tailwind CSS Usage Strategy in CUR-HEART:**
-
-```html
-<!-- Example: Custom therapist card with brand colors -->
-<div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-6">
-    <img src="..." class="w-24 h-24 rounded-full mx-auto mb-4">
-    <h3 class="text-primary-900 font-bold text-xl mb-2">Dr. Jane Doe</h3>
-    <p class="text-gray-600 text-sm mb-4">Certified Hypnotherapist</p>
-    <button class="bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-2 rounded-lg w-full transition-colors">
-        Book Session
-    </button>
-</div>
-
-<!-- Responsive grid (1 col mobile, 2 col tablet, 3 col desktop) -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Cards here -->
-</div>
-```
-
-**Tailwind Configuration (`tailwind.config.js`):**
-```javascript
-module.exports = {
-    theme: {
-        extend: {
-            colors: {
-                primary: { 900: '#1E0E62', ... }, // Navy
-                secondary: { 500: '#FF6B7A', ... }, // Pink
-                accent: { teal: '#4ECDC4' } // Teal
-            }
-        }
-    }
-}
-```
-
-**Conclusion**: Tailwind CSS dipilih karena memberikan complete design freedom untuk build custom CUR-HEART brand identity, smallest production file size (8 KB vs 25+ KB alternatives), excellent responsive design system, dan perfect fit dengan Laravel Blade component architecture.
-
----
-
-**[GAMBAR 2.8 - Tailwind CSS Utility-First Approach]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT COMPARISON: TRADITIONAL CSS VS TAILWIND]         │
-│                                                             │
-│   TRADITIONAL CSS          VS     TAILWIND CSS (Utility)   │
-│   ┌──────────────────┐          ┌─────────────────────┐   │
-│   │ styles.css:      │          │ HTML only:          │   │
-│   │                  │          │                     │   │
-│   │ .button {        │          │ <button             │   │
-│   │   background:    │          │   class="bg-blue-   │   │
-│   │     #3490dc;     │          │     500 text-white  │   │
-│   │   color: white;  │          │     px-6 py-3       │   │
-│   │   padding: 1rem  │          │     rounded-lg      │   │
-│   │     1.5rem;      │          │     hover:bg-blue-  │   │
-│   │   border-radius: │          │     600 transition- │   │
-│   │     0.5rem;      │          │     colors">        │   │
-│   │ }                │          │   Book Now          │   │
-│   │ .button:hover {  │          │ </button>           │   │
-│   │   background:
-│   │ }                │          │ Result: Same look!  │   │
-│   │ └──────────────────┘          └─────────────────────┘   │
-│                                                             │
-│   ❌ TRADITIONAL PROBLEMS        ✅ TAILWIND BENEFITS      │
-│   • Context switching            • No context switching    │
-│     (HTML ↔ CSS files)            (all in HTML)           │
-│   • Naming things is hard        • No naming needed        │
-│     (.btn-primary? .button?)      (use utility classes)   │
-│   • CSS grows forever            • CSS stays small         │
-│     (unused styles remain)        (PurgeCSS removes)      │
-│   • Specificity wars             • Consistent specificity  │
-│     (!important hell)             (utility classes)        │
-│   • Hard to maintain             • Easy to maintain        │
-│     (find all .button usage)      (style in HTML)         │
-│                                                             │
-│   EXAMPLE: RESPONSIVE DESIGN                               │
-│   ┌──────────────────────────────────────────────────┐    │
-│   │ <!-- Mobile: stacked, Desktop: side-by-side --> │    │
-│   │ <div class="flex flex-col md:flex-row gap-4">   │    │
-│   │   <div class="w-full md:w-1/2">Content A</div>  │    │
-│   │   <div class="w-full md:w-1/2">Content B</div>  │    │
-│   │ </div>                                           │    │
-│   │                                                  │    │
-│   │ Mobile: ┌────────┐   Desktop: ┌───┐ ┌───┐      │    │
-│   │         │   A    │             │ A │ │ B │      │    │
-│   │         ├────────┤             └───┘ └───┘      │    │
-│   │         │   B    │                              │    │
-│   │         └────────┘                              │    │
-│   └──────────────────────────────────────────────────┘    │
-│                                                             │
-│   Format: Side-by-side code comparison dengan annotations  │
-│   Recommended size: 1400x1000px                            │
-│   Style: Clean, technical dengan syntax highlighting       │
-│                                                             │
-│   File: assets/images/tailwind-utility-first.png           │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.8: Perbandingan pendekatan traditional CSS vs Tailwind CSS utility-first yang digunakan dalam styling CUR-HEART untuk development speed dan maintainability_
-
----
-
-#### 2.1.8 Keamanan Web (*Web Security*)
-
-#### 2.1.8.1 Autentikasi (*Authentication*)
-
-Autentikasi adalah proses memverifikasi identitas pengguna, perangkat, atau sistem (OWASP, 2021). Dalam aplikasi web, autentikasi memastikan bahwa pengguna adalah siapa yang mereka klaim sebelum memberikan akses ke sumber daya.
-
-**Metode Autentikasi:**
-
-1. **Autentikasi Berbasis Kata Sandi (*Password-Based Authentication*):**
-   - Nama pengguna dan kata sandi
-   - Metode paling umum
-   - Memerlukan penyimpanan kata sandi yang aman (*hashing*)
-   - Rentan jika kata sandi lemah atau digunakan ulang
-
-2. **Autentikasi Multi-Faktor (*Multi-Factor Authentication*/MFA):**
-   - Menggabungkan beberapa metode autentikasi:
-     - Sesuatu yang Anda tahu (kata sandi)
-     - Sesuatu yang Anda miliki (ponsel, *token*)
-     - Sesuatu yang Anda adalah (biometrik)
-   - Meningkatkan keamanan secara signifikan
-
-3. **Autentikasi Berbasis *Token* (*Token-Based Authentication*):**
-   - Pengguna menerima *token* setelah *login*
-   - *Token* disertakan dalam permintaan berikutnya
-   - Contoh: JWT (*JSON Web Tokens*), *token* OAuth
-
-4. **Autentikasi Berbasis Sesi (*Session-Based Authentication*):**
-   - Server membuat sesi setelah *login*
-   - ID sesi disimpan di *cookie*
-   - Server memvalidasi sesi pada setiap permintaan
-
-**Autentikasi Laravel:**
-
-Laravel menyediakan sistem autentikasi yang kuat secara bawaan:
-
-- **Pendaftaran Pengguna:** Pendaftaran bawaan dengan validasi
-- ***Login/Logout*:** Autentikasi berbasis sesi
-- ***Hashing* Kata Sandi:** Otomatis dengan Bcrypt
-- **Pengaturan Ulang Kata Sandi:** Alur pengaturan ulang kata sandi berbasis surel
-- **Ingat Saya (*Remember Me*):** *Login* persisten dengan *token* aman
-- **Verifikasi Surel:** Memverifikasi alamat surel pengguna
-- ***Middleware*:** Perlindungan rute dengan *middleware* `auth`
-
-#### 2.1.8.2 Otorisasi (*Authorization*)
-
-Otorisasi adalah proses menentukan izin atau hak istimewa apa yang dimiliki pengguna yang telah diautentikasi (OWASP, 2021). Setelah pengguna diautentikasi, otorisasi menentukan sumber daya apa yang dapat mereka akses dan tindakan apa yang dapat mereka lakukan.
-
-**Kontrol Akses Berbasis Peran (*Role-Based Access Control*/RBAC):**
-
-RBAC adalah model otorisasi di mana izin ditetapkan berdasarkan peran (Sandhu et al., 1996).
-
-Komponen RBAC:
-- **Pengguna (*Users*):** Individu yang menggunakan sistem
-- **Peran (*Roles*):** Kumpulan izin yang diberi nama (misalnya, Admin, Terapis, Klien)
-- **Izin (*Permissions*):** Tindakan spesifik pada sumber daya (misalnya, buat pemesanan, edit profil, lihat laporan)
-
-Dalam sistem CUR-HEART:
-
-1. **Peran Admin (*Admin Role*):**
-   - Izin: Kelola pengguna, kelola layanan, kelola pemesanan, lihat semua laporan, konfigurasi pengaturan sistem
-
-2. **Peran Terapis (*Therapist Role*):**
-   - Izin: Kelola jadwal sendiri, lihat klien yang ditugaskan, buat catatan sesi, lihat pemesanan sendiri, lihat penghasilan sendiri
-
-3. **Peran Klien (*Client Role*):**
-   - Izin: Buat pemesanan, lihat pemesanan sendiri, lihat profil sendiri, lihat kemajuan sendiri, lakukan pembayaran
-
-**Otorisasi Laravel:**
-
-Laravel menyediakan beberapa cara untuk otorisasi:
-
-1. ***Gates*:**
-   *Closure* sederhana yang menentukan apakah pengguna diotorisasi untuk melakukan tindakan:
-   ```php
-   Gate::define('edit-booking', function ($user, $booking) {
-       return $user->id === $booking->user_id;
-   });
-   ```
-
-2. **Policies:**
-   Pendekatan berbasis kelas untuk otorisasi tindakan pada model tertentu:
-   ```php
-   public function update(User $user, Booking $booking)
-   {
-       return $user->id === $booking->user_id;
-   }
-   ```
-
-3. **Middleware:**
-   Melindungi rute dengan peran atau izin tertentu:
-   ```php
-   Route::middleware(['auth', 'role:admin'])->group(function () {
-       // Admin-only routes
-   });
-   ```
-
-4. **Blade Directives:**
-   Perenderan bersyarat berdasarkan izin:
-   ```blade
-   @can('edit-booking', $booking)
-       <button>Edit</button>
-   @endcan
-   ```
-
-#### 2.1.8.3 Kerentanan Web Umum
-
-**1. SQL Injection:**
-
-*SQL Injection* terjadi ketika penyerang dapat menyisipkan kode SQL berbahaya ke dalam kueri (OWASP, 2021).
-
-**Pencegahan di Laravel:**
-- Gunakan Eloquent ORM atau *Query Builder* (pengikatan parameter otomatis)
-- Jangan pernah menggabungkan masukan pengguna langsung dalam kueri mentah
-- Gunakan pernyataan tersiapkan (*prepared statements*) jika menggunakan SQL mentah
-
-**2. Cross-Site Scripting (XSS):**
-
-XSS memungkinkan penyerang menyisipkan skrip berbahaya ke dalam halaman yang dilihat pengguna lain.
-
-**Pencegahan di Laravel:**
-- Mesin templat Blade secara otomatis meng-*escape* keluaran dengan `{{ }}`
-- Gunakan `{!! !!}` hanya untuk konten terpercaya
-- Validasi dan sanitasi masukan pengguna
-
-**3. Cross-Site Request Forgery (CSRF):**
-
-CSRF menipu pengguna untuk melakukan tindakan yang tidak diinginkan pada aplikasi tempat mereka terautentikasi.
-
-**Pencegahan di Laravel:**
-- Laravel secara otomatis menghasilkan *token* CSRF untuk setiap sesi pengguna aktif
-- Semua permintaan POST, PUT, PATCH, DELETE harus menyertakan *token* CSRF
-- Direktif Blade `@csrf` untuk menyertakan *token* dalam formulir
-
-**4. Session Hijacking:**
-
-Penyerang mencuri atau memprediksi ID sesi yang valid untuk mendapatkan akses tidak sah.
-
-**Pencegahan:**
-- Gunakan HTTPS untuk mengenkripsi transmisi data
-- Atur *flag* aman dan *httpOnly* untuk *cookie* sesi
-- Regenerasi ID sesi setelah *login* (Laravel melakukan ini secara otomatis)
-- Terapkan batas waktu sesi (*session timeout*)
-
-**5. Insecure Direct Object References (IDOR):**
-
-Penyerang dapat mengakses sumber daya dengan memodifikasi nilai parameter (misalnya, mengubah *user_id* dalam URL).
-
-**Pencegahan:**
-- Terapkan pemeriksaan otorisasi yang tepat
-- Gunakan *Policies* Laravel untuk memastikan pengguna hanya dapat mengakses sumber daya mereka sendiri
-- Jangan ekspos ID internal secara langsung; gunakan UUID atau *slug*
-
-**6. Kelemahan Kata Sandi:**
-
-Kata sandi yang lemah atau disimpan dengan tidak tepat dapat dikompromikan dengan mudah.
-
-**Pencegahan di Laravel:**
-- Gunakan *hashing* kata sandi bawaan Laravel (Bcrypt/Argon2)
-- Terapkan kebijakan kata sandi yang kuat (panjang minimum, persyaratan kompleksitas)
-- Jangan pernah menyimpan kata sandi dalam teks biasa
-- Terapkan konfirmasi kata sandi untuk tindakan sensitif
-
----
 
 **[GAMBAR 2.9 - Web Security Layers (OWASP Top 10)]**
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT OWASP TOP 10 SECURITY THREATS INFOGRAPHIC]       │
-│                                                             │
-│   OWASP Top 10 Web Application Security Risks (2021):      │
-│                                                             │
-│   1️⃣  BROKEN ACCESS CONTROL                                │
-│       • Bypass authorization checks                         │
-│       • Access unauthorized data/functions                  │
-│       Laravel Protection: Middleware, Policies, Gates       │
-│                                                             │
-│   2️⃣  CRYPTOGRAPHIC FAILURES                               │
-│       • Sensitive data exposure                             │
-│       • Weak encryption algorithms                          │
-│       Laravel Protection: Bcrypt hashing, Encryption facade │
-│                                                             │
-│   3️⃣  INJECTION (SQL, XSS, Command)                        │
-│       • Malicious code in queries/commands                  │
-│       • Data theft or destruction                           │
-│       Laravel Protection: Eloquent ORM, Parameter binding   │
-│                                                             │
-│   4️⃣  INSECURE DESIGN                                      │
-│       • Missing security controls by design                 │
-│       • Architecture flaws                                  │
-│       CUR-HEART: Security requirements from start           │
-│                                                             │
-│   5️⃣  SECURITY MISCONFIGURATION                            │
-│       • Default credentials, unnecessary features           │
-│       • Verbose error messages                              │
-│       Laravel Protection: .env config, Debug mode control   │
-│                                                             │
-│   6️⃣  VULNERABLE & OUTDATED COMPONENTS                     │
-│       • Using libraries with known vulnerabilities          │
-│       Laravel Protection: Composer audit, Regular updates   │
-│                                                             │
-│   7️⃣  IDENTIFICATION & AUTHENTICATION FAILURES             │
-│       • Weak password policies                              │
-│       • Session management flaws                            │
-│       Laravel Protection: Breeze, Sanctum, Session handling │
-│                                                             │
-│   8️⃣  SOFTWARE & DATA INTEGRITY FAILURES                   │
-│       • Unsigned/unverified updates                         │
-│       • CI/CD pipeline vulnerabilities                      │
-│       Protection: Code reviews, Version control             │
-│                                                             │
-│   9️⃣  SECURITY LOGGING & MONITORING FAILURES               │
-│       • Insufficient logging                                │
-│       • No breach detection                                 │
-│       Laravel Protection: Log facade, Monitoring tools      │
-│                                                             │
-│   🔟 SERVER-SIDE REQUEST FORGERY (SSRF)                    │
-│       • Fetch remote resources without validation           │
-│       Laravel Protection: Input validation, URL whitelist   │
-│                                                             │
-│   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    │
-│                                                             │
-│   SECURITY LAYERS IMPLEMENTED IN CUR-HEART:                │
-│                                                             │
-│   🛡️  Layer 1: NETWORK (HTTPS, Firewall)                   │
-│   🛡️  Layer 2: APPLICATION (Laravel Security Features)     │
-│   🛡️  Layer 3: DATABASE (Encrypted data, Backups)          │
-│   🛡️  Layer 4: AUTHENTICATION (Multi-factor capable)       │
-│   🛡️  Layer 5: AUTHORIZATION (RBAC with Policies)          │
-│   🛡️  Layer 6: MONITORING (Logs, Alerts, Audits)           │
-│                                                             │
-│   Format: Infographic dengan icon per threat + mitigation  │
-│   Recommended size: 1200x1600px (vertical layout)          │
-│   Style: Professional security diagram dengan color-coding │
-│         Red (threats) → Green (protections)                │
-│                                                             │
-│   File: assets/images/owasp-top-10-security.png            │
-│   Reference: OWASP Foundation (2021)                       │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.9: OWASP Top 10 web application security risks yang menjadi acuan implementasi keamanan sistem CUR-HEART dengan mitigation strategies menggunakan Laravel built-in security features_
-
----
 
 ### 2.1.9 Antarmuka Pengguna dan Pengalaman Pengguna (*User Interface* dan *User Experience*/UI/UX)
 
-#### 2.1.9.1 Pengertian UI/UX
+Antarmuka Pengguna (*User Interface*/UI) adalah elemen visual yang pengguna gunakan untuk berinteraksi dengan produk digital, sedangkan Pengalaman Pengguna (*User Experience*/UX) mencakup keseluruhan pengalaman pengguna termasuk kemudahan penggunaan, efisiensi, dan kepuasan (Norman, 2013; Hassenzahl & Tractinsky, 2006).
 
-**Antarmuka Pengguna (*User Interface*/UI)** adalah segala sesuatu yang pengguna berinteraksi dengannya ketika menggunakan produk digital (Norman, 2013). UI mencakup layar, halaman, tombol, ikon, dan semua elemen visual lainnya yang memungkinkan pengguna untuk berinteraksi dengan produk.
+**Prinsip Desain UI/UX yang Diterapkan di CUR-HEART:**
 
-**Pengalaman Pengguna (*User Experience*/UX)** adalah pengalaman keseluruhan pengguna saat berinteraksi dengan produk, termasuk kemudahan penggunaan, efisiensi, kepuasan, dan respons emosional (Hassenzahl & Tractinsky, 2006). UX lebih luas dari UI dan mencakup seluruh perjalanan pengguna dari kesadaran hingga dukungan pasca-pembelian.
+1. **Desain Berpusat pada Pengguna**: Riset pada target pengguna (klien milenial/Gen Z yang mencari terapi kesehatan mental)
+2. **Konsistensi**: Elemen antarmuka konsisten di seluruh aplikasi menggunakan komponen Tailwind CSS
+3. **Umpan Balik**: Notifikasi jelas untuk setiap aksi (pemesanan berhasil, pembayaran dikonfirmasi)
+4. **Kesederhanaan**: Alur pemesanan 4 langkah dengan informasi progresif untuk mengurangi beban kognitif
+5. **Hierarki Visual**: Warna *brand* (Navy, Pink, Teal) dengan kontras untuk CTA penting
+6. **Desain Responsif**: *Mobile-first approach* dengan *breakpoints* Tailwind (sm, md, lg, xl) karena 70% pengguna mobile
+7. **Aksesibilitas**: Pertimbangan WCAG 2.1 untuk kontras warna dan navigasi keyboard
 
-Menurut Nielsen Norman Group (2021), UX yang baik adalah tentang memahami kebutuhan, nilai, kemampuan, dan keterbatasan pengguna. UX yang baik juga berarti memahami tujuan bisnis dan menyeimbangkannya dengan kebutuhan pengguna.
+**Desain Menenangkan untuk Kesehatan Mental:**
+- Palet warna lembut (Biru Laut #1E0E62, Pink #FF6B7A, Teal #4ECDC4)
+- Tipografi bersih dengan *spacing* lapang untuk mengurangi kecemasan visual
+- Animasi transisi halus untuk pengalaman yang tidak mengganggu
 
-#### 2.1.9.2 Prinsip-prinsip Desain UI/UX
-
-**1. Desain Berpusat pada Pengguna (*User-Centered Design*):**
-Keputusan desain berdasarkan riset pengguna dan umpan balik, bukan asumsi (Norman, 2013).
-
-**2. Konsistensi (*Consistency*):**
-Elemen antarmuka harus konsisten dalam penampilan dan perilaku di seluruh aplikasi (Shneiderman et al., 2016).
-
-**3. Umpan Balik (*Feedback*):**
-Sistem harus memberikan umpan balik yang jelas untuk setiap tindakan pengguna (klik tombol, pengiriman formulir, dll.).
-
-**4. Kesederhanaan (*Simplicity*):**
-Pertahankan antarmuka sederhana dan langsung. Hapus elemen yang tidak perlu yang tidak berkontribusi pada tujuan pengguna.
-
-**5. Hierarki (*Hierarchy*):**
-Organisir konten dengan hierarki visual yang jelas untuk memandu perhatian pengguna ke elemen yang paling penting.
-
-**6. Aksesibilitas (*Accessibility*):**
-Desain untuk semua pengguna, termasuk mereka dengan disabilitas (pedoman WCAG).
-
-**7. Pencegahan & Pemulihan Kesalahan (*Error Prevention & Recovery*):**
-Cegah kesalahan jika memungkinkan; ketika kesalahan terjadi, berikan pesan yang jelas dan opsi pemulihan yang mudah.
-
-**8. Desain Responsif (*Responsive Design*):**
-Antarmuka harus bekerja dengan baik di berbagai perangkat dan ukuran layar (seluler, tablet, desktop).
-
----
 
 **[GAMBAR 2.10 - UI/UX Design Process]**
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT UI/UX DESIGN PROCESS FLOWCHART]                  │
-│                                                             │
-│   5 Phases (horizontal flow):                              │
-│                                                             │
-│   1. RESEARCH        2. DEFINE        3. IDEATE           │
-│   - User research    - Personas       - Wireframes        │
-│   - Competitor       - User stories   - Sketches          │
-│   - Interviews       - Requirements   - Brainstorming     │
-│         ↓                  ↓                ↓              │
-│                                                             │
-│   4. PROTOTYPE       5. TEST & ITERATE                     │
-│   - Mockups          - Usability testing                   │
-│   - Hi-fi designs    - Feedback collection                 │
-│   - Interactions     - Refinement                          │
-│         ↓                  ↓                                │
-│                    ← Loop back if needed                   │
-│                                                             │
-│   Format: Process flowchart dengan icon per phase          │
-│   Recommended size: 1400x800px                             │
-│                                                             │
-│   File: assets/images/uiux-design-process.png              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.10: Proses desain UI/UX yang digunakan dalam perancangan antarmuka sistem CUR-HEART dari research hingga testing_
-
----
-
-#### 2.1.9.3 Desain Web Responsif (*Responsive Web Design*)
-
-Desain Web Responsif (*Responsive Web Design*/RWD) adalah pendekatan untuk desain web yang membuat halaman ditampilkan dengan baik pada berbagai perangkat dan ukuran layar (Marcotte, 2011).
-
-**Teknik RWD:**
-
-1. **Kisi Fluida (*Fluid Grids*):**
-   Tata letak menggunakan unit relatif (%, em, rem) alih-alih unit tetap (px).
-
-2. **Gambar Fleksibel (*Flexible Images*):**
-   Gambar diskalakan berdasarkan elemen penampung dengan `max-width: 100%`.
-
-3. **Kueri Media (*Media Queries*):**
-   Aturan CSS yang diterapkan berdasarkan karakteristik perangkat (lebar layar, orientasi):
-   ```css
-   @media (min-width: 768px) {
-       /* Gaya untuk tablet dan desktop */
-   }
-   ```
-
-4. **Pendekatan Seluler-Pertama (*Mobile-First Approach*):**
-   Desain untuk layar terkecil terlebih dahulu, kemudian tingkatkan untuk layar yang lebih besar.
-
-**Desain Responsif Tailwind CSS:**
-
-Tailwind mempermudah desain responsif dengan awalan *breakpoint*:
-```html
-<div class="text-sm md:text-base lg:text-lg">
-    <!-- Ukuran font berubah berdasarkan ukuran layar -->
-</div>
-```
-
-Dalam sistem CUR-HEART, desain responsif sangat penting karena banyak pengguna akan mengakses dari perangkat seluler, terutama untuk pemesanan dan memeriksa janji temu saat bepergian.
 
 ## 2.2 Penelitian Terkait
 
@@ -1604,87 +530,32 @@ Penelitian ini sangat relevan untuk menginformasikan keputusan desain dalam sist
 
 ### 2.2.5 Gap Analysis dan Posisi Penelitian
 
----
+**Tabel 2.5 Ringkasan Penelitian Terkait**
 
-**Tabel 2.5 Summary of Related Research (Penelitian Terkait)**
+| No | Penulis & Tahun | Teknologi | Temuan Utama | Gap Teridentifikasi | Relevansi |
+|----|----------------|-----------|-------------|---------------------|-----------|
+| 1 | Pratama & Kusumawati (2022) | PHP, MySQL, Bootstrap | Efisiensi admin +45%, waktu tunggu -30% | Tidak ada pelacakan kemajuan terapi, penjadwalan tidak fleksibel | Sedang - Metodologi waterfall, konsep alur pemesanan |
+| 2 | Chen, Li, & Wang (2021) | Laravel, MySQL, WebRTC | Kepuasan 85%, ketidakhadiran -70% | Tidak fokus hipnoterapi, pembayaran manual | Tinggi - Arsitektur Laravel, domain kesehatan mental |
+| 3 | Wijaya & Lestari (2023) | PHP, MySQL, Bootstrap | Konversi +60%, konflik jadwal -40% | Tidak ada dokumentasi sesi, layanan transaksional | Sedang - Alur pemesanan, algoritma penjadwalan |
+| 4 | Hartono et al. (2022) | Laravel 9, MySQL, Tailwind | Persyaratan fungsional 90%, kepuasan 82% | Alur pemesanan sederhana, fitur terapis minimal | Sangat Tinggi - Stack teknologi identik |
+| 5 | Nugroho & Setiawan (2021) | Laravel, CodeIgniter, Symfony | Laravel: balance produktivitas-kinerja | Tidak analisis spesifik aplikasi kesehatan | Sedang - Justifikasi pemilihan Laravel |
+| 6 | Rahayu et al. (2023) | Figma | Preferensi: sederhana, warna lembut, privasi | Tidak spesifik sistem pemesanan | Tinggi - Prinsip UX, psikologi warna |
 
-| No | Penulis & Tahun | Judul Penelitian | Metodologi | Teknologi | Fitur Utama | Hasil/Temuan | Gap yang Teridentifikasi | Relevansi CUR-HEART |
-|----|----------------|-----------------|------------|-----------|-------------|-------------|-------------------------|-------------------|
-| 1 | Pratama & Kusumawati (2022) | Rancang Bangun Sistem Informasi Manajemen Rumah Sakit Berbasis Web dengan Metode Air Terjun | SDLC Air Terjun | PHP, MySQL, Bootstrap | • Pendaftaran pasien<br>• Rekam medis elektronik<br>• Penjadwalan dokter<br>• Sistem penagihan | • Efisiensi admin +45%<br>• Waktu tunggu -30%<br>• Implementasi sukses di RS kecil | ❌ Tidak ada fitur pelacakan kemajuan terapi<br>❌ Penjadwalan tidak fleksibel untuk terapis<br>❌ UI/UX tidak dioptimasi untuk kesehatan mental | ⚠️ SEDANG<br>**Dapat Diadopsi**: Metodologi air terjun, konsep alur pemesanan<br>**Berbeda**: Rumah sakit umum vs terapi khusus |
-| 2 | Chen, Li, & Wang (2021) | Pengembangan Platform Konsultasi Kesehatan Mental Daring Menggunakan Kerangka Kerja Laravel | *Agile* | Laravel, MySQL, WebRTC | • Konsultasi daring<br>• Penjadwalan janji temu<br>• Konferensi video<br>• Catatan pasien | • Kepuasan pengguna 85%<br>• Pengurangan ketidakhadiran 70%<br>• Sistem pengingat efektif | ❌ Tidak fokus hipnoterapi spesifik<br>❌ Pemantauan kinerja terbatas<br>❌ Verifikasi pembayaran manual | ⭐ TINGGI<br>**Dapat Diadopsi**: Arsitektur Laravel, domain kesehatan mental, sistem pengingat<br>**Ditingkatkan**: Otomasi pembayaran, analitik terapis |
-| 3 | Wijaya & Lestari (2023) | Sistem Informasi Pemesanan Salon Kecantikan Berbasis Web dengan Fitur Penjadwalan Waktu Nyata | Purwarupa | PHP natif, MySQL, Bootstrap | • Pemesanan waktu nyata<br>• Pemilihan penyedia layanan<br>• Algoritma penjadwalan<br>• Pencegahan konflik | • Konversi pemesanan +60%<br>• Konflik penjadwalan -40%<br>• Optimasi algoritma sukses | ❌ Tidak ada dokumentasi sesi<br>❌ Tidak ada pelacakan kemajuan klien<br>❌ Layanan transaksional (bukan terapi) | ⚠️ SEDANG<br>**Dapat Diadopsi**: Alur pemesanan, ketersediaan waktu nyata, algoritma konflik<br>**Berbeda**: Layanan salon vs sesi terapi |
-| 4 | Hartono, Santoso, & Wijayanti (2022) | Aplikasi Manajemen Pemesanan dan Penjadwalan Klinik Kesehatan Menggunakan Kerangka Kerja Laravel | Air Terjun | Laravel 9, MySQL, Tailwind CSS | • Pemesanan daring<br>• Manajemen antrian<br>• Rekam medis<br>• Dasbor pelaporan | • Persyaratan fungsional 90%<br>• Kepuasan pengguna 82%<br>• Sistem stabil di produksi | ❌ Klinik umum, bukan terapi khusus<br>❌ Alur pemesanan 1 langkah sederhana<br>❌ Fitur terapis minimal | ⭐⭐ SANGAT TINGGI<br>**Dapat Diadopsi**: Tumpukan teknologi sama persis (Laravel+MySQL+Tailwind), sistem pemesanan, pelaporan<br>**Ditingkatkan**: Pemesanan multi-langkah, dasbor terapis |
-| 5 | Nugroho & Setiawan (2021) | Analisis Perbandingan Performa Kerangka Kerja PHP (Laravel, CodeIgniter, Symfony) untuk Pengembangan Aplikasi Web | Studi Komparatif | Laravel 8, CodeIgniter 4, Symfony 5 | • *Benchmarking* kinerja<br>• Analisis pemeliharaan kode<br>• Pengujian skalabilitas | • Laravel: keseimbangan terbaik produktivitas & kinerja<br>• 15% lebih lambat dari CodeIgniter<br>• Ekosistem jauh lebih baik | ❌ Tidak ada analisis spesifik untuk aplikasi kesehatan<br>❌ Keamanan untuk data sensitif tidak mendalam | ⚠️ SEDANG<br>**Dapat Diadopsi**: Bukti pemilihan Laravel, ekspektasi kinerja<br>**Nilai**: Justifikasi kerangka kerja |
-| 6 | Rahayu, Kusuma, & Pratiwi (2023) | Desain Pengalaman Pengguna untuk Aplikasi Kesehatan Mental: Studi Kasus pada Generasi Milenial | Riset Pengguna, Pengujian Kegunaan | Figma (desain saja) | • Riset pengguna (n=50)<br>• Pembuatan kerangka kawat<br>• Pengujian purwarupa<br>• Pedoman pengalaman pengguna | • Preferensi: kesederhanaan, privasi, warna menenangkan<br>• Palet lembut (biru, hijau) efektif<br>• Beban kognitif minimal penting | ❌ Aplikasi kesehatan mental umum<br>❌ Tidak spesifik untuk sistem pemesanan<br>❌ Tidak ada detail implementasi | ⭐ TINGGI<br>**Dapat Diadopsi**: Prinsip pengalaman pengguna, psikologi warna, preferensi milenial<br>**Diterapkan**: Desain menenangkan untuk CUR-HEART |
+**Tabel 2.6 Analisis Gap dan Solusi CUR-HEART**
 
-**Gap Analysis Summary:**
-
-| Kategori Gap | Deskripsi | Bagaimana CUR-HEART Mengatasinya | Tingkat Inovasi |
-|--------------|-------------|----------------------------------|-----------------|
-| **1. Persyaratan Spesifik Domain** | Penelitian yang ada fokus pada kesehatan umum/kesehatan mental, tidak spesifik hipnoterapi dengan kebutuhan dokumentasi unik | • Templat sesi spesifik hipnoterapi<br>• Dokumentasi keadaan *trance*<br>• Metrik kemajuan khusus (skala kecemasan)<br>• Pelacakan teknik (relaksasi progresif, visualisasi) | 🔥 TINGGI - Sistem manajemen hipnoterapi pertama |
-| **2. Manajemen Terapis Komprehensif** | Sistem yang ada fokus pada sisi pasien, fitur terapis terbatas | • Dasbor pendapatan dengan rincian<br>• Analitik kinerja (jumlah sesi, rating, utilisasi)<br>• Manajemen ketersediaan fleksibel (berulang + pengecualian)<br>• Wawasan klien dan visibilitas kemajuan | 🔥 TINGGI - Fitur berpusat terapis langka |
-| **3. Alur Pemesanan Multi-Langkah** | Sistem yang ada menggunakan pemesanan sederhana 1-2 langkah | • Panduan 4 langkah (Layanan → Terapis → Jadwal → Pembayaran)<br>• Indikasi kemajuan yang jelas<br>• Pengungkapan informasi progresif<br>• Beban kognitif optimal per langkah | 🟡 SEDANG - Meningkatkan pengalaman pengguna |
-| **4. Pelacakan Kemajuan & Analitik** | Pelacakan kemajuan klien komprehensif dengan visualisasi jarang | • Integrasi alat penilaian mandiri<br>• Grafik kemajuan (frekuensi sesi, tingkat kecemasan)<br>• Penetapan tujuan dan pelacakan pencapaian<br>• Garis waktu catatan terapis | 🔥 TINGGI - Tampilan perjalanan terapi holistik |
-| **5. Sistem Pembayaran Terintegrasi** | Banyak sistem masih verifikasi pembayaran manual | • Integrasi *payment gateway* Midtrans<br>• Berbagai metode pembayaran (VA, *e-wallet*, QRIS)<br>• Verifikasi otomatis<br>• Riwayat pembayaran & kuitansi | 🟡 SEDANG - Standar industri sekarang |
-| **6. Fokus Keamanan & Privasi** | Keamanan dasar, tidak komprehensif untuk data kesehatan mental sensitif | • Kontrol akses berbasis peran (3 peran, 15 izin)<br>• Enkripsi data (kata sandi bcrypt, bidang sensitif AES-256)<br>• Jejak audit (siapa mengakses apa kapan)<br>• Kontrol privasi terinspirasi GDPR | 🔥 TINGGI - Keamanan tingkat kesehatan |
-| **7. Desain Responsif & Dapat Diakses** | Fokus *desktop*, optimasi seluler terbatas | • Desain seluler-pertama (70% pengguna seluler)<br>• Titik putus responsif Tailwind (6 titik putus)<br>• Palet warna menenangkan (Biru Laut, Pink, Teal)<br>• Pertimbangan aksesibilitas (WCAG 2.1) | 🟡 SEDANG - Praktik terbaik modern |
+| Kategori Gap | Deskripsi | Solusi CUR-HEART | Tingkat Inovasi |
+|--------------|-------------|------------------|-----------------|
+| Spesifik Hipnoterapi | Tidak ada sistem khusus hipnoterapi | Templat sesi khusus, dokumentasi keadaan trance, metrik kemajuan spesifik | Tinggi |
+| Manajemen Terapis | Fitur terapis terbatas pada sisi pasien | Dasbor pendapatan, analitik kinerja, manajemen ketersediaan fleksibel | Tinggi |
+| Alur Pemesanan | Pemesanan sederhana 1-2 langkah | Panduan 4 langkah terpandu dengan indikasi kemajuan | Sedang |
+| Pelacakan Kemajuan | Pelacakan kemajuan jarang | Graf kemajuan, penilaian mandiri terintegrasi, timeline catatan | Tinggi |
+| Pembayaran | Verifikasi pembayaran manual | Midtrans gateway, verifikasi otomatis, multi-metode | Sedang |
+| Keamanan & Privasi | Keamanan dasar tidak komprehensif | RBAC 3 peran, enkripsi AES-256, audit trail, kontrol privasi GDPR | Tinggi |
+| Desain Responsif | Fokus desktop, optimasi seluler terbatas | Mobile-first, palet menenangkan, WCAG 2.1 | Sedang |
 
 **Posisi Penelitian:**
 
-Penelitian dan pengembangan sistem informasi CUR-HEART ini memposisikan diri sebagai **solusi komprehensif, spesifik domain, dan berpusat pada pengguna** untuk manajemen layanan hipnoterapi dan kesehatan mental. Sistem ini mengintegrasikan praktik terbaik dari penelitian yang ada dengan fitur inovatif yang secara khusus mengatasi kebutuhan praktik hipnoterapi, menghasilkan solusi yang tidak hanya kokoh secara teknis tetapi juga selaras secara mendalam dengan persyaratan klinis dan bisnis CUR-HEART.
+CUR-HEART memposisikan diri sebagai **sistem manajemen hipnoterapi pertama di Indonesia** yang mengintegrasikan praktik terbaik dari penelitian terkait dengan fitur inovatif spesifik domain. Sistem ini diharapkan menjadi **model referensi** untuk pengembangan SI layanan kesehatan mental dan **berkontribusi** pada domain sistem informasi kesehatan.
 
-Dengan mengatasi kesenjangan yang teridentifikasi dan membangun di atas pengetahuan dari penelitian yang ada, sistem CUR-HEART diharapkan dapat menjadi **model referensi** untuk pengembangan sistem informasi serupa di sektor layanan kesehatan mental di Indonesia, serta **berkontribusi** pada kumpulan pengetahuan dalam domain sistem informasi kesehatan dan interaksi manusia-komputer untuk layanan kesehatan mental.
-
----
 
 **[GAMBAR 2.11 - Timeline Penelitian Terkait (2020-2024)]**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [INSERT RESEARCH TIMELINE GRAPHIC]                       │
-│                                                             │
-│   Timeline (horizontal):                                   │
-│                                                             │
-│   2020        2021        2022        2023        2024     │
-│   ─────────────────────────────────────────────────────    │
-│     │           │           │           │           │      │
-│     │           │           │           │           │      │
-│   [Gap]     [Chen et    [Pratama    [Hartono    ★ CUR-    │
-│             al. 2021]   Wijaya      Rahayu      HEART     │
-│                         2022]       2023]       2024      │
-│                                                             │
-│   Tonggak Pencapaian Utama:                                │
-│   2021: Platform Kesehatan Mental Daring (Laravel+WebRTC)  │
-│   2022: Manajemen Rumah Sakit (Air Terjun+Web)             │
-│   2022: Pemesanan Klinik (Laravel+Tailwind) ← Paling mirip │
-│   2023: Pemesanan Salon (Penjadwalan waktu nyata)          │
-│   2023: Desain UX untuk Kesehatan Mental (Riset)           │
-│   2024: ★ Sistem Manajemen Hipnoterapi CUR-HEART           │
-│                                                             │
-│   Evolusi Fitur:                                           │
-│   2020-2021: Pemesanan dasar + konsultasi                  │
-│   2022: + Manajemen antrian, adopsi Laravel                │
-│   2023: + Penjadwalan waktu nyata, fokus UX                │
-│   2024: + Pelacakan kemajuan, analitik terapis,            │
-│          fitur hipnoterapi khusus                          │
-│                                                             │
-│   Analisis Kesenjangan:                                    │
-│   Sebelumnya: Aplikasi kesehatan/kesehatan mental umum     │
-│   CUR-HEART: Manajemen hipnoterapi khusus                  │
-│              + Fitur berpusat pada terapis                 │
-│              + Pelacakan kemajuan komprehensif             │
-│              + Keamanan tingkat layanan kesehatan          │
-│                                                             │
-│   Format: Garis waktu dengan penanda tonggak               │
-│   Ukuran yang disarankan: 1400x600px (lanskap)             │
-│   Gaya: Infografis garis waktu modern                      │
-│                                                             │
-│   File: assets/images/penelitian-terkait-timeline.png      │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 2.11: Garis waktu penelitian-penelitian terkait (2020-2024) yang menunjukkan evolusi sistem informasi kesehatan dan posisi proyek CUR-HEART dalam mengisi kesenjangan manajemen hipnoterapi khusus domain_
-
----
