@@ -342,8 +342,6 @@ _Dasbor waktu nyata menampilkan kinerja sistem, adopsi pengguna, pendapatan, dan
 
 ---
 
----
-
 ## 4.5 Keuntungan yang Diharapkan
 
 Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntungan bagi pemangku kepentingan yang terlibat.
@@ -354,40 +352,28 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 
 **Tabel 4.37 Analisis Manfaat - CUR-HEART (Organisasi)**
 
-| Kategori Manfaat | Manfaat Spesifik | Sebelum Sistem (Nilai Dasar) | Setelah Sistem (Target) | Dampak Terukur | Kerangka Waktu | Metode Pengukuran | Nilai Strategis |
-|------------------|-----------------|------------------------------|-------------------------|----------------|----------------|-------------------|-----------------|
-| **Efisiensi Operasional** | Proses pemesanan otomatis | Pemesanan manual (10-15 menit/pemesanan) | Pemesanan otomatis (3 menit/pemesanan) | • Penghematan waktu: 12 menit × 100 pemesanan = 20 jam/bulan<br>• Penghematan biaya: Rp 500.000/bulan<br>• **Tahunan: Rp 6.000.000** | Segera | Pelacakan waktu, analisis biaya | TINGGI - Mengurangi beban admin, fokus pada tugas strategis |
-| | Manajemen penjadwalan | 5 jam/minggu koordinasi | 1 jam/minggu koordinasi | • Penghematan waktu: 16 jam/bulan<br>• Utilisasi sumber daya lebih baik: 60% → 80%<br>• Penghematan biaya: Rp 400.000/bulan | Bulan 1 | Log waktu, tingkat utilisasi | TINGGI - Meningkatkan produktivitas terapis, mengurangi konflik |
-| | Pelaporan otomatis | 2 jam/laporan manual | 5 menit otomatis | • Penghematan waktu: 8 jam/bulan<br>• Penghematan biaya: Rp 200.000/bulan<br>• **Tahunan: Rp 2.400.000** | Bulan 2 | Waktu pembuatan laporan | SEDANG - Memungkinkan keputusan berbasis data, wawasan lebih cepat |
-| | Eliminasi pemesanan ganda | 2-3 insiden/bulan | 0 insiden | • Konflik dicegah: 100%<br>• Peningkatan kepuasan klien<br>• Tanpa biaya kompensasi | Segera | Log insiden | TINGGI - Melindungi reputasi, meningkatkan keandalan |
-| | Pemrosesan pembayaran | Verifikasi manual (2-4 jam) | Otomatis (30 menit) | • Penghematan waktu: 10 jam/bulan<br>• Arus kas lebih cepat<br>• Pengurangan kesalahan: 90% | Bulan 1 | Waktu pemrosesan, tingkat kesalahan | SEDANG - Meningkatkan arus kas, mengurangi beban keuangan |
-| **Pertumbuhan Pendapatan** | Peningkatan volume pemesanan | 80 pemesanan/bulan | 100 pemesanan/bulan (peningkatan 25%) | • Pendapatan tambahan: 20 × Rp 300.000<br>• **Rp 6 juta/bulan = Rp 72 juta/tahun** | Bulan 3-6 | Jumlah pemesanan, pelacakan pendapatan | KRITIS - Dampak pendapatan langsung, pertumbuhan bisnis |
-| | Pengurangan tidak hadir | Tingkat tidak hadir 15% (12/bulan) | Tingkat tidak hadir 5% (4/bulan) | • Pencegahan tidak hadir: 8 pemesanan<br>• **Pendapatan yang dipulihkan: Rp 2,4 juta/bulan = Rp 28,8 juta/tahun** | Bulan 2 | Pelacakan tingkat tidak hadir | TINGGI - Memaksimalkan pendapatan dari kapasitas |
-| | Peluang *upselling* | Visibilitas terbatas | Rekomendasi otomatis | • 20% memesan sesi tambahan<br>• 10% upgrade ke paket<br>• **Tambahan: Rp 5 juta/tahun** | Bulan 6 | Pelacakan konversi | SEDANG - Meningkatkan nilai seumur hidup pelanggan |
-| | Perpanjangan jam layanan | 08:00-17:00 (9 jam) | Pemesanan 24/7 tersedia | • Tangkap pemesanan di luar jam: 15%<br>• **Tambahan: Rp 10 juta/tahun** | Segera | Analisis waktu pemesanan | TINGGI - Menangkap peluang yang hilang sebelumnya |
-| **Kualitas & Layanan** | Pengambilan keputusan berbasis data | Analisis manual, tertunda | Dasbor waktu nyata | • Keputusan lebih cepat (hari → jam)<br>• Wawasan lebih baik<br>• Identifikasi tren | Bulan 2 | Waktu penyelesaian keputusan | TINGGI - Keunggulan kompetitif, perencanaan strategis |
-| | Pemantauan kualitas layanan | Umpan balik terbatas (informal) | Umpan balik & rating sistematis | • Tangkapan umpan balik 100%<br>• Skor SUS: 68+<br>• NPS: 30+ | Bulan 3 | Tingkat respons survei, skor | TINGGI - Perbaikan berkelanjutan, jaminan kualitas |
-| | Retensi klien | Tingkat kembali 35% (estimasi) | Tingkat kembali 60% (target) | • Peningkatan loyalitas<br>• Nilai seumur hidup lebih tinggi<br>• Pemasaran dari mulut ke mulut | Bulan 6 | Perhitungan tingkat retensi | KRITIS - Pertumbuhan bisnis berkelanjutan |
-| | Reputasi merek | Hanya dari mulut ke mulut | Kehadiran digital + ulasan | • Citra profesional<br>• Ulasan online positif<br>• Bukti sosial | Bulan 3 | Ulasan online, rating | TINGGI - Posisi pasar, membangun kepercayaan |
-| **Skalabilitas** | Ekspansi bisnis | Terbatas oleh kapasitas manual | Sistem digital skalabel | • Dukung pertumbuhan 5× tanpa penambahan staf proporsional<br>• Kesiapan multi-lokasi | Tahun 1-2 | Analisis kapasitas pertumbuhan | KRITIS - Strategi bisnis jangka panjang |
-| | Kemampuan analitik data | Laporan Excel dasar | BI & analitik lanjutan | • Wawasan prediktif<br>• Pengenalan pola<br>• Pelacakan ROI | Bulan 3 | Penggunaan analitik, kualitas wawasan | SEDANG - Dukungan keputusan strategis |
-| **Mitigasi Risiko** | Pencadangan & pemulihan data | Manual, tidak konsisten | Pencadangan harian otomatis | • Risiko kehilangan data nol<br>• Kelangsungan bisnis<br>• Pemulihan bencana siap | Segera | Tingkat keberhasilan pencadangan (100%) | TINGGI - Melindungi aset bisnis |
-| | Kepatuhan & audit | Pencatatan manual | Jejak audit digital | • Pelaporan kepatuhan mudah<br>• Ketertelusuran penuh<br>• Perlindungan hukum | Segera | Kelengkapan jejak audit | SEDANG - Kepatuhan hukum & regulasi |
-| **Penghematan Biaya** | Pengurangan beban kerja admin | 100% pemrosesan manual | Pengurangan beban kerja 50% | • Bebaskan 50% waktu admin<br>• Realokasi ke aktivitas pertumbuhan<br>• **Penghindaran biaya: Rp 10 juta/tahun** | Bulan 2 | Pelacakan beban kerja | TINGGI - Optimasi biaya operasional |
-| | Biaya terkait kesalahan | Kesalahan manusia (typo, pemesanan ganda) | Validasi sistem | • Pengurangan kesalahan: 95%<br>• Biaya kompensasi: Rp 0<br>• Waktu layanan pelanggan: pengurangan 70% | Bulan 1 | Pelacakan insiden kesalahan | SEDANG - Melindungi margin, meningkatkan layanan |
+| Kategori Manfaat | Manfaat Spesifik | Nilai Dasar | Target Setelah Sistem | Dampak Terukur | Prioritas |
+|------------------|-----------------|-------------|----------------------|----------------|-----------|
+| **Efisiensi Operasional** | Proses pemesanan otomatis | 10-15 menit/pemesanan | 3 menit/pemesanan | Penghematan: 20 jam/bulan = **Rp 6 juta/tahun** | TINGGI |
+| | Manajemen penjadwalan | 5 jam/minggu koordinasi | 1 jam/minggu | Utilisasi: 60% → 80%, Hemat Rp 400rb/bulan | TINGGI |
+| | Pelaporan otomatis | 2 jam/laporan | 5 menit otomatis | Penghematan: 8 jam/bulan = **Rp 2,4 juta/tahun** | SEDANG |
+| | Eliminasi pemesanan ganda | 2-3 insiden/bulan | 0 insiden | Konflik dicegah 100%, Kepuasan meningkat | TINGGI |
+| **Pertumbuhan Pendapatan** | Peningkatan volume pemesanan | 80 pemesanan/bulan | 100 pemesanan (+25%) | **Rp 72 juta/tahun** pendapatan tambahan | KRITIS |
+| | Pengurangan tidak hadir | 15% (12/bulan) | 5% (4/bulan) | **Rp 28,8 juta/tahun** pendapatan dipulihkan | TINGGI |
+| | Peluang *upselling* | Visibilitas terbatas | Rekomendasi otomatis | 20% pesan tambahan = **Rp 5 juta/tahun** | SEDANG |
+| | Perpanjangan jam layanan | 08:00-17:00 (9 jam) | Pemesanan 24/7 | Tangkap 15% lebih = **Rp 10 juta/tahun** | TINGGI |
+| **Kualitas & Layanan** | Pengambilan keputusan data | Analisis manual tertunda | Dasbor waktu nyata | Keputusan: hari → jam, Wawasan lebih baik | TINGGI |
+| | Pemantauan kualitas | Umpan balik informal | Sistematis (SUS 68+, NPS 30+) | Perbaikan berkelanjutan, Jaminan kualitas | TINGGI |
+| | Retensi klien | 35% kembali | 60% target | Loyalitas meningkat, Nilai seumur hidup tinggi | KRITIS |
+| **Skalabilitas** | Ekspansi bisnis | Terbatas manual | Sistem digital skalabel | Dukung pertumbuhan 5× tanpa tambahan staf | KRITIS |
+| **Penghematan Biaya** | Pengurangan beban admin | 100% manual | 50% otomatis | Bebaskan 50% waktu = **Rp 10 juta/tahun** | TINGGI |
+| | Biaya kesalahan | Kesalahan manusia | Validasi sistem (95% reduksi) | Kompensasi Rp 0, Layanan pelanggan -70% | SEDANG |
 
-**Total Manfaat Tahunan Terukur untuk CUR-HEART:**
-- Peningkatan Pendapatan Langsung: Rp 115,8 juta/tahun (Rp 72 juta + Rp 28,8 juta + Rp 5 juta + Rp 10 juta)
-- Penghematan Biaya: Rp 18,4 juta/tahun (Rp 6 juta + Rp 2,4 juta + Rp 10 juta)
-- **TOTAL MANFAAT TAHUNAN: Rp 134,2 juta/tahun**
-- **ROI atas Investasi (Rp 5 juta)**: 2.584% selama 1 tahun
-
-**Manfaat Strategis Tidak Terukur:**
-- Peningkatan reputasi merek dan posisi pasar
-- Skalabilitas untuk pertumbuhan masa depan (ekspansi multi-lokasi)
-- Kemampuan pengambilan keputusan berbasis data
-- Keunggulan kompetitif dalam transformasi digital
-- Peningkatan kepuasan klien dan terapis yang mengarah pada retensi
+**Total Manfaat Tahunan Terukur:**
+- **Peningkatan Pendapatan**: Rp 115,8 juta/tahun
+- **Penghematan Biaya**: Rp 18,4 juta/tahun
+- **TOTAL MANFAAT**: **Rp 134,2 juta/tahun**
+- **ROI atas Investasi Rp 5 juta**: **2.584% per tahun**
 
 ---
 
@@ -397,36 +383,36 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 
 **Tabel 4.38 Analisis Manfaat - Klien (Pengguna Akhir)**
 
-| Kategori Manfaat | Manfaat Spesifik | Titik Kesulitan yang Ditangani | Solusi yang Diberikan | Dampak bagi Pengguna | Proposisi Nilai | Metrik Kepuasan | Prioritas |
-|------------------|-----------------|--------------------------------|----------------------|----------------------|------------------|-----------------|----------|
-| **Kenyamanan & Aksesibilitas** | Ketersediaan pemesanan 24/7 | Terbatas pada jam kantor (08:00-17:00) | Pesan kapan saja, di mana saja via web | • Tidak perlu menunggu jam kantor<br>• Pesan saat waktu nyaman<br>• Konfirmasi instan | Fleksibilitas waktu, akses langsung | Tingkat penyelesaian pemesanan: 90% | KRITIS |
-| | Tidak perlu telepon | Harus menelepon dan menunggu | Layanan mandiri pemesanan online | • Tidak menunggu telepon<br>• Hindari kekhawatiran telepon<br>• Dapat multitasking | Kenyamanan, otonomi | Preferensi pengguna: 85% lebih suka online | TINGGI |
-| | Antarmuka ramah ponsel | Alternatif hanya desktop | Desain responsif, mengutamakan ponsel | • Pesan saat bepergian<br>• Cek janji temu di mana saja<br>• Akses cepat | Kenyamanan ponsel | Penggunaan ponsel: 70% dari pemesanan | TINGGI |
-| | Penjadwalan ulang mudah | Koordinasi manual diperlukan | Jadwal ulang satu klik (sesuai kebijakan) | • Tidak bergantung pada admin<br>• Pembaruan langsung<br>• Tanpa penalti jika lebih awal | Fleksibilitas, kontrol | Kepuasan penjadwalan ulang: 4,5/5 | TINGGI |
-| | Konfirmasi instan | Menunggu konfirmasi admin (2-4 jam) | Konfirmasi pemesanan waktu nyata | • Ketenangan pikiran<br>• Tanpa kekhawatiran menunggu<br>• Dapat merencanakan segera | Kepastian, kepercayaan | Kepuasan kecepatan konfirmasi: 4,8/5 | TINGGI |
-| **Transparansi & Informasi** | Profil terapis | Informasi terbatas pra-pemesanan | Profil detail (pendidikan, spesialisasi, ulasan) | • Pilihan berdasar informasi<br>• Sesuai preferensi<br>• Bangun kepercayaan | Keyakinan, kepercayaan | Tingkat tampilan profil: 95% sebelum pesan | KRITIS |
-| | Ketersediaan waktu nyata | Harus telepon untuk cek ketersediaan | Kalender visual dengan slot terbuka | • Lihat semua opsi sekaligus<br>• Bandingkan waktu<br>• Rencanakan fleksibel | Transparansi, efisiensi | Interaksi kalender: 90% pengguna | TINGGI |
-| | Harga jelas | Harga ambigu, harus telepon | Harga transparan per layanan | • Tanpa kejutan<br>• Perencanaan anggaran<br>• Bandingkan opsi | Kejelasan finansial | Rating kejelasan harga: 4,6/5 | TINGGI |
-| | Rating & ulasan terapis | Tanpa umpan balik sejawat tersedia | Sistem rating (1-5 bintang) + ulasan tertulis | • Bukti sosial<br>• Jaminan kualitas<br>• Bangun kepercayaan | Kepercayaan, validasi | Pengaruh ulasan: 80% baca sebelum pesan | TINGGI |
-| | Deskripsi layanan | Info layanan samar | Detail layanan komprehensif | • Pahami apa yang diharapkan<br>• Pilih layanan tepat<br>• Hindari miskomunikasi | Kejelasan, manajemen ekspektasi | Rating kejelasan layanan: 4,4/5 | SEDANG |
-| **Manajemen Layanan Mandiri** | Riwayat janji temu | Pencatatan manual | Rekaman digital semua pemesanan | • Tidak perlu mengingat<br>• Rujukan mudah<br>• Lacak frekuensi | Organisasi, kenyamanan | Penggunaan riwayat: 60% pengguna | SEDANG |
-| | Akses catatan sesi | Tidak ada akses ke catatan | Lihat catatan sesi yang dibagikan | • Pahami kemajuan<br>• Ingat wawasan<br>• Kontinuitas | Transparansi, keterlibatan | Kepuasan akses catatan: 4,3/5 | SEDANG |
-| | Riwayat pembayaran | Kwitansi manual | Rekaman pembayaran digital | • Keperluan pajak<br>• Pelacakan pengeluaran<br>• Penarikan mudah | Manajemen finansial | Penggunaan riwayat pembayaran: 70% pengguna | SEDANG |
-| | Manajemen profil | Pengisian form berulang | Profil persisten dengan isi otomatis | • Hemat waktu<br>• Konsistensi<br>• Pembaruan mudah | Efisiensi | Tingkat pembaruan profil: 40% pengguna | RENDAH |
-| **Kualitas Perawatan Lebih Baik** | Pelacakan kemajuan | Tidak ada visibilitas kemajuan | Grafik & metrik kemajuan visual | • Motivasi<br>• Lihat peningkatan<br>• Pencapaian tujuan | Keterlibatan, motivasi | Tingkat tampilan kemajuan: 50% pengguna | TINGGI |
-| | Penetapan & pelacakan tujuan | Pelacakan tujuan informal | Manajemen tujuan terstruktur | • Objektif jelas<br>• Pelacakan milestone<br>• Perayaan pencapaian | Akuntabilitas, motivasi | Penggunaan tujuan: 40% pengguna | SEDANG |
-| | Konsistensi terapi | Lupa memesan tindak lanjut | Sistem pengingat + pemesanan ulang mudah | • Hasil lebih baik<br>• Perawatan konsisten<br>• Pembentukan kebiasaan | Peningkatan kesehatan | Tingkat retensi: 60% → 75% | TINGGI |
-| | Rekomendasi personal | Saran generik | Rekomendasi layanan berbasis AI | • Layanan relevan<br>• Hasil lebih baik<br>• Temukan opsi | Personalisasi | Penerimaan rekomendasi: 35% | SEDANG |
-| **Komunikasi** | Perpesanan dalam aplikasi | Campuran telepon/WhatsApp | Perpesanan terpusat dengan terapis | • Semua komunikasi di satu tempat<br>• Komunikasi async<br>• Riwayat pesan | Kenyamanan, organisasi | Penggunaan perpesanan: 30% pengguna | SEDANG |
-| | Pengingat otomatis | Pengingat manual atau tidak ada | Pengingat email + SMS (H-1, H-0) | • Tidak ada janji terlewat<br>• Persiapan tepat waktu<br>• Pengurangan tidak hadir | Keandalan | Efektivitas pengingat: 90% hadir setelah pengingat | TINGGI |
-| | Akses dukungan | Telepon selama jam kantor | Tiket dukungan dalam aplikasi + FAQ | • Bantuan cepat<br>• FAQ layanan mandiri<br>• Lacak masalah | Dukungan, pemberdayaan | Kepuasan dukungan: 4,0/5 | SEDANG |
-| **Privasi & Keamanan** | Privasi data | Penanganan data tidak pasti | Patuh GDPR, data terenkripsi | • Kepercayaan pada kerahasiaan<br>• Perlindungan hukum<br>• Ketenangan pikiran | Kepercayaan, keamanan | Rating kepercayaan privasi: 4,5/5 | KRITIS |
-| | Pembayaran aman | Manual tunai/transfer | *Payment gateway* aman (SSL) | • Keamanan pembayaran<br>• Tidak ada risiko pencurian data<br>• Pengalaman profesional | Keamanan finansial | Rating kepercayaan pembayaran: 4,6/5 | TINGGI |
-| **Penghematan Biaya** | Waktu hemat | Proses pemesanan 30-60 menit | Proses pemesanan 3-5 menit | • Hemat 25-55 menit per pemesanan<br>• Pengurangan biaya peluang | Nilai waktu | Kepuasan penghematan waktu: 4,7/5 | TINGGI |
-| | Hemat biaya perjalanan | Kunjungan fisik untuk memesan | Pemesanan online | • Tanpa biaya transportasi<br>• Tanpa biaya parkir | Penghematan finansial | Apresiasi penghematan biaya: 4,2/5 | SEDANG |
-| **Pengalaman Keseluruhan** | Kepuasan pengguna | Frustrasi dengan proses manual | Pengalaman digital mulus | • Interaksi menyenangkan<br>• Pengalaman modern<br>• Kepercayaan pada merek | Kebahagiaan keseluruhan | Target SUS: 68+ (di atas rata-rata) | KRITIS |
-| | Kemungkinan kembali | Tingkat kembali 35% | Pengalaman ditingkatkan → retensi | • Loyalitas lebih tinggi<br>• Pemesanan berulang<br>• Nilai seumur hidup | Retensi | Target retensi: 60% | TINGGI |
-| | Kemungkinan merekomendasikan | Pemasaran mulut ke mulut terbatas | Pengalaman positif → rujukan | • Peningkatan skor NPS<br>• Pertumbuhan organik<br>• Bukti sosial | Advokasi | Target NPS: 30+ | TINGGI |
+| Kategori Manfaat | Manfaat Spesifik | Masalah yang Diselesaikan | Dampak untuk Pengguna | Metrik Kepuasan | Prioritas |
+|------------------|-----------------|---------------------------|----------------------|-----------------|----------|
+| **Kenyamanan** | Pemesanan 24/7 | Terbatas jam kantor 08:00-17:00 | Pesan kapan saja, konfirmasi instan | Penyelesaian: 90% | KRITIS |
+| | Tidak perlu telepon | Harus menelepon & menunggu | Layanan mandiri online | 85% lebih suka online | TINGGI |
+| | Ramah ponsel | Hanya desktop | Pesan saat bepergian, akses mudah | 70% via ponsel | TINGGI |
+| | Penjadwalan ulang mudah | Koordinasi manual | Ubah jadwal satu klik, tanpa penalti | Rating: 4,5/5 | TINGGI |
+| **Transparansi** | Profil terapis lengkap | Info terbatas | Detail pendidikan, spesialisasi, ulasan | 95% lihat profil dulu | KRITIS |
+| | Ketersediaan real-time | Telepon untuk cek | Kalender visual slot terbuka | 90% gunakan kalender | TINGGI |
+| | Harga jelas | Harga ambigu | Harga transparan per layanan | Rating: 4,6/5 | TINGGI |
+| | Rating & ulasan | Tanpa umpan balik | Sistem rating 1-5 bintang + ulasan | 80% baca ulasan | TINGGI |
+| **Layanan Mandiri** | Riwayat janji temu | Pencatatan manual | Rekaman digital semua pemesanan | 60% gunakan | SEDANG |
+| | Akses catatan sesi | Tidak ada akses | Lihat catatan yang dibagikan terapis | Rating: 4,3/5 | SEDANG |
+| | Riwayat pembayaran | Kwitansi manual | Rekaman pembayaran digital | 70% gunakan | SEDANG |
+| **Kualitas Perawatan** | Pelacakan kemajuan | Tanpa visibilitas | Grafik & metrik visual | 50% lihat kemajuan | TINGGI |
+| | Konsistensi terapi | Lupa tindak lanjut | Pengingat otomatis + pesan ulang mudah | Retensi: 60% → 75% | TINGGI |
+| **Komunikasi** | Pengingat otomatis | Manual atau tidak ada | Email + SMS (H-1, H-0) | 90% hadir setelah reminder | TINGGI |
+| | Dukungan dalam aplikasi | Telepon jam kantor | Tiket dukungan + FAQ | Rating: 4,0/5 | SEDANG |
+| **Privasi & Keamanan** | Privasi data | Penanganan tidak pasti | Patuh UU PDP, enkripsi | Rating: 4,5/5 | KRITIS |
+| | Pembayaran aman | Manual tunai/transfer | *Payment gateway* aman (SSL) | Rating: 4,6/5 | TINGGI |
+| **Penghematan** | Waktu hemat | Proses 30-60 menit | Proses 3-5 menit | Hemat 25-55 menit | TINGGI |
+| **Pengalaman** | Kepuasan keseluruhan | Frustrasi manual | Pengalaman digital mulus | Target SUS: 68+ | KRITIS |
+| | Kemungkinan kembali | Tingkat 35% | Pengalaman lebih baik | Target: 60% | TINGGI |
+
+**Ringkasan Nilai untuk Klien:**
+- **Penghematan Waktu**: 25-55 menit per pemesanan
+- **Kepuasan**: Target ≥ 4,0/5,0, SUS ≥ 68
+- **Retensi**: Peningkatan dari 35% → 60%
+- **Kenyamanan**: Akses 24/7, ramah ponsel, layanan mandiri
+
+---
 
 **Tabel 4.35 Ringkasan Manfaat bagi Pemangku Kepentingan**
 
@@ -513,59 +499,47 @@ _Analisis komparatif total biaya vs total manfaat selama 5 tahun dengan visualis
 
 **Tabel 4.41 Proyeksi Analisis Biaya-Manfaat 5 Tahun**
 
-| Tahun | Investasi Awal | Biaya Berulang Tahunan | Biaya *Payment Gateway* (2%) | Total Biaya Tahunan | Manfaat Pendapatan | Penghematan Biaya | Total Manfaat | Manfaat Bersih Tahunan | Manfaat Bersih Kumulatif | ROI Kumulatif | Catatan |
-|------|-------------------|----------------------|---------------------------|------------------|------------------|--------------|----------------|-------------------|----------------------|---------------|-------|
-| **0** | Rp 3.000.000 | Rp 0 | Rp 0 | **Rp 3.000.000** | Rp 0 | Rp 0 | **Rp 0** | **(Rp 3.000.000)** | **(Rp 3.000.000)** | **-100%** | Fase setup (Bulan 1-3) |
-| **1** | Rp 0 | Rp 2.550.000 | Rp 7.200.000 | **Rp 9.750.000** | Rp 142.800.000 | Rp 26.400.000 | **Rp 169.200.000** | **Rp 159.450.000** | **Rp 156.450.000** | **1.218%** | Operasi penuh (kapasitas 100%) |
-| **2** | Rp 0 | Rp 2.627.000 | Rp 7.992.000 | **Rp 10.619.000** | Rp 158.760.000 | Rp 27.720.000 | **Rp 186.480.000** | **Rp 175.861.000** | **Rp 332.311.000** | **2.506%** | Pertumbuhan +10%, Biaya +3% |
-| **3** | Rp 0 | Rp 2.706.000 | Rp 8.871.600 | **Rp 11.577.600** | Rp 174.636.000 | Rp 29.106.000 | **Rp 203.742.000** | **Rp 192.164.400** | **Rp 524.475.400** | **3.947%** | Pertumbuhan berkelanjutan +10% |
-| **4** | Rp 0 | Rp 2.787.000 | Rp 9.758.760 | **Rp 12.545.760** | Rp 192.099.600 | Rp 30.561.300 | **Rp 222.660.900** | **Rp 210.115.140** | **Rp 734.590.540** | **5.528%** | Ekspansi pasar +10% |
-| **5** | Rp 0 | Rp 2.871.000 | Rp 10.734.636 | **Rp 13.605.636** | Rp 211.309.560 | Rp 32.089.365 | **Rp 243.398.925** | **Rp 229.793.289** | **Rp 964.383.829** | **7.258%** | Skala & optimisasi +10% |
+| Tahun | Total Biaya Tahunan | Total Manfaat | Manfaat Bersih Tahunan | Manfaat Bersih Kumulatif | ROI Kumulatif | Catatan |
+|-------|---------------------|---------------|------------------------|--------------------------|---------------|---------|
+| **0** | Rp 3.000.000 | Rp 0 | (Rp 3.000.000) | (Rp 3.000.000) | -100% | Setup awal (Bulan 1-3) |
+| **1** | Rp 9.750.000 | Rp 169.200.000 | Rp 159.450.000 | Rp 156.450.000 | 1.218% | Operasi penuh (100% kapasitas) |
+| **2** | Rp 10.619.000 | Rp 186.480.000 | Rp 175.861.000 | Rp 332.311.000 | 2.506% | Pertumbuhan +10%, Biaya +3% |
+| **3** | Rp 11.577.600 | Rp 203.742.000 | Rp 192.164.400 | Rp 524.475.400 | 3.947% | Pertumbuhan berkelanjutan |
+| **4** | Rp 12.545.760 | Rp 222.660.900 | Rp 210.115.140 | Rp 734.590.540 | 5.528% | Ekspansi pasar |
+| **5** | Rp 13.605.636 | Rp 243.398.925 | Rp 229.793.289 | Rp 964.383.829 | 7.258% | Skala & optimisasi |
 
 **Ringkasan Kumulatif 5 Tahun:**
-- **Total Investasi (5 tahun)**: Rp 60.098.000 (Rp 3M awal + Rp 57,098M berulang)
-- **Total Manfaat (5 tahun)**: Rp 1.025.481.825 (pendapatan + penghematan)
-- **Total Manfaat Bersih (5 tahun)**: Rp 964.383.829
-- **Rata-rata Manfaat Bersih Tahunan**: Rp 192.876.766
+- **Total Investasi**: Rp 60.098.000 (Rp 3M awal + Rp 57,098M berulang)
+- **Total Manfaat**: Rp 1.025.481.825 (pendapatan + penghematan)
+- **Manfaat Bersih**: Rp 964.383.829
 - **ROI 5 Tahun**: 7.258%
-- **Rasio Manfaat-Biaya Kumulatif**: 17,1:1
+- **Rasio Manfaat-Biaya**: 17,1:1
 
 **Asumsi Proyeksi:**
-1. **Pertumbuhan Pendapatan**: Peningkatan tahunan 10% (estimasi konservatif berdasarkan kurva adopsi pengguna)
-2. **Inflasi Biaya**: Peningkatan tahunan 3% untuk *hosting*/infrastruktur
-3. **Biaya *Payment Gateway***: 2% dari volume transaksi (berkembang dengan pendapatan)
-4. **Volume Pemesanan**: 100/bulan Tahun 1 → 264/bulan Tahun 5 (pertumbuhan progresif)
-5. **Tanpa Upgrade Sistem Besar**: Mengasumsikan *tech stack* saat ini tetap layak
-6. **Kondisi Pasar**: Permintaan layanan kesehatan mental stabil
+- Pertumbuhan pendapatan: +10%/tahun
+- Inflasi biaya: +3%/tahun
+- Utilisasi terapis: 80% (stabil)
+- Retensi klien: 60% (tahun 1) → 70% (tahun 5)
 
 **Analisis Sensitivitas:**
 
-| Skenario | Perubahan Pendapatan | Perubahan Biaya | ROI Tahun 1 | Manfaat Bersih Kumulatif 5 Tahun | Kelayakan |
-|----------|---------------|-------------|-----------|----------------------|-------------|
-| **Kasus Terbaik** (+20% pendapatan, -10% biaya) | +20% | -10% | 1.823% | Rp 1.276.909.180 | Luar biasa |
-| **Kasus Dasar** (sesuai proyeksi) | 0% | 0% | 1.227% | Rp 964.383.829 | Sangat baik |
-| **Konservatif** (-10% pendapatan, +10% biaya) | -10% | +10% | 988% | Rp 672.419.562 | Sangat baik |
-| **Kasus Terburuk** (-20% pendapatan, +20% biaya) | -20% | +20% | 749% | Rp 380.455.295 | Tetap menguntungkan |
+| Skenario | Perubahan | ROI Tahun 1 | Manfaat Bersih 5 Tahun | Kelayakan |
+|----------|-----------|-------------|------------------------|-----------|
+| **Terbaik** (+20% pendapatan, -10% biaya) | +20%/-10% | 1.823% | Rp 1.276.909.180 | Luar biasa |
+| **Dasar** (sesuai proyeksi) | 0%/0% | 1.227% | Rp 964.383.829 | Sangat baik |
+| **Konservatif** (-10% pendapatan, +10% biaya) | -10%/+10% | 988% | Rp 672.419.562 | Sangat baik |
+| **Terburuk** (-20% pendapatan, +20% biaya) | -20%/+20% | 749% | Rp 380.455.295 | Tetap menguntungkan |
 
 **Analisis Impas:**
-- **Pemesanan Minimum yang Diperlukan** (Tahun 1): 14 pemesanan/bulan (vs. target 100/bulan)
-- **Ambang Pendapatan**: Rp 4,2M/bulan (vs. proyeksi Rp 14,1M/bulan)
-- **Margin Keamanan**: 86% penyangga (sistem menguntungkan bahkan pada 14% dari target)
+- Pemesanan minimum: 14/bulan (vs target 100/bulan)
+- Ambang pendapatan: Rp 4,2M/bulan (vs proyeksi Rp 14,1M)
+- Margin keamanan: 86% buffer
 
-**Wawasan Kunci:**
-1. **ROI Luar Biasa**: Bahkan dalam skenario terburuk (ROI 749%), investasi sangat menguntungkan
-2. ***Payback* Cepat**: Investasi awal dikembalikan dalam kurang dari 1 bulan
-3. **Ekonomi Terukur**: Seiring pendapatan tumbuh, peningkatan biaya minimal (ekonomi skala)
-4. **Risiko Rendah**: Impas hanya memerlukan 14% dari pemesanan target
-5. **Nilai Jangka Panjang**: Manfaat bersih kumulatif 5 tahun sebesar Rp 964M dari investasi Rp 60M
-
-**Rekomendasi**: **LANJUTKAN DENGAN IMPLEMENTASI**
-- Analisis keuangan sangat mendukung pengembangan sistem
-- Berbagai skenario mengkonfirmasi profitabilitas
-- Risiko minimal dengan *payback* cepat dan margin keamanan tinggi
-- Nilai strategis jangka panjang melampaui pengembalian keuangan
-
----
+**Rekomendasi: LANJUTKAN DENGAN IMPLEMENTASI**
+- ROI luar biasa bahkan di skenario terburuk (749%)
+- Payback period < 1 bulan
+- Risiko rendah dengan margin keamanan 86%
+- Nilai strategis jangka panjang melampaui finansial
 
 ---
 
