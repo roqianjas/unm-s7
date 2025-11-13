@@ -98,27 +98,27 @@ Faktor Kunci Keberhasilan adalah faktor-faktor kunci yang mendukung pencapaian t
 
 ---
 
-**Tabel 4.32 Kategorisasi Faktor Kunci Keberhasilan (KSF)**
+**Tabel 4.32 Ringkasan Faktor Kunci Keberhasilan (KSF)**
 
-| Kategori | FKK | Sub-Faktor | Tingkat Kepentingan | Pengukuran |
-|----------|-----|-------------|---------------------|------------|
-| **Teknologi** | Stabilitas Sistem | • Waktu aktif ≥ 99,5%<br>• Waktu respons < 2 detik<br>• Optimasi basis data<br>• Pencadangan harian | Kritis | Pemantauan waktu aktif, Metrik kinerja |
-| | Antarmuka Mudah Digunakan | • Antarmuka intuitif<br>• Desain responsif<br>• Sistem desain konsisten<br>• WCAG 2.1 AA | Tinggi | Skor SUS ≥ 68, Pengujian pengguna |
-| | Keamanan Data | • Enkripsi (bcrypt, AES-256)<br>• HTTPS<br>• RBAC<br>• Kepatuhan UU PDP | Kritis | Audit keamanan, Tanpa pelanggaran |
-| | Skalabilitas | • Menangani pertumbuhan<br>• Normalisasi basis data<br>• *Caching*<br>• Penyeimbang beban | Sedang | Uji beban, Pengguna bersamaan |
-| **Manusia** | Kompetensi Tim | • Keahlian Laravel/PHP<br>• Desain basis data<br>• Keterampilan antarmuka<br>• Kemahiran Git | Tinggi | Kualitas kode, Kecepatan pengiriman |
-| | Komitmen Pemangku Kepentingan | • Dukungan manajemen<br>• Keterlibatan aktif<br>• Umpan balik konstruktif<br>• Partisipasi UAT | Tinggi | Skor keterlibatan pemangku kepentingan |
-| | Adopsi Pengguna | • Pelatihan memadai<br>• Panduan komprehensif<br>• Dukungan responsif<br>• Manajemen perubahan | Kritis | Tingkat adopsi ≥ 70% |
-| **Manajemen Proyek** | Perencanaan Matang | • Ruang lingkup jelas<br>• Jadwal realistis (11 minggu)<br>• Sumber daya optimal<br>• Mitigasi risiko | Tinggi | Pengiriman tepat waktu, Kepatuhan anggaran |
-| | Komunikasi Efektif | • Pertemuan mingguan<br>• Dokumentasi jelas<br>• Pelacakan kemajuan<br>• Penyelesaian masalah | Tinggi | Frekuensi komunikasi, Waktu respons |
-| | Jaminan Kualitas | • Pengujian sistematis<br>• Tinjauan kode<br>• Pelacakan bug<br>• Perbaikan berkelanjutan | Kritis | Cakupan pengujian ≥ 70%, Kepadatan bug |
-| **Bisnis** | Proposisi Nilai | • Nilai bisnis jelas<br>• ROI terukur<br>• Keunggulan kompetitif<br>• Keselarasan tujuan | Kritis | ROI ≥ 200%, Peningkatan efisiensi ≥ 40% |
-| | Kesiapan Pasar | • Familiaritas digital<br>• Infrastruktur tersedia<br>• Dukungan regulasi<br>• Permintaan pasar | Sedang | Riset pasar, Survei pengguna |
-| | Keberlanjutan Finansial | • Anggaran memadai<br>• Model pendapatan layak<br>• Efisiensi biaya<br>• Dana kontinjensi | Tinggi | Varians anggaran < 10%, Analisis titik impas |
+| Kategori | Faktor | Tingkat Kepentingan | Indikator Pengukuran |
+|----------|--------|---------------------|----------------------|
+| **Teknologi** | Stabilitas dan Keandalan Sistem | Kritis | Waktu aktif ≥ 99,5%, Waktu respons < 2 detik |
+| | Antarmuka Mudah Digunakan | Tinggi | Skor SUS ≥ 68, Desain responsif |
+| | Keamanan Data | Kritis | Audit keamanan, Kepatuhan UU PDP |
+| | Skalabilitas | Sedang | Uji beban, Pengguna bersamaan |
+| **Manusia** | Kompetensi Tim Pengembang | Tinggi | Kualitas kode, Pengiriman tepat waktu |
+| | Komitmen Pemangku Kepentingan | Tinggi | Skor keterlibatan, Partisipasi UAT |
+| | Adopsi Pengguna | Kritis | Tingkat adopsi ≥ 70% |
+| **Manajemen Proyek** | Perencanaan yang Matang | Tinggi | Kepatuhan jadwal dan anggaran |
+| | Komunikasi Efektif | Tinggi | Frekuensi pertemuan, Dokumentasi |
+| | Jaminan Kualitas | Kritis | Cakupan pengujian ≥ 70% |
+| **Bisnis** | Proposisi Nilai | Kritis | ROI ≥ 200%, Efisiensi ≥ 40% |
+| | Kesiapan Pasar | Sedang | Riset pasar, Infrastruktur |
+| | Keberlanjutan Finansial | Tinggi | Varians anggaran < 10% |
 
-**Prioritas FKK:**
-- Kritis: 5 faktor (Stabilitas, Keamanan, Adopsi, Jaminan Kualitas, Nilai)
-- Tinggi: 6 faktor (Antarmuka, Kompetensi, Komitmen, Perencanaan, Komunikasi, Finansial)
+**Prioritas KSF:**
+- Kritis: 5 faktor (Stabilitas Sistem, Keamanan Data, Adopsi Pengguna, Jaminan Kualitas, Proposisi Nilai)
+- Tinggi: 6 faktor (Antarmuka, Kompetensi Tim, Komitmen, Perencanaan, Komunikasi, Finansial)
 - Sedang: 2 faktor (Skalabilitas, Kesiapan Pasar)
 
 ---
@@ -278,31 +278,15 @@ Proyek harus diselesaikan dalam waktu 11 minggu dengan anggaran Rp 5.000.000 tan
 
 ---
 
-**Tabel 4.33 Faktor Kritis Keberhasilan (CSF) dengan Indikator**
+**Tabel 4.33 Ringkasan Faktor Kritis Keberhasilan (CSF)**
 
-| ID CSF | Faktor Kritis Keberhasilan | Indikator Keberhasilan | Nilai Target | Metode Pengukuran | Frekuensi Pemantauan | Risiko Jika Tidak Terpenuhi | Strategi Mitigasi |
-|--------|---------------------------|------------------------|--------------|-------------------|----------------------|----------------------------|-------------------|
-| CSF-01 | Ketersediaan & Keandalan Sistem | Waktu aktif sistem | ≥ 99,5% | Pemantauan UptimeRobot | Real-time (24/7) | Frustrasi pengguna, Kerugian pendapatan | • Hosting andal (SLA 99,9%)<br>• Pencadangan harian<br>• Peringatan pemantauan |
-| | | Waktu respons | < 2 detik per halaman | GTmetrix, Lighthouse | Mingguan | Pengalaman pengguna buruk, *Bounce* tinggi | • Optimasi kueri<br>• *Caching* (Redis)<br>• Penggunaan CDN |
-| | | Pengguna bersamaan | ≥ 100 pengguna | Uji beban (Apache JMeter) | Pra-peluncuran, Bulanan | Sistem *crash* | • Pengindeksan tepat<br>• *Connection pooling*<br>• Penskalaan horizontal |
-| | | Integritas data | Tanpa kehilangan data | Audit basis data, Verifikasi cadangan | Harian | Kegagalan kritis | • Cadangan otomatis<br>• Manajemen transaksi<br>• Aturan validasi |
-| CSF-02 | Keamanan & Privasi Data | Insiden pelanggaran data | Tanpa pelanggaran | Audit keamanan, Log insiden | Berkelanjutan | Tanggung jawab hukum (denda Rp 5M) | • Enkripsi (bcrypt, AES-256)<br>• HTTPS<br>• Audit keamanan |
-| | | Cakupan enkripsi | 100% data sensitif | Tinjauan kode | Pra-penyebaran | Kehilangan kepercayaan, Gugatan | • Fitur keamanan Laravel<br>• Validasi input<br>• Kepatuhan OWASP |
-| | | Implementasi RBAC | 100% fungsional | Pengujian akses | Mingguan | Akses tidak sah | • *Middleware* peran<br>• Gerbang izin<br>• Jejak audit |
-| | | Kerentanan keamanan | Tanpa kritis/tinggi | Pemindaian OWASP ZAP | Dua mingguan | Risiko pelanggaran data | • Pembaruan rutin<br>• Uji penetrasi<br>• Perbaikan keamanan |
-| CSF-03 | Adopsi & Kepuasan Pengguna | Tingkat adopsi klien | ≥ 70% | Analitik pemesanan | Bulanan | Kegagalan proyek | • Program pelatihan<br>• Panduan pengguna<br>• Sistem dukungan |
-| | | Skor SUS | ≥ 68 (di atas rata-rata) | Kuesioner SUS (10 pengguna) | Pasca-UAT, Triwulanan | Kepuasan rendah | • Uji kegunaan<br>• Perbaikan iteratif<br>• Umpan balik pengguna |
-| | | Kepuasan pengguna | ≥ 4,0/5,0 | Survei pasca-pemesanan | Per pemesanan | Ulasan negatif | • Dukungan responsif<br>• Perbaikan bug<br>• Permintaan fitur |
-| | | Adopsi terapis | 100% (wajib) | Log penggunaan | Mingguan | Gangguan alur kerja | • Pelatihan wajib<br>• Penegakan admin<br>• Insentif |
-| | | Tingkat pengguna kembali | ≥ 60% dalam 3 bulan | Analitik pengguna | Bulanan | Penggunaan sekali saja | • Pengingat email<br>• Program loyalitas<br>• Perbaikan pengalaman |
-| CSF-04 | Integrasi dengan Proses Bisnis | Pemesanan via sistem | 100% (tanpa manual) | Pelacakan sumber pemesanan | Harian | Beban sistem ganda | • Kebijakan wajib<br>• Nonaktifkan proses manual<br>• Pelatihan |
-| | | Pengurangan beban kerja admin | ≥ 50% | Studi pelacakan waktu | Perbandingan Sebelum/Sesudah | Tanpa peningkatan efisiensi | • Otomasi proses<br>• Optimasi alur kerja<br>• Distribusi peran |
-| | | Pengurangan kesalahan pemesanan | ≥ 90% | Perbandingan log kesalahan | Bulanan | Inefisiensi berlanjut | • Aturan validasi<br>• Pemeriksaan konflik<br>• Antarmuka jelas |
-| | | Waktu pembuatan laporan | ≤ 5 menit | Pengukuran waktu | Mingguan | Pengambilan keputusan lambat | • Indeks basis data<br>• Laporan ter-*cache*<br>• Optimasi kueri |
-| CSF-05 | Kepatuhan Anggaran & Jadwal | Penyelesaian proyek | 11 minggu ± 1 minggu | Pelacakan jadwal proyek | Mingguan | Manfaat tertunda | • Waktu penyangga (10%)<br>• Manajemen risiko<br>• Pemantauan mingguan |
-| | | Varians anggaran | ≤ 10% lebih | Pelacakan biaya | Bulanan | Pembatalan proyek | • Dana kontinjensi (20%)<br>• Kontrol biaya<br>• Alternatif gratis |
-| | | Penyelesaian ruang lingkup | 95%+ kebutuhan | Daftar periksa kebutuhan | Per sprint | Sistem tidak dapat digunakan | • Prioritas MoSCoW<br>• Pembekuan ruang lingkup<br>• Kontrol perubahan |
-| | | Insiden perluasan ruang lingkup | ≤ 3 perubahan besar | Log permintaan perubahan | Berkelanjutan | Penundaan jadwal | • Proses perubahan formal<br>• Analisis dampak<br>• Tunda ke Fase 2 |
+| ID CSF | Faktor Kritis | Indikator Keberhasilan | Nilai Target | Risiko Jika Tidak Terpenuhi |
+|--------|---------------|------------------------|--------------|----------------------------|
+| CSF-01 | Ketersediaan & Keandalan Sistem | Waktu aktif sistem, Waktu respons | ≥ 99,5%, < 2 detik | Frustrasi pengguna, kerugian pendapatan, sistem *crash* |
+| CSF-02 | Keamanan & Privasi Data | Tanpa pelanggaran, enkripsi 100% | 0 insiden, RBAC fungsional | Tanggung jawab hukum (denda Rp 5M), kehilangan kepercayaan |
+| CSF-03 | Adopsi & Kepuasan Pengguna | Tingkat adopsi, Skor SUS, Rating | ≥ 70%, ≥ 68, ≥ 4,0/5,0 | Kegagalan proyek, ulasan negatif |
+| CSF-04 | Integrasi Proses Bisnis | Pemesanan via sistem, pengurangan beban | 100%, ≥ 50% | Beban sistem ganda, inefisiensi berlanjut |
+| CSF-05 | Kepatuhan Anggaran & Jadwal | Penyelesaian proyek, varians anggaran | 11 minggu ± 1, ≤ 10% | Manfaat tertunda, pembatalan proyek |
 
 **Status Pencapaian CSF (per November 2024):**
 - CSF-01: ⏳ 70% (Sistem stabil, kinerja baik, perlu pengujian produksi)
@@ -324,101 +308,37 @@ _Dasbor waktu nyata menampilkan kinerja sistem, adopsi pengguna, pendapatan, dan
 
 ---
 
-**Tabel 4.34 Indikator Kinerja Utama (KPI) - Metrik Teknis**
+**Tabel 4.34 Ringkasan Indikator Kinerja Utama (KPI)**
 
-| Kategori KPI | Nama KPI | Definisi | Nilai Target | Nilai Dasar (Saat Ini) | Metode Pengukuran | Alat Pengukuran | Frekuensi | Penanggung Jawab | Tindakan Jika Di Bawah Target |
-|--------------|----------|----------|--------------|------------------------|-------------------|-----------------|-----------|------------------|-------------------------------|
-| **Kinerja Sistem** | Waktu Aktif Sistem | Persentase waktu sistem beroperasi | ≥ 99,5% | T/A (Sistem baru) | (Total waktu aktif / Total waktu) × 100% | UptimeRobot, Pingdom | Waktu nyata, laporan bulanan | Tim DevOps | • Periksa log server<br>• Tingkatkan sumber daya<br>• Implementasi redundansi |
-| | Waktu Respons Rata-rata | Waktu muat halaman rata-rata | ≤ 2 detik | T/A | Pengukuran waktu muat halaman | Google PageSpeed Insights, GTmetrix | Mingguan | Tim Backend | • Optimasi kueri<br>• Aktifkan *caching*<br>• Implementasi CDN |
-| | Waktu Kueri Basis Data | Waktu eksekusi kueri basis data rata-rata | ≤ 100ms | T/A | Pelacakan waktu eksekusi kueri | Laravel Debugbar, MySQL slow query log | Mingguan | Admin Basis Data | • Tambah indeks<br>• Optimasi kueri<br>• *Tuning* basis data |
-| | Tingkat Kesalahan | Persentase permintaan yang menghasilkan kesalahan | ≤ 0,5% | T/A | (Permintaan error / Total permintaan) × 100% | Log Laravel, Sentry | Harian | Tim *Full-stack* | • Debug kesalahan<br>• Perbaiki bug<br>• Tingkatkan penanganan error |
-| | Kapasitas Pengguna Bersamaan | Pengguna simultan maksimum yang didukung | ≥ 100 pengguna | T/A | Simulasi uji beban | Apache JMeter, LoadRunner | Pra-peluncuran, Triwulanan | Tim DevOps | • Optimasi *connection pool*<br>• Tingkatkan infrastruktur<br>• Penyeimbangan beban |
-| | Waktu Respons API | Waktu respons *endpoint* API rata-rata | ≤ 500ms | T/A | Pemantauan kinerja API | Postman, New Relic | Mingguan | Tim Backend | • Optimasi *endpoint*<br>• Kurangi ukuran *payload*<br>• Implementasi paginasi |
-| **Keamanan Sistem** | Kerentanan Keamanan | Jumlah masalah keamanan teridentifikasi | 0 kritis, ≤ 2 tinggi | T/A | Pemindaian keamanan otomatis | OWASP ZAP, Nessus | Bulanan | Tim Keamanan | • Perbaiki kerentanan<br>• Perbarui dependensi<br>• Audit keamanan |
-| | Insiden Pelanggaran Data | Jumlah kejadian akses data tidak sah | 0 insiden | T/A | Audit keamanan & log insiden | Jejak audit, IDS | Waktu nyata | Tim Keamanan | • Respons insiden<br>• Analisis forensik<br>• Perkuat keamanan |
-| | Upaya Login Gagal | Persentase upaya login yang gagal | ≤ 5% | T/A | (Login gagal / Total upaya login) × 100% | Log autentikasi Laravel | Harian | Tim Keamanan | • Periksa *brute force*<br>• Implementasi CAPTCHA<br>• Pembatasan laju |
-| | Validitas Sertifikat SSL | Status kedaluwarsa sertifikat SSL | Selalu valid (>30 hari) | T/A | Pemeriksaan kedaluwarsa sertifikat | SSL Labs, Let's Encrypt | Otomatis (peringatan) | Tim DevOps | • Perbarui sertifikat<br>• Penyiapan perpanjangan otomatis<br>• Cadangan sertifikat |
-| | Kepatuhan Kekuatan Kata Sandi | Persentase pengguna dengan kata sandi kuat | ≥ 95% | T/A | Validasi kebijakan kata sandi | Validator kustom Laravel | Bulanan | Tim Backend | • Terapkan kebijakan<br>• Reset kata sandi<br>• Edukasi pengguna |
-| **Kualitas Sistem** | Cakupan Uji Kode | Persentase kode yang tercakup pengujian | ≥ 70% | 65% | (Baris diuji / Total baris) × 100% | PHPUnit, Jest | Per *commit* | Tim Pengembangan | • Tulis lebih banyak tes<br>• Tingkatkan cakupan<br>• Pendekatan TDD |
-| | Skor Kualitas Kode | Status gerbang kualitas SonarQube | Rating A | Rating B | Analisis kode statis | SonarQube, PHPStan | Per *commit* | Tim Pengembangan | • Refaktor kode<br>• Perbaiki *code smell*<br>• Ikuti standar |
-| | Cakupan Dokumentasi | Persentase kode dengan dokumentasi | ≥ 80% | 50% | Analisis komentar dokumentasi | PHPDocumentor | Bulanan | Tim Pengembangan | • Tambah *docblock*<br>• Perbarui README<br>• Dokumentasi API |
+| Kategori | Nama KPI | Nilai Target | Frekuensi Pemantauan | Penanggung Jawab |
+|----------|----------|--------------|----------------------|------------------|
+| **Kinerja Sistem** | Waktu Aktif Sistem | ≥ 99,5% | Waktu nyata | Tim DevOps |
+| | Waktu Respons Rata-rata | ≤ 2 detik | Mingguan | Tim Backend |
+| | Tingkat Kesalahan | ≤ 0,5% | Harian | Tim *Full-stack* |
+| | Kapasitas Pengguna Bersamaan | ≥ 100 pengguna | Pra-peluncuran, Triwulanan | Tim DevOps |
+| **Keamanan** | Kerentanan Keamanan | 0 kritis, ≤ 2 tinggi | Bulanan | Tim Keamanan |
+| | Insiden Pelanggaran Data | 0 insiden | Waktu nyata | Tim Keamanan |
+| **Kualitas** | Cakupan Uji Kode | ≥ 70% | Per *commit* | Tim Pengembangan |
+| | Cakupan Dokumentasi | ≥ 80% | Bulanan | Tim Pengembangan |
+| **Adopsi Pengguna** | Total Pengguna Terdaftar | 200 dalam 3 bulan | Bulanan | Tim Pemasaran |
+| | Pengguna Aktif (MAU) | 150 pengguna (75%) | Bulanan | Tim Produk |
+| | Tingkat Konversi Pemesanan | ≥ 60% | Mingguan | Tim Produk |
+| | Tingkat Retensi (3 bulan) | ≥ 60% | Triwulanan | Tim Produk |
+| **Transaksi** | Total Pemesanan per Bulan | 100 pemesanan | Bulanan | Tim Operasi |
+| | Tingkat Keberhasilan Pembayaran | ≥ 95% | Mingguan | Tim Keuangan |
+| | Pendapatan per Bulan | Rp 30.000.000 | Bulanan | Tim Keuangan |
+| **Kepuasan** | Skor Kepuasan Pengguna | ≥ 4,0/5,0 | Per pemesanan | Layanan Pelanggan |
+| | Skor Promotor Bersih (NPS) | ≥ 30 | Triwulanan | Tim Pemasaran |
+| | Skala Kegunaan Sistem (SUS) | ≥ 68 | Pasca-UAT, Triwulanan | Tim Produk |
+| **Efisiensi** | Waktu Pemesanan Rata-rata | ≤ 3 menit | Mingguan | Tim Produk |
+| | Pengurangan Beban Kerja Admin | ≥ 50% | Bulanan | Manajemen |
+| | Waktu Pembuatan Laporan | ≤ 5 menit | Bulanan | Tim TI |
 
-**Ringkasan KPI Teknis:**
-- Total KPI Teknis: 14
-- Area Fokus: Kinerja (6), Keamanan (5), Kualitas (3)
-- KPI Kritis: Waktu Aktif, Waktu Respons, Kerentanan Keamanan, Pelanggaran Data
-- Alat Pengukuran: 12 alat (campuran gratis dan komersial)
-
----
-
-**Tabel 4.35 Indikator Kinerja Utama (KPI) - Metrik Bisnis & Pengguna**
-
-| Kategori KPI | Nama KPI | Definisi | Nilai Target | Nilai Dasar (Saat Ini) | Metode Pengukuran | Sumber Data | Frekuensi | Penanggung Jawab | Tindakan Jika Di Bawah Target |
-|--------------|----------|----------|--------------|------------------------|-------------------|-------------|-----------|------------------|-------------------------------|
-| **Adopsi Pengguna** | Total Pengguna Terdaftar | Jumlah kumulatif pengguna terdaftar | 200 dalam 3 bulan | 0 | COUNT(users) | Tabel users | Bulanan | Tim Pemasaran | • Kampanye pemasaran<br>• Program rujukan<br>• Iklan media sosial |
-| | Pengguna Aktif (MAU) | Pengguna yang login 30 hari terakhir | 150 pengguna (75%) | T/A | COUNT(DISTINCT user_id) WHERE login >= NOW() - 30 hari | activity_logs | Bulanan | Tim Produk | • Email keterlibatan ulang<br>• Notifikasi push<br>• Sorotan fitur |
-| | Tingkat Konversi Pemesanan | Persentase pemesanan dimulai yang diselesaikan | ≥ 60% | 40% (manual) | (Pemesanan selesai / Upaya pemesanan) × 100% | Tabel bookings | Mingguan | Tim Produk | • Sederhanakan alur<br>• Kurangi langkah<br>• Tingkatkan pengalaman |
-| | Tingkat Utilisasi Terapis | Persentase slot terapis yang dipesan | ≥ 80% | 60% (manual) | (Slot dipesan / Slot tersedia) × 100% | bookings, availability | Mingguan | Tim Operasi | • Pemasaran ke klien<br>• Harga dinamis<br>• Optimasi jadwal |
-| | Tingkat Retensi Pengguna (3 bulan) | Persentase pengguna kembali setelah 3 bulan | ≥ 60% | 35% (estimasi) | (Pengguna aktif bulan 4 / Pengguna baru bulan 1) × 100% | users, bookings | Triwulanan | Tim Produk | • Program loyalitas<br>• Pengingat email<br>• Personalisasi |
-| | Pengguna Baru vs Kembali | Rasio pengguna baru terhadap pengguna kembali | 40:60 | 70:30 | Segmentasi pengguna berdasarkan first_booking_date | bookings | Bulanan | Tim Pemasaran | • Tingkatkan retensi<br>• Insentif rujukan<br>• Layanan berkualitas |
-| **Transaksi** | Total Pemesanan per Bulan | Jumlah pemesanan diselesaikan per bulan | 100 pemesanan | 80 (manual) | COUNT(bookings) WHERE status = 'completed' | bookings | Bulanan | Tim Operasi | • Kampanye promosi<br>• Tambah terapis<br>• Perpanjang jam |
-| | Tingkat Keberhasilan Pembayaran | Persentase pembayaran berhasil | ≥ 95% | 90% (manual) | (Pembayaran berhasil / Upaya pembayaran) × 100% | payments | Mingguan | Tim Keuangan | • Berbagai metode pembayaran<br>• Dukungan pembayaran<br>• Instruksi jelas |
-| | Tingkat Pembatalan Pemesanan | Persentase pemesanan dibatalkan | ≤ 10% | 15% (manual) | (Pemesanan dibatalkan / Total pemesanan) × 100% | bookings | Bulanan | Tim Operasi | • Sistem pengingat<br>• Kebijakan pembatalan<br>• Kemudahan penjadwalan ulang |
-| | Nilai Pemesanan Rata-rata | Pendapatan rata-rata per pemesanan | Rp 300.000 | Rp 250.000 | SUM(booking_amount) / COUNT(bookings) | payments | Bulanan | Tim Keuangan | • *Upsell* layanan<br>• Paket penawaran<br>• Sesi premium |
-| | Pendapatan per Bulan | Total pendapatan bulanan dari pemesanan | Rp 30.000.000 | Rp 20.000.000 | SUM(amount) WHERE status = 'paid' | payments | Bulanan | Tim Keuangan | • Tingkatkan pemesanan<br>• Optimasi harga<br>• Layanan baru |
-| | Pendapatan Rata-rata per Pengguna | Nilai seumur hidup per pengguna | Rp 900.000 | Rp 750.000 | SUM(payments) / COUNT(DISTINCT users) | payments | Triwulanan | Tim Keuangan | • Tingkatkan frekuensi<br>• Penjualan paket<br>• Keanggotaan |
-| **Kepuasan Pelanggan** | Skor Kepuasan Pengguna | Rating kepuasan pasca-pemesanan rata-rata | ≥ 4,0/5,0 | 3,8/5,0 | AVG(satisfaction_rating) | feedback | Per pemesanan | Layanan Pelanggan | • Kumpulkan umpan balik<br>• Tingkatkan layanan<br>• Selesaikan masalah |
-| | Skor Promotor Bersih (NPS) | Kemungkinan merekomendasikan (skala 0-10) | ≥ 30 | 15 (manual) | % Promotor (9-10) - % Pencela (0-6) | surveys | Triwulanan | Tim Pemasaran | • Tangani pencela<br>• Tingkatkan pengalaman<br>• Tonjolkan kekuatan |
-| | Skala Kegunaan Sistem (SUS) | Skor kegunaan standar | ≥ 68 (di atas rata-rata) | T/A | Kuesioner SUS (10 pertanyaan) | Survei UAT | Pasca-UAT, Triwulanan | Tim Produk | • Uji kegunaan<br>• Perbaikan antarmuka<br>• Uji pengguna |
-| | Rating Sesi Rata-rata | Rating sesi terapis rata-rata | ≥ 4,5/5,0 | 4,3/5,0 | AVG(session_rating) | session_notes | Per sesi | Tim Operasi | • Pelatihan terapis<br>• Kontrol kualitas<br>• Lingkaran umpan balik |
-| | Tingkat Respons Umpan Balik | Persentase umpan balik pengguna yang ditangani | ≥ 90% | 60% | (Umpan balik direspons / Total umpan balik) × 100% | feedback | Mingguan | Layanan Pelanggan | • Tim khusus<br>• SLA untuk respons<br>• Respons otomatis |
-
-**Ringkasan KPI Bisnis:**
-- Total KPI Bisnis: 17
-- Area Fokus: Adopsi (6), Transaksi (6), Kepuasan (5)
-- Target Pendapatan: Rp 30 juta/bulan (peningkatan 50% dari nilai dasar)
-- Target Pengguna: 200 pengguna dalam 3 bulan, utilisasi terapis 80%
-
----
-
-**Tabel 4.36 Indikator Kinerja Utama (KPI) - Metrik Operasional**
-
-| Kategori KPI | Nama KPI | Definisi | Nilai Target | Nilai Dasar (Saat Ini) | Metode Pengukuran | Sumber Data | Frekuensi | Penanggung Jawab | Tindakan Jika Di Bawah Target |
-|--------------|----------|----------|--------------|------------------------|-------------------|-------------|-----------|------------------|-------------------------------|
-| **Efisiensi Proses** | Waktu Pemesanan Rata-rata | Waktu dari mulai hingga selesai pemesanan | ≤ 3 menit | 12 menit (manual) | AVG(completion_time - start_time) | booking_logs | Mingguan | Tim Produk | • Sederhanakan alur<br>• Kurangi bidang<br>• Isi otomatis data |
-| | Waktu Pemrosesan Pemesanan Admin | Waktu untuk memproses/menyetujui pemesanan | ≤ 5 menit | 15 menit (manual) | AVG(approval_time - submission_time) | bookings | Bulanan | Tim Operasi | • Otomasi persetujuan<br>• Alur kerja jelas<br>• Pelatihan admin |
-| | Waktu Verifikasi Pembayaran | Waktu untuk memverifikasi dan konfirmasi pembayaran | ≤ 30 menit | 2-4 jam (manual) | AVG(verified_at - payment_at) | payments | Mingguan | Tim Keuangan | • Verifikasi otomatis<br>• *Payment gateway*<br>• Peringatan waktu nyata |
-| | Waktu Pembuatan Laporan | Waktu untuk menghasilkan laporan bisnis | ≤ 5 menit | 2 jam (manual) | Pengukuran waktu | Sistem pelaporan | Bulanan | Tim TI | • Optimasi kueri<br>• Laporan ter-*cache*<br>• Pengindeksan lebih baik |
-| | Penyelesaian Konflik Jadwal | Waktu untuk menyelesaikan konflik penjadwalan | ≤ 10 menit | 30-60 menit | AVG(resolution_time) | conflict_logs | Mingguan | Tim Operasi | • Deteksi otomatis<br>• Aturan jelas<br>• Antarmuka penyelesaian cepat |
-| **Dukungan & Pemeliharaan** | Waktu Respons Dukungan Rata-rata | Waktu hingga respons pertama pada tiket dukungan | ≤ 2 jam | T/A | AVG(first_response_at - created_at) | support_tickets | Mingguan | Layanan Pelanggan | • Tambah staf<br>• Respons otomatis<br>• Basis pengetahuan |
-| | Waktu Penyelesaian Tiket Dukungan | Waktu rata-rata untuk menutup tiket dukungan | ≤ 24 jam | T/A | AVG(resolved_at - created_at) | support_tickets | Mingguan | Layanan Pelanggan | • Pelatihan lebih baik<br>• Proses eskalasi<br>• FAQ/dokumentasi |
-| | Tingkat Penyelesaian Kontak Pertama | Persentase diselesaikan dalam kontak pertama | ≥ 70% | T/A | (Diselesaikan dalam 1 kontak / Total tiket) × 100% | support_tickets | Bulanan | Layanan Pelanggan | • Tingkatkan pelatihan<br>• Alat lebih baik<br>• Basis pengetahuan |
-| | Waktu Penyelesaian Bug Sistem | Waktu rata-rata untuk memperbaiki bug yang dilaporkan | ≤ 48 jam (kritis) | T/A | AVG(resolved_at - reported_at) berdasarkan prioritas | issue_tracker | Mingguan | Tim Pengembangan | • Prioritaskan bug<br>• Lebih banyak pengembang<br>• Pengujian lebih baik |
-| **Utilisasi Sumber Daya** | Kapasitas Rata-rata Terapis | Sesi rata-rata per terapis per minggu | ≥ 20 sesi | 15 sesi | AVG(COUNT(sessions) per terapis) | bookings | Mingguan | Tim Operasi | • Pemasaran<br>• Optimasi ketersediaan<br>• Rekrut lebih banyak |
-| | Pengurangan Beban Kerja Admin | Persentase pengurangan jam admin | ≥ 50% | 0% (nilai dasar) | (Jam lama - Jam baru) / Jam lama × 100% | Pelacakan waktu | Bulanan | Manajemen | • Lebih banyak otomasi<br>• Perbaikan proses<br>• Pelatihan |
-| | Pertumbuhan Penyimpanan Basis Data | Tingkat pertumbuhan penyimpanan bulanan | ≤ 5% per bulan | T/A | (Ukuran saat ini - Ukuran bulan lalu) / Bulan lalu × 100% | Metrik basis data | Bulanan | Admin Basis Data | • Arsip data<br>• Bersihkan data lama<br>• Optimasi penyimpanan |
-| | Tingkat Keberhasilan Pencadangan | Persentase pencadangan yang berhasil | 100% | T/A | (Pencadangan berhasil / Total upaya pencadangan) × 100% | Log pencadangan | Harian | Tim DevOps | • Perbaiki skrip pencadangan<br>• Periksa penyimpanan<br>• Sistem peringatan |
-| **Inteligensi Bisnis** | Akurasi Laporan | Akurasi laporan otomatis vs manual | ≥ 99% | T/A | Audit manual sampel laporan | Audit laporan | Bulanan | Analis Data | • Perbaiki perhitungan<br>• Validasi logika<br>• Pemeriksaan kualitas data |
-| | Waktu Muat Dasbor | Waktu untuk memuat dasbor utama | ≤ 3 detik | T/A | Pengukuran waktu muat halaman | Pemantau kinerja | Mingguan | Tim *Frontend* | • Optimasi kueri<br>• *Lazy loading*<br>• *Caching* |
-| | Kesegaran Data | Usia maksimum data dalam laporan | ≤ 1 jam | T/A | Periksa stempel last_updated | Sistem pelaporan | Waktu nyata | Tim Data | • Kurangi interval refresh<br>• Pembaruan waktu nyata<br>• Berbasis peristiwa |
-
-**Ringkasan KPI Operasional:**
-- Total KPI Operasional: 16
-- Area Fokus: Efisiensi Proses (5), Dukungan (4), Utilisasi Sumber Daya (4), Inteligensi Bisnis (3)
-- Target Utama: Pengurangan waktu 75% (pemesanan), pengurangan beban kerja admin 50%
-- Peningkatan Efisiensi: 12 menit → 3 menit (pemesanan), 2 jam → 5 menit (laporan)
-
----
-
-**Strategi Dasbor & Pemantauan KPI:**
-
-| Jenis Dasbor | Laju Penyegaran | Pengguna | Metrik Utama yang Ditampilkan |
-|--------------|-----------------|----------|-------------------------------|
-| Dasbor Eksekutif | Harian | Manajemen, Pemilik | Pendapatan, pemesanan, pertumbuhan pengguna, NPS, ROI |
-| Dasbor Operasi | Waktu nyata | Admin, Tim Operasi | Pemesanan aktif, jadwal terapis, pembayaran tertunda, tiket dukungan |
-| Dasbor Teknis | Waktu nyata | Tim TI, DevOps | Waktu aktif, waktu respons, tingkat kesalahan, beban server |
-| Dasbor Pemasaran | Mingguan | Tim Pemasaran | Akuisisi pengguna, tingkat konversi, MAU, tingkat rujukan |
-| Dasbor Keuangan | Harian | Tim Keuangan | Pendapatan, tingkat keberhasilan pembayaran, nilai pemesanan rata-rata, pembayaran tertunggak |
+**Ringkasan KPI:**
+- Total KPI: 21 indikator utama
+- Area Fokus: Kinerja (4), Keamanan (2), Kualitas (2), Adopsi (4), Transaksi (3), Kepuasan (3), Efisiensi (3)
+- KPI Kritis: Waktu Aktif, Keamanan, Adopsi Pengguna, Pendapatan, Kepuasan
+- Alat Pengukuran: UptimeRobot, GTmetrix, OWASP ZAP, Google Analytics, PHPUnit
 
 ---
 
@@ -508,94 +428,24 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 | | Kemungkinan kembali | Tingkat kembali 35% | Pengalaman ditingkatkan → retensi | • Loyalitas lebih tinggi<br>• Pemesanan berulang<br>• Nilai seumur hidup | Retensi | Target retensi: 60% | TINGGI |
 | | Kemungkinan merekomendasikan | Pemasaran mulut ke mulut terbatas | Pengalaman positif → rujukan | • Peningkatan skor NPS<br>• Pertumbuhan organik<br>• Bukti sosial | Advokasi | Target NPS: 30+ | TINGGI |
 
-**Ringkasan Manfaat Klien:**
-- **Kenyamanan**: Layanan mandiri 24/7, ramah ponsel, konfirmasi instan, penjadwalan ulang mudah
-- **Transparansi**: Profil terapis lengkap, ketersediaan waktu nyata, harga jelas, rating & ulasan
-- **Kualitas**: Pelacakan kemajuan, manajemen tujuan, rekomendasi personal, perawatan konsisten
-- **Komunikasi**: Perpesanan dalam aplikasi, pengingat otomatis, akses dukungan cepat
-- **Kepercayaan**: Privasi data, pembayaran aman, pengalaman profesional
-- **Penghematan**: Hemat waktu (25-55 menit/pemesanan), pengurangan biaya perjalanan
+**Tabel 4.35 Ringkasan Manfaat bagi Pemangku Kepentingan**
 
-**Target Kepuasan Pengguna:**
-- Kepuasan Keseluruhan: ≥ 4,0/5,0
-- Skala Kegunaan Sistem (SUS): ≥ 68 (di atas rata-rata)
-- Skor Promotor Bersih (NPS): ≥ 30
-- Tingkat Retensi: 60% kembali dalam 3 bulan
+| Pemangku Kepentingan | Kategori Manfaat | Manfaat Utama | Dampak Terukur |
+|----------------------|------------------|---------------|----------------|
+| **CUR-HEART (Organisasi)** | Efisiensi Operasional | Proses pemesanan otomatis, pelaporan otomatis | Penghematan: Rp 13.200.000/tahun (20 + 16 + 8 jam/bulan) |
+| | Pertumbuhan Pendapatan | Peningkatan volume pemesanan, pengurangan tidak hadir | Tambahan: Rp 116.800.000/tahun (+25% volume, -10% tidak hadir) |
+| | Kualitas & Layanan | Pengambilan keputusan berbasis data, retensi klien | Retensi: 35% → 60%, NPS: 15 → 30 |
+| **Klien (Pengguna)** | Kenyamanan | Pemesanan mandiri 24/7, ramah ponsel | Hemat waktu: 25-55 menit/pemesanan |
+| | Transparansi | Profil terapis lengkap, harga jelas, rating & ulasan | Kepuasan: ≥ 4,0/5,0, SUS: ≥ 68 |
+| | Kualitas | Pelacakan kemajuan, rekomendasi personal | Kepuasan: ≥ 4,0/5,0, retensi: 60% |
+| **Terapis (Penyedia)** | Penghematan Waktu | Manajemen jadwal mandiri, koordinasi admin berkurang | Hemat: 16 jam/bulan (jadwal + koordinasi) |
+| | Potensi Pendapatan | Utilisasi lebih baik (60% → 80%) | Pendapatan: +Rp 5.000.000/bulan (+33%) |
+| | Keseimbangan Kerja-Hidup | Otonomi, fleksibilitas, beban admin berkurang | Kepuasan: ≥ 4,5/5,0, rekomendasi: ≥ 80% |
 
----
-
-### 4.5.3 Manfaat untuk Terapis
-
----
-
-**Tabel 4.39 Analisis Manfaat - Terapis (Penyedia Layanan)**
-
-| Kategori Manfaat | Manfaat Spesifik | Titik Kesulitan Saat Ini | Solusi Sistem | Dampak bagi Terapis | Penghematan Waktu/Biaya | Nilai Profesional | Prioritas |
-|------------------|-----------------|--------------------------|---------------|---------------------|------------------------|-------------------|----------|
-| **Manajemen Jadwal** | Pengaturan ketersediaan layanan mandiri | Koordinasi via grup WhatsApp | Atur jadwal mingguan berulang dalam sistem | • Otonomi penuh<br>• Pembaruan instan<br>• Tidak bergantung admin | Waktu: 2 jam/minggu → 30 menit/minggu<br>**Hemat: 1,5 jam/minggu = 6 jam/bulan** | Kontrol, fleksibilitas | KRITIS |
-| | Manajemen cuti mudah | Beritahu admin, pemblokiran manual | Fitur blokir tanggal satu klik | • Kelola cuti sendiri<br>• Tanpa penundaan persetujuan<br>• Kalender visual | Waktu: 30 menit per permintaan cuti → 2 menit | Otonomi, kenyamanan | TINGGI |
-| | Pencegahan konflik | Pemeriksaan konflik manual | Deteksi konflik otomatis | • Tanpa pemesanan ganda<br>• Tanpa pembatalan canggung<br>• Keandalan profesional | Penyelesaian konflik: 1 jam/insiden → 0 | Ketenangan pikiran, profesionalisme | KRITIS |
-| | Integrasi kalender | Kalender pribadi/kerja terpisah | Ekspor .ics untuk sinkronisasi Google/Outlook | • Tampilan kalender terpadu<br>• Manajemen waktu lebih baik<br>• Tanpa janji terlewat | Manajemen kalender: 30 menit/minggu → 0 | Efisiensi, organisasi | SEDANG |
-| | Perubahan mendadak | Telepon admin, harap terjangkau | Perbarui ketersediaan waktu nyata | • Fleksibilitas darurat<br>• Kontrol atas jadwal<br>• Komunikasi klien | Pemrosesan perubahan: 15 menit → 2 menit | Fleksibilitas, pengurangan stres | TINGGI |
-| **Manajemen Klien** | Profil klien komprehensif | Info tersebar (WhatsApp, kertas) | Profil digital terpusat | • Riwayat klien lengkap di ujung jari<br>• Konteks lebih baik<br>• Sesi yang terinformasi | Pencarian profil: 10 menit → 30 detik | Kualitas perawatan lebih baik | TINGGI |
-| | Akses riwayat sesi | Catatan manual, sulit ditemukan | Arsip digital yang dapat dicari | • Rujukan mudah<br>• Lacak kemajuan<br>• Kontinuitas perawatan | Pengambilan riwayat: 15 menit → 1 menit | Profesionalisme, kualitas perawatan | TINGGI |
-| | Alat pelacakan kemajuan | Pelacakan manual, subjektif | Grafik visual, metrik, milestone | • Ukuran objektif<br>• Motivasi klien<br>• Bukti efektivitas | Analisis kemajuan: 30 menit/klien → 5 menit | Efektivitas klinis | TINGGI |
-| | Komunikasi klien | Campuran telepon, WhatsApp, email | Perpesanan dalam aplikasi (terpusat) | • Semua pesan di satu tempat<br>• Riwayat pesan<br>• Saluran profesional | Waktu komunikasi: 2 jam/minggu → 1 jam/minggu | Organisasi, profesionalisme | SEDANG |
-| **Dokumentasi & Admin** | Catatan sesi terstruktur | Catatan bebas, tidak konsisten | Formulir catatan sesi template | • Dokumentasi konsisten<br>• Tidak ada yang terlupa<br>• Rekaman profesional | Waktu pencatatan: Sama tapi kualitas lebih baik | Kualitas, kepatuhan | TINGGI |
-| | Fungsi penyimpanan otomatis | Simpan manual, risiko kehilangan data | Penyimpanan otomatis setiap 30 detik | • Tanpa kehilangan data<br>• Ketenangan pikiran<br>• Fokus pada konten | Pemulihan dari kehilangan data: 0 insiden | Keandalan | SEDANG |
-| | Catatan yang dapat dicari | Dokumen kertas/Word (sulit dicari) | Pencarian teks lengkap | • Pengambilan informasi cepat<br>• Pencarian pola<br>• Rujukan wawasan masa lalu | Waktu pencarian: 20 menit → 30 detik | Efisiensi | SEDANG |
-| | Arsip digital | Penyimpanan fisik, degradasi | Penyimpanan permanen berbasis cloud | • Tidak pernah kehilangan rekaman<br>• Akses di mana saja<br>• Tanpa ruang fisik diperlukan | Biaya penyimpanan: Rp 0 (vs. pengarsipan) | Keamanan, aksesibilitas | SEDANG |
-| | Koordinasi admin | 3 jam/minggu bolak-balik | Sistem layanan mandiri | • Tanpa menunggu admin<br>• Tindakan langsung<br>• Lebih sedikit gangguan | Koordinasi: 3 jam/minggu → 30 menit/minggu<br>**Hemat: 2,5 jam/minggu = 10 jam/bulan** | Otonomi, efisiensi | TINGGI |
-| **Manajemen Keuangan** | Dasbor pendapatan waktu nyata | Tunggu laporan bulanan | Pelacakan pendapatan langsung | • Tahu pendapatan kapan saja<br>• Rencanakan keuangan<br>• Motivasi | Visibilitas finansial: langsung vs. bulanan | Transparansi finansial | TINGGI |
-| | Rincian sesi | Perhitungan manual | Pendapatan rinci per sesi | • Verifikasi pembayaran<br>• Pahami sumber pendapatan<br>• Pelaporan pajak | Waktu perhitungan: 2 jam/bulan → 0 | Akurasi, kepercayaan | SEDANG |
-| | Pelaporan pajak | Kompilasi laporan manual | Pembuatan laporan satu klik | • Kepatuhan pajak mudah<br>• Dokumentasi profesional<br>• Siap audit | Waktu persiapan pajak: 4 jam/tahun → 30 menit/tahun | Kepatuhan, kenyamanan | SEDANG |
-| | Transparansi pembayaran | Status pembayaran tidak jelas | Pelacakan pembayaran waktu nyata | • Tahu kapan dibayar<br>• Lacak pembayaran tertunda<br>• Perencanaan arus kas | Pertanyaan pembayaran: 30 menit/bulan → 0 | Kepercayaan, kejelasan | TINGGI |
-| **Analitik Kinerja** | Statistik sesi | Tidak ada visibilitas kinerja | Dasbor analitik (volume, tingkat, dll.) | • Kesadaran diri<br>• Penetapan tujuan<br>• Peningkatan kinerja | Analisis: Tidak tersedia → Waktu nyata | Pertumbuhan profesional | SEDANG |
-| | Skor kepuasan klien | Tidak ada umpan balik formal | Sistem rating & ulasan | • Tahu kekuatan<br>• Identifikasi kelemahan<br>• Tingkatkan layanan | Pengumpulan umpan balik: Ad-hoc → Sistematis | Peningkatan kualitas | TINGGI |
-| | Pelacakan tingkat utilisasi | Penggunaan kapasitas tidak diketahui | Metrik persentase utilisasi | • Optimasi ketersediaan<br>• Seimbangkan beban kerja<br>• Maksimalkan pendapatan | Perencanaan kapasitas: Tidak tersedia → Berbasis data | Optimasi bisnis | SEDANG |
-| | Pembandingan | Tidak ada perbandingan dengan sejawat | Perbandingan sejawat anonim | • Standar industri<br>• Posisi kompetitif<br>• Motivasi | Pembandingan: Tidak tersedia → Diaktifkan | Kesadaran pasar | RENDAH |
-| **Pengembangan Profesional** | Pelacakan hasil klien | Penilaian subjektif | Ukuran hasil berbasis data | • Praktik berbasis bukti<br>• Efektivitas pengobatan<br>• Perbaikan berkelanjutan | Analisis hasil: Kualitatif → Kuantitatif | Keunggulan klinis | TINGGI |
-| | Wawasan peningkatan layanan | Tebakan tentang apa yang berhasil | Pengenalan pola, analitik | • Identifikasi pendekatan sukses<br>• Replikasi praktik terbaik<br>• Personalisasi pengobatan | Pembuatan wawasan: Tidak tersedia → Otomatis | Optimasi pengobatan | SEDANG |
-| | Pembuatan portofolio | Dokumentasi terbatas | Portofolio digital (sertifikasi, ulasan, statistik) | • Kredibilitas profesional<br>• Kemajuan karir<br>• Materi pemasaran | Pembuatan portofolio: 10 jam → Otomatis | Pertumbuhan karir | SEDANG |
-| **Keseimbangan Kerja-Hidup** | Penjadwalan fleksibel | Jadwal manual kaku | Ketersediaan yang dikelola sendiri | • Kontrol jam kerja<br>• Seimbangkan kehidupan pribadi<br>• Cegah kelelahan | Keseimbangan kerja-hidup: Meningkat signifikan | Kesejahteraan, kepuasan | KRITIS |
-| | Pengurangan beban admin | 5-6 jam/minggu tugas admin | 1-2 jam/minggu tugas admin | • Lebih banyak waktu untuk terapi<br>• Atau waktu pribadi<br>• Fokus lebih baik | **Total waktu dibebaskan: 4 jam/minggu = 16 jam/bulan** | Kualitas hidup | KRITIS |
-| | Manajemen jadwal jarak jauh | Tatap muka atau telepon admin | Kelola via aplikasi ponsel di mana saja | • Fleksibilitas<br>• Manajemen liburan<br>• Perubahan darurat | Aksesibilitas: 24/7 vs. jam kantor | Kenyamanan | TINGGI |
-| **Potensi Pendapatan** | Peningkatan pemesanan | Utilisasi 60%, penjadwalan manual | Utilisasi 80%, penjadwalan dioptimalkan | • Lebih banyak sesi<br>• Pendapatan lebih tinggi<br>• Penggunaan kapasitas lebih baik | Pendapatan: +33% (12 → 16 sesi/minggu)<br>**Contoh: Rp 15 juta → Rp 20 juta/bulan** | Pertumbuhan finansial | KRITIS |
-| | Pengurangan tidak hadir | Tingkat tidak hadir 15% | Tingkat tidak hadir 5% (sistem pengingat) | • Pendapatan lebih andal<br>• Lebih sedikit waktu terbuang<br>• Perencanaan lebih baik | Pengurangan tidak hadir: 10% → Hemat 1,5 sesi/minggu | Stabilitas pendapatan | TINGGI |
-| | Peluang *upselling* | Visibilitas terbatas | Rekomendasi sistem ke klien | • Penjualan paket<br>• Sesi tambahan<br>• Nilai lebih tinggi | Keberhasilan *upsell*: Potensi pendapatan +15% | Diversifikasi pendapatan | SEDANG |
-
-**Ringkasan Manfaat Terapis:**
-- **Penghematan Waktu**: 16 jam/bulan dibebaskan (jadwal: 6 jam, koordinasi: 10 jam)
-- **Potensi Pendapatan**: +33% melalui utilisasi lebih baik (60% → 80%) = peningkatan ~Rp 5 juta/bulan
-- **Kualitas Profesional**: Dokumentasi lebih baik, wawasan berbasis data, pelacakan hasil
-- **Keseimbangan Kerja-Hidup**: Otonomi, fleksibilitas, beban admin berkurang
-- **Kejelasan Finansial**: Pendapatan waktu nyata, pembayaran transparan, pelaporan pajak mudah
-
-**Total Nilai per Terapis:**
-- Nilai waktu (16 jam @ Rp 250.000/jam): Rp 4.000.000/bulan dihemat
-- Peningkatan pendapatan (utilisasi lebih baik): Rp 5.000.000/bulan
-- **Total nilai bulanan: Rp 9.000.000/terapis**
-- **Nilai tahunan: Rp 108.000.000/terapis**
-
-**Target Kepuasan Terapis:**
-- Kepuasan Keseluruhan: ≥ 4,5/5,0
-- Kemudahan Penggunaan Sistem: ≥ 4,3/5,0
-- Rekomendasi ke Terapis Lain: ≥ 80%
-- Peningkatan Utilisasi: 60% → 80% (peningkatan 33%)
-
----
-
-#### C. Keseimbangan Kerja-Hidup
-
-**1. Penjadwalan Fleksibel**
-- Kontrol atas ketersediaan
-- Manajemen waktu libur yang mudah
-- Mencegah kelebihan kerja (pengaturan sesi maksimal per hari)
-
-**2. Beban Administratif Berkurang**
-- Waktu koordinasi lebih sedikit
-- Pengingat otomatis mengurangi ketidakhadiran
-- Dokumentasi digital lebih cepat dari manual
+**Ringkasan Nilai:**
+- **Organisasi**: Rp 130.000.000/tahun (pendapatan + penghematan)
+- **Klien**: Hemat 25-55 menit/pemesanan, pengalaman lebih baik
+- **Terapis**: Rp 9.000.000/bulan (waktu + pendapatan), kepuasan tinggi
 
 ---
 
@@ -608,68 +458,51 @@ _Grafik proyeksi ROI 5 tahun menunjukkan pemulihan investasi, manfaat bersih, da
 
 ---
 
-**Tabel 4.40 Perhitungan ROI - Analisis Tahun Pertama**
+**Tabel 4.36 Ringkasan Analisis ROI Tahun Pertama**
 
-| Kategori Biaya/Manfaat | Item | Kuantitas/Tarif | Biaya Unit | Frekuensi | Jumlah Tahunan (Rp) | Metode Perhitungan | Catatan |
-|-----------------------|-----------|---------------|-----------|-----------|-------------------|-------------------|-------|
-| **INVESTASI AWAL (Tahun 0)** |
-| Pengembangan | Sumber Daya Manusia | 3 orang × 11 minggu | Rp 0 | Sekali | 0 | Biaya peluang = 0 | Proyek *capstone* akademik |
-| Infrastruktur | Nama domain (.id) | 1 domain | Rp 150.000 | Tahunan | 150.000 | 1 × Rp 150.000 | Registrasi TLD .id |
-| | *Hosting* (VPS 2GB RAM, 50GB SSD) | 1 server | Rp 100.000 | Bulanan × 12 | 1.200.000 | Rp 100.000 × 12 | Niagahoster atau setara |
-| | Sertifikat SSL | 1 sertifikat | Rp 0 | Tahunan | 0 | Gratis | Let's Encrypt |
-| | Perangkat pengembangan | Berbagai | Rp 0 | Sekali | 0 | Gratis/*open source* | VS Code, Git, MySQL Workbench |
-| Layanan Pihak Ketiga | Pengaturan *payment gateway* | 1 akun | Rp 0 | Sekali | 0 | Pengaturan gratis | Midtrans (biaya transaksi 2%) |
-| | Layanan email (SMTP) | 500 email/hari | Rp 50.000 | Bulanan × 12 | 600.000 | Rp 50.000 × 12 | Mailtrap/SendGrid |
-| | Penyimpanan *backup* (25GB) | 25GB cloud | Rp 50.000 | Bulanan × 12 | 600.000 | Rp 50.000 × 12 | Google Drive Business |
-| Lain-lain | Perangkat pengujian | Tersedia | Rp 0 | Sekali | 0 | Gunakan perangkat tim | Desktop, laptop, mobile |
-| | Materi pelatihan | Manual, video | Rp 200.000 | Sekali | 200.000 | Upaya dokumentasi | Panduan pengguna, video pelatihan |
-| | Cadangan (10%) | Penyangga keamanan | 10% | Sekali | 200.000 | 10% dari (1,35M + 1,25M) | Mitigasi risiko |
-| | **SUBTOTAL - INVESTASI AWAL** | | | | **3.000.000** | | **Biaya sekali bayar** |
-| **BIAYA BERULANG TAHUNAN (Tahun 1)** |
-| Infrastruktur | Perpanjangan domain | 1 domain | Rp 150.000 | Tahunan | 150.000 | 1 × Rp 150.000 | Perpanjangan tahunan |
-| | *Hosting* | 1 server | Rp 100.000 | Bulanan × 12 | 1.200.000 | Rp 100.000 × 12 | Langganan bulanan |
-| Layanan | Layanan email | 500 email/hari | Rp 50.000 | Bulanan × 12 | 600.000 | Rp 50.000 × 12 | Email transaksional |
-| | Penyimpanan *backup* | 25GB | Rp 50.000 | Bulanan × 12 | 600.000 | Rp 50.000 × 12 | Cadangan harian |
-| | Biaya *payment gateway* | 100 pemesanan @ Rp 300K | 2% | Bulanan × 12 | 7.200.000 | (100 × Rp 300K × 2%) × 12 | Berbasis transaksi |
-| Pemeliharaan | Perbaikan bug & pembaruan | Ad-hoc | Rp 0 | Berkelanjutan | 0 | Kemampuan internal | Tim menangani pemeliharaan |
-| | **SUBTOTAL - BIAYA BERULANG** | | | | **9.750.000** | | **Berulang tahunan** |
-| | **TOTAL BIAYA TAHUN 1** | | | | **12.750.000** | | **Awal + Berulang** |
-| **MANFAAT PENDAPATAN (Tahun 1)** |
-| Pertumbuhan Pendapatan | Pemesanan tambahan | 20 lebih/bulan | Rp 300.000 | Bulanan × 12 | 72.000.000 | (100 - 80) × Rp 300K × 12 | Peningkatan volume 25% |
-| | Pengurangan tidak hadir | 8 dicegah/bulan | Rp 300.000 | Bulanan × 12 | 28.800.000 | 8 × Rp 300K × 12 | Tingkat tidak hadir 15% → 5% |
-| | *Upselling* (paket) | 5 upgrade/bulan | Rp 100.000 | Bulanan × 12 | 6.000.000 | 5 × Rp 100K × 12 | Tingkat upgrade 10% |
-| | Pemesanan jam diperpanjang | 10 di luar jam/bulan | Rp 300.000 | Bulanan × 12 | 36.000.000 | 10 × Rp 300K × 12 | Tangkapan ketersediaan 24/7 |
-| | **SUBTOTAL - PENINGKATAN PENDAPATAN** | | | | **142.800.000** | | **Dampak pendapatan langsung** |
-| **PENGHEMATAN BIAYA (Tahun 1)** |
-| Efisiensi Operasional | Penghematan waktu admin | 20 jam/bulan | Rp 25.000/jam | Bulanan × 12 | 6.000.000 | 20 × Rp 25K × 12 | Otomatisasi pemesanan |
-| | Pengurangan waktu koordinasi | 16 jam/bulan | Rp 25.000/jam | Bulanan × 12 | 4.800.000 | 16 × Rp 25K × 12 | Penjadwalan terapis |
-| | Penghematan waktu pelaporan | 8 jam/bulan | Rp 25.000/jam | Bulanan × 12 | 2.400.000 | 8 × Rp 25K × 12 | Laporan otomatis |
-| | Resolusi kesalahan/konflik | 4 insiden/bulan | Rp 200.000 | Bulanan × 12 | 9.600.000 | 4 × Rp 200K × 12 | Pemesanan ganda dicegah |
-| | Kertas & percetakan | Pengurangan 50% | Rp 100.000 | Bulanan × 12 | 600.000 | Rp 50K × 12 | Dokumentasi digital |
-| | Waktu verifikasi pembayaran | 10 jam/bulan | Rp 25.000/jam | Bulanan × 12 | 3.000.000 | 10 × Rp 25K × 12 | Verifikasi otomatis |
-| | **SUBTOTAL - PENGHEMATAN BIAYA** | | | | **26.400.000** | | **Efisiensi operasional** |
-| | **TOTAL MANFAAT TAHUNAN** | | | | **169.200.000** | | **Pendapatan + Penghematan** |
-| **MANFAAT BERSIH & ROI (Tahun 1)** |
-| Manfaat Bersih | Total Manfaat - Total Biaya | | | | **156.450.000** | Rp 169,2M - Rp 12,75M | **Manfaat bersih tahunan** |
-| ROI | (Manfaat Bersih / Total Investasi) × 100% | | | | **1.227%** | (Rp 156,45M / Rp 12,75M) × 100% | **ROI Luar Biasa** |
-| Periode *Payback* | Total Investasi / Manfaat Bulanan | | | | **0,9 bulan** | Rp 12,75M / (Rp 169,2M / 12) | **~27 hari untuk impas** |
+| Kategori | Item Utama | Jumlah Tahunan (Rp) |
+|----------|------------|---------------------|
+| **INVESTASI AWAL** | Domain, *hosting* setup, layanan, cadangan | 3.000.000 |
+| **BIAYA BERULANG (Tahun 1)** | Domain, *hosting*, email, *backup*, *payment gateway* (2%) | 9.750.000 |
+| **TOTAL BIAYA TAHUN 1** | Awal + Berulang | **12.750.000** |
+| **MANFAAT PENDAPATAN** | Pemesanan tambahan (+25%), pengurangan tidak hadir, *upselling*, jam diperpanjang | 142.800.000 |
+| **PENGHEMATAN BIAYA** | Waktu admin, koordinasi, pelaporan, resolusi konflik, verifikasi pembayaran | 26.400.000 |
+| **TOTAL MANFAAT TAHUN 1** | Pendapatan + Penghematan | **169.200.000** |
+| **MANFAAT BERSIH** | Total Manfaat - Total Biaya | **156.450.000** |
+| **ROI** | (Manfaat Bersih / Total Investasi) × 100% | **1.227%** |
+| **PERIODE *PAYBACK*** | Total Investasi / Manfaat Bulanan | **0,9 bulan (~27 hari)** |
 
 **Metrik Keuangan Kunci:**
-- **Total Investasi Tahun 1**: Rp 12.750.000 (termasuk biaya awal + berulang)
-- **Total Manfaat Tahun 1**: Rp 169.200.000 (peningkatan pendapatan + penghematan biaya)
-- **Manfaat Bersih Tahun 1**: Rp 156.450.000
-- **ROI**: 1.227% (pengembalian luar biasa)
-- **Periode *Payback***: 27 hari (kurang dari 1 bulan)
-- **Rasio Manfaat-Biaya**: 13,3:1 (untuk setiap Rp 1 diinvestasikan, menghasilkan Rp 13,3)
-
-**Pendorong ROI:**
-1. **Dampak Pendapatan Tinggi**: Rp 142,8M dari peningkatan pemesanan, pengurangan ketidakhadiran, *upselling*
-2. **Penghematan Biaya Signifikan**: Rp 26,4M dari peningkatan efisiensi operasional
-3. **Biaya Pengembangan Rendah**: Rp 0 (proyek akademik, tim internal)
-4. **Biaya Berulang Moderat**: Rp 9,75M/tahun (infrastruktur + layanan)
-5. ***Payback* Cepat**: Kurang dari 1 bulan untuk mengembalikan investasi
+- Rasio Manfaat-Biaya: 13,3:1 (setiap Rp 1 diinvestasikan menghasilkan Rp 13,3)
+- Periode *payback*: Kurang dari 1 bulan
+- ROI: 1.227% (pengembalian luar biasa)
 
 ---
+
+**Tabel 4.37 Proyeksi Analisis Biaya-Manfaat 5 Tahun**
+
+| Tahun | Total Biaya | Total Manfaat | Manfaat Bersih Tahunan | Manfaat Bersih Kumulatif | ROI Kumulatif |
+|-------|-------------|---------------|------------------------|--------------------------|---------------|
+| **0** | Rp 3.000.000 | Rp 0 | (Rp 3.000.000) | (Rp 3.000.000) | -100% |
+| **1** | Rp 9.750.000 | Rp 169.200.000 | Rp 159.450.000 | Rp 156.450.000 | 1.218% |
+| **2** | Rp 10.619.000 | Rp 186.480.000 | Rp 175.861.000 | Rp 332.311.000 | 2.506% |
+| **3** | Rp 11.577.600 | Rp 203.742.000 | Rp 192.164.400 | Rp 524.475.400 | 3.947% |
+| **4** | Rp 12.545.760 | Rp 222.660.900 | Rp 210.115.140 | Rp 734.590.540 | 5.528% |
+| **5** | Rp 13.605.636 | Rp 243.398.925 | Rp 229.793.289 | Rp 964.383.829 | 7.258% |
+
+**Ringkasan Kumulatif 5 Tahun:**
+- Total Investasi: Rp 60.098.000
+- Total Manfaat: Rp 1.025.481.825
+- Total Manfaat Bersih: Rp 964.383.829
+- Rata-rata Manfaat Bersih Tahunan: Rp 192.876.766
+- ROI 5 Tahun: 7.258%
+- Rasio Manfaat-Biaya: 17,1:1
+
+**Asumsi Proyeksi:**
+- Pertumbuhan pendapatan: +10% per tahun
+- Inflasi biaya: +3% per tahun
+- Utilisasi terapis: 80% (stabil)
+- Tingkat retensi klien: 60% (tahun 1) → 70% (tahun 5)
 
 ---
 
@@ -778,5 +611,3 @@ Selain manfaat yang dapat dikuantifikasi, ada juga manfaat tidak berwujud (*inta
 - Layanan B2B (program kesehatan korporat)
 
 ---
-
-**[File ini mencakup 4.4 Faktor Penentu Keberhasilan dan 4.5 Keuntungan yang Diharapkan. Akan dilanjutkan dengan file terpisah untuk 4.6 dan 4.7]**

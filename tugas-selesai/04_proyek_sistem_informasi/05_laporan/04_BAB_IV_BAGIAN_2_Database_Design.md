@@ -6,94 +6,8 @@ Sistem menggunakan basis data relasional (MySQL) dengan skema yang dinormalisasi
 
 ### Diagram Relasi Entitas (*Entity Relationship Diagram*/ERD)
 
----
 
 **[GAMBAR 4.9 - Diagram Relasi Entitas (ERD) - 15 Tabel]** 🔴 **KRITIS**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   [SISIPKAN ERD KOMPREHENSIF - 15 ENTITAS]                 │
-│                                                             │
-│   SKEMA BASIS DATA CUR-HEART (MySQL)                       │
-│   Normalisasi: Bentuk Normal Ketiga (3NF)                  │
-│                                                             │
-│   ENTITAS INTI (5):                                        │
-│   ┌──────────┐  ┌──────────┐  ┌──────────┐                │
-│   │  users   │  │therapists│  │ clients  │                │
-│   │ (autent.)│  │ (staf)   │  │ (pelang.)│                │
-│   └──────────┘  └──────────┘  └──────────┘                │
-│        │             │              │                       │
-│        └─────────────┴──────────────┘                      │
-│                      │                                      │
-│   ┌──────────┐  ┌───▼──────┐  ┌──────────┐                │
-│   │ services │  │ bookings │  │ payments │                │
-│   │ (master) │  │(transaksi)│  │(keuangan)│                │
-│   └──────────┘  └──────────┘  └──────────┘                │
-│                                                             │
-│   ENTITAS PENDUKUNG (10):                                  │
-│   • therapist_services (banyak-ke-banyak)                  │
-│   • therapist_availability (jadwal)                        │
-│   • therapist_blocked_dates (pengecualian)                 │
-│   • education (kualifikasi terapis)                        │
-│   • certifications (kredensial)                            │
-│   • therapy_notes (catatan sesi)                           │
-│   • client_progress (pelacakan metrik)                     │
-│   • reviews (penilaian & umpan balik)                      │
-│   • notifications (pemberitahuan sistem)                   │
-│   • activity_logs (jejak audit)                            │
-│                                                             │
-│   RELASI KUNCI:                                             │
-│   users (1) ─→ (1) therapists/clients                      │
-│   therapists (M) ─→ (M) services (via pivot)               │
-│   bookings (M) ─→ (1) clients/therapists/services          │
-│   bookings (1) ─→ (1) payments                             │
-│   bookings (1) ─→ (1) therapy_notes                        │
-│   clients (1) ─→ (M) client_progress                       │
-│   therapists (1) ─→ (M) reviews                            │
-│                                                             │
-│   FITUR KRITIS:                                             │
-│   ✅ Batasan Kunci Asing (integritas data)                 │
-│   ✅ Penghapusan Lunak (preservasi jejak audit)            │
-│   ✅ Pengindeksan (optimasi kinerja)                       │
-│   ✅ Bidang ENUM (validasi data)                           │
-│   ✅ Bidang JSON (penyimpanan metadata fleksibel)          │
-│   ✅ Stempel Waktu (created_at, updated_at)                │
-│                                                             │
-│   STATISTIK TOTAL:                                          │
-│   • Total Tabel: 15                                         │
-│   • Kunci Primer: 15                                        │
-│   • Kunci Asing: 28                                         │
-│   • Batasan Unik: 8                                         │
-│   • Indeks: 35+                                             │
-│   • Estimasi Jumlah Baris (1 tahun): 50.000+               │
-│                                                             │
-│   KEPATUHAN NORMALISASI:                                    │
-│   1NF: ✅ Nilai atomik, tanpa grup berulang                │
-│   2NF: ✅ Tanpa ketergantungan parsial                     │
-│   3NF: ✅ Tanpa ketergantungan transitif                   │
-│                                                             │
-│   Format: ERD Notasi Crow's Foot PNG                       │
-│   Ukuran yang direkomendasikan: 2400x1600px (besar)        │
-│   Gaya: Profesional dengan tipe entitas berkode warna      │
-│   Warna: Users (biru), Transactions (hijau),               │
-│           Supporting (kuning), System (abu-abu)             │
-│                                                             │
-│   File: assets/images/erd-curheart-15-tables.png           │
-│   Alat: MySQL Workbench (direkomendasikan) atau Visual     │
-│         Paradigm                                            │
-│   Alternatif: dbdiagram.io, draw.io, Lucidchart            │
-│                                                             │
-│   PRIORITAS: P1 - KRITIS                                    │
-│   Harus menyertakan: Semua 15 tabel, relasi, kardinalitas, │
-│                      kunci primer/asing yang jelas          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-_Gambar 4.9: Diagram Relasi Entitas (ERD) lengkap sistem CUR-HEART dengan 15 tabel, 28 kunci asing, dinormalisasi hingga 3NF_
-
----
 
 Berikut adalah Diagram Relasi Entitas yang menggambarkan struktur basis data sistem:
 
@@ -856,5 +770,3 @@ Indeks diterapkan untuk mengoptimalkan kinerja kueri. Berikut adalah ringkasan s
 - Overhead penyimpanan: ~15-20% ruang disk tambahan (minimal)
 
 ---
-
-**[Lanjut ke Bagian 3: Diagram UML - Berkas terpisah]**
