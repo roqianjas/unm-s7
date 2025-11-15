@@ -1,7 +1,7 @@
 # BAB IV  
 # HASIL PENELITIAN DAN PEMBAHASAN
 
-## A. INISIASI PROYEK
+## 4.1. INISIASI PROYEK
 
 Proyek pengembangan Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART diinisiasi berdasarkan kebutuhan untuk mengoptimalkan operasional pusat layanan hipnoterapi dan kesehatan mental. CUR-HEART (*Hypnotherapy & Mind Wellness Center*) mengalami pertumbuhan signifikan dalam jumlah klien dan terapis, namun sistem manual yang digunakan menghambat efisiensi dan kualitas layanan.
 
@@ -66,11 +66,11 @@ Penelitian ini diharapkan memberikan manfaat bagi berbagai pihak:
 
 ---
 
-## B. PERENCANAAN PROYEK
+## 4.2. PERENCANAAN PROYEK
 
 Perencanaan proyek dilakukan untuk memastikan proyek berjalan sesuai target waktu, biaya, dan kualitas yang ditetapkan. Perencanaan mencakup berbagai area pengetahuan manajemen proyek.
 
-### B.1 Perencanaan Ruang Lingkup (*Scope*)
+### 4.2.1 Perencanaan Ruang Lingkup (*Scope*)
 
 Ruang lingkup proyek didefinisikan menggunakan Work Breakdown Structure (WBS) yang membagi pekerjaan menjadi komponen-komponen yang dapat dikelola:
 
@@ -157,7 +157,7 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 - **Reliability**: Uptime minimal 99%
 - **Code Quality**: Code coverage testing minimal 70%
 
-### B.5 Perencanaan Sumber Daya (*Resource*)
+### 4.2.5 Perencanaan Sumber Daya (*Resource*)
 
 **Tabel 4.4 Alokasi Sumber Daya Manusia**
 
@@ -172,7 +172,7 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 - VPS Ubuntu 22.04 untuk production server
 - Software development tools (VS Code, Git, Figma - gratis)
 
-### B.6 Manajemen Risiko (*Risk*)
+### 4.2.6 Manajemen Risiko (*Risk*)
 
 **Tabel 4.5 Identifikasi dan Mitigasi Risiko**
 
@@ -184,7 +184,7 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 | 4 | Anggota tim sakit | Rendah | Sedang | Knowledge sharing, dokumentasi kode |
 | 5 | Integrasi payment gateway gagal | Sedang | Sedang | Prototyping awal, dokumentasi API lengkap |
 
-### B.7 Perencanaan Komunikasi (*Communication*)
+### 4.2.7 Perencanaan Komunikasi (*Communication*)
 
 - **Meeting mingguan**: Setiap Senin pukul 19.00 WIB via Google Meet
 - **Daily standup**: Chat group WhatsApp setiap pagi
@@ -192,21 +192,21 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 - **Dokumentasi**: Google Drive untuk sharing dokumen
 - **Version control**: GitHub untuk manajemen kode
 
-### B.8 Perencanaan Pengadaan (*Procurement*)
+### 4.2.8 Perencanaan Pengadaan (*Procurement*)
 
 Pengadaan yang diperlukan:
 - **VPS Hosting**: Penyewaan server dari provider Niagahoster (Rp 1.200.000/tahun)
 - **Domain**: Pembelian domain .id (Rp 150.000/tahun)
 - **Payment Gateway**: Integrasi dengan Midtrans (gratis untuk development, fee per transaksi untuk production)
 
-### B.9 Perencanaan Integrasi (*Integration*)
+### 4.2.9 Perencanaan Integrasi (*Integration*)
 
 Integrasi yang direncanakan:
 - **Payment Gateway**: Midtrans Snap API untuk pembayaran online
 - **Email Service**: SMTP Gmail untuk notifikasi email
 - **Cloud Storage**: Potensi integrasi Google Drive untuk backup (fase 2)
 
-### B.10 Manajemen Pemangku Kepentingan (*Stakeholder*)
+### 4.2.10 Manajemen Pemangku Kepentingan (*Stakeholder*)
 
 **Tabel 4.6 Daftar Pemangku Kepentingan**
 
@@ -221,11 +221,11 @@ Integrasi yang direncanakan:
 
 ---
 
-## C. KEUNTUNGAN YANG DIHARAPKAN
+## 4.3. KEUNTUNGAN YANG DIHARAPKAN
 
 Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntungan bagi pemangku kepentingan yang terlibat.
 
-### 1. Manfaat untuk CUR-HEART (Organisasi)
+### 4.3.1 Manfaat untuk CUR-HEART (Organisasi)
 
 **A. Efisiensi Operasional**
 
@@ -252,7 +252,7 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 - Penghematan Biaya: Rp 18,4 juta/tahun
 - **TOTAL**: Rp 134,2 juta/tahun
 
-### 2. Manfaat untuk Klien
+### 4.3.2 Manfaat untuk Klien
 
 **A. Kenyamanan**
 
@@ -280,7 +280,7 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 - Target kepuasan: ≥ 4,0/5,0, SUS ≥ 68
 - Retensi meningkat: 35% → 60%
 
-### 3. Manfaat untuk Terapis
+### 4.3.3 Manfaat untuk Terapis
 
 **A. Penghematan Waktu**
 
@@ -300,7 +300,7 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 - Beban administratif berkurang signifikan
 - Target kepuasan terapis: ≥ 4,5/5,0
 
-### 4. Analisis Return on Investment (ROI)
+### 4.3.4 Analisis Return on Investment (ROI)
 
 **Investasi:**
 - Biaya awal: Rp 3.000.000 (setup)
@@ -328,11 +328,11 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 
 ---
 
-## D. TEKNOLOGI YANG DIGUNAKAN
+## 4.4. TEKNOLOGI YANG DIGUNAKAN
 
 Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis besar dapat dibagi ke dalam beberapa bagian berikut ini:
 
-### 1. Server dan Infrastructure
+### 4.4.1 Server dan Infrastructure
 
 **A. Web Server**
 - **Nginx 1.18.0**: Web server berkinerja tinggi untuk menangani concurrent connections
@@ -349,7 +349,10 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - Storage Engine: InnoDB untuk ACID compliance
 - Backup: Automated daily backup dengan retention 30 hari
 
-### 2. Backend Development
+**D. Version Control**
+- **Git & GitHub**: Source code management dan collaboration
+
+### 4.4.2 Backend Development
 
 **A. Framework & Language**
 - **Laravel 10**: PHP framework modern dengan arsitektur MVC
@@ -370,7 +373,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - Carbon untuk date/time manipulation
 - Intervention Image untuk image processing
 
-### 3. Frontend Development
+### 4.4.3 Frontend Development
 
 **A. Technologies**
 - **HTML5**: Markup semantic modern
@@ -390,7 +393,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - Icons: Heroicons (SVG icon set)
 - Form validation: Client-side dengan JavaScript + server-side Laravel
 
-### 4. Database
+### 4.4.4 Database Management
 
 **A. Database Management**
 - **MySQL 8.0**: Primary database
@@ -407,7 +410,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - Laravel Migrations untuk version control database schema
 - Seeders untuk sample data dan testing data
 
-### 5. Integration & External Services
+### 4.4.5 Integration & External Services
 
 **A. Payment Gateway**
 - **Midtrans**: Payment gateway terintegrasi
@@ -426,7 +429,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - Local storage untuk development
 - AWS S3 / DigitalOcean Spaces (ready untuk production scale)
 
-### 6. Development Tools
+### 4.4.6 Development Tools
 
 **A. Version Control**
 - **Git**: Distributed version control system
@@ -444,7 +447,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - **Composer**: PHP dependency management
 - **NPM**: JavaScript package management
 
-### 7. Testing
+### 4.4.7 Testing
 
 **A. Testing Framework**
 - **PHPUnit**: Unit testing untuk backend logic
@@ -456,7 +459,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - Laravel Debugbar untuk development debugging
 - Error tracking & monitoring
 
-### 8. Deployment & DevOps
+### 4.4.8 Deployment & DevOps
 
 **A. Deployment**
 - **GitHub Actions**: CI/CD automation
@@ -476,7 +479,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - SQL injection prevention (Eloquent ORM)
 - Rate limiting untuk API endpoints
 
-### 9. Design & Prototyping
+### 4.4.9 Design & Prototyping
 
 **A. UI/UX Design**
 - **Figma**: Design tool untuk wireframes dan mockups
@@ -487,7 +490,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 - **Draw.io / Lucidchart**: ERD, Use Case, Activity Diagrams
 - **StarUML**: Class diagrams dan sequence diagrams
 
-### 10. Project Management
+### 4.4.10 Project Management
 
 **A. Planning**
 - **Microsoft Project / GanttProject**: Gantt chart dan WBS
@@ -534,11 +537,11 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 
 ---
 
-## E. DESKRIPSI PRODUK / SERVIS
+## 4.5. DESKRIPSI PRODUK / SERVIS
 
 Berikut ini adalah deskripsi umum (*high-level*) mengenai produk atau layanan yang dihasilkan dari proyek ini:
 
-### 1. Tujuan Proyek
+### 4.5.1 Tujuan Proyek
 
 Tujuan proyek ini adalah membangun sistem informasi berbasis web yang dapat memberikan informasi yang berkaitan dengan manajemen pemesanan dan terapi hipnoterapi CUR-HEART, mencakup:
 
@@ -549,9 +552,9 @@ Tujuan proyek ini adalah membangun sistem informasi berbasis web yang dapat memb
 - Pembayaran online yang aman dan terintegrasi
 - Dashboard analytics untuk pengambilan keputusan
 
-### 2. Hasil yang Diinginkan
+### 4.5.2 Pengguna Sistem
 
-Sistem yang dibangun harus mampu:
+Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang dibangun harus mampu:
 
 **A. Untuk Klien:**
 - Menampilkan informasi jumlah layanan, terapis, dan testimoni
@@ -580,7 +583,7 @@ Sistem yang dibangun harus mampu:
 - Approval dan verifikasi terapis baru
 - System settings dan configuration
 
-### 3. Fitur Utama Sistem
+### 4.5.3 Fitur Utama Sistem
 
 **A. Modul Public Website**
 - Landing page dengan informasi bisnis
@@ -658,7 +661,7 @@ Sistem yang dibangun harus mampu:
 - User activity reports
 - Export formats: PDF, Excel, CSV
 
-### 4. Arsitektur Sistem
+### 4.5.4 Arsitektur Sistem
 
 Sistem dibangun dengan arsitektur **MVC (Model-View-Controller)** menggunakan Laravel framework:
 
@@ -787,7 +790,140 @@ Normalisasi: **Third Normal Form (3NF)** untuk menghindari redundansi dan anomal
 
 ---
 
-## F. WORK BREAKDOWN STRUCTURE (WBS) & GANTT CHART
+## 4.6. FAKTOR PENENTU KEBERHASILAN
+
+Keberhasilan implementasi Sistem Informasi CUR-HEART ditentukan oleh berbagai faktor yang saling berkaitan. Faktor-faktor ini dibagi menjadi Faktor Kunci Keberhasilan (*Key Success Factors*/KSF), Faktor Kritis Keberhasilan (*Critical Success Factors*/CSF), dan Indikator Kinerja Utama (*Key Performance Indicators*/KPI).
+
+### 4.6.1 Faktor Kunci Keberhasilan (*Key Success Factors*/KSF)
+
+Faktor Kunci Keberhasilan adalah faktor-faktor kunci yang mendukung pencapaian tujuan proyek secara umum.
+
+#### A. Faktor Teknologi
+
+**1. Stabilitas dan Keandalan Sistem**
+- Sistem harus mampu beroperasi 24/7 dengan uptime minimal 99,5%
+- Waktu respons halaman tidak lebih dari 2 detik
+- Optimasi query database untuk menangani concurrent users
+- Backup otomatis harian untuk keamanan data
+
+**2. Antarmuka yang Mudah Digunakan**
+- Desain UI/UX yang intuitif dan mudah dipahami
+- Responsive design untuk semua perangkat (desktop, tablet, mobile)
+- Konsistensi bahasa desain menggunakan design system
+- Standar aksesibilitas (WCAG 2.1 Level AA)
+
+**3. Keamanan Data**
+- Enkripsi data sensitif (password, medical records)
+- HTTPS untuk semua komunikasi
+- Autentikasi dan otorisasi yang kuat
+- Kepatuhan terhadap UU PDP (Perlindungan Data Pribadi)
+
+**4. Skalabilitas**
+- Arsitektur yang dapat menangani pertumbuhan pengguna
+- Normalisasi database untuk efisiensi storage
+- Caching mechanism untuk optimasi performa
+
+#### B. Faktor Manusia
+
+**1. Kompetensi Tim Pengembang**
+- Penguasaan Laravel framework dan PHP programming
+- Pemahaman database design dan MySQL
+- Kemampuan frontend development (HTML, CSS, JavaScript, Tailwind)
+- Pengetahuan version control (Git)
+
+**2. Komitmen Stakeholder**
+- Dukungan penuh dari manajemen CUR-HEART
+- Keterlibatan aktif pemilik dalam requirement gathering
+- Feedback konstruktif dari terapis dan admin
+- Kesediaan untuk testing dan UAT
+
+**3. Tingkat Adopsi Pengguna**
+- Pelatihan yang memadai untuk terapis dan admin
+- User guide yang komprehensif
+- Technical support yang responsif
+- Change management yang efektif
+
+#### C. Faktor Manajemen Proyek
+
+**1. Perencanaan yang Matang**
+- Scope yang jelas dan terukur
+- Timeline yang realistis (11 minggu)
+- Alokasi resource yang optimal
+- Risk mitigation strategy yang efektif
+
+**2. Komunikasi yang Efektif**
+- Meeting rutin (weekly standup)
+- Dokumentasi yang jelas
+- Progress tracking dengan Gantt chart
+- Issue tracking dan resolution
+
+**3. Quality Assurance**
+- Testing sistematis di setiap fase
+- Code review dan pair programming
+- Bug tracking dan prioritas fix
+- Continuous improvement berdasarkan feedback
+
+### 4.6.2 Faktor Kritis Keberhasilan (*Critical Success Factors*/CSF)
+
+Faktor Kritis Keberhasilan adalah faktor-faktor yang **HARUS** dipenuhi agar proyek berhasil.
+
+**CSF 1: Ketersediaan dan Keandalan Sistem**
+- Target: Uptime ≥ 99,5%, Response time < 2 detik
+- Dapat menangani minimal 100 concurrent users
+- Zero data loss dalam kondisi normal
+
+**CSF 2: Keamanan dan Privasi Data**
+- Zero security breach atau unauthorized access
+- Semua data sensitif terenkripsi
+- HTTPS implementation untuk semua pages
+- RBAC (Role-Based Access Control) berfungsi dengan baik
+
+**CSF 3: Adopsi dan Kepuasan Pengguna**
+- Minimal 70% klien menggunakan sistem untuk booking
+- Skor kepuasan pengguna ≥ 4,0 dari 5,0
+- System Usability Scale (SUS) Score ≥ 68
+- Tingkat adopsi terapis 100%
+
+**CSF 4: Integrasi dengan Proses Bisnis**
+- 100% booking melalui sistem (tidak ada lagi manual)
+- Pengurangan beban kerja administratif minimal 50%
+- Pengurangan booking error hingga 90%
+- Laporan dapat dihasilkan dalam 5 menit
+
+**CSF 5: Kepatuhan Anggaran dan Timeline**
+- Penyelesaian proyek dalam 11 minggu (± 1 minggu toleransi)
+- Biaya aktual tidak melebihi 110% budget (Rp 5,5 juta)
+- Semua deliverables selesai sesuai scope
+
+### 4.6.3 Indikator Kinerja Utama (*Key Performance Indicators*/KPI)
+
+KPI adalah metrik terukur untuk memantau keberhasilan sistem setelah deployment.
+
+**Tabel 4.X - Key Performance Indicators (KPI)**
+
+| Kategori | Nama KPI | Target | Frekuensi Monitoring |
+|----------|----------|--------|---------------------|
+| **Kinerja Sistem** | Uptime Sistem | ≥ 99,5% | Real-time |
+| | Response Time | ≤ 2 detik | Mingguan |
+| | Error Rate | ≤ 0,5% | Harian |
+| **Keamanan** | Security Vulnerabilities | 0 critical | Bulanan |
+| | Data Breach Incidents | 0 | Real-time |
+| **Adopsi Pengguna** | Total Registered Users | 200 dalam 3 bulan | Bulanan |
+| | Monthly Active Users | 150 (75%) | Bulanan |
+| | Booking Conversion Rate | ≥ 60% | Mingguan |
+| **Transaksi** | Total Bookings/Month | 100 bookings | Bulanan |
+| | Payment Success Rate | ≥ 95% | Mingguan |
+| | Revenue/Month | Rp 30 juta | Bulanan |
+| **Kepuasan** | User Satisfaction Score | ≥ 4,0/5,0 | Per booking |
+| | Net Promoter Score | ≥ 30 | Triwulanan |
+| | SUS Score | ≥ 68 | Triwulanan |
+| **Efisiensi** | Avg Booking Time | ≤ 3 menit | Mingguan |
+| | Admin Workload Reduction | ≥ 50% | Bulanan |
+| | Report Generation Time | ≤ 5 menit | Bulanan |
+
+---
+
+## 4.7. WORK BREAKDOWN STRUCTURE (WBS) & GANTT CHART
 
 Work Breakdown Structure (WBS) adalah decomposisi hierarkis dari total scope of work yang harus dilakukan oleh tim proyek untuk mencapai tujuan proyek dan membuat deliverables yang diperlukan.
 
@@ -901,7 +1037,7 @@ Biaya yang dibutuhkan untuk membangun sistem ini adalah **Rp 5.560.000** yang me
 
 ---
 
-## G. BATASAN
+## 4.8. BATASAN
 
 Batasan-batasan proyek secara umum adalah sebagai berikut:
 
@@ -936,7 +1072,7 @@ Batasan-batasan proyek secara umum adalah sebagai berikut:
 
 ---
 
-## H. ASUMSI
+## 4.9. ASUMSI
 
 Asumsi-asumsi proyek secara umum adalah sebagai berikut:
 
@@ -979,7 +1115,7 @@ Asumsi-asumsi proyek secara umum adalah sebagai berikut:
 
 ---
 
-## I. PELAKSANAAN PROYEK
+## 4.10. PELAKSANAAN PROYEK
 
 Pelaksanaan proyek merupakan fase implementasi dari perencanaan yang telah dibuat. Pada fase ini dilakukan desain sistem yang mencakup perancangan basis data, pemodelan UML, dan desain antarmuka pengguna.
 
@@ -1852,6 +1988,221 @@ Semua mockup dirancang dengan prinsip:
 - **Consistency**: Mengikuti design system yang telah ditetapkan
 - **User-Friendly**: Intuitif dan mudah digunakan
 - **Professional**: Mencerminkan kredibilitas layanan kesehatan mental
+
+---
+
+## 4.11. DESIMINASI PROYEK
+
+Desiminasi proyek merupakan proses penyebarluasan hasil, pengetahuan, dan pembelajaran dari proyek pengembangan Sistem Informasi CUR-HEART kepada berbagai pihak yang berkepentingan. Tujuan desiminasi adalah untuk memaksimalkan manfaat proyek, berbagi pengetahuan, dan memungkinkan replikasi sistem di tempat lain.
+
+### 4.11.1 Tujuan Desiminasi
+
+**A. Knowledge Sharing**
+- Berbagi pengetahuan dan best practices dalam pengembangan sistem informasi kesehatan mental
+- Memberikan pembelajaran tentang implementasi Laravel untuk healthcare management
+- Dokumentasi proses dan tantangan yang dihadapi selama pengembangan
+
+**B. Peningkatan Awareness**
+- Meningkatkan kesadaran tentang pentingnya digitalisasi layanan kesehatan mental
+- Menunjukkan manfaat sistem informasi untuk efisiensi operasional
+- Mempromosikan adopsi teknologi di sektor kesehatan mental
+
+**C. Replikasi dan Skalabilitas**
+- Memungkinkan pusat terapi lain untuk mengadopsi sistem serupa
+- Menyediakan dokumentasi lengkap untuk implementasi
+- Berbagi lessons learned untuk menghindari kesalahan yang sama
+
+### 4.11.2 Target Audiens Desiminasi
+
+**A. Internal Stakeholder**
+- Tim manajemen CUR-HEART
+- Terapis dan staf administratif
+- Owner/pemilik bisnis
+
+**B. Akademik**
+- Dosen pembimbing dan penguji
+- Mahasiswa Program Studi Sistem Informasi
+- Sivitas akademika Universitas Nusa Mandiri
+
+**C. Eksternal**
+- Praktisi hipnoterapi dan kesehatan mental
+- Pusat terapi dan wellness center lainnya
+- Komunitas developer Laravel Indonesia
+- Pihak yang tertarik dengan health information system
+
+### 4.11.3 Metode Desiminasi
+
+**A. Publikasi Akademik**
+
+**1. Laporan Capstone Project**
+- Laporan lengkap BAB I - BAB V
+- Dokumentasi teknis (SRS, Design Document)
+- User manual dan admin manual
+- Source code dengan dokumentasi lengkap
+- Format: PDF dan Hard Copy
+
+**2. Presentasi Akademik**
+- Presentasi akhir di hadapan dosen pembimbing dan penguji
+- Slide presentasi dengan demo sistem live
+- Q&A session untuk diskusi mendalam
+- Durasi: 30-45 menit
+
+**3. Artikel Ilmiah** (Optional)
+- Submit ke jurnal ilmiah nasional minimal terakreditasi Sinta 2
+- Topik: "Implementasi Sistem Informasi Manajemen Terapi Hipnoterapi Berbasis Laravel"
+- Format: Sesuai template jurnal
+- Target publikasi: Q1-Q2 2025
+
+**B. Dokumentasi dan Repository**
+
+**1. GitHub Repository**
+- Source code lengkap dengan README.md komprehensif
+- Installation guide step-by-step
+- API documentation
+- Database schema documentation
+- Contribution guidelines
+- License: MIT License (open source)
+
+**2. Technical Documentation**
+- System architecture diagram
+- Database ERD dengan penjelasan
+- API endpoints documentation
+- Deployment guide
+- Troubleshooting guide
+- Format: Markdown + PDF
+
+**C. Presentasi dan Workshop**
+
+**1. Internal Training untuk Stakeholder CUR-HEART**
+- User training untuk terapis (2 jam)
+- Admin training (2 jam)
+- Management overview (1 jam)
+- Materi: Slide + hands-on practice
+- Dokumentasi video training
+
+**2. Seminar/Workshop** (Optional)
+- Topik: "Digital Transformation dalam Layanan Kesehatan Mental"
+- Target: Praktisi hipnoterapi dan wellness center
+- Durasi: 3-4 jam
+- Konten: Presentasi + demo + diskusi
+
+**3. Webinar Online** (Optional)
+- Platform: Zoom/Google Meet
+- Recording dan upload ke YouTube
+- Slide share di SlideShare
+- Reach: Lebih luas, tidak terbatas lokasi
+
+**D. Media Online**
+
+**1. Blog Post/Article**
+- Medium.com atau Dev.to
+- Topik: 
+  - "Building Healthcare Management System with Laravel 10"
+  - "Integrating Midtrans Payment Gateway in Laravel"
+  - "UI/UX Design for Mental Health Services"
+- Format: Step-by-step tutorial dengan code snippets
+
+**2. Video Tutorial** (Optional)
+- YouTube channel
+- Seri tutorial: "Membangun Sistem Informasi Kesehatan Mental"
+- Episode: 5-10 video @ 15-20 menit
+- Konten: Dari setup hingga deployment
+
+**3. Social Media**
+- LinkedIn post tentang project completion
+- Twitter thread tentang key learnings
+- Instagram infographic tentang hasil proyek
+
+### 4.11.4 Deliverables Desiminasi
+
+**Tabel 4.Y - Deliverables Desiminasi Proyek**
+
+| No | Deliverable | Format | Target Audiens | Timeline | Status |
+|----|-------------|--------|----------------|----------|--------|
+| 1 | Laporan Capstone Project | PDF + Hard Copy | Akademik | Desember 2024 | Completed |
+| 2 | Presentasi Akhir | Slide + Demo | Dosen + Penguji | Desember 2024 | Scheduled |
+| 3 | Source Code Repository | GitHub | Public | Desember 2024 | Ready |
+| 4 | Technical Documentation | Markdown + PDF | Developer | Desember 2024 | Completed |
+| 5 | User Manual | PDF | End Users | Desember 2024 | Completed |
+| 6 | Training Materials | Slide + Video | CUR-HEART Staff | Januari 2025 | Planned |
+| 7 | Blog Article | Medium/Dev.to | Developer Community | Januari 2025 | Planned |
+| 8 | Artikel Jurnal Ilmiah | PDF (Journal Format) | Akademik | Q1 2025 | Optional |
+| 9 | Video Tutorial Series | YouTube | Public | Q1 2025 | Optional |
+| 10 | Seminar/Workshop | Live Event | Practitioners | Q1 2025 | Optional |
+
+### 4.11.5 Rencana Desiminasi
+
+**Fase 1: Immediate (Desember 2024)**
+- Finalisasi laporan capstone project
+- Persiapan slide presentasi final
+- Setup GitHub repository (public)
+- Upload source code + documentation
+- Presentasi akhir di kampus
+
+**Fase 2: Short-term (Januari 2025)**
+- User training untuk staff CUR-HEART
+- Publish blog post di Medium/Dev.to
+- LinkedIn post tentang project completion
+- Create demo video (5-10 menit)
+
+**Fase 3: Medium-term (Q1 2025)**
+- Submit artikel ke jurnal ilmiah
+- Create video tutorial series (optional)
+- Organize mini workshop untuk praktisi (optional)
+- Present di komunitas developer lokal (optional)
+
+**Fase 4: Long-term (Q2-Q4 2025)**
+- Monitoring feedback dan update dokumentasi
+- Case study publication (jika ada data post-implementation)
+- Contribution ke open source community
+- Continuous improvement based on feedback
+
+### 4.11.6 Indikator Keberhasilan Desiminasi
+
+**A. Jangkauan (Reach)**
+- GitHub repository stars: Target 50+ stars dalam 6 bulan
+- Blog post views: Target 500+ views
+- Video tutorial views: Target 1000+ views (jika dibuat)
+- Presentasi audience: Minimal 20 peserta
+
+**B. Engagement**
+- GitHub issues/discussions: Active community engagement
+- Blog comments dan social media engagement
+- Training feedback score: ≥ 4,0/5,0
+- Q&A participation di presentasi
+
+**C. Impact**
+- Adoption: Minimal 1 pusat terapi lain tertarik mengadopsi
+- Academic citation: Target 3+ citations dalam 1 tahun
+- Contribution: Pull requests dari developer lain
+- Knowledge transfer: Staff CUR-HEART dapat operate system independently
+
+### 4.11.7 Lessons Learned dan Best Practices
+
+**A. Technical Lessons**
+- Laravel 10 sangat suitable untuk healthcare management system
+- Midtrans integration straightforward dengan dokumentasi yang baik
+- Tailwind CSS significantly speeds up frontend development
+- Figma essential untuk alignment dengan stakeholder
+
+**B. Project Management Lessons**
+- Frequent communication dengan stakeholder crucial untuk success
+- Iterative development lebih efektif daripada waterfall
+- UAT harus dilakukan early untuk avoid major revisions
+- Documentation as you go lebih efisien daripada at the end
+
+**C. Domain-Specific Lessons**
+- Mental health data memerlukan extra security measures
+- Appointment scheduling complexity jangan underestimate
+- User onboarding crucial untuk adoption success
+- Responsive design non-negotiable untuk healthcare apps
+
+**D. Best Practices untuk Replikasi**
+- Start dengan comprehensive requirement gathering
+- Involve end users sejak fase design
+- Prioritize security dan privacy dari awal
+- Plan for scalability meski start small
+- Budget untuk maintenance dan support post-launch
 
 ---
 
