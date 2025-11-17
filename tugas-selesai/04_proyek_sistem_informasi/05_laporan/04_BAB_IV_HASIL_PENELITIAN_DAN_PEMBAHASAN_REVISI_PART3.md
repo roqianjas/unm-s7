@@ -456,8 +456,3 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 | **GitHub** | *Hosting* kontrol versi paling populer dengan integrasi CI/CD yang mudah |
 
 ---
-
-_Catatan: BAB IV Part 3 ini merupakan lanjutan dari Part 2. Untuk bagian 4.7 Desiminasi Proyek, lihat Part 4._
-
----
-

@@ -679,8 +679,3 @@ Total **41 halaman mockup** yang mencakup seluruh perjalanan pengguna dari 4 per
 Desain telah melalui beberapa iterasi berdasarkan umpan balik dari pemangku kepentingan dan *usability testing* dengan sampel pengguna.
 
 ---
-
-_Catatan: BAB IV Part 2 ini merupakan lanjutan dari Part 1. Untuk bagian 4.4-4.7, lihat Part 3 dan Part 4._
-
----
-
