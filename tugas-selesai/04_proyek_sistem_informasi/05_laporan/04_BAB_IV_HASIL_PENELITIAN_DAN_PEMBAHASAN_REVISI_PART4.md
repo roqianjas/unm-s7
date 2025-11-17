@@ -7,12 +7,12 @@ Desiminasi proyek merupakan proses penyebarluasan hasil, pengetahuan, dan pembel
 
 ### 4.7.1 Tujuan Desiminasi
 
-**A. Knowledge Sharing**
-- Berbagi pengetahuan dan best practices dalam pengembangan sistem informasi kesehatan mental
-- Memberikan pembelajaran tentang implementasi Laravel untuk healthcare management
+**A. Berbagi Pengetahuan**
+- Berbagi pengetahuan dan praktik terbaik dalam pengembangan sistem informasi kesehatan mental
+- Memberikan pembelajaran tentang implementasi Laravel untuk manajemen layanan kesehatan (*healthcare management*)
 - Dokumentasi proses dan tantangan yang dihadapi selama pengembangan
 
-**B. Peningkatan Awareness**
+**B. Peningkatan Kesadaran**
 - Meningkatkan kesadaran tentang pentingnya digitalisasi layanan kesehatan mental
 - Menunjukkan manfaat sistem informasi untuk efisiensi operasional
 - Mempromosikan adopsi teknologi di sektor kesehatan mental
@@ -20,14 +20,14 @@ Desiminasi proyek merupakan proses penyebarluasan hasil, pengetahuan, dan pembel
 **C. Replikasi dan Skalabilitas**
 - Memungkinkan pusat terapi lain untuk mengadopsi sistem serupa
 - Menyediakan dokumentasi lengkap untuk implementasi
-- Berbagi lessons learned untuk menghindari kesalahan yang sama
+- Berbagi pembelajaran yang diperoleh untuk menghindari kesalahan yang sama
 
 ### 4.7.2 Target Audiens Desiminasi
 
-**A. Internal Stakeholder**
+**A. Pemangku Kepentingan Internal**
 - Tim manajemen CUR-HEART
 - Terapis dan staf administratif
-- Owner/pemilik bisnis
+- Pemilik bisnis
 
 **B. Akademik**
 - Dosen pembimbing dan penguji
@@ -36,183 +36,183 @@ Desiminasi proyek merupakan proses penyebarluasan hasil, pengetahuan, dan pembel
 
 **C. Eksternal**
 - Praktisi hipnoterapi dan kesehatan mental
-- Pusat terapi dan wellness center lainnya
-- Komunitas developer Laravel Indonesia
-- Pihak yang tertarik dengan health information system
+- Pusat terapi dan *wellness center* lainnya
+- Komunitas pengembang (*developer*) Laravel Indonesia
+- Pihak yang tertarik dengan sistem informasi kesehatan (*health information system*)
 
 ### 4.7.3 Metode Desiminasi
 
 **A. Publikasi Akademik**
 
-**1. Laporan Capstone Project**
+**1. Laporan *Capstone Project***
 - Laporan lengkap BAB I - BAB V
-- Dokumentasi teknis (SRS, Design Document)
-- User manual dan admin manual
-- Source code dengan dokumentasi lengkap
-- Format: PDF dan Hard Copy
+- Dokumentasi teknis (SRS, Dokumen Desain/*Design Document*)
+- Panduan pengguna dan panduan admin
+- Kode sumber dengan dokumentasi lengkap
+- Format: PDF dan Salinan Cetak
 
 **2. Presentasi Akademik**
 - Presentasi akhir di hadapan dosen pembimbing dan penguji
-- Slide presentasi dengan demo sistem live
-- Q&A session untuk diskusi mendalam
+- Slide presentasi dengan demonstrasi sistem langsung
+- Sesi tanya jawab untuk diskusi mendalam
 - Durasi: 30-45 menit
 
-**3. Artikel Ilmiah** (Optional)
-- Submit ke jurnal ilmiah nasional minimal terakreditasi Sinta 2
+**3. Artikel Ilmiah** (Opsional)
+- Kirim (*submit*) ke jurnal ilmiah nasional minimal terakreditasi Sinta 2
 - Topik: "Implementasi Sistem Informasi Manajemen Terapi Hipnoterapi Berbasis Laravel"
 - Format: Sesuai template jurnal
 - Target publikasi: Q1-Q2 2025
 
-**B. Dokumentasi dan Repository**
+**B. Dokumentasi dan Repositori**
 
-**1. GitHub Repository**
-- Source code lengkap dengan README.md komprehensif
-- Installation guide step-by-step
-- API documentation
-- Database schema documentation
-- Contribution guidelines
-- License: MIT License (open source)
+**1. Repositori GitHub**
+- Kode sumber lengkap dengan README.md komprehensif
+- Panduan instalasi bertahap
+- Dokumentasi API
+- Dokumentasi skema basis data
+- Panduan kontribusi
+- Lisensi: MIT (sumber terbuka/*open source*)
 
-**2. Technical Documentation**
-- System architecture diagram
-- Database ERD dengan penjelasan
-- API endpoints documentation
-- Deployment guide
-- Troubleshooting guide
+**2. Dokumentasi Teknis**
+- Diagram arsitektur sistem
+- ERD basis data dengan penjelasan
+- Dokumentasi titik akhir (*endpoint*) API
+- Panduan penerapan (*deployment*)
+- Panduan pemecahan masalah (*troubleshooting*)
 - Format: Markdown + PDF
 
-**C. Presentasi dan Workshop**
+**C. Presentasi dan Lokakarya (*Workshop*)
 
-**1. Internal Training untuk Stakeholder CUR-HEART**
-- User training untuk terapis (2 jam)
-- Admin training (2 jam)
-- Management overview (1 jam)
-- Materi: Slide + hands-on practice
-- Dokumentasi video training
+**1. Pelatihan Internal untuk Pemangku Kepentingan CUR-HEART**
+- Pelatihan pengguna untuk terapis (2 jam)
+- Pelatihan admin (2 jam)
+- Ikhtisar manajemen (1 jam)
+- Materi: Slide + praktik langsung
+- Dokumentasi video pelatihan
 
-**2. Seminar/Workshop** (Optional)
-- Topik: "Digital Transformation dalam Layanan Kesehatan Mental"
-- Target: Praktisi hipnoterapi dan wellness center
+**2. Seminar/Lokakarya (*Workshop*)** (Opsional)
+- Topik: "Transformasi Digital dalam Layanan Kesehatan Mental"
+- Target: Praktisi hipnoterapi dan pusat kesehatan
 - Durasi: 3-4 jam
-- Konten: Presentasi + demo + diskusi
+- Konten: Presentasi + demonstrasi + diskusi
 
-**3. Webinar Online** (Optional)
+**3. *Webinar* Daring** (Opsional)
 - Platform: Zoom/Google Meet
-- Recording dan upload ke YouTube
-- Slide share di SlideShare
-- Reach: Lebih luas, tidak terbatas lokasi
+- Rekaman (*recording*) dan unggah (*upload*) ke YouTube
+- Berbagi slide (*slide share*) di SlideShare
+- Jangkauan (*reach*): Lebih luas, tidak terbatas lokasi
 
-**D. Media Online**
+**D. Media Daring**
 
-**1. Blog Post/Article**
+**1. Artikel Blog**
 - Medium.com atau Dev.to
 - Topik: 
-  - "Building Healthcare Management System with Laravel 10"
-  - "Integrating Midtrans Payment Gateway in Laravel"
-  - "UI/UX Design for Mental Health Services"
-- Format: Step-by-step tutorial dengan code snippets
+  - "Membangun Sistem Manajemen Kesehatan dengan Laravel 10"
+  - "Mengintegrasikan *Payment Gateway* Midtrans di Laravel"
+  - "Desain UI/UX untuk Layanan Kesehatan Mental"
+- Format: Tutorial bertahap dengan cuplikan kode (*code snippets*)
 
-**2. Video Tutorial** (Optional)
-- YouTube channel
+**2. Video Tutorial** (Opsional)
+- Kanal (*channel*) YouTube
 - Seri tutorial: "Membangun Sistem Informasi Kesehatan Mental"
 - Episode: 5-10 video @ 15-20 menit
-- Konten: Dari setup hingga deployment
+- Konten: Dari pengaturan hingga penerapan (*deployment*)
 
-**3. Social Media**
-- LinkedIn post tentang project completion
-- Twitter thread tentang key learnings
-- Instagram infographic tentang hasil proyek
+**3. Media Sosial**
+- Posting LinkedIn tentang penyelesaian proyek
+- Utas (*thread*) Twitter tentang pembelajaran kunci
+- Infografis Instagram tentang hasil proyek
 
-### 4.7.4 Deliverables Desiminasi
+### 4.7.4 Luaran Desiminasi
 
-**Tabel 4.10 - Deliverables Desiminasi Proyek**
+**Tabel 4.10 - Luaran Desiminasi Proyek**
 
-| No | Deliverable | Format | Target Audiens | Timeline | Status |
+| No | Luaran | Format | Target Audiens | Waktu | Status |
 |----|-------------|--------|----------------|----------|--------|
-| 1 | Laporan Capstone Project | PDF + Hard Copy | Akademik | Desember 2024 | Completed |
-| 2 | Presentasi Akhir | Slide + Demo | Dosen + Penguji | Desember 2024 | Scheduled |
-| 3 | Source Code Repository | GitHub | Public | Desember 2024 | Ready |
-| 4 | Technical Documentation | Markdown + PDF | Developer | Desember 2024 | Completed |
-| 5 | User Manual | PDF | End Users | Desember 2024 | Completed |
-| 6 | Training Materials | Slide + Video | CUR-HEART Staff | Januari 2025 | Planned |
-| 7 | Blog Article | Medium/Dev.to | Developer Community | Januari 2025 | Planned |
-| 8 | Artikel Jurnal Ilmiah | PDF (Journal Format) | Akademik | Q1 2025 | Optional |
-| 9 | Video Tutorial Series | YouTube | Public | Q1 2025 | Optional |
-| 10 | Seminar/Workshop | Live Event | Practitioners | Q1 2025 | Optional |
+| 1 | Laporan *Capstone Project* | PDF + Salinan Cetak | Akademik | Desember 2024 | Selesai |
+| 2 | Presentasi Akhir | Presentasi (*Slide*) + Demonstrasi (*Demo*) | Dosen + Penguji | Desember 2024 | Terjadwal |
+| 3 | Repositori Kode Sumber | GitHub | Publik | Desember 2024 | Siap |
+| 4 | Dokumentasi Teknis | Markdown + PDF | Pengembang | Desember 2024 | Selesai |
+| 5 | Panduan Pengguna | PDF | Pengguna Akhir | Desember 2024 | Selesai |
+| 6 | Materi Pelatihan | Presentasi (*Slide*) + Video | Staf CUR-HEART | Januari 2025 | Direncanakan |
+| 7 | Artikel Blog | Medium/Dev.to | Komunitas Pengembang | Januari 2025 | Direncanakan |
+| 8 | Artikel Jurnal Ilmiah | PDF (Format Jurnal) | Akademik | Q1 2025 | Opsional |
+| 9 | Seri Tutorial Video | YouTube | Publik | Q1 2025 | Opsional |
+| 10 | Seminar/Lokakarya (*Workshop*) | Acara Langsung | Praktisi | Q1 2025 | Opsional |
 
 ### 4.7.5 Rencana Desiminasi
 
-**Fase 1: Immediate (Desember 2024)**
-- Finalisasi laporan capstone project
-- Persiapan slide presentasi final
-- Setup GitHub repository (public)
-- Upload source code + documentation
+**Fase 1: Segera (Desember 2024)**
+- Finalisasi laporan *capstone project*
+- Persiapan presentasi (*slide*) presentasi final
+- Siapkan repositori GitHub (publik)
+- Unggah kode sumber + dokumentasi
 - Presentasi akhir di kampus
 
-**Fase 2: Short-term (Januari 2025)**
-- User training untuk staff CUR-HEART
-- Publish blog post di Medium/Dev.to
-- LinkedIn post tentang project completion
-- Create demo video (5-10 menit)
+**Fase 2: Jangka Pendek (Januari 2025)**
+- Pelatihan pengguna untuk staf CUR-HEART
+- Publikasikan artikel blog di Medium/Dev.to
+- Posting LinkedIn tentang penyelesaian proyek
+- Buat video demonstrasi (5-10 menit)
 
-**Fase 3: Medium-term (Q1 2025)**
-- Submit artikel ke jurnal ilmiah
-- Create video tutorial series (optional)
-- Organize mini workshop untuk praktisi (optional)
-- Present di komunitas developer lokal (optional)
+**Fase 3: Jangka Menengah (Q1 2025)**
+- Kirim artikel ke jurnal ilmiah
+- Buat seri tutorial video (opsional)
+- Selenggarakan mini lokakarya (*workshop*) untuk praktisi (opsional)
+- Presentasi di komunitas pengembang lokal (opsional)
 
-**Fase 4: Long-term (Q2-Q4 2025)**
-- Monitoring feedback dan update dokumentasi
-- Case study publication (jika ada data post-implementation)
-- Contribution ke open source community
-- Continuous improvement based on feedback
+**Fase 4: Jangka Panjang (Q2-Q4 2025)**
+- Pantau umpan balik dan perbarui dokumentasi
+- Publikasi studi kasus (jika ada data pasca-implementasi)
+- Kontribusi ke komunitas sumber terbuka (*open source*)
+- Perbaikan berkelanjutan berdasarkan umpan balik
 
 ### 4.7.6 Indikator Keberhasilan Desiminasi
 
-**A. Jangkauan (Reach)**
-- GitHub repository stars: Target 50+ stars dalam 6 bulan
-- Blog post views: Target 500+ views
-- Video tutorial views: Target 1000+ views (jika dibuat)
-- Presentasi audience: Minimal 20 peserta
+**A. Jangkauan**
+- Bintang repositori GitHub: Target 50+ bintang dalam 6 bulan
+- Tampilan artikel blog: Target 500+ tampilan
+- Tampilan tutorial video: Target 1000+ tampilan (jika dibuat)
+- Presentasi *audience*: Minimal 20 peserta
 
-**B. Engagement**
-- GitHub issues/discussions: Active community engagement
-- Blog comments dan social media engagement
-- Training feedback score: ≥ 4,0/5,0
-- Q&A participation di presentasi
+**B. Keterlibatan (*Engagement*)**
+- Isu/diskusi (*issues/discussions*) GitHub: Keterlibatan komunitas aktif
+- Komentar blog dan keterlibatan media sosial
+- Skor umpan balik pelatihan: ≥ 4,0/5,0
+- Partisipasi (*participation*) tanya jawab di presentasi
 
-**C. Impact**
-- Adoption: Minimal 1 pusat terapi lain tertarik mengadopsi
-- Academic citation: Target 3+ citations dalam 1 tahun
-- Contribution: Pull requests dari developer lain
-- Knowledge transfer: Staff CUR-HEART dapat operate system independently
+**C. Dampak**
+- Adopsi: Minimal 1 pusat terapi lain tertarik mengadopsi
+- Sitasi akademik: Target 3+ sitasi dalam 1 tahun
+- Kontribusi: Permintaan kontribusi dari pengembang lain
+- Transfer pengetahuan: Staf CUR-HEART dapat mengoperasikan sistem secara mandiri
 
-### 4.7.7 Lessons Learned dan Best Practices
+### 4.7.7 Pembelajaran yang Diperoleh dan Praktik Terbaik
 
-**A. Technical Lessons**
-- Laravel 10 sangat suitable untuk healthcare management system
-- Midtrans integration straightforward dengan dokumentasi yang baik
-- Tailwind CSS significantly speeds up frontend development
-- Figma essential untuk alignment dengan stakeholder
+**A. Pembelajaran Teknis**
+- Laravel 10 sangat cocok untuk sistem manajemen kesehatan
+- Integrasi Midtrans mudah dengan dokumentasi yang baik
+- Tailwind CSS secara signifikan mempercepat pengembangan *frontend*
+- Figma esensial untuk penyelarasan dengan pemangku kepentingan
 
-**B. Project Management Lessons**
-- Frequent communication dengan stakeholder crucial untuk success
-- Iterative development lebih efektif daripada waterfall
-- UAT harus dilakukan early untuk avoid major revisions
-- Documentation as you go lebih efisien daripada at the end
+**B. Pembelajaran Manajemen Proyek**
+- Komunikasi yang sering dengan pemangku kepentingan sangat penting untuk kesuksesan
+- Pengembangan iteratif lebih efektif daripada model air terjun (*waterfall*)
+- UAT harus dilakukan sejak awal untuk menghindari revisi besar
+- Dokumentasi secara bertahap lebih efisien daripada di akhir
 
-**C. Domain-Specific Lessons**
-- Mental health data memerlukan extra security measures
-- Appointment scheduling complexity jangan underestimate
-- User onboarding crucial untuk adoption success
-- Responsive design non-negotiable untuk healthcare apps
+**C. Pembelajaran Spesifik Domain**
+- Data kesehatan mental memerlukan langkah keamanan ekstra
+- Kompleksitas penjadwalan janji temu jangan diremehkan
+- Orientasi pengguna (*onboarding*) sangat penting untuk kesuksesan adopsi
+- Desain responsif wajib untuk aplikasi kesehatan
 
-**D. Best Practices untuk Replikasi**
-- Start dengan comprehensive requirement gathering
-- Involve end users sejak fase design
-- Prioritize security dan privacy dari awal
-- Plan for scalability meski start small
-- Budget untuk maintenance dan support post-launch
+**D. Praktik Terbaik untuk Replikasi**
+- Mulai dengan pengumpulan kebutuhan yang komprehensif
+- Libatkan pengguna akhir sejak fase desain
+- Prioritaskan keamanan dan privasi dari awal
+- Rencanakan skalabilitas meski mulai kecil
+- Anggarkan untuk pemeliharaan dan dukungan pasca-peluncuran
 
 ---
 
@@ -223,41 +223,41 @@ Bab IV ini telah menjelaskan secara komprehensif tentang hasil penelitian dan pe
 **4.1 Inisiasi Proyek**
 - Identifikasi 6 masalah kritis dalam sistem manual
 - Ruang lingkup proyek yang jelas dengan 6 modul utama
-- Tujuan dan manfaat penelitian yang terukur untuk semua stakeholder
+- Tujuan dan manfaat penelitian yang terukur untuk semua pemangku kepentingan
 
 **4.2 Perencanaan Proyek**
 - Perencanaan komprehensif mencakup 10 area pengetahuan manajemen proyek
-- Work Breakdown Structure (WBS) dengan 6 fase utama dan 40+ work packages
-- Gantt Chart dengan timeline 16 minggu pengerjaan
-- Estimasi biaya Rp 5,56 juta dengan breakdown detail
+- *Work Breakdown Structure* (WBS) dengan 6 fase utama dan 40+ *work packages*
+- *Gantt Chart* dengan jadwal 16 minggu pengerjaan
+- Estimasi biaya Rp 5,56 juta dengan rincian detail
 - Identifikasi dan mitigasi 8 risiko utama proyek
 - Batasan dan asumsi yang jelas untuk mengelola ekspektasi
 
 **4.3 Deskripsi Produk / Servis**
-- Sistem informasi berbasis web dengan 3 tipe pengguna (Guest, Client, Therapist, Admin)
-- 9 modul fungsional utama dari public website hingga reporting
-- Arsitektur MVC dengan Laravel framework
-- Database design 16 tabel ternormalisasi (3NF)
-- 4 level user roles dengan permissions yang jelas
-- Standar keamanan tinggi (HTTPS, encryption, RBAC)
-- Target performance < 2 detik page load, 100+ concurrent users
+- Sistem informasi berbasis web dengan 3 tipe pengguna (Tamu, Klien, Terapis, Admin)
+- 9 modul fungsional utama dari situs web publik hingga pelaporan
+- Arsitektur MVC dengan *framework* Laravel
+- Desain basis data 16 tabel ternormalisasi (3NF)
+- 4 level peran pengguna dengan izin yang jelas
+- Standar keamanan tinggi (HTTPS, enkripsi, *RBAC*)
+- Target kinerja < 2 detik waktu muat halaman, 100+ pengguna bersamaan
 - Pelaksanaan proyek dengan desain sistem lengkap:
-  * Use Case Diagram dengan 5 aktor dan 30+ use cases
-  * Activity Diagram untuk 3 proses bisnis utama
-  * ERD dengan 14 entitas dan relasi one-to-one/one-to-many
-  * UI/UX Design 41 halaman mockup dengan design system komprehensif
+  * *Use Case Diagram* dengan 5 aktor dan 30+ *use cases*
+  * *Activity Diagram* untuk 3 proses bisnis utama
+  * ERD dengan 14 entitas dan relasi *one-to-one*/*one-to-many*
+  * Desain UI/UX 41 halaman mockup dengan sistem desain komprehensif
 
 **4.4 Faktor Penentu Keberhasilan**
-- 12 Key Success Factors dalam 3 kategori (teknologi, manusia, manajemen)
-- 5 Critical Success Factors yang HARUS dipenuhi
-- 15 Key Performance Indicators untuk monitoring post-deployment
+- 12 Faktor Kunci Keberhasilan dalam 3 kategori (teknologi, manusia, manajemen)
+- 5 Faktor Kritis Keberhasilan yang HARUS dipenuhi
+- 15 Indikator Kinerja Utama untuk pemantauan pasca-*deployment*
 
 **4.5 Keuntungan yang Diharapkan**
-- Manfaat organisasi: Efisiensi 60-70%, pertumbuhan revenue 30-40%
+- Manfaat organisasi: Efisiensi 60-70%, pertumbuhan pendapatan 30-40%
 - Total manfaat tahunan terukur: Rp 134,2 juta (peningkatan pendapatan + penghematan)
 - Manfaat klien: Penghematan waktu 25-55 menit per pemesanan, target kepuasan ≥ 4,0/5,0
 - Manfaat terapis: Hemat 16 jam/bulan, peningkatan pendapatan +33%
-- ROI luar biasa: 1.227% dengan payback period 27 hari
+- ROI luar biasa: 1.227% dengan periode pengembalian 27 hari
 - Proyeksi 5 tahun: ROI 7.258% dengan manfaat bersih Rp 964,38 juta
 
 **4.6 Teknologi yang Digunakan**
@@ -269,35 +269,35 @@ Bab IV ini telah menjelaskan secara komprehensif tentang hasil penelitian dan pe
 - Design tools: Figma untuk UI/UX, Draw.io untuk diagram
 
 **4.7 Desiminasi Proyek**
-- 3 tujuan utama: knowledge sharing, awareness, replikasi
+- 3 tujuan utama: berbagi pengetahuan (*knowledge sharing*), kesadaran (*awareness*), replikasi
 - 3 target audiens: internal, akademik, eksternal
-- 4 metode desiminasi: publikasi akademik, dokumentasi, presentasi, media online
-- 10 deliverables dengan timeline jelas
-- 4 fase rencana desiminasi dari immediate hingga long-term
-- Indikator keberhasilan terukur (reach, engagement, impact)
-- Lessons learned dan best practices untuk replikasi
+- 4 metode desiminasi: publikasi akademik, dokumentasi, presentasi, media daring
+- 10 luaran (*deliverables*) dengan garis waktu (*timeline*) jelas
+- 4 fase rencana desiminasi dari segera (*immediate*) hingga jangka panjang (*long-term*)
+- Indikator keberhasilan terukur (jangkauan/*reach*, keterlibatan/*engagement*, dampak/*impact*)
+- Pembelajaran yang diperoleh (*lessons learned*) dan praktik terbaik (*best practices*) untuk replikasi
 
 ---
 
 **Ringkasan Pencapaian Proyek:**
 
-| Aspek | Target | Actual | Status |
+| Aspek | Target | Aktual (*Actual*) | Status |
 |-------|--------|--------|--------|
-| Kebutuhan Fungsional | 90% | 95% | ✅ Exceeded |
-| Timeline (11 minggu) | 100% | 105% (sedikit delay) | ✅ Met |
-| Budget (Rp 5,56 juta) | 100% | 98% | ✅ Under Budget |
-| Kualitas (SUS Score) | ≥ 68 | 78,5 | ✅ Exceeded |
-| Uptime | ≥ 99% | 99,8% | ✅ Exceeded |
-| Page Load Time | < 2 detik | 1,8 detik | ✅ Met |
-| User Satisfaction | ≥ 4,0/5,0 | 4,3/5,0 | ✅ Exceeded |
+| Kebutuhan Fungsional | 90% | 95% | ✅ Melebihi (*Exceeded*) |
+| Garis Waktu (*Timeline*) (11 minggu) | 100% | 105% (sedikit terlambat) | ✅ Tercapai (*Met*) |
+| Anggaran (*Budget*) (Rp 5,56 juta) | 100% | 98% | ✅ Di Bawah Anggaran (*Under Budget*) |
+| Kualitas (Skor SUS/*SUS Score*) | ≥ 68 | 78,5 | ✅ Melebihi (*Exceeded*) |
+| Waktu Aktif (*Uptime*) | ≥ 99% | 99,8% | ✅ Melebihi (*Exceeded*) |
+| Waktu Muat Halaman (*Page Load Time*) | < 2 detik | 1,8 detik | ✅ Tercapai (*Met*) |
+| Kepuasan Pengguna (*User Satisfaction*) | ≥ 4,0/5,0 | 4,3/5,0 | ✅ Melebihi (*Exceeded*) |
 
 **Kesimpulan Akhir:**
 
 Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART telah berhasil dikembangkan dengan memenuhi atau bahkan melebihi semua target yang ditetapkan. Proyek ini mendemonstrasikan bagaimana teknologi dapat digunakan untuk meningkatkan akses dan kualitas layanan kesehatan mental, sekaligus memberikan dampak bisnis yang signifikan dengan ROI yang sangat tinggi.
 
-Dengan dokumentasi lengkap, desain yang user-centered, dan implementasi best practices, sistem ini siap untuk di-deploy ke production environment dan dapat menjadi referensi untuk pengembangan sistem serupa di bidang healthcare management.
+Dengan dokumentasi lengkap, desain yang berpusat pada pengguna (*user-centered*), dan implementasi praktik terbaik (*best practices*), sistem ini siap untuk diterapkan (*deploy*) ke lingkungan produksi (*production environment*) dan dapat menjadi referensi untuk pengembangan sistem serupa di bidang manajemen layanan kesehatan (*healthcare management*).
 
-Proyek ini tidak hanya memenuhi requirement akademik sebagai Capstone Project, tetapi juga memberikan nilai nyata bagi CUR-HEART dan berpotensi memberikan dampak positif yang lebih luas melalui proses desiminasi yang telah direncanakan dengan baik.
+Proyek ini tidak hanya memenuhi persyaratan (*requirement*) akademik sebagai Proyek Puncak (*Capstone Project*), tetapi juga memberikan nilai nyata bagi CUR-HEART dan berpotensi memberikan dampak positif yang lebih luas melalui proses desiminasi yang telah direncanakan dengan baik.
 
 ---
 

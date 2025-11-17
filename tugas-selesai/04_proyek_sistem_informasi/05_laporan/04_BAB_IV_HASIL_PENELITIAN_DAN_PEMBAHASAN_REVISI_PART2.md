@@ -14,7 +14,7 @@ Tujuan proyek ini adalah membangun sistem informasi berbasis web yang dapat memb
 - Sistem pemesanan online yang mudah dan cepat
 - Manajemen sesi terapi dan dokumentasi klien
 - Pembayaran online yang aman dan terintegrasi
-- Dashboard analytics untuk pengambilan keputusan
+- Dasbor analitik untuk pengambilan keputusan
 
 ### 4.3.2 Pengguna Sistem
 
@@ -26,23 +26,23 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 - Memberikan kemampuan pemesanan layanan secara online 24/7
 - Menampilkan riwayat pemesanan dan sesi terapi
 - Menyediakan sistem pembayaran yang aman dan mudah
-- Menampilkan progress terapi dan catatan sesi (yang dibagikan)
+- Menampilkan kemajuan terapi dan catatan sesi (yang dibagikan)
 
 **B. Untuk Terapis:**
 - Manajemen jadwal dan ketersediaan secara mandiri
 - Melihat daftar klien dan detail pemesanan hari ini
-- Mendokumentasikan sesi terapi dengan form terstruktur
+- Mendokumentasikan sesi terapi dengan formulir terstruktur
 - Mengakses riwayat lengkap klien untuk kontinuitas perawatan
-- Melihat dashboard earnings dan statistik kinerja
-- Update profil dan pengaturan notifikasi
+- Melihat dasbor pendapatan dan statistik kinerja
+- Memperbarui profil dan pengaturan notifikasi
 
 **C. Untuk Admin:**
-- Monitoring pemesanan real-time dengan status tracking
-- Manajemen users (klien, terapis, admin)
-- Manajemen layanan (CRUD operations)
-- Laporan keuangan dan analytics:
-  - Total pemesanan dan revenue
-  - Breakdown per layanan dan terapis
+- Pemantauan pemesanan waktu nyata dengan pelacakan status
+- Manajemen pengguna (klien, terapis, admin)in)
+- Manajemen layanan (operasi CRUD)
+- Laporan keuangan dan analitik:
+  - Total pemesanan dan pendapatan
+  - Rincian per layanan dan terapis
   - Trend pemesanan bulanan
 - Approval dan verifikasi terapis baru
 - System settings dan configuration
@@ -55,92 +55,92 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 - Direktori terapis dengan profil dan rating
 - Blog/artikel tentang kesehatan mental
 - FAQ dan halaman bantuan
-- Contact form
+- Formulir kontak
 
 **B. Modul Autentikasi**
-- Multi-role authentication (Client, Therapist, Admin)
-- Register dengan validasi email
-- Login dengan remember me
-- Forgot password & reset password
+- Autentikasi multi-peran (Klien, Terapis, Admin)
+- Registrasi dengan validasi email
+- Login dengan fitur ingat saya
+- Lupa kata sandi & atur ulang kata sandi
 - Social login (Google, Facebook) - opsional
 
-**C. Modul Booking/Pemesanan**
-- 4-step booking wizard:
+**C. Modul Pemesanan**
+- Wizard pemesanan 4 langkah:
   1. Pilih layanan terapi
-  2. Pilih terapis (atau auto-assign)
+  2. Pilih terapis (atau penugasan otomatis)
   3. Pilih tanggal & waktu
   4. Konfirmasi & pembayaran
-- Real-time availability checking
-- Session type: Online/Offline
-- Promo code support
-- Booking confirmation email
+- Pengecekan ketersediaan waktu nyatayata
+- Tipe sesi: Daring/*Online*/Luring/*Offline*
+- Dukungan kode promo
+- Email konfirmasi pemesanan
 
-**D. Modul Payment**
-- Integrasi Midtrans payment gateway
-- Multiple payment methods:
-  - Credit/Debit card
-  - Bank transfer
-  - E-wallet (GoPay, OVO, Dana)
-- Automatic payment verification
-- Invoice generation (PDF)
-- Payment history dan status tracking
+**D. Modul Pembayaran**
+- Integrasi *payment gateway* Midtrans
+- Beragam metode pembayaran:
+  - Kartu kredit/debit
+  - Transfer bank
+  - Dompet digital (GoPay, OVO, Dana) Dana)
+- Verifikasi pembayaran otomatis
+- Pembuatan faktur (PDF)
+- Riwayat pembayaran dan pelacakan status
 
-**E. Modul Client Dashboard**
-- Overview: Upcoming sessions, completed sessions, total hours
-- My Appointments: List, detail, reschedule, cancel
-- Progress Tracking: Visual charts dan metrics
-- Messages: Chat dengan terapis
+**E. Modul Dasbor Klien**
+- Ikhtisar: Sesi mendatang, sesi selesai, total jam
+- Janji Temu Saya: Daftar, detail, jadwal ulang, batalkan
+- Pelacakan Kemajuan: Grafik visual dan metrik
+- Pesan: Obrolan dengan terapis
 - Profile & settings
 
-**F. Modul Therapist Dashboard**
-- Today's schedule dengan countdown
-- Client list dan details
-- Session documentation form dengan rich text editor
-- Session history dan notes archive
-- Availability settings (working hours, time off)
-- Earnings dashboard
-- Profile management
+**F. Modul Dasbor Terapis**
+- Jadwal hari ini dengan hitungan mundur
+- Daftar klien dan detail
+- Formulir dokumentasi sesi dengan *rich text editor*
+- Riwayat sesi dan arsip catatan
+- Pengaturan ketersediaan (jam kerja, waktu libur)
+- Dasbor pendapatan
+- Manajemen profil
 
-**G. Modul Admin Dashboard**
-- Statistics cards: Users, bookings, revenue, health
-- Charts: Revenue trend, user growth, top services
-- User management (CRUD, approve therapist)
-- Booking management (view, edit, cancel, refund)
-- Service management (CRUD)
-- Financial reports (export Excel/PDF)
-- System settings
+**G. Modul Dasbor Admin**
+- Kartu statistik: Pengguna, pemesanan, pendapatan, kesehatan sistem
+- Grafik: Tren pendapatan, pertumbuhan pengguna, layanan teratasayanan teratas
+- Manajemen pengguna (CRUD, menyetujui terapis)
+- Manajemen pemesanan (lihat, edit, batalkan, pengembalian dana)
+- Manajemen layanan (CRUD)
+- Laporan keuangan (ekspor Excel/PDF)
+- Pengaturan sistem
 
-**H. Modul Notifications**
-- Email notifications:
-  - Booking confirmation
-  - Payment success
-  - Session reminder (H-1, H-0)
-  - Cancellation notification
-- In-app notifications
-- SMS reminder (future enhancement)
+**H. Modul Notifikasi**
+- Notifikasi email:
+  - Konfirmasi pemesanan
+  - Pembayaran berhasil
+  - Pengingat sesi (H-1, H-0)
+  - Notifikasi pembatalan
+- Notifikasi dalam aplikasi
+- Pengingat SMS (pengembangan mendatang)
 
-**I. Modul Reporting**
-- Booking reports: Daily, weekly, monthly
-- Revenue reports: Per service, per therapist
-- User activity reports
-- Export formats: PDF, Excel, CSV
+**I. Modul Pelaporan**
+- Laporan pemesanan: Harian, mingguan, bulanan
+- Laporan pendapatan: Per layanan, per terapis
+- Laporan aktivitas pengguna
+- Format ekspor: PDF, Excel, CSV
 
 ### 4.3.4 Arsitektur Sistem
 
-Sistem dibangun dengan arsitektur **MVC (Model-View-Controller)** menggunakan Laravel framework:
+Sistem dibangun dengan arsitektur **MVC (*Model-View-Controller*)** menggunakan *framework* Laravel:
 
 ```
 ┌──────────────────────────────────────────────┐
-│              PRESENTATION LAYER              │
+│              LAPISAN PRESENTASI              │
 │  (Views - Blade Templates + Tailwind CSS)    │
-│  - Public pages                              │
-│  - Client dashboard                          │
-│  - Therapist dashboard                       │
-│  - Admin dashboard                           │
+│  - Halaman publik                            │
+│  - Dasbor klien                              │
+│  - Dasbor terapis                            │
+│  - Dasbor admin                              │
 └──────────────┬───────────────────────────────┘
                │
 ┌──────────────▼───────────────────────────────┐
-│            APPLICATION LAYER                 │
+│              LAPISAN APLIKASI                │
 │         (Controllers + Middleware)           │
 │  - AuthController                            │
 │  - BookingController                         │
@@ -150,28 +150,28 @@ Sistem dibangun dengan arsitektur **MVC (Model-View-Controller)** menggunakan La
 └──────────────┬───────────────────────────────┘
                │
 ┌──────────────▼───────────────────────────────┐
-│              BUSINESS LOGIC LAYER            │
+│            LAPISAN LOGIKA BISNIS             │
 │         (Models + Services + Events)         │
-│  - User, Therapist, Client models            │
-│  - Service, Booking, Payment models          │
-│  - Session, Review models                    │
-│  - Business rules & validation               │
+│  - Model User, Therapist, Client             │
+│  - Model Service, Booking, Payment           │
+│  - Model Session, Review                     │
+│  - Aturan bisnis & validasi                  │
 └──────────────┬───────────────────────────────┘
                │
 ┌──────────────▼───────────────────────────────┐
-│              DATA ACCESS LAYER               │
+│            LAPISAN AKSES DATA                │
 │       (Eloquent ORM + MySQL Database)        │
-│  - 16 normalized tables (3NF)                │
+│  - 16 tabel ternormalisasi (3NF)             │
 │  - Migrations & seeders                      │
 │  - Relationships & constraints               │
 └──────────────────────────────────────────────┘
 ```
 
-### 4.3.5 Database Design
+### 4.3.5 Desain Basis Data
 
 Sistem menggunakan 16 tabel utama:
 
-1. **users** - Data user universal
+1. **users** - Data pengguna universal
 2. **clients** - Data spesifik klien
 3. **therapists** - Data spesifik terapis
 4. **services** - Katalog layanan terapi
@@ -183,74 +183,74 @@ Sistem menggunakan 16 tabel utama:
 10. **payments** - Transaksi pembayaran
 11. **reviews** - Ulasan dan rating
 12. **notifications** - Notifikasi sistem
-13. **messages** - Chat antara klien-terapis
+13. **messages** - Obrolan antara klien-terapis
 14. **promo_codes** - Kode promo diskon
 15. **audit_logs** - Log aktivitas untuk audit
 16. **system_settings** - Konfigurasi sistem
 
 Normalisasi: **Third Normal Form (3NF)** untuk menghindari redundansi dan anomali data.
 
-### 4.3.6 User Roles dan Permissions
+### 4.3.6 Peran dan Hak Akses Pengguna
 
-**A. Guest (Pengunjung)**
-- View: Landing page, services, therapists, blog
-- Action: Register, login, contact
+**A. Tamu**
+- Lihat: Halaman utama, layanan, terapis, blog
+- Aksi: Registrasi, login, kontak
 
-**B. Client (Klien)**
-- View: All guest permissions + dashboard, bookings, progress, messages
-- Action: Book service, make payment, reschedule/cancel, leave review, chat
+**B. Klien**
+- Lihat: Semua izin tamu + dasbor, pemesanan, kemajuan, pesan
+- Aksi: Pesan layanan, lakukan pembayaran, jadwal ulang/batalkan, beri ulasan, obrolan
 
-**C. Therapist (Terapis)**
-- View: Dashboard, schedule, clients, sessions, earnings
-- Action: Set availability, document sessions, view client history, chat, update profile
+**C. Terapis**
+- Lihat: Dasbor, jadwal, klien, sesi, pendapatan
+- Aksi: Atur ketersediaan, dokumentasi sesi, lihat riwayat klien, obrolan, perbarui profil
 
-**D. Admin (Administrator)**
-- View: All data (users, bookings, payments, reports)
-- Action: Full CRUD on all resources, approve therapists, generate reports, system settings
+**D. Administrator**
+- Lihat: Semua data (pengguna, pemesanan, pembayaran, laporan)
+- Aksi: CRUD penuh pada semua sumber daya, menyetujui terapis, membuat laporan, pengaturan sistem
 
 ### 4.3.7 Keamanan Sistem
 
-**A. Authentication & Authorization**
-- Password hashing dengan bcrypt
-- Session management dengan Laravel
-- CSRF protection untuk semua forms
-- Role-based access control (RBAC)
+**A. Autentikasi & Otorisasi**
+- *Hashing* kata sandi dengan *bcrypt*
+- Manajemen sesi dengan Laravel
+- Perlindungan CSRF untuk semua formulir
+- Kontrol akses berbasis peran (*Role-Based Access Control*/RBAC)
 
-**B. Data Security**
+**B. Keamanan Data**
 - HTTPS untuk semua komunikasi
-- SQL injection prevention (Eloquent ORM)
-- XSS prevention (Blade escaping)
-- Encryption untuk data sensitif (medical records)
+- Pencegahan *SQL injection* (Eloquent ORM)
+- Pencegahan XSS (*Blade escaping*)
+- Enkripsi untuk data sensitif (rekam medis)
 
-**C. Payment Security**
-- PCI-DSS compliant (via Midtrans)
-- No credit card data stored locally
-- 3D Secure support
+**C. Keamanan Pembayaran**
+- Sesuai PCI-DSS (melalui Midtrans)
+- Tidak ada data kartu kredit disimpan secara lokal
+- Dukungan 3D Secure
 
-**D. Compliance**
+**D. Kepatuhan**
 - UU Perlindungan Data Pribadi (UU PDP)
-- GDPR-ready architecture
-- Data retention policy (30 hari backup)
+- Arsitektur siap GDPR
+- Kebijakan retensi data (cadangan 30 hari)
 
-### 4.3.8 Performance & Scalability
+### 4.3.8 Kinerja dan Skalabilitas
 
-**A. Performance Optimization**
-- Database indexing pada frequent queries
-- Laravel caching (config, route, view cache)
-- Lazy loading untuk relasi Eloquent
-- CDN untuk static assets (future)
+**A. Optimasi Kinerja**
+- Pengindeksan basis data pada kueri yang sering digunakan
+- *Caching* Laravel (*config*, *route*, *view cache*)
+- *Lazy loading* untuk relasi Eloquent
+- CDN untuk aset statis (pengembangan mendatang)
 
-**B. Scalability**
-- Horizontal scaling ready (load balancer + multiple servers)
-- Database replication (master-slave)
-- Queue workers untuk background jobs
-- Stateless sessions (ready untuk clustering)
+**B. Skalabilitas**
+- Siap penskalaan horizontal (*load balancer* + beberapa server)
+- Replikasi basis data (*master-slave*)
+- Pekerja antrian untuk pekerjaan latar belakang
+- Sesi tanpa keadaan (siap untuk *clustering*)
 
-**Target Metrics:**
-- Page load time: < 2 seconds
-- Concurrent users: 100+
-- Uptime: ≥ 99,5%
-- Database query time: < 100ms (average)
+**Target Metrik:**
+- Waktu muat halaman: < 2 detik
+- Pengguna bersamaan: 100+
+- Waktu aktif: ≥ 99,5%
+- Waktu kueri basis data: < 100ms (rata-rata)
 
 ---
 
@@ -266,11 +266,11 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 
 **Aktor dalam Sistem:**
 
-1. **Tamu (Guest)** - Pengunjung website yang belum login
+1. **Tamu** - Pengunjung situs web yang belum masuk
 2. **Klien** - Pengguna terdaftar yang menggunakan layanan terapi
 3. **Terapis** - Praktisi hipnoterapi yang memberikan layanan
 4. **Admin** - Administrator sistem yang mengelola seluruh sistem
-5. **Payment Gateway** - Sistem eksternal untuk pemrosesan pembayaran
+5. ***Payment Gateway*** - Sistem eksternal untuk pemrosesan pembayaran
 
 **Use Cases Utama:**
 
@@ -279,17 +279,17 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 - Melihat daftar layanan terapi
 - Melihat profil terapis
 - Registrasi akun baru
-- Login ke sistem
+- Masuk ke sistem
 
 **Untuk Klien:**
 - Melihat jadwal terapis yang tersedia
 - Membuat pemesanan layanan terapi
 - Memilih terapis dan waktu sesi
-- Melakukan pembayaran online
+- Melakukan pembayaran daring
 - Melihat riwayat pemesanan
 - Melihat riwayat sesi terapi
-- Update profil
-- Membatalkan/reschedule pemesanan (dengan syarat)
+- Perbarui profil
+- Membatalkan/jadwal ulang pemesanan (dengan syarat)
 
 **Untuk Terapis:**
 - Melihat jadwal sesi terapi hari ini dan minggu ini
@@ -297,8 +297,8 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 - Mengatur ketersediaan jadwal
 - Mendokumentasikan sesi terapi (catatan sesi)
 - Melihat riwayat klien
-- Mengupdate status sesi (selesai/dibatalkan)
-- Melihat earnings (pendapatan)
+- Memperbarui status sesi (selesai/dibatalkan)
+- Melihat pendapatan
 
 **Untuk Admin:**
 - Mengelola data layanan terapi
@@ -306,10 +306,10 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 - Mengelola data klien
 - Melihat semua pemesanan
 - Konfirmasi pembayaran manual (jika ada)
-- Generate laporan (pemesanan, keuangan, kinerja)
-- Monitoring sistem
+- Membuat laporan (pemesanan, keuangan, kinerja)
+- Pemantauan sistem
 
-**Untuk Payment Gateway:**
+**Untuk *Payment Gateway*:**
 - Memproses pembayaran
 - Mengirim notifikasi status pembayaran
 - Verifikasi transaksi
@@ -328,20 +328,20 @@ Alur proses pemesanan terapi:
 3. Sistem menampilkan daftar terapis dan jadwal yang tersedia
 4. Klien memilih terapis dan waktu sesi
 5. Sistem memeriksa ketersediaan jadwal
-   - Jika tidak tersedia: Tampilkan pesan error, kembali ke pemilihan jadwal
+   - Jika tidak tersedia: Tampilkan pesan kesalahan, kembali ke pemilihan jadwal
    - Jika tersedia: Lanjut ke langkah berikutnya
 6. Klien mengisi informasi tambahan (keluhan, catatan)
 7. Sistem menampilkan ringkasan pemesanan dan total biaya
 8. Klien konfirmasi pemesanan
-9. Sistem membuat record pemesanan dengan status "Pending Payment"
-10. Sistem redirect ke payment gateway (Midtrans)
+9. Sistem membuat catatan pemesanan dengan status "Pending Payment"
+10. Sistem alihkan ke *payment gateway* (Midtrans)
 11. Klien melakukan pembayaran
-12. Payment gateway memproses transaksi
-    - Jika gagal: Update status menjadi "Payment Failed", kirim notifikasi
-    - Jika berhasil: Update status menjadi "Paid", lanjut
+12. *Payment gateway* memproses transaksi
+    - Jika gagal: Perbarui status menjadi "Payment Failed", kirim notifikasi
+    - Jika berhasil: Perbarui status menjadi "Paid", lanjut
 13. Sistem mengirim email konfirmasi ke klien
 14. Sistem mengirim notifikasi ke terapis terkait
-15. Sistem mengirim reminder email 1 hari sebelum sesi
+15. Sistem mengirim email pengingat 1 hari sebelum sesi
 16. Selesai
 
 **b. Activity Diagram Dokumentasi Sesi Terapi oleh Terapis**
@@ -352,7 +352,7 @@ Alur proses dokumentasi sesi terapi:
 1. Terapis login ke sistem
 2. Terapis melihat daftar sesi hari ini
 3. Terapis memilih sesi yang sudah dilaksanakan
-4. Sistem menampilkan form dokumentasi sesi
+4. Sistem menampilkan formulir dokumentasi sesi
 5. Terapis mengisi dokumentasi:
    - Teknik yang digunakan
    - Observasi kondisi klien
@@ -361,9 +361,9 @@ Alur proses dokumentasi sesi terapi:
    - Rekomendasi sesi berikutnya
 6. Terapis menyimpan dokumentasi
 7. Sistem validasi data
-   - Jika tidak valid: Tampilkan pesan error, kembali ke form
-   - Jika valid: Simpan ke database
-8. Sistem update status sesi menjadi "Completed"
+   - Jika tidak valid: Tampilkan pesan kesalahan, kembali ke formulir
+   - Jika valid: Simpan ke basis data
+8. Sistem perbarui status sesi menjadi "Completed"
 9. Sistem mencatat waktu dokumentasi
 10. Dokumentasi tersimpan dan dapat diakses untuk sesi berikutnya
 11. Selesai
@@ -372,17 +372,17 @@ Alur proses dokumentasi sesi terapi:
 
 **[GAMBAR 4.6 - Activity Diagram Generate Laporan]**
 
-Alur proses generate laporan:
-1. Admin login ke sistem
+Alur proses membuat laporan:
+1. Admin masuk ke sistem
 2. Admin mengakses menu laporan
 3. Admin memilih jenis laporan (pemesanan, keuangan, kinerja terapis, klien)
 4. Admin memilih periode (tanggal mulai - tanggal selesai)
-5. Admin memilih filter tambahan (terapis tertentu, layanan tertentu, dll)
+5. Admin memilih penyaring tambahan (terapis tertentu, layanan tertentu, dll)
 6. Admin klik tombol "Generate Laporan"
-7. Sistem mengambil data dari database sesuai kriteria
+7. Sistem mengambil data dari basis data sesuai kriteria
 8. Sistem memproses dan menghitung statistik
-9. Sistem menampilkan laporan dalam format tabel dan chart
-10. Admin dapat melihat, export (PDF/Excel), atau print langsung
+9. Sistem menampilkan laporan dalam format tabel dan grafik
+10. Admin dapat melihat, ekspor (PDF/Excel), atau cetak langsung
 11. Selesai
 
 #### 4.3.9.3 Entity Relationship Diagram (ERD)
@@ -403,25 +403,25 @@ Entity Relationship Diagram (ERD) menggambarkan struktur basis data sistem infor
 8. **session_notes** - Menyimpan catatan dokumentasi sesi terapi
 9. **therapist_schedules** - Menyimpan jadwal ketersediaan terapis
 10. **therapist_unavailability** - Menyimpan data ketidaktersediaan terapis (cuti, sakit)
-11. **reviews** - Menyimpan review dari klien terhadap terapis/layanan
+11. **reviews** - Menyimpan ulasan dari klien terhadap terapis/layanan
 12. **notifications** - Menyimpan notifikasi untuk pengguna
 13. **settings** - Menyimpan konfigurasi sistem
-14. **activity_logs** - Menyimpan log aktivitas pengguna (audit trail)
+14. **activity_logs** - Menyimpan log aktivitas pengguna (jejak audit)
 
 **Relasi Utama:**
 
-- users (1) ↔ (1) clients: One-to-One
-- users (1) ↔ (1) therapists: One-to-One  
-- clients (1) ↔ (M) bookings: One-to-Many
-- therapists (1) ↔ (M) bookings: One-to-Many
-- services (1) ↔ (M) bookings: One-to-Many
-- bookings (1) ↔ (1) payments: One-to-One
-- bookings (1) ↔ (1) sessions: One-to-One
-- sessions (1) ↔ (M) session_notes: One-to-Many
-- therapists (1) ↔ (M) therapist_schedules: One-to-Many
-- therapists (1) ↔ (M) therapist_unavailability: One-to-Many
-- sessions (1) ↔ (M) reviews: One-to-Many
-- users (1) ↔ (M) notifications: One-to-Many
+- users (1) ↔ (1) clients: *One-to-One*
+- users (1) ↔ (1) therapists: *One-to-One*  
+- clients (1) ↔ (M) bookings: *One-to-Many*
+- therapists (1) ↔ (M) bookings: *One-to-Many*
+- services (1) ↔ (M) bookings: *One-to-Many*
+- bookings (1) ↔ (1) payments: *One-to-One*
+- bookings (1) ↔ (1) sessions: *One-to-One*
+- sessions (1) ↔ (M) session_notes: *One-to-Many*
+- therapists (1) ↔ (M) therapist_schedules: *One-to-Many*
+- therapists (1) ↔ (M) therapist_unavailability: *One-to-Many*
+- sessions (1) ↔ (M) reviews: *One-to-Many*
+- users (1) ↔ (M) notifications: *One-to-Many*
 
 **Keterangan:**
 - (1) = One
@@ -433,31 +433,31 @@ Database dinormalisasi hingga Third Normal Form (3NF) untuk menghindari redundan
 
 #### 4.3.9.4 Desain Antarmuka Pengguna (UI/UX)
 
-Desain antarmuka pengguna (UI) dibuat menggunakan Figma dengan total 41 halaman mockup yang mencakup semua role pengguna. Desain mengikuti prinsip *user-centered design* dengan fokus pada kemudahan penggunaan, aksesibilitas, dan pengalaman pengguna yang optimal.
+Desain antarmuka pengguna (UI) dibuat menggunakan Figma dengan total 41 halaman mockup yang mencakup semua peran pengguna. Desain mengikuti prinsip *user-centered design* dengan fokus pada kemudahan penggunaan, aksesibilitas, dan pengalaman pengguna yang optimal.
 
-##### A. Sistem Desain (Design System)
+##### A. Sistem Desain (*Design System*)
 
-**Color Palette:**
-- **Primary**: Teal (#0D9488) - Menenangkan, profesional, healing
+**Palet Warna:**
+- **Primary**: Teal (#0D9488) - Menenangkan, profesional, penyembuhan
 - **Secondary**: Purple (#9333EA) - Spiritual, transformasi
 - **Accent**: Orange (#F59E0B) - Energi, optimisme
-- **Neutral**: Gray scale dari #F9FAFB hingga #111827
+- **Neutral**: Skala abu-abu dari #F9FAFB hingga #111827
 - **Success**: Green (#10B981)
 - **Warning**: Yellow (#F59E0B)
 - **Error**: Red (#EF4444)
 
-**Typography:**
-- **Heading**: Inter (Sans-serif) - Modern, clean, readable
-- **Body**: Inter (Sans-serif)
-- **Font Sizes**: H1 (36px), H2 (30px), H3 (24px), Body (16px), Small (14px)
+**Tipografi:**
+- **Heading**: Inter (*Sans-serif*) - Modern, bersih, mudah dibaca
+- **Body**: Inter (*Sans-serif*)
+- **Ukuran Font**: H1 (36px), H2 (30px), H3 (24px), Body (16px), Small (14px)
 
-**Design Principles:**
-- Clean and minimal design
-- Consistent spacing (Tailwind spacing scale)
-- Mobile-first responsive design
-- Accessibility: Color contrast ratio minimal 4.5:1
-- Clear visual hierarchy
-- Intuitive navigation
+**Prinsip Desain:**
+- Desain bersih dan minimal
+- Spasi yang konsisten (skala spasi Tailwind)
+- Desain responsif dengan pendekatan *mobile-first*
+- Aksesibilitas: Rasio kontras warna minimal 4,5:1
+- Hierarki visual yang jelas
+- Navigasi yang intuitif
 
 **[GAMBAR 4.8 - Sistem Desain: Color Palette & Typography]**
 
@@ -471,212 +471,212 @@ Sistem memiliki **41 halaman mockup** yang terbagi dalam beberapa kategori:
 - **Landing Page**: Hero section, layanan terapi, featured therapists, testimoni klien, blog posts
 
 **[GAMBAR 4.10 - Mockup Halaman Tentang Kami]**
-- **Halaman Tentang Kami**: Our story, visi & misi, core values, tim profil, sertifikasi
+- **Halaman Tentang Kami**: Kisah kami, visi & misi, nilai inti, profil tim, sertifikasi
 
 **[GAMBAR 4.11 - Mockup Katalog Layanan]**
-- **Katalog Layanan**: Filter & search, services grid dengan card detail
+- **Katalog Layanan**: Filter & pencarian, grid layanan dengan kartu detail
 
 **[GAMBAR 4.12 - Mockup Detail Layanan]**
-- **Detail Layanan**: Hero, tab navigation (overview/benefits/process/FAQ), terapis recommended, ulasan
+- **Detail Layanan**: Hero, navigasi tab (ikhtisar/manfaat/proses/FAQ), terapis yang direkomendasikan, ulasan
 
 **[GAMBAR 4.13 - Mockup Direktori Terapis]**
-- **Direktori Terapis**: Search, filter spesialisasi/rating/pengalaman, therapists grid
+- **Direktori Terapis**: Pencarian, filter spesialisasi/rating/pengalaman, grid terapis
 
 **[GAMBAR 4.14 - Mockup Profil Terapis]**
 - **Profil Terapis**: Bio lengkap, pendidikan & sertifikasi, layanan & harga, kalender ketersediaan, ulasan klien
 
 **[GAMBAR 4.15 - Mockup Daftar Blog]**
-- **Daftar Blog**: Featured article, search, filter kategori, blog posts grid, sidebar
+- **Daftar Blog**: Artikel unggulan, pencarian, filter kategori, grid artikel blog, bilah samping
 
 **[GAMBAR 4.16 - Mockup Detail Blog]**
-- **Detail Blog**: Article content, metadata, social sharing, related articles, comment section
+- **Detail Blog**: Konten artikel, metadata, berbagi media sosial, artikel terkait, bagian komentar
 
-**[GAMBAR 4.17 - Mockup Contact Us]**
-- **Contact Us**: Form, info kontak, Google Maps, social media links
+**[GAMBAR 4.17 - Mockup Hubungi Kami]**
+- **Hubungi Kami**: Formulir, info kontak, Google Maps, tautan media sosial
 
 **[GAMBAR 4.18 - Mockup FAQ]**
-- **FAQ**: Search, tab kategori, accordion list dengan feedback
+- **FAQ**: Pencarian, tab kategori, daftar akordion dengan umpan balik
 
-**[GAMBAR 4.19 - Mockup Privacy Policy]**
-- **Privacy Policy**: Table of contents, sections terstruktur, highlight penting
+**[GAMBAR 4.19 - Mockup Kebijakan Privasi]**
+- **Kebijakan Privasi**: Daftar isi, bagian terstruktur, sorotan penting
 
-**[GAMBAR 4.20 - Mockup Terms & Conditions]**
-- **Terms & Conditions**: Table of contents, numbered clauses untuk referensi legal
+**[GAMBAR 4.20 - Mockup Syarat & Ketentuan]**
+- **Syarat & Ketentuan**: Daftar isi, klausul bernomor untuk referensi legal
 
 **2. Halaman Autentikasi (4 halaman):**
 
 **[GAMBAR 4.21 - Mockup Login]**
-- **Login**: Split screen dengan ilustrasi, email & password, remember me, social login
+- **Login**: Layar terpisah dengan ilustrasi, email & kata sandi, ingat saya, login sosial media
 
-**[GAMBAR 4.22 - Mockup Register]**
-- **Register**: Pilihan tipe user (Client/Therapist), form berbeda per role, terms checkbox
+**[GAMBAR 4.22 - Mockup Registrasi]**
+- **Registrasi**: Pilihan tipe pengguna (Klien/Terapis), formulir berbeda per peran, kotak centang syarat
 
-**[GAMBAR 4.23 - Mockup Forgot Password]**
-- **Forgot Password**: Simple form, send reset link, success state
+**[GAMBAR 4.23 - Mockup Lupa Kata Sandi]**
+- **Lupa Kata Sandi**: Formulir sederhana, kirim tautan reset, status berhasil
 
-**[GAMBAR 4.24 - Mockup Reset Password]**
-- **Reset Password**: New password, confirm password, password strength meter
+**[GAMBAR 4.24 - Mockup Reset Kata Sandi]**
+- **Reset Kata Sandi**: Kata sandi baru, konfirmasi kata sandi, pengukur kekuatan kata sandi
 
 **3. Dashboard Klien (10 halaman):**
 
-**[GAMBAR 4.25 - Mockup Dashboard Klien - Main Dashboard]**
-- **Main Dashboard**: Welcome, quick stats, next appointment, upcoming sessions, progress overview
+**[GAMBAR 4.25 - Mockup Dasbor Klien - Dasbor Utama]**
+- **Dasbor Utama**: Sambutan, statistik cepat, janji temu berikutnya, sesi mendatang, ikhtisar kemajuan
 
-**[GAMBAR 4.26 - Mockup Booking Step 1 - Pilih Layanan]**
-- **Booking Step 1**: Service selection dengan card layanan
+**[GAMBAR 4.26 - Mockup Pemesanan Langkah 1 - Pilih Layanan]**
+- **Pemesanan Langkah 1**: Pemilihan layanan dengan kartu layanan
 
-**[GAMBAR 4.27 - Mockup Booking Step 2 - Pilih Terapis]**
-- **Booking Step 2**: Choose therapist dengan profil dan rating
+**[GAMBAR 4.27 - Mockup Pemesanan Langkah 2 - Pilih Terapis]**
+- **Pemesanan Langkah 2**: Pilih terapis dengan profil dan rating
 
-**[GAMBAR 4.28 - Mockup Booking Step 3 - Pilih Jadwal]**
-- **Booking Step 3**: Date & time picker dengan ketersediaan real-time
+**[GAMBAR 4.28 - Mockup Pemesanan Langkah 3 - Pilih Jadwal]**
+- **Pemesanan Langkah 3**: Pemilih tanggal & waktu dengan ketersediaan waktu nyata
 
-**[GAMBAR 4.29 - Mockup Booking Step 4 - Konfirmasi & Pembayaran]**
-- **Booking Step 4**: Confirm & payment dengan ringkasan pemesanan
+**[GAMBAR 4.29 - Mockup Pemesanan Langkah 4 - Konfirmasi & Pembayaran]**
+- **Pemesanan Langkah 4**: Konfirmasi & pembayaran dengan ringkasan pemesanan
 
-**[GAMBAR 4.30 - Mockup Booking Success]**
-- **Booking Success**: Congratulations, booking details, next steps, action buttons
+**[GAMBAR 4.30 - Mockup Pemesanan Berhasil]**
+- **Pemesanan Berhasil**: Selamat, detail pemesanan, langkah selanjutnya, tombol aksi
 
-**[GAMBAR 4.31 - Mockup My Appointments]**
-- **My Appointments**: Tabs (upcoming/past/cancelled), filter & sort, appointments cards
+**[GAMBAR 4.31 - Mockup Janji Temu Saya]**
+- **Janji Temu Saya**: Tab (mendatang/lampau/dibatalkan), filter & urutkan, kartu janji temu
 
-**[GAMBAR 4.32 - Mockup Appointment Detail]**
-- **Appointment Detail**: Booking info, payment info, session notes, reschedule/cancel actions
+**[GAMBAR 4.32 - Mockup Detail Janji Temu]**
+- **Detail Janji Temu**: Info pemesanan, info pembayaran, catatan sesi, aksi jadwal ulang/batalkan
 
-**[GAMBAR 4.33 - Mockup Progress Dashboard]**
-- **Progress Dashboard**: Wellness score, session attendance, goals & milestones, mood tracking
+**[GAMBAR 4.33 - Mockup Dasbor Kemajuan]**
+- **Dasbor Kemajuan**: Skor kesehatan, kehadiran sesi, tujuan & pencapaian, pelacakan suasana hati
 
-**[GAMBAR 4.34 - Mockup Messages (Chat)]**
-- **Messages (Chat)**: Conversations list, active chat area, typing indicator
+**[GAMBAR 4.34 - Mockup Pesan (Obrolan)]**
+- **Pesan (Obrolan)**: Daftar percakapan, area obrolan aktif, indikator mengetik
 
 **4. Dashboard Terapis (10 halaman):**
 
-**[GAMBAR 4.35 - Mockup Dashboard Terapis - Main Dashboard]**
-- **Main Dashboard**: Today's sessions, key metrics, earnings overview, client reviews
+**[GAMBAR 4.35 - Mockup Dasbor Terapis - Dasbor Utama]**
+- **Dasbor Utama**: Sesi hari ini, metrik kunci, ikhtisar pendapatan, ulasan klien
 
-**[GAMBAR 4.36 - Mockup Schedule Management]**
-- **Schedule Management**: Calendar views (day/week/month), appointment blocks, time off
+**[GAMBAR 4.36 - Mockup Manajemen Jadwal]**
+- **Manajemen Jadwal**: Tampilan kalender (hari/minggu/bulan), blok janji temu, waktu libur
 
-**[GAMBAR 4.37 - Mockup Availability Settings]**
-- **Availability Settings**: Working hours per day, session duration, booking window, special dates
+**[GAMBAR 4.37 - Mockup Pengaturan Ketersediaan]**
+- **Pengaturan Ketersediaan**: Jam kerja per hari, durasi sesi, jendela pemesanan, tanggal khusus
 
-**[GAMBAR 4.38 - Mockup Clients List]**
-- **Clients List**: Search & filter, client cards dengan stats, bulk actions
+**[GAMBAR 4.38 - Mockup Daftar Klien]**
+- **Daftar Klien**: Cari & filter, kartu klien dengan statistik, aksi massal
 
-**[GAMBAR 4.39 - Mockup Client Profile View]**
-- **Client Profile View**: Overview, session history, notes & observations, progress & goals, files
+**[GAMBAR 4.39 - Mockup Tampilan Profil Klien]**
+- **Tampilan Profil Klien**: Ikhtisar, riwayat sesi, catatan & observasi, kemajuan & tujuan, berkas
 
-**[GAMBAR 4.40 - Mockup Session Room]**
-- **Session Room**: Video conference dengan timer, control bar, notes panel
+**[GAMBAR 4.40 - Mockup Ruang Sesi]**
+- **Ruang Sesi**: Konferensi video dengan timer, bilah kontrol, panel catatan
 
-**[GAMBAR 4.41 - Mockup Session Notes Form]**
-- **Session Notes Form**: Assessment, session summary, progress notes, homework, templates
+**[GAMBAR 4.41 - Mockup Formulir Catatan Sesi]**
+- **Formulir Catatan Sesi**: Penilaian, ringkasan sesi, catatan kemajuan, tugas rumah, templat
 
-**[GAMBAR 4.42 - Mockup Session History]**
-- **Session History**: Total sessions, search & filter, sessions table, analytics
+**[GAMBAR 4.42 - Mockup Riwayat Sesi]**
+- **Riwayat Sesi**: Total sesi, cari & filter, tabel sesi, analitik
 
-**[GAMBAR 4.43 - Mockup Earnings Dashboard]**
-- **Earnings Dashboard**: Balance, earnings chart, transactions, withdrawal, payment settings
+**[GAMBAR 4.43 - Mockup Dasbor Pendapatan]**
+- **Dasbor Pendapatan**: Saldo, grafik pendapatan, transaksi, penarikan, pengaturan pembayaran
 
-**[GAMBAR 4.44 - Mockup Profile Edit]**
-- **Profile Edit**: Tabs untuk basic/professional/about/education/services/media/settings
+**[GAMBAR 4.44 - Mockup Edit Profil]**
+- **Edit Profil**: Tab untuk dasar/profesional/tentang/pendidikan/layanan/media/pengaturan
 
 **5. Dashboard Admin (5 halaman):**
 
-**[GAMBAR 4.45 - Mockup Dashboard Admin - Main Dashboard]**
-- **Main Dashboard**: Key metrics, revenue chart, recent bookings, user growth, system alerts
+**[GAMBAR 4.45 - Mockup Dasbor Admin - Dasbor Utama]**
+- **Dasbor Utama**: Metrik kunci, grafik pendapatan, pemesanan terbaru, pertumbuhan pengguna, peringatan sistem
 
-**[GAMBAR 4.46 - Mockup Users Management]**
-- **Users Management**: Tabs (all/clients/therapists/admins/pending), user table, bulk actions
+**[GAMBAR 4.46 - Mockup Manajemen Pengguna]**
+- **Manajemen Pengguna**: Tab (semua/klien/terapis/admin/tertunda), tabel pengguna, aksi massal
 
-**[GAMBAR 4.47 - Mockup Bookings Management]**
-- **Bookings Management**: Summary stats, tabs (all/upcoming/past/pending/cancelled/disputed), booking table
+**[GAMBAR 4.47 - Mockup Manajemen Pemesanan]**
+- **Manajemen Pemesanan**: Ringkasan statistik, tab (semua/mendatang/lampau/tertunda/dibatalkan/sengketa), tabel pemesanan
 
-**[GAMBAR 4.48 - Mockup Financial Reports]**
-- **Financial Reports**: Revenue summary, charts, transactions table, withdrawals, refunds, analytics
+**[GAMBAR 4.48 - Mockup Laporan Keuangan]**
+- **Laporan Keuangan**: Ringkasan pendapatan, grafik, tabel transaksi, penarikan, pengembalian dana, analitik
 
-**[GAMBAR 4.49 - Mockup System Settings]**
-- **System Settings**: Categories navigation, general/booking/payment/email/security/policies/integrations/advanced
+**[GAMBAR 4.49 - Mockup Pengaturan Sistem]**
+- **Pengaturan Sistem**: Navigasi kategori, umum/pemesanan/pembayaran/email/keamanan/kebijakan/integrasi/lanjutan
 
 ##### C. Fitur Desain Unggulan
 
-**Responsive Design:**
-- Mobile-first approach dengan breakpoints optimal
+**Desain Responsif:**
+- Pendekatan *mobile-first* dengan *breakpoints* optimal
 - Adaptif untuk desktop (1920px), tablet (768px), dan mobile (375px)
-- Touch-friendly untuk mobile devices (min 44x44px tap targets)
+- *Touch-friendly* untuk perangkat mobile (min 44x44px *tap targets*)
 
-**Aksesibilitas (Accessibility):**
-- WCAG 2.1 Level AA compliant
-- Color contrast ratio minimal 4.5:1 untuk text normal
-- Keyboard navigation support
-- Screen reader friendly dengan proper ARIA labels
-- Focus indicators yang jelas
+**Aksesibilitas:**
+- Memenuhi standar *WCAG 2.1 Level AA*
+- Rasio kontras warna minimal 4.5:1 untuk teks normal
+- Dukungan navigasi keyboard
+- Ramah *screen reader* dengan label *ARIA* yang tepat
+- Indikator fokus yang jelas
 
-**User Experience (UX):**
-- Consistent navigation patterns di semua halaman
-- Clear call-to-action buttons dengan hierarchy
-- Loading states dan skeleton screens
-- Error states dengan helpful messages
-- Success states dengan clear next actions
-- Empty states dengan guidance
+**Pengalaman Pengguna:**
+- Pola navigasi konsisten di semua halaman
+- Tombol *call-to-action* yang jelas dengan hierarki
+- Status pemuatan dan *skeleton screens*
+- Status kesalahan dengan pesan membantu
+- Status berhasil dengan aksi selanjutnya yang jelas
+- Status kosong dengan panduan
 
-**Visual Design:**
-- Consistent spacing menggunakan Tailwind spacing scale (4px base unit)
-- Typography hierarchy yang jelas
-- Iconography menggunakan Heroicons (SVG)
-- Imagery dengan high-quality photos dan illustrations
-- Micro-interactions untuk delight (hover states, transitions, animations)
+**Desain Visual:**
+- Spasi konsisten menggunakan skala spasi Tailwind (unit dasar 4px)
+- Hierarki tipografi yang jelas
+- Ikonografi menggunakan Heroicons (SVG)
+- Gambar dengan foto dan ilustrasi berkualitas tinggi
+- Interaksi mikro untuk pengalaman menyenangkan (*hover states*, transisi, animasi)
 
-**Form Design:**
-- Clear labels dan placeholders
-- Inline validation dengan helpful error messages
-- Progress indicators untuk multi-step forms
-- Auto-save drafts untuk long forms
-- Required field indicators (*)
+**Desain Formulir:**
+- Label dan *placeholder* yang jelas
+- Validasi sebaris dengan pesan kesalahan yang membantu
+- Indikator kemajuan untuk formulir multi-langkah
+- Simpan otomatis draf untuk formulir panjang
+- Indikator bidang wajib (*)
 
-**Data Visualization:**
-- Charts menggunakan Chart.js/ApexCharts
-- Color-blind friendly palettes
-- Interactive tooltips
-- Responsive untuk berbagai screen sizes
-- Export capabilities (PNG, SVG, PDF)
+**Visualisasi Data:**
+- Grafik menggunakan *Chart.js*/*ApexCharts*
+- Palet ramah buta warna
+- *Tooltips* interaktif
+- Responsif untuk berbagai ukuran layar
+- Kemampuan ekspor (PNG, SVG, PDF)
 
 ##### D. Prototype Interaktif
 
 **[LINK - Figma Prototype: https://figma.com/proto/curheart...]**
 
-Prototype interaktif telah dibuat di Figma dengan fitur:
-- Click-through navigation antar halaman
-- Hover states dan micro-interactions
-- Form validation simulation
-- Responsive preview untuk berbagai devices
-- Annotation untuk developer handoff
-- Design specifications (spacing, colors, typography)
-- Component library untuk reusability
+Prototipe interaktif telah dibuat di Figma dengan fitur:
+- Navigasi *click-through* antar halaman
+- *Hover states* dan interaksi mikro
+- Simulasi validasi formulir
+- Pratinjau responsif untuk berbagai perangkat
+- Anotasi untuk *developer handoff*
+- Spesifikasi desain (spasi, warna, tipografi)
+- Pustaka komponen untuk dapat digunakan kembali
 
 ##### E. Design Handoff
 
-Dokumentasi lengkap untuk developer mencakup:
-- **Component Library**: 50+ reusable components (buttons, cards, forms, modals, tables)
-- **Design Tokens**: Colors, typography, spacing, shadows, border-radius
-- **Asset Export**: Icons (SVG), images (WebP/PNG), illustrations (SVG)
-- **Specifications**: Detailed spacing, sizing, dan positioning
-- **Developer Notes**: Implementation guidance, dependencies, edge cases
-- **Accessibility Checklist**: Per component accessibility requirements
+Dokumentasi lengkap untuk pengembang mencakup:
+- **Pustaka Komponen**: 50+ komponen yang dapat digunakan kembali (tombol, kartu, formulir, modal, tabel)
+- **Token Desain**: Warna, tipografi, spasi, bayangan, *border-radius*
+- **Ekspor Aset**: Ikon (SVG), gambar (WebP/PNG), ilustrasi (SVG)
+- **Spesifikasi**: Detail spasi, ukuran, dan posisi
+- **Catatan Pengembang**: Panduan implementasi, dependensi, kasus tepi
+- **Daftar Periksa Aksesibilitas**: Persyaratan aksesibilitas per komponen
 
 ---
 
 **Ringkasan Desain UI/UX:**
 
-Total **41 halaman mockup** yang mencakup seluruh user journey dari 4 role berbeda (Guest, Client, Therapist, Admin). Semua mockup dirancang dengan prinsip:
+Total **41 halaman mockup** yang mencakup seluruh perjalanan pengguna dari 4 peran berbeda (Tamu, Klien, Terapis, Admin). Semua mockup dirancang dengan prinsip:
 
-✅ **Responsiveness**: Adaptif untuk desktop, tablet, dan mobile  
-✅ **Accessibility**: Memenuhi standar WCAG 2.1 AA  
-✅ **Consistency**: Mengikuti design system yang telah ditetapkan  
-✅ **User-Friendly**: Intuitif dan mudah digunakan  
-✅ **Professional**: Mencerminkan kredibilitas layanan kesehatan mental
+✅ **Responsif**: Adaptif untuk desktop, tablet, dan mobile  
+✅ **Aksesibilitas**: Memenuhi standar *WCAG 2.1 AA*  
+✅ **Konsistensi**: Mengikuti sistem desain yang telah ditetapkan  
+✅ **Ramah Pengguna**: Intuitif dan mudah digunakan  
+✅ **Profesional**: Mencerminkan kredibilitas layanan kesehatan mental
 
-Desain telah melalui beberapa iterasi berdasarkan feedback dari stakeholder dan usability testing dengan sampel pengguna.
+Desain telah melalui beberapa iterasi berdasarkan umpan balik dari pemangku kepentingan dan *usability testing* dengan sampel pengguna.
 
 ---
 

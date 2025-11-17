@@ -38,9 +38,9 @@ Ruang lingkup proyek ini mencakup pengembangan sistem informasi berbasis web den
 - **Modul Pemesanan Online**: Klien dapat melihat jadwal terapis, memilih layanan, dan melakukan pemesanan secara mandiri 24/7
 - **Manajemen Jadwal Terapis**: Sistem penjadwalan otomatis dengan deteksi konflik dan notifikasi
 - **Dokumentasi Sesi Terapi**: Platform digital untuk terapis mencatat dan mengakses riwayat terapi klien
-- **Pembayaran Terintegrasi**: Integrasi dengan payment gateway Midtrans untuk pembayaran online
-- **Dashboard Admin**: Panel kontrol untuk monitoring pemesanan, terapis, dan laporan keuangan
-- **Notifikasi Otomatis**: Email reminder untuk klien dan terapis tentang jadwal sesi
+- **Pembayaran Terintegrasi**: Integrasi dengan *payment gateway* Midtrans untuk pembayaran online
+- **Dashboard Admin**: Panel kontrol untuk pemantauan pemesanan, terapis, dan laporan keuangan
+- **Notifikasi Otomatis**: Pengingat email untuk klien dan terapis tentang jadwal sesi
 
 ### 4.1.4 Tujuan dan Manfaat Penelitian
 
@@ -72,7 +72,7 @@ Perencanaan proyek dilakukan untuk memastikan proyek berjalan sesuai target wakt
 
 ### 4.2.1 Perencanaan Ruang Lingkup (*Scope*)
 
-Ruang lingkup proyek didefinisikan menggunakan Work Breakdown Structure (WBS) yang membagi pekerjaan menjadi komponen-komponen yang dapat dikelola. WBS proyek ini mencakup 6 fase utama dengan total lebih dari 40 work packages yang terdistribusi ke dalam aktivitas-aktivitas terstruktur.
+Ruang lingkup proyek didefinisikan menggunakan *Work Breakdown Structure* (WBS) yang membagi pekerjaan menjadi komponen-komponen yang dapat dikelola. WBS proyek ini mencakup 6 fase utama dengan total lebih dari 40 *work packages* yang terdistribusi ke dalam aktivitas-aktivitas terstruktur.
 
 **Tabel 4.1 Work Breakdown Structure (WBS)**
 
@@ -80,11 +80,11 @@ Ruang lingkup proyek didefinisikan menggunakan Work Breakdown Structure (WBS) ya
 |---------|---------|---------|-----------|
 | 1. Project Management | 1.1 Inisiasi | 1.1.1 Identifikasi Masalah | Observasi dan wawancara pemangku kepentingan |
 | | | 1.1.2 Studi Kelayakan | Analisis kelayakan teknis, operasional, ekonomi |
-| | 1.2 Perencanaan | 1.2.1 Penyusunan WBS | Breakdown struktur pekerjaan |
+| | 1.2 Perencanaan | 1.2.1 Penyusunan WBS | Rincian struktur pekerjaan |
 | | | 1.2.2 Estimasi Biaya | Perhitungan biaya pengembangan |
 | | 1.3 Monitoring | 1.3.1 Progress Tracking | Pemantauan kemajuan mingguan |
 | 2. Analysis | 2.1 Requirements | 2.1.1 Functional Requirements | Identifikasi 40+ kebutuhan fungsional |
-| | | 2.1.2 Non-functional Requirements | Keamanan, performa, usability |
+| | | 2.1.2 Non-functional Requirements | Keamanan, kinerja, kegunaan |
 | | 2.2 System Analysis | 2.2.1 As-Is Process | Dokumentasi proses bisnis saat ini |
 | | | 2.2.2 To-Be Process | Rancangan proses bisnis baru |
 | 3. Design | 3.1 Database Design | 3.1.1 ERD | Diagram relasi entitas 16 tabel |
@@ -93,24 +93,24 @@ Ruang lingkup proyek didefinisikan menggunakan Work Breakdown Structure (WBS) ya
 | | | 3.2.2 Mockup | Desain visual 41 halaman di Figma |
 | | 3.3 UML Diagrams | 3.3.1 Use Case Diagram | Diagram kasus penggunaan |
 | | | 3.3.2 Activity Diagram | Diagram aktivitas proses bisnis |
-| 4. Implementation | 4.1 Backend | 4.1.1 Laravel Setup | Instalasi dan konfigurasi framework |
-| | | 4.1.2 Database Migration | Migrasi skema database |
-| | | 4.1.3 API Development | Pengembangan controller dan model |
-| | 4.2 Frontend | 4.2.1 Blade Templates | Pembuatan template view |
-| | | 4.2.2 Tailwind Styling | Styling dengan Tailwind CSS |
+| 4. Implementation | 4.1 Backend | 4.1.1 Laravel Setup | Instalasi dan konfigurasi *framework* |
+| | | 4.1.2 Database Migration | Migrasi skema basis data |
+| | | 4.1.3 API Development | Pengembangan *controller* dan *model* |
+| | 4.2 Frontend | 4.2.1 Blade Templates | Pembuatan templat *view* |
+| | | 4.2.2 Tailwind Styling | *Styling* dengan Tailwind CSS |
 | | 4.3 Integration | 4.3.1 Payment Gateway | Integrasi Midtrans |
 | | | 4.3.2 Email Service | Konfigurasi notifikasi email |
-| 5. Testing | 5.1 Unit Testing | 5.1.1 PHPUnit Tests | 30 test cases |
+| 5. Testing | 5.1 Unit Testing | 5.1.1 PHPUnit Tests | 30 *test cases* |
 | | 5.2 Integration Testing | 5.2.1 API Testing | Pengujian integrasi antar modul |
 | | 5.3 UAT | 5.3.1 User Testing | Pengujian oleh pengguna akhir |
-| 6. Deployment | 6.1 Server Setup | 6.1.1 VPS Configuration | Setup Ubuntu, Nginx, PHP, MySQL |
+| 6. Deployment | 6.1 Server Setup | 6.1.1 VPS Configuration | Pengaturan Ubuntu, Nginx, PHP, MySQL |
 | | | 6.1.2 SSL Certificate | Instalasi Let's Encrypt |
-| | 6.2 Go Live | 6.2.1 Database Migration | Migrasi data ke production |
+| | 6.2 Go Live | 6.2.1 Database Migration | Migrasi data ke produksi |
 | | | 6.2.2 System Launch | Peluncuran sistem |
 
 **Gantt Chart:**
 
-Gantt Chart menampilkan jadwal proyek dalam bentuk diagram batang yang menunjukkan start date, duration, dan end date dari setiap aktivitas.
+*Gantt Chart* menampilkan jadwal proyek dalam bentuk diagram batang yang menunjukkan tanggal mulai, durasi, dan tanggal selesai dari setiap aktivitas.
 
 **[GAMBAR 4.1 - Gantt Chart Proyek CUR-HEART]**
 
@@ -155,13 +155,13 @@ Proyek dikerjakan selama 16 minggu (4 bulan) dengan pembagian waktu sebagai beri
 
 **Tabel 4.2 Jadwal Pengerjaan Proyek**
 
-| No | Fase | Durasi | Periode | Deliverables |
-|----|------|--------|---------|--------------|
+| No | Fase | Durasi | Periode | Luaran |
+|----|------|--------|---------|--------|
 | 1 | Analisis Kebutuhan | 2 minggu | 16-29 Sep 2024 | Dokumen SRS, Studi Kelayakan |
 | 2 | Desain Sistem | 2 minggu | 30 Sep - 13 Okt 2024 | ERD, Diagram UML, Mockup UI/UX |
 | 3 | Implementasi | 4 minggu | 14 Okt - 10 Nov 2024 | Aplikasi web 60+ halaman |
-| 4 | Pengujian | 2 minggu | 11-24 Nov 2024 | Laporan pengujian, UAT approval |
-| 5 | Deployment | 1 minggu | 25 Nov - 1 Des 2024 | Sistem production live |
+| 4 | Pengujian | 2 minggu | 11-24 Nov 2024 | Laporan pengujian, persetujuan UAT |
+| 5 | Deployment | 1 minggu | 25 Nov - 1 Des 2024 | Sistem produksi aktif |
 | 6 | Dokumentasi | 5 minggu | Paralel dengan semua fase | Laporan akhir, manual, presentasi |
 
 ### 4.2.3 Perencanaan Anggaran Biaya (*Cost*)
@@ -188,14 +188,14 @@ Estimasi biaya proyek menggunakan metode bottom-up berdasarkan WBS:
 | 7 | Lain-lain | Dokumentasi, Transport, Komunikasi | 300.000 |
 | **TOTAL** | | | **5.560.000** |
 
-**Estimasi Biaya Berulang Tahunan (Operational Cost):**
+**Estimasi Biaya Berulang Tahunan (Biaya Operasional):**
 
 | No | Item | Biaya/Tahun (Rp) |
 |----|------|------------------|
 | 1 | VPS Hosting | 1.200.000 |
 | 2 | Domain & SSL renewal | 150.000 |
 | 3 | Payment Gateway Fee (2,9% + Rp 2.000 per transaksi) | ~7.200.000 (estimasi 100 transaksi/bulan) |
-| 4 | Maintenance & Support | 1.200.000 |
+| 4 | Pemeliharaan & Dukungan | 1.200.000 |
 | **TOTAL** | | **9.750.000** |
 
 ### 4.2.4 Perencanaan Kualitas (*Quality*)
@@ -205,31 +205,31 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 **A. Standar Kualitas Fungsional:**
 - **Fungsionalitas**: Minimal 90% kebutuhan fungsional harus terpenuhi dan berfungsi dengan baik
 - **Akurasi**: 100% akurasi dalam perhitungan pembayaran, penjadwalan, dan pelaporan
-- **Kelengkapan**: Semua modul utama (pemesanan, pembayaran, dashboard) harus tersedia
-- **Interoperabilitas**: Integrasi Midtrans dan email service berfungsi tanpa error
+- **Kelengkapan**: Semua modul utama (pemesanan, pembayaran, dasbor) harus tersedia
+- **Interoperabilitas**: Integrasi Midtrans dan layanan email berfungsi tanpa galat
 
 **B. Standar Kualitas Non-Fungsional:**
 - **Performa**: 
-  - Waktu load halaman < 2 detik (average)
-  - Response time API < 500ms untuk 95% request
-  - Database query time < 100ms (average)
+  - Waktu muat halaman < 2 detik (rata-rata)
+  - Waktu respons API < 500ms untuk 95% permintaan
+  - Waktu kueri basis data < 100ms (rata-rata)
 - **Keamanan**: 
-  - Mitigasi OWASP Top 10 vulnerabilities
-  - Password hashing dengan bcrypt
+  - Mitigasi kerentanan OWASP Top 10
+  - *Hashing* kata sandi dengan *bcrypt*
   - HTTPS untuk semua komunikasi
-  - SQL injection prevention (Eloquent ORM)
-- **Usability**: 
-  - Skor System Usability Scale (SUS) minimal 70/100
-  - User satisfaction rating minimal 4/5
-  - Task completion rate ≥ 90%
-- **Reliability**: 
-  - Uptime minimal 99% (maksimal downtime 7,2 jam/bulan)
-  - Mean Time Between Failures (MTBF) > 720 jam
-  - Recovery Time Objective (RTO) < 4 jam
-- **Maintainability**: 
-  - Code coverage testing minimal 70%
-  - Code quality score (CodeClimate) ≥ B
-  - Dokumentasi lengkap (inline comments, README, API docs)
+  - Pencegahan *SQL injection* (Eloquent ORM)
+- **Usabilitas**: 
+  - Skor *System Usability Scale* (SUS) minimal 70/100
+  - Tingkat kepuasan pengguna minimal 4/5
+  - Tingkat penyelesaian tugas ≥ 90%
+- **Keandalan**: 
+  - Waktu aktif minimal 99% (maksimal waktu mati 7,2 jam/bulan)
+  - Waktu Rata-rata Antar Kegagalan (*Mean Time Between Failures*/MTBF) > 720 jam
+  - Tujuan Waktu Pemulihan (*Recovery Time Objective*/RTO) < 4 jam
+- **Kemudahan Pemeliharaan**: 
+  - Cakupan pengujian kode minimal 70%
+  - Skor kualitas kode (CodeClimate) ≥ B
+  - Dokumentasi lengkap (*inline comments*, README, dokumentasi API)
 
 ### 4.2.5 Perencanaan Sumber Daya (*Resource*)
 
@@ -244,23 +244,23 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 | 3 | Fahruroji (11250085) | Full-stack Developer & Database Architect | Desain database, pengembangan full-stack, deployment | 35 jam/minggu |
 
 **B. Sumber Daya Teknologi:**
-- **Hardware Development:**
-  - Laptop/PC untuk development (3 unit - milik tim)
-  - VPS Ubuntu 22.04 LTS untuk production server
+- **Perangkat Keras Pengembangan:**
+  - Laptop/PC untuk pengembangan (3 unit - milik tim)
+  - VPS Ubuntu 22.04 LTS untuk server produksi
   - Spesifikasi VPS: 4 vCPU, 8GB RAM, 160GB SSD
 
-- **Software Development:**
+- **Perangkat Lunak Pengembangan:**
   - IDE: Visual Studio Code (gratis)
-  - Version Control: Git & GitHub (gratis)
-  - Design: Figma (free tier)
-  - Framework: Laravel 10 (open source)
-  - Database: MySQL 8.0 (open source)
-  - CSS Framework: Tailwind CSS (open source)
+  - Kontrol Versi: Git & GitHub (gratis)
+  - Desain: Figma (*free tier*)
+  - *Framework*: Laravel 10 (*open source*)
+  - Basis Data: MySQL 8.0 (*open source*)
+  - *Framework* CSS: Tailwind CSS (*open source*)
 
 **C. Sumber Daya Infrastruktur:**
-- Domain & SSL Certificate
-- Email service (SMTP)
-- Payment gateway account (Midtrans)
+- Domain & Sertifikat SSL
+- Layanan email (SMTP)
+- Akun *payment gateway* (Midtrans)
 
 ### 4.2.6 Manajemen Risiko (*Risk*)
 
@@ -270,14 +270,14 @@ Identifikasi, analisis, dan strategi mitigasi risiko proyek:
 
 | No | Risiko | Probabilitas | Dampak | Skor Risiko | Mitigasi | Owner |
 |----|--------|-------------|--------|-------------|----------|-------|
-| 1 | Keterlambatan jadwal | Sedang | Tinggi | 12 | Buffer time 10%, prioritas fitur dengan MoSCoW, daily standup | PM |
-| 2 | Scope creep (perubahan kebutuhan) | Sedang | Tinggi | 12 | Dokumentasi kebutuhan yang jelas, change control process, approval formal | PM |
-| 3 | Bug kritis saat deployment | Rendah | Tinggi | 6 | Testing menyeluruh, staging environment, rollback plan | Dev Team |
-| 4 | Anggota tim sakit/tidak tersedia | Rendah | Sedang | 4 | Knowledge sharing, dokumentasi kode, pair programming | PM |
-| 5 | Integrasi payment gateway gagal | Sedang | Sedang | 6 | Prototyping awal, dokumentasi API lengkap, sandbox testing | Backend Dev |
-| 6 | Kehilangan data | Rendah | Tinggi | 6 | Automated daily backup, retention 30 hari, disaster recovery plan | DB Architect |
-| 7 | Security breach | Rendah | Sangat Tinggi | 8 | Security audit, penetration testing, follow OWASP guidelines | Dev Team |
-| 8 | Performance issues | Sedang | Sedang | 6 | Load testing, database indexing, caching strategy | Full-stack Dev |
+| 1 | Keterlambatan jadwal | Sedang | Tinggi | 12 | Waktu penyangga 10%, prioritas fitur dengan MoSCoW, *daily standup* | PM |
+| 2 | *Scope creep* (perubahan kebutuhan) | Sedang | Tinggi | 12 | Dokumentasi kebutuhan yang jelas, proses kontrol perubahan, persetujuan formal | PM |
+| 3 | Bug kritis saat *deployment* | Rendah | Tinggi | 6 | Pengujian menyeluruh, *staging environment*, rencana *rollback* | Tim Dev |
+| 4 | Anggota tim sakit/tidak tersedia | Rendah | Sedang | 4 | Berbagi pengetahuan, dokumentasi kode, *pair programming* | PM |
+| 5 | Integrasi *payment gateway* gagal | Sedang | Sedang | 6 | *Prototyping* awal, dokumentasi API lengkap, pengujian *sandbox* | *Backend* Dev |
+| 6 | Kehilangan data | Rendah | Tinggi | 6 | Cadangan otomatis harian, retensi 30 hari, rencana pemulihan bencana | DB Architect |
+| 7 | Pelanggaran keamanan | Rendah | Sangat Tinggi | 8 | Audit keamanan, *penetration testing*, mengikuti pedoman *OWASP* | Tim Dev |
+| 8 | Masalah kinerja | Sedang | Sedang | 6 | *Load testing*, *database indexing*, strategi *caching* | *Full-stack* Dev |
 
 **Catatan Skor Risiko:**
 - Probabilitas: Rendah (1), Sedang (2), Tinggi (3)
@@ -300,24 +300,24 @@ Strategi komunikasi untuk memastikan informasi mengalir dengan efektif:
   - Planning untuk minggu depan
   - Risk review
 
-- **Code Review**: Pull request di GitHub dengan review wajib dari minimal 1 anggota tim
+- **Tinjauan Kode**: *Pull request* di GitHub dengan tinjauan wajib dari minimal 1 anggota tim
 
-**B. Komunikasi dengan Stakeholder:**
-- **Progress Report ke Dosen Pembimbing**: Setiap 2 minggu (email + meeting)
-- **Client Meeting (CUR-HEART)**: Bi-weekly untuk review dan feedback
-- **UAT Sessions**: 3 kali selama fase testing
+**B. Komunikasi dengan Pemangku Kepentingan:**
+- **Laporan Kemajuan ke Dosen Pembimbing**: Setiap 2 minggu (email + pertemuan)
+- **Pertemuan Klien (CUR-HEART)**: Dua mingguan untuk tinjauan dan umpan balik
+- **Sesi UAT**: 3 kali selama fase pengujian
 
 **C. Dokumentasi:**
-- **Google Drive**: Repository untuk semua dokumen proyek
+- **Google Drive**: Repositori untuk semua dokumen proyek
 - **GitHub Wiki**: Dokumentasi teknis dan API
-- **Notion**: Knowledge base dan meeting notes
+- **Notion**: Basis pengetahuan dan catatan pertemuan
 
-**D. Tools Komunikasi:**
-- WhatsApp: Quick communication
-- Google Meet: Virtual meetings
-- Email: Formal communication
-- GitHub: Code collaboration
-- Figma: Design collaboration
+**D. Alat Komunikasi:**
+- WhatsApp: Komunikasi cepat
+- Google Meet: Pertemuan virtual
+- Email: Komunikasi formal
+- GitHub: Kolaborasi kode
+- Figma: Kolaborasi desain
 
 ### 4.2.8 Perencanaan Pengadaan (*Procurement*)
 
@@ -325,7 +325,7 @@ Pengadaan barang dan jasa yang diperlukan:
 
 **Tabel 4.6 Daftar Pengadaan**
 
-| No | Item | Vendor | Biaya | Timeline | PIC |
+| No | Item | Vendor | Biaya | Waktu | PIC |
 |----|------|--------|-------|----------|-----|
 | 1 | VPS Hosting | Niagahoster | Rp 1.200.000/tahun | Minggu 8 | Fahruroji |
 | 2 | Domain .id | Niagahoster | Rp 150.000/tahun | Minggu 8 | Fahruroji |
@@ -335,39 +335,39 @@ Pengadaan barang dan jasa yang diperlukan:
 
 **Proses Pengadaan:**
 1. Identifikasi kebutuhan
-2. Vendor selection & comparison
-3. Approval dari sponsor
-4. Purchase order
-5. Delivery & verification
-6. Payment
-7. Documentation
+2. Pemilihan & perbandingan vendor
+3. Persetujuan dari sponsor
+4. *Purchase order*
+5. Pengiriman & verifikasi
+6. Pembayaran
+7. Dokumentasi
 
 ### 4.2.9 Perencanaan Integrasi (*Integration*)
 
 Integrasi sistem dengan layanan eksternal:
 
-**A. Payment Gateway Integration (Midtrans):**
-- **Metode**: Snap API untuk seamless checkout
-- **Payment Methods**: Credit/debit card, Bank transfer, E-wallet (GoPay, OVO, Dana)
-- **Security**: PCI-DSS compliant, 3D Secure support
-- **Webhook**: Untuk real-time payment notification
-- **Timeline**: Minggu 6-7 (implementation + testing)
+**A. Integrasi *Payment Gateway* (Midtrans):**
+- **Metode**: *Snap API* untuk *checkout* yang mulus
+- **Metode Pembayaran**: Kartu kredit/debit, Transfer bank, Dompet digital (GoPay, OVO, Dana)
+- **Keamanan**: Memenuhi *PCI-DSS*, dukungan *3D Secure*
+- **Webhook**: Untuk notifikasi pembayaran waktu nyata
+- **Waktu**: Minggu 6-7 (implementasi + pengujian)
 
-**B. Email Service Integration:**
-- **Provider**: Gmail SMTP / SendGrid
-- **Use Cases**:
-  - Welcome email saat registrasi
+**B. Integrasi Layanan Email:**
+- **Penyedia**: Gmail SMTP / SendGrid
+- **Kasus Penggunaan**:
+  - Email selamat datang saat registrasi
   - Email verifikasi
-  - Booking confirmation
-  - Payment notification
-  - Session reminder (H-1, H-0)
-  - Password reset
-- **Timeline**: Minggu 7-8
+  - Konfirmasi pemesanan
+  - Notifikasi pembayaran
+  - Pengingat sesi (H-1, H-0)
+  - Reset kata sandi
+- **Waktu**: Minggu 7-8
 
-**C. Future Integrations (Phase 2):**
-- SMS notification via Twilio
-- Cloud storage (Google Drive / AWS S3)
-- Video conferencing (Zoom API)
+**C. Integrasi Masa Depan (Fase 2):**
+- Notifikasi SMS via Twilio
+- Penyimpanan cloud (Google Drive / AWS S3)
+- Konferensi video (Zoom API)
 - Analytics (Google Analytics)
 
 ### 4.2.10 Manajemen Pemangku Kepentingan (*Stakeholder*)
@@ -376,20 +376,20 @@ Identifikasi dan strategi keterlibatan pemangku kepentingan:
 
 **Tabel 4.7 Daftar Pemangku Kepentingan**
 
-| No | Stakeholder | Peran | Kepentingan | Power | Interest | Strategi |
+| No | Pemangku Kepentingan | Peran | Kepentingan | Kekuasaan | Minat | Strategi |
 |----|------------|-------|-------------|-------|----------|----------|
-| 1 | Pemilik CUR-HEART | Sponsor & Decision Maker | Sangat Tinggi | Tinggi | Tinggi | Manage Closely: Presentasi progress bulanan, approval kebutuhan |
-| 2 | Terapis (3 orang) | End User | Tinggi | Sedang | Tinggi | Keep Informed: Workshop kebutuhan, UAT, training |
-| 3 | Admin (2 orang) | End User | Tinggi | Sedang | Tinggi | Keep Informed: Workshop kebutuhan, UAT, training |
-| 4 | Klien (8 orang sample) | End User | Sedang | Rendah | Sedang | Monitor: Survey kebutuhan, usability testing |
-| 5 | Dosen Pembimbing | Academic Advisor | Sangat Tinggi | Tinggi | Tinggi | Manage Closely: Konsultasi mingguan, review dokumen |
-| 6 | Tim Pengembang | Development Team | Sangat Tinggi | Tinggi | Tinggi | Manage Closely: Daily standup, weekly meeting |
+| 1 | Pemilik CUR-HEART | Sponsor & Pengambil Keputusan | Sangat Tinggi | Tinggi | Tinggi | Kelola Erat: Presentasi kemajuan bulanan, persetujuan kebutuhan |
+| 2 | Terapis (3 orang) | Pengguna Akhir | Tinggi | Sedang | Tinggi | Tetap Berinformasi: Lokakarya kebutuhan, UAT, pelatihan |
+| 3 | Admin (2 orang) | Pengguna Akhir | Tinggi | Sedang | Tinggi | Tetap Berinformasi: Lokakarya kebutuhan, UAT, pelatihan |
+| 4 | Klien (8 orang sample) | Pengguna Akhir | Sedang | Rendah | Sedang | Pantau: Survei kebutuhan, pengujian kegunaan |
+| 5 | Dosen Pembimbing | Penasihat Akademik | Sangat Tinggi | Tinggi | Tinggi | Kelola Erat: Konsultasi mingguan, tinjauan dokumen |
+| 6 | Tim Pengembang | Tim Pengembangan | Sangat Tinggi | Tinggi | Tinggi | Kelola Erat: *Daily standup*, pertemuan mingguan |
 
 **Strategi Keterlibatan:**
-- **Manage Closely**: High power, high interest - keterlibatan intensif dan update regular
-- **Keep Informed**: Low power, high interest - informasi regular, input didengarkan
-- **Keep Satisfied**: High power, low interest - update penting, minta approval
-- **Monitor**: Low power, low interest - komunikasi minimal, monitoring
+- **Kelola Erat**: Kekuasaan tinggi, minat tinggi - keterlibatan intensif dan pembaruan berkala
+- **Tetap Berinformasi**: Kekuasaan rendah, minat tinggi - informasi berkala, masukan didengarkan
+- **Jaga Kepuasan**: Kekuasaan tinggi, minat rendah - pembaruan penting, minta persetujuan
+- **Pantau**: Kekuasaan rendah, minat rendah - komunikasi minimal, pemantauan
 
 ### 4.2.11 Batasan Proyek
 
@@ -397,63 +397,63 @@ Batasan-batasan proyek yang telah disepakati:
 
 **A. Batasan Waktu:**
 - Fokus proyek pada pembangunan sistem informasi dalam kurun waktu 16 minggu (4 bulan)
-- Tidak membahas quality control & quality assurance secara khusus (hanya pengujian standar)
-- Evaluasi jangka panjang (> 6 bulan) tidak termasuk dalam scope
+- Tidak membahas kontrol kualitas & jaminan kualitas secara khusus (hanya pengujian standar)
+- Evaluasi jangka panjang (> 6 bulan) tidak termasuk dalam ruang lingkup
 
 **B. Batasan Fitur:**
 - Tidak membahas mengenai risiko proyek secara mendalam, fokus hanya pada risiko permintaan perubahan
-- Modul analytics dan reporting dibatasi pada laporan standar (advanced analytics/BI ditunda ke fase 2)
+- Modul analitik dan pelaporan dibatasi pada laporan standar (analitik lanjutan/*BI* ditunda ke fase 2)
 - Integrasi dengan sistem eksternal lain (selain Midtrans dan email) tidak termasuk dalam fase 1
 
 **C. Batasan Biaya:**
 - Biaya yang dimaksud adalah biaya untuk tim proyek (tidak termasuk manajer proyek senior eksternal)
-- Budget terbatas pada development dan 1 tahun operasional awal
-- Biaya training intensif untuk semua staf tidak termasuk (hanya training dasar 2 jam)
+- Anggaran terbatas pada pengembangan dan 1 tahun operasional awal
+- Biaya pelatihan intensif untuk semua staf tidak termasuk (hanya pelatihan dasar 2 jam)
 
 **D. Batasan Teknis:**
-- Sistem dioptimalkan untuk desktop dan tablet, support mobile dalam bentuk responsive design (bukan native mobile app)
-- Kapasitas sistem didesain untuk menangani hingga 50 concurrent users
-- Bahasa sistem: Bahasa Indonesia (multi-language tidak termasuk fase 1)
-- Sistem tidak termasuk fitur video call untuk sesi terapi online
+- Sistem dioptimalkan untuk desktop dan tablet, dukungan mobile dalam bentuk *responsive design* (bukan aplikasi mobile *native*)
+- Kapasitas sistem didesain untuk menangani hingga 50 pengguna bersamaan
+- Bahasa sistem: Bahasa Indonesia (multi-bahasa tidak termasuk fase 1)
+- Sistem tidak termasuk fitur panggilan video untuk sesi terapi daring
 
 **E. Batasan Data:**
 - Migrasi data historis dibatasi pada data 6 bulan terakhir
-- Data backup retention: 30 hari (untuk backup jangka panjang memerlukan biaya tambahan)
+- Retensi cadangan data: 30 hari (untuk cadangan jangka panjang memerlukan biaya tambahan)
 
 **F. Batasan Hukum:**
 - Sistem mengikuti prinsip dasar UU Perlindungan Data Pribadi, namun sertifikasi kepatuhan formal tidak termasuk
-- Disclaimer medis: Sistem untuk manajemen administrasi, bukan untuk diagnosis medis
+- Penyangkalan medis: Sistem untuk manajemen administrasi, bukan untuk diagnosis medis
 
 ### 4.2.12 Asumsi Proyek
 
 Asumsi-asumsi yang mendasari perencanaan proyek:
 
 **A. Asumsi Pengadaan:**
-- Procurement atau pengadaan sudah tidak ada masalah, sumber daya non-personil tersedia sesuai spesifikasi
+- Pengadaan sudah tidak ada masalah, sumber daya non-personil tersedia sesuai spesifikasi
 - VPS hosting dapat disewa sesuai spesifikasi yang dibutuhkan
 - Domain dapat dibeli dan dikonfigurasi dengan lancar
 
 **B. Asumsi Sumber Daya Manusia:**
-- Human resource sudah tersedia sesuai dengan spesifikasi proyek
+- Sumber daya manusia sudah tersedia sesuai dengan spesifikasi proyek
 - Anggota tim adalah SDM profesional (mahasiswa dengan kompetensi memadai)
 - Tidak ada anggota tim yang mengundurkan diri atau sakit berkepanjangan selama proyek
-- Terapis dan admin CUR-HEART bersedia meluangkan waktu untuk workshop, UAT, dan training
+- Terapis dan admin CUR-HEART bersedia meluangkan waktu untuk lokakarya, UAT, dan pelatihan
 
 **C. Asumsi Teknis:**
 - Manajer proyek adalah personil dari dalam tim (ketua tim mahasiswa)
-- Infrastruktur teknologi (internet, listrik) stabil di lokasi development dan CUR-HEART
+- Infrastruktur teknologi (internet, listrik) stabil di lokasi pengembangan dan CUR-HEART
 - API Midtrans berfungsi stabil dengan dokumentasi lengkap
-- SMTP email service dapat dikonfigurasi tanpa hambatan
+- Layanan email SMTP dapat dikonfigurasi tanpa hambatan
 
 **D. Asumsi Organisasi:**
 - Struktur organisasi CUR-HEART sudah diterapkan dengan baik
 - Pemilik & manajer proyek sudah ditunjuk beserta anggota tim
-- Approval dan decision making dari stakeholder dapat dilakukan tepat waktu
+- Persetujuan dan pengambilan keputusan dari pemangku kepentingan dapat dilakukan tepat waktu
 - Tidak ada perubahan manajemen atau struktur organisasi selama proyek
 
 **E. Asumsi Proses Bisnis:**
 - Proses bisnis CUR-HEART yang ada saat ini sudah terdokumentasi dengan baik
-- Stakeholder dapat mengartikulasikan kebutuhan mereka dengan jelas
+- Pemangku kepentingan dapat mengartikulasikan kebutuhan mereka dengan jelas
 - Tidak ada perubahan signifikan pada proses bisnis selama pengembangan
 
 **F. Asumsi Pengguna:**
