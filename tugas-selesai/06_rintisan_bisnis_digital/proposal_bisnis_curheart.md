@@ -21,7 +21,7 @@ Kelompok:
 **Program Studi Sistem Informasi (S1)**  
 **Fakultas Teknologi Informasi**  
 **Universitas Nusa Mandiri**  
-**2024**
+**2025**
 
 ---
 
@@ -1446,7 +1446,7 @@ Kami mengundang semua pihak yang peduli terhadap kesehatan mental Indonesia - in
 
 <div style="text-align: center; margin-top: 50px;">
 
-**© 2024 CUR-HEART. All Rights Reserved.**
+**© 2025 CUR-HEART. All Rights Reserved.**
 
 *"Transformasi Mental Mendalam Melalui Hypnotherapy Modern"*
 
