@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATRIAMART BI Dashboard - Marketing Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-700 to-green-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold">📊 SATRIAMART</div>
+                    <div class="text-sm opacity-90">Business Intelligence Dashboard</div>
+                </div>
+                <div class="flex space-x-1">
+                    <a href="index.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Dashboard</a>
+                    <a href="sales.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Sales</a>
+                    <a href="products.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Products</a>
+                    <a href="customers.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Customers</a>
+                    <a href="financial.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Financial</a>
+                    <a href="operations.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Operations</a>
+                    <a href="marketing.html" class="px-4 py-2 bg-white bg-opacity-20 rounded-lg font-medium">Marketing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white shadow-sm border-b">
+        <div class="container mx-auto px-6 py-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Marketing Performance</h1>
+                    <p class="text-gray-600 mt-1">Campaign effectiveness, ROI analysis, and marketing channel performance</p>
+                </div>
+                <div class="flex space-x-3">
+                    <select id="filterPeriod" class="border border-gray-300 rounded-lg px-4 py-2 text-sm">
+                        <option value="all">All Time</option>
+                        <option value="12">Last 12 Months</option>
+                        <option value="6">Last 6 Months</option>
+                        <option value="3">Last 3 Months</option>
+                        <option value="1">Last Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-8">
+        
+        <!-- Marketing Overview Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
+                <div class="text-sm text-gray-600 font-medium">Total Campaigns</div>
+                <div class="text-3xl font-bold text-gray-800 mt-2" id="totalCampaigns">0</div>
+                <div class="text-xs text-gray-500 mt-1" id="activeCampaigns">0 active</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
+                <div class="text-sm text-gray-600 font-medium">Total Marketing Spend</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalSpend">Rp 0</div>
+                <div class="text-xs text-gray-500 mt-1">All campaigns</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
+                <div class="text-sm text-gray-600 font-medium">Avg ROI</div>
+                <div class="text-3xl font-bold text-gray-800 mt-2" id="avgROI">0%</div>
+                <div class="text-xs text-gray-500 mt-1">Return on investment</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500">
+                <div class="text-sm text-gray-600 font-medium">Total Impressions</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalImpressions">0</div>
+                <div class="text-xs text-gray-500 mt-1">Reach & visibility</div>
+            </div>
+        </div>
+
+        <!-- Campaign Performance -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Campaign ROI Comparison</h2>
+                <div class="h-80">
+                    <canvas id="roiChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Spend by Channel</h2>
+                <div class="h-80">
+                    <canvas id="channelSpendChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversion Metrics -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Conversion Rate by Channel</h2>
+                <div class="h-80">
+                    <canvas id="conversionChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Campaign Status Distribution</h2>
+                <div class="h-80">
+                    <canvas id="statusChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Performing Campaigns -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">🏆 Top 5 Campaigns by ROI</h2>
+            <div id="topCampaigns" class="space-y-4">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Campaign Details Table -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">All Marketing Campaigns</h2>
+                <div class="flex space-x-3">
+                    <select id="filterChannel" class="text-sm border border-gray-300 rounded-lg px-3 py-1">
+                        <option value="">All Channels</option>
+                    </select>
+                    <select id="filterStatus" class="text-sm border border-gray-300 rounded-lg px-3 py-1">
+                        <option value="">All Status</option>
+                        <option value="Aktif">Active</option>
+                        <option value="Selesai">Completed</option>
+                        <option value="Dijadwalkan">Scheduled</option>
+                    </select>
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Campaign</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Platform</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Period</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Budget</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Reach</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Engagement</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Conversions</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">ROI</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="campaignTable" class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td colspan="9" class="px-4 py-4 text-center text-gray-500">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">© 2025 SATRIAMART Business Intelligence Dashboard</p>
+        </div>
+    </footer>
+
+    <script>
+        let campaignData = [];
+        let allCampaignData = [];
+        let charts = {};
+
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(value);
+        }
+
+        function formatNumber(value) {
+            return new Intl.NumberFormat('id-ID').format(value);
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('id-ID', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric'
+            });
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/06_marketing_campaign.csv');
+                const text = await response.text();
+                const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
+                campaignData = parsed.data;
+                allCampaignData = parsed.data;
+
+                calculateMetrics();
+                renderCharts();
+                renderTopCampaigns();
+                renderCampaignTable();
+                populateFilters();
+                
+                document.getElementById('filterPeriod').addEventListener('change', applyPeriodFilter);
+                document.getElementById('filterChannel').addEventListener('change', filterCampaigns);
+                document.getElementById('filterStatus').addEventListener('change', filterCampaigns);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function calculateMetrics() {
+            const totalCampaigns = campaignData.length;
+            const activeCampaigns = campaignData.filter(c => {
+                const endDate = new Date(c.tanggal_selesai);
+                const now = new Date();
+                return endDate >= now;
+            }).length;
+            
+            const totalSpend = campaignData.reduce((sum, row) => sum + parseFloat(row.budget || 0), 0);
+            const totalImpressions = campaignData.reduce((sum, row) => sum + parseInt(row.reach || 0), 0);
+            
+            const rois = campaignData.map(c => parseFloat(c.roi || 0));
+            const avgROI = rois.length > 0 ? rois.reduce((a, b) => a + b, 0) / rois.length : 0;
+
+            document.getElementById('totalCampaigns').textContent = totalCampaigns;
+            document.getElementById('activeCampaigns').textContent = `${activeCampaigns} active`;
+            document.getElementById('totalSpend').textContent = formatCurrency(totalSpend);
+            document.getElementById('avgROI').textContent = avgROI.toFixed(1) + '%';
+            document.getElementById('totalImpressions').textContent = formatNumber(totalImpressions);
+        }
+
+        function renderCharts() {
+            renderROI();
+            renderChannelSpend();
+            renderConversionRate();
+            renderStatusDistribution();
+        }
+
+        function renderROI() {
+            const sorted = campaignData
+                .sort((a, b) => parseFloat(b.roi || 0) - parseFloat(a.roi || 0))
+                .slice(0, 10);
+
+            const ctx = document.getElementById('roiChart');
+            if (charts.roi) charts.roi.destroy();
+            charts.roi = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(c => c.nama_campaign),
+                    datasets: [{
+                        label: 'ROI',
+                        data: sorted.map(c => parseFloat(c.roi || 0)),
+                        backgroundColor: sorted.map(c => 
+                            parseFloat(c.roi || 0) > 0 ? 'rgb(34, 197, 94)' : 'rgb(239, 68, 68)'
+                        )
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+
+        function renderChannelSpend() {
+            const channelData = {};
+            
+            campaignData.forEach(row => {
+                const channel = row.platform || 'Unknown';
+                if (!channelData[channel]) {
+                    channelData[channel] = 0;
+                }
+                channelData[channel] += parseFloat(row.budget || 0);
+            });
+
+            const ctx = document.getElementById('channelSpendChart');
+            if (charts.channelSpend) charts.channelSpend.destroy();
+            charts.channelSpend = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(channelData),
+                    datasets: [{
+                        data: Object.values(channelData),
+                        backgroundColor: [
+                            'rgb(251, 146, 60)',
+                            'rgb(168, 85, 247)',
+                            'rgb(59, 130, 246)',
+                            'rgb(34, 197, 94)',
+                            'rgb(236, 72, 153)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function renderConversionRate() {
+            const channelConversion = {};
+            
+            campaignData.forEach(row => {
+                const channel = row.platform || 'Unknown';
+                if (!channelConversion[channel]) {
+                    channelConversion[channel] = { engagement: 0, conversions: 0 };
+                }
+                channelConversion[channel].engagement += parseInt(row.engagement || 0);
+                channelConversion[channel].conversions += parseInt(row.conversion || 0);
+            });
+
+            const labels = Object.keys(channelConversion);
+            const rates = labels.map(channel => {
+                const data = channelConversion[channel];
+                return data.engagement > 0 ? (data.conversions / data.engagement * 100) : 0;
+            });
+
+            const ctx = document.getElementById('conversionChart');
+            if (charts.conversion) charts.conversion.destroy();
+            charts.conversion = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Conversion Rate (%)',
+                        data: rates,
+                        backgroundColor: 'rgb(59, 130, 246)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderStatusDistribution() {
+            const statusData = {
+                'Active': 0,
+                'Completed': 0
+            };
+            
+            campaignData.forEach(row => {
+                const endDate = new Date(row.tanggal_selesai);
+                const now = new Date();
+                if (endDate >= now) {
+                    statusData['Active']++;
+                } else {
+                    statusData['Completed']++;
+                }
+            });
+
+            const ctx = document.getElementById('statusChart');
+            if (charts.status) charts.status.destroy();
+            charts.status = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(statusData),
+                    datasets: [{
+                        data: Object.values(statusData),
+                        backgroundColor: [
+                            'rgb(34, 197, 94)',
+                            'rgb(59, 130, 246)',
+                            'rgb(251, 146, 60)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function renderTopCampaigns() {
+            const sorted = campaignData
+                .sort((a, b) => parseFloat(b.roi || 0) - parseFloat(a.roi || 0))
+                .slice(0, 5);
+
+            const html = sorted.map((campaign, index) => {
+                const roi = parseFloat(campaign.roi || 0);
+                const conversionRate = parseInt(campaign.engagement || 0) > 0 
+                    ? (parseInt(campaign.conversion || 0) / parseInt(campaign.engagement || 0) * 100).toFixed(2)
+                    : 0;
+
+                return `
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full font-bold">
+                                    ${index + 1}
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-800">${campaign.nama_campaign}</div>
+                                    <div class="text-sm text-gray-500">${campaign.platform}</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold ${roi > 0 ? 'text-green-600' : 'text-red-600'}">
+                                    ${roi > 0 ? '+' : ''}${roi.toFixed(1)}
+                                </div>
+                                <div class="text-xs text-gray-500">ROI</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-4 gap-3 text-sm">
+                            <div>
+                                <div class="text-gray-500">Budget</div>
+                                <div class="font-semibold">${formatCurrency(campaign.budget)}</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500">Reach</div>
+                                <div class="font-semibold">${formatNumber(campaign.reach)}</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500">Conversions</div>
+                                <div class="font-semibold text-green-600">${formatNumber(campaign.conversion)}</div>
+                            </div>
+                            <div>
+                                <div class="text-gray-500">Conv. Rate</div>
+                                <div class="font-semibold">${conversionRate}%</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('topCampaigns').innerHTML = html;
+        }
+
+        function renderCampaignTable() {
+            const tbody = document.getElementById('campaignTable');
+            
+            const html = campaignData.map(campaign => {
+                const roi = parseFloat(campaign.roi || 0);
+                const endDate = new Date(campaign.tanggal_selesai);
+                const now = new Date();
+                const isActive = endDate >= now;
+                const statusClass = isActive ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800';
+                const statusText = isActive ? 'Active' : 'Completed';
+
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3">
+                            <div class="text-sm font-medium text-gray-900">${campaign.nama_campaign}</div>
+                            <div class="text-xs text-gray-500">${campaign.id_campaign}</div>
+                        </td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                ${campaign.platform}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-600">
+                            <div>${formatDate(campaign.tanggal_mulai)}</div>
+                            <div class="text-xs text-gray-500">to ${formatDate(campaign.tanggal_selesai)}</div>
+                        </td>
+                        <td class="px-4 py-3 text-sm font-semibold text-gray-900">${formatCurrency(campaign.budget)}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatNumber(campaign.reach)}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatNumber(campaign.engagement)}</td>
+                        <td class="px-4 py-3 text-sm font-semibold text-green-600">${formatNumber(campaign.conversion)}</td>
+                        <td class="px-4 py-3">
+                            <span class="text-sm font-bold ${roi > 0 ? 'text-green-600' : 'text-red-600'}">
+                                ${roi > 0 ? '+' : ''}${roi.toFixed(1)}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium ${statusClass}">
+                                ${statusText}
+                            </span>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = html;
+        }
+
+        function populateFilters() {
+            const channels = [...new Set(campaignData.map(c => c.platform))];
+            const channelFilter = document.getElementById('filterChannel');
+            
+            channels.forEach(channel => {
+                const option = document.createElement('option');
+                option.value = channel;
+                option.textContent = channel;
+                channelFilter.appendChild(option);
+            });
+        }
+
+        function applyPeriodFilter() {
+            const period = document.getElementById('filterPeriod').value;
+            
+            if (period === 'all') {
+                campaignData = allCampaignData;
+            } else {
+                const months = parseInt(period);
+                const cutoffDate = new Date();
+                cutoffDate.setMonth(cutoffDate.getMonth() - months);
+                
+                campaignData = allCampaignData.filter(row => {
+                    const date = new Date(row.tanggal_mulai);
+                    return date >= cutoffDate;
+                });
+            }
+            
+            calculateMetrics();
+            
+            Object.values(charts).forEach(chart => {
+                if (chart) chart.destroy();
+            });
+            charts = {};
+            
+            renderCharts();
+            renderTopCampaigns();
+            renderCampaignTable();
+        }
+
+        function filterCampaigns() {
+            const channel = document.getElementById('filterChannel').value;
+            const status = document.getElementById('filterStatus').value;
+
+            const filtered = allCampaignData.filter(row => {
+                const matchChannel = !channel || row.platform === channel;
+                
+                const endDate = new Date(row.tanggal_selesai);
+                const now = new Date();
+                const isActive = endDate >= now;
+                const rowStatus = isActive ? 'Aktif' : 'Selesai';
+                const matchStatus = !status || rowStatus === status;
+                
+                return matchChannel && matchStatus;
+            });
+
+            const tbody = document.getElementById('campaignTable');
+            const html = filtered.map(campaign => {
+                const roi = parseFloat(campaign.roi || 0);
+                const endDate = new Date(campaign.tanggal_selesai);
+                const now = new Date();
+                const isActive = endDate >= now;
+                const statusClass = isActive ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800';
+                const statusText = isActive ? 'Active' : 'Completed';
+
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3">
+                            <div class="text-sm font-medium text-gray-900">${campaign.nama_campaign}</div>
+                            <div class="text-xs text-gray-500">${campaign.id_campaign}</div>
+                        </td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                                ${campaign.platform}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-600">
+                            <div>${formatDate(campaign.tanggal_mulai)}</div>
+                            <div class="text-xs text-gray-500">to ${formatDate(campaign.tanggal_selesai)}</div>
+                        </td>
+                        <td class="px-4 py-3 text-sm font-semibold text-gray-900">${formatCurrency(campaign.budget)}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatNumber(campaign.reach)}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatNumber(campaign.engagement)}</td>
+                        <td class="px-4 py-3 text-sm font-semibold text-green-600">${formatNumber(campaign.conversion)}</td>
+                        <td class="px-4 py-3">
+                            <span class="text-sm font-bold ${roi > 0 ? 'text-green-600' : 'text-red-600'}">
+                                ${roi > 0 ? '+' : ''}${roi.toFixed(1)}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium ${statusClass}">
+                                ${statusText}
+                            </span>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = html || '<tr><td colspan="9" class="px-4 py-4 text-center text-gray-500">No campaigns found</td></tr>';
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

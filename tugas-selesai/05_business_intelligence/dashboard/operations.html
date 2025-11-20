@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATRIAMART BI Dashboard - Operations & Inventory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-700 to-green-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold">📊 SATRIAMART</div>
+                    <div class="text-sm opacity-90">Business Intelligence Dashboard</div>
+                </div>
+                <div class="flex space-x-1">
+                    <a href="index.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Dashboard</a>
+                    <a href="sales.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Sales</a>
+                    <a href="products.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Products</a>
+                    <a href="customers.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Customers</a>
+                    <a href="financial.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Financial</a>
+                    <a href="operations.html" class="px-4 py-2 bg-white bg-opacity-20 rounded-lg font-medium">Operations</a>
+                    <a href="marketing.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Marketing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white shadow-sm border-b">
+        <div class="container mx-auto px-6 py-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Operations & Inventory Management</h1>
+                    <p class="text-gray-600 mt-1">Stock movements, warehouse operations, and inventory efficiency analysis</p>
+                </div>
+                <div class="flex space-x-3">
+                    <select id="filterPeriod" class="border border-gray-300 rounded-lg px-4 py-2 text-sm">
+                        <option value="all">All Time</option>
+                        <option value="12">Last 12 Months</option>
+                        <option value="6">Last 6 Months</option>
+                        <option value="3">Last 3 Months</option>
+                        <option value="1">Last Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-8">
+        
+        <!-- Operations Overview Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
+                <div class="text-sm text-gray-600 font-medium">Total Stock In</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalStockIn">0</div>
+                <div class="text-xs text-gray-500 mt-1">Units received</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
+                <div class="text-sm text-gray-600 font-medium">Total Stock Out</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalStockOut">0</div>
+                <div class="text-xs text-gray-500 mt-1">Units sold/used</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
+                <div class="text-sm text-gray-600 font-medium">Stock Turnover Rate</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="turnoverRate">0</div>
+                <div class="text-xs text-gray-500 mt-1">Times per period</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500">
+                <div class="text-sm text-gray-600 font-medium">Stock Adjustments</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalAdjustments">0</div>
+                <div class="text-xs text-gray-500 mt-1">Corrections made</div>
+            </div>
+        </div>
+
+        <!-- Stock Movement Analysis -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Stock Movement Trend</h2>
+                <div class="h-80">
+                    <canvas id="stockMovementChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Movement by Type</h2>
+                <div class="h-80">
+                    <canvas id="movementTypeChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Movement Analysis -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Top 10 Most Active Products</h2>
+                <div id="topMovedProducts" class="space-y-2">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Stock Movement by Category</h2>
+                <div class="h-80">
+                    <canvas id="categoryMovementChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Supplier Analysis -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">Transaction Type Analysis</h2>
+            <div id="supplierMetrics" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Stock Movement Details Table -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Recent Stock Movements</h2>
+                <div class="flex space-x-3">
+                    <select id="filterType" class="text-sm border border-gray-300 rounded-lg px-3 py-1">
+                        <option value="">All Types</option>
+                        <option value="Penjualan">Sales</option>
+                        <option value="Pembelian">Purchase</option>
+                        <option value="Penyesuaian">Adjustment</option>
+                        <option value="Retur">Return</option>
+                    </select>
+                    <input type="text" id="searchProduct" placeholder="Search product..." 
+                        class="text-sm border border-gray-300 rounded-lg px-3 py-1">
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Product</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Movement</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stock Before</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stock After</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Transaction</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movementTable" class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td colspan="8" class="px-4 py-4 text-center text-gray-500">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">© 2025 SATRIAMART Business Intelligence Dashboard</p>
+        </div>
+    </footer>
+
+    <script>
+        let stockData = [];
+        let productData = [];
+        let allStockData = [];
+        let charts = {};
+
+        function formatNumber(value) {
+            return new Intl.NumberFormat('id-ID').format(value);
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('id-ID', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric'
+            });
+        }
+
+        async function loadData() {
+            try {
+                const stockResponse = await fetch('../data/04_riwayat_stok.csv');
+                const stockText = await stockResponse.text();
+                const stockParsed = Papa.parse(stockText, { header: true, skipEmptyLines: true });
+                stockData = stockParsed.data;
+                allStockData = stockParsed.data;
+
+                const productResponse = await fetch('../data/01_master_produk.csv');
+                const productText = await productResponse.text();
+                const productParsed = Papa.parse(productText, { header: true, skipEmptyLines: true });
+                productData = productParsed.data;
+
+                calculateMetrics();
+                renderCharts();
+                renderTopMovedProducts();
+                renderSupplierMetrics();
+                renderMovementTable();
+                
+                document.getElementById('filterPeriod').addEventListener('change', applyPeriodFilter);
+                document.getElementById('filterType').addEventListener('change', filterMovements);
+                document.getElementById('searchProduct').addEventListener('input', filterMovements);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function calculateMetrics() {
+            const stockIn = stockData
+                .reduce((sum, row) => sum + parseInt(row.stok_masuk || 0), 0);
+            const stockOut = stockData
+                .reduce((sum, row) => sum + parseInt(row.stok_keluar || 0), 0);
+            const adjustments = stockData.filter(row => row.jenis_transaksi === 'Penyesuaian').length;
+            const turnoverRate = stockOut > 0 && stockIn > 0 ? (stockOut / stockIn).toFixed(2) : 0;
+
+            document.getElementById('totalStockIn').textContent = formatNumber(stockIn);
+            document.getElementById('totalStockOut').textContent = formatNumber(stockOut);
+            document.getElementById('turnoverRate').textContent = turnoverRate + 'x';
+            document.getElementById('totalAdjustments').textContent = adjustments;
+        }
+
+        function renderCharts() {
+            renderStockMovementTrend();
+            renderMovementType();
+            renderCategoryMovement();
+        }
+
+        function renderStockMovementTrend() {
+            const monthlyData = {};
+            
+            stockData.forEach(row => {
+                const date = new Date(row.tanggal);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (!monthlyData[monthKey]) {
+                    monthlyData[monthKey] = { in: 0, out: 0 };
+                }
+                
+                monthlyData[monthKey].in += parseInt(row.stok_masuk || 0);
+                monthlyData[monthKey].out += parseInt(row.stok_keluar || 0);
+            });
+
+            const sortedMonths = Object.keys(monthlyData).sort();
+            const labels = sortedMonths.map(month => {
+                const [year, monthNum] = month.split('-');
+                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${monthNames[parseInt(monthNum) - 1]} ${year}`;
+            });
+
+            const ctx = document.getElementById('stockMovementChart');
+            if (charts.stockMovement) charts.stockMovement.destroy();
+            charts.stockMovement = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Stock In',
+                        data: sortedMonths.map(month => monthlyData[month].in),
+                        borderColor: 'rgb(34, 197, 94)',
+                        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                        tension: 0.4
+                    }, {
+                        label: 'Stock Out',
+                        data: sortedMonths.map(month => monthlyData[month].out),
+                        borderColor: 'rgb(239, 68, 68)',
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function renderMovementType() {
+            const typeData = {
+                'Stock In': 0,
+                'Stock Out': 0
+            };
+            
+            stockData.forEach(row => {
+                typeData['Stock In'] += parseInt(row.stok_masuk || 0);
+                typeData['Stock Out'] += parseInt(row.stok_keluar || 0);
+            });
+
+            const ctx = document.getElementById('movementTypeChart');
+            if (charts.movementType) charts.movementType.destroy();
+            charts.movementType = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(typeData),
+                    datasets: [{
+                        data: Object.values(typeData),
+                        backgroundColor: [
+                            'rgb(34, 197, 94)',
+                            'rgb(239, 68, 68)',
+                            'rgb(251, 146, 60)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function renderCategoryMovement() {
+            const categoryData = {};
+            
+            stockData.forEach(row => {
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                if (product) {
+                    const category = product.kategori || 'Unknown';
+                    if (!categoryData[category]) {
+                        categoryData[category] = 0;
+                    }
+                    categoryData[category] += parseInt(row.stok_masuk || 0) + parseInt(row.stok_keluar || 0);
+                }
+            });
+
+            const sorted = Object.entries(categoryData).sort((a, b) => b[1] - a[1]);
+
+            const ctx = document.getElementById('categoryMovementChart');
+            if (charts.categoryMovement) charts.categoryMovement.destroy();
+            charts.categoryMovement = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(item => item[0]),
+                    datasets: [{
+                        label: 'Total Movement',
+                        data: sorted.map(item => item[1]),
+                        backgroundColor: 'rgb(59, 130, 246)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+
+        function renderTopMovedProducts() {
+            const productMovement = {};
+            
+            stockData.forEach(row => {
+                const productId = row.id_produk;
+                if (!productMovement[productId]) {
+                    productMovement[productId] = 0;
+                }
+                productMovement[productId] += parseInt(row.stok_masuk || 0) + parseInt(row.stok_keluar || 0);
+            });
+
+            const sorted = Object.entries(productMovement)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+
+            const html = sorted.map(([productId, quantity], index) => {
+                const product = productData.find(p => p.id_produk === productId);
+                const productName = product ? product.nama_produk : productId;
+                
+                return `
+                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center justify-center w-8 h-8 bg-blue-100 text-blue-700 rounded-full font-bold text-sm">
+                                ${index + 1}
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-800 text-sm">${productName}</div>
+                                <div class="text-xs text-gray-500">${productId}</div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-bold text-blue-600">${formatNumber(quantity)}</div>
+                            <div class="text-xs text-gray-500">units</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('topMovedProducts').innerHTML = html;
+        }
+
+        function renderSupplierMetrics() {
+            // Analyze stock movement by transaction type
+            const transactionTypes = {};
+            
+            stockData.forEach(row => {
+                const type = row.jenis_transaksi || 'Unknown';
+                if (!transactionTypes[type]) {
+                    transactionTypes[type] = {
+                        count: 0,
+                        stockIn: 0,
+                        stockOut: 0
+                    };
+                }
+                transactionTypes[type].count++;
+                transactionTypes[type].stockIn += parseInt(row.stok_masuk || 0);
+                transactionTypes[type].stockOut += parseInt(row.stok_keluar || 0);
+            });
+
+            const sorted = Object.entries(transactionTypes)
+                .sort((a, b) => b[1].count - a[1].count);
+
+            const html = sorted.map(([type, data]) => `
+                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition">
+                    <div class="font-semibold text-gray-800 mb-2">${type}</div>
+                    <div class="grid grid-cols-3 gap-2 text-sm">
+                        <div>
+                            <div class="text-gray-500">Transactions</div>
+                            <div class="font-semibold text-gray-700">${data.count}</div>
+                        </div>
+                        <div>
+                            <div class="text-gray-500">Stock In</div>
+                            <div class="font-semibold text-green-600">${formatNumber(data.stockIn)}</div>
+                        </div>
+                        <div>
+                            <div class="text-gray-500">Stock Out</div>
+                            <div class="font-semibold text-red-600">${formatNumber(data.stockOut)}</div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('supplierMetrics').innerHTML = html;
+        }
+
+        function renderMovementTable() {
+            const tbody = document.getElementById('movementTable');
+            
+            const sorted = stockData.sort((a, b) => new Date(b.tanggal) - new Date(a.tanggal))
+                .slice(0, 50);
+
+            const html = sorted.map(row => {
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                const productName = product ? product.nama_produk : row.id_produk;
+                const stockIn = parseInt(row.stok_masuk || 0);
+                const stockOut = parseInt(row.stok_keluar || 0);
+                
+                const typeClass = {
+                    'Penjualan': 'bg-blue-100 text-blue-800',
+                    'Pembelian': 'bg-green-100 text-green-800',
+                    'Penyesuaian': 'bg-orange-100 text-orange-800',
+                    'Retur': 'bg-red-100 text-red-800'
+                }[row.jenis_transaksi] || 'bg-gray-100 text-gray-800';
+
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatDate(row.tanggal)}</td>
+                        <td class="px-4 py-3">
+                            <div class="text-sm font-medium text-gray-900">${productName}</div>
+                            <div class="text-xs text-gray-500">${row.id_produk}</div>
+                        </td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium ${typeClass}">
+                                ${row.jenis_transaksi}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3 text-sm">
+                            ${stockIn > 0 ? `<span class="font-semibold text-green-600">+${stockIn}</span>` : ''}
+                            ${stockOut > 0 ? `<span class="font-semibold text-red-600">-${stockOut}</span>` : ''}
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.stok_awal}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.stok_akhir}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.jenis_transaksi}</td>
+                        <td class="px-4 py-3 text-sm text-gray-500">${row.keterangan || '-'}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = html;
+        }
+
+        function applyPeriodFilter() {
+            const period = document.getElementById('filterPeriod').value;
+            
+            if (period === 'all') {
+                stockData = allStockData;
+            } else {
+                const months = parseInt(period);
+                const cutoffDate = new Date();
+                cutoffDate.setMonth(cutoffDate.getMonth() - months);
+                
+                stockData = allStockData.filter(row => {
+                    const date = new Date(row.tanggal);
+                    return date >= cutoffDate;
+                });
+            }
+            
+            calculateMetrics();
+            
+            Object.values(charts).forEach(chart => {
+                if (chart) chart.destroy();
+            });
+            charts = {};
+            
+            renderCharts();
+            renderTopMovedProducts();
+            renderSupplierMetrics();
+            renderMovementTable();
+        }
+
+        function filterMovements() {
+            const type = document.getElementById('filterType').value;
+            const search = document.getElementById('searchProduct').value.toLowerCase();
+
+            const filtered = stockData.filter(row => {
+                const matchType = !type || row.jenis_transaksi === type;
+                
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                const productName = product ? product.nama_produk.toLowerCase() : '';
+                const matchSearch = !search || 
+                    productName.includes(search) ||
+                    row.id_produk.toLowerCase().includes(search);
+                
+                return matchType && matchSearch;
+            });
+
+            const tbody = document.getElementById('movementTable');
+            const sorted = filtered.sort((a, b) => new Date(b.tanggal) - new Date(a.tanggal))
+                .slice(0, 50);
+
+            const html = sorted.map(row => {
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                const productName = product ? product.nama_produk : row.id_produk;
+                const stockIn = parseInt(row.stok_masuk || 0);
+                const stockOut = parseInt(row.stok_keluar || 0);
+                
+                const typeClass = {
+                    'Penjualan': 'bg-blue-100 text-blue-800',
+                    'Pembelian': 'bg-green-100 text-green-800',
+                    'Penyesuaian': 'bg-orange-100 text-orange-800',
+                    'Retur': 'bg-red-100 text-red-800'
+                }[row.jenis_transaksi] || 'bg-gray-100 text-gray-800';
+
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatDate(row.tanggal)}</td>
+                        <td class="px-4 py-3">
+                            <div class="text-sm font-medium text-gray-900">${productName}</div>
+                            <div class="text-xs text-gray-500">${row.id_produk}</div>
+                        </td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium ${typeClass}">
+                                ${row.jenis_transaksi}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3 text-sm">
+                            ${stockIn > 0 ? `<span class="font-semibold text-green-600">+${stockIn}</span>` : ''}
+                            ${stockOut > 0 ? `<span class="font-semibold text-red-600">-${stockOut}</span>` : ''}
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.stok_awal}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.stok_akhir}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.jenis_transaksi}</td>
+                        <td class="px-4 py-3 text-sm text-gray-500">${row.keterangan || '-'}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = html || '<tr><td colspan="8" class="px-4 py-4 text-center text-gray-500">No movements found</td></tr>';
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
