@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATRIAMART BI Dashboard - Financial Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-700 to-green-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold">📊 SATRIAMART</div>
+                    <div class="text-sm opacity-90">Business Intelligence Dashboard</div>
+                </div>
+                <div class="flex space-x-1">
+                    <a href="index.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Dashboard</a>
+                    <a href="sales.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Sales</a>
+                    <a href="products.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Products</a>
+                    <a href="customers.html" class="px-4 py-2 hover:bg-white hover:bg-opacity-10 rounded-lg transition">Customers</a>
+                    <a href="financial.html" class="px-4 py-2 bg-white bg-opacity-20 rounded-lg font-medium">Financial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white shadow-sm border-b">
+        <div class="container mx-auto px-6 py-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Financial Analysis</h1>
+                    <p class="text-gray-600 mt-1">Revenue, costs, profitability, and operational expense analysis</p>
+                </div>
+                <div class="flex space-x-3">
+                    <select id="filterPeriod" class="border border-gray-300 rounded-lg px-4 py-2 text-sm">
+                        <option value="all">All Time</option>
+                        <option value="12">Last 12 Months</option>
+                        <option value="6">Last 6 Months</option>
+                        <option value="3">Last 3 Months</option>
+                        <option value="1">Last Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-8">
+        
+        <!-- Financial Overview Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
+                <div class="text-sm text-gray-600 font-medium">Total Revenue</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalRevenue">Loading...</div>
+                <div class="text-xs text-green-600 mt-1" id="revenueGrowth">+0% vs prev period</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
+                <div class="text-sm text-gray-600 font-medium">Total Costs</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="totalCosts">Loading...</div>
+                <div class="text-xs text-gray-500 mt-1">COGS + Operational</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
+                <div class="text-sm text-gray-600 font-medium">Gross Profit</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="grossProfit">Loading...</div>
+                <div class="text-xs text-gray-500 mt-1" id="profitMargin">0% margin</div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500">
+                <div class="text-sm text-gray-600 font-medium">Net Profit</div>
+                <div class="text-2xl font-bold text-gray-800 mt-2" id="netProfit">Loading...</div>
+                <div class="text-xs text-gray-500 mt-1" id="netMargin">0% margin</div>
+            </div>
+        </div>
+
+        <!-- Revenue & Profit Trend -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Revenue vs Profit Trend</h2>
+                <div class="h-80">
+                    <canvas id="revenueProfitChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Profit Margin Analysis</h2>
+                <div class="h-80">
+                    <canvas id="profitMarginChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Breakdown -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">Operational Cost Breakdown</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-700 mb-3">Cost by Category</h3>
+                    <div class="h-80">
+                        <canvas id="costCategoryChart"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-700 mb-3">Monthly Cost Trend</h3>
+                    <div class="h-80">
+                        <canvas id="costTrendChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Details by Category -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Cost Summary by Category</h2>
+                <div id="costSummary" class="space-y-3">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Payment Method Distribution</h2>
+                <div class="h-80">
+                    <canvas id="paymentMethodChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Sources -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">Revenue Composition</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6">
+                    <h3 class="text-sm font-semibold text-gray-700 mb-4">Product Sales</h3>
+                    <div class="text-3xl font-bold text-green-600" id="productSales">Rp 0</div>
+                    <div class="text-xs text-gray-500 mt-2" id="productPercent">0% of total</div>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <div class="flex justify-between mb-1">
+                            <span>Before discounts:</span>
+                            <span class="font-semibold" id="beforeDiscount">Rp 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Discounts given:</span>
+                            <span class="font-semibold text-red-600" id="totalDiscount">-Rp 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6">
+                    <h3 class="text-sm font-semibold text-gray-700 mb-4">Shipping Revenue</h3>
+                    <div class="text-3xl font-bold text-blue-600" id="shippingRevenue">Rp 0</div>
+                    <div class="text-xs text-gray-500 mt-2" id="shippingPercent">0% of total</div>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <div class="flex justify-between mb-1">
+                            <span>Avg per order:</span>
+                            <span class="font-semibold" id="avgShipping">Rp 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Orders with shipping:</span>
+                            <span class="font-semibold" id="ordersWithShipping">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6">
+                    <h3 class="text-sm font-semibold text-gray-700 mb-4">Custom Services</h3>
+                    <div class="text-3xl font-bold text-purple-600" id="customRevenue">Rp 0</div>
+                    <div class="text-xs text-gray-500 mt-2" id="customPercent">0% of total</div>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <div class="flex justify-between mb-1">
+                            <span>Avg per custom:</span>
+                            <span class="font-semibold" id="avgCustom">Rp 0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Custom orders:</span>
+                            <span class="font-semibold" id="customOrders">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expense Details Table -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Operational Expenses Detail</h2>
+                <div class="flex space-x-3">
+                    <select id="categoryFilter" class="text-sm border border-gray-300 rounded-lg px-3 py-1">
+                        <option value="">All Categories</option>
+                    </select>
+                    <select id="monthFilter" class="text-sm border border-gray-300 rounded-lg px-3 py-1">
+                        <option value="">All Months</option>
+                    </select>
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Category</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Sub-Category</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Payment Method</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseTable" class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td colspan="6" class="px-4 py-4 text-center text-gray-500">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+                <div class="text-sm text-gray-600">
+                    Total Expenses: <span class="font-bold text-gray-800" id="filteredTotal">Rp 0</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">© 2025 SATRIAMART Business Intelligence Dashboard</p>
+        </div>
+    </footer>
+
+    <script>
+        let salesData = [];
+        let productData = [];
+        let costData = [];
+        let allSalesData = [];
+        let allCostData = [];
+        let charts = {};
+
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(value);
+        }
+
+        function formatNumber(value) {
+            return new Intl.NumberFormat('id-ID').format(value);
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('id-ID', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric'
+            });
+        }
+
+        async function loadData() {
+            try {
+                const salesResponse = await fetch('../data/03_transaksi_penjualan.csv');
+                const salesText = await salesResponse.text();
+                const salesParsed = Papa.parse(salesText, { header: true, skipEmptyLines: true });
+                salesData = salesParsed.data;
+                allSalesData = salesParsed.data;
+
+                const productResponse = await fetch('../data/01_master_produk.csv');
+                const productText = await productResponse.text();
+                const productParsed = Papa.parse(productText, { header: true, skipEmptyLines: true });
+                productData = productParsed.data;
+
+                const costResponse = await fetch('../data/05_biaya_operasional.csv');
+                const costText = await costResponse.text();
+                const costParsed = Papa.parse(costText, { header: true, skipEmptyLines: true });
+                costData = costParsed.data;
+                allCostData = costParsed.data;
+
+                calculateFinancials();
+                renderCharts();
+                renderCostSummary();
+                renderExpenseTable();
+                populateFilters();
+                
+                document.getElementById('filterPeriod').addEventListener('change', applyPeriodFilter);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function calculateFinancials() {
+            // Revenue calculations
+            const totalRevenue = salesData.reduce((sum, row) => sum + parseFloat(row.total_pembayaran || 0), 0);
+            const grossSales = salesData.reduce((sum, row) => sum + parseFloat(row.subtotal || 0), 0);
+            const totalDiscounts = salesData.reduce((sum, row) => sum + parseFloat(row.diskon_nominal || 0), 0);
+            const shippingRev = salesData.reduce((sum, row) => sum + parseFloat(row.biaya_ongkir || 0), 0);
+            const customRev = salesData.reduce((sum, row) => sum + parseFloat(row.biaya_custom || 0), 0);
+
+            // Calculate previous period revenue for comparison
+            let previousRevenue = 0;
+            const currentPeriod = document.getElementById('filterPeriod').value;
+            
+            if (currentPeriod !== 'all') {
+                const months = parseInt(currentPeriod);
+                const currentCutoff = new Date();
+                currentCutoff.setMonth(currentCutoff.getMonth() - months);
+                
+                const previousCutoff = new Date(currentCutoff);
+                previousCutoff.setMonth(previousCutoff.getMonth() - months);
+                
+                previousRevenue = allSalesData.filter(row => {
+                    const date = new Date(row.tanggal_transaksi);
+                    return date >= previousCutoff && date < currentCutoff;
+                }).reduce((sum, row) => sum + parseFloat(row.total_pembayaran || 0), 0);
+            }
+            
+            // Calculate growth percentage
+            const revenueGrowth = previousRevenue > 0 
+                ? ((totalRevenue - previousRevenue) / previousRevenue * 100) 
+                : 0;
+
+            // Cost calculations
+            // Exclude "Bahan Baku" from operational costs to avoid double counting with COGS
+            const operationalCosts = costData
+                .filter(row => row.kategori_biaya !== 'Bahan Baku')
+                .reduce((sum, row) => sum + parseFloat(row.nominal || 0), 0);
+            
+            // Calculate COGS (Cost of Goods Sold)
+            let cogs = 0;
+            salesData.forEach(row => {
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                if (product) {
+                    const quantity = parseInt(row.jumlah_item || 0);
+                    const cost = parseFloat(product.harga_modal || 0);
+                    cogs += quantity * cost;
+                }
+            });
+
+            const totalCosts = cogs + operationalCosts;
+            const grossProfit = totalRevenue - cogs;
+            const netProfit = totalRevenue - totalCosts;
+            const profitMargin = totalRevenue > 0 ? (grossProfit / totalRevenue) * 100 : 0;
+            const netMargin = totalRevenue > 0 ? (netProfit / totalRevenue) * 100 : 0;
+
+            // Update KPIs
+            document.getElementById('totalRevenue').textContent = formatCurrency(totalRevenue);
+            document.getElementById('totalCosts').textContent = formatCurrency(totalCosts);
+            document.getElementById('grossProfit').textContent = formatCurrency(grossProfit);
+            document.getElementById('netProfit').textContent = formatCurrency(netProfit);
+            document.getElementById('profitMargin').textContent = profitMargin.toFixed(1) + '% margin';
+            document.getElementById('netMargin').textContent = netMargin.toFixed(1) + '% margin';
+            
+            // Update revenue growth
+            const growthElement = document.getElementById('revenueGrowth');
+            if (currentPeriod === 'all' || previousRevenue === 0) {
+                growthElement.textContent = 'vs previous period';
+                growthElement.className = 'text-xs text-gray-500 mt-1';
+            } else {
+                const growthText = revenueGrowth >= 0 
+                    ? `+${revenueGrowth.toFixed(1)}% vs prev period`
+                    : `${revenueGrowth.toFixed(1)}% vs prev period`;
+                growthElement.textContent = growthText;
+                growthElement.className = revenueGrowth >= 0 
+                    ? 'text-xs text-green-600 mt-1' 
+                    : 'text-xs text-red-600 mt-1';
+            }
+
+            // Revenue composition
+            document.getElementById('productSales').textContent = formatCurrency(grossSales - totalDiscounts);
+            document.getElementById('productPercent').textContent = (((grossSales - totalDiscounts) / totalRevenue) * 100).toFixed(1) + '% of total';
+            document.getElementById('beforeDiscount').textContent = formatCurrency(grossSales);
+            document.getElementById('totalDiscount').textContent = formatCurrency(totalDiscounts);
+
+            document.getElementById('shippingRevenue').textContent = formatCurrency(shippingRev);
+            document.getElementById('shippingPercent').textContent = ((shippingRev / totalRevenue) * 100).toFixed(1) + '% of total';
+            const ordersWithShip = salesData.filter(r => parseFloat(r.biaya_ongkir || 0) > 0).length;
+            document.getElementById('avgShipping').textContent = formatCurrency(ordersWithShip > 0 ? shippingRev / ordersWithShip : 0);
+            document.getElementById('ordersWithShipping').textContent = ordersWithShip;
+
+            document.getElementById('customRevenue').textContent = formatCurrency(customRev);
+            document.getElementById('customPercent').textContent = ((customRev / totalRevenue) * 100).toFixed(1) + '% of total';
+            const customCount = salesData.filter(r => parseFloat(r.biaya_custom || 0) > 0).length;
+            document.getElementById('avgCustom').textContent = formatCurrency(customCount > 0 ? customRev / customCount : 0);
+            document.getElementById('customOrders').textContent = customCount;
+        }
+
+        function renderCharts() {
+            renderRevenueProfitTrend();
+            renderProfitMarginTrend();
+            renderCostCategory();
+            renderCostTrend();
+            renderPaymentMethod();
+        }
+
+        function renderRevenueProfitTrend() {
+            const monthlyData = {};
+            
+            salesData.forEach(row => {
+                const date = new Date(row.tanggal_transaksi);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (!monthlyData[monthKey]) {
+                    monthlyData[monthKey] = { revenue: 0, cost: 0 };
+                }
+                monthlyData[monthKey].revenue += parseFloat(row.total_pembayaran || 0);
+                
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                if (product) {
+                    const quantity = parseInt(row.jumlah_item || 0);
+                    const cost = parseFloat(product.harga_modal || 0);
+                    monthlyData[monthKey].cost += quantity * cost;
+                }
+            });
+
+            // Add operational costs
+            costData.forEach(row => {
+                const date = new Date(row.tanggal);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (monthlyData[monthKey]) {
+                    monthlyData[monthKey].cost += parseFloat(row.nominal || 0);
+                }
+            });
+
+            const sortedMonths = Object.keys(monthlyData).sort();
+            const labels = sortedMonths.map(month => {
+                const [year, monthNum] = month.split('-');
+                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${monthNames[parseInt(monthNum) - 1]} ${year}`;
+            });
+
+            const ctx = document.getElementById('revenueProfitChart');
+            if (charts.revenueProfit) charts.revenueProfit.destroy();
+            charts.revenueProfit = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Revenue',
+                        data: sortedMonths.map(month => monthlyData[month].revenue),
+                        borderColor: 'rgb(34, 197, 94)',
+                        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }, {
+                        label: 'Total Costs',
+                        data: sortedMonths.map(month => monthlyData[month].cost),
+                        borderColor: 'rgb(239, 68, 68)',
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }, {
+                        label: 'Profit',
+                        data: sortedMonths.map(month => monthlyData[month].revenue - monthlyData[month].cost),
+                        borderColor: 'rgb(59, 130, 246)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + formatCurrency(context.parsed.y);
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return 'Rp ' + (value / 1000000).toFixed(1) + 'M';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderProfitMarginTrend() {
+            const monthlyData = {};
+            
+            salesData.forEach(row => {
+                const date = new Date(row.tanggal_transaksi);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (!monthlyData[monthKey]) {
+                    monthlyData[monthKey] = { revenue: 0, cost: 0 };
+                }
+                monthlyData[monthKey].revenue += parseFloat(row.total_pembayaran || 0);
+                
+                const product = productData.find(p => p.id_produk === row.id_produk);
+                if (product) {
+                    const quantity = parseInt(row.jumlah_item || 0);
+                    const cost = parseFloat(product.harga_modal || 0);
+                    monthlyData[monthKey].cost += quantity * cost;
+                }
+            });
+
+            const sortedMonths = Object.keys(monthlyData).sort();
+            const labels = sortedMonths.map(month => {
+                const [year, monthNum] = month.split('-');
+                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${monthNames[parseInt(monthNum) - 1]} ${year}`;
+            });
+
+            const margins = sortedMonths.map(month => {
+                const data = monthlyData[month];
+                return data.revenue > 0 ? ((data.revenue - data.cost) / data.revenue * 100) : 0;
+            });
+
+            const ctx = document.getElementById('profitMarginChart');
+            if (charts.profitMargin) charts.profitMargin.destroy();
+            charts.profitMargin = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Profit Margin (%)',
+                        data: margins,
+                        backgroundColor: margins.map(m => m > 50 ? 'rgb(34, 197, 94)' : m > 30 ? 'rgb(251, 191, 36)' : 'rgb(239, 68, 68)')
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderCostCategory() {
+            const categoryData = {};
+            
+            costData.forEach(row => {
+                const category = row.kategori_biaya || 'Unknown';
+                if (!categoryData[category]) {
+                    categoryData[category] = 0;
+                }
+                categoryData[category] += parseFloat(row.nominal || 0);
+            });
+
+            const ctx = document.getElementById('costCategoryChart');
+            if (charts.costCategory) charts.costCategory.destroy();
+            charts.costCategory = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(categoryData),
+                    datasets: [{
+                        data: Object.values(categoryData),
+                        backgroundColor: [
+                            'rgb(239, 68, 68)',
+                            'rgb(251, 146, 60)',
+                            'rgb(251, 191, 36)',
+                            'rgb(34, 197, 94)',
+                            'rgb(59, 130, 246)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = formatCurrency(context.parsed);
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((context.parsed / total) * 100).toFixed(1);
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderCostTrend() {
+            const monthlyData = {};
+            
+            costData.forEach(row => {
+                const date = new Date(row.tanggal);
+                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                
+                if (!monthlyData[monthKey]) {
+                    monthlyData[monthKey] = 0;
+                }
+                monthlyData[monthKey] += parseFloat(row.nominal || 0);
+            });
+
+            const sortedMonths = Object.keys(monthlyData).sort();
+            const labels = sortedMonths.map(month => {
+                const [year, monthNum] = month.split('-');
+                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${monthNames[parseInt(monthNum) - 1]} ${year}`;
+            });
+
+            const ctx = document.getElementById('costTrendChart');
+            if (charts.costTrend) charts.costTrend.destroy();
+            charts.costTrend = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Operational Costs',
+                        data: sortedMonths.map(month => monthlyData[month]),
+                        borderColor: 'rgb(239, 68, 68)',
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return 'Rp ' + (value / 1000000).toFixed(1) + 'M';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderPaymentMethod() {
+            const paymentData = {};
+            
+            costData.forEach(row => {
+                const method = row.metode_pembayaran || 'Unknown';
+                if (!paymentData[method]) {
+                    paymentData[method] = 0;
+                }
+                paymentData[method] += parseFloat(row.nominal || 0);
+            });
+
+            const ctx = document.getElementById('paymentMethodChart');
+            if (charts.paymentMethod) charts.paymentMethod.destroy();
+            charts.paymentMethod = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(paymentData),
+                    datasets: [{
+                        data: Object.values(paymentData),
+                        backgroundColor: [
+                            'rgb(34, 197, 94)',
+                            'rgb(59, 130, 246)',
+                            'rgb(168, 85, 247)',
+                            'rgb(251, 146, 60)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function renderCostSummary() {
+            const categoryData = {};
+            
+            costData.forEach(row => {
+                const category = row.kategori_biaya || 'Unknown';
+                if (!categoryData[category]) {
+                    categoryData[category] = { total: 0, count: 0 };
+                }
+                categoryData[category].total += parseFloat(row.nominal || 0);
+                categoryData[category].count++;
+            });
+
+            const sorted = Object.entries(categoryData).sort((a, b) => b[1].total - a[1].total);
+
+            const html = sorted.map(([category, data]) => {
+                const avg = data.total / data.count;
+                return `
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <div>
+                            <div class="font-semibold text-gray-800">${category}</div>
+                            <div class="text-xs text-gray-500">${data.count} transactions • Avg: ${formatCurrency(avg)}</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-bold text-red-600">${formatCurrency(data.total)}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('costSummary').innerHTML = html;
+        }
+
+        function renderExpenseTable() {
+            const tbody = document.getElementById('expenseTable');
+            
+            const sorted = costData.sort((a, b) => new Date(b.tanggal) - new Date(a.tanggal));
+
+            const html = sorted.slice(0, 50).map(row => {
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatDate(row.tanggal)}</td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                ${row.kategori_biaya}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.sub_kategori}</td>
+                        <td class="px-4 py-3 text-sm font-semibold text-gray-900">${formatCurrency(row.nominal)}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.metode_pembayaran}</td>
+                        <td class="px-4 py-3 text-sm text-gray-500">${row.keterangan}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = html;
+
+            const total = costData.reduce((sum, row) => sum + parseFloat(row.nominal || 0), 0);
+            document.getElementById('filteredTotal').textContent = formatCurrency(total);
+        }
+
+        function applyPeriodFilter() {
+            const period = document.getElementById('filterPeriod').value;
+            
+            if (period === 'all') {
+                salesData = allSalesData;
+                costData = allCostData;
+            } else {
+                const months = parseInt(period);
+                const cutoffDate = new Date();
+                cutoffDate.setMonth(cutoffDate.getMonth() - months);
+                
+                salesData = allSalesData.filter(row => {
+                    const date = new Date(row.tanggal_transaksi);
+                    return date >= cutoffDate;
+                });
+                
+                costData = allCostData.filter(row => {
+                    const date = new Date(row.tanggal);
+                    return date >= cutoffDate;
+                });
+            }
+            
+            // Refresh all displays
+            calculateFinancials();
+            
+            // Destroy old charts
+            Object.values(charts).forEach(chart => {
+                if (chart) chart.destroy();
+            });
+            charts = {};
+            
+            renderCharts();
+            renderCostSummary();
+            renderExpenseTable();
+        }
+
+        function populateFilters() {
+            const categories = [...new Set(costData.map(r => r.kategori_biaya))];
+            const categoryFilter = document.getElementById('categoryFilter');
+            
+            categories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                categoryFilter.appendChild(option);
+            });
+
+            const months = [...new Set(costData.map(r => {
+                const date = new Date(r.tanggal);
+                return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+            }))].sort();
+            
+            const monthFilter = document.getElementById('monthFilter');
+            months.forEach(month => {
+                const [year, monthNum] = month.split('-');
+                const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                const option = document.createElement('option');
+                option.value = month;
+                option.textContent = `${monthNames[parseInt(monthNum) - 1]} ${year}`;
+                monthFilter.appendChild(option);
+            });
+
+            categoryFilter.addEventListener('change', filterExpenses);
+            monthFilter.addEventListener('change', filterExpenses);
+        }
+
+        function filterExpenses() {
+            const category = document.getElementById('categoryFilter').value;
+            const month = document.getElementById('monthFilter').value;
+
+            const filtered = costData.filter(row => {
+                const matchCategory = !category || row.kategori_biaya === category;
+                
+                let matchMonth = true;
+                if (month) {
+                    const date = new Date(row.tanggal);
+                    const rowMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+                    matchMonth = rowMonth === month;
+                }
+                
+                return matchCategory && matchMonth;
+            });
+
+            const tbody = document.getElementById('expenseTable');
+            const html = filtered.map(row => {
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3 text-sm text-gray-600">${formatDate(row.tanggal)}</td>
+                        <td class="px-4 py-3">
+                            <span class="px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                ${row.kategori_biaya}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.sub_kategori}</td>
+                        <td class="px-4 py-3 text-sm font-semibold text-gray-900">${formatCurrency(row.nominal)}</td>
+                        <td class="px-4 py-3 text-sm text-gray-600">${row.metode_pembayaran}</td>
+                        <td class="px-4 py-3 text-sm text-gray-500">${row.keterangan}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            tbody.innerHTML = html || '<tr><td colspan="6" class="px-4 py-4 text-center text-gray-500">No expenses found</td></tr>';
+
+            const total = filtered.reduce((sum, row) => sum + parseFloat(row.nominal || 0), 0);
+            document.getElementById('filteredTotal').textContent = formatCurrency(total);
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
