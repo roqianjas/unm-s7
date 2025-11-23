@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Management - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="62_admin_therapist_verification.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-check"></i>
+                        <span class="font-medium">Verifikasi</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="56_admin_reports.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="font-medium">Laporan</span>
+                    </a>
+                    <a href="57_admin_content_blog.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="font-medium">Konten</span>
+                    </a>
+                    <a href="60_admin_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan</span>
+                    </a>
+                    <a href="61_admin_promo.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-tags"></i>
+                        <span class="font-medium">Pemasaran</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-6 lg:p-8">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">Alat Pemasaran</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Promo Aktif</div>
+                    <div class="text-3xl font-bold text-cur-success">8</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Total Digunakan</div>
+                    <div class="text-3xl font-bold text-gray-900">1,234</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Total Diskon</div>
+                    <div class="text-3xl font-bold text-cur-error">Rp 125M</div>
+                </div>
+            </div>
+
+            <a href="66_admin_promo_editor.html" class="inline-block px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-lg hover:shadow-lg transition mb-6">
+                <i class="fas fa-plus mr-2"></i>Buat Promo Baru
+            </a>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                <div class="divide-y divide-gray-200">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h3 class="font-bold text-gray-900 text-lg">WELCOME50</h3>
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">Active</span>
+                                </div>
+                                <p class="text-gray-600 mb-3">Diskon 50% untuk pengguna baru (max Rp 250.000)</p>
+                                <div class="grid grid-cols-4 gap-4 text-sm">
+                                    <div>
+                                        <div class="text-gray-500">Diskon</div>
+                                        <div class="font-semibold text-gray-900">50%</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Digunakan</div>
+                                        <div class="font-semibold text-gray-900">234 / 500</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Berlaku Hingga</div>
+                                        <div class="font-semibold text-gray-900">31 Des 2025</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Min Pembelian</div>
+                                        <div class="font-semibold text-gray-900">Rp 500.000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 ml-4">
+                                <a href="66_admin_promo_editor.html" class="p-2 text-cur-primary hover:bg-cur-primary/10 rounded-lg transition" title="Edit">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button onclick="return confirm('Delete this promo?')" class="p-2 text-cur-error hover:bg-cur-error/10 rounded-lg transition" title="Delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h3 class="font-bold text-gray-900 text-lg">HEALING20</h3>
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">Active</span>
+                                </div>
+                                <p class="text-gray-600 mb-3">Diskon 20% untuk semua layanan</p>
+                                <div class="grid grid-cols-4 gap-4 text-sm">
+                                    <div>
+                                        <div class="text-gray-500">Diskon</div>
+                                        <div class="font-semibold text-gray-900">20%</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Digunakan</div>
+                                        <div class="font-semibold text-gray-900">567 / ∞</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Berlaku Hingga</div>
+                                        <div class="font-semibold text-gray-900">30 Nov 2025</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Min Pembelian</div>
+                                        <div class="font-semibold text-gray-900">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 ml-4">
+                                <a href="66_admin_promo_editor.html" class="p-2 text-cur-primary hover:bg-cur-primary/10 rounded-lg transition" title="Edit">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button onclick="return confirm('Delete this promo?')" class="p-2 text-cur-error hover:bg-cur-error/10 rounded-lg transition" title="Delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-gray-50">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h3 class="font-bold text-gray-900 text-lg">BLACKFRIDAY</h3>
+                                    <span class="px-3 py-1 bg-gray-200 text-gray-700 text-xs font-semibold rounded-full">Expired</span>
+                                </div>
+                                <p class="text-gray-600 mb-3">Diskon 70% Black Friday Sale</p>
+                                <div class="grid grid-cols-4 gap-4 text-sm">
+                                    <div>
+                                        <div class="text-gray-500">Diskon</div>
+                                        <div class="font-semibold text-gray-900">70%</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Digunakan</div>
+                                        <div class="font-semibold text-gray-900">433 / 500</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Berlaku Hingga</div>
+                                        <div class="font-semibold text-gray-900">30 Nov 2024</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-gray-500">Min Pembelian</div>
+                                        <div class="font-semibold text-gray-900">Rp 1.000.000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2 ml-4">
+                                <button class="p-2 text-gray-400 cursor-not-allowed rounded-lg" disabled title="Tidak dapat edit promo kadaluarsa">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button onclick="return confirm('Hapus promo ini?')" class="p-2 text-cur-error hover:bg-cur-error/10 rounded-lg transition" title="Hapus">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

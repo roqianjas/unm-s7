@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports & Analytics - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="48_admin_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="62_admin_therapist_verification.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-check"></i>
+                        <span class="font-medium">Verifikasi</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="56_admin_reports.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="font-medium">Laporan</span>
+                    </a>
+                    <a href="57_admin_content_blog.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="font-medium">Konten</span>
+                    </a>
+                    <a href="60_admin_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan</span>
+                    </a>
+                    <a href="61_admin_promo.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-tags"></i>
+                        <span class="font-medium">Pemasaran</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">Laporan & Analitik</h1>
+
+            <!-- Quick Export -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <button class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-lg transition text-left">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                    </div>
+                    <div class="font-semibold text-gray-900 mb-1">Ekspor PDF</div>
+                    <div class="text-sm text-gray-600">Laporan lengkap</div>
+                </button>
+                <button class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-lg transition text-left">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-excel text-green-600 text-xl"></i>
+                    </div>
+                    <div class="font-semibold text-gray-900 mb-1">Ekspor Excel</div>
+                    <div class="text-sm text-gray-600">Data mentah</div>
+                </button>
+                <button class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-lg transition text-left">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-csv text-blue-600 text-xl"></i>
+                    </div>
+                    <div class="font-semibold text-gray-900 mb-1">Ekspor CSV</div>
+                    <div class="text-sm text-gray-600">Format CSV</div>
+                </button>
+                <button class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-lg transition text-left">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-print text-purple-600 text-xl"></i>
+                    </div>
+                    <div class="font-semibold text-gray-900 mb-1">Cetak Laporan</div>
+                    <div class="text-sm text-gray-600">Cetak langsung</div>
+                </button>
+            </div>
+
+            <!-- Report Generator -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Buat Laporan Kustom</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700 mb-2 block">Tipe Report</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            <option>Laporan Revenue</option>
+                            <option>Pertumbuhan Pengguna</option>
+                            <option>Statistik Booking</option>
+                            <option>Performa Terapis</option>
+                            <option>Ringkasan Pembayaran</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700 mb-2 block">Periode</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            <option>Bulan Ini</option>
+                            <option>Bulan Lalu</option>
+                            <option>3 Bulan Terakhir</option>
+                            <option>6 Bulan Terakhir</option>
+                            <option>Tahun Ini</option>
+                            <option>Rentang Kustom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-gray-700 mb-2 block">Format</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            <option>PDF</option>
+                            <option>Excel</option>
+                            <option>CSV</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button class="w-full px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-lg hover:shadow-lg transition">
+                            <i class="fas fa-download mr-2"></i>
+                            Buat Laporan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Dashboard -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                <!-- Revenue Trend -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Revenue Trend (6 Bulan)</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Mei 2025</span>
+                            <span class="font-semibold text-gray-900">Rp 650M</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-info h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Jun 2025</span>
+                            <span class="font-semibold text-gray-900">Rp 720M</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-info h-2 rounded-full" style="width: 72%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Jul 2025</span>
+                            <span class="font-semibold text-gray-900">Rp 780M</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-info h-2 rounded-full" style="width: 78%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Agu 2025</span>
+                            <span class="font-semibold text-gray-900">Rp 750M</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-info h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Sep 2025</span>
+                            <span class="font-semibold text-gray-900">Rp 800M</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-info h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Okt 2025</span>
+                            <span class="font-semibold text-gray-900">Rp 845M</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cur-success to-green-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Growth -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Pertumbuhan Pengguna</h3>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <div class="text-sm text-gray-600 mb-1">Total Pengguna</div>
+                            <div class="text-2xl font-bold text-gray-900">1,234</div>
+                            <div class="text-xs text-cur-success mt-1">+12% dari bulan lalu</div>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-lg">
+                            <div class="text-sm text-gray-600 mb-1">Pengguna Aktif</div>
+                            <div class="text-2xl font-bold text-gray-900">904</div>
+                            <div class="text-xs text-cur-success mt-1">+8% dari bulan lalu</div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Klien</span>
+                            <span class="font-semibold text-gray-900">856 (69%)</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 69%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Terapis</span>
+                            <span class="font-semibold text-gray-900">48 (4%)</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-purple-500 h-2 rounded-full" style="width: 4%"></div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-600">Inactive</span>
+                            <span class="font-semibold text-gray-900">330 (27%)</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2">
+                            <div class="bg-gray-400 h-2 rounded-full" style="width: 27%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Reports -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-900">Laporan Terbaru</h3>
+                </div>
+                <div class="divide-y divide-gray-200">
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Laporan Revenue - Oktober 2025</div>
+                                    <div class="text-sm text-gray-600">Dibuat pada 23 Nov 2025, 10:30</div>
+                                </div>
+                            </div>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition">
+                                <i class="fas fa-download mr-2"></i>
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-file-excel text-green-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Ekspor Data Pengguna - Q3 2025</div>
+                                    <div class="text-sm text-gray-600">Dibuat pada 20 Nov 2025, 14:15</div>
+                                </div>
+                            </div>
+                            <button class="px-4 py-2 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition">
+                                <i class="fas fa-download mr-2"></i>
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
