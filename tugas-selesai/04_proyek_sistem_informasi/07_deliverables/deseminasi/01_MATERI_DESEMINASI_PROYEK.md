@@ -11,7 +11,7 @@
 - **Program Studi**: Sistem Informasi
 - **Fakultas**: Teknologi Informasi
 - **Universitas**: Nusa Mandiri
-- **Tahun**: 2024/2025
+- **Tahun**: 2025/2026
 
 ### Tim Proyek
 1. **Roki Anjas** - 11250066 (Project Manager & Backend Developer)
@@ -212,4 +212,4 @@ Lihat file: `05_OUTLINE_SLIDE_PRESENTASI.md`
 ---
 
 *Prepared by: Tim Proyek CUR-HEART*  
-*Last Updated: November 2024*
+*Last Updated: November 2025*

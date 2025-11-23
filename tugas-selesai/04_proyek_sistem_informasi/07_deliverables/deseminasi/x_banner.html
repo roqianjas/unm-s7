@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Banner CUR-HEART - Sistem Informasi Manajemen Reservasi dan Terapi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#1E0E62',
+                        'pink-accent': '#FF6B7A',
+                        'light-purple': '#E5D9F2',
+                        'soft-blue': '#A6B1E1',
+                        'success-green': '#10B981',
+                        'dark-gray': '#374151',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            @page {
+                size: 60cm 160cm;
+                margin: 0;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        
+        /* Banner container - 60cm x 160cm at 96 DPI = 2268px x 6048px */
+        .banner-container {
+            width: 2268px;
+            height: 6048px;
+            position: relative;
+        }
+        
+        /* For screen preview - scale down */
+        @media screen {
+            .banner-container {
+                transform: scale(0.3);
+                transform-origin: top left;
+                margin-bottom: -4200px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="banner-container bg-white font-inter">
+    
+    <!-- SECTION 1: HEADER (Navy Blue Background) -->
+    <div class="bg-navy text-white px-24 py-20 text-center">
+        <!-- Logos -->
+        <div class="flex justify-between items-center mb-16">
+            <div class="w-80 h-40 bg-white/10 rounded-lg flex items-center justify-center">
+                <span class="text-4xl font-bold">LOGO UNM</span>
+            </div>
+            <div class="w-80 h-40 bg-white/10 rounded-lg flex items-center justify-center">
+                <span class="text-4xl font-bold">LOGO FTI</span>
+            </div>
+            <div class="w-80 h-40 bg-white/10 rounded-lg flex items-center justify-center">
+                <span class="text-4xl font-bold">LOGO SI</span>
+            </div>
+        </div>
+        
+        <!-- Main Title -->
+        <h1 class="font-poppins font-bold text-[120px] leading-tight mb-8">
+            SISTEM INFORMASI<br>
+            MANAJEMEN RESERVASI<br>
+            DAN TERAPI CUR-HEART
+        </h1>
+        
+        <!-- Tagline -->
+        <p class="font-inter text-5xl font-normal opacity-90">
+            Transformasi Digital untuk Layanan Hipnoterapi Modern
+        </p>
+    </div>
+
+    <!-- SECTION 2: MASALAH & SOLUSI (Light Purple Background) -->
+    <div class="bg-light-purple px-24 py-20">
+        <!-- Masalah -->
+        <div class="mb-16">
+            <h2 class="font-poppins font-semibold text-7xl text-navy mb-10 flex items-center">
+                <span class="text-8xl mr-6">🎯</span>
+                PERMASALAHAN YANG DIHADAPI
+            </h2>
+            <div class="bg-white rounded-3xl p-12 shadow-lg">
+                <div class="space-y-6 text-dark-gray text-5xl">
+                    <div class="flex items-start">
+                        <span class="text-6xl mr-6 text-red-500">❌</span>
+                        <p class="font-inter">Reservasi manual memakan waktu 10 menit per booking</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-6xl mr-6 text-red-500">❌</span>
+                        <p class="font-inter">Konflik jadwal terjadi 8-10 kasus per bulan</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-6xl mr-6 text-red-500">❌</span>
+                        <p class="font-inter">Dokumentasi terapi tidak terstruktur & berisiko hilang</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-6xl mr-6 text-red-500">❌</span>
+                        <p class="font-inter">Tidak ada data untuk pengambilan keputusan bisnis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Solusi -->
+        <div>
+            <h2 class="font-poppins font-semibold text-7xl text-navy mb-10 flex items-center">
+                <span class="text-8xl mr-6">💡</span>
+                SOLUSI YANG DITAWARKAN
+            </h2>
+            <div class="bg-white rounded-3xl p-12 shadow-lg">
+                <p class="font-inter text-5xl text-dark-gray leading-relaxed mb-8">
+                    Sistem informasi berbasis web yang mengotomasi seluruh proses 
+                    manajemen reservasi, penjadwalan terapis, dokumentasi sesi terapi, 
+                    pembayaran online, dan pelaporan bisnis secara terintegrasi.
+                </p>
+                <div class="flex flex-wrap gap-6 text-4xl font-medium text-success-green">
+                    <span class="flex items-center">✅ Akses 24/7</span>
+                    <span class="flex items-center">✅ Real-time</span>
+                    <span class="flex items-center">✅ Aman</span>
+                    <span class="flex items-center">✅ User-friendly</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 3: FITUR UTAMA (White Background) -->
+    <div class="bg-white px-24 py-20">
+        <h2 class="font-poppins font-semibold text-8xl text-navy mb-16 text-center flex items-center justify-center">
+            <span class="text-9xl mr-6">⭐</span>
+            FITUR UTAMA SISTEM
+        </h2>
+        
+        <!-- Features Grid -->
+        <div class="grid grid-cols-2 gap-10 mb-10">
+            <!-- Feature 1 -->
+            <div class="bg-white border-4 border-pink-accent rounded-3xl p-12 shadow-xl">
+                <div class="text-9xl mb-6">📅</div>
+                <h3 class="font-poppins font-semibold text-6xl text-navy mb-4">
+                    RESERVASI ONLINE 24/7
+                </h3>
+                <p class="font-inter text-4xl text-dark-gray leading-relaxed">
+                    Klien dapat booking layanan terapi kapan saja tanpa batasan waktu
+                </p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="bg-white border-4 border-pink-accent rounded-3xl p-12 shadow-xl">
+                <div class="text-9xl mb-6">🗓️</div>
+                <h3 class="font-poppins font-semibold text-6xl text-navy mb-4">
+                    MANAJEMEN JADWAL OTOMATIS
+                </h3>
+                <p class="font-inter text-4xl text-dark-gray leading-relaxed">
+                    Deteksi konflik jadwal & notifikasi pengingat otomatis
+                </p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="bg-white border-4 border-pink-accent rounded-3xl p-12 shadow-xl">
+                <div class="text-9xl mb-6">📝</div>
+                <h3 class="font-poppins font-semibold text-6xl text-navy mb-4">
+                    DOKUMENTASI SESI DIGITAL
+                </h3>
+                <p class="font-inter text-4xl text-dark-gray leading-relaxed">
+                    Catatan terapi terstruktur dengan keamanan tinggi
+                </p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="bg-white border-4 border-pink-accent rounded-3xl p-12 shadow-xl">
+                <div class="text-9xl mb-6">💳</div>
+                <h3 class="font-poppins font-semibold text-6xl text-navy mb-4">
+                    PEMBAYARAN TERINTEGRASI
+                </h3>
+                <p class="font-inter text-4xl text-dark-gray leading-relaxed">
+                    Midtrans: Kartu kredit, E-wallet, Transfer bank, QRIS
+                </p>
+            </div>
+        </div>
+        
+        <!-- Feature 5 - Full Width -->
+        <div class="bg-white border-4 border-pink-accent rounded-3xl p-12 shadow-xl">
+            <div class="text-9xl mb-6">📊</div>
+            <h3 class="font-poppins font-semibold text-6xl text-navy mb-4">
+                DASHBOARD ANALITIK REAL-TIME
+            </h3>
+            <p class="font-inter text-4xl text-dark-gray leading-relaxed">
+                Laporan keuangan & kinerja bisnis dengan visualisasi interaktif
+            </p>
+        </div>
+    </div>
+
+
+    <!-- SECTION 4: HASIL & DAMPAK (Soft Blue Gradient Background) -->
+    <div class="bg-gradient-to-br from-soft-blue to-light-purple px-24 py-20">
+        <h2 class="font-poppins font-semibold text-8xl text-navy mb-16 text-center flex items-center justify-center">
+            <span class="text-9xl mr-6">📊</span>
+            HASIL & DAMPAK BISNIS
+        </h2>
+        
+        <!-- Metrics Grid - Top Row -->
+        <div class="grid grid-cols-3 gap-10 mb-10">
+            <!-- Metric 1 -->
+            <div class="bg-white rounded-3xl p-12 shadow-xl text-center">
+                <div class="font-poppins font-extrabold text-[140px] text-success-green mb-4">
+                    60%
+                </div>
+                <div class="font-inter font-medium text-5xl text-dark-gray leading-tight">
+                    EFISIENSI<br>OPERASIONAL<br>NAIK
+                </div>
+            </div>
+            
+            <!-- Metric 2 -->
+            <div class="bg-white rounded-3xl p-12 shadow-xl text-center">
+                <div class="font-poppins font-extrabold text-[140px] text-success-green mb-4">
+                    31%
+                </div>
+                <div class="font-inter font-medium text-5xl text-dark-gray leading-tight">
+                    PENDAPATAN<br>NAIK
+                </div>
+            </div>
+            
+            <!-- Metric 3 -->
+            <div class="bg-white rounded-3xl p-12 shadow-xl text-center">
+                <div class="font-poppins font-extrabold text-[140px] text-success-green mb-4">
+                    100%
+                </div>
+                <div class="font-inter font-medium text-5xl text-dark-gray leading-tight">
+                    ELIMINASI<br>DOUBLE<br>BOOKING
+                </div>
+            </div>
+        </div>
+        
+        <!-- Metrics Grid - Bottom Row -->
+        <div class="grid grid-cols-3 gap-10">
+            <!-- Metric 4 -->
+            <div class="bg-white rounded-3xl p-12 shadow-xl text-center">
+                <div class="font-poppins font-extrabold text-[140px] text-success-green mb-4">
+                    85%
+                </div>
+                <div class="font-inter font-medium text-5xl text-dark-gray leading-tight">
+                    RETENSI<br>KLIEN
+                </div>
+            </div>
+            
+            <!-- Metric 5 -->
+            <div class="bg-white rounded-3xl p-12 shadow-xl text-center">
+                <div class="font-poppins font-extrabold text-[140px] text-success-green mb-4">
+                    9/10
+                </div>
+                <div class="font-inter font-medium text-5xl text-dark-gray leading-tight">
+                    KEPUASAN<br>PENGGUNA
+                </div>
+            </div>
+            
+            <!-- Metric 6 -->
+            <div class="bg-white rounded-3xl p-12 shadow-xl text-center">
+                <div class="font-poppins font-extrabold text-[140px] text-success-green mb-4">
+                    1.743%
+                </div>
+                <div class="font-inter font-medium text-5xl text-dark-gray leading-tight">
+                    ROI<br>(5 TAHUN)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5: TEKNOLOGI (White Background) -->
+    <div class="bg-white px-24 py-20">
+        <h2 class="font-poppins font-semibold text-7xl text-navy mb-12 flex items-center">
+            <span class="text-8xl mr-6">🛠️</span>
+            TEKNOLOGI YANG DIGUNAKAN
+        </h2>
+        
+        <!-- Tech Logos -->
+        <div class="bg-gray-50 rounded-3xl p-12 mb-10">
+            <div class="flex justify-around items-center mb-10">
+                <div class="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                    <span class="font-poppins font-bold text-5xl text-red-600">Laravel</span>
+                </div>
+                <div class="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                    <span class="font-poppins font-bold text-5xl text-indigo-600">PHP</span>
+                </div>
+                <div class="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                    <span class="font-poppins font-bold text-5xl text-blue-600">MySQL</span>
+                </div>
+                <div class="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                    <span class="font-poppins font-bold text-5xl text-cyan-500">Tailwind</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tech Details -->
+        <div class="space-y-4 text-4xl text-dark-gray">
+            <p class="font-inter"><span class="font-semibold">Framework:</span> Laravel 10 (Full-stack MVC Architecture)</p>
+            <p class="font-inter"><span class="font-semibold">Database:</span> MySQL 8.0 dengan Eloquent ORM</p>
+            <p class="font-inter"><span class="font-semibold">Frontend:</span> Blade Templates + Tailwind CSS</p>
+            <p class="font-inter"><span class="font-semibold">Payment:</span> Midtrans Gateway Integration</p>
+        </div>
+    </div>
+
+    <!-- SECTION 6: SCREENSHOT SISTEM (Light Gray Background) -->
+    <div class="bg-gray-100 px-24 py-20">
+        <h2 class="font-poppins font-semibold text-7xl text-navy mb-16 text-center flex items-center justify-center">
+            <span class="text-8xl mr-6">📱</span>
+            TAMPILAN SISTEM
+        </h2>
+        
+        <!-- Screenshots Grid -->
+        <div class="grid grid-cols-3 gap-10">
+            <!-- Screenshot 1 -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+                <div class="bg-gradient-to-br from-navy to-purple-900 rounded-2xl h-96 flex items-center justify-center mb-6">
+                    <span class="text-white text-5xl font-poppins font-semibold">Dashboard<br>Klien</span>
+                </div>
+                <p class="text-center font-inter text-4xl text-dark-gray font-medium">Dashboard Klien</p>
+            </div>
+            
+            <!-- Screenshot 2 -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+                <div class="bg-gradient-to-br from-pink-accent to-orange-400 rounded-2xl h-96 flex items-center justify-center mb-6">
+                    <span class="text-white text-5xl font-poppins font-semibold">Booking<br>Flow</span>
+                </div>
+                <p class="text-center font-inter text-4xl text-dark-gray font-medium">Proses Reservasi</p>
+            </div>
+            
+            <!-- Screenshot 3 -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+                <div class="bg-gradient-to-br from-success-green to-teal-500 rounded-2xl h-96 flex items-center justify-center mb-6">
+                    <span class="text-white text-5xl font-poppins font-semibold">Terapis<br>Dashboard</span>
+                </div>
+                <p class="text-center font-inter text-4xl text-dark-gray font-medium">Dashboard Terapis</p>
+            </div>
+        </div>
+        
+        <p class="text-center text-3xl text-gray-500 mt-10 font-inter italic">
+            * Ganti dengan screenshot asli sistem untuk hasil terbaik
+        </p>
+    </div>
+
+    <!-- SECTION 7: FOOTER (Navy Blue Background) -->
+    <div class="bg-navy text-white px-24 py-20">
+        <!-- Tim Proyek -->
+        <div class="mb-12">
+            <h3 class="font-poppins font-semibold text-6xl mb-6 flex items-center">
+                <span class="text-7xl mr-4">👥</span>
+                TIM PROYEK
+            </h3>
+            <p class="font-inter text-4xl opacity-90">
+                Roki Anjas (11250066) • Susanto (11250068) • Fahruroji (11250085)
+            </p>
+        </div>
+        
+        <!-- Dosen Pembimbing -->
+        <div class="mb-12">
+            <h3 class="font-poppins font-semibold text-6xl mb-6 flex items-center">
+                <span class="text-7xl mr-4">👨‍🏫</span>
+                DOSEN PEMBIMBING
+            </h3>
+            <p class="font-inter text-4xl opacity-90">
+                Rani Irma Handayani, M.Kom (NIDN: 0328068201)
+            </p>
+        </div>
+        
+        <!-- Divider -->
+        <div class="border-t-2 border-white/30 my-12"></div>
+        
+        <!-- Kontak & QR Code -->
+        <div class="flex justify-between items-center mb-12">
+            <div>
+                <h3 class="font-poppins font-semibold text-6xl mb-8 flex items-center">
+                    <span class="text-7xl mr-4">📞</span>
+                    KONTAK & INFORMASI
+                </h3>
+                <div class="space-y-4 text-4xl">
+                    <p class="font-inter flex items-center">
+                        <span class="text-5xl mr-4">📧</span>
+                        curheart.project@gmail.com
+                    </p>
+                    <p class="font-inter flex items-center">
+                        <span class="text-5xl mr-4">🌐</span>
+                        github.com/curheart-project
+                    </p>
+                    <p class="font-inter flex items-center">
+                        <span class="text-5xl mr-4">📱</span>
+                        @curheart.official
+                    </p>
+                </div>
+            </div>
+            
+            <!-- QR Code -->
+            <div class="text-center">
+                <div class="w-80 h-80 bg-white rounded-2xl flex items-center justify-center mb-4">
+                    <span class="text-navy text-5xl font-bold">QR<br>CODE</span>
+                </div>
+                <p class="font-inter text-3xl opacity-80">Scan untuk Demo<br>& Kuesioner</p>
+            </div>
+        </div>
+        
+        <!-- Divider -->
+        <div class="border-t-2 border-white/30 my-12"></div>
+        
+        <!-- Institution Info -->
+        <div class="text-center">
+            <div class="w-64 h-32 bg-white/10 rounded-lg flex items-center justify-center mx-auto mb-8">
+                <span class="text-4xl font-bold">LOGO UNM</span>
+            </div>
+            <div class="font-inter text-4xl opacity-90 leading-relaxed">
+                <p class="font-semibold">Program Studi Sistem Informasi</p>
+                <p>Fakultas Teknologi Informasi</p>
+                <p>Universitas Nusa Mandiri</p>
+                <p class="mt-4 text-5xl font-bold">2025/2026</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Instructions for Print -->
+<div class="fixed bottom-4 right-4 bg-navy text-white p-6 rounded-lg shadow-2xl max-w-md z-50">
+    <h4 class="font-poppins font-bold text-xl mb-2">📋 Panduan Cetak</h4>
+    <ul class="font-inter text-sm space-y-1">
+        <li>1. Tekan Ctrl+P (Windows) atau Cmd+P (Mac)</li>
+        <li>2. Pilih "Save as PDF" atau printer</li>
+        <li>3. Set ukuran: Custom (60cm x 160cm)</li>
+        <li>4. Margin: None</li>
+        <li>5. Background graphics: ON</li>
+        <li>6. Ganti placeholder logo & screenshot dengan asli</li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -222,7 +222,7 @@ Pastikan semua teks mudah dibaca dari jarak 2-3 meter!
 │                                                       │
 │  [LOGO UNM]  Program Studi Sistem Informasi         │
 │              Fakultas Teknologi Informasi            │
-│              Universitas Nusa Mandiri - 2024         │
+│              Universitas Nusa Mandiri - 2025         │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -380,7 +380,7 @@ Rani Irma Handayani, M.Kom (NIDN: 0328068201)
 Program Studi Sistem Informasi
 Fakultas Teknologi Informasi
 Universitas Nusa Mandiri
-2024/2025
+2025/2026
 ```
 
 ---
@@ -452,11 +452,8 @@ Margin Atas-Bawah: 2-3cm
 - [ ] Dashboard Klien (landscape, 1920x1080)
 - [ ] Booking Flow (landscape, 1920x1080)
 - [ ] Dashboard Terapis (landscape, 1920x1080)
-- [ ] Atau: 3 screenshot dalam device mockup
 
 ### QR Code
-- [ ] QR Code ke GitHub repository
-- [ ] QR Code ke demo sistem (jika ada)
 - [ ] QR Code ke Google Form kuesioner
 
 ### Ilustrasi/Grafik (Opsional)
@@ -542,7 +539,7 @@ Margin Atas-Bawah: 2-3cm
 
 ## 💰 ESTIMASI BIAYA CETAK
 
-### Harga Referensi (Jakarta, 2024)
+### Harga Referensi (Jakarta, 2025)
 ```
 X-Banner 60x160cm:
 - Material Flexi Korea: Rp 80.000 - 120.000
@@ -611,4 +608,4 @@ X-Banner adalah **first impression** proyek Anda di pameran. Pastikan:
 
 **Prepared by**: Tim Proyek CUR-HEART  
 **Document Version**: 1.0  
-**Last Updated**: November 2024
+**Last Updated**: November 2025

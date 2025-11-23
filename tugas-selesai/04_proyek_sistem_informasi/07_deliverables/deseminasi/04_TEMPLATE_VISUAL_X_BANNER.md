@@ -211,7 +211,7 @@ Berikut adalah representasi visual lengkap X-Banner dalam format ASCII art untuk
 ║   Program Studi Sistem Informasi                                     ║
 ║   Fakultas Teknologi Informasi                                       ║
 ║   Universitas Nusa Mandiri                                           ║
-║   2024/2025                                                          ║
+║   2025/2026                                                          ║
 ║   Font: Inter Regular, 14pt, White                                   ║
 ║                                                                       ║
 ╚═══════════════════════════════════════════════════════════════════════╝
@@ -594,4 +594,4 @@ Jika butuh bantuan desain, hubungi:
 
 **Prepared by**: Tim Proyek CUR-HEART  
 **Document Version**: 1.0  
-**Last Updated**: November 2024
+**Last Updated**: November 2025

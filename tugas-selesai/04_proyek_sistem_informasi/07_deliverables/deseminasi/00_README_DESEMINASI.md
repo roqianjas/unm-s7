@@ -380,5 +380,5 @@ Jika ada pertanyaan atau butuh bantuan, jangan ragu untuk menghubungi tim atau d
 
 **Prepared by**: Tim Proyek CUR-HEART  
 **Document Version**: 1.0  
-**Last Updated**: November 2024  
+**Last Updated**: November 2025  
 **License**: Internal Use - Universitas Nusa Mandiri
