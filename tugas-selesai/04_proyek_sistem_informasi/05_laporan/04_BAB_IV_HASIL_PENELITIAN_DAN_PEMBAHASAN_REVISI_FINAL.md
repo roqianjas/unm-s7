@@ -3,15 +3,15 @@
 
 ## 4.1. INISIASI PROYEK
 
-Proyek pengembangan Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART diinisiasi berdasarkan kebutuhan untuk mengoptimalkan operasional pusat layanan hipnoterapi dan kesehatan mental. CUR-HEART (*Hypnotherapy & Mind Wellness Center*) mengalami pertumbuhan signifikan dalam jumlah klien dan terapis, namun sistem manual yang digunakan menghambat efisiensi dan kualitas layanan.
+Proyek pengembangan Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART diinisiasi berdasarkan kebutuhan untuk mengoptimalkan operasional pusat layanan hipnoterapi dan kesehatan mental. CUR-HEART (*Hypnotherapy & Mind Wellness Center*) mengalami pertumbuhan signifikan dalam jumlah klien dan terapis, namun sistem manual yang digunakan menghambat efisiensi dan kualitas layanan.
 
 ### 4.1.1 Latar Belakang Masalah
 
 Berdasarkan observasi dan wawancara yang dilakukan pada September 2024, teridentifikasi beberapa permasalahan utama:
 
-1. **Proses pemesanan manual** melalui WhatsApp dan telepon yang memakan waktu lama dan mengurangi tingkat konversi (hanya 60% dari pertanyaan menjadi pemesanan aktual)
+1. **Proses reservasi manual** melalui WhatsApp dan telepon yang memakan waktu lama dan mengurangi tingkat konversi (hanya 60% dari pertanyaan menjadi reservasi aktual)
 
-2. **Konflik jadwal dan pemesanan ganda** terjadi 8-10 kasus per bulan karena manajemen jadwal menggunakan spreadsheet terpisah
+2. **Konflik jadwal dan reservasi ganda** terjadi 8-10 kasus per bulan karena manajemen jadwal menggunakan spreadsheet terpisah
 
 3. **Dokumentasi terapi tidak terstruktur** dimana terapis menghabiskan 15 menit per sesi untuk pencatatan manual dengan risiko data hilang
 
@@ -25,32 +25,32 @@ Berdasarkan observasi dan wawancara yang dilakukan pada September 2024, terident
 
 Berdasarkan latar belakang di atas, penulis mengidentifikasikan beberapa masalah sebagai berikut:
 
-a. Pelayanan pemesanan terapi masih dilaksanakan secara konvensional sehingga kurang efektif dan efisien
+a. Pelayanan reservasi terapi masih dilaksanakan secara konvensional sehingga kurang efektif dan efisien
 
-b. Belum adanya sistem informasi pemesanan berbasis web untuk pemesanan dan manajemen terapi
+b. Belum adanya sistem informasi reservasi berbasis web untuk reservasi dan manajemen terapi
 
-c. Banyak terjadi kehilangan data klien karena belum adanya sistem informasi yang dapat mendata siapa saja klien yang sedang melakukan pemesanan dan mengikuti sesi terapi
+c. Banyak terjadi kehilangan data klien karena belum adanya sistem informasi yang dapat mendata siapa saja klien yang sedang melakukan reservasi dan mengikuti sesi terapi
 
 ### 4.1.3 Ruang Lingkup
 
 Ruang lingkup proyek ini mencakup pengembangan sistem informasi berbasis web dengan fitur-fitur utama:
 
-- **Modul Pemesanan Online**: Klien dapat melihat jadwal terapis, memilih layanan, dan melakukan pemesanan secara mandiri 24/7
+- **Modul Reservasi Online**: Klien dapat melihat jadwal terapis, memilih layanan, dan melakukan reservasi secara mandiri 24/7
 - **Manajemen Jadwal Terapis**: Sistem penjadwalan otomatis dengan deteksi konflik dan notifikasi
 - **Dokumentasi Sesi Terapi**: Platform digital untuk terapis mencatat dan mengakses riwayat terapi klien
 - **Pembayaran Terintegrasi**: Integrasi dengan *payment gateway* Midtrans untuk pembayaran online
-- **Dashboard Admin**: Panel kontrol untuk pemantauan pemesanan, terapis, dan laporan keuangan
+- **Dashboard Admin**: Panel kontrol untuk pemantauan reservasi, terapis, dan laporan keuangan
 - **Notifikasi Otomatis**: Pengingat email untuk klien dan terapis tentang jadwal sesi
 
 ### 4.1.4 Tujuan dan Manfaat Penelitian
 
 **Tujuan penelitian dalam capstone project ini adalah:**
 
-a. Agar pelayanan pemesanan terapi dapat berjalan dengan efektif dan efisien
+a. Agar pelayanan reservasi terapi dapat berjalan dengan efektif dan efisien
 
-b. Sistem informasi pemesanan diharapkan dapat memudahkan klien dalam melakukan pemesanan dan melihat riwayat terapi
+b. Sistem informasi reservasi diharapkan dapat memudahkan klien dalam melakukan reservasi dan melihat riwayat terapi
 
-c. Dengan adanya sistem informasi dapat memudahkan baik klien, petugas admin, maupun terapis dalam pengelolaan data pemesanan dan sesi terapi, sehingga semuanya dapat terkontrol dengan baik
+c. Dengan adanya sistem informasi dapat memudahkan baik klien, petugas admin, maupun terapis dalam pengelolaan data reservasi dan sesi terapi, sehingga semuanya dapat terkontrol dengan baik
 
 d. Sebagai salah satu syarat kelulusan pada Program Studi Strata Satu (S1) untuk Program Studi Sistem Informasi di Fakultas Teknologi Informasi Universitas Nusa Mandiri
 
@@ -59,7 +59,7 @@ d. Sebagai salah satu syarat kelulusan pada Program Studi Strata Satu (S1) untuk
 Penelitian ini diharapkan memberikan manfaat bagi berbagai pihak:
 
 - **Bagi CUR-HEART**: Meningkatkan efisiensi operasional, mengurangi kesalahan jadwal, dan mempercepat pertumbuhan bisnis
-- **Bagi Klien**: Kemudahan dalam pemesanan layanan terapi kapan saja tanpa harus menghubungi admin
+- **Bagi Klien**: Kemudahan dalam reservasi layanan terapi kapan saja tanpa harus menghubungi admin
 - **Bagi Terapis**: Mengurangi beban administratif dan memudahkan akses riwayat klien
 - **Bagi Admin**: Otomasi tugas repetitif sehingga dapat fokus pada layanan pelanggan yang lebih berkualitas
 - **Bagi Akademik**: Sebagai referensi pengembangan sistem informasi sejenis untuk layanan kesehatan mental
@@ -205,7 +205,7 @@ Standar kualitas yang ditetapkan untuk proyek ini:
 **A. Standar Kualitas Fungsional:**
 - **Fungsionalitas**: Minimal 90% kebutuhan fungsional harus terpenuhi dan berfungsi dengan baik
 - **Akurasi**: 100% akurasi dalam perhitungan pembayaran, penjadwalan, dan pelaporan
-- **Kelengkapan**: Semua modul utama (pemesanan, pembayaran, dasbor) harus tersedia
+- **Kelengkapan**: Semua modul utama (reservasi, pembayaran, dasbor) harus tersedia
 - **Interoperabilitas**: Integrasi Midtrans dan layanan email berfungsi tanpa galat
 
 **B. Standar Kualitas Non-Fungsional:**
@@ -358,7 +358,7 @@ Integrasi sistem dengan layanan eksternal:
 - **Kasus Penggunaan**:
   - Email selamat datang saat registrasi
   - Email verifikasi
-  - Konfirmasi pemesanan
+  - Konfirmasi reservasi
   - Notifikasi pembayaran
   - Pengingat sesi (H-1, H-0)
   - Reset kata sandi
@@ -459,7 +459,7 @@ Asumsi-asumsi yang mendasari perencanaan proyek:
 **F. Asumsi Pengguna:**
 - Klien CUR-HEART memiliki akses internet dan perangkat (smartphone/laptop/tablet)
 - Pengguna memiliki kemampuan dasar menggunakan teknologi digital
-- Klien bersedia mengadopsi sistem online untuk pemesanan
+- Klien bersedia mengadopsi sistem online untuk reservasi
 
 **G. Asumsi Regulasi:**
 - Tidak ada perubahan regulasi terkait data pribadi atau layanan kesehatan mental selama proyek
@@ -473,11 +473,11 @@ Berikut ini adalah deskripsi umum (*high-level*) mengenai produk atau layanan ya
 
 ### 4.3.1 Tujuan Proyek
 
-Tujuan proyek ini adalah membangun sistem informasi berbasis web yang dapat memberikan informasi yang berkaitan dengan manajemen pemesanan dan terapi hipnoterapi CUR-HEART, mencakup:
+Tujuan proyek ini adalah membangun sistem informasi berbasis web yang dapat memberikan informasi yang berkaitan dengan manajemen reservasi dan terapi hipnoterapi CUR-HEART, mencakup:
 
 - Informasi lengkap tentang layanan terapi yang ditawarkan
 - Profil terapis dengan spesialisasi dan jadwal ketersediaan
-- Sistem pemesanan online yang mudah dan cepat
+- Sistem reservasi online yang mudah dan cepat
 - Manajemen sesi terapi dan dokumentasi klien
 - Pembayaran online yang aman dan terintegrasi
 - Dasbor analitik untuk pengambilan keputusan
@@ -489,27 +489,27 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 **A. Untuk Klien:**
 - Menampilkan informasi jumlah layanan, terapis, dan testimoni
 - Menampilkan informasi layanan terbaru dan terapis unggulan
-- Memberikan kemampuan pemesanan layanan secara online 24/7
-- Menampilkan riwayat pemesanan dan sesi terapi
+- Memberikan kemampuan reservasi layanan secara online 24/7
+- Menampilkan riwayat reservasi dan sesi terapi
 - Menyediakan sistem pembayaran yang aman dan mudah
 - Menampilkan kemajuan terapi dan catatan sesi (yang dibagikan)
 
 **B. Untuk Terapis:**
 - Manajemen jadwal dan ketersediaan secara mandiri
-- Melihat daftar klien dan detail pemesanan hari ini
+- Melihat daftar klien dan detail reservasi hari ini
 - Mendokumentasikan sesi terapi dengan formulir terstruktur
 - Mengakses riwayat lengkap klien untuk kontinuitas perawatan
 - Melihat dasbor pendapatan dan statistik kinerja
 - Memperbarui profil dan pengaturan notifikasi
 
 **C. Untuk Admin:**
-- Pemantauan pemesanan waktu nyata dengan pelacakan status
+- Pemantauan reservasi waktu nyata dengan pelacakan status
 - Manajemen pengguna (klien, terapis, admin)in)
 - Manajemen layanan (operasi CRUD)
 - Laporan keuangan dan analitik:
-  - Total pemesanan dan pendapatan
+  - Total reservasi dan pendapatan
   - Rincian per layanan dan terapis
-  - Trend pemesanan bulanan
+  - Trend reservasi bulanan
 - Approval dan verifikasi terapis baru
 - System settings dan configuration
 
@@ -530,8 +530,8 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 - Lupa kata sandi & atur ulang kata sandi
 - Social login (Google, Facebook) - opsional
 
-**C. Modul Pemesanan**
-- Wizard pemesanan 4 langkah:
+**C. Modul Reservasi**
+- Wizard reservasi 4 langkah:
   1. Pilih layanan terapi
   2. Pilih terapis (atau penugasan otomatis)
   3. Pilih tanggal & waktu
@@ -539,7 +539,7 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 - Pengecekan ketersediaan waktu nyatayata
 - Tipe sesi: Daring/*Online*/Luring/*Offline*
 - Dukungan kode promo
-- Email konfirmasi pemesanan
+- Email konfirmasi reservasi
 
 **D. Modul Pembayaran**
 - Integrasi *payment gateway* Midtrans
@@ -568,17 +568,17 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 - Manajemen profil
 
 **G. Modul Dasbor Admin**
-- Kartu statistik: Pengguna, pemesanan, pendapatan, kesehatan sistem
+- Kartu statistik: Pengguna, reservasi, pendapatan, kesehatan sistem
 - Grafik: Tren pendapatan, pertumbuhan pengguna, layanan teratasayanan teratas
 - Manajemen pengguna (CRUD, menyetujui terapis)
-- Manajemen pemesanan (lihat, edit, batalkan, pengembalian dana)
+- Manajemen reservasi (lihat, edit, batalkan, pengembalian dana)
 - Manajemen layanan (CRUD)
 - Laporan keuangan (ekspor Excel/PDF)
 - Pengaturan sistem
 
 **H. Modul Notifikasi**
 - Notifikasi email:
-  - Konfirmasi pemesanan
+  - Konfirmasi reservasi
   - Pembayaran berhasil
   - Pengingat sesi (H-1, H-0)
   - Notifikasi pembatalan
@@ -586,7 +586,7 @@ Sistem ini memiliki 3 tipe pengguna utama dengan hak akses berbeda. Sistem yang 
 - Pengingat SMS (pengembangan mendatang)
 
 **I. Modul Pelaporan**
-- Laporan pemesanan: Harian, mingguan, bulanan
+- Laporan reservasi: Harian, mingguan, bulanan
 - Laporan pendapatan: Per layanan, per terapis
 - Laporan aktivitas pengguna
 - Format ekspor: PDF, Excel, CSV
@@ -643,7 +643,7 @@ Sistem menggunakan 16 tabel utama:
 4. **services** - Katalog layanan terapi
 5. **therapist_services** - Relasi terapis-layanan
 6. **therapist_availability** - Jadwal ketersediaan terapis
-7. **bookings** - Data pemesanan
+7. **bookings** - Data reservasi
 8. **sessions** - Data sesi terapi
 9. **session_notes** - Catatan sesi dari terapis
 10. **payments** - Transaksi pembayaran
@@ -663,7 +663,7 @@ Normalisasi: **Third Normal Form (3NF)** untuk menghindari redundansi dan anomal
 - Aksi: Registrasi, login, kontak
 
 **B. Klien**
-- Lihat: Semua izin tamu + dasbor, pemesanan, kemajuan, pesan
+- Lihat: Semua izin tamu + dasbor, reservasi, kemajuan, pesan
 - Aksi: Pesan layanan, lakukan pembayaran, jadwal ulang/batalkan, beri ulasan, obrolan
 
 **C. Terapis**
@@ -671,7 +671,7 @@ Normalisasi: **Third Normal Form (3NF)** untuk menghindari redundansi dan anomal
 - Aksi: Atur ketersediaan, dokumentasi sesi, lihat riwayat klien, obrolan, perbarui profil
 
 **D. Administrator**
-- Lihat: Semua data (pengguna, pemesanan, pembayaran, laporan)
+- Lihat: Semua data (pengguna, reservasi, pembayaran, laporan)
 - Aksi: CRUD penuh pada semua sumber daya, menyetujui terapis, membuat laporan, pengaturan sistem
 
 ### 4.3.7 Keamanan Sistem
@@ -749,17 +749,17 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 
 **Untuk Klien:**
 - Melihat jadwal terapis yang tersedia
-- Membuat pemesanan layanan terapi
+- Membuat reservasi layanan terapi
 - Memilih terapis dan waktu sesi
 - Melakukan pembayaran daring
-- Melihat riwayat pemesanan
+- Melihat riwayat reservasi
 - Melihat riwayat sesi terapi
 - Perbarui profil
-- Membatalkan/jadwal ulang pemesanan (dengan syarat)
+- Membatalkan/jadwal ulang reservasi (dengan syarat)
 
 **Untuk Terapis:**
 - Melihat jadwal sesi terapi hari ini dan minggu ini
-- Melihat detail pemesanan klien
+- Melihat detail reservasi klien
 - Mengatur ketersediaan jadwal
 - Mendokumentasikan sesi terapi (catatan sesi)
 - Melihat riwayat klien
@@ -770,9 +770,9 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 - Mengelola data layanan terapi
 - Mengelola data terapis
 - Mengelola data klien
-- Melihat semua pemesanan
+- Melihat semua reservasi
 - Konfirmasi pembayaran manual (jika ada)
-- Membuat laporan (pemesanan, keuangan, kinerja)
+- Membuat laporan (reservasi, keuangan, kinerja)
 - Pemantauan sistem
 
 **Untuk *Payment Gateway*:**
@@ -784,11 +784,11 @@ Use Case Diagram menggambarkan interaksi antara aktor (pengguna) dengan sistem, 
 
 Activity Diagram menggambarkan alur aktivitas dalam sistem untuk berbagai proses bisnis.
 
-**a. Activity Diagram Proses Pemesanan Terapi oleh Klien**
+**a. Activity Diagram Proses Reservasi Terapi oleh Klien**
 
-**[GAMBAR 4.4 - Activity Diagram Pemesanan Terapi]**
+**[GAMBAR 4.4 - Activity Diagram Reservasi Terapi]**
 
-Alur proses pemesanan terapi:
+Alur proses reservasi terapi:
 1. Klien login ke sistem
 2. Klien memilih layanan terapi yang diinginkan
 3. Sistem menampilkan daftar terapis dan jadwal yang tersedia
@@ -797,9 +797,9 @@ Alur proses pemesanan terapi:
    - Jika tidak tersedia: Tampilkan pesan kesalahan, kembali ke pemilihan jadwal
    - Jika tersedia: Lanjut ke langkah berikutnya
 6. Klien mengisi informasi tambahan (keluhan, catatan)
-7. Sistem menampilkan ringkasan pemesanan dan total biaya
-8. Klien konfirmasi pemesanan
-9. Sistem membuat catatan pemesanan dengan status "Pending Payment"
+7. Sistem menampilkan ringkasan reservasi dan total biaya
+8. Klien konfirmasi reservasi
+9. Sistem membuat catatan reservasi dengan status "Pending Payment"
 10. Sistem alihkan ke *payment gateway* (Midtrans)
 11. Klien melakukan pembayaran
 12. *Payment gateway* memproses transaksi
@@ -841,7 +841,7 @@ Alur proses dokumentasi sesi terapi:
 Alur proses membuat laporan:
 1. Admin masuk ke sistem
 2. Admin mengakses menu laporan
-3. Admin memilih jenis laporan (pemesanan, keuangan, kinerja terapis, klien)
+3. Admin memilih jenis laporan (reservasi, keuangan, kinerja terapis, klien)
 4. Admin memilih periode (tanggal mulai - tanggal selesai)
 5. Admin memilih penyaring tambahan (terapis tertentu, layanan tertentu, dll)
 6. Admin klik tombol "Generate Laporan"
@@ -867,7 +867,7 @@ Entity Relationship Diagram (ERD) menggambarkan struktur basis data sistem infor
 6. **therapist_availability** - Menyimpan jadwal ketersediaan terapis per hari
 7. **therapist_unavailability** - Menyimpan data ketidaktersediaan terapis (cuti, sakit)
 8. **promo_codes** - Menyimpan kode promo dan diskon
-9. **bookings** - Menyimpan data pemesanan terapi
+9. **bookings** - Menyimpan data reservasi terapi
 10. **payments** - Menyimpan data pembayaran
 11. **sessions** - Menyimpan data sesi terapi yang sudah dilaksanakan
 12. **session_notes** - Menyimpan catatan dokumentasi sesi terapi
@@ -900,7 +900,7 @@ Entity Relationship Diagram (ERD) menggambarkan struktur basis data sistem infor
 - therapists (1) ↔ (M) reviews: *One-to-Many*
 - therapists (1) ↔ (M) withdrawals: *One-to-Many*
 
-**Relasi Pemesanan:**
+**Relasi Reservasi:**
 - clients (1) ↔ (M) bookings: *One-to-Many*
 - services (1) ↔ (M) bookings: *One-to-Many*
 - promo_codes (1) ↔ (M) bookings: *One-to-Many*
@@ -1033,26 +1033,26 @@ Sistem memiliki **66 halaman mockup** yang terbagi dalam beberapa kategori:
 **[GAMBAR 4.25 - Mockup Dasbor Klien - Dasbor Utama]**
 - **Dasbor Utama**: Sambutan, statistik cepat, janji temu berikutnya, sesi mendatang, ikhtisar kemajuan
 
-**[GAMBAR 4.26 - Mockup Pemesanan Langkah 1 - Pilih Layanan]**
-- **Pemesanan Langkah 1**: Pemilihan layanan dengan kartu layanan
+**[GAMBAR 4.26 - Mockup Reservasi Langkah 1 - Pilih Layanan]**
+- **Reservasi Langkah 1**: Pemilihan layanan dengan kartu layanan
 
-**[GAMBAR 4.27 - Mockup Pemesanan Langkah 2 - Pilih Terapis]**
-- **Pemesanan Langkah 2**: Pilih terapis dengan profil dan rating
+**[GAMBAR 4.27 - Mockup Reservasi Langkah 2 - Pilih Terapis]**
+- **Reservasi Langkah 2**: Pilih terapis dengan profil dan rating
 
-**[GAMBAR 4.28 - Mockup Pemesanan Langkah 3 - Pilih Jadwal]**
-- **Pemesanan Langkah 3**: Pemilih tanggal & waktu dengan ketersediaan waktu nyata
+**[GAMBAR 4.28 - Mockup Reservasi Langkah 3 - Pilih Jadwal]**
+- **Reservasi Langkah 3**: Pemilih tanggal & waktu dengan ketersediaan waktu nyata
 
-**[GAMBAR 4.29 - Mockup Pemesanan Langkah 4 - Konfirmasi & Pembayaran]**
-- **Pemesanan Langkah 4**: Konfirmasi & pembayaran dengan ringkasan pemesanan
+**[GAMBAR 4.29 - Mockup Reservasi Langkah 4 - Konfirmasi & Pembayaran]**
+- **Reservasi Langkah 4**: Konfirmasi & pembayaran dengan ringkasan reservasi
 
-**[GAMBAR 4.30 - Mockup Pemesanan Berhasil]**
-- **Pemesanan Berhasil**: Selamat, detail pemesanan, langkah selanjutnya, tombol aksi
+**[GAMBAR 4.30 - Mockup Reservasi Berhasil]**
+- **Reservasi Berhasil**: Selamat, detail reservasi, langkah selanjutnya, tombol aksi
 
 **[GAMBAR 4.31 - Mockup Janji Temu Saya]**
 - **Janji Temu Saya**: Tab (mendatang/lampau/dibatalkan), filter & urutkan, kartu janji temu
 
 **[GAMBAR 4.32 - Mockup Detail Janji Temu]**
-- **Detail Janji Temu**: Info pemesanan, info pembayaran, catatan sesi, aksi jadwal ulang/batalkan
+- **Detail Janji Temu**: Info reservasi, info pembayaran, catatan sesi, aksi jadwal ulang/batalkan
 
 **[GAMBAR 4.33 - Mockup Dasbor Kemajuan]**
 - **Dasbor Kemajuan**: Skor kesehatan, kehadiran sesi, tujuan & pencapaian, pelacakan suasana hati
@@ -1075,7 +1075,7 @@ Sistem memiliki **66 halaman mockup** yang terbagi dalam beberapa kategori:
 - **Manajemen Jadwal**: Tampilan kalender (hari/minggu/bulan), blok janji temu, waktu libur
 
 **[GAMBAR 4.39 - Mockup Pengaturan Ketersediaan]**
-- **Pengaturan Ketersediaan**: Jam kerja per hari, durasi sesi, jendela pemesanan, tanggal khusus
+- **Pengaturan Ketersediaan**: Jam kerja per hari, durasi sesi, jendela reservasi, tanggal khusus
 
 **[GAMBAR 4.40 - Mockup Daftar Klien]**
 - **Daftar Klien**: Cari & filter, kartu klien dengan statistik, aksi massal
@@ -1110,10 +1110,10 @@ Sistem memiliki **66 halaman mockup** yang terbagi dalam beberapa kategori:
 **5. Dashboard Admin (25 halaman):**
 
 **[GAMBAR 4.50 - Mockup Dasbor Admin - Dasbor Utama]**
-- **Dasbor Utama**: Metrik kunci, grafik pendapatan, pemesanan terbaru, pertumbuhan pengguna, peringatan sistem
+- **Dasbor Utama**: Metrik kunci, grafik pendapatan, reservasi terbaru, pertumbuhan pengguna, peringatan sistem
 
-**[GAMBAR 4.46 - Mockup Manajemen Pemesanan]**
-- **Manajemen Pemesanan**: Ringkasan statistik, tab (semua/mendatang/lampau/tertunda/dibatalkan/sengketa), tabel pemesanan
+**[GAMBAR 4.46 - Mockup Manajemen Reservasi]**
+- **Manajemen Reservasi**: Ringkasan statistik, tab (semua/mendatang/lampau/tertunda/dibatalkan/sengketa), tabel reservasi
 
 **[GAMBAR 4.47 - Mockup Manajemen Pengguna]**
 - **Manajemen Pengguna**: Tab (semua/klien/terapis/admin/tertunda), tabel pengguna, aksi massal
@@ -1122,7 +1122,7 @@ Sistem memiliki **66 halaman mockup** yang terbagi dalam beberapa kategori:
 - **Laporan Keuangan**: Ringkasan pendapatan, grafik, tabel transaksi, penarikan, pengembalian dana, analitik
 
 **[GAMBAR 4.49 - Mockup Pengaturan Sistem]**
-- **Pengaturan Sistem**: Navigasi kategori, umum/pemesanan/pembayaran/email/keamanan/kebijakan/integrasi/lanjutan
+- **Pengaturan Sistem**: Navigasi kategori, umum/reservasi/pembayaran/email/keamanan/kebijakan/integrasi/lanjutan
 
 **[GAMBAR 4.50 - Mockup Notifikasi Admin]**
 - **Notifikasi Admin**: Daftar notifikasi sistem, filter berdasarkan tipe, tandai sebagai dibaca
@@ -1136,8 +1136,8 @@ Sistem memiliki **66 halaman mockup** yang terbagi dalam beberapa kategori:
 **[GAMBAR 4.53 - Mockup Edit Pengguna]**
 - **Edit Pengguna**: Formulir edit data pengguna, ubah peran, status akun
 
-**[GAMBAR 4.54 - Mockup Detail Pemesanan]**
-- **Detail Pemesanan**: Informasi lengkap pemesanan, timeline status, aksi admin
+**[GAMBAR 4.54 - Mockup Detail Reservasi]**
+- **Detail Reservasi**: Informasi lengkap reservasi, timeline status, aksi admin
 
 **[GAMBAR 4.55 - Mockup Manajemen Transaksi]**
 - **Manajemen Transaksi**: Daftar semua transaksi pembayaran, filter, ekspor laporan
@@ -1363,15 +1363,15 @@ Faktor Kritis Keberhasilan adalah faktor-faktor yang **HARUS** dipenuhi agar pro
 - *RBAC* (*Role-Based Access Control*) berfungsi dengan baik
 
 **CSF 3: Adopsi dan Kepuasan Pengguna**
-- Minimal 70% klien menggunakan sistem untuk pemesanan
+- Minimal 70% klien menggunakan sistem untuk reservasi
 - Skor kepuasan pengguna ≥ 4,0 dari 5,0
 - Skor SUS (*System Usability Scale*) ≥ 68
 - Tingkat adopsi terapis 100%
 
 **CSF 4: Integrasi dengan Proses Bisnis**
-- 100% pemesanan melalui sistem (tidak ada lagi manual)
+- 100% reservasi melalui sistem (tidak ada lagi manual)
 - Pengurangan beban kerja administratif minimal 50%
-- Pengurangan kesalahan pemesanan hingga 90%
+- Pengurangan kesalahan reservasi hingga 90%
 - Laporan dapat dihasilkan dalam 5 menit
 
 **CSF 5: Kepatuhan Anggaran dan Jadwal**
@@ -1394,14 +1394,14 @@ KPI adalah metrik terukur untuk memantau keberhasilan sistem setelah penerapan.
 | | Insiden Pelanggaran Data (*Data Breach Incidents*) | 0 | Waktu nyata (*real-time*) |
 | **Adopsi Pengguna** | Total Pengguna Terdaftar | 200 dalam 3 bulan | Bulanan |
 | | Pengguna Aktif Bulanan (*Monthly Active Users*) | 150 (75%) | Bulanan |
-| | Tingkat Konversi Pemesanan (*Conversion Rate*) | ≥ 60% | Mingguan |
-| **Transaksi** | Total Pemesanan/Bulan | 100 pemesanan | Bulanan |
+| | Tingkat Konversi Reservasi (*Conversion Rate*) | ≥ 60% | Mingguan |
+| **Transaksi** | Total Reservasi/Bulan | 100 reservasi | Bulanan |
 | | Tingkat Keberhasilan Pembayaran (*Payment Success Rate*) | ≥ 95% | Mingguan |
 | | Pendapatan/Bulan | Rp 30 juta | Bulanan |
-| **Kepuasan** | Skor Kepuasan Pengguna | ≥ 4,0/5,0 | Per pemesanan |
+| **Kepuasan** | Skor Kepuasan Pengguna | ≥ 4,0/5,0 | Per reservasi |
 | | Skor NPS (*Net Promoter Score*) | ≥ 30 | Triwulanan |
 | | Skor SUS (*System Usability Scale*) | ≥ 68 | Triwulanan |
-| **Efisiensi** | Rata-rata Waktu Pemesanan | ≤ 3 menit | Mingguan |
+| **Efisiensi** | Rata-rata Waktu Reservasi | ≤ 3 menit | Mingguan |
 | | Pengurangan Beban Kerja Admin | ≥ 50% | Bulanan |
 | | Waktu Pembuatan Laporan | ≤ 5 menit | Bulanan |
 
@@ -1415,16 +1415,16 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 
 **A. Efisiensi Operasional**
 
-- **Proses pemesanan otomatis**: Pengurangan waktu dari 10-15 menit menjadi 3 menit per pemesanan, penghematan sekitar 20 jam per bulan
+- **Proses reservasi otomatis**: Pengurangan waktu dari 10-15 menit menjadi 3 menit per reservasi, penghematan sekitar 20 jam per bulan
 - **Manajemen penjadwalan**: Koordinasi jadwal berkurang dari 5 jam per minggu menjadi 1 jam, utilisasi meningkat dari 60% menjadi 80%
 - **Pelaporan otomatis**: Waktu pembuatan laporan dari 2 jam menjadi 5 menit, penghematan 8 jam per bulan
-- **Eliminasi pemesanan ganda**: Konflik jadwal turun dari 8-10 kasus per bulan menjadi 0 kasus
+- **Eliminasi reservasi ganda**: Konflik jadwal turun dari 8-10 kasus per bulan menjadi 0 kasus
 
 **B. Pertumbuhan Pendapatan**
 
-- **Peningkatan volume pemesanan**: Target +25% dari 80 menjadi 100 pemesanan per bulan (Rp 72 juta/tahun tambahan)
+- **Peningkatan volume reservasi**: Target +25% dari 80 menjadi 100 reservasi per bulan (Rp 72 juta/tahun tambahan)
 - **Pengurangan tidak hadir**: Dari 15% menjadi 5% dengan pengingat otomatis (Rp 28,8 juta/tahun pendapatan dipulihkan)
-- **Perpanjangan jam layanan**: Pemesanan 24/7 menangkap 15% lebih banyak klien (Rp 10 juta/tahun)
+- **Perpanjangan jam layanan**: Reservasi 24/7 menangkap 15% lebih banyak klien (Rp 10 juta/tahun)
 - **Retensi klien**: Peningkatan dari 35% menjadi 60% dengan pengalaman yang lebih baik
 
 **C. Kualitas & Layanan**
@@ -1442,9 +1442,9 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 
 **A. Kenyamanan**
 
-- Pemesanan 24/7 kapan saja tanpa terbatas jam kantor
+- Reservasi 24/7 kapan saja tanpa terbatas jam kantor
 - Tidak perlu telepon, layanan mandiri daring
-- Ramah perangkat seluler untuk pemesanan saat bepergian
+- Ramah perangkat seluler untuk reservasi saat bepergian
 - Penjadwalan ulang mudah tanpa koordinasi manual
 
 **B. Transparansi**
@@ -1462,7 +1462,7 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 - Pengingat otomatis untuk sesi mendatang
 
 **Nilai untuk Klien:**
-- Penghematan waktu: 25-55 menit per pemesanan
+- Penghematan waktu: 25-55 menit per reservasi
 - Target kepuasan: ≥ 4,0/5,0, SUS ≥ 68
 - Retensi meningkat: 35% → 60%
 
@@ -1607,7 +1607,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 
 **B. Layanan Email**
 - **SMTP (Mailtrap/SendGrid)**: Layanan pengiriman email
-  - Email notifikasi (konfirmasi pemesanan, pengingat)
+  - Email notifikasi (konfirmasi reservasi, pengingat)
   - Email transaksional (reset kata sandi, email selamat datang)
   - Berbasis antrian untuk menghindari pemblokiran
 

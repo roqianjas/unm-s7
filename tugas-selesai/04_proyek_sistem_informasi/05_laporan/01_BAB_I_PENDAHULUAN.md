@@ -17,11 +17,11 @@ Di tengah keterbatasan tersebut, metode terapi alternatif berbasis hipnoterapi m
 
 CUR-HEART (*Hypnotherapy & Mind Wellness Center*) hadir sebagai pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hipnoterapi modern dengan nilai-nilai spiritualitas dan humanisme. CUR-HEART menyediakan berbagai layanan terapi seperti Pelepasan Stres & Kecemasan, Penyembuhan Trauma, Kepercayaan Diri & Motivasi, Tidur & Relaksasi, Pemrograman Ulang Kebiasaan, dan Pengelolaan Fobia & Ketakutan.
 
-Namun, dalam menjalankan operasionalnya, CUR-HEART menghadapi berbagai tantangan manajerial yang menghambat efisiensi dan kualitas layanan. Proses pemesanan yang masih manual melalui telepon atau WhatsApp sering menyebabkan kesalahpahaman, pemesanan ganda (*double booking*), dan kesulitan pelacakan status. Manajemen jadwal terapis menggunakan lembar kerja atau kalender manual tidak efisien dan rawan kesalahan. Dokumentasi catatan sesi terapi yang masih menggunakan kertas atau berkas terpisah menyulitkan pencarian riwayat dan pemantauan kemajuan klien.
+Namun, dalam menjalankan operasionalnya, CUR-HEART menghadapi berbagai tantangan manajerial yang menghambat efisiensi dan kualitas layanan. Proses reservasi yang masih manual melalui telepon atau WhatsApp sering menyebabkan kesalahpahaman, reservasi ganda (*double booking*), dan kesulitan pelacakan status. Manajemen jadwal terapis menggunakan lembar kerja atau kalender manual tidak efisien dan rawan kesalahan. Dokumentasi catatan sesi terapi yang masih menggunakan kertas atau berkas terpisah menyulitkan pencarian riwayat dan pemantauan kemajuan klien.
 
-Tidak adanya sistem informasi terpadu menyebabkan CUR-HEART kesulitan menganalisis data operasional seperti tingkat hunian terapis, layanan yang diminati, aliran pendapatan, hingga kepuasan klien. Hal ini menghambat pengambilan keputusan strategis berbasis data. Klien juga tidak memiliki platform yang memudahkan mereka melihat informasi layanan, profil terapis, ketersediaan jadwal, riwayat pemesanan, serta pelacakan kemajuan terapi secara mandiri.
+Tidak adanya sistem informasi terpadu menyebabkan CUR-HEART kesulitan menganalisis data operasional seperti tingkat hunian terapis, layanan yang diminati, aliran pendapatan, hingga kepuasan klien. Hal ini menghambat pengambilan keputusan strategis berbasis data. Klien juga tidak memiliki platform yang memudahkan mereka melihat informasi layanan, profil terapis, ketersediaan jadwal, riwayat reservasi, serta pelacakan kemajuan terapi secara mandiri.
 
-Pengembangan sistem informasi manajemen pemesanan dan terapi berbasis web menjadi solusi yang sangat diperlukan. Sistem informasi dapat mengotomatisasi proses bisnis, meningkatkan akurasi data, memfasilitasi komunikasi, serta menyediakan dasbor pemantauan untuk pengambilan keputusan. Studi literatur menunjukkan implementasi sistem informasi di sektor layanan kesehatan dapat meningkatkan efisiensi operasional hingga 40%, mengurangi kesalahan administrasi hingga 60%, dan meningkatkan kepuasan pelanggan hingga 35%.
+Pengembangan sistem informasi manajemen reservasi dan terapi berbasis web menjadi solusi yang sangat diperlukan. Sistem informasi dapat mengotomatisasi proses bisnis, meningkatkan akurasi data, memfasilitasi komunikasi, serta menyediakan dasbor pemantauan untuk pengambilan keputusan. Studi literatur menunjukkan implementasi sistem informasi di sektor layanan kesehatan dapat meningkatkan efisiensi operasional hingga 40%, mengurangi kesalahan administrasi hingga 60%, dan meningkatkan kepuasan pelanggan hingga 35%.
 
 Proyek ini mengembangkan sistem informasi berbasis web menggunakan Laravel sebagai kerangka kerja utama dan Tailwind CSS untuk desain antarmuka, dengan pendekatan Siklus Hidup Pengembangan Sistem (*System Development Life Cycle*/SDLC) model air terjun (*waterfall*). Sistem yang dihasilkan diharapkan dapat memberikan solusi komprehensif untuk manajemen operasional CUR-HEART, meningkatkan pengalaman pengguna, serta mendukung pengambilan keputusan berbasis data untuk pengembangan bisnis berkelanjutan.
 
@@ -29,13 +29,13 @@ Proyek ini mengembangkan sistem informasi berbasis web menggunakan Laravel sebag
 
 Berdasarkan analisis kondisi eksisting pada CUR-HEART melalui observasi, wawancara dengan pemangku kepentingan, dan studi dokumentasi proses bisnis, teridentifikasi beberapa permasalahan utama yang menghambat efektivitas dan efisiensi operasional, yaitu:
 
-1. **Proses Pemesanan yang Tidak Efisien**
+1. **Proses Reservasi yang Tidak Efisien**
 
-   Proses pemesanan layanan terapi yang masih dilakukan secara manual melalui komunikasi telepon, WhatsApp, atau surel mengakibatkan berbagai masalah operasional. Admin harus melakukan pemeriksaan manual terhadap kalender terapis, yang memakan waktu rata-rata 5-10 menit per pemesanan. Seringkali terjadi kesalahpahaman komunikasi antara klien, admin, dan terapis mengenai jadwal atau informasi penting lainnya. Tingkat konversi dari pertanyaan menjadi pemesanan aktual hanya mencapai 60%, yang berarti 40% calon klien membatalkan niat mereka karena proses yang rumit.
+   Proses reservasi layanan terapi yang masih dilakukan secara manual melalui komunikasi telepon, WhatsApp, atau surel mengakibatkan berbagai masalah operasional. Admin harus melakukan pemeriksaan manual terhadap kalender terapis, yang memakan waktu rata-rata 5-10 menit per reservasi. Seringkali terjadi kesalahpahaman komunikasi antara klien, admin, dan terapis mengenai jadwal atau informasi penting lainnya. Tingkat konversi dari pertanyaan menjadi reservasi aktual hanya mencapai 60%, yang berarti 40% calon klien membatalkan niat mereka karena proses yang rumit.
 
 2. **Ketiadaan Sistem Manajemen Jadwal Terapis Terpadu**
 
-   Manajemen jadwal terapis menggunakan lembar kerja Excel atau Kalender Google manual tidak efisien dan rawan konflik jadwal. Setiap terapis mengelola kalendernya sendiri dengan format berbeda-beda, menyulitkan admin untuk sinkronisasi dan pemeriksaan ketersediaan secara waktu nyata. Ketika ada perubahan jadwal mendadak, proses pemberitahuan dan penjadwalan ulang dilakukan manual satu per satu. Seringkali terjadi pemesanan ganda (*double booking*) atau kesalahan penjadwalan, serta ketimpangan beban kerja antar terapis.
+   Manajemen jadwal terapis menggunakan lembar kerja Excel atau Kalender Google manual tidak efisien dan rawan konflik jadwal. Setiap terapis mengelola kalendernya sendiri dengan format berbeda-beda, menyulitkan admin untuk sinkronisasi dan pemeriksaan ketersediaan secara waktu nyata. Ketika ada perubahan jadwal mendadak, proses pemberitahuan dan penjadwalan ulang dilakukan manual satu per satu. Seringkali terjadi reservasi ganda (*double booking*) atau kesalahan penjadwalan, serta ketimpangan beban kerja antar terapis.
 
 3. **Dokumentasi Catatan Terapi yang Tidak Terstruktur**
 
@@ -47,7 +47,7 @@ Berdasarkan analisis kondisi eksisting pada CUR-HEART melalui observasi, wawanca
 
 5. **Keterbatasan Akses Informasi bagi Klien**
 
-   Klien kesulitan mengakses informasi lengkap tentang layanan, terapis, jadwal ketersediaan, dan harga secara mandiri. Mereka harus selalu menghubungi admin untuk mendapatkan informasi, terutama di luar jam operasional. Klien tidak dapat melihat riwayat pemesanan, status pembayaran, atau catatan terapis dengan mudah. Tidak adanya platform layanan mandiri (*self-service*) mengurangi rasa otonomi dan kepuasan klien.
+   Klien kesulitan mengakses informasi lengkap tentang layanan, terapis, jadwal ketersediaan, dan harga secara mandiri. Mereka harus selalu menghubungi admin untuk mendapatkan informasi, terutama di luar jam operasional. Klien tidak dapat melihat riwayat reservasi, status pembayaran, atau catatan terapis dengan mudah. Tidak adanya platform layanan mandiri (*self-service*) mengurangi rasa otonomi dan kepuasan klien.
 
 6. **Kesulitan dalam Pengambilan Keputusan Manajerial**
 
@@ -61,9 +61,9 @@ Berdasarkan analisis kondisi eksisting pada CUR-HEART melalui observasi, wawanca
 
    Data klien yang sangat sensitif disimpan dalam format yang tidak aman seperti berkas tidak terenkripsi atau bahkan di obrolan WhatsApp. Tidak ada mekanisme pengendalian akses yang tepat dan jejak audit yang mencatat akses data. Kepatuhan terhadap UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi tidak dapat dipastikan, menimbulkan risiko hukum.
 
-**[GAMBAR 1.3 - Perbandingan Pemesanan Manual vs Digital]**
+**[GAMBAR 1.3 - Perbandingan Reservasi Manual vs Digital]**
 
-Permasalahan-permasalahan tersebut secara kumulatif menyebabkan penurunan efisiensi operasional, potensi kehilangan pendapatan, risiko reputasi, terhambatnya skalabilitas bisnis, dan hilangnya peluang optimisasi. Oleh karena itu, pengembangan sistem informasi manajemen pemesanan dan terapi berbasis web yang terpadu, aman, dan mudah digunakan menjadi kebutuhan mendesak.
+Permasalahan-permasalahan tersebut secara kumulatif menyebabkan penurunan efisiensi operasional, potensi kehilangan pendapatan, risiko reputasi, terhambatnya skalabilitas bisnis, dan hilangnya peluang optimisasi. Oleh karena itu, pengembangan sistem informasi manajemen reservasi dan terapi berbasis web yang terpadu, aman, dan mudah digunakan menjadi kebutuhan mendesak.
 
 ## 1.3 Ruang Lingkup
 
@@ -86,15 +86,15 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi utama sebagai berikut:
    - Blog/artikel edukatif tentang kesehatan mental
    - Halaman kontak dan FAQ
 
-3. **Modul Pemesanan dan Penjadwalan**
-   - Alur pemesanan bertahap (pilih layanan → pilih terapis → pilih jadwal → konfirmasi)
+3. **Modul Reservasi dan Penjadwalan**
+   - Alur reservasi bertahap (pilih layanan → pilih terapis → pilih jadwal → konfirmasi)
    - Kalender interaktif dengan visualisasi ketersediaan terapis
-   - Manajemen pemesanan (lihat, jadwal ulang, batal)
+   - Manajemen reservasi (lihat, jadwal ulang, batal)
    - Notifikasi pengingat otomatis
 
 4. **Modul Dasbor Klien**
    - Ikhtisar dasbor dengan ringkasan janji temu dan kemajuan
-   - Manajemen janji temu dan riwayat pemesanan
+   - Manajemen janji temu dan riwayat reservasi
    - Pelacakan kemajuan terapi dengan visualisasi grafik
    - Komunikasi dengan terapis melalui pesan
    - Riwayat pembayaran dan unduh faktur
@@ -109,7 +109,7 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi utama sebagai berikut:
 
 6. **Modul Dasbor Admin**
    - Ikhtisar dasbor dengan metrik operasional dan keuangan
-   - Manajemen pengguna, terapis, layanan, dan pemesanan
+   - Manajemen pengguna, terapis, layanan, dan reservasi
    - Manajemen konten (blog, FAQ, layanan, promo)
    - Verifikasi dan persetujuan terapis baru
    - Manajemen ulasan dan penilaian klien
@@ -123,7 +123,7 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi utama sebagai berikut:
    - Pelacakan status pembayaran
 
 8. **Modul Notifikasi dan Komunikasi**
-   - Notifikasi surel (pendaftaran, konfirmasi pemesanan, pengingat, pembayaran)
+   - Notifikasi surel (pendaftaran, konfirmasi reservasi, pengingat, pembayaran)
    - Notifikasi dalam aplikasi
    - Sistem pesan antar pengguna
 
@@ -151,7 +151,7 @@ Sistem ini diperuntukkan bagi tiga kategori pengguna utama:
 
 1. **Admin/Pemilik CUR-HEART** - Mengelola seluruh aspek sistem, pemantauan, dan pelaporan
 2. **Terapis** - Mengelola jadwal, sesi terapi, dokumentasi, dan komunikasi dengan klien
-3. **Klien** - Melakukan pemesanan, mengelola janji temu, pelacakan kemajuan, dan komunikasi
+3. **Klien** - Melakukan reservasi, mengelola janji temu, pelacakan kemajuan, dan komunikasi
 
 ### 1.3.4 Batasan Sistem
 
@@ -228,11 +228,11 @@ Dengan batasan ruang lingkup yang jelas ini, proyek dapat difokuskan pada pengem
 
 Penelitian ini bertujuan untuk:
 
-1. **Menganalisis kebutuhan sistem informasi** manajemen pemesanan dan terapi hipnoterapi CUR-HEART melalui studi mendalam terhadap proses bisnis, wawancara pemangku kepentingan, dan identifikasi masalah operasional.
+1. **Menganalisis kebutuhan sistem informasi** manajemen reservasi dan terapi hipnoterapi CUR-HEART melalui studi mendalam terhadap proses bisnis, wawancara pemangku kepentingan, dan identifikasi masalah operasional.
 
 2. **Merancang sistem informasi** yang terstruktur, dapat dikembangkan (*scalable*), dan mudah digunakan (*user-friendly*) dengan menggunakan diagram ERD, UML, dan desain antarmuka berbasis praktik terbaik UI/UX.
 
-3. **Mengimplementasikan sistem informasi** berbasis web menggunakan Laravel Framework, MySQL, dan Tailwind CSS yang mencakup modul autentikasi, pemesanan, penjadwalan, dasbor berbasis peran, pembayaran, dan pelaporan.
+3. **Mengimplementasikan sistem informasi** berbasis web menggunakan Laravel Framework, MySQL, dan Tailwind CSS yang mencakup modul autentikasi, reservasi, penjadwalan, dasbor berbasis peran, pembayaran, dan pelaporan.
 
 4. **Menguji sistem secara menyeluruh** untuk memastikan fungsionalitas, kegunaan, keandalan, dan keamanan melalui pengujian unit, integrasi, sistem, dan pengujian penerimaan pengguna (UAT).
 
@@ -267,7 +267,7 @@ Penelitian ini diharapkan memberikan manfaat kepada berbagai pihak:
 
 #### 1.4.2.3 Manfaat bagi Klien
 
-1. Kemudahan akses layanan 24/7 melalui pemesanan online
+1. Kemudahan akses layanan 24/7 melalui reservasi online
 2. Transparansi informasi lengkap tentang layanan, terapis, dan harga
 3. Kontrol dan otonomi melalui platform layanan mandiri
 4. Visibilitas kemajuan terapi dengan visualisasi objektif

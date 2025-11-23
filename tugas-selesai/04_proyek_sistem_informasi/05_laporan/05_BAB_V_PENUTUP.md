@@ -3,7 +3,7 @@
 
 ## 5.1 Kesimpulan
 
-Berdasarkan hasil penelitian dan pembahasan yang telah diuraikan pada bab-bab sebelumnya, dapat ditarik beberapa kesimpulan penting terkait pengembangan Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART sebagai berikut:
+Berdasarkan hasil penelitian dan pembahasan yang telah diuraikan pada bab-bab sebelumnya, dapat ditarik beberapa kesimpulan penting terkait pengembangan Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART sebagai berikut:
 
 ### 5.1.1 Pencapaian Tujuan Penelitian
 
@@ -28,7 +28,7 @@ Proyek *Capstone* ini telah **berhasil mencapai seluruh tujuan** yang telah dite
 **1. Analisis Kebutuhan Sistem yang Komprehensif**
 
 Penelitian ini telah berhasil mengidentifikasi dan menganalisis kebutuhan bisnis CUR-HEART secara mendalam melalui:
-- **8 masalah kritis** yang dihadapi dalam manajemen layanan hipnoterapi tradisional (pemesanan manual, risiko pemesanan ganda, koordinasi jadwal yang kompleks, pencatatan data tidak terstruktur, sulitnya pemantauan kinerja, keterbatasan akses informasi, proses pembayaran manual, dan kesulitan pelaporan)
+- **8 masalah kritis** yang dihadapi dalam manajemen layanan hipnoterapi tradisional (reservasi manual, risiko reservasi ganda, koordinasi jadwal yang kompleks, pencatatan data tidak terstruktur, sulitnya pemantauan kinerja, keterbatasan akses informasi, proses pembayaran manual, dan kesulitan pelaporan)
 - **Analisis pemangku kepentingan** yang mengidentifikasi 5 kategori pengguna dengan kebutuhan yang berbeda (Tamu, Klien, Terapis, Admin, Pemilik)
 - **Pengumpulan data** melalui 6 teknik yang sistematis (observasi lapangan, wawancara mendalam, studi dokumentasi, survei, *benchmark* kompetitor, dan diskusi kelompok terpumpun)
 - **Spesifikasi kebutuhan** yang detail mencakup kebutuhan fungsional dan non-fungsional
@@ -56,7 +56,7 @@ Sistem telah dirancang dengan menggunakan metodologi dan praktik terbaik dalam r
 
 **c. Pemodelan UML:**
 - **Diagram Kasus Penggunaan** yang memetakan 4 aktor dengan seluruh kasus penggunaan mereka
-- **Diagram Aktivitas** untuk 3 proses bisnis kritis (alur pemesanan, pelaksanaan sesi terapi, verifikasi pembayaran)
+- **Diagram Aktivitas** untuk 3 proses bisnis kritis (alur reservasi, pelaksanaan sesi terapi, verifikasi pembayaran)
 - **Diagram Sekuen** untuk menggambarkan interaksi objek dalam alur autentikasi
 - Diagram UML yang menjadi **cetak biru** untuk implementasi dan komunikasi antar tim
 
@@ -72,7 +72,7 @@ Sistem telah diimplementasikan dengan hasil sebagai berikut:
 - **Aplikasi Web** lengkap dengan 41 halaman yang mencakup seluruh fitur yang dibutuhkan
 - **5 antarmuka berbasis peran**: Tamu (6 halaman), Klien (13 halaman), Terapis (12 halaman), Admin (10 halaman), komponen bersama
 - **Desain responsif** yang dapat diakses dari desktop, tablet, dan perangkat seluler
-- **Fitur waktu nyata**: Pengecekan ketersediaan pemesanan, konfirmasi instan, notifikasi otomatis
+- **Fitur waktu nyata**: Pengecekan ketersediaan reservasi, konfirmasi instan, notifikasi otomatis
 
 **b. Fitur Utama yang Terimplementasi:**
 
@@ -81,14 +81,14 @@ Sistem telah diimplementasikan dengan hasil sebagai berikut:
 | 1 | Autentikasi & Otorisasi Pengguna | Selesai | Pendaftaran, masuk, kontrol akses berbasis peran |
 | 2 | Manajemen Katalog Layanan | Selesai | Jelajah, saring, detail 6 layanan |
 | 3 | Profil & Jadwal Terapis | Selesai | Profil lengkap, kalender ketersediaan |
-| 4 | Sistem Pemesanan Daring | Selesai | Panduan pemesanan 4 langkah dengan validasi |
+| 4 | Sistem Reservasi Daring | Selesai | Panduan reservasi 4 langkah dengan validasi |
 | 5 | Beragam Metode Pembayaran | Selesai | Integrasi Midtrans (kartu kredit, dompet digital, transfer bank, QRIS) |
-| 6 | Manajemen Pemesanan | Selesai | Lihat, jadwal ulang, batalkan dengan aturan bisnis |
+| 6 | Manajemen Reservasi | Selesai | Lihat, jadwal ulang, batalkan dengan aturan bisnis |
 | 7 | Pelaksanaan & Dokumentasi Sesi | Selesai | Catatan sesi, pelacakan kemajuan |
 | 8 | Dasbor Kemajuan Klien | Selesai | Grafik visual, pelacakan tonggak |
 | 9 | Dasbor Terapis | Selesai | Manajemen jadwal, ringkasan pendapatan |
 | 10 | Panel Admin | Selesai | Manajemen pengguna, pelaporan, pemantauan sistem |
-| 11 | Sistem Notifikasi | Selesai | Notifikasi email untuk kejadian pemesanan |
+| 11 | Sistem Notifikasi | Selesai | Notifikasi email untuk kejadian reservasi |
 | 12 | Ulasan & Penilaian | Selesai | Klien dapat memberikan umpan balik |
 
 **c. Pengalaman Pengguna:**
@@ -118,7 +118,7 @@ Sistem telah melalui proses pengujian yang komprehensif:
 - Pengujian fungsi pembantu
 
 **b. Pengujian Fitur:**
-- Pengujian ujung ke ujung untuk alur pemesanan
+- Pengujian ujung ke ujung untuk alur reservasi
 - Pengujian autentikasi dan otorisasi
 - Pengujian integrasi pembayaran
 - Pengujian notifikasi email
@@ -155,16 +155,16 @@ Proyek ini telah menghasilkan **dokumentasi lengkap** (laporan 85 halaman, manua
 
 **6. Dampak dan Nilai Bisnis**
 
-Sistem telah memberikan **dampak terukur** kepada CUR-HEART: efisiensi operasional meningkat 60% (penghematan 20 jam/bulan waktu admin), kapasitas pemesanan naik 25% (dari 80 menjadi 105 pemesanan/bulan), pendapatan meningkat 31% (dari Rp 26,45 juta menjadi Rp 34,72 juta/bulan), eliminasi 100% pemesanan ganda, retensi klien naik dari 65% menjadi 85%, dan kepuasan pengguna mencapai 9/10. **ROI sistem mencapai 1.743%** dalam proyeksi 5 tahun dengan periode *payback* hanya 20 hari.
+Sistem telah memberikan **dampak terukur** kepada CUR-HEART: efisiensi operasional meningkat 60% (penghematan 20 jam/bulan waktu admin), kapasitas reservasi naik 25% (dari 80 menjadi 105 reservasi/bulan), pendapatan meningkat 31% (dari Rp 26,45 juta menjadi Rp 34,72 juta/bulan), eliminasi 100% reservasi ganda, retensi klien naik dari 65% menjadi 85%, dan kepuasan pengguna mencapai 9/10. **ROI sistem mencapai 1.743%** dalam proyeksi 5 tahun dengan periode *payback* hanya 20 hari.
 
 **Tabel 5.2 Ringkasan Dampak Bisnis dan ROI**
 
 | No | Kategori | Kondisi Dasar | Pencapaian | Peningkatan | Status |
 |----|----------|---------------|------------|-------------|--------|
-| 1 | Waktu Proses Pemesanan | 10 menit (manual) | 3,5 menit | 65% lebih cepat | MELEBIHI |
+| 1 | Waktu Proses Reservasi | 10 menit (manual) | 3,5 menit | 65% lebih cepat | MELEBIHI |
 | 2 | Efisiensi Admin | 4 jam/hari | 1,2 jam/hari | 70% lebih efisien | MELEBIHI |
-| 3 | Pemesanan Ganda | 8-10 kasus/bulan | 0 kasus | 100% eliminasi | MELEBIHI |
-| 4 | Volume Pemesanan | 80/bulan | 105/bulan | 31% peningkatan | MELEBIHI |
+| 3 | Reservasi Ganda | 8-10 kasus/bulan | 0 kasus | 100% eliminasi | MELEBIHI |
+| 4 | Volume Reservasi | 80/bulan | 105/bulan | 31% peningkatan | MELEBIHI |
 | 5 | Pendapatan Bulanan | Rp 26,45 juta | Rp 34,72 juta | 31% peningkatan | MELEBIHI |
 | 6 | Retensi Klien | 65% | 85% | 31% peningkatan | MELEBIHI |
 
@@ -187,7 +187,7 @@ Proyek *Capstone* ini memberikan kontribusi signifikan:
 - **Keberlanjutan keuangan** dengan peningkatan pendapatan 31%, pengurangan biaya operasional, dan ROI 1.743%
 
 **B. Manfaat untuk Pemangku Kepentingan:**
-- **Klien**: Kemudahan pemesanan kapan saja, layanan mandiri, transparansi informasi, privasi data terjaga
+- **Klien**: Kemudahan reservasi kapan saja, layanan mandiri, transparansi informasi, privasi data terjaga
 - **Terapis**: Peningkatan produktivitas (kurang tugas admin), dokumentasi digital terorganisir, visibilitas pendapatan
 - **Admin**: Pengurangan beban kerja 70%, eliminasi tugas berulang, fokus pada layanan nilai tinggi
 - **Pemilik**: Visibilitas operasional real-time, pengambilan keputusan berbasis data, kontrol penuh sistem
@@ -226,7 +226,7 @@ Selama pengerjaan proyek ini, tim telah memperoleh pembelajaran berharga yang da
 
 ### 5.1.4 Kesimpulan Akhir
 
-Proyek *Capstone* "Sistem Informasi Manajemen Pemesanan dan Terapi CUR-HEART" telah **berhasil mencapai seluruh tujuan** yang ditetapkan dengan hasil yang **melampaui ekspektasi**. Sistem yang dihasilkan adalah:
+Proyek *Capstone* "Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART" telah **berhasil mencapai seluruh tujuan** yang ditetapkan dengan hasil yang **melampaui ekspektasi**. Sistem yang dihasilkan adalah:
 
 **Fungsional** - Semua fitur yang direncanakan telah terimplementasi dan berfungsi dengan baik  
 **Ramah Pengguna** - Antarmuka yang intuitif dengan umpan balik positif dari pengguna  
@@ -265,7 +265,7 @@ Berdasarkan hasil pengembangan dan evaluasi sistem yang telah dilakukan, berikut
 | 11 | **APM (New Relic/Sentry)** | Pemantauan & peringatan untuk tracking error *real-time* | **SEDANG** | Rp 2-3 juta/tahun | Deteksi masalah proaktif, identifikasi hambatan kinerja |
 | 12 | **Sistem Ulasan Publik** | Feedback terstruktur, analisis sentimen, ulasan publik untuk bukti sosial | **SEDANG** | Rp 2-3 juta | +10% konversi = +Rp 15 juta/tahun |
 | **C. PRIORITAS RENDAH (Q3-Q4 2025)** | | | | | |
-| 13 | ***Chatbot* AI** | AI-powered chatbot (DialogFlow/OpenAI) untuk FAQ, bantuan pemesanan, support 24/7 | **RENDAH** | Rp 10-15 juta + Rp 2-5 juta/tahun | Support 24/7, kurangi beban admin 10 jam/bulan |
+| 13 | ***Chatbot* AI** | AI-powered chatbot (DialogFlow/OpenAI) untuk FAQ, bantuan reservasi, support 24/7 | **RENDAH** | Rp 10-15 juta + Rp 2-5 juta/tahun | Support 24/7, kurangi beban admin 10 jam/bulan |
 | 14 | **Sinkronisasi Kalender** | Sync dengan Google Calendar untuk auto-update ketersediaan | **RENDAH** | Rp 3-4 juta | Kurangi update manual, cegah konflik |
 | 15 | **Replika Baca Database** | Tambah DB read replica untuk handle traffic lebih tinggi | **RENDAH** | Rp 5-8 juta | *Future-proofing*, tingkatkan response time |
 | 16 | **REST API Pihak Ketiga** | RESTful API dengan OAuth2 untuk integrasi partner | **RENDAH** | Rp 5-8 juta | Ekspansi ekosistem, potensi revenue tambahan |
@@ -396,7 +396,7 @@ Implementasi rekomendasi operasional dan manajemen dalam Tabel 5.7 secara konsis
 | 5 | **Dampak Transformasi Digital pada Penyedia Layanan Kesehatan UKM** | Apa faktor sukses kritis transformasi digital dalam praktik terapi & bagaimana pengaruhnya terhadap kinerja bisnis? | • Studi kasus ganda (10-15 praktik terapi)<br>• Data: Wawancara (pemilik, staf), survei (klien), data keuangan<br>• Analisis: Analisis tematik (kualitatif), regresi (kuantitatif) | • Framework faktor sukses kritis digitalisasi UKM kesehatan<br>• Panduan praktis untuk praktik lain<br>• Best practices change management<br>• Publikasi business management journals | **SANGAT TINGGI**<br>(Nilai praktis tinggi untuk ribuan penyedia layanan kesehatan UKM global) |
 | 6 | **Penerimaan Teknologi dalam Konteks Terapi (TAM/UTAUT)** | Faktor apa yang mempengaruhi penerimaan klien & terapis terhadap sistem manajemen terapi digital? | • Survei research (200+ klien, 50+ terapis)<br>• Framework: Extended TAM/UTAUT (tambah: privacy concern, therapeutic trust, perceived empathy)<br>• Analisis: Structural Equation Modeling (SEM), multi-group analysis | • Model penerimaan teknologi khusus konteks terapi<br>• Rekomendasi desain untuk adopsi lebih tinggi<br>• Kontribusi teori (TAM extension)<br>• Publikasi Information Systems journals | **TINGGI**<br>(Mengisi gap teori; nilai praktis untuk desain produk kesehatan digital) |
 | **C. RISET PENGALAMAN PENGGUNA** | | | | | |
-| 7 | **UX Lanjut Usia dalam Platform Kesehatan Digital** | Apa hambatan dan fasilitas bagi orang dewasa lanjut usia (60+) dalam menggunakan platform pemesanan terapi online? | • Mixed methods (30-50 pengguna 60+)<br>• Usability testing (task completion, errors, time)<br>• Interview (hambatan), survei (attitude)<br>• Analisis: Kuantitatif (metrik UX) + Kualitatif (thematic analysis) | • Pedoman desain ramah usia untuk platform kesehatan<br>• Rekomendasi aksesibilitas spesifik<br>• Prinsip inclusive design<br>• Publikasi HCI conferences | **TINGGI**<br>(Populasi menua meningkatkan pentingnya; mengatasi kesetaraan kesehatan digital) |
+| 7 | **UX Lanjut Usia dalam Platform Kesehatan Digital** | Apa hambatan dan fasilitas bagi orang dewasa lanjut usia (60+) dalam menggunakan platform reservasi terapi online? | • Mixed methods (30-50 pengguna 60+)<br>• Usability testing (task completion, errors, time)<br>• Interview (hambatan), survei (attitude)<br>• Analisis: Kuantitatif (metrik UX) + Kualitatif (thematic analysis) | • Pedoman desain ramah usia untuk platform kesehatan<br>• Rekomendasi aksesibilitas spesifik<br>• Prinsip inclusive design<br>• Publikasi HCI conferences | **TINGGI**<br>(Populasi menua meningkatkan pentingnya; mengatasi kesetaraan kesehatan digital) |
 | 8 | **Persepsi Privasi dalam Teknologi Kesehatan Mental** | Bagaimana pengguna mempersepsikan privasi data dalam aplikasi kesehatan mental & fitur apa yang mempengaruhi kepercayaan? | • Survei + Focus group (200+ pengguna)<br>• Instrumen: Privacy Concern Scale, Trust in Technology Scale, Feature Preference Survey<br>• Analisis: Factor analysis, regression (privacy features ke trust), thematic analysis | • Framework desain privasi untuk teknologi kesehatan mental<br>• Bukti efektivitas "privacy by design"<br>• Model kepercayaan pengguna konteks sensitif<br>• Publikasi privacy research journals | **SANGAT TINGGI**<br>(Privasi adalah hambatan kritis untuk adopsi; nilai praktis tinggi) |
 | **D. RISET DOMAIN (HIPNOTERAPI)** | | | | | |
 | 9 | **Dampak Pelacakan Kemajuan Digital pada Hasil Terapi** | Dapatkah pelacakan kemajuan digital meningkatkan hasil terapi dibandingkan pelacakan kertas tradisional? | • Quasi-experimental trial<br>• Grup Eksperimental: pelacakan digital vs Kontrol: metode tradisional<br>• Ukuran: Therapy outcome scales (GAD-7, PHQ-9), kepatuhan sesi, dropout rate<br>• Durasi: 6 bulan; Analisis: t-test, Chi-square | • Bukti untuk digital tools dalam efektivitas terapi<br>• Dampak terkuantifikasi pelacakan kemajuan<br>• Pedoman praktik klinis<br>• Publikasi clinical psychology journals | **SANGAT TINGGI**<br>(Secara langsung menunjukkan nilai klinis digital tools; potensi sitasi tinggi) |

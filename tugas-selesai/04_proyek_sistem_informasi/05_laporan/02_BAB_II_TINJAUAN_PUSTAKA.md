@@ -41,7 +41,7 @@ Menurut Laudon & Laudon (2020), sistem informasi dalam organisasi dapat dikatego
 4. **Sistem Pendukung Eksekutif (*Executive Support System*/ESS):**
    Sistem yang dirancang untuk membantu eksekutif senior melakukan perencanaan strategis dan pengambilan keputusan melalui dasbor dan laporan ringkasan.
 
-Dalam konteks proyek ini, sistem informasi CUR-HEART termasuk kategori **Sistem Pemrosesan Transaksi (TPS)** karena menangani transaksi pemesanan, pembayaran, dan dokumentasi sesi terapi, serta **Sistem Informasi Manajemen (MIS)** karena menyediakan pelaporan dan analitik untuk mendukung pengambilan keputusan manajerial.
+Dalam konteks proyek ini, sistem informasi CUR-HEART termasuk kategori **Sistem Pemrosesan Transaksi (TPS)** karena menangani transaksi reservasi, pembayaran, dan dokumentasi sesi terapi, serta **Sistem Informasi Manajemen (MIS)** karena menyediakan pelaporan dan analitik untuk mendukung pengambilan keputusan manajerial.
 
 #### 2.1.1.3 Manfaat Sistem Informasi
 
@@ -321,7 +321,7 @@ MySQL adalah Sistem Manajemen Basis Data Relasional (*Relational Database Manage
 
 1. **Kesesuaian Struktur Data**: Data sistem CUR-HEART bersifat relasional dengan hubungan yang jelas antara entitas (*Users*, *Bookings*, *Services*, *Payments*)
 2. **Dukungan Laravel**: MySQL adalah basis data default Laravel dengan integrasi Eloquent ORM yang optimal
-3. **Transaksi ACID**: Mesin InnoDB menyediakan kepatuhan ACID penuh untuk keamanan data keuangan dan pemesanan
+3. **Transaksi ACID**: Mesin InnoDB menyediakan kepatuhan ACID penuh untuk keamanan data keuangan dan reservasi
 4. **Biaya**: Gratis dan tersedia di semua penyedia hosting tanpa biaya tambahan
 5. **Komunitas**: Komunitas RDBMS terbesar dengan dokumentasi luas dan dukungan pemecahan masalah
 6. **Kinerja**: Sangat baik untuk operasi JOIN, agregasi, dan strategi pengindeksan yang dibutuhkan sistem
@@ -366,7 +366,7 @@ Tailwind CSS adalah kerangka kerja CSS utilitas-pertama (*utility-first*) yang m
 
 ### 2.1.8 Keamanan Web (*Web Security*)
 
-Keamanan web adalah aspek kritis dalam pengembangan aplikasi web, terutama untuk sistem yang menangani data sensitif seperti informasi kesehatan mental di CUR-HEART (OWASP, 2021). CUR-HEART mengimplementasikan autentikasi berbasis peran (RBAC) dengan tiga peran utama: Admin (kelola sistem), Terapis (kelola jadwal dan klien), dan Klien (kelola pemesanan pribadi).
+Keamanan web adalah aspek kritis dalam pengembangan aplikasi web, terutama untuk sistem yang menangani data sensitif seperti informasi kesehatan mental di CUR-HEART (OWASP, 2021). CUR-HEART mengimplementasikan autentikasi berbasis peran (RBAC) dengan tiga peran utama: Admin (kelola sistem), Terapis (kelola jadwal dan klien), dan Klien (kelola reservasi pribadi).
 
 **Fitur Keamanan Laravel yang Diimplementasikan:**
 
@@ -389,8 +389,8 @@ Antarmuka Pengguna (*User Interface*/UI) adalah elemen visual yang pengguna guna
 
 1. **Desain Berpusat pada Pengguna**: Riset pada target pengguna (klien milenial/Gen Z yang mencari terapi kesehatan mental)
 2. **Konsistensi**: Elemen antarmuka konsisten di seluruh aplikasi menggunakan komponen Tailwind CSS
-3. **Umpan Balik**: Notifikasi jelas untuk setiap aksi (pemesanan berhasil, pembayaran dikonfirmasi)
-4. **Kesederhanaan**: Alur pemesanan 4 langkah dengan informasi progresif untuk mengurangi beban kognitif
+3. **Umpan Balik**: Notifikasi jelas untuk setiap aksi (reservasi berhasil, pembayaran dikonfirmasi)
+4. **Kesederhanaan**: Alur reservasi 4 langkah dengan informasi progresif untuk mengurangi beban kognitif
 5. **Hierarki Visual**: Warna *brand* (Navy, Pink, Teal) dengan kontras untuk CTA penting
 6. **Desain Responsif**: *Mobile-first approach* dengan *breakpoints* Tailwind (sm, md, lg, xl) karena 70% pengguna mobile
 7. **Aksesibilitas**: Pertimbangan WCAG 2.1 untuk kontras warna dan navigasi keyboard
@@ -406,7 +406,7 @@ Antarmuka Pengguna (*User Interface*/UI) adalah elemen visual yang pengguna guna
 
 ## 2.2 Penelitian Terkait
 
-Beberapa penelitian terkait yang relevan dengan pengembangan sistem informasi manajemen booking dan terapi telah dilakukan sebelumnya. Penelitian-penelitian ini menjadi referensi dan landasan untuk identifikasi gap serta differentiation dari proyek CUR-HEART.
+Beberapa penelitian terkait yang relevan dengan pengembangan sistem informasi manajemen reservasi dan terapi telah dilakukan sebelumnya. Penelitian-penelitian ini menjadi referensi dan landasan untuk identifikasi gap serta differentiation dari proyek CUR-HEART.
 
 ### 2.2.1 Penelitian tentang Sistem Informasi Kesehatan
 
@@ -422,7 +422,7 @@ Beberapa penelitian terkait yang relevan dengan pengembangan sistem informasi ma
 Penelitian ini mengembangkan sistem informasi manajemen rumah sakit berbasis web yang mencakup pendaftaran pasien, rekam medis elektronik, penjadwalan dokter, dan penagihan. Metode pengembangan menggunakan air terjun (*waterfall*) dengan tahapan analisis, desain, implementasi, dan pengujian. Hasil penelitian menunjukkan bahwa sistem dapat meningkatkan efisiensi administrasi hingga 45% dan mengurangi waktu tunggu pasien hingga 30%.
 
 **Relevansi:**
-Penelitian ini relevan karena menggunakan metodologi air terjun yang sama dan mengembangkan sistem pemesanan/penjadwalan di sektor kesehatan. Namun, fokus pada rumah sakit umum, bukan spesifik layanan terapi kesehatan mental.
+Penelitian ini relevan karena menggunakan metodologi air terjun yang sama dan mengembangkan sistem reservasi/penjadwalan di sektor kesehatan. Namun, fokus pada rumah sakit umum, bukan spesifik layanan terapi kesehatan mental.
 
 **Gap yang Diidentifikasi:**
 - Tidak ada fitur khusus untuk dokumentasi sesi terapi dan pelacakan kemajuan
@@ -452,17 +452,17 @@ Penelitian ini sangat relevan karena domain yang sama (kesehatan mental) dan tek
 
 **Penelitian 3:**
 
-**Judul:** "Sistem Informasi Pemesanan Salon Kecantikan Berbasis Web dengan Fitur Penjadwalan Waktu Nyata"
+**Judul:** "Sistem Informasi Reservasi Salon Kecantikan Berbasis Web dengan Fitur Penjadwalan Waktu Nyata"
 
 **Penulis:** Wijaya, S., & Lestari, P. (2023)
 
 **Jurnal:** Jurnal Sistem Informasi Bisnis, Vol. 13, No. 1
 
 **Abstrak:**
-Penelitian ini mengembangkan sistem pemesanan daring untuk salon kecantikan yang memungkinkan pelanggan untuk memilih layanan, penata gaya, dan slot waktu secara waktu nyata. Sistem menggunakan PHP dengan basis data MySQL dan menerapkan algoritma untuk optimasi penjadwalan penata gaya berdasarkan ketersediaan dan riwayat pemesanan. Hasil implementasi menunjukkan peningkatan 60% dalam tingkat konversi pemesanan dan pengurangan 40% dalam konflik penjadwalan.
+Penelitian ini mengembangkan sistem reservasi daring untuk salon kecantikan yang memungkinkan pelanggan untuk memilih layanan, penata gaya, dan slot waktu secara waktu nyata. Sistem menggunakan PHP dengan basis data MySQL dan menerapkan algoritma untuk optimasi penjadwalan penata gaya berdasarkan ketersediaan dan riwayat reservasi. Hasil implementasi menunjukkan peningkatan 60% dalam tingkat konversi reservasi dan pengurangan 40% dalam konflik penjadwalan.
 
 **Relevansi:**
-Penelitian ini relevan untuk aspek alur pemesanan dan algoritma penjadwalan. Pemesanan berbasis layanan dengan pemilihan penyedia layanan (penata gaya/terapis) memiliki kemiripan dengan sistem CUR-HEART.
+Penelitian ini relevan untuk aspek alur reservasi dan algoritma penjadwalan. Reservasi berbasis layanan dengan pemilihan penyedia layanan (penata gaya/terapis) memiliki kemiripan dengan sistem CUR-HEART.
 
 **Gap yang Diidentifikasi:**
 - Tidak ada pertimbangan untuk sifat sensitif dari layanan kesehatan mental
@@ -471,21 +471,21 @@ Penelitian ini relevan untuk aspek alur pemesanan dan algoritma penjadwalan. Pem
 
 **Penelitian 4:**
 
-**Judul:** "Aplikasi Manajemen Pemesanan dan Penjadwalan Klinik Kesehatan Menggunakan Kerangka Kerja Laravel"
+**Judul:** "Aplikasi Manajemen Reservasi dan Penjadwalan Klinik Kesehatan Menggunakan Kerangka Kerja Laravel"
 
 **Penulis:** Hartono, B., Santoso, D., & Wijayanti, E. (2022)
 
 **Jurnal:** Jurnal Informatika dan Komputer, Vol. 27, No. 2
 
 **Abstrak:**
-Penelitian mengembangkan aplikasi manajemen pemesanan untuk klinik kesehatan dengan fitur pemesanan daring, manajemen antrian, rekam medis, dan pelaporan. Kerangka kerja Laravel digunakan dengan basis data MySQL dan Tailwind CSS untuk antarmuka. Pengujian sistem menunjukkan kepatuhan 90% terhadap persyaratan fungsional dan skor kepuasan pengguna 82%.
+Penelitian mengembangkan aplikasi manajemen reservasi untuk klinik kesehatan dengan fitur reservasi daring, manajemen antrian, rekam medis, dan pelaporan. Kerangka kerja Laravel digunakan dengan basis data MySQL dan Tailwind CSS untuk antarmuka. Pengujian sistem menunjukkan kepatuhan 90% terhadap persyaratan fungsional dan skor kepuasan pengguna 82%.
 
 **Relevansi:**
 Penelitian ini sangat relevan dengan tumpukan teknologi yang identik (Laravel, MySQL, Tailwind). Dapat menjadi referensi untuk detail implementasi dan praktik terbaik.
 
 **Gap yang Diidentifikasi:**
 - Fokus pada klinik kesehatan umum, bukan layanan terapi khusus
-- Alur pemesanan multi-langkah tidak diimplementasikan (pemesanan satu langkah yang lebih sederhana)
+- Alur reservasi multi-langkah tidak diimplementasikan (reservasi satu langkah yang lebih sederhana)
 - Fitur khusus terapis seperti templat catatan sesi dan dasbor pendapatan tidak ada
 
 ### 2.2.3 Penelitian tentang Laravel dan Web Development
@@ -525,7 +525,7 @@ Penelitian ini menginvestigasi preferensi desain pengalaman pengguna untuk aplik
 Penelitian ini sangat relevan untuk menginformasikan keputusan desain dalam sistem CUR-HEART, terutama untuk menargetkan pengguna milenial dan Gen Z.
 
 **Gap yang Diidentifikasi:**
-- Fokus pada aplikasi kesehatan mental umum, tidak spesifik pada sistem manajemen pemesanan dan terapi
+- Fokus pada aplikasi kesehatan mental umum, tidak spesifik pada sistem manajemen reservasi dan terapi
 - Detail implementasi dan kendala teknis tidak dibahas
 
 ### 2.2.5 Gap Analysis dan Posisi Penelitian
@@ -534,12 +534,12 @@ Penelitian ini sangat relevan untuk menginformasikan keputusan desain dalam sist
 
 | No | Penulis & Tahun | Teknologi | Temuan Utama | Gap Teridentifikasi | Relevansi |
 |----|----------------|-----------|-------------|---------------------|-----------|
-| 1 | Pratama & Kusumawati (2022) | PHP, MySQL, Bootstrap | Efisiensi admin +45%, waktu tunggu -30% | Tidak ada pelacakan kemajuan terapi, penjadwalan tidak fleksibel | Sedang - Metodologi waterfall, konsep alur pemesanan |
+| 1 | Pratama & Kusumawati (2022) | PHP, MySQL, Bootstrap | Efisiensi admin +45%, waktu tunggu -30% | Tidak ada pelacakan kemajuan terapi, penjadwalan tidak fleksibel | Sedang - Metodologi waterfall, konsep alur reservasi |
 | 2 | Chen, Li, & Wang (2021) | Laravel, MySQL, WebRTC | Kepuasan 85%, ketidakhadiran -70% | Tidak fokus hipnoterapi, pembayaran manual | Tinggi - Arsitektur Laravel, domain kesehatan mental |
-| 3 | Wijaya & Lestari (2023) | PHP, MySQL, Bootstrap | Konversi +60%, konflik jadwal -40% | Tidak ada dokumentasi sesi, layanan transaksional | Sedang - Alur pemesanan, algoritma penjadwalan |
-| 4 | Hartono et al. (2022) | Laravel 9, MySQL, Tailwind | Persyaratan fungsional 90%, kepuasan 82% | Alur pemesanan sederhana, fitur terapis minimal | Sangat Tinggi - Stack teknologi identik |
+| 3 | Wijaya & Lestari (2023) | PHP, MySQL, Bootstrap | Konversi +60%, konflik jadwal -40% | Tidak ada dokumentasi sesi, layanan transaksional | Sedang - Alur reservasi, algoritma penjadwalan |
+| 4 | Hartono et al. (2022) | Laravel 9, MySQL, Tailwind | Persyaratan fungsional 90%, kepuasan 82% | Alur reservasi sederhana, fitur terapis minimal | Sangat Tinggi - Stack teknologi identik |
 | 5 | Nugroho & Setiawan (2021) | Laravel, CodeIgniter, Symfony | Laravel: balance produktivitas-kinerja | Tidak analisis spesifik aplikasi kesehatan | Sedang - Justifikasi pemilihan Laravel |
-| 6 | Rahayu et al. (2023) | Figma | Preferensi: sederhana, warna lembut, privasi | Tidak spesifik sistem pemesanan | Tinggi - Prinsip UX, psikologi warna |
+| 6 | Rahayu et al. (2023) | Figma | Preferensi: sederhana, warna lembut, privasi | Tidak spesifik sistem reservasi | Tinggi - Prinsip UX, psikologi warna |
 
 **Tabel 2.6 Analisis Gap dan Solusi CUR-HEART**
 
@@ -547,7 +547,7 @@ Penelitian ini sangat relevan untuk menginformasikan keputusan desain dalam sist
 |--------------|-------------|------------------|-----------------|
 | Spesifik Hipnoterapi | Tidak ada sistem khusus hipnoterapi | Templat sesi khusus, dokumentasi keadaan trance, metrik kemajuan spesifik | Tinggi |
 | Manajemen Terapis | Fitur terapis terbatas pada sisi pasien | Dasbor pendapatan, analitik kinerja, manajemen ketersediaan fleksibel | Tinggi |
-| Alur Pemesanan | Pemesanan sederhana 1-2 langkah | Panduan 4 langkah terpandu dengan indikasi kemajuan | Sedang |
+| Alur Reservasi | Reservasi sederhana 1-2 langkah | Panduan 4 langkah terpandu dengan indikasi kemajuan | Sedang |
 | Pelacakan Kemajuan | Pelacakan kemajuan jarang | Graf kemajuan, penilaian mandiri terintegrasi, timeline catatan | Tinggi |
 | Pembayaran | Verifikasi pembayaran manual | Midtrans gateway, verifikasi otomatis, multi-metode | Sedang |
 | Keamanan & Privasi | Keamanan dasar tidak komprehensif | RBAC 3 peran, enkripsi AES-256, audit trail, kontrol privasi GDPR | Tinggi |

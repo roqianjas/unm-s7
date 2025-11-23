@@ -3,7 +3,7 @@
 
 ## 3.1 Tahapan Penelitian
 
-Penelitian dan pengembangan sistem informasi manajemen pemesanan dan terapi CUR-HEART menggunakan pendekatan ***System Development Life Cycle* (SDLC)** dengan model ***Waterfall***. Model ini dipilih karena karakteristik proyek yang memiliki kebutuhan jelas, waktu yang tetap (semester akademik), dan memerlukan dokumentasi yang komprehensif untuk keperluan akademik. Tahapan penelitian terdiri dari lima fase utama yang dilaksanakan secara berurutan dengan keluaran yang terdefinisi jelas di setiap fase.
+Penelitian dan pengembangan sistem informasi manajemen reservasi dan terapi CUR-HEART menggunakan pendekatan ***System Development Life Cycle* (SDLC)** dengan model ***Waterfall***. Model ini dipilih karena karakteristik proyek yang memiliki kebutuhan jelas, waktu yang tetap (semester akademik), dan memerlukan dokumentasi yang komprehensif untuk keperluan akademik. Tahapan penelitian terdiri dari lima fase utama yang dilaksanakan secara berurutan dengan keluaran yang terdefinisi jelas di setiap fase.
 
 ---
 
@@ -47,7 +47,7 @@ Uraian tahapan penelitian sebagai berikut:
 
 **1. Inisiasi Proyek**
 
-Tahapan ini dimulai dengan mengidentifikasi permasalahan yang dihadapi CUR-HEART dalam manajemen pemesanan dan terapi, menentukan tujuan proyek, mengidentifikasi pemangku kepentingan, serta menyusun project charter sebagai dokumen otorisasi formal untuk memulai proyek.
+Tahapan ini dimulai dengan mengidentifikasi permasalahan yang dihadapi CUR-HEART dalam manajemen reservasi dan terapi, menentukan tujuan proyek, mengidentifikasi pemangku kepentingan, serta menyusun project charter sebagai dokumen otorisasi formal untuk memulai proyek.
 
 **2. Perencanaan Proyek** 
 
@@ -130,7 +130,7 @@ Penelitian ini menggunakan teknik **purposive sampling** (pengambilan sampel ber
 |----|----------------|--------|-------------------|----------------------|
 | 1 | Pemilik/Manajemen | 1 orang | Pengambil keputusan, memahami visi bisnis | Memberikan kebutuhan bisnis, validasi sistem |
 | 2 | Terapis | 3 orang | Berpengalaman minimal 1 tahun, pengguna aktif sistem | Memberikan kebutuhan fungsional, pengujian sistem |
-| 3 | Staf Admin/CS | 2 orang | Mengelola pemesanan dan administrasi harian | Memberikan proses bisnis existing, pengujian |
+| 3 | Staf Admin/CS | 2 orang | Mengelola reservasi dan administrasi harian | Memberikan proses bisnis existing, pengujian |
 | 4 | Klien Aktif | 5 orang | Pernah menggunakan layanan minimal 2 kali | Memberikan feedback kebutuhan klien, UAT |
 | 5 | Calon Klien | 3 orang | Berminat menggunakan layanan terapi | Pengujian usability dari perspektif user baru |
 | **Total** | **14 orang** | | |
@@ -150,7 +150,7 @@ Pengumpulan data dalam penelitian ini menggunakan pendekatan multi-metode untuk 
 
 Observasi dilakukan untuk memahami proses bisnis aktual yang berjalan di CUR-HEART dan mengidentifikasi permasalahan yang terjadi dalam operasional sehari-hari. Observasi dilakukan secara langsung di lokasi CUR-HEART dengan mengamati:
 
-- Proses pemesanan layanan terapi melalui WhatsApp dan telepon
+- Proses reservasi layanan terapi melalui WhatsApp dan telepon
 - Proses penjadwalan terapis dan manajemen waktu
 - Interaksi antara staf administrasi dengan klien
 - Proses pencatatan data klien dan dokumentasi sesi terapi
@@ -168,8 +168,8 @@ Wawancara semi-terstruktur dilakukan untuk mendapatkan informasi mendalam dari p
 |----|-----------|--------|------------------|
 | 1 | Pemilik CUR-HEART | 1 orang | Memahami visi bisnis, target, dan ekspektasi terhadap sistem |
 | 2 | Terapis | 3 orang | Mengidentifikasi kebutuhan untuk manajemen jadwal dan dokumentasi sesi terapi |
-| 3 | Staf Admin/CS | 2 orang | Memahami proses pemesanan, pembayaran, dan administrasi |
-| 4 | Klien | 5 orang | Menggali pengalaman pemesanan dan ekspektasi terhadap sistem online |
+| 3 | Staf Admin/CS | 2 orang | Memahami proses reservasi, pembayaran, dan administrasi |
+| 4 | Klien | 5 orang | Menggali pengalaman reservasi dan ekspektasi terhadap sistem online |
 
 Wawancara dilakukan dengan durasi 30-60 menit per narasumber dan didokumentasikan dalam bentuk transkrip wawancara. Hasil wawancara dianalisis untuk mengidentifikasi kebutuhan fungsional dan non-fungsional sistem.
 
@@ -180,7 +180,7 @@ Studi pustaka dilakukan untuk membangun landasan teoritis dan memahami best prac
 - Jurnal ilmiah tentang sistem informasi manajemen pelayanan kesehatan
 - Buku referensi tentang rekayasa perangkat lunak dan manajemen proyek
 - Dokumentasi teknis framework Laravel dan teknologi terkait
-- Penelitian terdahulu tentang sistem pemesanan dan manajemen terapi
+- Penelitian terdahulu tentang sistem reservasi dan manajemen terapi
 - Standar dan regulasi terkait keamanan data kesehatan
 
 Studi pustaka menghasilkan tinjauan literatur yang disajikan dalam BAB II dan menjadi dasar dalam perancangan dan pengembangan sistem.
