@@ -144,7 +144,7 @@ Berikut adalah representasi visual lengkap X-Banner dalam format ASCII art untuk
 ║   │                                                            │    ║
 ║   └────────────────────────────────────────────────────────────┘    ║
 ║                                                                       ║
-║   Framework: Laravel 10 (Full-stack MVC Architecture)                ║
+║   Framework: Laravel 12 (Full-stack MVC Architecture)                ║
 ║   Database: MySQL 8.0 dengan Eloquent ORM                            ║
 ║   Frontend: Blade Templates + Tailwind CSS                           ║
 ║   Payment: Midtrans Gateway Integration                              ║

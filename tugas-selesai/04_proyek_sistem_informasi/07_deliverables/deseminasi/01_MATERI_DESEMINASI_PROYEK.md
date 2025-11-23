@@ -202,8 +202,6 @@ Lihat file: `05_OUTLINE_SLIDE_PRESENTASI.md`
 - **Email Tim**: curheart.project@gmail.com (contoh)
 - **WhatsApp**: 0812-XXXX-XXXX (Roki Anjas)
 - **Instagram**: @curheart.official
-- **Website Demo**: https://curheart-demo.com (jika ada)
-- **GitHub**: github.com/curheart-project
 
 ---
 

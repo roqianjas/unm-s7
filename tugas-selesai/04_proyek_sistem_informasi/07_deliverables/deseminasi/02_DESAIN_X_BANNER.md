@@ -171,7 +171,7 @@ Pastikan semua teks mudah dibaca dari jarak 2-3 meter!
 │                                                       │
 │  [Laravel]  [PHP]  [MySQL]  [Tailwind CSS]          │
 │                                                       │
-│  Framework: Laravel 10 (Full-stack MVC)              │
+│  Framework: Laravel 12 (Full-stack MVC)              │
 │  Database: MySQL 8.0 dengan Eloquent ORM             │
 │  Frontend: Blade Templates + Tailwind CSS            │
 │  Payment: Midtrans Gateway Integration               │
@@ -357,7 +357,7 @@ pembayaran online, dan pelaporan bisnis secara terintegrasi.
 ```
 🛠️ TEKNOLOGI YANG DIGUNAKAN
 
-Laravel 10 • PHP 8.x • MySQL 8.0 • Tailwind CSS
+Laravel 12 • PHP 8.x • MySQL 8.0 • Tailwind CSS
 Blade Templates • Eloquent ORM • Midtrans Payment Gateway
 
 Arsitektur: MVC (Model-View-Controller)
