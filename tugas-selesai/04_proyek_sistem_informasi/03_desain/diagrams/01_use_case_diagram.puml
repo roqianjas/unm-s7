@@ -18,7 +18,7 @@ rectangle "Sistem Informasi CUR-HEART" {
   usecase "Login" as UC7
   
   usecase "Dashboard Klien" as UC8
-  usecase "Buat Pemesanan" as UC9
+  usecase "Buat Reservasi" as UC9
   usecase "Pilih Layanan" as UC10
   usecase "Pilih Terapis" as UC11
   usecase "Lakukan Pembayaran" as UC12

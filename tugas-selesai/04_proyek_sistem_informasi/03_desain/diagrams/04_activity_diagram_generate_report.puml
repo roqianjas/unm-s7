@@ -12,8 +12,8 @@ start
 :Pilih Jenis Laporan;
 
 switch (Jenis Laporan?)
-case (Pemesanan)
-  :Set: Laporan Pemesanan;
+case (Reservasi)
+  :Set: Laporan Reservasi;
 case (Keuangan)
   :Set: Laporan Keuangan;
 case (Kinerja Terapis)

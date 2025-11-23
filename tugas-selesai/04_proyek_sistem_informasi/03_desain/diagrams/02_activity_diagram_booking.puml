@@ -20,7 +20,7 @@ if (Jadwal Tersedia?) then (yes)
   :Isi Keluhan dan Catatan;
   
   |Sistem|
-  :Tampilkan Ringkasan Pemesanan;
+  :Tampilkan Ringkasan Reservasi;
   :Hitung Total Biaya;
   
   |Klien|
@@ -39,10 +39,10 @@ if (Jadwal Tersedia?) then (yes)
   endif
   
   |Klien|
-  :Konfirmasi Pemesanan;
+  :Konfirmasi Reservasi;
   
   |Sistem|
-  :Buat Record Pemesanan;
+  :Buat Record Reservasi;
   :Set Status: Pending Payment;
   :Generate Booking Number;
   :Redirect ke Payment Gateway;
