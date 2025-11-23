@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Booking - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="48_admin_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Back Button -->
+            <a href="43_admin_bookings.html" class="inline-flex items-center text-cur-primary hover:text-cur-secondary mb-6 transition">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Kembali ke Daftar Booking
+            </a>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Main Info Card -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Booking Header -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <div class="flex items-start justify-between mb-6">
+                            <div>
+                                <h1 class="text-2xl font-bold text-gray-800 mb-2">Detail Booking</h1>
+                                <p class="text-gray-600 font-mono text-lg">#CH-1025-001</p>
+                            </div>
+                            <span class="px-4 py-2 bg-cur-success/10 text-cur-success text-sm font-semibold rounded-full">
+                                <i class="fas fa-check-circle mr-1"></i>
+                                Selesai
+                            </span>
+                        </div>
+
+                        <!-- Booking Info Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-1">Tanggal Booking</div>
+                                <div class="font-semibold text-gray-800">25 Oktober 2024</div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-1">Waktu Sesi</div>
+                                <div class="font-semibold text-gray-800">14:00 - 15:00 WIB</div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-1">Durasi</div>
+                                <div class="font-semibold text-gray-800">60 Menit</div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-1">Tipe Sesi</div>
+                                <div class="font-semibold text-gray-800">Online (Video Call)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client & Therapist Info -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Informasi Peserta</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Client -->
+                            <div class="p-4 border-2 border-gray-200 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-3">Klien</div>
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Client" class="w-16 h-16 rounded-full">
+                                    <div>
+                                        <div class="font-bold text-gray-800">Budi Santoso</div>
+                                        <div class="text-sm text-gray-600">ID: CLT-2024-156</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center space-x-2 text-sm">
+                                        <i class="fas fa-envelope text-cur-primary w-4"></i>
+                                        <span class="text-gray-700">budi.santoso@email.com</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm">
+                                        <i class="fas fa-phone text-cur-primary w-4"></i>
+                                        <span class="text-gray-700">+62 812-xxxx-1234</span>
+                                    </div>
+                                </div>
+                                <a href="49_admin_user_detail.html" class="mt-4 block text-center px-4 py-2 border-2 border-cur-primary text-cur-primary font-semibold rounded-lg hover:bg-cur-primary hover:text-white transition">
+                                    Lihat Profil
+                                </a>
+                            </div>
+
+                            <!-- Therapist -->
+                            <div class="p-4 border-2 border-gray-200 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-3">Terapis</div>
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-16 h-16 rounded-full">
+                                    <div>
+                                        <div class="font-bold text-gray-800">Dr. Sarah Johnson</div>
+                                        <div class="text-sm text-gray-600">Psikolog Klinis</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center space-x-2 text-sm">
+                                        <i class="fas fa-envelope text-cur-primary w-4"></i>
+                                        <span class="text-gray-700">sarah.johnson@curheart.com</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm">
+                                        <i class="fas fa-id-card text-cur-primary w-4"></i>
+                                        <span class="text-gray-700">Lisensi: PSI-12345-2020</span>
+                                    </div>
+                                </div>
+                                <a href="49_admin_user_detail.html" class="mt-4 block text-center px-4 py-2 border-2 border-cur-primary text-cur-primary font-semibold rounded-lg hover:bg-cur-primary hover:text-white transition">
+                                    Lihat Profil
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Details -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Detail Layanan</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3 p-4 bg-purple-50 rounded-xl">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-brain text-purple-600 text-xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800 mb-1">Terapi Kecemasan</div>
+                                    <div class="text-sm text-gray-600">Sesi konseling untuk mengatasi gangguan kecemasan dan anxiety</div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-xl">
+                                <div class="text-sm text-gray-600 mb-2">Keluhan Utama</div>
+                                <p class="text-gray-800">Mengalami kecemasan berlebihan saat bekerja dan kesulitan tidur. Sering merasa khawatir tanpa alasan yang jelas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Session Notes -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Catatan Sesi</h3>
+                        <div class="p-4 bg-gray-50 rounded-xl">
+                            <div class="text-sm text-gray-600 mb-2">Catatan dari Terapis</div>
+                            <p class="text-gray-800 mb-3">Klien menunjukkan progress yang baik dalam mengelola kecemasan. Telah mempraktikkan teknik pernapasan dan mindfulness yang diajarkan pada sesi sebelumnya.</p>
+                            <div class="text-sm text-gray-600 mb-2 mt-4">Rekomendasi</div>
+                            <p class="text-gray-800">Lanjutkan latihan mindfulness 10 menit setiap hari. Jadwalkan sesi follow-up dalam 2 minggu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="space-y-6">
+                    <!-- Payment Info -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Informasi Pembayaran</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Biaya Sesi</span>
+                                <span class="font-semibold text-gray-800">Rp 500.000</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">Biaya Admin</span>
+                                <span class="font-semibold text-gray-800">Rp 5.000</span>
+                            </div>
+                            <div class="pt-3 border-t border-gray-200">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="font-semibold text-gray-800">Total</span>
+                                    <span class="text-xl font-bold text-cur-primary">Rp 505.000</span>
+                                </div>
+                            </div>
+                            <div class="pt-3 border-t border-gray-200">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-600">Status Pembayaran</span>
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                                        Lunas
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-gray-600">Metode</span>
+                                    <span class="text-gray-800">Transfer Bank BCA</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm mt-1">
+                                    <span class="text-gray-600">Tanggal Bayar</span>
+                                    <span class="text-gray-800">24 Okt 2024, 10:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Timeline</h3>
+                        <div class="relative">
+                            <div class="absolute left-2 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                            <div class="space-y-4">
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 w-4 h-4 bg-cur-success rounded-full"></div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold text-gray-800">Sesi Selesai</div>
+                                        <div class="text-xs text-gray-500">25 Okt 2024, 15:00</div>
+                                    </div>
+                                </div>
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 w-4 h-4 bg-cur-info rounded-full"></div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold text-gray-800">Sesi Dimulai</div>
+                                        <div class="text-xs text-gray-500">25 Okt 2024, 14:00</div>
+                                    </div>
+                                </div>
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 w-4 h-4 bg-cur-success rounded-full"></div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold text-gray-800">Pembayaran Diterima</div>
+                                        <div class="text-xs text-gray-500">24 Okt 2024, 10:30</div>
+                                    </div>
+                                </div>
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 w-4 h-4 bg-cur-info rounded-full"></div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold text-gray-800">Booking Dikonfirmasi</div>
+                                        <div class="text-xs text-gray-500">24 Okt 2024, 09:15</div>
+                                    </div>
+                                </div>
+                                <div class="relative pl-8">
+                                    <div class="absolute left-0 w-4 h-4 bg-gray-400 rounded-full"></div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold text-gray-800">Booking Dibuat</div>
+                                        <div class="text-xs text-gray-500">24 Okt 2024, 09:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Aksi</h3>
+                        <div class="space-y-2">
+                            <button class="w-full px-4 py-3 bg-cur-primary text-white font-semibold rounded-xl hover:bg-opacity-90 transition">
+                                <i class="fas fa-download mr-2"></i>
+                                Download Invoice
+                            </button>
+                            <button class="w-full px-4 py-3 border-2 border-cur-info text-cur-info font-semibold rounded-xl hover:bg-cur-info hover:text-white transition">
+                                <i class="fas fa-envelope mr-2"></i>
+                                Kirim Email
+                            </button>
+                            <button onclick="return confirm('Apakah Anda yakin ingin membatalkan booking ini?')" class="w-full px-4 py-3 border-2 border-cur-error text-cur-error font-semibold rounded-xl hover:bg-cur-error hover:text-white transition">
+                                <i class="fas fa-times-circle mr-2"></i>
+                                Batalkan Booking
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

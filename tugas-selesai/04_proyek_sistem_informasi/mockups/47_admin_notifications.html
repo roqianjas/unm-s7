@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="48_admin_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Notifikasi Sistem</h1>
+                        <p class="text-gray-600">Semua aktivitas dan pemberitahuan penting</p>
+                    </div>
+                    <button class="px-4 py-2 text-cur-primary hover:bg-cur-primary/10 rounded-lg transition font-medium">
+                        <i class="fas fa-check-double mr-2"></i>
+                        Tandai Semua Dibaca
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="bg-white rounded-xl shadow-sm p-2 mb-6 inline-flex space-x-2">
+                <button class="px-6 py-2 bg-cur-primary text-white rounded-lg font-medium transition">
+                    Semua
+                </button>
+                <button class="px-6 py-2 text-gray-700 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Pengguna
+                </button>
+                <button class="px-6 py-2 text-gray-700 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Transaksi
+                </button>
+                <button class="px-6 py-2 text-gray-700 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Sistem
+                </button>
+            </div>
+
+            <!-- Notifications List -->
+            <div class="space-y-4">
+                <!-- Today -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-500 mb-3">Hari Ini</h3>
+                    
+                    <!-- Critical Alert -->
+                    <div class="bg-cur-error/5 border-l-4 border-cur-error rounded-xl p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-error rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-exclamation-triangle text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Laporan Pelanggaran</h4>
+                                    <span class="text-xs text-gray-500">5 menit lalu</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    Klien melaporkan pelanggaran etika oleh terapis. ID Laporan: #RPT-2024-001. Memerlukan tindakan segera.
+                                </p>
+                                <div class="flex items-center space-x-3">
+                                    <a href="44_admin_users.html" class="px-4 py-2 bg-cur-error text-white font-semibold rounded-lg hover:bg-opacity-90 transition text-sm">
+                                        <i class="fas fa-eye mr-1"></i>
+                                        Tinjau Sekarang
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-cur-primary/5 border-l-4 border-cur-primary rounded-xl p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-plus text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Pendaftaran Terapis Baru</h4>
+                                    <span class="text-xs text-gray-500">1 jam lalu</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    <span class="font-semibold">Dr. Michael Chen</span> mendaftar sebagai terapis. Menunggu verifikasi dokumen dan lisensi.
+                                </p>
+                                <a href="44_admin_users.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                    Verifikasi Sekarang <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-success rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-money-bill-wave text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Transaksi Berhasil</h4>
+                                    <span class="text-xs text-gray-500">2 jam lalu</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    Pembayaran sebesar <span class="font-semibold">Rp 125.000.000</span> berhasil diproses untuk 250 transaksi booking.
+                                </p>
+                                <a href="45_admin_financial.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                    Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yesterday -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-500 mb-3">Kemarin</h3>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-warning rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Laporan Harian</h4>
+                                    <span class="text-xs text-gray-500">Kemarin, 23:59</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    Laporan aktivitas harian telah dibuat. Total 45 sesi selesai, 12 booking baru, pendapatan Rp 15.750.000.
+                                </p>
+                                <a href="42_admin_dashboard.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                    Lihat Laporan <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-info rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-database text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Backup Database</h4>
+                                    <span class="text-xs text-gray-500">Kemarin, 03:00</span>
+                                </div>
+                                <p class="text-gray-700">
+                                    Backup database otomatis berhasil dilakukan. Ukuran: 2.5 GB. Status: Tersimpan aman.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This Week -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-500 mb-3">Minggu Ini</h3>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-sync text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Update Sistem</h4>
+                                    <span class="text-xs text-gray-500">3 hari lalu</span>
+                                </div>
+                                <p class="text-gray-700">
+                                    Sistem telah diupdate ke versi 2.5.0. Fitur baru: Export laporan, notifikasi real-time, dan dashboard analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-8">
+                <button class="px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition">
+                    Muat Lebih Banyak
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

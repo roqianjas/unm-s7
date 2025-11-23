@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi - CUR-HEART Therapist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="41_therapist_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="40_therapist_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Dr. Sarah Johnson</div>
+                            <div class="text-xs text-gray-500">Terapis</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="29_therapist_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home text-base"></i>
+                        <span class="text-base font-medium">Dashboard</span>
+                    </a>
+                    <a href="30_therapist_schedule.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-alt text-base"></i>
+                        <span class="text-base font-medium">Jadwal</span>
+                    </a>
+                    <a href="31_therapist_availability.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clock text-base"></i>
+                        <span class="text-base font-medium">Ketersediaan</span>
+                    </a>
+                    <a href="32_therapist_clients.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users text-base"></i>
+                        <span class="text-base font-medium">Klien</span>
+                    </a>
+                    <a href="35_session_notes.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clipboard text-base"></i>
+                        <span class="text-base font-medium">Catatan Sesi</span>
+                    </a>
+                    <a href="36_therapist_session_history.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-history text-base"></i>
+                        <span class="text-base font-medium">Riwayat Sesi</span>
+                    </a>
+                    <a href="37_therapist_earnings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-wallet text-base"></i>
+                        <span class="text-base font-medium">Pendapatan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="38_therapist_profile_edit.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-user-edit text-base"></i>
+                            <span class="text-base font-medium">Edit Profil</span>
+                        </a>
+                        <a href="39_therapist_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog text-base"></i>
+                            <span class="text-base font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt text-base"></i>
+                            <span class="text-base font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Notifikasi</h1>
+                        <p class="text-gray-600">Semua update dan pemberitahuan penting</p>
+                    </div>
+                    <button class="px-4 py-2 text-cur-primary hover:bg-cur-primary/10 rounded-lg transition font-medium">
+                        <i class="fas fa-check-double mr-2"></i>
+                        Tandai Semua Dibaca
+                    </button>
+                </div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="bg-white rounded-xl shadow-sm p-2 mb-6 inline-flex space-x-2">
+                <button class="px-6 py-2 bg-cur-primary text-white rounded-lg font-medium transition">
+                    Semua
+                </button>
+                <button class="px-6 py-2 text-gray-700 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Booking
+                </button>
+                <button class="px-6 py-2 text-gray-700 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Pembayaran
+                </button>
+                <button class="px-6 py-2 text-gray-700 hover:bg-gray-100 rounded-lg font-medium transition">
+                    Sistem
+                </button>
+            </div>
+
+            <!-- Notifications List -->
+            <div class="space-y-4">
+                <!-- Today -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-500 mb-3">Hari Ini</h3>
+                    
+                    <!-- Unread Notification -->
+                    <div class="bg-cur-primary/5 border-l-4 border-cur-primary rounded-xl p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-warning rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-calendar-plus text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Permintaan Booking Baru</h4>
+                                    <span class="text-xs text-gray-500">10 menit lalu</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    <span class="font-semibold">Rina Sari</span> mengajukan booking untuk sesi Terapi Kecemasan pada <span class="font-semibold">28 Oktober 2024, 10:00 WIB</span>
+                                </p>
+                                <div class="flex items-center space-x-3">
+                                    <button class="px-4 py-2 bg-cur-success text-white font-semibold rounded-lg hover:bg-opacity-90 transition text-sm">
+                                        <i class="fas fa-check mr-1"></i>
+                                        Terima
+                                    </button>
+                                    <button class="px-4 py-2 bg-cur-error text-white font-semibold rounded-lg hover:bg-opacity-90 transition text-sm">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Tolak
+                                    </button>
+                                    <a href="30_therapist_schedule.html" class="px-4 py-2 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition text-sm">
+                                        Lihat Detail
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-success rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-money-bill-wave text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Pembayaran Diterima</h4>
+                                    <span class="text-xs text-gray-500">2 jam lalu</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    Pembayaran sebesar <span class="font-semibold">Rp 6.300.000</span> telah masuk ke rekening Anda. Transfer ID: #PAY-20241020-001
+                                </p>
+                                <a href="37_therapist_earnings.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                    Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-info rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-star text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Ulasan Baru</h4>
+                                    <span class="text-xs text-gray-500">3 jam lalu</span>
+                                </div>
+                                <p class="text-gray-700 mb-2">
+                                    <span class="font-semibold">Budi Santoso</span> memberikan rating 5 bintang untuk sesi terapi Anda
+                                </p>
+                                <div class="flex items-center space-x-1 text-cur-warning mb-3">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-sm text-gray-600 italic">"Sangat membantu dan profesional. Dr. Sarah benar-benar memahami masalah saya."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yesterday -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-500 mb-3">Kemarin</h3>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-calendar-times text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Pembatalan Sesi</h4>
+                                    <span class="text-xs text-gray-500">Kemarin, 15:30</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    <span class="font-semibold">Ahmad Fauzi</span> membatalkan sesi pada 27 September 2024, 15:00 WIB. Alasan: Sakit
+                                </p>
+                                <a href="30_therapist_schedule.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                    Lihat Jadwal <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Pesan Baru</h4>
+                                    <span class="text-xs text-gray-500">Kemarin, 10:25</span>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    <span class="font-semibold">Siti Aminah</span> mengirim pesan: "Dok, saya ingin reschedule sesi..."
+                                </p>
+                                <a href="40_therapist_messages.html" class="text-cur-primary hover:text-cur-secondary font-medium text-sm">
+                                    Buka Pesan <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This Week -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-500 mb-3">Minggu Ini</h3>
+                    
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bell text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Pengingat Sesi</h4>
+                                    <span class="text-xs text-gray-500">3 hari lalu</span>
+                                </div>
+                                <p class="text-gray-700">
+                                    Anda memiliki 3 sesi terjadwal untuk hari ini. Jangan lupa untuk review catatan klien sebelum sesi dimulai.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-3">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-info-circle text-white text-xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-bold text-gray-800">Update Sistem</h4>
+                                    <span class="text-xs text-gray-500">5 hari lalu</span>
+                                </div>
+                                <p class="text-gray-700">
+                                    Fitur baru telah ditambahkan: Sekarang Anda dapat mengexport catatan sesi dalam format PDF. Coba sekarang!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-8">
+                <button class="px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition">
+                    Muat Lebih Banyak
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
