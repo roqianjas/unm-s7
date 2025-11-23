@@ -944,7 +944,7 @@ Database dinormalisasi hingga Third Normal Form (3NF) untuk menghindari redundan
 
 #### 4.3.9.4 Desain Antarmuka Pengguna (UI/UX)
 
-Desain antarmuka pengguna (UI) dibuat menggunakan Figma dengan total 41 halaman mockup yang mencakup semua peran pengguna. Desain mengikuti prinsip *user-centered design* dengan fokus pada kemudahan penggunaan, aksesibilitas, dan pengalaman pengguna yang optimal.
+Desain antarmuka pengguna (UI) dibuat menggunakan Figma dengan total 66 halaman mockup yang mencakup semua peran pengguna. Desain mengikuti prinsip *user-centered design* dengan fokus pada kemudahan penggunaan, aksesibilitas, dan pengalaman pengguna yang optimal.
 
 ##### A. Sistem Desain (*Design System*)
 
@@ -1669,7 +1669,7 @@ Teknologi yang digunakan untuk membangun Sistem Informasi CUR-HEART secara garis
 
 **A. Desain UI/UX**
 - **Figma**: Peralatan desain untuk *wireframes* dan *mockups*
-- 41 halaman *mockup* untuk semua peran pengguna
+- 66 halaman *mockup* untuk semua peran pengguna
 - Sistem desain dengan palet warna dan tipografi
 
 **B. Peralatan Diagram**
