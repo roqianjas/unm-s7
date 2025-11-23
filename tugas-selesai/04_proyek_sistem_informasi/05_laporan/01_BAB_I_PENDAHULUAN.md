@@ -110,6 +110,9 @@ Sistem informasi yang dikembangkan mencakup fungsi-fungsi utama sebagai berikut:
 6. **Modul Dasbor Admin**
    - Ikhtisar dasbor dengan metrik operasional dan keuangan
    - Manajemen pengguna, terapis, layanan, dan pemesanan
+   - Manajemen konten (blog, FAQ, layanan, promo)
+   - Verifikasi dan persetujuan terapis baru
+   - Manajemen ulasan dan penilaian klien
    - Pelaporan dan analitik (operasional, keuangan, kinerja)
    - Pengaturan sistem
 
@@ -202,7 +205,7 @@ Luaran yang dihasilkan dari proyek ini adalah:
    - Dokumentasi skema basis data
 
 2. **Sistem:**
-   - Prototipe fungsional aplikasi web
+   - Prototipe fungsional aplikasi web (66 halaman mockup)
    - Kode sumber lengkap di repositori GitHub
    - Basis data dengan data sampel
    - Panduan penerapan (*deployment*)

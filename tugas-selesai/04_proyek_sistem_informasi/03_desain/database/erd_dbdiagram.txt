@@ -1,0 +1,430 @@
+// CUR-HEART Database Schema
+// Use DBML (Database Markup Language) for dbdiagram.io
+// Visit: https://dbdiagram.io/d
+
+Table users {
+  id bigint [pk, increment]
+  name varchar(255) [not null]
+  email varchar(255) [unique, not null]
+  email_verified_at timestamp
+  password varchar(255) [not null]
+  phone varchar(20)
+  role enum('admin','therapist','client') [not null, default: 'client']
+  avatar varchar(255)
+  status enum('active','inactive','suspended') [default: 'active']
+  last_login_at timestamp
+  remember_token varchar(100)
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    email
+    role
+    status
+  }
+}
+
+Table clients {
+  id bigint [pk, increment]
+  user_id bigint [ref: - users.id, not null]
+  date_of_birth date
+  gender enum('male','female','other')
+  address text
+  emergency_contact_name varchar(255)
+  emergency_contact_phone varchar(20)
+  medical_history text
+  preferences json
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table therapists {
+  id bigint [pk, increment]
+  user_id bigint [ref: - users.id, not null]
+  specialization varchar(255)
+  license_number varchar(100)
+  years_of_experience int
+  education text
+  certifications text
+  bio text
+  hourly_rate decimal(10,2)
+  rating decimal(3,2) [default: 0]
+  total_reviews int [default: 0]
+  total_sessions int [default: 0]
+  is_verified boolean [default: false]
+  verification_documents json
+  bank_account_name varchar(255)
+  bank_account_number varchar(50)
+  bank_name varchar(100)
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    is_verified
+    rating
+  }
+}
+
+Table services {
+  id bigint [pk, increment]
+  name varchar(255) [not null]
+  slug varchar(255) [unique, not null]
+  description text
+  benefits text
+  process text
+  duration int [note: 'in minutes']
+  price decimal(10,2) [not null]
+  image varchar(255)
+  is_active boolean [default: true]
+  display_order int [default: 0]
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    slug
+    is_active
+  }
+}
+
+Table therapist_services {
+  id bigint [pk, increment]
+  therapist_id bigint [ref: > therapists.id, not null]
+  service_id bigint [ref: > services.id, not null]
+  custom_price decimal(10,2)
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    (therapist_id, service_id) [unique]
+  }
+}
+
+Table therapist_availability {
+  id bigint [pk, increment]
+  therapist_id bigint [ref: > therapists.id, not null]
+  day_of_week enum('monday','tuesday','wednesday','thursday','friday','saturday','sunday') [not null]
+  start_time time [not null]
+  end_time time [not null]
+  is_available boolean [default: true]
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    therapist_id
+    day_of_week
+  }
+}
+
+Table therapist_unavailability {
+  id bigint [pk, increment]
+  therapist_id bigint [ref: > therapists.id, not null]
+  start_date date [not null]
+  end_date date [not null]
+  reason varchar(255)
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    therapist_id
+    (start_date, end_date)
+  }
+}
+
+Table bookings {
+  id bigint [pk, increment]
+  booking_number varchar(50) [unique, not null]
+  client_id bigint [ref: > clients.id, not null]
+  therapist_id bigint [ref: > therapists.id, not null]
+  service_id bigint [ref: > services.id, not null]
+  booking_date date [not null]
+  booking_time time [not null]
+  duration int [note: 'in minutes']
+  session_type enum('online','offline') [default: 'online']
+  location varchar(255)
+  status enum('pending_payment','paid','confirmed','completed','cancelled','no_show') [default: 'pending_payment']
+  total_price decimal(10,2) [not null]
+  discount_amount decimal(10,2) [default: 0]
+  final_price decimal(10,2) [not null]
+  promo_code_id bigint [ref: > promo_codes.id]
+  client_notes text
+  cancellation_reason text
+  cancelled_at timestamp
+  cancelled_by bigint [ref: > users.id]
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    booking_number
+    client_id
+    therapist_id
+    booking_date
+    status
+  }
+}
+
+Table payments {
+  id bigint [pk, increment]
+  booking_id bigint [ref: - bookings.id, not null]
+  payment_method enum('credit_card','bank_transfer','e_wallet','qris') [not null]
+  payment_gateway varchar(50) [note: 'midtrans, xendit, etc']
+  transaction_id varchar(255) [unique]
+  amount decimal(10,2) [not null]
+  status enum('pending','success','failed','expired','refunded') [default: 'pending']
+  paid_at timestamp
+  payment_proof varchar(255)
+  payment_details json
+  refund_amount decimal(10,2)
+  refund_reason text
+  refunded_at timestamp
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    booking_id
+    transaction_id
+    status
+  }
+}
+
+Table sessions {
+  id bigint [pk, increment]
+  booking_id bigint [ref: - bookings.id, not null]
+  start_time timestamp
+  end_time timestamp
+  actual_duration int [note: 'in minutes']
+  session_link varchar(255) [note: 'video conference link']
+  status enum('scheduled','in_progress','completed','cancelled') [default: 'scheduled']
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    booking_id
+    status
+  }
+}
+
+Table session_notes {
+  id bigint [pk, increment]
+  session_id bigint [ref: > sessions.id, not null]
+  therapist_id bigint [ref: > therapists.id, not null]
+  techniques_used text
+  client_condition text
+  progress_notes text
+  observations text
+  homework text
+  recommendations text
+  next_session_plan text
+  is_shared_with_client boolean [default: false]
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    session_id
+    therapist_id
+  }
+}
+
+Table reviews {
+  id bigint [pk, increment]
+  booking_id bigint [ref: > bookings.id, not null]
+  client_id bigint [ref: > clients.id, not null]
+  therapist_id bigint [ref: > therapists.id, not null]
+  rating int [not null, note: '1-5']
+  comment text
+  is_anonymous boolean [default: false]
+  is_approved boolean [default: false]
+  approved_by bigint [ref: > users.id]
+  approved_at timestamp
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    therapist_id
+    rating
+    is_approved
+  }
+}
+
+Table promo_codes {
+  id bigint [pk, increment]
+  code varchar(50) [unique, not null]
+  description text
+  discount_type enum('percentage','fixed') [not null]
+  discount_value decimal(10,2) [not null]
+  min_purchase decimal(10,2)
+  max_discount decimal(10,2)
+  usage_limit int
+  usage_count int [default: 0]
+  valid_from date [not null]
+  valid_until date [not null]
+  is_active boolean [default: true]
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    code
+    is_active
+    (valid_from, valid_until)
+  }
+}
+
+Table blog_posts {
+  id bigint [pk, increment]
+  author_id bigint [ref: > users.id, not null]
+  title varchar(255) [not null]
+  slug varchar(255) [unique, not null]
+  excerpt text
+  content text [not null]
+  featured_image varchar(255)
+  category_id bigint [ref: > blog_categories.id]
+  tags json
+  status enum('draft','published','archived') [default: 'draft']
+  published_at timestamp
+  views_count int [default: 0]
+  meta_title varchar(255)
+  meta_description text
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    slug
+    status
+    published_at
+    author_id
+  }
+}
+
+Table blog_categories {
+  id bigint [pk, increment]
+  name varchar(100) [not null]
+  slug varchar(100) [unique, not null]
+  description text
+  display_order int [default: 0]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table faqs {
+  id bigint [pk, increment]
+  category_id bigint [ref: > faq_categories.id]
+  question text [not null]
+  answer text [not null]
+  display_order int [default: 0]
+  is_active boolean [default: true]
+  views_count int [default: 0]
+  helpful_count int [default: 0]
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    category_id
+    is_active
+  }
+}
+
+Table faq_categories {
+  id bigint [pk, increment]
+  name varchar(100) [not null]
+  slug varchar(100) [unique, not null]
+  description text
+  display_order int [default: 0]
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table messages {
+  id bigint [pk, increment]
+  sender_id bigint [ref: > users.id, not null]
+  receiver_id bigint [ref: > users.id, not null]
+  booking_id bigint [ref: > bookings.id]
+  message text [not null]
+  is_read boolean [default: false]
+  read_at timestamp
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    sender_id
+    receiver_id
+    booking_id
+    is_read
+  }
+}
+
+Table notifications {
+  id bigint [pk, increment]
+  user_id bigint [ref: > users.id, not null]
+  type varchar(100) [not null]
+  title varchar(255) [not null]
+  message text [not null]
+  data json
+  is_read boolean [default: false]
+  read_at timestamp
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    user_id
+    is_read
+    type
+  }
+}
+
+Table withdrawals {
+  id bigint [pk, increment]
+  therapist_id bigint [ref: > therapists.id, not null]
+  amount decimal(10,2) [not null]
+  bank_account_name varchar(255) [not null]
+  bank_account_number varchar(50) [not null]
+  bank_name varchar(100) [not null]
+  status enum('pending','approved','rejected','processed') [default: 'pending']
+  approved_by bigint [ref: > users.id]
+  approved_at timestamp
+  processed_at timestamp
+  rejection_reason text
+  transfer_proof varchar(255)
+  notes text
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    therapist_id
+    status
+  }
+}
+
+Table activity_logs {
+  id bigint [pk, increment]
+  user_id bigint [ref: > users.id]
+  action varchar(100) [not null]
+  description text
+  model_type varchar(100)
+  model_id bigint
+  ip_address varchar(45)
+  user_agent text
+  properties json
+  created_at timestamp
+  
+  indexes {
+    user_id
+    action
+    model_type
+    created_at
+  }
+}
+
+Table system_settings {
+  id bigint [pk, increment]
+  key varchar(100) [unique, not null]
+  value text
+  type enum('string','number','boolean','json') [default: 'string']
+  group varchar(50)
+  description text
+  created_at timestamp
+  updated_at timestamp
+  
+  indexes {
+    key
+    group
+  }
+}

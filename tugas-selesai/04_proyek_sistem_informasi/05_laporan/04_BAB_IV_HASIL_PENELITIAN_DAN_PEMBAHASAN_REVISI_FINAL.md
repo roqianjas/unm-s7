@@ -90,7 +90,7 @@ Ruang lingkup proyek didefinisikan menggunakan *Work Breakdown Structure* (WBS) 
 | 3. Design | 3.1 Database Design | 3.1.1 ERD | Diagram relasi entitas 16 tabel |
 | | | 3.1.2 Normalisasi | Normalisasi hingga 3NF |
 | | 3.2 UI/UX Design | 3.2.1 Wireframe | Sketsa antarmuka pengguna |
-| | | 3.2.2 Mockup | Desain visual 41 halaman di Figma |
+| | | 3.2.2 Mockup | Desain visual 66 halaman di Figma |
 | | 3.3 UML Diagrams | 3.3.1 Use Case Diagram | Diagram kasus penggunaan |
 | | | 3.3.2 Activity Diagram | Diagram aktivitas proses bisnis |
 | 4. Implementation | 4.1 Backend | 4.1.1 Laravel Setup | Instalasi dan konfigurasi *framework* |
@@ -863,37 +863,82 @@ Entity Relationship Diagram (ERD) menggambarkan struktur basis data sistem infor
 2. **clients** - Menyimpan data detail klien
 3. **therapists** - Menyimpan data detail terapis
 4. **services** - Menyimpan data layanan terapi yang ditawarkan
-5. **bookings** - Menyimpan data pemesanan terapi
-6. **payments** - Menyimpan data pembayaran
-7. **sessions** - Menyimpan data sesi terapi yang sudah dilaksanakan
-8. **session_notes** - Menyimpan catatan dokumentasi sesi terapi
-9. **therapist_schedules** - Menyimpan jadwal ketersediaan terapis
-10. **therapist_unavailability** - Menyimpan data ketidaktersediaan terapis (cuti, sakit)
-11. **reviews** - Menyimpan ulasan dari klien terhadap terapis/layanan
-12. **notifications** - Menyimpan notifikasi untuk pengguna
-13. **settings** - Menyimpan konfigurasi sistem
-14. **activity_logs** - Menyimpan log aktivitas pengguna (jejak audit)
+5. **therapist_services** - Relasi many-to-many antara terapis dan layanan
+6. **therapist_availability** - Menyimpan jadwal ketersediaan terapis per hari
+7. **therapist_unavailability** - Menyimpan data ketidaktersediaan terapis (cuti, sakit)
+8. **promo_codes** - Menyimpan kode promo dan diskon
+9. **bookings** - Menyimpan data pemesanan terapi
+10. **payments** - Menyimpan data pembayaran
+11. **sessions** - Menyimpan data sesi terapi yang sudah dilaksanakan
+12. **session_notes** - Menyimpan catatan dokumentasi sesi terapi
+13. **reviews** - Menyimpan ulasan dari klien terhadap terapis/layanan
+14. **blog_categories** - Menyimpan kategori artikel blog
+15. **blog_posts** - Menyimpan artikel blog untuk edukasi kesehatan mental
+16. **faq_categories** - Menyimpan kategori FAQ
+17. **faqs** - Menyimpan pertanyaan dan jawaban FAQ
+18. **messages** - Menyimpan pesan/chat antara klien dan terapis
+19. **notifications** - Menyimpan notifikasi untuk pengguna
+20. **withdrawals** - Menyimpan permintaan penarikan dana terapis
+21. **activity_logs** - Menyimpan log aktivitas pengguna (jejak audit)
+22. **system_settings** - Menyimpan konfigurasi sistem
 
 **Relasi Utama:**
 
+**Relasi Pengguna:**
 - users (1) ↔ (1) clients: *One-to-One*
-- users (1) ↔ (1) therapists: *One-to-One*  
-- clients (1) ↔ (M) bookings: *One-to-Many*
+- users (1) ↔ (1) therapists: *One-to-One*
+- users (1) ↔ (M) notifications: *One-to-Many*
+- users (1) ↔ (M) messages (sender): *One-to-Many*
+- users (1) ↔ (M) messages (receiver): *One-to-Many*
+- users (1) ↔ (M) blog_posts (author): *One-to-Many*
+
+**Relasi Terapis:**
+- therapists (M) ↔ (M) services: *Many-to-Many* (melalui therapist_services)
+- therapists (1) ↔ (M) therapist_availability: *One-to-Many*
+- therapists (1) ↔ (M) therapist_unavailability: *One-to-Many*
 - therapists (1) ↔ (M) bookings: *One-to-Many*
+- therapists (1) ↔ (M) reviews: *One-to-Many*
+- therapists (1) ↔ (M) withdrawals: *One-to-Many*
+
+**Relasi Pemesanan:**
+- clients (1) ↔ (M) bookings: *One-to-Many*
 - services (1) ↔ (M) bookings: *One-to-Many*
+- promo_codes (1) ↔ (M) bookings: *One-to-Many*
 - bookings (1) ↔ (1) payments: *One-to-One*
 - bookings (1) ↔ (1) sessions: *One-to-One*
+- bookings (1) ↔ (M) messages: *One-to-Many*
+- bookings (1) ↔ (1) reviews: *One-to-One*
+
+**Relasi Sesi:**
 - sessions (1) ↔ (M) session_notes: *One-to-Many*
-- therapists (1) ↔ (M) therapist_schedules: *One-to-Many*
-- therapists (1) ↔ (M) therapist_unavailability: *One-to-Many*
-- sessions (1) ↔ (M) reviews: *One-to-Many*
-- users (1) ↔ (M) notifications: *One-to-Many*
+
+**Relasi Konten:**
+- blog_categories (1) ↔ (M) blog_posts: *One-to-Many*
+- faq_categories (1) ↔ (M) faqs: *One-to-Many*
 
 **Keterangan:**
 - (1) = One
 - (M) = Many
 - PK = Primary Key
 - FK = Foreign Key
+
+**Penjelasan Desain Database:**
+
+1. **Normalisasi 3NF**: Database dinormalisasi hingga Third Normal Form (3NF) untuk menghindari redundansi data dan menjaga integritas data.
+
+2. **Relasi Many-to-Many**: Tabel `therapist_services` digunakan sebagai junction table untuk relasi many-to-many antara terapis dan layanan, memungkinkan satu terapis menangani banyak layanan dan satu layanan ditangani banyak terapis.
+
+3. **Soft Delete**: Beberapa tabel menggunakan status enum untuk "soft delete" (misalnya status 'archived' pada blog_posts) untuk menjaga integritas referensial.
+
+4. **Audit Trail**: Tabel `activity_logs` mencatat semua aktivitas penting pengguna untuk keperluan audit dan keamanan.
+
+5. **Content Management**: Tabel `blog_posts`, `blog_categories`, `faqs`, dan `faq_categories` mendukung fitur content management system untuk admin.
+
+6. **Financial Management**: Tabel `payments` dan `withdrawals` mengelola aliran keuangan dari klien ke sistem dan dari sistem ke terapis.
+
+7. **Communication**: Tabel `messages` dan `notifications` mendukung komunikasi real-time antara pengguna.
+
+8. **Indexing**: Setiap tabel memiliki index yang tepat pada kolom yang sering di-query untuk optimasi performa.
 
 Database dinormalisasi hingga Third Normal Form (3NF) untuk menghindari redundansi data dan menjaga integritas data.
 
@@ -929,7 +974,7 @@ Desain antarmuka pengguna (UI) dibuat menggunakan Figma dengan total 41 halaman 
 
 ##### B. Mockup Halaman Utama
 
-Sistem memiliki **41 halaman mockup** yang terbagi dalam beberapa kategori:
+Sistem memiliki **66 halaman mockup** yang terbagi dalam beberapa kategori:
 
 **1. Halaman Publik (12 halaman):**
 
@@ -983,7 +1028,7 @@ Sistem memiliki **41 halaman mockup** yang terbagi dalam beberapa kategori:
 **[GAMBAR 4.24 - Mockup Reset Kata Sandi]**
 - **Reset Kata Sandi**: Kata sandi baru, konfirmasi kata sandi, pengukur kekuatan kata sandi
 
-**3. Dashboard Klien (10 halaman):**
+**3. Dashboard Klien (12 halaman):**
 
 **[GAMBAR 4.25 - Mockup Dasbor Klien - Dasbor Utama]**
 - **Dasbor Utama**: Sambutan, statistik cepat, janji temu berikutnya, sesi mendatang, ikhtisar kemajuan
@@ -1015,54 +1060,129 @@ Sistem memiliki **41 halaman mockup** yang terbagi dalam beberapa kategori:
 **[GAMBAR 4.34 - Mockup Pesan (Obrolan)]**
 - **Pesan (Obrolan)**: Daftar percakapan, area obrolan aktif, indikator mengetik
 
-**4. Dashboard Terapis (10 halaman):**
+**[GAMBAR 4.35 - Mockup Pengaturan Klien]**
+- **Pengaturan Klien**: Profil, keamanan, notifikasi, privasi
 
-**[GAMBAR 4.35 - Mockup Dasbor Terapis - Dasbor Utama]**
+**[GAMBAR 4.36 - Mockup Notifikasi Klien]**
+- **Notifikasi Klien**: Daftar notifikasi, filter, tandai sebagai dibaca
+
+**4. Dashboard Terapis (13 halaman):**
+
+**[GAMBAR 4.37 - Mockup Dasbor Terapis - Dasbor Utama]**
 - **Dasbor Utama**: Sesi hari ini, metrik kunci, ikhtisar pendapatan, ulasan klien
 
-**[GAMBAR 4.36 - Mockup Manajemen Jadwal]**
+**[GAMBAR 4.38 - Mockup Manajemen Jadwal]**
 - **Manajemen Jadwal**: Tampilan kalender (hari/minggu/bulan), blok janji temu, waktu libur
 
-**[GAMBAR 4.37 - Mockup Pengaturan Ketersediaan]**
+**[GAMBAR 4.39 - Mockup Pengaturan Ketersediaan]**
 - **Pengaturan Ketersediaan**: Jam kerja per hari, durasi sesi, jendela pemesanan, tanggal khusus
 
-**[GAMBAR 4.38 - Mockup Daftar Klien]**
+**[GAMBAR 4.40 - Mockup Daftar Klien]**
 - **Daftar Klien**: Cari & filter, kartu klien dengan statistik, aksi massal
 
-**[GAMBAR 4.39 - Mockup Tampilan Profil Klien]**
+**[GAMBAR 4.41 - Mockup Tampilan Profil Klien]**
 - **Tampilan Profil Klien**: Ikhtisar, riwayat sesi, catatan & observasi, kemajuan & tujuan, berkas
 
-**[GAMBAR 4.40 - Mockup Ruang Sesi]**
+**[GAMBAR 4.42 - Mockup Ruang Sesi]**
 - **Ruang Sesi**: Konferensi video dengan timer, bilah kontrol, panel catatan
 
-**[GAMBAR 4.41 - Mockup Formulir Catatan Sesi]**
+**[GAMBAR 4.43 - Mockup Formulir Catatan Sesi]**
 - **Formulir Catatan Sesi**: Penilaian, ringkasan sesi, catatan kemajuan, tugas rumah, templat
 
-**[GAMBAR 4.42 - Mockup Riwayat Sesi]**
+**[GAMBAR 4.44 - Mockup Riwayat Sesi]**
 - **Riwayat Sesi**: Total sesi, cari & filter, tabel sesi, analitik
 
-**[GAMBAR 4.43 - Mockup Dasbor Pendapatan]**
+**[GAMBAR 4.45 - Mockup Dasbor Pendapatan]**
 - **Dasbor Pendapatan**: Saldo, grafik pendapatan, transaksi, penarikan, pengaturan pembayaran
 
-**[GAMBAR 4.44 - Mockup Edit Profil]**
+**[GAMBAR 4.46 - Mockup Edit Profil Terapis]**
 - **Edit Profil**: Tab untuk dasar/profesional/tentang/pendidikan/layanan/media/pengaturan
 
-**5. Dashboard Admin (5 halaman):**
+**[GAMBAR 4.47 - Mockup Pengaturan Terapis]**
+- **Pengaturan Terapis**: Preferensi akun, keamanan, notifikasi
 
-**[GAMBAR 4.45 - Mockup Dasbor Admin - Dasbor Utama]**
+**[GAMBAR 4.48 - Mockup Pesan Terapis]**
+- **Pesan Terapis**: Daftar percakapan dengan klien, area obrolan
+
+**[GAMBAR 4.49 - Mockup Notifikasi Terapis]**
+- **Notifikasi Terapis**: Daftar notifikasi sistem, filter, tandai sebagai dibaca
+
+**5. Dashboard Admin (25 halaman):**
+
+**[GAMBAR 4.50 - Mockup Dasbor Admin - Dasbor Utama]**
 - **Dasbor Utama**: Metrik kunci, grafik pendapatan, pemesanan terbaru, pertumbuhan pengguna, peringatan sistem
 
-**[GAMBAR 4.46 - Mockup Manajemen Pengguna]**
-- **Manajemen Pengguna**: Tab (semua/klien/terapis/admin/tertunda), tabel pengguna, aksi massal
-
-**[GAMBAR 4.47 - Mockup Manajemen Pemesanan]**
+**[GAMBAR 4.46 - Mockup Manajemen Pemesanan]**
 - **Manajemen Pemesanan**: Ringkasan statistik, tab (semua/mendatang/lampau/tertunda/dibatalkan/sengketa), tabel pemesanan
+
+**[GAMBAR 4.47 - Mockup Manajemen Pengguna]**
+- **Manajemen Pengguna**: Tab (semua/klien/terapis/admin/tertunda), tabel pengguna, aksi massal
 
 **[GAMBAR 4.48 - Mockup Laporan Keuangan]**
 - **Laporan Keuangan**: Ringkasan pendapatan, grafik, tabel transaksi, penarikan, pengembalian dana, analitik
 
 **[GAMBAR 4.49 - Mockup Pengaturan Sistem]**
 - **Pengaturan Sistem**: Navigasi kategori, umum/pemesanan/pembayaran/email/keamanan/kebijakan/integrasi/lanjutan
+
+**[GAMBAR 4.50 - Mockup Notifikasi Admin]**
+- **Notifikasi Admin**: Daftar notifikasi sistem, filter berdasarkan tipe, tandai sebagai dibaca
+
+**[GAMBAR 4.51 - Mockup Pesan Admin]**
+- **Pesan Admin**: Daftar percakapan dengan pengguna, area obrolan, dukungan pelanggan
+
+**[GAMBAR 4.52 - Mockup Detail Pengguna]**
+- **Detail Pengguna**: Profil lengkap, riwayat aktivitas, statistik, aksi moderasi
+
+**[GAMBAR 4.53 - Mockup Edit Pengguna]**
+- **Edit Pengguna**: Formulir edit data pengguna, ubah peran, status akun
+
+**[GAMBAR 4.54 - Mockup Detail Pemesanan]**
+- **Detail Pemesanan**: Informasi lengkap pemesanan, timeline status, aksi admin
+
+**[GAMBAR 4.55 - Mockup Manajemen Transaksi]**
+- **Manajemen Transaksi**: Daftar semua transaksi pembayaran, filter, ekspor laporan
+
+**[GAMBAR 4.56 - Mockup Manajemen Penarikan]**
+- **Manajemen Penarikan**: Permintaan penarikan dana terapis, approval, riwayat
+
+**[GAMBAR 4.57 - Mockup Detail Penarikan]**
+- **Detail Penarikan**: Informasi penarikan, verifikasi, bukti transfer
+
+**[GAMBAR 4.58 - Mockup Log Aktivitas]**
+- **Log Aktivitas**: Jejak audit sistem, filter berdasarkan pengguna/aksi/tanggal
+
+**[GAMBAR 4.59 - Mockup Laporan & Analitik]**
+- **Laporan & Analitik**: Dashboard analitik lanjutan, berbagai jenis laporan, ekspor
+
+**[GAMBAR 4.60 - Mockup Manajemen Ulasan]**
+- **Manajemen Ulasan**: Daftar ulasan klien, moderasi, tanggapan, filter rating
+
+**[GAMBAR 4.61 - Mockup Manajemen Promo]**
+- **Manajemen Promo**: Daftar kode promo, buat/edit/hapus, statistik penggunaan
+
+**[GAMBAR 4.62 - Mockup Verifikasi Terapis]**
+- **Verifikasi Terapis**: Daftar pendaftaran terapis baru, review dokumen, approval/reject
+
+**[GAMBAR 4.63 - Mockup Editor Blog]**
+- **Editor Blog**: Rich text editor untuk membuat/edit artikel blog, kategori, tag, SEO
+
+**[GAMBAR 4.64 - Mockup Manajemen Konten Blog]**
+- **Manajemen Konten Blog**: Daftar artikel, status (draft/published), aksi CRUD
+
+**[GAMBAR 4.65 - Mockup Editor FAQ]**
+- **Editor FAQ**: Formulir untuk membuat/edit pertanyaan dan jawaban FAQ, kategori
+
+**[GAMBAR 4.66 - Mockup Manajemen Konten FAQ]**
+- **Manajemen Konten FAQ**: Daftar FAQ, kategori, urutan tampilan, aksi CRUD
+
+**[GAMBAR 4.67 - Mockup Editor Layanan]**
+- **Editor Layanan**: Formulir lengkap untuk membuat/edit layanan terapi, harga, durasi
+
+**[GAMBAR 4.68 - Mockup Manajemen Konten Layanan]**
+- **Manajemen Konten Layanan**: Daftar layanan, status aktif/nonaktif, aksi CRUD
+
+**[GAMBAR 4.69 - Mockup Editor Promo]**
+- **Editor Promo**: Formulir untuk membuat/edit promosi, banner, periode aktif, target
 
 ##### C. Fitur Desain Unggulan
 
@@ -1134,7 +1254,15 @@ Dokumentasi lengkap untuk pengembang mencakup:
 
 **Ringkasan Desain UI/UX:**
 
-Total **41 halaman mockup** yang mencakup seluruh perjalanan pengguna dari 4 peran berbeda (Tamu, Klien, Terapis, Admin). Semua mockup dirancang dengan prinsip:
+Total **66 halaman mockup** yang mencakup seluruh perjalanan pengguna dari 4 peran berbeda (Tamu, Klien, Terapis, Admin). Rincian distribusi halaman:
+
+- **Halaman Publik**: 12 halaman (landing, layanan, terapis, blog, kontak, FAQ, dll)
+- **Halaman Autentikasi**: 4 halaman (login, register, lupa password, reset password)
+- **Dashboard Klien**: 12 halaman (dashboard, booking flow 4 steps, appointments, progress, messages, settings, notifications)
+- **Dashboard Terapis**: 13 halaman (dashboard, schedule, availability, clients, session room, notes, history, earnings, profile edit, settings, messages, notifications)
+- **Dashboard Admin**: 25 halaman (dashboard, users, bookings, financial, content management, reviews, verification, reports)
+
+Semua mockup dirancang dengan prinsip:
 
 **Responsif**: Adaptif untuk desktop, tablet, dan mobile  
 **Aksesibilitas**: Memenuhi standar *WCAG 2.1 AA*  

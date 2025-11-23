@@ -1,0 +1,90 @@
+@startuml
+
+|Klien|
+start
+:Login ke Sistem;
+:Lihat Daftar Layanan;
+:Pilih Layanan Terapi;
+
+|Sistem|
+:Tampilkan Daftar Terapis;
+:Tampilkan Jadwal Tersedia;
+
+|Klien|
+:Pilih Terapis dan Waktu;
+
+|Sistem|
+if (Jadwal Tersedia?) then (yes)
+  |Klien|
+  :Isi Informasi Tambahan;
+  :Isi Keluhan dan Catatan;
+  
+  |Sistem|
+  :Tampilkan Ringkasan Pemesanan;
+  :Hitung Total Biaya;
+  
+  |Klien|
+  if (Gunakan Kode Promo?) then (yes)
+    :Input Kode Promo;
+    |Sistem|
+    if (Kode Promo Valid?) then (yes)
+      :Terapkan Diskon;
+      :Hitung Ulang Total;
+    else (no)
+      :Tampilkan Error Promo;
+      stop
+    endif
+  else (no)
+    :Lanjut Tanpa Promo;
+  endif
+  
+  |Klien|
+  :Konfirmasi Pemesanan;
+  
+  |Sistem|
+  :Buat Record Pemesanan;
+  :Set Status: Pending Payment;
+  :Generate Booking Number;
+  :Redirect ke Payment Gateway;
+  
+  |Payment Gateway|
+  :Tampilkan Halaman Pembayaran;
+  
+  |Klien|
+  :Pilih Metode Pembayaran;
+  :Lakukan Pembayaran;
+  
+  |Payment Gateway|
+  :Proses Transaksi;
+  
+  if (Pembayaran Berhasil?) then (yes)
+    |Sistem|
+    :Update Status: Paid;
+    :Simpan Data Pembayaran;
+    :Kirim Email Konfirmasi;
+    :Kirim Notifikasi ke Terapis;
+    :Jadwalkan Reminder H-1;
+    
+    |Klien|
+    :Terima Konfirmasi;
+    stop
+  else (no)
+    |Sistem|
+    :Update Status: Failed;
+    :Kirim Notifikasi Gagal;
+    
+    |Klien|
+    :Terima Notifikasi Gagal;
+    stop
+  endif
+  
+else (no)
+  |Sistem|
+  :Tampilkan Error;
+  :Jadwal Tidak Tersedia;
+  
+  |Klien|
+  stop
+endif
+
+@enduml

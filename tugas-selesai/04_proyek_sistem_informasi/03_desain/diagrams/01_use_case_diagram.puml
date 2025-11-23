@@ -1,0 +1,90 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Tamu" as Guest
+actor "Klien" as Client
+actor "Terapis" as Therapist
+actor "Admin" as Admin
+actor "Payment Gateway" as Payment
+
+rectangle "Sistem Informasi CUR-HEART" {
+  usecase "Lihat Beranda" as UC1
+  usecase "Lihat Layanan" as UC2
+  usecase "Lihat Terapis" as UC3
+  usecase "Lihat Blog" as UC4
+  usecase "Lihat FAQ" as UC5
+  usecase "Registrasi" as UC6
+  usecase "Login" as UC7
+  
+  usecase "Dashboard Klien" as UC8
+  usecase "Buat Pemesanan" as UC9
+  usecase "Pilih Layanan" as UC10
+  usecase "Pilih Terapis" as UC11
+  usecase "Lakukan Pembayaran" as UC12
+  usecase "Lihat Riwayat" as UC13
+  usecase "Lihat Kemajuan" as UC14
+  usecase "Kirim Pesan" as UC15
+  usecase "Beri Ulasan" as UC16
+  
+  usecase "Dashboard Terapis" as UC17
+  usecase "Atur Jadwal" as UC18
+  usecase "Lihat Klien" as UC19
+  usecase "Dokumentasi Sesi" as UC20
+  usecase "Lihat Pendapatan" as UC21
+  usecase "Penarikan Dana" as UC22
+  
+  usecase "Dashboard Admin" as UC23
+  usecase "Kelola Pengguna" as UC24
+  usecase "Kelola Terapis" as UC25
+  usecase "Verifikasi Terapis" as UC26
+  usecase "Kelola Layanan" as UC27
+  usecase "Kelola Konten" as UC28
+  usecase "Lihat Laporan" as UC29
+  
+  usecase "Proses Pembayaran" as UC30
+  usecase "Verifikasi Transaksi" as UC31
+}
+
+Guest --> UC1
+Guest --> UC2
+Guest --> UC3
+Guest --> UC4
+Guest --> UC5
+Guest --> UC6
+Guest --> UC7
+
+Client --> UC7
+Client --> UC8
+Client --> UC9
+Client --> UC13
+Client --> UC14
+Client --> UC15
+Client --> UC16
+
+Therapist --> UC7
+Therapist --> UC17
+Therapist --> UC18
+Therapist --> UC19
+Therapist --> UC20
+Therapist --> UC21
+Therapist --> UC22
+
+Admin --> UC7
+Admin --> UC23
+Admin --> UC24
+Admin --> UC25
+Admin --> UC26
+Admin --> UC27
+Admin --> UC28
+Admin --> UC29
+
+Payment --> UC30
+Payment --> UC31
+
+UC9 ..> UC10 : <<include>>
+UC9 ..> UC11 : <<include>>
+UC9 ..> UC12 : <<include>>
+UC12 ..> UC30 : <<include>>
+
+@enduml
