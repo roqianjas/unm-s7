@@ -126,12 +126,15 @@ Pastikan semua teks mudah dibaca dari jarak 2-3 meter!
 │                                                       │
 │  [ICON]  Dashboard Analitik                          │
 │          Laporan keuangan & kinerja real-time        │
+│                                                       │
+│  [ICON]  Notifikasi Otomatis                         │
+│          Email konfirmasi, pengingat & update        │
 └─────────────────────────────────────────────────────┘
 ```
 
 **Visual:**
-- 5 fitur utama dengan icon menarik
-- Layout 2 kolom atau card-based
+- 6 fitur utama dengan icon menarik
+- Layout 2 kolom (3 baris x 2 kolom) card-based
 - Setiap fitur: Icon + Judul (bold) + Deskripsi singkat (1 baris)
 
 ---
@@ -315,7 +318,7 @@ pembayaran online, dan pelaporan bisnis secara terintegrasi.
 ✅ Akses 24/7  ✅ Real-time  ✅ Aman  ✅ User-friendly
 ```
 
-### Fitur Utama (5 Poin)
+### Fitur Utama (6 Poin)
 ```
 ⭐ FITUR UTAMA SISTEM
 
@@ -333,6 +336,9 @@ pembayaran online, dan pelaporan bisnis secara terintegrasi.
 
 📊 DASHBOARD ANALITIK
    Laporan keuangan & kinerja bisnis real-time
+
+🔔 NOTIFIKASI OTOMATIS
+   Email konfirmasi, pengingat sesi, dan update status pembayaran
 ```
 
 ### Hasil & Dampak (6 Metrik)
