@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 12 - Diagram UML | Presentasi CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="mb-8">
+            <div class="flex items-center mb-6">
+                <img src="assets/img/color.png" alt="CurHeart Logo" class="h-12 mr-4">
+                <h1 class="text-5xl font-bold text-gray-900">Diagram UML</h1>
+            </div>
+            <div class="h-1 w-32 bg-[#1E0E62] rounded-full"></div>
+        </div>
+
+        <!-- Use Case Diagram -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Diagram Kasus Penggunaan</h2>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-[#1E0E62]/10 rounded-xl p-4 border-2 border-[#1E0E62]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Tamu</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Lihat layanan</li>
+                        <li>• Lihat terapis</li>
+                        <li>• Baca blog</li>
+                        <li>• Registrasi</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FF6B7A]/10 rounded-xl p-4 border-2 border-[#FF6B7A]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Klien</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Buat reservasi</li>
+                        <li>• Bayar daring</li>
+                        <li>• Lihat progres</li>
+                        <li>• Beri ulasan</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FFA94D]/10 rounded-xl p-4 border-2 border-[#FFA94D]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Terapis</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Kelola jadwal</li>
+                        <li>• Catat sesi</li>
+                        <li>• Lihat klien</li>
+                        <li>• Lihat pendapatan</li>
+                    </ul>
+                </div>
+                <div class="bg-[#00D26A]/10 rounded-xl p-4 border-2 border-[#00D26A]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Admin</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Kelola pengguna</li>
+                        <li>• Kelola layanan</li>
+                        <li>• Lihat laporan</li>
+                        <li>• Kelola sistem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Diagram -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Diagram Aktivitas: Alur Reservasi</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="bg-[#10B981] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            1
+                        </div>
+                        <p class="text-gray-700">Klien masuk ke sistem</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#3B82F6] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            2
+                        </div>
+                        <p class="text-gray-700">Pilih layanan terapi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#0D9488] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            3
+                        </div>
+                        <p class="text-gray-700">Pilih terapis (opsional)</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#9333EA] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            4
+                        </div>
+                        <p class="text-gray-700">Pilih tanggal & waktu</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#F59E0B] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            5
+                        </div>
+                        <p class="text-gray-700">Konfirmasi & bayar</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#EF4444] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            6
+                        </div>
+                        <p class="text-gray-700">Terima konfirmasi email</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Diagram Aktivitas: Sesi Terapi</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="bg-[#10B981] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            1
+                        </div>
+                        <p class="text-gray-700">Terapis lihat jadwal hari ini</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#3B82F6] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            2
+                        </div>
+                        <p class="text-gray-700">Buka detail klien</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#0D9488] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            3
+                        </div>
+                        <p class="text-gray-700">Lakukan sesi terapi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#9333EA] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            4
+                        </div>
+                        <p class="text-gray-700">Catat hasil sesi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#F59E0B] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            5
+                        </div>
+                        <p class="text-gray-700">Perbarui progres klien</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#EF4444] text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 font-bold">
+                            6
+                        </div>
+                        <p class="text-gray-700">Simpan dokumentasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sequence Diagram -->
+        <div class="mt-6 bg-[#1E0E62] rounded-2xl p-6 text-white">
+            <h3 class="text-2xl font-bold mb-4">Diagram Urutan: Autentikasi</h3>
+            <div class="grid md:grid-cols-5 gap-2 text-center text-sm">
+                <div class="bg-white/20 rounded-lg p-3">
+                    <p class="font-bold">Pengguna</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="bg-white/20 rounded-lg p-3">
+                    <p class="font-bold">Pengendali</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="bg-white/20 rounded-lg p-3">
+                    <p class="font-bold">Basis Data</p>
+                </div>
+            </div>
+            <div class="mt-4 space-y-2 text-sm">
+                <p>1. Pengguna kirim formulir masuk</p>
+                <p>2. Pengendali validasi kredensial</p>
+                <p>3. Basis data verifikasi pengguna</p>
+                <p>4. Kembalikan data pengguna & token</p>
+                <p>5. Alihkan ke dasbor</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="slide-11-desain-uiux.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-white text-[#1E0E62] p-4 rounded-full shadow-lg hover:bg-gray-100 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+    </a>
+    <a href="slide-13-arsitektur-sistem.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full shadow-lg hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+    </a>
+</body>
+</html>

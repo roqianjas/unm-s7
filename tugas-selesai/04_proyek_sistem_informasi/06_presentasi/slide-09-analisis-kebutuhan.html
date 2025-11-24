@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 9 - Analisis Kebutuhan | Presentasi CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="mb-8">
+            <div class="flex items-center mb-6">
+                <img src="assets/img/color.png" alt="CurHeart Logo" class="h-12 mr-4">
+                <h1 class="text-5xl font-bold text-gray-900">Analisis Kebutuhan</h1>
+            </div>
+            <div class="h-1 w-32 bg-[#1E0E62] rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Kebutuhan Fungsional -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Kebutuhan Fungsional (50+)</h2>
+                <div class="space-y-3">
+                    <div class="bg-[#1E0E62]/10 rounded-lg p-4 border-l-4 border-[#1E0E62]">
+                        <p class="font-bold text-gray-800 mb-2">1. Autentikasi & Manajemen Pengguna</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Registrasi & verifikasi email</li>
+                            <li>• Login multi-peran (Admin, Terapis, Klien)</li>
+                            <li>• Lupa & atur ulang kata sandi</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FF6B7A]/10 rounded-lg p-4 border-l-4 border-[#FF6B7A]">
+                        <p class="font-bold text-gray-800 mb-2">2. Informasi Publik</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Halaman arahan, layanan, terapis</li>
+                            <li>• Blog/artikel kesehatan mental</li>
+                            <li>• FAQ & kontak</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FFA94D]/10 rounded-lg p-4 border-l-4 border-[#FFA94D]">
+                        <p class="font-bold text-gray-800 mb-2">3. Reservasi & Penjadwalan</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Wizard reservasi 4 langkah</li>
+                            <li>• Pemeriksaan ketersediaan waktu nyata</li>
+                            <li>• Jadwal ulang & batalkan</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#00D26A]/10 rounded-lg p-4 border-l-4 border-[#00D26A]">
+                        <p class="font-bold text-gray-800 mb-2">4. Dasbor Multi-Peran</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Dasbor Klien (13 halaman)</li>
+                            <li>• Dasbor Terapis (12 halaman)</li>
+                            <li>• Dasbor Admin (10 halaman)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kebutuhan Non-Fungsional -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Kebutuhan Non-Fungsional</h2>
+                <div class="space-y-4">
+                    <div class="bg-[#00D26A]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-6 h-6 text-[#00D26A] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="font-bold text-gray-800">Kinerja</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Waktu respons <2 detik</li>
+                            <li>• Respons API <500ms</li>
+                            <li>• 100 pengguna bersamaan</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#FF6B7A]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-6 h-6 text-[#FF6B7A] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="font-bold text-gray-800">Keamanan</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Kepatuhan OWASP Top 10</li>
+                            <li>• HTTPS, CSRF, perlindungan XSS</li>
+                            <li>• Hashing kata sandi (Bcrypt)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#667BC6]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-6 h-6 text-[#667BC6] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="font-bold text-gray-800">Kegunaan</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Skor SUS >70</li>
+                            <li>• Navigasi intuitif</li>
+                            <li>• Desain responsif</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#FFA94D]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-6 h-6 text-[#FFA94D] mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="font-bold text-gray-800">Keandalan</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Waktu aktif 99%</li>
+                            <li>• Cadangan harian</li>
+                            <li>• Penanganan kesalahan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="mt-6 bg-[#1E0E62] rounded-2xl p-6 text-white">
+            <h3 class="text-2xl font-bold mb-4 text-center">Ringkasan Analisis</h3>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">50+</p>
+                    <p class="text-sm mt-1">Kebutuhan Fungsional</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">18</p>
+                    <p class="text-sm mt-1">Kebutuhan Non-Fungsional</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">8</p>
+                    <p class="text-sm mt-1">Modul Utama</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">5</p>
+                    <p class="text-sm mt-1">Peran Pengguna</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="slide-08-perencanaan.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-white text-[#1E0E62] p-4 rounded-full shadow-lg hover:bg-gray-100 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+    </a>
+    <a href="slide-10-desain-database.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full shadow-lg hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+    </a>
+</body>
+</html>
