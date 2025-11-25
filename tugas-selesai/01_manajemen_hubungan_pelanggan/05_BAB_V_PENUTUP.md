@@ -31,7 +31,7 @@ Sistem Informasi CUR-HEART berhasil mengimplementasikan enam fitur CRM utama yan
 
 5. **Sistem Ulasan dan Penilaian**: Mengumpulkan feedback sistematis dari klien untuk perbaikan berkelanjutan, dengan tingkat partisipasi 65% dan kepuasan 4.4/5.0.
 
-6. **Dashboard Analitik CRM**: Menyediakan visibilitas real-time terhadap metrik CRM untuk pengambilan keputusan berbasis data, dengan kepuasan 4.7/5.0.
+6. **Dashboard Analitik CRM**: Menyediakan monitoring real-time terhadap aktivitas dan performa sistem CRM untuk evaluasi operasional, dengan kepuasan 4.7/5.0.
 
 ### 5.1.3 Dampak Positif Signifikan terhadap Kepuasan dan Retensi Klien
 

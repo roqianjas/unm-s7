@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Klien CRM - CUR-HEART Hypnotherapy Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="crm_index.html" class="flex items-center">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                            CH
+                        </div>
+                        <span class="ml-3 text-xl font-heading font-bold text-cur-primary">CUR-HEART</span>
+                    </div>
+                </a>
+
+                <!-- Right Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Notifications -->
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+
+                    <!-- Messages -->
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+
+                    <!-- User Profile -->
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CRM&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CRM</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <!-- Navigation -->
+                <nav class="space-y-2">
+                    <!-- Dashboard -->
+                    <a href="crm_index.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+
+                    <!-- CRM Section -->
+                    <div class="pt-4 pb-2">
+                        <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Customer Relationship</p>
+                    </div>
+
+                    <a href="crm_01_client_profile.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="font-medium">Profil Klien</span>
+                    </a>
+
+                    <a href="crm_02_session_documentation.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-file-medical"></i>
+                        <span class="font-medium">Dokumentasi Sesi</span>
+                    </a>
+
+                    <a href="crm_03_communication.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Komunikasi</span>
+                    </a>
+
+                    <a href="crm_04_progress_tracking.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Pelacakan Kemajuan</span>
+                    </a>
+
+                    <a href="crm_05_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan & Rating</span>
+                    </a>
+
+                    <a href="crm_06_analytics.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="font-medium">Analytics CRM</span>
+                    </a>
+
+                    <!-- Management Section -->
+                    <div class="pt-4 pb-2">
+                        <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Management</p>
+                    </div>
+
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Reservasi</span>
+                    </a>
+
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Manajemen User</span>
+                    </a>
+
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <!-- Breadcrumb -->
+            <div class="mb-6">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="crm_index.html" class="text-gray-500 hover:text-cur-primary">Dashboard</a></li>
+                        <li><span class="text-gray-400">/</span></li>
+                        <li><a href="#" class="text-gray-500 hover:text-cur-primary">CRM</a></li>
+                        <li><span class="text-gray-400">/</span></li>
+                        <li class="text-cur-primary font-medium">Profil Klien</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- Page Title -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-heading font-bold text-gray-900">Profil Klien Komprehensif</h1>
+                <p class="mt-2 text-gray-600">Fitur CRM #1: Manajemen data klien yang lengkap untuk personalisasi layanan</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Left Sidebar - Client Info Card -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-gradient-to-br from-cur-primary to-cur-accent rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold">
+                                SA
+                            </div>
+                            <h2 class="mt-4 text-xl font-heading font-bold text-gray-900">Sarah Anderson</h2>
+                            <p class="text-gray-500">ID: CLT-2024-001</p>
+                            <div class="mt-2 inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                                <i class="fas fa-circle text-xs mr-2"></i> Klien Aktif
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-envelope w-5 text-gray-400"></i>
+                                <span class="ml-3 text-gray-600">sarah.anderson@email.com</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-phone w-5 text-gray-400"></i>
+                                <span class="ml-3 text-gray-600">+62 812-3456-7890</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-calendar w-5 text-gray-400"></i>
+                                <span class="ml-3 text-gray-600">28 tahun (15 Maret 1996)</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-map-marker-alt w-5 text-gray-400"></i>
+                                <span class="ml-3 text-gray-600">Jakarta Selatan</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <h3 class="text-sm font-semibold text-gray-900 mb-3">Statistik Klien</h3>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Total Sesi</span>
+                                    <span class="text-sm font-semibold text-gray-900">12 sesi</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Bergabung</span>
+                                    <span class="text-sm font-semibold text-gray-900">3 bulan lalu</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">CLV</span>
+                                    <span class="text-sm font-semibold text-cur-primary">Rp 4.200.000</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Segmen</span>
+                                    <span class="text-xs px-2 py-1 bg-purple-100 text-purple-800 rounded-full font-medium">High Value</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content - Tabs -->
+                <div class="lg:col-span-2">
+                    <!-- Tabs -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <div class="border-b border-gray-200">
+                            <nav class="flex -mb-px">
+                                <button class="px-6 py-4 text-sm font-medium text-cur-primary border-b-2 border-cur-primary">
+                                    Data Demografis
+                                </button>
+                                <button class="px-6 py-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                                    Riwayat Medis
+                                </button>
+                                <button class="px-6 py-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                                    Preferensi
+                                </button>
+                                <button class="px-6 py-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                                    Riwayat Interaksi
+                                </button>
+                            </nav>
+                        </div>
+
+                        <!-- Tab Content: Data Demografis -->
+                        <div class="p-6">
+                            <h3 class="text-lg font-heading font-semibold text-gray-900 mb-4">Informasi Demografis</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                    <input type="text" value="Sarah Anderson" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" value="sarah.anderson@email.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon</label>
+                                    <input type="tel" value="+62 812-3456-7890" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Tanggal Lahir</label>
+                                    <input type="text" value="15 Maret 1996" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Kelamin</label>
+                                    <input type="text" value="Perempuan" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Pekerjaan</label>
+                                    <input type="text" value="Marketing Manager" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Alamat Lengkap</label>
+                                    <textarea rows="2" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>Jl. Kemang Raya No. 45, Bangka, Mampang Prapatan, Jakarta Selatan 12730</textarea>
+                                </div>
+                            </div>
+
+                            <div class="mt-8">
+                                <h3 class="text-lg font-heading font-semibold text-gray-900 mb-4">Kontak Darurat</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Nama Kontak Darurat</label>
+                                        <input type="text" value="John Anderson (Suami)" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon Darurat</label>
+                                        <input type="tel" value="+62 813-9876-5432" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CRM Insights Card -->
+                    <div class="mt-6 bg-gradient-to-r from-cur-primary to-cur-secondary rounded-lg shadow-sm p-6 text-white">
+                        <h3 class="text-lg font-heading font-semibold mb-2">💡 CRM Insights</h3>
+                        <p class="text-sm opacity-90">Klien ini termasuk segmen <strong>High Value</strong> dengan CLV Rp 4,2 juta. Tingkat engagement tinggi (12 sesi dalam 3 bulan). Rekomendasi: Tawarkan program loyalitas dan referral incentive.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Note -->
+            <div class="mt-8">
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-info-circle text-blue-400"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-blue-700">
+                                <strong>Fitur CRM #1: Manajemen Profil Klien Komprehensif</strong><br>
+                                Sistem menyimpan data demografis, medis, preferensi, dan riwayat interaksi secara terstruktur untuk mendukung personalisasi layanan dan kontinuitas perawatan. Tingkat adopsi: 100% | Kepuasan: 4.6/5.0
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

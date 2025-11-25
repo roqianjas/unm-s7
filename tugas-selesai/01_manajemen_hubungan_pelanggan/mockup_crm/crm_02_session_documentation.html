@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Sesi Terapi - CUR-HEART Hypnotherapy Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="crm_index.html" class="flex items-center">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                            CH
+                        </div>
+                        <span class="ml-3 text-xl font-heading font-bold text-cur-primary">CUR-HEART</span>
+                    </div>
+                </a>
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Dr. Sarah</div>
+                            <div class="text-xs text-gray-500">Terapis</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="crm_index.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <div class="pt-4 pb-2">
+                        <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Customer Relationship</p>
+                    </div>
+                    <a href="crm_01_client_profile.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="font-medium">Profil Klien</span>
+                    </a>
+                    <a href="crm_02_session_documentation.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-file-medical"></i>
+                        <span class="font-medium">Dokumentasi Sesi</span>
+                    </a>
+                    <a href="crm_03_communication.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Komunikasi</span>
+                    </a>
+                    <a href="crm_04_progress_tracking.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Pelacakan Kemajuan</span>
+                    </a>
+                    <a href="crm_05_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan & Rating</span>
+                    </a>
+                    <a href="crm_06_analytics.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="font-medium">Analytics CRM</span>
+                    </a>
+                    <div class="pt-4 pb-2">
+                        <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Management</p>
+                    </div>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Reservasi</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Manajemen User</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="mb-6">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="crm_index.html" class="text-gray-500 hover:text-cur-primary">Dashboard</a></li>
+                        <li><span class="text-gray-400">/</span></li>
+                        <li><a href="#" class="text-gray-500 hover:text-cur-primary">CRM</a></li>
+                        <li><span class="text-gray-400">/</span></li>
+                        <li class="text-cur-primary font-medium">Dokumentasi Sesi</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="mb-8">
+                <h1 class="text-3xl font-heading font-bold text-gray-900">Dokumentasi Sesi Terapi</h1>
+                <p class="mt-2 text-gray-600">Fitur CRM #2: Formulir terstruktur untuk dokumentasi sesi yang konsisten</p>
+            </div>
+
+            <!-- Session Info Card -->
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-xl font-heading font-semibold text-gray-900">Informasi Sesi</h2>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+                        <i class="fas fa-check-circle mr-1"></i> Sesi Selesai
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <p class="text-sm text-gray-500">Klien</p>
+                        <p class="font-semibold text-gray-900">Sarah Anderson</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">Tanggal & Waktu</p>
+                        <p class="font-semibold text-gray-900">25 Nov 2024, 14:00 WIB</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">Durasi</p>
+                        <p class="font-semibold text-gray-900">90 menit</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">Layanan</p>
+                        <p class="font-semibold text-gray-900">Stress & Anxiety Release</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">Sesi Ke-</p>
+                        <p class="font-semibold text-gray-900">12 dari 15</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">Tipe Sesi</p>
+                        <p class="font-semibold text-gray-900">Online (Zoom)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentation Form -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <form class="space-y-6">
+                    <!-- Teknik yang Digunakan -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-900 mb-2">
+                            <i class="fas fa-tools text-cur-primary mr-2"></i>Teknik yang Digunakan
+                        </label>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="px-3 py-1 bg-cur-primary text-white rounded-full text-sm">Hypnosis</span>
+                            <span class="px-3 py-1 bg-cur-primary text-white rounded-full text-sm">Progressive Relaxation</span>
+                            <span class="px-3 py-1 bg-cur-primary text-white rounded-full text-sm">Guided Imagery</span>
+                            <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm cursor-pointer hover:bg-gray-300">+ Tambah</span>
+                        </div>
+                        <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary" placeholder="Deskripsi detail teknik yang digunakan...">Menggunakan teknik progressive relaxation untuk membantu klien mencapai state relaksasi mendalam, dilanjutkan dengan guided imagery untuk visualisasi situasi yang menenangkan. Hypnotic suggestion diberikan untuk memperkuat kemampuan klien dalam mengelola stres.</textarea>
+                    </div>
+
+                    <!-- Kondisi Klien -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-900 mb-2">
+                            <i class="fas fa-heartbeat text-cur-secondary mr-2"></i>Kondisi Klien Saat Sesi
+                        </label>
+                        <div class="grid grid-cols-3 gap-4 mb-3">
+                            <div>
+                                <p class="text-xs text-gray-500 mb-1">Mood</p>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                                    <option>Baik</option>
+                                    <option>Cukup</option>
+                                    <option>Kurang</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 mb-1">Energy Level</p>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                                    <option>Tinggi</option>
+                                    <option>Sedang</option>
+                                    <option>Rendah</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 mb-1">Cooperation</p>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                                    <option>Sangat Kooperatif</option>
+                                    <option>Kooperatif</option>
+                                    <option>Kurang Kooperatif</option>
+                                </select>
+                            </div>
+                        </div>
+                        <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary" placeholder="Observasi kondisi klien...">Klien datang dengan mood yang cukup baik, meskipun terlihat sedikit lelah dari pekerjaan. Energy level sedang. Sangat kooperatif dan responsif terhadap instruksi. Mampu mencapai state relaksasi dengan baik.</textarea>
+                    </div>
+
+                    <!-- Progress Notes -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-900 mb-2">
+                            <i class="fas fa-chart-line text-cur-accent mr-2"></i>Catatan Kemajuan (Progress Notes)
+                        </label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary" placeholder="Kemajuan terhadap tujuan terapi, perubahan yang diamati...">Kemajuan signifikan terlihat dalam kemampuan klien mengelola stres kerja. Klien melaporkan bahwa teknik breathing yang diajarkan di sesi sebelumnya sangat membantu. Tingkat kecemasan menurun dari 7/10 menjadi 4/10. Klien mulai dapat mengidentifikasi trigger stres dan menerapkan coping mechanism yang lebih sehat.</textarea>
+                    </div>
+
+                    <!-- Observasi Terapis -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-900 mb-2">
+                            <i class="fas fa-eye text-purple-600 mr-2"></i>Observasi Terapis
+                        </label>
+                        <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary" placeholder="Observasi khusus, isu yang muncul, tantangan...">Klien menunjukkan peningkatan awareness terhadap pola pikir negatif. Masih ada sedikit resistensi ketika membahas konflik dengan atasan, namun lebih terbuka dibanding sesi sebelumnya. Perlu eksplorasi lebih lanjut tentang perfeksionisme yang menjadi sumber stres utama.</textarea>
+                    </div>
+
+                    <!-- Homework & Recommendations -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-900 mb-2">
+                            <i class="fas fa-tasks text-orange-600 mr-2"></i>Homework & Rekomendasi
+                        </label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary" placeholder="Tugas untuk klien, rekomendasi untuk sesi berikutnya...">Homework:
+1. Praktik breathing exercise 2x sehari (pagi & malam) selama 10 menit
+2. Journaling: Catat situasi yang memicu stres dan respons yang diberikan
+3. Dengarkan audio self-hypnosis yang telah diberikan sebelum tidur
+
+Rekomendasi sesi berikutnya:
+- Fokus pada teknik cognitive restructuring untuk mengatasi perfeksionisme
+- Eksplorasi lebih dalam tentang work-life balance
+- Latihan assertiveness untuk komunikasi dengan atasan</textarea>
+                    </div>
+
+                    <!-- Sharing Options -->
+                    <div class="border-t pt-6">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="w-4 h-4 text-cur-primary border-gray-300 rounded focus:ring-cur-primary" checked>
+                            <span class="ml-2 text-sm text-gray-700">Bagikan catatan ini dengan klien (catatan yang dibagikan akan terlihat di dashboard klien)</span>
+                        </label>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex justify-end space-x-3 pt-4">
+                        <button type="button" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
+                            Simpan sebagai Draft
+                        </button>
+                        <button type="submit" class="px-6 py-2 bg-cur-primary text-white rounded-lg hover:bg-opacity-90">
+                            <i class="fas fa-save mr-2"></i>Simpan Dokumentasi
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- CRM Feature Note -->
+            <div class="mt-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-info-circle text-blue-400"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm text-blue-700">
+                            <strong>Fitur CRM #2: Dokumentasi Sesi Terapi Terstruktur</strong><br>
+                            Formulir terstruktur memastikan dokumentasi yang konsisten, memudahkan pelacakan kemajuan, dan mendukung kontinuitas perawatan. Tingkat adopsi: 95% | Kepuasan: 4.7/5.0
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

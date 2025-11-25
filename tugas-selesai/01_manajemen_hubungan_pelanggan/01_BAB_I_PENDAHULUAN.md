@@ -111,7 +111,7 @@ Penelitian ini mengkaji fitur-fitur CRM yang telah diimplementasikan pada Sistem
 5. **Pelacakan Kemajuan**: Visualisasi kemajuan terapi dan pencapaian tujuan klien
 6. **Ulasan dan Penilaian**: Sistem feedback untuk mengukur kepuasan klien
 7. **Segmentasi Pelanggan**: Pengelompokan klien berdasarkan berbagai kriteria
-8. **Analitik CRM**: Dashboard dan laporan untuk analisis data pelanggan
+8. **Analitik CRM**: Dashboard untuk monitoring aktivitas dan performa sistem CRM
 
 ### 1.5.3 Ruang Lingkup Pengguna
 

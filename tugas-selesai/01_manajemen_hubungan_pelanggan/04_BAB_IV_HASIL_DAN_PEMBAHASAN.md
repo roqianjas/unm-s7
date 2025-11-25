@@ -378,47 +378,53 @@ Sistem menyediakan fitur ulasan dan penilaian untuk mengumpulkan feedback dari k
 
 #### 4.3.3.6 Dashboard Analitik CRM
 
-Sistem menyediakan dashboard analitik untuk manajemen dalam memantau metrik CRM dan membuat keputusan berbasis data.
+Sistem menyediakan dashboard analitik untuk manajemen dalam memantau aktivitas dan performa sistem CRM secara real-time.
 
-**Metrik yang Ditampilkan:**
+**Metrik Operasional yang Ditampilkan:**
 
-1. **Metrik Kepuasan**:
-   - Customer Satisfaction Score (CSAT)
-   - Net Promoter Score (NPS)
-   - Distribusi rating terapis
+1. **Metrik Aktivitas Sistem**:
+   - Total klien aktif dalam sistem
+   - Jumlah sesi terapi bulan ini
+   - Jumlah sesi yang dijadwalkan
+   - Rata-rata sesi per hari
 
-2. **Metrik Retensi**:
-   - Customer Retention Rate
-   - Churn Rate
-   - Repeat Booking Rate
+2. **Metrik Komunikasi**:
+   - Total pesan yang dikirim/diterima
+   - Average response time terapis
+   - Tingkat balasan pesan (response rate)
+   - Jumlah notifikasi yang dikirim
 
-3. **Metrik Engagement**:
-   - Frekuensi komunikasi
-   - Response time terapis
-   - Tingkat penyelesaian homework
+3. **Metrik Penggunaan Fitur**:
+   - Tingkat adopsi setiap fitur CRM
+   - Frekuensi penggunaan fitur
+   - Jumlah pengguna aktif per fitur
+   - Kepuasan pengguna terhadap fitur
 
-4. **Metrik Nilai Pelanggan**:
-   - Customer Lifetime Value (CLV)
-   - Average Revenue Per User (ARPU)
-   - Distribusi nilai pelanggan
+4. **Metrik Konten**:
+   - Jumlah dokumentasi sesi yang dibuat
+   - Jumlah profil klien yang lengkap
+   - Jumlah ulasan yang diterima
+   - Rating rata-rata dari ulasan
 
-5. **Segmentasi Pelanggan**:
+5. **Metrik Distribusi**:
+   - Distribusi jenis layanan yang digunakan
    - Distribusi klien berdasarkan segmen
-   - Karakteristik setiap segmen
-   - Performa setiap segmen
+   - Distribusi sesi berdasarkan terapis
+   - Tren aktivitas harian/mingguan
 
 **Visualisasi:**
-- Chart dan grafik interaktif
+- Bar chart untuk aktivitas sesi harian
+- Doughnut chart untuk distribusi layanan
+- Tabel detail penggunaan fitur
+- Card metrics untuk KPI utama
 - Filter berdasarkan periode waktu
-- Drill-down untuk detail
-- Export data ke Excel/PDF
 
 **Manfaat:**
-- Visibilitas real-time terhadap metrik CRM
-- Identifikasi tren dan pola
-- Pengambilan keputusan berbasis data
-- Identifikasi area perbaikan
-- Monitoring ROI investasi CRM
+- Monitoring aktivitas sistem secara real-time
+- Identifikasi fitur yang paling/kurang digunakan
+- Evaluasi performa operasional CRM
+- Deteksi anomali atau masalah sistem
+- Data untuk optimasi dan perbaikan fitur
 
 **Screenshot**: [Dashboard Analitik CRM - Admin Dashboard]
 

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelacakan Kemajuan - CUR-HEART Hypnotherapy Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="crm_index.html" class="flex items-center">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-br from-cur-primary to-cur-secondary rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                            CH
+                        </div>
+                        <span class="ml-3 text-xl font-heading font-bold text-cur-primary">CUR-HEART</span>
+                    </div>
+                </a>
+                <div class="flex items-center space-x-4">
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <button class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CRM&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CRM</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="crm_index.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <div class="pt-4 pb-2">
+                        <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Customer Relationship</p>
+                    </div>
+                    <a href="crm_01_client_profile.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="font-medium">Profil Klien</span>
+                    </a>
+                    <a href="crm_02_session_documentation.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-file-medical"></i>
+                        <span class="font-medium">Dokumentasi Sesi</span>
+                    </a>
+                    <a href="crm_03_communication.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Komunikasi</span>
+                    </a>
+                    <a href="crm_04_progress_tracking.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Pelacakan Kemajuan</span>
+                    </a>
+                    <a href="crm_05_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan & Rating</span>
+                    </a>
+                    <a href="crm_06_analytics.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="font-medium">Analytics CRM</span>
+                    </a>
+                    <div class="pt-4 pb-2">
+                        <p class="px-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">Management</p>
+                    </div>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Reservasi</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Manajemen User</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <div class="mb-6">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="crm_index.html" class="text-gray-500 hover:text-cur-primary">Dashboard</a></li>
+                        <li><span class="text-gray-400">/</span></li>
+                        <li><a href="#" class="text-gray-500 hover:text-cur-primary">CRM</a></li>
+                        <li><span class="text-gray-400">/</span></li>
+                        <li class="text-cur-primary font-medium">Pelacakan Kemajuan</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="mb-8">
+                <h1 class="text-3xl font-heading font-bold text-gray-900">Pelacakan Kemajuan Klien</h1>
+                <p class="mt-2 text-gray-600">Fitur CRM #4: Monitor perkembangan terapi dan pencapaian tujuan klien</p>
+            </div>
+
+            <!-- Client Selection -->
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=FF6B7A&color=fff" alt="Sarah" class="w-16 h-16 rounded-full">
+                        <div>
+                            <h2 class="text-xl font-heading font-bold text-gray-900">Sarah Johnson</h2>
+                            <p class="text-sm text-gray-600">Program: Anxiety Management | Sesi: 6/10</p>
+                        </div>
+                    </div>
+                    <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm">
+                        <option>Sarah Johnson</option>
+                        <option>Michael Chen</option>
+                        <option>Emily Rodriguez</option>
+                        <option>David Kim</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Progress Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-gray-600">Sesi Selesai</span>
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check-circle text-blue-600"></i>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900">6/10</div>
+                    <div class="mt-2 text-sm text-gray-500">60% progress</div>
+                    <div class="mt-3 w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-gray-600">Skor Kemajuan</span>
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-line text-green-600"></i>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900">7.8</div>
+                    <div class="mt-2 text-sm text-green-600 font-medium">+2.3 dari awal</div>
+                    <div class="mt-3 text-xs text-gray-500">Skala 1-10</div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-gray-600">Target Tercapai</span>
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-bullseye text-purple-600"></i>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900">4/6</div>
+                    <div class="mt-2 text-sm text-gray-500">67% goals</div>
+                    <div class="mt-3 text-xs text-gray-500">2 target tersisa</div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-gray-600">Tingkat Kepatuhan</span>
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-calendar-check text-orange-600"></i>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900">92%</div>
+                    <div class="mt-2 text-sm text-gray-500">Attendance rate</div>
+                    <div class="mt-3 text-xs text-gray-500">Sangat baik</div>
+                </div>
+            </div>
+
+            <!-- Progress Chart -->
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                <h3 class="text-lg font-heading font-semibold text-gray-900 mb-4">Grafik Kemajuan Terapi</h3>
+                <div class="h-80">
+                    <canvas id="progressChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Goals & Milestones -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                <!-- Goals -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h3 class="text-lg font-heading font-semibold text-gray-900 mb-4">Target Terapi</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900">Mengurangi serangan panik</h4>
+                                <p class="text-sm text-gray-600 mt-1">Dari 5x/minggu menjadi 1x/minggu</p>
+                                <div class="mt-2 flex items-center text-xs text-green-600">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    <span>Tercapai pada Sesi 4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900">Meningkatkan kualitas tidur</h4>
+                                <p class="text-sm text-gray-600 mt-1">Tidur nyenyak minimal 6 jam/malam</p>
+                                <div class="mt-2 flex items-center text-xs text-green-600">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    <span>Tercapai pada Sesi 3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900">Mengelola stres kerja</h4>
+                                <p class="text-sm text-gray-600 mt-1">Mampu menerapkan teknik relaksasi</p>
+                                <div class="mt-2 flex items-center text-xs text-green-600">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    <span>Tercapai pada Sesi 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900">Meningkatkan kepercayaan diri</h4>
+                                <p class="text-sm text-gray-600 mt-1">Berani berbicara di depan umum</p>
+                                <div class="mt-2 flex items-center text-xs text-green-600">
+                                    <i class="fas fa-check-circle mr-1"></i>
+                                    <span>Tercapai pada Sesi 6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-spinner text-blue-600 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900">Mengatasi fobia sosial</h4>
+                                <p class="text-sm text-gray-600 mt-1">Nyaman dalam situasi sosial</p>
+                                <div class="mt-2 flex items-center text-xs text-blue-600">
+                                    <i class="fas fa-clock mr-1"></i>
+                                    <span>Dalam proses - Target Sesi 8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-circle text-gray-400 text-xs"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900">Mempertahankan hasil jangka panjang</h4>
+                                <p class="text-sm text-gray-600 mt-1">Konsisten 3 bulan pasca terapi</p>
+                                <div class="mt-2 flex items-center text-xs text-gray-500">
+                                    <i class="fas fa-hourglass-start mr-1"></i>
+                                    <span>Belum dimulai - Target Sesi 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session Notes -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h3 class="text-lg font-heading font-semibold text-gray-900 mb-4">Catatan Kemajuan per Sesi</h3>
+                    <div class="space-y-4 max-h-96 overflow-y-auto">
+                        <div class="border-l-4 border-cur-primary pl-4 py-2">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-semibold text-gray-900">Sesi 6 - 20 Nov 2024</h4>
+                                <span class="text-xs text-gray-500">Skor: 7.8</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Klien menunjukkan peningkatan signifikan dalam kepercayaan diri. Berhasil presentasi di kantor tanpa anxiety berlebihan.</p>
+                        </div>
+
+                        <div class="border-l-4 border-blue-400 pl-4 py-2">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-semibold text-gray-900">Sesi 5 - 13 Nov 2024</h4>
+                                <span class="text-xs text-gray-500">Skor: 7.2</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Teknik relaksasi mulai efektif. Klien mampu mengelola stres kerja dengan lebih baik.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-400 pl-4 py-2">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-semibold text-gray-900">Sesi 4 - 6 Nov 2024</h4>
+                                <span class="text-xs text-gray-500">Skor: 6.8</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Serangan panik berkurang drastis. Hanya 1 episode dalam seminggu terakhir.</p>
+                        </div>
+
+                        <div class="border-l-4 border-green-400 pl-4 py-2">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-semibold text-gray-900">Sesi 3 - 30 Okt 2024</h4>
+                                <span class="text-xs text-gray-500">Skor: 6.3</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Kualitas tidur membaik. Klien tidur nyenyak 6-7 jam setiap malam.</p>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-400 pl-4 py-2">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-semibold text-gray-900">Sesi 2 - 23 Okt 2024</h4>
+                                <span class="text-xs text-gray-500">Skor: 5.9</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Klien mulai memahami trigger anxiety. Masih mengalami kesulitan tidur.</p>
+                        </div>
+
+                        <div class="border-l-4 border-gray-400 pl-4 py-2">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-semibold text-gray-900">Sesi 1 - 16 Okt 2024</h4>
+                                <span class="text-xs text-gray-500">Skor: 5.5</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Sesi awal. Assessment lengkap dan penetapan target terapi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Symptom Tracking -->
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                <h3 class="text-lg font-heading font-semibold text-gray-900 mb-4">Pelacakan Gejala</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Serangan Panik</span>
+                            <span class="text-xs text-green-600 font-medium">-80%</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                            <span class="text-sm text-gray-600">1x/minggu</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Baseline: 5x/minggu</p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Gangguan Tidur</span>
+                            <span class="text-xs text-green-600 font-medium">-70%</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 30%"></div>
+                            </div>
+                            <span class="text-sm text-gray-600">1-2x/minggu</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Baseline: 5-6x/minggu</p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Tingkat Stres</span>
+                            <span class="text-xs text-green-600 font-medium">-60%</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <span class="text-sm text-gray-600">4/10</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Baseline: 8/10</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-4">
+                <button class="px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-plus mr-2"></i>Tambah Catatan Kemajuan
+                </button>
+                <button class="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-download mr-2"></i>Export Laporan
+                </button>
+                <button class="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-share mr-2"></i>Bagikan dengan Klien
+                </button>
+            </div>
+
+            <!-- CRM Feature Note -->
+            <div class="mt-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-info-circle text-blue-400"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm text-blue-700">
+                            <strong>Fitur CRM #4: Pelacakan Kemajuan Terapi</strong><br>
+                            Monitoring sistematis terhadap perkembangan klien dengan visualisasi progress dan pencapaian target. Tingkat adopsi: 100% | Kepuasan: 4.9/5.0
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Progress Chart
+        const ctx = document.getElementById('progressChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Sesi 1\n16 Okt', 'Sesi 2\n23 Okt', 'Sesi 3\n30 Okt', 'Sesi 4\n6 Nov', 'Sesi 5\n13 Nov', 'Sesi 6\n20 Nov'],
+                datasets: [{
+                    label: 'Skor Kemajuan',
+                    data: [5.5, 5.9, 6.3, 6.8, 7.2, 7.8],
+                    borderColor: '#1E0E62',
+                    backgroundColor: 'rgba(30, 14, 98, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointHoverRadius: 8,
+                    pointBackgroundColor: '#1E0E62',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2
+                }, {
+                    label: 'Target',
+                    data: [5.5, 6.0, 6.5, 7.0, 7.5, 8.0],
+                    borderColor: '#00D26A',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    fill: false,
+                    pointRadius: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                family: 'Inter',
+                                size: 12
+                            },
+                            usePointStyle: true,
+                            padding: 20
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        padding: 12,
+                        titleFont: {
+                            size: 14,
+                            family: 'Poppins'
+                        },
+                        bodyFont: {
+                            size: 13,
+                            family: 'Inter'
+                        },
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.parsed.y.toFixed(1) + '/10';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 5,
+                        max: 10,
+                        ticks: {
+                            stepSize: 0.5,
+                            font: {
+                                family: 'Inter',
+                                size: 11
+                            }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                family: 'Inter',
+                                size: 11
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

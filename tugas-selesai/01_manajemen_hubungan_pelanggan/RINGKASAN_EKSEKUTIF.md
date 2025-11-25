@@ -75,9 +75,9 @@
 - **Adopsi**: 65% | **Kepuasan**: 4.4/5.0
 
 ### 6. Dashboard Analitik CRM
-- Metrik kepuasan (CSAT, NPS)
-- Metrik retensi dan churn
-- Metrik nilai pelanggan (CLV)
+- Monitoring aktivitas sistem (klien aktif, sesi, komunikasi)
+- Metrik penggunaan dan adopsi fitur CRM
+- Visualisasi distribusi layanan dan tren aktivitas
 - **Adopsi**: 100% (Admin) | **Kepuasan**: 4.7/5.0
 
 ---
