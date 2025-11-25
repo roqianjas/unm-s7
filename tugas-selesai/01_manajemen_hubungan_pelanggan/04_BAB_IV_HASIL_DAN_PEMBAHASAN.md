@@ -447,7 +447,7 @@ Fitur-fitur CRM terintegrasi dengan proses bisnis CUR-HEART:
 
 ### 4.4.1 Evaluasi Penggunaan Fitur CRM
 
-Berdasarkan data penggunaan sistem selama periode uji coba (November - Desember 2024), berikut adalah evaluasi penggunaan fitur CRM:
+Berdasarkan data penggunaan sistem selama periode uji coba (November - Desember 2025), berikut adalah evaluasi penggunaan fitur CRM:
 
 **Tabel 4.5 Statistik Penggunaan Fitur CRM**
 

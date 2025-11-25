@@ -31,4 +31,4 @@ Kelompok [Nomor Kelompok]
 **FAKULTAS TEKNOLOGI INFORMASI**  
 **UNIVERSITAS NUSA MANDIRI**  
 **JAKARTA**  
-**2024**
+**2025**

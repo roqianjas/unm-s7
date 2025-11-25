@@ -122,7 +122,7 @@ Penelitian ini melibatkan tiga kategori pengguna utama:
 
 ### 1.5.4 Ruang Lingkup Waktu
 
-Penelitian ini mengkaji implementasi CRM pada sistem yang dikembangkan selama periode September - Desember 2024, dengan evaluasi dampak berdasarkan data penggunaan sistem selama periode uji coba.
+Penelitian ini mengkaji implementasi CRM pada sistem yang dikembangkan selama periode September - Desember 2025, dengan evaluasi dampak berdasarkan data penggunaan sistem selama periode uji coba.
 
 ### 1.5.5 Batasan Penelitian
 

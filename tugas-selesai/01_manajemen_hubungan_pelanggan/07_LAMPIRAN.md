@@ -276,8 +276,8 @@ Mohon berikan penilaian Anda terhadap aspek-aspek berikut (Skala 1-5):
 
 | Periode | Klien Awal | Klien Baru | Klien Churn | Klien Akhir | Retention Rate |
 |---------|------------|------------|-------------|-------------|----------------|
-| Sebelum CRM (Q3 2024) | 40 | 10 | 5 | 45 | 65% |
-| Setelah CRM (Q4 2024) | 45 | 20 | 3 | 62 | 85% |
+| Sebelum CRM (Q3 2025) | 40 | 10 | 5 | 45 | 65% |
+| Setelah CRM (Q4 2025) | 45 | 20 | 3 | 62 | 85% |
 
 ### E.3 Tabel Data Kinerja Bisnis
 

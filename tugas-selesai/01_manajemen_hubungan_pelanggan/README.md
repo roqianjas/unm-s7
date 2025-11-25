@@ -15,7 +15,7 @@
 
 **Semester**: 7 (Tujuh)
 
-**Tahun Akademik**: 2024/2025
+**Tahun Akademik**: 2025/2026
 
 ---
 

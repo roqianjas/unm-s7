@@ -9,7 +9,7 @@
 
 **Objek Penelitian**: CUR-HEART (Hypnotherapy & Mind Wellness Center)
 
-**Periode Penelitian**: September - Desember 2024
+**Periode Penelitian**: September - Desember 2025
 
 **Metodologi**: Studi Kasus dengan Pendekatan Deskriptif Kualitatif
 
@@ -271,7 +271,7 @@ Dengan momentum positif saat ini, proyeksi untuk 2025:
 
 **Disusun oleh**: Kelompok [Nomor] - Program Studi Sistem Informasi  
 **Universitas**: Universitas Nusa Mandiri Jakarta  
-**Periode**: September - Desember 2024
+**Periode**: September - Desember 2025
 
 ---
 

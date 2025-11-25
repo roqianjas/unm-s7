@@ -310,7 +310,7 @@ tugas-selesai/01_manajemen_hubungan_pelanggan/
 
 **Semester:** 7 (Tujuh)
 
-**Tahun Akademik:** 2024/2025
+**Tahun Akademik:** 2025/2026
 
 ---
 
