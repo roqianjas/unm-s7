@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi: Implementasi CRM CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#4ECDC4',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .slide {
+            display: none;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @media print {
+            .slide {
+                display: flex !important;
+                page-break-after: always;
+            }
+            .controls {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 font-body">
+    <!-- Slide Navigation Controls -->
+    <div class="controls fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-white rounded-full shadow-lg px-6 py-3 flex items-center space-x-4">
+        <button onclick="prevSlide()" class="text-gray-600 hover:text-cur-primary">
+            <i class="fas fa-chevron-left text-xl"></i>
+        </button>
+        <span id="slideNumber" class="text-sm font-medium text-gray-700">1 / 15</span>
+        <button onclick="nextSlide()" class="text-gray-600 hover:text-cur-primary">
+            <i class="fas fa-chevron-right text-xl"></i>
+        </button>
+    </div>
+
+    <!-- Slide 1: Cover -->
+    <div class="slide active items-center justify-center bg-gradient-to-br from-cur-primary to-cur-accent">
+        <div class="text-center text-white max-w-4xl">
+            <h1 class="text-6xl font-heading font-bold mb-6">Implementasi CRM</h1>
+            <h2 class="text-3xl font-heading mb-8">pada Sistem Informasi CUR-HEART</h2>
+            <div class="text-xl mb-12 opacity-90">
+                <p>Hypnotherapy & Mind Wellness Center</p>
+            </div>
+            <div class="border-t border-white/30 pt-8 text-lg opacity-75">
+                <p>Mata Kuliah: Manajemen Hubungan Pelanggan</p>
+                <p class="mt-2">Program Studi Sistem Informasi</p>
+                <p>Universitas Nusa Mandiri Jakarta</p>
+                <p class="mt-4">2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Agenda -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-4xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-12">Agenda Presentasi</h2>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="text-3xl text-cur-primary mb-3">01</div>
+                    <h3 class="text-xl font-semibold mb-2">Latar Belakang</h3>
+                    <p class="text-gray-600">Profil CUR-HEART dan tantangan bisnis</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="text-3xl text-cur-primary mb-3">02</div>
+                    <h3 class="text-xl font-semibold mb-2">Strategi CRM</h3>
+                    <p class="text-gray-600">Filosofi dan pendekatan CRM</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="text-3xl text-cur-primary mb-3">03</div>
+                    <h3 class="text-xl font-semibold mb-2">Implementasi</h3>
+                    <p class="text-gray-600">6 Fitur CRM yang dibangun</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="text-3xl text-cur-primary mb-3">04</div>
+                    <h3 class="text-xl font-semibold mb-2">Hasil & Dampak</h3>
+                    <p class="text-gray-600">Evaluasi dan ROI</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Profil CUR-HEART -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Profil CUR-HEART</h2>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Tentang</h3>
+                    <p class="text-gray-600 mb-4">Pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hipnoterapi modern dengan nilai-nilai spiritualitas dan humanisme.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-cur-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Jl. Raya Cilodong No. 88, Depok, Jawa Barat</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-users text-cur-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">3 Terapis Profesional Bersertifikat</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-heart text-cur-primary mt-1 mr-3"></i>
+                            <span class="text-gray-700">62 Klien Aktif (November 2024)</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Layanan</h3>
+                    <div class="space-y-2">
+                        <div class="bg-cur-primary/10 p-3 rounded-lg">
+                            <p class="font-medium text-gray-900">Stress & Anxiety Release</p>
+                        </div>
+                        <div class="bg-cur-primary/10 p-3 rounded-lg">
+                            <p class="font-medium text-gray-900">Trauma Healing</p>
+                        </div>
+                        <div class="bg-cur-primary/10 p-3 rounded-lg">
+                            <p class="font-medium text-gray-900">Self-Confidence & Motivation</p>
+                        </div>
+                        <div class="bg-cur-primary/10 p-3 rounded-lg">
+                            <p class="font-medium text-gray-900">Sleep & Relaxation</p>
+                        </div>
+                        <div class="bg-cur-primary/10 p-3 rounded-lg">
+                            <p class="font-medium text-gray-900">Habit Reprogramming</p>
+                        </div>
+                        <div class="bg-cur-primary/10 p-3 rounded-lg">
+                            <p class="font-medium text-gray-900">Phobia & Fear Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Tantangan Bisnis -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Tantangan Bisnis</h2>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-red-900">Proses Manual</h3>
+                    <p class="text-red-700">Reservasi melalui WhatsApp/telepon memakan waktu 10 menit per booking</p>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-red-900">Konflik Jadwal</h3>
+                    <p class="text-red-700">8-10 kasus reservasi ganda per bulan karena manajemen jadwal manual</p>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-red-900">Dokumentasi Tidak Terstruktur</h3>
+                    <p class="text-red-700">Catatan terapi manual, sulit dicari, risiko data hilang tinggi</p>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-red-900">Tidak Ada Data</h3>
+                    <p class="text-red-700">Pembuatan laporan memakan 2-3 hari, sulit untuk pengambilan keputusan</p>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-red-900">Retention Rendah</h3>
+                    <p class="text-red-700">Retention rate hanya 65%, churn rate 35%</p>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                    <h3 class="font-semibold text-lg mb-2 text-red-900">Beban Admin Tinggi</h3>
+                    <p class="text-red-700">Admin menghabiskan 4 jam/hari untuk tugas repetitif</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Strategi CRM -->
+    <div class="slide items-center justify-center bg-gradient-to-br from-cur-primary to-cur-accent text-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold mb-8">Strategi CRM CUR-HEART</h2>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+                <h3 class="text-3xl font-heading font-bold mb-4">Filosofi: "Healing Through Connection"</h3>
+                <p class="text-xl opacity-90">Hubungan terapeutik yang kuat adalah kunci keberhasilan terapi</p>
+            </div>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-3">🎯</div>
+                    <h4 class="font-semibold text-lg mb-2">Personalisasi</h4>
+                    <p class="text-sm opacity-90">Pendekatan disesuaikan dengan kebutuhan unik</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-3">🔄</div>
+                    <h4 class="font-semibold text-lg mb-2">Kontinuitas</h4>
+                    <p class="text-sm opacity-90">Perawatan berkelanjutan sepanjang perjalanan</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-3">💬</div>
+                    <h4 class="font-semibold text-lg mb-2">Komunikasi</h4>
+                    <p class="text-sm opacity-90">Dialog terbuka dan penuh empati</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-3">💪</div>
+                    <h4 class="font-semibold text-lg mb-2">Pemberdayaan</h4>
+                    <p class="text-sm opacity-90">Klien mandiri mengelola kesehatan mental</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: 6 Fitur CRM -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">6 Fitur CRM yang Diimplementasikan</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3"><i class="fas fa-user-circle"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Manajemen Profil Klien</h3>
+                    <p class="text-sm opacity-90 mb-3">Data komprehensif untuk personalisasi</p>
+                    <div class="text-xs bg-white/20 rounded px-2 py-1 inline-block">Adopsi: 100%</div>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3"><i class="fas fa-file-medical"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Dokumentasi Sesi</h3>
+                    <p class="text-sm opacity-90 mb-3">Formulir terstruktur konsisten</p>
+                    <div class="text-xs bg-white/20 rounded px-2 py-1 inline-block">Adopsi: 95%</div>
+                </div>
+                <div class="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3"><i class="fas fa-comments"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Sistem Komunikasi</h3>
+                    <p class="text-sm opacity-90 mb-3">Pesan & notifikasi terintegrasi</p>
+                    <div class="text-xs bg-white/20 rounded px-2 py-1 inline-block">Adopsi: 75%</div>
+                </div>
+                <div class="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Pelacakan Kemajuan</h3>
+                    <p class="text-sm opacity-90 mb-3">Visualisasi progress terapi</p>
+                    <div class="text-xs bg-white/20 rounded px-2 py-1 inline-block">Adopsi: 80%</div>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3"><i class="fas fa-star"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Ulasan & Penilaian</h3>
+                    <p class="text-sm opacity-90 mb-3">Feedback sistematis klien</p>
+                    <div class="text-xs bg-white/20 rounded px-2 py-1 inline-block">Adopsi: 65%</div>
+                </div>
+                <div class="bg-gradient-to-br from-red-500 to-red-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-3"><i class="fas fa-chart-bar"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Dashboard Analitik</h3>
+                    <p class="text-sm opacity-90 mb-3">Metrik CRM real-time</p>
+                    <div class="text-xs bg-white/20 rounded px-2 py-1 inline-block">Adopsi: 100%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Demo Fitur #1 -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Fitur #1: Manajemen Profil Klien</h2>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <div class="bg-gray-100 rounded-lg p-8 h-96 flex items-center justify-center">
+                        <div class="text-center text-gray-400">
+                            <i class="fas fa-image text-6xl mb-4"></i>
+                            <p>Screenshot Mockup<br>Profil Klien</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Fitur Utama:</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Data demografis lengkap</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Riwayat medis & psikologis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Preferensi klien (terapis, jadwal)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Riwayat interaksi terintegrasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Segmentasi otomatis (High/Medium/Low Value)</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                        <p class="text-sm text-green-800"><strong>Dampak:</strong> Personalisasi layanan meningkat 41%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Hasil Kepuasan Klien -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Hasil: Kepuasan Klien</h2>
+            <div class="grid grid-cols-2 gap-8 mb-8">
+                <div class="bg-gradient-to-br from-green-500 to-green-600 text-white p-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4">CSAT Score</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-6xl font-bold">4.6</span>
+                        <span class="text-3xl ml-2">/5.0</span>
+                    </div>
+                    <div class="flex items-center text-lg">
+                        <i class="fas fa-arrow-up mr-2"></i>
+                        <span>+28% dari 3.6</span>
+                    </div>
+                    <p class="mt-4 text-sm opacity-90">Target ≥ 4.5 ✓ Tercapai</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4">Net Promoter Score</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-6xl font-bold">55</span>
+                    </div>
+                    <div class="text-lg mb-2">Excellent (50-70)</div>
+                    <p class="text-sm opacity-90">65% Promoter | 25% Passive | 10% Detractor</p>
+                    <p class="mt-4 text-sm opacity-90">Target ≥ 50 ✓ Tercapai</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+                <h3 class="text-xl font-semibold mb-4">Peningkatan per Aspek</h3>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-cur-primary mb-1">+34%</div>
+                        <p class="text-sm text-gray-600">Kemudahan Reservasi</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-cur-primary mb-1">+41%</div>
+                        <p class="text-sm text-gray-600">Personalisasi</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-cur-primary mb-1">+71%</div>
+                        <p class="text-sm text-gray-600">Transparansi</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-cur-primary mb-1">+21%</div>
+                        <p class="text-sm text-gray-600">Komunikasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Hasil Retensi -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Hasil: Retensi Klien</h2>
+            <div class="grid grid-cols-2 gap-6 mb-8">
+                <div class="bg-purple-50 border-2 border-purple-200 p-6 rounded-xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-900">Retention Rate</h3>
+                        <i class="fas fa-users text-3xl text-purple-600"></i>
+                    </div>
+                    <div class="flex items-baseline mb-2">
+                        <span class="text-5xl font-bold text-purple-600">85%</span>
+                    </div>
+                    <div class="flex items-center text-green-600 font-medium">
+                        <i class="fas fa-arrow-up mr-2"></i>
+                        <span>+31% dari 65%</span>
+                    </div>
+                </div>
+                <div class="bg-red-50 border-2 border-red-200 p-6 rounded-xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-900">Churn Rate</h3>
+                        <i class="fas fa-user-slash text-3xl text-red-600"></i>
+                    </div>
+                    <div class="flex items-baseline mb-2">
+                        <span class="text-5xl font-bold text-red-600">15%</span>
+                    </div>
+                    <div class="flex items-center text-green-600 font-medium">
+                        <i class="fas fa-arrow-down mr-2"></i>
+                        <span>-57% dari 35%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl">
+                <h3 class="text-xl font-semibold mb-4">Metrik Engagement</h3>
+                <div class="grid grid-cols-3 gap-6">
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Repeat Booking Rate</p>
+                        <p class="text-3xl font-bold text-cur-primary">78%</p>
+                        <p class="text-sm text-green-600 mt-1">+42% dari 55%</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Avg Sessions per Client</p>
+                        <p class="text-3xl font-bold text-cur-primary">5.1</p>
+                        <p class="text-sm text-green-600 mt-1">+59% dari 3.2</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">Time to 2nd Booking</p>
+                        <p class="text-3xl font-bold text-cur-primary">28 hari</p>
+                        <p class="text-sm text-green-600 mt-1">-38% dari 45 hari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Hasil Efisiensi -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Hasil: Efisiensi Operasional</h2>
+            <div class="bg-gradient-to-r from-cur-primary to-cur-accent text-white p-8 rounded-xl mb-8">
+                <div class="text-center">
+                    <p class="text-xl mb-2">Total Waktu Admin per Hari</p>
+                    <div class="flex items-center justify-center space-x-8">
+                        <div>
+                            <p class="text-sm opacity-75">Sebelum</p>
+                            <p class="text-5xl font-bold">4 jam</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-3xl"></i>
+                        <div>
+                            <p class="text-sm opacity-75">Setelah</p>
+                            <p class="text-5xl font-bold">1.5 jam</p>
+                        </div>
+                    </div>
+                    <p class="text-2xl font-bold mt-4">Penghematan 63%</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="font-semibold mb-4">Penghematan Waktu per Tugas</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Pencarian Data Klien</span>
+                            <span class="font-bold text-green-600">-90%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Pembuatan Laporan</span>
+                            <span class="font-bold text-green-600">-88%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Koordinasi Jadwal</span>
+                            <span class="font-bold text-green-600">-80%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm">Follow-up Klien</span>
+                            <span class="font-bold text-green-600">-75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl border-2 border-green-200">
+                    <h3 class="font-semibold mb-4">Dampak Finansial</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-sm text-gray-600">Penghematan Waktu</p>
+                            <p class="text-2xl font-bold text-gray-900">55 jam/bulan</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600">Penghematan Biaya</p>
+                            <p class="text-2xl font-bold text-green-600">Rp 2,75 juta/bulan</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600">Penghematan Tahunan</p>
+                            <p class="text-3xl font-bold text-green-600">Rp 33 juta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Hasil Kinerja Bisnis -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Hasil: Kinerja Bisnis</h2>
+            <div class="grid grid-cols-3 gap-6 mb-8">
+                <div class="bg-blue-50 border-2 border-blue-200 p-6 rounded-xl text-center">
+                    <p class="text-sm text-gray-600 mb-2">Klien Aktif</p>
+                    <p class="text-5xl font-bold text-blue-600 mb-2">62</p>
+                    <p class="text-green-600 font-medium">+38% dari 45</p>
+                </div>
+                <div class="bg-purple-50 border-2 border-purple-200 p-6 rounded-xl text-center">
+                    <p class="text-sm text-gray-600 mb-2">Sesi per Bulan</p>
+                    <p class="text-5xl font-bold text-purple-600 mb-2">115</p>
+                    <p class="text-green-600 font-medium">+44% dari 80</p>
+                </div>
+                <div class="bg-green-50 border-2 border-green-200 p-6 rounded-xl text-center">
+                    <p class="text-sm text-gray-600 mb-2">Pendapatan/Bulan</p>
+                    <p class="text-4xl font-bold text-green-600 mb-2">Rp 38,1 juta</p>
+                    <p class="text-green-600 font-medium">+44%</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="font-semibold mb-4">Customer Lifetime Value</h3>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600">Sebelum</p>
+                            <p class="text-2xl font-bold">Rp 1,12 juta</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-2xl text-gray-400"></i>
+                        <div>
+                            <p class="text-sm text-gray-600">Setelah</p>
+                            <p class="text-2xl font-bold text-cur-primary">Rp 1,79 juta</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-green-600 font-bold text-xl mt-4">+59%</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <h3 class="font-semibold mb-4">Customer Acquisition Cost</h3>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600">Sebelum</p>
+                            <p class="text-2xl font-bold">Rp 450.000</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-2xl text-gray-400"></i>
+                        <div>
+                            <p class="text-sm text-gray-600">Setelah</p>
+                            <p class="text-2xl font-bold text-cur-primary">Rp 380.000</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-green-600 font-bold text-xl mt-4">-16%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: ROI -->
+    <div class="slide items-center justify-center bg-gradient-to-br from-green-600 to-green-700 text-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-5xl font-heading font-bold mb-12 text-center">Return on Investment (ROI)</h2>
+            <div class="grid grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                    <p class="text-lg mb-3 opacity-90">Total Investasi</p>
+                    <p class="text-4xl font-bold mb-2">Rp 7,56 juta</p>
+                    <p class="text-sm opacity-75">One-time + Operasional/tahun</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                    <p class="text-lg mb-3 opacity-90">Manfaat Tahunan</p>
+                    <p class="text-4xl font-bold mb-2">Rp 172,8 juta</p>
+                    <p class="text-sm opacity-75">Peningkatan + Penghematan</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                    <p class="text-lg mb-3 opacity-90">Payback Period</p>
+                    <p class="text-4xl font-bold mb-2">0,5 bulan</p>
+                    <p class="text-sm opacity-75">~15 hari</p>
+                </div>
+            </div>
+            <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-12 text-center">
+                <p class="text-3xl mb-4">Return on Investment</p>
+                <p class="text-8xl font-bold mb-4">2.186%</p>
+                <p class="text-2xl opacity-90">Investasi kembali 21,86x lipat dalam setahun!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 13: Tantangan & Solusi -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Tantangan & Solusi</h2>
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-red-900 mb-2">❌ Resistensi Perubahan</h3>
+                        <p class="text-sm text-red-700">Terapis terbiasa dokumentasi manual</p>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-green-900 mb-2">✅ Change Management</h3>
+                        <p class="text-sm text-green-700">Sosialisasi, keterlibatan, implementasi bertahap → Adopsi 95%</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-red-900 mb-2">❌ Kurva Pembelajaran</h3>
+                        <p class="text-sm text-red-700">Waktu adaptasi untuk fitur baru</p>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-green-900 mb-2">✅ Pelatihan Intensif</h3>
+                        <p class="text-sm text-green-700">Training 2 jam, video tutorial, manual, support on-demand</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-red-900 mb-2">❌ Kekhawatiran Privasi</h3>
+                        <p class="text-sm text-red-700">Klien khawatir keamanan data</p>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-green-900 mb-2">✅ Keamanan Data</h3>
+                        <p class="text-sm text-green-700">Enkripsi, kontrol akses ketat, transparansi kebijakan</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-red-900 mb-2">❌ Kompleksitas Fitur</h3>
+                        <p class="text-sm text-red-700">Beberapa fitur terlalu kompleks</p>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                        <h3 class="font-semibold text-green-900 mb-2">✅ Simplifikasi UI/UX</h3>
+                        <p class="text-sm text-green-700">Progressive disclosure, tooltips, onboarding wizard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 14: Lessons Learned -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-5xl w-full">
+            <h2 class="text-4xl font-heading font-bold text-cur-primary mb-8">Lessons Learned</h2>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🎯</div>
+                    <h3 class="font-semibold text-lg mb-2">Change Management Krusial</h3>
+                    <p class="text-sm text-gray-700">Keberhasilan CRM bukan hanya tentang teknologi, tetapi juga tentang manajemen perubahan dan adopsi pengguna</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <div class="text-3xl mb-3">👥</div>
+                    <h3 class="font-semibold text-lg mb-2">User-Centric Design</h3>
+                    <p class="text-sm text-gray-700">Melibatkan pengguna akhir dalam desain sistem menghasilkan fitur yang lebih relevan dan mudah digunakan</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🎓</div>
+                    <h3 class="font-semibold text-lg mb-2">Pelatihan Berkelanjutan</h3>
+                    <p class="text-sm text-gray-700">Pelatihan tidak cukup dilakukan sekali, perlu dukungan berkelanjutan dan refresher</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h3 class="font-semibold text-lg mb-2">Keamanan Prioritas</h3>
+                    <p class="text-sm text-gray-700">Dalam layanan kesehatan mental, keamanan dan privasi data adalah non-negotiable</p>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-xl">
+                    <div class="text-3xl mb-3">📊</div>
+                    <h3 class="font-semibold text-lg mb-2">Implementasi Bertahap</h3>
+                    <p class="text-sm text-gray-700">Phased approach lebih efektif daripada big bang, memberikan waktu untuk adaptasi</p>
+                </div>
+                <div class="bg-orange-50 p-6 rounded-xl">
+                    <div class="text-3xl mb-3">🔄</div>
+                    <h3 class="font-semibold text-lg mb-2">Feedback Loop</h3>
+                    <p class="text-sm text-gray-700">Mekanisme feedback yang baik memungkinkan perbaikan berkelanjutan berdasarkan pengalaman pengguna</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 15: Kesimpulan -->
+    <div class="slide items-center justify-center bg-gradient-to-br from-cur-primary to-cur-accent text-white">
+        <div class="max-w-5xl w-full text-center">
+            <h2 class="text-5xl font-heading font-bold mb-8">Kesimpulan</h2>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+                <p class="text-2xl leading-relaxed">
+                    Implementasi CRM pada Sistem Informasi CUR-HEART <strong>terbukti sangat berhasil</strong> dalam meningkatkan kepuasan klien, retensi, efisiensi operasional, dan kinerja bisnis.
+                </p>
+            </div>
+            <div class="grid grid-cols-4 gap-6 mb-8">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <p class="text-4xl font-bold mb-2">4.6/5.0</p>
+                    <p class="text-sm opacity-90">CSAT</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <p class="text-4xl font-bold mb-2">85%</p>
+                    <p class="text-sm opacity-90">Retention</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <p class="text-4xl font-bold mb-2">+44%</p>
+                    <p class="text-sm opacity-90">Pendapatan</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <p class="text-4xl font-bold mb-2">2.186%</p>
+                    <p class="text-sm opacity-90">ROI</p>
+                </div>
+            </div>
+            <p class="text-xl italic opacity-90">
+                "CRM yang dirancang dengan baik dan diimplementasikan dengan efektif dapat menjadi <strong>game changer</strong> untuk layanan kesehatan mental."
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 16: Q&A -->
+    <div class="slide items-center justify-center bg-white">
+        <div class="max-w-4xl w-full text-center">
+            <div class="text-8xl mb-8">❓</div>
+            <h2 class="text-5xl font-heading font-bold text-cur-primary mb-6">Tanya Jawab</h2>
+            <p class="text-xl text-gray-600 mb-12">Silakan ajukan pertanyaan Anda</p>
+            <div class="bg-gray-50 rounded-xl p-8">
+                <p class="text-gray-700 mb-4">Terima kasih atas perhatiannya!</p>
+                <div class="flex items-center justify-center space-x-8 text-sm text-gray-600">
+                    <div>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>cur-heart@email.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone mr-2"></i>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('slideNumber').textContent = `${currentSlide + 1} / ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Initialize
+        document.getElementById('slideNumber').textContent = `1 / ${totalSlides}`;
+    </script>
+</body>
+</html>
