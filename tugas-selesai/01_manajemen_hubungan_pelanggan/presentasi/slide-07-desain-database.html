@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 7 - Desain Database | Presentasi CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center mb-6">
+                <img src="assets/img/color.png" alt="CurHeart Logo" class="h-12 mr-4">
+                <h1 class="text-5xl font-bold text-gray-900">Desain Database CRM</h1>
+            </div>
+            <div class="h-1 w-32 bg-[#1E0E62] rounded-full"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Left Column - Tabel Utama -->
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-[#1E0E62]" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/>
+                            <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/>
+                            <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/>
+                        </svg>
+                        9 Tabel Utama CRM
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#1E0E62] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">1</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">users</div>
+                                <div class="text-xs text-gray-600">Data pengguna sistem</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#FF6B7A] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">2</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">clients</div>
+                                <div class="text-xs text-gray-600">Profil klien detail</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#FFA94D] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">3</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">therapists</div>
+                                <div class="text-xs text-gray-600">Data terapis</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#00D26A] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">4</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">bookings</div>
+                                <div class="text-xs text-gray-600">Reservasi & interaksi</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#667BC6] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">5</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">sessions</div>
+                                <div class="text-xs text-gray-600">Data sesi terapi</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#1E0E62] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">6</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">session_notes</div>
+                                <div class="text-xs text-gray-600">Catatan terapis</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#FF6B7A] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">7</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">messages</div>
+                                <div class="text-xs text-gray-600">Komunikasi klien-terapis</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#FFA94D] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">8</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">reviews</div>
+                                <div class="text-xs text-gray-600">Ulasan & penilaian</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="w-8 h-8 bg-[#00D26A] rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">9</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">notifications</div>
+                                <div class="text-xs text-gray-600">Notifikasi sistem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Relasi -->
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-[#FF6B7A]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
+                        </svg>
+                        Relasi Antar Tabel
+                    </h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">users ↔ clients</div>
+                            <div class="text-gray-600">One-to-One</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">users ↔ therapists</div>
+                            <div class="text-gray-600">One-to-One</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">clients ↔ bookings</div>
+                            <div class="text-gray-600">One-to-Many</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">therapists ↔ bookings</div>
+                            <div class="text-gray-600">One-to-Many</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">bookings ↔ sessions</div>
+                            <div class="text-gray-600">One-to-One</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">sessions ↔ session_notes</div>
+                            <div class="text-gray-600">One-to-Many</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">users ↔ messages</div>
+                            <div class="text-gray-600">One-to-Many (sender/receiver)</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-lg border border-gray-200">
+                            <div class="font-semibold text-gray-900 mb-1">bookings ↔ reviews</div>
+                            <div class="text-gray-600">One-to-One</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Normalisasi -->
+                <div class="bg-gradient-to-r from-[#1E0E62] to-[#1E0E62]/80 rounded-2xl p-6 text-white">
+                    <h3 class="text-xl font-bold mb-3">Normalisasi Database</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Third Normal Form (3NF)
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Tidak ada redundansi data
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Integritas referensial terjaga
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Indexing optimal
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <a href="slide-06-implementasi-fitur.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+    </a>
+    <a href="slide-08-evaluasi-dampak.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+    </a>
+</body>
+</html>
