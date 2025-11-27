@@ -3,7 +3,7 @@
 
 ## 5.1 Kesimpulan
 
-Berdasarkan hasil penelitian dan pembahasan yang telah diuraikan pada bab-bab sebelumnya, dapat ditarik beberapa kesimpulan penting terkait implementasi Customer Relationship Management (CRM) pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART:
+Berdasarkan hasil penelitian dan pembahasan yang telah diuraikan pada bab-bab sebelumnya, dapat ditarik beberapa kesimpulan penting terkait perancangan dan pengembangan prototype Customer Relationship Management (CRM) pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART:
 
 ### 5.1.1 Strategi CRM yang Efektif untuk Layanan Kesehatan Mental
 
@@ -17,9 +17,9 @@ Penelitian ini berhasil mengidentifikasi dan mengimplementasikan strategi CRM ya
 
 4. **Fokus pada Outcome Kesehatan**: Berbeda dengan CRM tradisional yang fokus pada transaksi, CRM kesehatan mental fokus pada outcome kesehatan dan kesejahteraan klien jangka panjang.
 
-### 5.1.2 Implementasi Fitur CRM yang Komprehensif
+### 5.1.2 Perancangan dan Pengembangan Prototype CRM yang Komprehensif
 
-Sistem Informasi CUR-HEART berhasil mengimplementasikan enam fitur CRM utama yang terintegrasi dengan proses bisnis:
+Prototype Sistem Informasi CUR-HEART berhasil dirancang dan dikembangkan dengan enam fitur CRM utama yang terintegrasi dengan proses bisnis:
 
 1. **Manajemen Profil Klien Komprehensif**: Menyimpan data demografis, medis, psikologis, preferensi, dan riwayat interaksi secara terstruktur, dengan tingkat adopsi 100% dan kepuasan 4.6/5.0.
 
@@ -33,20 +33,20 @@ Sistem Informasi CUR-HEART berhasil mengimplementasikan enam fitur CRM utama yan
 
 6. **Dashboard Analitik CRM**: Menyediakan monitoring real-time terhadap aktivitas dan performa sistem CRM untuk evaluasi operasional, dengan kepuasan 4.7/5.0.
 
-### 5.1.3 Dampak Positif Signifikan terhadap Kepuasan dan Retensi Klien
+### 5.1.3 Hasil Uji Coba dan Proyeksi Dampak Positif
 
-Implementasi CRM memberikan dampak positif yang terukur:
+Uji coba prototype CRM menunjukkan hasil yang positif dan proyeksi dampak yang signifikan:
 
-**Kepuasan Klien:**
-- Customer Satisfaction Score (CSAT) meningkat dari 3.6/5.0 menjadi 4.6/5.0 (+28%)
-- Net Promoter Score (NPS) mencapai 55, melampaui target ≥ 50
-- Peningkatan terbesar pada transparansi kemajuan (+71%)
+**Proyeksi Kepuasan Klien:**
+- Target Customer Satisfaction Score (CSAT): ≥ 4.5/5.0 (baseline: 3.6/5.0)
+- Target Net Promoter Score (NPS): ≥ 50 (kategori Excellent)
+- Hasil uji coba menunjukkan partisipan sangat puas dengan kemudahan penggunaan dan transparansi sistem
 
-**Retensi Klien:**
-- Customer Retention Rate meningkat dari 65% menjadi 85% (+31%)
-- Churn Rate turun dari 35% menjadi 15% (-57%)
-- Repeat Booking Rate meningkat dari 55% menjadi 78% (+42%)
-- Average Sessions per Client meningkat dari 3.2 menjadi 5.1 (+59%)
+**Proyeksi Retensi Klien:**
+- Target Customer Retention Rate: ≥ 80% (baseline: 65%)
+- Target Churn Rate: ≤ 20% (baseline: 35%)
+- Target Repeat Booking Rate: ≥ 75%
+- Target Average Sessions per Client: ≥ 8 sesi
 
 **Kinerja Bisnis:**
 - Jumlah klien aktif meningkat 38% (dari 45 menjadi 62)

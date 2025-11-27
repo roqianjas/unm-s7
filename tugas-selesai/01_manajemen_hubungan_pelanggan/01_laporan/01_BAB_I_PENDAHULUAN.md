@@ -25,9 +25,9 @@ Implementasi CRM pada sistem informasi CUR-HEART dirancang untuk mengatasi berba
 
 5. **Segmentasi Pelanggan**: Kemampuan untuk mengelompokkan klien berdasarkan karakteristik demografis, jenis layanan, atau tahap perjalanan terapi memungkinkan strategi pemasaran dan komunikasi yang lebih efektif.
 
-Penelitian ini mengkaji implementasi CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART yang telah dikembangkan menggunakan framework Laravel dengan pendekatan System Development Life Cycle (SDLC) model Waterfall. Sistem ini mencakup berbagai fitur CRM seperti manajemen profil klien, riwayat interaksi, dokumentasi sesi terapi, sistem komunikasi terintegrasi, dan analitik kepuasan pelanggan.
+Penelitian ini mengkaji perancangan dan pengembangan prototype CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART. Prototype dikembangkan dengan pendekatan user-centered design dan mencakup berbagai fitur CRM seperti manajemen profil klien, riwayat interaksi, dokumentasi sesi terapi, sistem komunikasi terintegrasi, dan analitik kepuasan pelanggan. Uji coba prototype dilakukan untuk mengevaluasi fungsionalitas, usability, dan proyeksi dampak terhadap bisnis.
 
-Dengan implementasi CRM yang efektif, CUR-HEART diharapkan dapat meningkatkan kepuasan klien, memperkuat loyalitas, meningkatkan retensi, dan pada akhirnya mencapai tujuan bisnis jangka panjang sambil memberikan dampak positif terhadap kesehatan mental masyarakat.
+Dengan perancangan CRM yang efektif dan hasil uji coba yang positif, prototype ini diharapkan dapat menjadi dasar implementasi penuh yang akan meningkatkan kepuasan klien, memperkuat loyalitas, meningkatkan retensi, dan pada akhirnya mencapai tujuan bisnis jangka panjang sambil memberikan dampak positif terhadap kesehatan mental masyarakat.
 
 ## 1.2 Rumusan Masalah
 
@@ -35,11 +35,11 @@ Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam penelitia
 
 1. Bagaimana konsep dan strategi Customer Relationship Management (CRM) yang sesuai untuk diterapkan pada layanan kesehatan mental di CUR-HEART?
 
-2. Bagaimana implementasi fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART untuk mendukung pengelolaan hubungan pelanggan yang efektif?
+2. Bagaimana perancangan dan pengembangan prototype fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART untuk mendukung pengelolaan hubungan pelanggan yang efektif?
 
-3. Bagaimana dampak implementasi CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART?
+3. Bagaimana hasil uji coba prototype dan proyeksi dampak CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART?
 
-4. Apa saja tantangan dan hambatan dalam implementasi CRM pada layanan kesehatan mental, serta bagaimana strategi untuk mengatasinya?
+4. Apa saja tantangan dan hambatan dalam pengembangan prototype CRM pada layanan kesehatan mental, serta bagaimana strategi untuk mengatasinya?
 
 ## 1.3 Tujuan Penelitian
 
@@ -47,7 +47,7 @@ Tujuan dari penelitian ini adalah:
 
 1. Menganalisis konsep dan strategi Customer Relationship Management (CRM) yang sesuai untuk layanan kesehatan mental di CUR-HEART.
 
-2. Mendeskripsikan implementasi fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART, termasuk arsitektur sistem, desain database, dan antarmuka pengguna.
+2. Merancang dan mengembangkan prototype fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART, termasuk arsitektur sistem, desain database, dan antarmuka pengguna.
 
 3. Mengevaluasi dampak implementasi CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART melalui analisis data dan feedback pengguna.
 

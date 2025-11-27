@@ -1,0 +1,125 @@
+@startuml erd
+
+!define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+!define primary_key(x) <b>PK: x</b>
+!define foreign_key(x) <i>FK: x</i>
+
+skinparam class {
+    BackgroundColor LightYellow
+    BorderColor Black
+    ArrowColor Black
+}
+
+title Entity Relationship Diagram - CRM CUR-HEART
+
+entity "users" as users {
+    primary_key(user_id) : INT
+    --
+    username : VARCHAR(50)
+    email : VARCHAR(100)
+    password : VARCHAR(255)
+    role : ENUM
+    is_active : BOOLEAN
+    created_at : TIMESTAMP
+}
+
+entity "clients" as clients {
+    primary_key(client_id) : INT
+    --
+    foreign_key(user_id) : INT
+    full_name : VARCHAR(100)
+    phone : VARCHAR(20)
+    address : TEXT
+    date_of_birth : DATE
+    gender : ENUM
+    emergency_contact : VARCHAR(100)
+    medical_history : TEXT
+}
+
+entity "therapists" as therapists {
+    primary_key(therapist_id) : INT
+    --
+    foreign_key(user_id) : INT
+    full_name : VARCHAR(100)
+    phone : VARCHAR(20)
+    specialization : VARCHAR(100)
+    license_number : VARCHAR(50)
+    years_experience : INT
+    bio : TEXT
+}
+
+entity "bookings" as bookings {
+    primary_key(booking_id) : INT
+    --
+    foreign_key(client_id) : INT
+    foreign_key(therapist_id) : INT
+    service_type : VARCHAR(100)
+    booking_date : DATE
+    booking_time : TIME
+    duration : INT
+    status : ENUM
+    notes : TEXT
+}
+
+entity "sessions" as sessions {
+    primary_key(session_id) : INT
+    --
+    foreign_key(booking_id) : INT
+    session_date : TIMESTAMP
+    duration : INT
+    status : ENUM
+    notes : TEXT
+}
+
+entity "session_notes" as notes {
+    primary_key(note_id) : INT
+    --
+    foreign_key(session_id) : INT
+    subjective : TEXT
+    objective : TEXT
+    assessment : TEXT
+    plan : TEXT
+}
+
+entity "messages" as messages {
+    primary_key(message_id) : INT
+    --
+    foreign_key(sender_id) : INT
+    foreign_key(receiver_id) : INT
+    message_text : TEXT
+    is_read : BOOLEAN
+    sent_at : TIMESTAMP
+}
+
+entity "reviews" as reviews {
+    primary_key(review_id) : INT
+    --
+    foreign_key(booking_id) : INT
+    rating : INT
+    comment : TEXT
+    created_at : TIMESTAMP
+}
+
+entity "notifications" as notifications {
+    primary_key(notification_id) : INT
+    --
+    foreign_key(user_id) : INT
+    title : VARCHAR(100)
+    message : TEXT
+    type : ENUM
+    is_read : BOOLEAN
+}
+
+' Relationships
+users ||--|| clients : "1:1"
+users ||--|| therapists : "1:1"
+clients ||--o{ bookings : "1:N"
+therapists ||--o{ bookings : "1:N"
+bookings ||--|| sessions : "1:1"
+sessions ||--o{ notes : "1:N"
+users ||--o{ messages : "1:N\n(sender)"
+users ||--o{ messages : "1:N\n(receiver)"
+bookings ||--|| reviews : "1:1"
+users ||--o{ notifications : "1:N"
+
+@enduml

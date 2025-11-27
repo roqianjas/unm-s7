@@ -1,0 +1,73 @@
+@startuml dfd_level_0
+!define PROCESS circle
+!define DATASTORE database
+!define EXTERNAL rectangle
+
+skinparam circle {
+    BackgroundColor LightBlue
+    BorderColor Black
+}
+
+skinparam database {
+    BackgroundColor LightYellow
+    BorderColor Black
+}
+
+skinparam rectangle {
+    BackgroundColor LightGreen
+    BorderColor Black
+}
+
+title Data Flow Diagram Level 0 - Sistem CRM CUR-HEART
+
+rectangle "KLIEN" as client
+rectangle "TERAPIS" as therapist
+rectangle "ADMIN" as admin
+
+circle "1.0\nKelola\nUser" as p1
+circle "2.0\nKelola\nBooking" as p2
+circle "3.0\nKelola\nSesi Terapi" as p3
+circle "4.0\nKelola\nDokumentasi" as p4
+circle "5.0\nKelola\nKomunikasi" as p5
+circle "6.0\nKelola\nReview" as p6
+circle "7.0\nAnalitik\n& Report" as p7
+
+database "D1: users" as d1
+database "D2: clients" as d2
+database "D3: bookings" as d3
+database "D4: therapists" as d4
+database "D5: sessions" as d5
+database "D6: session_notes" as d6
+database "D7: messages" as d7
+database "D8: reviews" as d8
+
+client --> p1 : Data registrasi
+p1 --> client : Konfirmasi
+p1 --> d1 : Simpan user
+p1 --> d2 : Simpan client
+
+client --> p2 : Data booking
+p2 --> client : Konfirmasi booking
+therapist --> p2 : Konfirmasi jadwal
+p2 --> d3 : Simpan booking
+
+d3 --> p3 : Data booking
+p3 --> d5 : Simpan sesi
+therapist --> p4 : Data dokumentasi
+p4 --> d6 : Simpan notes
+
+client --> p5 : Pesan
+therapist --> p5 : Balasan
+p5 --> d7 : Simpan pesan
+
+client --> p6 : Review & rating
+p6 --> d8 : Simpan review
+
+admin --> p7 : Request laporan
+d1 --> p7 : Data user
+d3 --> p7 : Data booking
+d5 --> p7 : Data sesi
+d8 --> p7 : Data review
+p7 --> admin : Laporan & analitik
+
+@enduml

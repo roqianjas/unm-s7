@@ -1,0 +1,39 @@
+@startuml diagram_konteks
+
+skinparam rectangle {
+    BackgroundColor<<system>> LightBlue
+    BackgroundColor<<external>> LightGreen
+    BorderColor Black
+    FontSize 12
+}
+
+skinparam arrow {
+    Color Black
+    FontSize 10
+}
+
+title Diagram Konteks - Sistem CRM CUR-HEART
+
+rectangle "KLIEN" as client <<external>>
+
+rectangle "TERAPIS" as therapist <<external>>
+
+rectangle "ADMIN" as admin <<external>>
+
+rectangle "SISTEM NOTIFIKASI" as notification <<external>>
+
+rectangle "SISTEM CRM\nCUR-HEART" as system <<system>>
+
+client -down-> system : Data registrasi,\nbooking, komunikasi
+system -up-> client : Konfirmasi,\nnotifikasi, info
+
+therapist -down-> system : Data sesi,\ndokumentasi, jadwal
+system -up-> therapist : Jadwal klien,\nnotifikasi
+
+admin -down-> system : Kelola data,\nkonfigurasi
+system -up-> admin : Laporan,\nanalitik
+
+system -right-> notification : Trigger notifikasi
+notification -left-> system : Status pengiriman
+
+@enduml

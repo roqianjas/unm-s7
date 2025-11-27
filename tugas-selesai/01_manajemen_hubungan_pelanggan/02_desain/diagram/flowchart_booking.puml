@@ -1,0 +1,40 @@
+@startuml flowchart_booking
+
+skinparam activity {
+    BackgroundColor LightBlue
+    BorderColor Black
+    DiamondBackgroundColor LightYellow
+    DiamondBorderColor Black
+    StartColor Green
+    EndColor Red
+}
+
+title Flowchart Proses Booking
+
+start
+
+:Klien Login;
+
+:Pilih Jenis Layanan;
+
+:Pilih Terapis;
+
+:Lihat Jadwal Tersedia;
+
+if (Jadwal Cocok?) then (Ya)
+    :Isi Data Booking;
+    
+    :Konfirmasi Booking;
+    
+    :Simpan ke Database;
+    
+    :Kirim Notifikasi ke Terapis;
+    
+    :Tampilkan Konfirmasi;
+else (Tidak)
+    :Tampilkan Konfirmasi;
+endif
+
+stop
+
+@enduml

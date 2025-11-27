@@ -1,0 +1,46 @@
+@startuml flowchart_dokumentasi
+
+skinparam activity {
+    BackgroundColor LightGreen
+    BorderColor Black
+    DiamondBackgroundColor LightYellow
+    DiamondBorderColor Black
+    StartColor Green
+    EndColor Red
+}
+
+title Flowchart Proses Dokumentasi Sesi
+
+start
+
+:Terapis Login;
+
+:Lihat Daftar Sesi Hari Ini;
+
+:Pilih Sesi yang Selesai;
+
+:Buka Form SOAP Notes;
+
+:Isi Subjective (Keluhan);
+
+:Isi Objective (Observasi);
+
+:Isi Assessment (Diagnosis);
+
+:Isi Plan (Rencana);
+
+if (Data Lengkap?) then (Ya)
+    :Simpan SOAP Notes;
+    
+    :Update Status Sesi Selesai;
+    
+    :Kirim Notifikasi ke Klien;
+    
+    :Tampilkan Konfirmasi;
+else (Tidak)
+    :Tampilkan Konfirmasi;
+endif
+
+stop
+
+@enduml

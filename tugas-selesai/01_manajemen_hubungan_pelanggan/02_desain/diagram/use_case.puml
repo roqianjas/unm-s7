@@ -1,0 +1,60 @@
+@startuml use_case
+left to right direction
+
+skinparam actorStyle awesome
+skinparam packageStyle rectangle
+
+actor "Klien" as client
+actor "Terapis" as therapist
+actor "Admin" as admin
+
+rectangle "Sistem CRM CUR-HEART" {
+    
+    ' Use cases untuk Klien
+    usecase "Registrasi & Login" as UC1
+    usecase "Kelola Profil" as UC2
+    usecase "Buat Booking" as UC3
+    usecase "Pilih Terapis & Jadwal" as UC4
+    usecase "Lihat Riwayat Sesi" as UC5
+    usecase "Kirim Pesan ke Terapis" as UC6
+    usecase "Berikan Review & Rating" as UC7
+    
+    ' Use cases untuk Terapis
+    usecase "Kelola Jadwal" as UC8
+    usecase "Lihat Booking Klien" as UC9
+    usecase "Dokumentasi Sesi (SOAP)" as UC10
+    usecase "Balas Pesan Klien" as UC11
+    usecase "Lihat Review dari Klien" as UC12
+    
+    ' Use cases untuk Admin
+    usecase "Kelola User" as UC13
+    usecase "Kelola Layanan" as UC14
+    usecase "Lihat Dashboard Analitik" as UC15
+    usecase "Export Laporan" as UC16
+    
+    ' Relationships
+    UC3 .> UC4 : <<include>>
+    UC15 .> UC16 : <<extend>>
+}
+
+' Actor to Use Case relationships
+client --> UC1
+client --> UC2
+client --> UC3
+client --> UC5
+client --> UC6
+client --> UC7
+
+therapist --> UC1
+therapist --> UC8
+therapist --> UC9
+therapist --> UC10
+therapist --> UC11
+therapist --> UC12
+
+admin --> UC1
+admin --> UC13
+admin --> UC14
+admin --> UC15
+
+@enduml
