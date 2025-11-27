@@ -117,9 +117,104 @@ Strategi personalisasi CUR-HEART meliputi:
    - Tips dan latihan yang disesuaikan dengan tujuan terapi
    - Pengingat yang dipersonalisasi untuk sesi dan latihan
 
-## 4.3 Perancangan Fitur CRM pada Sistem Informasi CUR-HEART
+## 4.3 Analisis Kebutuhan Sistem CRM
 
-### 4.3.1 Arsitektur Sistem CRM
+### 4.3.1 Identifikasi Masalah Existing
+
+Berdasarkan wawancara dengan pemangku kepentingan dan observasi proses bisnis existing di CUR-HEART, ditemukan beberapa permasalahan dalam manajemen hubungan pelanggan:
+
+**Tabel 4.4 Identifikasi Masalah Existing**
+
+| No | Aspek | Masalah | Dampak |
+|----|-------|---------|--------|
+| 1 | **Manajemen Data Klien** | Data klien tersebar di berbagai file Excel dan catatan manual | Sulit mencari riwayat klien, data tidak terintegrasi |
+| 2 | **Dokumentasi Terapi** | Catatan terapi masih manual di buku/kertas | Risiko hilang, sulit dibaca, tidak terstruktur |
+| 3 | **Komunikasi** | Komunikasi via WhatsApp pribadi, tidak terdokumentasi | Tidak ada riwayat komunikasi, sulit tracking |
+| 4 | **Follow-up Klien** | Follow-up manual, sering terlupa | Tingkat no-show tinggi (±30%), klien tidak kembali |
+| 5 | **Pelacakan Kemajuan** | Tidak ada sistem pelacakan kemajuan terapi | Klien tidak tahu progress, motivasi rendah |
+| 6 | **Feedback Klien** | Feedback tidak sistematis, hanya verbal | Sulit mengukur kepuasan, tidak ada data untuk perbaikan |
+| 7 | **Analitik Bisnis** | Laporan manual, memakan waktu 2-3 jam | Keputusan bisnis tidak berbasis data real-time |
+
+### 4.3.2 Analisis Kebutuhan Pengguna
+
+Berdasarkan wawancara dan kuesioner kepada 11 responden (1 pemilik, 3 terapis, 2 admin, 5 calon klien), diperoleh kebutuhan pengguna sebagai berikut:
+
+**Tabel 4.5 Kebutuhan Pengguna Berdasarkan Peran**
+
+| Peran | Kebutuhan Utama | Prioritas |
+|-------|----------------|-----------|
+| **Klien** | - Kemudahan booking online<br>- Akses riwayat sesi terapi<br>- Komunikasi mudah dengan terapis<br>- Melihat progress terapi<br>- Memberikan feedback | Tinggi |
+| **Terapis** | - Akses cepat ke profil klien<br>- Dokumentasi sesi yang terstruktur<br>- Komunikasi terintegrasi dengan klien<br>- Melihat jadwal dan booking<br>- Notifikasi otomatis | Sangat Tinggi |
+| **Admin** | - Manajemen user dan layanan<br>- Monitoring booking dan pembayaran<br>- Dashboard analitik<br>- Laporan otomatis<br>- Manajemen komunikasi | Tinggi |
+| **Pemilik** | - Dashboard kinerja bisnis<br>- Analitik kepuasan klien<br>- Laporan retensi dan churn<br>- ROI marketing<br>- Proyeksi pendapatan | Sangat Tinggi |
+
+### 4.3.3 Kebutuhan Fungsional Sistem
+
+Kebutuhan fungsional adalah fitur-fitur yang harus ada dalam sistem CRM untuk memenuhi kebutuhan pengguna:
+
+**Tabel 4.6 Kebutuhan Fungsional Sistem CRM**
+
+| Kode | Kebutuhan Fungsional | Deskripsi | Prioritas |
+|------|---------------------|-----------|-----------|
+| **F-01** | **Manajemen User** | Sistem harus dapat mengelola registrasi, login, dan profil user (klien, terapis, admin) | Must Have |
+| **F-02** | **Manajemen Profil Klien** | Sistem harus dapat menyimpan data demografis, medis, preferensi, dan riwayat klien secara komprehensif | Must Have |
+| **F-03** | **Manajemen Booking** | Sistem harus dapat mengelola pembuatan, konfirmasi, reschedule, dan pembatalan booking | Must Have |
+| **F-04** | **Manajemen Jadwal Terapis** | Sistem harus dapat mengelola ketersediaan jadwal terapis | Must Have |
+| **F-05** | **Dokumentasi Sesi Terapi** | Sistem harus menyediakan formulir terstruktur untuk dokumentasi setiap sesi terapi | Must Have |
+| **F-06** | **Sistem Komunikasi** | Sistem harus menyediakan messaging antara klien dan terapis | Must Have |
+| **F-07** | **Notifikasi Otomatis** | Sistem harus mengirim notifikasi email untuk konfirmasi booking, pengingat sesi, dll. | Must Have |
+| **F-08** | **Pelacakan Kemajuan** | Sistem harus dapat menampilkan visualisasi kemajuan terapi klien | Should Have |
+| **F-09** | **Ulasan dan Rating** | Sistem harus dapat mengumpulkan ulasan dan rating dari klien | Should Have |
+| **F-10** | **Dashboard Analitik** | Sistem harus menyediakan dashboard untuk monitoring aktivitas dan metrik CRM | Must Have |
+| **F-11** | **Manajemen Pembayaran** | Sistem harus dapat mencatat status pembayaran booking | Should Have |
+| **F-12** | **Laporan Otomatis** | Sistem harus dapat generate laporan secara otomatis | Should Have |
+| **F-13** | **Segmentasi Klien** | Sistem harus dapat mengelompokkan klien berdasarkan kriteria tertentu | Could Have |
+| **F-14** | **Export Data** | Sistem harus dapat export data ke format Excel/PDF | Could Have |
+
+**Keterangan Prioritas:**
+- **Must Have**: Fitur wajib ada, sistem tidak berfungsi tanpa fitur ini
+- **Should Have**: Fitur penting, sangat dibutuhkan tapi sistem masih bisa berjalan tanpanya
+- **Could Have**: Fitur nice-to-have, meningkatkan nilai tapi tidak krusial
+
+### 4.3.4 Kebutuhan Non-Fungsional Sistem
+
+Kebutuhan non-fungsional adalah karakteristik kualitas sistem yang harus dipenuhi:
+
+**Tabel 4.7 Kebutuhan Non-Fungsional Sistem CRM**
+
+| Kode | Aspek | Kebutuhan | Metrik/Target |
+|------|-------|-----------|---------------|
+| **NF-01** | **Usability** | Sistem harus mudah digunakan tanpa pelatihan khusus | - Waktu belajar ≤ 30 menit<br>- Task completion rate ≥ 90% |
+| **NF-02** | **Performance** | Sistem harus responsif dan cepat | - Page load time ≤ 3 detik<br>- Response time ≤ 2 detik |
+| **NF-03** | **Reliability** | Sistem harus stabil dan tersedia | - Uptime ≥ 99%<br>- MTBF ≥ 720 jam |
+| **NF-04** | **Security** | Sistem harus aman dan melindungi data sensitif | - Enkripsi data (AES-256)<br>- HTTPS<br>- Role-based access control<br>- Compliance UU PDP |
+| **NF-05** | **Scalability** | Sistem harus dapat menangani pertumbuhan user | - Support hingga 1000 user concurrent<br>- Database scalable |
+| **NF-06** | **Maintainability** | Sistem harus mudah dipelihara dan dikembangkan | - Kode terstruktur (MVC)<br>- Dokumentasi lengkap<br>- Modular design |
+| **NF-07** | **Compatibility** | Sistem harus kompatibel dengan berbagai device | - Responsive design<br>- Support browser modern (Chrome, Firefox, Safari, Edge) |
+| **NF-08** | **Backup & Recovery** | Sistem harus memiliki mekanisme backup | - Backup otomatis harian<br>- Recovery time ≤ 4 jam |
+| **NF-09** | **Accessibility** | Sistem harus accessible untuk semua user | - WCAG 2.1 Level AA<br>- Keyboard navigation<br>- Screen reader friendly |
+| **NF-10** | **Data Privacy** | Sistem harus menjaga privasi data klien | - Consent management<br>- Data anonymization<br>- Right to be forgotten |
+
+### 4.3.5 Analisis Kelayakan
+
+Analisis kelayakan dilakukan untuk memastikan perancangan sistem CRM layak untuk diimplementasikan:
+
+**Tabel 4.8 Analisis Kelayakan Sistem CRM**
+
+| Aspek Kelayakan | Analisis | Kesimpulan |
+|-----------------|----------|------------|
+| **Kelayakan Teknis** | - Teknologi yang digunakan (Laravel, MySQL) sudah mature dan terbukti<br>- Tim memiliki kompetensi teknis yang memadai<br>- Infrastruktur server tersedia (cloud hosting) | Layak |
+| **Kelayakan Operasional** | - User sudah familiar dengan sistem digital<br>- Manajemen mendukung digitalisasi<br>- Proses bisnis existing dapat diadaptasi | Layak |
+| **Kelayakan Ekonomi** | - Investasi: Rp 7.560.000<br>- Proyeksi ROI: ≥ 500%<br>- Payback period: ≤ 3 bulan<br>- Penghematan biaya operasional: Rp 33 juta/tahun | Layak |
+| **Kelayakan Hukum** | - Compliance dengan UU PDP No. 27 Tahun 2022<br>- Perjanjian kerahasiaan dengan klien<br>- Lisensi software legal | Layak |
+| **Kelayakan Jadwal** | - Estimasi pengembangan: 3-4 bulan<br>- Timeline realistis dengan resource yang ada<br>- Implementasi bertahap mengurangi risiko | Layak |
+
+**Kesimpulan Analisis Kelayakan:**
+Berdasarkan analisis kelayakan dari aspek teknis, operasional, ekonomi, hukum, dan jadwal, perancangan sistem CRM CUR-HEART dinyatakan **LAYAK** untuk dilanjutkan ke tahap implementasi.
+
+## 4.4 Perancangan Fitur CRM pada Sistem Informasi CUR-HEART
+
+### 4.4.1 Arsitektur Sistem CRM
 
 Sistem CRM CUR-HEART dirancang sebagai bagian terintegrasi dari Sistem Informasi Manajemen Reservasi dan Terapi menggunakan *framework* Laravel dengan arsitektur MVC (*Model-View-Controller*).
 
@@ -161,9 +256,9 @@ Sistem CRM CUR-HEART dirancang sebagai bagian terintegrasi dari Sistem Informasi
 └──────────────────────────────────────────────┘
 ```
 
-### 4.3.2 Diagram Konteks dan Data Flow Diagram (DFD)
+### 4.4.2 Diagram Konteks dan Data Flow Diagram (DFD)
 
-#### 4.3.2.1 Diagram Konteks
+#### 4.4.2.1 Diagram Konteks
 
 Diagram konteks menggambarkan sistem CRM CUR-HEART secara keseluruhan dan interaksinya dengan entitas eksternal:
 
@@ -176,7 +271,7 @@ Diagram konteks menggambarkan sistem CRM CUR-HEART secara keseluruhan dan intera
 3. **Admin**: Pengelola sistem yang mengatur user, layanan, dan melihat analitik
 4. **Sistem Notifikasi**: Sistem eksternal untuk mengirim email, SMS, dan push notification
 
-#### 4.3.2.2 Data Flow Diagram (DFD) Level 0
+#### 4.4.2.2 Data Flow Diagram (DFD) Level 0
 
 DFD Level 0 menunjukkan proses utama dalam sistem CRM:
 
@@ -192,7 +287,7 @@ DFD Level 0 menunjukkan proses utama dalam sistem CRM:
 6. **Kelola Review & Rating (6.0)**: Penilaian dan feedback dari klien
 7. **Analitik & Report (7.0)**: Dashboard dan laporan untuk manajemen
 
-### 4.3.3 Use Case Diagram
+### 4.4.3 Use Case Diagram
 
 Use case diagram menggambarkan interaksi antara aktor dengan sistem CRM:
 
@@ -226,16 +321,16 @@ Use case diagram menggambarkan interaksi antara aktor dengan sistem CRM:
 - Kelola Layanan
 - Lihat Dashboard Analitik (extend: Export Laporan)
 
-### 4.3.4 Flowchart Proses Bisnis Utama
+### 4.4.4 Flowchart Proses Bisnis Utama
 
-#### 4.3.4.1 Flowchart Proses Booking
+#### 4.4.4.1 Flowchart Proses Booking
 
 **Gambar 4.4 Flowchart Proses Booking**
 ![Flowchart Booking](../02_desain/diagram/flowchart_booking.png)
 
 Flowchart di atas menggambarkan alur lengkap proses booking dari login klien hingga konfirmasi booking dan notifikasi ke terapis.
 
-#### 4.3.4.2 Flowchart Proses Dokumentasi Sesi
+#### 4.4.4.2 Flowchart Proses Dokumentasi Sesi
 
 **Gambar 4.5 Flowchart Proses Dokumentasi Sesi**
 ![Flowchart Dokumentasi](../02_desain/diagram/flowchart_dokumentasi.png)
@@ -530,9 +625,9 @@ Fitur-fitur CRM terintegrasi dengan proses bisnis CUR-HEART:
 | **Retensi** | - Analitik<br>- Segmentasi<br>- Komunikasi | - Identifikasi risiko churn<br>- Re-engagement proaktif |
 
 
-## 4.4 Validasi Perancangan CRM
+## 4.5 Validasi Perancangan CRM
 
-### 4.4.1 Metodologi Validasi
+### 4.5.1 Metodologi Validasi
 
 Validasi perancangan CRM dilakukan dengan pendekatan simulasi dan evaluasi desain untuk mengevaluasi kelayakan fungsionalitas dan *usability* sistem. Metodologi yang digunakan:
 
@@ -548,7 +643,7 @@ Validasi perancangan CRM dilakukan dengan pendekatan simulasi dan evaluasi desai
 - 3 terapis (pengalaman 2-10 tahun)
 - 2 admin/staff
 
-### 4.4.2 Hasil Validasi Perancangan Fitur CRM
+### 4.5.2 Hasil Validasi Perancangan Fitur CRM
 
 Berdasarkan hasil validasi perancangan selama periode November - Desember 2025, berikut adalah evaluasi kelayakan fitur CRM yang dirancang:
 
@@ -575,7 +670,7 @@ Berdasarkan hasil validasi perancangan selama periode November - Desember 2025, 
 
 5. **Penilaian Desain Positif**: Semua fitur memiliki skor penilaian desain ≥ 4.4/5.0, menunjukkan perancangan yang baik dan sesuai kebutuhan pengguna.
 
-### 4.4.3 Proyeksi Dampak terhadap Kepuasan Klien
+### 4.5.3 Proyeksi Dampak terhadap Kepuasan Klien
 
 Proyeksi dampak terhadap kepuasan klien dilakukan melalui survei kepada 5 calon klien yang telah mengevaluasi desain sistem dan membandingkannya dengan proses existing.
 
@@ -609,7 +704,7 @@ Proyeksi dampak terhadap kepuasan klien dilakukan melalui survei kepada 5 calon 
 
 **Catatan**: Data di atas merupakan proyeksi berdasarkan hasil validasi desain, benchmark industri, dan studi literatur. Implementasi penuh sistem diharapkan dapat mencapai atau melampaui target ini.
 
-### 4.4.4 Proyeksi Dampak terhadap Retensi Klien
+### 4.5.4 Proyeksi Dampak terhadap Retensi Klien
 
 Proyeksi retensi klien dilakukan berdasarkan analisis perancangan fitur, studi literatur, dan data baseline CUR-HEART sebelum menggunakan sistem CRM.
 
@@ -645,7 +740,7 @@ Proyeksi retensi klien dilakukan berdasarkan analisis perancangan fitur, studi l
 
 **Catatan**: Metrik di atas merupakan proyeksi berdasarkan analisis perancangan, studi literatur, dan benchmark industri. Implementasi penuh diharapkan dapat mencapai target retention rate ≥ 80%.
 
-### 4.4.5 Proyeksi Dampak terhadap Efisiensi Operasional
+### 4.5.5 Proyeksi Dampak terhadap Efisiensi Operasional
 
 Proyeksi efisiensi operasional dilakukan dengan menganalisis perancangan fitur dan memperkirakan penghematan waktu untuk berbagai tugas administratif berdasarkan simulasi skenario.
 
@@ -681,7 +776,7 @@ Dengan asumsi biaya tenaga kerja admin Rp 50.000/jam:
 
 **Catatan**: Data di atas merupakan proyeksi berdasarkan analisis perancangan fitur dan benchmark industri. Implementasi penuh diharapkan dapat mencapai efisiensi ≥ 50%.
 
-### 4.4.6 Proyeksi Dampak terhadap Kinerja Bisnis
+### 4.5.6 Proyeksi Dampak terhadap Kinerja Bisnis
 
 Proyeksi dampak terhadap kinerja bisnis CUR-HEART berdasarkan analisis perancangan, studi literatur, dan data baseline.
 
@@ -728,9 +823,9 @@ Manfaat tahunan:
 
 **Catatan**: Proyeksi di atas menggunakan skenario konservatif berdasarkan analisis perancangan, studi literatur, dan benchmark industri. Implementasi penuh dengan optimasi berkelanjutan diharapkan dapat mencapai atau melampaui target ROI ≥ 500% dalam tahun pertama.
 
-## 4.5 Tantangan dan Solusi dalam Perancangan CRM
+## 4.6 Tantangan dan Solusi dalam Perancangan CRM
 
-### 4.5.1 Tantangan Potensial yang Diidentifikasi
+### 4.6.1 Tantangan Potensial yang Diidentifikasi
 
 Berdasarkan wawancara dengan pemangku kepentingan dan analisis perancangan, beberapa tantangan potensial yang mungkin dihadapi saat implementasi CRM:
 
@@ -744,7 +839,7 @@ Berdasarkan wawancara dengan pemangku kepentingan dan analisis perancangan, bebe
 | 4 | **Kompleksitas Fitur** | Beberapa fitur mungkin dianggap terlalu kompleks untuk pengguna non-teknis | Fitur kurang dimanfaatkan |
 | 5 | **Integrasi dengan Proses Lama** | Transisi dari proses manual ke digital memerlukan penyesuaian workflow | Periode transisi yang challenging |
 
-### 4.5.2 Solusi yang Direkomendasikan
+### 4.6.2 Solusi yang Direkomendasikan
 
 Untuk mengatasi tantangan tersebut, penelitian ini merekomendasikan berbagai solusi yang perlu dipersiapkan dalam strategi implementasi:
 
@@ -758,7 +853,7 @@ Untuk mengatasi tantangan tersebut, penelitian ini merekomendasikan berbagai sol
 | **Kompleksitas Fitur** | - Simplifikasi UI/UX<br>- Progressive disclosure<br>- Tooltips dan hints<br>- Onboarding wizard | Target kemudahan penggunaan ≥ 4.5/5.0 |
 | **Integrasi Proses** | - Periode paralel 1 bulan<br>- Migrasi data bertahap<br>- SOP yang jelas | Target transisi smooth tanpa disruption |
 
-### 4.5.3 Pembelajaran dari Proses Perancangan
+### 4.6.3 Pembelajaran dari Proses Perancangan
 
 Pembelajaran penting dari proses perancangan CRM di CUR-HEART:
 
