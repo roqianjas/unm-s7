@@ -7,7 +7,7 @@ Berdasarkan hasil penelitian dan pembahasan yang telah diuraikan pada bab-bab se
 
 ### 5.1.1 Strategi CRM yang Efektif untuk Layanan Kesehatan Mental
 
-Penelitian ini berhasil mengidentifikasi dan mengimplementasikan strategi CRM yang sesuai untuk layanan kesehatan mental, khususnya hipnoterapi, dengan karakteristik sebagai berikut:
+Penelitian ini berhasil mengidentifikasi dan merancang strategi CRM yang sesuai untuk layanan kesehatan mental, khususnya hipnoterapi, dengan karakteristik sebagai berikut:
 
 1. **Filosofi "Healing Through Connection"**: Strategi CRM yang menekankan bahwa hubungan terapeutik yang kuat adalah kunci keberhasilan terapi, diterjemahkan ke dalam empat pilar: Personalisasi, Kontinuitas, Komunikasi, dan Pemberdayaan.
 
@@ -79,7 +79,7 @@ Penelitian ini juga mengidentifikasi tantangan potensial dalam implementasi CRM 
 - Pelatihan intensif dan dukungan berkelanjutan
 - Keamanan dan privasi data sebagai prioritas utama
 - Simplifikasi UI/UX dengan progressive disclosure
-- Implementasi bertahap dengan periode paralel
+- Rencana implementasi bertahap dengan periode paralel
 
 **Pembelajaran Penting:**
 - Keberhasilan CRM tidak hanya tentang teknologi, tetapi juga tentang manajemen perubahan
@@ -98,7 +98,7 @@ Penelitian ini membuktikan bahwa CRM yang dirancang dengan baik memiliki potensi
 
 ## 5.2 Saran
 
-Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut adalah saran untuk pengembangan lebih lanjut:
+Berdasarkan hasil penelitian dan validasi perancangan CRM di CUR-HEART, berikut adalah saran untuk pengembangan lebih lanjut:
 
 ### 5.2.1 Saran untuk CUR-HEART
 
@@ -106,7 +106,7 @@ Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut
 
 1. **Notifikasi SMS**: Menambahkan notifikasi SMS untuk pengingat sesi dan komunikasi penting, karena tidak semua klien aktif memeriksa email.
 
-2. **Chatbot AI**: Mengimplementasikan chatbot berbasis AI untuk menjawab pertanyaan umum klien 24/7, mengurangi beban admin dan meningkatkan responsivitas.
+2. **Chatbot AI**: Mengembangkan chatbot berbasis AI untuk menjawab pertanyaan umum klien 24/7, mengurangi beban admin dan meningkatkan responsivitas.
 
 3. **Program Loyalitas**: Mengembangkan program loyalitas formal dengan reward points, diskon untuk sesi berulang, dan referral incentive untuk meningkatkan retensi dan word-of-mouth.
 
@@ -114,7 +114,7 @@ Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut
 
 5. **Self-Service Portal**: Memperluas fitur self-service untuk klien, seperti reschedule mandiri, akses ke resource library, dan self-assessment tools.
 
-6. **Analitik Prediktif**: Mengimplementasikan analitik prediktif untuk mengidentifikasi klien yang berisiko berpindah dan memberikan intervensi proaktif.
+6. **Analitik Prediktif**: Mengembangkan analitik prediktif untuk mengidentifikasi klien yang berisiko berpindah dan memberikan intervensi proaktif.
 
 **Strategi CRM:**
 
@@ -148,7 +148,7 @@ Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut
 
 5. **ROI Jangka Panjang**: Mengukur ROI CRM dalam jangka panjang (3-5 tahun) untuk memahami sustainability dan scalability.
 
-6. **Faktor Keberhasilan**: Mengidentifikasi faktor-faktor kunci keberhasilan implementasi CRM di layanan kesehatan mental melalui studi multikasus.
+6. **Faktor Keberhasilan**: Mengidentifikasi faktor-faktor kunci keberhasilan perancangan dan implementasi CRM di layanan kesehatan mental melalui studi multikasus.
 
 ### 5.2.3 Saran untuk Industri Kesehatan Mental
 
@@ -156,7 +156,7 @@ Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut
 
 2. **Standarisasi**: Mengembangkan standar industri untuk CRM dalam layanan kesehatan mental, termasuk praktik terbaik dan pedoman etika.
 
-3. **Kolaborasi**: Membangun kolaborasi antarpenyedia layanan untuk berbagi pembelajaran dan praktik terbaik dalam implementasi CRM.
+3. **Kolaborasi**: Membangun kolaborasi antarpenyedia layanan untuk berbagi pembelajaran dan praktik terbaik dalam perancangan dan implementasi CRM.
 
 4. **Regulasi**: Mengadvokasi regulasi yang mendukung digitalisasi layanan kesehatan mental sambil melindungi privasi dan keamanan data klien.
 
@@ -166,7 +166,7 @@ Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut
 
 1. **User Experience**: Terus meningkatkan user experience dengan melakukan usability testing berkala dan iterasi desain.
 
-2. **Keamanan**: Mengimplementasikan praktik terbaik keamanan terbaru dan melakukan audit keamanan berkala.
+2. **Keamanan**: Menerapkan praktik terbaik keamanan terbaru dan melakukan audit keamanan berkala.
 
 3. **Skalabilitas**: Memastikan arsitektur sistem dapat di-scale untuk menangani pertumbuhan jumlah pengguna dan data.
 
@@ -180,6 +180,6 @@ Berdasarkan hasil penelitian dan evaluasi implementasi CRM di CUR-HEART, berikut
 
 **Penutup:**
 
-Implementasi CRM pada Sistem Informasi CUR-HEART merupakan langkah strategis yang telah terbukti memberikan nilai signifikan bagi bisnis dan klien. Dengan terus melakukan perbaikan dan inovasi berdasarkan feedback dan data, CUR-HEART dapat mempertahankan keunggulan kompetitif dan terus memberikan layanan kesehatan mental yang berkualitas tinggi kepada masyarakat.
+Perancangan CRM pada Sistem Informasi CUR-HEART merupakan langkah strategis yang berpotensi memberikan nilai signifikan bagi bisnis dan klien. Dengan implementasi yang tepat dan perbaikan berkelanjutan berdasarkan feedback dan data, CUR-HEART dapat mempertahankan keunggulan kompetitif dan terus memberikan layanan kesehatan mental yang berkualitas tinggi kepada masyarakat.
 
-Penelitian ini diharapkan dapat menjadi referensi dan inspirasi bagi organisasi layanan kesehatan mental lainnya untuk mengadopsi CRM sebagai bagian dari strategi bisnis dan peningkatan kualitas layanan mereka.
+Penelitian ini diharapkan dapat menjadi referensi dan inspirasi bagi organisasi layanan kesehatan mental lainnya untuk merancang dan mengadopsi CRM sebagai bagian dari strategi bisnis dan peningkatan kualitas layanan mereka.

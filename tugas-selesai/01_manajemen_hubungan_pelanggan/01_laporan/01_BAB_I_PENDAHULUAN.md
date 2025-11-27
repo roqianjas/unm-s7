@@ -7,13 +7,13 @@ Kesehatan mental telah menjadi salah satu isu kesehatan global yang paling mende
 
 Fenomena ini dipicu oleh berbagai faktor kompleks yang saling berkaitan seperti tekanan pekerjaan yang semakin tinggi, ketidakstabilan ekonomi pascapandemi COVID-19, gangguan digital, serta perubahan nilai-nilai sosial yang cepat. Kondisi ini diperparah dengan masih tingginya stigma sosial terhadap gangguan kesehatan mental di masyarakat Indonesia, yang menyebabkan banyak penderita enggan mencari bantuan profesional.
 
-Di tengah meningkatnya kebutuhan akan layanan kesehatan mental, CUR-HEART (Hypnotherapy & Mind Wellness Center) hadir sebagai pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hipnoterapi modern dengan nilai-nilai spiritualitas dan humanisme. CUR-HEART menyediakan berbagai layanan terapi seperti Pelepasan Stres & Kecemasan, Penyembuhan Trauma, Kepercayaan Diri & Motivasi, Tidur & Relaksasi, Pemrograman Ulang Kebiasaan, dan Pengelolaan Fobia & Ketakutan.
+Di tengah meningkatnya kebutuhan akan layanan kesehatan mental, CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) hadir sebagai pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hipnoterapi modern dengan nilai-nilai spiritualitas dan humanisme. CUR-HEART menyediakan berbagai layanan terapi seperti Pelepasan Stres & Kecemasan, Penyembuhan Trauma, Kepercayaan Diri & Motivasi, Tidur & Relaksasi, Pemrograman Ulang Kebiasaan, dan Pengelolaan Fobia & Ketakutan.
 
 Dalam industri layanan kesehatan mental, hubungan antara terapis dan klien merupakan faktor kunci yang menentukan keberhasilan terapi. Penelitian menunjukkan bahwa kualitas hubungan terapeutik berkontribusi hingga 30% terhadap hasil terapi yang positif (Lambert & Barley, 2001). Oleh karena itu, pengelolaan hubungan pelanggan yang efektif menjadi sangat penting untuk memastikan kepuasan klien, retensi jangka panjang, dan keberhasilan terapi.
 
 Customer Relationship Management (CRM) atau Manajemen Hubungan Pelanggan adalah strategi bisnis yang berfokus pada pembangunan dan pemeliharaan hubungan jangka panjang dengan pelanggan melalui pemahaman mendalam tentang kebutuhan, preferensi, dan perilaku mereka (Buttle & Maklan, 2019). Dalam konteks layanan kesehatan mental, CRM tidak hanya berfungsi sebagai alat untuk meningkatkan kepuasan pelanggan, tetapi juga sebagai instrumen untuk meningkatkan kualitas perawatan, kontinuitas terapi, dan hasil kesehatan yang lebih baik.
 
-Implementasi CRM pada sistem informasi CUR-HEART dirancang untuk mengatasi berbagai tantangan dalam manajemen hubungan pelanggan, seperti:
+Perancangan CRM pada sistem informasi CUR-HEART ditujukan untuk mengatasi berbagai tantangan dalam manajemen hubungan pelanggan, seperti:
 
 1. **Personalisasi Layanan**: Setiap klien memiliki kebutuhan terapi yang unik. Sistem CRM memungkinkan terapis untuk mengakses riwayat lengkap klien, preferensi komunikasi, dan kemajuan terapi untuk memberikan layanan yang dipersonalisasi.
 
@@ -59,9 +59,9 @@ Penelitian ini diharapkan memberikan manfaat kepada berbagai pihak:
 
 ### 1.4.1 Manfaat Teoritis
 
-1. **Kontribusi Akademik**: Menambah literatur dan pengetahuan tentang implementasi CRM dalam konteks layanan kesehatan mental, khususnya hipnoterapi.
+1. **Kontribusi Akademik**: Menambah literatur dan pengetahuan tentang perancangan CRM dalam konteks layanan kesehatan mental, khususnya hipnoterapi.
 
-2. **Pengembangan Model**: Menghasilkan model implementasi CRM yang dapat diadaptasi untuk layanan kesehatan mental lainnya.
+2. **Pengembangan Model**: Menghasilkan model perancangan CRM yang dapat diadaptasi untuk layanan kesehatan mental lainnya.
 
 3. **Referensi Penelitian**: Menjadi referensi bagi penelitian selanjutnya tentang CRM dalam industri kesehatan.
 
@@ -88,8 +88,8 @@ Penelitian ini diharapkan memberikan manfaat kepada berbagai pihak:
 4. Meningkatkan kualitas hubungan terapeutik dengan klien
 
 **Bagi Industri Kesehatan Mental:**
-1. Model best practice implementasi CRM untuk layanan kesehatan mental
-2. Demonstrasi manfaat digitalisasi dalam meningkatkan kualitas layanan
+1. Model best practice perancangan CRM untuk layanan kesehatan mental
+2. Demonstrasi potensi manfaat digitalisasi dalam meningkatkan kualitas layanan
 3. Inspirasi untuk inovasi dalam pengelolaan hubungan pelanggan di sektor kesehatan
 
 ## 1.5 Ruang Lingkup Penelitian
@@ -98,7 +98,7 @@ Untuk memfokuskan pembahasan, penelitian ini dibatasi pada ruang lingkup sebagai
 
 ### 1.5.1 Ruang Lingkup Objek Penelitian
 
-Penelitian ini berfokus pada implementasi CRM di CUR-HEART (Hypnotherapy & Mind Wellness Center) yang berlokasi di Jl. Raya Cilodong No. 88, Depok, Jawa Barat.
+Penelitian ini berfokus pada perancangan CRM di CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) yang berlokasi di Jl. Raya Cilodong No. 88, Depok, Jawa Barat.
 
 ### 1.5.2 Ruang Lingkup Sistem
 
@@ -128,10 +128,10 @@ Penelitian ini mengkaji perancangan sistem CRM selama periode September - Desemb
 
 Penelitian ini tidak mencakup:
 1. Implementasi penuh sistem CRM dalam lingkungan produksi (fokus pada perancangan dan validasi desain)
-2. Integrasi dengan platform media sosial eksternal
-3. Integrasi dengan sistem CRM pihak ketiga (Salesforce, HubSpot, dll.)
-4. Analisis prediktif lanjutan menggunakan *machine learning*
-5. Implementasi *chatbot* AI untuk layanan pelanggan
+2. Perancangan integrasi dengan platform media sosial eksternal
+3. Perancangan integrasi dengan sistem CRM pihak ketiga (Salesforce, HubSpot, dll.)
+4. Perancangan analisis prediktif lanjutan menggunakan *machine learning*
+5. Perancangan *chatbot* AI untuk layanan pelanggan
 6. Analisis mendalam tentang aspek klinis dan efektivitas terapi (fokus pada aspek manajemen hubungan pelanggan)
 7. Pengujian dengan data riil dalam skala besar (menggunakan data simulasi untuk validasi desain)
 

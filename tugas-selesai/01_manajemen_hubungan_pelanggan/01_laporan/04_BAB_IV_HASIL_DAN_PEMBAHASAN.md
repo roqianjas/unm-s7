@@ -1,11 +1,11 @@
 # BAB IV
 # HASIL DAN PEMBAHASAN
 
-## 4.1 Profil CUR-HEART (Hypnotherapy & Mind Wellness Center)
+## 4.1 Profil CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental)
 
 ### 4.1.1 Gambaran Umum Perusahaan
 
-CUR-HEART (Hypnotherapy & Mind Wellness Center) adalah pusat layanan terapi kesehatan mental yang berlokasi di Jl. Raya Cilodong No. 88, Depok, Jawa Barat. Perusahaan ini didirikan dengan visi menjadi pusat terapi kejiwaan berbasis hipnoterapi modern dan spiritual yang terpercaya, profesional, dan berpengaruh dalam membantu masyarakat Indonesia mencapai kesehatan mental, keseimbangan emosional, serta kualitas hidup yang lebih baik.
+CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) adalah pusat layanan terapi kesehatan mental yang berlokasi di Jl. Raya Cilodong No. 88, Depok, Jawa Barat. Perusahaan ini didirikan dengan visi menjadi pusat terapi kejiwaan berbasis hipnoterapi modern dan spiritual yang terpercaya, profesional, dan berpengaruh dalam membantu masyarakat Indonesia mencapai kesehatan mental, keseimbangan emosional, serta kualitas hidup yang lebih baik.
 
 **Visi:**
 Menjadi pusat terapi kejiwaan berbasis hipnoterapi modern dan spiritual yang terpercaya, profesional, dan berpengaruh dalam membantu masyarakat Indonesia mencapai kesehatan mental, keseimbangan emosional, serta kualitas hidup yang lebih baik.
@@ -70,7 +70,7 @@ Strategi CRM CUR-HEART didasarkan pada filosofi "Healing Through Connection" yan
 
 ### 4.2.2 Tujuan Strategis CRM
 
-Tujuan strategis implementasi CRM di CUR-HEART adalah:
+Tujuan strategis perancangan CRM di CUR-HEART adalah:
 
 1. **Meningkatkan Kepuasan Klien**: Target CSAT ≥ 4.5/5.0
 2. **Meningkatkan Retensi Klien**: Target retention rate ≥ 80%
@@ -601,7 +601,7 @@ Proyeksi dampak terhadap kepuasan klien dilakukan melalui survei kepada 5 calon 
 
 1. **Peningkatan Signifikan**: Semua aspek mengalami peningkatan, dengan peningkatan terbesar pada transparansi kemajuan (+71%).
 
-2. **Target Tercapai**: CSAT dan NPS melampaui target yang ditetapkan, menunjukkan keberhasilan implementasi CRM.
+2. **Target Tercapai**: Proyeksi CSAT dan NPS melampaui target yang ditetapkan, menunjukkan kelayakan perancangan CRM.
 
 3. **Personalisasi Dihargai**: Peningkatan 41% pada personalisasi layanan menunjukkan bahwa klien menghargai pendekatan yang disesuaikan dengan kebutuhan mereka.
 
@@ -732,7 +732,7 @@ Manfaat tahunan:
 
 ### 4.5.1 Tantangan Potensial yang Diidentifikasi
 
-Berdasarkan wawancara dengan pemangku kepentingan dan analisis perancangan, beberapa tantangan potensial yang mungkin dihadapi dalam implementasi CRM:
+Berdasarkan wawancara dengan pemangku kepentingan dan analisis perancangan, beberapa tantangan potensial yang mungkin dihadapi saat implementasi CRM:
 
 **Tabel 4.10 Tantangan Potensial Implementasi CRM**
 
@@ -746,13 +746,13 @@ Berdasarkan wawancara dengan pemangku kepentingan dan analisis perancangan, bebe
 
 ### 4.5.2 Solusi yang Direkomendasikan
 
-Untuk mengatasi tantangan tersebut, penelitian ini merekomendasikan berbagai solusi yang telah dirancang dalam strategi implementasi:
+Untuk mengatasi tantangan tersebut, penelitian ini merekomendasikan berbagai solusi yang perlu dipersiapkan dalam strategi implementasi:
 
 **Tabel 4.11 Solusi yang Direkomendasikan untuk Tantangan CRM**
 
 | Tantangan | Solusi yang Dirancang | Target Hasil |
 |-----------|----------------------|--------------|
-| **Resistensi Perubahan** | - Sosialisasi manfaat CRM<br>- Melibatkan terapis dalam desain<br>- Implementasi bertahap | Target adopsi ≥ 90% |
+| **Resistensi Perubahan** | - Sosialisasi manfaat CRM<br>- Melibatkan terapis dalam desain<br>- Rencana implementasi bertahap | Target adopsi ≥ 90% |
 | **Kurva Pembelajaran** | - Pelatihan intensif 2 jam<br>- Video tutorial<br>- Manual pengguna<br>- Support on-demand | Target penguasaan dalam 1 minggu |
 | **Kekhawatiran Privasi** | - Enkripsi data<br>- Kontrol akses ketat<br>- Transparansi kebijakan privasi<br>- Compliance UU PDP | Target kepercayaan klien tinggi |
 | **Kompleksitas Fitur** | - Simplifikasi UI/UX<br>- Progressive disclosure<br>- Tooltips dan hints<br>- Onboarding wizard | Target kemudahan penggunaan ≥ 4.5/5.0 |
@@ -770,7 +770,7 @@ Pembelajaran penting dari proses perancangan CRM di CUR-HEART:
 
 4. **Keamanan dan Privasi Prioritas**: Dalam layanan kesehatan mental, keamanan dan privasi data harus menjadi prioritas utama dalam perancangan arsitektur sistem.
 
-5. **Implementasi Bertahap**: Strategi implementasi bertahap (*phased approach*) perlu dirancang sejak awal, lebih efektif daripada implementasi serentak (*big bang*).
+5. **Rencana Implementasi Bertahap**: Strategi implementasi bertahap (*phased approach*) perlu dirancang sejak awal, lebih efektif daripada implementasi serentak (*big bang*).
 
 6. **Siklus Umpan Balik**: Mekanisme umpan balik yang baik perlu dirancang untuk memungkinkan perbaikan berkelanjutan berdasarkan pengalaman pengguna.
 

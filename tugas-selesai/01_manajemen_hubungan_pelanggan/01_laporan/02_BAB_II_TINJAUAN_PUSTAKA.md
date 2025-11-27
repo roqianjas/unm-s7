@@ -280,7 +280,7 @@ Berdasarkan tinjauan literatur, terdapat gap penelitian dalam hal:
 
 3. **Konteks Indonesia**: Penelitian CRM dalam layanan kesehatan mental di Indonesia masih sangat terbatas.
 
-Penelitian ini berupaya mengisi gap tersebut dengan mengkaji implementasi CRM pada sistem informasi manajemen reservasi dan terapi hipnoterapi di Indonesia, khususnya pada CUR-HEART.
+Penelitian ini berupaya mengisi gap tersebut dengan mengkaji perancangan CRM pada sistem informasi manajemen reservasi dan terapi hipnoterapi di Indonesia, khususnya pada CUR-HEART.
 
 ## 2.7 Kerangka Pemikiran
 
@@ -297,7 +297,7 @@ Berdasarkan tinjauan pustaka di atas, kerangka pemikiran penelitian ini adalah s
                      │
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│           IMPLEMENTASI FITUR CRM PADA SISTEM                │
+│           PERANCANGAN FITUR CRM PADA SISTEM                 │
 │  - Manajemen Profil Klien Komprehensif                      │
 │  - Dokumentasi Sesi Terapi Terstruktur                      │
 │  - Sistem Komunikasi Terintegrasi                           │
@@ -308,7 +308,7 @@ Berdasarkan tinjauan pustaka di atas, kerangka pemikiran penelitian ini adalah s
                      │
                      ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    DAMPAK IMPLEMENTASI                       │
+│                    PROYEKSI DAMPAK                           │
 │  - Peningkatan Kepuasan Klien                               │
 │  - Peningkatan Retensi dan Loyalitas                        │
 │  - Peningkatan Kualitas Terapi                              │
@@ -317,4 +317,4 @@ Berdasarkan tinjauan pustaka di atas, kerangka pemikiran penelitian ini adalah s
 └─────────────────────────────────────────────────────────────┘
 ```
 
-Kerangka pemikiran ini menunjukkan bahwa strategi CRM yang tepat, yang diimplementasikan melalui fitur-fitur CRM pada sistem informasi, akan menghasilkan dampak positif terhadap kepuasan klien, retensi, kualitas terapi, efisiensi operasional, dan kinerja bisnis CUR-HEART secara keseluruhan.
+Kerangka pemikiran ini menunjukkan bahwa strategi CRM yang tepat, yang dirancang melalui fitur-fitur CRM pada sistem informasi, diproyeksikan akan menghasilkan dampak positif terhadap kepuasan klien, retensi, kualitas terapi, efisiensi operasional, dan kinerja bisnis CUR-HEART secara keseluruhan.

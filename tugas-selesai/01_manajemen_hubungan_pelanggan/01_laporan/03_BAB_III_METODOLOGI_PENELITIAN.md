@@ -9,7 +9,7 @@ Menurut Yin (2018), studi kasus adalah metode penelitian yang cocok untuk menjaw
 
 ## 3.2 Objek Penelitian
 
-Objek penelitian ini adalah implementasi Customer Relationship Management (CRM) pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART (Hypnotherapy & Mind Wellness Center) yang berlokasi di Jl. Raya Cilodong No. 88, Depok, Jawa Barat.
+Objek penelitian ini adalah perancangan Customer Relationship Management (CRM) pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART (Pusat Hipnoterapi & Kesehatan Mental) yang berlokasi di Jl. Raya Cilodong No. 88, Depok, Jawa Barat.
 
 CUR-HEART adalah pusat layanan terapi kesehatan mental yang mengintegrasikan pendekatan hipnoterapi modern dengan nilai-nilai spiritualitas dan humanisme. Perusahaan ini menyediakan berbagai layanan terapi seperti:
 - Stress & Anxiety Release Therapy
@@ -68,7 +68,7 @@ Wawancara dilakukan dengan durasi 30-45 menit per narasumber dan didokumentasika
 
 ### 3.4.3 Studi Dokumentasi
 
-Studi dokumentasi dilakukan untuk menganalisis dokumen-dokumen terkait implementasi CRM, meliputi:
+Studi dokumentasi dilakukan untuk menganalisis dokumen-dokumen terkait perancangan CRM, meliputi:
 
 - Dokumen desain sistem (ERD, diagram UML, mockup UI/UX)
 - Dokumentasi teknis sistem (kode sumber, API documentation)
@@ -105,9 +105,9 @@ Data yang telah dikumpulkan dianalisis menggunakan beberapa teknik:
 Analisis deskriptif digunakan untuk menggambarkan karakteristik data yang dikumpulkan, meliputi:
 
 - Deskripsi profil subjek penelitian
-- Deskripsi fitur-fitur CRM yang diimplementasikan
-- Deskripsi pola penggunaan sistem
-- Deskripsi tingkat kepuasan pengguna
+- Deskripsi fitur-fitur CRM yang dirancang
+- Deskripsi proyeksi pola penggunaan sistem
+- Deskripsi penilaian desain oleh pengguna
 
 ### 3.5.2 Analisis Konten
 
@@ -122,9 +122,9 @@ Analisis konten digunakan untuk menganalisis data kualitatif dari wawancara dan 
 
 Analisis komparatif digunakan untuk membandingkan:
 
-- Kondisi sebelum dan sesudah implementasi CRM
-- Perbedaan pengalaman antar segmen pengguna
-- Perbedaan tingkat kepuasan antar fitur CRM
+- Kondisi proses existing dengan proyeksi setelah menggunakan CRM
+- Perbedaan kebutuhan antar segmen pengguna
+- Perbedaan penilaian desain antar fitur CRM
 
 ### 3.5.4 Analisis Metrik CRM
 
@@ -159,7 +159,7 @@ Kerangka kerja analisis yang digunakan dalam penelitian ini adalah:
 │                    TAHAP 1: DESKRIPSI                       │
 │  - Profil CUR-HEART                                         │
 │  - Strategi CRM yang dirancang                              │
-│  - Fitur-fitur CRM yang diimplementasikan                   │
+│  - Fitur-fitur CRM yang dirancang                           │
 └────────────────────┬────────────────────────────────────────┘
                      │
                      ▼
