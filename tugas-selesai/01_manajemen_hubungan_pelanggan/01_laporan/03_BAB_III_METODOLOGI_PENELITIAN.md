@@ -3,9 +3,9 @@
 
 ## 3.1 Jenis Penelitian
 
-Penelitian ini menggunakan pendekatan **penelitian deskriptif kualitatif** dengan metode **studi kasus** (case study). Penelitian deskriptif bertujuan untuk menggambarkan secara sistematis fakta dan karakteristik objek atau subjek yang diteliti secara tepat (Sugiyono, 2019). Studi kasus dipilih karena penelitian ini berfokus pada implementasi CRM pada satu organisasi spesifik, yaitu CUR-HEART, dengan tujuan memahami secara mendalam bagaimana CRM diterapkan dalam konteks layanan kesehatan mental.
+Penelitian ini menggunakan pendekatan **penelitian deskriptif kualitatif** dengan metode **studi kasus** (case study). Penelitian deskriptif bertujuan untuk menggambarkan secara sistematis fakta dan karakteristik objek atau subjek yang diteliti secara tepat (Sugiyono, 2019). Studi kasus dipilih karena penelitian ini berfokus pada perancangan CRM pada satu organisasi spesifik, yaitu CUR-HEART, dengan tujuan memahami secara mendalam bagaimana CRM dirancang dalam konteks layanan kesehatan mental.
 
-Menurut Yin (2018), studi kasus adalah metode penelitian yang cocok untuk menjawab pertanyaan "bagaimana" dan "mengapa" tentang fenomena kontemporer dalam konteks kehidupan nyata. Penelitian ini mengkaji bagaimana CRM diimplementasikan pada sistem informasi CUR-HEART dan mengapa strategi tertentu dipilih, serta dampaknya terhadap kepuasan klien dan kinerja bisnis.
+Menurut Yin (2018), studi kasus adalah metode penelitian yang cocok untuk menjawab pertanyaan "bagaimana" dan "mengapa" tentang fenomena kontemporer dalam konteks kehidupan nyata. Penelitian ini mengkaji bagaimana CRM dirancang pada sistem informasi CUR-HEART dan mengapa strategi tertentu dipilih, serta proyeksi dampaknya terhadap kepuasan klien dan kinerja bisnis.
 
 ## 3.2 Objek Penelitian
 
@@ -53,7 +53,7 @@ Hasil observasi didokumentasikan dalam catatan lapangan (field notes) dan screen
 
 ### 3.4.2 Wawancara Mendalam
 
-Wawancara semi-terstruktur dilakukan untuk mendapatkan informasi mendalam dari pemangku kepentingan mengenai pengalaman mereka menggunakan fitur CRM. Wawancara dilakukan kepada:
+Wawancara semi-terstruktur dilakukan untuk mendapatkan informasi mendalam dari pemangku kepentingan mengenai kebutuhan mereka terhadap fitur CRM dan ekspektasi terhadap sistem yang dirancang. Wawancara dilakukan kepada:
 
 **Tabel 3.2 Daftar Narasumber Wawancara**
 
@@ -78,23 +78,23 @@ Studi dokumentasi dilakukan untuk menganalisis dokumen-dokumen terkait implement
 
 ### 3.4.4 Kuesioner
 
-Kuesioner digunakan untuk mengumpulkan data kuantitatif tentang kepuasan pengguna terhadap fitur CRM. Kuesioner dibagikan kepada:
+Kuesioner digunakan untuk mengumpulkan data kuantitatif tentang ekspektasi dan penilaian pengguna terhadap desain fitur CRM. Kuesioner dibagikan kepada:
 
-1. **Kuesioner Kepuasan Klien**: Diberikan kepada 20 klien yang telah menggunakan sistem minimal 2 kali
-2. **Kuesioner Kepuasan Terapis**: Diberikan kepada 3 terapis yang menggunakan sistem
-3. **Kuesioner Kepuasan Admin**: Diberikan kepada 2 staf admin yang menggunakan sistem
+1. **Kuesioner Evaluasi Desain untuk Klien**: Diberikan kepada 5 calon klien yang telah melihat simulasi sistem
+2. **Kuesioner Evaluasi Desain untuk Terapis**: Diberikan kepada 3 terapis yang telah mengevaluasi rancangan
+3. **Kuesioner Evaluasi Desain untuk Admin**: Diberikan kepada 2 staf admin yang telah mengevaluasi rancangan
 
-Kuesioner menggunakan skala Likert 1-5 untuk mengukur tingkat kepuasan terhadap berbagai aspek fitur CRM.
+Kuesioner menggunakan skala Likert 1-5 untuk mengukur penilaian terhadap berbagai aspek desain fitur CRM.
 
-### 3.4.5 Analisis Data Sistem
+### 3.4.5 Simulasi dan Validasi Desain
 
-Analisis data sistem dilakukan dengan mengekstrak dan menganalisis data dari database sistem CRM, meliputi:
+Simulasi dan validasi desain dilakukan untuk menguji kelayakan perancangan sistem CRM, meliputi:
 
-- Data profil klien dan segmentasi
-- Data interaksi (reservasi, komunikasi, sesi terapi)
-- Data ulasan dan penilaian
-- Data retensi dan churn
-- Data penggunaan fitur
+- Simulasi skenario penggunaan sistem (user journey)
+- Validasi struktur database dan relasi antar entitas
+- Validasi alur proses bisnis (flowchart dan DFD)
+- Pengujian mockup antarmuka pengguna (UI/UX)
+- Evaluasi kelengkapan fitur terhadap kebutuhan bisnis
 
 ## 3.5 Teknik Analisis Data
 

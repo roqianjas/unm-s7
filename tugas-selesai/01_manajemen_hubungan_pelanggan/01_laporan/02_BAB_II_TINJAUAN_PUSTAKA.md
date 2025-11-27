@@ -7,7 +7,7 @@
 
 Customer Relationship Management (CRM) adalah strategi bisnis yang berfokus pada pembangunan dan pemeliharaan hubungan jangka panjang dengan pelanggan melalui pemahaman mendalam tentang kebutuhan, preferensi, dan perilaku mereka (Buttle & Maklan, 2019). Menurut Kotler & Keller (2016), CRM adalah proses mengelola informasi rinci tentang pelanggan individual dan semua "titik sentuh" pelanggan secara cermat untuk memaksimalkan loyalitas pelanggan.
 
-Payne & Frow (2005) mendefinisikan CRM sebagai pendekatan strategis yang berkaitan dengan penciptaan nilai pemegang saham yang lebih baik melalui pengembangan hubungan yang tepat dengan pelanggan kunci dan segmen pelanggan. CRM menyatukan potensi strategi pemasaran hubungan dan teknologi informasi untuk menciptakan hubungan yang menguntungkan dan jangka panjang dengan pelanggan.
+Payne & Frow (2005) mendefinisikan CRM sebagai pendekatan strategis yang berkaitan dengan penciptaan nilai pemegang saham yang lebih baik melalui pengembangan hubungan yang tepat dengan pelanggan kunci dan segmen pelanggan. CRM menyatukan potensi strategi pemasaran relasional dan teknologi informasi untuk menciptakan hubungan yang menguntungkan dan jangka panjang dengan pelanggan.
 
 Dari perspektif teknologi, CRM adalah sistem informasi yang mengintegrasikan proses bisnis yang berhubungan dengan pelanggan di bidang penjualan, pemasaran, dan layanan pelanggan untuk meningkatkan kepuasan dan loyalitas pelanggan (Laudon & Laudon, 2020). Sistem CRM mengumpulkan data dari berbagai saluran komunikasi, termasuk situs web perusahaan, telepon, email, media sosial, dan interaksi langsung dengan staf penjualan dan layanan.
 
@@ -17,13 +17,13 @@ Menurut Buttle & Maklan (2019), tujuan utama implementasi CRM adalah:
 
 1. **Meningkatkan Kepuasan Pelanggan**: Dengan memahami kebutuhan dan preferensi pelanggan secara mendalam, perusahaan dapat memberikan layanan yang lebih personal dan relevan.
 
-2. **Meningkatkan Loyalitas Pelanggan**: Hubungan yang kuat dan berkelanjutan dengan pelanggan akan meningkatkan loyalitas dan mengurangi tingkat churn (perpindahan pelanggan).
+2. **Meningkatkan Loyalitas Pelanggan**: Hubungan yang kuat dan berkelanjutan dengan pelanggan akan meningkatkan loyalitas dan mengurangi tingkat *churn* atau perpindahan pelanggan.
 
 3. **Meningkatkan Profitabilitas**: Pelanggan yang loyal cenderung melakukan pembelian berulang, memberikan nilai transaksi yang lebih tinggi, dan merekomendasikan perusahaan kepada orang lain.
 
 4. **Meningkatkan Efisiensi Operasional**: Otomasi proses dan integrasi data pelanggan mengurangi duplikasi pekerjaan dan meningkatkan produktivitas.
 
-5. **Meningkatkan Retensi Pelanggan**: Dengan mengidentifikasi pelanggan yang berisiko churn, perusahaan dapat mengambil tindakan proaktif untuk mempertahankan mereka.
+5. **Meningkatkan Retensi Pelanggan**: Dengan mengidentifikasi pelanggan yang berisiko berpindah (*churn*), perusahaan dapat mengambil tindakan proaktif untuk mempertahankan mereka.
 
 6. **Personalisasi Pengalaman Pelanggan**: Data pelanggan yang komprehensif memungkinkan perusahaan untuk menyesuaikan produk, layanan, dan komunikasi dengan kebutuhan individual.
 
@@ -45,7 +45,7 @@ CRM Analitik berfokus pada analisis data pelanggan untuk mendapatkan wawasan bis
 
 - **Analisis Segmentasi Pelanggan**: Mengelompokkan pelanggan berdasarkan karakteristik demografis, perilaku, atau nilai.
 - **Analisis Nilai Pelanggan**: Menghitung Customer Lifetime Value (CLV) dan profitabilitas pelanggan.
-- **Analisis Churn**: Mengidentifikasi pelanggan yang berisiko berhenti menggunakan layanan.
+- **Analisis Perpindahan Pelanggan (*Churn*)**: Mengidentifikasi pelanggan yang berisiko berhenti menggunakan layanan.
 - **Analisis Kampanye**: Mengukur efektivitas kampanye pemasaran dan ROI.
 
 #### 2.1.3.3 CRM Kolaboratif
@@ -152,7 +152,7 @@ Personalisasi adalah penyesuaian produk, layanan, dan komunikasi dengan kebutuha
 
 3. **Personalisasi Layanan**: Menyesuaikan pendekatan terapi dan intervensi dengan kebutuhan unik setiap klien.
 
-4. **Personalisasi Harga**: Menawarkan paket atau diskon yang disesuaikan dengan segmen pelanggan.
+4. **Personalisasi Penawaran**: Menawarkan paket atau diskon yang disesuaikan dengan segmen pelanggan.
 
 ## 2.4 Teknologi CRM
 

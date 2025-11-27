@@ -11,7 +11,7 @@ Di tengah meningkatnya kebutuhan akan layanan kesehatan mental, CUR-HEART (Hypno
 
 Dalam industri layanan kesehatan mental, hubungan antara terapis dan klien merupakan faktor kunci yang menentukan keberhasilan terapi. Penelitian menunjukkan bahwa kualitas hubungan terapeutik berkontribusi hingga 30% terhadap hasil terapi yang positif (Lambert & Barley, 2001). Oleh karena itu, pengelolaan hubungan pelanggan yang efektif menjadi sangat penting untuk memastikan kepuasan klien, retensi jangka panjang, dan keberhasilan terapi.
 
-Customer Relationship Management (CRM) adalah strategi bisnis yang berfokus pada pembangunan dan pemeliharaan hubungan jangka panjang dengan pelanggan melalui pemahaman mendalam tentang kebutuhan, preferensi, dan perilaku mereka (Buttle & Maklan, 2019). Dalam konteks layanan kesehatan mental, CRM tidak hanya berfungsi sebagai alat untuk meningkatkan kepuasan pelanggan, tetapi juga sebagai instrumen untuk meningkatkan kualitas perawatan, kontinuitas terapi, dan hasil kesehatan yang lebih baik.
+Customer Relationship Management (CRM) atau Manajemen Hubungan Pelanggan adalah strategi bisnis yang berfokus pada pembangunan dan pemeliharaan hubungan jangka panjang dengan pelanggan melalui pemahaman mendalam tentang kebutuhan, preferensi, dan perilaku mereka (Buttle & Maklan, 2019). Dalam konteks layanan kesehatan mental, CRM tidak hanya berfungsi sebagai alat untuk meningkatkan kepuasan pelanggan, tetapi juga sebagai instrumen untuk meningkatkan kualitas perawatan, kontinuitas terapi, dan hasil kesehatan yang lebih baik.
 
 Implementasi CRM pada sistem informasi CUR-HEART dirancang untuk mengatasi berbagai tantangan dalam manajemen hubungan pelanggan, seperti:
 
@@ -19,15 +19,15 @@ Implementasi CRM pada sistem informasi CUR-HEART dirancang untuk mengatasi berba
 
 2. **Kontinuitas Perawatan**: Dokumentasi sesi terapi yang terstruktur dan terintegrasi memastikan kontinuitas perawatan, terutama ketika klien berinteraksi dengan berbagai terapis atau staf administrasi.
 
-3. **Komunikasi Proaktif**: Sistem notifikasi otomatis dan pengingat membantu menjaga komunikasi yang konsisten dengan klien, mengurangi tingkat no-show, dan meningkatkan kepatuhan terhadap rencana terapi.
+3. **Komunikasi Proaktif**: Sistem notifikasi otomatis dan pengingat membantu menjaga komunikasi yang konsisten dengan klien, mengurangi tingkat ketidakhadiran (*no-show*), dan meningkatkan kepatuhan terhadap rencana terapi.
 
-4. **Analisis Kepuasan Pelanggan**: Fitur ulasan dan penilaian memungkinkan CUR-HEART untuk mengukur kepuasan klien secara sistematis dan mengidentifikasi area perbaikan.
+4. **Analisis Kepuasan Pelanggan**: Fitur ulasan dan penilaian memungkinkan CUR-HEART untuk mengukur kepuasan klien secara sistematis dan mengidentifikasi area perbaikan layanan.
 
 5. **Segmentasi Pelanggan**: Kemampuan untuk mengelompokkan klien berdasarkan karakteristik demografis, jenis layanan, atau tahap perjalanan terapi memungkinkan strategi pemasaran dan komunikasi yang lebih efektif.
 
-Penelitian ini mengkaji perancangan dan pengembangan prototype CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART. Prototype dikembangkan dengan pendekatan user-centered design dan mencakup berbagai fitur CRM seperti manajemen profil klien, riwayat interaksi, dokumentasi sesi terapi, sistem komunikasi terintegrasi, dan analitik kepuasan pelanggan. Uji coba prototype dilakukan untuk mengevaluasi fungsionalitas, usability, dan proyeksi dampak terhadap bisnis.
+Penelitian ini mengkaji perancangan sistem CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART. Sistem dirancang dengan pendekatan *user-centered design* dan mencakup berbagai fitur CRM seperti manajemen profil klien, riwayat interaksi, dokumentasi sesi terapi, sistem komunikasi terintegrasi, dan analitik kepuasan pelanggan. Validasi perancangan dilakukan melalui simulasi dan pengujian desain untuk mengevaluasi fungsionalitas, *usability*, dan proyeksi dampak terhadap bisnis.
 
-Dengan perancangan CRM yang efektif dan hasil uji coba yang positif, prototype ini diharapkan dapat menjadi dasar implementasi penuh yang akan meningkatkan kepuasan klien, memperkuat loyalitas, meningkatkan retensi, dan pada akhirnya mencapai tujuan bisnis jangka panjang sambil memberikan dampak positif terhadap kesehatan mental masyarakat.
+Dengan perancangan CRM yang efektif dan hasil validasi desain yang positif, rancangan ini diharapkan dapat menjadi dasar implementasi penuh yang akan meningkatkan kepuasan klien, memperkuat loyalitas, meningkatkan retensi, dan pada akhirnya mencapai tujuan bisnis jangka panjang sambil memberikan dampak positif terhadap kesehatan mental masyarakat.
 
 ## 1.2 Rumusan Masalah
 
@@ -35,11 +35,11 @@ Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam penelitia
 
 1. Bagaimana konsep dan strategi Customer Relationship Management (CRM) yang sesuai untuk diterapkan pada layanan kesehatan mental di CUR-HEART?
 
-2. Bagaimana perancangan dan pengembangan prototype fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART untuk mendukung pengelolaan hubungan pelanggan yang efektif?
+2. Bagaimana perancangan fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART untuk mendukung pengelolaan hubungan pelanggan yang efektif?
 
-3. Bagaimana hasil uji coba prototype dan proyeksi dampak CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART?
+3. Bagaimana hasil validasi perancangan dan proyeksi dampak CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART?
 
-4. Apa saja tantangan dan hambatan dalam pengembangan prototype CRM pada layanan kesehatan mental, serta bagaimana strategi untuk mengatasinya?
+4. Apa saja tantangan dan hambatan dalam perancangan CRM pada layanan kesehatan mental, serta bagaimana strategi untuk mengatasinya?
 
 ## 1.3 Tujuan Penelitian
 
@@ -47,11 +47,11 @@ Tujuan dari penelitian ini adalah:
 
 1. Menganalisis konsep dan strategi Customer Relationship Management (CRM) yang sesuai untuk layanan kesehatan mental di CUR-HEART.
 
-2. Merancang dan mengembangkan prototype fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART, termasuk arsitektur sistem, desain database, dan antarmuka pengguna.
+2. Merancang fitur-fitur CRM pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART, termasuk arsitektur sistem, desain database, dan antarmuka pengguna.
 
-3. Mengevaluasi dampak implementasi CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART melalui analisis data dan feedback pengguna.
+3. Mengevaluasi proyeksi dampak perancangan CRM terhadap kepuasan klien, retensi pelanggan, dan kinerja bisnis CUR-HEART melalui simulasi dan validasi desain.
 
-4. Mengidentifikasi tantangan dan hambatan dalam implementasi CRM pada layanan kesehatan mental serta merumuskan rekomendasi strategi untuk mengatasinya.
+4. Mengidentifikasi tantangan dan hambatan dalam perancangan CRM pada layanan kesehatan mental serta merumuskan rekomendasi strategi untuk implementasi di masa depan.
 
 ## 1.4 Manfaat Penelitian
 
@@ -102,7 +102,7 @@ Penelitian ini berfokus pada implementasi CRM di CUR-HEART (Hypnotherapy & Mind 
 
 ### 1.5.2 Ruang Lingkup Sistem
 
-Penelitian ini mengkaji fitur-fitur CRM yang telah diimplementasikan pada Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART, meliputi:
+Penelitian ini mengkaji fitur-fitur CRM yang dirancang pada prototipe Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART, meliputi:
 
 1. **Manajemen Profil Klien**: Penyimpanan dan pengelolaan data demografis, preferensi, dan riwayat klien
 2. **Manajemen Interaksi**: Pencatatan semua titik sentuh (touchpoint) antara klien dengan CUR-HEART
@@ -122,16 +122,18 @@ Penelitian ini melibatkan tiga kategori pengguna utama:
 
 ### 1.5.4 Ruang Lingkup Waktu
 
-Penelitian ini mengkaji implementasi CRM pada sistem yang dikembangkan selama periode September - Desember 2025, dengan evaluasi dampak berdasarkan data penggunaan sistem selama periode uji coba.
+Penelitian ini mengkaji perancangan sistem CRM selama periode September - Desember 2025, dengan validasi desain berdasarkan simulasi dan pengujian terbatas.
 
 ### 1.5.5 Batasan Penelitian
 
 Penelitian ini tidak mencakup:
-1. Implementasi CRM pada platform media sosial eksternal
-2. Integrasi dengan sistem CRM pihak ketiga (Salesforce, HubSpot, dll.)
-3. Analisis prediktif lanjutan menggunakan machine learning
-4. Implementasi chatbot AI untuk customer service
-5. Analisis mendalam tentang aspek klinis dan efektivitas terapi (fokus pada aspek manajemen hubungan pelanggan)
+1. Implementasi penuh sistem CRM dalam lingkungan produksi (fokus pada perancangan dan validasi desain)
+2. Integrasi dengan platform media sosial eksternal
+3. Integrasi dengan sistem CRM pihak ketiga (Salesforce, HubSpot, dll.)
+4. Analisis prediktif lanjutan menggunakan *machine learning*
+5. Implementasi *chatbot* AI untuk layanan pelanggan
+6. Analisis mendalam tentang aspek klinis dan efektivitas terapi (fokus pada aspek manajemen hubungan pelanggan)
+7. Pengujian dengan data riil dalam skala besar (menggunakan data simulasi untuk validasi desain)
 
 ## 1.6 Sistematika Penulisan
 
@@ -147,7 +149,7 @@ Bab ini membahas landasan teori yang relevan dengan penelitian, meliputi konsep 
 Bab ini menjelaskan metode penelitian yang digunakan, termasuk pendekatan penelitian, teknik pengumpulan data, teknik analisis data, dan tahapan penelitian.
 
 **BAB IV HASIL DAN PEMBAHASAN**  
-Bab ini menyajikan hasil penelitian berupa profil CUR-HEART, strategi CRM yang dirancang, implementasi fitur-fitur CRM pada sistem informasi, evaluasi dampak implementasi, serta analisis tantangan dan solusi.
+Bab ini menyajikan hasil penelitian berupa profil CUR-HEART, strategi CRM yang dirancang, perancangan fitur-fitur CRM pada sistem informasi, validasi perancangan dan proyeksi dampak, serta analisis tantangan dan solusi.
 
 **BAB V PENUTUP**  
 Bab ini berisi kesimpulan dari hasil penelitian dan saran untuk pengembangan lebih lanjut.
