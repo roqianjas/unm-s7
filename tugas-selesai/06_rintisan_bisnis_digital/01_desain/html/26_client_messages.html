@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .chat-container {
+            height: calc(100vh - 300px);
+            min-height: 500px;
+        }
+        .messages-list {
+            height: calc(100vh - 200px);
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="28_client_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="26_client_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Budi Santoso</div>
+                            <div class="text-xs text-gray-500">Klien</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="17_client_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="18_booking_step1.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span class="font-medium">Booking Sesi</span>
+                    </a>
+                    <a href="23_client_appointments.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Janji Temu</span>
+                    </a>
+                    <a href="25_client_progress.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Progress Saya</span>
+                    </a>
+                    <a href="26_client_messages.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Pesan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="27_client_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex">
+            <!-- Conversations List -->
+            <div class="w-full md:w-96 bg-white border-r border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-heading font-bold text-gray-800 mb-4">Pesan</h2>
+                    <div class="relative">
+                        <input type="text" placeholder="Cari pesan..." class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <div class="messages-list overflow-y-auto">
+                    <!-- Conversation 1 - Active -->
+                    <div onclick="selectConversation(1)" id="conv-1" class="p-4 border-b border-gray-200 hover:bg-gray-50 cursor-pointer bg-cur-primary/5">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative flex-shrink-0">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-12 h-12 rounded-full">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-cur-success border-2 border-white rounded-full"></span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">Dr. Sarah Johnson</h3>
+                                    <span class="text-xs text-gray-500">10:30</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Saya akan mengirimkan beberapa materi tambahan untuk latihan di rumah...</p>
+                                <div class="flex items-center justify-between mt-2">
+                                    <span class="text-xs text-cur-primary">Terapis Anda</span>
+                                    <span class="px-2 py-0.5 bg-cur-secondary text-white text-xs rounded-full">3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conversation 2 -->
+                    <div onclick="selectConversation(2)" id="conv-2" class="p-4 border-b border-gray-200 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative flex-shrink-0">
+                                <img src="https://ui-avatars.com/api/?name=CUR+HEART+Support&background=1E0E62&color=fff" alt="Support" class="w-12 h-12 rounded-full">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-cur-success border-2 border-white rounded-full"></span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">CUR-HEART Support</h3>
+                                    <span class="text-xs text-gray-500">Kemarin</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Terima kasih telah menghubungi kami. Ada yang bisa kami bantu?</p>
+                                <span class="text-xs text-gray-500 mt-1 inline-block">Tim Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conversation 3 -->
+                    <div onclick="selectConversation(3)" id="conv-3" class="p-4 border-b border-gray-200 hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative flex-shrink-0">
+                                <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=1E0E62&color=fff" alt="Michael Chen" class="w-12 h-12 rounded-full">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-gray-400 border-2 border-white rounded-full"></span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">Michael Chen</h3>
+                                    <span class="text-xs text-gray-500">20 Okt</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Sampai jumpa di sesi berikutnya!</p>
+                                <span class="text-xs text-gray-500 mt-1 inline-block">Terapis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="flex-1 flex flex-col bg-gray-50">
+                <!-- Chat Header -->
+                <div class="bg-white border-b border-gray-200 p-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h3 class="font-bold text-gray-800">Dr. Sarah Johnson</h3>
+                                <div class="flex items-center space-x-2 text-sm text-gray-600">
+                                    <span class="w-2 h-2 bg-cur-success rounded-full"></span>
+                                    <span>Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                            <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-video"></i>
+                            </button>
+                            <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="chat-container flex-1 overflow-y-auto p-6 space-y-4">
+                    <!-- Date Divider -->
+                    <div class="flex items-center justify-center my-4">
+                        <div class="px-4 py-1 bg-gray-200 text-gray-600 text-xs rounded-full">
+                            Hari Ini
+                        </div>
+                    </div>
+
+                    <!-- Received Message -->
+                    <div class="flex items-start space-x-3">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-10 h-10 rounded-full flex-shrink-0">
+                        <div class="flex-1">
+                            <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm max-w-md">
+                                <p class="text-gray-800">Halo Budi, bagaimana kabarmu hari ini? Sudah mencoba teknik pernapasan yang kita pelajari di sesi terakhir?</p>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-4 mt-1 inline-block">10:15</span>
+                        </div>
+                    </div>
+
+                    <!-- Sent Message -->
+                    <div class="flex items-end justify-end space-x-3">
+                        <div class="flex-1 flex flex-col items-end">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-secondary rounded-2xl rounded-tr-none p-4 shadow-sm max-w-md">
+                                <p class="text-white">Halo Dr. Sarah! Alhamdulillah baik. Sudah saya coba dan sangat membantu saat saya merasa mulai cemas kemarin.</p>
+                            </div>
+                            <span class="text-xs text-gray-500 mr-4 mt-1 inline-block">10:18</span>
+                        </div>
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Budi Santoso" class="w-10 h-10 rounded-full flex-shrink-0">
+                    </div>
+
+                    <!-- Received Message -->
+                    <div class="flex items-start space-x-3">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-10 h-10 rounded-full flex-shrink-0">
+                        <div class="flex-1">
+                            <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm max-w-md">
+                                <p class="text-gray-800">Wah senang mendengarnya! Itu kemajuan yang sangat baik. Terus praktekkan ya, konsistensi sangat penting untuk hasil maksimal. 💪</p>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-4 mt-1 inline-block">10:20</span>
+                        </div>
+                    </div>
+
+                    <!-- Sent Message -->
+                    <div class="flex items-end justify-end space-x-3">
+                        <div class="flex-1 flex flex-col items-end">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-secondary rounded-2xl rounded-tr-none p-4 shadow-sm max-w-md">
+                                <p class="text-white">Terima kasih banyak Dr. Sarah. Oh iya, untuk sesi besok apakah ada yang perlu saya siapkan?</p>
+                            </div>
+                            <span class="text-xs text-gray-500 mr-4 mt-1 inline-block">10:25</span>
+                        </div>
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Budi Santoso" class="w-10 h-10 rounded-full flex-shrink-0">
+                    </div>
+
+                    <!-- Received Message with File -->
+                    <div class="flex items-start space-x-3">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-10 h-10 rounded-full flex-shrink-0">
+                        <div class="flex-1">
+                            <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm max-w-md">
+                                <p class="text-gray-800 mb-3">Tidak ada persiapan khusus. Tapi saya kirimkan worksheet ini untuk membantu kamu mengidentifikasi pola pikir. Coba isi sebelum sesi besok ya.</p>
+                                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
+                                    <div class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-file-pdf text-cur-primary"></i>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-medium text-sm text-gray-800 truncate">Worksheet_Pola_Pikir.pdf</div>
+                                        <div class="text-xs text-gray-500">245 KB</div>
+                                    </div>
+                                    <button class="text-cur-primary hover:text-cur-secondary">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-4 mt-1 inline-block">10:30</span>
+                        </div>
+                    </div>
+
+                    <!-- Typing Indicator -->
+                    <div class="flex items-start space-x-3">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-10 h-10 rounded-full flex-shrink-0">
+                        <div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm">
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0ms"></div>
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 150ms"></div>
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 300ms"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Input -->
+                <div class="bg-white border-t border-gray-200 p-4">
+                    <div class="flex items-end space-x-3">
+                        <button class="p-3 text-gray-600 hover:bg-gray-100 rounded-lg transition">
+                            <i class="fas fa-paperclip text-xl"></i>
+                        </button>
+                        <button class="p-3 text-gray-600 hover:bg-gray-100 rounded-lg transition">
+                            <i class="fas fa-smile text-xl"></i>
+                        </button>
+                        <div class="flex-1 relative">
+                            <textarea rows="1" placeholder="Ketik pesan..." class="w-full px-4 py-3 border border-gray-300 rounded-xl resize-none focus:ring-2 focus:ring-cur-primary focus:border-transparent" style="max-height: 120px;"></textarea>
+                        </div>
+                        <button class="px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-xl hover:shadow-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center space-x-4 mt-2 text-xs text-gray-500">
+                        <span><i class="fas fa-info-circle mr-1"></i>Pesan terenkripsi end-to-end</span>
+                        <span><i class="fas fa-shield-alt mr-1"></i>Data terlindungi</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function selectConversation(id) {
+            // Remove active class from all conversations
+            document.querySelectorAll('[id^="conv-"]').forEach(conv => {
+                conv.classList.remove('bg-cur-primary/5');
+            });
+            
+            // Add active class to selected conversation
+            document.getElementById('conv-' + id).classList.add('bg-cur-primary/5');
+            
+            // In a real app, this would load the messages for the selected conversation
+            console.log('Selected conversation:', id);
+        }
+
+        // Auto-resize textarea
+        const textarea = document.querySelector('textarea');
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        });
+
+        // Send message on Enter (Shift+Enter for new line)
+        textarea.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                // Send message logic here
+                console.log('Sending message:', this.value);
+                this.value = '';
+                this.style.height = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>

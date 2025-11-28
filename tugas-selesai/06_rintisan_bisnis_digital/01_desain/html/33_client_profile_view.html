@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Klien - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .tab-active {
+            border-bottom: 3px solid #FF6B7A;
+            color: #FF6B7A;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="41_therapist_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="40_therapist_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Dr. Sarah Johnson</div>
+                            <div class="text-xs text-gray-500">Terapis</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="29_therapist_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home text-base"></i>
+                        <span class="text-base font-medium">Dashboard</span>
+                    </a>
+                    <a href="30_therapist_schedule.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-alt text-base"></i>
+                        <span class="text-base font-medium">Jadwal</span>
+                    </a>
+                    <a href="31_therapist_availability.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clock text-base"></i>
+                        <span class="text-base font-medium">Ketersediaan</span>
+                    </a>
+                    <a href="32_therapist_clients.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-users text-base"></i>
+                        <span class="text-base font-medium">Klien</span>
+                    </a>
+                    <a href="35_session_notes.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clipboard text-base"></i>
+                        <span class="text-base font-medium">Catatan Sesi</span>
+                    </a>
+                    <a href="36_therapist_session_history.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-history text-base"></i>
+                        <span class="text-base font-medium">Riwayat Sesi</span>
+                    </a>
+                    <a href="37_therapist_earnings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-wallet text-base"></i>
+                        <span class="text-base font-medium">Pendapatan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="38_therapist_profile_edit.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-user-edit text-base"></i>
+                            <span class="text-base font-medium">Edit Profil</span>
+                        </a>
+                        <a href="39_therapist_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog text-base"></i>
+                            <span class="text-base font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt text-base"></i>
+                            <span class="text-base font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="32_therapist_clients.html" class="inline-flex items-center text-cur-primary hover:text-cur-secondary mb-4 transition">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Kembali ke Daftar Klien
+                </a>
+                <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Profil Klien</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Profile Card -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <div class="text-center mb-6">
+                            <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff&size=128" alt="Budi Santoso" class="w-32 h-32 rounded-full mx-auto mb-4">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-1">Budi Santoso</h2>
+                            <p class="text-gray-600 mb-3">Klien Aktif</p>
+                            <span class="px-4 py-2 bg-cur-success/10 text-cur-success text-sm font-semibold rounded-full">
+                                <i class="fas fa-check-circle mr-1"></i>
+                                Aktif
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-envelope text-cur-primary w-5"></i>
+                                <span class="text-gray-700">budi.santoso@email.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-phone text-cur-primary w-5"></i>
+                                <span class="text-gray-700">+62 812 3456 7890</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-birthday-cake text-cur-primary w-5"></i>
+                                <span class="text-gray-700">28 tahun (15 Maret 1996)</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-venus-mars text-cur-primary w-5"></i>
+                                <span class="text-gray-700">Laki-laki</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-briefcase text-cur-primary w-5"></i>
+                                <span class="text-gray-700">Software Engineer</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-calendar-plus text-cur-primary w-5"></i>
+                                <span class="text-gray-700">Bergabung: 15 Agustus 2024</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <a href="26_client_messages.html" class="block w-full px-4 py-3 bg-cur-primary text-white font-semibold rounded-xl hover:bg-opacity-90 transition mb-2 text-center">
+                                <i class="fas fa-comment mr-2"></i>
+                                Kirim Pesan
+                            </a>
+                            <a href="34_session_room.html" class="block w-full px-4 py-3 border-2 border-cur-primary text-cur-primary font-semibold rounded-xl hover:bg-cur-primary hover:text-white transition text-center">
+                                <i class="fas fa-video mr-2"></i>
+                                Mulai Sesi
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Stats Card -->
+                    <div class="bg-gradient-to-br from-cur-info to-indigo-600 rounded-2xl shadow-sm p-6 text-white">
+                        <h3 class="text-lg font-bold mb-4">Statistik</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Total Sesi</span>
+                                <span class="text-2xl font-bold">8</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Tingkat Kehadiran</span>
+                                <span class="text-2xl font-bold">100%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Durasi Terapi</span>
+                                <span class="text-2xl font-bold">10 minggu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Tabs -->
+                    <div class="bg-white rounded-2xl shadow-sm">
+                        <div class="border-b border-gray-200">
+                            <div class="flex overflow-x-auto">
+                                <button onclick="switchTab('overview')" id="overviewTab" class="px-8 py-4 text-center font-semibold transition tab-active">
+                                    Overview
+                                </button>
+                                <button onclick="switchTab('sessions')" id="sessionsTab" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                                    Riwayat Sesi
+                                </button>
+                                <button onclick="switchTab('notes')" id="notesTab" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                                    Catatan
+                                </button>
+                                <button onclick="switchTab('progress')" id="progressTab" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                                    Progress
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Overview Tab -->
+                        <div id="overviewContent" class="p-6">
+                            <div class="space-y-6">
+                                <!-- Therapy Info -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Informasi Terapi</h3>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Layanan</div>
+                                            <div class="font-semibold text-gray-800">Terapi Kecemasan</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Paket</div>
+                                            <div class="font-semibold text-gray-800">10 Sesi</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Sesi Selesai</div>
+                                            <div class="font-semibold text-gray-800">8 dari 10</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Sisa Sesi</div>
+                                            <div class="font-semibold text-gray-800">2 Sesi</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Chief Complaints -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Keluhan Utama</h3>
+                                    <div class="p-4 bg-gray-50 rounded-xl">
+                                        <ul class="space-y-2 text-sm text-gray-700">
+                                            <li class="flex items-start">
+                                                <i class="fas fa-circle text-cur-secondary text-xs mt-1.5 mr-3"></i>
+                                                <span>Sering merasa cemas berlebihan dalam situasi sosial</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-circle text-cur-secondary text-xs mt-1.5 mr-3"></i>
+                                                <span>Kesulitan tidur karena overthinking</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-circle text-cur-secondary text-xs mt-1.5 mr-3"></i>
+                                                <span>Gejala fisik: jantung berdebar, keringat dingin</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-circle text-cur-secondary text-xs mt-1.5 mr-3"></i>
+                                                <span>Menghindari situasi yang memicu kecemasan</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Medical History -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Riwayat Medis</h3>
+                                    <div class="p-4 bg-gray-50 rounded-xl">
+                                        <div class="space-y-3 text-sm text-gray-700">
+                                            <div>
+                                                <span class="font-semibold">Alergi:</span> Tidak ada
+                                            </div>
+                                            <div>
+                                                <span class="font-semibold">Riwayat Penyakit:</span> Tidak ada riwayat penyakit serius
+                                            </div>
+                                            <div>
+                                                <span class="font-semibold">Obat-obatan:</span> Tidak mengonsumsi obat rutin
+                                            </div>
+                                            <div>
+                                                <span class="font-semibold">Terapi Sebelumnya:</span> Pernah mencoba konseling singkat (3 sesi) tahun lalu
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Goals -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Target Terapi</h3>
+                                    <div class="space-y-3">
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-success/5 rounded-xl">
+                                            <i class="fas fa-check-circle text-cur-success mt-1"></i>
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-800">Mengurangi frekuensi serangan kecemasan</div>
+                                                <div class="text-xs text-gray-600 mt-1">Status: Tercapai 70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-warning/5 rounded-xl">
+                                            <i class="fas fa-clock text-cur-warning mt-1"></i>
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-800">Meningkatkan kualitas tidur</div>
+                                                <div class="text-xs text-gray-600 mt-1">Status: Dalam Progress 50%</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start space-x-3 p-3 bg-cur-info/5 rounded-xl">
+                                            <i class="fas fa-bullseye text-cur-info mt-1"></i>
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-800">Berani menghadiri acara sosial</div>
+                                                <div class="text-xs text-gray-600 mt-1">Status: Mulai Dicoba</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sessions Tab -->
+                        <div id="sessionsContent" class="p-6 hidden">
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-cur-success p-4 bg-gray-50 rounded-r-xl">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <h4 class="font-bold text-gray-800">Sesi #8</h4>
+                                        <span class="text-sm text-gray-500">18 Okt 2024</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2">Durasi: 60 menit | Status: Selesai</p>
+                                    <p class="text-sm text-gray-700">Fokus: Teknik relaksasi dan pernapasan dalam situasi sosial. Klien menunjukkan kemajuan signifikan.</p>
+                                </div>
+                                <div class="border-l-4 border-cur-success p-4 bg-gray-50 rounded-r-xl">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <h4 class="font-bold text-gray-800">Sesi #7</h4>
+                                        <span class="text-sm text-gray-500">11 Okt 2024</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2">Durasi: 60 menit | Status: Selesai</p>
+                                    <p class="text-sm text-gray-700">Fokus: Identifikasi pemicu kecemasan dan pola pikir negatif. Homework: journaling.</p>
+                                </div>
+                                <div class="border-l-4 border-cur-success p-4 bg-gray-50 rounded-r-xl">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <h4 class="font-bold text-gray-800">Sesi #6</h4>
+                                        <span class="text-sm text-gray-500">4 Okt 2024</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-2">Durasi: 60 menit | Status: Selesai</p>
+                                    <p class="text-sm text-gray-700">Fokus: Teknik grounding dan mindfulness untuk mengelola panic attack.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notes Tab -->
+                        <div id="notesContent" class="p-6 hidden">
+                            <div class="space-y-4">
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-sticky-note text-yellow-600"></i>
+                                            <span class="font-semibold text-gray-800">Catatan Terapis</span>
+                                        </div>
+                                        <span class="text-xs text-gray-500">20 Okt 2024</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">Klien menunjukkan komitmen tinggi terhadap terapi. Respons baik terhadap teknik CBT. Perlu fokus lebih pada exposure therapy di sesi berikutnya.</p>
+                                </div>
+                                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-clipboard text-blue-600"></i>
+                                            <span class="font-semibold text-gray-800">Progress Note</span>
+                                        </div>
+                                        <span class="text-xs text-gray-500">15 Okt 2024</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">Klien melaporkan penurunan frekuensi panic attack dari 3x/minggu menjadi 1x/minggu. Kualitas tidur membaik.</p>
+                                </div>
+                            </div>
+                            <button class="w-full mt-4 px-4 py-3 border-2 border-cur-primary text-cur-primary font-semibold rounded-xl hover:bg-cur-primary hover:text-white transition">
+                                <i class="fas fa-plus mr-2"></i>
+                                Tambah Catatan Baru
+                            </button>
+                        </div>
+
+                        <!-- Progress Tab -->
+                        <div id="progressContent" class="p-6 hidden">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Tingkat Kecemasan</h4>
+                                    <div class="flex items-center space-x-3 mb-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                            <div class="bg-cur-success rounded-full h-3" style="width: 70%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-gray-700">70%</span>
+                                    </div>
+                                    <p class="text-xs text-gray-600">Penurunan dari 90% (awal terapi)</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Kualitas Tidur</h4>
+                                    <div class="flex items-center space-x-3 mb-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                            <div class="bg-cur-info rounded-full h-3" style="width: 65%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-gray-700">65%</span>
+                                    </div>
+                                    <p class="text-xs text-gray-600">Peningkatan dari 40% (awal terapi)</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Kepercayaan Diri Sosial</h4>
+                                    <div class="flex items-center space-x-3 mb-2">
+                                        <div class="flex-1 bg-gray-200 rounded-full h-3">
+                                            <div class="bg-cur-warning rounded-full h-3" style="width: 55%"></div>
+                                        </div>
+                                        <span class="text-sm font-bold text-gray-700">55%</span>
+                                    </div>
+                                    <p class="text-xs text-gray-600">Peningkatan dari 30% (awal terapi)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            // Remove active class from all tabs
+            document.querySelectorAll('[id$="Tab"]').forEach(t => {
+                t.classList.remove('tab-active', 'text-cur-secondary');
+                t.classList.add('text-gray-500');
+            });
+
+            // Hide all content
+            document.getElementById('overviewContent').classList.add('hidden');
+            document.getElementById('sessionsContent').classList.add('hidden');
+            document.getElementById('notesContent').classList.add('hidden');
+            document.getElementById('progressContent').classList.add('hidden');
+
+            // Show selected content and activate tab
+            if (tab === 'overview') {
+                document.getElementById('overviewTab').classList.add('tab-active');
+                document.getElementById('overviewTab').classList.remove('text-gray-500');
+                document.getElementById('overviewContent').classList.remove('hidden');
+            } else if (tab === 'sessions') {
+                document.getElementById('sessionsTab').classList.add('tab-active');
+                document.getElementById('sessionsTab').classList.remove('text-gray-500');
+                document.getElementById('sessionsContent').classList.remove('hidden');
+            } else if (tab === 'notes') {
+                document.getElementById('notesTab').classList.add('tab-active');
+                document.getElementById('notesTab').classList.remove('text-gray-500');
+                document.getElementById('notesContent').classList.remove('hidden');
+            } else if (tab === 'progress') {
+                document.getElementById('progressTab').classList.add('tab-active');
+                document.getElementById('progressTab').classList.remove('text-gray-500');
+                document.getElementById('progressContent').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

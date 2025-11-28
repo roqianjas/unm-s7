@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan - CUR-HEART Therapist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .chat-container {
+            height: calc(100vh - 300px);
+            min-height: 500px;
+        }
+        .messages-list {
+            height: calc(100vh - 200px);
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="41_therapist_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="40_therapist_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Dr. Sarah Johnson</div>
+                            <div class="text-xs text-gray-500">Terapis</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="29_therapist_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home text-base"></i>
+                        <span class="text-base font-medium">Dashboard</span>
+                    </a>
+                    <a href="30_therapist_schedule.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-alt text-base"></i>
+                        <span class="text-base font-medium">Jadwal</span>
+                    </a>
+                    <a href="31_therapist_availability.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clock text-base"></i>
+                        <span class="text-base font-medium">Ketersediaan</span>
+                    </a>
+                    <a href="32_therapist_clients.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users text-base"></i>
+                        <span class="text-base font-medium">Klien</span>
+                    </a>
+                    <a href="35_session_notes.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-clipboard text-base"></i>
+                        <span class="text-base font-medium">Catatan Sesi</span>
+                    </a>
+                    <a href="36_therapist_session_history.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-history text-base"></i>
+                        <span class="text-base font-medium">Riwayat Sesi</span>
+                    </a>
+                    <a href="37_therapist_earnings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-wallet text-base"></i>
+                        <span class="text-base font-medium">Pendapatan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="38_therapist_profile_edit.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-user-edit text-base"></i>
+                            <span class="text-base font-medium">Edit Profil</span>
+                        </a>
+                        <a href="39_therapist_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog text-base"></i>
+                            <span class="text-base font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt text-base"></i>
+                            <span class="text-base font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex">
+            <!-- Conversations List -->
+            <div class="w-96 bg-white border-r border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Pesan</h2>
+                    <div class="relative">
+                        <input type="text" placeholder="Cari pesan..." class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <div class="messages-list overflow-y-auto">
+                    <!-- Active Conversation -->
+                    <div class="p-4 bg-cur-primary/5 border-l-4 border-cur-primary hover:bg-cur-primary/10 cursor-pointer transition">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative">
+                                <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Budi Santoso" class="w-12 h-12 rounded-full">
+                                <span class="absolute bottom-0 right-0 w-3 h-3 bg-cur-success border-2 border-white rounded-full"></span>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">Budi Santoso</h3>
+                                    <span class="text-xs text-gray-500">10:30</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Terima kasih Dok atas sesi kemarin...</p>
+                                <span class="inline-block mt-1 px-2 py-0.5 bg-cur-secondary text-white text-xs font-semibold rounded-full">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Conversations -->
+                    <div class="p-4 hover:bg-gray-50 cursor-pointer transition">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative">
+                                <img src="https://ui-avatars.com/api/?name=Siti+Aminah&background=FF6B7A&color=fff" alt="Siti Aminah" class="w-12 h-12 rounded-full">
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">Siti Aminah</h3>
+                                    <span class="text-xs text-gray-500">Kemarin</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Dok, saya ingin reschedule sesi...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 hover:bg-gray-50 cursor-pointer transition">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative">
+                                <img src="https://ui-avatars.com/api/?name=Ahmad+Fauzi&background=667BC6&color=fff" alt="Ahmad Fauzi" class="w-12 h-12 rounded-full">
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">Ahmad Fauzi</h3>
+                                    <span class="text-xs text-gray-500">2 hari lalu</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Homework sudah saya selesaikan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 hover:bg-gray-50 cursor-pointer transition">
+                        <div class="flex items-start space-x-3">
+                            <div class="relative">
+                                <img src="https://ui-avatars.com/api/?name=Rina+Sari&background=00D26A&color=fff" alt="Rina Sari" class="w-12 h-12 rounded-full">
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h3 class="font-semibold text-gray-800 truncate">Rina Sari</h3>
+                                    <span class="text-xs text-gray-500">3 hari lalu</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Baik Dok, sampai jumpa besok</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="flex-1 flex flex-col">
+                <!-- Chat Header -->
+                <div class="p-6 bg-white border-b border-gray-200">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Budi Santoso" class="w-12 h-12 rounded-full">
+                            <div>
+                                <h3 class="font-bold text-gray-800">Budi Santoso</h3>
+                                <div class="flex items-center space-x-2 text-sm text-gray-500">
+                                    <span class="w-2 h-2 bg-cur-success rounded-full"></span>
+                                    <span>Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <a href="33_client_profile_view.html" class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="flex-1 overflow-y-auto p-6 space-y-4 chat-container">
+                    <div class="text-center">
+                        <span class="px-3 py-1 bg-gray-200 text-gray-600 text-xs rounded-full">
+                            Hari Ini
+                        </span>
+                    </div>
+
+                    <!-- Received Message -->
+                    <div class="flex items-start space-x-2">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff&size=32" alt="Budi" class="w-8 h-8 rounded-full">
+                        <div class="flex-1">
+                            <div class="bg-gray-100 rounded-2xl rounded-tl-none p-4 max-w-md">
+                                <p class="text-gray-800">Selamat pagi Dok, terima kasih atas sesi kemarin. Saya merasa jauh lebih baik sekarang.</p>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-2">10:25</span>
+                        </div>
+                    </div>
+
+                    <!-- Sent Message -->
+                    <div class="flex items-start space-x-2 flex-row-reverse">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff&size=32" alt="Dr Sarah" class="w-8 h-8 rounded-full">
+                        <div class="flex-1 flex flex-col items-end">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-secondary rounded-2xl rounded-tr-none p-4 max-w-md">
+                                <p class="text-white">Selamat pagi Budi! Senang mendengar kabar baik dari Anda. Jangan lupa untuk terus praktikkan teknik yang sudah kita pelajari ya.</p>
+                            </div>
+                            <span class="text-xs text-gray-500 mr-2">10:27</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-2">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff&size=32" alt="Budi" class="w-8 h-8 rounded-full">
+                        <div class="flex-1">
+                            <div class="bg-gray-100 rounded-2xl rounded-tl-none p-4 max-w-md">
+                                <p class="text-gray-800">Baik Dok. Oh iya, untuk sesi minggu depan apakah bisa dimajukan 1 jam?</p>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-2">10:30</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-2 flex-row-reverse">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff&size=32" alt="Dr Sarah" class="w-8 h-8 rounded-full">
+                        <div class="flex-1 flex flex-col items-end">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-secondary rounded-2xl rounded-tr-none p-4 max-w-md">
+                                <p class="text-white">Tentu, tidak masalah. Saya akan update jadwalnya. Jadi kita bertemu jam 13:00 ya.</p>
+                            </div>
+                            <div class="flex items-center space-x-1 text-xs text-gray-500 mr-2 mt-1">
+                                <span>10:32</span>
+                                <i class="fas fa-check-double text-cur-info"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Input -->
+                <div class="p-6 bg-white border-t border-gray-200">
+                    <div class="flex items-center space-x-3">
+                        <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg transition">
+                            <i class="fas fa-paperclip text-xl"></i>
+                        </button>
+                        <input type="text" placeholder="Ketik pesan..." class="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <button class="px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-xl hover:shadow-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

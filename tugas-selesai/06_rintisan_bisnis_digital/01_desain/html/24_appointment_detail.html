@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Janji Temu - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .pulse-dot {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="28_client_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="26_client_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Budi Santoso</div>
+                            <div class="text-xs text-gray-500">Klien</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="17_client_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="18_booking_step1.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span class="font-medium">Booking Sesi</span>
+                    </a>
+                    <a href="23_client_appointments.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Janji Temu</span>
+                    </a>
+                    <a href="25_client_progress.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Progress Saya</span>
+                    </a>
+                    <a href="26_client_messages.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Pesan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="27_client_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Header -->
+            <div class="mb-8">
+                <a href="23_client_appointments.html" class="inline-flex items-center text-cur-primary hover:text-cur-secondary mb-4 transition">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Kembali ke Janji Temu
+                </a>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Detail Janji Temu</h1>
+                        <p class="text-gray-600">Informasi lengkap sesi terapi Anda</p>
+                    </div>
+                    <span class="px-4 py-2 bg-cur-warning/10 text-cur-warning text-sm font-semibold rounded-full">
+                        <i class="fas fa-clock mr-1"></i>
+                        Hari Ini - 2 jam lagi
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Main Details -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Status Alert -->
+                    <div class="bg-gradient-to-r from-cur-warning to-yellow-500 text-white rounded-2xl p-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-3 h-3 bg-white rounded-full pulse-dot"></div>
+                            <h3 class="font-bold text-lg">Sesi Segera Dimulai</h3>
+                        </div>
+                        <p class="mb-4">Sesi Anda dengan Dr. Sarah Johnson akan dimulai dalam 2 jam. Pastikan koneksi internet stabil.</p>
+                        <button class="px-6 py-3 bg-white text-cur-warning font-semibold rounded-xl hover:shadow-lg transition">
+                            <i class="fas fa-video mr-2"></i>
+                            Join Meeting
+                        </button>
+                    </div>
+
+                    <!-- Appointment Info -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-info-circle text-cur-primary mr-2"></i>
+                            Informasi Sesi
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-12 h-12 bg-cur-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-bookmark text-cur-primary"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-gray-500 mb-1">Booking ID</div>
+                                    <div class="font-semibold text-gray-800">#CURHEART-2024-1025-001</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-12 h-12 bg-cur-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-heartbeat text-cur-secondary"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-gray-500 mb-1">Layanan</div>
+                                    <div class="font-semibold text-gray-800">Terapi Kecemasan</div>
+                                    <div class="text-sm text-gray-600 mt-1">Mengatasi gangguan kecemasan dan panic attack</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-12 h-12 bg-cur-info/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-calendar text-cur-info"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-gray-500 mb-1">Tanggal & Waktu</div>
+                                    <div class="font-semibold text-gray-800">Jumat, 25 Oktober 2024</div>
+                                    <div class="text-sm text-gray-600 mt-1">14:00 - 15:00 WIB (60 menit)</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 pb-4 border-b border-gray-100">
+                                <div class="w-12 h-12 bg-cur-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-video text-cur-success"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-gray-500 mb-1">Lokasi</div>
+                                    <div class="font-semibold text-gray-800">Online - Video Call</div>
+                                    <div class="text-sm text-gray-600 mt-1">Link meeting akan aktif 15 menit sebelum sesi</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-cur-warning/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-money-bill-wave text-cur-warning"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-sm text-gray-500 mb-1">Pembayaran</div>
+                                    <div class="font-semibold text-gray-800">Rp 360.000</div>
+                                    <div class="inline-flex items-center px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full mt-2">
+                                        <i class="fas fa-check-circle mr-1"></i>
+                                        LUNAS - GoPay
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Session Notes -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-clipboard text-cur-primary mr-2"></i>
+                            Catatan Sesi
+                        </h3>
+                        <div class="bg-gray-50 rounded-xl p-4">
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                Keluhan utama: Sering merasa cemas berlebihan dalam situasi sosial dan kesulitan tidur. Ini adalah sesi ke-3 dari 8 sesi terapi yang direncanakan.
+                            </p>
+                        </div>
+                        <div class="mt-4 p-4 border-2 border-dashed border-gray-200 rounded-xl text-center">
+                            <i class="fas fa-file-medical text-gray-400 text-2xl mb-2"></i>
+                            <p class="text-sm text-gray-500">Catatan terapis akan tersedia setelah sesi selesai</p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Kelola Janji Temu</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <button onclick="openModal('reschedule')" class="px-6 py-3 border-2 border-cur-primary text-cur-primary font-semibold rounded-xl hover:bg-cur-primary hover:text-white transition">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                Reschedule
+                            </button>
+                            <button onclick="openModal('cancel')" class="px-6 py-3 border-2 border-cur-error text-cur-error font-semibold rounded-xl hover:bg-cur-error hover:text-white transition">
+                                <i class="fas fa-times-circle mr-2"></i>
+                                Batalkan Sesi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="space-y-6">
+                    <!-- Therapist Info -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Terapis Anda</h3>
+                        <div class="text-center mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Dr. Sarah Johnson" class="w-24 h-24 rounded-full mx-auto mb-3">
+                            <h4 class="font-bold text-gray-800 text-lg">Dr. Sarah Johnson</h4>
+                            <p class="text-sm text-gray-600">Psikolog Klinis</p>
+                            <div class="flex items-center justify-center space-x-1 text-cur-warning mt-2">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star-half-alt text-sm"></i>
+                                <span class="text-sm text-gray-600 ml-1">(4.9)</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-graduation-cap w-5 text-cur-primary"></i>
+                                <span class="ml-2">10+ tahun pengalaman</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-certificate w-5 text-cur-primary"></i>
+                                <span class="ml-2">Certified Hypnotherapist</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users w-5 text-cur-primary"></i>
+                                <span class="ml-2">500+ klien berhasil</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <a href="26_client_messages.html" class="w-full px-4 py-2 bg-cur-primary text-white text-sm font-semibold rounded-lg hover:bg-opacity-90 transition text-center block">
+                                <i class="fas fa-comment mr-2"></i>
+                                Kirim Pesan
+                            </a>
+                            <a href="06_therapist_profile.html" class="w-full px-4 py-2 border-2 border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-50 transition text-center block">
+                                <i class="fas fa-user mr-2"></i>
+                                Lihat Profil
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Preparation Tips -->
+                    <div class="bg-gradient-to-br from-cur-info to-indigo-600 rounded-2xl shadow-sm p-6 text-white">
+                        <h3 class="text-lg font-bold mb-4 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>
+                            Tips Persiapan
+                        </h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>Siapkan koneksi internet yang stabil</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>Cari tempat yang tenang dan privat</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>Test kamera dan mikrofon Anda</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>Siapkan catatan atau pertanyaan</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>Login 5-10 menit sebelum waktu</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Support Contact -->
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Butuh Bantuan?</h3>
+                        <div class="space-y-3 text-sm">
+                            <a href="#" class="flex items-center text-gray-600 hover:text-cur-primary transition">
+                                <i class="fas fa-phone w-5 text-cur-primary"></i>
+                                <span class="ml-2">+62 812 3456 7890</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-600 hover:text-cur-primary transition">
+                                <i class="fas fa-envelope w-5 text-cur-primary"></i>
+                                <span class="ml-2">support@cur-heart.com</span>
+                            </a>
+                            <a href="#" class="flex items-center text-gray-600 hover:text-cur-primary transition">
+                                <i class="fab fa-whatsapp w-5 text-cur-primary"></i>
+                                <span class="ml-2">WhatsApp Support</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Reschedule Modal -->
+    <div id="rescheduleModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Reschedule Sesi</h3>
+                <button onclick="closeModal('reschedule')" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <p class="text-gray-600 mb-6">Anda akan diarahkan ke halaman pemilihan jadwal baru. Pastikan untuk memilih waktu yang tepat.</p>
+            <div class="flex gap-3">
+                <button onclick="closeModal('reschedule')" class="flex-1 px-4 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition">
+                    Batal
+                </button>
+                <a href="20_booking_step3.html" class="flex-1 px-4 py-3 bg-cur-primary text-white font-semibold rounded-xl hover:bg-opacity-90 transition text-center">
+                    Lanjutkan
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cancel Modal -->
+    <div id="cancelModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-800">Batalkan Sesi?</h3>
+                <button onclick="closeModal('cancel')" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
+                <p class="text-sm text-red-800">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    Pembatalan kurang dari 24 jam akan dikenakan biaya pembatalan 50% dari total pembayaran.
+                </p>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Alasan Pembatalan</label>
+                <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent" placeholder="Tuliskan alasan Anda..."></textarea>
+            </div>
+            <div class="flex gap-3">
+                <button onclick="closeModal('cancel')" class="flex-1 px-4 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition">
+                    Kembali
+                </button>
+                <button class="flex-1 px-4 py-3 bg-cur-error text-white font-semibold rounded-xl hover:bg-opacity-90 transition">
+                    Ya, Batalkan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(type) {
+            if (type === 'reschedule') {
+                document.getElementById('rescheduleModal').classList.remove('hidden');
+            } else if (type === 'cancel') {
+                document.getElementById('cancelModal').classList.remove('hidden');
+            }
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(type) {
+            if (type === 'reschedule') {
+                document.getElementById('rescheduleModal').classList.add('hidden');
+            } else if (type === 'cancel') {
+                document.getElementById('cancelModal').classList.add('hidden');
+            }
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on backdrop click
+        document.getElementById('rescheduleModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal('reschedule');
+        });
+        document.getElementById('cancelModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal('cancel');
+        });
+    </script>
+</body>
+</html>

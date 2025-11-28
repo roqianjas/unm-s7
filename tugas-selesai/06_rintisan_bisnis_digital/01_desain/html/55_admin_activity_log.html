@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Log - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="48_admin_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="62_admin_therapist_verification.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-check"></i>
+                        <span class="font-medium">Verifikasi</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="56_admin_reports.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="font-medium">Laporan</span>
+                    </a>
+                    <a href="57_admin_content_blog.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="font-medium">Konten</span>
+                    </a>
+                    <a href="60_admin_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan</span>
+                    </a>
+                    <a href="61_admin_promo.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-tags"></i>
+                        <span class="font-medium">Pemasaran</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Back Button -->
+            <a href="42_admin_dashboard.html" class="inline-flex items-center text-cur-primary hover:text-cur-secondary mb-6 transition">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Kembali ke Dashboard
+            </a>
+
+            <!-- Header -->
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold text-gray-800 mb-2">Activity Log</h1>
+                <p class="text-gray-600">Riwayat aktivitas sistem dan pengguna</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div class="md:col-span-2">
+                        <div class="relative">
+                            <input type="text" placeholder="Cari aktivitas..." class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            <i class="fas fa-search absolute left-3 top-4 text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            <option>Semua Tipe</option>
+                            <option>User Activity</option>
+                            <option>Booking</option>
+                            <option>Payment</option>
+                            <option>System</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                            <option>Urutkan: Terbaru</option>
+                            <option>Terlama</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Timeline -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-900">Aktivitas Hari Ini</h3>
+                </div>
+                <div class="divide-y divide-gray-200">
+                    <!-- Activity Item 1 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-success/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-plus text-cur-success text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Pengguna Baru Terdaftar</div>
+                                        <div class="text-sm text-gray-600 mt-1">Rina Sari bergabung sebagai klien baru</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                2 menit yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                                Jakarta, Indonesia
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                                        User
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 2 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-info/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-calendar-check text-cur-info text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Booking Baru</div>
+                                        <div class="text-sm text-gray-600 mt-1">Budi Santoso memesan sesi dengan Dr. Sarah Johnson</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                15 menit yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-calendar mr-1"></i>
+                                                25 Nov 2025, 14:00
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-cur-info/10 text-cur-info text-xs font-semibold rounded-full">
+                                        Booking
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 3 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-cur-warning/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-money-bill-wave text-cur-warning text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Pembayaran Diterima</div>
+                                        <div class="text-sm text-gray-600 mt-1">Transfer Rp 500.000 dari Ahmad Fauzi untuk booking #CH-1125-045</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                32 menit yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-university mr-1"></i>
+                                                Bank BCA
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded-full">
+                                        Payment
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 4 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-md text-purple-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Terapis Baru Bergabung</div>
+                                        <div class="text-sm text-gray-600 mt-1">Dr. Michael Chen mengajukan aplikasi sebagai terapis</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                1 jam yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-certificate mr-1"></i>
+                                                Lisensi: PSI-67890-2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">
+                                        User
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 5 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check-circle text-green-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Sesi Selesai</div>
+                                        <div class="text-sm text-gray-600 mt-1">Sesi antara Siti Aminah dan Dr. Lisa Wong telah selesai</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                2 jam yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-star mr-1"></i>
+                                                Rating: 5.0
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
+                                        Booking
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 6 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-money-check text-blue-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Withdrawal Disetujui</div>
+                                        <div class="text-sm text-gray-600 mt-1">Withdrawal Rp 12.500.000 untuk Dr. Sarah Johnson telah disetujui</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                3 jam yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-hashtag mr-1"></i>
+                                                WD-1125-045
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
+                                        Payment
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 7 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-times-circle text-red-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Booking Dibatalkan</div>
+                                        <div class="text-sm text-gray-600 mt-1">Dimas Putra membatalkan booking #CH-1123-045</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                4 jam yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-info-circle mr-1"></i>
+                                                Alasan: Berhalangan hadir
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-red-100 text-red-800 text-xs font-semibold rounded-full">
+                                        Booking
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 8 -->
+                    <div class="p-6 hover:bg-gray-50 transition">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-cog text-gray-600 text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Pengaturan Sistem Diubah</div>
+                                        <div class="text-sm text-gray-600 mt-1">Admin mengubah komisi platform dari 25% menjadi 30%</div>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                5 jam yang lalu
+                                            </span>
+                                            <span class="text-xs text-gray-500">
+                                                <i class="fas fa-user mr-1"></i>
+                                                Admin CUR-HEART
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded-full">
+                                        System
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="bg-gray-50 px-6 py-4 flex items-center justify-between border-t border-gray-200">
+                    <div class="text-sm text-gray-600">
+                        Menampilkan <span class="font-semibold">1-8</span> dari <span class="font-semibold">1,247</span> aktivitas
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="px-3 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-white transition disabled:opacity-50" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="px-4 py-2 bg-cur-primary text-white rounded-lg">1</button>
+                        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-white transition">2</button>
+                        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-white transition">3</button>
+                        <span class="px-2 text-gray-500">...</span>
+                        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-white transition">156</button>
+                        <button class="px-3 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-white transition">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

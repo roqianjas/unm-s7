@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Management - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="62_admin_therapist_verification.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-check"></i>
+                        <span class="font-medium">Verifikasi</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="56_admin_reports.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="font-medium">Laporan</span>
+                    </a>
+                    <a href="57_admin_content_blog.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="font-medium">Konten</span>
+                    </a>
+                    <a href="60_admin_reviews.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan</span>
+                    </a>
+                    <a href="61_admin_promo.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-tags"></i>
+                        <span class="font-medium">Pemasaran</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-6 lg:p-8">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">Manajemen Ulasan & Rating</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Total Ulasan</div>
+                    <div class="text-3xl font-bold text-gray-900">1,247</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Rating Rata-rata</div>
+                    <div class="text-3xl font-bold text-cur-warning">4.8</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Pending</div>
+                    <div class="text-3xl font-bold text-cur-warning">12</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="text-sm text-gray-600 mb-1">Dilaporkan</div>
+                    <div class="text-3xl font-bold text-cur-error">3</div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <input type="text" placeholder="Cari ulasan..." class="px-4 py-3 border border-gray-300 rounded-lg">
+                    <select class="px-4 py-3 border border-gray-300 rounded-lg">
+                        <option>Semua Status</option>
+                        <option>Disetujui</option>
+                        <option>Pending</option>
+                        <option>Dilaporkan</option>
+                    </select>
+                    <select class="px-4 py-3 border border-gray-300 rounded-lg">
+                        <option>Semua Rating</option>
+                        <option>5 Bintang</option>
+                        <option>4 Bintang</option>
+                        <option>3 Bintang</option>
+                        <option>2 Bintang</option>
+                        <option>1 Bintang</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200">
+                <div class="divide-y divide-gray-200">
+                    <div class="p-6">
+                        <div class="flex items-start space-x-4">
+                            <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="User" class="w-12 h-12 rounded-full">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Budi Santoso</div>
+                                        <div class="text-sm text-gray-600">untuk Dr. Sarah Johnson</div>
+                                    </div>
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">Terapis yang sangat profesional dan membantu. Saya merasa jauh lebih baik setelah beberapa sesi terapi.</p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span>20 Nov 2025</span>
+                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">Disetujui</span>
+                                </div>
+                                <div class="flex items-center space-x-2 mt-3">
+                                    <button class="px-4 py-2 text-cur-error hover:bg-cur-error/10 rounded-lg transition text-sm font-semibold">
+                                        <i class="fas fa-ban mr-1"></i>Sembunyikan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-yellow-50">
+                        <div class="flex items-start space-x-4">
+                            <img src="https://ui-avatars.com/api/?name=Ahmad+Fauzi&background=FF6B7A&color=fff" alt="User" class="w-12 h-12 rounded-full">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Ahmad Fauzi</div>
+                                        <div class="text-sm text-gray-600">untuk Dr. Michael Chen</div>
+                                    </div>
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                        <i class="fas fa-star text-cur-warning"></i>
+                                        <i class="fas fa-star text-gray-300"></i>
+                                        <i class="fas fa-star text-gray-300"></i>
+                                        <i class="fas fa-star text-gray-300"></i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">Sesi terapi kurang memuaskan. Terapis sering terlambat dan kurang fokus.</p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span>19 Nov 2025</span>
+                                    <span class="px-2 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded-full">Menunggu Review</span>
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs font-semibold rounded-full">
+                                        <i class="fas fa-flag mr-1"></i>Dilaporkan
+                                    </span>
+                                </div>
+                                <div class="flex items-center space-x-2 mt-3">
+                                    <button class="px-4 py-2 bg-cur-success text-white rounded-lg hover:bg-opacity-90 transition text-sm font-semibold">
+                                        <i class="fas fa-check mr-1"></i>Setujui
+                                    </button>
+                                    <button class="px-4 py-2 text-cur-error hover:bg-cur-error/10 rounded-lg transition text-sm font-semibold">
+                                        <i class="fas fa-times mr-1"></i>Tolak
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

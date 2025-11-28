@@ -1,0 +1,101 @@
+@startuml
+
+|Admin|
+start
+:Login ke Sistem;
+:Akses Menu Laporan;
+
+|Sistem|
+:Tampilkan Halaman Generate Laporan;
+
+|Admin|
+:Pilih Jenis Laporan;
+
+switch (Jenis Laporan?)
+case (Reservasi)
+  :Set: Laporan Reservasi;
+case (Keuangan)
+  :Set: Laporan Keuangan;
+case (Kinerja Terapis)
+  :Set: Laporan Kinerja;
+case (Klien)
+  :Set: Laporan Klien;
+endswitch
+
+:Pilih Periode;
+:Input Tanggal Mulai;
+:Input Tanggal Selesai;
+
+if (Tambahkan Filter?) then (yes)
+  :Pilih Filter Tambahan;
+  :Filter Terapis/Layanan/Status;
+else (no)
+  :Lanjut Tanpa Filter;
+endif
+
+:Klik Generate Laporan;
+
+|Sistem|
+:Tampilkan Loading;
+:Fetch Data dari Database;
+
+if (Data Ditemukan?) then (yes)
+  :Proses dan Agregasi Data;
+  :Hitung Statistik;
+  :Hitung Total dan Rata-rata;
+  :Generate Grafik;
+  :Buat Visualisasi;
+  :Tampilkan Laporan;
+  
+  |Admin|
+  repeat
+    :Pilih Aksi;
+    
+    switch (Aksi?)
+    case (Lihat Detail)
+      |Sistem|
+      :Tampilkan Detail Data;
+      |Admin|
+      :Review Detail;
+      
+    case (Export PDF)
+      |Sistem|
+      :Generate File PDF;
+      :Download PDF;
+      |Admin|
+      :Terima File PDF;
+      stop
+      
+    case (Export Excel)
+      |Sistem|
+      :Generate File Excel;
+      :Download Excel;
+      |Admin|
+      :Terima File Excel;
+      stop
+      
+    case (Cetak)
+      |Sistem|
+      :Buka Dialog Print;
+      |Admin|
+      :Print Laporan;
+      stop
+      
+    case (Tutup)
+      stop
+    endswitch
+    
+  repeat while (Ada Aksi Lain?) is (yes)
+  ->no;
+  stop
+  
+else (no)
+  :Tampilkan Pesan Error;
+  :Tidak Ada Data;
+  
+  |Admin|
+  :Kembali ke Pemilihan;
+  stop
+endif
+
+@enduml

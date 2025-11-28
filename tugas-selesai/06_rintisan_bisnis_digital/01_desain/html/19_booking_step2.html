@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Sesi - Pilih Terapis - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .therapist-card {
+            transition: all 0.3s ease;
+        }
+        .therapist-card:hover {
+            transform: translateY(-4px);
+        }
+        .therapist-card.selected {
+            border-color: #1E0E62;
+            box-shadow: 0 0 0 3px rgba(30, 14, 98, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="28_client_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </button>
+                    <a href="26_client_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Budi Santoso</div>
+                            <div class="text-xs text-gray-500">Klien</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="17_client_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="18_booking_step1.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span class="font-medium">Booking Sesi</span>
+                    </a>
+                    <a href="23_client_appointments.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Janji Temu</span>
+                    </a>
+                    <a href="25_client_progress.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Progress Saya</span>
+                    </a>
+                    <a href="26_client_messages.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Pesan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="27_client_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Progress Steps -->
+            <div class="max-w-5xl mx-auto mb-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-cur-success text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-sm font-semibold text-cur-success">Pilih Layanan</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-cur-success mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-full flex items-center justify-center font-bold mb-2">
+                            2
+                        </div>
+                        <span class="text-sm font-semibold text-cur-primary">Pilih Terapis</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-200 mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold mb-2">
+                            3
+                        </div>
+                        <span class="text-sm text-gray-500">Jadwal & Waktu</span>
+                    </div>
+                    <div class="flex-1 h-1 bg-gray-200 mx-4 -mt-6"></div>
+                    <div class="flex flex-col items-center flex-1">
+                        <div class="w-12 h-12 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold mb-2">
+                            4
+                        </div>
+                        <span class="text-sm text-gray-500">Konfirmasi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="max-w-5xl mx-auto mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Pilih Terapis</h1>
+                        <p class="text-gray-600">Pilih terapis yang sesuai dengan kebutuhan Anda untuk layanan <span class="font-semibold text-cur-primary">Terapi Kecemasan</span></p>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3">
+                        <select class="px-4 py-2 border-2 border-gray-200 rounded-lg focus:border-cur-primary outline-none">
+                            <option>Urutkan: Terpopuler</option>
+                            <option>Rating Tertinggi</option>
+                            <option>Pengalaman Terlama</option>
+                            <option>Harga Terendah</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Therapists Grid -->
+            <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <!-- Therapist 1 -->
+                    <div class="therapist-card bg-white border-2 border-gray-200 rounded-2xl p-6 cursor-pointer" onclick="selectTherapist(this, 'sarah')">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-20 h-20 rounded-full flex-shrink-0">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-heading font-bold text-gray-800">Dr. Sarah Johnson</h3>
+                                        <p class="text-sm text-gray-600">Psikolog Klinis</p>
+                                    </div>
+                                    <input type="radio" name="therapist" value="sarah" class="w-5 h-5 text-cur-primary mt-1">
+                                </div>
+                                <div class="flex items-center space-x-1 text-cur-warning mb-2">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star-half-alt text-sm"></i>
+                                    <span class="text-sm text-gray-600 ml-1">(4.9 • 200+ sesi)</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-xs text-gray-600">
+                                    <span class="px-2 py-1 bg-cur-primary/10 text-cur-primary rounded">10 Tahun</span>
+                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success rounded">Tersedia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Spesialis kecemasan dan gangguan panik dengan pendekatan kognitif-behavioral dan hipnoterapi. Berpengalaman menangani 500+ klien.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Kecemasan</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Panik</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Stres</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Trauma</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                            <div class="text-sm text-gray-600">
+                                <i class="fas fa-calendar mr-1"></i> Tersedia besok
+                            </div>
+                            <a href="06_therapist_profile.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                Lihat Profil →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Therapist 2 -->
+                    <div class="therapist-card bg-white border-2 border-gray-200 rounded-2xl p-6 cursor-pointer" onclick="selectTherapist(this, 'michael')">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=1E0E62&color=fff" alt="Therapist" class="w-20 h-20 rounded-full flex-shrink-0">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-heading font-bold text-gray-800">Michael Chen</h3>
+                                        <p class="text-sm text-gray-600">Certified Hypnotherapist</p>
+                                    </div>
+                                    <input type="radio" name="therapist" value="michael" class="w-5 h-5 text-cur-primary mt-1">
+                                </div>
+                                <div class="flex items-center space-x-1 text-cur-warning mb-2">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <span class="text-sm text-gray-600 ml-1">(5.0 • 150+ sesi)</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-xs text-gray-600">
+                                    <span class="px-2 py-1 bg-cur-primary/10 text-cur-primary rounded">8 Tahun</span>
+                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success rounded">Tersedia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Ahli hipnoterapi dengan spesialisasi kecemasan sosial dan confidence building. Menggunakan teknik Ericksonian hypnotherapy.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Kecemasan Sosial</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Kepercayaan Diri</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Public Speaking</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                            <div class="text-sm text-gray-600">
+                                <i class="fas fa-calendar mr-1"></i> Tersedia hari ini
+                            </div>
+                            <a href="06_therapist_profile.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                Lihat Profil →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Therapist 3 -->
+                    <div class="therapist-card bg-white border-2 border-gray-200 rounded-2xl p-6 cursor-pointer" onclick="selectTherapist(this, 'amanda')">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Amanda+Putri&background=FF6B7A&color=fff" alt="Therapist" class="w-20 h-20 rounded-full flex-shrink-0">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-heading font-bold text-gray-800">Amanda Putri, M.Psi</h3>
+                                        <p class="text-sm text-gray-600">Psikolog & Hypnotherapist</p>
+                                    </div>
+                                    <input type="radio" name="therapist" value="amanda" class="w-5 h-5 text-cur-primary mt-1">
+                                </div>
+                                <div class="flex items-center space-x-1 text-cur-warning mb-2">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <span class="text-sm text-gray-600 ml-1">(4.9 • 180+ sesi)</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-xs text-gray-600">
+                                    <span class="px-2 py-1 bg-cur-primary/10 text-cur-primary rounded">7 Tahun</span>
+                                    <span class="px-2 py-1 bg-cur-warning/10 text-cur-warning rounded">Segera Penuh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Menggabungkan terapi kognitif-behavioral dengan hipnoterapi untuk hasil optimal. Spesialis menangani wanita dengan kecemasan.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Kecemasan</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Depresi</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Relationship</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                            <div class="text-sm text-gray-600">
+                                <i class="fas fa-calendar mr-1"></i> Tersedia minggu depan
+                            </div>
+                            <a href="06_therapist_profile.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                Lihat Profil →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Therapist 4 -->
+                    <div class="therapist-card bg-white border-2 border-gray-200 rounded-2xl p-6 cursor-pointer" onclick="selectTherapist(this, 'roki')">
+                        <div class="flex items-start space-x-4 mb-4">
+                            <img src="https://ui-avatars.com/api/?name=Roki+Anjas&background=00D26A&color=fff" alt="Therapist" class="w-20 h-20 rounded-full flex-shrink-0">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-heading font-bold text-gray-800">Roki Anjas, CHt</h3>
+                                        <p class="text-sm text-gray-600">Clinical Hypnotherapist</p>
+                                    </div>
+                                    <input type="radio" name="therapist" value="roki" class="w-5 h-5 text-cur-primary mt-1">
+                                </div>
+                                <div class="flex items-center space-x-1 text-cur-warning mb-2">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <span class="text-sm text-gray-600 ml-1">(4.9 • 220+ sesi)</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-xs text-gray-600">
+                                    <span class="px-2 py-1 bg-cur-primary/10 text-cur-primary rounded">12 Tahun</span>
+                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success rounded">Tersedia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-4">
+                            Pendiri CUR-HEART dengan pengalaman luas dalam hipnoterapi klinis. Spesialis penanganan kecemasan kronis dan gangguan panik.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Kecemasan Kronis</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Panik Disorder</span>
+                            <span class="text-xs px-2 py-1 bg-gray-100 rounded">Fobia</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-200">
+                            <div class="text-sm text-gray-600">
+                                <i class="fas fa-calendar mr-1"></i> Tersedia besok
+                            </div>
+                            <a href="06_therapist_profile.html" class="text-sm text-cur-secondary font-semibold hover:underline">
+                                Lihat Profil →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Box -->
+                <div class="bg-cur-accent/10 border border-cur-accent/20 rounded-2xl p-6 mb-8">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-lightbulb text-cur-secondary text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Tips Memilih Terapis</h4>
+                            <ul class="space-y-1 text-sm text-gray-700">
+                                <li>• Perhatikan rating dan jumlah review dari klien sebelumnya</li>
+                                <li>• Lihat spesialisasi terapis sesuai dengan kebutuhan Anda</li>
+                                <li>• Anda dapat berganti terapis jika merasa kurang cocok</li>
+                                <li>• Konsultasi awal tersedia untuk membantu Anda menentukan pilihan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex items-center justify-between">
+                    <a href="18_booking_step1.html" class="px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Kembali
+                    </a>
+                    <button id="nextBtn" disabled class="px-8 py-3 bg-gray-300 text-gray-500 font-semibold rounded-xl cursor-not-allowed">
+                        Lanjutkan
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let selectedTherapist = null;
+
+        function selectTherapist(card, therapistId) {
+            // Remove selected class from all cards
+            document.querySelectorAll('.therapist-card').forEach(c => {
+                c.classList.remove('selected');
+            });
+
+            // Add selected class to clicked card
+            card.classList.add('selected');
+
+            // Check the radio button
+            card.querySelector('input[type="radio"]').checked = true;
+
+            // Store selected therapist
+            selectedTherapist = therapistId;
+
+            // Enable next button
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.disabled = false;
+            nextBtn.className = 'px-8 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-xl hover:shadow-lg transition cursor-pointer';
+            nextBtn.onclick = () => {
+                window.location.href = '20_booking_step3.html';
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Sesi - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f0f0f;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .video-container {
+            position: relative;
+            background: #1a1a1a;
+            border-radius: 1rem;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            max-height: 600px;
+            width: 100%;
+        }
+        .video-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Untuk layar yang sangat besar atau perbandingan 1:1 */
+        @media (min-aspect-ratio: 1/1) and (min-height: 900px) {
+            .video-container {
+                max-height: 500px;
+            }
+        }
+        /* Untuk layar standar laptop */
+        @media (max-height: 800px) {
+            .video-container {
+                max-height: 450px;
+            }
+        }
+        /* Untuk layar kecil */
+        @media (max-height: 700px) {
+            .video-container {
+                max-height: 350px;
+            }
+        }
+        /* Untuk mobile/tablet portrait */
+        @media (max-width: 1024px) {
+            .video-container {
+                max-height: 400px;
+                aspect-ratio: 16/9;
+            }
+        }
+        @media (max-width: 640px) {
+            .video-container {
+                max-height: 300px;
+            }
+        }
+        .pulse-recording {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-gray-900 border-b border-gray-800">
+        <div class="px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="assets/img/white.png" alt="CUR-HEART Logo" class="h-8 w-auto">
+                <div>
+                    <h1 class="text-white font-bold">Sesi Terapi - Budi Santoso</h1>
+                    <div class="flex items-center space-x-4 text-sm text-gray-400">
+                        <span><i class="fas fa-clock mr-1"></i>45:32</span>
+                        <span class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full pulse-recording mr-2"></span>
+                            Merekam
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="px-4 py-2 bg-gray-800 text-white text-sm rounded-lg">
+                    <i class="fas fa-shield-alt text-cur-success mr-2"></i>
+                    Terenkripsi
+                </span>
+                <button class="px-4 py-2 bg-cur-error text-white font-semibold rounded-lg hover:bg-opacity-90 transition">
+                    <i class="fas fa-phone-slash mr-2"></i>
+                    Akhiri Sesi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex h-[calc(100vh-73px)]">
+        <!-- Main Video Area -->
+        <div class="flex-1 p-6 flex flex-col justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center justify-items-center w-full">
+                <!-- Client Video -->
+                <div class="video-container relative">
+                    <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff&size=400" alt="Client" class="w-full h-full object-cover">
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <div class="bg-black/60 backdrop-blur-sm rounded-lg p-3 flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-cur-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-semibold">Budi Santoso</div>
+                                    <div class="text-xs text-gray-300">Klien</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-1 h-3 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-4 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-5 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-4 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-3 bg-cur-success rounded"></div>
+                                </div>
+                                <i class="fas fa-microphone text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist Video (Self) -->
+                <div class="video-container relative">
+                    <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff&size=400" alt="Therapist" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-cur-info text-white text-xs font-semibold rounded-full">
+                            You
+                        </span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <div class="bg-black/60 backdrop-blur-sm rounded-lg p-3 flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-cur-info rounded-full flex items-center justify-center">
+                                    <i class="fas fa-user-md text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-semibold">Dr. Sarah Johnson</div>
+                                    <div class="text-xs text-gray-300">Terapis</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-1 h-3 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-4 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-5 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-4 bg-cur-success rounded"></div>
+                                    <div class="w-1 h-3 bg-cur-success rounded"></div>
+                                </div>
+                                <i class="fas fa-microphone text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Bar -->
+            <div class="mt-6 flex items-center justify-center space-x-4">
+                <button class="w-14 h-14 bg-gray-800 hover:bg-gray-700 text-white rounded-full transition">
+                    <i class="fas fa-microphone text-xl"></i>
+                </button>
+                <button class="w-14 h-14 bg-gray-800 hover:bg-gray-700 text-white rounded-full transition">
+                    <i class="fas fa-video text-xl"></i>
+                </button>
+                <button class="w-14 h-14 bg-gray-800 hover:bg-gray-700 text-white rounded-full transition">
+                    <i class="fas fa-desktop text-xl"></i>
+                </button>
+                <button class="w-14 h-14 bg-gray-800 hover:bg-gray-700 text-white rounded-full transition">
+                    <i class="fas fa-cog text-xl"></i>
+                </button>
+                <a href="35_session_notes.html" class="w-16 h-16 bg-gradient-to-r from-cur-error to-red-600 text-white rounded-full hover:shadow-lg transition flex items-center justify-center">
+                    <i class="fas fa-phone-slash text-2xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="w-96 bg-gray-900 border-l border-gray-800 flex flex-col">
+            <!-- Tabs -->
+            <div class="border-b border-gray-800">
+                <div class="flex">
+                    <button onclick="switchPanel('chat')" id="chatBtn" class="flex-1 px-4 py-3 text-white border-b-2 border-cur-primary font-semibold">
+                        <i class="fas fa-comment mr-2"></i>
+                        Chat
+                    </button>
+                    <button onclick="switchPanel('notes')" id="notesBtn" class="flex-1 px-4 py-3 text-gray-400 border-b-2 border-transparent hover:text-white font-semibold">
+                        <i class="fas fa-clipboard mr-2"></i>
+                        Catatan
+                    </button>
+                    <button onclick="switchPanel('info')" id="infoBtn" class="flex-1 px-4 py-3 text-gray-400 border-b-2 border-transparent hover:text-white font-semibold">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        Info
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Panel -->
+            <div id="chatPanel" class="flex-1 flex flex-col">
+                <div class="flex-1 overflow-y-auto p-4 space-y-4">
+                    <div class="text-center">
+                        <span class="px-3 py-1 bg-gray-800 text-gray-400 text-xs rounded-full">
+                            Sesi dimulai - 14:00 WIB
+                        </span>
+                    </div>
+                    
+                    <div class="flex items-start space-x-2">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff&size=32" alt="Therapist" class="w-8 h-8 rounded-full">
+                        <div class="flex-1">
+                            <div class="bg-gray-800 rounded-2xl rounded-tl-none p-3">
+                                <p class="text-white text-sm">Selamat siang Budi, bagaimana kabar Anda hari ini?</p>
+                            </div>
+                            <span class="text-xs text-gray-500 ml-2">14:01</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-2 flex-row-reverse">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff&size=32" alt="Client" class="w-8 h-8 rounded-full">
+                        <div class="flex-1 flex flex-col items-end">
+                            <div class="bg-gradient-to-r from-cur-primary to-cur-secondary rounded-2xl rounded-tr-none p-3">
+                                <p class="text-white text-sm">Alhamdulillah baik Dok. Seminggu ini saya merasa lebih tenang.</p>
+                            </div>
+                            <span class="text-xs text-gray-500 mr-2">14:02</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 border-t border-gray-800">
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 text-gray-400 hover:text-white transition">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                        <input type="text" placeholder="Ketik pesan..." class="flex-1 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-lg focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                        <button class="p-2 text-white bg-cur-primary rounded-lg hover:bg-opacity-90 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notes Panel -->
+            <div id="notesPanel" class="flex-1 flex-col hidden">
+                <div class="flex-1 overflow-y-auto p-4">
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between mb-2">
+                            <label class="text-sm font-semibold text-white">Catatan Sesi</label>
+                            <button class="text-xs text-cur-primary hover:text-cur-secondary">
+                                <i class="fas fa-save mr-1"></i>
+                                Auto-save
+                            </button>
+                        </div>
+                        <textarea rows="8" placeholder="Tulis catatan sesi di sini..." class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent resize-none"></textarea>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="text-sm font-semibold text-white mb-2 block">Penilaian Mood</label>
+                        <div class="flex items-center justify-between p-3 bg-gray-800 rounded-xl">
+                            <button class="text-2xl hover:scale-125 transition">😢</button>
+                            <button class="text-2xl hover:scale-125 transition">😕</button>
+                            <button class="text-2xl hover:scale-125 transition">😐</button>
+                            <button class="text-2xl hover:scale-125 transition">🙂</button>
+                            <button class="text-2xl hover:scale-125 transition">😊</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="text-sm font-semibold text-white mb-2 block">Homework</label>
+                        <textarea rows="4" placeholder="Tugas untuk klien..." class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent resize-none"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-semibold text-white mb-2 block">Rencana Sesi Berikutnya</label>
+                        <textarea rows="3" placeholder="Fokus untuk sesi berikutnya..." class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded-xl focus:ring-2 focus:ring-cur-primary focus:border-transparent resize-none"></textarea>
+                    </div>
+                </div>
+
+                <div class="p-4 border-t border-gray-800">
+                    <button class="w-full px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-xl hover:shadow-lg transition">
+                        <i class="fas fa-save mr-2"></i>
+                        Simpan Catatan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Info Panel -->
+            <div id="infoPanel" class="flex-1 overflow-y-auto p-4 hidden">
+                <div class="space-y-4">
+                    <div class="bg-gray-800 rounded-xl p-4">
+                        <h3 class="text-white font-bold mb-3">Informasi Sesi</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center justify-between text-gray-300">
+                                <span>Booking ID:</span>
+                                <span class="text-white font-mono">#CH-1025-001</span>
+                            </div>
+                            <div class="flex items-center justify-between text-gray-300">
+                                <span>Tanggal:</span>
+                                <span class="text-white">25 Okt 2024</span>
+                            </div>
+                            <div class="flex items-center justify-between text-gray-300">
+                                <span>Waktu:</span>
+                                <span class="text-white">14:00 - 15:00 WIB</span>
+                            </div>
+                            <div class="flex items-center justify-between text-gray-300">
+                                <span>Sesi:</span>
+                                <span class="text-white">8 dari 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-xl p-4">
+                        <h3 class="text-white font-bold mb-3">Profil Klien</h3>
+                        <div class="flex items-center space-x-3 mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff&size=48" alt="Client" class="w-12 h-12 rounded-full">
+                            <div>
+                                <div class="text-white font-semibold">Budi Santoso</div>
+                                <div class="text-xs text-gray-400">28 tahun, Laki-laki</div>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-sm text-gray-300">
+                            <div><i class="fas fa-briefcase w-4 text-cur-primary mr-2"></i>Software Engineer</div>
+                            <div><i class="fas fa-heartbeat w-4 text-cur-primary mr-2"></i>Terapi Kecemasan</div>
+                        </div>
+                        <a href="33_client_profile_view.html" class="block w-full mt-3 px-4 py-2 border border-gray-700 text-gray-300 rounded-lg hover:bg-gray-700 transition text-sm text-center">
+                            <i class="fas fa-user mr-2"></i>
+                            Lihat Profil Lengkap
+                        </a>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-xl p-4">
+                        <h3 class="text-white font-bold mb-3">Catatan Sebelumnya</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="p-3 bg-gray-900 rounded-lg">
+                                <div class="text-gray-400 text-xs mb-1">Sesi #7 - 18 Okt</div>
+                                <p class="text-gray-300">Klien menunjukkan kemajuan signifikan dalam teknik relaksasi...</p>
+                            </div>
+                            <div class="p-3 bg-gray-900 rounded-lg">
+                                <div class="text-gray-400 text-xs mb-1">Sesi #6 - 11 Okt</div>
+                                <p class="text-gray-300">Fokus pada identifikasi pemicu kecemasan...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-cur-warning/20 to-yellow-900/20 border border-cur-warning/30 rounded-xl p-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-exclamation-triangle text-cur-warning mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Perhatian</h4>
+                                <p class="text-gray-300 text-sm">Klien memiliki riwayat panic attack. Monitor tanda-tanda kecemasan berlebihan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchPanel(panel) {
+            // Hide all panels
+            document.getElementById('chatPanel').classList.add('hidden');
+            document.getElementById('notesPanel').classList.add('hidden');
+            document.getElementById('infoPanel').classList.add('hidden');
+            
+            // Remove active state from all buttons
+            document.getElementById('chatBtn').classList.remove('border-cur-primary', 'text-white');
+            document.getElementById('chatBtn').classList.add('border-transparent', 'text-gray-400');
+            document.getElementById('notesBtn').classList.remove('border-cur-primary', 'text-white');
+            document.getElementById('notesBtn').classList.add('border-transparent', 'text-gray-400');
+            document.getElementById('infoBtn').classList.remove('border-cur-primary', 'text-white');
+            document.getElementById('infoBtn').classList.add('border-transparent', 'text-gray-400');
+            
+            // Show selected panel and activate button
+            if (panel === 'chat') {
+                document.getElementById('chatPanel').classList.remove('hidden');
+                document.getElementById('chatPanel').classList.add('flex');
+                document.getElementById('chatBtn').classList.add('border-cur-primary', 'text-white');
+                document.getElementById('chatBtn').classList.remove('border-transparent', 'text-gray-400');
+            } else if (panel === 'notes') {
+                document.getElementById('notesPanel').classList.remove('hidden');
+                document.getElementById('notesPanel').classList.add('flex');
+                document.getElementById('notesBtn').classList.add('border-cur-primary', 'text-white');
+                document.getElementById('notesBtn').classList.remove('border-transparent', 'text-gray-400');
+            } else if (panel === 'info') {
+                document.getElementById('infoPanel').classList.remove('hidden');
+                document.getElementById('infoBtn').classList.add('border-cur-primary', 'text-white');
+                document.getElementById('infoBtn').classList.remove('border-transparent', 'text-gray-400');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
+                        'cur-secondary-dark': '#E64555',
+                        'cur-accent': '#FFB6B9',
+                        'cur-warm': '#FFEAA7',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-12 w-auto">
+                </a>
+                
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="01_homepage.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Beranda</a>
+                    <a href="03_services.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Layanan</a>
+                    <a href="05_therapists.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Terapis</a>
+                    <a href="07_blog.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Artikel</a>
+                    <a href="02_about.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Tentang</a>
+                    <a href="09_contact.html" class="text-cur-primary font-medium">Kontak</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="13_login.html" class="text-cur-primary font-medium hover:underline">Masuk</a>
+                    <a href="14_register.html" class="px-6 py-3 bg-cur-primary text-white rounded-lg font-medium hover:bg-cur-primary-light transition">
+                        Daftar Sekarang
+                    </a>
+                </div>
+
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-cur-primary to-cur-primary-light text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold font-poppins mb-6">Hubungi Kami</h1>
+            <p class="text-xl text-white/90 max-w-3xl mx-auto">
+                Kami siap membantu Anda. Jangan ragu untuk menghubungi kami melalui berbagai channel yang tersedia
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="py-16 -mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-xl text-center border border-gray-100 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-cur-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-cur-primary text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Telepon</h3>
+                    <p class="text-gray-600 text-sm mb-3">Senin - Sabtu<br>09:00 - 20:00 WIB</p>
+                    <a href="tel:+628123456789" class="text-cur-primary font-semibold hover:underline">
+                        +62 812-3456-7890
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-xl text-center border border-gray-100 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-cur-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-cur-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Email</h3>
+                    <p class="text-gray-600 text-sm mb-3">Respon dalam 24 jam</p>
+                    <a href="mailto:hello@cur-heart.id" class="text-cur-primary font-semibold hover:underline">
+                        hello@cur-heart.id
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-xl text-center border border-gray-100 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-cur-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-cur-success text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 text-sm mb-3">Chat langsung dengan kami</p>
+                    <a href="https://wa.me/628123456789" class="text-cur-primary font-semibold hover:underline">
+                        Chat Sekarang
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-xl text-center border border-gray-100 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 bg-cur-info/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-cur-info text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Lokasi</h3>
+                    <p class="text-gray-600 text-sm mb-3">Kemang Raya No. 123<br>Jakarta Selatan 12345</p>
+                    <a href="#map" class="text-cur-primary font-semibold hover:underline">
+                        Lihat Peta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6">Kirim Pesan</h2>
+                    <p class="text-gray-600 mb-8">
+                        Isi formulir di bawah ini dan tim kami akan merespon dalam waktu 1x24 jam
+                    </p>
+
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Nama Lengkap *
+                                </label>
+                                <input type="text" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent"
+                                       placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Nomor Telepon *
+                                </label>
+                                <input type="tel" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent"
+                                       placeholder="+62 812-3456-7890">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Email *
+                            </label>
+                            <input type="email" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent"
+                                   placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Subjek *
+                            </label>
+                            <select required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent">
+                                <option value="">Pilih subjek...</option>
+                                <option>Informasi Layanan</option>
+                                <option>Konsultasi Gratis</option>
+                                <option>Jadwal Appointment</option>
+                                <option>Partnership</option>
+                                <option>Media & Press</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Pesan *
+                            </label>
+                            <textarea rows="6" required
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cur-primary focus:border-transparent"
+                                      placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="privacy" required
+                                   class="mt-1 w-5 h-5 text-cur-primary border-gray-300 rounded focus:ring-cur-primary">
+                            <label for="privacy" class="text-sm text-gray-600">
+                                Saya setuju dengan <a href="11_privacy_policy.html" class="text-cur-primary hover:underline">Kebijakan Privasi</a> dan <a href="12_terms_conditions.html" class="text-cur-primary hover:underline">Syarat & Ketentuan</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full px-8 py-4 bg-cur-primary text-white rounded-lg font-semibold hover:bg-cur-primary-light transition flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Office Info -->
+                <div>
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6">Kunjungi Kantor Kami</h2>
+                    <p class="text-gray-600 mb-8">
+                        Kami menerima kunjungan dengan appointment. Silakan hubungi kami terlebih dahulu untuk membuat janji.
+                    </p>
+
+                    <!-- Office Image -->
+                    <div class="mb-8 rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" 
+                             alt="Office" class="w-full h-64 object-cover">
+                    </div>
+
+                    <!-- Office Hours -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-6">
+                        <h3 class="font-bold text-lg text-gray-900 mb-4 flex items-center gap-2">
+                            <i class="fas fa-clock text-cur-primary"></i> Jam Operasional
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+                                <span class="text-gray-600">Senin - Jumat</span>
+                                <span class="font-semibold text-gray-900">09:00 - 20:00 WIB</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+                                <span class="text-gray-600">Sabtu</span>
+                                <span class="font-semibold text-gray-900">09:00 - 17:00 WIB</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Minggu & Libur</span>
+                                <span class="font-semibold text-cur-error">Tutup</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="https://wa.me/628123456789" 
+                           class="px-6 py-4 bg-cur-success text-white rounded-lg font-semibold hover:bg-green-600 transition text-center flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-xl"></i> WhatsApp
+                        </a>
+                        <a href="tel:+628123456789" 
+                           class="px-6 py-4 bg-cur-primary text-white rounded-lg font-semibold hover:bg-cur-primary-light transition text-center flex items-center justify-center gap-2">
+                            <i class="fas fa-phone text-xl"></i> Telepon
+                        </a>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h3 class="font-bold text-lg text-gray-900 mb-4">Ikuti Kami</h3>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-pink-500 to-yellow-500 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-500 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-red-600 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-400 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-8 text-center">Lokasi Kami</h2>
+            
+            <!-- Map Placeholder -->
+            <div class="rounded-2xl overflow-hidden shadow-xl h-96 bg-gray-200 flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fas fa-map-marked-alt text-6xl text-gray-400 mb-4"></i>
+                    <p class="text-gray-600 font-semibold">Google Maps akan ditampilkan di sini</p>
+                    <p class="text-sm text-gray-500 mt-2">Kemang Raya No. 123, Jakarta Selatan 12345</p>
+                    <a href="https://maps.google.com" target="_blank" 
+                       class="inline-block mt-4 px-6 py-3 bg-cur-primary text-white rounded-lg font-medium hover:bg-cur-primary-light transition">
+                        <i class="fas fa-external-link-alt mr-2"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Directions -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-cur-primary/5 to-cur-accent/10 rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-car text-cur-primary text-2xl"></i>
+                        <h3 class="font-bold text-gray-900">Kendaraan Pribadi</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Parkir tersedia di basement gedung. Akses dari Jl. Kemang Raya, belok kanan setelah lampu merah.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-cur-primary/5 to-cur-accent/10 rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-bus text-cur-primary text-2xl"></i>
+                        <h3 class="font-bold text-gray-900">Transportasi Umum</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Transjakarta koridor 6A, turun di Halte Kemang. Jalan kaki 5 menit ke arah selatan.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-cur-primary/5 to-cur-accent/10 rounded-xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-taxi text-cur-primary text-2xl"></i>
+                        <h3 class="font-bold text-gray-900">Taxi / Ride-Hailing</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Drop-off point di depan gedung. Akses mudah dari aplikasi Gojek, Grab, atau taxi konvensional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-3xl p-12 text-white text-center">
+                <i class="fas fa-question-circle text-6xl mb-6 opacity-80"></i>
+                <h2 class="text-4xl font-bold font-poppins mb-4">Punya Pertanyaan?</h2>
+                <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                    Lihat halaman FAQ kami untuk jawaban cepat atas pertanyaan yang sering diajukan
+                </p>
+                <a href="10_faq.html" class="inline-block px-8 py-4 bg-white text-cur-primary rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Lihat FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cur-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="mb-6">
+                        <img src="assets/img/white.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                    </div>
+                    <p class="text-white/80 mb-4">
+                        Pusat hypnotherapy profesional untuk kesehatan mental yang lebih baik.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Layanan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="04_service_detail.html?id=1" class="hover:text-white transition">Stress & Anxiety</a></li>
+                        <li><a href="04_service_detail.html?id=2" class="hover:text-white transition">Trauma Healing</a></li>
+                        <li><a href="04_service_detail.html?id=3" class="hover:text-white transition">Self-Confidence</a></li>
+                        <li><a href="04_service_detail.html?id=4" class="hover:text-white transition">Sleep Therapy</a></li>
+                        <li><a href="04_service_detail.html?id=5" class="hover:text-white transition">Habit Change</a></li>
+                        <li><a href="04_service_detail.html?id=6" class="hover:text-white transition">Phobia Treatment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Perusahaan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="02_about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="05_therapists.html" class="hover:text-white transition">Tim Terapis</a></li>
+                        <li><a href="07_blog.html" class="hover:text-white transition">Artikel & Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partnership</a></li>
+                        <li><a href="09_contact.html" class="hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Kontak</h3>
+                    <ul class="space-y-4 text-white/80">
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kemang Raya No. 123<br>Jakarta Selatan 12345</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>hello@cur-heart.id</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-clock mt-1"></i>
+                            <span>Sen - Sab: 09:00 - 20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/80 text-sm">© 2024 CUR-HEART. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-white/80">
+                    <a href="11_privacy_policy.html" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="12_terms_conditions.html" class="hover:text-white transition">Syarat & Ketentuan</a>
+                    <a href="10_faq.html" class="hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

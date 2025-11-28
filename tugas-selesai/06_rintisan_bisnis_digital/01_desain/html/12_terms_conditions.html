@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat & Ketentuan - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
+                        'cur-secondary-dark': '#E64555',
+                        'cur-accent': '#FFB6B9',
+                        'cur-warm': '#FFEAA7',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-12 w-auto">
+                </a>
+                
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="01_homepage.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Beranda</a>
+                    <a href="03_services.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Layanan</a>
+                    <a href="05_therapists.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Terapis</a>
+                    <a href="07_blog.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Artikel</a>
+                    <a href="02_about.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Tentang</a>
+                    <a href="09_contact.html" class="text-gray-700 hover:text-cur-primary transition font-medium">Kontak</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="13_login.html" class="text-cur-primary font-medium hover:underline">Masuk</a>
+                    <a href="14_register.html" class="px-6 py-3 bg-cur-primary text-white rounded-lg font-medium hover:bg-cur-primary-light transition">
+                        Daftar Sekarang
+                    </a>
+                </div>
+
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-cur-primary to-cur-primary-light text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <i class="fas fa-file-contract text-5xl mb-4 opacity-80"></i>
+            <h1 class="text-5xl font-bold font-poppins mb-4">Syarat & Ketentuan</h1>
+            <p class="text-lg text-white/90">Terakhir diperbarui: 20 Oktober 2024</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="py-8 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Daftar Isi</h2>
+            <nav class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <a href="#penerimaan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 1. Penerimaan Ketentuan
+                </a>
+                <a href="#layanan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 2. Layanan Kami
+                </a>
+                <a href="#akun" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 3. Akun Pengguna
+                </a>
+                <a href="#booking" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 4. Booking & Pembayaran
+                </a>
+                <a href="#pembatalan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 5. Pembatalan & Refund
+                </a>
+                <a href="#kewajiban" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 6. Kewajiban Pengguna
+                </a>
+                <a href="#batasan" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 7. Batasan Tanggung Jawab
+                </a>
+                <a href="#hukum" class="text-cur-primary hover:underline flex items-center gap-2">
+                    <i class="fas fa-chevron-right text-xs"></i> 8. Hukum yang Berlaku
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="prose prose-lg max-w-none">
+
+                <!-- Section 1 -->
+                <div id="penerimaan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">1</span>
+                        Penerimaan Ketentuan
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Dengan mengakses dan menggunakan platform CUR-HEART ("Platform", "Layanan", "kami"), Anda ("Pengguna", "Anda") menyetujui untuk terikat oleh Syarat dan Ketentuan ini. Jika Anda tidak setuju dengan ketentuan ini, mohon untuk tidak menggunakan layanan kami.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Syarat dan Ketentuan ini merupakan perjanjian yang sah antara Anda dan CUR-HEART. Dengan mendaftar, mengakses, atau menggunakan layanan kami, Anda mengakui bahwa Anda telah membaca, memahami, dan menyetujui untuk terikat pada ketentuan ini.
+                        </p>
+                        <div class="bg-cur-warning/10 border-l-4 border-cur-warning rounded-r-lg p-4 mt-4">
+                            <p class="text-gray-700 text-sm">
+                                <i class="fas fa-exclamation-triangle text-cur-warning mr-2"></i>
+                                <strong>Perhatian:</strong> Anda harus berusia minimal 18 tahun atau memiliki persetujuan orang tua/wali untuk menggunakan layanan kami.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div id="layanan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">2</span>
+                        Layanan Kami
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.1 Deskripsi Layanan</h3>
+                            <p class="text-gray-700 mb-3">CUR-HEART menyediakan layanan hypnotherapy profesional untuk membantu mengatasi berbagai masalah psikologis dan emosional, termasuk namun tidak terbatas pada:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Manajemen stress dan anxiety</li>
+                                <li>Trauma healing dan PTSD</li>
+                                <li>Peningkatan kepercayaan diri</li>
+                                <li>Terapi tidur dan insomnia</li>
+                                <li>Perubahan kebiasaan</li>
+                                <li>Pengobatan phobia</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.2 Bukan Pengganti Perawatan Medis</h3>
+                            <p class="text-gray-700">
+                                Layanan hypnotherapy kami adalah terapi komplementer dan BUKAN pengganti untuk perawatan medis, psikiatri, atau psikologi klinis profesional. Kami tidak mendiagnosis penyakit medis atau meresepkan obat. Jika Anda memiliki kondisi medis serius, kami menyarankan untuk berkonsultasi dengan dokter atau profesional kesehatan yang sesuai.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.3 Metode Penyampaian</h3>
+                            <p class="text-gray-700">
+                                Layanan dapat diberikan secara online (melalui video call) atau offline (tatap muka di klinik kami). Kualitas dan efektivitas kedua metode adalah setara.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">2.4 Tidak Ada Jaminan Hasil</h3>
+                            <div class="bg-cur-error/10 border border-cur-error rounded-lg p-4">
+                                <p class="text-gray-700">
+                                    Meskipun kami berusaha memberikan layanan terbaik, kami tidak dapat menjamin hasil spesifik. Efektivitas terapi bervariasi tergantung pada kondisi individu, komitmen klien, dan berbagai faktor lainnya.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div id="akun" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">3</span>
+                        Akun Pengguna
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">3.1 Pembuatan Akun</h3>
+                            <p class="text-gray-700 mb-3">Untuk menggunakan layanan kami, Anda harus:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Membuat akun dengan informasi yang akurat dan lengkap</li>
+                                <li>Berusia minimal 18 tahun atau memiliki persetujuan orang tua/wali</li>
+                                <li>Menjaga kerahasiaan password dan informasi akun Anda</li>
+                                <li>Bertanggung jawab atas semua aktivitas yang terjadi di akun Anda</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">3.2 Keamanan Akun</h3>
+                            <p class="text-gray-700 mb-3">Anda bertanggung jawab untuk:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Menjaga kerahasiaan kredensial login Anda</li>
+                                <li>Segera memberitahu kami jika terjadi penggunaan akun yang tidak sah</li>
+                                <li>Menggunakan password yang kuat dan unik</li>
+                                <li>Tidak membagikan akun Anda dengan orang lain</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">3.3 Penangguhan atau Penghentian Akun</h3>
+                            <p class="text-gray-700">
+                                Kami berhak untuk menangguhkan atau menghentikan akun Anda jika Anda melanggar Syarat dan Ketentuan ini, atau jika kami mencurigai adanya aktivitas yang mencurigakan atau melanggar hukum.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div id="booking" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">4</span>
+                        Booking & Pembayaran
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">4.1 Proses Booking</h3>
+                            <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Pilih layanan, terapis, dan jadwal yang tersedia</li>
+                                <li>Lengkapi form booking dengan informasi yang akurat</li>
+                                <li>Lakukan pembayaran sesuai metode yang dipilih</li>
+                                <li>Anda akan menerima konfirmasi booking via email/WhatsApp</li>
+                                <li>Sesi akan dilaksanakan sesuai jadwal yang telah disepakati</li>
+                            </ol>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">4.2 Harga dan Pembayaran</h3>
+                            <p class="text-gray-700 mb-3">Ketentuan pembayaran:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Harga layanan tercantum di website dan dapat berubah sewaktu-waktu</li>
+                                <li>Pembayaran harus dilakukan maksimal 24 jam sebelum sesi</li>
+                                <li>Kami menerima berbagai metode pembayaran (transfer bank, e-wallet, kartu kredit)</li>
+                                <li>Pembayaran dalam Rupiah (IDR)</li>
+                                <li>Semua harga sudah termasuk pajak yang berlaku</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">4.3 Konfirmasi Pembayaran</h3>
+                            <p class="text-gray-700">
+                                Setelah pembayaran diterima dan diverifikasi, Anda akan menerima konfirmasi booking. Jika pembayaran tidak diterima dalam waktu yang ditentukan, booking Anda dapat dibatalkan secara otomatis.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">4.4 Paket Sesi</h3>
+                            <p class="text-gray-700">
+                                Untuk paket sesi (multiple sessions), pembayaran dapat dilakukan di muka. Paket sesi memiliki masa berlaku yang akan diinformasikan saat pembelian. Sesi yang tidak digunakan sebelum masa berlaku habis akan hangus.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div id="pembatalan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">5</span>
+                        Pembatalan & Refund
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">5.1 Kebijakan Pembatalan oleh Klien</h3>
+                            <div class="space-y-3">
+                                <div class="p-4 bg-cur-success/10 border-l-4 border-cur-success rounded-r-lg">
+                                    <p class="font-semibold text-gray-900 mb-1">Pembatalan > 48 jam sebelum sesi</p>
+                                    <p class="text-sm text-gray-700">Full refund (100%) atau reschedule gratis</p>
+                                </div>
+                                <div class="p-4 bg-cur-warning/10 border-l-4 border-cur-warning rounded-r-lg">
+                                    <p class="font-semibold text-gray-900 mb-1">Pembatalan 24-48 jam sebelum sesi</p>
+                                    <p class="text-sm text-gray-700">Refund 50% atau reschedule dengan biaya admin 25%</p>
+                                </div>
+                                <div class="p-4 bg-cur-error/10 border-l-4 border-cur-error rounded-r-lg">
+                                    <p class="font-semibold text-gray-900 mb-1">Pembatalan < 24 jam atau No-show</p>
+                                    <p class="text-sm text-gray-700">Tidak ada refund, sesi dianggap hangus</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">5.2 Reschedule</h3>
+                            <p class="text-gray-700 mb-3">Ketentuan reschedule:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Reschedule gratis jika dilakukan minimal 24 jam sebelum sesi</li>
+                                <li>Maximum 2x reschedule per booking</li>
+                                <li>Reschedule harus dilakukan dalam waktu maksimal 30 hari dari jadwal original</li>
+                                <li>Reschedule tergantung ketersediaan terapis</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">5.3 Pembatalan oleh CUR-HEART</h3>
+                            <p class="text-gray-700 mb-3">
+                                Kami berhak membatalkan sesi dalam kondisi tertentu (force majeure, sakit terapis, dll). Dalam hal ini, Anda akan diberikan pilihan:
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Reschedule ke jadwal lain tanpa biaya tambahan</li>
+                                <li>Diganti terapis lain dengan kualifikasi setara</li>
+                                <li>Full refund (100%)</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">5.4 Proses Refund</h3>
+                            <p class="text-gray-700">
+                                Refund akan diproses dalam waktu 7-14 hari kerja setelah permohonan disetujui. Refund akan dikembalikan ke metode pembayaran original atau ke rekening yang Anda tentukan.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 6 -->
+                <div id="kewajiban" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">6</span>
+                        Kewajiban Pengguna
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">6.1 Informasi yang Akurat</h3>
+                            <p class="text-gray-700">
+                                Anda wajib memberikan informasi yang akurat, lengkap, dan terkini tentang kondisi kesehatan Anda. Informasi yang tidak akurat dapat mempengaruhi efektivitas terapi dan keselamatan Anda.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">6.2 Ketepatan Waktu</h3>
+                            <p class="text-gray-700">
+                                Anda wajib hadir tepat waktu untuk sesi yang telah dijadwalkan. Keterlambatan dapat mengurangi durasi sesi tanpa pengurangan biaya. Keterlambatan lebih dari 15 menit dapat mengakibatkan pembatalan sesi tanpa refund.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">6.3 Perilaku yang Sesuai</h3>
+                            <p class="text-gray-700 mb-3">Anda wajib:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Memperlakukan terapis dan staff dengan hormat</li>
+                                <li>Tidak melakukan harassment atau perilaku tidak pantas</li>
+                                <li>Mengikuti instruksi dan rekomendasi terapis</li>
+                                <li>Menjaga kebersihan dan ketertiban (untuk sesi offline)</li>
+                                <li>Tidak merekam sesi tanpa izin tertulis</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">6.4 Larangan</h3>
+                            <p class="text-gray-700 mb-3">Anda dilarang:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                                <li>Menggunakan layanan untuk tujuan ilegal</li>
+                                <li>Menyalahgunakan platform atau mengganggu operasional</li>
+                                <li>Mencoba mengakses sistem atau data secara tidak sah</li>
+                                <li>Menyebarkan malware atau konten berbahaya</li>
+                                <li>Meniru identitas orang lain</li>
+                                <li>Menggunakan layanan jika Anda sedang di bawah pengaruh alkohol atau obat-obatan</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 7 -->
+                <div id="batasan" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">7</span>
+                        Batasan Tanggung Jawab
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div class="bg-cur-warning/10 border border-cur-warning rounded-lg p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">7.1 Disclaimer</h3>
+                            <p class="text-gray-700 mb-3">
+                                Layanan kami diberikan "sebagaimana adanya" tanpa jaminan apapun, baik tersurat maupun tersirat. Kami tidak menjamin bahwa layanan akan memenuhi kebutuhan Anda atau memberikan hasil tertentu.
+                            </p>
+                            <p class="text-gray-700">
+                                CUR-HEART tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, khusus, atau konsekuensial yang timbul dari penggunaan atau ketidakmampuan menggunakan layanan kami.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">7.2 Batasan Kewajiban</h3>
+                            <p class="text-gray-700">
+                                Dalam hal apapun, total kewajiban CUR-HEART kepada Anda tidak akan melebihi jumlah yang telah Anda bayarkan untuk layanan dalam 6 bulan terakhir.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">7.3 Keadaan Kahar (Force Majeure)</h3>
+                            <p class="text-gray-700">
+                                Kami tidak bertanggung jawab atas kegagalan atau keterlambatan dalam memenuhi kewajiban kami yang disebabkan oleh keadaan di luar kendali kami, termasuk namun tidak terbatas pada bencana alam, perang, epidemi, gangguan internet, atau peraturan pemerintah.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 8 -->
+                <div id="hukum" class="mb-12 scroll-mt-24">
+                    <h2 class="text-3xl font-bold font-poppins text-cur-primary mb-6 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-cur-primary/10 rounded-lg flex items-center justify-center text-lg">8</span>
+                        Hukum yang Berlaku
+                    </h2>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 space-y-6">
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">8.1 Yurisdiksi</h3>
+                            <p class="text-gray-700">
+                                Syarat dan Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa yang timbul akan diselesaikan di pengadilan yang berwenang di Jakarta, Indonesia.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">8.2 Penyelesaian Sengketa</h3>
+                            <p class="text-gray-700 mb-3">
+                                Jika terjadi sengketa, kami mendorong penyelesaian melalui negosiasi dan mediasi terlebih dahulu. Jika tidak tercapai kesepakatan, sengketa akan diselesaikan melalui jalur hukum yang berlaku.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">8.3 Keterpisahan</h3>
+                            <p class="text-gray-700">
+                                Jika ada ketentuan dalam Syarat dan Ketentuan ini yang dianggap tidak sah atau tidak dapat dilaksanakan, ketentuan tersebut akan dihapus dan tidak mempengaruhi validitas ketentuan lainnya.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-gray-200 pt-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">8.4 Perubahan Ketentuan</h3>
+                            <p class="text-gray-700">
+                                Kami berhak mengubah Syarat dan Ketentuan ini sewaktu-waktu. Perubahan akan efektif setelah diposting di website. Penggunaan layanan yang berkelanjutan setelah perubahan berarti Anda menyetujui perubahan tersebut.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-2xl p-8 text-white text-center">
+                    <i class="fas fa-headset text-5xl mb-4 opacity-80"></i>
+                    <h3 class="text-2xl font-bold font-poppins mb-4">Pertanyaan tentang Syarat & Ketentuan?</h3>
+                    <p class="text-white/90 mb-6">
+                        Tim legal kami siap membantu Anda memahami ketentuan ini lebih lanjut.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="mailto:legal@cur-heart.id" class="px-6 py-3 bg-white text-cur-primary rounded-lg font-semibold hover:bg-gray-100 transition">
+                            <i class="fas fa-envelope mr-2"></i> legal@cur-heart.id
+                        </a>
+                        <a href="09_contact.html" class="px-6 py-3 bg-white/10 backdrop-blur text-white rounded-lg font-semibold hover:bg-white/20 transition border-2 border-white/30">
+                            <i class="fas fa-comments mr-2"></i> Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cur-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="mb-6">
+                        <img src="assets/img/white.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                    </div>
+                    <p class="text-white/80 mb-4">
+                        Pusat hypnotherapy profesional untuk kesehatan mental yang lebih baik.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Layanan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="04_service_detail.html?id=1" class="hover:text-white transition">Stress & Anxiety</a></li>
+                        <li><a href="04_service_detail.html?id=2" class="hover:text-white transition">Trauma Healing</a></li>
+                        <li><a href="04_service_detail.html?id=3" class="hover:text-white transition">Self-Confidence</a></li>
+                        <li><a href="04_service_detail.html?id=4" class="hover:text-white transition">Sleep Therapy</a></li>
+                        <li><a href="04_service_detail.html?id=5" class="hover:text-white transition">Habit Change</a></li>
+                        <li><a href="04_service_detail.html?id=6" class="hover:text-white transition">Phobia Treatment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Perusahaan</h3>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="02_about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="05_therapists.html" class="hover:text-white transition">Tim Terapis</a></li>
+                        <li><a href="07_blog.html" class="hover:text-white transition">Artikel & Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partnership</a></li>
+                        <li><a href="09_contact.html" class="hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold font-poppins text-lg mb-6">Kontak</h3>
+                    <ul class="space-y-4 text-white/80">
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt mt-1"></i>
+                            <span>Kemang Raya No. 123<br>Jakarta Selatan 12345</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>hello@cur-heart.id</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-clock mt-1"></i>
+                            <span>Sen - Sab: 09:00 - 20:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/80 text-sm">© 2024 CUR-HEART. All rights reserved.</p>
+                <div class="flex gap-6 text-sm text-white/80">
+                    <a href="11_privacy_policy.html" class="hover:text-white transition">Kebijakan Privasi</a>
+                    <a href="12_terms_conditions.html" class="hover:text-white transition">Syarat & Ketentuan</a>
+                    <a href="10_faq.html" class="hover:text-white transition">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

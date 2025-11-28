@@ -1,0 +1,64 @@
+@startuml
+
+|Terapis|
+start
+:Login ke Sistem;
+:Lihat Dashboard;
+:Akses Daftar Sesi Hari Ini;
+
+|Sistem|
+:Tampilkan Sesi yang Sudah Dilaksanakan;
+
+|Terapis|
+:Pilih Sesi untuk Didokumentasikan;
+
+|Sistem|
+:Tampilkan Formulir Dokumentasi;
+
+|Terapis|
+:Isi Teknik yang Digunakan;
+:Isi Observasi Kondisi Klien;
+:Isi Kemajuan yang Dicapai;
+:Isi Catatan Penting;
+:Isi Tugas untuk Klien;
+:Isi Rekomendasi Sesi Berikutnya;
+
+if (Bagikan Catatan ke Klien?) then (yes)
+  :Set Flag: Shared = TRUE;
+else (no)
+  :Set Flag: Shared = FALSE;
+endif
+
+:Klik Simpan Dokumentasi;
+
+|Sistem|
+:Validasi Data Formulir;
+
+if (Data Valid?) then (yes)
+  :Simpan ke Database;
+  :Update Status Sesi: Completed;
+  :Catat Timestamp;
+  :Update Statistik Terapis;
+  
+  if (Catatan Dibagikan?) then (yes)
+    :Kirim Notifikasi ke Klien;
+    :Kirim Email dengan Link;
+  else (no)
+    :Skip Notifikasi;
+  endif
+  
+  |Terapis|
+  :Tampilkan Pesan Sukses;
+  :Kembali ke Dashboard;
+  stop
+  
+else (no)
+  :Tampilkan Error;
+  :Tampilkan Field yang Harus Diisi;
+  
+  |Terapis|
+  :Perbaiki Data;
+  stop
+endif
+
+@enduml

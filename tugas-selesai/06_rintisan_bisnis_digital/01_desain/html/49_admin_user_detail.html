@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pengguna - CUR-HEART Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="47_admin_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="48_admin_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Admin+CUR-HEART&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Admin CUR-HEART</div>
+                            <div class="text-xs text-gray-500">Administrator</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="42_admin_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="44_admin_users.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-users"></i>
+                        <span class="font-medium">Pengguna</span>
+                    </a>
+                    <a href="62_admin_therapist_verification.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-user-check"></i>
+                        <span class="font-medium">Verifikasi</span>
+                    </a>
+                    <a href="43_admin_bookings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Booking</span>
+                    </a>
+                    <a href="45_admin_financial.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Keuangan</span>
+                    </a>
+                    <a href="56_admin_reports.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="font-medium">Laporan</span>
+                    </a>
+                    <a href="57_admin_content_blog.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-newspaper"></i>
+                        <span class="font-medium">Konten</span>
+                    </a>
+                    <a href="60_admin_reviews.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-star"></i>
+                        <span class="font-medium">Ulasan</span>
+                    </a>
+                    <a href="61_admin_promo.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-tags"></i>
+                        <span class="font-medium">Pemasaran</span>
+                    </a>
+                    <a href="46_admin_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-cog"></i>
+                        <span class="font-medium">Pengaturan</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Back Button -->
+            <a href="44_admin_users.html" class="inline-flex items-center text-cur-primary hover:text-cur-secondary mb-6 transition">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Kembali ke Daftar Pengguna
+            </a>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Profile Card -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl shadow-sm p-6">
+                        <div class="text-center mb-6">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff&size=128" alt="User" class="w-32 h-32 rounded-full mx-auto mb-4">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-1">Dr. Sarah Johnson</h2>
+                            <p class="text-gray-600 mb-3">Psikolog Klinis</p>
+                            <span class="px-4 py-2 bg-cur-success/10 text-cur-success text-sm font-semibold rounded-full">
+                                <i class="fas fa-check-circle mr-1"></i>
+                                Terverifikasi
+                            </span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-envelope text-cur-primary w-5"></i>
+                                <span class="text-gray-700">sarah.johnson@curheart.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-phone text-cur-primary w-5"></i>
+                                <span class="text-gray-700">+62 812-3456-7890</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-calendar-plus text-cur-primary w-5"></i>
+                                <span class="text-gray-700">Bergabung: 15 Januari 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-clock text-cur-primary w-5"></i>
+                                <span class="text-gray-700">Terakhir aktif: 2 jam lalu</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-sm">
+                                <i class="fas fa-id-card text-cur-primary w-5"></i>
+                                <span class="text-gray-700">ID: USR-2024-001</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-gray-200 space-y-2">
+                            <a href="50_admin_user_edit.html" class="block w-full px-4 py-3 bg-cur-primary text-white font-semibold rounded-xl hover:bg-opacity-90 transition text-center">
+                                <i class="fas fa-edit mr-2"></i>
+                                Edit Pengguna
+                            </a>
+                            <button onclick="confirm('Apakah Anda yakin ingin suspend akun ini?')" class="w-full px-4 py-3 border-2 border-cur-warning text-cur-warning font-semibold rounded-xl hover:bg-cur-warning hover:text-white transition">
+                                <i class="fas fa-ban mr-2"></i>
+                                Suspend Akun
+                            </button>
+                            <button onclick="confirm('Apakah Anda yakin ingin menghapus akun ini? Tindakan ini tidak dapat dibatalkan.')" class="w-full px-4 py-3 border-2 border-cur-error text-cur-error font-semibold rounded-xl hover:bg-cur-error hover:text-white transition">
+                                <i class="fas fa-trash mr-2"></i>
+                                Hapus Akun
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Stats Card -->
+                    <div class="bg-gradient-to-br from-cur-info to-indigo-600 rounded-2xl shadow-sm p-6 text-white">
+                        <h3 class="text-lg font-bold mb-4">Statistik</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Total Sesi</span>
+                                <span class="text-2xl font-bold">147</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Rating</span>
+                                <span class="text-2xl font-bold">4.9</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Total Klien</span>
+                                <span class="text-2xl font-bold">45</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Pendapatan</span>
+                                <span class="text-2xl font-bold">125M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Tabs -->
+                    <div class="bg-white rounded-2xl shadow-sm">
+                        <div class="border-b border-gray-200">
+                            <div class="flex overflow-x-auto">
+                                <button onclick="switchTab('info')" id="infoBtn" class="px-8 py-4 text-center font-semibold border-b-3 border-cur-secondary text-cur-secondary">
+                                    Informasi
+                                </button>
+                                <button onclick="switchTab('activity')" id="activityBtn" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                                    Aktivitas
+                                </button>
+                                <button onclick="switchTab('documents')" id="documentsBtn" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                                    Dokumen
+                                </button>
+                                <button onclick="switchTab('history')" id="historyBtn" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                                    Riwayat
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Info Tab -->
+                        <div id="infoTab" class="p-6 tab-content">
+                            <div class="space-y-6">
+                                <!-- Personal Info -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Informasi Pribadi</h3>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Nama Lengkap</div>
+                                            <div class="font-semibold text-gray-800">Dr. Sarah Johnson</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Gelar</div>
+                                            <div class="font-semibold text-gray-800">M.Psi., Psikolog</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Tanggal Lahir</div>
+                                            <div class="font-semibold text-gray-800">15 Maret 1990</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Jenis Kelamin</div>
+                                            <div class="font-semibold text-gray-800">Perempuan</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Professional Info -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Informasi Profesional</h3>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">No. Lisensi</div>
+                                            <div class="font-semibold text-gray-800">PSI-12345-2020</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl">
+                                            <div class="text-sm text-gray-600 mb-1">Tahun Praktik</div>
+                                            <div class="font-semibold text-gray-800">2020 - Sekarang</div>
+                                        </div>
+                                        <div class="p-4 bg-gray-50 rounded-xl col-span-2">
+                                            <div class="text-sm text-gray-600 mb-1">Spesialisasi</div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-semibold rounded-full">Terapi Kecemasan</span>
+                                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Terapi Depresi</span>
+                                                <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">Manajemen Stres</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Account Status -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Status Akun</h3>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between p-4 bg-cur-success/5 rounded-xl">
+                                            <div class="flex items-center space-x-3">
+                                                <i class="fas fa-check-circle text-cur-success text-xl"></i>
+                                                <div>
+                                                    <div class="font-semibold text-gray-800">Email Terverifikasi</div>
+                                                    <div class="text-xs text-gray-500">15 Jan 2024, 10:30</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between p-4 bg-cur-success/5 rounded-xl">
+                                            <div class="flex items-center space-x-3">
+                                                <i class="fas fa-check-circle text-cur-success text-xl"></i>
+                                                <div>
+                                                    <div class="font-semibold text-gray-800">Dokumen Terverifikasi</div>
+                                                    <div class="text-xs text-gray-500">16 Jan 2024, 14:20</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between p-4 bg-cur-success/5 rounded-xl">
+                                            <div class="flex items-center space-x-3">
+                                                <i class="fas fa-check-circle text-cur-success text-xl"></i>
+                                                <div>
+                                                    <div class="font-semibold text-gray-800">Akun Aktif</div>
+                                                    <div class="text-xs text-gray-500">Sejak 16 Jan 2024</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Recent Activity -->
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-800 mb-4">Aktivitas Terbaru</h3>
+                                    <div class="space-y-3">
+                                        <div class="flex items-start space-x-3 p-3 bg-gray-50 rounded-xl">
+                                            <i class="fas fa-calendar-check text-cur-success mt-1"></i>
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-800">Sesi selesai dengan Budi Santoso</div>
+                                                <div class="text-xs text-gray-500">2 jam lalu</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start space-x-3 p-3 bg-gray-50 rounded-xl">
+                                            <i class="fas fa-clock text-cur-info mt-1"></i>
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-800">Update jadwal ketersediaan</div>
+                                                <div class="text-xs text-gray-500">5 jam lalu</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-start space-x-3 p-3 bg-gray-50 rounded-xl">
+                                            <i class="fas fa-star text-cur-warning mt-1"></i>
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-800">Menerima rating 5 bintang</div>
+                                                <div class="text-xs text-gray-500">1 hari lalu</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Activity Tab -->
+                        <div id="activityTab" class="p-6 tab-content hidden">
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-bold text-gray-800 mb-4">Aktivitas Terbaru</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
+                                        <div class="w-10 h-10 bg-cur-success/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-calendar-check text-cur-success"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-semibold text-gray-800">Sesi selesai dengan Budi Santoso</div>
+                                            <div class="text-sm text-gray-600 mt-1">Sesi konseling online - 60 menit</div>
+                                            <div class="text-xs text-gray-500 mt-2">2 jam lalu • 23 Nov 2025, 14:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
+                                        <div class="w-10 h-10 bg-cur-info/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-clock text-cur-info"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-semibold text-gray-800">Update jadwal ketersediaan</div>
+                                            <div class="text-sm text-gray-600 mt-1">Menambahkan slot baru untuk minggu depan</div>
+                                            <div class="text-xs text-gray-500 mt-2">5 jam lalu • 23 Nov 2025, 11:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
+                                        <div class="w-10 h-10 bg-cur-warning/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-star text-cur-warning"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-semibold text-gray-800">Menerima rating 5 bintang</div>
+                                            <div class="text-sm text-gray-600 mt-1">Dari klien: Ani Wijaya</div>
+                                            <div class="text-xs text-gray-500 mt-2">1 hari lalu • 22 Nov 2025, 16:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
+                                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-user-plus text-purple-600"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-semibold text-gray-800">Klien baru terdaftar</div>
+                                            <div class="text-sm text-gray-600 mt-1">Siti Rahayu - Sesi pertama dijadwalkan</div>
+                                            <div class="text-xs text-gray-500 mt-2">2 hari lalu • 21 Nov 2025, 09:15</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-file-alt text-blue-600"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-semibold text-gray-800">Upload dokumen baru</div>
+                                            <div class="text-sm text-gray-600 mt-1">Sertifikat pelatihan CBT</div>
+                                            <div class="text-xs text-gray-500 mt-2">3 hari lalu • 20 Nov 2025, 13:45</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Documents Tab -->
+                        <div id="documentsTab" class="p-6 tab-content hidden">
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-bold text-gray-800 mb-4">Dokumen</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="p-4 border-2 border-gray-200 rounded-xl hover:border-cur-primary transition">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <div class="font-semibold text-gray-800 truncate">Ijazah S2 Psikologi.pdf</div>
+                                                <div class="text-sm text-gray-500">2.4 MB • Upload: 15 Jan 2024</div>
+                                                <div class="mt-2">
+                                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded">Terverifikasi</span>
+                                                </div>
+                                            </div>
+                                            <button class="text-gray-400 hover:text-cur-primary">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-2 border-gray-200 rounded-xl hover:border-cur-primary transition">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <div class="font-semibold text-gray-800 truncate">Sertifikat Lisensi.pdf</div>
+                                                <div class="text-sm text-gray-500">1.8 MB • Upload: 15 Jan 2024</div>
+                                                <div class="mt-2">
+                                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded">Terverifikasi</span>
+                                                </div>
+                                            </div>
+                                            <button class="text-gray-400 hover:text-cur-primary">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-2 border-gray-200 rounded-xl hover:border-cur-primary transition">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <div class="font-semibold text-gray-800 truncate">KTP.pdf</div>
+                                                <div class="text-sm text-gray-500">0.5 MB • Upload: 15 Jan 2024</div>
+                                                <div class="mt-2">
+                                                    <span class="px-2 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded">Terverifikasi</span>
+                                                </div>
+                                            </div>
+                                            <button class="text-gray-400 hover:text-cur-primary">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-2 border-gray-200 rounded-xl hover:border-cur-primary transition">
+                                        <div class="flex items-start space-x-3">
+                                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                <i class="fas fa-file-pdf text-red-600 text-xl"></i>
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <div class="font-semibold text-gray-800 truncate">Sertifikat CBT.pdf</div>
+                                                <div class="text-sm text-gray-500">1.2 MB • Upload: 20 Nov 2025</div>
+                                                <div class="mt-2">
+                                                    <span class="px-2 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded">Pending</span>
+                                                </div>
+                                            </div>
+                                            <button class="text-gray-400 hover:text-cur-primary">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- History Tab -->
+                        <div id="historyTab" class="p-6 tab-content hidden">
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-bold text-gray-800 mb-4">Riwayat Perubahan</h3>
+                                <div class="relative">
+                                    <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                                    <div class="space-y-6">
+                                        <div class="relative pl-10">
+                                            <div class="absolute left-0 w-8 h-8 bg-cur-success rounded-full flex items-center justify-center">
+                                                <i class="fas fa-check text-white text-sm"></i>
+                                            </div>
+                                            <div class="bg-gray-50 p-4 rounded-xl">
+                                                <div class="font-semibold text-gray-800">Akun diaktifkan</div>
+                                                <div class="text-sm text-gray-600 mt-1">Status akun diubah menjadi aktif</div>
+                                                <div class="text-xs text-gray-500 mt-2">16 Jan 2024, 15:00 • oleh Admin System</div>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-10">
+                                            <div class="absolute left-0 w-8 h-8 bg-cur-info rounded-full flex items-center justify-center">
+                                                <i class="fas fa-check-double text-white text-sm"></i>
+                                            </div>
+                                            <div class="bg-gray-50 p-4 rounded-xl">
+                                                <div class="font-semibold text-gray-800">Dokumen terverifikasi</div>
+                                                <div class="text-sm text-gray-600 mt-1">Semua dokumen telah diverifikasi dan disetujui</div>
+                                                <div class="text-xs text-gray-500 mt-2">16 Jan 2024, 14:20 • oleh Admin Verifikasi</div>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-10">
+                                            <div class="absolute left-0 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                                                <i class="fas fa-file-upload text-white text-sm"></i>
+                                            </div>
+                                            <div class="bg-gray-50 p-4 rounded-xl">
+                                                <div class="font-semibold text-gray-800">Upload dokumen</div>
+                                                <div class="text-sm text-gray-600 mt-1">Ijazah, sertifikat lisensi, dan KTP telah diupload</div>
+                                                <div class="text-xs text-gray-500 mt-2">15 Jan 2024, 16:45 • oleh Dr. Sarah Johnson</div>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-10">
+                                            <div class="absolute left-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                                <i class="fas fa-envelope-open text-white text-sm"></i>
+                                            </div>
+                                            <div class="bg-gray-50 p-4 rounded-xl">
+                                                <div class="font-semibold text-gray-800">Email terverifikasi</div>
+                                                <div class="text-sm text-gray-600 mt-1">Email sarah.johnson@curheart.com telah diverifikasi</div>
+                                                <div class="text-xs text-gray-500 mt-2">15 Jan 2024, 10:30 • oleh System</div>
+                                            </div>
+                                        </div>
+                                        <div class="relative pl-10">
+                                            <div class="absolute left-0 w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center">
+                                                <i class="fas fa-user-plus text-white text-sm"></i>
+                                            </div>
+                                            <div class="bg-gray-50 p-4 rounded-xl">
+                                                <div class="font-semibold text-gray-800">Akun dibuat</div>
+                                                <div class="text-sm text-gray-600 mt-1">Pendaftaran akun terapis baru</div>
+                                                <div class="text-xs text-gray-500 mt-2">15 Jan 2024, 10:15 • oleh Dr. Sarah Johnson</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+            
+            // Remove active state from all buttons
+            const buttons = ['infoBtn', 'activityBtn', 'documentsBtn', 'historyBtn'];
+            buttons.forEach(btnId => {
+                const btn = document.getElementById(btnId);
+                btn.classList.remove('border-b-3', 'border-cur-secondary', 'text-cur-secondary');
+                btn.classList.add('text-gray-500');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + 'Tab').classList.remove('hidden');
+            
+            // Add active state to selected button
+            const activeBtn = document.getElementById(tabName + 'Btn');
+            activeBtn.classList.add('border-b-3', 'border-cur-secondary', 'text-cur-secondary');
+            activeBtn.classList.remove('text-gray-500');
+        }
+    </script>
+</body>
+</html>

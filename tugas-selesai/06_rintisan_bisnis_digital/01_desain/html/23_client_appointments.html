@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janji Temu - CUR-HEART</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-accent': '#FFB6B9',
+                        'cur-success': '#00D26A',
+                        'cur-warning': '#FFA94D',
+                        'cur-error': '#FF6B7A',
+                        'cur-info': '#667BC6',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif';
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .tab-active {
+            border-bottom: 3px solid #FF6B7A;
+            color: #FF6B7A;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="01_homepage.html" class="flex items-center">
+                    <img src="assets/img/color.png" alt="CUR-HEART Logo" class="h-10 w-auto">
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="28_client_notifications.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-bell text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <a href="26_client_messages.html" class="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-cur-error rounded-full"></span>
+                    </a>
+                    <div class="flex items-center space-x-3 pl-4 border-l border-gray-200">
+                        <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=1E0E62&color=fff" alt="Profile" class="w-10 h-10 rounded-full">
+                        <div class="hidden md:block">
+                            <div class="text-sm font-semibold text-gray-800">Budi Santoso</div>
+                            <div class="text-xs text-gray-500">Klien</div>
+                        </div>
+                        <button class="text-gray-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white min-h-screen shadow-sm hidden md:block">
+            <div class="p-6">
+                <nav class="space-y-2">
+                    <a href="17_client_dashboard.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-home"></i>
+                        <span class="font-medium">Dashboard</span>
+                    </a>
+                    <a href="18_booking_step1.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span class="font-medium">Booking Sesi</span>
+                    </a>
+                    <a href="23_client_appointments.html" class="flex items-center space-x-3 px-4 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white rounded-xl">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="font-medium">Janji Temu</span>
+                    </a>
+                    <a href="25_client_progress.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="font-medium">Progress Saya</span>
+                    </a>
+                    <a href="26_client_messages.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">Pesan</span>
+                    </a>
+                    <div class="pt-4 mt-4 border-t border-gray-200">
+                        <a href="27_client_settings.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-cog"></i>
+                            <span class="font-medium">Pengaturan</span>
+                        </a>
+                        <a href="13_login.html" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-xl transition">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="font-medium">Keluar</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 lg:p-8">
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">Janji Temu</h1>
+                        <p class="text-gray-600">Kelola semua sesi terapi Anda</p>
+                    </div>
+                    <a href="18_booking_step1.html" class="px-6 py-3 bg-gradient-to-r from-cur-primary to-cur-secondary text-white font-semibold rounded-xl hover:shadow-lg transition">
+                        <i class="fas fa-plus mr-2"></i>
+                        Booking Baru
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="bg-white rounded-2xl shadow-sm mb-6">
+                <div class="border-b border-gray-200">
+                    <div class="flex overflow-x-auto">
+                        <button onclick="switchTab('upcoming')" id="upcomingTab" class="px-8 py-4 text-center font-semibold transition tab-active">
+                            Mendatang
+                        </button>
+                        <button onclick="switchTab('completed')" id="completedTab" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                            Selesai
+                        </button>
+                        <button onclick="switchTab('cancelled')" id="cancelledTab" class="px-8 py-4 text-center font-semibold text-gray-500 hover:text-cur-secondary transition">
+                            Dibatalkan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Appointments -->
+            <div id="upcomingContent" class="space-y-4">
+                <!-- Appointment 1 - Today -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 border-2 border-cur-warning/30">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-cur-warning/10 text-cur-warning text-xs font-semibold rounded-full">
+                            <i class="fas fa-clock mr-1"></i>
+                            Hari Ini - 2 jam lagi
+                        </span>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <!-- Therapist Info -->
+                        <div class="flex items-center space-x-4 flex-1">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-16 h-16 rounded-full flex-shrink-0">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Dr. Sarah Johnson</h3>
+                                <p class="text-sm text-gray-600">Terapi Kecemasan</p>
+                                <div class="flex items-center space-x-1 text-cur-warning mt-1">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star-half-alt text-xs"></i>
+                                    <span class="text-xs text-gray-600 ml-1">(4.9)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date & Time -->
+                        <div class="flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-calendar text-cur-primary"></i>
+                                <span>25 Okt 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-cur-primary"></i>
+                                <span>14:00 - 15:00</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-cur-primary"></i>
+                                <span>Online</span>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="flex gap-2">
+                            <a href="24_appointment_detail.html" class="px-4 py-2 bg-cur-primary text-white text-sm font-semibold rounded-lg hover:bg-opacity-90 transition">
+                                Detail
+                            </a>
+                            <button class="px-4 py-2 border-2 border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-50 transition">
+                                Reschedule
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment 2 - Upcoming -->
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                            <i class="fas fa-check-circle mr-1"></i>
+                            Terkonfirmasi
+                        </span>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="flex items-center space-x-4 flex-1">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=1E0E62&color=fff" alt="Therapist" class="w-16 h-16 rounded-full flex-shrink-0">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Michael Chen</h3>
+                                <p class="text-sm text-gray-600">Manajemen Stres</p>
+                                <div class="flex items-center space-x-1 text-cur-warning mt-1">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <span class="text-xs text-gray-600 ml-1">(5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-calendar text-cur-primary"></i>
+                                <span>30 Okt 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-cur-primary"></i>
+                                <span>10:00 - 11:00</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-cur-primary"></i>
+                                <span>Online</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <a href="24_appointment_detail.html" class="px-4 py-2 bg-cur-primary text-white text-sm font-semibold rounded-lg hover:bg-opacity-90 transition">
+                                Detail
+                            </a>
+                            <button class="px-4 py-2 border-2 border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-50 transition">
+                                Reschedule
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment 3 -->
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-cur-success/10 text-cur-success text-xs font-semibold rounded-full">
+                            <i class="fas fa-check-circle mr-1"></i>
+                            Terkonfirmasi
+                        </span>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="flex items-center space-x-4 flex-1">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-16 h-16 rounded-full flex-shrink-0">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Dr. Sarah Johnson</h3>
+                                <p class="text-sm text-gray-600">Terapi Kecemasan</p>
+                                <div class="flex items-center space-x-1 text-cur-warning mt-1">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star-half-alt text-xs"></i>
+                                    <span class="text-xs text-gray-600 ml-1">(4.9)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-calendar text-cur-primary"></i>
+                                <span>5 Nov 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-cur-primary"></i>
+                                <span>14:00 - 15:00</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-cur-primary"></i>
+                                <span>Online</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <a href="24_appointment_detail.html" class="px-4 py-2 bg-cur-primary text-white text-sm font-semibold rounded-lg hover:bg-opacity-90 transition">
+                                Detail
+                            </a>
+                            <button class="px-4 py-2 border-2 border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-50 transition">
+                                Reschedule
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Completed Appointments (Hidden by default) -->
+            <div id="completedContent" class="space-y-4 hidden">
+                <div class="bg-white rounded-2xl shadow-sm p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-full">
+                            <i class="fas fa-check mr-1"></i>
+                            Selesai
+                        </span>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="flex items-center space-x-4 flex-1">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Sarah+Johnson&background=667BC6&color=fff" alt="Therapist" class="w-16 h-16 rounded-full flex-shrink-0">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Dr. Sarah Johnson</h3>
+                                <p class="text-sm text-gray-600">Terapi Kecemasan</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-calendar text-gray-400"></i>
+                                <span>18 Okt 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-gray-400"></i>
+                                <span>14:00 - 15:00</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <a href="24_appointment_detail.html" class="px-4 py-2 border-2 border-cur-primary text-cur-primary text-sm font-semibold rounded-lg hover:bg-cur-primary hover:text-white transition">
+                                Lihat Detail
+                            </a>
+                            <button class="px-4 py-2 bg-cur-warning text-white text-sm font-semibold rounded-lg hover:bg-opacity-90 transition">
+                                <i class="fas fa-star mr-1"></i>
+                                Beri Review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancelled Appointments (Hidden by default) -->
+            <div id="cancelledContent" class="space-y-4 hidden">
+                <div class="bg-white rounded-2xl shadow-sm p-6 opacity-60">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-cur-error/10 text-cur-error text-xs font-semibold rounded-full">
+                            <i class="fas fa-times-circle mr-1"></i>
+                            Dibatalkan
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="flex items-center space-x-4 flex-1">
+                            <img src="https://ui-avatars.com/api/?name=Amanda+Putri&background=FF6B7A&color=fff" alt="Therapist" class="w-16 h-16 rounded-full flex-shrink-0">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Amanda Putri, M.Psi</h3>
+                                <p class="text-sm text-gray-600">Terapi Kecemasan</p>
+                                <p class="text-xs text-cur-error mt-1">Dibatalkan oleh klien</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-calendar text-gray-400"></i>
+                                <span>10 Okt 2024</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-gray-400"></i>
+                                <span>16:00 - 17:00</span>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <button class="px-4 py-2 border-2 border-cur-primary text-cur-primary text-sm font-semibold rounded-lg hover:bg-cur-primary hover:text-white transition">
+                                Booking Ulang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            // Remove active class from all tabs
+            document.querySelectorAll('[id$="Tab"]').forEach(t => {
+                t.classList.remove('tab-active', 'text-cur-secondary');
+                t.classList.add('text-gray-500');
+            });
+
+            // Hide all content
+            document.getElementById('upcomingContent').classList.add('hidden');
+            document.getElementById('completedContent').classList.add('hidden');
+            document.getElementById('cancelledContent').classList.add('hidden');
+
+            // Show selected content and activate tab
+            if (tab === 'upcoming') {
+                document.getElementById('upcomingTab').classList.add('tab-active');
+                document.getElementById('upcomingTab').classList.remove('text-gray-500');
+                document.getElementById('upcomingContent').classList.remove('hidden');
+            } else if (tab === 'completed') {
+                document.getElementById('completedTab').classList.add('tab-active');
+                document.getElementById('completedTab').classList.remove('text-gray-500');
+                document.getElementById('completedContent').classList.remove('hidden');
+            } else if (tab === 'cancelled') {
+                document.getElementById('cancelledTab').classList.add('tab-active');
+                document.getElementById('cancelledTab').classList.remove('text-gray-500');
+                document.getElementById('cancelledContent').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
