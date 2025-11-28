@@ -406,7 +406,7 @@ Antarmuka Pengguna (*User Interface*/UI) adalah elemen visual yang pengguna guna
 
 ## 2.2 Penelitian Terkait
 
-Beberapa penelitian terkait yang relevan dengan pengembangan sistem informasi manajemen reservasi dan terapi telah dilakukan sebelumnya. Penelitian-penelitian ini menjadi referensi dan landasan untuk identifikasi gap serta differentiation dari proyek CUR-HEART.
+Beberapa penelitian terkait yang relevan dengan pengembangan sistem informasi layanan terapi mental berbasis digital telah dilakukan sebelumnya. Penelitian-penelitian ini menjadi referensi dan landasan untuk identifikasi gap serta differentiation dari proyek CUR-HEART.
 
 ### 2.2.1 Penelitian tentang Sistem Informasi Kesehatan
 

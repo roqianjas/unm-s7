@@ -21,7 +21,7 @@ Namun, dalam menjalankan operasionalnya, CUR-HEART menghadapi berbagai tantangan
 
 Tidak adanya sistem informasi terpadu menyebabkan CUR-HEART kesulitan menganalisis data operasional seperti tingkat hunian terapis, layanan yang diminati, aliran pendapatan, hingga kepuasan klien. Hal ini menghambat pengambilan keputusan strategis berbasis data. Klien juga tidak memiliki platform yang memudahkan mereka melihat informasi layanan, profil terapis, ketersediaan jadwal, riwayat reservasi, serta pelacakan kemajuan terapi secara mandiri.
 
-Pengembangan sistem informasi manajemen reservasi dan terapi berbasis web menjadi solusi yang sangat diperlukan. Sistem informasi dapat mengotomatisasi proses bisnis, meningkatkan akurasi data, memfasilitasi komunikasi, serta menyediakan dasbor pemantauan untuk pengambilan keputusan. Studi literatur menunjukkan implementasi sistem informasi di sektor layanan kesehatan dapat meningkatkan efisiensi operasional hingga 40%, mengurangi kesalahan administrasi hingga 60%, dan meningkatkan kepuasan pelanggan hingga 35%.
+Pengembangan sistem informasi layanan terapi mental berbasis digital menjadi solusi yang sangat diperlukan. Sistem informasi dapat mengotomatisasi proses bisnis, meningkatkan akurasi data, memfasilitasi komunikasi, serta menyediakan dasbor pemantauan untuk pengambilan keputusan. Studi literatur menunjukkan implementasi sistem informasi di sektor layanan kesehatan dapat meningkatkan efisiensi operasional hingga 40%, mengurangi kesalahan administrasi hingga 60%, dan meningkatkan kepuasan pelanggan hingga 35%.
 
 Proyek ini mengembangkan sistem informasi berbasis web menggunakan Laravel sebagai kerangka kerja utama dan Tailwind CSS untuk desain antarmuka, dengan pendekatan Siklus Hidup Pengembangan Sistem (*System Development Life Cycle*/SDLC) model air terjun (*waterfall*). Sistem yang dihasilkan diharapkan dapat memberikan solusi komprehensif untuk manajemen operasional CUR-HEART, meningkatkan pengalaman pengguna, serta mendukung pengambilan keputusan berbasis data untuk pengembangan bisnis berkelanjutan.
 
@@ -63,7 +63,7 @@ Berdasarkan analisis kondisi eksisting pada CUR-HEART melalui observasi, wawanca
 
 **[GAMBAR 1.3 - Perbandingan Reservasi Manual vs Digital]**
 
-Permasalahan-permasalahan tersebut secara kumulatif menyebabkan penurunan efisiensi operasional, potensi kehilangan pendapatan, risiko reputasi, terhambatnya skalabilitas bisnis, dan hilangnya peluang optimisasi. Oleh karena itu, pengembangan sistem informasi manajemen reservasi dan terapi berbasis web yang terpadu, aman, dan mudah digunakan menjadi kebutuhan mendesak.
+Permasalahan-permasalahan tersebut secara kumulatif menyebabkan penurunan efisiensi operasional, potensi kehilangan pendapatan, risiko reputasi, terhambatnya skalabilitas bisnis, dan hilangnya peluang optimisasi. Oleh karena itu, pengembangan sistem informasi layanan terapi mental berbasis digital yang terpadu, aman, dan mudah digunakan menjadi kebutuhan mendesak.
 
 ## 1.3 Ruang Lingkup
 

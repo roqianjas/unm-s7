@@ -3,7 +3,7 @@
 
 ## 3.1 Tahapan Penelitian
 
-Penelitian dan pengembangan sistem informasi manajemen reservasi dan terapi CUR-HEART menggunakan pendekatan ***System Development Life Cycle* (SDLC)** dengan model ***Waterfall***. Model ini dipilih karena karakteristik proyek yang memiliki kebutuhan jelas, waktu yang tetap (semester akademik), dan memerlukan dokumentasi yang komprehensif untuk keperluan akademik. Tahapan penelitian terdiri dari lima fase utama yang dilaksanakan secara berurutan dengan keluaran yang terdefinisi jelas di setiap fase.
+Penelitian dan pengembangan CUR-HEART: Inovasi Sistem Informasi Layanan Terapi Mental Berbasis Digital menggunakan pendekatan ***System Development Life Cycle* (SDLC)** dengan model ***Waterfall***. Model ini dipilih karena karakteristik proyek yang memiliki kebutuhan jelas, waktu yang tetap (semester akademik), dan memerlukan dokumentasi yang komprehensif untuk keperluan akademik. Tahapan penelitian terdiri dari lima fase utama yang dilaksanakan secara berurutan dengan keluaran yang terdefinisi jelas di setiap fase.
 
 ---
 

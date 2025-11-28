@@ -1,5 +1,5 @@
 # DAFTAR PUSTAKA
-## Laporan Capstone Project - Sistem Informasi CUR-HEART
+## Laporan Capstone Project - CUR-HEART: Inovasi Sistem Informasi Layanan Terapi Mental Berbasis Digital
 
 ---
 

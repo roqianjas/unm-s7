@@ -1,5 +1,5 @@
 # DAFTAR ISI, DAFTAR GAMBAR, DAN DAFTAR TABEL
-## Laporan Capstone Project - Sistem Informasi CUR-HEART
+## Laporan Capstone Project - CUR-HEART: Inovasi Sistem Informasi Layanan Terapi Mental Berbasis Digital
 
 ---
 

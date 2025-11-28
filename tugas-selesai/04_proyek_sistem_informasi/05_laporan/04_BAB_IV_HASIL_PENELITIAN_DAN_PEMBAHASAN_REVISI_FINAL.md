@@ -3,7 +3,7 @@
 
 ## 4.1. INISIASI PROYEK
 
-Proyek pengembangan Sistem Informasi Manajemen Reservasi dan Terapi CUR-HEART diinisiasi berdasarkan kebutuhan untuk mengoptimalkan operasional pusat layanan hipnoterapi dan kesehatan mental. CUR-HEART (*Hypnotherapy & Mind Wellness Center*) mengalami pertumbuhan signifikan dalam jumlah klien dan terapis, namun sistem manual yang digunakan menghambat efisiensi dan kualitas layanan.
+Proyek pengembangan CUR-HEART: Inovasi Sistem Informasi Layanan Terapi Mental Berbasis Digital diinisiasi berdasarkan kebutuhan untuk mengoptimalkan operasional pusat layanan hipnoterapi dan kesehatan mental. CUR-HEART (*Hypnotherapy & Mind Wellness Center*) mengalami pertumbuhan signifikan dalam jumlah klien dan terapis, namun sistem manual yang digunakan menghambat efisiensi dan kualitas layanan.
 
 ### 4.1.1 Latar Belakang Masalah
 
