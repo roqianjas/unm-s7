@@ -37,6 +37,10 @@ Sistem memberikan dampak terukur kepada CUR-HEART dengan peningkatan efisiensi o
 
 Sistem menerapkan teori dan praktik terbaik dari berbagai bidang: Sistem Informasi (sistem sosio-teknis, rantai nilai informasi), Manajemen Proyek PMBOK (10 bidang pengetahuan, piagam proyek, WBS, Gantt, manajemen risiko), Desain Basis Data (ERD, normalisasi 3NF, pengindeksan), Rekayasa Perangkat Lunak (pola MVC, prinsip SOLID, standar PSR-12), UX Design (desain *user-centered*, heuristik Nielsen, desain responsif), Keamanan (OWASP Top 10, *defense-in-depth*, enkripsi), dan Praktik Hipnoterapi (pedoman etika, kerahasiaan klien, dokumentasi sesi). Penerapan teori ini memastikan sistem berkualitas tinggi dan sesuai standar industri.
 
+**8. Inovasi dan Diferensiasi**
+
+Proyek ini menghadirkan inovasi signifikan sebagai platform manajemen hipnoterapi pertama di Indonesia yang dirancang khusus untuk layanan terapi mental. Inovasi utama meliputi fitur dokumentasi sesi terstruktur dengan metrik psikologis, pelacakan kemajuan klien berbasis visualisasi data, desain antarmuka yang mempertimbangkan aspek psikologis pengguna (palet warna menenangkan, navigasi intuitif), integrasi pembayaran digital lengkap, dan model bisnis *scalable* yang terjangkau untuk UKM kesehatan mental. Sistem ini membuktikan bahwa transformasi digital dapat diimplementasikan dengan investasi terjangkau namun tetap menghasilkan dampak bisnis signifikan dengan ROI 1.743%.
+
 ### 5.1.2 Dampak dan Kontribusi Proyek
 
 Proyek *capstone* ini memberikan kontribusi signifikan dalam beberapa aspek:
@@ -67,9 +71,9 @@ Kesuksesan proyek bergantung pada lima pilar: teknologi yang tepat (Laravel), ke
 
 Proyek *capstone* "CUR-HEART: Inovasi Sistem Informasi Layanan Terapi Mental Berbasis Digital" telah berhasil mencapai seluruh tujuan yang ditetapkan dengan hasil yang melampaui ekspektasi. Sistem yang dihasilkan bersifat fungsional dengan semua fitur terimplementasi dan berfungsi baik, ramah pengguna dengan antarmuka intuitif, aman dengan *best practices* keamanan, berkinerja tinggi dengan waktu respons kurang dari 2 detik, dapat dikembangkan dengan arsitektur yang mendukung pertumbuhan bisnis, terdokumentasi dengan baik, dan berharga dengan ROI terukur 1.743% dalam 5 tahun.
 
-Proyek ini membuktikan bahwa dengan metodologi yang tepat (*Waterfall* SDLC), teknologi yang sesuai (Laravel, PHP, MySQL, Tailwind CSS), tim yang berkomitmen, dan pemangku kepentingan yang terlibat, bahkan proyek dengan garis waktu dan anggaran terbatas dapat menghasilkan sistem berkualitas tinggi yang memberikan nilai signifikan kepada bisnis.
+Sebagai platform manajemen hipnoterapi pertama di Indonesia yang dirancang khusus untuk layanan terapi mental, proyek ini membuktikan bahwa inovasi tidak selalu memerlukan teknologi kompleks atau anggaran besar. Dengan metodologi yang tepat (*Waterfall* SDLC), teknologi yang sesuai (Laravel, PHP, MySQL, Tailwind CSS), pendekatan *user-centered* yang mempertimbangkan aspek psikologis pengguna, tim yang berkomitmen, dan pemangku kepentingan yang terlibat, sistem berkualitas tinggi yang memberikan nilai signifikan dapat dihasilkan bahkan dengan keterbatasan waktu dan anggaran.
 
-Lebih dari sekadar memenuhi persyaratan akademik, proyek ini telah memberikan dampak bisnis nyata kepada CUR-HEART, pengalaman belajar yang berharga kepada tim pengembang, dan kontribusi kepada kumpulan pengetahuan dalam bidang sistem informasi kesehatan.
+Lebih dari sekadar memenuhi persyaratan akademik, proyek ini telah memberikan dampak bisnis nyata kepada CUR-HEART, pengalaman belajar yang berharga kepada tim pengembang, dan kontribusi kepada kumpulan pengetahuan dalam bidang sistem informasi kesehatan. Proyek ini juga menjadi bukti bahwa transformasi digital layanan kesehatan mental dapat diimplementasikan secara terjangkau dan berkelanjutan, membuka peluang bagi UKM kesehatan mental lainnya untuk mengadopsi pendekatan serupa.
 
 ---
 
