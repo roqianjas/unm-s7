@@ -3,84 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide 1 - Judul | Pitch Deck CUR-HEART</title>
+    <title>CUR-HEART Pitch Deck</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-white min-h-screen flex items-center justify-center p-8">
-    <div class="max-w-6xl w-full">
-        <div class="text-center mb-12">
-            <div class="inline-block mb-6">
-                <img src="assets/img/color.png" alt="CurHeart Logo" class="h-32 mx-auto">
-            </div>
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                <span class="text-[#1E0E62]">CUR-HEART</span>
-            </h1>
-            <p class="text-2xl text-[#FF6B7A] font-semibold mb-2">
-                Hypnotherapy & Mind Wellness Center
-            </p>
-            <p class="text-xl text-gray-600 mb-8">
-                Transformasi Mental Mendalam Melalui Hipnoterapi Modern
-            </p>
-        </div>
+<body class="font-inter bg-white min-h-screen flex items-center justify-center p-8">
+    <div class="max-w-5xl w-full text-center">
+        <img src="assets/img/color.png" alt="CurHeart Logo" class="h-24 mx-auto mb-8">
+        
+        <h1 class="text-6xl font-bold font-poppins text-cur-primary mb-4">
+            CUR-HEART
+        </h1>
+        
+        <p class="text-2xl text-cur-secondary font-semibold mb-12">
+            Hypnotherapy & Mind Wellness Center
+        </p>
 
-        <div class="grid md:grid-cols-3 gap-6 mb-8">
-            <div class="bg-gray-50 rounded-2xl p-6 text-center border border-gray-200">
-                <div class="text-5xl font-bold text-[#1E0E62] mb-2">54 Juta</div>
-                <div class="text-gray-600 text-sm font-semibold">Orang Membutuhkan Layanan Kesehatan Mental</div>
+        <div class="grid grid-cols-3 gap-8 mb-16">
+            <div>
+                <div class="text-5xl font-bold text-cur-primary mb-2">54 Juta</div>
+                <div class="text-gray-600">Pasar Potensial</div>
             </div>
-            <div class="bg-gray-50 rounded-2xl p-6 text-center border border-gray-200">
-                <div class="text-5xl font-bold text-[#FF6B7A] mb-2">Rp 8 M</div>
-                <div class="text-gray-600 text-sm font-semibold">Target Pendapatan Tahun 3</div>
+            <div>
+                <div class="text-5xl font-bold text-cur-secondary mb-2">Rp 8 M</div>
+                <div class="text-gray-600">Target Tahun 3</div>
             </div>
-            <div class="bg-gray-50 rounded-2xl p-6 text-center border border-gray-200">
-                <div class="text-5xl font-bold text-[#00D26A] mb-2">3,5x</div>
-                <div class="text-gray-600 text-sm font-semibold">Proyeksi ROI untuk Investor</div>
+            <div>
+                <div class="text-5xl font-bold text-cur-primary mb-2">3,5x</div>
+                <div class="text-gray-600">ROI Investor</div>
             </div>
         </div>
 
-        <div class="bg-gray-50 rounded-2xl p-8 mb-8 border border-gray-200">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Disusun Oleh</h2>
-            <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-8 inline-block">
+            <div class="flex items-center justify-center gap-12">
                 <div class="text-center">
-                    <div class="bg-[#1E0E62] rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center">
-                        <span class="text-3xl font-bold text-white">R</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900">Roki Anjas</h3>
-                    <p class="text-[#1E0E62] text-sm font-semibold">11250066</p>
+                    <div class="w-16 h-16 bg-cur-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-2 mx-auto">R</div>
+                    <div class="font-semibold">Roki Anjas</div>
+                    <div class="text-sm text-gray-600">11250066</div>
                 </div>
                 <div class="text-center">
-                    <div class="bg-[#FF6B7A] rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center">
-                        <span class="text-3xl font-bold text-white">S</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900">Susanto</h3>
-                    <p class="text-[#FF6B7A] text-sm font-semibold">11250068</p>
+                    <div class="w-16 h-16 bg-cur-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-2 mx-auto">S</div>
+                    <div class="font-semibold">Susanto</div>
+                    <div class="text-sm text-gray-600">11250068</div>
                 </div>
                 <div class="text-center">
-                    <div class="bg-[#FFA94D] rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center">
-                        <span class="text-3xl font-bold text-white">F</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900">Fahruroji</h3>
-                    <p class="text-[#FFA94D] text-sm font-semibold">11250085</p>
+                    <div class="w-16 h-16 bg-cur-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-2 mx-auto">F</div>
+                    <div class="font-semibold">Fahruroji</div>
+                    <div class="text-sm text-gray-600">11250085</div>
                 </div>
             </div>
         </div>
 
-        <div class="text-center text-gray-600">
-            <p class="text-lg font-semibold mb-1 text-gray-900">Rintisan Bisnis Digital</p>
-            <p class="text-sm">Program Studi Sistem Informasi (S1)</p>
-            <p class="text-sm">Universitas Nusa Mandiri</p>
-            <p class="text-sm mt-2">2025</p>
+        <div class="mt-12 text-gray-600">
+            <p class="font-semibold">Rintisan Bisnis Digital</p>
+            <p class="text-sm">Universitas Nusa Mandiri • 2025</p>
         </div>
     </div>
 
-    <a href="INDEX.html" class="fixed left-4 top-4 bg-gray-100 text-gray-900 px-4 py-2 rounded-full shadow-lg hover:bg-gray-200 transition-all z-50 text-sm font-semibold">
-        ← Indeks
-    </a>
-    <a href="slide-02-permasalahan.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full shadow-lg hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
+    <a href="INDEX.html" class="fixed left-4 top-4 text-gray-600 hover:text-cur-primary">← Indeks</a>
+    <a href="slide-02-permasalahan.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-cur-primary text-white p-4 rounded-full hover:bg-cur-primary/90">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
         </svg>
