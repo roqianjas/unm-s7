@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white min-h-screen flex items-center justify-center p-8">
+    <div class="max-w-7xl w-full text-center">
+        <img src="assets/img/color.png" alt="CurHeart Logo" class="h-24 mx-auto mb-12">
+        
+        <h1 class="text-7xl font-bold font-poppins text-cur-primary mb-6">
+            Terima Kasih
+        </h1>
+        
+        <p class="text-3xl text-gray-600 mb-16">
+            Mari Bersama Mengubah Kesehatan Mental Indonesia
+        </p>
+
+        <div class="grid grid-cols-3 gap-12 mb-16">
+            <div class="bg-gray-50 rounded-3xl p-10">
+                <div class="text-6xl font-bold text-cur-primary mb-3">54 Juta</div>
+                <div class="text-lg text-gray-600">Pasar Potensial</div>
+            </div>
+            <div class="bg-gray-50 rounded-3xl p-10">
+                <div class="text-6xl font-bold text-cur-secondary mb-3 whitespace-nowrap">Rp 1,5 M</div>
+                <div class="text-lg text-gray-600">Investasi Dibutuhkan</div>
+            </div>
+            <div class="bg-gray-50 rounded-3xl p-10">
+                <div class="text-6xl font-bold text-cur-primary mb-3">3,5x</div>
+                <div class="text-lg text-gray-600">ROI dalam 3 Tahun</div>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-3xl p-12 mb-12">
+            <h2 class="text-3xl font-bold text-cur-primary mb-8">Hubungi Kami</h2>
+            <div class="space-y-3 text-xl text-gray-700">
+                <p>info@curheart.id</p>
+                <p>+62 812-3456-7890</p>
+                <p>www.curheart.id</p>
+            </div>
+        </div>
+
+        <p class="text-gray-500">
+            Universitas Nusa Mandiri • Rintisan Bisnis Digital • 2025
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                window.location.href = 'slide-10-pencapaian-rencana.html';
+            } else if (e.key === 'Escape') {
+                window.location.href = 'INDEX.html';
+            }
+        });
+    </script>
+</body>
+</html>

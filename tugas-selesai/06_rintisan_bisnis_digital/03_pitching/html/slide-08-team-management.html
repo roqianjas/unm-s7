@@ -87,15 +87,16 @@
         </div>
     </div>
 
-    <a href="slide-07-analisis-kompetisi.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-cur-primary text-white p-4 rounded-full hover:bg-cur-primary/90">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-        </svg>
-    </a>
-    <a href="slide-09-proyeksi-keuangan.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-cur-primary text-white p-4 rounded-full hover:bg-cur-primary/90">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                window.location.href = 'slide-07-analisis-kompetisi.html';
+            } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                window.location.href = 'slide-09-proyeksi-keuangan.html';
+            } else if (e.key === 'Escape') {
+                window.location.href = 'INDEX.html';
+            }
+        });
+    </script>
 </body>
 </html>

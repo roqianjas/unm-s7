@@ -76,11 +76,14 @@
         </div>
     </div>
 
-    <a href="INDEX.html" class="fixed left-4 top-4 text-gray-600 hover:text-cur-primary">← Indeks</a>
-    <a href="slide-02-permasalahan.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-cur-primary text-white p-4 rounded-full hover:bg-cur-primary/90">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                window.location.href = 'slide-02-permasalahan.html';
+            } else if (e.key === 'Escape') {
+                window.location.href = 'INDEX.html';
+            }
+        });
+    </script>
 </body>
 </html>
