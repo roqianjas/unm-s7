@@ -286,38 +286,34 @@ Identifikasi, analisis, dan strategi mitigasi risiko proyek:
 
 ### 4.2.7 Perencanaan Komunikasi (*Communication*)
 
-Strategi komunikasi untuk memastikan informasi mengalir dengan efektif:
+Strategi komunikasi untuk memastikan informasi mengalir dengan efektif kepada seluruh pemangku kepentingan proyek.
 
-**A. Komunikasi Internal Tim:**
-- **Daily Standup**: Chat group WhatsApp setiap pagi (15 menit)
-  - What did I do yesterday?
-  - What will I do today?
-  - Any blockers?
+**Tabel 4.5 Matriks Perencanaan Komunikasi**
 
-- **Weekly Team Meeting**: Setiap Senin pukul 19.00 WIB via Google Meet (1-2 jam)
-  - Review progress vs plan
-  - Demo fitur yang selesai
-  - Planning untuk minggu depan
-  - Risk review
+| No | Jenis Komunikasi | Pemangku Kepentingan | Frekuensi | Media | Durasi | Tujuan |
+|----|------------------|---------------------|-----------|-------|--------|--------|
+| **A. KOMUNIKASI INTERNAL TIM** |
+| 1 | *Daily Standup* | Tim Proyek (3 orang) | Harian (Pagi) | WhatsApp Group | 15 menit | Update progress harian, identifikasi blocker |
+| 2 | *Weekly Team Meeting* | Tim Proyek (3 orang) | Mingguan (Senin 19.00) | Google Meet | 1-2 jam | Review progress, demo fitur, planning minggu depan, risk review |
+| 3 | *Code Review* | Developer | Setiap *Pull Request* | GitHub | Sesuai kebutuhan | Jaminan kualitas kode, knowledge sharing |
+| **B. KOMUNIKASI PEMANGKU KEPENTINGAN** |
+| 4 | Laporan Kemajuan | Dosen Pembimbing | Dua mingguan | Email + Pertemuan | 30-60 menit | Update progress, konsultasi masalah, approval milestone |
+| 5 | Pertemuan Klien | Pemilik CUR-HEART | Dua mingguan | Google Meet / Tatap Muka | 1-2 jam | Validasi kebutuhan, demo progress, feedback |
+| 6 | Sesi UAT | Pengguna CUR-HEART | 3 kali (Fase Testing) | Tatap Muka | 2-3 jam | Pengujian sistem, pengumpulan feedback |
+| **C. DOKUMENTASI & KOLABORASI** |
+| 7 | Dokumentasi Proyek | Tim & Stakeholder | Berkelanjutan | Google Drive | - | Repositori dokumen (laporan, SOP, manual) |
+| 8 | Dokumentasi Teknis | Developer | Berkelanjutan | GitHub Wiki | - | Dokumentasi API, arsitektur, deployment |
+| 9 | *Knowledge Base* | Tim Proyek | Berkelanjutan | Notion | - | Catatan meeting, keputusan, lessons learned |
+| 10 | Kolaborasi Desain | Designer & Developer | Sesuai kebutuhan | Figma | - | Review dan approval desain UI/UX |
 
-- **Tinjauan Kode**: *Pull request* di GitHub dengan tinjauan wajib dari minimal 1 anggota tim
-
-**B. Komunikasi dengan Pemangku Kepentingan:**
-- **Laporan Kemajuan ke Dosen Pembimbing**: Setiap 2 minggu (email + pertemuan)
-- **Pertemuan Klien (CUR-HEART)**: Dua mingguan untuk tinjauan dan umpan balik
-- **Sesi UAT**: 3 kali selama fase pengujian
-
-**C. Dokumentasi:**
-- **Google Drive**: Repositori untuk semua dokumen proyek
-- **GitHub Wiki**: Dokumentasi teknis dan API
-- **Notion**: Basis pengetahuan dan catatan pertemuan
-
-**D. Alat Komunikasi:**
-- WhatsApp: Komunikasi cepat
-- Google Meet: Pertemuan virtual
-- Email: Komunikasi formal
-- GitHub: Kolaborasi kode
-- Figma: Kolaborasi desain
+**Alat Komunikasi yang Digunakan:**
+- **WhatsApp**: Komunikasi cepat dan koordinasi harian
+- **Google Meet**: Pertemuan virtual dan presentasi
+- **Email**: Komunikasi formal dan laporan resmi
+- **GitHub**: Kolaborasi kode dan *code review*
+- **Figma**: Kolaborasi desain UI/UX
+- **Google Drive**: Penyimpanan dan berbagi dokumen
+- **Notion**: Manajemen pengetahuan dan catatan
 
 ### 4.2.8 Perencanaan Pengadaan (*Procurement*)
 
