@@ -161,15 +161,18 @@
         </div>
     </div>
 
-    <a href="slide-10-desain-database.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50 shadow-lg">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-        </svg>
-    </a>
-    <a href="slide-12-diagram-uml.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full shadow-lg hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                window.location.href = 'slide-12-diagram-uml.html';
+            }
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                window.location.href = 'slide-10-desain-database.html';
+            }
+            if (e.key === 'Escape') {
+                window.location.href = 'INDEX.html';
+            }
+        });
+    </script>
 </body>
 </html>
