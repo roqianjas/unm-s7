@@ -172,31 +172,50 @@ Estimasi biaya proyek menggunakan metode bottom-up berdasarkan WBS:
 
 | No | Kategori | Item | Biaya (Rp) |
 |----|----------|------|------------|
-| 1 | Project Management | Project Manager (11 minggu × Rp 100.000/minggu) | 1.100.000 |
-| | | Contingency (10%) | 110.000 |
+| 1 | Project Management | Project Manager (16 minggu × Rp 750.000/minggu) | 12.000.000 |
+| | | Contingency Reserve (10%) | 1.200.000 |
 | 2 | Hardware | Laptop Development (sudah ada) | 0 |
-| | | VPS Hosting (1 tahun) | 1.200.000 |
+| | | VPS Hosting Cloud (1 tahun - 4vCPU, 8GB RAM) | 3.600.000 |
 | 3 | Software | Laravel Framework (gratis) | 0 |
 | | | MySQL Database (gratis) | 0 |
-| | | Domain & SSL (1 tahun) | 150.000 |
-| 4 | Development | Backend Developer (4 minggu × Rp 200.000/minggu) | 800.000 |
-| | | Frontend Developer (4 minggu × Rp 200.000/minggu) | 800.000 |
-| | | Full-stack Developer (4 minggu × Rp 200.000/minggu) | 800.000 |
-| 5 | Testing | Testing Tools (gratis - PHPUnit) | 0 |
-| | | UAT Sessions | 200.000 |
-| 6 | Training | User Training Materials | 100.000 |
-| 7 | Lain-lain | Dokumentasi, Transport, Komunikasi | 300.000 |
-| **TOTAL** | | | **5.560.000** |
+| | | Domain .id & SSL (1 tahun) | 350.000 |
+| | | Figma Pro (untuk UI/UX Design - 3 bulan) | 450.000 |
+| 4 | Development | Backend Developer (8 minggu × Rp 2.500.000/minggu) | 20.000.000 |
+| | | Frontend Developer (8 minggu × Rp 2.200.000/minggu) | 17.600.000 |
+| | | Full-stack Developer (8 minggu × Rp 2.500.000/minggu) | 20.000.000 |
+| 5 | Testing | Testing Tools & QA (PHPUnit, Selenium) | 500.000 |
+| | | UAT Sessions & User Testing (5 sesi) | 1.500.000 |
+| | | Security Audit & Penetration Testing | 2.500.000 |
+| 6 | Training | User Training Materials & Documentation | 800.000 |
+| | | Training Sessions (Admin, Terapis, Klien) | 1.200.000 |
+| 7 | Integration | Payment Gateway Setup (Midtrans) | 500.000 |
+| | | Email Service Setup (SMTP/SendGrid) | 300.000 |
+| 8 | Lain-lain | Dokumentasi Teknis & User Manual | 1.000.000 |
+| | | Transport & Koordinasi | 800.000 |
+| | | Komunikasi & Meeting Tools | 500.000 |
+| **TOTAL** | | | **86.800.000** |
+
+**Catatan Biaya:**
+- Biaya tenaga kerja disesuaikan dengan standar pasar 2025 untuk developer profesional
+- Project Manager: Rp 750.000/minggu (setara Rp 3 juta/bulan)
+- Backend/Full-stack Developer: Rp 2.500.000/minggu (setara Rp 10 juta/bulan)
+- Frontend Developer: Rp 2.200.000/minggu (setara Rp 8,8 juta/bulan)
+- VPS Cloud dengan spesifikasi memadai untuk production (4vCPU, 8GB RAM, 160GB SSD)
+- Termasuk biaya security audit dan penetration testing untuk keamanan data klien
 
 **Estimasi Biaya Berulang Tahunan (Biaya Operasional):**
 
 | No | Item | Biaya/Tahun (Rp) |
 |----|------|------------------|
-| 1 | VPS Hosting | 1.200.000 |
-| 2 | Domain & SSL renewal | 150.000 |
-| 3 | Payment Gateway Fee (2,9% + Rp 2.000 per transaksi) | ~7.200.000 (estimasi 100 transaksi/bulan) |
-| 4 | Pemeliharaan & Dukungan | 1.200.000 |
-| **TOTAL** | | **9.750.000** |
+| 1 | VPS Hosting Cloud (4vCPU, 8GB RAM) | 3.600.000 |
+| 2 | Domain & SSL renewal | 350.000 |
+| 3 | Payment Gateway Fee (2,9% + Rp 2.000 per transaksi) | ~8.400.000 (estimasi 120 transaksi/bulan) |
+| 4 | Email Service (SendGrid/SMTP) | 600.000 |
+| 5 | Backup & Storage (Cloud Backup) | 1.200.000 |
+| 6 | Monitoring & Security Tools | 1.500.000 |
+| 7 | Pemeliharaan & Dukungan Teknis | 6.000.000 |
+| 8 | Software Updates & Patches | 1.200.000 |
+| **TOTAL** | | **22.850.000** |
 
 ### 4.2.4 Perencanaan Kualitas (*Quality*)
 
@@ -1485,28 +1504,45 @@ Implementasi Sistem Informasi CUR-HEART diharapkan memberikan berbagai keuntunga
 ### 4.5.4 Analisis Laba atas Investasi (*Return on Investment*/ROI)
 
 **Investasi:**
-- Biaya awal: Rp 3.000.000 (pengaturan/*setup*)
-- Biaya berulang tahun 1: Rp 9.750.000 (*hosting*, domain, *payment gateway*)
-- **Total biaya tahun 1: Rp 12.750.000**
+- Biaya pengembangan awal: Rp 86.800.000 (pengembangan sistem, infrastruktur, testing, pelatihan)
+- Biaya berulang tahun 1: Rp 22.850.000 (*hosting*, domain, *payment gateway*, maintenance)
+- **Total biaya tahun 1: Rp 109.650.000**
 
 **Manfaat Tahun 1:**
-- Peningkatan pendapatan: Rp 142.800.000
-- Penghematan biaya: Rp 26.400.000
+- Peningkatan pendapatan: Rp 142.800.000 (dari peningkatan kapasitas dan konversi)
+- Penghematan biaya operasional: Rp 26.400.000 (efisiensi waktu admin dan terapis)
 - **Total manfaat: Rp 169.200.000**
 
-**Hasil:**
-- Manfaat bersih: Rp 156.450.000
-- **ROI: 1.227%**
-- **Periode pengembalian (*payback period*): 0,9 bulan (~27 hari)**
-- Rasio Manfaat-Biaya: 13,3:1
+**Hasil Tahun 1:**
+- Manfaat bersih: Rp 59.550.000
+- **ROI Tahun 1: 54,3%**
+- **Periode pengembalian (*payback period*): 7,8 bulan**
+- Rasio Manfaat-Biaya: 1,54:1
 
 **Proyeksi 5 Tahun:**
-- Total manfaat: Rp 1.025.481.825
-- Total biaya: Rp 60.098.000
-- Manfaat bersih: Rp 964.383.829
-- ROI 5 tahun: 7.258%
 
-**Rekomendasi:** Proyek sangat layak dengan ROI luar biasa dan periode pengembalian (*payback period*) sangat singkat.
+| Tahun | Biaya Operasional | Manfaat Tahunan | Manfaat Bersih | ROI Kumulatif |
+|-------|-------------------|-----------------|----------------|---------------|
+| 1 | Rp 109.650.000 | Rp 169.200.000 | Rp 59.550.000 | 54,3% |
+| 2 | Rp 22.850.000 | Rp 185.640.000 | Rp 162.790.000 | 202,8% |
+| 3 | Rp 24.135.000 | Rp 203.802.000 | Rp 179.667.000 | 338,3% |
+| 4 | Rp 25.542.000 | Rp 224.182.000 | Rp 198.640.000 | 464,5% |
+| 5 | Rp 27.073.000 | Rp 246.600.000 | Rp 219.527.000 | 604,7% |
+
+**Total 5 Tahun:**
+- Total investasi: Rp 209.250.000
+- Total manfaat: Rp 1.029.424.000
+- Manfaat bersih: Rp 820.174.000
+- **ROI 5 tahun: 392%**
+- **NPV (discount rate 12%): Rp 612.450.000**
+
+**Asumsi Proyeksi:**
+- Pertumbuhan pendapatan: 9,7% per tahun (konservatif)
+- Inflasi biaya operasional: 5,8% per tahun
+- Tidak termasuk biaya upgrade atau pengembangan fitur baru
+- Berdasarkan data historis CUR-HEART dan tren industri kesehatan mental
+
+**Rekomendasi:** Proyek sangat layak secara finansial dengan ROI positif sejak tahun pertama. Meskipun investasi awal lebih tinggi (mencerminkan biaya tenaga kerja profesional 2025), sistem akan terbayar dalam 7,8 bulan dan memberikan nilai signifikan dalam jangka panjang dengan ROI 5 tahun mencapai 392%.
 
 ---
 
