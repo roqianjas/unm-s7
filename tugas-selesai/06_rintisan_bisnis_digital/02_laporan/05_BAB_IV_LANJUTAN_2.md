@@ -334,173 +334,69 @@ Berikut adalah contoh tampilan hasil implementasi sistem CUR-HEART yang telah ja
 
 **1. Halaman Utama (Landing Page)**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Landing Page]                              │
-│                                                                             │
-│  - Hero section dengan CTA "Book Your Session Now"                         │
-│  - Statistics section (500+ Clients, 15+ Therapists, 4.8/5 Rating)         │
-│  - Services grid dengan 6 layanan terapi                                   │
-│  - Featured therapists dengan foto dan rating                              │
-│  - Client testimonials carousel                                            │
-│  - Footer dengan links dan contact info                                    │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.12 Tampilan Halaman Utama**  
+File: `03_implementasi/screenshots/01_homepage.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.12 Tampilan Halaman Utama**
-
-**Sumber**: Hasil Implementasi
+Halaman landing page menampilkan hero section dengan CTA "Book Your Session Now", statistics section (500+ Clients, 15+ Therapists, 4.8/5 Rating), services grid dengan 6 layanan terapi, featured therapists dengan foto dan rating, client testimonials carousel, dan footer dengan links dan contact info.
 
 **2. Halaman Booking - Step 1: Select Service**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Booking Step 1]                            │
-│                                                                             │
-│  - Progress indicator (Step 1 of 4 active)                                 │
-│  - List of services dengan radio button selection                          │
-│  - Setiap service menampilkan: nama, durasi, harga, deskripsi             │
-│  - Button "Next: Select Therapist" di bottom right                         │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.13 Tampilan Booking Step 1 - Select Service**  
+File: `03_implementasi/screenshots/02_booking_step1.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.13 Tampilan Booking Step 1 - Select Service**
-
-**Sumber**: Hasil Implementasi
+Halaman menampilkan progress indicator (Step 1 of 4 active), list of services dengan radio button selection, setiap service menampilkan nama, durasi, harga, deskripsi, dan button "Next: Select Therapist" di bottom right.
 
 **3. Halaman Booking - Step 3: Select Schedule**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Booking Step 3]                            │
-│                                                                             │
-│  - Calendar picker untuk pilih tanggal                                     │
-│  - Time slots grid menampilkan available/booked slots                      │
-│  - Available slots: hijau, clickable                                       │
-│  - Booked slots: abu-abu, disabled                                         │
-│  - Selected slot: biru, highlighted                                        │
-│  - Real-time availability checking                                         │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.14 Tampilan Booking Step 3 - Select Schedule**  
+File: `03_implementasi/screenshots/03_booking_step3.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.14 Tampilan Booking Step 3 - Select Schedule**
-
-**Sumber**: Hasil Implementasi
+Halaman menampilkan calendar picker untuk pilih tanggal, time slots grid menampilkan available/booked slots (available slots: hijau clickable, booked slots: abu-abu disabled, selected slot: biru highlighted), dan real-time availability checking.
 
 **4. Halaman Payment (Midtrans Snap)**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Midtrans Payment]                          │
-│                                                                             │
-│  - Midtrans Snap popup window                                              │
-│  - Payment methods: Credit Card, Bank Transfer, E-Wallet                   │
-│  - Order summary dengan detail booking                                     │
-│  - Total amount yang harus dibayar                                         │
-│  - Secure payment indicator (SSL, PCI-DSS)                                 │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.15 Tampilan Payment Gateway (Midtrans)**  
+File: `03_implementasi/screenshots/04_midtrans_payment.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.15 Tampilan Payment Gateway (Midtrans)**
-
-**Sumber**: Hasil Implementasi
+Halaman menampilkan Midtrans Snap popup window dengan payment methods (Credit Card, Bank Transfer, E-Wallet), order summary dengan detail booking, total amount yang harus dibayar, dan secure payment indicator (SSL, PCI-DSS).
 
 **5. Client Dashboard**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Client Dashboard]                          │
-│                                                                             │
-│  - Welcome message dengan nama user                                        │
-│  - 4 stat cards: Upcoming Sessions, Completed, Total Hours, Progress       │
-│  - Next appointment card dengan detail lengkap                             │
-│  - Progress tracking chart (line chart mood score)                         │
-│  - Recent sessions list dengan status dan rating                           │
-│  - Responsive layout, clean design                                         │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.16 Tampilan Client Dashboard**  
+File: `03_implementasi/screenshots/05_client_dashboard.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.16 Tampilan Client Dashboard**
-
-**Sumber**: Hasil Implementasi
+Dashboard menampilkan welcome message dengan nama user, 4 stat cards (Upcoming Sessions, Completed, Total Hours, Progress), next appointment card dengan detail lengkap, progress tracking chart (line chart mood score), recent sessions list dengan status dan rating, serta responsive layout dengan clean design.
 
 **6. Therapist Dashboard**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Therapist Dashboard]                       │
-│                                                                             │
-│  - Good morning greeting dengan nama terapis                               │
-│  - 4 stat cards: Today's Sessions, This Week, Total Clients, Avg Rating    │
-│  - Today's schedule list dengan detail setiap sesi                         │
-│  - Pending documentation alert dengan action button                        │
-│  - Earnings this month card dengan total dan withdrawal button             │
-│  - Professional, clean interface                                           │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.17 Tampilan Therapist Dashboard**  
+File: `03_implementasi/screenshots/06_therapist_dashboard.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.17 Tampilan Therapist Dashboard**
-
-**Sumber**: Hasil Implementasi
+Dashboard menampilkan good morning greeting dengan nama terapis, 4 stat cards (Today's Sessions, This Week, Total Clients, Avg Rating), today's schedule list dengan detail setiap sesi, pending documentation alert dengan action button, earnings this month card dengan total dan withdrawal button, serta professional clean interface.
 
 **7. Session Documentation Form**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Session Documentation]                     │
-│                                                                             │
-│  - Client info header (nama, foto, session number)                         │
-│  - Form fields dengan rich text editor:                                    │
-│    • Technique Used                                                        │
-│    • Client Condition                                                      │
-│    • Progress Achieved                                                     │
-│    • Important Notes                                                       │
-│    • Recommendations                                                       │
-│  - Auto-save indicator "Last saved: 2 minutes ago"                         │
-│  - Save button di bottom right                                             │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.18 Tampilan Session Documentation Form**  
+File: `03_implementasi/screenshots/07_session_documentation.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.18 Tampilan Session Documentation Form**
-
-**Sumber**: Hasil Implementasi
+Form menampilkan client info header (nama, foto, session number), form fields dengan rich text editor (Technique Used, Client Condition, Progress Achieved, Important Notes, Recommendations), auto-save indicator "Last saved: 2 minutes ago", dan save button di bottom right.
 
 **8. Admin Dashboard**
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│                     [Screenshot: Admin Dashboard]                           │
-│                                                                             │
-│  - 4 KPI cards: Total Users, Total Bookings, Total Therapists, Revenue     │
-│  - Revenue trend chart (line chart 12 months)                              │
-│  - Recent bookings table dengan pagination                                 │
-│  - Pending actions alert (therapist applications, withdrawals, reviews)    │
-│  - Top performing therapists list                                          │
-│  - Comprehensive admin interface                                           │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+**Gambar 4.19 Tampilan Admin Dashboard**  
+File: `03_implementasi/screenshots/08_admin_dashboard.png`  
+Sumber: Hasil Implementasi
 
-**Gambar 4.19 Tampilan Admin Dashboard**
+Dashboard menampilkan 4 KPI cards (Total Users, Total Bookings, Total Therapists, Revenue), revenue trend chart (line chart 12 months), recent bookings table dengan pagination, pending actions alert (therapist applications, withdrawals, reviews), top performing therapists list, dan comprehensive admin interface.
 
-**Sumber**: Hasil Implementasi
-
-**Catatan**: Semua screenshot hasil implementasi tersedia di folder dokumentasi proyek. Sistem telah diimplementasikan dengan 66 halaman sesuai dengan mockup design dan telah melalui testing.
+**Catatan**: Semua screenshot hasil implementasi tersedia di folder `tugas-selesai/06_rintisan_bisnis_digital/03_implementasi/screenshots/`. Sistem telah diimplementasikan dengan 66 halaman sesuai dengan mockup design dan telah melalui testing.
 
 ## 4.3. Spesifikasi Aplikasi
 
