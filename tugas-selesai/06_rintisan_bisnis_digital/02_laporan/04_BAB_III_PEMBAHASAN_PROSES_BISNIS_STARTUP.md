@@ -8,6 +8,7 @@
 CUR-HEART adalah pusat layanan terapi kejiwaan yang mengintegrasikan pendekatan hipnoterapi modern, konseling psikologis, dan pelatihan pengembangan diri dengan tagline "Hypnotherapy & Mind Wellness Center". Bisnis ini bergerak di bidang layanan kesehatan mental khususnya hipnoterapi, berbentuk perseorangan pada tahap awal dengan rencana menjadi PT di tahun ke-2, didirikan tahun 2025, berlokasi di Jakarta Selatan, dengan situs web www.cur-heart.id yang sedang dalam pengembangan.
 
 CUR-HEART hadir sebagai solusi untuk meningkatnya kebutuhan masyarakat akan layanan kesehatan mental yang profesional, aman, dan mudah diakses. Berdasarkan data Kementerian Kesehatan RI, sekitar 20% penduduk Indonesia mengalami gangguan kesehatan mental namun sebagian besar belum mendapatkan penanganan memadai. CUR-HEART menawarkan layanan hipnoterapi yang terbukti efektif dalam mengatasi berbagai kondisi seperti stres, insomnia, trauma, kecemasan, serta meningkatkan motivasi dan kepercayaan diri. Metode ini telah diakui oleh berbagai asosiasi psikologi dan terapi internasional seperti American Psychological Association dan British Medical Association.
+
 **Latar Belakang Pendirian**:
 
 Proyek bisnis ini diinisiasi oleh tim mahasiswa Sistem Informasi Universitas Nusa Mandiri yang melihat peluang besar dalam sektor teknologi kesehatan, khususnya layanan kesehatan mental. Dengan meningkatnya kesadaran masyarakat tentang pentingnya kesehatan mental pasca-pandemi COVID-19, permintaan terhadap layanan terapi alternatif seperti hipnoterapi terus meningkat. Tim melakukan riset pasar dan menemukan bahwa meskipun permintaan tinggi, layanan hipnoterapi di Indonesia masih terbatas dan belum terdigitalisasi dengan baik. Melihat kesenjangan tersebut, tim memutuskan untuk membangun CUR-HEART sebagai rintisan bisnis digital yang mengintegrasikan layanan hipnoterapi profesional dengan sistem informasi modern untuk memberikan pengalaman terbaik bagi klien, terapis, dan manajemen.
@@ -29,8 +30,6 @@ Struktur organisasi CUR-HEART dirancang untuk mendukung operasional yang efisien
 **Gambar 3.1 Struktur Organisasi CUR-HEART** 
 
 Uraian tugas dan tanggung jawab meliputi: Chief Executive Officer (CEO) bertanggung jawab atas strategi bisnis, pengambilan keputusan strategis, hubungan investor dan pemangku kepentingan, pemantauan kinerja, dan representasi perusahaan (Robbins & Coulter, 2021); Chief Technology Officer (CTO) bertanggung jawab atas arsitektur sistem, pengembangan platform, infrastruktur TI, keamanan data, dan peta jalan teknologi (Laudon & Laudon, 2022); Chief Marketing Officer (CMO) bertanggung jawab atas strategi pemasaran, manajemen merek, riset pasar, media sosial, kampanye promosi, dan hubungan pelanggan (Kotler & Keller, 2022); Terapis Utama melakukan sesi terapi, penilaian klien, dokumentasi sesi, pemantauan kemajuan, dan menjaga kerahasiaan data klien; Admin & Customer Service mengelola reservasi, dukungan pelanggan, koordinasi dengan terapis, pelaporan, dan penanganan keluhan (Lovelock & Wirtz, 2021); serta Finance & Accounting (outsource) menangani pembukuan, laporan keuangan, kepatuhan pajak, penggajian, dan analisis keuangan (Weygandt et al., 2021).
-
-
 
 ## 3.2. Tahapan Membangun Start-up
 
