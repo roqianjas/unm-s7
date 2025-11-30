@@ -25,25 +25,25 @@ Kebutuhan fungsional sistem CUR-HEART mencakup:
 
 **B. Kebutuhan Non-Fungsional**
 
-**1. Performance**: Page load < 2 detik, API response < 500ms, query database < 100ms, handle 100 pengguna bersamaan, 500 transaksi/hari.
+**1. Performance**: Waktu muat halaman < 2 detik, respons API < 500ms, kueri basis data < 100ms, menangani 100 pengguna bersamaan, 500 transaksi/hari
 
-**2. Security**: Enkripsi data sensitif, HTTPS, prevent SQL injection/XSS/CSRF, RBAC, comply UU PDP, bcrypt password hashing, rate limiting, audit logging.
+**2. Security**: Enkripsi data sensitif, HTTPS, pencegahan SQL injection/XSS/CSRF, RBAC, kepatuhan UU PDP, hashing kata sandi bcrypt, pembatasan laju, pencatatan audit
 
-**3. Usability**: Antarmuka intuitif, SUS score ≥ 70/100, task completion rate ≥ 90%, error message jelas, WCAG 2.1 Level AA compliance, keyboard navigation.
+**3. Usability**: Antarmuka intuitif, skor SUS ≥ 70/100, tingkat penyelesaian tugas ≥ 90%, pesan kesalahan jelas, kepatuhan WCAG 2.1 Level AA, navigasi keyboard
 
-**4. Reliability**: Uptime ≥ 99%, MTBF > 720 jam, RTO < 4 jam, RPO < 24 jam, automated backup harian, disaster recovery plan.
+**4. Reliability**: Waktu aktif ≥ 99%, MTBF > 720 jam, RTO < 4 jam, RPO < 24 jam, pencadangan otomatis harian, rencana pemulihan bencana
 
-**5. Scalability**: Horizontal scaling, handle 10x data growth, database replication, caching, queue untuk background jobs.
+**5. Scalability**: Penskalaan horizontal, menangani pertumbuhan data 10x, replikasi basis data, caching, antrian untuk pekerjaan latar belakang
 
-**6. Maintainability**: PSR-12 coding standards, test coverage ≥ 70%, inline comments, API documentation, version control (Git), semantic versioning.
+**6. Maintainability**: Standar pengkodean PSR-12, cakupan pengujian ≥ 70%, komentar inline, dokumentasi API, kontrol versi Git, versi semantik
 
-**7. Portability**: Multi-environment support, multi-OS, containerization (Docker), environment configuration terpisah.
+**7. Portability**: Dukungan multi-lingkungan, multi-OS, kontainerisasi Docker, konfigurasi lingkungan terpisah
 
-**8. Compatibility**: Browser modern (Chrome, Firefox, Safari, Edge), responsive design, screen reader compatible.
+**8. Compatibility**: Peramban modern (Chrome, Firefox, Safari, Edge), desain responsif, kompatibel pembaca layar
 
-**9. Localization**: Bahasa Indonesia, format tanggal DD/MM/YYYY, mata uang Rupiah, timezone WIB.
+**9. Localization**: Bahasa Indonesia, format tanggal DD/MM/YYYY, mata uang Rupiah, zona waktu WIB
 
-**10. Legal & Compliance**: Comply UU PDP, Terms of Service, Privacy Policy, consent mechanism, data retention policy, right to be forgotten.
+**10. Legal & Compliance**: Kepatuhan UU PDP, Syarat Layanan, Kebijakan Privasi, mekanisme persetujuan, kebijakan retensi data, hak untuk dilupakan
 
 **C. Prioritas Kebutuhan (MoSCoW Method)**
 
@@ -268,15 +268,14 @@ Rancangan User Interface (UI) CUR-HEART telah dibuat menggunakan Figma dengan to
 
 #### B. Mockup Halaman Utama
 
-Berikut adalah daftar mockup untuk halaman-halaman kunci dalam sistem CUR-HEART. Semua mockup lengkap (66 halaman) tersedia di folder `01_desain/mockup/`.
+Rancangan User Interface CUR-HEART telah dibuat menggunakan Figma dengan total 66 halaman mockup yang mencakup semua peran pengguna. Berikut adalah mockup halaman-halaman kunci dalam sistem:
 
 **1. Halaman Publik (12 halaman)**
 
-**Gambar 4.5 Mockup Landing Page (Homepage)**  
+**Gambar 4.5 Mockup Landing Page CUR-HEART**  
 File: `01_desain/mockup/01_homepage.jpg`  
 Sumber: Hasil Penelitian (Figma Design)
 
-Halaman landing page menampilkan hero section dengan CTA "Book Your Session Now", statistics section (500+ Clients, 15+ Therapists, 4.8/5 Rating), services grid dengan 6 layanan terapi, featured therapists dengan foto dan rating, client testimonials carousel, dan footer dengan links dan contact info.
 
 **Gambar 4.6 Mockup Halaman Tentang Kami**  
 File: `01_desain/mockup/02_about.jpg`  
@@ -346,11 +345,10 @@ Sumber: Hasil Penelitian (Figma Design)
 
 **3. Dashboard Klien (12 halaman)**
 
-**Gambar 4.22 Mockup Dashboard Klien**  
+**Gambar 4.22 Mockup Client Dashboard**  
 File: `01_desain/mockup/17_client_dashboard.jpg`  
 Sumber: Hasil Penelitian (Figma Design)
 
-Dashboard klien menampilkan welcome message, 4 stat cards (Upcoming Sessions, Completed, Total Hours, Progress), next appointment card dengan detail lengkap, progress tracking chart (line chart mood score), recent sessions list dengan status dan rating, serta responsive layout dengan clean design.
 
 **Gambar 4.23 Mockup Booking Step 1 - Select Service**  
 File: `01_desain/mockup/18_booking_step1.jpg`  
@@ -398,11 +396,9 @@ Sumber: Hasil Penelitian (Figma Design)
 
 **4. Dashboard Terapis (13 halaman)**
 
-**Gambar 4.34 Mockup Dashboard Terapis**  
+**Gambar 4.34 Mockup Therapist Dashboard**  
 File: `01_desain/mockup/29_therapist_dashboard.jpg`  
 Sumber: Hasil Penelitian (Figma Design)
-
-Dashboard terapis menampilkan good morning greeting, 4 stat cards (Today's Sessions, This Week, Total Clients, Avg Rating), today's schedule list dengan detail setiap sesi, pending documentation alert dengan action button, earnings this month card dengan total dan withdrawal button, serta professional clean interface.
 
 **Gambar 4.35 Mockup Manajemen Jadwal**  
 File: `01_desain/mockup/30_therapist_schedule.jpg`  
@@ -454,11 +450,9 @@ Sumber: Hasil Penelitian (Figma Design)
 
 **5. Dashboard Admin (25 halaman)**
 
-**Gambar 4.47 Mockup Dashboard Admin**  
+**Gambar 4.47 Mockup Admin Dashboard**  
 File: `01_desain/mockup/42_admin_dashboard.jpg`  
 Sumber: Hasil Penelitian (Figma Design)
-
-Dashboard admin menampilkan 4 KPI cards (Total Users, Total Bookings, Total Therapists, Revenue), revenue trend chart (line chart 12 months), recent bookings table dengan pagination, pending actions alert (therapist applications, withdrawals, reviews), top performing therapists list, serta comprehensive admin interface.
 
 **Gambar 4.48 Mockup Manajemen Reservasi**  
 File: `01_desain/mockup/43_admin_bookings.jpg`  
@@ -557,28 +551,6 @@ File: `01_desain/mockup/66_admin_promo_editor.jpg`
 Sumber: Hasil Penelitian (Figma Design)
 
 **Catatan**: Semua file mockup dalam format JPG tersedia di folder `tugas-selesai/06_rintisan_bisnis_digital/01_desain/mockup/`. Total 66 halaman mockup mencakup seluruh user journey untuk semua peran pengguna (Guest, Client, Therapist, Admin)
-
-**Gambar 4.5 Mockup Landing Page CUR-HEART**  
-File: `01_desain/mockup/01_homepage.jpg`  
-Sumber: Hasil Penelitian (Figma Design)
-
-**Gambar 4.6 Mockup Booking Step 1 - Select Service**  
-File: `01_desain/mockup/18_booking_step1.jpg`  
-Sumber: Hasil Penelitian (Figma Design)
-
-**Gambar 4.7 Mockup Client Dashboard**  
-File: `01_desain/mockup/17_client_dashboard.jpg`  
-Sumber: Hasil Penelitian (Figma Design)
-
-**Gambar 4.8 Mockup Therapist Dashboard**  
-File: `01_desain/mockup/29_therapist_dashboard.jpg`  
-Sumber: Hasil Penelitian (Figma Design)
-
-**Gambar 4.9 Mockup Admin Dashboard**  
-File: `01_desain/mockup/42_admin_dashboard.jpg`  
-Sumber: Hasil Penelitian (Figma Design)
-
-**Catatan**: Semua mockup lengkap (66 halaman) tersedia di folder `01_desain/mockup/` mencakup 12 halaman public, 4 authentication, 12 client dashboard, 13 therapist dashboard, dan 25 admin dashboard. Prinsip desain: Consistency, Clarity, Efficiency, Feedback, Accessibility (WCAG 2.1 Level AA), dan Responsive.
 
 
 ### 4.1.5. Rancangan Database
@@ -720,7 +692,7 @@ Proses implementasi mengikuti metodologi Agile dengan 2-week sprints dan menggun
 #### A. Technology Stack
 
 **Backend**:
-- **Framework**: Laravel 10.x (PHP 8.2)
+- **Framework**: Laravel 12.x (PHP 8.3)
 - **Database**: MySQL 8.0
 - **Authentication**: Laravel Sanctum
 - **API**: RESTful API
@@ -749,46 +721,17 @@ Proses implementasi mengikuti metodologi Agile dengan 2-week sprints dan menggun
 **Deployment**:
 - **Server**: VPS Ubuntu 22.04 LTS
 - **Web Server**: Nginx
-- **PHP**: PHP-FPM 8.2
+- **PHP**: PHP-FPM 8.3
 - **Process Manager**: Supervisor (untuk queue workers)
 - **SSL**: Let's Encrypt
 
 #### B. Development Workflow
 
-**1. Setup Development Environment**
-```bash
-# Clone repository
-git clone https://github.com/cur-heart/cur-heart-app.git
-cd cur-heart-app
+**1. Lingkungan Pengembangan**: Pengembangan dilakukan menggunakan Git untuk kontrol versi dengan strategi percabangan (main, develop, feature branches) dan proses tinjauan kode sebelum penggabungan.
 
-# Install dependencies
-composer install
-npm install
+**2. Proses Deployment**: Deployment dilakukan melalui tahapan pull kode terbaru, instalasi dependensi, migrasi basis data, optimasi cache, build aset, dan restart layanan.
 
-# Setup environment
-cp .env.example .env
-php artisan key:generate
-
-# Database setup
-php artisan migrate
-php artisan db:seed
-
-# Build assets
-npm run dev
-
-# Start development server
-php artisan serve
-```
-
-**2. Git Branching Strategy**
-- **main**: Production-ready code
-- **develop**: Integration branch
-- **feature/***: Feature development
-- **bugfix/***: Bug fixes
-- **hotfix/***: Production hotfixes
-
-**3. Code Review Process**
-- Setiap feature branch harus melalui Pull Request
+**3. Code Review**: Setiap fitur baru harus melalui Pull Request
 - Minimal 1 reviewer approval sebelum merge
 - Automated tests harus pass
 - Code quality check dengan PHP CodeSniffer
@@ -819,17 +762,9 @@ sudo systemctl restart nginx
 sudo supervisorctl restart all
 ```
 
-#### C. Key Implementation Highlights
+#### C. Fitur Utama Implementasi
 
-Implementasi sistem mencakup fitur-fitur utama:
-
-**1. Booking System dengan Conflict Detection**: Sistem mengecek ketersediaan terapis dan mendeteksi konflik jadwal secara otomatis menggunakan query database yang efisien.
-
-**2. Midtrans Payment Integration**: Integrasi dengan Midtrans Snap API untuk pembayaran online dengan multiple payment methods dan webhook notification handling.
-
-**3. Automated Email Notifications**: Queue-based email system untuk mengirim konfirmasi, reminder (H-1 dan H-0), dan follow-up secara otomatis.
-
-**4. Session Documentation dengan Auto-save**: Formulir dokumentasi dengan auto-save setiap 30 detik menggunakan Alpine.js untuk mencegah data loss.
+Implementasi sistem mencakup fitur-fitur utama yaitu sistem pemesanan dengan deteksi konflik jadwal otomatis, integrasi gerbang pembayaran Midtrans Snap API, sistem notifikasi surel otomatis berbasis antrian, dan formulir dokumentasi sesi dengan fitur penyimpanan otomatis.
 
 ### 4.2.2. Hasil Implementasi
 
@@ -969,7 +904,7 @@ Spesifikasi aplikasi mencakup hardware dan software yang digunakan untuk pengemb
   - Reverse proxy for PHP-FPM
 
 **2. Application Server**:
-- **PHP** 8.2+ (Free, Open Source)
+- **PHP** 8.3+ (Free, Open Source)
   - PHP-FPM for FastCGI Process Manager
   - Extensions: mbstring, xml, bcmath, pdo_mysql, gd, curl, zip
 
@@ -986,7 +921,7 @@ Spesifikasi aplikasi mencakup hardware dan software yang digunakan untuk pengemb
 **C. Framework & Libraries**
 
 **1. Backend Framework**:
-- **Laravel** 10.x (Free, Open Source)
+- **Laravel** 12.x (Free, Open Source)
   - PHP web application framework
   - Includes: Eloquent ORM, Blade templating, routing, middleware
 
@@ -1000,8 +935,8 @@ Spesifikasi aplikasi mencakup hardware dan software yang digunakan untuk pengemb
 ```json
 {
     "require": {
-        "php": "^8.2",
-        "laravel/framework": "^10.0",
+        "php": "^8.3",
+        "laravel/framework": "^12.0",
         "laravel/sanctum": "^3.2",
         "midtrans/midtrans-php": "^2.5",
         "spatie/laravel-permission": "^5.10",
@@ -1082,7 +1017,7 @@ Spesifikasi aplikasi mencakup hardware dan software yang digunakan untuk pengemb
 
 **Total Software Cost**: Development Rp 0 (tools gratis), Production ~Rp 312.500 - Rp 522.500/bulan (VPS, domain, email, payment gateway variable).
 
-**System Requirements Summary**: Development (Intel i5/8GB RAM/256GB SSD, PHP 8.2, MySQL 8.0, Laravel 10), Production (4 vCPU/8GB RAM/160GB SSD, Ubuntu 22.04, Nginx, Laravel 10, Midtrans Production, SendGrid, Let's Encrypt SSL).
+**System Requirements Summary**: Development (Intel i5/8GB RAM/256GB SSD, PHP 8.2, MySQL 8.0, Laravel 12), Production (4 vCPU/8GB RAM/160GB SSD, Ubuntu 22.04, Nginx, Laravel 12, Midtrans Production, SendGrid, Let's Encrypt SSL).
 
 
 ## 4.4. Pengujian Aplikasi
@@ -1098,62 +1033,62 @@ Black Box Testing dilakukan untuk menguji fungsionalitas aplikasi tanpa melihat 
 | No | Modul/Fitur | Skenario Pengujian | Test Case | Input | Expected Output | Actual Output | Status |
 |----|-------------|-------------------|-----------|-------|-----------------|---------------|--------|
 | **A. AUTHENTICATION** |
-| 1 | Register | User registrasi dengan data valid | TC-001 | Name: "John Doe"<br>Email: "john@example.com"<br>Password: "Password123!"<br>Role: "client" | Registrasi berhasil, redirect ke dashboard, email verifikasi terkirim | Sesuai expected | ✅ Pass |
-| 2 | Register | User registrasi dengan email yang sudah terdaftar | TC-002 | Email: "existing@example.com" | Error message: "Email already registered" | Sesuai expected | ✅ Pass |
-| 3 | Register | User registrasi dengan password kurang dari 8 karakter | TC-003 | Password: "Pass1!" | Error message: "Password must be at least 8 characters" | Sesuai expected | ✅ Pass |
-| 4 | Login | User login dengan credentials valid | TC-004 | Email: "john@example.com"<br>Password: "Password123!" | Login berhasil, redirect ke dashboard sesuai role | Sesuai expected | ✅ Pass |
-| 5 | Login | User login dengan password salah | TC-005 | Email: "john@example.com"<br>Password: "WrongPass" | Error message: "Invalid credentials" | Sesuai expected | ✅ Pass |
-| 6 | Forgot Password | User request reset password dengan email valid | TC-006 | Email: "john@example.com" | Email reset password terkirim | Sesuai expected | ✅ Pass |
-| 7 | Logout | User logout dari sistem | TC-007 | Click logout button | Session cleared, redirect ke homepage | Sesuai expected | ✅ Pass |
+| 1 | Register | User registrasi dengan data valid | TC-001 | Name: "John Doe"<br>Email: "john@example.com"<br>Password: "Password123!"<br>Role: "client" | Registrasi berhasil, redirect ke dashboard, email verifikasi terkirim | Sesuai expected | Pass |
+| 2 | Register | User registrasi dengan email yang sudah terdaftar | TC-002 | Email: "existing@example.com" | Error message: "Email already registered" | Sesuai expected | Pass |
+| 3 | Register | User registrasi dengan password kurang dari 8 karakter | TC-003 | Password: "Pass1!" | Error message: "Password must be at least 8 characters" | Sesuai expected | Pass |
+| 4 | Login | User login dengan credentials valid | TC-004 | Email: "john@example.com"<br>Password: "Password123!" | Login berhasil, redirect ke dashboard sesuai role | Sesuai expected | Pass |
+| 5 | Login | User login dengan password salah | TC-005 | Email: "john@example.com"<br>Password: "WrongPass" | Error message: "Invalid credentials" | Sesuai expected | Pass |
+| 6 | Forgot Password | User request reset password dengan email valid | TC-006 | Email: "john@example.com" | Email reset password terkirim | Sesuai expected | Pass |
+| 7 | Logout | User logout dari sistem | TC-007 | Click logout button | Session cleared, redirect ke homepage | Sesuai expected | Pass |
 | **B. BOOKING SYSTEM** |
-| 8 | Select Service | User memilih layanan terapi | TC-008 | Service: "Stress & Anxiety Release" | Service terpilih, lanjut ke step 2 | Sesuai expected | ✅ Pass |
-| 9 | Select Therapist | User memilih terapis | TC-009 | Therapist: "Dr. Andi Wijaya" | Therapist terpilih, tampilkan jadwal tersedia | Sesuai expected | ✅ Pass |
-| 10 | Select Schedule | User memilih jadwal yang available | TC-010 | Date: "2024-12-20"<br>Time: "14:00-15:00" | Jadwal terpilih, lanjut ke konfirmasi | Sesuai expected | ✅ Pass |
-| 11 | Select Schedule | User memilih jadwal yang sudah booked | TC-011 | Date: "2024-12-20"<br>Time: "10:00-11:00" (booked) | Error message: "Time slot already booked" | Sesuai expected | ✅ Pass |
-| 12 | Conflict Detection | Sistem deteksi konflik jadwal | TC-012 | Booking overlapping time | System prevent booking, show error | Sesuai expected | ✅ Pass |
-| 13 | Apply Promo Code | User apply promo code valid | TC-013 | Code: "FIRST30" | Discount applied, total price updated | Sesuai expected | ✅ Pass |
-| 14 | Apply Promo Code | User apply promo code expired | TC-014 | Code: "EXPIRED2023" | Error message: "Promo code expired" | Sesuai expected | ✅ Pass |
-| 15 | Confirm Booking | User konfirmasi booking | TC-015 | Click "Confirm & Pay" | Booking created with status "pending_payment", redirect to payment | Sesuai expected | ✅ Pass |
+| 8 | Select Service | User memilih layanan terapi | TC-008 | Service: "Stress & Anxiety Release" | Service terpilih, lanjut ke step 2 | Sesuai expected | Pass |
+| 9 | Select Therapist | User memilih terapis | TC-009 | Therapist: "Dr. Andi Wijaya" | Therapist terpilih, tampilkan jadwal tersedia | Sesuai expected | Pass |
+| 10 | Select Schedule | User memilih jadwal yang available | TC-010 | Date: "2025-12-20"<br>Time: "14:00-15:00" | Jadwal terpilih, lanjut ke konfirmasi | Sesuai expected | Pass |
+| 11 | Select Schedule | User memilih jadwal yang sudah booked | TC-011 | Date: "2025-12-20"<br>Time: "10:00-11:00" (booked) | Error message: "Time slot already booked" | Sesuai expected | Pass |
+| 12 | Conflict Detection | Sistem deteksi konflik jadwal | TC-012 | Booking overlapping time | System prevent booking, show error | Sesuai expected | Pass |
+| 13 | Apply Promo Code | User apply promo code valid | TC-013 | Code: "FIRST30" | Discount applied, total price updated | Sesuai expected | Pass |
+| 14 | Apply Promo Code | User apply promo code expired | TC-014 | Code: "EXPIRED2023" | Error message: "Promo code expired" | Sesuai expected | Pass |
+| 15 | Confirm Booking | User konfirmasi booking | TC-015 | Click "Confirm & Pay" | Booking created with status "pending_payment", redirect to payment | Sesuai expected | Pass |
 | **C. PAYMENT SYSTEM** |
-| 16 | Payment Gateway | User melakukan pembayaran via Midtrans | TC-016 | Payment method: Credit Card | Midtrans snap popup muncul, payment processed | Sesuai expected | ✅ Pass |
-| 17 | Payment Success | Payment berhasil | TC-017 | Payment status: Success | Booking status updated to "paid", confirmation email sent | Sesuai expected | ✅ Pass |
-| 18 | Payment Failed | Payment gagal | TC-018 | Payment status: Failed | Booking status updated to "payment_failed", error notification | Sesuai expected | ✅ Pass |
-| 19 | Payment Notification | Midtrans webhook notification | TC-019 | Webhook dari Midtrans | System update payment status correctly | Sesuai expected | ✅ Pass |
+| 16 | Payment Gateway | User melakukan pembayaran via Midtrans | TC-016 | Payment method: Credit Card | Midtrans snap popup muncul, payment processed | Sesuai expected | Pass |
+| 17 | Payment Success | Payment berhasil | TC-017 | Payment status: Success | Booking status updated to "paid", confirmation email sent | Sesuai expected | Pass |
+| 18 | Payment Failed | Payment gagal | TC-018 | Payment status: Failed | Booking status updated to "payment_failed", error notification | Sesuai expected | Pass |
+| 19 | Payment Notification | Midtrans webhook notification | TC-019 | Webhook dari Midtrans | System update payment status correctly | Sesuai expected | Pass |
 | **D. CLIENT DASHBOARD** |
-| 20 | View Dashboard | Client melihat dashboard | TC-020 | Login as client | Dashboard tampil dengan stats, upcoming sessions, progress chart | Sesuai expected | ✅ Pass |
-| 21 | View Booking History | Client melihat riwayat booking | TC-021 | Click "My Appointments" | List of bookings tampil dengan filter dan pagination | Sesuai expected | ✅ Pass |
-| 22 | View Session History | Client melihat riwayat sesi | TC-022 | Click "Session History" | List of completed sessions dengan notes (shared) | Sesuai expected | ✅ Pass |
-| 23 | Reschedule Booking | Client reschedule booking (H-2) | TC-023 | Select new date/time | Booking rescheduled, notification sent | Sesuai expected | ✅ Pass |
-| 24 | Cancel Booking | Client cancel booking (H-2) | TC-024 | Click "Cancel", provide reason | Booking cancelled, refund processed | Sesuai expected | ✅ Pass |
-| 25 | Cancel Booking | Client cancel booking (H-0) | TC-025 | Click "Cancel" on same day | Error message: "Cannot cancel on the same day" | Sesuai expected | ✅ Pass |
-| 26 | Give Review | Client memberikan review setelah sesi | TC-026 | Rating: 5 stars<br>Comment: "Excellent!" | Review submitted, therapist rating updated | Sesuai expected | ✅ Pass |
+| 20 | View Dashboard | Client melihat dashboard | TC-020 | Login as client | Dashboard tampil dengan stats, upcoming sessions, progress chart | Sesuai expected | Pass |
+| 21 | View Booking History | Client melihat riwayat booking | TC-021 | Click "My Appointments" | List of bookings tampil dengan filter dan pagination | Sesuai expected | Pass |
+| 22 | View Session History | Client melihat riwayat sesi | TC-022 | Click "Session History" | List of completed sessions dengan notes (shared) | Sesuai expected | Pass |
+| 23 | Reschedule Booking | Client reschedule booking (H-2) | TC-023 | Select new date/time | Booking rescheduled, notification sent | Sesuai expected | Pass |
+| 24 | Cancel Booking | Client cancel booking (H-2) | TC-024 | Click "Cancel", provide reason | Booking cancelled, refund processed | Sesuai expected | Pass |
+| 25 | Cancel Booking | Client cancel booking (H-0) | TC-025 | Click "Cancel" on same day | Error message: "Cannot cancel on the same day" | Sesuai expected | Pass |
+| 26 | Give Review | Client memberikan review setelah sesi | TC-026 | Rating: 5 stars<br>Comment: "Excellent!" | Review submitted, therapist rating updated | Sesuai expected | Pass |
 | **E. THERAPIST DASHBOARD** |
-| 27 | View Dashboard | Therapist melihat dashboard | TC-027 | Login as therapist | Dashboard tampil dengan today's schedule, stats, earnings | Sesuai expected | ✅ Pass |
-| 28 | View Schedule | Therapist melihat jadwal | TC-028 | Click "Schedule" | Calendar view dengan bookings | Sesuai expected | ✅ Pass |
-| 29 | Manage Availability | Therapist set availability | TC-029 | Set Monday 09:00-17:00 available | Availability saved, reflected in booking system | Sesuai expected | ✅ Pass |
-| 30 | Block Time | Therapist block time untuk cuti | TC-030 | Block Dec 25-26, 2024 | Time blocked, tidak muncul di available slots | Sesuai expected | ✅ Pass |
-| 31 | Document Session | Therapist dokumentasi sesi | TC-031 | Fill all required fields | Documentation saved, session status updated to "completed" | Sesuai expected | ✅ Pass |
-| 32 | Auto-save | Auto-save saat dokumentasi | TC-032 | Type in form, wait 30 seconds | Data auto-saved, "Last saved" indicator updated | Sesuai expected | ✅ Pass |
-| 33 | View Client History | Therapist lihat riwayat klien | TC-033 | Click client name | Client profile dengan session history tampil | Sesuai expected | ✅ Pass |
-| 34 | Request Withdrawal | Therapist request withdrawal | TC-034 | Amount: Rp 5.000.000<br>Bank details | Withdrawal request submitted, status "pending" | Sesuai expected | ✅ Pass |
+| 27 | View Dashboard | Therapist melihat dashboard | TC-027 | Login as therapist | Dashboard tampil dengan today's schedule, stats, earnings | Sesuai expected | Pass |
+| 28 | View Schedule | Therapist melihat jadwal | TC-028 | Click "Schedule" | Calendar view dengan bookings | Sesuai expected | Pass |
+| 29 | Manage Availability | Therapist set availability | TC-029 | Set Monday 09:00-17:00 available | Availability saved, reflected in booking system | Sesuai expected | Pass |
+| 30 | Block Time | Therapist block time untuk cuti | TC-030 | Block Dec 25-26, 2025 | Time blocked, tidak muncul di available slots | Sesuai expected | Pass |
+| 31 | Document Session | Therapist dokumentasi sesi | TC-031 | Fill all required fields | Documentation saved, session status updated to "completed" | Sesuai expected | Pass |
+| 32 | Auto-save | Auto-save saat dokumentasi | TC-032 | Type in form, wait 30 seconds | Data auto-saved, "Last saved" indicator updated | Sesuai expected | Pass |
+| 33 | View Client History | Therapist lihat riwayat klien | TC-033 | Click client name | Client profile dengan session history tampil | Sesuai expected | Pass |
+| 34 | Request Withdrawal | Therapist request withdrawal | TC-034 | Amount: Rp 5.000.000<br>Bank details | Withdrawal request submitted, status "pending" | Sesuai expected | Pass |
 | **F. ADMIN DASHBOARD** |
-| 35 | View Dashboard | Admin melihat dashboard | TC-035 | Login as admin | Dashboard tampil dengan KPIs, charts, recent bookings | Sesuai expected | ✅ Pass |
-| 36 | Manage Users | Admin CRUD users | TC-036 | Create/Edit/Delete user | User data updated correctly | Sesuai expected | ✅ Pass |
-| 37 | Approve Therapist | Admin approve therapist application | TC-037 | Click "Approve" | Therapist status updated to "approved", notification sent | Sesuai expected | ✅ Pass |
-| 38 | Manage Services | Admin CRUD services | TC-038 | Create new service | Service created, available for booking | Sesuai expected | ✅ Pass |
-| 39 | Manage Bookings | Admin view/edit bookings | TC-039 | Edit booking details | Booking updated, notifications sent | Sesuai expected | ✅ Pass |
-| 40 | Process Withdrawal | Admin process withdrawal | TC-040 | Click "Approve & Process" | Withdrawal status updated, therapist notified | Sesuai expected | ✅ Pass |
-| 41 | Generate Report | Admin generate laporan | TC-041 | Select "Financial Report"<br>Period: Dec 2024 | Report generated dengan charts dan tables | Sesuai expected | ✅ Pass |
-| 42 | Export Report | Admin export report ke Excel | TC-042 | Click "Export to Excel" | Excel file downloaded | Sesuai expected | ✅ Pass |
-| 43 | Moderate Reviews | Admin moderate reviews | TC-043 | Approve/Reject review | Review status updated | Sesuai expected | ✅ Pass |
-| 44 | Manage Content | Admin CRUD blog posts | TC-044 | Create new blog post | Blog post published | Sesuai expected | ✅ Pass |
-| 45 | System Settings | Admin update settings | TC-045 | Update site_name | Setting saved, reflected in frontend | Sesuai expected | ✅ Pass |
+| 35 | View Dashboard | Admin melihat dashboard | TC-035 | Login as admin | Dashboard tampil dengan KPIs, charts, recent bookings | Sesuai expected | Pass |
+| 36 | Manage Users | Admin CRUD users | TC-036 | Create/Edit/Delete user | User data updated correctly | Sesuai expected | Pass |
+| 37 | Approve Therapist | Admin approve therapist application | TC-037 | Click "Approve" | Therapist status updated to "approved", notification sent | Sesuai expected | Pass |
+| 38 | Manage Services | Admin CRUD services | TC-038 | Create new service | Service created, available for booking | Sesuai expected | Pass |
+| 39 | Manage Bookings | Admin view/edit bookings | TC-039 | Edit booking details | Booking updated, notifications sent | Sesuai expected | Pass |
+| 40 | Process Withdrawal | Admin process withdrawal | TC-040 | Click "Approve & Process" | Withdrawal status updated, therapist notified | Sesuai expected | Pass |
+| 41 | Generate Report | Admin generate laporan | TC-041 | Select "Financial Report"<br>Period: Dec 2025 | Report generated dengan charts dan tables | Sesuai expected | Pass |
+| 42 | Export Report | Admin export report ke Excel | TC-042 | Click "Export to Excel" | Excel file downloaded | Sesuai expected | Pass |
+| 43 | Moderate Reviews | Admin moderate reviews | TC-043 | Approve/Reject review | Review status updated | Sesuai expected | Pass |
+| 44 | Manage Content | Admin CRUD blog posts | TC-044 | Create new blog post | Blog post published | Sesuai expected | Pass |
+| 45 | System Settings | Admin update settings | TC-045 | Update site_name | Setting saved, reflected in frontend | Sesuai expected | Pass |
 | **G. NOTIFICATIONS** |
-| 46 | Email Confirmation | Email konfirmasi setelah booking | TC-046 | Complete booking | Email sent to client with booking details | Sesuai expected | ✅ Pass |
-| 47 | Email Reminder H-1 | Email reminder 1 hari sebelum sesi | TC-047 | Booking tomorrow | Email sent to client | Sesuai expected | ✅ Pass |
-| 48 | Email Reminder H-0 | Email reminder hari H (2 jam sebelum) | TC-048 | Booking today, 2 hours before | Email sent to client | Sesuai expected | ✅ Pass |
-| 49 | In-app Notification | Notifikasi dalam aplikasi | TC-049 | New booking for therapist | Notification appears in therapist dashboard | Sesuai expected | ✅ Pass |
-| 50 | Mark as Read | User mark notification as read | TC-050 | Click notification | Notification marked as read, badge updated | Sesuai expected | ✅ Pass |
+| 46 | Email Confirmation | Email konfirmasi setelah booking | TC-046 | Complete booking | Email sent to client with booking details | Sesuai expected | Pass |
+| 47 | Email Reminder H-1 | Email reminder 1 hari sebelum sesi | TC-047 | Booking tomorrow | Email sent to client | Sesuai expected | Pass |
+| 48 | Email Reminder H-0 | Email reminder hari H (2 jam sebelum) | TC-048 | Booking today, 2 hours before | Email sent to client | Sesuai expected | Pass |
+| 49 | In-app Notification | Notifikasi dalam aplikasi | TC-049 | New booking for therapist | Notification appears in therapist dashboard | Sesuai expected | Pass |
+| 50 | Mark as Read | User mark notification as read | TC-050 | Click notification | Notification marked as read, badge updated | Sesuai expected | Pass |
 
 **Sumber**: Hasil Pengujian
 
@@ -1171,10 +1106,10 @@ Usability Testing dilakukan untuk mengevaluasi seberapa mudah dan nyaman sistem 
 
 **A. Metodologi**
 
-**Responden**: 15 orang
-- 5 klien potensial (target market)
-- 5 terapis (dari CUR-HEART dan eksternal)
-- 5 admin/staff
+**Responden**: 5 orang
+- 2 klien potensial (target market)
+- 2 terapis (dari CUR-HEART dan eksternal)
+- 1 admin/staff
 
 **Metode**:
 1. **Task-based Testing**: Responden diminta menyelesaikan tugas tertentu
@@ -1209,11 +1144,11 @@ Usability Testing dilakukan untuk mengevaluasi seberapa mudah dan nyaman sistem 
 
 | Metric | Target | Actual | Status |
 |--------|--------|--------|--------|
-| **Task Completion Rate** | ≥ 90% | 92% | ✅ Pass |
-| **Average Time on Task** | < 5 menit | 3.2 menit | ✅ Pass |
-| **Error Rate** | < 5% | 4% | ✅ Pass |
-| **System Usability Scale (SUS)** | ≥ 70/100 | 78/100 | ✅ Pass |
-| **User Satisfaction** | ≥ 4/5 | 4.2/5 | ✅ Pass |
+| **Task Completion Rate** | ≥ 90% | 92% | Pass |
+| **Average Time on Task** | < 5 menit | 3.2 menit | Pass |
+| **Error Rate** | < 5% | 4% | Pass |
+| **System Usability Scale (SUS)** | ≥ 70/100 | 78/100 | Pass |
+| **User Satisfaction** | ≥ 4/5 | 4.2/5 | Pass |
 
 **Sumber**: Hasil Pengujian
 
@@ -1274,5 +1209,3 @@ Beberapa minor issues ditemukan dan telah didokumentasikan untuk improvement di 
 ---
 
 **Akhir BAB IV**
-
-BAB IV telah menjelaskan secara detail tentang analisa kebutuhan, perancangan sistem (Use Case Diagram, Activity Diagram, UI/UX Design, Database Design), implementasi, spesifikasi aplikasi, dan pengujian aplikasi. Semua deliverables teknis telah lengkap dan sistem siap untuk deployment.
