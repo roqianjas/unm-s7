@@ -107,7 +107,8 @@ Persamaan dengan CUR-HEART adalah sama-sama sistem informasi untuk layanan keseh
 
 ### 2.2.2. Penelitian 2: Platform Digital untuk Layanan Terapi Online
 
-Judul: "Pengembangan Platform Digital untuk Layanan Terapi Psikologi Online di Indonesia" oleh Prasetyo, D., & Wijaya, K. (2023) yang dipublikasikan di Jurnal Sistem Informasi Bisnis, Vol. 13, No. 1 (Sinta 2).
+**Judul**: 
+"Pengembangan Platform Digital untuk Layanan Terapi Psikologi Online di Indonesia" oleh Prasetyo, D., & Wijaya, K. (2023) yang dipublikasikan di Jurnal Sistem Informasi Bisnis, Vol. 13, No. 1 (Sinta 2).
 
 Penelitian ini mengembangkan platform pasar digital yang menghubungkan psikolog dengan klien untuk sesi terapi daring melalui panggilan video, mencakup fitur pemesanan, pembayaran, konferensi video, dan penilaian menggunakan teknologi Node.js, React, dan MongoDB. Hasil penelitian menunjukkan peningkatan aksesibilitas layanan terapi sebesar 120%, pengurangan biaya operasional psikolog sebesar 40%, tingkat konversi pemesanan 72%, dan tingkat retensi pengguna 68% setelah 3 bulan.
 
@@ -115,7 +116,8 @@ Persamaan dengan CUR-HEART adalah sama-sama platform digital untuk layanan terap
 
 ### 2.2.3. Penelitian 3: Implementasi Business Model Canvas pada Startup Healthtech
 
-Judul: "Implementasi Business Model Canvas pada Startup Healthtech: Studi Kasus Halodoc" oleh Santoso, B., & Lestari, P. (2022) yang dipublikasikan di Jurnal Manajemen dan Kewirausahaan, Vol. 24, No. 2 (Sinta 2).
+**Judul**: 
+"Implementasi Business Model Canvas pada Startup Healthtech: Studi Kasus Halodoc" oleh Santoso, B., & Lestari, P. (2022) yang dipublikasikan di Jurnal Manajemen dan Kewirausahaan, Vol. 24, No. 2 (Sinta 2).
 
 Penelitian ini menganalisis penerapan Business Model Canvas pada startup teknologi kesehatan Halodoc dan bagaimana BMC membantu dalam pengembangan strategi bisnis dan penggalangan dana menggunakan metode kualitatif dengan studi kasus. Hasil penelitian menunjukkan BMC efektif untuk visualisasi model bisnis teknologi kesehatan, memudahkan identifikasi kemitraan utama dengan rumah sakit dan apotek, membantu perubahan arah dari telemedicine ke ekosistem kesehatan, dan mempercepat proses penggalangan dana dengan proposisi nilai yang jelas.
 
@@ -123,7 +125,8 @@ Persamaan dengan CUR-HEART adalah sama-sama menggunakan BMC untuk perencanaan bi
 
 ### 2.2.4. Penelitian 4: User Experience Design untuk Aplikasi Kesehatan Mental
 
-Judul: "User Experience Design untuk Aplikasi Kesehatan Mental: Pendekatan Design Thinking" oleh Kusuma, A., & Rahman, F. (2023) yang dipublikasikan di Jurnal Desain Komunikasi Visual, Vol. 11, No. 1 (Sinta 3).
+**Judul**: 
+"User Experience Design untuk Aplikasi Kesehatan Mental: Pendekatan Design Thinking" oleh Kusuma, A., & Rahman, F. (2023) yang dipublikasikan di Jurnal Desain Komunikasi Visual, Vol. 11, No. 1 (Sinta 3).
 
 Penelitian ini menggunakan metode Design Thinking untuk merancang pengalaman pengguna aplikasi kesehatan mental yang fokus pada empati, privasi, dan kemudahan penggunaan dengan melibatkan 30 responden dalam pengujian pengguna. Hasil penelitian menunjukkan Design Thinking efektif untuk memahami kebutuhan pengguna yang sensitif, prinsip empati dan privasi meningkatkan kepercayaan pengguna, skor kegunaan meningkat dari 62 menjadi 84 setelah iterasi, dan keterlibatan pengguna meningkat 45%.
 
