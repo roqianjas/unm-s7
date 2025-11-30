@@ -11,162 +11,39 @@ Berdasarkan hasil wawancara, observasi, dan survei yang telah dilakukan, teriden
 
 **A. Kebutuhan Fungsional**
 
-Kebutuhan fungsional adalah fungsi-fungsi yang harus ada dalam sistem untuk mendukung proses bisnis.
+Kebutuhan fungsional sistem CUR-HEART mencakup:
 
-**Untuk Tamu (Guest)**:
-1. Sistem harus dapat menampilkan halaman beranda dengan informasi bisnis
-2. Sistem harus dapat menampilkan katalog layanan terapi lengkap dengan deskripsi dan harga
-3. Sistem harus dapat menampilkan direktori terapis dengan profil, spesialisasi, dan rating
-4. Sistem harus dapat menampilkan artikel blog tentang kesehatan mental
-5. Sistem harus dapat menampilkan FAQ (Frequently Asked Questions)
-6. Sistem harus menyediakan formulir kontak untuk inquiry
-7. Sistem harus menyediakan fitur registrasi akun baru (klien atau terapis)
-8. Sistem harus menyediakan fitur login untuk pengguna terdaftar
+**Untuk Tamu**: Menampilkan informasi bisnis, katalog layanan, direktori terapis, blog, FAQ, formulir kontak, registrasi, dan login.
 
-**Untuk Klien**:
-1. Sistem harus dapat menampilkan dashboard klien dengan ringkasan informasi
-2. Sistem harus memungkinkan klien melakukan reservasi layanan terapi online
-3. Sistem harus menampilkan jadwal ketersediaan terapis secara real-time
-4. Sistem harus memungkinkan klien memilih terapis berdasarkan spesialisasi dan rating
-5. Sistem harus memungkinkan klien memilih tanggal dan waktu sesi terapi
-6. Sistem harus terintegrasi dengan payment gateway untuk pembayaran online
-7. Sistem harus mengirim email konfirmasi setelah reservasi berhasil
-8. Sistem harus mengirim email reminder H-1 dan H-0 sebelum sesi
-9. Sistem harus menampilkan riwayat reservasi dan sesi terapi klien
-10. Sistem harus menampilkan progress tracking dengan grafik visual
-11. Sistem harus memungkinkan klien menjadwal ulang atau membatalkan reservasi (dengan syarat)
-12. Sistem harus memungkinkan klien memberikan rating dan review setelah sesi
-13. Sistem harus memungkinkan klien mengakses catatan sesi yang dibagikan terapis
-14. Sistem harus memungkinkan klien memperbarui profil dan pengaturan akun
-15. Sistem harus menampilkan notifikasi untuk klien
+**Untuk Klien**: Dashboard, reservasi online, pilih terapis dan jadwal, payment gateway, email konfirmasi dan reminder, riwayat reservasi, progress tracking, reschedule/cancel, rating dan review, akses catatan sesi, update profil, dan notifikasi.
 
-**Untuk Terapis**:
-1. Sistem harus dapat menampilkan dashboard terapis dengan ringkasan informasi
-2. Sistem harus menampilkan jadwal sesi terapi hari ini dan minggu ini
-3. Sistem harus menampilkan daftar klien dengan detail reservasi
-4. Sistem harus memungkinkan terapis mengatur ketersediaan jadwal
-5. Sistem harus memungkinkan terapis memblokir waktu untuk cuti atau keperluan pribadi
-6. Sistem harus memungkinkan terapis mendokumentasikan sesi terapi dengan formulir terstruktur
-7. Sistem harus menyediakan template untuk dokumentasi sesi
-8. Sistem harus memungkinkan terapis mengakses riwayat lengkap klien
-9. Sistem harus menampilkan timeline progress klien
-10. Sistem harus memungkinkan terapis memperbarui status sesi (completed, cancelled, no-show)
-11. Sistem harus menampilkan dashboard pendapatan terapis
-12. Sistem harus memungkinkan terapis melakukan withdrawal pendapatan
-13. Sistem harus memungkinkan terapis memperbarui profil dan pengaturan
-14. Sistem harus menampilkan notifikasi untuk terapis
-15. Sistem harus memungkinkan terapis melihat rating dan review dari klien
+**Untuk Terapis**: Dashboard, jadwal sesi, daftar klien, atur ketersediaan, dokumentasi sesi dengan template, akses riwayat klien, timeline progress, update status sesi, dashboard pendapatan, withdrawal, update profil, notifikasi, dan lihat rating.
 
-**Untuk Admin**:
-1. Sistem harus dapat menampilkan dashboard admin dengan metrik kunci
-2. Sistem harus menampilkan grafik pendapatan, pertumbuhan pengguna, dan layanan terpopuler
-3. Sistem harus memungkinkan admin mengelola data pengguna (CRUD)
-4. Sistem harus memungkinkan admin menyetujui atau menolak pendaftaran terapis baru
-5. Sistem harus memungkinkan admin mengelola data layanan terapi (CRUD)
-6. Sistem harus memungkinkan admin mengelola data reservasi
-7. Sistem harus memungkinkan admin memverifikasi pembayaran manual (jika ada)
-8. Sistem harus memungkinkan admin mengelola permintaan withdrawal terapis
-9. Sistem harus memungkinkan admin membuat laporan (reservasi, keuangan, kinerja)
-10. Sistem harus memungkinkan admin mengekspor laporan ke Excel/PDF
-11. Sistem harus memungkinkan admin mengelola konten blog (CRUD)
-12. Sistem harus memungkinkan admin mengelola konten FAQ (CRUD)
-13. Sistem harus memungkinkan admin mengelola kode promo (CRUD)
-14. Sistem harus memungkinkan admin melihat dan moderasi ulasan klien
-15. Sistem harus memungkinkan admin melihat log aktivitas pengguna (audit trail)
-16. Sistem harus memungkinkan admin mengatur konfigurasi sistem
-17. Sistem harus menampilkan notifikasi untuk admin
+**Untuk Admin**: Dashboard dengan metrik, grafik analitik, CRUD pengguna/layanan/reservasi, approve terapis, verifikasi pembayaran, kelola withdrawal, generate laporan, export Excel/PDF, kelola konten (blog, FAQ, promo), moderasi review, audit log, dan konfigurasi sistem.
 
-**Untuk Sistem (Automated)**:
-1. Sistem harus secara otomatis mendeteksi konflik jadwal saat reservasi
-2. Sistem harus secara otomatis mengirim email konfirmasi setelah reservasi
-3. Sistem harus secara otomatis mengirim email reminder H-1 dan H-0
-4. Sistem harus secara otomatis memperbarui status pembayaran setelah verifikasi dari payment gateway
-5. Sistem harus secara otomatis menghitung pendapatan terapis (80% dari fee sesi)
-6. Sistem harus secara otomatis membuat notifikasi untuk pengguna terkait
-7. Sistem harus secara otomatis melakukan backup database harian
-8. Sistem harus secara otomatis mencatat semua aktivitas penting ke audit log
+**Untuk Sistem (Automated)**: Deteksi konflik jadwal, kirim email otomatis, update status pembayaran, hitung pendapatan terapis, buat notifikasi, backup database harian, dan audit logging.
 
 **B. Kebutuhan Non-Fungsional**
 
-Kebutuhan non-fungsional adalah karakteristik sistem yang tidak terkait langsung dengan fungsi, tetapi penting untuk kualitas sistem.
+**1. Performance**: Page load < 2 detik, API response < 500ms, query database < 100ms, handle 100 pengguna bersamaan, 500 transaksi/hari.
 
-**1. Performance (Kinerja)**:
-- Waktu muat halaman rata-rata < 2 detik
-- Waktu respons API < 500ms untuk 95% permintaan
-- Waktu kueri database < 100ms (rata-rata)
-- Sistem harus dapat menangani minimal 100 pengguna bersamaan
-- Sistem harus dapat menangani minimal 500 transaksi per hari
+**2. Security**: Enkripsi data sensitif, HTTPS, prevent SQL injection/XSS/CSRF, RBAC, comply UU PDP, bcrypt password hashing, rate limiting, audit logging.
 
-**2. Security (Keamanan)**:
-- Sistem harus mengenkripsi semua data sensitif (password, data kesehatan)
-- Sistem harus menggunakan HTTPS untuk semua komunikasi
-- Sistem harus mencegah SQL injection menggunakan prepared statements/ORM
-- Sistem harus mencegah XSS (Cross-Site Scripting) dengan input sanitization
-- Sistem harus mencegah CSRF (Cross-Site Request Forgery) dengan token
-- Sistem harus mengimplementasikan role-based access control (RBAC)
-- Sistem harus comply dengan UU Perlindungan Data Pribadi (UU PDP)
-- Sistem harus melakukan hashing password dengan bcrypt (cost factor 12)
-- Sistem harus mengimplementasikan rate limiting untuk mencegah brute force attack
-- Sistem harus melakukan audit logging untuk semua aktivitas penting
+**3. Usability**: Antarmuka intuitif, SUS score ≥ 70/100, task completion rate ≥ 90%, error message jelas, WCAG 2.1 Level AA compliance, keyboard navigation.
 
-**3. Usability (Kegunaan)**:
-- Sistem harus memiliki antarmuka yang intuitif dan mudah dipahami
-- Sistem harus memiliki System Usability Scale (SUS) score minimal 70/100
-- Sistem harus memiliki tingkat penyelesaian tugas (task completion rate) ≥ 90%
-- Sistem harus menyediakan pesan error yang jelas dan actionable
-- Sistem harus menyediakan help text dan tooltip untuk fitur yang kompleks
-- Sistem harus accessible (WCAG 2.1 Level AA compliance)
-- Sistem harus memiliki rasio kontras warna minimal 4.5:1
-- Sistem harus dapat digunakan dengan keyboard navigation
+**4. Reliability**: Uptime ≥ 99%, MTBF > 720 jam, RTO < 4 jam, RPO < 24 jam, automated backup harian, disaster recovery plan.
 
-**4. Reliability (Keandalan)**:
-- Sistem harus memiliki uptime minimal 99% (maksimal downtime 7,2 jam/bulan)
-- Sistem harus memiliki Mean Time Between Failures (MTBF) > 720 jam
-- Sistem harus memiliki Recovery Time Objective (RTO) < 4 jam
-- Sistem harus memiliki Recovery Point Objective (RPO) < 24 jam
-- Sistem harus melakukan automated backup harian dengan retensi 30 hari
-- Sistem harus memiliki disaster recovery plan
+**5. Scalability**: Horizontal scaling, handle 10x data growth, database replication, caching, queue untuk background jobs.
 
-**5. Scalability (Skalabilitas)**:
-- Sistem harus dapat di-scale secara horizontal (menambah server)
-- Sistem harus dapat menangani pertumbuhan data hingga 10x tanpa degradasi performa
-- Database harus dapat di-scale dengan replication (master-slave)
-- Sistem harus menggunakan caching untuk mengurangi load database
-- Sistem harus menggunakan queue untuk background jobs
+**6. Maintainability**: PSR-12 coding standards, test coverage ≥ 70%, inline comments, API documentation, version control (Git), semantic versioning.
 
-**6. Maintainability (Kemudahan Pemeliharaan)**:
-- Kode harus mengikuti coding standards (PSR-12 untuk PHP)
-- Kode harus memiliki test coverage minimal 70%
-- Kode harus memiliki inline comments untuk logika yang kompleks
-- Sistem harus memiliki dokumentasi API yang lengkap
-- Sistem harus memiliki dokumentasi deployment dan configuration
-- Sistem harus menggunakan version control (Git)
-- Sistem harus menggunakan semantic versioning
+**7. Portability**: Multi-environment support, multi-OS, containerization (Docker), environment configuration terpisah.
 
-**7. Portability (Portabilitas)**:
-- Sistem harus dapat berjalan di berbagai environment (development, staging, production)
-- Sistem harus dapat berjalan di berbagai OS (Linux, Windows, macOS)
-- Sistem harus menggunakan containerization (Docker) untuk consistency
-- Sistem harus memiliki environment configuration yang terpisah
+**8. Compatibility**: Browser modern (Chrome, Firefox, Safari, Edge), responsive design, screen reader compatible.
 
-**8. Compatibility (Kompatibilitas)**:
-- Sistem harus kompatibel dengan browser modern (Chrome, Firefox, Safari, Edge)
-- Sistem harus kompatibel dengan browser versi 2 tahun terakhir
-- Sistem harus responsive dan dapat diakses dari desktop, tablet, dan mobile
-- Sistem harus kompatibel dengan screen reader untuk accessibility
+**9. Localization**: Bahasa Indonesia, format tanggal DD/MM/YYYY, mata uang Rupiah, timezone WIB.
 
-**9. Localization (Lokalisasi)**:
-- Sistem harus menggunakan Bahasa Indonesia sebagai bahasa utama
-- Sistem harus menggunakan format tanggal Indonesia (DD/MM/YYYY)
-- Sistem harus menggunakan format mata uang Rupiah (Rp)
-- Sistem harus menggunakan timezone WIB (UTC+7)
-
-**10. Legal & Compliance**:
-- Sistem harus comply dengan UU Perlindungan Data Pribadi (UU PDP)
-- Sistem harus memiliki Terms of Service dan Privacy Policy
-- Sistem harus memiliki consent mechanism untuk data collection
-- Sistem harus memiliki data retention policy
-- Sistem harus memiliki data deletion mechanism (right to be forgotten)
+**10. Legal & Compliance**: Comply UU PDP, Terms of Service, Privacy Policy, consent mechanism, data retention policy, right to be forgotten.
 
 **C. Prioritas Kebutuhan (MoSCoW Method)**
 
@@ -701,20 +578,7 @@ Sumber: Hasil Penelitian (Figma Design)
 File: `01_desain/mockup/42_admin_dashboard.jpg`  
 Sumber: Hasil Penelitian (Figma Design)
 
-**Catatan**: Semua mockup lengkap (66 halaman) tersedia di folder `tugas-selesai/06_rintisan_bisnis_digital/01_desain/mockup/` dalam format JPG. Mockup mencakup:
-- 12 halaman public pages
-- 4 halaman authentication
-- 12 halaman client dashboard
-- 13 halaman therapist dashboard
-- 25 halaman admin dashboard
-
-**Prinsip Desain yang Diterapkan**:
-1. **Consistency**: Penggunaan design system yang konsisten di seluruh halaman
-2. **Clarity**: Informasi disajikan dengan jelas dan mudah dipahami
-3. **Efficiency**: Minimize clicks untuk menyelesaikan tugas
-4. **Feedback**: Provide clear feedback untuk setiap aksi pengguna
-5. **Accessibility**: Comply dengan WCAG 2.1 Level AA
-6. **Responsive**: Desain yang adapt dengan berbagai ukuran layar
+**Catatan**: Semua mockup lengkap (66 halaman) tersedia di folder `01_desain/mockup/` mencakup 12 halaman public, 4 authentication, 12 client dashboard, 13 therapist dashboard, dan 25 admin dashboard. Prinsip desain: Consistency, Clarity, Efficiency, Feedback, Accessibility (WCAG 2.1 Level AA), dan Responsive.
 
 
 ### 4.1.5. Rancangan Database
@@ -957,220 +821,15 @@ sudo supervisorctl restart all
 
 #### C. Key Implementation Highlights
 
-**1. Booking System dengan Conflict Detection**
-```php
-// BookingController.php
-public function checkAvailability(Request $request)
-{
-    $therapistId = $request->therapist_id;
-    $date = $request->date;
-    $startTime = $request->start_time;
-    $endTime = $request->end_time;
-    
-    // Check therapist availability
-    $isAvailable = TherapistAvailability::where('therapist_id', $therapistId)
-        ->where('day_of_week', strtolower(Carbon::parse($date)->format('l')))
-        ->where('start_time', '<=', $startTime)
-        ->where('end_time', '>=', $endTime)
-        ->where('is_available', true)
-        ->exists();
-    
-    if (!$isAvailable) {
-        return response()->json(['available' => false, 'message' => 'Therapist not available']);
-    }
-    
-    // Check for conflicting bookings
-    $hasConflict = Booking::where('therapist_id', $therapistId)
-        ->where('booking_date', $date)
-        ->where('status', '!=', 'cancelled')
-        ->where(function($query) use ($startTime, $endTime) {
-            $query->whereBetween('start_time', [$startTime, $endTime])
-                  ->orWhereBetween('end_time', [$startTime, $endTime])
-                  ->orWhere(function($q) use ($startTime, $endTime) {
-                      $q->where('start_time', '<=', $startTime)
-                        ->where('end_time', '>=', $endTime);
-                  });
-        })
-        ->exists();
-    
-    return response()->json([
-        'available' => !$hasConflict,
-        'message' => $hasConflict ? 'Time slot already booked' : 'Time slot available'
-    ]);
-}
-```
+Implementasi sistem mencakup fitur-fitur utama:
 
-**2. Midtrans Payment Integration**
-```php
-// PaymentController.php
-public function createPayment(Booking $booking)
-{
-    \Midtrans\Config::$serverKey = config('services.midtrans.server_key');
-    \Midtrans\Config::$isProduction = config('services.midtrans.is_production');
-    
-    $params = [
-        'transaction_details' => [
-            'order_id' => 'BOOKING-' . $booking->id . '-' . time(),
-            'gross_amount' => $booking->final_price,
-        ],
-        'customer_details' => [
-            'first_name' => $booking->client->user->name,
-            'email' => $booking->client->user->email,
-            'phone' => $booking->client->phone,
-        ],
-        'item_details' => [
-            [
-                'id' => $booking->service->id,
-                'price' => $booking->service->price,
-                'quantity' => 1,
-                'name' => $booking->service->name,
-            ]
-        ],
-    ];
-    
-    $snapToken = \Midtrans\Snap::getSnapToken($params);
-    
-    Payment::create([
-        'booking_id' => $booking->id,
-        'amount' => $booking->final_price,
-        'method' => 'midtrans',
-        'status' => 'pending',
-        'midtrans_order_id' => $params['transaction_details']['order_id'],
-    ]);
-    
-    return response()->json(['snap_token' => $snapToken]);
-}
+**1. Booking System dengan Conflict Detection**: Sistem mengecek ketersediaan terapis dan mendeteksi konflik jadwal secara otomatis menggunakan query database yang efisien.
 
-public function handleNotification(Request $request)
-{
-    $notification = new \Midtrans\Notification();
-    
-    $orderId = $notification->order_id;
-    $transactionStatus = $notification->transaction_status;
-    
-    $payment = Payment::where('midtrans_order_id', $orderId)->firstOrFail();
-    $booking = $payment->booking;
-    
-    if ($transactionStatus == 'capture' || $transactionStatus == 'settlement') {
-        $payment->update([
-            'status' => 'success',
-            'paid_at' => now(),
-            'midtrans_transaction_id' => $notification->transaction_id,
-        ]);
-        
-        $booking->update(['status' => 'paid']);
-        
-        // Send confirmation email
-        Mail::to($booking->client->user->email)->send(new BookingConfirmation($booking));
-        
-        // Notify therapist
-        Notification::create([
-            'user_id' => $booking->therapist->user_id,
-            'type' => 'new_booking',
-            'title' => 'New Booking',
-            'message' => 'You have a new booking from ' . $booking->client->user->name,
-        ]);
-        
-        // Schedule reminder emails
-        SendReminderEmail::dispatch($booking)->delay(now()->addDay());
-    } elseif ($transactionStatus == 'pending') {
-        $payment->update(['status' => 'pending']);
-    } elseif ($transactionStatus == 'deny' || $transactionStatus == 'expire' || $transactionStatus == 'cancel') {
-        $payment->update(['status' => 'failed']);
-        $booking->update(['status' => 'payment_failed']);
-    }
-    
-    return response()->json(['status' => 'success']);
-}
-```
+**2. Midtrans Payment Integration**: Integrasi dengan Midtrans Snap API untuk pembayaran online dengan multiple payment methods dan webhook notification handling.
 
-**3. Automated Email Notifications**
-```php
-// SendReminderEmail.php (Job)
-class SendReminderEmail implements ShouldQueue
-{
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
-    
-    protected $booking;
-    
-    public function __construct(Booking $booking)
-    {
-        $this->booking = $booking;
-    }
-    
-    public function handle()
-    {
-        $bookingDate = Carbon::parse($this->booking->booking_date);
-        $now = Carbon::now();
-        
-        // H-1 reminder
-        if ($bookingDate->diffInDays($now) == 1) {
-            Mail::to($this->booking->client->user->email)
-                ->send(new SessionReminder($this->booking, 'tomorrow'));
-        }
-        
-        // H-0 reminder (2 hours before)
-        if ($bookingDate->isToday() && $bookingDate->diffInHours($now) == 2) {
-            Mail::to($this->booking->client->user->email)
-                ->send(new SessionReminder($this->booking, 'today'));
-        }
-    }
-}
-```
+**3. Automated Email Notifications**: Queue-based email system untuk mengirim konfirmasi, reminder (H-1 dan H-0), dan follow-up secara otomatis.
 
-**4. Session Documentation dengan Auto-save**
-```javascript
-// session-notes.js (Alpine.js component)
-Alpine.data('sessionNotes', () => ({
-    notes: {
-        technique_used: '',
-        client_condition: '',
-        progress_achieved: '',
-        important_notes: '',
-        recommendations: '',
-    },
-    autoSaveInterval: null,
-    lastSaved: null,
-    
-    init() {
-        // Auto-save every 30 seconds
-        this.autoSaveInterval = setInterval(() => {
-            this.autoSave();
-        }, 30000);
-        
-        // Load existing notes if any
-        this.loadNotes();
-    },
-    
-    async autoSave() {
-        try {
-            const response = await fetch('/api/session-notes/auto-save', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
-                },
-                body: JSON.stringify({
-                    session_id: this.sessionId,
-                    notes: this.notes
-                })
-            });
-            
-            if (response.ok) {
-                this.lastSaved = new Date();
-                console.log('Auto-saved at', this.lastSaved);
-            }
-        } catch (error) {
-            console.error('Auto-save failed:', error);
-        }
-    },
-    
-    async save() {
-        // Final save with validation
-        // ... implementation
-    }
-}));
-```
+**4. Session Documentation dengan Auto-save**: Formulir dokumentasi dengan auto-save setiap 30 detik menggunakan Alpine.js untuk mencegah data loss.
 
 ### 4.2.2. Hasil Implementasi
 
@@ -1240,7 +899,7 @@ Sumber: Hasil Implementasi
 
 Dashboard menampilkan 4 KPI cards (Total Users, Total Bookings, Total Therapists, Revenue), revenue trend chart (line chart 12 months), recent bookings table dengan pagination, pending actions alert (therapist applications, withdrawals, reviews), top performing therapists list, dan comprehensive admin interface.
 
-**Catatan**: Semua screenshot hasil implementasi tersedia di folder `tugas-selesai/06_rintisan_bisnis_digital/03_implementasi/screenshots/`. Sistem telah diimplementasikan dengan 66 halaman sesuai dengan mockup design dan telah melalui testing.
+**Catatan**: Screenshot hasil implementasi tersedia di folder `03_implementasi/screenshots/`. Sistem telah diimplementasikan sesuai mockup design dan telah melalui testing.
 
 ## 4.3. Spesifikasi Aplikasi
 
@@ -1421,35 +1080,9 @@ Spesifikasi aplikasi mencakup hardware dan software yang digunakan untuk pengemb
 - **Laravel Telescope** (Free) - Debug assistant
 - **Laravel Horizon** (Free) - Queue monitoring dashboard
 
-**Total Software Cost**:
-- Development: Rp 0 (semua tools gratis)
-- Production (Monthly):
-  - VPS: Rp 300.000
-  - Domain: Rp 12.500 (Rp 150.000/12)
-  - Email (SendGrid): Rp 0 (free tier) atau Rp 210.000 (paid)
-  - Payment Gateway: Variable (2.9% + Rp 2.000 per transaction)
-- **Total**: ~Rp 312.500 - Rp 522.500/month
+**Total Software Cost**: Development Rp 0 (tools gratis), Production ~Rp 312.500 - Rp 522.500/bulan (VPS, domain, email, payment gateway variable).
 
-**System Requirements Summary**:
-
-| Component | Development | Production |
-|-----------|-------------|------------|
-| **Hardware** |
-| CPU | Intel i5/Ryzen 5 | 4 vCPU |
-| RAM | 8GB | 8GB |
-| Storage | 256GB SSD | 160GB SSD |
-| **Software** |
-| OS | Windows/macOS/Linux | Ubuntu 22.04 LTS |
-| Web Server | PHP Built-in | Nginx 1.22+ |
-| PHP | 8.2+ | 8.2+ |
-| Database | MySQL 8.0+ | MySQL 8.0+ |
-| **Framework** |
-| Backend | Laravel 10.x | Laravel 10.x |
-| Frontend | Tailwind CSS 3.x | Tailwind CSS 3.x |
-| **Services** |
-| Payment | Midtrans Sandbox | Midtrans Production |
-| Email | Mailtrap / Gmail | SendGrid / SMTP |
-| SSL | - | Let's Encrypt |
+**System Requirements Summary**: Development (Intel i5/8GB RAM/256GB SSD, PHP 8.2, MySQL 8.0, Laravel 10), Production (4 vCPU/8GB RAM/160GB SSD, Ubuntu 22.04, Nginx, Laravel 10, Midtrans Production, SendGrid, Let's Encrypt SSL).
 
 
 ## 4.4. Pengujian Aplikasi

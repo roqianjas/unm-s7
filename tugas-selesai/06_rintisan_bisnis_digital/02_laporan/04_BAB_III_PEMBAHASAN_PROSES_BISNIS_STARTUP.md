@@ -86,138 +86,24 @@ Struktur organisasi CUR-HEART dirancang untuk mendukung operasional yang efisien
 
 #### Uraian Tugas dan Tanggung Jawab
 
-**1. Chief Executive Officer (CEO)**
+**1. Chief Executive Officer (CEO)**: Bertanggung jawab atas strategi bisnis, pengambilan keputusan strategis, hubungan investor dan stakeholders, monitoring kinerja, dan representasi perusahaan (Robbins & Coulter, 2021).
 
-Menurut Robbins & Coulter (2021), Chief Executive Officer (CEO) adalah eksekutif tertinggi dalam perusahaan yang bertanggung jawab atas keseluruhan operasi dan kinerja organisasi. CEO memiliki peran strategis dalam menentukan arah bisnis, mengambil keputusan penting, dan memastikan pencapaian tujuan perusahaan.
+**2. Chief Technology Officer (CTO)**: Bertanggung jawab atas arsitektur sistem, pengembangan platform, infrastruktur IT, keamanan data, dan technology roadmap (Laudon & Laudon, 2022).
 
-**Tugas dan Tanggung Jawab CEO CUR-HEART**:
-- Menetapkan visi, misi, dan strategi bisnis jangka panjang
-- Mengambil keputusan strategis terkait pengembangan produk dan ekspansi pasar
-- Mengelola hubungan dengan investor, partner strategis, dan stakeholders kunci
-- Memimpin rapat manajemen dan koordinasi antar divisi
-- Monitoring kinerja bisnis dan pencapaian target
-- Memastikan kepatuhan terhadap regulasi dan standar etika bisnis
-- Representasi perusahaan di event, media, dan forum publik
-- Fundraising dan investor relations
-- Approval untuk keputusan besar (hiring, budget, partnership)
+**3. Chief Marketing Officer (CMO)**: Bertanggung jawab atas strategi pemasaran, brand management, riset pasar, social media, campaign promosi, dan customer relationship (Kotler & Keller, 2022).
 
-**Kompetensi yang Dibutuhkan**:
-- Leadership dan strategic thinking
-- Business acumen dan financial literacy
-- Communication dan negotiation skills
-- Decision making dan problem solving
-- Networking dan relationship building
+**4. Terapis Utama (3 orang)**: Melakukan sesi terapi, assessment klien, dokumentasi sesi, monitoring progress, dan menjaga kerahasiaan data klien.
 
-**2. Chief Technology Officer (CTO)**
+**5. Admin & Customer Service (2 orang)**: Mengelola reservasi, customer support, koordinasi dengan terapis, pelaporan, dan handling komplain (Lovelock & Wirtz, 2021).
 
-Menurut Laudon & Laudon (2022), Chief Technology Officer (CTO) bertanggung jawab atas strategi teknologi perusahaan, pengembangan produk teknologi, dan inovasi. CTO memastikan infrastruktur teknologi mendukung tujuan bisnis dan memberikan competitive advantage.
-
-**Tugas dan Tanggung Jawab CTO CUR-HEART**:
-- Merancang arsitektur sistem informasi CUR-HEART
-- Memimpin pengembangan platform web dan mobile
-- Mengelola infrastruktur IT (server, database, security)
-- Memastikan keamanan data dan privasi klien sesuai regulasi
-- Melakukan riset dan implementasi teknologi baru
-- Mengelola tim developer dan IT support
-- Monitoring performa sistem dan troubleshooting
-- Integrasi dengan third-party services (payment gateway, email, dll)
-- Dokumentasi teknis dan SOP IT
-- Technology roadmap dan innovation planning
-
-**Kompetensi yang Dibutuhkan**:
-- Expertise dalam web development (Laravel, PHP, MySQL)
-- System architecture dan database design
-- Cybersecurity dan data protection
-- Project management dan agile methodology
-- Problem solving dan analytical thinking
-
-**3. Chief Marketing Officer (CMO)**
-
-Menurut Kotler & Keller (2022), Chief Marketing Officer (CMO) bertanggung jawab atas strategi pemasaran, branding, dan customer acquisition. CMO memastikan produk/layanan dikenal oleh target market dan menghasilkan revenue yang sustainable.
-
-**Tugas dan Tanggung Jawab CMO CUR-HEART**:
-- Merancang strategi pemasaran digital dan offline
-- Mengelola brand identity dan positioning CUR-HEART
-- Melakukan riset pasar dan analisis kompetitor
-- Mengelola social media, content marketing, dan SEO
-- Merancang campaign promosi dan event marketing
-- Mengelola customer relationship dan retention program
-- Monitoring marketing metrics (CAC, LTV, conversion rate)
-- Kolaborasi dengan influencer dan media partner
-- Customer feedback collection dan analysis
-- Sales funnel optimization
-
-**Kompetensi yang Dibutuhkan**:
+**6. Finance & Accounting (Outsource)**: Bookkeeping, laporan keuangan, tax compliance, payroll, dan financial analysis (Weygandt et al., 2021).
 - Digital marketing expertise (SEO, SEM, social media)
 - Content creation dan copywriting
 - Data analytics dan marketing automation
 - Brand management dan creative thinking
 - Customer psychology dan behavior analysis
 
-**4. Terapis Utama**
 
-Terapis adalah praktisi hipnoterapi bersertifikat yang memberikan layanan terapi langsung kepada klien. Menurut Indonesian Hypnotherapy Association (2023), terapis profesional harus memiliki sertifikasi resmi dan mengikuti kode etik praktik hipnoterapi.
-
-**Tugas dan Tanggung Jawab Terapis**:
-- Melakukan sesi terapi hipnoterapi sesuai jadwal
-- Melakukan assessment awal kondisi klien
-- Merancang program terapi yang sesuai dengan kebutuhan klien
-- Mendokumentasikan setiap sesi terapi secara detail
-- Monitoring progress klien dan evaluasi hasil terapi
-- Memberikan edukasi dan self-hypnosis techniques kepada klien
-- Menjaga kerahasiaan dan privasi data klien
-- Mengikuti pelatihan dan sertifikasi berkelanjutan
-- Memberikan feedback untuk improvement layanan
-- Kolaborasi dengan terapis lain untuk case discussion
-
-**Kompetensi yang Dibutuhkan**:
-- Sertifikasi hipnoterapi dari lembaga terakreditasi
-- Pengetahuan psikologi dan kesehatan mental
-- Empati dan active listening skills
-- Communication dan rapport building
-- Ethical practice dan professional conduct
-
-**5. Admin & Customer Service**
-
-Admin bertanggung jawab atas operasional harian dan layanan pelanggan. Menurut Lovelock & Wirtz (2021), customer service yang excellent adalah kunci kepuasan dan loyalitas pelanggan.
-
-**Tugas dan Tanggung Jawab Admin**:
-- Mengelola reservasi dan penjadwalan (melalui sistem)
-- Melayani pertanyaan dan keluhan klien via phone, email, WhatsApp
-- Verifikasi pembayaran dan follow-up payment
-- Koordinasi dengan terapis terkait jadwal dan klien
-- Mengirim reminder dan konfirmasi ke klien
-- Mengelola data klien dan terapis di sistem
-- Membuat laporan operasional harian/mingguan
-- Mengelola inventory dan supplies klinik
-- Handling komplain dan problem solving
-- Maintaining customer satisfaction
-
-**Kompetensi yang Dibutuhkan**:
-- Customer service excellence
-- Communication dan interpersonal skills
-- Computer literacy dan system operation
-- Problem solving dan multitasking
-- Patience dan empathy
-
-**6. Finance & Accounting (Outsource)**
-
-Pada tahap awal, fungsi finance dan accounting di-outsource ke konsultan atau jasa akuntansi untuk efisiensi biaya. Menurut Weygandt et al. (2021), fungsi finance dan accounting mencakup pencatatan transaksi, pelaporan keuangan, dan tax compliance.
-
-**Tugas dan Tanggung Jawab**:
-- Pencatatan transaksi keuangan (bookkeeping)
-- Pembuatan laporan keuangan bulanan (income statement, balance sheet, cash flow)
-- Pengelolaan pajak dan compliance
-- Payroll processing untuk karyawan dan terapis
-- Budget planning dan monitoring
-- Financial analysis dan advisory
-- Audit preparation
-
-**Kompetensi yang Dibutuhkan**:
-- Accounting dan financial management
-- Tax regulation knowledge
-- Accounting software proficiency
-- Analytical dan detail-oriented
 
 ## 3.2. Tahapan Membangun Start-up
 

@@ -7,110 +7,33 @@
 
 #### A. Sistem Informasi
 
-Menurut O'Brien & Marakas (2021), sistem informasi adalah kombinasi terorganisir dari orang, perangkat keras, perangkat lunak, jaringan komunikasi, dan sumber daya data yang mengumpulkan, mengubah, dan menyebarkan informasi dalam sebuah organisasi. Sistem informasi memiliki tiga aktivitas dasar: input (pengumpulan data), processing (pengolahan data menjadi informasi), dan output (penyajian informasi kepada pengguna).
-
-Dalam konteks CUR-HEART, sistem informasi berfungsi untuk mengelola seluruh proses bisnis layanan terapi mulai dari reservasi, penjadwalan, pembayaran, dokumentasi sesi, hingga pelaporan. Sistem ini mengintegrasikan data dari berbagai sumber dan menyediakan informasi yang dibutuhkan oleh klien, terapis, dan manajemen untuk pengambilan keputusan.
+Menurut O'Brien & Marakas (2021), sistem informasi adalah kombinasi terorganisir dari orang, perangkat keras, perangkat lunak, jaringan komunikasi, dan sumber daya data yang mengumpulkan, mengubah, dan menyebarkan informasi dalam organisasi dengan tiga aktivitas dasar: input, processing, dan output.
 
 #### B. Aplikasi Berbasis Web
 
-Aplikasi berbasis web adalah aplikasi yang diakses melalui web browser dan berjalan di web server. Menurut Pressman & Maxim (2020), aplikasi web memiliki karakteristik:
-- Aksesibilitas tinggi (dapat diakses dari mana saja dengan internet)
-- Platform independent (tidak tergantung sistem operasi)
-- Mudah di-update (perubahan langsung tersedia untuk semua pengguna)
-- Skalabilitas tinggi (dapat menangani banyak pengguna bersamaan)
-
-Aplikasi web CUR-HEART dikembangkan menggunakan arsitektur client-server dengan teknologi:
-- **Backend**: Laravel Framework (PHP) untuk logika bisnis dan API
-- **Frontend**: Blade Templates dengan Tailwind CSS untuk antarmuka pengguna
-- **Database**: MySQL untuk penyimpanan data terstruktur
-- **Web Server**: Nginx untuk melayani HTTP requests
+Menurut Pressman & Maxim (2020), aplikasi berbasis web memiliki karakteristik aksesibilitas tinggi, platform independent, mudah di-update, dan skalabilitas tinggi. CUR-HEART dikembangkan menggunakan Laravel (backend), Blade + Tailwind CSS (frontend), MySQL (database), dan Nginx (web server).
 
 #### C. Framework Laravel
 
-Laravel adalah framework PHP open-source yang mengikuti pola arsitektur Model-View-Controller (MVC). Menurut Otwell (2023), Laravel menyediakan sintaks yang ekspresif dan elegan untuk mempercepat pengembangan aplikasi web modern.
-
-Keunggulan Laravel:
-- **Eloquent ORM**: Abstraksi database yang powerful untuk manipulasi data
-- **Blade Templating**: Template engine yang sederhana namun powerful
-- **Routing**: Sistem routing yang fleksibel dan mudah dipahami
-- **Middleware**: Filtering HTTP requests untuk autentikasi dan otorisasi
-- **Migration**: Version control untuk database schema
-- **Validation**: Validasi input yang comprehensive
-- **Security**: Built-in protection terhadap SQL injection, XSS, CSRF
-
-Laravel dipilih karena memiliki ekosistem yang matang, dokumentasi lengkap, dan komunitas yang besar, sehingga mempercepat proses pengembangan dan maintenance.
+Laravel adalah framework PHP open-source dengan pola MVC yang menyediakan fitur Eloquent ORM, Blade Templating, Routing, Middleware, Migration, Validation, dan Security (Otwell, 2023). Laravel dipilih karena ekosistem matang, dokumentasi lengkap, dan komunitas besar.
 
 #### D. Database Management System (DBMS)
 
-Database Management System adalah software yang digunakan untuk membuat, mengelola, dan mengakses database. Menurut Elmasri & Navathe (2021), DBMS menyediakan mekanisme untuk:
-- Definisi data (DDL - Data Definition Language)
-- Manipulasi data (DML - Data Manipulation Language)
-- Kontrol akses dan keamanan
-- Backup dan recovery
-- Integritas dan konsistensi data
-
-MySQL dipilih sebagai DBMS untuk CUR-HEART karena:
-- Open-source dan gratis
-- Performa tinggi untuk read-heavy operations
-- Dukungan ACID (Atomicity, Consistency, Isolation, Durability)
-- Kompatibilitas baik dengan Laravel
-- Dokumentasi lengkap dan komunitas besar
+Menurut Elmasri & Navathe (2021), DBMS adalah software untuk membuat, mengelola, dan mengakses database dengan mekanisme DDL, DML, kontrol akses, backup/recovery, dan integritas data. MySQL dipilih karena open-source, performa tinggi, dukungan ACID, dan kompatibilitas dengan Laravel.
 
 #### E. Tailwind CSS
 
-Tailwind CSS adalah utility-first CSS framework yang menyediakan low-level utility classes untuk membangun desain custom. Menurut Wathan (2023), Tailwind memungkinkan developer untuk:
-- Membangun desain custom tanpa meninggalkan HTML
-- Menghindari CSS bloat dengan purging unused styles
-- Responsive design dengan mudah
-- Konsistensi desain melalui design system
-
-Tailwind dipilih untuk CUR-HEART karena:
-- Fleksibilitas tinggi dalam customization
-- File size kecil setelah purging (production-ready)
-- Dokumentasi excellent dan ecosystem yang kuat
-- Integrasi sempurna dengan Laravel dan Blade
+Tailwind CSS adalah utility-first CSS framework yang memungkinkan membangun desain custom, responsive design, dan konsistensi melalui design system (Wathan, 2023). Tailwind dipilih karena fleksibilitas tinggi, file size kecil, dan integrasi sempurna dengan Laravel.
 
 ### 2.1.2. Metode Problem Solving
 
 #### A. Design Thinking
 
-Design Thinking adalah pendekatan human-centered untuk inovasi yang mengintegrasikan kebutuhan manusia, kemungkinan teknologi, dan persyaratan kesuksesan bisnis. Menurut Brown (2019), Design Thinking terdiri dari 5 tahapan:
-
-**1. Empathize (Berempati)**
-Memahami pengguna melalui observasi, wawancara, dan immersion. Tujuannya adalah mendapatkan insight mendalam tentang kebutuhan, motivasi, dan pain points pengguna.
-
-**2. Define (Mendefinisikan)**
-Mensintesis findings dari tahap empathize untuk mendefinisikan core problem yang harus diselesaikan. Menghasilkan problem statement yang actionable dan human-centered.
-
-**3. Ideate (Mengideasi)**
-Menghasilkan berbagai ide solusi melalui brainstorming. Fokus pada quantity over quality di tahap awal, kemudian melakukan konvergensi untuk memilih ide terbaik.
-
-**4. Prototype (Membuat Prototipe)**
-Membuat representasi tangible dari ide untuk di-explore dan di-test. Prototype bisa berupa sketsa, wireframe, mockup, atau working prototype.
-
-**5. Test (Menguji)**
-Menguji prototype dengan pengguna nyata untuk mendapatkan feedback. Hasil testing digunakan untuk iterasi dan perbaikan.
-
-Design Thinking dipilih untuk proyek CUR-HEART karena:
-- Berfokus pada kebutuhan pengguna (user-centric)
-- Iteratif dan fleksibel (dapat kembali ke tahap sebelumnya)
-- Mendorong kreativitas dan inovasi
-- Mengurangi risiko kegagalan produk
-- Cocok untuk problem yang complex dan ambiguous
+Design Thinking adalah pendekatan human-centered untuk inovasi yang terdiri dari 5 tahapan: Empathize (memahami pengguna), Define (mendefinisikan masalah), Ideate (menghasilkan ide solusi), Prototype (membuat prototipe), dan Test (menguji dengan pengguna) (Brown, 2019). Design Thinking dipilih karena user-centric, iteratif, dan mengurangi risiko kegagalan produk.
 
 #### B. Lean Startup Methodology
 
-Menurut Ries (2011), Lean Startup adalah pendekatan untuk membangun bisnis dan produk yang menekankan pada:
-- **Build-Measure-Learn Loop**: Membangun MVP (Minimum Viable Product), mengukur respons pasar, dan belajar dari feedback
-- **Validated Learning**: Belajar dari eksperimen yang terukur, bukan asumsi
-- **Innovation Accounting**: Mengukur progress dengan metrics yang meaningful
-- **Pivot or Persevere**: Keputusan untuk mengubah strategi atau melanjutkan berdasarkan data
-
-Prinsip Lean Startup diterapkan dalam CUR-HEART melalui:
-- Validasi asumsi bisnis dengan user interview dan survei
-- Pengembangan MVP dengan fitur essential terlebih dahulu
-- Iterasi berdasarkan feedback pengguna
-- Pengukuran success metrics (conversion rate, user satisfaction, dll)
+Menurut Ries (2011), Lean Startup menekankan Build-Measure-Learn Loop, Validated Learning, Innovation Accounting, dan Pivot or Persevere. Prinsip ini diterapkan melalui validasi asumsi, pengembangan MVP, iterasi berdasarkan feedback, dan pengukuran success metrics.
 
 ### 2.1.3. Business Model Canvas (BMC)
 
