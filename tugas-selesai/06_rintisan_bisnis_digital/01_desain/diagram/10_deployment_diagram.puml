@@ -1,0 +1,62 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam shadowing false
+
+title Deployment Diagram - CUR-HEART
+
+node "Client Device" {
+  [Web Browser]
+  [Mobile Browser]
+}
+
+node "VPS Cloud Server\n(Ubuntu 22.04 LTS)" {
+  node "Nginx\n(Web Server)" {
+    [Static Files]
+    [Reverse Proxy]
+  }
+  
+  node "PHP-FPM 8.3" {
+    [Laravel Application]
+  }
+  
+  node "MySQL 8.0" {
+    database "cur_heart_db"
+  }
+  
+  node "Redis\n(Optional)" {
+    [Cache]
+    [Session Store]
+  }
+  
+  node "Supervisor" {
+    [Queue Workers]
+  }
+}
+
+cloud "Third-Party Services" {
+  [Midtrans API]
+  [Email Service\n(SMTP/SendGrid)]
+  [Let's Encrypt\n(SSL)]
+}
+
+[Web Browser] -down-> [Reverse Proxy] : HTTPS
+[Mobile Browser] -down-> [Reverse Proxy] : HTTPS
+[Reverse Proxy] -down-> [Laravel Application] : FastCGI
+[Laravel Application] -down-> cur_heart_db : PDO/MySQL
+[Laravel Application] -right-> [Cache] : Redis Protocol
+[Laravel Application] -down-> [Queue Workers] : Jobs
+[Laravel Application] -right-> [Midtrans API] : REST API
+[Laravel Application] -right-> [Email Service\n(SMTP/SendGrid)] : SMTP
+[Reverse Proxy] -up-> [Let's Encrypt\n(SSL)] : ACME Protocol
+
+note right of "VPS Cloud Server\n(Ubuntu 22.04 LTS)"
+  **Spesifikasi:**
+  - 4 vCPU
+  - 8GB RAM
+  - 160GB SSD
+  - Bandwidth: Unlimited
+  - Location: Singapore
+end note
+
+@enduml

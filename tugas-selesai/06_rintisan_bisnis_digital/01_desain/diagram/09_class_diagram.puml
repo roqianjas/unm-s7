@@ -1,0 +1,224 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+title Class Diagram - CUR-HEART (Core Models)
+
+' User Management
+class User {
+  +id: bigint
+  +name: string
+  +email: string
+  +password: string
+  +role: enum
+  +status: enum
+  --
+  +isClient(): bool
+  +isTherapist(): bool
+  +isAdmin(): bool
+  +notifications(): Collection
+}
+
+class Client {
+  +id: bigint
+  +user_id: bigint
+  +date_of_birth: date
+  +gender: enum
+  +address: text
+  +medical_history: text
+  --
+  +bookings(): Collection
+  +reviews(): Collection
+  +getAge(): int
+}
+
+class Therapist {
+  +id: bigint
+  +user_id: bigint
+  +specialization: string
+  +license_number: string
+  +rating: decimal
+  +is_verified: bool
+  --
+  +services(): Collection
+  +availability(): Collection
+  +bookings(): Collection
+  +updateRating(): void
+}
+
+' Service Management
+class Service {
+  +id: bigint
+  +name: string
+  +slug: string
+  +duration: int
+  +price: decimal
+  +is_active: bool
+  --
+  +therapists(): Collection
+  +bookings(): Collection
+}
+
+class TherapistService {
+  +id: bigint
+  +therapist_id: bigint
+  +service_id: bigint
+  +custom_price: decimal
+}
+
+class TherapistAvailability {
+  +id: bigint
+  +therapist_id: bigint
+  +day_of_week: enum
+  +start_time: time
+  +end_time: time
+  +is_available: bool
+}
+
+' Booking & Payment
+class Booking {
+  +id: bigint
+  +booking_number: string
+  +client_id: bigint
+  +therapist_id: bigint
+  +service_id: bigint
+  +booking_date: date
+  +booking_time: time
+  +status: enum
+  +total_price: decimal
+  +final_price: decimal
+  --
+  +isPaid(): bool
+  +canCancel(): bool
+  +canReschedule(): bool
+}
+
+class Payment {
+  +id: bigint
+  +booking_id: bigint
+  +payment_method: enum
+  +transaction_id: string
+  +amount: decimal
+  +status: enum
+  --
+  +isSuccess(): bool
+  +isPending(): bool
+}
+
+class PromoCode {
+  +id: bigint
+  +code: string
+  +discount_type: enum
+  +discount_value: decimal
+  +valid_from: date
+  +valid_until: date
+  --
+  +isValid(): bool
+  +calculateDiscount(amount): decimal
+}
+
+' Session Management
+class Session {
+  +id: bigint
+  +booking_id: bigint
+  +start_time: timestamp
+  +end_time: timestamp
+  +status: enum
+  --
+  +isCompleted(): bool
+  +notes(): Collection
+}
+
+class SessionNote {
+  +id: bigint
+  +session_id: bigint
+  +therapist_id: bigint
+  +techniques_used: text
+  +progress_notes: text
+  +recommendations: text
+  +is_shared_with_client: bool
+  --
+  +session(): Session
+}
+
+class Review {
+  +id: bigint
+  +booking_id: bigint
+  +client_id: bigint
+  +therapist_id: bigint
+  +rating: int
+  +comment: text
+  +is_approved: bool
+  --
+  +approve(): void
+}
+
+' Communication
+class Notification {
+  +id: bigint
+  +user_id: bigint
+  +type: string
+  +title: string
+  +message: text
+  +is_read: bool
+  --
+  +markAsRead(): void
+}
+
+class Message {
+  +id: bigint
+  +sender_id: bigint
+  +receiver_id: bigint
+  +message: text
+  +is_read: bool
+  --
+  +markAsRead(): void
+}
+
+' Financial
+class Withdrawal {
+  +id: bigint
+  +therapist_id: bigint
+  +amount: decimal
+  +status: enum
+  --
+  +approve(): void
+  +reject(reason): void
+}
+
+' Relationships - User Management
+User "1" -down- "0..1" Client
+User "1" -down- "0..1" Therapist
+User "1" -right- "*" Notification
+User "1" -- "*" Message : sends/receives
+
+' Relationships - Service
+Therapist "1" -- "*" TherapistService
+Service "1" -- "*" TherapistService
+Therapist "1" -- "*" TherapistAvailability
+
+' Relationships - Booking
+Client "1" -- "*" Booking
+Therapist "1" -- "*" Booking
+Service "1" -- "*" Booking
+PromoCode "1" -- "*" Booking
+
+' Relationships - Payment & Session
+Booking "1" -down- "1" Payment
+Booking "1" -down- "0..1" Session
+Booking "1" -- "0..1" Review
+
+' Relationships - Session Notes
+Session "1" -down- "*" SessionNote
+Therapist "1" -- "*" SessionNote
+
+' Relationships - Review
+Client "1" -- "*" Review
+Therapist "1" -- "*" Review
+
+' Relationships - Financial
+Therapist "1" -- "*" Withdrawal
+
+@enduml

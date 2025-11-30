@@ -1,0 +1,227 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam shadowing false
+
+title Logical Record Structure (LRS) - CUR-HEART\n(23 Tables - Simplified View)
+
+' Core User Tables
+entity "users" as users {
+  **id** : BIGINT <<PK>>
+  --
+  name : VARCHAR(255)
+  email : VARCHAR(255) <<UK>>
+  password : VARCHAR(255)
+  role : ENUM
+  status : ENUM
+}
+
+entity "clients" as clients {
+  **id** : BIGINT <<PK>>
+  --
+  user_id : BIGINT <<FK>>
+  date_of_birth : DATE
+  gender : ENUM
+  medical_history : TEXT
+}
+
+entity "therapists" as therapists {
+  **id** : BIGINT <<PK>>
+  --
+  user_id : BIGINT <<FK>>
+  specialization : VARCHAR(255)
+  license_number : VARCHAR(100)
+  rating : DECIMAL(3,2)
+  is_verified : BOOLEAN
+}
+
+' Service Tables
+entity "services" as services {
+  **id** : BIGINT <<PK>>
+  --
+  name : VARCHAR(255)
+  slug : VARCHAR(255) <<UK>>
+  duration : INT
+  price : DECIMAL(10,2)
+}
+
+entity "therapist_services" as ts {
+  **id** : BIGINT <<PK>>
+  --
+  therapist_id : BIGINT <<FK>>
+  service_id : BIGINT <<FK>>
+}
+
+entity "therapist_availability" as avail {
+  **id** : BIGINT <<PK>>
+  --
+  therapist_id : BIGINT <<FK>>
+  day_of_week : ENUM
+  start_time : TIME
+  end_time : TIME
+}
+
+entity "therapist_unavailability" as unavail {
+  **id** : BIGINT <<PK>>
+  --
+  therapist_id : BIGINT <<FK>>
+  start_date : DATE
+  end_date : DATE
+}
+
+' Booking & Payment
+entity "bookings" as bookings {
+  **id** : BIGINT <<PK>>
+  --
+  booking_number : VARCHAR(50) <<UK>>
+  client_id : BIGINT <<FK>>
+  therapist_id : BIGINT <<FK>>
+  service_id : BIGINT <<FK>>
+  booking_date : DATE
+  status : ENUM
+  final_price : DECIMAL(10,2)
+}
+
+entity "payments" as payments {
+  **id** : BIGINT <<PK>>
+  --
+  booking_id : BIGINT <<FK>>
+  transaction_id : VARCHAR(255) <<UK>>
+  amount : DECIMAL(10,2)
+  status : ENUM
+}
+
+entity "promo_codes" as promo {
+  **id** : BIGINT <<PK>>
+  --
+  code : VARCHAR(50) <<UK>>
+  discount_type : ENUM
+  discount_value : DECIMAL(10,2)
+}
+
+' Session Tables
+entity "sessions" as sessions {
+  **id** : BIGINT <<PK>>
+  --
+  booking_id : BIGINT <<FK>>
+  start_time : TIMESTAMP
+  status : ENUM
+}
+
+entity "session_notes" as notes {
+  **id** : BIGINT <<PK>>
+  --
+  session_id : BIGINT <<FK>>
+  therapist_id : BIGINT <<FK>>
+  progress_notes : TEXT
+}
+
+entity "reviews" as reviews {
+  **id** : BIGINT <<PK>>
+  --
+  booking_id : BIGINT <<FK>>
+  therapist_id : BIGINT <<FK>>
+  rating : INT
+}
+
+' Content Tables
+entity "blog_posts" as blog {
+  **id** : BIGINT <<PK>>
+  --
+  author_id : BIGINT <<FK>>
+  title : VARCHAR(255)
+  slug : VARCHAR(255) <<UK>>
+  status : ENUM
+}
+
+entity "blog_categories" as blog_cat {
+  **id** : BIGINT <<PK>>
+  --
+  name : VARCHAR(100)
+  slug : VARCHAR(100) <<UK>>
+}
+
+entity "faqs" as faqs {
+  **id** : BIGINT <<PK>>
+  --
+  category_id : BIGINT <<FK>>
+  question : TEXT
+  answer : TEXT
+}
+
+entity "faq_categories" as faq_cat {
+  **id** : BIGINT <<PK>>
+  --
+  name : VARCHAR(100)
+  slug : VARCHAR(100) <<UK>>
+}
+
+' Communication Tables
+entity "messages" as messages {
+  **id** : BIGINT <<PK>>
+  --
+  sender_id : BIGINT <<FK>>
+  receiver_id : BIGINT <<FK>>
+  message : TEXT
+}
+
+entity "notifications" as notif {
+  **id** : BIGINT <<PK>>
+  --
+  user_id : BIGINT <<FK>>
+  type : VARCHAR(100)
+  message : TEXT
+}
+
+' Financial & System
+entity "withdrawals" as withdraw {
+  **id** : BIGINT <<PK>>
+  --
+  therapist_id : BIGINT <<FK>>
+  amount : DECIMAL(10,2)
+  status : ENUM
+}
+
+entity "activity_logs" as logs {
+  **id** : BIGINT <<PK>>
+  --
+  user_id : BIGINT <<FK>>
+  action : VARCHAR(100)
+}
+
+entity "system_settings" as settings {
+  **id** : BIGINT <<PK>>
+  --
+  key : VARCHAR(100) <<UK>>
+  value : TEXT
+}
+
+' Relationships
+users ||--o| clients
+users ||--o| therapists
+
+therapists ||--o{ ts
+therapists ||--o{ avail
+therapists ||--o{ unavail
+services ||--o{ ts
+
+clients ||--o{ bookings
+therapists ||--o{ bookings
+services ||--o{ bookings
+promo ||--o{ bookings
+
+bookings ||--|| payments
+bookings ||--o| sessions
+bookings ||--o| reviews
+
+sessions ||--o{ notes
+
+blog_cat ||--o{ blog
+faq_cat ||--o{ faqs
+
+users ||--o{ messages
+users ||--o{ notif
+
+therapists ||--o{ withdraw
+
+@enduml

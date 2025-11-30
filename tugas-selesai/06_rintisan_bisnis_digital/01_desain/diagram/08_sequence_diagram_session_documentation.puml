@@ -1,0 +1,176 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 150
+skinparam shadowing false
+
+title Sequence Diagram - Dokumentasi Sesi Terapi
+
+actor "Terapis" as Therapist
+participant "Web Browser" as Browser
+participant "Laravel\nController" as Controller
+participant "Session\nService" as SessionService
+participant "Database" as DB
+participant "Email\nService" as Email
+participant "Queue" as Queue
+
+== Akses Dashboard ==
+Therapist -> Browser: Login & buka dashboard
+Browser -> Controller: GET /therapist/dashboard
+Controller -> DB: Fetch today's sessions
+DB --> Controller: Sessions list
+Controller --> Browser: Tampilkan dashboard
+Browser --> Therapist: Lihat jadwal hari ini
+
+== Pilih Sesi untuk Didokumentasikan ==
+Therapist -> Browser: Klik "Document Session"
+Browser -> Controller: GET /therapist/sessions/{id}/document
+Controller -> DB: Fetch session details
+DB --> Controller: Session data
+Controller -> DB: Fetch client history
+DB --> Controller: Client history
+Controller -> DB: Fetch previous session notes
+DB --> Controller: Previous notes
+Controller --> Browser: Tampilkan form dokumentasi
+note right
+  Form fields:
+  - Teknik yang digunakan
+  - Observasi kondisi klien
+  - Kemajuan yang dicapai
+  - Catatan penting
+  - Tugas untuk klien
+  - Rekomendasi sesi berikutnya
+  - Checkbox: Bagikan ke klien
+end note
+Browser --> Therapist: Form siap diisi
+
+== Auto-save (Setiap 30 detik) ==
+loop Every 30 seconds
+    Browser -> Browser: Detect form changes
+    Browser -> Controller: POST /therapist/sessions/{id}/autosave
+    note right
+      {
+        "techniques_used": "...",
+        "client_condition": "...",
+        "progress_notes": "...",
+        ...
+      }
+    end note
+    Controller -> SessionService: Auto-save draft
+    SessionService -> DB: UPDATE session_notes (draft)
+    DB --> SessionService: Saved
+    SessionService --> Controller: Success
+    Controller --> Browser: Return timestamp
+    Browser -> Browser: Update "Last saved" indicator
+    Browser --> Therapist: "Last saved: 30 seconds ago"
+end
+
+== Simpan Dokumentasi Final ==
+Therapist -> Browser: Isi semua field
+Therapist -> Browser: Klik "Save Documentation"
+Browser -> Controller: POST /therapist/sessions/{id}/document
+note right
+  {
+    "techniques_used": "Progressive relaxation...",
+    "client_condition": "Klien tampak lebih tenang...",
+    "progress_notes": "Signifikan improvement...",
+    "important_notes": "Klien merespons baik...",
+    "homework": "Latihan pernapasan 2x sehari",
+    "recommendations": "Lanjutkan sesi mingguan",
+    "is_shared_with_client": true
+  }
+end note
+
+== Validasi Data ==
+Controller -> Controller: Validate request
+alt Validation Failed
+    Controller --> Browser: Return validation errors
+    Browser --> Therapist: Tampilkan error messages
+    Therapist -> Browser: Perbaiki data
+    Browser -> Controller: POST /therapist/sessions/{id}/document
+end
+
+== Simpan ke Database ==
+Controller -> SessionService: Save documentation
+SessionService -> DB: BEGIN TRANSACTION
+SessionService -> DB: INSERT INTO session_notes
+note right
+  INSERT INTO session_notes (
+    session_id,
+    therapist_id,
+    techniques_used,
+    client_condition,
+    progress_notes,
+    observations,
+    homework,
+    recommendations,
+    is_shared_with_client,
+    created_at
+  ) VALUES (...)
+end note
+DB --> SessionService: Note created (ID: 456)
+SessionService -> DB: UPDATE sessions status = 'completed'
+SessionService -> DB: UPDATE bookings status = 'completed'
+SessionService -> DB: UPDATE therapists total_sessions++
+SessionService -> DB: COMMIT TRANSACTION
+DB --> SessionService: Success
+
+== Notifikasi Klien (Jika Dibagikan) ==
+alt is_shared_with_client = true
+    SessionService -> Queue: Dispatch SendSessionNotesEmail
+    Queue -> Email: Send email to client
+    note right
+      Subject: "Session Notes Available"
+      Body: "Your therapist has shared
+      notes from your recent session.
+      View them in your dashboard."
+    end note
+    Email --> Therapist: Email terkirim ke klien
+    SessionService -> DB: INSERT INTO notifications
+    note right
+      INSERT INTO notifications (
+        user_id,
+        type,
+        title,
+        message,
+        data
+      ) VALUES (
+        client_id,
+        'session_notes_shared',
+        'Session Notes Available',
+        'Your therapist has shared...',
+        '{"session_id": 123, "note_id": 456}'
+      )
+    end note
+end
+
+== Update Statistik ==
+SessionService -> SessionService: Calculate documentation time
+note right
+  documentation_time = 
+    current_time - session_end_time
+end note
+SessionService -> DB: INSERT INTO activity_logs
+note right
+  Log activity:
+  - Action: "session_documented"
+  - Duration: 5 minutes
+  - User: therapist_id
+end note
+
+SessionService --> Controller: Documentation saved
+Controller --> Browser: Return success response
+Browser -> Browser: Clear form
+Browser -> Browser: Show success message
+Browser --> Therapist: "Documentation saved successfully!"
+
+== Redirect ke Dashboard ==
+Browser -> Controller: GET /therapist/dashboard
+Controller -> DB: Fetch updated sessions
+DB --> Controller: Sessions list (updated)
+Controller --> Browser: Tampilkan dashboard
+Browser --> Therapist: Lihat dashboard dengan status updated
+
+@enduml

@@ -1,0 +1,58 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 10
+skinparam shadowing false
+
+title Business Model Canvas - CUR-HEART
+
+rectangle "**KEY PARTNERS**\n\n• Asosiasi Hipnoterapi Indonesia\n• Lembaga sertifikasi terapis\n• Perusahaan (B2B)\n• Universitas\n• Rumah sakit/klinik\n• Midtrans (Payment)\n• Penyedia hosting cloud\n• Influencer & media" as KP #FFE0B2
+
+rectangle "**KEY ACTIVITIES**\n\n• Penyampaian layanan terapi\n• Pengembangan platform\n• Pemasaran & akuisisi\n• Layanan pelanggan\n• Jaminan kualitas\n• Pelatihan & pengembangan" as KA #FFCCBC
+
+rectangle "**KEY RESOURCES**\n\n**SDM:**\n• 3 terapis bersertifikat\n• Tim pengembangan\n• Admin & CS\n\n**Fisik:**\n• Ruang terapi\n• Peralatan\n\n**Intelektual:**\n• Platform Laravel\n• Merek & IP\n• Database klien\n• Konten & knowledge base" as KR #FFAB91
+
+rectangle "**VALUE PROPOSITIONS**\n\n**Untuk Klien:**\n• Reservasi 24/7\n• Transparansi jadwal & harga\n• Keamanan data terenkripsi\n• Terapis bersertifikat\n• Harga kompetitif\n\n**Untuk Terapis:**\n• Efisiensi dokumentasi\n• Akses riwayat lengkap\n• Pembayaran transparan\n• Fleksibilitas jadwal\n\n**Untuk Manajemen:**\n• Dashboard real-time\n• Laporan & analitik\n• Otomasi tugas\n• Skalabilitas sistem" as VP #C5E1A5
+
+rectangle "**CUSTOMER RELATIONSHIPS**\n\n**Klien:**\n• Bantuan personal (CS)\n• Layanan mandiri (portal)\n• Layanan otomatis (email)\n• Komunitas online\n\n**Terapis:**\n• Dukungan khusus\n• Komunitas terapis\n\n**B2B:**\n• Account manager\n• Ko-kreasi program" as CR #AED581
+
+rectangle "**CHANNELS**\n\n**Kesadaran:**\n• Website & SEO\n• Media sosial\n• Content marketing\n• SEM & influencer\n\n**Evaluasi:**\n• Konsultasi gratis\n• Testimoni & review\n\n**Pembelian:**\n• Platform web 24/7\n• Payment gateway\n\n**Pengiriman:**\n• Sesi offline (klinik)\n• Sesi online (video)\n\n**Purna Jual:**\n• Email follow-up\n• WhatsApp support\n• Program loyalitas" as CH #9CCC65
+
+rectangle "**CUSTOMER SEGMENTS**\n\n**Primer (B2C):**\n• Profesional muda 20-35 th\n• Individu dengan masalah\n  kesehatan mental\n• Individu pengembangan diri\n\n**Sekunder (B2B):**\n• Perusahaan (employee\n  wellness program)\n• Universitas (konseling)\n• Rumah sakit/klinik\n  (kemitraan rujukan)" as CS #81C784
+
+rectangle "**COST STRUCTURE**\n\n**Biaya Tetap (Rp 33,08 juta/bulan):**\n• Gaji terapis & staf: Rp 13 juta\n• Sewa & utilitas: Rp 17,5 juta\n• Teknologi (hosting, domain): Rp 1,08 juta\n• Asuransi & hukum: Rp 1,5 juta\n\n**Biaya Variabel (Rp 55,03 juta/bulan):**\n• Biaya terapis (80% dari fee)\n• Payment gateway (2,9% + Rp 2.000)\n• Pemasaran & iklan: Rp 10 juta\n• Akuisisi pelanggan: Rp 3 juta\n• Operasional: Rp 2 juta\n\n**Biaya Pengembangan (One-time):**\n• Pengembangan sistem: Rp 86,8 juta\n• Peralatan: Rp 50 juta" as COST #EF9A9A
+
+rectangle "**REVENUE STREAMS**\n\n**B2C Individual:**\n• Sesi per bayar: Rp 300K-500K\n• Berlangganan bulanan: Rp 1,2 juta (4 sesi)\n• Berlangganan triwulanan: Rp 3,2 juta (12 sesi)\n• Konsultasi online: Rp 200K\n\n**B2B Korporat & Institusi:**\n• Program wellness korporat: Rp 10-50 juta/tahun\n• Program universitas: Rp 20-100 juta/tahun\n\n**Pelatihan & Sertifikasi:**\n• Pelatihan hipnoterapi: Rp 5-15 juta/batch\n• Sertifikasi terapis: Rp 3 juta/orang\n\n**Proyeksi Tahun 1:** Rp 1,2 miliar\n**Break-even:** Bulan ke-8" as REV #A5D6A7
+
+KP -right-> KA
+KA -right-> VP
+VP -right-> CR
+CR -right-> CS
+KR -up-> VP
+CH -up-> CS
+COST -up-> KA
+REV -up-> CS
+
+note bottom of COST
+  **Unit Economics:**
+  • ARPU: Rp 1,6 juta/tahun
+  • CAC: Rp 200.000
+  • LTV: Rp 4,8 juta (3 tahun)
+  • LTV/CAC Ratio: 24x
+  • Gross Margin: 60%
+  • Operating Margin: 25%
+end note
+
+note bottom of REV
+  **Market Opportunity:**
+  • TAM: Rp 1,3 triliun
+  • SAM: Rp 134 miliar (10%)
+  • SOM: Rp 1,34 miliar (1%)
+  
+  **Tren Pasar:**
+  • Hipnoterapi: +35% YoY
+  • Digital health: +45% CAGR
+  • Corporate wellness: +28% CAGR
+end note
+
+@enduml

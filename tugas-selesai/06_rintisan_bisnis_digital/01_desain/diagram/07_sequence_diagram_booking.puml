@@ -1,0 +1,155 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 10
+skinparam maxmessagesize 150
+skinparam shadowing false
+
+title Sequence Diagram - Proses Reservasi Terapi
+
+actor "Klien" as Client
+participant "Web Browser" as Browser
+participant "Laravel\nController" as Controller
+participant "Booking\nService" as BookingService
+participant "Payment\nService" as PaymentService
+participant "Database" as DB
+participant "Midtrans\nAPI" as Midtrans
+participant "Email\nService" as Email
+participant "Queue" as Queue
+
+== Autentikasi ==
+Client -> Browser: Buka halaman booking
+Browser -> Controller: GET /booking
+Controller -> Controller: Check authentication
+Controller --> Browser: Redirect ke login (jika belum login)
+Client -> Browser: Login
+Browser -> Controller: POST /login
+Controller -> DB: Verify credentials
+DB --> Controller: User data
+Controller --> Browser: Redirect ke /booking
+
+== Step 1: Pilih Layanan ==
+Browser -> Controller: GET /booking/step1
+Controller -> DB: Fetch available services
+DB --> Controller: Services list
+Controller --> Browser: Tampilkan services
+Client -> Browser: Pilih service
+Browser -> Controller: POST /booking/step1
+Controller -> Controller: Store service_id in session
+Controller --> Browser: Redirect ke step2
+
+== Step 2: Pilih Terapis ==
+Browser -> Controller: GET /booking/step2
+Controller -> DB: Fetch therapists for service
+DB --> Controller: Therapists list
+Controller --> Browser: Tampilkan therapists
+Client -> Browser: Pilih therapist
+Browser -> Controller: POST /booking/step2
+Controller -> Controller: Store therapist_id in session
+Controller --> Browser: Redirect ke step3
+
+== Step 3: Pilih Jadwal ==
+Browser -> Controller: GET /booking/step3
+Controller -> BookingService: Get available slots
+BookingService -> DB: Query therapist availability
+DB --> BookingService: Availability data
+BookingService -> DB: Query existing bookings
+DB --> BookingService: Bookings data
+BookingService -> BookingService: Calculate available slots
+BookingService --> Controller: Available slots
+Controller --> Browser: Tampilkan calendar & slots
+Client -> Browser: Pilih date & time
+Browser -> Controller: POST /booking/step3
+Controller -> BookingService: Check slot availability
+BookingService -> DB: Check conflicts
+DB --> BookingService: No conflicts
+BookingService --> Controller: Slot available
+Controller -> Controller: Store date & time in session
+Controller --> Browser: Redirect ke step4
+
+== Step 4: Konfirmasi & Pembayaran ==
+Browser -> Controller: GET /booking/step4
+Controller -> Controller: Retrieve session data
+Controller -> DB: Get service & therapist details
+DB --> Controller: Details
+Controller -> Controller: Calculate total price
+Controller --> Browser: Tampilkan booking summary
+Client -> Browser: Apply promo code (optional)
+Browser -> Controller: POST /booking/validate-promo
+Controller -> DB: Validate promo code
+DB --> Controller: Promo valid
+Controller -> Controller: Recalculate with discount
+Controller --> Browser: Updated total price
+Client -> Browser: Konfirmasi booking
+Browser -> Controller: POST /booking/confirm
+
+== Buat Booking ==
+Controller -> BookingService: Create booking
+BookingService -> DB: BEGIN TRANSACTION
+BookingService -> DB: INSERT INTO bookings
+DB --> BookingService: Booking created (ID: 123)
+BookingService -> DB: UPDATE promo_codes usage
+BookingService -> DB: COMMIT TRANSACTION
+DB --> BookingService: Success
+BookingService --> Controller: Booking data
+
+== Inisiasi Pembayaran ==
+Controller -> PaymentService: Create payment
+PaymentService -> DB: INSERT INTO payments
+DB --> PaymentService: Payment created
+PaymentService -> Midtrans: Create transaction
+note right
+  POST /snap/v1/transactions
+  {
+    "transaction_details": {
+      "order_id": "BOOK-123",
+      "gross_amount": 500000
+    },
+    "customer_details": {...}
+  }
+end note
+Midtrans --> PaymentService: Snap token
+PaymentService --> Controller: Snap token
+Controller --> Browser: Return snap token
+Browser -> Browser: Load Midtrans Snap
+Browser -> Midtrans: Display payment page
+
+== Proses Pembayaran ==
+Client -> Midtrans: Pilih metode & bayar
+Midtrans -> Midtrans: Process payment
+Midtrans --> Client: Payment result
+
+alt Payment Success
+    Midtrans -> Controller: Webhook notification
+    note right
+      POST /api/midtrans/notification
+      {
+        "transaction_status": "settlement",
+        "order_id": "BOOK-123"
+      }
+    end note
+    Controller -> PaymentService: Handle notification
+    PaymentService -> DB: UPDATE payments status = 'success'
+    PaymentService -> DB: UPDATE bookings status = 'paid'
+    DB --> PaymentService: Updated
+    PaymentService -> Queue: Dispatch SendConfirmationEmail
+    Queue -> Email: Send confirmation email
+    Email --> Client: Email terkirim
+    PaymentService -> Queue: Dispatch NotifyTherapist
+    Queue -> Email: Send notification to therapist
+    PaymentService -> Queue: Schedule reminder (H-1)
+    PaymentService --> Controller: Success
+    Controller --> Browser: Payment success page
+    Browser --> Client: Tampilkan konfirmasi
+else Payment Failed
+    Midtrans -> Controller: Webhook notification
+    Controller -> PaymentService: Handle notification
+    PaymentService -> DB: UPDATE payments status = 'failed'
+    PaymentService -> DB: UPDATE bookings status = 'payment_failed'
+    PaymentService --> Controller: Failed
+    Controller --> Browser: Payment failed page
+    Browser --> Client: Tampilkan error & retry option
+end
+
+@enduml

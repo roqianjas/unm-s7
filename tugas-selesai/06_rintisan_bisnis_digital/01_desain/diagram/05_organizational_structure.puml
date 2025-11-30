@@ -1,0 +1,36 @@
+@startuml
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 10
+skinparam shadowing false
+skinparam linetype ortho
+
+title Struktur Organisasi CUR-HEART
+
+package "Level 1 - Top Management" #E8F5E9 {
+  [CEO\n(Chief Executive Officer)\n**Fahruroji**\n\nStrategi bisnis, Pengambilan keputusan,\nHubungan investor, Pemantauan kinerja] as CEO
+}
+
+package "Level 2 - Middle Management" #E3F2FD {
+  [CTO\n(Chief Technology Officer)\n**Roki Anjas**\n\nArsitektur sistem, Pengembangan platform,\nInfrastruktur TI, Keamanan data] as CTO
+  
+  [CMO\n(Chief Marketing Officer)\n**Susanto**\n\nStrategi pemasaran, Manajemen merek,\nRiset pasar, Media sosial & kampanye] as CMO
+}
+
+package "Level 3 - Operational" #FFF3E0 {
+  [Terapis Utama\n(3 orang)\n\nSesi terapi, Penilaian klien,\nDokumentasi sesi, Pemantauan kemajuan] as Therapist
+  
+  [Admin & Customer Service\n(2 orang)\n\nManajemen reservasi, Dukungan pelanggan,\nKoordinasi terapis, Pelaporan] as Admin
+}
+
+package "Level 4 - Support (Outsource)" #EEEEEE {
+  [Finance & Accounting\n(Outsource)\n\nPembukuan, Laporan keuangan,\nKepatuhan pajak, Penggajian] as Finance
+}
+
+CEO -down-> CTO
+CEO -down-> CMO
+CEO -down-> Therapist
+CEO -down-> Admin
+CEO -down-> Finance
+
+@enduml
