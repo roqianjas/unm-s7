@@ -1166,16 +1166,317 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 
 ---
 
-## 🎨 Langkah 7: Styling & Branding
+## 📦 Langkah 7: Membuat Operations & Inventory Dashboard (Halaman 6)
 
-### 7.1 Theme Setup
+### 7.1 Tambah Halaman Baru
+1. Klik **"Page" → "New page"**
+2. Rename: **"Operations & Inventory"**
+3. Copy header dari halaman 1
+
+### 7.2 Operations Overview KPIs (4 Cards)
+
+#### Card 1: Total Stock In
+- **Data source**: Riwayat_Stok
+- **Metric**: `SUM(jumlah)` WHERE `jenis_perubahan = 'Masuk'`
+- **Calculated field**:
+  ```
+  SUM(CASE WHEN jenis_perubahan = 'Masuk' THEN jumlah ELSE 0 END)
+  ```
+- **Background**: #22C55E (hijau)
+- **Label**: "Units received"
+
+#### Card 2: Total Stock Out
+- **Calculated field**:
+  ```
+  SUM(CASE WHEN jenis_perubahan = 'Keluar' THEN jumlah ELSE 0 END)
+  ```
+- **Background**: #3B82F6 (biru)
+- **Label**: "Units sold/used"
+
+#### Card 3: Stock Turnover Rate
+- **Calculated field**:
+  ```
+  SUM(CASE WHEN jenis_perubahan = 'Keluar' THEN jumlah ELSE 0 END) / 
+  AVG(stok_setelah)
+  ```
+- **Format**: Number (2 decimals)
+- **Background**: #A855F7 (ungu)
+- **Label**: "Times per period"
+
+#### Card 4: Stock Adjustments
+- **Calculated field**:
+  ```
+  SUM(CASE WHEN jenis_perubahan = 'Penyesuaian' THEN jumlah ELSE 0 END)
+  ```
+- **Background**: #FB923C (orange)
+- **Label**: "Corrections made"
+
+### 7.3 Stock Movement Trend Chart
+
+1. **Add chart → Time series chart**
+2. **Data source**: Riwayat_Stok
+3. **Date dimension**: `tanggal_perubahan`
+4. **Metrics** (multiple lines):
+   - Stock In: `SUM(jumlah)` WHERE `jenis_perubahan = 'Masuk'`
+   - Stock Out: `SUM(jumlah)` WHERE `jenis_perubahan = 'Keluar'`
+5. **Style**:
+   - Stock In line: Green (#22C55E)
+   - Stock Out line: Red (#EF4444)
+   - Show data points: ON
+   - Fill area: ON (opacity 20%)
+
+### 7.4 Movement by Type Chart
+
+1. **Add chart → Donut chart**
+2. **Data source**: Riwayat_Stok
+3. **Dimension**: `jenis_perubahan`
+4. **Metric**: `SUM(jumlah)`
+5. **Style**:
+   - Colors:
+     - Masuk: #22C55E (hijau)
+     - Keluar: #EF4444 (merah)
+     - Penyesuaian: #FB923C (orange)
+     - Retur: #3B82F6 (biru)
+
+### 7.5 Stock Level by Category
+
+1. **Add chart → Bar chart (horizontal)**
+2. **Data source**: Blend Riwayat_Stok + Master_Produk
+3. **Dimension**: `kategori` (from Master_Produk)
+4. **Metric**: `AVG(stok_setelah)`
+5. **Sort**: Descending
+
+### 7.6 Low Stock Alert Table
+
+1. **Add chart → Table**
+2. **Data source**: Master_Produk
+3. **Filter**: `stok_tersedia < 10`
+4. **Dimensions**:
+   - `nama_produk`
+   - `kategori`
+   - `stok_tersedia`
+5. **Metrics**:
+   - Calculated: `harga_modal * stok_tersedia` → "Stock Value"
+6. **Style**:
+   - Conditional formatting: Red background if stock < 5
+   - Sort by: `stok_tersedia` (Ascending)
+
+### 7.7 Stock Movement History Table
+
+1. **Add chart → Table**
+2. **Data source**: Blend Riwayat_Stok + Master_Produk
+3. **Dimensions**:
+   - `tanggal_perubahan`
+   - `nama_produk`
+   - `jenis_perubahan`
+   - `keterangan`
+4. **Metrics**:
+   - `jumlah`
+   - `stok_sebelum`
+   - `stok_setelah`
+5. **Sort**: Date (Descending)
+6. **Rows**: 50
+
+### 7.8 Warehouse Efficiency Metrics
+
+1. **Add chart → Scorecard group**
+2. **Metrics**:
+   - **Average Days to Sell**: 
+     ```
+     AVG(stok_tersedia / (SUM(jumlah_keluar) / 30))
+     ```
+   - **Stock Accuracy Rate**:
+     ```
+     (COUNT(id_stok) - COUNT(CASE WHEN jenis_perubahan = 'Penyesuaian' THEN 1 END)) / 
+     COUNT(id_stok) * 100
+     ```
+   - **Fulfillment Rate**:
+     ```
+     COUNT(CASE WHEN status = 'Selesai' THEN 1 END) / 
+     COUNT(id_transaksi) * 100
+     ```
+
+---
+
+## 📢 Langkah 8: Membuat Marketing Performance Dashboard (Halaman 7)
+
+### 8.1 Tambah Halaman Baru
+1. Klik **"Page" → "New page"**
+2. Rename: **"Marketing Performance"**
+3. Copy header dari halaman 1
+
+### 8.2 Marketing Overview KPIs (4 Cards)
+
+#### Card 1: Total Campaigns
+- **Data source**: Marketing_Campaign
+- **Metric**: `COUNT_DISTINCT(id_campaign)`
+- **Background**: #22C55E (hijau)
+- **Secondary metric**: 
+  ```
+  COUNT_DISTINCT(CASE WHEN status_campaign = 'Aktif' THEN id_campaign END)
+  ```
+  Label: "active campaigns"
+
+#### Card 2: Total Marketing Spend
+- **Metric**: `SUM(budget_campaign)`
+- **Format**: Currency (IDR)
+- **Background**: #3B82F6 (biru)
+
+#### Card 3: Average ROI
+- **Calculated field**:
+  ```
+  (SUM(revenue_generated) - SUM(budget_campaign)) / SUM(budget_campaign) * 100
+  ```
+- **Format**: Percentage
+- **Background**: #A855F7 (ungu)
+- **Conditional formatting**: 
+  - Green if > 100%
+  - Orange if 50-100%
+  - Red if < 50%
+
+#### Card 4: Total Impressions
+- **Metric**: `SUM(impressions)`
+- **Format**: Number (compact)
+- **Background**: #FB923C (orange)
+
+### 8.3 Campaign ROI Comparison Chart
+
+1. **Add chart → Bar chart (horizontal)**
+2. **Data source**: Marketing_Campaign
+3. **Dimension**: `nama_campaign`
+4. **Metric**: Calculated ROI
+   ```
+   (revenue_generated - budget_campaign) / budget_campaign * 100
+   ```
+5. **Sort**: Descending (best ROI first)
+6. **Limit**: Top 10 campaigns
+7. **Style**:
+   - Bar color: Gradient based on value
+   - Show data labels: ON
+   - Format: Percentage
+
+### 8.4 Spend by Channel Chart
+
+1. **Add chart → Pie chart**
+2. **Data source**: Marketing_Campaign
+3. **Dimension**: `channel_marketing`
+4. **Metric**: `SUM(budget_campaign)`
+5. **Style**:
+   - Colors: Custom per channel
+     - Instagram: #E4405F
+     - Facebook: #1877F2
+     - Google Ads: #4285F4
+     - TikTok: #000000
+     - WhatsApp: #25D366
+   - Show legend: Bottom
+   - Show percentage: ON
+
+### 8.5 Campaign Performance Over Time
+
+1. **Add chart → Time series chart**
+2. **Data source**: Marketing_Campaign
+3. **Date dimension**: `tanggal_mulai`
+4. **Metrics** (multiple lines):
+   - Budget: `SUM(budget_campaign)`
+   - Revenue: `SUM(revenue_generated)`
+   - Profit: `SUM(revenue_generated - budget_campaign)`
+5. **Style**:
+   - Budget line: Orange
+   - Revenue line: Green
+   - Profit line: Blue
+   - Show data points: ON
+
+### 8.6 Channel Performance Table
+
+1. **Add chart → Table with heatmap**
+2. **Data source**: Marketing_Campaign
+3. **Dimension**: `channel_marketing`
+4. **Metrics**:
+   - `COUNT(id_campaign)` → "Campaigns"
+   - `SUM(budget_campaign)` → "Spend"
+   - `SUM(impressions)` → "Impressions"
+   - `SUM(clicks)` → "Clicks"
+   - Calculated: `clicks / impressions * 100` → "CTR %"
+   - `SUM(conversions)` → "Conversions"
+   - Calculated: `conversions / clicks * 100` → "CVR %"
+   - `SUM(revenue_generated)` → "Revenue"
+   - Calculated ROI → "ROI %"
+5. **Style**:
+   - Heatmap on ROI column
+   - Sort by: ROI (Descending)
+
+### 8.7 Top Performing Campaigns Table
+
+1. **Add chart → Table**
+2. **Data source**: Marketing_Campaign
+3. **Dimensions**:
+   - `nama_campaign`
+   - `channel_marketing`
+   - `tanggal_mulai`
+   - `tanggal_selesai`
+   - `status_campaign`
+4. **Metrics**:
+   - `budget_campaign`
+   - `revenue_generated`
+   - Calculated ROI
+   - `impressions`
+   - `clicks`
+   - `conversions`
+5. **Sort**: ROI (Descending)
+6. **Limit**: 20 campaigns
+
+### 8.8 Customer Acquisition Cost (CAC)
+
+1. **Add chart → Scorecard**
+2. **Calculated field**:
+   ```
+   SUM(budget_campaign) / SUM(conversions)
+   ```
+3. **Format**: Currency (IDR)
+4. **Label**: "Cost per Acquisition"
+
+### 8.9 Marketing Funnel Chart
+
+1. **Add chart → Funnel chart** (if available) or **Stacked bar**
+2. **Data source**: Marketing_Campaign
+3. **Stages**:
+   - Impressions: `SUM(impressions)`
+   - Clicks: `SUM(clicks)`
+   - Conversions: `SUM(conversions)`
+4. **Style**:
+   - Show conversion rates between stages
+   - Color gradient: Top (light) to bottom (dark)
+
+### 8.10 Campaign Status Distribution
+
+1. **Add chart → Donut chart**
+2. **Dimension**: `status_campaign`
+3. **Metric**: `COUNT(id_campaign)`
+4. **Style**:
+   - Colors:
+     - Aktif: #22C55E (hijau)
+     - Selesai: #3B82F6 (biru)
+     - Dijadwalkan: #FB923C (orange)
+     - Dibatalkan: #EF4444 (merah)
+
+### 8.11 Add Filter Controls
+
+1. **Date range control**: `tanggal_mulai`
+2. **Channel filter**: Drop-down for `channel_marketing`
+3. **Status filter**: Drop-down for `status_campaign`
+
+---
+
+## 🎨 Langkah 9: Styling & Branding
+
+### 9.1 Theme Setup
 1. **Klik "Theme and layout"**
 2. **Choose theme**: Minimal atau Custom
 3. **Primary color**: #22C55E (hijau SATRIAMART)
 4. **Secondary color**: #3B82F6 (biru)
 5. **Font**: Roboto
 
-### 7.2 Consistent Styling
+### 9.2 Consistent Styling
 - **All KPI cards**: Same height (140px)
 - **All charts**: Consistent padding (20px)
 - **Color palette**: Stick to 4-5 colors
@@ -1184,28 +1485,28 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
   - Subheaders: 16-18px
   - Body: 12-14px
 
-### 7.3 Add Logo
+### 9.3 Add Logo
 1. **Upload logo** (if available)
 2. **Position**: Top-left corner
 3. **Size**: 40x40px
 
 ---
 
-## 🔧 Langkah 8: Interactivity & Filters
+## 🔧 Langkah 10: Interactivity & Filters
 
-### 8.1 Add Global Filters
+### 10.1 Add Global Filters
 1. **Date range control** (all pages)
 2. **Channel filter** (Sales, Executive)
 3. **Category filter** (Products)
 4. **City filter** (Customers)
 
-### 8.2 Enable Cross-Filtering
+### 10.2 Enable Cross-Filtering
 1. **Select any chart**
 2. **Properties → Interactions**
 3. **Enable "Apply filter"**
 4. **Test**: Click on chart element → other charts update
 
-### 8.3 Add Navigation Menu
+### 10.3 Add Navigation Menu
 1. **Add text boxes** for each page name
 2. **Add hyperlinks**:
    - Right-click text → "Add link"
@@ -1215,44 +1516,44 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 
 ---
 
-## 📱 Langkah 9: Mobile Optimization
+## 📱 Langkah 11: Mobile Optimization
 
-### 9.1 Enable Mobile View
+### 11.1 Enable Mobile View
 1. **Klik "View" → "Mobile layout"**
 2. **Adjust layout** for mobile:
    - Stack KPI cards vertically
    - Reduce chart sizes
    - Hide less important elements
 
-### 9.2 Test Responsiveness
+### 11.2 Test Responsiveness
 1. **Preview** in different screen sizes
 2. **Adjust** as needed
 
 ---
 
-## 🚀 Langkah 10: Publish & Share
+## 🚀 Langkah 12: Publish & Share
 
-### 10.1 Final Review
+### 12.1 Final Review
 - ✅ Check all data connections
 - ✅ Verify calculations
 - ✅ Test all filters
 - ✅ Check spelling
 - ✅ Test on different browsers
 
-### 10.2 Publish Dashboard
+### 12.2 Publish Dashboard
 1. **Klik "Share"**
 2. **Set permissions**:
    - **View**: Anyone with link
    - **Edit**: Specific people
 3. **Copy link**
 
-### 10.3 Schedule Email Reports (Optional)
+### 12.3 Schedule Email Reports (Optional)
 1. **Klik "Schedule email delivery"**
 2. **Set frequency**: Daily/Weekly/Monthly
 3. **Add recipients**
 4. **Choose format**: PDF or Link
 
-### 10.4 Embed in Website (Optional)
+### 12.4 Embed in Website (Optional)
 1. **Klik "File" → "Embed report"**
 2. **Copy embed code**
 3. **Paste** in your website HTML
@@ -1637,7 +1938,7 @@ A:
 
 Setelah selesai, pastikan dashboard Anda memiliki:
 
-### Executive Dashboard
+### 1. Executive Dashboard
 - [ ] 4 KPI cards (Revenue, Transactions, AOV, Customers)
 - [ ] Revenue trend line chart
 - [ ] Sales by channel donut chart
@@ -1647,7 +1948,7 @@ Setelah selesai, pastikan dashboard Anda memiliki:
 - [ ] Top 10 products table
 - [ ] Date range filter
 
-### Sales Analysis
+### 2. Sales Analysis
 - [ ] 4 Sales KPI cards
 - [ ] Channel performance table
 - [ ] Day of week chart
@@ -1655,7 +1956,7 @@ Setelah selesai, pastikan dashboard Anda memiliki:
 - [ ] Transaction status breakdown
 - [ ] Recent transactions table
 
-### Product Performance
+### 3. Product Performance
 - [ ] 4 Product KPI cards
 - [ ] Category analysis table
 - [ ] Top 10 best sellers
@@ -1664,7 +1965,7 @@ Setelah selesai, pastikan dashboard Anda memiliki:
 - [ ] Stock level pie chart
 - [ ] Product catalog table
 
-### Customer Analytics
+### 4. Customer Analytics
 - [ ] 4 Customer KPI cards
 - [ ] RFM segmentation chart
 - [ ] Geographic distribution
@@ -1673,7 +1974,7 @@ Setelah selesai, pastikan dashboard Anda memiliki:
 - [ ] Top 20 customers table
 - [ ] Customer database table
 
-### Financial Dashboard
+### 5. Financial Dashboard
 - [ ] 4 Financial KPI cards
 - [ ] Revenue vs profit trend
 - [ ] Profit margin trend
@@ -1681,12 +1982,33 @@ Setelah selesai, pastikan dashboard Anda memiliki:
 - [ ] Revenue composition chart
 - [ ] Expense details table
 
+### 6. Operations & Inventory (BARU!)
+- [ ] 4 Operations KPI cards
+- [ ] Stock movement trend chart
+- [ ] Movement by type chart
+- [ ] Stock level by category
+- [ ] Low stock alert table
+- [ ] Stock movement history table
+- [ ] Warehouse efficiency metrics
+
+### 7. Marketing Performance (BARU!)
+- [ ] 4 Marketing KPI cards
+- [ ] Campaign ROI comparison chart
+- [ ] Spend by channel chart
+- [ ] Campaign performance over time
+- [ ] Channel performance table
+- [ ] Top performing campaigns table
+- [ ] Customer acquisition cost (CAC)
+- [ ] Marketing funnel chart
+- [ ] Campaign status distribution
+
 ### General
-- [ ] Consistent branding & colors
-- [ ] All filters working
+- [ ] Consistent branding & colors across all 7 pages
+- [ ] All filters working properly
 - [ ] Cross-filtering enabled
-- [ ] Mobile-responsive
-- [ ] Published & shared
+- [ ] Mobile-responsive layout
+- [ ] Navigation menu between pages
+- [ ] Published & shared with stakeholders
 
 ---
 
