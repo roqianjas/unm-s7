@@ -893,53 +893,163 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 ### 3.1 Tambah Halaman Baru
 1. Klik **"Page" → "New page"**
 2. Rename: **"Sales Analysis"**
-3. Copy header dari halaman 1 (Ctrl+C, Ctrl+V)
+3. Copy header dari halaman 1 (Ctrl+C, Ctrl+V) atau buat header baru dengan judul "Sales Analysis"
 
 ### 3.2 Sales Overview KPIs (4 Cards)
 
+**Data Source untuk semua KPI Cards**: Transaksi_Penjualan
+
 #### Card 1: Gross Sales
-- **Metric**: `SUM(subtotal)`
-- **Background**: #22C55E
+
+**Tujuan**: Menampilkan total penjualan sebelum diskon.
+
+1. **Add chart → Scorecard**
+2. **Data source**: Transaksi_Penjualan
+3. **Setup Metric**:
+   - **Field**: `subtotal`
+   - **Aggregation**: SUM
+   - **Label**: "Gross Sales"
+   - **Format**: Currency (IDR)
+4. **Style**:
+   - **Background color**: #22C55E (hijau)
+   - **Text color**: #FFFFFF (putih)
+   - **Font size**: 32
+   - **Compact numbers**: ON
+5. **Posisi**: Top-left (x: 20, y: 100)
+6. **Ukuran**: Width: 280px, Height: 140px
 
 #### Card 2: Net Sales
-- **Metric**: `SUM(total_pembayaran)`
-- **Background**: #3B82F6
+
+**Tujuan**: Menampilkan total penjualan setelah diskon (revenue aktual).
+
+1. **Duplicate Card 1** (Ctrl+D)
+2. **Setup Metric**:
+   - **Field**: `total_pembayaran`
+   - **Aggregation**: SUM
+   - **Label**: "Net Sales"
+   - **Format**: Currency (IDR)
+3. **Style**:
+   - **Background color**: #3B82F6 (biru)
+4. **Posisi**: Sebelah kanan Card 1 (x: 320, y: 100)
 
 #### Card 3: Total Discounts
-- **Metric**: `SUM(diskon_nominal)`
-- **Background**: #EF4444
+
+**Tujuan**: Menampilkan total diskon yang diberikan.
+
+1. **Duplicate Card 2**
+2. **Setup Metric**:
+   - **Field**: `diskon_nominal`
+   - **Aggregation**: SUM
+   - **Label**: "Total Discounts"
+   - **Format**: Currency (IDR)
+3. **Style**:
+   - **Background color**: #EF4444 (merah)
+4. **Posisi**: Sebelah kanan Card 2 (x: 620, y: 100)
+5. **Add Secondary Metric** (optional):
+   - Calculated: `(SUM(diskon_nominal) / SUM(subtotal)) * 100`
+   - Label: "% of Gross Sales"
+   - Format: Percent
 
 #### Card 4: Shipping Revenue
-- **Metric**: `SUM(biaya_ongkir)`
-- **Background**: #FB923C
+
+**Tujuan**: Menampilkan total pendapatan dari biaya pengiriman.
+
+1. **Duplicate Card 3**
+2. **Setup Metric**:
+   - **Field**: `biaya_ongkir`
+   - **Aggregation**: SUM
+   - **Label**: "Shipping Revenue"
+   - **Format**: Currency (IDR)
+3. **Style**:
+   - **Background color**: #FB923C (orange)
+4. **Posisi**: Sebelah kanan Card 3 (x: 920, y: 100)
 
 ### 3.3 Channel Performance Table
 
+**Tujuan**: Menampilkan performa penjualan per channel dengan metrics lengkap.
+
 1. **Add chart → Table with heatmap**
-2. **Dimension**: `channel_penjualan`
-3. **Metrics**:
-   - `COUNT(id_transaksi)` → "Transactions"
-   - `SUM(total_pembayaran)` → "Revenue"
-   - `AVG(total_pembayaran)` → "Avg Order Value"
-   - Calculated: `SUM(total_pembayaran) / COUNT(id_transaksi)` → "AOV"
-4. **Style**: Heatmap on Revenue column
+2. **Data source**: Transaksi_Penjualan
+3. **Setup Dimension**:
+   - **Field**: `channel_penjualan`
+   - **Label**: "Sales Channel"
+4. **Setup Metrics**:
+   - **Metric 1**: `COUNT(id_transaksi)` 
+     - Label: "Transactions"
+     - Format: Number
+   - **Metric 2**: `SUM(total_pembayaran)` 
+     - Label: "Revenue"
+     - Format: Currency (IDR)
+   - **Metric 3**: `AVG(total_pembayaran)` 
+     - Label: "Avg Order Value"
+     - Format: Currency (IDR)
+   - **Metric 4**: Calculated field `AOV_Calculated`
+     - Formula: `SUM(total_pembayaran) / COUNT(id_transaksi)`
+     - Label: "AOV (Calculated)"
+     - Format: Currency (IDR)
+5. **Sort**: By Revenue (Descending)
+6. **Style**:
+   - **Heatmap**: ON untuk Revenue column
+   - **Color scale**: Green gradient
+   - **Show bars**: ON untuk Revenue
+   - **Alternating rows**: ON
+7. **Posisi**: Di bawah KPI cards (x: 20, y: 260)
+8. **Ukuran**: Width: 1160px, Height: 320px
 
 ### 3.4 Sales by Day of Week
 
+**Tujuan**: Mengidentifikasi hari dengan penjualan tertinggi untuk optimasi operasional.
+
 1. **Add chart → Column chart**
-2. **Dimension**: Calculated field
-   - Name: `Day_of_Week`
-   - Formula: `DAYNAME(tanggal_transaksi)`
-3. **Metric**: `SUM(total_pembayaran)`
-4. **Sort**: Custom (Mon, Tue, Wed, Thu, Fri, Sat, Sun)
+2. **Data source**: Transaksi_Penjualan
+3. **Setup Dimension**: Calculated field `Day_of_Week`
+   - **Klik "Add dimension" → "CREATE FIELD"**
+   - **Field Name**: `Day_of_Week`
+   - **Formula**: `DAYNAME(tanggal_transaksi)`
+   - **Klik "SAVE"** → **Klik "DONE"**
+4. **Setup Metric**:
+   - **Field**: `total_pembayaran`
+   - **Aggregation**: SUM
+   - **Label**: "Revenue"
+   - **Format**: Currency (IDR)
+5. **Sort**: Custom order
+   - Manual: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+   - Atau by metric (Descending) untuk lihat hari terlaris
+6. **Style**:
+   - **Bar color**: #3B82F6 (biru)
+   - **Show data labels**: ON
+   - **Grid lines**: ON
+7. **Posisi**: Baris baru (x: 20, y: 600)
+8. **Ukuran**: Width: 560px, Height: 320px
 
 ### 3.5 Monthly Sales Comparison
 
+**Tujuan**: Membandingkan revenue dan jumlah transaksi per bulan.
+
 1. **Add chart → Combo chart**
-2. **Dimension**: `MONTH(tanggal_transaksi)`
-3. **Metrics**:
-   - `SUM(total_pembayaran)` → Bar chart
-   - `COUNT(id_transaksi)` → Line chart (right axis)
+2. **Data source**: Transaksi_Penjualan
+3. **Setup Dimension**:
+   - **Field**: `tanggal_transaksi`
+   - **Type**: Date
+   - **Granularity**: Month (MONTH atau YEAR_MONTH)
+4. **Setup Metrics**:
+   - **Metric 1 - Revenue**: `SUM(total_pembayaran)`
+     - Chart type: **Column** (bar)
+     - Color: #22C55E (hijau)
+     - Axis: Left (primary)
+   - **Metric 2 - Transactions**: `COUNT(id_transaksi)`
+     - Chart type: **Line**
+     - Color: #A855F7 (ungu)
+     - Axis: Right (secondary)
+5. **Style**:
+   - **Show data labels**: ON untuk line
+   - **Legend**: Bottom
+   - **Grid lines**: ON
+   - **Axis titles**: 
+     - Left: "Revenue (IDR)"
+     - Right: "Transactions"
+6. **Posisi**: Sebelah kanan Day of Week (x: 620, y: 600)
+7. **Ukuran**: Width: 560px, Height: 320px
 
 ### 3.6 Transaction Status Breakdown
 
