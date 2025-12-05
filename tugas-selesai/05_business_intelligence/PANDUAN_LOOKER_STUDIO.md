@@ -1000,13 +1000,28 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 
 **Tujuan**: Mengidentifikasi hari dengan penjualan tertinggi untuk optimasi operasional.
 
-1. **Add chart → Column chart**
+1. **Add chart → Bar chart**
 2. **Data source**: Transaksi_Penjualan
 3. **Setup Dimension**: Calculated field `Day_of_Week`
    - **Klik "Add dimension" → "CREATE FIELD"**
    - **Field Name**: `Day_of_Week`
-   - **Formula**: `DAYNAME(tanggal_transaksi)`
+   - **Formula**: 
+     ```
+     CASE
+       WHEN WEEKDAY(tanggal_transaksi) = 1 THEN 'Sunday'
+       WHEN WEEKDAY(tanggal_transaksi) = 2 THEN 'Monday'
+       WHEN WEEKDAY(tanggal_transaksi) = 3 THEN 'Tuesday'
+       WHEN WEEKDAY(tanggal_transaksi) = 4 THEN 'Wednesday'
+       WHEN WEEKDAY(tanggal_transaksi) = 5 THEN 'Thursday'
+       WHEN WEEKDAY(tanggal_transaksi) = 6 THEN 'Friday'
+       WHEN WEEKDAY(tanggal_transaksi) = 7 THEN 'Saturday'
+     END
+     ```
    - **Klik "SAVE"** → **Klik "DONE"**
+   
+   **Alternatif lebih sederhana** (jika hanya perlu angka):
+   - **Formula**: `WEEKDAY(tanggal_transaksi)`
+   - Hasil: 1=Sunday, 2=Monday, ..., 7=Saturday
 4. **Setup Metric**:
    - **Field**: `total_pembayaran`
    - **Aggregation**: SUM
@@ -1016,11 +1031,14 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
    - Manual: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
    - Atau by metric (Descending) untuk lihat hari terlaris
 6. **Style**:
+   - **Orientation**: Vertical (bars tegak)
    - **Bar color**: #3B82F6 (biru)
    - **Show data labels**: ON
    - **Grid lines**: ON
 7. **Posisi**: Baris baru (x: 20, y: 600)
 8. **Ukuran**: Width: 560px, Height: 320px
+
+**Catatan**: Di Looker Studio, "Bar chart" bisa diatur orientasinya (horizontal/vertical) di tab Style.
 
 ### 3.5 Monthly Sales Comparison
 
@@ -1034,7 +1052,7 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
    - **Granularity**: Month (MONTH atau YEAR_MONTH)
 4. **Setup Metrics**:
    - **Metric 1 - Revenue**: `SUM(total_pembayaran)`
-     - Chart type: **Column** (bar)
+     - Chart type: **Bar** (vertical bars)
      - Color: #22C55E (hijau)
      - Axis: Left (primary)
    - **Metric 2 - Transactions**: `COUNT(id_transaksi)`
@@ -1102,27 +1120,217 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 
 **Tips**: Tambahkan filter control untuk channel dan status di atas table untuk interaktivitas.
 
+### 3.8 Tambahkan Filter Controls
+
+**Tujuan**: Memberikan interaktivitas untuk filter data berdasarkan periode, channel, dan status.
+
+#### Filter 1: Date Range Control
+
+1. **Add a control → Date range control**
+2. **Setup**:
+   - **Data source**: Transaksi_Penjualan
+   - **Control field**: `tanggal_transaksi`
+   - **Default date range**: Last 12 months (atau Custom)
+   - **Comparison date range**: OFF
+3. **Style**:
+   - **Control type**: Compact
+   - **Background**: #FFFFFF (putih)
+   - **Border**: #D1D5DB (abu-abu)
+   - **Text color**: #374151
+   - **Accent color**: #22C55E (hijau)
+   - **Border radius**: 8px
+4. **Posisi**: Top-right corner (x: 1000, y: 20)
+5. **Ukuran**: Width: 180px, Height: 40px
+
+**Add Label** (optional):
+- **Add text** di atas control
+- Text: "Filter Periode:"
+- Font: Roboto Medium, Size: 12
+- Color: #6B7280
+- Position: (x: 1000, y: 5)
+
+#### Filter 2: Channel Filter
+
+1. **Add a control → Drop-down list**
+2. **Setup**:
+   - **Data source**: Transaksi_Penjualan
+   - **Control field**: `channel_penjualan`
+   - **Allow multiple selections**: YES
+   - **Include "All" option**: YES
+   - **Default selection**: All
+3. **Style**:
+   - **Control type**: Drop-down list
+   - **Background**: #FFFFFF
+   - **Border**: #D1D5DB
+   - **Border radius**: 8px
+4. **Posisi**: Below date range (x: 1000, y: 70)
+5. **Ukuran**: Width: 180px, Height: 40px
+
+**Add Label**:
+- Text: "Sales Channel:"
+- Position: (x: 1000, y: 55)
+
+#### Filter 3: Status Filter
+
+1. **Add a control → Drop-down list**
+2. **Setup**:
+   - **Data source**: Transaksi_Penjualan
+   - **Control field**: `status_pesanan`
+   - **Allow multiple selections**: YES
+   - **Include "All" option**: YES
+   - **Default selection**: All
+3. **Style**:
+   - Same as Channel Filter
+4. **Posisi**: Below channel filter (x: 1000, y: 120)
+5. **Ukuran**: Width: 180px, Height: 40px
+
+**Add Label**:
+- Text: "Order Status:"
+- Position: (x: 1000, y: 105)
+
+#### Filter 4: Payment Status Filter (Optional)
+
+1. **Add a control → Drop-down list**
+2. **Setup**:
+   - **Data source**: Transaksi_Penjualan
+   - **Control field**: `status_pembayaran`
+   - **Allow multiple selections**: YES
+   - **Include "All" option**: YES
+3. **Posisi**: Below status filter (x: 1000, y: 170)
+4. **Ukuran**: Width: 180px, Height: 40px
+
+### 3.9 Test Interaktivitas
+
+1. **Klik "View"** untuk masuk preview mode
+2. **Test setiap filter**:
+   - Ubah date range → semua charts harus update
+   - Pilih channel tertentu → data ter-filter
+   - Pilih status → table dan charts berubah
+3. **Verify**:
+   - KPI cards menunjukkan angka yang sesuai filter
+   - Charts menampilkan data yang ter-filter
+   - Table hanya menampilkan data sesuai kriteria
+4. **Klik "Edit"** untuk kembali ke edit mode
+
+### 🎯 Checklist: Sales Analysis Dashboard Selesai
+
+Setelah menyelesaikan Langkah 3, pastikan Anda punya:
+
+- [ ] **Header & Title** "Sales Analysis"
+- [ ] **4 KPI Cards** (Gross Sales, Net Sales, Discounts, Shipping)
+- [ ] **Channel Performance Table** dengan heatmap
+- [ ] **Sales by Day of Week Chart** (bar chart vertikal)
+- [ ] **Monthly Sales Comparison** (combo chart)
+- [ ] **Transaction Status Breakdown** (stacked bar)
+- [ ] **Recent Transactions Table** (20 rows)
+- [ ] **4 Filter Controls** (Date Range, Channel, Status, Payment Status)
+- [ ] **All filters working** dan charts update otomatis
+- [ ] **Consistent styling** dengan halaman 1
+
+### 💡 Tips Sebelum Lanjut ke Halaman 3
+
+1. **Save your work**: Ctrl+S
+2. **Test all filters**: Pastikan semua bekerja dengan baik
+3. **Check data accuracy**: Bandingkan angka dengan dashboard HTML
+4. **Preview mode**: Lihat tampilan akhir
+5. **Copy page**: Untuk template halaman Product Performance
+
 ---
 
 ## 🛍️ Langkah 4: Membuat Product Performance Dashboard (Halaman 3)
 
-### 4.1 Product Overview KPIs
+### 4.1 Tambah Halaman Baru
+1. Klik **"Page" → "New page"**
+2. Rename: **"Product Performance"**
+3. Copy header dari halaman 1
+
+### 4.2 Product Overview KPIs (4 Cards)
+
+**Data Source untuk semua KPI Cards**: Master_Produk (dan blend untuk metrics penjualan)
 
 #### Card 1: Total Products
-- **Data source**: Master_Produk
-- **Metric**: `COUNT_DISTINCT(id_produk)`
+
+**Tujuan**: Menampilkan jumlah total produk dalam katalog.
+
+1. **Add chart → Scorecard**
+2. **Data source**: Master_Produk
+3. **Setup Metric**:
+   - **Field**: `id_produk`
+   - **Aggregation**: COUNT DISTINCT
+   - **Label**: "Total Products"
+   - **Format**: Number
+4. **Style**:
+   - **Background color**: #22C55E (hijau)
+   - **Text color**: #FFFFFF (putih)
+   - **Font size**: 36
+5. **Add Secondary Metric** (optional):
+   - Filter: `status_aktif = 'Aktif'`
+   - Label: "active products"
+6. **Posisi**: Top-left (x: 20, y: 100)
+7. **Ukuran**: Width: 280px, Height: 140px
 
 #### Card 2: Inventory Value
-- **Calculated field**: `SUM(harga_modal * stok_tersedia)`
+
+**Tujuan**: Menampilkan nilai total inventory berdasarkan harga modal.
+
+1. **Duplicate Card 1**
+2. **Setup Metric**: Calculated field `Inventory_Value`
+   - **Klik "Add metric" → "CREATE FIELD"**
+   - **Field Name**: `Inventory_Value`
+   - **Formula**: 
+     ```
+     SUM(harga_modal * stok_tersedia)
+     ```
+   - **Klik "SAVE"** → **Klik "DONE"**
+   - **Label**: "Inventory Value"
+   - **Format**: Currency (IDR)
+3. **Style**:
+   - **Background color**: #3B82F6 (biru)
+4. **Posisi**: Sebelah kanan Card 1 (x: 320, y: 100)
 
 #### Card 3: Avg Profit Margin
-- **Calculated field**: `AVG((harga_jual - harga_modal) / harga_jual * 100)`
-- **Format**: Percentage
+
+**Tujuan**: Menampilkan rata-rata profit margin dari semua produk.
+
+⚠️ **PENTING - Formula Persentase yang Benar:**
+
+1. **Duplicate Card 2**
+2. **Setup Metric**: Calculated field `Avg_Profit_Margin`
+   - **Field Name**: `Avg_Profit_Margin`
+   - **Formula** (TANPA * 100):
+     ```
+     AVG((harga_jual - harga_modal) / harga_jual)
+     ```
+   - **Data type**: **Percent** (Looker Studio akan otomatis × 100)
+   - **Label**: "Avg Profit Margin"
+3. **Style**:
+   - **Background color**: #A855F7 (ungu)
+   - **Format**: Percent dengan 1 decimal
+4. **Posisi**: Sebelah kanan Card 2 (x: 620, y: 100)
+
+**Catatan**: Jangan tambahkan `* 100` di formula jika Data type = Percent, karena akan jadi ribuan!
 
 #### Card 4: Low Stock Items
-- **Metric**: `COUNT(id_produk)` WHERE `stok_tersedia < 10`
 
-### 4.2 Category Analysis Table
+**Tujuan**: Menampilkan jumlah produk dengan stok rendah (< 10 unit).
+
+1. **Duplicate Card 3**
+2. **Data source**: Master_Produk
+3. **Setup Metric**:
+   - **Field**: `id_produk`
+   - **Aggregation**: COUNT
+   - **Label**: "Low Stock Items"
+   - **Format**: Number
+4. **Add Filter**:
+   - **Klik "Add a filter"**
+   - **Include**: `stok_tersedia` < 10
+5. **Style**:
+   - **Background color**: #FB923C (orange)
+6. **Add Secondary Metric** (optional):
+   - Text: "Below 10 units"
+7. **Posisi**: Sebelah kanan Card 3 (x: 920, y: 100)
+
+### 4.3 Category Analysis Table
 
 **Tujuan**: Menampilkan performa setiap kategori produk dengan metrics lengkap.
 
@@ -1152,7 +1360,7 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 7. **Posisi**: Di bawah KPI cards (y: 260)
 8. **Ukuran**: Width: 1160px, Height: 400px
 
-### 4.3 Top 10 Best Sellers
+### 4.4 Top 10 Best Sellers
 
 **Tujuan**: Menampilkan 10 produk dengan penjualan tertinggi berdasarkan jumlah unit terjual.
 
@@ -1172,7 +1380,7 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 
 **Catatan**: Jika ingin berdasarkan revenue, ganti metric dengan `SUM(total_pembayaran)`.
 
-### 4.4 Bottom 10 Slow Movers
+### 4.5 Bottom 10 Slow Movers
 
 **Tujuan**: Mengidentifikasi produk dengan penjualan terendah yang mungkin perlu strategi khusus.
 
@@ -1192,40 +1400,88 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 
 **Tips**: Tambahkan filter untuk exclude produk baru (< 30 hari) agar analisis lebih akurat.
 
-### 4.5 Price Range Distribution
+### 4.6 Price Range Distribution
 
 **Tujuan**: Menampilkan distribusi produk berdasarkan range harga untuk analisis pricing strategy.
 
-1. **Add chart → Column chart** (atau Histogram jika tersedia)
+1. **Add chart → Bar chart**
 2. **Data source**: Master_Produk
-3. **Setup**:
-   - **Dimension**: Calculated field `Price_Range`
-     - Name: `Price_Range`
-     - Formula:
-       ```
-       CASE
-         WHEN harga_jual < 100000 THEN '< 100K'
-         WHEN harga_jual < 200000 THEN '100K - 200K'
-         WHEN harga_jual < 300000 THEN '200K - 300K'
-         WHEN harga_jual < 500000 THEN '300K - 500K'
-         ELSE '> 500K'
-       END
-       ```
-   - **Metric**: `COUNT(id_produk)` → Label: "Number of Products"
-   - **Sort**: Manual order (< 100K, 100K-200K, dst)
-4. **Style**:
+3. **Setup Dimension**: Calculated field `Price_Range`
+   - **Klik "Add dimension" → "CREATE FIELD"**
+   - **Field Name**: `Price_Range`
+   - **Formula**:
+     ```
+     CASE
+       WHEN harga_jual < 100000 THEN '< 100K'
+       WHEN harga_jual < 200000 THEN '100K - 200K'
+       WHEN harga_jual < 300000 THEN '200K - 300K'
+       WHEN harga_jual < 500000 THEN '300K - 500K'
+       ELSE '> 500K'
+     END
+     ```
+   - **Klik "SAVE"** → **Klik "DONE"**
+4. **Setup Metric**:
+   - **Field**: `id_produk`
+   - **Aggregation**: COUNT
+   - **Label**: "Number of Products"
+   - **Format**: Number
+5. **Sort**: 
+   - **Default**: Alphabetical (akan salah urutan: > 500K, < 100K, 100K-200K, dst)
+   - **Solusi**: Gunakan **Sort by Metric** (Ascending atau Descending)
+   - Atau buat **Calculated field dengan angka** untuk sorting:
+     ```
+     CASE
+       WHEN harga_jual < 100000 THEN 1
+       WHEN harga_jual < 200000 THEN 2
+       WHEN harga_jual < 300000 THEN 3
+       WHEN harga_jual < 500000 THEN 4
+       ELSE 5
+     END
+     ```
+     Lalu sort by field ini (Ascending)
+   
+   **Cara Manual Order** (jika perlu):
+   - Setelah chart dibuat, klik chart
+   - Tab **SETUP** → bagian **Sort**
+   - Pilih dimension yang ingin di-sort
+   - Klik **"Custom"** atau **"Manual"** (jika tersedia)
+   - Drag & drop urutan di list yang muncul
+   - Atau gunakan **filter** untuk exclude data yang tidak perlu
+6. **Style**:
+   - **Orientation**: **Vertical** (bars tegak ke atas)
    - **Bar color**: #3B82F6 (biru)
    - **Show data labels**: ON
    - **Grid lines**: ON
-5. **Posisi**: Baris baru di bawah (x: 20, y: 1100)
-6. **Ukuran**: Width: 560px, Height: 320px
+7. **Posisi**: Baris baru di bawah (x: 20, y: 1100)
+8. **Ukuran**: Width: 560px, Height: 320px
+
+**Catatan**: Di Looker Studio, gunakan **Bar chart** dengan orientation **Vertical** untuk membuat bar tegak (seperti column chart).
+
+**💡 Tips Sorting yang Benar:**
+
+Karena Looker Studio akan sort alphabetically secara default, urutan akan jadi:
+- ❌ Salah: `> 500K`, `< 100K`, `100K-200K`, `200K-300K`, `300K-500K`
+
+**Solusi Terbaik**: Buat calculated field dengan prefix angka:
+```
+CASE
+  WHEN harga_jual < 100000 THEN '1. < 100K'
+  WHEN harga_jual < 200000 THEN '2. 100K-200K'
+  WHEN harga_jual < 300000 THEN '3. 200K-300K'
+  WHEN harga_jual < 500000 THEN '4. 300K-500K'
+  ELSE '5. > 500K'
+END
+```
+Dengan prefix angka, sorting alphabetical akan otomatis benar! ✅
+
+**Alternatif**: Sort by metric (COUNT) jika data sudah terurut natural.
 
 **Alternatif**: Jika Looker Studio support histogram, gunakan:
 - Dimension: `harga_jual` (numeric)
 - Bucket size: 100000
 - Akan otomatis group data
 
-### 4.6 Stock Level Pie Chart
+### 4.7 Stock Level Pie Chart
 
 **Tujuan**: Visualisasi distribusi level stok untuk inventory management.
 
@@ -1295,26 +1551,193 @@ Setelah menyelesaikan Langkah 2, pastikan Anda punya:
 - Enable cross-filtering dengan charts lain
 - Add "Export to CSV" option untuk users
 
+### 4.8 Tambahkan Filter Controls
+
+**Tujuan**: Memberikan interaktivitas untuk filter produk berdasarkan kategori dan stock level.
+
+#### Filter 1: Date Range Control (untuk data penjualan)
+
+1. **Add a control → Date range control**
+2. **Setup**:
+   - **Data source**: Transaksi_Penjualan (jika menggunakan blend)
+   - **Control field**: `tanggal_transaksi`
+   - **Default**: Last 12 months
+3. **Style**: Compact, Accent color: #22C55E
+4. **Posisi**: Top-right (x: 1000, y: 20)
+5. **Ukuran**: Width: 180px, Height: 40px
+
+#### Filter 2: Category Filter
+
+1. **Add a control → Drop-down list**
+2. **Setup**:
+   - **Data source**: Master_Produk
+   - **Control field**: `kategori`
+   - **Allow multiple**: YES
+   - **Include "All"**: YES
+3. **Posisi**: Below date range (x: 1000, y: 70)
+4. **Ukuran**: Width: 180px, Height: 40px
+
+#### Filter 3: Stock Level Filter
+
+1. **Add a control → Drop-down list**
+2. **Setup**:
+   - **Data source**: Master_Produk
+   - **Control field**: Calculated `Stock_Level` (yang sudah dibuat di 4.7)
+   - **Allow multiple**: YES
+3. **Posisi**: Below category (x: 1000, y: 120)
+4. **Ukuran**: Width: 180px, Height: 40px
+
+### 🎯 Checklist: Product Performance Dashboard Selesai
+
+- [ ] **Header & Title** "Product Performance"
+- [ ] **4 KPI Cards** (Total Products, Inventory Value, Avg Margin, Low Stock)
+- [ ] **Category Analysis Table** dengan heatmap
+- [ ] **Top 10 Best Sellers** (bar chart)
+- [ ] **Bottom 10 Slow Movers** (bar chart)
+- [ ] **Price Range Distribution** (bar chart)
+- [ ] **Stock Level Pie Chart** dengan color coding
+- [ ] **Product Catalog Table** dengan conditional formatting
+- [ ] **3 Filter Controls** (Date Range, Category, Stock Level)
+- [ ] **All filters working** properly
+- [ ] **Profit margin formula** TANPA * 100 (penting!)
+
+### 💡 Tips Sebelum Lanjut ke Halaman 4
+
+1. **Double-check formula persentase**: Pastikan tidak ada * 100 jika Data type = Percent
+2. **Test blend**: Pastikan Transaksi_with_Product_Info bekerja dengan baik
+3. **Verify stock levels**: Check apakah conditional formatting sudah benar
+4. **Save your work**: Ctrl+S
+
 ---
 
 ## 👥 Langkah 5: Membuat Customer Analytics Dashboard (Halaman 4)
 
-### 5.1 Customer Overview KPIs
+### 5.1 Tambah Halaman Baru
+1. Klik **"Page" → "New page"**
+2. Rename: **"Customer Analytics"**
+3. Copy header dari halaman 1
+
+### 5.2 Buat Blend: Customer dengan Transaksi
+
+**Tujuan**: Menggabungkan data pelanggan dengan transaksi untuk mendapatkan metrics seperti total spent, avg order value, dll.
+
+#### Step A: Buat Blend Data Source
+
+1. **Klik menu "Resource"** di toolbar atas
+2. **Pilih "Manage added data sources"**
+3. **Klik tombol "+ ADD A DATA SOURCE"** (pojok kanan bawah)
+4. **Pilih "BLEND DATA"** (ikon dengan 2 tabel yang overlap)
+
+#### Step B: Configure Blend - Table 1 (Left)
+
+1. **Klik "Add data source"**
+2. **Pilih**: **Master_Pelanggan**
+3. **Join key**: Pilih field **`id_pelanggan`**
+4. **Dimensions yang diambil**:
+   - ✅ `id_pelanggan`
+   - ✅ `nama_lengkap`
+   - ✅ `email`
+   - ✅ `no_telepon`
+   - ✅ `kota`
+   - ✅ `provinsi`
+   - ✅ `jenis_pelanggan`
+   - ✅ `jenis_kelamin`
+   - ✅ `usia`
+   - ✅ `total_transaksi` (jika ada di Master_Pelanggan)
+   - ✅ `total_nilai_pembelian` (jika ada di Master_Pelanggan)
+
+#### Step C: Configure Blend - Table 2 (Right)
+
+1. **Klik "Add another data source"**
+2. **Pilih**: **Transaksi_Penjualan**
+3. **Join key**: Pilih field **`id_pelanggan`** (harus sama dengan Table 1)
+4. **Metrics yang diambil**:
+   - ✅ `total_pembayaran` (SUM)
+   - ✅ `id_transaksi` (COUNT)
+   - ✅ `jumlah_item` (SUM)
+   - ✅ `rating_pelanggan` (AVG)
+   - ✅ `tanggal_transaksi` (untuk analisis recency)
+
+#### Step D: Set Join Configuration
+
+1. **Join operator**: **Left Outer Join** (default)
+   - Artinya: Ambil semua pelanggan, dan tambahkan data transaksi jika ada
+   - Pelanggan yang belum pernah transaksi tetap muncul (dengan nilai 0)
+
+#### Step E: Rename dan Save Blend
+
+1. **Klik nama blend** (biasanya "Blend 1")
+2. **Rename menjadi**: **"Customer_with_Transactions"**
+3. **Klik "SAVE"** (pojok kanan atas)
+4. **Klik "CLOSE"** untuk kembali ke report
+
+**✅ Blend siap digunakan!** Sekarang Anda bisa pakai "Customer_with_Transactions" sebagai data source untuk charts yang butuh data dari kedua tabel.
+
+---
+
+### 5.3 Customer Overview KPIs (4 Cards)
+
+**Data Source**: Master_Pelanggan dan Blend "Customer_with_Transactions"
 
 #### Card 1: Total Customers
-- **Metric**: `COUNT_DISTINCT(id_pelanggan)`
+
+1. **Add chart → Scorecard**
+2. **Data source**: Master_Pelanggan
+3. **Setup Metric**:
+   - **Field**: `id_pelanggan`
+   - **Aggregation**: COUNT DISTINCT
+   - **Label**: "Total Customers"
+4. **Style**:
+   - **Background**: #22C55E (hijau)
+   - **Text color**: #FFFFFF
+   - **Font size**: 36
+5. **Posisi**: (x: 20, y: 100)
+6. **Ukuran**: Width: 280px, Height: 140px
 
 #### Card 2: Avg Customer Value
-- **Calculated**: `SUM(total_nilai_pembelian) / COUNT_DISTINCT(id_pelanggan)`
 
-#### Card 3: Repeat Rate
-- **Calculated**: `COUNT(id_pelanggan WHERE total_transaksi > 1) / COUNT(id_pelanggan) * 100`
+1. **Duplicate Card 1**
+2. **Data source**: Ganti ke **"Customer_with_Transactions"** (blend yang sudah dibuat)
+3. **Setup Metric**: Calculated field
+   - **Klik "Add metric" → "CREATE FIELD"**
+   - **Field Name**: `Avg_Customer_Value`
+   - **Formula**: 
+     ```
+     SUM(total_pembayaran) / COUNT_DISTINCT(id_pelanggan)
+     ```
+   - **Klik "SAVE"** → **Klik "DONE"**
+   - **Label**: "Avg Customer Value"
+   - **Format**: Currency (IDR)
+4. **Style**: Background #3B82F6 (biru)
+5. **Posisi**: (x: 320, y: 100)
+
+#### Card 3: Repeat Customer Rate
+
+1. **Duplicate Card 2**
+2. **Setup Metric**: Calculated field
+   - **Formula** (TANPA * 100):
+     ```
+     COUNT(CASE WHEN total_transaksi > 1 THEN id_pelanggan END) / 
+     COUNT(id_pelanggan)
+     ```
+   - **Data type**: Percent
+   - **Label**: "Repeat Rate"
+3. **Style**: Background #A855F7 (ungu)
+4. **Posisi**: (x: 620, y: 100)
 
 #### Card 4: Avg Rating
-- **Blend with Transaksi**
-- **Metric**: `AVG(rating_pelanggan)`
 
-### 5.2 RFM Segmentation
+1. **Duplicate Card 3**
+2. **Data source**: Blend dengan Transaksi_Penjualan
+3. **Setup Metric**:
+   - **Field**: `rating_pelanggan`
+   - **Aggregation**: AVG
+   - **Label**: "Avg Rating"
+   - **Format**: Number (1 decimal)
+4. **Style**: Background #FB923C (orange)
+5. **Posisi**: (x: 920, y: 100)
+
+### 5.4 RFM Segmentation
 
 **Tujuan**: Segmentasi pelanggan berdasarkan Recency, Frequency, Monetary untuk targeted marketing.
 
@@ -1346,26 +1769,27 @@ CASE
 END
 ```
 
-### 5.3 Geographic Distribution
+### 5.5 Geographic Distribution
 
 **Tujuan**: Menampilkan distribusi pelanggan dan revenue berdasarkan lokasi geografis.
 
-**Opsi 1: Geo Chart (Recommended jika data provinsi lengkap)**
+⚠️ **MASALAH GEO CHART**: Geo chart di Looker Studio **sangat strict** dengan format data. Field `kota` atau `provinsi` dari data Anda kemungkinan **tidak dikenali** sebagai geo data.
 
-1. **Add chart → Geo chart**
-2. **Data source**: Blend Master_Pelanggan + Transaksi_Penjualan
-3. **Setup**:
-   - **Location dimension**: `provinsi` (harus format standar: "Jawa Barat", "DKI Jakarta")
-   - **Metric**: `SUM(total_nilai_pembelian)` → Label: "Revenue"
-   - **Color metric**: Same as above
-4. **Style**:
-   - **Region**: Indonesia
-   - **Color scale**: Green gradient (light to dark)
-   - **Show legend**: ON
-5. **Posisi**: Sebelah kanan RFM (x: 620, y: 260)
-6. **Ukuran**: Width: 560px, Height: 320px
+**Kenapa "No results" di Geo dimension?**
+- Looker Studio hanya mengenali field dengan **Geo data type**
+- Field text biasa (seperti "kota", "provinsi") **tidak muncul** di Geo dimension
+- Perlu **set data type** menjadi Geo atau gunakan format khusus
 
-**Opsi 2: Table (Jika Geo Chart tidak bekerja atau data kota saja)**
+**❌ Opsi 1: Geo Chart (SKIP - Terlalu Ribet)**
+
+Geo chart memerlukan:
+1. Field harus di-set sebagai **Geo type** di data source
+2. Format nama harus **exact match** dengan database Google (contoh: "DKI Jakarta", bukan "Jakarta")
+3. Perlu **geocoding** yang sering gagal untuk data Indonesia
+
+**Kesimpulan**: Geo chart **tidak recommended** untuk data Indonesia karena sering bermasalah.
+
+**✅ Opsi 2: Table with Bars (RECOMMENDED - Mudah & Jelas)**
 
 1. **Add chart → Table with bars**
 2. **Data source**: Blend Master_Pelanggan + Transaksi_Penjualan
@@ -1381,7 +1805,25 @@ END
 8. **Posisi**: Sebelah kanan RFM (x: 620, y: 260)
 9. **Ukuran**: Width: 560px, Height: 320px
 
-### 5.4 Customer Type Distribution
+**💡 Kenapa Pakai Table Instead of Geo Chart?**
+
+**Kelebihan Table:**
+- ✅ Langsung bisa dipakai, tidak perlu setup geo type
+- ✅ Data lebih jelas dan mudah dibaca
+- ✅ Bisa sort dan filter dengan mudah
+- ✅ Bisa tambah multiple metrics
+- ✅ Tidak tergantung format nama lokasi
+
+**Kekurangan Geo Chart:**
+- ❌ Perlu set geo data type (ribet)
+- ❌ Format nama harus exact match
+- ❌ Sering "No results" untuk data Indonesia
+- ❌ Tidak bisa custom region dengan mudah
+- ❌ Sulit troubleshoot jika error
+
+**Rekomendasi**: Gunakan **Table with bars** untuk geographic analysis. Lebih praktis dan informatif!
+
+### 5.6 Customer Type Distribution
 
 **Tujuan**: Menampilkan distribusi tipe pelanggan (Individu vs Bisnis/Instansi).
 
@@ -1528,84 +1970,291 @@ END
 
 ## 💰 Langkah 6: Membuat Financial Dashboard (Halaman 5)
 
-### 6.1 Financial Overview KPIs
+### 6.1 Tambah Halaman Baru
+1. Klik **"Page" → "New page"**
+2. Rename: **"Financial Analysis"**
+3. Copy header dari halaman 1
+
+### 6.2 Buat Blend Data untuk Financial Analysis
+
+**Tujuan**: Menggabungkan data dari Transaksi dan Produk untuk menghitung COGS (Cost of Goods Sold).
+
+**Catatan**: Biaya Operasional akan diambil dari data source terpisah karena tidak bisa di-join dengan transaksi (berbeda granularity).
+
+#### Step A: Buat Blend "Financial_Blend"
+
+1. **Klik menu "Resource"** di toolbar atas
+2. **Pilih "Manage added data sources"**
+3. **Klik "+ ADD A DATA SOURCE"** (pojok kanan bawah)
+4. **Pilih "BLEND DATA"** (ikon dengan 2 tabel yang overlap)
+
+#### Step B: Configure Table 1 (Left) - Transaksi_Penjualan
+
+1. **Klik "Add data source"**
+2. **Pilih**: Transaksi_Penjualan
+3. **Join key**: Pilih field **`id_produk`**
+4. **Dimensions yang diambil**:
+   - ✅ `tanggal_transaksi` (untuk grouping by month)
+   - ✅ `id_transaksi` (untuk counting)
+   - ✅ `channel_penjualan` (optional, untuk breakdown)
+5. **Metrics yang diambil**:
+   - ✅ `total_pembayaran` (SUM) → untuk Total Revenue
+   - ✅ `subtotal` (SUM) → untuk Gross Sales
+   - ✅ `diskon_nominal` (SUM) → untuk Total Discounts
+   - ✅ `biaya_ongkir` (SUM) → untuk Shipping Revenue
+   - ✅ `biaya_custom` (SUM) → untuk Custom Services
+   - ✅ `jumlah_item` (SUM) → untuk calculate COGS
+
+#### Step C: Configure Table 2 (Right) - Master_Produk
+
+1. **Klik "Add another data source"**
+2. **Pilih**: Master_Produk
+3. **Join key**: Pilih field **`id_produk`** (harus sama dengan Table 1)
+4. **Dimensions yang diambil**:
+   - ✅ `kategori` (optional, untuk breakdown)
+   - ✅ `nama_produk` (optional)
+5. **Metrics yang diambil**:
+   - ✅ `harga_modal` (untuk calculate COGS)
+   - ✅ `harga_jual` (optional, untuk analysis)
+
+#### Step D: Set Join Configuration
+
+1. **Join operator**: **Left Outer Join** (default)
+   - Artinya: Ambil semua transaksi, dan tambahkan info produk (harga_modal) jika ada
+
+#### Step E: Rename dan Save Blend
+
+1. **Klik nama blend** (biasanya "Blend 1")
+2. **Rename menjadi**: **"Financial_Blend"**
+3. **Klik "SAVE"** (pojok kanan atas)
+4. **Klik "CLOSE"** untuk kembali ke report
+
+**✅ Blend "Financial_Blend" siap digunakan!**
+
+#### Tentang Biaya Operasional
+
+**Kenapa tidak di-blend?**
+- Biaya Operasional punya **granularity berbeda** (per bulan, bukan per transaksi)
+- Tidak ada join key yang cocok dengan transaksi
+- Lebih baik diambil dari **data source terpisah** (Biaya_Operasional)
+
+**Cara menggunakan**:
+- Untuk chart yang butuh COGS: Gunakan **Financial_Blend**
+- Untuk chart yang butuh Operational Costs: Gunakan **Biaya_Operasional** (separate)
+- Untuk Net Profit: Buat **calculated field** yang menggabungkan keduanya
+
+---
+
+### 6.3 Financial Overview KPIs (4 Cards)
+
+**Data Source**: 
+- **Card 1 & 2**: Blend "Financial_Blend" (Transaksi + Produk)
+- **Card 3 & 4**: Perlu calculated field yang menggabungkan Financial_Blend + Biaya_Operasional
+
+**Catatan**: Karena Biaya Operasional tidak bisa di-blend, kita akan gunakan **2 data sources** dalam calculated field.
 
 #### Card 1: Total Revenue
-- **Metric**: `SUM(total_pembayaran)`
 
-#### Card 2: Total Costs
-- **Blend Transaksi + Produk**
-- **Calculated**: `SUM(harga_modal * jumlah_item) + SUM(biaya_operasional.nominal)`
+**Tujuan**: Menampilkan total pendapatan dari semua transaksi.
+
+1. **Add chart → Scorecard**
+2. **Data source**: **Financial_Blend** (atau Transaksi_Penjualan)
+3. **Setup Metric**:
+   - **Field**: `total_pembayaran`
+   - **Aggregation**: SUM
+   - **Label**: "Total Revenue"
+   - **Format**: Currency (IDR)
+4. **Style**:
+   - **Background**: #22C55E (hijau)
+   - **Text color**: #FFFFFF
+   - **Font size**: 32
+   - **Compact numbers**: ON
+5. **Posisi**: (x: 20, y: 100)
+6. **Ukuran**: Width: 280px, Height: 140px
+
+#### Card 2: Total Costs (COGS Only)
+
+**Tujuan**: Menampilkan Cost of Goods Sold (harga_modal × jumlah_item).
+
+⚠️ **Catatan**: Card ini hanya menampilkan COGS, belum termasuk Operational Costs.
+
+1. **Duplicate Card 1**
+2. **Data source**: **Financial_Blend**
+3. **Setup Metric**: Calculated field `COGS`
+   - **Klik "Add metric" → "CREATE FIELD"**
+   - **Field Name**: `COGS`
+   - **Formula**:
+     ```
+     SUM(harga_modal * jumlah_item)
+     ```
+   - **Klik "SAVE"** → **Klik "DONE"**
+   - **Label**: "Total COGS"
+   - **Format**: Currency (IDR)
+4. **Style**: Background #3B82F6 (biru)
+5. **Add Secondary Text**: "Cost of Goods Sold"
+6. **Posisi**: (x: 320, y: 100)
+
+**Catatan**: Untuk menampilkan Total Costs (COGS + Operational), perlu aggregate manual dari 2 sources yang berbeda. Lebih mudah lihat di chart Revenue vs Profit Trend.
 
 #### Card 3: Gross Profit
-- **Calculated**: Revenue - COGS
 
-#### Card 4: Net Profit
-- **Calculated**: Gross Profit - Operating Costs
+**Tujuan**: Menampilkan profit sebelum operational costs (Revenue - COGS).
 
-### 6.2 Revenue vs Profit Trend
+1. **Duplicate Card 2**
+2. **Data source**: **Financial_Blend**
+3. **Setup Metric**: Calculated field `Gross_Profit`
+   - **Field Name**: `Gross_Profit`
+   - **Formula**:
+     ```
+     SUM(total_pembayaran) - SUM(harga_modal * jumlah_item)
+     ```
+   - **Label**: "Gross Profit"
+   - **Format**: Currency (IDR)
+4. **Style**: Background #A855F7 (ungu)
+5. **Add Secondary Metric** (Gross Margin):
+   - **Formula** (TANPA * 100):
+     ```
+     (SUM(total_pembayaran) - SUM(harga_modal * jumlah_item)) / SUM(total_pembayaran)
+     ```
+   - **Data type**: Percent
+   - **Label**: "margin"
+6. **Posisi**: (x: 620, y: 100)
 
-**Tujuan**: Menampilkan tren revenue, costs, dan profit secara bersamaan untuk analisis profitabilitas.
+#### Card 4: Operational Costs
 
-1. **Add chart → Combo chart** (atau Line chart dengan multiple series)
-2. **Data source**: Blend Transaksi_Penjualan + Biaya_Operasional + Master_Produk
-   - **Perlu blend kompleks** untuk gabungkan revenue dan costs per bulan
-3. **Setup**:
-   - **Dimension**: `MONTH(tanggal_transaksi)` atau `YEAR_MONTH(tanggal_transaksi)`
-   - **Metric 1 - Revenue**: `SUM(total_pembayaran)` 
-     - Chart type: **Bar** (atau Column)
-     - Color: #22C55E (hijau)
-   - **Metric 2 - Costs**: Calculated field
-     - Formula: `SUM(harga_modal * jumlah_item) + SUM(biaya_operasional.nominal)`
-     - Chart type: **Bar** (atau Column)
-     - Color: #EF4444 (merah)
-   - **Metric 3 - Profit**: Calculated field
-     - Formula: `Revenue - Costs`
-     - Chart type: **Line**
-     - Color: #3B82F6 (biru)
-     - Axis: **Right axis** (secondary)
-4. **Style**:
-   - **Show data labels**: ON untuk line
+**Tujuan**: Menampilkan total biaya operasional.
+
+1. **Add chart → Scorecard** (buat baru, jangan duplicate)
+2. **Data source**: **Biaya_Operasional** (data source terpisah)
+3. **Setup Metric**:
+   - **Field**: `nominal`
+   - **Aggregation**: SUM
+   - **Label**: "Operational Costs"
+   - **Format**: Currency (IDR)
+4. **Style**: Background #FB923C (orange)
+5. **Add Secondary Text**: "Excluding COGS"
+6. **Posisi**: (x: 920, y: 100)
+
+**💡 Catatan Penting**:
+- Card 1-3 menggunakan **Financial_Blend** (Transaksi + Produk)
+- Card 4 menggunakan **Biaya_Operasional** (data source terpisah)
+- Untuk Net Profit lengkap, lihat di chart Revenue vs Profit Trend yang menggabungkan keduanya
+
+### 6.4 Revenue vs Profit Trend
+
+**Tujuan**: Menampilkan tren revenue dan gross profit (tanpa operational costs karena sulit di-blend).
+
+⚠️ **Catatan**: Chart ini hanya menampilkan Revenue dan Gross Profit (Revenue - COGS). Operational Costs tidak bisa ditampilkan di chart yang sama karena berbeda granularity.
+
+1. **Add chart → Time series chart** (atau Combo chart)
+2. **Data source**: **Financial_Blend** (Transaksi + Produk)
+3. **Setup Dimension**:
+   - **Field**: `tanggal_transaksi`
+   - **Type**: Date
+   - **Granularity**: Month
+4. **Setup Metrics**:
+
+   **Metric 1 - Revenue**:
+   - **Field**: `total_pembayaran`
+   - **Aggregation**: SUM
+   - **Label**: "Revenue"
+   - **Chart type**: Line
+   - **Color**: #22C55E (hijau)
+   - **Axis**: Left (primary)
+   
+   **Metric 2 - COGS**:
+   - **Calculated field**: `COGS`
+   - **Formula**:
+     ```
+     SUM(harga_modal * jumlah_item)
+     ```
+   - **Label**: "Cost of Goods Sold"
+   - **Chart type**: Line
+   - **Color**: #EF4444 (merah)
+   - **Axis**: Left (primary)
+   
+   **Metric 3 - Gross Profit**:
+   - **Calculated field**: `Gross_Profit`
+   - **Formula**:
+     ```
+     SUM(total_pembayaran) - SUM(harga_modal * jumlah_item)
+     ```
+   - **Label**: "Gross Profit"
+   - **Chart type**: Line (atau Area)
+   - **Color**: #3B82F6 (biru)
+   - **Axis**: Left (primary)
+
+5. **Style**:
+   - **Line thickness**: 2-3
+   - **Show data points**: ON
    - **Legend**: Bottom
    - **Grid lines**: ON
-5. **Posisi**: Sebelah kiri (x: 20, y: 260)
-6. **Ukuran**: Width: 560px, Height: 320px
+   - **Smooth lines**: ON (tension 0.4)
 
-**Catatan Penting**: 
-- COGS (Cost of Goods Sold) = `harga_modal * jumlah_item` dari setiap transaksi
-- Operational costs dari tabel Biaya_Operasional perlu di-aggregate per bulan
-- Jika blend terlalu kompleks, pre-calculate di Google Sheets
+6. **Posisi**: Sebelah kiri (x: 20, y: 260)
+7. **Ukuran**: Width: 560px, Height: 320px
 
-### 6.3 Profit Margin Trend
+**💡 Tentang Operational Costs**:
 
-**Tujuan**: Menampilkan tren profit margin (%) untuk monitor efisiensi bisnis.
+Operational Costs **tidak bisa ditampilkan** di chart ini karena:
+- Data dari tabel berbeda (Biaya_Operasional)
+- Granularity berbeda (per bulan, bukan per transaksi)
+- Looker Studio tidak support blend 3 tabel dengan mudah
 
-1. **Add chart → Line chart** (atau Area chart)
-2. **Data source**: Same blend as 6.2
+**Solusi**:
+- Lihat Operational Costs di chart terpisah (section 6.6)
+- Atau buat calculated field manual untuk Net Profit (lihat section 6.5)
+
+**Alternatif - Tampilkan Net Profit dengan Calculated Field**:
+
+Jika ingin menampilkan Net Profit (termasuk operational costs), buat calculated field:
+
+```
+SUM(total_pembayaran) - SUM(harga_modal * jumlah_item) - 
+(SELECT SUM(nominal) FROM Biaya_Operasional WHERE MONTH(tanggal) = MONTH(tanggal_transaksi))
+```
+
+⚠️ **Warning**: Formula di atas **tidak akan work** di Looker Studio karena tidak support subquery. Untuk Net Profit lengkap, gunakan 2 charts terpisah atau pre-calculate di Google Sheets.
+
+### 6.5 Gross Profit Margin Trend
+
+**Tujuan**: Menampilkan tren gross profit margin (%) untuk monitor efisiensi bisnis.
+
+⚠️ **Catatan**: Ini adalah **Gross Profit Margin** (tidak termasuk operational costs).
+
+1. **Add chart → Time series chart** (atau Line chart)
+2. **Data source**: **Financial_Blend**
 3. **Setup**:
-   - **Dimension**: `MONTH(tanggal_transaksi)`
-   - **Metric**: Calculated field `Profit_Margin_Percent`
-     - **Formula**: 
+   - **Dimension**: `tanggal_transaksi`
+   - **Date granularity**: Month
+   - **Metric**: Calculated field `Gross_Profit_Margin`
+     - **Formula** (⚠️ TANPA * 100):
        ```
-       ((SUM(total_pembayaran) - SUM(harga_modal * jumlah_item) - SUM(biaya_operasional.nominal)) / 
-        SUM(total_pembayaran)) * 100
+       (SUM(total_pembayaran) - SUM(harga_modal * jumlah_item)) / SUM(total_pembayaran)
        ```
-     - **Format**: Number (1 decimal) dengan suffix "%"
+     - **Data type**: **Percent** (Looker Studio akan otomatis × 100)
+     - **Format**: Percent dengan 1 decimal
 4. **Style**:
    - **Line color**: #A855F7 (ungu)
    - **Line thickness**: 3
    - **Fill area**: ON (opacity 20%)
    - **Show data points**: ON
-   - **Reference line**: Add horizontal line at 30% (target margin)
+   - **Reference line** (optional): Add horizontal line at 0.40 (40% target margin)
 5. **Posisi**: Sebelah kanan Revenue vs Profit (x: 620, y: 260)
 6. **Ukuran**: Width: 560px, Height: 320px
 
-**Tips**: Tambahkan conditional formatting:
-- Green if margin > 40%
-- Orange if margin 20-40%
-- Red if margin < 20%
+**Tips Conditional Formatting**:
+- Jika ingin warna berbeda berdasarkan nilai, gunakan **Conditional formatting** di Style tab
+- Green if margin > 0.40 (40%)
+- Orange if margin 0.30-0.40 (30-40%)
+- Red if margin < 0.30 (< 30%)
 
-### 6.4 Operational Costs Breakdown
+**Catatan**: 
+- Ingat, jangan pakai * 100 jika Data type = Percent!
+- Ini adalah Gross Margin (sebelum operational costs)
+- Untuk Net Margin (setelah operational costs), perlu pre-calculate di Google Sheets
+
+### 6.6 Operational Costs Breakdown
 
 **Tujuan**: Menampilkan komposisi biaya operasional per kategori.
 
@@ -1628,7 +2277,7 @@ END
 5. **Posisi**: Baris baru (x: 20, y: 600)
 6. **Ukuran**: Width: 560px, Height: 320px
 
-### 6.5 Revenue Composition
+### 6.7 Revenue Composition
 
 **Tujuan**: Menampilkan breakdown revenue dari berbagai sumber (product sales, shipping, custom services).
 
@@ -1642,31 +2291,45 @@ END
      - **Shipping**: `SUM(biaya_ongkir)`
      - **Custom Services**: `SUM(biaya_custom)`
 
-**Cara membuat breakdown** (karena perlu pivot data):
+4. **Setup Metrics** (Multiple Metrics untuk Stacked Chart):
 
-**Opsi 1: Menggunakan Multiple Metrics**
-- Metric 1: `SUM(subtotal)` → Label: "Product Sales", Color: #22C55E
-- Metric 2: `SUM(biaya_ongkir)` → Label: "Shipping", Color: #3B82F6
-- Metric 3: `SUM(biaya_custom)` → Label: "Custom", Color: #A855F7
+   **Metric 1 - Product Sales**:
+   - **Calculated field**: `Product_Sales`
+   - **Formula**:
+     ```
+     SUM(subtotal - diskon_nominal)
+     ```
+   - **Label**: "Product Sales"
+   - **Color**: #22C55E (hijau)
+   
+   **Metric 2 - Shipping Revenue**:
+   - **Field**: `biaya_ongkir`
+   - **Aggregation**: SUM
+   - **Label**: "Shipping"
+   - **Color**: #3B82F6 (biru)
+   
+   **Metric 3 - Custom Services**:
+   - **Field**: `biaya_custom`
+   - **Aggregation**: SUM
+   - **Label**: "Custom Services"
+   - **Color**: #A855F7 (ungu)
 
-**Opsi 2: Pre-process di Google Sheets**
-- Buat sheet baru dengan struktur:
-  ```
-  Month | Revenue_Type | Amount
-  2024-11 | Product | 50000000
-  2024-11 | Shipping | 5000000
-  2024-11 | Custom | 2000000
-  ```
-- Gunakan QUERY atau pivot untuk transform data
-
-4. **Style**:
-   - **Stack type**: Normal (100% untuk percentage view)
+5. **Style**:
+   - **Chart type**: Stacked bar (atau Stacked area)
+   - **Stack type**: Normal (atau 100% untuk percentage view)
    - **Show data labels**: ON
    - **Legend**: Bottom
-5. **Posisi**: Sebelah kanan Costs Breakdown (x: 620, y: 600)
-6. **Ukuran**: Width: 560px, Height: 320px
+   - **Grid lines**: ON
 
-### 6.6 Expense Details Table
+6. **Posisi**: Sebelah kanan Costs Breakdown (x: 620, y: 600)
+7. **Ukuran**: Width: 560px, Height: 320px
+
+**💡 Tips**:
+- Untuk melihat **percentage composition**, ubah Stack type ke **"100%"** di Style tab
+- Untuk melihat **absolute values**, gunakan Stack type **"Normal"**
+- Semua metrics akan otomatis ter-stack dalam 1 bar per bulan
+
+### 6.8 Expense Details Table
 
 **Tujuan**: Menampilkan detail semua pengeluaran operasional dengan fitur filter.
 
@@ -1715,6 +2378,53 @@ END
 - **Drill-down**: Click category → filter to that category
 - **Add notes column**: For expense justification/approval status
 
+### 6.9 Tambahkan Filter Controls
+
+**Tujuan**: Memberikan interaktivitas untuk filter data financial.
+
+#### Filter 1: Date Range Control
+
+1. **Add a control → Date range control**
+2. **Setup**:
+   - **Data source**: Transaksi_Penjualan (atau Financial_Blend)
+   - **Control field**: `tanggal_transaksi`
+   - **Default**: Last 12 months
+3. **Style**: Compact, Accent color: #22C55E
+4. **Posisi**: Top-right (x: 1000, y: 20)
+5. **Ukuran**: Width: 180px, Height: 40px
+
+#### Filter 2: Expense Category Filter (untuk Expense Table)
+
+1. **Add a control → Drop-down list**
+2. **Setup**:
+   - **Data source**: Biaya_Operasional
+   - **Control field**: `kategori_biaya`
+   - **Allow multiple**: YES
+   - **Include "All"**: YES
+3. **Posisi**: Below date range (x: 1000, y: 70)
+4. **Ukuran**: Width: 180px, Height: 40px
+
+### 🎯 Checklist: Financial Dashboard Selesai
+
+- [ ] **Header & Title** "Financial Analysis"
+- [ ] **4 KPI Cards** (Revenue, COGS, Gross Profit, Operational Costs)
+- [ ] **Blend "Financial_Blend"** sudah dibuat (Transaksi + Produk)
+- [ ] **Revenue vs Profit Trend** (3 lines: Revenue, COGS, Gross Profit)
+- [ ] **Gross Profit Margin Trend** (line chart)
+- [ ] **Operational Costs Breakdown** (pie chart)
+- [ ] **Revenue Composition** (stacked bar dengan 3 metrics)
+- [ ] **Expense Details Table** dengan filter
+- [ ] **2 Filter Controls** (Date Range, Category)
+- [ ] **All formulas** menggunakan blend (tidak ada sheet tambahan)
+- [ ] **Profit margin formula** TANPA * 100
+
+### 💡 Tips Sebelum Lanjut ke Halaman 6
+
+1. **Verify blend**: Pastikan Financial_Blend bekerja dengan baik
+2. **Check COGS calculation**: Pastikan harga_modal × jumlah_item benar
+3. **Test filters**: Pastikan date range mempengaruhi semua charts
+4. **Note limitation**: User tahu bahwa Net Profit lengkap tidak bisa ditampilkan karena keterbatasan blend
+
 ---
 
 ## 📦 Langkah 7: Membuat Operations & Inventory Dashboard (Halaman 6)
@@ -1728,74 +2438,126 @@ END
 
 #### Card 1: Total Stock In
 - **Data source**: Riwayat_Stok
-- **Metric**: `SUM(jumlah)` WHERE `jenis_perubahan = 'Masuk'`
-- **Calculated field**:
-  ```
-  SUM(CASE WHEN jenis_perubahan = 'Masuk' THEN jumlah ELSE 0 END)
-  ```
+- **Metric**: `SUM(stok_masuk)`
 - **Background**: #22C55E (hijau)
 - **Label**: "Units received"
+- **Position**: Top left
 
 #### Card 2: Total Stock Out
-- **Calculated field**:
-  ```
-  SUM(CASE WHEN jenis_perubahan = 'Keluar' THEN jumlah ELSE 0 END)
-  ```
+- **Data source**: Riwayat_Stok
+- **Metric**: `SUM(stok_keluar)`
 - **Background**: #3B82F6 (biru)
 - **Label**: "Units sold/used"
+- **Position**: Top center-left
 
 #### Card 3: Stock Turnover Rate
+- **Data source**: Riwayat_Stok
 - **Calculated field**:
   ```
-  SUM(CASE WHEN jenis_perubahan = 'Keluar' THEN jumlah ELSE 0 END) / 
-  AVG(stok_setelah)
+  SUM(stok_keluar) / AVG(stok_akhir)
   ```
 - **Format**: Number (2 decimals)
 - **Background**: #A855F7 (ungu)
 - **Label**: "Times per period"
+- **Position**: Top center-right
 
-#### Card 4: Stock Adjustments
+#### Card 4: Net Stock Change
+- **Data source**: Riwayat_Stok
 - **Calculated field**:
   ```
-  SUM(CASE WHEN jenis_perubahan = 'Penyesuaian' THEN jumlah ELSE 0 END)
+  SUM(stok_masuk) - SUM(stok_keluar)
   ```
+- **Format**: Number (0 decimals)
 - **Background**: #FB923C (orange)
-- **Label**: "Corrections made"
+- **Label**: "Net inventory change"
+- **Position**: Top right
 
 ### 7.3 Stock Movement Trend Chart
 
 1. **Add chart → Time series chart**
 2. **Data source**: Riwayat_Stok
-3. **Date dimension**: `tanggal_perubahan`
+3. **Date dimension**: `tanggal`
 4. **Metrics** (multiple lines):
-   - Stock In: `SUM(jumlah)` WHERE `jenis_perubahan = 'Masuk'`
-   - Stock Out: `SUM(jumlah)` WHERE `jenis_perubahan = 'Keluar'`
+   - Stock In: `SUM(stok_masuk)`
+   - Stock Out: `SUM(stok_keluar)`
 5. **Style**:
    - Stock In line: Green (#22C55E)
    - Stock Out line: Red (#EF4444)
    - Show data points: ON
    - Fill area: ON (opacity 20%)
+6. **Position**: Below KPI cards, left side
 
-### 7.4 Movement by Type Chart
+### 7.4 Transaction Type Distribution
 
 1. **Add chart → Donut chart**
 2. **Data source**: Riwayat_Stok
-3. **Dimension**: `jenis_perubahan`
-4. **Metric**: `SUM(jumlah)`
+3. **Dimension**: `jenis_transaksi`
+4. **Metric**: `Record Count`
 5. **Style**:
    - Colors:
-     - Masuk: #22C55E (hijau)
-     - Keluar: #EF4444 (merah)
-     - Penyesuaian: #FB923C (orange)
-     - Retur: #3B82F6 (biru)
+     - Penjualan: #EF4444 (merah)
+     - Pembelian: #22C55E (hijau)
+6. **Position**: Below KPI cards, right side
 
 ### 7.5 Stock Level by Category
 
-1. **Add chart → Bar chart (horizontal)**
-2. **Data source**: Blend Riwayat_Stok + Master_Produk
-3. **Dimension**: `kategori` (from Master_Produk)
-4. **Metric**: `AVG(stok_setelah)`
-5. **Sort**: Descending
+**Langkah 1: Buat Blend**
+1. Klik **"Resource" → "Manage added data sources"**
+2. Klik **"+ Add a data source" → "Blend data"**
+3. **Left table (Table 1)**:
+   - Data source: **Riwayat_Stok**
+   - Join key: **id_produk**
+   - Metrics to include:
+     - ✅ `stok_akhir`
+4. **Right table (Table 2)**:
+   - Data source: **Master_Produk**
+   - Join key: **id_produk**
+   - Dimensions to include:
+     - ✅ `kategori`
+     - ✅ `nama_produk`
+5. **Join configuration**:
+   - Join type: **Left outer join**
+6. Klik **"Save"**
+7. Rename blend: **"Blend_Stock_Category"**
+
+**Langkah 2: Buat Chart**
+1. Klik **"Add a chart"** di toolbar atas
+2. Pilih **"Bar chart"**
+3. Chart akan muncul di canvas
+
+**Langkah 3: Setup Data**
+1. Di panel kanan, bagian **"Data"** tab:
+2. **Data source**: 
+   - Klik dropdown
+   - Pilih **"Blend_Stock_Category"** (blend yang baru dibuat)
+3. **Dimension**:
+   - Klik "Add dimension"
+   - Pilih **"kategori"** (ada label "Master_Produk" di sampingnya)
+4. **Metric**:
+   - Hapus metric default jika ada
+   - Klik "Add metric"
+   - Pilih **"stok_akhir"** (ada label "Riwayat_Stok" di sampingnya)
+   - Klik dropdown aggregation → pilih **"AVG"**
+5. **Sort**:
+   - Klik dropdown sort
+   - Pilih metric **"AVG stok_akhir"**
+   - Order: **Descending** (panah ke bawah)
+
+**Langkah 4: Setup Style**
+1. Klik tab **"Style"** di panel kanan
+2. **Bar chart**:
+   - Orientation: Pilih **"Horizontal"** (bar dari kiri ke kanan)
+3. **Color**:
+   - Klik color picker
+   - Masukkan: **#3B82F6**
+4. **Data labels**:
+   - Toggle **"Show data labels"** → **ON**
+5. **Chart header**:
+   - Title: **"Average Stock Level by Category"**
+
+**Langkah 5: Posisi & Ukuran**
+1. Drag chart ke posisi: **Middle section, left side**
+2. Resize: Lebar sekitar 45% halaman, tinggi 300-350px
 
 ### 7.6 Low Stock Alert Table
 
@@ -1814,38 +2576,90 @@ END
 
 ### 7.7 Stock Movement History Table
 
-1. **Add chart → Table**
-2. **Data source**: Blend Riwayat_Stok + Master_Produk
-3. **Dimensions**:
-   - `tanggal_perubahan`
-   - `nama_produk`
-   - `jenis_perubahan`
-   - `keterangan`
-4. **Metrics**:
-   - `jumlah`
-   - `stok_sebelum`
-   - `stok_setelah`
-5. **Sort**: Date (Descending)
-6. **Rows**: 50
+**Langkah 1: Buat Blend (jika belum ada dari 7.5)**
+1. Klik **"Resource" → "Manage added data sources"**
+2. Klik **"+ Add a data source" → "Blend data"**
+3. **Left table (Table 1)**:
+   - Data source: **Riwayat_Stok**
+   - Join key: **id_produk**
+   - Dimensions to include:
+     - ✅ `tanggal`
+     - ✅ `jenis_transaksi`
+     - ✅ `keterangan`
+   - Metrics to include:
+     - ✅ `stok_masuk`
+     - ✅ `stok_keluar`
+     - ✅ `stok_akhir`
+4. **Right table (Table 2)**:
+   - Data source: **Master_Produk**
+   - Join key: **id_produk**
+   - Dimensions to include:
+     - ✅ `nama_produk`
+5. **Join configuration**:
+   - Join type: **Left outer join**
+6. Klik **"Save"**
+7. Rename blend: **"Blend_Stock_History"**
 
-### 7.8 Warehouse Efficiency Metrics
+**Langkah 2: Buat Table**
+1. Klik **"Add a chart"** di toolbar atas
+2. Pilih **"Table"**
+3. Table akan muncul di canvas
 
-1. **Add chart → Scorecard group**
-2. **Metrics**:
-   - **Average Days to Sell**: 
+**Langkah 3: Setup Data**
+1. Di panel kanan, bagian **"Data"** tab:
+2. **Data source**: 
+   - Klik dropdown
+   - Pilih **"Blend_Stock_History"** (blend yang baru dibuat)
+3. **Dimensions** (tambahkan satu per satu, urutan penting):
+   - Klik "Add dimension" → Pilih **"tanggal"** (dari Riwayat_Stok)
+   - Klik "Add dimension" → Pilih **"nama_produk"** (dari Master_Produk)
+   - Klik "Add dimension" → Pilih **"jenis_transaksi"** (dari Riwayat_Stok)
+   - Klik "Add dimension" → Pilih **"keterangan"** (dari Riwayat_Stok)
+4. **Metrics** (tambahkan satu per satu):
+   - Klik "Add metric" → Pilih **"stok_masuk"**
+   - Klik "Add metric" → Pilih **"stok_keluar"**
+   - Klik "Add metric" → Pilih **"stok_akhir"**
+5. **Sort**:
+   - Klik dropdown sort
+   - Pilih dimension **"tanggal"**
+   - Order: **Descending** (panah ke bawah)
+6. **Rows per page**:
+   - Scroll ke bawah di panel Data
+   - Set **"Rows per page"** = **50**
+
+**Langkah 4: Setup Style**
+1. Klik tab **"Style"** di panel kanan
+2. **Table header**:
+   - Background color: **#1E293B** (dark gray)
+   - Text color: **#FFFFFF** (white)
+3. **Table body**:
+   - Toggle **"Alternating row colors"** → **ON**
+4. **Table title**:
+   - Title: **"Stock Movement History"**
+
+**Langkah 5: Posisi & Ukuran**
+1. Drag table ke posisi: **Bottom section**
+2. Resize: **Full width** (hampir selebar halaman), tinggi 400-450px
+
+### 7.8 Additional Stock Metrics (Optional)
+
+1. **Add chart → Scorecard**
+2. **Data source**: Riwayat_Stok
+3. **Metrics**:
+   - **Average Stock Level**: 
      ```
-     AVG(stok_tersedia / (SUM(jumlah_keluar) / 30))
+     AVG(stok_akhir)
      ```
-   - **Stock Accuracy Rate**:
+   - **Total Transactions**:
      ```
-     (COUNT(id_stok) - COUNT(CASE WHEN jenis_perubahan = 'Penyesuaian' THEN 1 END)) / 
-     COUNT(id_stok) * 100
+     Record Count
      ```
-   - **Fulfillment Rate**:
+   - **Stock Turnover Days**:
      ```
-     COUNT(CASE WHEN status = 'Selesai' THEN 1 END) / 
-     COUNT(id_transaksi) * 100
+     AVG(stok_akhir) / (SUM(stok_keluar) / 30)
      ```
+     Format: Number (1 decimal)
+4. **Position**: Middle section, right side
 
 ---
 
