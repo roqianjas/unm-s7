@@ -24,11 +24,15 @@
         }
     </script>
     <style>
-        body { margin: 0; padding: 0; overflow: hidden; }
+        body { 
+            margin: 0; 
+            padding: 0;
+            background: white;
+        }
     </style>
 </head>
-<body class="bg-white font-sans antialiased">
-    <div class="w-screen h-screen flex flex-col">
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
         <!-- Header -->
         <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
             <div class="flex items-center gap-6">
@@ -41,8 +45,8 @@
         </div>
 
         <!-- Content -->
-        <div class="flex-1 flex items-center px-20 py-8">
-            <div class="w-full space-y-5">
+        <div class="flex-1 flex items-center px-20 py-6">
+            <div class="w-full space-y-3">
                 <!-- Header -->
                 <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-5 text-white">
                     <h2 class="text-2xl font-semibold mb-2">Proyeksi Pendapatan 3 Tahun</h2>
@@ -50,8 +54,8 @@
                 </div>
 
                 <!-- 3 Year Projection -->
-                <div class="grid grid-cols-3 gap-5">
-                    <div class="bg-white border border-gray-200 rounded-xl p-6 text-center">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-white border border-gray-200 rounded-xl p-4 text-center">
                         <p class="text-sm font-semibold text-gray-600 mb-2">Tahun 1</p>
                         <p class="text-5xl font-bold text-cur-primary mb-3">Rp 1,2M</p>
                         <p class="text-base text-gray-700 mb-3">Target pendapatan</p>
@@ -80,8 +84,8 @@
                 </div>
 
                 <!-- Revenue Breakdown & Profitability -->
-                <div class="grid grid-cols-2 gap-5">
-                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white border border-gray-200 rounded-xl p-4">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Breakdown Pendapatan Tahun 1</h3>
                         <div class="space-y-2.5">
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
@@ -93,7 +97,7 @@
                                 <span class="text-cur-primary font-bold text-sm">25% (Rp 300 Juta)</span>
                             </div>
                             <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                                <span class="font-semibold text-gray-800 text-sm">Training & Certification</span>
+                                <span class="font-semibold text-gray-800 text-sm">Pelatihan & Sertifikasi</span>
                                 <span class="text-cur-primary font-bold text-sm">15% (Rp 180 Juta)</span>
                             </div>
                         </div>
@@ -119,11 +123,11 @@
                 </div>
 
                 <!-- Investment Ask -->
-                <div class="bg-gradient-to-br from-cur-secondary to-pink-500 rounded-xl p-6 text-white">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">Permintaan Investasi</h3>
-                    <div class="text-center mb-4">
-                        <p class="text-6xl font-bold mb-2">Rp 500 Juta</p>
-                        <p class="text-base opacity-95">untuk 20% ekuitas (Valuasi pra-uang: Rp 2 Miliar)</p>
+                <div class="bg-gradient-to-br from-cur-secondary to-pink-500 rounded-xl p-4 text-white">
+                    <h3 class="text-xl font-semibold mb-3 text-center">Permintaan Investasi</h3>
+                    <div class="text-center mb-3">
+                        <p class="text-5xl font-bold mb-2">Rp 500 Juta</p>
+                        <p class="text-base opacity-95">untuk 20% ekuitas (Pre-money valuation: Rp 2 Miliar)</p>
                     </div>
                     <div class="grid grid-cols-5 gap-3 text-center text-sm">
                         <div>
@@ -132,7 +136,7 @@
                         </div>
                         <div>
                             <p class="text-3xl font-bold mb-1">35%</p>
-                            <p class="opacity-90">Marketing & Akuisisi</p>
+                            <p class="opacity-90">Pemasaran & Akuisisi</p>
                         </div>
                         <div>
                             <p class="text-3xl font-bold mb-1">20%</p>

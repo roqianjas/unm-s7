@@ -14,6 +14,9 @@
                     colors: {
                         'cur-primary': '#1E0E62',
                         'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -26,76 +29,91 @@
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
-        }
-        .slide-container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background: white;
-        }
-        .slide-content {
-            width: 100%;
-            max-width: 1400px;
-            padding: 0 80px;
         }
     </style>
 </head>
-<body class="font-sans antialiased">
-    <div class="slide-container">
-        <div class="slide-content text-center">
-            <!-- Logo -->
-            <div class="w-32 h-32 mx-auto mb-8 border border-gray-200 rounded-2xl flex items-center justify-center p-6">
-                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="w-full h-full object-contain" onerror="this.style.display='none'">
-            </div>
-
-            <!-- Title -->
-            <h1 class="text-6xl font-bold mb-3 tracking-tight text-cur-primary">CUR-HEART</h1>
-            <p class="text-2xl font-semibold mb-8 text-gray-700">Hypnotherapy & Mind Wellness Center</p>
-            
-            <!-- Subtitle -->
-            <div class="inline-block border border-gray-200 rounded-xl px-8 py-5 mb-8 bg-gray-50">
-                <p class="text-xl font-semibold leading-relaxed text-gray-900">Inovasi Sistem Informasi<br>Layanan Terapi Mental Berbasis Digital</p>
-            </div>
-
-            <!-- Divider -->
-            <div class="w-20 h-px bg-gray-300 mx-auto mb-8"></div>
-
-            <!-- Project Info -->
-            <div class="mb-8">
-                <p class="text-lg font-semibold mb-1 tracking-wide text-gray-900">LAPORAN CAPSTONE PROJECT</p>
-                <p class="text-base text-gray-600">Rintisan Bisnis Digital</p>
-            </div>
-
-            <!-- Team -->
-            <div class="border border-gray-200 rounded-xl px-8 py-6 mb-8 inline-block bg-gray-50">
-                <p class="text-base font-semibold mb-5 text-gray-900">Disusun Oleh:</p>
-                <div class="grid grid-cols-3 gap-6 text-center">
-                    <div>
-                        <p class="text-lg font-bold mb-1 text-gray-900">Fahruroji</p>
-                        <p class="text-sm text-gray-600">11250085</p>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header with Brand Colors -->
+        <div class="bg-gradient-to-r from-cur-primary to-cur-primary-light px-20 py-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <img src="assets/img/logo-curheart_.jpeg" alt="CUR-HEART" class="h-16 rounded-lg" onerror="this.style.display='none'">
+                    <div class="text-white">
+                        <h1 class="text-3xl font-bold">CUR-HEART</h1>
+                        <p class="text-sm opacity-90">Hypnotherapy & Mind Wellness Center</p>
                     </div>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium">
+                    Slide 1/16
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex items-center px-20 py-12">
+            <div class="w-full">
+                <div class="max-w-4xl mx-auto text-center space-y-8">
+                    <!-- Main Title -->
                     <div>
-                        <p class="text-lg font-bold mb-1 text-gray-900">Roki Anjas</p>
-                        <p class="text-sm text-gray-600">11250066</p>
+                        <div class="inline-block bg-gradient-to-r from-cur-primary to-cur-primary-light text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
+                            LAPORAN CAPSTONE PROJECT
+                        </div>
+                        <h2 class="text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                            CUR-HEART: Platform Terapi Kesehatan Mental Berbasis Teknologi Digital
+                        </h2>
+                        <p class="text-xl text-gray-600">Rintisan Bisnis Digital</p>
                     </div>
-                    <div>
-                        <p class="text-lg font-bold mb-1 text-gray-900">Susanto</p>
-                        <p class="text-sm text-gray-600">11250068</p>
+
+                    <!-- Decorative Line -->
+                    <div class="flex items-center justify-center gap-3">
+                        <div class="h-px w-20 bg-gradient-to-r from-transparent to-cur-primary"></div>
+                        <div class="w-2 h-2 rounded-full bg-cur-secondary"></div>
+                        <div class="h-px w-20 bg-gradient-to-l from-transparent to-cur-primary"></div>
+                    </div>
+
+                    <!-- Team Section -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 inline-block">
+                        <p class="text-base font-semibold text-gray-900 mb-6">Disusun Oleh:</p>
+                        <div class="grid grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
+                                    F
+                                </div>
+                                <p class="text-lg font-bold text-gray-900">Fahruroji</p>
+                                <p class="text-sm text-gray-600">11250085</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
+                                    R
+                                </div>
+                                <p class="text-lg font-bold text-gray-900">Roki Anjas</p>
+                                <p class="text-sm text-gray-600">11250066</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-3">
+                                    S
+                                </div>
+                                <p class="text-lg font-bold text-gray-900">Susanto</p>
+                                <p class="text-sm text-gray-600">11250068</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- University Info -->
+                    <div class="space-y-1">
+                        <p class="text-base font-semibold text-gray-900">PROGRAM STUDI SISTEM INFORMASI</p>
+                        <p class="text-base font-semibold text-gray-900">FAKULTAS TEKNOLOGI INFORMASI</p>
+                        <p class="text-base font-semibold text-gray-900">UNIVERSITAS NUSA MANDIRI</p>
+                        <p class="text-2xl font-bold mt-4 bg-gradient-to-r from-cur-primary to-cur-secondary bg-clip-text text-transparent">2025</p>
                     </div>
                 </div>
             </div>
-
-            <!-- University -->
-            <div class="space-y-0.5">
-                <p class="text-base font-semibold text-gray-900">PROGRAM STUDI SISTEM INFORMASI</p>
-                <p class="text-base font-semibold text-gray-900">FAKULTAS TEKNOLOGI INFORMASI</p>
-                <p class="text-base font-semibold text-gray-900">UNIVERSITAS NUSA MANDIRI</p>
-                <p class="text-xl font-bold mt-4 text-cur-primary">2024</p>
-            </div>
         </div>
+
+        <!-- Footer Accent -->
+        <div class="h-2 bg-gradient-to-r from-cur-primary via-cur-secondary to-cur-primary"></div>
     </div>
 
     <script>
