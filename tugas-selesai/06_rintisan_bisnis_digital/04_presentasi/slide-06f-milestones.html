@@ -5,179 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide 6F - Milestones & Roadmap</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-primary-dark': '#150A4A',
+                        'cur-secondary': '#FF6B7A',
+                        'cur-secondary-light': '#FF8A96',
+                        'cur-secondary-dark': '#E64555',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { margin: 0; padding: 0; overflow: hidden; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen p-8">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-white font-sans antialiased">
+    <div class="w-screen h-screen flex flex-col">
         <!-- Header -->
-        <div class="mb-8">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-4xl font-bold text-gray-900">Milestones & Roadmap</h1>
-                <span class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold">Slide 6F/16</span>
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-16 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-cur-primary tracking-tight">Milestones & Roadmap</h1>
             </div>
-            <div class="h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full"></div>
-        </div>
-
-        <!-- Roadmap Intro -->
-        <div class="mb-6">
-            <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg p-6 text-white mb-6">
-                <h2 class="text-2xl font-bold mb-2">🎯 Rencana Pencapaian 24 Bulan</h2>
-                <p class="text-lg">Milestone terukur untuk memastikan pertumbuhan berkelanjutan</p>
-            </div>
-
-            <!-- Timeline -->
-            <div class="space-y-4">
-                <!-- Q1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-teal-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-2xl font-bold text-teal-600">Q1 (Bulan 1-3)</h3>
-                        <span class="bg-teal-100 text-teal-600 px-4 py-1 rounded-full text-sm font-bold">MVP Launch</span>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Peluncuran MVP</p>
-                            <p class="text-sm text-gray-600">Platform web fully functional</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Akuisisi 100 Klien</p>
-                            <p class="text-sm text-gray-600">Early adopters & beta testers</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 3 Terapis Onboard</p>
-                            <p class="text-sm text-gray-600">Tim terapis bersertifikat</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-2xl font-bold text-purple-600">Q2 (Bulan 4-6)</h3>
-                        <span class="bg-purple-100 text-purple-600 px-4 py-1 rounded-full text-sm font-bold">Growth</span>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 10 Terapis</p>
-                            <p class="text-sm text-gray-600">Ekspansi tim terapis</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 5 Klien Korporat</p>
-                            <p class="text-sm text-gray-600">Program wellness B2B</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Rp 100 Juta MRR</p>
-                            <p class="text-sm text-gray-600">Monthly Recurring Revenue</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q3 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-2xl font-bold text-orange-600">Q3 (Bulan 7-12)</h3>
-                        <span class="bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-bold">Break-even</span>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Break-even</p>
-                            <p class="text-sm text-gray-600">Mencapai titik impas</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 300 Klien Aktif</p>
-                            <p class="text-sm text-gray-600">Base pelanggan solid</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Rating 4.5/5</p>
-                            <p class="text-sm text-gray-600">Kepuasan pelanggan tinggi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q4 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-2xl font-bold text-green-600">Q4 (Bulan 13-18)</h3>
-                        <span class="bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-bold">Expansion</span>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Ekspansi Surabaya</p>
-                            <p class="text-sm text-gray-600">Lokasi ke-2</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Mobile App Launch</p>
-                            <p class="text-sm text-gray-600">iOS & Android</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 500 Klien Aktif</p>
-                            <p class="text-sm text-gray-600">Multi-lokasi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Q5-Q6 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-2xl font-bold text-blue-600">Q5-Q6 (Bulan 19-24)</h3>
-                        <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-bold">Series A</span>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ Series A Funding</p>
-                            <p class="text-sm text-gray-600">Rp 5 Miliar</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 3 Kota</p>
-                            <p class="text-sm text-gray-600">Jakarta, Surabaya, Bandung</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-900 mb-1">✓ 1000 Klien</p>
-                            <p class="text-sm text-gray-600">Market leader</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 6F/16
             </div>
         </div>
 
-        <!-- Key Success Factors -->
-        <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg p-6 text-white">
-            <h3 class="text-2xl font-bold mb-6 text-center">🔑 Faktor Kunci Kesuksesan</h3>
-            <div class="grid md:grid-cols-4 gap-6 text-center">
-                <div>
-                    <p class="text-4xl mb-2">🎯</p>
-                    <p class="font-semibold mb-1">Fokus Eksekusi</p>
-                    <p class="text-sm opacity-90">Deliver on promises</p>
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full space-y-4">
+                <!-- Header -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-5 text-white">
+                    <h2 class="text-2xl font-semibold mb-2">Roadmap 24 Bulan</h2>
+                    <p class="text-base opacity-95">Pencapaian terukur untuk pertumbuhan berkelanjutan</p>
                 </div>
-                <div>
-                    <p class="text-4xl mb-2">👥</p>
-                    <p class="font-semibold mb-1">Tim Solid</p>
-                    <p class="text-sm opacity-90">Komplementer & committed</p>
+
+                <!-- Timeline Grid -->
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- Q1 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-cur-primary">Q1 (Bulan 1-3)</h3>
+                            <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-xs font-bold">MVP Launch</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Peluncuran MVP</p>
+                                    <p class="text-xs text-gray-600">Platform web functional</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">100 Klien Pertama</p>
+                                    <p class="text-xs text-gray-600">Early adopters</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">3 Terapis Onboard</p>
+                                    <p class="text-xs text-gray-600">Tim bersertifikat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-cur-primary">Q2 (Bulan 4-6)</h3>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">Growth</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">10 Terapis</p>
+                                    <p class="text-xs text-gray-600">Ekspansi tim</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">5 Klien Korporat</p>
+                                    <p class="text-xs text-gray-600">Program B2B</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Rp 100 Juta MRR</p>
+                                    <p class="text-xs text-gray-600">Recurring revenue</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-cur-primary">Q3 (Bulan 7-12)</h3>
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">Break-even</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Break-even Point</p>
+                                    <p class="text-xs text-gray-600">Bulan ke-8</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">300 Klien Aktif</p>
+                                    <p class="text-xs text-gray-600">Base solid</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Rating 4.5/5</p>
+                                    <p class="text-xs text-gray-600">Kepuasan tinggi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-cur-primary">Q4 (Bulan 13-18)</h3>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">Expansion</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Ekspansi Surabaya</p>
+                                    <p class="text-xs text-gray-600">Lokasi ke-2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Mobile App Launch</p>
+                                    <p class="text-xs text-gray-600">iOS & Android</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">500 Klien Aktif</p>
+                                    <p class="text-xs text-gray-600">Multi-lokasi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q5-Q6 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-cur-primary">Q5-Q6 (Bulan 19-24)</h3>
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">Series A</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Series A Funding</p>
+                                    <p class="text-xs text-gray-600">Rp 5 Miliar</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">3 Kota Operasi</p>
+                                    <p class="text-xs text-gray-600">Jkt, Sby, Bdg</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-cur-primary text-sm mt-0.5">✓</span>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">1000 Klien</p>
+                                    <p class="text-xs text-gray-600">Market leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="bg-gradient-to-br from-cur-secondary to-cur-secondary-light rounded-xl p-5 text-white">
+                        <h3 class="text-lg font-bold mb-3">Key Metrics Target</h3>
+                        <div class="space-y-2">
+                            <div class="bg-white/20 rounded-lg p-2">
+                                <p class="text-2xl font-bold">Rp 8,1M</p>
+                                <p class="text-xs opacity-90">Revenue Tahun 3</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-2">
+                                <p class="text-2xl font-bold">1000+</p>
+                                <p class="text-xs opacity-90">Klien Aktif</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-2">
+                                <p class="text-2xl font-bold">30+</p>
+                                <p class="text-xs opacity-90">Terapis Profesional</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-4xl mb-2">💡</p>
-                    <p class="font-semibold mb-1">Inovasi Berkelanjutan</p>
-                    <p class="text-sm opacity-90">Adaptif terhadap feedback</p>
-                </div>
-                <div>
-                    <p class="text-4xl mb-2">🤝</p>
-                    <p class="font-semibold mb-1">Partnership Kuat</p>
-                    <p class="text-sm opacity-90">Kolaborasi strategis</p>
+
+                <!-- Success Factors -->
+                <div class="bg-white border border-gray-200 rounded-xl p-5">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">Faktor Kunci Kesuksesan</h3>
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-3 mb-2">
+                                <div class="flex justify-center mb-1">
+                                    <span class="iconify text-cur-primary" data-icon="solar:target-bold" data-width="32"></span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900">Fokus Eksekusi</p>
+                            </div>
+                            <p class="text-xs text-gray-600">Deliver on promises</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-3 mb-2">
+                                <div class="flex justify-center mb-1">
+                                    <span class="iconify text-cur-primary" data-icon="solar:users-group-rounded-bold" data-width="32"></span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900">Tim Solid</p>
+                            </div>
+                            <p class="text-xs text-gray-600">Komplementer & committed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-3 mb-2">
+                                <div class="flex justify-center mb-1">
+                                    <span class="iconify text-cur-primary" data-icon="solar:lightbulb-bolt-bold" data-width="32"></span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900">Inovasi</p>
+                            </div>
+                            <p class="text-xs text-gray-600">Adaptif terhadap feedback</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gray-50 rounded-lg p-3 mb-2">
+                                <div class="flex justify-center mb-1">
+                                    <span class="iconify text-cur-primary" data-icon="solar:hand-shake-bold" data-width="32"></span>
+                                </div>
+                                <p class="text-sm font-semibold text-gray-900">Partnership</p>
+                            </div>
+                            <p class="text-xs text-gray-600">Kolaborasi strategis</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8 flex gap-4">
-            <a href="slide-06e-financial-projections.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition shadow-lg">
-                ← Sebelumnya
-            </a>
-            <a href="slide-07-analisa-perancangan.html" class="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700 transition shadow-lg">
-                Selanjutnya →
-            </a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-06e-financial-projections.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-07-analisa-perancangan.html';
+            }
+        });
+    </script>
 </body>
 </html>

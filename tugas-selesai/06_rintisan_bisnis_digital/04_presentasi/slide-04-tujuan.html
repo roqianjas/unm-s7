@@ -5,154 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide 4 - Tujuan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { margin: 0; padding: 0; overflow: hidden; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen p-8">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-white font-sans antialiased">
+    <div class="w-screen h-screen flex flex-col">
         <!-- Header -->
-        <div class="mb-8">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-4xl font-bold text-gray-900">Tujuan Proyek</h1>
-                <span class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold">Slide 4/10</span>
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-16 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-cur-primary tracking-tight">Tujuan Proyek</h1>
             </div>
-            <div class="h-1 bg-gradient-to-r from-teal-600 to-purple-600 rounded-full"></div>
-        </div>
-
-        <!-- Main Objective -->
-        <div class="bg-gradient-to-r from-teal-600 to-purple-600 rounded-xl shadow-2xl p-8 mb-8 text-white">
-            <div class="flex items-center mb-4">
-                <div class="bg-white rounded-full p-3 mr-4">
-                    <svg class="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                    </svg>
-                </div>
-                <h2 class="text-3xl font-bold">Tujuan Utama</h2>
-            </div>
-            <p class="text-xl leading-relaxed">Mengembangkan <span class="font-bold">platform digital terintegrasi</span> untuk layanan hipnoterapi CUR-HEART yang dapat <span class="font-bold">meningkatkan efisiensi operasional, aksesibilitas layanan, dan kepuasan klien</span> melalui otomasi proses bisnis dan pengalaman pengguna yang optimal.</p>
-        </div>
-
-        <!-- Specific Objectives -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Objective 1 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-purple-600 hover:shadow-xl transition">
-                <div class="flex items-start mb-4">
-                    <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-purple-600">1</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 pt-2">Model Bisnis Digital</h3>
-                </div>
-                <p class="text-gray-700 ml-16">Merancang model bisnis digital yang berkelanjutan menggunakan Business Model Canvas untuk layanan hipnoterapi online dan offline.</p>
-                <div class="mt-4 ml-16">
-                    <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">Target: BMC Lengkap</span>
-                </div>
-            </div>
-
-            <!-- Objective 2 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-teal-600 hover:shadow-xl transition">
-                <div class="flex items-start mb-4">
-                    <div class="bg-teal-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-teal-600">2</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 pt-2">Otomasi Operasional</h3>
-                </div>
-                <p class="text-gray-700 ml-16">Mengembangkan sistem informasi berbasis web yang mengotomasi reservasi, manajemen jadwal, dan dokumentasi terapi.</p>
-                <div class="mt-4 ml-16">
-                    <span class="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-semibold">Target: Efisiensi +65%</span>
-                </div>
-            </div>
-
-            <!-- Objective 3 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-orange-600 hover:shadow-xl transition">
-                <div class="flex items-start mb-4">
-                    <div class="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-orange-600">3</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 pt-2">Pengalaman Pengguna</h3>
-                </div>
-                <p class="text-gray-700 ml-16">Merancang antarmuka pengguna yang intuitif dan responsif untuk klien, terapis, dan admin dengan fokus pada kemudahan akses.</p>
-                <div class="mt-4 ml-16">
-                    <span class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Target: Kepuasan +78%</span>
-                </div>
-            </div>
-
-            <!-- Objective 4 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-green-600 hover:shadow-xl transition">
-                <div class="flex items-start mb-4">
-                    <div class="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-green-600">4</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 pt-2">Pembayaran Digital</h3>
-                </div>
-                <p class="text-gray-700 ml-16">Mengintegrasikan sistem pembayaran digital yang aman dan mudah untuk meningkatkan konversi reservasi.</p>
-                <div class="mt-4 ml-16">
-                    <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">Target: Konversi +40%</span>
-                </div>
-            </div>
-
-            <!-- Objective 5 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-blue-600 hover:shadow-xl transition">
-                <div class="flex items-start mb-4">
-                    <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-blue-600">5</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 pt-2">Dokumentasi Terstruktur</h3>
-                </div>
-                <p class="text-gray-700 ml-16">Membangun sistem dokumentasi terapi digital yang terstruktur untuk mendukung kontinuitas perawatan dan analisis data.</p>
-                <div class="mt-4 ml-16">
-                    <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Target: Waktu -70%</span>
-                </div>
-            </div>
-
-            <!-- Objective 6 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-pink-600 hover:shadow-xl transition">
-                <div class="flex items-start mb-4">
-                    <div class="bg-pink-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-pink-600">6</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 pt-2">Keputusan Berbasis Data</h3>
-                </div>
-                <p class="text-gray-700 ml-16">Menyediakan dashboard analitik untuk mendukung pengambilan keputusan strategis berbasis data real-time.</p>
-                <div class="mt-4 ml-16">
-                    <span class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-semibold">Target: Insight Real-time</span>
-                </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 4/16
             </div>
         </div>
 
-        <!-- Expected Impact -->
-        <div class="mt-8 bg-white rounded-xl shadow-lg p-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">🎯 Dampak yang Diharapkan</h2>
-            <div class="grid md:grid-cols-4 gap-4">
-                <div class="text-center p-4 bg-teal-50 rounded-lg">
-                    <p class="text-4xl font-bold text-teal-600 mb-2">65%</p>
-                    <p class="text-sm text-gray-700">Peningkatan Efisiensi Operasional</p>
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full space-y-5">
+                <!-- Main Objective -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-6 text-white mb-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="iconify text-white" data-icon="solar:target-bold" data-width="32"></span>
+                        <h2 class="text-2xl font-semibold">Tujuan Utama</h2>
+                    </div>
+                    <p class="text-base leading-relaxed opacity-95">
+                        Mengembangkan <strong>platform digital terintegrasi</strong> untuk layanan hipnoterapi CUR-HEART yang dapat <strong>meningkatkan efisiensi operasional, aksesibilitas layanan, dan kepuasan klien</strong> melalui otomasi proses bisnis dan pengalaman pengguna yang optimal.
+                    </p>
                 </div>
-                <div class="text-center p-4 bg-purple-50 rounded-lg">
-                    <p class="text-4xl font-bold text-purple-600 mb-2">78%</p>
-                    <p class="text-sm text-gray-700">Peningkatan Kepuasan Klien</p>
-                </div>
-                <div class="text-center p-4 bg-orange-50 rounded-lg">
-                    <p class="text-4xl font-bold text-orange-600 mb-2">40%</p>
-                    <p class="text-sm text-gray-700">Peningkatan Konversi Reservasi</p>
-                </div>
-                <div class="text-center p-4 bg-green-50 rounded-lg">
-                    <p class="text-4xl font-bold text-green-600 mb-2">50%</p>
-                    <p class="text-sm text-gray-700">Pengurangan Beban Admin</p>
+
+                <!-- Specific Objectives -->
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">1</div>
+                            <h3 class="text-base font-semibold text-gray-900">Model Bisnis Digital</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">Merancang model bisnis digital berkelanjutan menggunakan Business Model Canvas</p>
+                        <span class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded-md text-xs font-medium">Target: BMC Lengkap</span>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">2</div>
+                            <h3 class="text-base font-semibold text-gray-900">Otomasi Operasional</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">Mengembangkan sistem informasi yang mengotomasi reservasi, jadwal, dan dokumentasi</p>
+                        <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-md text-xs font-medium">Target: Efisiensi +65%</span>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">3</div>
+                            <h3 class="text-base font-semibold text-gray-900">Pengalaman Pengguna</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">Merancang antarmuka intuitif dan responsif untuk klien, terapis, dan admin</p>
+                        <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-xs font-medium">Target: Kepuasan +78%</span>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">4</div>
+                            <h3 class="text-base font-semibold text-gray-900">Pembayaran Digital</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">Mengintegrasikan sistem pembayaran digital yang aman dan mudah</p>
+                        <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-md text-xs font-medium">Target: Konversi +40%</span>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">5</div>
+                            <h3 class="text-base font-semibold text-gray-900">Dokumentasi Terstruktur</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">Membangun sistem dokumentasi terapi digital untuk kontinuitas perawatan</p>
+                        <span class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-md text-xs font-medium">Target: Waktu -70%</span>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-7 h-7 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">6</div>
+                            <h3 class="text-base font-semibold text-gray-900">Keputusan Berbasis Data</h3>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">Menyediakan dashboard analitik untuk pengambilan keputusan strategis</p>
+                        <span class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-md text-xs font-medium">Target: Insight Real-time</span>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8 flex gap-4">
-            <a href="slide-03-rumusan-masalah.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition shadow-lg">
-                ← Sebelumnya
-            </a>
-            <a href="slide-05-metodologi.html" class="bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
-                Selanjutnya →
-            </a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-03-rumusan-masalah.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-05-metodologi.html';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -3,81 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide 1 - Cover</title>
+    <title>Slide 1 - Sampul</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+        .slide-content {
+            width: 100%;
+            max-width: 1400px;
+            padding: 0 80px;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-br from-teal-600 via-teal-500 to-purple-600 min-h-screen flex items-center justify-center p-8">
-    <div class="max-w-5xl w-full text-center text-white">
-        <!-- Logo/Icon -->
-        <div class="mb-8">
-            <div class="inline-block bg-white/20 backdrop-blur-lg rounded-3xl p-8">
-                <svg class="w-24 h-24 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                </svg>
+<body class="font-sans antialiased">
+    <div class="slide-container">
+        <div class="slide-content text-center">
+            <!-- Logo -->
+            <div class="w-32 h-32 mx-auto mb-8 border border-gray-200 rounded-2xl flex items-center justify-center p-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="w-full h-full object-contain" onerror="this.style.display='none'">
             </div>
-        </div>
 
-        <!-- Title -->
-        <h1 class="text-6xl font-black mb-4 leading-tight">CUR-HEART</h1>
-        <p class="text-3xl font-bold mb-6 text-teal-100">Hypnotherapy & Mind Wellness Center</p>
-        
-        <!-- Subtitle -->
-        <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-6 mb-8 inline-block">
-            <p class="text-2xl font-semibold">Inovasi Sistem Informasi</p>
-            <p class="text-2xl font-semibold">Layanan Terapi Mental Berbasis Digital</p>
-        </div>
+            <!-- Title -->
+            <h1 class="text-6xl font-bold mb-3 tracking-tight text-cur-primary">CUR-HEART</h1>
+            <p class="text-2xl font-semibold mb-8 text-gray-700">Hypnotherapy & Mind Wellness Center</p>
+            
+            <!-- Subtitle -->
+            <div class="inline-block border border-gray-200 rounded-xl px-8 py-5 mb-8 bg-gray-50">
+                <p class="text-xl font-semibold leading-relaxed text-gray-900">Inovasi Sistem Informasi<br>Layanan Terapi Mental Berbasis Digital</p>
+            </div>
 
-        <!-- Divider -->
-        <div class="w-32 h-1 bg-white/50 mx-auto mb-8"></div>
+            <!-- Divider -->
+            <div class="w-20 h-px bg-gray-300 mx-auto mb-8"></div>
 
-        <!-- Project Info -->
-        <div class="mb-8">
-            <p class="text-xl font-semibold mb-2">LAPORAN CAPSTONE PROJECT</p>
-            <p class="text-lg">Rintisan Bisnis Digital</p>
-        </div>
+            <!-- Project Info -->
+            <div class="mb-8">
+                <p class="text-lg font-semibold mb-1 tracking-wide text-gray-900">LAPORAN CAPSTONE PROJECT</p>
+                <p class="text-base text-gray-600">Rintisan Bisnis Digital</p>
+            </div>
 
-        <!-- Team -->
-        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 mb-8">
-            <p class="text-lg font-semibold mb-4">Disusun Oleh:</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div>
-                    <p class="font-bold text-xl">Roki Anjas</p>
-                    <p class="text-teal-100">11250066</p>
-                </div>
-                <div>
-                    <p class="font-bold text-xl">Susanto</p>
-                    <p class="text-teal-100">11250068</p>
-                </div>
-                <div>
-                    <p class="font-bold text-xl">Fahruroji</p>
-                    <p class="text-teal-100">11250085</p>
+            <!-- Team -->
+            <div class="border border-gray-200 rounded-xl px-8 py-6 mb-8 inline-block bg-gray-50">
+                <p class="text-base font-semibold mb-5 text-gray-900">Disusun Oleh:</p>
+                <div class="grid grid-cols-3 gap-6 text-center">
+                    <div>
+                        <p class="text-lg font-bold mb-1 text-gray-900">Fahruroji</p>
+                        <p class="text-sm text-gray-600">11250085</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold mb-1 text-gray-900">Roki Anjas</p>
+                        <p class="text-sm text-gray-600">11250066</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold mb-1 text-gray-900">Susanto</p>
+                        <p class="text-sm text-gray-600">11250068</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- University -->
-        <div>
-            <p class="text-lg font-semibold">PROGRAM STUDI SISTEM INFORMASI</p>
-            <p class="text-lg font-semibold">FAKULTAS TEKNOLOGI INFORMASI</p>
-            <p class="text-lg font-semibold">UNIVERSITAS NUSA MANDIRI</p>
-            <p class="text-xl font-bold mt-4">2024</p>
-        </div>
-
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8">
-            <a href="slide-02-latar-belakang.html" class="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-teal-50 transition shadow-lg">
-                Selanjutnya →
-            </a>
-        </div>
-        <div class="fixed bottom-8 left-8">
-            <a href="INDEX.html" class="bg-white/20 backdrop-blur-lg text-white px-6 py-3 rounded-full font-semibold hover:bg-white/30 transition">
-                ← Index
-            </a>
+            <!-- University -->
+            <div class="space-y-0.5">
+                <p class="text-base font-semibold text-gray-900">PROGRAM STUDI SISTEM INFORMASI</p>
+                <p class="text-base font-semibold text-gray-900">FAKULTAS TEKNOLOGI INFORMASI</p>
+                <p class="text-base font-semibold text-gray-900">UNIVERSITAS NUSA MANDIRI</p>
+                <p class="text-xl font-bold mt-4 text-cur-primary">2024</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'INDEX.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-02-latar-belakang.html';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -5,99 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide 3 - Rumusan Masalah</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { margin: 0; padding: 0; overflow: hidden; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen p-8">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-white font-sans antialiased">
+    <div class="w-screen h-screen flex flex-col">
         <!-- Header -->
-        <div class="mb-8">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-4xl font-bold text-gray-900">Rumusan Masalah</h1>
-                <span class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold">Slide 3/10</span>
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-16 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-cur-primary tracking-tight">Rumusan Masalah</h1>
             </div>
-            <div class="h-1 bg-gradient-to-r from-purple-600 to-orange-600 rounded-full"></div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 3/16
+            </div>
         </div>
 
         <!-- Content -->
-        <div class="space-y-6">
-            <!-- Problem 1 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-600 hover:shadow-xl transition">
-                <div class="flex items-start">
-                    <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-purple-600">1</span>
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="space-y-4 w-full">
+                <!-- Problem 1 -->
+                <div class="flex items-start gap-4 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                    <div class="flex-shrink-0 w-8 h-8 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">
+                        1
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Model Bisnis Digital</h3>
-                        <p class="text-gray-700">Bagaimana merancang model bisnis digital yang efektif untuk layanan hipnoterapi menggunakan <span class="font-semibold text-purple-600">Business Model Canvas (BMC)</span>?</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Problem 2 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-teal-600 hover:shadow-xl transition">
-                <div class="flex items-start">
-                    <div class="bg-teal-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-teal-600">2</span>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sistem Informasi Terintegrasi</h3>
-                        <p class="text-gray-700">Bagaimana mengembangkan sistem informasi berbasis web yang dapat <span class="font-semibold text-teal-600">mengotomasi proses reservasi, manajemen jadwal, dan dokumentasi terapi</span> untuk meningkatkan efisiensi operasional CUR-HEART?</p>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1.5">Model Bisnis Digital</h3>
+                        <p class="text-[15px] text-gray-600 leading-relaxed">
+                            Bagaimana merancang model bisnis digital yang efektif untuk layanan hipnoterapi menggunakan <strong class="text-gray-900">Business Model Canvas (BMC)</strong>?
+                        </p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Problem 3 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-600 hover:shadow-xl transition">
-                <div class="flex items-start">
-                    <div class="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-orange-600">3</span>
+                <!-- Problem 2 -->
+                <div class="flex items-start gap-4 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                    <div class="flex-shrink-0 w-8 h-8 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">
+                        2
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Antarmuka Pengguna (UI/UX)</h3>
-                        <p class="text-gray-700">Bagaimana merancang <span class="font-semibold text-orange-600">antarmuka pengguna yang intuitif dan mudah digunakan</span> untuk klien, terapis, dan admin?</p>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1.5">Sistem Informasi Terintegrasi</h3>
+                        <p class="text-[15px] text-gray-600 leading-relaxed">
+                            Bagaimana mengembangkan sistem informasi berbasis web yang dapat <strong class="text-gray-900">mengotomasi proses reservasi, manajemen jadwal, dan dokumentasi terapi</strong> untuk meningkatkan efisiensi operasional CUR-HEART?
+                        </p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Problem 4 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600 hover:shadow-xl transition">
-                <div class="flex items-start">
-                    <div class="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-green-600">4</span>
+                <!-- Problem 3 -->
+                <div class="flex items-start gap-4 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                    <div class="flex-shrink-0 w-8 h-8 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">
+                        3
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sistem Pembayaran Digital</h3>
-                        <p class="text-gray-700">Bagaimana mengintegrasikan <span class="font-semibold text-green-600">sistem pembayaran digital yang aman</span> untuk meningkatkan konversi reservasi?</p>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1.5">Antarmuka Pengguna (UI/UX)</h3>
+                        <p class="text-[15px] text-gray-600 leading-relaxed">
+                            Bagaimana merancang <strong class="text-gray-900">antarmuka pengguna yang intuitif dan mudah digunakan</strong> untuk klien, terapis, dan admin?
+                        </p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Problem 5 -->
-            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600 hover:shadow-xl transition">
-                <div class="flex items-start">
-                    <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                        <span class="text-xl font-bold text-blue-600">5</span>
+                <!-- Problem 4 -->
+                <div class="flex items-start gap-4 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                    <div class="flex-shrink-0 w-8 h-8 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">
+                        4
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Dokumentasi Terapi Digital</h3>
-                        <p class="text-gray-700">Bagaimana membangun <span class="font-semibold text-blue-600">sistem dokumentasi terapi digital yang terstruktur</span> untuk mendukung kontinuitas perawatan dan pengambilan keputusan berbasis data?</p>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1.5">Sistem Pembayaran Digital</h3>
+                        <p class="text-[15px] text-gray-600 leading-relaxed">
+                            Bagaimana mengintegrasikan <strong class="text-gray-900">sistem pembayaran digital yang aman</strong> untuk meningkatkan konversi reservasi?
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Problem 5 -->
+                <div class="flex items-start gap-4 p-5 bg-gray-50 border border-gray-200 rounded-xl">
+                    <div class="flex-shrink-0 w-8 h-8 bg-cur-primary text-white rounded-lg flex items-center justify-center font-semibold text-sm">
+                        5
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1.5">Dokumentasi Terapi Digital</h3>
+                        <p class="text-[15px] text-gray-600 leading-relaxed">
+                            Bagaimana membangun <strong class="text-gray-900">sistem dokumentasi terapi digital yang terstruktur</strong> untuk mendukung kontinuitas perawatan dan pengambilan keputusan berbasis data?
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8 flex gap-4">
-            <a href="slide-02-latar-belakang.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition shadow-lg">
-                ← Sebelumnya
-            </a>
-            <a href="slide-04-tujuan.html" class="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700 transition shadow-lg">
-                Selanjutnya →
-            </a>
-        </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-02-latar-belakang.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-04-tujuan.html';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -5,212 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide 5 - Metodologi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { margin: 0; padding: 0; overflow: hidden; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen p-8">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-white font-sans antialiased">
+    <div class="w-screen h-screen flex flex-col">
         <!-- Header -->
-        <div class="mb-8">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-4xl font-bold text-gray-900">Metodologi Penelitian</h1>
-                <span class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold">Slide 5/10</span>
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-16 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-cur-primary tracking-tight">Metodologi Penelitian</h1>
             </div>
-            <div class="h-1 bg-gradient-to-r from-purple-600 to-orange-600 rounded-full"></div>
-        </div>
-
-        <!-- Design Thinking Process -->
-        <div class="mb-8">
-            <div class="bg-gradient-to-r from-purple-600 to-orange-600 rounded-xl shadow-lg p-6 text-white mb-6">
-                <h2 class="text-3xl font-bold mb-2">Design Thinking Process</h2>
-                <p class="text-lg">Pendekatan human-centered untuk inovasi digital yang berfokus pada kebutuhan pengguna</p>
-            </div>
-
-            <!-- Process Steps -->
-            <div class="grid md:grid-cols-5 gap-4">
-                <!-- Step 1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-                    <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl">🔍</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Empathize</h3>
-                    <p class="text-sm text-gray-600">Memahami kebutuhan pengguna</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs text-gray-500">• Wawancara klien<br>• Survey terapis<br>• Observasi</p>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-                    <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl">🎯</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Define</h3>
-                    <p class="text-sm text-gray-600">Definisi masalah utama</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs text-gray-500">• Analisis data<br>• Problem statement<br>• User persona</p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-                    <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl">💡</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Ideate</h3>
-                    <p class="text-sm text-gray-600">Brainstorming solusi</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs text-gray-500">• Brainstorming<br>• BMC<br>• Feature mapping</p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl">🎨</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Prototype</h3>
-                    <p class="text-sm text-gray-600">Pembuatan prototipe</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs text-gray-500">• Wireframe<br>• UI/UX design<br>• Mockup</p>
-                    </div>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl">✅</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Test</h3>
-                    <p class="text-sm text-gray-600">Pengujian & validasi</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs text-gray-500">• User testing<br>• Feedback<br>• Iterasi</p>
-                    </div>
-                </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 5/16
             </div>
         </div>
 
-        <!-- Research Methods -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <!-- Qualitative -->
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h3 class="text-2xl font-bold text-purple-600 mb-4">📊 Metode Kualitatif</h3>
-                <div class="space-y-3">
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 mr-3 mt-1">
-                            <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                            </svg>
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full space-y-6">
+                <!-- Design Thinking Header -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-5 text-white">
+                    <h2 class="text-2xl font-semibold mb-2">Design Thinking Process</h2>
+                    <p class="text-base opacity-95">Pendekatan human-centered untuk inovasi digital yang berfokus pada kebutuhan pengguna</p>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="grid grid-cols-5 gap-4">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center">
+                        <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <span class="iconify text-red-600" data-icon="solar:user-heart-bold" data-width="28"></span>
                         </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Wawancara Mendalam</p>
-                            <p class="text-sm text-gray-600">15 klien, 3 terapis, 2 admin</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 mr-3 mt-1">
-                            <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Observasi Partisipatif</p>
-                            <p class="text-sm text-gray-600">Pengamatan proses operasional selama 2 minggu</p>
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Empathize</h3>
+                        <p class="text-xs text-gray-600 mb-3">Memahami kebutuhan pengguna</p>
+                        <div class="text-xs text-gray-500 space-y-1">
+                            <p>• Wawancara klien</p>
+                            <p>• Survey terapis</p>
+                            <p>• Observasi</p>
                         </div>
                     </div>
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 mr-3 mt-1">
-                            <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                            </svg>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center">
+                        <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <span class="iconify text-orange-600" data-icon="solar:target-bold" data-width="28"></span>
                         </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Focus Group Discussion</p>
-                            <p class="text-sm text-gray-600">2 sesi dengan stakeholder kunci</p>
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Define</h3>
+                        <p class="text-xs text-gray-600 mb-3">Definisi masalah utama</p>
+                        <div class="text-xs text-gray-500 space-y-1">
+                            <p>• Analisis data</p>
+                            <p>• Problem statement</p>
+                            <p>• User persona</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center">
+                        <div class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <span class="iconify text-yellow-600" data-icon="solar:lightbulb-bolt-bold" data-width="28"></span>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Ideate</h3>
+                        <p class="text-xs text-gray-600 mb-3">Brainstorming solusi</p>
+                        <div class="text-xs text-gray-500 space-y-1">
+                            <p>• Brainstorming</p>
+                            <p>• BMC</p>
+                            <p>• Feature mapping</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center">
+                        <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <span class="iconify text-green-600" data-icon="solar:palette-bold" data-width="28"></span>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Prototype</h3>
+                        <p class="text-xs text-gray-600 mb-3">Pembuatan prototipe</p>
+                        <div class="text-xs text-gray-500 space-y-1">
+                            <p>• Wireframe</p>
+                            <p>• UI/UX design</p>
+                            <p>• Mockup</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 text-center">
+                        <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <span class="iconify text-blue-600" data-icon="solar:check-circle-bold" data-width="28"></span>
+                        </div>
+                        <h3 class="text-base font-semibold text-gray-900 mb-2">Test</h3>
+                        <p class="text-xs text-gray-600 mb-3">Pengujian & validasi</p>
+                        <div class="text-xs text-gray-500 space-y-1">
+                            <p>• User testing</p>
+                            <p>• Feedback</p>
+                            <p>• Iterasi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Methods -->
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                            <span class="iconify text-cur-primary" data-icon="solar:document-text-bold" data-width="24"></span>
+                            Metode Kualitatif
+                        </h3>
+                        <div class="space-y-2.5 text-sm">
+                            <div class="flex items-start gap-2">
+                                <span class="iconify text-gray-400 mt-0.5" data-icon="solar:check-circle-bold" data-width="18"></span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Wawancara Mendalam</p>
+                                    <p class="text-xs text-gray-600">15 klien, 3 terapis, 2 admin</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="iconify text-gray-400 mt-0.5" data-icon="solar:check-circle-bold" data-width="18"></span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Observasi Partisipatif</p>
+                                    <p class="text-xs text-gray-600">Pengamatan proses operasional 2 minggu</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="iconify text-gray-400 mt-0.5" data-icon="solar:check-circle-bold" data-width="18"></span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Focus Group Discussion</p>
+                                    <p class="text-xs text-gray-600">2 sesi dengan stakeholder kunci</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                            <span class="iconify text-cur-primary" data-icon="solar:chart-bold" data-width="24"></span>
+                            Metode Kuantitatif
+                        </h3>
+                        <div class="space-y-2.5 text-sm">
+                            <div class="flex items-start gap-2">
+                                <span class="iconify text-gray-400 mt-0.5" data-icon="solar:check-circle-bold" data-width="18"></span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Survey Online</p>
+                                    <p class="text-xs text-gray-600">10 responden (tingkat respons 86%)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="iconify text-gray-400 mt-0.5" data-icon="solar:check-circle-bold" data-width="18"></span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Analisis Data Operasional</p>
+                                    <p class="text-xs text-gray-600">Data historis 6 bulan terakhir</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="iconify text-gray-400 mt-0.5" data-icon="solar:check-circle-bold" data-width="18"></span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Usability Testing</p>
+                                    <p class="text-xs text-gray-600">System Usability Scale (SUS) dengan 5 responden</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Quantitative -->
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h3 class="text-2xl font-bold text-orange-600 mb-4">📈 Metode Kuantitatif</h3>
-                <div class="space-y-3">
-                    <div class="flex items-start">
-                        <div class="bg-orange-100 rounded-full p-2 mr-3 mt-1">
-                            <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Survey Online</p>
-                            <p class="text-sm text-gray-600">10 responden (tingkat respons 86%)</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-orange-100 rounded-full p-2 mr-3 mt-1">
-                            <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Analisis Data Operasional</p>
-                            <p class="text-sm text-gray-600">Data historis 6 bulan terakhir</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-orange-100 rounded-full p-2 mr-3 mt-1">
-                            <svg class="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.707 6.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Usability Testing</p>
-                            <p class="text-sm text-gray-600">System Usability Scale (SUS) dengan 5 responden</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tools & Technologies -->
-        <div class="mt-6 bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">🛠️ Tools & Teknologi</h3>
-            <div class="grid md:grid-cols-4 gap-4">
-                <div class="text-center p-4 bg-blue-50 rounded-lg">
-                    <p class="text-2xl mb-2">🎨</p>
-                    <p class="font-semibold text-gray-800">Figma</p>
-                    <p class="text-xs text-gray-600">UI/UX Design</p>
-                </div>
-                <div class="text-center p-4 bg-green-50 rounded-lg">
-                    <p class="text-2xl mb-2">💻</p>
-                    <p class="font-semibold text-gray-800">Laravel 12</p>
-                    <p class="text-xs text-gray-600">Backend Framework</p>
-                </div>
-                <div class="text-center p-4 bg-purple-50 rounded-lg">
-                    <p class="text-2xl mb-2">🗄️</p>
-                    <p class="font-semibold text-gray-800">MySQL 8.0</p>
-                    <p class="text-xs text-gray-600">Database</p>
-                </div>
-                <div class="text-center p-4 bg-orange-50 rounded-lg">
-                    <p class="text-2xl mb-2">�</p>
-                    <p class="font-semibold text-gray-800">Midtrans</p>
-                    <p class="text-xs text-gray-600">Payment Gateway</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8 flex gap-4">
-            <a href="slide-04-tujuan.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition shadow-lg">
-                ← Sebelumnya
-            </a>
-            <a href="slide-06-business-model.html" class="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700 transition shadow-lg">
-                Selanjutnya →
-            </a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-04-tujuan.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-06-business-model.html';
+            }
+        });
+    </script>
 </body>
 </html>

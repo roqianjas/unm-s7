@@ -3,173 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide 6B - Competitive Analysis</title>
+    <title>Slide 6B - Analisis Kompetitor</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { margin: 0; padding: 0; overflow: hidden; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen p-8">
-    <div class="max-w-6xl mx-auto">
+<body class="bg-white font-sans antialiased">
+    <div class="w-screen h-screen flex flex-col">
         <!-- Header -->
-        <div class="mb-8">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-4xl font-bold text-gray-900">Analisis Kompetitor</h1>
-                <span class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold">Slide 6B/16</span>
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-16 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-cur-primary tracking-tight">Analisis Kompetitor</h1>
             </div>
-            <div class="h-1 bg-gradient-to-r from-purple-600 to-orange-600 rounded-full"></div>
-        </div>
-
-        <!-- Competitive Landscape -->
-        <div class="mb-6">
-            <div class="bg-gradient-to-r from-purple-600 to-orange-600 rounded-xl shadow-lg p-6 text-white mb-6">
-                <h2 class="text-2xl font-bold mb-2">🎯 Lanskap Kompetisi</h2>
-                <p class="text-lg">Positioning CUR-HEART di pasar layanan kesehatan mental Indonesia</p>
-            </div>
-
-            <!-- Competitor Comparison -->
-            <div class="grid md:grid-cols-3 gap-6 mb-6">
-                <!-- Competitor 1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Psikolog Tradisional</h3>
-                    <div class="space-y-3 mb-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-600">Harga</span>
-                            <span class="font-semibold text-gray-900">Rp 300K-800K</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-600">Durasi</span>
-                            <span class="font-semibold text-gray-900">45-60 menit</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-600">Proses</span>
-                            <span class="font-semibold text-gray-900">6-12 bulan</span>
-                        </div>
-                    </div>
-                    <div class="space-y-2 text-sm">
-                        <p class="text-green-600">✓ Kredibilitas tinggi</p>
-                        <p class="text-green-600">✓ Pendekatan ilmiah</p>
-                        <p class="text-red-600">✗ Proses lambat</p>
-                        <p class="text-red-600">✗ Biaya tinggi jangka panjang</p>
-                    </div>
-                </div>
-
-                <!-- Competitor 2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Platform Telemedicine</h3>
-                    <div class="space-y-3 mb-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-600">Harga</span>
-                            <span class="font-semibold text-gray-900">Rp 50K-200K</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-600">Durasi</span>
-                            <span class="font-semibold text-gray-900">30 menit</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-600">Proses</span>
-                            <span class="font-semibold text-gray-900">Bervariasi</span>
-                        </div>
-                    </div>
-                    <div class="space-y-2 text-sm">
-                        <p class="text-green-600">✓ Mudah diakses 24/7</p>
-                        <p class="text-green-600">✓ Harga terjangkau</p>
-                        <p class="text-red-600">✗ Tidak personal</p>
-                        <p class="text-red-600">✗ Tidak fokus hipnoterapi</p>
-                    </div>
-                </div>
-
-                <!-- CUR-HEART -->
-                <div class="bg-gradient-to-br from-teal-600 to-purple-600 rounded-xl shadow-xl p-6 text-white border-4 border-orange-500">
-                    <h3 class="text-xl font-bold mb-4">CUR-HEART ⭐</h3>
-                    <div class="space-y-3 mb-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm">Harga</span>
-                            <span class="font-semibold">Rp 300K-500K</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm">Durasi</span>
-                            <span class="font-semibold">90-120 menit</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm">Proses</span>
-                            <span class="font-semibold">1-4 sesi</span>
-                        </div>
-                    </div>
-                    <div class="space-y-2 text-sm">
-                        <p>✓ Hasil cepat & efektif (93%)</p>
-                        <p>✓ Personal & holistik</p>
-                        <p>✓ Platform digital terintegrasi</p>
-                        <p>✓ Dokumentasi terstruktur</p>
-                    </div>
-                </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 6B/16
             </div>
         </div>
 
-        <!-- Competitive Advantages -->
-        <div class="bg-white rounded-xl shadow-lg p-6">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">🏆 Keunggulan Kompetitif</h3>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="text-center">
-                    <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                        <span class="text-3xl">🎯</span>
-                    </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Spesialisasi</h4>
-                    <p class="text-sm text-gray-600">Fokus 100% pada hipnoterapi modern</p>
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full space-y-5">
+                <!-- Header -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-5 text-white">
+                    <h2 class="text-2xl font-semibold mb-2">Lanskap Kompetisi</h2>
+                    <p class="text-base opacity-95">Positioning CUR-HEART di pasar layanan kesehatan mental Indonesia</p>
                 </div>
-                <div class="text-center">
-                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                        <span class="text-3xl">⚡</span>
+
+                <!-- Competitor Comparison -->
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Psikolog Tradisional</h3>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">Harga</span>
+                                <span class="font-semibold text-gray-900">Rp 300K-800K</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">Durasi</span>
+                                <span class="font-semibold text-gray-900">45-60 menit</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">Proses</span>
+                                <span class="font-semibold text-gray-900">6-12 bulan</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-sm">
+                            <p class="text-green-600">✓ Kredibilitas tinggi</p>
+                            <p class="text-green-600">✓ Pendekatan ilmiah</p>
+                            <p class="text-red-600">✗ Proses lambat</p>
+                            <p class="text-red-600">✗ Biaya tinggi</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Hasil Cepat</h4>
-                    <p class="text-sm text-gray-600">1-4 sesi vs 6-12 bulan terapi konvensional</p>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Platform Telemedicine</h3>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">Harga</span>
+                                <span class="font-semibold text-gray-900">Rp 50K-200K</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">Durasi</span>
+                                <span class="font-semibold text-gray-900">30 menit</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">Proses</span>
+                                <span class="font-semibold text-gray-900">Bervariasi</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-sm">
+                            <p class="text-green-600">✓ Mudah diakses 24/7</p>
+                            <p class="text-green-600">✓ Harga terjangkau</p>
+                            <p class="text-red-600">✗ Tidak personal</p>
+                            <p class="text-red-600">✗ Tidak fokus hipnoterapi</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-5 text-white border-4 border-cur-secondary">
+                        <h3 class="text-lg font-semibold mb-4">CUR-HEART ⭐</h3>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span>Harga</span>
+                                <span class="font-semibold">Rp 300K-500K</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span>Durasi</span>
+                                <span class="font-semibold">90-120 menit</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span>Proses</span>
+                                <span class="font-semibold">1-4 sesi</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-sm">
+                            <p>✓ Hasil cepat & efektif (93%)</p>
+                            <p>✓ Personal & holistik</p>
+                            <p>✓ Platform digital terintegrasi</p>
+                            <p>✓ Dokumentasi terstruktur</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                        <span class="text-3xl">💻</span>
+
+                <!-- Competitive Advantages -->
+                <div class="bg-white border border-gray-200 rounded-xl p-5">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Keunggulan Kompetitif</h3>
+                    <div class="grid grid-cols-4 gap-4 text-center">
+                        <div>
+                            <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <span class="iconify text-cur-primary" data-icon="solar:target-bold" data-width="28"></span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1 text-sm">Spesialisasi</h4>
+                            <p class="text-xs text-gray-600">Fokus 100% pada hipnoterapi modern</p>
+                        </div>
+                        <div>
+                            <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <span class="iconify text-cur-primary" data-icon="solar:bolt-bold" data-width="28"></span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1 text-sm">Hasil Cepat</h4>
+                            <p class="text-xs text-gray-600">1-4 sesi vs 6-12 bulan terapi konvensional</p>
+                        </div>
+                        <div>
+                            <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <span class="iconify text-cur-primary" data-icon="solar:laptop-bold" data-width="28"></span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1 text-sm">Platform Digital</h4>
+                            <p class="text-xs text-gray-600">Booking online, dokumentasi, tracking progress</p>
+                        </div>
+                        <div>
+                            <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                                <span class="iconify text-cur-primary" data-icon="solar:chart-bold" data-width="28"></span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-1 text-sm">Data-Driven</h4>
+                            <p class="text-xs text-gray-600">Pelacakan kemajuan terukur & transparan</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Platform Digital</h4>
-                    <p class="text-sm text-gray-600">Booking online, dokumentasi, tracking progress</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                        <span class="text-3xl">📊</span>
-                    </div>
-                    <h4 class="font-bold text-gray-900 mb-2">Data-Driven</h4>
-                    <p class="text-sm text-gray-600">Pelacakan kemajuan terukur & transparan</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Market Position -->
-        <div class="mt-6 bg-gradient-to-r from-teal-600 to-purple-600 rounded-xl shadow-lg p-6 text-white">
-            <h3 class="text-2xl font-bold mb-4 text-center">📍 Posisi Pasar</h3>
-            <div class="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                    <p class="text-4xl font-bold mb-2">First Mover</p>
-                    <p class="text-sm">Platform hipnoterapi digital pertama di Indonesia</p>
-                </div>
-                <div>
-                    <p class="text-4xl font-bold mb-2">Premium</p>
-                    <p class="text-sm">Positioning sebagai layanan berkualitas tinggi</p>
-                </div>
-                <div>
-                    <p class="text-4xl font-bold mb-2">Scalable</p>
-                    <p class="text-sm">Model bisnis yang dapat diperluas ke kota lain</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8 flex gap-4">
-            <a href="slide-06a-market-opportunity.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition shadow-lg">
-                ← Sebelumnya
-            </a>
-            <a href="slide-06c-team.html" class="bg-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-700 transition shadow-lg">
-                Selanjutnya →
-            </a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-06a-market-opportunity.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-06c-team.html';
+            }
+        });
+    </script>
 </body>
 </html>

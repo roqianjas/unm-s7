@@ -5,205 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide 6 - Business Model Canvas</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { margin: 0; padding: 0; overflow: hidden; }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen p-8">
-    <div class="max-w-7xl mx-auto">
+<body class="bg-white font-sans antialiased">
+    <div class="w-screen h-screen flex flex-col">
         <!-- Header -->
-        <div class="mb-6">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-4xl font-bold text-gray-900">Business Model Canvas</h1>
-                <span class="bg-orange-600 text-white px-4 py-2 rounded-full font-semibold">Slide 6/10</span>
+        <div class="px-20 py-8 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-14 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[36px] font-semibold text-cur-primary tracking-tight">Business Model Canvas</h1>
             </div>
-            <div class="h-1 bg-gradient-to-r from-orange-600 to-teal-600 rounded-full"></div>
-        </div>
-
-        <!-- BMC Grid -->
-        <div class="grid grid-cols-5 gap-3">
-            <!-- Key Partners -->
-            <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-purple-600">
-                <h3 class="text-sm font-bold text-purple-600 mb-2">🤝 Key Partners</h3>
-                <ul class="text-xs text-gray-700 space-y-1">
-                    <li>• Asosiasi Hipnoterapis Indonesia</li>
-                    <li>• Payment Gateway (Midtrans)</li>
-                    <li>• Cloud Provider (AWS)</li>
-                    <li>• Psikolog & Konselor</li>
-                    <li>• Influencer Kesehatan Mental</li>
-                </ul>
-            </div>
-
-            <!-- Key Activities & Resources -->
-            <div class="space-y-3">
-                <!-- Key Activities -->
-                <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-blue-600">
-                    <h3 class="text-sm font-bold text-blue-600 mb-2">⚙️ Key Activities</h3>
-                    <ul class="text-xs text-gray-700 space-y-1">
-                        <li>• Layanan hipnoterapi</li>
-                        <li>• Platform development</li>
-                        <li>• Marketing digital</li>
-                        <li>• Customer support</li>
-                        <li>• Quality assurance</li>
-                    </ul>
-                </div>
-
-                <!-- Key Resources -->
-                <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-green-600">
-                    <h3 class="text-sm font-bold text-green-600 mb-2">🎯 Key Resources</h3>
-                    <ul class="text-xs text-gray-700 space-y-1">
-                        <li>• Terapis bersertifikat</li>
-                        <li>• Platform digital</li>
-                        <li>• Ruang terapi</li>
-                        <li>• Database klien</li>
-                        <li>• Brand reputation</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Value Propositions -->
-            <div class="bg-gradient-to-br from-teal-600 to-purple-600 rounded-lg shadow-xl p-4 text-white">
-                <h3 class="text-sm font-bold mb-2">💎 Value Propositions</h3>
-                <ul class="text-xs space-y-1">
-                    <li>✓ Terapi mental profesional & terpercaya</li>
-                    <li>✓ Booking online 24/7</li>
-                    <li>✓ Terapis bersertifikat</li>
-                    <li>✓ Privasi terjamin</li>
-                    <li>✓ Harga transparan</li>
-                    <li>✓ Dokumentasi terstruktur</li>
-                    <li>✓ Follow-up otomatis</li>
-                    <li>✓ Fleksibel (online/offline)</li>
-                </ul>
-            </div>
-
-            <!-- Customer Relationships & Channels -->
-            <div class="space-y-3">
-                <!-- Customer Relationships -->
-                <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-pink-600">
-                    <h3 class="text-sm font-bold text-pink-600 mb-2">💬 Customer Relationships</h3>
-                    <ul class="text-xs text-gray-700 space-y-1">
-                        <li>• Personal assistance</li>
-                        <li>• Self-service platform</li>
-                        <li>• Automated follow-up</li>
-                        <li>• Community support</li>
-                        <li>• Loyalty program</li>
-                    </ul>
-                </div>
-
-                <!-- Channels -->
-                <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-orange-600">
-                    <h3 class="text-sm font-bold text-orange-600 mb-2">📢 Channels</h3>
-                    <ul class="text-xs text-gray-700 space-y-1">
-                        <li>• Website & Mobile App</li>
-                        <li>• Social Media</li>
-                        <li>• Google Ads</li>
-                        <li>• Referral program</li>
-                        <li>• Email marketing</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Customer Segments -->
-            <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-red-600">
-                <h3 class="text-sm font-bold text-red-600 mb-2">👥 Customer Segments</h3>
-                <ul class="text-xs text-gray-700 space-y-1">
-                    <li>• Profesional muda (25-40 th)</li>
-                    <li>• Penderita kecemasan</li>
-                    <li>• Individu dengan trauma</li>
-                    <li>• Pencari self-improvement</li>
-                    <li>• Corporate wellness</li>
-                </ul>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 6/16
             </div>
         </div>
 
-        <!-- Cost Structure & Revenue Streams -->
-        <div class="grid grid-cols-2 gap-3 mt-3">
-            <!-- Cost Structure -->
-            <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-red-600">
-                <h3 class="text-sm font-bold text-red-600 mb-2">💰 Cost Structure</h3>
-                <div class="grid grid-cols-2 gap-2 text-xs text-gray-700">
-                    <div>
-                        <p class="font-semibold">Fixed Costs:</p>
-                        <ul class="space-y-1">
-                            <li>• Gaji terapis & staff</li>
-                            <li>• Sewa tempat</li>
-                            <li>• Server & hosting</li>
-                            <li>• Lisensi software</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="font-semibold">Variable Costs:</p>
-                        <ul class="space-y-1">
-                            <li>• Marketing & ads</li>
-                            <li>• Payment gateway fee</li>
+        <!-- Content -->
+        <div class="flex-1 px-20 py-6 overflow-y-auto">
+            <div class="grid grid-cols-5 gap-3">
+                <!-- Key Partners -->
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                    <h3 class="text-xs font-bold text-cur-primary mb-2">Mitra Kunci</h3>
+                    <ul class="text-[11px] text-gray-700 space-y-0.5">
+                        <li>• Asosiasi Hipnoterapis</li>
+                        <li>• Payment Gateway</li>
+                        <li>• Cloud Provider</li>
+                        <li>• Psikolog & Konselor</li>
+                        <li>• Influencer</li>
+                    </ul>
+                </div>
+
+                <!-- Key Activities & Resources -->
+                <div class="space-y-3">
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                        <h3 class="text-xs font-bold text-cur-primary mb-2">Aktivitas Kunci</h3>
+                        <ul class="text-[11px] text-gray-700 space-y-0.5">
+                            <li>• Layanan hipnoterapi</li>
+                            <li>• Platform development</li>
+                            <li>• Marketing digital</li>
                             <li>• Customer support</li>
-                            <li>• Maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                        <h3 class="text-xs font-bold text-cur-primary mb-2">Sumber Daya</h3>
+                        <ul class="text-[11px] text-gray-700 space-y-0.5">
+                            <li>• Terapis bersertifikat</li>
+                            <li>• Platform digital</li>
+                            <li>• Ruang terapi</li>
+                            <li>• Database klien</li>
                         </ul>
                     </div>
                 </div>
-            </div>
 
-            <!-- Revenue Streams -->
-            <div class="bg-white rounded-lg shadow-lg p-4 border-t-4 border-green-600">
-                <h3 class="text-sm font-bold text-green-600 mb-2">💵 Revenue Streams</h3>
-                <div class="grid grid-cols-2 gap-2 text-xs text-gray-700">
-                    <div>
-                        <p class="font-semibold">Primary:</p>
-                        <ul class="space-y-1">
-                            <li>• Sesi terapi individual</li>
-                            <li>• Paket terapi (3, 5, 10 sesi)</li>
-                            <li>• Konsultasi online</li>
+                <!-- Value Propositions -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-lg p-3 text-white">
+                    <h3 class="text-xs font-bold mb-2">Proposisi Nilai</h3>
+                    <ul class="text-[11px] space-y-0.5">
+                        <li>✓ Terapi profesional</li>
+                        <li>✓ Booking online 24/7</li>
+                        <li>✓ Terapis bersertifikat</li>
+                        <li>✓ Privasi terjamin</li>
+                        <li>✓ Harga transparan</li>
+                        <li>✓ Dokumentasi terstruktur</li>
+                        <li>✓ Follow-up otomatis</li>
+                    </ul>
+                </div>
+
+                <!-- Customer Relationships & Channels -->
+                <div class="space-y-3">
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                        <h3 class="text-xs font-bold text-cur-primary mb-2">Hubungan Pelanggan</h3>
+                        <ul class="text-[11px] text-gray-700 space-y-0.5">
+                            <li>• Personal assistance</li>
+                            <li>• Self-service platform</li>
+                            <li>• Automated follow-up</li>
+                            <li>• Loyalty program</li>
                         </ul>
                     </div>
-                    <div>
-                        <p class="font-semibold">Secondary:</p>
-                        <ul class="space-y-1">
-                            <li>• Corporate wellness program</li>
-                            <li>• Workshop & training</li>
-                            <li>• Membership premium</li>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                        <h3 class="text-xs font-bold text-cur-primary mb-2">Saluran</h3>
+                        <ul class="text-[11px] text-gray-700 space-y-0.5">
+                            <li>• Website & Mobile App</li>
+                            <li>• Social Media</li>
+                            <li>• Google Ads</li>
+                            <li>• Referral program</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Key Metrics -->
-        <div class="mt-3 bg-gradient-to-r from-teal-600 to-purple-600 rounded-lg shadow-lg p-4 text-white">
-            <h3 class="text-sm font-bold mb-2 text-center">📊 Key Metrics & Targets</h3>
-            <div class="grid grid-cols-5 gap-2 text-center text-xs">
-                <div>
-                    <p class="text-2xl font-bold">150</p>
-                    <p>Klien/Bulan</p>
-                </div>
-                <div>
-                    <p class="text-2xl font-bold">85%</p>
-                    <p>Retention Rate</p>
-                </div>
-                <div>
-                    <p class="text-2xl font-bold">4.8/5</p>
-                    <p>Satisfaction Score</p>
-                </div>
-                <div>
-                    <p class="text-2xl font-bold">40%</p>
-                    <p>Conversion Rate</p>
-                </div>
-                <div>
-                    <p class="text-2xl font-bold">3.5x</p>
-                    <p>ROI Target</p>
+                <!-- Customer Segments -->
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                    <h3 class="text-xs font-bold text-cur-primary mb-2">Segmen Pelanggan</h3>
+                    <ul class="text-[11px] text-gray-700 space-y-0.5">
+                        <li>• Profesional muda</li>
+                        <li>• Penderita kecemasan</li>
+                        <li>• Individu dengan trauma</li>
+                        <li>• Self-improvement</li>
+                        <li>• Corporate wellness</li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- Navigation -->
-        <div class="fixed bottom-8 right-8 flex gap-4">
-            <a href="slide-05-metodologi.html" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition shadow-lg">
-                ← Sebelumnya
-            </a>
-            <a href="slide-06a-market-opportunity.html" class="bg-orange-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-700 transition shadow-lg">
-                Selanjutnya →
-            </a>
+            <!-- Cost & Revenue -->
+            <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                    <h3 class="text-xs font-bold text-cur-primary mb-2">Struktur Biaya</h3>
+                    <div class="grid grid-cols-2 gap-2 text-[11px] text-gray-700">
+                        <div>
+                            <p class="font-semibold mb-1">Fixed:</p>
+                            <p>• Gaji staff</p>
+                            <p>• Sewa tempat</p>
+                            <p>• Server & hosting</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">Variable:</p>
+                            <p>• Marketing & ads</p>
+                            <p>• Payment gateway</p>
+                            <p>• Maintenance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                    <h3 class="text-xs font-bold text-cur-primary mb-2">Arus Pendapatan</h3>
+                    <div class="grid grid-cols-2 gap-2 text-[11px] text-gray-700">
+                        <div>
+                            <p class="font-semibold mb-1">Primary:</p>
+                            <p>• Sesi terapi individual</p>
+                            <p>• Paket terapi</p>
+                            <p>• Konsultasi online</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-1">Secondary:</p>
+                            <p>• Corporate wellness</p>
+                            <p>• Workshop & training</p>
+                            <p>• Membership premium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-05-metodologi.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-06a-market-opportunity.html';
+            }
+        });
+    </script>
 </body>
 </html>
