@@ -1,0 +1,21 @@
+id_transaksi,tanggal_transaksi,waktu_transaksi,id_pelanggan,id_produk,jumlah,harga_satuan,subtotal,diskon_persen,diskon_nominal,biaya_custom,biaya_ongkir,total_pembayaran,metode_pembayaran,status_pembayaran,status_pesanan,saluran_penjualan,catatan_pesanan,waktu_pengerjaan,rating,tanggal_selesai
+TRX001,2024-11-01,10:30:00,C001,P001,2,125000,250000,0,0,0,25000,275000,Transfer Bank,Lunas,Selesai,Instagram,Warna gold metalik,3,5,2024-11-04
+TRX002,01/11/2024,14:15:00,C002,P002,1,175000,175000,10,17500,0,20000,177500,E-Wallet,Lunas,Selesai,WhatsApp,Kirim ke alamat kantor,2,4,2024-11-03
+TRX003,2024-11-02,09:45:00,C003,P003,3,225000,675000,0,0,50000,30000,755000,Transfer Bank,Lunas,Selesai,Marketplace,Custom warna bronze,4,5,2024-11-06
+TRX004,2024-11-02,16:20:00,C004,P004,4,75000,300000,5,15000,0,15000,300000,COD,Lunas,Selesai,Instagram,,2,5,2024-11-04
+TRX005,2024-11-03,11:00:00,C005,P005,2,95000,190000,0,0,0,20000,210000,Transfer Bank,Lunas,Selesai,WhatsApp,Warna putih bersih,3,4,2024-11-06
+TRX006,2024-11-03,15:30:00,C006,P006,5,85000,425000,15,63750,0,25000,386250,E-Wallet,Lunas,Selesai,Instagram,Untuk kantor,2,5,2024-11-05
+TRX007,2024-11-04,10:15:00,C007,P007,2,125000,250000,0,0,0,20000,270000,Transfer Bank,Lunas,Selesai,Website,Reflektif tinggi,3,5,2024-11-07
+TRX008,2024-11-04,14:45:00,C008,P008,3,95000,285000,10,28500,0,15000,271500,E-Wallet,Lunas,Selesai,WhatsApp,,2,4,2024-11-06
+TRX009,2024-11-05,09:30:00,C009,P009,1,185000,185000,0,0,25000,30000,240000,Transfer Bank,Lunas,Selesai,Instagram,Logo perusahaan,4,5,2024-11-09
+TRX010,2024-11-05,16:00:00,C010,P010,1,275000,275000,0,0,75000,35000,385000,Transfer Bank,Lunas,Selesai,Marketplace,Design custom lengkap,5,5,2024-11-10
+TRX011,2024-11-06,11:20:00,C011,P011,2,165000,330000,10,33000,0,25000,322000,E-Wallet,Lunas,Selesai,Instagram,Quotes motivasi,3,4,2024-11-09
+TRX012,2024-11-06,15:45:00,C012,P012,1,225000,225000,0,0,50000,30000,305000,Transfer Bank,Lunas,Selesai,WhatsApp,Mekanisme jam import,4,5,2024-11-10
+TRX013,2024-11-07,10:00:00,C013,P013,1,285000,285000,5,14250,0,35000,305750,Transfer Bank,Lunas,Selesai,Referral,Ukuran jumbo,4,5,2024-11-11
+TRX014,2024-11-07,14:30:00,C014,P014,4,105000,420000,10,42000,0,20000,398000,E-Wallet,Lunas,Selesai,Instagram,Untuk masjid,2,5,2024-11-09
+TRX015,2024-11-08,09:15:00,C015,P015,2,145000,290000,0,0,30000,25000,345000,COD,Lunas,Selesai,WhatsApp,Nama keluarga,3,4,2024-11-11
+TRX016,2024-11-08,16:45:00,C016,P016,10,45000,450000,20,90000,0,15000,375000,Transfer Bank,Lunas,Selesai,Marketplace,Untuk dijual lagi,1,5,2024-11-09
+TRX017,2024-11-09,11:30:00,C017,P017,3,95000,285000,5,14250,0,20000,290750,E-Wallet,Lunas,Selesai,Instagram,,2,4,2024-11-11
+TRX018,2024-11-09,15:00:00,C018,P018,1,325000,325000,0,0,0,40000,365000,Transfer Bank,Lunas,Selesai,WhatsApp,LED putih terang,5,5,2024-11-14
+TRX019,2024-11-10,10:45:00,C019,P019,6,115000,690000,15,103500,0,30000,616500,Transfer Bank,Lunas,Selesai,Website,Untuk gedung kantor,3,5,2024-11-13
+TRX020,2024-11-10,14:20:00,C020,P020,1,325000,325000,0,0,100000,40000,465000,Transfer Bank,Lunas,Selesai,Instagram,Logo dan alamat lengkap,6,5,2024-11-16

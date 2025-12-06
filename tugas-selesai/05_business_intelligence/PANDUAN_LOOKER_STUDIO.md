@@ -2676,65 +2676,64 @@ SUM(total_pembayaran) - SUM(harga_modal * jumlah_item) -
 - **Data source**: Marketing_Campaign
 - **Metric**: `COUNT_DISTINCT(id_campaign)`
 - **Background**: #22C55E (hijau)
-- **Secondary metric**: 
-  ```
-  COUNT_DISTINCT(CASE WHEN status_campaign = 'Aktif' THEN id_campaign END)
-  ```
-  Label: "active campaigns"
+- **Label**: "Total campaigns"
+- **Position**: Top left
 
 #### Card 2: Total Marketing Spend
-- **Metric**: `SUM(budget_campaign)`
+- **Data source**: Marketing_Campaign
+- **Metric**: `SUM(budget)`
 - **Format**: Currency (IDR)
 - **Background**: #3B82F6 (biru)
+- **Label**: "Total budget"
+- **Position**: Top center-left
 
 #### Card 3: Average ROI
-- **Calculated field**:
-  ```
-  (SUM(revenue_generated) - SUM(budget_campaign)) / SUM(budget_campaign) * 100
-  ```
-- **Format**: Percentage
+- **Data source**: Marketing_Campaign
+- **Metric**: `AVG(roi)`
+- **Format**: Percent (0 decimals)
 - **Background**: #A855F7 (ungu)
-- **Conditional formatting**: 
-  - Green if > 100%
-  - Orange if 50-100%
-  - Red if < 50%
+- **Label**: "Average ROI"
+- **Position**: Top center-right
 
-#### Card 4: Total Impressions
-- **Metric**: `SUM(impressions)`
-- **Format**: Number (compact)
+#### Card 4: Total Reach
+- **Data source**: Marketing_Campaign
+- **Metric**: `SUM(reach)`
+- **Format**: Number (compact notation)
 - **Background**: #FB923C (orange)
+- **Label**: "Total reach"
+- **Position**: Top right
 
 ### 8.3 Campaign ROI Comparison Chart
 
-1. **Add chart → Bar chart (horizontal)**
-2. **Data source**: Marketing_Campaign
-3. **Dimension**: `nama_campaign`
-4. **Metric**: Calculated ROI
-   ```
-   (revenue_generated - budget_campaign) / budget_campaign * 100
-   ```
-5. **Sort**: Descending (best ROI first)
-6. **Limit**: Top 10 campaigns
-7. **Style**:
-   - Bar color: Gradient based on value
+1. **Add chart → Bar chart**
+2. **Setup**:
+   - Orientation: **Horizontal**
+3. **Data source**: Marketing_Campaign
+4. **Dimension**: `nama_campaign`
+5. **Metric**: `roi`
+6. **Sort**: Metric (Descending - best ROI first)
+7. **Limit**: Top 10 campaigns
+8. **Style**:
+   - Bar color: #10B981 (green)
    - Show data labels: ON
-   - Format: Percentage
+   - Number format: Percent (0 decimals)
+9. **Position**: Below KPI cards, left side
 
-### 8.4 Spend by Channel Chart
+### 8.4 Spend by Platform Chart
 
 1. **Add chart → Pie chart**
 2. **Data source**: Marketing_Campaign
-3. **Dimension**: `channel_marketing`
-4. **Metric**: `SUM(budget_campaign)`
+3. **Dimension**: `platform`
+4. **Metric**: `SUM(budget)`
 5. **Style**:
-   - Colors: Custom per channel
-     - Instagram: #E4405F
-     - Facebook: #1877F2
-     - Google Ads: #4285F4
-     - TikTok: #000000
-     - WhatsApp: #25D366
-   - Show legend: Bottom
-   - Show percentage: ON
+   - Colors:
+     - Google Ads: #4285F4 (biru)
+     - Facebook: #1877F2 (biru tua)
+     - TikTok: #000000 (hitam)
+     - Instagram: #E4405F (pink)
+   - Show slice labels: ON
+   - Show percentages: ON
+6. **Position**: Below KPI cards, right side
 
 ### 8.5 Campaign Performance Over Time
 
@@ -2742,33 +2741,47 @@ SUM(total_pembayaran) - SUM(harga_modal * jumlah_item) -
 2. **Data source**: Marketing_Campaign
 3. **Date dimension**: `tanggal_mulai`
 4. **Metrics** (multiple lines):
-   - Budget: `SUM(budget_campaign)`
+   - Budget: `SUM(budget)`
    - Revenue: `SUM(revenue_generated)`
-   - Profit: `SUM(revenue_generated - budget_campaign)`
-5. **Style**:
-   - Budget line: Orange
-   - Revenue line: Green
-   - Profit line: Blue
+5. **Calculated field for Profit**:
+   - Name: **"Campaign Profit"**
+   - Formula:
+     ```
+     SUM(revenue_generated) - SUM(budget)
+     ```
+   - Add as third metric
+6. **Style**:
+   - Budget line: #FB923C (orange)
+   - Revenue line: #22C55E (green)
+   - Profit line: #3B82F6 (blue)
    - Show data points: ON
+   - Fill area: ON (opacity 20%)
+7. **Position**: Middle section, full width
 
-### 8.6 Channel Performance Table
+### 8.6 Platform Performance Table
 
-1. **Add chart → Table with heatmap**
+1. **Add chart → Table**
 2. **Data source**: Marketing_Campaign
-3. **Dimension**: `channel_marketing`
+3. **Dimension**: `platform`
 4. **Metrics**:
-   - `COUNT(id_campaign)` → "Campaigns"
-   - `SUM(budget_campaign)` → "Spend"
-   - `SUM(impressions)` → "Impressions"
-   - `SUM(clicks)` → "Clicks"
-   - Calculated: `clicks / impressions * 100` → "CTR %"
-   - `SUM(conversions)` → "Conversions"
-   - Calculated: `conversions / clicks * 100` → "CVR %"
-   - `SUM(revenue_generated)` → "Revenue"
-   - Calculated ROI → "ROI %"
+   - `Record Count` → "Campaigns"
+   - `SUM(budget)` → "Total Spend"
+   - `SUM(reach)` → "Total Reach"
+   - `SUM(engagement)` → "Total Engagement"
+   - `SUM(conversion)` → "Total Conversions"
+   - `SUM(revenue_generated)` → "Total Revenue"
+   - `AVG(roi)` → "Avg ROI"
 5. **Style**:
-   - Heatmap on ROI column
-   - Sort by: ROI (Descending)
+   - Conditional formatting on ROI column:
+     - Green if > 3 (300%)
+     - Yellow if 2-3 (200-300%)
+     - Red if < 2 (200%)
+   - Sort by: AVG ROI (Descending)
+   - Number formats:
+     - Spend & Revenue: Currency (IDR)
+     - ROI: Percent (0 decimals)
+     - Others: Number (compact)
+6. **Position**: Bottom section, full width
 
 ### 8.7 Top Performing Campaigns Table
 
@@ -2776,59 +2789,75 @@ SUM(total_pembayaran) - SUM(harga_modal * jumlah_item) -
 2. **Data source**: Marketing_Campaign
 3. **Dimensions**:
    - `nama_campaign`
-   - `channel_marketing`
+   - `platform`
    - `tanggal_mulai`
    - `tanggal_selesai`
-   - `status_campaign`
 4. **Metrics**:
-   - `budget_campaign`
+   - `budget`
+   - `reach`
+   - `engagement`
+   - `conversion`
    - `revenue_generated`
-   - Calculated ROI
-   - `impressions`
-   - `clicks`
-   - `conversions`
-5. **Sort**: ROI (Descending)
-6. **Limit**: 20 campaigns
+   - `roi`
+5. **Sort**: `roi` (Descending)
+6. **Rows per page**: 20
+7. **Style**:
+   - Header background: #1E293B (dark)
+   - Header text: White
+   - Alternating rows: ON
+   - Number formats:
+     - Budget & Revenue: Currency (IDR)
+     - ROI: Percent (0 decimals)
+     - Others: Number (compact)
+8. **Position**: Can be added as additional section if space allows
 
-### 8.8 Customer Acquisition Cost (CAC)
+### 8.8 Cost per Conversion (Optional)
 
 1. **Add chart → Scorecard**
-2. **Calculated field**:
-   ```
-   SUM(budget_campaign) / SUM(conversions)
-   ```
-3. **Format**: Currency (IDR)
-4. **Label**: "Cost per Acquisition"
-
-### 8.9 Marketing Funnel Chart
-
-1. **Add chart → Funnel chart** (if available) or **Stacked bar**
 2. **Data source**: Marketing_Campaign
-3. **Stages**:
-   - Impressions: `SUM(impressions)`
-   - Clicks: `SUM(clicks)`
-   - Conversions: `SUM(conversions)`
+3. **Calculated field**:
+   - Name: **"Cost per Conversion"**
+   - Formula:
+     ```
+     SUM(budget) / SUM(conversion)
+     ```
+4. **Format**: Currency (IDR, 0 decimals)
+5. **Style**:
+   - Background: #F3F4F6 (light gray)
+   - Compact numbers: ON
+6. **Label**: "Avg cost per conversion"
+
+### 8.9 Marketing Funnel Chart (Optional)
+
+1. **Add chart → Funnel chart** (if available) or **Column chart**
+2. **Data source**: Marketing_Campaign
+3. **Metrics** (as stages):
+   - Reach: `SUM(reach)`
+   - Engagement: `SUM(engagement)`
+   - Conversion: `SUM(conversion)`
 4. **Style**:
-   - Show conversion rates between stages
-   - Color gradient: Top (light) to bottom (dark)
+   - Show conversion rates between stages: ON
+   - Color gradient: Light to dark
+5. **Position**: Optional additional chart
 
-### 8.10 Campaign Status Distribution
+### 8.10 Add Filter Controls
 
-1. **Add chart → Donut chart**
-2. **Dimension**: `status_campaign`
-3. **Metric**: `COUNT(id_campaign)`
-4. **Style**:
-   - Colors:
-     - Aktif: #22C55E (hijau)
-     - Selesai: #3B82F6 (biru)
-     - Dijadwalkan: #FB923C (orange)
-     - Dibatalkan: #EF4444 (merah)
+1. **Date range control**:
+   - Control type: **Date range**
+   - Dimension: `tanggal_mulai`
+   - Position: Top of page, below header
+   - Default: Last 6 months
 
-### 8.11 Add Filter Controls
+2. **Platform filter**:
+   - Control type: **Drop-down list**
+   - Dimension: `platform`
+   - Position: Next to date range
+   - Allow multiple selections: Yes
 
-1. **Date range control**: `tanggal_mulai`
-2. **Channel filter**: Drop-down for `channel_marketing`
-3. **Status filter**: Drop-down for `status_campaign`
+3. **Campaign filter** (optional):
+   - Control type: **Search box**
+   - Dimension: `nama_campaign`
+   - Position: Next to platform filter
 
 ---
 

@@ -1,0 +1,21 @@
+id_pelanggan,nama_lengkap,nomor_telepon,email,alamat_lengkap,kota,provinsi,kode_pos,jenis_pelanggan,segmen,tanggal_registrasi,total_transaksi,total_nilai_pembelian,status,sumber_awal
+C001,Budi Santoso,081234567890,budi.santoso@email.com,Jl. Margonda Raya No. 123,Depok,Jawa Barat,16424,Individu,Retail,2024-01-10,5,1250000,Aktif,Instagram
+C002,SITI RAHAYU,081234567891,siti.rahayu@email.com,Jl. Raya Bogor KM 25,Depok,Jawa Barat,16425,Individu,Retail,10/01/2024,3,750000,Aktif,WhatsApp
+C003,Ahmad Fauzi,081234567892,,Jl. Juanda No. 45,Jakarta Selatan,DKI Jakarta,12160,Bisnis,UMKM,2024-01-12,8,2500000,Aktif,Marketplace
+C004,Dewi Lestari,081234567893,dewi.lestari@email.com,Jl. Sudirman No. 78,Jakarta Pusat,DKI Jakarta,,Individu,Retail,2024-01-15,2,450000,Aktif,Instagram
+C005,Eko Prasetyo,081234567894,eko.prasetyo@email.com,Jl. Gatot Subroto No. 12,Jakarta Selatan,DKI Jakarta,12930,Bisnis,UMKM,2024-01-18,6,1800000,aktif,Referral
+C006,Fitri Handayani,081234567895,fitri.handayani@email.com,Jl. Kemang Raya No. 56,Jakarta Selatan,DKI Jakarta,12730,Individu,Retail,2024-01-20,4,950000,Aktif,Instagram
+C007,Gunawan Wijaya,081234567896,gunawan.wijaya@email.com,Jl. Cilandak KKO No. 23,Jakarta Selatan,DKI Jakarta,12560,Korporat,Korporat,2024-01-22,12,5200000,Aktif,Website
+C008,Hendra Kusuma,081234567897,hendra.kusuma@email.com,Jl. Fatmawati No. 89,Jakarta Selatan,DKI Jakarta,12420,Individu,Retail,2024-01-25,3,680000,Aktif,WhatsApp
+C009,Indah Permata,081234567898,indah.permata@email.com,Jl. Pancoran No. 34,Jakarta Selatan,DKI Jakarta,12780,Individu,Retail,2024-01-28,5,1150000,Aktif,Instagram
+C010,Joko Widodo,081234567899,joko.widodo@email.com,Jl. Pasar Minggu No. 67,Jakarta Selatan,DKI Jakarta,12520,Bisnis,UMKM,2024-02-01,7,2100000,Aktif,Marketplace
+C011,Kartika Sari,081234567900,kartika.sari@email.com,Jl. Lenteng Agung No. 45,Jakarta Selatan,DKI Jakarta,12610,Individu,Retail,2024-02-03,,850000,Aktif,Instagram
+C012,Linda Wijaya,081234567901,linda.wijaya@email.com,Jl. Cinere Raya No. 12,Depok,Jawa Barat,16514,Individu,Retail,2024-02-05,6,1420000,Aktif,WhatsApp
+C013,Muhammad Rizki,081234567902,muhammad.rizki@email.com,Jl. Sawangan No. 78,Depok,Jawa Barat,16516,Bisnis,UMKM,2024-02-08,9,2850000,Aktif,Referral
+C014,Nur Azizah,081234567903,nur.azizah@email.com,Jl. Beji No. 23,Depok,Jawa Barat,16421,Individu,Retail,2024-02-10,4,920000,Aktif,Instagram
+C015,Omar Abdullah,081234567904,omar.abdullah@email.com,Jl. Kukusan No. 56,Depok,Jawa Barat,16425,Individu,Retail,2024-02-12,3,650000,Aktif,WhatsApp
+C016,Putri Ayu,081234567905,putri.ayu@email.com,Jl. Citayam No. 89,Depok,Jawa Barat,16810,Bisnis,UMKM,2024-02-15,8,2400000,Aktif,Marketplace
+C017,Qori Maulana,081234567906,,Jl. Cibinong No. 34,Bogor,Jawa Barat,16914,Individu,Retail,2024-02-18,2,480000,Aktif,Instagram
+C018,Rina Susanti,081234567907,rina.susanti@email.com,Jl. Cileungsi No. 67,Bogor,Jawa Barat,16820,Individu,Retail,2024-02-20,5,1180000,Aktif,WhatsApp
+C019,Samsul Bahri,081234567908,samsul.bahri@email.com,Jl. Sentul No. 12,Bogor,Jawa Barat,16810,Korporat,Korporat,2024-02-22,15,6500000,Aktif,Website
+C020,Tina Marlina,081234567909,tina.marlina@email.com,Jl. Tajur No. 45,Bogor,Jawa Barat,16320,Individu,Retail,2024-02-25,4,890000,Aktif,Instagram

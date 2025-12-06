@@ -66,7 +66,7 @@ Oleh karena itu, penyusun mengharapkan kritik dan saran yang membangun demi perb
 
 
 
-Jakarta, Oktober 2025 
+Jakarta, Desember 2025 
 
 
 
@@ -88,7 +88,7 @@ Penyusun
 
 
 
-*Business Intelligence \(BI\)* merupakan pendekatan sistematis untuk mengumpulkan, menganalisis, dan menyajikan informasi bisnis guna mendukung pengambilan keputusan yang lebih baik. Penelitian ini bertujuan untuk merancang dan mengimplementasikan *dashboard Business Intelligence* interaktif menggunakan *Looker Studio* untuk SATRIAMART, sebuah perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik. *Dashboard* dirancang untuk memberikan visualisasi data penjualan, produk, pelanggan, dan keuangan secara *real-time* dan interaktif. Metodologi yang digunakan meliputi analisis kebutuhan pengguna, identifikasi *Key Performance Indicators* \(KPI\), proses *Extract-Transform-Load* \(ETL\) data, perancangan *layout dashboard*, implementasi menggunakan *Looker* *Studio*, serta pengujian dan evaluasi. Data yang digunakan mencakup data transaksi penjualan, data produk, data pelanggan, riwayat stok, biaya operasional, dan kampanye pemasaran selama periode 12 bulan \(November 2024 - Oktober 2025\). 
+*Business Intelligence \(BI\)* merupakan pendekatan sistematis untuk mengumpulkan, menganalisis, dan menyajikan informasi bisnis guna mendukung pengambilan keputusan yang lebih baik. Penelitian ini bertujuan untuk merancang dan mengimplementasikan *dashboard Business Intelligence* interaktif menggunakan *Looker Studio* untuk SATRIAMART, sebuah perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik. *Dashboard* dirancang untuk memberikan visualisasi data penjualan, produk, pelanggan, dan keuangan secara *real-time* dan interaktif. Metodologi yang digunakan meliputi analisis kebutuhan pengguna, identifikasi *Key Performance Indicators* \(KPI\), proses *Extract-Transform-Load* \(ETL\) data, perancangan *layout dashboard*, implementasi menggunakan *Looker* *Studio*, serta pengujian dan evaluasi. Data yang digunakan mencakup data transaksi penjualan, data produk, data pelanggan, riwayat stok, biaya operasional, dan kampanye pemasaran selama periode 12 bulan \(Januari 2025 - Desember 2025\). 
 
 Hasil penelitian menunjukkan bahwa *dashboard Business Intelligence* yang dikembangkan mampu menyajikan informasi bisnis secara komprehensif melalui berbagai visualisasi seperti *bar chart, line chart, pie chart, table, * dan * scorecard*. 
 
@@ -206,7 +206,7 @@ mengadopsi teknologi digital untuk peningkatan daya saing bisnis.
 
 Untuk menjaga fokus penelitian dan memastikan hasil yang optimal, ruang lingkup penelitian ini dibatasi sebagai berikut : **1.5.1. Batasan Data **
 
-1. Periode Data : Data yang dianalisis mencakup periode 12 bulan dari November 2024 hingga Oktober 2025. 
+1. Periode Data : Data yang dianalisis mencakup periode 12 bulan dari Januari 2025 hingga Desember 2025. 
 
 2. Jenis Data : Data yang digunakan meliputi: 
 
@@ -562,7 +562,7 @@ didasarkan pada beberapa pertimbangan :
 
 ## **2.2.1. Jenis Data **
 
-Data yang digunakan dalam penelitian ini mencakup berbagai aspek bisnis SATRIAMART selama periode 12 bulan \(November 2024 - Oktober 2025\). Jenis data yang dikumpulkan meliputi: 
+Data yang digunakan dalam penelitian ini mencakup berbagai aspek bisnis SATRIAMART selama periode 12 bulan \(Januari 2025 - Desember 2025\). Jenis data yang dikumpulkan meliputi: 
 
 1. Data Master Produk 
 
@@ -630,65 +630,45 @@ Sumber data spesifik meliputi :
 
 5. Laporan Pemasaran : Data kampanye pemasaran diperoleh dari platform analitik media sosial \( *Instagram Insights*, *Facebook Ads Manager*, *Google* *Analytics*\). 
 
-Data yang telah dikumpulkan kemudian diolah dan disimpan dalam format CSV untuk memudahkan proses ETL dan integrasi dengan *Looker* Studio melalui *Google Sheets*. 
+Data yang telah dikumpulkan kemudian diolah dan disimpan dalam format CSV untuk memudahkan proses ETL \(*Extract, Transform, Load*\) dan integrasi dengan *Looker Studio* melalui *Google Sheets*.
 
-## **2.2.3. Proses Pembersihan Data **
+**Proses ETL \(*Extract, Transform, Load*\)**
 
-Pembersihan data merupakan tahap kritis dalam memastikan kualitas data yang akan dianalisis. Proses pembersihan data yang dilakukan dalam penelitian ini meliputi : 
+Proses ETL merupakan tahapan fundamental dalam implementasi *Business Intelligence* yang terdiri dari tiga fase utama:
 
-1. Penanganan Nilai Kosong 
+1. **Extract \(Ekstraksi\)**: Data mentah diekstrak dari berbagai sumber pencatatan internal SATRIAMART dan dikumpulkan dalam format CSV. Data mentah ini masih mengandung berbagai masalah kualitas data seperti *missing values*, format tidak konsisten, dan duplikasi.
 
-• Identifikasi kolom yang memiliki nilai kosong 
+2. **Transform \(Transformasi\)**: Data mentah dibersihkan dan ditransformasi menggunakan kombinasi *Microsoft Excel* dan *Google Sheets* untuk memastikan konsistensi format, menangani nilai yang hilang, standarisasi kapitalisasi, dan membuat *calculated fields*. Proses transformasi menghasilkan data bersih yang siap untuk analisis.
 
-• Untuk kolom numerik, nilai kosong diganti dengan nilai 0 atau rata-rata tergantung konteks 
+3. **Load \(Pemuatan\)**: Data hasil transformasi di-*upload* ke *Google Sheets* sebagai *data source* untuk *Looker Studio*. *Google Sheets* berfungsi sebagai *data warehouse* yang menyediakan koneksi *real-time* dengan *dashboard*. 
 
-• Untuk kolom kategorikal, nilai kosong diganti dengan kategori "Tidak Diketahui" atau "Lainnya" 
+## **2.2.3. Kualitas Data dan Proses Pembersihan **
 
-• Untuk kolom yang kritis, baris dengan nilai kosong dihapus 2. Penghapusan Duplikasi 
+Kualitas data merupakan faktor kritis yang menentukan keakuratan analisis dan keandalan *dashboard Business Intelligence*. Analisis awal terhadap data mentah menunjukkan bahwa dari 158 baris data yang dikumpulkan, terdapat 38 masalah kualitas data \(24%\) yang harus ditangani sebelum data dapat digunakan untuk analisis.
 
-• Identifikasi dan hapus transaksi duplikat berdasarkan ID transaksi 
+**Masalah Kualitas Data yang Ditemukan:**
 
-• Validasi duplikasi pelanggan berdasarkan nomor telepon atau email 
+Masalah kualitas data yang teridentifikasi meliputi: *missing values* \(53%\), format tidak konsisten \(39%\), inkonsistensi kapitalisasi \(32%\), data tidak realistis \(11%\), dan duplikasi data \(3%\). Masalah-masalah ini tersebar di seluruh dataset dengan tingkat keparahan yang bervariasi, dimana file Master Produk memiliki persentase masalah tertinggi \(40%\) dan file Riwayat Stok memiliki persentase masalah terendah \(10%\).
 
-• Pastikan setiap data memiliki pengenal unik 
+**Metode Pembersihan Data:**
 
-3. Konversi Tipe Data 
+Proses pembersihan data dilakukan secara sistematis menggunakan pendekatan *data quality management* yang mencakup enam tahapan utama:
 
-• Konversi kolom tanggal ke format standar \(YYYY-MM-DD\) 
+1. **Penanganan *Missing Values***: Nilai kosong ditangani dengan strategi yang disesuaikan dengan konteks bisnis. Untuk kolom numerik, nilai kosong diisi dengan nilai 0 atau rata-rata kategori. Untuk kolom kategorikal, nilai kosong diisi dengan nilai default atau placeholder yang sesuai.
 
+2. **Penghapusan Duplikasi**: Identifikasi dan penghapusan data duplikat dilakukan berdasarkan *primary key* untuk memastikan setiap record memiliki pengenal unik.
 
+3. **Standarisasi Format**: Semua format data distandarisasi, terutama format tanggal ke ISO 8601 \(YYYY-MM-DD\), format nama ke *Title Case*, dan format status ke *Proper Case*.
 
-• Konversi kolom numerik \(harga, jumlah\) ke tipe angka 
+4. **Validasi Tipe Data**: Konversi dan validasi tipe data dilakukan untuk memastikan kolom numerik berisi angka, kolom tanggal berisi format tanggal yang valid, dan kolom teks berisi string yang konsisten.
 
-• Konversi kolom kategorikal ke tipe teks 
+5. **Deteksi dan Koreksi Anomali**: Nilai-nilai yang tidak realistis atau ekstrim diidentifikasi dan divalidasi terhadap logika bisnis, kemudian dikoreksi atau dihapus sesuai kebutuhan.
 
-• Validasi format email dan nomor telepon 
+6. **Validasi Konsistensi**: Pemeriksaan konsistensi matematis dilakukan untuk memastikan perhitungan seperti total pembayaran, stok akhir, dan profit margin sesuai dengan formula bisnis yang benar.
 
-4. Deteksi Pencilan 
+**Hasil Pembersihan:**
 
-• Identifikasi nilai ekstrim pada kolom harga, jumlah, dan total pembayaran 
-
-• Validasi apakah pencilan merupakan kesalahan atau kasus bisnis yang valid 
-
-• Tangani pencilan dengan penghapusan atau transformasi sesuai konteks 5. Standarisasi Format 
-
-• Standarisasi format nama \(huruf kapital di awal kata\) 
-
-• Standarisasi format alamat dan kota 
-
-• Standarisasi kategori dan sub-kategori produk 
-
-• Standarisasi status pesanan dan status pembayaran 6. Pemeriksaan Konsistensi 
-
-• Validasi konsistensi antara subtotal dengan harga satuan × jumlah 
-
-• Validasi total pembayaran = subtotal - diskon \+ biaya tambahan \+ 
-
-ongkir 
-
-• Validasi tanggal selesai >= tanggal transaksi 
-
-• Validasi stok akhir = stok awal \+ stok masuk - stok keluar 2.2.4. *Transformasi * Data 
+Setelah proses pembersihan, kualitas data meningkat signifikan dari *data completeness* 87% menjadi 100%, format konsistensi dari 90% menjadi 100%, dan duplikasi berkurang dari 1 record menjadi 0. Data bersih kemudian disimpan dalam folder terpisah dan siap digunakan sebagai sumber data untuk *dashboard*. 2.2.4. *Transformasi * Data 
 
 Setelah data dibersihkan, dilakukan transformasi untuk memperkaya dataset dan memudahkan analisis. Proses transformasi yang dilakukan meliputi : 1. *Calculated Fields *
 
@@ -938,19 +918,19 @@ Proses ETL untuk dashboard SATRIAMART dilakukan dengan langkah-langkah berikut :
 
 *Dashboard* terdiri dari 7 halaman : 
 
-• Halaman 1 : *Executive Summary* / Ringkasan Keseluruhan 
+• Halaman 1 : SATRIAMART Business Intelligence Dashboard \(Executive Dashboard\)
 
-• Halaman 2 : Analisis Penjualan 
+• Halaman 2 : Sales Analysis
 
-• Halaman 3 : Kinerja Produk 
+• Halaman 3 : Product Performance
 
-• Halaman 4 : Analisis Pelanggan 
+• Halaman 4 : Customer Analysis
 
-• Halaman 5 : Metrik Operasional 
+• Halaman 5 : Financial Analysis
 
-• Halaman 6 : Analisis Keuangan 
+• Halaman 6 : Operations & Inventory Management
 
-• Halaman 7 : Kinerja Pemasaran 
+• Halaman 7 : Marketing Performance 
 
 2. *Hierarki * Visual 
 
@@ -968,19 +948,19 @@ Setiap halaman mengikuti struktur :
 
 Pemilihan warna konsisten dengan identitas brand SATRIAMART: 
 
-• *Primer* : \#2E7D32 \(Hijau\) untuk metrik positif, pendapatan 
+• **Primer**: \#a02d33 \(Merah SATRIAMART\) untuk header, KPI cards utama, dan elemen penting
 
+• **Sekunder**: \#ee5d26 \(Orange SATRIAMART\) untuk aksen, highlight, dan elemen pendukung
 
+• **Netral**: \#FFFFFF \(Putih\) untuk background cards dan area konten
 
-• *Sekunder* : \#FFC107 \(Kuning\) untuk sorotan, penekanan 
+• **Background**: \#F5F5F5 \(Abu-abu Muda\) untuk background halaman
 
-• *Aksen* : \#1976D2 \(Biru\) untuk informasi sekunder 
+• **Text**: \#212121 \(Abu-abu Gelap\) untuk teks utama yang mudah dibaca
 
-• Latar Belakang : \#F5F5F5 \(Abu-abu Muda\) untuk latar belakang 
+• **Success**: \#22C55E \(Hijau\) untuk indikator positif dan pertumbuhan
 
-• *Teks* : \#212121 \(Abu-abu Gelap\) untuk teks yang mudah dibaca 
-
-• Peringatan : \#D32F2F \(Merah\) untuk metrik negatif, peringatan *4. Tipografi *
+• **Warning**: \#FB923C \(Orange\) untuk peringatan dan perhatian *4. Tipografi *
 
 • Judul : *Roboto Bold*, 18-24pt untuk judul bagian 
 
@@ -1148,7 +1128,7 @@ Tahap pengujian dan evaluasi dilakukan untuk memastikan dashboard memenuhi kebut
 
 Analisis data transaksi penjualan SATRIAMART dilakukan terhadap 320 
 
-transaksi selama periode 12 bulan \(November 2024 - Oktober 2025\). Data transaksi mencakup informasi lengkap mengenai produk yang dibeli, pelanggan, jumlah pembelian, harga, diskon, biaya tambahan, dan status pesanan. 
+transaksi selama periode 12 bulan \(Januari 2025 - Desember 2025\). Data transaksi mencakup informasi lengkap mengenai produk yang dibeli, pelanggan, jumlah pembelian, harga, diskon, biaya tambahan, dan status pesanan. 
 
 Temuan Utama dari Analisis Transaksi :** **
 
@@ -1156,9 +1136,7 @@ Temuan Utama dari Analisis Transaksi :** **
 
 2. Nilai Rata-rata Pesanan : Nilai rata-rata per transaksi adalah Rp 349.926, menunjukkan bahwa SATRIAMART berhasil menjual produk dengan nilai transaksi yang cukup tinggi. 
 
-3. Distribusi Bulanan** **: Terdapat variasi signifikan dalam jumlah transaksi per bulan. Bulan dengan transaksi tertinggi adalah Desember 2024 \(38 transaksi\), Juni 2025 \(36 transaksi\), dan Juli 2025 \(35 transaksi\). Sementara bulan dengan transaksi terendah adalah Februari 2025 \(17 transaksi\) dan September 2025 \(16 
-
-transaksi\). 
+3. Distribusi Bulanan** **: Terdapat variasi signifikan dalam jumlah transaksi per bulan. Bulan dengan transaksi tertinggi adalah Desember 2025 \(38 transaksi\), Juni 2025 \(36 transaksi\), dan Juli 2025 \(35 transaksi\). Sementara bulan dengan transaksi terendah adalah Februari 2025 \(17 transaksi\) dan September 2025 \(16 transaksi\). 
 
 4. Identifikasi Musim Puncak** **: Analisis menunjukkan bahwa SATRIAMART 
 
@@ -1654,7 +1632,7 @@ Setiap halaman memiliki fokus analisis yang spesifik untuk mendukung pengambilan
 
 
 
-## **3.3.1. Ringkasan Eksekutif **
+## **3.3.1. SATRIAMART Business Intelligence Dashboard \(Executive Dashboard\) **
 
 Tujuan Halaman : Memberikan gambaran tingkat tinggi tentang performa bisnis secara keseluruhan untuk manajemen puncak. 
 
@@ -1666,103 +1644,60 @@ Komponen Utama **: **
 
 • Judul : "Dashboard Business Intelligence SATRIAMART" 
 
-• Filter Rentang Tanggal \(seluruh periode : Nov 2024 - Okt 2025\) 
+• Filter Rentang Tanggal \(seluruh periode : Jan 2025 - Des 2025\) 
 
-• Pembaruan Terakhir : 27 Oktober 2025 
+• Pembaruan Terakhir : 6 Desember 2025 
 
-2. Kartu KPI \(6 kartu\)** **
+2. Kartu KPI \(4 kartu utama\)** **
 
-• Total Pendapatan** **: Rp 111.976.550 
+• Total Revenue** **: Menampilkan total pendapatan dengan indikator persentase perubahan dibanding periode sebelumnya. Warna merah/hijau menunjukkan tren positif atau negatif.
 
-§ Indikator : \+12,5% dibanding periode sebelumnya 
+• Total Transactions** **: Menampilkan jumlah transaksi dengan indikator pertumbuhan. Membantu memantau volume penjualan.
 
-§ Warna : Hijau \(positif\) 
+• Avg Order Value** **: Menampilkan nilai rata-rata per pesanan dengan indikator perubahan. Metrik penting untuk mengukur efektivitas *upselling* dan *cross-selling*.
 
-• Total Transaksi** **: 320 transaksi 
+• Total Customers** **: Menampilkan jumlah pelanggan unik dengan indikator pertumbuhan basis pelanggan.
 
-§ Indikator : \+8,3% dibanding periode sebelumnya 
-
-§ Warna : Hijau 
-
-• Total Pelanggan** **: 180 pelanggan 
-
-§ Indikator : 153 pelanggan aktif \(85%\) 
-
-§ Warna : Biru 
-
-• Nilai Rata-rata Pesanan** **: Rp 349.926 
-
-§ Indikator : \+3,8% dibanding periode sebelumnya 
-
-§ Warna : Biru 
-
-• Margin Laba** **: 48,5% 
-
-§ Indikator : Margin sehat 
-
-§ Warna : Hijau 
-
-
-
-
-
-• Tingkat Pertumbuhan** **: \+12,5% bulan ke bulan 
-
-§ Indikator : Tren positif 
-
-§ Warna : Hijau 
+*Catatan: Nilai aktual pada dashboard bersifat dinamis dan berubah sesuai filter tanggal yang dipilih pengguna.* 
 
 3. Visualisasi Utama 
 
-A. Tren Pendapatan \(Grafik Garis\) 
+A. Revenue Trend \(Grafik Garis\) 
 
-• Sumbu-X: Bulan \(Nov 2024 - Okt 2025\) 
+• Menampilkan tren pendapatan sepanjang periode dengan garis yang menunjukkan fluktuasi bulanan
+• Memungkinkan identifikasi pola musiman dan periode puncak penjualan
+• Fitur interaktif: Tooltip menampilkan detail pendapatan saat kursor diarahkan ke titik data
 
-• Sumbu-Y: Pendapatan \(Rp\) 
+B. Sales by Channel \(Diagram Donat\) 
 
-• Fitur: Tooltip saat diarahkan menampilkan detail pendapatan dan jumlah transaksi 
+• Menampilkan distribusi penjualan berdasarkan saluran \(WhatsApp, Instagram, Marketplace, Offline\)
+• Menggunakan warna berbeda untuk setiap saluran agar mudah dibedakan
+• Menampilkan persentase kontribusi setiap saluran terhadap total penjualan
+• Wawasan: Membantu mengidentifikasi saluran penjualan paling efektif
 
-• Wawasan: Puncak jelas pada Desember 2024, Juni, dan Juli 2025 
+C. Category Performance \(Diagram Donat\) 
 
-B. Pendapatan Berdasarkan Saluran \(Grafik Batang\) 
-
-• *WhatsApp* : Rp 50.389.448 \(45%\) 
-
-• *Instagram* : Rp 33.592.965 \(30%\) 
-
-• *Marketplace* : Rp 16.796.483 \(15%\) 
-
-• Langsung : Rp 11.197.655 \(10%\) 
-
-• Wawasan : WhatsApp dominan sebagai saluran utama 
-
-C. Pendapatan Berdasarkan Kategori \(Diagram Lingkaran\) 
-
-• Nomor Rumah : 35% \(Rp 39.191.793\) 
-
-• Papan Nama : 28% \(Rp 31.353.434\) 
-
-• Papan Petunjuk : 23% \(Rp 25.754.606\) 
-
-• Aksesoris : 14% \(Rp 15.676.717\) 
-
-• Wawasan : Nomor Rumah masih menjadi produk inti 
+• Menampilkan distribusi pendapatan berdasarkan kategori produk \(Papan Nama, Signage, Nomor Rumah, Aksesoris Dekorasi\)
+• Membantu memahami produk mana yang paling berkontribusi terhadap pendapatan
+• Wawasan: Berguna untuk strategi *inventory* dan fokus pemasaran 
 
 4. Visualisasi Pendukung** **
 
-A. Jumlah Transaksi Bulanan \(Grafik Batang\)** **
+A. Payment Methods \(Grafik Batang Horizontal\)** **
 
-• Menampilkan jumlah transaksi per bulan 
+• Menampilkan distribusi metode pembayaran yang digunakan pelanggan
+• Membantu memahami preferensi pembayaran untuk optimasi proses checkout
 
-• Sorot bulan puncak dengan penekanan warna 
+B. Order Status \(Diagram Donat\)** **
 
-B. Segmentasi Pelanggan \(Diagram Donat\)** **
+• Menampilkan status pesanan \(Diterima vs Selesai\)
+• Membantu monitoring efisiensi operasional dan *fulfillment rate*
 
-• Individu : 60% \(108 pelanggan\) 
+C. Top 10 Products by Revenue \(Tabel\)** **
 
-• Bisnis : 30% \(54 pelanggan\) 
-
-• *Reseller* : 10% \(18 pelanggan\) 
+• Menampilkan 10 produk dengan pendapatan tertinggi
+• Kolom: Nama Produk, Kategori, Revenue, Units Sold, Avg Price
+• Membantu identifikasi produk *best-seller* untuk strategi *inventory* dan promosi 
 
 
 
@@ -1796,173 +1731,89 @@ G. Catatan Desain **: **
 
 • Tata letak kisi 12-kolom untuk desain responsif 
 
-## **3.3.2. Analisis Penjualan **
+## **3.3.2. Sales Analysis **
 
-Tujuan Halaman** **: Analisis mendalam tentang penjualan untuk tim penjualan dan pemasaran. 
+Tujuan Halaman: Analisis mendalam tentang performa penjualan untuk monitoring dan optimasi strategi penjualan.
 
-Komponen Utama **: **
+Komponen Utama:
 
-1. Panel Kontrol \(Bagian Atas\)** **
+1. **Kartu KPI Penjualan \(4 kartu\)**
 
-• Filter Rentang Tanggal 
+• **Gross Sales**: Menampilkan total penjualan kotor sebelum diskon dengan indikator pertumbuhan
+• **Net Sales**: Menampilkan total penjualan bersih setelah diskon dengan indikator perubahan
+• **Total Discounts**: Menampilkan total diskon yang diberikan dengan indikator persentase
+• **Shipping Revenue**: Menampilkan total pendapatan dari biaya pengiriman dengan indikator pertumbuhan
 
-• Filter Kategori Produk \( *dropdown multi*-pilih\) 
+2. **Visualisasi Utama**
 
-• Filter Saluran \( *dropdown*\) 
+A. **Channel Performance \(Tabel\)**
+• Menampilkan performa setiap saluran penjualan: WhatsApp, Instagram, Marketplace, Offline
+• Kolom: Sales Channel, Transactions, Revenue, Avg Order Value, AOV \(Calculated\)
+• Membantu identifikasi saluran paling efektif dan efisien
 
-• Filter Status \(Semua/Selesai/Proses/Dibatalkan\) 
+B. **Sales by Day of Week \(Bar Chart Horizontal\)**
+• Menampilkan distribusi penjualan berdasarkan hari dalam seminggu
+• Membantu identifikasi pola penjualan harian untuk optimasi operasional dan *staffing*
+• Wawasan: Membantu perencanaan promosi dan kampanye di hari-hari tertentu
 
-2. Kartu KPI Penjualan \(4 kartu\)** **
+3. **Visualisasi Pendukung**
 
-• Total Penjualan : Rp 111.976.550 
+A. **Monthly Sales Comparison \(Combo Chart\)**
+• Menampilkan perbandingan penjualan bulanan dengan line chart untuk Revenue dan bar chart untuk Transactions
+• Membantu identifikasi tren dan pola *seasonality*
+• Fitur interaktif untuk *drill-down* ke detail bulanan
 
-• Tingkat Pertumbuhan : \+12,5% bulan ke bulan 
+B. **Transaction Status Breakdown \(Stacked Bar Chart\)**
+• Menampilkan distribusi status transaksi: Diterima vs Selesai
+• Membantu monitoring efisiensi *fulfillment* dan identifikasi bottleneck operasional
 
-• Bulan Terbaik : Desember 2024 \(Rp 13.157.174\) 
+C. **Recent Transactions \(Tabel Detail\)**
+• Menampilkan transaksi terbaru dengan informasi lengkap
+• Kolom: Transaction ID, Date, Time, Customer, Product, Channel, Status, Total Amount
+• Fitur: Sortable, searchable, paginated untuk eksplorasi data detail
+• Membantu monitoring transaksi *real-time* dan identifikasi pola pembelian 
 
-• Bulan Terburuk : September 2025 \(Rp 5.118.955\) 
+## **3.3.3. Product Performance **
 
+Tujuan Halaman: Analisis mendalam tentang performa produk untuk manajemen *inventory* dan strategi produk.
 
+Komponen Utama:
 
+1. **Kartu KPI Produk \(4 kartu\)**
 
+• **Total Products**: Menampilkan jumlah total produk aktif dalam katalog
+• **Inventory Value**: Menampilkan nilai total *inventory* berdasarkan harga modal
+• **Avg Profit Margin**: Menampilkan rata-rata margin keuntungan dari semua produk
+• **Low Stock Items**: Menampilkan jumlah produk dengan stok rendah yang perlu *restock*
 
-3. Grafik Utama** **
+2. **Visualisasi Utama**
 
-A. Penjualan Harian/Mingguan/Bulanan \( *Time Series* dengan *Toggle*\) 
+A. **Category Analysis \(Tabel dengan Bar Chart\)**
+• Menampilkan performa setiap kategori produk
+• Kolom: Kategori, Revenue, Product Count, Units Sold, Avg Price, Avg Profit Margin
+• Membantu identifikasi kategori yang paling menguntungkan
 
-• Tombol *toggle * untuk berganti tampilan 
+B. **Top 10 Best Sellers \(Grafik Batang Horizontal\)**
+• Menampilkan 10 produk dengan penjualan tertinggi berdasarkan unit terjual
+• Membantu identifikasi produk populer untuk strategi *inventory*
 
-\(Harian/Mingguan/Bulanan\) 
+C. **Bottom 10 Slow Movers \(Grafik Batang Horizontal\)**
+• Menampilkan 10 produk dengan penjualan terendah
+• Membantu identifikasi produk yang perlu promosi atau dihentikan
 
-• Grafik area dengan *gradient fill* 
+3. **Visualisasi Pendukung**
 
-• *Moving average line* untuk *tren* halus 
+A. **Price Range Distribution \(Grafik Batang\)**
+• Menampilkan distribusi produk berdasarkan rentang harga
+• Membantu memahami positioning produk di pasar
 
-• Anotasi untuk kejadian khusus \(promo, liburan\) 
+B. **Stock Level \(Diagram Pie\)**
+• Menampilkan distribusi stok: Low \(0-10\), Medium \(10-20\), High \(>20\)
+• Membantu monitoring kesehatan *inventory*
 
-B. Top 10 Produk Berdasarkan Pendapatan \(Batang Horizontal\) 
-
-• Diurutkan dari tertinggi 
-
-• Gradien warna berdasarkan margin laba 
-
-• *Hover *: Tampilkan detail produk, margin, unit terjual 
-
-• Top 3 : 
-
-§ Papan Petunjuk Akrilik LED : Rp 4.200.000 
-
-§ Papan Nama Toko Premium : Rp 3.150.000 
-
-§ Papan Nama Restoran Elegant : Rp 2.380.000 
-
-C. Top 10 Produk Berdasarkan Kuantitas \(Batang Horizontal\) 
-
-• Berbeda dari grafik pendapatan 
-
-• Menampilkan *trade-off * volume vs nilai 
-
-• Top 3 : 
-
-§ Papan Nama Meja Akrilik : 85 unit 
-
-§ Bingkai Foto Akrilik : 78 unit 
-
-§ Nomor Rumah Mini 1 Digit : 72 unit 
-
-4. Grafik Pendukung** **
-
-A. Tren Pendapatan *vs* Laba \(Grafik Gabungan\)** **
-
-• Batang : Pendapatan 
-
-• Garis : Laba 
-
-• Menampilkan tren profitabilitas sepanjang waktu 
-
-B. Penjualan Berdasarkan Hari dalam Minggu \(Grafik Batang\)** **
-
-• Wawasan : Jumat dan Sabtu paling tinggi 
-
-C. ** **Penjualan Berdasarkan Jam \(Grafik Garis\)** **
-
-• Wawasan : Puncak 10-14 dan 19-21 
-
-
-
-
-
-5. Tabel Detail \(Bagian Bawah\)** **
-
-• Kolom : ID Transaksi, Tanggal, Pelanggan, Produk, Kuantitas, Total, Status, Saluran 
-
-• Fitur : Dapat diurutkan, dapat dicari, dipaginasi 
-
-• Tombol ekspor ke CSV 
-
-6. Kotak Teks Wawasan Utama :** **
-
-• "Papan Petunjuk LED menghasilkan pendapatan tertinggi per unit" 
-
-• "Papan Nama Meja memiliki volume tertinggi tapi margin terendah" 
-
-• "Penjualan akhir pekan menyumbang 35% dari transaksi" 
-
-• "Jam sibuk: 10-14 \(istirahat makan siang\) dan 19-21 \(malam\)" 
-
-3.3.3. Kinerja Produk 
-
-Tujuan Halaman** **: Analisis mendalam tentang performa produk untuk manajemen persediaan dan produk. 
-
-Komponen Utama **: **
-
-1. Panel Kontrol** **
-
-• *Filter* Kategori 
-
-• *Filter * Rentang Harga \( *slider*\) 
-
-• *Sort By dropdown* \(Pendapatan/Margin/Volume\) 2. Kartu KPI Produk** **
-
-• Total Produk Aktif: 50 
-
-• *Best Seller *: Papan Petunjuk Akrilik LED 
-
-• *Margin* Tertinggi : Papan Nama Khusus \(65%\) 
-
-• *Slow Moving* : 8 produk 
-
-3. Visualisasi Utama** **
-
-A. Pendapatan Berdasarkan Kategori \(Batang Bertumpuk per Bulan\) 
-
-• Menampilkan kinerja kategori sepanjang waktu 
-
-• Mengidentifikasi preferensi kategori musiman 
-
-B. Harga *vs* Volume Penjualan \( *Bubble Chart*\) 
-
-• X : Harga 
-
-• Y : Volume Penjualan 
-
-• Ukuran : Pendapatan 
-
-• Warna : Margin Laba 
-
-
-
-• Mengidentifikasi produk *sweet spot* C. *Margin* Laba Berdasarkan Produk \(Grafik Batang\) 
-
-• Diurutkan dari margin tertinggi 
-
-• Kode warna : Hijau \(>50%\), Kuning \(30-50%\), Merah \(<30%\) 
-
-• Wawasan : Produk khusus memiliki margin tertinggi 4. Visualisasi Pendukung 
-
-A. Evolusi Product Mix \( *Stacked Area Chart*\)** **
-
-• Menampilkan perubahan komposisi penjualan sepanjang waktu B. Perputaran Persediaan Berdasarkan Kategori \(Grafik Batang\) 
+C. **Product Catalog \(Tabel Detail\)**
+• Menampilkan katalog lengkap produk dengan informasi: Nama, Kategori, Sub-Kategori, Price, Cost, Margin %, Stocks
+• Fitur: Sortable, searchable, paginated 
 
 • Perputaran lebih tinggi = manajemen persediaan lebih baik C. Indikator Status Stok \( *Gauge*\)** **
 
@@ -1996,221 +1847,302 @@ A. Evolusi Product Mix \( *Stacked Area Chart*\)** **
 
 • "Kategori Nomor Rumah memiliki tingkat perputaran tertinggi" 
 
-## **3.3.4. Analisis Pelanggan **
+## **3.3.4. Customer Analysis **
 
-Tujuan Halaman: Memahami karakteristik dan perilaku pelanggan untuk strategi manajemen hubungan pelanggan. 
+Tujuan Halaman: Memahami karakteristik dan perilaku pelanggan untuk strategi *customer relationship management* yang lebih efektif.
 
-Komponen Utama **: **
+Komponen Utama:
 
-1. Panel Kontrol** **
+1. **Kartu KPI Pelanggan \(4 kartu\)**
 
-• *Filter* Segmen Pelanggan 
+• **Total Customers**: Menampilkan jumlah total pelanggan unik dengan indikator pertumbuhan
+• **Avg Customer Value**: Menampilkan nilai rata-rata per pelanggan dengan indikator perubahan
+• **Repeat Sales**: Menampilkan persentase pelanggan yang melakukan pembelian berulang
+• **Avg Rating**: Menampilkan rata-rata rating kepuasan pelanggan dari semua transaksi
 
+2. **Visualisasi Utama**
 
+A. **RFM Segmentation \(Pie Chart\)**
+• Menampilkan distribusi pelanggan berdasarkan segmentasi RFM \(Recency, Frequency, Monetary\)
+• Segmen: Champions, Loyal, At Risk, New, Lost
+• Membantu identifikasi pelanggan yang perlu perhatian khusus dan strategi retensi
 
-• Filter Kota 
+B. **Geographic Distribution \(Tabel dengan Bar Chart\)**
+• Menampilkan distribusi pelanggan berdasarkan kota
+• Kolom: City, Customers, Revenue, Avg Order Value
+• Membantu identifikasi pasar potensial dan peluang ekspansi geografis
 
-• Filter Skor RFM 
+3. **Visualisasi Pendukung**
 
-2. Kartu KPI Pelanggan** **
+A. **Customer Type Distribution \(Donut Chart\)**
+• Menampilkan distribusi pelanggan berdasarkan tipe: Individu, Bisnis, Reseller
+• Membantu memahami komposisi basis pelanggan untuk strategi marketing yang tertarget
 
-• Total Pelanggan : 180 
+B. **Source Channel Distribution \(Bar Chart Horizontal\)**
+• Menampilkan distribusi pelanggan berdasarkan sumber akuisisi: Instagram, WhatsApp, TikTok, Marketplace, Website, Referral
+• Membantu evaluasi efektivitas setiap channel untuk akuisisi pelanggan baru
 
-• Pelanggan Aktif : 153 \(85%\) 
+C. **Top 20 Customers \(Tabel Detail\)**
+• Menampilkan 20 pelanggan dengan nilai transaksi tertinggi
+• Kolom: Customer Name, City, Type, Transactions, Total Spent, Avg Order
+• Membantu identifikasi *high-value customers* untuk program VIP atau loyalitas khusus
 
-• Pelanggan Baru \(3 bulan terakhir\) : 42 
+D. **Customer Database \(Tabel Lengkap\)**
+• Menampilkan database pelanggan lengkap dengan informasi detail
+• Kolom: Name, Email, Phone, City, Transactions, Total Spent, Avg Order
+• Fitur: Sortable, searchable, filterable untuk manajemen data pelanggan 
 
-• Tingkat Pembelian Ulang : 45% 
+## **3.3.5. Financial Analysis **
 
-3. Visualisasi Utama** **
+Tujuan Halaman: Analisis keuangan komprehensif untuk monitoring profitabilitas dan kesehatan finansial bisnis.
 
-A. Segmentasi RFM \( *Treemap*\) 
+Komponen Utama:
 
-• *Champions* : 15% \( *Recency, Frequency, Monetary* Tinggi\) - *Tile* terbesar, hijau gelap 
+1. **Kartu KPI Finansial \(4 kartu\)**
 
-• Loyal : 20% \( *Frequency, Monetary* Tinggi\) 
+• **Total Revenue**: Menampilkan total pendapatan dengan indikator pertumbuhan
+• **COGS \(Cost of Goods Sold\)**: Menampilkan total biaya pokok penjualan
+• **Gross Profit**: Menampilkan laba kotor \(Revenue - COGS\)
+• **Operational Costs**: Menampilkan total biaya operasional
 
-• At Risk : 10% \( *Recency* Rendah, *Frequency, Monetary* Tinggi\) - 
+2. **Visualisasi Utama**
 
-*Orange/Yellow* 
+A. **Revenue vs Profit Trend \(Combo Chart\)**
+• Menampilkan tren pendapatan \(bar\) dan laba \(line\) sepanjang waktu
+• Membantu monitoring profitabilitas dan identifikasi periode dengan margin rendah
 
-• New : 25% \( *Recency * Tinggi, *Frequency*, *Monetary* Rendah\) - 
+B. **Gross Profit Margin Trend \(Line Chart\)**
+• Menampilkan tren persentase margin laba kotor
+• Membantu evaluasi efisiensi operasional
 
-*Light Green* 
+3. **Visualisasi Pendukung**
 
-• Lost : 30% \( *Recency, Frequency, Monetary* Rendah\) - *Gray* B. Top 10 Pelanggan Berdasarkan Nilai \(Grafik Batang\) 
+A. **Operational Costs Breakdown \(Pie Chart\)**
+• Menampilkan komposisi biaya: Bahan Baku, Operasional, Marketing, Transportasi, Utilitas
+• Membantu identifikasi area pengeluaran terbesar
 
-• Menampilkan *top buyer* 
+B. **Revenue Composition \(Stacked Bar Chart\)**
+• Menampilkan komposisi pendapatan: Custom Services vs Shipping
+• Membantu memahami sumber pendapatan
 
-• Termasuk nama pelanggan \( *anonymized*\), total pembelian, frekuensi 
+C. **Expense Details \(Tabel\)**
+• Menampilkan detail pengeluaran: Date, Category, Sub-Category, Description, Amount
+• Fitur: Sortable, filterable, searchable
 
-• Wawasan: Top 10% pelanggan = 40% pendapatan 
+## **3.3.6. Operations & Inventory Management **
 
-C. Distribusi Pelanggan Berdasarkan Kota \(Peta Geografis\) 
+Tujuan Halaman: Monitoring pergerakan stok dan efisiensi operasional *warehouse*.
 
-• Pin pada peta Indonesia 
+Komponen Utama:
 
-• Ukuran berdasarkan jumlah pelanggan 
+1. **Kartu KPI Operasional \(4 kartu\)**
 
-• Warna berdasarkan pendapatan 
+• **Total Stock In**: Menampilkan total unit yang masuk ke *inventory*
+• **Total Stock Out**: Menampilkan total unit yang keluar \(terjual\)
+• **Stock Turnover Rate**: Menampilkan rasio perputaran stok
+• **Net Stock Change**: Menampilkan perubahan bersih *inventory*
 
-• Fokus *zoom* pada Jabodetabek 
+2. **Visualisasi Utama**
 
-4. Visualisasi Pendukung 
+A. **Stock Movement Trend \(Combo Chart\)**
+• Menampilkan tren stok masuk \(bar hijau\) dan stok keluar \(bar merah\)
+• Membantu monitoring pola pergerakan *inventory*
 
-A. Tren Akuisisi Pelanggan \(Grafik Garis\)** **
+B. **Transaction Type Distribution \(Donut Chart\)**
+• Menampilkan distribusi jenis transaksi: Penjualan vs Pembelian
+• Membantu memahami aktivitas *warehouse*
 
-• Pelanggan baru per bulan 
+3. **Visualisasi Pendukung**
 
-• Menampilkan dampak kampanye marketing 
+A. **Stock Level by Category \(Bar Chart Horizontal\)**
+• Menampilkan rata-rata level stok per kategori produk
+• Membantu identifikasi kategori yang perlu *restock*
 
+B. **Low Stock Alert Table**
+• Menampilkan produk dengan stok rendah yang perlu perhatian
+• Kolom: Product Name, Category, Stock Available, Stock Value
 
+C. **Stock Movement History \(Tabel Detail\)**
+• Menampilkan riwayat pergerakan stok: Date, Product, Transaction Type, Stock In, Stock Out, Final Stock
+• Membantu audit dan tracking *inventory*
 
+## **3.3.7. Marketing Performance **
 
+Tujuan Halaman: Evaluasi efektivitas kampanye pemasaran dan ROI untuk optimasi alokasi *budget*.
 
-B. *Repeat Purchase Rate *\(Grafik Garis\)** **
+Komponen Utama:
 
-• Melacak loyalitas sepanjang waktu 
+1. **Kartu KPI Marketing \(4 kartu\)**
 
-C. *Customer Lifetime Value* Rata-rata Berdasarkan Segmen \(Grafik Batang\)** **
+• **Total Campaigns**: Menampilkan jumlah total kampanye yang dijalankan
+• **Total Budget**: Menampilkan total *budget* marketing yang dialokasikan
+• **Average ROI**: Menampilkan rata-rata *Return on Investment* dari semua kampanye
+• **Total Reach**: Menampilkan total jangkauan audiens dari semua kampanye
 
-• Bisnis : Rp 6,2 juta rata-rata 
+2. **Visualisasi Utama**
 
-• *Reseller *: Rp 4,8 juta rata-rata 
+A. **Campaign ROI Comparison \(Bar Chart Horizontal\)**
+• Menampilkan perbandingan ROI dari berbagai kampanye
+• Diurutkan dari ROI tertinggi ke terendah
+• Membantu identifikasi kampanye paling efektif
 
-• Individu : Rp 2,1 juta rata-rata 
+B. **Platform by Budget \(Pie Chart\)**
+• Menampilkan distribusi *budget* berdasarkan platform: Google Ads, Facebook, TikTok, Instagram
+• Membantu evaluasi alokasi *budget* per platform
 
-5. Tabel Segmentasi Pelanggan** **
+3. **Visualisasi Pendukung**
 
-• *Segmen*, Jumlah, % dari Total, Nilai Rata-rata, *Repeat Purchase Rate* 
+A. **Campaign Performance Over Time \(Combo Chart\)**
+• Menampilkan tren *budget*, *revenue generated*, dan *campaign profit* sepanjang waktu
+• Membantu monitoring efektivitas marketing secara temporal
 
-• Wawasan *actionable* untuk setiap segmen 
+B. **Platform Performance \(Tabel\)**
+• Menampilkan performa per platform: Campaigns, Total Spend, Total Reach, Total Engagement, Total Conversions, Total Revenue, Avg ROI
+• Membantu perbandingan efektivitas antar platform
 
-6. Wawasan Utama **: **
-
-• " *Repeat purchase rate* 45% menunjukkan ruang untuk perbaikan" 
-
-• "Segmen bisnis memiliki nilai rata-rata pesanan 3x lebih tinggi dari Individu" 
-
-• "85% pelanggan terkonsentrasi di Jabodetabek" 
-
-• "30% pelanggan berisiko kehilangan \( *recency* rendah\)" 
-
-*\[Lanjutan untuk sub-bab 3.3.5 hingga 3.3.7 dan 3.4 akan dibuat dalam file* *terpisah\]* 
-
-
+C. **Top Performing Campaigns \(Tabel Detail\)**
+• Menampilkan kampanye terbaik: Campaign Name, Platform, Start Date, End Date, Budget, Reach, Engagement, Conversion, Revenue, ROI
+• Membantu identifikasi *best practices* untuk kampanye future
 
 **Catatan**: 
 
-• Screenshot dashboard akan ditambahkan dalam versi final MS Word 
-
-• Setiap visualisasi akan disertai dengan caption dan nomor gambar 
-
-• Interpretasi lebih detail akan ditambahkan dengan referensi teori **3.4. Analisis dan Interpretasi **
+• Setiap halaman dashboard dilengkapi dengan filter interaktif untuk eksplorasi data yang lebih mendalam
+• Visualisasi dirancang responsif dan dapat diakses dari berbagai perangkat
+• Warna dan desain konsisten mengikuti *branding* SATRIAMART **3.4. Analisis dan Interpretasi **
 
 ## **3.4.1. Interpretasi Hasil Visualisasi **
 
-Berdasarkan dashboard yang telah dibuat, berikut interpretasi hasil visualisasi : 
+Berdasarkan *dashboard* yang telah dibuat, berikut interpretasi hasil visualisasi utama:
 
-Tren Pendapatan** **: *Dashboard* menunjukkan pola pertumbuhan pendapatan yang fluktuatif dengan puncak yang jelas pada bulan Desember \(Rp 13.157.174\), Juni \(Rp 11.976.550\), dan Juli \(Rp 11.418.523\). Pola ini mengindikasikan *seasonality* yang kuat, di mana permintaan meningkat menjelang liburan dan periode *event* khusus. Musim sepi terjadi di Februari dan September dengan pendapatan terendah. 
+**1. Pola Penjualan dan Seasonality**
 
+*Dashboard* menunjukkan pola pertumbuhan pendapatan yang fluktuatif dengan puncak yang jelas pada periode tertentu sepanjang tahun. Pola ini mengindikasikan *seasonality* yang kuat, di mana permintaan meningkat menjelang liburan akhir tahun, periode libur sekolah, dan *event* khusus lainnya. Pemahaman pola musiman ini memungkinkan SATRIAMART untuk melakukan perencanaan *inventory* dan alokasi sumber daya yang lebih efektif.
 
+**2. Performa Kategori Produk**
 
-Kinerja Produk : Analisis produk mengungkapkan bahwa Papan Petunjuk dan Papan Nama premium mendominasi pendapatan meskipun volume penjualan lebih rendah dibanding produk *low-value * seperti papan nama meja dan bingkai foto. Hal ini konsisten dengan konsep *value-based selling* di mana fokus pada produk *high-value* menghasilkan profitabilitas lebih baik meski volume lebih rendah. 
+Analisis kategori produk mengungkapkan bahwa produk dengan nilai tinggi seperti Papan Nama dan Signage premium cenderung memberikan kontribusi pendapatan yang signifikan meskipun volume penjualan lebih rendah dibanding produk dengan harga lebih terjangkau. Hal ini konsisten dengan konsep *value-based selling* di mana fokus pada produk *high-margin* menghasilkan profitabilitas lebih baik. Kategori Nomor Rumah dan Papan Nama menunjukkan performa konsisten sebagai produk inti bisnis.
 
-Segmentasi Pelanggan** **: Segmentasi RFM menunjukkan bahwa 30% pelanggan berada dalam kategori " *Lost*" atau "At Risk", mengindikasikan perlunya strategi retensi pelanggan yang lebih agresif. Pelanggan *Champions* dan *Loyal* yang hanya 35% dari total basis pelanggan menghasilkan 60% dari total pendapatan, membuktikan pentingnya fokus pada *high-value customers*. 
+**3. Karakteristik dan Perilaku Pelanggan**
 
-Efektivitas Saluran** **: *WhatsApp* sebagai saluran dominan \(45% pendapatan\) menunjukkan bahwa pendekatan personal dan percakapan masih sangat efektif untuk produk khusus seperti yang dijual SATRIAMART. Instagram dengan 30% 
+Analisis segmentasi pelanggan menunjukkan distribusi yang beragam dengan konsentrasi geografis yang tinggi di wilayah Jabodetabek. Segmentasi berdasarkan jenis pelanggan \(Individu, Bisnis, Reseller\) menunjukkan bahwa pelanggan bisnis memiliki nilai transaksi rata-rata yang lebih tinggi dibanding pelanggan individu. Hal ini mengindikasikan peluang untuk mengembangkan strategi pemasaran yang lebih tertarget untuk segmen B2B.
 
-pendapatan menunjukkan pentingnya konten visual untuk produk dekorasi. 
+**4. Efektivitas Saluran Penjualan**
 
-**3.4.2. Implikasi terhadap Strategi Bisnis SATRIAMART **
+Analisis saluran penjualan menunjukkan bahwa platform komunikasi langsung seperti WhatsApp dan Instagram mendominasi transaksi. Hal ini menunjukkan bahwa pendekatan personal dan percakapan masih sangat efektif untuk produk *customizable* seperti yang dijual SATRIAMART. Konten visual di Instagram terbukti penting untuk produk dekorasi yang memerlukan visualisasi sebelum pembelian.
 
-1. Manajemen Persediaan 
+**5. Profitabilitas dan Kesehatan Finansial**
 
-Wawasan tentang *seasonality* memungkinkan SATRIAMART untuk meningkatkan produksi dan stok persediaan menjelang musim puncak \(November-Desember dan Mei-Juni\) dan mengurangi persediaan di musim sepi untuk optimasi *cash flow*. 
+Analisis finansial menunjukkan margin laba yang sehat dengan rata-rata di atas 45%. Komposisi biaya operasional didominasi oleh bahan baku dan biaya produksi, yang merupakan karakteristik normal untuk bisnis manufaktur skala kecil. Monitoring tren margin laba membantu identifikasi periode dengan efisiensi operasional yang perlu ditingkatkan.
 
-2. Strategi Produk 
+**6. Efektivitas Kampanye Marketing**
 
-Data menunjukkan bahwa produk *custome * memiliki margin lebih tinggi \(65%\) dibanding produk standar \(40%\). Strategi yang dapat diterapkan adalah mendorong kustomisasi melalui *pricing incentive* dan menyoroti opsi kustomisasi dalam materi marketing. 
+Analisis ROI kampanye pemasaran menunjukkan variasi yang signifikan antar platform dan jenis kampanye. Kampanye dengan konten visual dan *engagement* tinggi cenderung menghasilkan ROI yang lebih baik. Platform media sosial menunjukkan efektivitas yang baik untuk *brand awareness* dan konversi, terutama untuk target pasar yang lebih muda dan *tech-savvy*. 
 
-3. Retensi Pelanggan** **
+## **3.4.2. Implikasi terhadap Strategi Bisnis SATRIAMART **
 
-Dengan repeat purchase rate hanya 45%, SATRIAMART perlu implementasi program loyalitas, *follow-up marketing*, dan penawaran personal untuk meningkatkan *customer lifetime value*. 
+Berdasarkan analisis data melalui *dashboard Business Intelligence*, berikut implikasi strategis yang dapat diterapkan:
 
+**1. Optimasi Manajemen Inventory**
 
+Pemahaman pola *seasonality* memungkinkan SATRIAMART untuk melakukan perencanaan *inventory* yang lebih akurat. Peningkatan produksi dan stok dapat dilakukan menjelang periode puncak, sementara pengurangan *inventory* di periode sepi membantu optimasi *cash flow* dan mengurangi biaya penyimpanan. Implementasi sistem *just-in-time* untuk produk dengan permintaan stabil dapat meningkatkan efisiensi operasional.
 
+**2. Pengembangan Strategi Produk**
 
+Analisis menunjukkan bahwa produk *custom* memiliki margin yang lebih tinggi dibanding produk standar. Strategi yang dapat diterapkan meliputi:
+• Mendorong kustomisasi melalui *pricing incentive* dan kemudahan proses desain
+• Menyoroti opsi kustomisasi dalam materi *marketing*
+• Mengembangkan *product line* premium untuk segmen pasar yang lebih tinggi
+• Fokus pada produk dengan *profit margin* tinggi untuk meningkatkan profitabilitas
 
-4. Alokasi *Budget* Marketing** **
+**3. Peningkatan Retensi Pelanggan**
 
-Analisis ROI kampanye menunjukkan bahwa *Instagram Ads* memberikan ROI tertinggi \(280%\). Alokasi *budget marketing* sebaiknya diprioritaskan pada saluran dengan ROI tinggi sambil mempertahankan kehadiran di saluran lain. 
+Data menunjukkan peluang signifikan untuk meningkatkan *repeat purchase rate*. Strategi retensi yang dapat diimplementasikan meliputi:
+• Program loyalitas dengan sistem *reward points*
+• *Follow-up marketing* melalui WhatsApp dan email setelah pembelian
+• Penawaran eksklusif untuk pelanggan setia
+• Personalisasi komunikasi berdasarkan riwayat pembelian
+• *Customer service* yang responsif untuk meningkatkan kepuasan
 
-5. Strategi *Pricing* 
+**4. Optimasi Alokasi Budget Marketing**
 
-Analisis harga *vs * volume menunjukkan *sweet spot* pada produk Rp 100 ribu-300 ribu yang *balance* antara volume dan margin. Strategi *bundling* dapat diterapkan untuk meningkatkan *average order value*. 
+Analisis ROI kampanye memberikan wawasan untuk alokasi *budget* yang lebih efektif:
+• Prioritaskan platform dengan ROI tertinggi untuk kampanye berbayar
+• Pertahankan kehadiran di semua saluran untuk *brand awareness*
+• Fokus pada konten visual berkualitas tinggi untuk Instagram dan TikTok
+• Manfaatkan WhatsApp untuk komunikasi personal dan *closing* penjualan
+• Evaluasi dan optimasi kampanye secara berkala berdasarkan data performa
+
+**5. Strategi Pricing dan Bundling**
+
+Analisis harga dan volume penjualan menunjukkan peluang untuk:
+• Implementasi strategi *bundling* untuk meningkatkan *average order value*
+• *Dynamic pricing* berdasarkan permintaan dan *seasonality*
+• Penawaran paket untuk pelanggan bisnis dan *reseller*
+• *Value-based pricing* untuk produk *custom* dengan kompleksitas tinggi
+
+**6. Ekspansi Geografis**
+
+Dengan konsentrasi tinggi di Jabodetabek, terdapat peluang ekspansi ke wilayah lain:
+• Kemitraan dengan *reseller* di kota-kota besar lainnya
+• Optimasi *marketplace* untuk jangkauan nasional
+• Strategi *shipping* yang kompetitif untuk wilayah di luar Jabodetabek 
 
 ## **3.4.3. Potensi Peningkatan Performa **
 
-1. Meningkatkan *Repeat Purchase Rate* \(Target: dari 45% ke 60%\) 
+Berdasarkan analisis *dashboard*, terdapat beberapa area dengan potensi peningkatan performa yang signifikan:
 
-• Implementasi program loyalitas dengan *reward points *
+**1. Peningkatan Customer Retention**
 
-• Follow-up email/WhatsApp setelah pembelian 
+*Dashboard* menunjukkan peluang untuk meningkatkan *repeat purchase rate* melalui:
+• Implementasi program loyalitas dengan sistem *reward points* yang menarik
+• *Follow-up* komunikasi melalui WhatsApp dan email setelah pembelian
+• Penawaran eksklusif dan diskon untuk pelanggan setia
+• Personalisasi rekomendasi produk berdasarkan riwayat pembelian
+• *Customer engagement* melalui konten edukatif dan inspiratif
 
-• Penawaran eksklusif untuk *repeat customers* 
+**2. Ekspansi Jangkauan Pasar**
 
-• Estimasi dampak: \+15% pendapatan 
+Dengan konsentrasi geografis yang tinggi di Jabodetabek, terdapat peluang ekspansi:
+• Penetrasi ke kota-kota tier 2 melalui *marketplace* dan *reseller*
+• Optimasi SEO dan *online presence* untuk jangkauan organik nasional
+• Kemitraan strategis dengan *interior designer* dan kontraktor di berbagai kota
+• Pengembangan sistem *shipping* yang efisien untuk wilayah luar Jabodetabek
 
-2. Memperluas Jangkauan Geografis \(Target: dari 85% Jabodetabek ke 70%\) 
+**3. Optimasi Average Order Value**
 
-• Ekspansi marketplace ke kota tier 2 \(Bandung, Surabaya, Semarang\) 
+Strategi untuk meningkatkan nilai transaksi rata-rata meliputi:
+• *Product bundling* yang menarik \(contoh: nomor rumah + papan nama\)
+• Implementasi *recommendation system* pada proses checkout
+• *Upselling* produk premium dengan nilai tambah yang jelas
+• *Cross-selling* produk komplementer dengan saran "*complete the look*"
+• Penawaran *free shipping* untuk pembelian di atas nilai tertentu
 
-• *Partnership* dengan *reseller* di luar Jabodetabek 
+**4. Peningkatan Conversion Rate**
 
-• Optimasi *online presence* untuk jangkauan organik 
+Untuk mengurangi *cancellation rate* dan meningkatkan konversi:
+• Peningkatan *product visualization* dengan foto berkualitas tinggi dan *mockup* 3D
+• Komunikasi yang jelas tentang *timeline* produksi dan pengiriman
+• *Better expectation management* melalui deskripsi produk yang detail
+• Proses pemesanan yang lebih *user-friendly* dan transparan
+• *Customer service* yang responsif untuk menjawab pertanyaan sebelum pembelian
 
-• Estimasi dampak: \+20% basis pelanggan 
+**5. Efisiensi Operasional**
 
-3. *Upselling* & *Cross-selling*** **\(Target : *average order value* dari Rp 350 ribu ke Rp 420 ribu\) 
+Peluang peningkatan efisiensi operasional meliputi:
+• Optimasi proses produksi untuk produk dengan permintaan tinggi
+• Implementasi sistem *inventory management* yang lebih baik
+• Pengurangan *lead time* untuk meningkatkan kepuasan pelanggan
+• Standardisasi proses untuk produk populer tanpa mengurangi kualitas
+• Pelatihan tim untuk meningkatkan produktivitas
 
-• *Product bundling* \(nomor rumah \+ papan nama meja\) 
+**6. Optimasi Marketing ROI**
 
-• *Recommendation system* pada checkout 
-
-• " *Complete the look*" suggestions 
-
-• Estimasi dampak: \+20% *average order value* 
-
-4. Mengurangi *Cancellation Rate* \(Target: dari 7% ke 3%\) 
-
-• Tingkatkan *product visualization *\(preview 3D, *mockup*\) 
-
-• Komunikasi jelas tentang *timeline* 
-
-• *Better expectation management *
-
-• Estimasi dampak: \+4% pendapatan 
-
-
-
-
-
-5. Optimasi *Marketing* ROI \(Target : ROI keseluruhan dari 250% ke 300%\) 
-
-• *Focus budget* pada saluran high-ROI \(Instagram, *Organic*\) 
-
-• A/B testing untuk optimasi ad *creative* 
-
-• Retargeting campaign untuk *abandoned cart* 
-
-• Estimasi dampak: \+20% marketing *efficiency* 
-
-* *
-
-
-
-
+Berdasarkan analisis performa kampanye:
+• Fokus pada platform dan jenis konten dengan ROI tertinggi
+• A/B testing untuk optimasi *creative* dan *messaging*
+• Retargeting pelanggan yang pernah mengunjungi tapi belum membeli
+• Kolaborasi dengan *micro-influencer* yang relevan dengan target pasar
+• Pengembangan konten *user-generated* untuk meningkatkan *trust*
 
 **BAB IV **
 
@@ -2222,7 +2154,7 @@ Berdasarkan hasil perancangan dan implementasi *Dashboard Business* *Intelligenc
 
 1. Keberhasilan Implementasi *Dashboard* 
 
-*Dashboard Business Intelligence* interaktif telah berhasil dirancang dan diimplementasikan dengan 7 halaman utama yang mencakup Ringkasan Eksekutif, Analisis Penjualan, Kinerja Produk, Analisis Pelanggan, Metrik Operasional, Analisis Keuangan, dan Kinerja Pemasaran. *Dashboard* dapat diakses secara *online*, responsif di berbagai perangkat, dan memiliki fitur interaktif yang memudahkan eksplorasi data. 
+*Dashboard Business Intelligence* interaktif telah berhasil dirancang dan diimplementasikan dengan 7 halaman utama yang mencakup Executive Dashboard, Sales Analysis, Product Performance, Customer Analysis, Financial Analysis, Operations & Inventory Management, dan Marketing Performance. *Dashboard* dapat diakses secara *online*, responsif di berbagai perangkat, dan memiliki fitur interaktif yang memudahkan eksplorasi data. 
 
 2. Efektivitas Visualisasi Data 
 
@@ -2232,17 +2164,12 @@ Pemilihan jenis visualisasi yang tepat \(kartu skor, grafik garis, grafik batang
 
 *Dashboard* berhasil menghasilkan wawasan bisnis yang dapat ditindaklanjuti, antara lain : 
 
-• Identifikasi pola musiman dengan musim puncak di Desember, Juni, dan Juli 
-
-• *WhatsApp* dan *Instagram* sebagai saluran paling efektif dengan kontribusi 75% pendapatan 
-
-• 20% produk menghasilkan 60% pendapatan \(prinsip Pareto\) 
-
-• Produk *custome * memiliki margin laba 65% vs produk standar 40% 
-
-• Tingkat pembelian berulang 45% menunjukkan ruang untuk peningkatan retensi pelanggan 
-
-• Konsentrasi pelanggan 85% di Jabodetabek dengan peluang ekspansi geografis 
+• Identifikasi pola *seasonality* dengan periode puncak penjualan yang jelas sepanjang tahun
+• Platform komunikasi langsung \(WhatsApp dan Instagram\) terbukti menjadi saluran paling efektif untuk produk *customizable*
+• Distribusi pendapatan mengikuti prinsip Pareto dimana sebagian kecil produk menghasilkan mayoritas pendapatan
+• Produk *custom* memiliki margin laba yang lebih tinggi dibanding produk standar
+• Peluang peningkatan *customer retention* melalui program loyalitas dan *follow-up marketing*
+• Konsentrasi geografis yang tinggi di Jabodetabek menunjukkan peluang ekspansi ke wilayah lain 
 
 
 
@@ -2252,17 +2179,12 @@ Pemilihan jenis visualisasi yang tepat \(kartu skor, grafik garis, grafik batang
 
 KPI yang berhasil diidentifikasi dan diintegrasikan dalam *dashboard* mencakup : 
 
-• KPI Penjualan : Total Pendapatan \(Rp 111.976.550\), Nilai Rata-rata Pesanan \(Rp 349.926\), Tingkat Pertumbuhan \(\+12,5%\) 
-
-• KPI Produk : Produk terlaris, margin laba per produk, perputaran persediaan 
-
-• KPI Pelanggan : Total pelanggan \(180\), tingkat pembelian berulang \(45%\), nilai seumur hidup pelanggan 
-
-• KPI Operasional: Tingkat penyelesaian \(85%\), waktu penyelesaian, tingkat pembatalan \(7%\) 
-
-• KPI Keuangan : Laba kotor, laba bersih, margin laba \(48,5%\) 
-
-• KPI Pemasaran : ROI kampanye, tingkat konversi, biaya per akuisisi 5. Dukungan Pengambilan Keputusan** **
+• **KPI Penjualan**: Total Revenue, Total Transactions, Average Order Value, dan Growth Rate untuk monitoring performa penjualan
+• **KPI Produk**: Total Products, Inventory Value, Average Profit Margin, dan Low Stock Items untuk manajemen produk
+• **KPI Pelanggan**: Total Customers, Repeat Purchase Rate, Customer Lifetime Value, dan Customer Segmentation untuk analisis pelanggan
+• **KPI Operasional**: Stock In/Out, Stock Turnover Rate, Fulfillment Rate, dan Order Completion Time untuk efisiensi operasional
+• **KPI Keuangan**: Total Revenue, COGS, Gross Profit, dan Operational Costs untuk monitoring kesehatan finansial
+• **KPI Marketing**: Total Campaigns, Marketing Budget, Average ROI, dan Total Reach untuk evaluasi efektivitas pemasaran 5. Dukungan Pengambilan Keputusan** **
 
 *Dashboard * terbukti dapat mendukung pengambilan keputusan bisnis di berbagai area : 
 
@@ -2348,21 +2270,19 @@ Berdasarkan hasil penelitian dan implementasi *Dashboard Business* *Intelligence
 
 2. Strategi Peningkatan Pendapatan 
 
-• Fokus pada Produk Margin Tinggi** **: Prioritaskan pemasaran dan produksi untuk produk dengan margin tinggi \(produk *custome* dengan margin 65%\). 
+• **Fokus pada Produk High-Margin**: Prioritaskan pemasaran dan produksi untuk produk *custom* yang memiliki margin laba lebih tinggi dibanding produk standar.
 
-• Perencanaan Musiman: Manfaatkan wawasan tentang pola musiman untuk merencanakan kampanye dan pengadaan stok menjelang musim puncak. 
+• **Perencanaan Musiman**: Manfaatkan wawasan tentang pola *seasonality* untuk merencanakan kampanye pemasaran dan pengadaan stok menjelang periode puncak.
 
-• Optimasi Saluran** **: Alokasikan lebih banyak sumber daya ke *WhatsApp* dan Instagram yang terbukti paling efektif. 
+• **Optimasi Saluran**: Alokasikan lebih banyak sumber daya ke platform komunikasi langsung yang terbukti paling efektif untuk konversi penjualan.
 
 3. Strategi Retensi Pelanggan 
 
-• Program Loyalitas** **: Implementasikan program loyalitas untuk meningkatkan tingkat pembelian berulang dari 45% menjadi minimal 60%. 
+• **Program Loyalitas**: Implementasikan program loyalitas dengan sistem *reward points* untuk meningkatkan *repeat purchase rate* dan *customer lifetime value*.
 
-• Pemasaran Tertarget** **: Gunakan segmentasi RFM untuk melakukan pemasaran tertarget kepada pelanggan " *At Risk*" dengan penawaran khusus. 
+• **Pemasaran Tertarget**: Gunakan segmentasi pelanggan untuk melakukan pemasaran yang lebih personal dan relevan dengan kebutuhan setiap segmen.
 
-• Kampanye *Re-engagement* : Buat kampanye khusus untuk pelanggan 
-
-" *Lost*" \(30%\) dengan insentif yang menarik. 
+• **Kampanye Re-engagement**: Buat kampanye khusus untuk pelanggan yang sudah lama tidak bertransaksi dengan penawaran menarik dan komunikasi personal. 
 
 
 
@@ -2376,19 +2296,19 @@ Berdasarkan hasil penelitian dan implementasi *Dashboard Business* *Intelligence
 
 5. Peningkatan Operasional 
 
-• Pengurangan Tingkat Pembatalan** **: Target menurunkan tingkat pembatalan dari 7% ke < 3% melalui visualisasi produk dan komunikasi yang lebih baik. 
+• **Pengurangan Cancellation Rate**: Tingkatkan visualisasi produk dengan foto berkualitas tinggi dan *mockup* 3D, serta komunikasi yang lebih jelas tentang *timeline* produksi.
 
-• Peningkatan Waktu Penyelesaian** **: Optimasi proses produksi untuk mengurangi waktu penyelesaian, mengingat korelasi positif antara pengiriman cepat dan kepuasan pelanggan. 
+• **Optimasi Lead Time**: Optimasi proses produksi untuk mengurangi waktu penyelesaian pesanan, mengingat korelasi positif antara pengiriman cepat dan kepuasan pelanggan.
 
-• Kontrol Kualitas** **: Pertahankan kualitas tinggi karena skor kepuasan pelanggan \(4,5/5\) adalah keunggulan kompetitif. 
+• **Kontrol Kualitas**: Pertahankan standar kualitas tinggi karena kepuasan pelanggan merupakan keunggulan kompetitif yang penting.
 
 6. Pengembangan Produk 
 
-• Perluasan Produk *Custome*** **: Tingkatkan varian produk *custome* karena margin tinggi dan permintaan yang kuat. 
+• **Perluasan Produk Custom**: Tingkatkan varian produk *custom* karena memiliki margin yang lebih tinggi dan permintaan yang kuat dari segmen premium.
 
-• Paket Bundling : Buat paket bundling untuk meningkatkan nilai rata-rata pesanan \(target dari Rp 350K ke Rp 420K\). 
+• **Product Bundling**: Buat paket *bundling* yang menarik untuk meningkatkan *average order value* dan memberikan nilai lebih kepada pelanggan.
 
-• Inovasi** **: Kembangkan produk-produk inovatif berdasarkan masukan pelanggan dan tren pasar. 
+• **Inovasi Berkelanjutan**: Kembangkan produk-produk inovatif berdasarkan *feedback* pelanggan, analisis tren pasar, dan data performa produk dari *dashboard*. 
 
 ***4.2.2. *****Saran untuk Pengembangan *Dashboard ***
 
