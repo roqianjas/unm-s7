@@ -100,6 +100,68 @@ Hasil penelitian menunjukkan bahwa *dashboard Business Intelligence* yang dikemb
 
 ****
 
+## **DAFTAR TABEL**
+
+Tabel 2.1 Distribusi Produk Berdasarkan Kategori ........................................................... 
+
+Tabel 2.2 Distribusi Pelanggan Berdasarkan Segmen ....................................................... 
+
+Tabel 2.3 Distribusi Masalah Kualitas Data per File ......................................................... 
+
+Tabel 2.4 Perbandingan Kualitas Data Sebelum dan Sesudah Pembersihan .................... 
+
+Tabel 2.5 Key Performance Indicators (KPI) per Dashboard ............................................ 
+
+Tabel 3.1 Komponen Visualisasi Executive Dashboard .................................................... 
+
+Tabel 3.2 Komponen Visualisasi Sales Analysis ............................................................... 
+
+Tabel 3.3 Komponen Visualisasi Product Performance .................................................... 
+
+Tabel 3.4 Komponen Visualisasi Customer Analysis ........................................................ 
+
+Tabel 3.5 Komponen Visualisasi Financial Analysis ........................................................ 
+
+Tabel 3.6 Komponen Visualisasi Operations & Inventory ................................................ 
+
+Tabel 3.7 Komponen Visualisasi Marketing Performance ................................................ 
+
+Tabel 4.1 Ringkasan KPI Dashboard SATRIAMART ....................................................... 
+
+
+
+## **DAFTAR GAMBAR**
+
+Gambar 1.1 Logo SATRIAMART ...................................................................................... 
+
+Gambar 2.1 Proses ETL (Extract, Transform, Load) ......................................................... 
+
+Gambar 2.2 Arsitektur Dashboard Business Intelligence ................................................... 
+
+Gambar 2.3 Contoh Data Mentah dengan Masalah Kualitas Data ..................................... 
+
+Gambar 2.4 Contoh Data Bersih Setelah Proses Cleaning ................................................. 
+
+Gambar 3.1 Executive Dashboard - Overview Bisnis ........................................................ 
+
+Gambar 3.2 Sales Analysis Dashboard .............................................................................. 
+
+Gambar 3.3 Product Performance Dashboard .................................................................... 
+
+Gambar 3.4 Customer Analysis Dashboard ....................................................................... 
+
+Gambar 3.5 Financial Analysis Dashboard ........................................................................ 
+
+Gambar 3.6 Operations & Inventory Dashboard ................................................................ 
+
+Gambar 3.7 Marketing Performance Dashboard ................................................................ 
+
+Gambar 3.8 Contoh Fitur Interaktif - Filter Controls ........................................................ 
+
+Gambar 3.9 Contoh Fitur Interaktif - Drill-down .............................................................. 
+
+Gambar 4.1 Alur Implementasi Dashboard Business Intelligence ..................................... 
+
 
 
 **BAB I **
@@ -114,7 +176,9 @@ Dalam era digital saat ini, data telah menjadi aset penting bagi setiap organisa
 
 Ketersediaan data yang melimpah dari berbagai sumber seperti transaksi penjualan, interaksi pelanggan, dan operasional bisnis memberikan peluang besar bagi perusahaan untuk mengoptimalkan kinerja bisnis mereka. Namun, data mentah yang belum diolah tidak akan memberikan nilai tambah tanpa adanya proses analisis yang tepat. Di sinilah peran *Business Intelligence* *\(BI\)* menjadi sangat penting. *Business Intelligence* merupakan seperangkat teknologi, aplikasi, dan praktik untuk pengumpulan, integrasi, analisis, dan presentasi informasi bisnis \(Turban et al., 2021\). Tujuan utama BI adalah untuk mendukung pengambilan keputusan bisnis yang lebih baik melalui penyediaan informasi yang akurat, relevan, dan tepat waktu. Dengan implementasi BI yang tepat, perusahaan dapat mengidentifikasi peluang bisnis baru, mendeteksi masalah operasional sejak dini, memahami perilaku pelanggan, dan mengoptimalkan strategi pemasaran. 
 
-SATRIAMART merupakan perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik dengan produk unggulan berupa nomor rumah akrilik, papan petunjuk \( *signage*\), papan nama, dan berbagai aksesoris dekorasi khusus. Berlokasi di Depok, Jawa Barat, SATRIAMART melayani pelanggan dari wilayah Jabodetabek dan sekitarnya melalui berbagai saluran penjualan seperti *Instagram, WhatsApp, platform* pasar daring \( *marketplace*\), dan penjualan langsung. Seperti halnya UMKM pada umumnya, SATRIAMART menghadapi tantangan dalam mengelola dan menganalisis data bisnis yang terus bertambah setiap harinya. Saat ini, SATRIAMART belum memiliki sistem informasi terintegrasi untuk melakukan analisis data secara komprehensif. Proses pengambilan keputusan masih dilakukan secara manual berdasarkan intuisi dan pengalaman, tanpa dukungan analisis data yang sistematis. Kondisi ini menyebabkan beberapa permasalahan seperti kesulitan dalam mengidentifikasi produk yang paling laris, ketidakpastian dalam merencanakan stok produk, 
+SATRIAMART merupakan perusahaan skala kecil yang bergerak di bidang dekorasi dan aksesoris akrilik dengan produk unggulan berupa nomor rumah akrilik, papan petunjuk \( *signage*\), papan nama, dan berbagai aksesoris dekorasi khusus sebagaimana ditampilkan pada Gambar 1.1. Berlokasi di Depok, Jawa Barat, SATRIAMART melayani pelanggan dari wilayah Jabodetabek dan sekitarnya melalui berbagai saluran penjualan seperti *Instagram, WhatsApp, platform* pasar daring \( *marketplace*\), dan penjualan langsung.
+
+*\[Gambar 1.1 Logo SATRIAMART akan ditampilkan di sini\]* Seperti halnya UMKM pada umumnya, SATRIAMART menghadapi tantangan dalam mengelola dan menganalisis data bisnis yang terus bertambah setiap harinya. Saat ini, SATRIAMART belum memiliki sistem informasi terintegrasi untuk melakukan analisis data secara komprehensif. Proses pengambilan keputusan masih dilakukan secara manual berdasarkan intuisi dan pengalaman, tanpa dukungan analisis data yang sistematis. Kondisi ini menyebabkan beberapa permasalahan seperti kesulitan dalam mengidentifikasi produk yang paling laris, ketidakpastian dalam merencanakan stok produk, 
 
 
 
@@ -568,15 +632,19 @@ Data yang digunakan dalam penelitian ini mencakup berbagai aspek bisnis SATRIAMA
 
 Data produk mencakup informasi lengkap tentang produk yang dijual oleh SATRIAMART, termasuk ID produk, nama produk, kategori \(Nomor Rumah, *Signage*, Papan Nama, Aksesoris Dekorasi\), *sub*-kategori, ukuran, warna, harga jual, harga modal, stok tersedia, material, *finishing*, berat, deskripsi, status, dan tanggal dibuat/ *update*. 
 
-Total produk yang dianalisis sebanyak 50 produk dengan distribusi: 
+Total produk yang dianalisis sebanyak 50 produk dengan distribusi sebagai berikut:
 
-• Nomor Rumah Akrilik : 15 produk \(30%\) 
+**Tabel 2.1** Distribusi Produk Berdasarkan Kategori
 
-• Signage Akrilik : 10 produk \(20%\) 
+| **Kategori** | **Jumlah Produk** | **Persentase** |
+|--------------|-------------------|----------------|
+| Nomor Rumah Akrilik | 15 | 30% |
+| Signage Akrilik | 10 | 20% |
+| Papan Nama Akrilik | 10 | 20% |
+| Aksesoris Dekorasi | 15 | 30% |
+| **Total** | **50** | **100%** |
 
-• Papan Nama Akrilik : 10 produk \(20%\) 
-
-• Aksesoris Dekorasi : 15 produk \(30%\) 
+*Sumber: Data Master Produk SATRIAMART, 2025* 
 
 2. Data Transaksi Penjualan 
 
@@ -590,13 +658,18 @@ Total transaksi yang dianalisis sebanyak 320 transaksi selama 12 bulan dengan to
 
 Data pelanggan mencakup informasi demografis dan perilaku dari pelanggan SATRIAMART, meliputi ID pelanggan, nama lengkap, nomor telepon, *email*, alamat lengkap, kota, provinsi, kode pos, jenis pelanggan \(Individu/Bisnis/ *Reseller*\), segmen \(Retail/UMKM/Korporat\), tanggal registrasi, total transaksi, total nilai pembelian, status, dan sumber awal pelanggan. 
 
-Total pelanggan yang tercatat sebanyak 180 pelanggan dengan distribusi: 
+Total pelanggan yang tercatat sebanyak 180 pelanggan dengan distribusi sebagai berikut:
 
-• Individu/Retail : 108 pelanggan \(60%\) 
+**Tabel 2.2** Distribusi Pelanggan Berdasarkan Segmen
 
-• Bisnis/UMKM : 54 pelanggan \(30%\) 
+| **Segmen Pelanggan** | **Jumlah** | **Persentase** |
+|----------------------|------------|----------------|
+| Individu/Retail | 108 | 60% |
+| Bisnis/UMKM | 54 | 30% |
+| Reseller/Korporat | 18 | 10% |
+| **Total** | **180** | **100%** |
 
-• Reseller/Korporat : 18 pelanggan \(10%\) 
+*Sumber: Data Master Pelanggan SATRIAMART, 2025* 
 
 4. Data Riwayat Stok 
 
@@ -634,13 +707,19 @@ Data yang telah dikumpulkan kemudian diolah dan disimpan dalam format CSV untuk 
 
 **Proses ETL \(*Extract, Transform, Load*\)**
 
-Proses ETL merupakan tahapan fundamental dalam implementasi *Business Intelligence* yang terdiri dari tiga fase utama:
+Proses ETL merupakan tahapan fundamental dalam implementasi *Business Intelligence* yang terdiri dari tiga fase utama sebagaimana digambarkan pada Gambar 2.1:
 
 1. **Extract \(Ekstraksi\)**: Data mentah diekstrak dari berbagai sumber pencatatan internal SATRIAMART dan dikumpulkan dalam format CSV. Data mentah ini masih mengandung berbagai masalah kualitas data seperti *missing values*, format tidak konsisten, dan duplikasi.
 
 2. **Transform \(Transformasi\)**: Data mentah dibersihkan dan ditransformasi menggunakan kombinasi *Microsoft Excel* dan *Google Sheets* untuk memastikan konsistensi format, menangani nilai yang hilang, standarisasi kapitalisasi, dan membuat *calculated fields*. Proses transformasi menghasilkan data bersih yang siap untuk analisis.
 
-3. **Load \(Pemuatan\)**: Data hasil transformasi di-*upload* ke *Google Sheets* sebagai *data source* untuk *Looker Studio*. *Google Sheets* berfungsi sebagai *data warehouse* yang menyediakan koneksi *real-time* dengan *dashboard*. 
+3. **Load \(Pemuatan\)**: Data hasil transformasi di-*upload* ke *Google Sheets* sebagai *data source* untuk *Looker Studio*. *Google Sheets* berfungsi sebagai *data warehouse* yang menyediakan koneksi *real-time* dengan *dashboard*.
+
+*\[Gambar 2.1 Proses ETL \(Extract, Transform, Load\) akan ditampilkan di sini\]*
+
+Arsitektur lengkap sistem *Business Intelligence* SATRIAMART dapat dilihat pada Gambar 2.2.
+
+*\[Gambar 2.2 Arsitektur Dashboard Business Intelligence akan ditampilkan di sini\]* 
 
 ## **2.2.3. Kualitas Data dan Proses Pembersihan **
 
@@ -648,7 +727,25 @@ Kualitas data merupakan faktor kritis yang menentukan keakuratan analisis dan ke
 
 **Masalah Kualitas Data yang Ditemukan:**
 
-Masalah kualitas data yang teridentifikasi meliputi: *missing values* \(53%\), format tidak konsisten \(39%\), inkonsistensi kapitalisasi \(32%\), data tidak realistis \(11%\), dan duplikasi data \(3%\). Masalah-masalah ini tersebar di seluruh dataset dengan tingkat keparahan yang bervariasi, dimana file Master Produk memiliki persentase masalah tertinggi \(40%\) dan file Riwayat Stok memiliki persentase masalah terendah \(10%\).
+Masalah kualitas data yang teridentifikasi meliputi: *missing values* \(53%\), format tidak konsisten \(39%\), inkonsistensi kapitalisasi \(32%\), data tidak realistis \(11%\), dan duplikasi data \(3%\). Masalah-masalah ini tersebar di seluruh dataset dengan tingkat keparahan yang bervariasi, sebagaimana ditunjukkan pada Tabel 2.3.
+
+**Tabel 2.3** Distribusi Masalah Kualitas Data per File
+
+| **File** | **Total Baris** | **Jumlah Masalah** | **Persentase Masalah** |
+|----------|-----------------|-------------------|------------------------|
+| Master Produk | 20 | 8 | 40% |
+| Master Pelanggan | 20 | 7 | 35% |
+| Transaksi Penjualan | 20 | 3 | 15% |
+| Riwayat Stok | 40 | 4 | 10% |
+| Biaya Operasional | 30 | 6 | 20% |
+| Marketing Campaign | 28 | 10 | 36% |
+| **Total** | **158** | **38** | **24%** |
+
+*Sumber: Analisis Data Mentah SATRIAMART, 2025*
+
+Dari Tabel 2.3 dapat dilihat bahwa file Master Produk memiliki persentase masalah tertinggi \(40%\) dan file Riwayat Stok memiliki persentase masalah terendah \(10%\).
+
+*\[Gambar 2.3 Contoh Data Mentah dengan Masalah Kualitas Data akan ditampilkan di sini\]*
 
 **Metode Pembersihan Data:**
 
@@ -668,7 +765,23 @@ Proses pembersihan data dilakukan secara sistematis menggunakan pendekatan *data
 
 **Hasil Pembersihan:**
 
-Setelah proses pembersihan, kualitas data meningkat signifikan dari *data completeness* 87% menjadi 100%, format konsistensi dari 90% menjadi 100%, dan duplikasi berkurang dari 1 record menjadi 0. Data bersih kemudian disimpan dalam folder terpisah dan siap digunakan sebagai sumber data untuk *dashboard*. 2.2.4. *Transformasi * Data 
+Setelah proses pembersihan, kualitas data meningkat signifikan sebagaimana ditunjukkan pada Tabel 2.4.
+
+**Tabel 2.4** Perbandingan Kualitas Data Sebelum dan Sesudah Pembersihan
+
+| **Metrik Kualitas** | **Sebelum Pembersihan** | **Sesudah Pembersihan** |
+|---------------------|-------------------------|-------------------------|
+| Data Completeness | 87% | 100% |
+| Format Consistency | 90% | 100% |
+| Duplicate Records | 1 record | 0 record |
+| Data Accuracy | 96% | 100% |
+| Ready for Analysis | Tidak | Ya |
+
+*Sumber: Hasil Proses ETL, 2025*
+
+Dari Tabel 2.4 terlihat peningkatan signifikan pada semua metrik kualitas data. Data bersih kemudian disimpan dalam folder terpisah dan siap digunakan sebagai sumber data untuk *dashboard*.
+
+*\[Gambar 2.4 Contoh Data Bersih Setelah Proses Cleaning akan ditampilkan di sini\]* 2.2.4. *Transformasi * Data 
 
 Setelah data dibersihkan, dilakukan transformasi untuk memperkaya dataset dan memudahkan analisis. Proses transformasi yang dilakukan meliputi : 1. *Calculated Fields *
 
@@ -786,7 +899,27 @@ Identifikasi keputusan bisnis yang perlu didukung oleh *dashboard* :
 
 • Produk mana yang harus diprioritaskan untuk produksi? 
 
-• Saluran pemasaran mana yang paling efektif? 
+• Saluran pemasaran mana yang paling efektif?
+
+## **2.3.2. Identifikasi Key Performance Indicators \(KPI\)**
+
+Berdasarkan analisis kebutuhan pengguna, diidentifikasi KPI untuk setiap halaman *dashboard* sebagaimana ditunjukkan pada Tabel 2.5.
+
+**Tabel 2.5** Key Performance Indicators \(KPI\) per Dashboard
+
+| **Dashboard** | **KPI 1** | **KPI 2** | **KPI 3** | **KPI 4** |
+|---------------|-----------|-----------|-----------|-----------|
+| Executive | Total Revenue | Total Transactions | Avg Order Value | Total Customers |
+| Sales Analysis | Gross Sales | Net Sales | Total Discounts | Shipping Revenue |
+| Product Performance | Total Products | Inventory Value | Avg Profit Margin | Low Stock Items |
+| Customer Analysis | Total Customers | Avg Customer Value | Repeat Sales | Avg Rating |
+| Financial Analysis | Total Revenue | COGS | Gross Profit | Operational Costs |
+| Operations & Inventory | Total Stock In | Total Stock Out | Stock Turnover Rate | Net Stock Change |
+| Marketing Performance | Total Campaigns | Total Budget | Average ROI | Total Reach |
+
+*Sumber: Analisis Kebutuhan Pengguna, 2025*
+
+Tabel 2.5 menunjukkan bahwa setiap halaman *dashboard* memiliki 4 KPI utama yang relevan dengan tujuan analisis masing-masing halaman. 
 
 • Segmen pelanggan mana yang paling menguntungkan? 
 
@@ -982,7 +1115,11 @@ Pemilihan warna konsisten dengan identitas brand SATRIAMART:
 
 • Kelompokkan visualisasi terkait dengan warna latar belakang **2.3.5. *Implementasi *****di *Looker Studio***** **
 
-*Implementasi* *dashboard* dilakukan dengan langkah-langkah sebagai berikut : 
+*Implementasi* *dashboard* dilakukan dengan langkah-langkah sistematis sebagaimana ditampilkan pada Gambar 4.1.
+
+*\[Gambar 4.1 Alur Implementasi Dashboard di Looker Studio akan ditampilkan di sini\]*
+
+Langkah-langkah implementasi adalah sebagai berikut : 
 
 1. Pengaturan *Data Source* 
 
@@ -1018,6 +1155,10 @@ Pemilihan warna konsisten dengan identitas brand SATRIAMART:
 
 4. Kontrol Interaktif 
 
+Fitur interaktif yang diimplementasikan untuk meningkatkan eksplorasi data sebagaimana ditampilkan pada Gambar 3.8.
+
+*\[Gambar 3.8 Fitur Interaktif Dashboard akan ditampilkan di sini\]*
+
 • Pemilih rentang tanggal untuk *filter * periode 
 
 • *Filter dropdown* untuk kategori, saluran, status 
@@ -1049,6 +1190,10 @@ Pemilihan warna konsisten dengan identitas brand SATRIAMART:
 Tahap pengujian dan evaluasi dilakukan untuk memastikan dashboard memenuhi kebutuhan dan berfungsi dengan baik : 
 
 1. Pengujian Fungsional 
+
+Pengujian fungsional mencakup validasi fitur interaktif sebagaimana ditampilkan pada Gambar 3.9.
+
+*\[Gambar 3.9 Pengujian Fitur Drill-Down dan Cross-Filtering akan ditampilkan di sini\]*
 
 • Validasi akurasi data dan perhitungan 
 
@@ -1634,6 +1779,10 @@ Setiap halaman memiliki fokus analisis yang spesifik untuk mendukung pengambilan
 
 ## **3.3.1. SATRIAMART Business Intelligence Dashboard \(Executive Dashboard\) **
 
+Halaman pertama *dashboard* menyajikan gambaran menyeluruh tentang performa bisnis untuk manajemen puncak, sebagaimana ditampilkan pada Gambar 3.1.
+
+*\[Gambar 3.1 Executive Dashboard - Overview Bisnis akan ditampilkan di sini\]*
+
 Tujuan Halaman : Memberikan gambaran tingkat tinggi tentang performa bisnis secara keseluruhan untuk manajemen puncak. 
 
 Komponen Utama **: **
@@ -1697,7 +1846,26 @@ C. Top 10 Products by Revenue \(Tabel\)** **
 
 • Menampilkan 10 produk dengan pendapatan tertinggi
 • Kolom: Nama Produk, Kategori, Revenue, Units Sold, Avg Price
-• Membantu identifikasi produk *best-seller* untuk strategi *inventory* dan promosi 
+• Membantu identifikasi produk *best-seller* untuk strategi *inventory* dan promosi
+
+Komponen lengkap visualisasi Executive Dashboard dapat dilihat pada Tabel 3.1.
+
+**Tabel 3.1** Komponen Visualisasi Executive Dashboard
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Total Revenue | KPI Card | Monitoring pendapatan total |
+| Total Transactions | KPI Card | Monitoring volume transaksi |
+| Avg Order Value | KPI Card | Monitoring nilai rata-rata pesanan |
+| Total Customers | KPI Card | Monitoring basis pelanggan |
+| Revenue Trend | Line Chart | Analisis tren pendapatan |
+| Sales by Channel | Donut Chart | Distribusi saluran penjualan |
+| Category Performance | Donut Chart | Performa kategori produk |
+| Payment Methods | Horizontal Bar Chart | Preferensi metode pembayaran |
+| Order Status | Donut Chart | Status pesanan |
+| Top 10 Products | Table | Produk terlaris |
+
+*Sumber: Desain Dashboard, 2025* 
 
 
 
@@ -1732,6 +1900,10 @@ G. Catatan Desain **: **
 • Tata letak kisi 12-kolom untuk desain responsif 
 
 ## **3.3.2. Sales Analysis **
+
+Halaman kedua *dashboard* menyajikan analisis mendalam tentang performa penjualan, sebagaimana ditampilkan pada Gambar 3.2.
+
+*\[Gambar 3.2 Sales Analysis Dashboard akan ditampilkan di sini\]*
 
 Tujuan Halaman: Analisis mendalam tentang performa penjualan untuk monitoring dan optimasi strategi penjualan.
 
@@ -1771,9 +1943,29 @@ C. **Recent Transactions \(Tabel Detail\)**
 • Menampilkan transaksi terbaru dengan informasi lengkap
 • Kolom: Transaction ID, Date, Time, Customer, Product, Channel, Status, Total Amount
 • Fitur: Sortable, searchable, paginated untuk eksplorasi data detail
-• Membantu monitoring transaksi *real-time* dan identifikasi pola pembelian 
+• Membantu monitoring transaksi *real-time* dan identifikasi pola pembelian
+
+**Tabel 3.2** Komponen Visualisasi Sales Analysis
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Gross Sales | KPI Card | Monitoring penjualan kotor |
+| Net Sales | KPI Card | Monitoring penjualan bersih |
+| Total Discounts | KPI Card | Monitoring total diskon |
+| Shipping Revenue | KPI Card | Monitoring pendapatan pengiriman |
+| Channel Performance | Table | Analisis performa saluran |
+| Sales by Day of Week | Horizontal Bar Chart | Pola penjualan harian |
+| Monthly Sales Comparison | Combo Chart | Perbandingan penjualan bulanan |
+| Transaction Status | Stacked Bar Chart | Status transaksi |
+| Recent Transactions | Table | Transaksi terbaru |
+
+*Sumber: Desain Dashboard, 2025*
 
 ## **3.3.3. Product Performance **
+
+Halaman ketiga *dashboard* menyajikan analisis mendalam tentang performa produk, sebagaimana ditampilkan pada Gambar 3.3.
+
+*\[Gambar 3.3 Product Performance Dashboard akan ditampilkan di sini\]*
 
 Tujuan Halaman: Analisis mendalam tentang performa produk untuk manajemen *inventory* dan strategi produk.
 
@@ -1813,7 +2005,24 @@ B. **Stock Level \(Diagram Pie\)**
 
 C. **Product Catalog \(Tabel Detail\)**
 • Menampilkan katalog lengkap produk dengan informasi: Nama, Kategori, Sub-Kategori, Price, Cost, Margin %, Stocks
-• Fitur: Sortable, searchable, paginated 
+• Fitur: Sortable, searchable, paginated
+
+**Tabel 3.3** Komponen Visualisasi Product Performance
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Total Products | KPI Card | Monitoring jumlah produk aktif |
+| Inventory Value | KPI Card | Monitoring nilai inventory |
+| Avg Profit Margin | KPI Card | Monitoring margin keuntungan |
+| Low Stock Items | KPI Card | Monitoring produk stok rendah |
+| Category Analysis | Table with Bar Chart | Analisis performa kategori |
+| Top 10 Best Sellers | Horizontal Bar Chart | Produk terlaris |
+| Bottom 10 Slow Movers | Horizontal Bar Chart | Produk lambat terjual |
+| Price Range Distribution | Bar Chart | Distribusi rentang harga |
+| Stock Level | Pie Chart | Distribusi level stok |
+| Product Catalog | Table | Katalog produk lengkap |
+
+*Sumber: Desain Dashboard, 2025* 
 
 • Perputaran lebih tinggi = manajemen persediaan lebih baik C. Indikator Status Stok \( *Gauge*\)** **
 
@@ -1848,6 +2057,10 @@ C. **Product Catalog \(Tabel Detail\)**
 • "Kategori Nomor Rumah memiliki tingkat perputaran tertinggi" 
 
 ## **3.3.4. Customer Analysis **
+
+Halaman keempat *dashboard* menyajikan analisis karakteristik dan perilaku pelanggan, sebagaimana ditampilkan pada Gambar 3.4.
+
+*\[Gambar 3.4 Customer Analysis Dashboard akan ditampilkan di sini\]*
 
 Tujuan Halaman: Memahami karakteristik dan perilaku pelanggan untuk strategi *customer relationship management* yang lebih efektif.
 
@@ -1890,9 +2103,30 @@ C. **Top 20 Customers \(Tabel Detail\)**
 D. **Customer Database \(Tabel Lengkap\)**
 • Menampilkan database pelanggan lengkap dengan informasi detail
 • Kolom: Name, Email, Phone, City, Transactions, Total Spent, Avg Order
-• Fitur: Sortable, searchable, filterable untuk manajemen data pelanggan 
+• Fitur: Sortable, searchable, filterable untuk manajemen data pelanggan
+
+**Tabel 3.4** Komponen Visualisasi Customer Analysis
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Total Customers | KPI Card | Monitoring jumlah pelanggan |
+| Avg Customer Value | KPI Card | Monitoring nilai rata-rata pelanggan |
+| Repeat Sales | KPI Card | Monitoring pembelian berulang |
+| Avg Rating | KPI Card | Monitoring kepuasan pelanggan |
+| RFM Segmentation | Pie Chart | Segmentasi pelanggan |
+| Geographic Distribution | Table with Bar Chart | Distribusi geografis |
+| Customer Type Distribution | Donut Chart | Distribusi tipe pelanggan |
+| Source Channel Distribution | Horizontal Bar Chart | Distribusi sumber akuisisi |
+| Top 20 Customers | Table | Pelanggan bernilai tinggi |
+| Customer Database | Table | Database pelanggan lengkap |
+
+*Sumber: Desain Dashboard, 2025* 
 
 ## **3.3.5. Financial Analysis **
+
+Halaman kelima *dashboard* menyajikan analisis keuangan komprehensif, sebagaimana ditampilkan pada Gambar 3.5.
+
+*\[Gambar 3.5 Financial Analysis Dashboard akan ditampilkan di sini\]*
 
 Tujuan Halaman: Analisis keuangan komprehensif untuk monitoring profitabilitas dan kesehatan finansial bisnis.
 
@@ -1929,7 +2163,27 @@ C. **Expense Details \(Tabel\)**
 • Menampilkan detail pengeluaran: Date, Category, Sub-Category, Description, Amount
 • Fitur: Sortable, filterable, searchable
 
+**Tabel 3.5** Komponen Visualisasi Financial Analysis
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Total Revenue | KPI Card | Monitoring total pendapatan |
+| COGS | KPI Card | Monitoring biaya pokok penjualan |
+| Gross Profit | KPI Card | Monitoring laba kotor |
+| Operational Costs | KPI Card | Monitoring biaya operasional |
+| Revenue vs Profit Trend | Combo Chart | Tren pendapatan dan laba |
+| Gross Profit Margin Trend | Line Chart | Tren margin laba kotor |
+| Operational Costs Breakdown | Pie Chart | Komposisi biaya operasional |
+| Revenue Composition | Stacked Bar Chart | Komposisi pendapatan |
+| Expense Details | Table | Detail pengeluaran |
+
+*Sumber: Desain Dashboard, 2025*
+
 ## **3.3.6. Operations & Inventory Management **
+
+Halaman keenam *dashboard* menyajikan monitoring pergerakan stok dan efisiensi operasional, sebagaimana ditampilkan pada Gambar 3.6.
+
+*\[Gambar 3.6 Operations & Inventory Management Dashboard akan ditampilkan di sini\]*
 
 Tujuan Halaman: Monitoring pergerakan stok dan efisiensi operasional *warehouse*.
 
@@ -1966,7 +2220,27 @@ C. **Stock Movement History \(Tabel Detail\)**
 • Menampilkan riwayat pergerakan stok: Date, Product, Transaction Type, Stock In, Stock Out, Final Stock
 • Membantu audit dan tracking *inventory*
 
+**Tabel 3.6** Komponen Visualisasi Operations & Inventory Management
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Total Stock In | KPI Card | Monitoring stok masuk |
+| Total Stock Out | KPI Card | Monitoring stok keluar |
+| Stock Turnover Rate | KPI Card | Monitoring perputaran stok |
+| Net Stock Change | KPI Card | Monitoring perubahan stok |
+| Stock Movement Trend | Combo Chart | Tren pergerakan stok |
+| Transaction Type Distribution | Donut Chart | Distribusi jenis transaksi |
+| Stock Level by Category | Horizontal Bar Chart | Level stok per kategori |
+| Low Stock Alert Table | Table | Produk stok rendah |
+| Stock Movement History | Table | Riwayat pergerakan stok |
+
+*Sumber: Desain Dashboard, 2025*
+
 ## **3.3.7. Marketing Performance **
+
+Halaman ketujuh *dashboard* menyajikan evaluasi efektivitas kampanye pemasaran, sebagaimana ditampilkan pada Gambar 3.7.
+
+*\[Gambar 3.7 Marketing Performance Dashboard akan ditampilkan di sini\]*
 
 Tujuan Halaman: Evaluasi efektivitas kampanye pemasaran dan ROI untuk optimasi alokasi *budget*.
 
@@ -2003,6 +2277,22 @@ B. **Platform Performance \(Tabel\)**
 C. **Top Performing Campaigns \(Tabel Detail\)**
 • Menampilkan kampanye terbaik: Campaign Name, Platform, Start Date, End Date, Budget, Reach, Engagement, Conversion, Revenue, ROI
 • Membantu identifikasi *best practices* untuk kampanye future
+
+**Tabel 3.7** Komponen Visualisasi Marketing Performance
+
+| **Komponen** | **Jenis Visualisasi** | **Tujuan** |
+|--------------|----------------------|------------|
+| Total Campaigns | KPI Card | Monitoring jumlah kampanye |
+| Total Budget | KPI Card | Monitoring budget marketing |
+| Average ROI | KPI Card | Monitoring ROI rata-rata |
+| Total Reach | KPI Card | Monitoring jangkauan audiens |
+| Campaign ROI Comparison | Horizontal Bar Chart | Perbandingan ROI kampanye |
+| Platform by Budget | Pie Chart | Distribusi budget per platform |
+| Campaign Performance Over Time | Combo Chart | Tren performa kampanye |
+| Platform Performance | Table | Performa per platform |
+| Top Performing Campaigns | Table | Kampanye terbaik |
+
+*Sumber: Desain Dashboard, 2025*
 
 **Catatan**: 
 
@@ -2177,14 +2467,38 @@ Pemilihan jenis visualisasi yang tepat \(kartu skor, grafik garis, grafik batang
 
 4. Indikator Kinerja Utama \(KPI\)** **
 
-KPI yang berhasil diidentifikasi dan diintegrasikan dalam *dashboard* mencakup : 
+KPI yang berhasil diidentifikasi dan diintegrasikan dalam *dashboard* mencakup berbagai aspek bisnis sebagaimana ditampilkan pada Tabel 4.1.
 
-• **KPI Penjualan**: Total Revenue, Total Transactions, Average Order Value, dan Growth Rate untuk monitoring performa penjualan
-• **KPI Produk**: Total Products, Inventory Value, Average Profit Margin, dan Low Stock Items untuk manajemen produk
-• **KPI Pelanggan**: Total Customers, Repeat Purchase Rate, Customer Lifetime Value, dan Customer Segmentation untuk analisis pelanggan
-• **KPI Operasional**: Stock In/Out, Stock Turnover Rate, Fulfillment Rate, dan Order Completion Time untuk efisiensi operasional
-• **KPI Keuangan**: Total Revenue, COGS, Gross Profit, dan Operational Costs untuk monitoring kesehatan finansial
-• **KPI Marketing**: Total Campaigns, Marketing Budget, Average ROI, dan Total Reach untuk evaluasi efektivitas pemasaran 5. Dukungan Pengambilan Keputusan** **
+**Tabel 4.1** Ringkasan Indikator Kinerja Utama (KPI) Dashboard
+
+| **Kategori KPI** | **Indikator** | **Tujuan Monitoring** |
+|------------------|---------------|----------------------|
+| **KPI Penjualan** | Total Revenue | Monitoring performa penjualan |
+| | Total Transactions | Monitoring volume transaksi |
+| | Average Order Value | Monitoring nilai rata-rata pesanan |
+| | Growth Rate | Monitoring pertumbuhan bisnis |
+| **KPI Produk** | Total Products | Monitoring jumlah produk aktif |
+| | Inventory Value | Monitoring nilai inventory |
+| | Average Profit Margin | Monitoring margin keuntungan |
+| | Low Stock Items | Monitoring produk stok rendah |
+| **KPI Pelanggan** | Total Customers | Monitoring basis pelanggan |
+| | Repeat Purchase Rate | Monitoring pembelian berulang |
+| | Customer Lifetime Value | Monitoring nilai pelanggan |
+| | Customer Segmentation | Monitoring segmentasi pelanggan |
+| **KPI Operasional** | Stock In/Out | Monitoring pergerakan stok |
+| | Stock Turnover Rate | Monitoring perputaran stok |
+| | Fulfillment Rate | Monitoring tingkat pemenuhan |
+| | Order Completion Time | Monitoring waktu penyelesaian |
+| **KPI Keuangan** | Total Revenue | Monitoring pendapatan total |
+| | COGS | Monitoring biaya pokok penjualan |
+| | Gross Profit | Monitoring laba kotor |
+| | Operational Costs | Monitoring biaya operasional |
+| **KPI Marketing** | Total Campaigns | Monitoring jumlah kampanye |
+| | Marketing Budget | Monitoring budget marketing |
+| | Average ROI | Monitoring ROI rata-rata |
+| | Total Reach | Monitoring jangkauan audiens |
+
+*Sumber: Analisis Dashboard, 2025* 5. Dukungan Pengambilan Keputusan** **
 
 *Dashboard * terbukti dapat mendukung pengambilan keputusan bisnis di berbagai area : 
 
