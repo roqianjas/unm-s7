@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 6 - Landasan Teori Business Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'satria-primary': '#ee5d26',
+                        'satria-primary-light': '#ff7744',
+                        'satria-primary-dark': '#d44a15',
+                        'satria-secondary': '#a02d33',
+                        'satria-secondary-light': '#b83840',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    window.location.href = 'slide-05-metodologi.html';
+                } else if (e.key === 'ArrowRight') {
+                    window.location.href = 'slide-07-sumber-data.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header -->
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-satriamart.jpg" alt="SATRIAMART" class="h-16 rounded-lg opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-satria-secondary tracking-tight font-poppins">Business Intelligence</h1>
+            </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 6/15
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full grid grid-cols-2 gap-6">
+                <!-- Left Column -->
+                <div class="space-y-5">
+                    <!-- Definition -->
+                    <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white rounded-xl p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white/20 backdrop-blur-sm p-3 rounded-lg flex-shrink-0">
+                                <span class="iconify text-3xl" data-icon="mdi:book-open-variant"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-3">Definisi Business Intelligence</h3>
+                                <p class="text-sm opacity-95 leading-relaxed mb-3">
+                                    Seperangkat teknologi, aplikasi, dan praktik untuk pengumpulan, integrasi, analisis, dan presentasi informasi bisnis untuk mendukung pengambilan keputusan yang lebih baik.
+                                </p>
+                                <div class="text-xs opacity-80 italic">— Turban et al., 2021</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Komponen BI -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-satria-primary p-2 rounded-lg text-white">
+                                <span class="iconify text-2xl" data-icon="mdi:puzzle"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Komponen Utama BI</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 bg-gray-50 p-3 rounded-lg">
+                                <span class="iconify text-satria-primary text-xl mt-0.5" data-icon="mdi:database-check"></span>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm">Data Warehouse</div>
+                                    <div class="text-xs text-gray-600">Penyimpanan data terpusat</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-gray-50 p-3 rounded-lg">
+                                <span class="iconify text-satria-primary text-xl mt-0.5" data-icon="mdi:chart-areaspline"></span>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm">Analytics Tools</div>
+                                    <div class="text-xs text-gray-600">Alat analisis dan pemodelan data</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-gray-50 p-3 rounded-lg">
+                                <span class="iconify text-satria-primary text-xl mt-0.5" data-icon="mdi:monitor-dashboard"></span>
+                                <div>
+                                    <div class="font-semibold text-gray-900 text-sm">Dashboard & Reporting</div>
+                                    <div class="text-xs text-gray-600">Visualisasi dan pelaporan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Looker Studio -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="bg-satria-primary p-2 rounded-lg text-white">
+                                <span class="iconify text-2xl" data-icon="mdi:google"></span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900">Looker Studio</h3>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed mb-3">
+                            Platform BI berbasis cloud dari Google untuk membuat dashboard interaktif dengan mudah, gratis, dan mendukung integrasi berbagai sumber data.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="bg-satria-primary/10 text-satria-primary px-3 py-1 rounded-full text-xs font-medium">Cloud-based</span>
+                            <span class="bg-satria-primary/10 text-satria-primary px-3 py-1 rounded-full text-xs font-medium">Gratis</span>
+                            <span class="bg-satria-secondary/10 text-satria-secondary px-3 py-1 rounded-full text-xs font-medium">Kolaboratif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-5">
+                    <!-- Manfaat BI -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-satria-secondary p-2 rounded-lg text-white">
+                                <span class="iconify text-2xl" data-icon="mdi:star-circle"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Manfaat Business Intelligence</h3>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-satria-primary/10 border border-satria-primary/30 p-3 rounded-lg">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="iconify text-satria-primary" data-icon="mdi:speedometer"></span>
+                                    <span class="font-semibold text-sm text-gray-900">Keputusan Cepat</span>
+                                </div>
+                                <p class="text-xs text-gray-600">Informasi real-time untuk respons cepat</p>
+                            </div>
+                            <div class="bg-satria-secondary/10 border border-satria-secondary/30 p-3 rounded-lg">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="iconify text-satria-secondary" data-icon="mdi:bullseye-arrow"></span>
+                                    <span class="font-semibold text-sm text-gray-900">Akurasi Tinggi</span>
+                                </div>
+                                <p class="text-xs text-gray-600">Keputusan berbasis data faktual</p>
+                            </div>
+                            <div class="bg-satria-primary/10 border border-satria-primary/30 p-3 rounded-lg">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="iconify text-satria-primary" data-icon="mdi:chart-timeline-variant"></span>
+                                    <span class="font-semibold text-sm text-gray-900">Identifikasi Trend</span>
+                                </div>
+                                <p class="text-xs text-gray-600">Mendeteksi pola dan peluang</p>
+                            </div>
+                            <div class="bg-satria-secondary/10 border border-satria-secondary/30 p-3 rounded-lg">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="iconify text-satria-secondary" data-icon="mdi:account-group"></span>
+                                    <span class="font-semibold text-sm text-gray-900">Pemahaman Pelanggan</span>
+                                </div>
+                                <p class="text-xs text-gray-600">Insight perilaku konsumen</p>
+                            </div>
+                            <div class="bg-satria-primary/10 border border-satria-primary/30 p-3 rounded-lg">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="iconify text-satria-primary" data-icon="mdi:trending-up"></span>
+                                    <span class="font-semibold text-sm text-gray-900">Optimasi Operasi</span>
+                                </div>
+                                <p class="text-xs text-gray-600">Efisiensi proses bisnis</p>
+                            </div>
+                            <div class="bg-satria-secondary/10 border border-satria-secondary/30 p-3 rounded-lg">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="iconify text-satria-secondary" data-icon="mdi:cash-multiple"></span>
+                                    <span class="font-semibold text-sm text-gray-900">ROI Lebih Baik</span>
+                                </div>
+                                <p class="text-xs text-gray-600">Peningkatan profitabilitas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI Dashboard -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-satria-primary p-2 rounded-lg text-white">
+                                <span class="iconify text-2xl" data-icon="mdi:view-dashboard-variant"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Dashboard Interaktif</h3>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                            Alat visualisasi data yang menyajikan informasi penting dalam bentuk grafik, diagram, dan indikator kinerja yang mudah dipahami.
+                        </p>
+                        <div class="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-4">
+                            <div class="text-xs font-semibold text-gray-600 mb-2">Fitur Interaktif:</div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-satria-primary/10 text-satria-primary px-2 py-1 rounded text-xs font-medium">Filter Dinamis</span>
+                                <span class="bg-satria-primary/10 text-satria-primary px-2 py-1 rounded text-xs font-medium">Drill-down</span>
+                                <span class="bg-satria-primary/10 text-satria-primary px-2 py-1 rounded text-xs font-medium">Cross-filtering</span>
+                                <span class="bg-satria-primary/10 text-satria-primary px-2 py-1 rounded text-xs font-medium">Real-time Update</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Point -->
+                    <div class="bg-gradient-to-br from-satria-primary to-satria-primary-dark text-white rounded-xl p-5">
+                        <div class="flex items-start gap-3">
+                            <span class="iconify text-3xl mt-0.5" data-icon="mdi:information"></span>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Relevansi untuk UMKM</h4>
+                                <p class="text-sm opacity-95 leading-relaxed">
+                                    Teknologi BI kini dapat diakses oleh UMKM dengan biaya terjangkau melalui platform cloud, memungkinkan kompetisi setara dengan perusahaan besar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

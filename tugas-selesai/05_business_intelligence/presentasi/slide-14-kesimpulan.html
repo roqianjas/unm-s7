@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 14 - Kesimpulan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'satria-primary': '#ee5d26',
+                        'satria-primary-light': '#ff7744',
+                        'satria-primary-dark': '#d44a15',
+                        'satria-secondary': '#a02d33',
+                        'satria-secondary-light': '#b83840',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    window.location.href = 'slide-13-rekomendasi.html';
+                } else if (e.key === 'ArrowRight') {
+                    window.location.href = 'slide-15-penutup.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header -->
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-satriamart.jpg" alt="SATRIAMART" class="h-16 rounded-lg opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-satria-secondary tracking-tight font-poppins">Kesimpulan</h1>
+            </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 14/15
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-10">
+            <div class="w-full">
+                <!-- Main Conclusion -->
+                <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white rounded-xl p-8 mb-6">
+                    <div class="flex items-start gap-5">
+                        <div class="bg-white/20 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+                            <span class="iconify text-5xl" data-icon="mdi:check-decagram"></span>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-4 font-poppins">Kesimpulan Utama</h2>
+                            <p class="text-lg opacity-95 leading-relaxed mb-4">
+                                Dashboard Business Intelligence yang dikembangkan menggunakan Looker Studio berhasil memberikan solusi efektif untuk mendukung pengambilan keputusan bisnis pada SATRIAMART. 
+                                Penelitian ini membuktikan bahwa teknologi BI dapat diterapkan secara efektif pada perusahaan skala kecil dengan biaya terjangkau.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Conclusions -->
+                <div class="grid grid-cols-2 gap-6 mb-6">
+                    <!-- Conclusion 1 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-3 mb-3">
+                            <div class="bg-satria-primary text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold flex-shrink-0">
+                                1
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900">Dashboard Komprehensif Terbangun</h3>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Berhasil merancang 7 dashboard interaktif yang menyajikan informasi bisnis secara komprehensif melalui berbagai visualisasi (bar chart, line chart, pie chart, table, scorecard) dengan fitur filter dinamis, drill-down, dan real-time update.
+                        </p>
+                    </div>
+
+                    <!-- Conclusion 2 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-3 mb-3">
+                            <div class="bg-satria-secondary text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold flex-shrink-0">
+                                2
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900">KPI Teridentifikasi & Terukur</h3>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Mengidentifikasi 35+ KPI relevan yang terintegrasi dalam dashboard, mencakup metrik penjualan, produk, pelanggan, keuangan, operasional, dan marketing yang dapat dimonitor secara real-time.
+                        </p>
+                    </div>
+
+                    <!-- Conclusion 3 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-3 mb-3">
+                            <div class="bg-satria-primary text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold flex-shrink-0">
+                                3
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900">Wawasan Bisnis Bernilai</h3>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Analisis data menghasilkan insight penting seperti dominasi channel Instagram (45%), produk LED dengan margin tertinggi (48%), dan repeat purchase rate 38% yang menjadi dasar rekomendasi strategis.
+                        </p>
+                    </div>
+
+                    <!-- Conclusion 4 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-3 mb-3">
+                            <div class="bg-satria-secondary text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold flex-shrink-0">
+                                4
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900">Dampak Positif Terukur</h3>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            Implementasi dashboard memberikan manfaat nyata: efisiensi analisis data 95%, pengambilan keputusan 3x lebih cepat, revenue growth +32%, customer retention +25%, dan operational cost -18%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Research Contribution -->
+                <div class="grid grid-cols-3 gap-5">
+                    <div class="bg-gradient-to-br from-satria-secondary to-satria-secondary-light text-white rounded-xl p-5 text-center">
+                        <span class="iconify text-4xl mb-2" data-icon="mdi:school"></span>
+                        <h4 class="font-bold mb-2">Kontribusi Akademis</h4>
+                        <p class="text-xs opacity-90">Referensi implementasi BI untuk penelitian UMKM</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-satria-primary to-satria-primary-light text-white rounded-xl p-5 text-center">
+                        <span class="iconify text-4xl mb-2" data-icon="mdi:office-building"></span>
+                        <h4 class="font-bold mb-2">Kontribusi Praktis</h4>
+                        <p class="text-xs opacity-90">Model implementasi BI terjangkau untuk UMKM</p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white rounded-xl p-5 text-center">
+                        <span class="iconify text-4xl mb-2" data-icon="mdi:finance"></span>
+                        <h4 class="font-bold mb-2">Kontribusi Bisnis</h4>
+                        <p class="text-xs opacity-90">Peningkatan performa bisnis SATRIAMART</p>
+                    </div>
+                </div>
+
+                <!-- Final Statement -->
+                <div class="mt-6 bg-gray-50 border border-gray-200 rounded-xl p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="iconify text-4xl text-satria-primary" data-icon="mdi:lightbulb-on-outline"></span>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900 mb-2">Catatan Penting</h4>
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Keberhasilan implementasi Business Intelligence tidak hanya bergantung pada teknologi, tetapi juga pada komitmen manajemen untuk menggunakan data dalam pengambilan keputusan strategis. 
+                                Dashboard yang telah dibangun perlu diupdate secara berkala dan disesuaikan dengan perkembangan kebutuhan bisnis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

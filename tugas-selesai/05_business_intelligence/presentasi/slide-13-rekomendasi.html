@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 13 - Rekomendasi Strategis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'satria-primary': '#ee5d26',
+                        'satria-primary-light': '#ff7744',
+                        'satria-primary-dark': '#d44a15',
+                        'satria-secondary': '#a02d33',
+                        'satria-secondary-light': '#b83840',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    window.location.href = 'slide-12-manfaat.html';
+                } else if (e.key === 'ArrowRight') {
+                    window.location.href = 'slide-14-kesimpulan.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header -->
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-satriamart.jpg" alt="SATRIAMART" class="h-16 rounded-lg opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-satria-secondary tracking-tight font-poppins">Rekomendasi Strategis</h1>
+            </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 13/15
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full">
+                <div class="text-center mb-6">
+                    <div class="inline-flex items-center gap-2 bg-satria-primary/10 text-satria-primary px-4 py-2 rounded-full text-sm font-semibold mb-2">
+                        <span class="iconify" data-icon="mdi:lightbulb-on"></span>
+                        Rekomendasi Berdasarkan Analisis Data
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Strategi untuk Meningkatkan Performa Bisnis</h2>
+                </div>
+
+                <!-- Recommendations Grid -->
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Product Strategy -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white p-3 rounded-xl flex-shrink-0">
+                                <span class="iconify text-3xl" data-icon="mdi:package-variant"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Strategi Produk</h3>
+                                <p class="text-sm text-gray-600">Optimasi portfolio produk</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-orange-50 border-l-4 border-satria-primary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Fokus pada Produk LED Premium</div>
+                                <p class="text-xs text-gray-700">Tingkatkan produksi produk LED dengan margin tinggi (48%). Target 25% dari total produksi.</p>
+                            </div>
+                            <div class="bg-orange-50 border-l-4 border-satria-primary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Diversifikasi Kategori Signage</div>
+                                <p class="text-xs text-gray-700">Kembangkan varian signage komersial untuk segmen B2B yang sedang tumbuh.</p>
+                            </div>
+                            <div class="bg-orange-50 border-l-4 border-satria-primary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Bundle Package untuk Volume</div>
+                                <p class="text-xs text-gray-700">Buat paket bundling untuk meningkatkan AOV dari Rp 182k ke Rp 250k.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Strategy -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white p-3 rounded-xl flex-shrink-0">
+                                <span class="iconify text-3xl" data-icon="mdi:bullhorn"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Strategi Marketing</h3>
+                                <p class="text-sm text-gray-600">Optimasi kampanye pemasaran</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 border-l-4 border-satria-secondary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Maksimalkan Instagram Marketing</div>
+                                <p class="text-xs text-gray-700">Tingkatkan budget Instagram Ads 35% karena ROI tertinggi (425%).</p>
+                            </div>
+                            <div class="bg-red-50 border-l-4 border-satria-secondary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Content Marketing Berbasis Video</div>
+                                <p class="text-xs text-gray-700">Produksi video showcase produk untuk meningkatkan engagement rate.</p>
+                            </div>
+                            <div class="bg-red-50 border-l-4 border-satria-secondary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Influencer Collaboration</div>
+                                <p class="text-xs text-gray-700">Partnership dengan micro-influencer home decor untuk brand awareness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Strategy -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white p-3 rounded-xl flex-shrink-0">
+                                <span class="iconify text-3xl" data-icon="mdi:account-group"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Strategi Pelanggan</h3>
+                                <p class="text-sm text-gray-600">Customer retention & acquisition</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-orange-50 border-l-4 border-satria-primary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Program Loyalitas B2C</div>
+                                <p class="text-xs text-gray-700">Buat point reward system untuk meningkatkan repeat purchase dari 38% ke 50%.</p>
+                            </div>
+                            <div class="bg-orange-50 border-l-4 border-satria-primary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Ekspansi Segmen Korporat</div>
+                                <p class="text-xs text-gray-700">Fokus akuisisi B2B dengan dedicated sales team dan special pricing.</p>
+                            </div>
+                            <div class="bg-orange-50 border-l-4 border-satria-primary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Personalized Marketing</div>
+                                <p class="text-xs text-gray-700">Gunakan data RFM untuk targeted email campaign dan special offers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Operational Strategy -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="bg-gradient-to-br from-satria-secondary to-satria-primary text-white p-3 rounded-xl flex-shrink-0">
+                                <span class="iconify text-3xl" data-icon="mdi:cog"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Strategi Operasional</h3>
+                                <p class="text-sm text-gray-600">Efisiensi proses bisnis</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 border-l-4 border-satria-secondary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Inventory Management System</div>
+                                <p class="text-xs text-gray-700">Implementasi automatic reorder point untuk produk fast-moving.</p>
+                            </div>
+                            <div class="bg-red-50 border-l-4 border-satria-secondary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Optimasi Lead Time</div>
+                                <p class="text-xs text-gray-700">Kurangi waktu produksi 20% dengan standardisasi proses.</p>
+                            </div>
+                            <div class="bg-red-50 border-l-4 border-satria-secondary p-3 rounded">
+                                <div class="font-semibold text-sm text-gray-900 mb-1">Supplier Diversification</div>
+                                <p class="text-xs text-gray-700">Tambah 2-3 supplier material untuk mitigasi risiko supply chain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Priority Actions -->
+                <div class="mt-6 bg-gradient-to-br from-satria-secondary to-satria-primary text-white rounded-xl p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="iconify text-4xl" data-icon="mdi:alert-decagram"></span>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-bold mb-3">Quick Wins - Aksi Prioritas</h4>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-3">
+                                    <div class="font-semibold mb-1">Bulan 1-2</div>
+                                    <div class="text-sm opacity-95">Intensifkan Instagram Ads & Launch loyalty program</div>
+                                </div>
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-3">
+                                    <div class="font-semibold mb-1">Bulan 3-4</div>
+                                    <div class="text-sm opacity-95">Develop produk LED baru & B2B outreach campaign</div>
+                                </div>
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-3">
+                                    <div class="font-semibold mb-1">Bulan 5-6</div>
+                                    <div class="text-sm opacity-95">Implementasi inventory system & evaluasi hasil</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
