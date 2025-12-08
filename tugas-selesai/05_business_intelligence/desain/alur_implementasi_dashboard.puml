@@ -1,0 +1,105 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 10
+
+title Gambar 2.4\nAlur Implementasi Dashboard Business Intelligence SATRIAMART 2025
+
+start
+:TAHAP 1: PERENCANAAN
+----
+Identifikasi Kebutuhan Bisnis;
+
+:Penentuan Key Performance Indicators (KPI);
+
+:Identifikasi Sumber Data;
+
+:TAHAP 2: PENGUMPULAN DATA
+----
+Ekstraksi Data dari Sistem Internal;
+
+if (Data Lengkap?) then (Ya)
+else (Tidak)
+  :Pengumpulan Data Tambahan;
+endif
+
+:TAHAP 3: TRANSFORMASI DATA
+----
+Pembersihan Data (Data Cleaning);
+
+:Transformasi Data;
+
+:Validasi Kualitas Data;
+
+if (Kualitas Data OK?) then (Ya)
+else (Tidak)
+  backward:Perbaikan Data;
+endif
+
+:TAHAP 4: PERSIAPAN DATA SOURCE
+----
+Upload Data ke Google Sheets;
+
+:Konfigurasi Data Source di Looker Studio;
+
+:TAHAP 5: PERANCANGAN DASHBOARD
+----
+Perancangan Layout Dashboard
+(7 Halaman);
+
+:Pemilihan Jenis Visualisasi;
+
+:TAHAP 6: IMPLEMENTASI
+----
+Pembuatan Dashboard:
+- Executive Summary
+- Sales Analysis
+- Product Performance
+- Customer Analysis
+- Operational Metrics
+- Financial Analysis
+- Marketing Performance;
+
+:TAHAP 7: KONFIGURASI INTERAKTIVITAS
+----
+Implementasi Filter & Controls;
+
+:Konfigurasi Drill-down;
+
+:TAHAP 8: PENGUJIAN
+----
+Pengujian Fungsionalitas;
+
+:Validasi Data & Akurasi;
+
+if (Dashboard Valid?) then (Ya)
+else (Tidak)
+  backward:Perbaikan Dashboard;
+endif
+
+:TAHAP 9: DOKUMENTASI
+----
+Pembuatan User Guide;
+
+:Dokumentasi Teknis;
+
+:TAHAP 10: DEPLOYMENT
+----
+Konfigurasi Akses & Sharing;
+
+:Pelatihan Pengguna;
+
+:Go Live Dashboard;
+
+:TAHAP 11: MONITORING & MAINTENANCE
+----
+Monitoring Penggunaan Dashboard;
+
+:Pembaruan Data Berkala;
+
+:Evaluasi & Perbaikan;
+
+stop
+
+@enduml
