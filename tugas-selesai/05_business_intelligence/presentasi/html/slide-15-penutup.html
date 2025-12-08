@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 15 - Penutup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'satria-primary': '#ee5d26',
+                        'satria-primary-light': '#ff7744',
+                        'satria-primary-dark': '#d44a15',
+                        'satria-secondary': '#a02d33',
+                        'satria-secondary-light': '#b83840',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    window.location.href = 'slide-14-kesimpulan.html';
+                } else if (e.key === 'ArrowRight') {
+                    window.location.href = 'slide-01-cover.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Main Content -->
+        <div class="flex-1 flex items-center justify-center px-20 py-16">
+            <div class="w-full max-w-5xl text-center space-y-10">
+                <!-- Thank You Message -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-satria-primary/10 text-satria-primary px-6 py-3 rounded-full text-lg font-semibold mb-4">
+                        <span class="iconify" data-icon="mdi:presentation"></span>
+                        Akhir Presentasi
+                    </div>
+                    
+                    <h1 class="text-7xl font-bold text-satria-secondary mb-6 font-poppins">
+                        Terima Kasih
+                    </h1>
+                    
+                    <p class="text-3xl text-gray-700 font-medium">
+                        Business Intelligence Dashboard SATRIAMART
+                    </p>
+
+                    <!-- Decorative Line -->
+                    <div class="flex items-center justify-center gap-4 my-8">
+                        <div class="h-px w-32 bg-gradient-to-r from-transparent to-satria-primary"></div>
+                        <div class="w-3 h-3 rounded-full bg-satria-primary"></div>
+                        <div class="h-px w-32 bg-gradient-to-l from-transparent to-satria-primary"></div>
+                    </div>
+                </div>
+
+                <!-- Team Info -->
+                <div class="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 inline-block">
+                    <p class="text-gray-900 text-lg font-semibold mb-6">Disusun Oleh:</p>
+                    <div class="grid grid-cols-3 gap-10">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-satria-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+                                R
+                            </div>
+                            <p class="text-xl font-bold text-gray-900">Roki Anjas</p>
+                            <p class="text-gray-600">11250066</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-satria-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+                                F
+                            </div>
+                            <p class="text-xl font-bold text-gray-900">Fahruroji</p>
+                            <p class="text-gray-600">11250085</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-satria-primary text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+                                S
+                            </div>
+                            <p class="text-xl font-bold text-gray-900">Susanto</p>
+                            <p class="text-gray-600">11250068</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University Info -->
+                <div class="space-y-3">
+                    <p class="text-xl font-semibold text-gray-900">Kelas 11.7C.12</p>
+                    <p class="text-xl font-semibold text-gray-900">Program Studi Informatika</p>
+                    <p class="text-2xl font-bold text-satria-secondary">Universitas Nusa Mandiri</p>
+                    <p class="text-lg text-gray-700 mt-4">Jakarta, 2025</p>
+                </div>
+
+                <!-- Q&A Section -->
+                <div class="mt-12 bg-gradient-to-br from-satria-primary to-satria-primary-dark text-white rounded-2xl p-8">
+                    <div class="flex items-center justify-center gap-4 mb-4">
+                        <div class="flex justify-center">
+                            <span class="iconify text-5xl" data-icon="mdi:help-circle-outline"></span>
+                        </div>
+                        <h3 class="text-3xl font-bold font-poppins">Sesi Tanya Jawab</h3>
+                    </div>
+                    <p class="text-white/90 text-lg">
+                        Silakan ajukan pertanyaan Anda
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

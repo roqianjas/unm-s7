@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 8 - Proses ETL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'satria-primary': '#ee5d26',
+                        'satria-primary-light': '#ff7744',
+                        'satria-primary-dark': '#d44a15',
+                        'satria-secondary': '#a02d33',
+                        'satria-secondary-light': '#b83840',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    window.location.href = 'slide-07-sumber-data.html';
+                } else if (e.key === 'ArrowRight') {
+                    window.location.href = 'slide-09-kpi-dashboard.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header -->
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-satriamart.jpg" alt="SATRIAMART" class="h-16 rounded-lg opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-satria-secondary tracking-tight font-poppins">Proses ETL</h1>
+            </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 8/15
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-8">
+            <div class="w-full">
+                <!-- ETL Definition -->
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Extract - Transform - Load</h2>
+                    <p class="text-gray-600">Proses pembersihan dan transformasi data untuk kualitas data optimal</p>
+                </div>
+
+                <!-- ETL Process Flow -->
+                <div class="grid grid-cols-3 gap-6 mb-6">
+                    <!-- Extract -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="bg-satria-secondary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto">
+                            <span class="iconify" data-icon="mdi:database-export"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">1. EXTRACT</h3>
+                        <p class="text-sm text-gray-700 text-center mb-4">Ekstraksi data mentah dari berbagai sumber</p>
+                        <div class="space-y-2">
+                            <div class="bg-satria-secondary/10 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> 6 file CSV mentah
+                            </div>
+                            <div class="bg-satria-secondary/10 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Data transaksi manual
+                            </div>
+                            <div class="bg-satria-secondary/10 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Spreadsheet operasional
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transform -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="bg-satria-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto">
+                            <span class="iconify" data-icon="mdi:cog-refresh"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">2. TRANSFORM</h3>
+                        <p class="text-sm text-gray-700 text-center mb-4">Pembersihan dan transformasi data</p>
+                        <div class="space-y-2">
+                            <div class="bg-orange-50 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Hapus data duplikat
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Standarisasi format
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Validasi nilai
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Normalisasi data
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6">
+                        <div class="bg-satria-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-4 mx-auto">
+                            <span class="iconify" data-icon="mdi:database-import"></span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">3. LOAD</h3>
+                        <p class="text-sm text-gray-700 text-center mb-4">Memuat data bersih ke dashboard</p>
+                        <div class="space-y-2">
+                            <div class="bg-satria-primary/10 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Upload ke Google Sheets
+                            </div>
+                            <div class="bg-satria-primary/10 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Koneksi ke Looker Studio
+                            </div>
+                            <div class="bg-satria-primary/10 p-2 rounded text-xs text-gray-700">
+                                <span class="font-semibold">✓</span> Data siap divisualisasi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Quality Issues & Solutions -->
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Issues Found -->
+                    <div class="bg-red-50 border-2 border-red-300 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-red-500 text-white p-2 rounded-lg">
+                                <span class="iconify text-2xl" data-icon="mdi:alert-circle"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Masalah Kualitas Data</h3>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span class="text-gray-700">Data duplikat (15 record)</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span class="text-gray-700">Missing values (8% data)</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span class="text-gray-700">Format tanggal tidak konsisten</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span class="text-gray-700">Inkonsistensi penulisan kategori</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-red-600 font-bold">•</span>
+                                <span class="text-gray-700">Nilai outlier pada harga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Applied -->
+                    <div class="bg-satria-primary/10 border border-satria-primary/30 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-satria-primary text-white p-2 rounded-lg">
+                                <span class="iconify text-2xl" data-icon="mdi:check-circle"></span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Solusi yang Diterapkan</h3>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-satria-primary font-bold">✓</span>
+                                <span class="text-gray-700">Hapus duplikat berdasarkan ID unik</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-satria-primary font-bold">✓</span>
+                                <span class="text-gray-700">Imputasi nilai kosong dengan median/mode</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-satria-primary font-bold">✓</span>
+                                <span class="text-gray-700">Standarisasi format YYYY-MM-DD</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-satria-primary font-bold">✓</span>
+                                <span class="text-gray-700">Normalisasi nama kategori</span>
+                            </div>
+                            <div class="flex items-start gap-2 text-sm">
+                                <span class="text-satria-primary font-bold">✓</span>
+                                <span class="text-gray-700">Validasi range harga 10k-500k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Summary -->
+                <div class="mt-6 bg-gradient-to-br from-satria-secondary to-satria-primary text-white rounded-xl p-5">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <span class="iconify text-4xl" data-icon="mdi:check-decagram"></span>
+                            <div>
+                                <h4 class="text-xl font-bold">Hasil Proses ETL</h4>
+                                <p class="text-sm opacity-90">Data berkualitas tinggi siap untuk analisis</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-3xl font-bold">98%</div>
+                                <div class="text-xs opacity-90">Data Validity</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">100%</div>
+                                <div class="text-xs opacity-90">Completeness</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">0</div>
+                                <div class="text-xs opacity-90">Duplicates</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 3 - Rumusan Masalah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'satria-primary': '#ee5d26',
+                        'satria-primary-light': '#ff7744',
+                        'satria-primary-dark': '#d44a15',
+                        'satria-secondary': '#a02d33',
+                        'satria-secondary-light': '#b83840',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    window.location.href = 'slide-02-latar-belakang.html';
+                } else if (e.key === 'ArrowRight') {
+                    window.location.href = 'slide-04-tujuan.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header -->
+        <div class="px-20 py-10 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <img src="assets/img/logo-satriamart.jpg" alt="SATRIAMART" class="h-16 rounded-lg opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[40px] font-semibold text-satria-secondary tracking-tight font-poppins">Rumusan Masalah</h1>
+            </div>
+            <div class="bg-gray-100 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium">
+                Slide 3/15
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex items-center px-20 py-12">
+            <div class="w-full max-w-6xl mx-auto">
+                <!-- Intro -->
+                <div class="text-center mb-10">
+                    <div class="inline-flex items-center gap-2 bg-satria-primary/10 text-satria-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <span class="iconify" data-icon="mdi:help-circle"></span>
+                        Pertanyaan Penelitian
+                    </div>
+                    <p class="text-gray-600 text-lg">Lima pertanyaan utama yang akan dijawab dalam penelitian ini</p>
+                </div>
+
+                <!-- Problem Grid -->
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Problem 1 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-satria-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Perancangan Dashboard</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Bagaimana merancang <span class="font-semibold text-satria-primary">dashboard Business Intelligence interaktif</span> yang sesuai dengan kebutuhan bisnis SATRIAMART?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 2 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-satria-secondary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Visualisasi Data</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Visualisasi data apa saja yang efektif untuk menyajikan informasi <span class="font-semibold text-satria-secondary">penjualan, produk, pelanggan, dan keuangan</span> SATRIAMART?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 3 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-satria-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Wawasan Bisnis</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Wawasan bisnis apa yang dapat dihasilkan dari <span class="font-semibold text-satria-primary">analisis data SATRIAMART</span> menggunakan dashboard Business Intelligence?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 4 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-satria-secondary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Dukungan Keputusan</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Bagaimana implementasi dashboard Business Intelligence dapat <span class="font-semibold text-satria-secondary">mendukung pengambilan keputusan bisnis</span> pada SATRIAMART?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Problem 5 - Spanning 2 columns -->
+                    <div class="col-span-2 bg-gradient-to-br from-satria-secondary to-satria-primary text-white rounded-xl p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white/20 backdrop-blur-sm w-12 h-12 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Rekomendasi Strategis</h3>
+                                <p class="text-lg opacity-95 leading-relaxed">
+                                    Apa rekomendasi strategis yang dapat diberikan berdasarkan hasil analisis data untuk <span class="font-bold">meningkatkan performa bisnis SATRIAMART</span>?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
