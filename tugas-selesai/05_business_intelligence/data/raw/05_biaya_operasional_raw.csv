@@ -1,31 +1,31 @@
 id_biaya,tanggal,kategori_biaya,sub_kategori,deskripsi,nominal,metode_pembayaran,status,catatan
-BYA001,2024-11-01,Bahan Baku,Akrilik,Pembelian lembaran akrilik 3mm,2500000,Transfer Bank,Lunas,Supplier A
-BYA002,01/11/2024,Bahan Baku,Cat,Pembelian cat semprot berbagai warna,850000,Transfer Bank,Lunas,Supplier B
-BYA003,2024-11-01,Utilitas,Listrik,Tagihan listrik bulan Oktober 2024,1250000,Transfer Bank,Lunas,PLN
-BYA004,2024-11-01,Utilitas,Air,Tagihan air bulan Oktober 2024,150000,Transfer Bank,Lunas,PDAM
-BYA005,2024-11-05,Gaji,Gaji Karyawan,Gaji 2 karyawan produksi,6000000,Transfer Bank,Lunas,Bulan November
-BYA006,2024-11-05,Gaji,Gaji Karyawan,Gaji 1 karyawan admin,3000000,Transfer Bank,Lunas,Bulan November
-BYA007,2024-11-08,Peralatan,Mesin Laser,Service mesin laser cutting,1500000,Transfer Bank,Lunas,Service rutin
-BYA008,2024-11-10,Marketing,Iklan Digital,Biaya iklan Instagram & Facebook,750000,E-Wallet,Lunas,Campaign November
-BYA009,2024-11-12,Bahan Baku,LED,Pembelian LED strip untuk produk,1200000,Transfer Bank,Lunas,Supplier C
-BYA010,2024-11-15,Operasional,Packaging,Pembelian bubble wrap dan kardus,450000,Cash,Lunas,Toko lokal
-BYA011,2024-11-15,Operasional,Transportasi,Bensin dan tol pengiriman,300000,Cash,Lunas,
-BYA012,2024-11-18,Bahan Baku,Lem,Pembelian lem akrilik khusus,350000,Transfer Bank,Lunas,Supplier A
-BYA013,2024-11-20,Utilitas,Internet,Tagihan internet bulan November,400000,Transfer Bank,Lunas,Provider XYZ
-BYA014,2024-11-22,Marketing,Konten Kreator,Fee fotografer produk,1000000,Transfer Bank,Lunas,Freelancer
-BYA015,2024-11-25,Peralatan,Alat Potong,Pembelian mata pisau baru,250000,Cash,Lunas,Toko alat
-BYA016,2024-11-28,Operasional,ATK,Pembelian alat tulis kantor,150000,Cash,Lunas,
-BYA017,2024-12-01,Bahan Baku,Akrilik,Pembelian lembaran akrilik 5mm,3200000,Transfer Bank,Lunas,Supplier A
-BYA018,01/12/2024,Bahan Baku,Cat,Pembelian cat semprot metalik,950000,Transfer Bank,Lunas,Supplier B
-BYA019,2024-12-01,Utilitas,Listrik,Tagihan listrik bulan November 2024,1350000,Transfer Bank,Lunas,PLN
-BYA020,2024-12-01,Utilitas,Air,Tagihan air bulan November 2024,,Transfer Bank,Lunas,PDAM
-BYA021,2024-12-05,Gaji,Gaji Karyawan,Gaji 2 karyawan produksi,6000000,Transfer Bank,Lunas,Bulan Desember
-BYA022,2024-12-05,Gaji,Gaji Karyawan,Gaji 1 karyawan admin,3000000,Transfer Bank,Lunas,Bulan Desember
-BYA023,2024-12-08,Marketing,Iklan Digital,Biaya iklan Instagram & Facebook,850000,E-Wallet,Lunas,Campaign Desember
-BYA024,2024-12-10,Bahan Baku,Aksesoris,Pembelian mekanisme jam dinding,800000,Transfer Bank,Lunas,Supplier D
-BYA025,2024-12-12,Operasional,Packaging,Pembelian bubble wrap dan kardus,500000,Cash,Lunas,Toko lokal
-BYA026,2024-12-15,Operasional,Transportasi,Bensin dan tol pengiriman,350000,Cash,Lunas,
-BYA027,2024-12-18,Peralatan,Maintenance,Service kompresor cat,750000,Transfer Bank,Lunas,Teknisi
-BYA028,2024-12-20,Utilitas,Internet,Tagihan internet bulan Desember,400000,Transfer Bank,Lunas,Provider XYZ
-BYA029,2024-12-22,Marketing,Promosi,Biaya pembuatan banner promosi,600000,Transfer Bank,Lunas,Percetakan
-BYA030,2024-12-25,Bahan Baku,Lem,Pembelian lem akrilik khusus,400000,Transfer Bank,Lunas,Supplier A
+BYA001,2025-01-01,Bahan Baku,Akrilik,Pembelian lembaran akrilik 3mm,2500000,Transfer Bank,Lunas,Supplier A
+BYA002,2025-01-02,Bahan Baku,Cat,Pembelian cat semprot berbagai warna,850000,Transfer Bank,Lunas,Supplier B
+BYA003,2025-01-03,Utilitas,Listrik,Tagihan listrik bulan Desember 2025,1250000,Transfer Bank,Lunas,PLN
+BYA004,2025-01-04,Utilitas,Air,Tagihan air bulan Desember 2025,150000,Transfer Bank,Lunas,PDAM
+BYA005,2025-01-05,Gaji,Gaji Karyawan,Gaji 2 karyawan produksi,6000000,Transfer Bank,Lunas,Bulan Januari
+BYA006,2025-01-06,Gaji,Gaji Karyawan,Gaji 1 karyawan admin,3000000,Transfer Bank,Lunas,Bulan Januari
+BYA007,2025-01-08,Peralatan,Mesin Laser,Service mesin laser cutting,1500000,Transfer Bank,Lunas,Service rutin
+BYA008,2025-01-10,Marketing,Iklan Digital,Biaya iklan Instagram & Facebook,750000,E-Wallet,Lunas,Campaign Januari
+BYA009,2025-01-12,Bahan Baku,LED,Pembelian LED strip untuk produk,1200000,Transfer Bank,Lunas,Supplier C
+BYA010,2025-01-15,Operasional,Packaging,Pembelian bubble wrap dan kardus,450000,Cash,Lunas,Toko lokal
+BYA011,2025-01-16,Operasional,Transportasi,Bensin dan tol pengiriman,300000,Cash,Lunas,
+BYA012,2025-01-18,Bahan Baku,Lem,Pembelian lem akrilik khusus,350000,Transfer Bank,Lunas,Supplier A
+BYA013,2025-01-20,Utilitas,Internet,Tagihan internet bulan Januari,400000,Transfer Bank,Lunas,Provider XYZ
+BYA014,2025-01-22,Marketing,Konten Kreator,Fee fotografer produk,1000000,Transfer Bank,Lunas,Freelancer
+BYA015,2025-01-25,Peralatan,Alat Potong,Pembelian mata pisau baru,250000,Cash,Lunas,Toko alat
+BYA016,2025-01-28,Operasional,ATK,Pembelian alat tulis kantor,150000,Cash,Lunas,
+BYA017,2025-02-01,Bahan Baku,Akrilik,Pembelian lembaran akrilik 5mm,3200000,Transfer Bank,Lunas,Supplier A
+BYA018,2025-02-02,Bahan Baku,Cat,Pembelian cat semprot metalik,950000,Transfer Bank,Lunas,Supplier B
+BYA019,2025-02-03,Utilitas,Listrik,Tagihan listrik bulan Januari 2026,1350000,Transfer Bank,Lunas,PLN
+BYA020,2025-02-04,Utilitas,Air,Tagihan air bulan Januari 2026,160000,Transfer Bank,Lunas,PDAM
+BYA021,2025-02-05,Gaji,Gaji Karyawan,Gaji 2 karyawan produksi,6000000,Transfer Bank,Lunas,Bulan Februari
+BYA022,2025-02-06,Gaji,Gaji Karyawan,Gaji 1 karyawan admin,3000000,Transfer Bank,Lunas,Bulan Februari
+BYA023,2025-02-08,Marketing,Iklan Digital,Biaya iklan Instagram & Facebook,850000,E-Wallet,Lunas,Campaign Februari
+BYA024,2025-02-10,Bahan Baku,Aksesoris,Pembelian mekanisme jam dinding,800000,Transfer Bank,Lunas,Supplier D
+BYA025,2025-02-12,Operasional,Packaging,Pembelian bubble wrap dan kardus,500000,Cash,Lunas,Toko lokal
+BYA026,2025-02-15,Operasional,Transportasi,Bensin dan tol pengiriman,350000,Cash,Lunas,
+BYA027,2025-02-18,Peralatan,Maintenance,Service kompresor cat,750000,Transfer Bank,Lunas,Teknisi
+BYA028,2025-02-20,Utilitas,Internet,Tagihan internet bulan Februari,400000,Transfer Bank,Lunas,Provider XYZ
+BYA029,2025-02-22,Marketing,Promosi,Biaya pembuatan banner promosi,600000,Transfer Bank,Lunas,Percetakan
+BYA030,2025-02-25,Bahan Baku,Lem,Pembelian lem akrilik khusus,400000,Transfer Bank,Lunas,Supplier A
