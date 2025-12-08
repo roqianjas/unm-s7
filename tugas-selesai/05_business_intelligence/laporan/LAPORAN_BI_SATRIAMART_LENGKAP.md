@@ -110,11 +110,11 @@ Tabel 3.11 Komponen Visualisasi Marketing Performance ..........................
 
 Gambar 2.1 Proses ETL (Extract, Transform, Load) ......................................................... 
 
-Gambar 2.2 Arsitektur Dashboard Business Intelligence ................................................... 
+Gambar 2.2 Contoh Data Mentah dengan Masalah Kualitas Data ..................................... 
 
-Gambar 2.3 Contoh Data Mentah dengan Masalah Kualitas Data ..................................... 
+Gambar 2.3 Contoh Data Bersih Setelah Proses Cleaning ................................................. 
 
-Gambar 2.4 Contoh Data Bersih Setelah Proses Cleaning ................................................. 
+Gambar 2.4 Alur Implementasi Dashboard Business Intelligence .....................................
 
 Gambar 3.1 Executive Dashboard - Overview Bisnis ........................................................ 
 
@@ -132,10 +132,7 @@ Gambar 3.7 Marketing Performance Dashboard .....................................
 
 Gambar 3.8 Contoh Fitur Interaktif - Filter Controls ........................................................ 
 
-Gambar 3.9 Contoh Fitur Interaktif - Drill-down .............................................................. 
-
-Gambar 4.1 Alur Implementasi Dashboard Business Intelligence ..................................... 
-
+Gambar 3.9 Contoh Fitur Interaktif - Drill-down ..............................................................  
 
 
 # BAB I
@@ -669,10 +666,6 @@ Proses ETL merupakan tahapan fundamental dalam implementasi *Business Intelligen
 
 *[Gambar 2.1 Proses ETL (Extract, Transform, Load) akan ditampilkan di sini]*
 
-Arsitektur lengkap sistem *Business Intelligence* SATRIAMART dapat dilihat pada Gambar 2.2.
-
-*[Gambar 2.2 Arsitektur Dashboard Business Intelligence akan ditampilkan di sini]* 
-
 ## 2.2.3. Kualitas Data dan Proses Pembersihan
 
 Kualitas data merupakan faktor kritis yang menentukan keakuratan analisis dan keandalan *dashboard Business Intelligence*. Analisis awal terhadap data mentah menunjukkan bahwa dari 158 baris data yang dikumpulkan, terdapat 38 masalah kualitas data (24%) yang harus ditangani sebelum data dapat digunakan untuk analisis.
@@ -697,7 +690,7 @@ Masalah kualitas data yang teridentifikasi meliputi: *missing values* (53%), for
 
 Dari Tabel 2.3 dapat dilihat bahwa file Master Produk memiliki persentase masalah tertinggi (40%) dan file Riwayat Stok memiliki persentase masalah terendah (10%).
 
-*[Gambar 2.3 Contoh Data Mentah dengan Masalah Kualitas Data akan ditampilkan di sini]*
+*[Gambar 2.2 Contoh Data Mentah dengan Masalah Kualitas Data akan ditampilkan di sini]*
 
 **Metode Pembersihan Data:**
 
@@ -731,9 +724,9 @@ Setelah proses pembersihan, kualitas data meningkat signifikan sebagaimana ditun
 
 *Sumber: Hasil Proses ETL, 2025*
 
-Dari Tabel 2.4 terlihat peningkatan signifikan pada semua metrik kualitas data. Data bersih kemudian disimpan dalam folder terpisah dan siap digunakan sebagai sumber data untuk *dashboard*.
+Dari Tabel 2.3 terlihat peningkatan signifikan pada semua metrik kualitas data. Data bersih kemudian disimpan dalam folder terpisah dan siap digunakan sebagai sumber data untuk *dashboard*.
 
-*[Gambar 2.4 Contoh Data Bersih Setelah Proses Cleaning akan ditampilkan di sini]* 
+*[Gambar 2.3 Contoh Data Bersih Setelah Proses Cleaning akan ditampilkan di sini]* 
 
 ### 2.2.4. *Transformasi* Data 
 
@@ -1092,9 +1085,9 @@ e. Kelompokkan visualisasi terkait dengan warna latar belakang
 
 ### 2.3.5. *Implementasi* di *Looker Studio*
 
-*Implementasi dashboard* dilakukan dengan langkah-langkah sistematis sebagaimana ditampilkan pada Gambar 4.1.
+*Implementasi dashboard* dilakukan dengan langkah-langkah sistematis sebagaimana ditampilkan pada Gambar 2.4.
 
-*[Gambar 4.1 Alur Implementasi Dashboard di Looker Studio akan ditampilkan di sini]*
+*[Gambar 2.4 Alur Implementasi Dashboard di Looker Studio akan ditampilkan di sini]*
 
 Langkah-langkah implementasi adalah sebagai berikut : 
 
@@ -1394,7 +1387,7 @@ Analisis menunjukkan korelasi negatif antara harga produk dan volume penjualan s
 
 *Sumber: Analisis Data Penjualan, 2025*
 
-Dari Tabel 3.8 terlihat bahwa meskipun produk murah memiliki volume tinggi, produk kelas menengah (Rp 100.000 - Rp 300.000) memberikan keseimbangan terbaik antara volume dan margin keuntungan. 
+Dari Tabel 3.1 terlihat bahwa meskipun produk murah memiliki volume tinggi, produk kelas menengah (Rp 100.000 - Rp 300.000) memberikan keseimbangan terbaik antara volume dan margin keuntungan. 
 
 **2. Segmentasi Pelanggan vs Nilai Rata-rata Pesanan**
 
@@ -1410,7 +1403,7 @@ Analisis menunjukkan perbedaan signifikan dalam nilai rata-rata pesanan antar se
 
 *Sumber: Analisis Segmentasi Pelanggan, 2025*
 
-Dari Tabel 3.9 terlihat bahwa pelanggan bisnis memiliki nilai pesanan tertinggi dan berkontribusi paling besar terhadap revenue meskipun frekuensi pembeliannya lebih rendah. 
+Dari Tabel 3.2 terlihat bahwa pelanggan bisnis memiliki nilai pesanan tertinggi dan berkontribusi paling besar terhadap revenue meskipun frekuensi pembeliannya lebih rendah. 
 
 **3. Saluran vs Tingkat Konversi**
 
@@ -1450,7 +1443,7 @@ Terdapat korelasi positif antara kecepatan penyelesaian dengan penilaian pelangg
 
 *Sumber: Analisis Kepuasan Pelanggan, 2025*
 
-Dari Tabel 3.10 terlihat bahwa penyelesaian cepat (1-3 hari) menghasilkan rating tertinggi dan tingkat repeat order yang jauh lebih baik, menjadikannya faktor krusial dalam kepuasan pelanggan. 
+Dari Tabel 3.3 terlihat bahwa penyelesaian cepat (1-3 hari) menghasilkan rating tertinggi dan tingkat repeat order yang jauh lebih baik, menjadikannya faktor krusial dalam kepuasan pelanggan. 
 
 **6. ROI Kampanye Pemasaran *vs Platform*** 
 
@@ -1467,7 +1460,7 @@ Analisis ROI kampanye menunjukkan performa yang berbeda untuk setiap platform se
 
 *Sumber: Analisis Marketing Performance, 2025*
 
-Dari Tabel 3.11 terlihat bahwa Instagram Ads memberikan ROI tertinggi untuk iklan berbayar, sementara konten organik memiliki efisiensi biaya terbaik dengan CPA terendah. 
+Dari Tabel 3.4 terlihat bahwa Instagram Ads memberikan ROI tertinggi untuk iklan berbayar, sementara konten organik memiliki efisiensi biaya terbaik dengan CPA terendah. 
 
 c. Iklan *Google*: ROI rata-rata 220%, penargetan spesifik 
 
