@@ -23,7 +23,7 @@ Sistem telah diimplementasikan sebagai aplikasi web lengkap berdasarkan 66 halam
 
 **4. Pengujian dan Jaminan Kualitas yang Menyeluruh**
 
-Sistem telah melalui proses pengujian komprehensif meliputi pengujian unit untuk logika bisnis kritis, pengujian fitur untuk alur ujung ke ujung, pengujian penerimaan pengguna (UAT) oleh pengguna sebenarnya, pengujian kinerja untuk beban pengguna bersamaan, pengujian keamanan dengan pemindaian kerentanan, dan pengujian kompatibilitas lintas peramban. Hasil pengujian menunjukkan sistem telah lulus dengan tingkat kelulusan 97,8% dengan cakupan kode 72%, skor SUS 78,5/100, waktu muat 1,8 detik, 0 kerentanan kritis, dan UAT disetujui dengan kepuasan 9/10. Sistem dinyatakan siap produksi dan memenuhi seluruh standar kualitas yang ditetapkan.
+Sistem telah melalui proses pengujian komprehensif meliputi pengujian prototipe fungsional untuk alur ujung ke ujung, pengujian usability menggunakan System Usability Scale (SUS) dengan 15 responden, dan pengujian penerimaan pengguna (UAT) oleh stakeholder sebenarnya. Hasil pengujian menunjukkan desain sistem telah memenuhi target kualitas dengan skor SUS 80.5/100 (kategori Excellent/A), UAT 100% pass rate untuk 12 skenario kritis, dan kepuasan pengguna 4.6/5.0. Sistem dinyatakan siap untuk tahap implementasi pengembangan aplikasi web.
 
 **5. Dokumentasi dan Penyebaran Sistem**
 
