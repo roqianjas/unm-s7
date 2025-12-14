@@ -1,11 +1,13 @@
-# ASESMEN DAN IMPLEMENTASI KERANGKA KERJA TATA KELOLA TEKNOLOGI INFORMASI PADA SATRIAMART: PENDEKATAN COBIT 2019
+Vol. XX, No. X Desember 2025 | DOI: 10.33480/pilar.vXX.xxxx
+
+# ASESMEN DAN IMPLEMENTASI TATA KELOLA TI PADA SATRIAMART MENGGUNAKAN COBIT 2019
 
 **Roki Anjas¹*; Fahruroji²; Susanto³**
 
-Program Studi Sistem Informasi¹  
-Universitas Nusa Mandiri, Jakarta, Indonesia¹  
-https://www.nusamandiri.ac.id¹  
-rokianjas@nusamandiri.ac.id¹*  
+Program Studi Sistem Informasi¹·²·³  
+Universitas Nusa Mandiri, Jakarta, Indonesia¹·²·³  
+https://www.nusamandiri.ac.id¹·²·³  
+11250066@nusamandiri.ac.id¹*; 11250085@nusamandiri.ac.id²; 11250068@nusamandiri.ac.id³  
 (*) Corresponding Author
 
 ![Lisensi Creative Commons](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
@@ -403,22 +405,22 @@ Untuk penelitian lanjutan, disarankan untuk melakukan studi longitudinal (*longi
 
 ## REFERENSI
 
-Afifah, U. F., Adam, S., & Marfuah, M. (2023). Pemetaan Tata Kelola Teknologi Informasi melalui Desain Faktor Framework COBIT 2019 pada Perusahaan Manufaktur X. *Jurnal Sistem Informasi dan Teknologi*, 15(2), 145-152.
+Afifah, U. F., Adam, S., & Marfuah, M. (2023). Pemetaan Tata Kelola Teknologi Informasi melalui Desain Faktor Framework COBIT 2019 pada Perusahaan Manufaktur X. *Jurnal Sistem Informasi dan Teknologi, 15*(2), 145-152.
 
-Agustriani, N. H. P. (2024). Analisis Manajemen Risiko Teknologi Informasi pada PT XYZ (Perusahaan Manufacturing) menggunakan Framework COBIT 2019 dengan Domain EDM03 dan APO12. *Jurnal Teknik Informatika*, 12(1), 78-89.
+Agustriani, N. H. P. (2024). Analisis Manajemen Risiko Teknologi Informasi pada PT XYZ (Perusahaan Manufacturing) menggunakan Framework COBIT 2019 dengan Domain EDM03 dan APO12. *Jurnal Teknik Informatika, 12*(1), 78-89.
 
-Aziz, M. A., Kusrini, K., & Nasiri, A. (2023). Perancangan Tata Kelola Teknologi Informasi Menggunakan Framework COBIT 2019 Domain Align Plan and Organize. *Jurnal Informatika dan Komputer*, 18(3), 234-245.
+Aziz, M. A., Kusrini, K., & Nasiri, A. (2023). Perancangan Tata Kelola Teknologi Informasi Menggunakan Framework COBIT 2019 Domain Align Plan and Organize. *Jurnal Informatika dan Komputer, 18*(3), 234-245.
 
-Elina, R. (2021). Evaluasi Implementasi Tata Kelola Teknologi Informasi Berdasarkan Framework COBIT. *Jurnal Manajemen Sistem Informasi*, 9(2), 112-125.
+Elina, R. (2021). Evaluasi Implementasi Tata Kelola Teknologi Informasi Berdasarkan Framework COBIT. *Jurnal Manajemen Sistem Informasi, 9*(2), 112-125.
 
-Hapsari, S. W. (2018). Implementasi Tata Kelola Teknologi Informasi Berdasarkan Framework COBIT 5 Pada PT Krakatau Tirta Industri. *Jurnal TEKNOINFO*, 12(1), 45-52.
+Hapsari, S. W. (2018). Implementasi Tata Kelola Teknologi Informasi Berdasarkan Framework COBIT 5 Pada PT Krakatau Tirta Industri. *Jurnal TEKNOINFO, 12*(1), 45-52.
 
 ISACA. (2019). *COBIT 2019 Framework: Introduction and Methodology*. Rolling Meadows, IL: ISACA.
 
 IT Governance Institute. (2021). *Global Status Report on IT Governance 2021*. Rolling Meadows, IL: IT Governance Institute.
 
-Ramadhan, R. P., & Ramadhan, V. P. (2025). Analisis Tata Kelola TI untuk Pembukuan Digital UMKM dengan COBIT 2019: Studi Kasus Taylor Cahaya. *Jurnal Teknologi Informasi dan Bisnis*, 14(1), 67-78.
+Ramadhan, R. P., & Ramadhan, V. P. (2025). Analisis Tata Kelola TI untuk Pembukuan Digital UMKM dengan COBIT 2019: Studi Kasus Taylor Cahaya. *Jurnal Teknologi Informasi dan Bisnis, 14*(1), 67-78.
 
-Riyadli, H., & Arliyana, A. (2022). Analisis Perencanaan Dan Implementasi Teknologi Informasi Menggunakan Framework COBIT Pada Usaha Toko Plastik. *Jurnal Sistem Informasi Bisnis*, 10(2), 156-165.
+Riyadli, H., & Arliyana, A. (2022). Analisis Perencanaan Dan Implementasi Teknologi Informasi Menggunakan Framework COBIT Pada Usaha Toko Plastik. *Jurnal Sistem Informasi Bisnis, 10*(2), 156-165.
 
-Thehawijaya, H. B., & Fajar, A. N. (2024). Evaluasi Tata Kelola Teknologi Informasi di Perusahaan Manufaktur Otomotif: Pendekatan Menggunakan Kerangka Kerja COBIT 2019. *Jurnal Teknik Industri*, 16(1), 89-102.
+Thehawijaya, H. B., & Fajar, A. N. (2024). Evaluasi Tata Kelola Teknologi Informasi di Perusahaan Manufaktur Otomotif: Pendekatan Menggunakan Kerangka Kerja COBIT 2019. *Jurnal Teknik Industri, 16*(1), 89-102.
