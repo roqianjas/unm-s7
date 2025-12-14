@@ -1,0 +1,69 @@
+@startuml Struktur_Governance_SATRIAMART
+skinparam monochrome true
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam shadowing false
+
+title Struktur Governance SATRIAMART
+
+package "STRATEGIC LEVEL" {
+    actor "Direktur" as DIR
+    note right of DIR
+        Responsibilities:
+        • Approve Policy
+        • Resource Allocation
+        • Risk Appetite
+        • Strategic Decisions
+    end note
+}
+
+package "TACTICAL LEVEL" {
+    actor "Manager TI" as MGRTI
+    actor "Manager Keuangan" as MGRFIN
+    
+    note right of MGRTI
+        Responsibilities:
+        • Framework Implementation
+        • Risk Management
+        • KPI Monitoring
+    end note
+    
+    note right of MGRFIN
+        Responsibilities:
+        • Budget Control
+        • ROI Tracking
+    end note
+}
+
+package "OPERATIONAL LEVEL" {
+    actor "Staff TI\n(Operations)" as STAFF1
+    actor "Staff TI\n(OPS)" as STAFF2
+    actor "Staff TI\n(Support)" as STAFF3
+    
+    note bottom of STAFF1
+        • Daily Operations
+        • Monitoring
+        • Incident Response
+    end note
+    
+    note bottom of STAFF2
+        • Backup & Recovery
+        • Security
+        • Network
+    end note
+    
+    note bottom of STAFF3
+        • Helpdesk
+        • Training
+        • Documentation
+    end note
+}
+
+DIR -down-> MGRTI : Delegate
+DIR -down-> MGRFIN : Support
+
+MGRTI -down-> STAFF1 : Supervise
+MGRTI -down-> STAFF2 : Supervise
+MGRTI -down-> STAFF3 : Supervise
+
+@enduml

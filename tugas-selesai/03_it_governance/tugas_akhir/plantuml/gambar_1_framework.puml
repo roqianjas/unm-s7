@@ -1,0 +1,74 @@
+@startuml Framework_Tata_Kelola_TI_SATRIAMART
+skinparam monochrome true
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 10
+skinparam shadowing false
+
+title Framework Tata Kelola TI SATRIAMART\n(COBIT 2019 Based)
+
+package "LAYER 1: GOVERNANCE STRUCTURE" {
+    component "Direktur\n(Strategic)" as DIR
+    component "Manager TI\n(Tactical)" as MGR
+    component "Staff TI\n(Operational)" as STAFF
+    
+    DIR -down-> MGR
+    MGR -down-> STAFF
+    
+    note right of DIR
+        • Approve Policy
+        • Resource Allocation
+        • Risk Appetite
+    end note
+    
+    note right of MGR
+        • Framework Implementation
+        • Risk Management
+        • KPI Monitoring
+    end note
+    
+    note right of STAFF
+        • Daily Operations
+        • Monitoring
+        • Incident Response
+    end note
+}
+
+package "LAYER 2: COBIT 2019 DOMAINS" {
+    rectangle "EDM03\nEnsure Risk\nOptimisation" as EDM03
+    rectangle "APO12\nManage\nRisk" as APO12
+    rectangle "DSS01\nManage\nOperations" as DSS01
+    rectangle "MEA01\nMonitor,\nEvaluate &\nAssess" as MEA01
+}
+
+package "LAYER 3: FIVE KEY COMPONENTS" {
+    rectangle "1. Policy & Procedure Framework\n• Risk Management Policy\n• Security Policy\n• Backup & Recovery\n• Change Management" as COMP1
+    
+    rectangle "2. Risk Management Framework\n• Risk Register\n• Risk Assessment\n• Mitigation Plan" as COMP2
+    
+    rectangle "3. Performance Management\n• KPI Dashboard\n• Monitoring Tools\n• Reporting" as COMP3
+    
+    rectangle "4. Operational Excellence\n• SOP Documentation\n• Incident Management\n• ITSM" as COMP4
+    
+    rectangle "5. Continuous Improvement\n• Review & Audit\n• Lessons Learned\n• Optimization" as COMP5
+}
+
+rectangle "MATURITY LEVEL 1.2 → 3.0 (Managed)\n• Penurunan Insiden TI: 60%\n• IT-Business Alignment: 75%\n• Optimalisasi Resource: 40%" as OUTPUT
+
+STAFF -down-> EDM03
+STAFF -down-> APO12
+STAFF -down-> DSS01
+STAFF -down-> MEA01
+
+EDM03 -down-> COMP1
+APO12 -down-> COMP2
+DSS01 -down-> COMP4
+MEA01 -down-> COMP3
+
+COMP1 -down-> OUTPUT
+COMP2 -down-> OUTPUT
+COMP3 -down-> OUTPUT
+COMP4 -down-> OUTPUT
+COMP5 -down-> OUTPUT
+
+@enduml

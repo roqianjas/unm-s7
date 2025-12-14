@@ -1,0 +1,37 @@
+@startuml Escalation_Path
+skinparam monochrome true
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam shadowing false
+
+title Escalation Path IT Incidents
+
+rectangle "LEVEL 1\nStaff TI\n(Response Time: <2 jam)" as L1
+rectangle "LEVEL 2\nManager TI\n(Critical Issues: <4 jam)" as L2
+rectangle "LEVEL 3\nDirektur\n(Strategic Decisions: <24 jam)" as L3
+
+L1 -down-> L2 : Escalate if:\n• Cannot resolve in 2h\n• Critical impact\n• Need approval
+L2 -down-> L3 : Escalate if:\n• Strategic decision needed\n• Budget impact >Rp10jt\n• Business continuity risk
+
+note right of L1
+    Handles:
+    • Routine incidents
+    • User requests
+    • Minor issues
+end note
+
+note right of L2
+    Handles:
+    • Complex technical issues
+    • Risk assessment
+    • Resource allocation
+end note
+
+note right of L3
+    Handles:
+    • Strategic decisions
+    • Major investments
+    • Crisis management
+end note
+
+@enduml
