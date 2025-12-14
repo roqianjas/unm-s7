@@ -4,56 +4,59 @@ skinparam backgroundColor #FFFFFF
 skinparam defaultFontName Arial
 skinparam defaultFontSize 10
 skinparam shadowing false
+skinparam rectanglePadding 20
+skinparam rectangleBorderThickness 1
+skinparam ArrowThickness 1
 
-title Framework Tata Kelola TI SATRIAMART\n(COBIT 2019 Based)
+title Kerangka Kerja Tata Kelola TI SATRIAMART\n(Berbasis COBIT 2019)
 
-package "LAYER 1: GOVERNANCE STRUCTURE" {
-    component "Direktur\n(Strategic)" as DIR
-    component "Manager TI\n(Tactical)" as MGR
-    component "Staff TI\n(Operational)" as STAFF
+package "LAPISAN 1: STRUKTUR TATA KELOLA" {
+    component "Direktur\n(Strategis)" as DIR
+    component "Manajer TI\n(Taktis)" as MGR
+    component "Staf TI\n(Operasional)" as STAFF
     
     DIR -down-> MGR
     MGR -down-> STAFF
     
     note right of DIR
-        • Approve Policy
-        • Resource Allocation
-        • Risk Appetite
+        • Menyetujui Kebijakan
+        • Alokasi Sumber Daya
+        • Selera Risiko
     end note
     
     note right of MGR
-        • Framework Implementation
-        • Risk Management
-        • KPI Monitoring
+        • Implementasi Kerangka Kerja
+        • Manajemen Risiko
+        • Pemantauan KPI
     end note
     
     note right of STAFF
-        • Daily Operations
-        • Monitoring
-        • Incident Response
+        • Operasional Harian
+        • Pemantauan
+        • Respons Insiden
     end note
 }
 
-package "LAYER 2: COBIT 2019 DOMAINS" {
-    rectangle "EDM03\nEnsure Risk\nOptimisation" as EDM03
-    rectangle "APO12\nManage\nRisk" as APO12
-    rectangle "DSS01\nManage\nOperations" as DSS01
-    rectangle "MEA01\nMonitor,\nEvaluate &\nAssess" as MEA01
+package "LAPISAN 2: DOMAIN COBIT 2019" {
+    rectangle "EDM03\nMemastikan\nOptimalisasi\nRisiko" as EDM03
+    rectangle "APO12\nMengelola\nRisiko" as APO12
+    rectangle "DSS01\nMengelola\nOperasi" as DSS01
+    rectangle "MEA01\nMemantau,\nMengevaluasi &\nMenilai" as MEA01
 }
 
-package "LAYER 3: FIVE KEY COMPONENTS" {
-    rectangle "1. Policy & Procedure Framework\n• Risk Management Policy\n• Security Policy\n• Backup & Recovery\n• Change Management" as COMP1
+package "LAPISAN 3: LIMA KOMPONEN KUNCI" {
+    rectangle "1. Kerangka Kebijakan & Prosedur\n• Kebijakan Manajemen Risiko\n• Kebijakan Keamanan\n• Pencadangan & Pemulihan\n• Manajemen Perubahan" as COMP1
     
-    rectangle "2. Risk Management Framework\n• Risk Register\n• Risk Assessment\n• Mitigation Plan" as COMP2
+    rectangle "2. Kerangka Manajemen Risiko\n• Daftar Risiko\n• Asesmen Risiko\n• Rencana Mitigasi" as COMP2
     
-    rectangle "3. Performance Management\n• KPI Dashboard\n• Monitoring Tools\n• Reporting" as COMP3
+    rectangle "3. Manajemen Kinerja\n• Dasbor KPI\n• Perangkat Pemantauan\n• Pelaporan" as COMP3
     
-    rectangle "4. Operational Excellence\n• SOP Documentation\n• Incident Management\n• ITSM" as COMP4
+    rectangle "4. Keunggulan Operasional\n• Dokumentasi SOP\n• Manajemen Insiden\n• ITSM" as COMP4
     
-    rectangle "5. Continuous Improvement\n• Review & Audit\n• Lessons Learned\n• Optimization" as COMP5
+    rectangle "5. Perbaikan Berkelanjutan\n• Tinjauan & Audit\n• Pembelajaran\n• Optimalisasi" as COMP5
 }
 
-rectangle "MATURITY LEVEL 1.2 → 3.0 (Managed)\n• Penurunan Insiden TI: 60%\n• IT-Business Alignment: 75%\n• Optimalisasi Resource: 40%" as OUTPUT
+rectangle "TINGKAT KEMATANGAN 1.2 → 3.0 (Terkelola)\n• Penurunan Insiden TI: 60%\n• Keselarasan TI-Bisnis: 75%\n• Optimalisasi Sumber Daya: 40%" as OUTPUT
 
 STAFF -down-> EDM03
 STAFF -down-> APO12

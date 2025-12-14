@@ -2,68 +2,72 @@
 skinparam monochrome true
 skinparam backgroundColor #FFFFFF
 skinparam defaultFontName Arial
+skinparam defaultFontSize 10
 skinparam shadowing false
+skinparam rectanglePadding 20
+skinparam rectangleBorderThickness 1
+skinparam ArrowThickness 1
 
-title Struktur Governance SATRIAMART
+title Struktur Tata Kelola SATRIAMART
 
-package "STRATEGIC LEVEL" {
+package "TINGKAT STRATEGIS" {
     actor "Direktur" as DIR
     note right of DIR
-        Responsibilities:
-        • Approve Policy
-        • Resource Allocation
-        • Risk Appetite
-        • Strategic Decisions
+        Tanggung Jawab:
+        • Menyetujui Kebijakan
+        • Alokasi Sumber Daya
+        • Selera Risiko
+        • Keputusan Strategis
     end note
 }
 
-package "TACTICAL LEVEL" {
-    actor "Manager TI" as MGRTI
-    actor "Manager Keuangan" as MGRFIN
+package "TINGKAT TAKTIS" {
+    actor "Manajer TI" as MGRTI
+    actor "Manajer Keuangan" as MGRFIN
     
     note right of MGRTI
-        Responsibilities:
-        • Framework Implementation
-        • Risk Management
-        • KPI Monitoring
+        Tanggung Jawab:
+        • Implementasi Kerangka Kerja
+        • Manajemen Risiko
+        • Pemantauan KPI
     end note
     
     note right of MGRFIN
-        Responsibilities:
-        • Budget Control
-        • ROI Tracking
+        Tanggung Jawab:
+        • Kontrol Anggaran
+        • Pelacakan ROI
     end note
 }
 
-package "OPERATIONAL LEVEL" {
-    actor "Staff TI\n(Operations)" as STAFF1
-    actor "Staff TI\n(OPS)" as STAFF2
-    actor "Staff TI\n(Support)" as STAFF3
+package "TINGKAT OPERASIONAL" {
+    actor "Staf TI\n(Operasi)" as STAFF1
+    actor "Staf TI\n(OPS)" as STAFF2
+    actor "Staf TI\n(Dukungan)" as STAFF3
     
     note bottom of STAFF1
-        • Daily Operations
-        • Monitoring
-        • Incident Response
+        • Operasional Harian
+        • Pemantauan
+        • Respons Insiden
     end note
     
     note bottom of STAFF2
-        • Backup & Recovery
-        • Security
-        • Network
+        • Pencadangan & Pemulihan
+        • Keamanan
+        • Jaringan
     end note
     
     note bottom of STAFF3
-        • Helpdesk
-        • Training
-        • Documentation
+        • Meja Bantuan
+        • Pelatihan
+        • Dokumentasi
     end note
 }
 
-DIR -down-> MGRTI : Delegate
-DIR -down-> MGRFIN : Support
+DIR -down-> MGRTI : Mendelegasikan
+DIR -down-> MGRFIN : Mendukung
 
-MGRTI -down-> STAFF1 : Supervise
-MGRTI -down-> STAFF2 : Supervise
-MGRTI -down-> STAFF3 : Supervise
+MGRTI -down-> STAFF1 : Mengawasi
+MGRTI -down-> STAFF2 : Mengawasi
+MGRTI -down-> STAFF3 : Mengawasi
 
 @enduml

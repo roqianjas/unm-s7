@@ -2,36 +2,75 @@
 skinparam monochrome true
 skinparam backgroundColor #FFFFFF
 skinparam defaultFontName Arial
+skinparam defaultFontSize 10
 skinparam shadowing false
+skinparam rectanglePadding 20
+skinparam rectangleBorderThickness 1
+skinparam ArrowThickness 1
 
-title Escalation Path IT Incidents
+title Jalur Eskalasi Insiden TI
 
-rectangle "LEVEL 1\nStaff TI\n(Response Time: <2 jam)" as L1
-rectangle "LEVEL 2\nManager TI\n(Critical Issues: <4 jam)" as L2
-rectangle "LEVEL 3\nDirektur\n(Strategic Decisions: <24 jam)" as L3
+package "TINGKAT 1: STAF TI" {
+    component "Waktu Respons:\n<2 jam" as T1
+    
+    note right of T1
+        Menangani:
+        • Insiden rutin
+        • Permintaan pengguna
+        • Masalah minor
+        
+        Resolusi:
+        Selesaikan jika dapat
+        ditangani dalam 2 jam
+    end note
+}
 
-L1 -down-> L2 : Escalate if:\n• Cannot resolve in 2h\n• Critical impact\n• Need approval
-L2 -down-> L3 : Escalate if:\n• Strategic decision needed\n• Budget impact >Rp10jt\n• Business continuity risk
+package "TINGKAT 2: MANAJER TI" {
+    component "Waktu Respons:\n<4 jam" as T2
+    
+    note right of T2
+        Menangani:
+        • Masalah teknis kompleks
+        • Asesmen risiko
+        • Alokasi sumber daya
+        
+        Resolusi:
+        Selesaikan jika tidak
+        memerlukan keputusan direktur
+    end note
+}
 
-note right of L1
-    Handles:
-    • Routine incidents
-    • User requests
-    • Minor issues
+package "TINGKAT 3: DIREKTUR" {
+    component "Waktu Respons:\n<24 jam" as T3
+    
+    note right of T3
+        Menangani:
+        • Keputusan strategis
+        • Investasi besar
+        • Manajemen krisis
+        
+        Keputusan Final:
+        Dari pimpinan tertinggi
+        untuk keputusan strategis
+    end note
+}
+
+T1 -down-> T2
+
+note on link
+    Eskalasi jika:
+    • Tidak dapat diselesaikan dalam 2 jam
+    • Dampak kritis
+    • Memerlukan persetujuan
 end note
 
-note right of L2
-    Handles:
-    • Complex technical issues
-    • Risk assessment
-    • Resource allocation
-end note
+T2 -down-> T3
 
-note right of L3
-    Handles:
-    • Strategic decisions
-    • Major investments
-    • Crisis management
+note on link
+    Eskalasi jika:
+    • Keputusan strategis diperlukan
+    • Dampak anggaran >Rp10jt
+    • Risiko kelangsungan bisnis
 end note
 
 @enduml
