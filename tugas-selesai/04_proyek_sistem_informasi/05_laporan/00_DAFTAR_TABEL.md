@@ -1,63 +1,25 @@
 # DAFTAR TABEL
 
-**Tabel 3.1** Jadwal Penelitian ................................................................................................................... 29
-
-**Tabel 3.2** Distribusi Sampel Penelitian ................................................................................................... 30
-
-**Tabel 3.3** Daftar Narasumber Wawancara .............................................................................................. 31
-
-**Tabel 4.1** *Work Breakdown Structure* (WBS) ........................................................................................ 38
-
-**Tabel 4.2** Jadwal Pengerjaan Proyek ...................................................................................................... 40
-
-**Tabel 4.3** Estimasi Biaya Proyek ............................................................................................................ 41
-
-**Tabel 4.4** Standar Kualitas Sistem ......................................................................................................... 44
-
-**Tabel 4.5** Alokasi Sumber Daya Proyek .................................................................................................. 45
-
-**Tabel 4.6** Daftar Risiko Proyek dan Strategi Mitigasi ............................................................................. 46
-
-**Tabel 4.7** Matriks Komunikasi Proyek .................................................................................................... 48
-
-**Tabel 4.8** Rencana Pengadaan (*Procurement Plan*) ............................................................................. 49
-
-**Tabel 4.9** Kebutuhan Fungsional Sistem ................................................................................................ 53
-
-**Tabel 4.10** Kebutuhan Non-Fungsional Sistem ...................................................................................... 54
-
-**Tabel 4.11** Deskripsi Entitas Basis Data ................................................................................................. 57
-
-**Tabel 4.12** Spesifikasi Teknis Sistem ..................................................................................................... 68
-
-**Tabel 4.13** Hasil Pengujian Fungsional .................................................................................................. 71
-
-**Tabel 4.14** Hasil Pengujian *Performance* .............................................................................................. 72
-
-**Tabel 4.15** Hasil Pengujian Keamanan ................................................................................................... 73
-
-**Tabel 4.16** Hasil *System Usability Scale* (SUS) .................................................................................... 74
-
-**Tabel 4.17** Hasil *User Acceptance Testing* (UAT) ................................................................................. 75
-
-**Tabel 4.18** Spesifikasi Server Produksi .................................................................................................. 76
-
-**Tabel 4.19** *Checklist Deployment* .......................................................................................................... 77
-
-**Tabel 4.20** Metrik Pemantauan Proyek ................................................................................................... 78
-
-**Tabel 4.21** Status Pencapaian *Milestone* .............................................................................................. 79
-
-**Tabel 4.22** Perubahan Ruang Lingkup Proyek ........................................................................................ 80
-
-**Tabel 4.23** Metrik Kinerja Sistem ............................................................................................................ 81
-
-**Tabel 4.24** Analisis Dampak Bisnis ......................................................................................................... 82
-
-**Tabel 5.1** Perbandingan Sebelum dan Sesudah Implementasi ............................................................... 85
-
-**Tabel 5.2** Proyeksi ROI 5 Tahun ............................................................................................................. 86
-
-**Tabel 5.3** Prioritas Pengembangan Fase 2 .............................................................................................. 90
-
-**Tabel 5.4** *Budget* Estimasi Pengembangan Fase 2 ............................................................................... 91
+| No | Judul Tabel | Halaman |
+|----|-------------|---------|
+| Tabel 3.1 | Jadwal Penelitian | 96 |
+| Tabel 3.2 | Distribusi Sampel Penelitian | 127 |
+| Tabel 3.3 | Daftar Narasumber Wawancara | 165 |
+| Tabel 4.1 | *Work Breakdown Structure* (WBS) | 77 |
+| Tabel 4.2 | Jadwal Pengerjaan Proyek | 156 |
+| Tabel 4.3 | Estimasi Biaya Proyek | 171 |
+| Tabel 4.4 | Alokasi Sumber Daya Manusia | 257 |
+| Tabel 4.5 | Identifikasi dan Mitigasi Risiko | 288 |
+| Tabel 4.6 | Matriks Perencanaan Komunikasi | 310 |
+| Tabel 4.7 | Daftar Pengadaan | 341 |
+| Tabel 4.8 | Daftar Pemangku Kepentingan | 392 |
+| Tabel 4.9 | *Key Performance Indicators* (KPI) | 1401 |
+| Tabel 4.10 | Justifikasi Pemilihan Teknologi | 1750 |
+| Tabel 4.11 | Cakupan Pengujian Fungsional Prototipe | 1814 |
+| Tabel 4.12 | Profil Responden Pengujian SUS | 1870 |
+| Tabel 4.13 | Pertanyaan Kuesioner SUS | 1897 |
+| Tabel 4.14 | Hasil Skor SUS per Responden | 1921 |
+| Tabel 4.15 | Skor SUS Berdasarkan Kategori Pengguna | 1944 |
+| Tabel 4.16 | Rata-rata Skor per Pertanyaan SUS | 1956 |
+| Tabel 4.17 | Skenario dan Hasil UAT | 2055 |
+| Tabel 4.18 | Luaran Desiminasi Proyek | 2270 |
