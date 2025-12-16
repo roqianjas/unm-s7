@@ -10,7 +10,7 @@ Akhir kata, kami mengucapkan terima kasih kepada semua pihak yang telah membantu
 
 &nbsp;
 
-Depok, Desember 2025
+Jakarta, Desember 2025
 
 &nbsp;
 
