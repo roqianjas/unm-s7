@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 9A - Detail Black Box Testing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cur-primary': '#1E0E62',
+                        'cur-primary-light': '#2D1B69',
+                        'cur-secondary': '#FF6B7A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0;
+            background: white;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white">
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header -->
+        <div class="px-16 py-6 border-b border-gray-200 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="assets/img/logo-curheart.jpeg" alt="CUR-HEART" class="h-12 opacity-90" onerror="this.style.display='none'">
+                <h1 class="text-[32px] font-semibold text-cur-primary tracking-tight">Detail Black Box Testing</h1>
+            </div>
+            <div class="bg-gray-100 text-gray-600 px-4 py-1.5 rounded-lg text-sm font-medium">
+                Slide 15A/16
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 px-16 py-4 overflow-y-auto">
+            <div class="space-y-3">
+                <!-- Summary Header -->
+                <div class="bg-gradient-to-br from-cur-primary to-cur-primary-light rounded-xl p-4 text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-1">Ringkasan Pengujian Black Box</h2>
+                            <p class="text-sm opacity-95">Pengujian fungsionalitas aplikasi tanpa melihat struktur internal kode</p>
+                        </div>
+                        <div class="flex gap-4 text-center">
+                            <div class="bg-white/20 rounded-lg px-4 py-2">
+                                <p class="text-3xl font-bold">50</p>
+                                <p class="text-xs">Test Cases</p>
+                            </div>
+                            <div class="bg-green-400/30 rounded-lg px-4 py-2">
+                                <p class="text-3xl font-bold">100%</p>
+                                <p class="text-xs">Pass Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Cases by Module -->
+                <div class="grid grid-cols-4 gap-3">
+                    <!-- Authentication -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">A. Authentication</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">7/7</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-001: Register data valid</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-002: Register email sudah ada</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-003: Password kurang 8 karakter</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-004: Login valid</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-005: Login password salah</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-006: Forgot password</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-007: Logout</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking System -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">B. Booking System</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">8/8</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-008: Select service</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-009: Select therapist</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-010: Select schedule available</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-011: Select schedule booked</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-012: Conflict detection</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-013: Apply promo valid</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-014: Apply promo expired</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-015: Confirm booking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment System -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">C. Payment System</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">4/4</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-016: Payment via Midtrans</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-017: Payment success</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-018: Payment failed</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-019: Webhook notification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Dashboard -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">D. Client Dashboard</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">7/7</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-020: View dashboard</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-021: View booking history</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-022: View session history</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-023: Reschedule booking</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-024: Cancel booking (H-2)</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-025: Cancel booking (H-0)</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-026: Give review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="grid grid-cols-4 gap-3">
+                    <!-- Therapist Dashboard -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">E. Therapist Dashboard</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">8/8</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-027: View dashboard</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-028: View schedule</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-029: Manage availability</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-030: Block time</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-031: Document session</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-032: Auto-save</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-033: View client history</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-034: Request withdrawal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admin Dashboard -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">F. Admin Dashboard</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">11/11</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-035: View dashboard</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-036: Manage users</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-037: Approve therapist</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-038: Manage services</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-039: Manage bookings</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-040: Process withdrawal</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-041-045: Reports, Export, Content</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-sm font-bold text-gray-900">G. Notifications</h3>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">5/5</span>
+                        </div>
+                        <div class="space-y-1.5 text-[10px]">
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-046: Email confirmation</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-047: Email reminder H-1</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-048: Email reminder H-0</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-049: In-app notification</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 p-1.5 bg-gray-50 rounded">
+                                <span class="text-green-500">✓</span>
+                                <span class="text-gray-700">TC-050: Mark as read</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="bg-gradient-to-br from-green-500 to-teal-500 rounded-xl p-3 text-white">
+                        <h3 class="text-sm font-bold mb-2">Kesimpulan</h3>
+                        <div class="space-y-2 text-[11px]">
+                            <div class="bg-white/20 rounded-lg p-2">
+                                <p class="font-bold text-lg">50/50</p>
+                                <p class="opacity-90">Test Cases Passed</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-2">
+                                <p class="font-bold text-lg">0</p>
+                                <p class="opacity-90">Failed / Bug Critical</p>
+                            </div>
+                            <p class="text-xs opacity-95 pt-1">
+                                ✓ Semua fitur berfungsi sesuai requirements<br>
+                                ✓ Sistem siap untuk deployment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-09-hasil-pengujian.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-09b-usability-testing.html';
+            }
+        });
+    </script>
+</body>
+</html>
