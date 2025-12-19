@@ -374,6 +374,173 @@
 
 ---
 
+### 8. UI/UX & DESAIN
+
+**Q: Mengapa memilih Tailwind CSS?**
+> **A:** Tailwind adalah utility-first CSS framework yang memungkinkan styling cepat tanpa menulis CSS custom. Fleksibel, responsif, dan konsisten.
+
+**Q: Berapa jumlah halaman mockup yang dibuat?**
+> **A:** 66 halaman mockup yang mencakup: halaman publik (landing, layanan, terapis), autentikasi, dashboard klien, dashboard terapis, dan dashboard admin.
+
+**Q: Mengapa SUS Score hanya 78, bukan 80+?**
+> **A:** 78 sudah kategori "Good" dan exceeded target minimal 70. Beberapa issue minor ditemukan (font size, istilah teknis) yang bisa diperbaiki di iterasi berikutnya.
+
+**Q: Apa itu prinsip Empathy dalam desain?**
+> **A:** Desain yang memahami kondisi emosional pengguna. Untuk layanan kesehatan mental, warna harus menenangkan, bahasa harus supportif, tidak judgmental.
+
+---
+
+### 9. MARKET & BISNIS
+
+**Q: Bagaimana cara menghitung TAM-SAM-SOM?**
+> **A:** TAM = total pasar kesehatan mental Indonesia (Rp 1,34T). SAM = 10% yang aware dan mampu bayar (Rp 134M). SOM = 10% target realistis yang bisa kami capai (Rp 13,4M).
+
+**Q: Siapa target customer utama?**
+> **A:** Profesional urban usia 25-45 tahun dengan penghasilan menengah-atas yang mengalami stres kerja, kecemasan, atau ingin pengembangan diri.
+
+**Q: Bagaimana strategi pricing?**
+> **A:** Sesi individual Rp 350.000-500.000, paket 4 sesi diskon 15%, program korporat custom pricing berdasarkan jumlah karyawan.
+
+**Q: Apa yang membedakan CUR-HEART dengan kompetitor?**
+> **A:** Spesialisasi hipnoterapi (bukan umum), terapis bersertifikat ICHI, platform terintegrasi end-to-end, dokumentasi terapis terstruktur.
+
+---
+
+### 10. KEUANGAN
+
+**Q: Dari mana angka proyeksi revenue Rp 1,2M tahun pertama?**
+> **A:** Asumsi: 100 sesi/bulan x 12 bulan x rata-rata Rp 400.000/sesi = Rp 480 juta (B2C). Ditambah B2B dan pelatihan = Rp 1,2 Miliar.
+
+**Q: Bagaimana revenue sharing dengan terapis?**
+> **A:** 70% untuk terapis, 30% untuk platform. Terapis tetap mendapat pendapatan lebih tinggi karena tidak perlu handle admin.
+
+**Q: Apa risiko bisnis terbesar?**
+> **A:** (1) Ketersediaan terapis bersertifikat, (2) Regulasi kesehatan mental, (3) Stigma masyarakat. Mitigasi: kemitraan dengan asosiasi, edukasi market.
+
+---
+
+### 11. TIM & ORGANISASI
+
+**Q: Apa kualifikasi tim untuk menjalankan bisnis ini?**
+> **A:** Fahruroji adalah hipnoterapis bersertifikat (domain expertise), Roki Anjas adalah full-stack developer (technical), Susanto ahli digital marketing (growth).
+
+**Q: Mengapa tidak ada COO atau CFO?**
+> **A:** Pada tahap startup awal, peran operasional dan keuangan di-handle oleh CEO. Rencana rekrutmen COO di tahun ke-2 setelah growth.
+
+---
+
+### 12. PERTANYAAN UMUM/JEBAKAN
+
+**Q: Apakah sudah ada izin usaha/praktik?**
+> **A:** CUR-HEART sudah beroperasi sebagai usaha perseorangan. Rencana menjadi PT di tahun ke-2 untuk skalabilitas dan kredibilitas B2B.
+
+**Q: Apakah sistem ini melanggar privasi pasien?**
+> **A:** Tidak. Sistem menggunakan enkripsi, role-based access, dan hanya pihak berwenang (terapis yang menangani) yang bisa akses data klien.
+
+**Q: Bagaimana jika ada klien dalam kondisi darurat (bunuh diri)?**
+> **A:** Sistem memiliki protokol darurat dengan nomor hotline 119 ext 8 dan panduan untuk terapis melakukan eskalasi ke fasilitas medis.
+
+**Q: Apa yang terjadi jika terapis tidak terverifikasi ternyata praktik?**
+> **A:** Semua terapis harus melalui proses verifikasi sertifikat sebelum bisa menerima klien. Admin melakukan review manual dokumen.
+
+**Q: Bagaimana handling data jika server down?**
+> **A:** Menggunakan backup otomatis harian ke cloud storage terpisah. Recovery time objective (RTO) maksimal 4 jam.
+
+---
+
+## 📚 GLOSARIUM - Istilah Asing & Artinya
+
+### Istilah Bisnis
+| Istilah | Arti |
+|---------|------|
+| **BMC (Business Model Canvas)** | Kanvas model bisnis - alat visual 9 blok untuk merancang bisnis |
+| **TAM (Total Addressable Market)** | Total pasar yang bisa dijangkau |
+| **SAM (Serviceable Addressable Market)** | Bagian TAM yang bisa dilayani berdasarkan kemampuan |
+| **SOM (Serviceable Obtainable Market)** | Target pasar realistis yang bisa didapat |
+| **B2C (Business to Consumer)** | Bisnis langsung ke konsumen individu |
+| **B2B (Business to Business)** | Bisnis ke perusahaan/organisasi |
+| **Revenue Stream** | Arus pendapatan - sumber pemasukan bisnis |
+| **Cost Structure** | Struktur biaya - pengeluaran bisnis |
+| **Value Proposition** | Proposisi nilai - manfaat unik yang ditawarkan |
+| **Key Partners** | Mitra kunci - pihak yang bekerjasama |
+| **Key Activities** | Aktivitas kunci - kegiatan utama bisnis |
+| **Key Resources** | Sumber daya kunci - aset penting bisnis |
+| **Customer Segments** | Segmen pelanggan - kelompok target |
+| **Channels** | Saluran - cara menjangkau pelanggan |
+| **Customer Relationships** | Hubungan pelanggan - cara menjaga relasi |
+| **Break-even** | Titik impas - saat pendapatan = pengeluaran |
+| **ROI (Return on Investment)** | Tingkat pengembalian investasi |
+| **Gross Margin** | Margin kotor - (revenue - COGS) / revenue |
+| **LTV (Lifetime Value)** | Nilai seumur hidup pelanggan |
+| **CAC (Customer Acquisition Cost)** | Biaya mendapatkan 1 pelanggan baru |
+| **MVP (Minimum Viable Product)** | Produk minimum yang bisa digunakan |
+| **Go-to-Market** | Strategi masuk ke pasar |
+| **Referral Program** | Program rekomendasi dari pelanggan |
+| **EAP (Employee Assistance Program)** | Program bantuan karyawan dari perusahaan |
+
+### Istilah Teknologi
+| Istilah | Arti |
+|---------|------|
+| **Laravel** | Framework PHP untuk membangun aplikasi web |
+| **MVC (Model-View-Controller)** | Arsitektur pemisahan data, tampilan, dan logika |
+| **RESTful API** | Antarmuka pemrograman berbasis HTTP standar |
+| **MySQL** | Sistem manajemen database relasional |
+| **Tailwind CSS** | Framework CSS berbasis utility classes |
+| **Blade Templates** | Sistem templating bawaan Laravel |
+| **Middleware** | Perantara yang memproses request sebelum masuk aplikasi |
+| **Laravel Sanctum** | Sistem autentikasi API di Laravel |
+| **Eloquent ORM** | Object-Relational Mapping di Laravel untuk database |
+| **Webhook** | Notifikasi otomatis dari sistem eksternal |
+| **Payment Gateway** | Gerbang pembayaran digital (contoh: Midtrans) |
+| **Deploy/Deployment** | Proses memasang aplikasi ke server production |
+| **VPS (Virtual Private Server)** | Server virtual untuk hosting aplikasi |
+| **Frontend** | Bagian depan aplikasi (tampilan) |
+| **Backend** | Bagian belakang aplikasi (logika & data) |
+| **Database** | Basis data - tempat menyimpan informasi |
+| **Redis** | Sistem caching untuk mempercepat aplikasi |
+| **3NF (Third Normal Form)** | Standar normalisasi database agar efisien |
+| **Full-stack Developer** | Pengembang yang menguasai frontend & backend |
+| **Responsive/Responsif** | Tampilan menyesuaikan ukuran layar |
+
+### Istilah UI/UX
+| Istilah | Arti |
+|---------|------|
+| **UI (User Interface)** | Antarmuka pengguna - tampilan visual |
+| **UX (User Experience)** | Pengalaman pengguna - kemudahan & kepuasan |
+| **SUS (System Usability Scale)** | Skala pengukuran kegunaan sistem (0-100) |
+| **Mockup** | Desain visual statis halaman aplikasi |
+| **Wireframe** | Sketsa kasar struktur halaman |
+| **Prototype** | Model interaktif yang bisa diklik |
+| **Usability Testing** | Pengujian kemudahan penggunaan dengan user nyata |
+| **Task Completion Rate** | Persentase tugas yang berhasil diselesaikan |
+| **Error Rate** | Persentase kesalahan saat menggunakan sistem |
+| **Figma** | Aplikasi desain UI/UX berbasis cloud |
+
+### Istilah Pengujian
+| Istilah | Arti |
+|---------|------|
+| **Black Box Testing** | Pengujian tanpa melihat kode (fokus input-output) |
+| **White Box Testing** | Pengujian dengan melihat struktur kode |
+| **Test Case (TC)** | Skenario pengujian spesifik |
+| **Pass/Passed** | Lolos/berhasil melewati pengujian |
+| **Pass Rate** | Persentase pengujian yang lolos |
+
+### Istilah Metodologi
+| Istilah | Arti |
+|---------|------|
+| **Design Thinking** | Metode pemecahan masalah berpusat pada pengguna |
+| **Empathize** | Tahap memahami kebutuhan pengguna |
+| **Define** | Tahap mendefinisikan masalah |
+| **Ideate** | Tahap menghasilkan ide solusi |
+| **Prototype** | Tahap membuat prototipe |
+| **Test** | Tahap menguji dengan pengguna |
+| **Iterasi** | Pengulangan proses untuk perbaikan |
+| **FGD (Focus Group Discussion)** | Diskusi kelompok terarah |
+| **Persona Pengguna** | Representasi fiktif target pengguna |
+| **Human-centered** | Berpusat pada manusia/pengguna |
+
+---
+
 ## 🎯 Kalimat Penutup
 
 > "CUR-HEART membuktikan bahwa digitalisasi layanan kesehatan mental dapat meningkatkan kualitas, efisiensi, dan jangkauan layanan terapi profesional. Dengan SUS Score 78/100 dan 100% pass rate pada pengujian fungsional, sistem ini siap untuk dikembangkan lebih lanjut menuju deployment production."
@@ -385,7 +552,8 @@
 Gunakan kalimat:
 - "Pertanyaan yang bagus. Hal tersebut belum kami eksplorasi dalam scope proyek ini, namun bisa menjadi pengembangan di iterasi berikutnya."
 - "Untuk detail teknis tersebut, kami perlu melakukan riset lebih lanjut. Yang kami fokuskan dalam proyek ini adalah..."
+- "Terima kasih pertanyaannya. Itu adalah area yang menarik untuk dikaji lebih lanjut di penelitian selanjutnya."
 
 ---
 
-**Semoga sukses presentasinya! 💪**
+**Semoga sukses presentasinya! 💪🎓**
