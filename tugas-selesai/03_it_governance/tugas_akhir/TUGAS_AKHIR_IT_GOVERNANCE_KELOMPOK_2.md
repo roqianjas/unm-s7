@@ -60,18 +60,18 @@ Tabel 1 menunjukkan daftar lengkap sumber data yang digunakan dalam penelitian i
 
 **Tabel 1. Daftar Sumber Data Penelitian**
 
-| No | Nama Bahan | Sumber | Periode | Pemilik | Sensitivitas | Status Akses |
-|----|------------|--------|---------|---------|--------------|--------------|
-| 1 | Dokumen Kebijakan TI | Manajemen SATRIAMART | Versi 2025 | Direktur | Internal | Diperoleh |
-| 2 | SOP Operasional TI | Tim TI | Versi 2025 | Manager TI | Internal | Diperoleh |
-| 3 | Catatan Insiden & *Downtime* | Sistem *Ticketing* | Mei–Okt 2025 | Staf TI | Internal | Diperoleh |
-| 4 | Daftar Risiko (*Risk Register*) | Manajemen | Q2-Q3 2025 | Manajer TI | Rahasia | Diperoleh |
-| 5 | Data *Backup* & *Recovery* | Server | Mei–Okt 2025 | Staf TI | Internal | Diperoleh |
-| 6 | Kontrol Akses Pengguna | Sistem | Oktober 2025 | Staf TI | Rahasia | Diperoleh |
-| 7 | Anggaran & Investasi TI | Keuangan | Tahun 2025 | Keuangan | Rahasia | Diperoleh |
-| 8 | Inventaris Aset TI | Basis Data | Oktober 2025 | Staf TI | Internal | Diperoleh |
-| 9 | Strategi Bisnis | Manajemen | 2025-2027 | Direktur | Internal | Diperoleh |
-| 10 | Struktur Organisasi | SDM | 2025 | Manajemen | Internal | Diperoleh |
+| Nama Bahan | Sumber | Periode |
+|------------|--------|---------|
+| Dokumen Kebijakan TI | Manajemen | 2025 |
+| SOP Operasional TI | Tim TI | 2025 |
+| Catatan Insiden & *Downtime* | Sistem *Ticketing* | Mei–Okt 2025 |
+| Daftar Risiko (*Risk Register*) | Manajemen | Q2-Q3 2025 |
+| Data *Backup* & *Recovery* | Server | Mei–Okt 2025 |
+| Kontrol Akses Pengguna | Sistem | Okt 2025 |
+| Anggaran & Investasi TI | Keuangan | 2025 |
+| Inventaris Aset TI | Basis Data | Okt 2025 |
+| Strategi Bisnis | Manajemen | 2025-2027 |
+| Struktur Organisasi | SDM | 2025 |
 
 Sumber: (Hasil Penelitian, 2025)
 
@@ -85,14 +85,14 @@ Instrumen asesmen dikembangkan berdasarkan kerangka kerja COBIT 2019 dengan foku
 
 Tabel 2 menunjukkan matriks keterkaitan antara tujuan penelitian, data yang diperlukan, metode analisis, dan output yang diharapkan untuk memastikan traceability yang jelas.
 
-**Tabel 2. Matriks Tujuan, Data, Metode, dan Output Penelitian**
+**Tabel 2. Matriks Tujuan dan Metode Penelitian**
 
-| Tujuan | Data/Bahan | Alasan Relevansi | Metode | Output Diharapkan |
-|--------|------------|------------------|---------|-------------------|
-| Meningkatkan tingkat kematangan dari 1,2 ke 3,0 | Dokumentasi SOP TI, Daftar Risiko (*Risk Register*), Catatan Insiden 6 bulan | Menggambarkan kondisi tata kelola saat ini dan mengidentifikasi kesenjangan | Asesmen Kematangan (*Maturity Assessment*) COBIT 2019 & Analisis Kesenjangan (*Gap Analysis*) | Skor kematangan per domain, daftar kesenjangan, prioritas perbaikan |
-| Menurunkan insiden TI sebesar 60% | Catatan insiden TI, Laporan waktu henti (*downtime*), Dokumentasi penanganan masalah | Mengidentifikasi pola insiden dan akar masalah | Asesmen Risiko (*Risk Assessment*) ISO 27005 & Analisis Akar Masalah (*Root Cause Analysis*) | Daftar risiko prioritas, rekomendasi mitigasi |
-| Meningkatkan keselarasan TI-Bisnis 75% | Dokumen strategi bisnis, Rencana investasi TI, KPI bisnis dan TI | Mengevaluasi keselarasan (*alignment*) strategi TI dengan tujuan bisnis | Pemetaan COBIT 2019 (EDM & APO) & Kontrol Pembanding (*Benchmark Control*) | Matriks keselarasan, kesenjangan keselarasan, rekomendasi perbaikan |
-| Optimalisasi sumber daya TI 40% | Data anggaran TI, Utilisasi sistem, Inventaris aset TI | Menganalisis efisiensi penggunaan sumber daya | Matriks RACI & Penelusuran Proses (*Process Walkthrough*) | Peta proses optimal, kejelasan peran, efisiensi biaya |
+| Tujuan | Metode | Output |
+|--------|--------|--------|
+| Meningkatkan kematangan 1,2 → 3,0 | Asesmen COBIT 2019 & *Gap Analysis* | Skor kematangan, prioritas perbaikan |
+| Menurunkan insiden TI 60% | *Risk Assessment* ISO 27005 & RCA | Daftar risiko, rekomendasi mitigasi |
+| Meningkatkan keselarasan TI-Bisnis 75% | Pemetaan COBIT 2019 (EDM & APO) | Matriks keselarasan |
+| Optimalisasi sumber daya TI 40% | Matriks RACI & *Process Walkthrough* | Peta proses optimal |
 
 Sumber: (Hasil Penelitian, 2025)
 
@@ -132,14 +132,14 @@ Hasil asesmen menunjukkan bahwa domain EDM03 (*Ensure Risk Optimisation*) dan ME
 
 Analisis kesenjangan (*gap analysis*) mengidentifikasi beberapa kesenjangan kritis antara kondisi saat ini dengan target tingkat kematangan (*maturity level*) 3,0 (terkelola/*managed*). Tabel 4 menunjukkan kesenjangan utama yang ditemukan pada setiap domain.
 
-**Tabel 4. Identifikasi Kesenjangan (Gap) per Domain**
+**Tabel 4. Identifikasi Kesenjangan per Domain**
 
-| Domain | Kesenjangan Utama | Dampak Bisnis | Prioritas |
-|--------|-------------------|---------------|-----------|
-| EDM03 | Tidak ada kerangka kerja manajemen risiko formal; Toleransi risiko belum didefinisikan; Risiko TI tidak memiliki pemilik (*owner*) yang jelas | Potensi kerugian tidak terukur; Keputusan investasi TI tidak berbasis risiko | Sangat Tinggi |
-| APO12 | Daftar risiko (*risk register*) tidak ada; Tidak ada proses identifikasi risiko berkala; Mitigasi risiko bersifat reaktif | Insiden berulang; Waktu henti (*downtime*) tidak terprediksi; Biaya perbaikan tinggi | Sangat Tinggi |
-| DSS01 | SOP operasional belum lengkap; Eskalasi masalah tidak terstruktur; Pencadangan (*backup*) dilakukan manual tidak terjadwal | Inkonsistensi layanan; Waktu pemulihan (*recovery time*) lama; Potensi kehilangan data | Tinggi |
-| MEA01 | Tidak ada KPI untuk TI; Pelaporan kinerja tidak rutin; Tidak ada mekanisme perbaikan berkelanjutan (*continuous improvement*) | Kinerja TI tidak terukur; Keputusan tidak berbasis data (*data-driven*); Perbaikan tidak sistematis | Tinggi |
+| Domain | Kesenjangan Utama | Prioritas |
+|--------|-------------------|-----------|
+| EDM03 | Tidak ada kerangka manajemen risiko formal; toleransi risiko belum didefinisikan | Sangat Tinggi |
+| APO12 | *Risk register* tidak ada; mitigasi risiko bersifat reaktif | Sangat Tinggi |
+| DSS01 | SOP belum lengkap; *backup* manual tidak terjadwal | Tinggi |
+| MEA01 | Tidak ada KPI TI; pelaporan kinerja tidak rutin | Tinggi |
 
 Sumber: (Hasil Penelitian, 2025)
 
@@ -166,15 +166,15 @@ Analisis akar masalah (*root cause*) terhadap insiden-insiden tersebut mengident
 
 Asesmen risiko (*risk assessment*) menggunakan metode ISO 27005 menghasilkan daftar risiko (*risk register*) dengan 23 risiko TI yang teridentifikasi. Tabel 6 menunjukkan lima risiko dengan prioritas tertinggi berdasarkan skor dampak × probabilitas.
 
-**Tabel 6. Lima Risiko TI Teratas Berdasarkan Prioritas**
+**Tabel 6. Lima Risiko TI Teratas**
 
-| No | Risiko | Dampak (1-5) | Probabilitas (1-5) | Skor Risiko | Kategori | Mitigasi yang Diusulkan |
-|----|--------|--------------|-------------------|-------------|----------|------------------------|
-| 1 | Kehilangan data akibat kegagalan *backup* | 5 | 4 | 20 | Kritis | Implementasi *automated backup* & rencana pemulihan bencana |
-| 2 | *Downtime* sistem pemesanan akibat beban berlebih server | 4 | 5 | 20 | Kritis | Peningkatan kapasitas server & implementasi penyeimbang beban |
-| 3 | Pelanggaran data pelanggan akibat kontrol akses lemah | 5 | 3 | 15 | Tinggi | Implementasi manajemen identitas dan akses (IAM) |
-| 4 | Ketergantungan pada orang kunci (*single point of failure*) | 4 | 4 | 16 | Tinggi | Transfer pengetahuan & dokumentasi SOP lengkap |
-| 5 | Investasi TI tidak selaras dengan prioritas bisnis | 3 | 5 | 15 | Tinggi | Implementasi kerangka kerja tata kelola TI (COBIT) |
+| Risiko | Skor | Kategori | Mitigasi |
+|--------|------|----------|----------|
+| Kehilangan data akibat kegagalan *backup* | 20 | Kritis | *Automated backup* & DRP |
+| *Downtime* sistem akibat beban server | 20 | Kritis | *Load balancing* |
+| Pelanggaran data pelanggan | 15 | Tinggi | Implementasi IAM |
+| Ketergantungan pada orang kunci | 16 | Tinggi | Transfer pengetahuan |
+| Investasi TI tidak selaras bisnis | 15 | Tinggi | Implementasi COBIT |
 
 Sumber: (Hasil Penelitian, 2025)
 
@@ -182,16 +182,16 @@ Sumber: (Hasil Penelitian, 2025)
 
 Pemetaan keselarasan strategi TI dengan tujuan bisnis menggunakan Kaskade Tujuan (*Goals Cascade*) COBIT 2019 menunjukkan tingkat keselarasan (*alignment*) yang masih rendah (42%). Tabel 7 menunjukkan hasil pemetaan antara tujuan bisnis (*business goals*), tujuan perusahaan (*enterprise goals*), dan tujuan terkait TI (*IT-related goals*) SATRIAMART.
 
-**Tabel 7. Kaskade Tujuan: Pemetaan TI-Bisnis SATRIAMART**
+**Tabel 7. Pemetaan Keselarasan TI-Bisnis**
 
-| Tujuan Bisnis | Tujuan Perusahaan | Tujuan Terkait TI | Proses/Domain | Tingkat Keselarasan Saat Ini |
-|----------------|------------------|------------------|----------------|---------------------------|
-| Meningkatkan efisiensi operasional | Optimalisasi sumber daya | Pengelolaan aset TI optimal | APO12, DSS01 | 35% |
-| Menjamin kelangsungan bisnis | Minimalisasi risiko | Manajemen risiko TI proaktif | EDM03, APO12 | 25% |
-| Meningkatkan kualitas layanan | Peningkatan keandalan | Ketersediaan infrastruktur TI | DSS01 | 55% |
-| Mendukung pertumbuhan bisnis | Keselarasan (*alignment*) strategi TI-bisnis | Keselarasan investasi TI | EDM03, MEA01 | 40% |
-| Meningkatkan akuntabilitas | Transparansi kinerja | Pemantauan (*monitoring*) kinerja TI | MEA01 | 30% |
-| **Rata-rata** | | | | **37%** |
+| Tujuan Bisnis | Domain COBIT | Keselarasan |
+|---------------|--------------|-------------|
+| Efisiensi operasional | APO12, DSS01 | 35% |
+| Kelangsungan bisnis | EDM03, APO12 | 25% |
+| Kualitas layanan | DSS01 | 55% |
+| Pertumbuhan bisnis | EDM03, MEA01 | 40% |
+| Akuntabilitas | MEA01 | 30% |
+| **Rata-rata** | | **37%** |
 
 Sumber: (Hasil Penelitian, 2025)
 
@@ -269,16 +269,16 @@ Tabel 10 menunjukkan sasaran kontrol (*control objectives*) dan indikator kinerj
 
 **Tabel 10. Sasaran Kontrol dan KPI per Domain**
 
-| Domain | Sasaran Kontrol | KPI/Metrik | Target (12 Bulan) | Target (24 Bulan) |
-|--------|-------------------|------------|-------------------|-------------------|
-| EDM03 | Kerangka kerja manajemen risiko disetujui dan dioperasionalkan | % risiko yang memiliki pemilik (*owner*) dan rencana mitigasi | 60% | 90% |
-| EDM03 | Toleransi risiko TI diselaraskan dengan toleransi organisasi | Jumlah risiko yang melampaui toleransi | < 5 | < 2 |
-| APO12 | Daftar risiko (*risk register*) dipelihara dan diperbarui | Frekuensi pembaruan daftar risiko | Bulanan | Bulanan |
-| APO12 | Proses mitigasi risiko diimplementasikan | % risiko kritis yang dimitigasi | 70% | 95% |
-| DSS01 | SOP operasional TI terdokumentasi lengkap | % proses yang memiliki SOP | 75% | 100% |
-| DSS01 | Pencadangan dan pemulihan (*backup & recovery*) terautomasi | Frekuensi pencadangan berhasil | 95% | 99% |
-| MEA01 | KPI TI ditetapkan dan dipantau | Jumlah KPI yang dilacak | 10 | 20 |
-| MEA01 | Dasbor pemantauan (*dashboard monitoring*) tersedia | Frekuensi pembaruan dasbor | Mingguan | Waktu Nyata (*Real-time*) |
+| Domain | KPI/Metrik | Target 12 Bln | Target 24 Bln |
+|--------|------------|---------------|---------------|
+| EDM03 | % risiko dengan pemilik & mitigasi | 60% | 90% |
+| EDM03 | Risiko melampaui toleransi | < 5 | < 2 |
+| APO12 | Pembaruan *risk register* | Bulanan | Bulanan |
+| APO12 | % risiko kritis dimitigasi | 70% | 95% |
+| DSS01 | % proses dengan SOP | 75% | 100% |
+| DSS01 | Keberhasilan *backup* | 95% | 99% |
+| MEA01 | Jumlah KPI dilacak | 10 | 20 |
+| MEA01 | Pembaruan dasbor | Mingguan | *Real-time* |
 
 Sumber: (Hasil Penelitian, 2025)
 
@@ -286,34 +286,14 @@ Sumber: (Hasil Penelitian, 2025)
 
 Peta jalan (*roadmap*) implementasi dirancang dalam empat fase selama 18–24 bulan: Perbaikan Cepat (*Quick Wins*, Bulan 1–3), Jangka Pendek (*Short-term*, Bulan 4–9), Jangka Menengah (*Medium-term*, Bulan 10–18), dan Jangka Panjang (*Long-term*, Bulan 19–24). Setiap fase memiliki fokus, hasil (*deliverables*), dan kebutuhan sumber daya (*resource requirements*) yang spesifik. Tabel 11 menunjukkan peta jalan implementasi dengan garis waktu (*timeline*) dan hasil utama setiap fase.
 
-**Tabel 11. Peta Jalan Implementasi Kerangka Kerja Tata Kelola TI SATRIAMART (18-24 Bulan)**
+**Tabel 11. Peta Jalan Implementasi (18-24 Bulan)**
 
-| Fase | Aktivitas | Durasi | Garis Waktu | Target Kematangan |
-|------|-----------|--------|----------|-----------------|
-| **FASE 1: PERBAIKAN CEPAT** | | **Bulan 1-3** | **Jan-Mar 2026** | **1.2 → 1.7** |
-| | Daftar Risiko (*Risk Register*) - 20 risiko | 30 hari | Jan 2026 | |
-| | Pencadangan Otomatis (*Automated Backup*) | 45 hari | Jan-Feb 2026 | |
-| | Matriks RACI & Peran | 30 hari | Jan 2026 | |
-| | SOP 5 Proses Kritikal | 60 hari | Jan-Mar 2026 | |
-| | Dasbor Pemantauan (*Dashboard Monitoring*) | 45 hari | Jan-Feb 2026 | |
-| **FASE 2: JANGKA PENDEK** | | **Bulan 4-9** | **Apr-Sep 2026** | **1.7 → 2.2** |
-| | Kebijakan Manajemen Risiko | 60 hari | Apr-Mei 2026 | |
-| | Asesmen Risiko Triwulanan (*Risk Assessment Quarterly*) | 90 hari | Apr-Jun 2026 | |
-| | Peningkatan Server & Penyeimbang Beban (*Load Balancing*) | 75 hari | Apr-Jun 2026 | |
-| | Pelatihan COBIT 2019 | 45 hari | Mei-Jun 2026 | |
-| | Prosedur Manajemen Perubahan (*Change Management*) | 60 hari | Jul-Agu 2026 | |
-| **FASE 3: JANGKA MENENGAH** | | **Bulan 10-18** | **Okt 2026-Jun 2027** | **2.2 → 2.6** |
-| | Implementasi Manajemen Identitas & Akses (IAM) | 90 hari | Okt-Des 2026 | |
-| | Rencana Pemulihan Bencana (*Disaster Recovery Plan*) | 120 hari | Okt 2026-Jan 2027 | |
-| | Integrasi KPI TI dengan BSC | 90 hari | Feb-Apr 2027 | |
-| | Perangkat Manajemen Layanan TI (*ITSM Tools*) | 105 hari | Feb-Mei 2027 | |
-| | Audit Internal #1 | 30 hari | Jun 2027 | |
-| **FASE 4: JANGKA PANJANG** | | **Bulan 19-24** | **Jul-Des 2027** | **2.6 → 3.0** |
-| | Optimalisasi Proses (*Process Optimization*) | 60 hari | Jul-Agu 2027 | |
-| | Analitik Prediktif (*Predictive Analytics*) | 90 hari | Jul-Sep 2027 | |
-| | Sertifikasi ISO 27001 | 90 hari | Sep-Nov 2027 | |
-| | Transfer Pengetahuan (*Knowledge Transfer*) | 60 hari | Okt-Nov 2027 | |
-| | Asesmen Kematangan Final (*Final Maturity Assessment*) | 30 hari | Des 2027 | |
+| Fase | Periode | Aktivitas Utama | Target |
+|------|---------|-----------------|--------|
+| **Fase 1: Quick Wins** | Bulan 1-3 | *Risk register*, *automated backup*, RACI, SOP 5 proses, dasbor | 1,2 → 1,7 |
+| **Fase 2: Jangka Pendek** | Bulan 4-9 | Kebijakan risiko, *server upgrade*, pelatihan COBIT | 1,7 → 2,2 |
+| **Fase 3: Jangka Menengah** | Bulan 10-18 | IAM, DRP, integrasi KPI-BSC, ITSM, audit internal | 2,2 → 2,6 |
+| **Fase 4: Jangka Panjang** | Bulan 19-24 | Optimalisasi, *predictive analytics*, ISO 27001 | 2,6 → 3,0 |
 
 Sumber: (Hasil Penelitian, 2025)
 
