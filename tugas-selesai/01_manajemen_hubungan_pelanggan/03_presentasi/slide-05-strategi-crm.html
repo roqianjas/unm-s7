@@ -35,22 +35,22 @@
             <!-- 4 Pilar -->
             <div class="grid md:grid-cols-4 gap-4">
                 <div class="bg-[#FF6B7A] rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-3"><span class="iconify" data-icon="solar:target-bold" data-width="48"></span></div>
+                    <div class="flex justify-center mb-3"><span class="iconify" data-icon="solar:target-bold" data-width="48"></span></div>
                     <h3 class="text-lg font-bold mb-2">Personalisasi</h3>
                     <p class="text-sm text-white/90">Setiap klien unik dan memerlukan pendekatan khusus</p>
                 </div>
                 <div class="bg-[#FFA94D] rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-3"><span class="iconify" data-icon="solar:refresh-circle-bold" data-width="48"></span></div>
+                    <div class="flex justify-center mb-3"><span class="iconify" data-icon="solar:refresh-circle-bold" data-width="48"></span></div>
                     <h3 class="text-lg font-bold mb-2">Kontinuitas</h3>
                     <p class="text-sm text-white/90">Perawatan berkelanjutan sepanjang perjalanan terapi</p>
                 </div>
                 <div class="bg-[#00D26A] rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-3"><span class="iconify" data-icon="solar:chat-round-dots-bold" data-width="48"></span></div>
+                    <div class="flex justify-center mb-3"><span class="iconify" data-icon="solar:chat-round-dots-bold" data-width="48"></span></div>
                     <h3 class="text-lg font-bold mb-2">Komunikasi</h3>
                     <p class="text-sm text-white/90">Dialog terbuka, jujur, dan penuh empati</p>
                 </div>
                 <div class="bg-[#667BC6] rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-3"><span class="iconify" data-icon="solar:hand-stars-bold" data-width="48"></span></div>
+                    <div class="flex justify-center mb-3"><span class="iconify" data-icon="solar:hand-stars-bold" data-width="48"></span></div>
                     <h3 class="text-lg font-bold mb-2">Pemberdayaan</h3>
                     <p class="text-sm text-white/90">Klien mandiri mengelola kesehatan mental</p>
                 </div>
@@ -162,12 +162,14 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <a href="slide-04-latar-belakang.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-left-linear" data-width="24"></span>
-    </a>
-    <a href="slide-06-fitur-crm.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-right-linear" data-width="24"></span>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-04-latar-belakang.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-06-fitur-crm.html';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -88,47 +88,47 @@
                 <h3 class="text-xl font-bold text-gray-900 mb-4">Detail Presentasi (16 Slide)</h3>
                 <div class="space-y-3 text-sm">
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#1E0E62] font-bold w-8">1-2</span>
+                        <span class="text-[#1E0E62] font-bold w-12">1-2</span>
                         <span class="text-gray-700">Cover & Agenda</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#FF6B7A] font-bold w-8">3-4</span>
+                        <span class="text-[#FF6B7A] font-bold w-12">3-4</span>
                         <span class="text-gray-700">Profil & Latar Belakang</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#FFA94D] font-bold w-8">5-7</span>
+                        <span class="text-[#FFA94D] font-bold w-12">5-7</span>
                         <span class="text-gray-700">Strategi, Fitur & Database</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#00D26A] font-bold w-8">8</span>
+                        <span class="text-[#00D26A] font-bold w-12">8</span>
                         <span class="text-gray-700">Proyeksi: Kepuasan Klien</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#00D26A] font-bold w-8">9</span>
+                        <span class="text-[#00D26A] font-bold w-12">9</span>
                         <span class="text-gray-700">Proyeksi: Retensi Klien</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#00D26A] font-bold w-8">10</span>
+                        <span class="text-[#00D26A] font-bold w-12">10</span>
                         <span class="text-gray-700">Proyeksi: Efisiensi Operasional</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#00D26A] font-bold w-8">11</span>
+                        <span class="text-[#00D26A] font-bold w-12">11</span>
                         <span class="text-gray-700">Proyeksi: Kinerja Bisnis</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#667BC6] font-bold w-8">12</span>
+                        <span class="text-[#667BC6] font-bold w-12">12</span>
                         <span class="text-gray-700">Proyeksi ROI ≥ 500%</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#FFA94D] font-bold w-8">13</span>
+                        <span class="text-[#FFA94D] font-bold w-12">13</span>
                         <span class="text-gray-700">Tantangan & Solusi</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#FFA94D] font-bold w-8">14</span>
+                        <span class="text-[#FFA94D] font-bold w-12">14</span>
                         <span class="text-gray-700">Lessons Learned</span>
                     </div>
                     <div class="flex items-center p-2 bg-white rounded-lg">
-                        <span class="text-[#1E0E62] font-bold w-8">15-16</span>
+                        <span class="text-[#1E0E62] font-bold w-12">15-16</span>
                         <span class="text-gray-700">Kesimpulan & Q&A</span>
                     </div>
                 </div>
@@ -141,12 +141,14 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <a href="slide-01-cover.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-left-linear" data-width="24"></span>
-    </a>
-    <a href="slide-03-profil-curheart.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-right-linear" data-width="24"></span>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-01-cover.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-03-profil-curheart.html';
+            }
+        });
+    </script>
 </body>
 </html>

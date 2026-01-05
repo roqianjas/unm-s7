@@ -64,12 +64,14 @@
 
     </div>
 
-    <!-- Navigation -->
-    <a href="slide-15-kesimpulan.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-white text-[#1E0E62] p-4 rounded-full hover:bg-white/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-left-linear" data-width="24"></span>
-    </a>
-    <a href="slide-01-cover.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-white text-[#1E0E62] p-4 rounded-full hover:bg-white/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:home-bold" data-width="24"></span>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-15-kesimpulan.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-01-cover.html';
+            }
+        });
+    </script>
 </body>
 </html>

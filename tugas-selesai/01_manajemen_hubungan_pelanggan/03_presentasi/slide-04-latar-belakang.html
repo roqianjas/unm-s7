@@ -134,12 +134,14 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <a href="slide-03-profil-curheart.html" class="fixed left-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-left-linear" data-width="24"></span>
-    </a>
-    <a href="slide-05-strategi-crm.html" class="fixed right-4 top-1/2 -translate-y-1/2 bg-[#1E0E62] text-white p-4 rounded-full hover:bg-[#1E0E62]/90 transition-all hover:scale-110 z-50">
-        <span class="iconify w-6 h-6" data-icon="solar:alt-arrow-right-linear" data-width="24"></span>
-    </a>
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-03-profil-curheart.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-05-strategi-crm.html';
+            }
+        });
+    </script>
 </body>
 </html>
