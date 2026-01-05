@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 8 - Diagram UML | Presentasi CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center mb-6">
+                <img src="assets/img/color.png" alt="CurHeart Logo" class="h-12 mr-4">
+                <h1 class="text-5xl font-bold text-gray-900">Diagram UML</h1>
+            </div>
+            <div class="h-1 w-32 bg-[#1E0E62] rounded-full"></div>
+        </div>
+
+        <!-- Use Case Diagram -->
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Diagram Kasus Penggunaan CRM</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-[#1E0E62]/10 rounded-xl p-4 border-2 border-[#1E0E62]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Klien</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Lihat profil & riwayat</li>
+                        <li>• Lihat kemajuan terapi</li>
+                        <li>• Kirim pesan ke terapis</li>
+                        <li>• Beri ulasan & rating</li>
+                        <li>• Terima notifikasi</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FF6B7A]/10 rounded-xl p-4 border-2 border-[#FF6B7A]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Terapis</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Lihat profil klien</li>
+                        <li>• Dokumentasi sesi (SOAP)</li>
+                        <li>• Update kemajuan klien</li>
+                        <li>• Kirim pesan ke klien</li>
+                        <li>• Lihat ulasan</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FFA94D]/10 rounded-xl p-4 border-2 border-[#FFA94D]/30">
+                    <h3 class="font-bold text-gray-800 mb-3 text-center">Admin</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Kelola semua pengguna</li>
+                        <li>• Lihat dashboard analitik</li>
+                        <li>• Kelola segmentasi klien</li>
+                        <li>• Buat laporan CRM</li>
+                        <li>• Monitor aktivitas sistem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Diagrams -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Alur: Dokumentasi Sesi</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="bg-[#1E0E62] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">1</div>
+                        <p class="text-gray-700 text-sm">Terapis buka data klien</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#667BC6] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">2</div>
+                        <p class="text-gray-700 text-sm">Lihat riwayat sesi sebelumnya</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#FF6B7A] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">3</div>
+                        <p class="text-gray-700 text-sm">Lakukan sesi terapi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#1E0E62] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">4</div>
+                        <p class="text-gray-700 text-sm">Isi formulir SOAP</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#FFA94D] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">5</div>
+                        <p class="text-gray-700 text-sm">Update kemajuan klien</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#667BC6] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">6</div>
+                        <p class="text-gray-700 text-sm">Simpan & kirim notifikasi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Alur: Komunikasi Klien-Terapis</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <div class="bg-[#1E0E62] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">1</div>
+                        <p class="text-gray-700 text-sm">Klien buka fitur pesan</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#667BC6] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">2</div>
+                        <p class="text-gray-700 text-sm">Pilih terapis tujuan</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#FF6B7A] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">3</div>
+                        <p class="text-gray-700 text-sm">Tulis & kirim pesan</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#1E0E62] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">4</div>
+                        <p class="text-gray-700 text-sm">Sistem kirim notifikasi</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#FFA94D] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">5</div>
+                        <p class="text-gray-700 text-sm">Terapis baca & balas</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-[#667BC6] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold text-sm">6</div>
+                        <p class="text-gray-700 text-sm">Riwayat tersimpan di CRM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Flow -->
+        <div class="mt-6 bg-[#1E0E62] rounded-2xl p-6 text-white">
+            <h3 class="text-2xl font-bold mb-4">Alur Data CRM</h3>
+            <div class="grid md:grid-cols-5 gap-2 text-center text-sm">
+                <div class="bg-white/20 rounded-lg p-3">
+                    <p class="font-bold">Input Data</p>
+                    <p class="text-xs opacity-80">Profil, Sesi, Pesan</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <span class="iconify text-2xl" data-icon="solar:arrow-right-bold"></span>
+                </div>
+                <div class="bg-white/20 rounded-lg p-3">
+                    <p class="font-bold">Proses CRM</p>
+                    <p class="text-xs opacity-80">Validasi & Simpan</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <span class="iconify text-2xl" data-icon="solar:arrow-right-bold"></span>
+                </div>
+                <div class="bg-white/20 rounded-lg p-3">
+                    <p class="font-bold">Output</p>
+                    <p class="text-xs opacity-80">Laporan & Insight</p>
+                </div>
+            </div>
+            <div class="mt-4 text-center text-sm opacity-90">
+                <p>Data CRM terintegrasi untuk mendukung pengambilan keputusan dan personalisasi layanan</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-07-arsitektur-sistem.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-09-fitur-crm.html';
+            }
+        });
+    </script>
+</body>
+</html>

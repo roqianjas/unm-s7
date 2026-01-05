@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 6 - Analisis Kebutuhan | Presentasi CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white min-h-screen p-8">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center mb-6">
+                <img src="assets/img/color.png" alt="CurHeart Logo" class="h-12 mr-4">
+                <h1 class="text-5xl font-bold text-gray-900">Analisis Kebutuhan</h1>
+            </div>
+            <div class="h-1 w-32 bg-[#1E0E62] rounded-full"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Kebutuhan Fungsional -->
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Kebutuhan Fungsional (14)</h2>
+                <div class="space-y-3">
+                    <div class="bg-[#1E0E62]/10 rounded-lg p-4 border-l-4 border-[#1E0E62]">
+                        <p class="font-bold text-gray-800 mb-2">1. Manajemen Pengguna</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Registrasi & login multi-peran</li>
+                            <li>• Kelola profil pengguna</li>
+                            <li>• Lupa & atur ulang kata sandi</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FF6B7A]/10 rounded-lg p-4 border-l-4 border-[#FF6B7A]">
+                        <p class="font-bold text-gray-800 mb-2">2. Manajemen Profil Klien</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Data demografis & medis</li>
+                            <li>• Preferensi klien</li>
+                            <li>• Riwayat interaksi</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#FFA94D]/10 rounded-lg p-4 border-l-4 border-[#FFA94D]">
+                        <p class="font-bold text-gray-800 mb-2">3. Dokumentasi Sesi</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Formulir terstruktur (SOAP)</li>
+                            <li>• Catatan perkembangan</li>
+                            <li>• Rencana tindak lanjut</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#667BC6]/10 rounded-lg p-4 border-l-4 border-[#667BC6]">
+                        <p class="font-bold text-gray-800 mb-2">4. Komunikasi & Analitik</p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Pesan dalam aplikasi</li>
+                            <li>• Notifikasi otomatis</li>
+                            <li>• Dashboard analitik CRM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kebutuhan Non-Fungsional -->
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Kebutuhan Non-Fungsional</h2>
+                <div class="space-y-4">
+                    <div class="bg-[#FFA94D]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="iconify text-2xl mr-2 text-[#FFA94D]" data-icon="solar:bolt-bold"></span>
+                            <p class="font-bold text-gray-800">Kinerja</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Waktu respons &lt;2 detik</li>
+                            <li>• Respons API &lt;500ms</li>
+                            <li>• 100 pengguna bersamaan</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#FF6B7A]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="iconify text-2xl mr-2 text-[#FF6B7A]" data-icon="solar:shield-check-bold"></span>
+                            <p class="font-bold text-gray-800">Keamanan</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Enkripsi data (AES-256)</li>
+                            <li>• HTTPS, CSRF, perlindungan XSS</li>
+                            <li>• Kepatuhan UU PDP</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#667BC6]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="iconify text-2xl mr-2 text-[#667BC6]" data-icon="solar:eye-bold"></span>
+                            <p class="font-bold text-gray-800">Kegunaan</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Skor SUS &gt;70</li>
+                            <li>• Navigasi intuitif</li>
+                            <li>• Desain responsif</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#1E0E62]/10 rounded-xl p-4">
+                        <div class="flex items-center mb-2">
+                            <span class="iconify text-2xl mr-2 text-[#1E0E62]" data-icon="solar:refresh-circle-bold"></span>
+                            <p class="font-bold text-gray-800">Keandalan</p>
+                        </div>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Waktu aktif 99%</li>
+                            <li>• Cadangan harian</li>
+                            <li>• Penanganan kesalahan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="mt-6 bg-[#1E0E62] rounded-2xl p-6 text-white">
+            <h3 class="text-2xl font-bold mb-4 text-center">Ringkasan Analisis</h3>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">14</p>
+                    <p class="text-sm mt-1">Kebutuhan Fungsional</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">8</p>
+                    <p class="text-sm mt-1">Kebutuhan Non-Fungsional</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">6</p>
+                    <p class="text-sm mt-1">Fitur CRM Utama</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                    <p class="text-3xl font-bold">3</p>
+                    <p class="text-sm mt-1">Peran Pengguna</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                window.location.href = 'slide-05-strategi-crm.html';
+            } else if (e.key === 'ArrowRight') {
+                window.location.href = 'slide-07-arsitektur-sistem.html';
+            }
+        });
+    </script>
+</body>
+</html>
